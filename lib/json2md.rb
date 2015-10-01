@@ -110,7 +110,7 @@ module SpecMaker
 		if SIMPLETYPES.include? prop[:dataType] 	
 			dataTypePlusLink = prop[:dataType] 	
 			if prop[:isCollection] 
-				dataTypePlusLink = dataTypePlusLink + "collection"
+				dataTypePlusLink = dataTypePlusLink + " collection"
 			end			
 			puts "simple"
 		else			
