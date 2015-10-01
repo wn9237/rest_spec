@@ -19,7 +19,7 @@
       "dataType": "Guid",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": false,
@@ -31,7 +31,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -43,7 +43,7 @@
       "dataType": "PrivilegedRoleSummary",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": true,
       "isNullable": false,
@@ -55,7 +55,7 @@
       "dataType": "PrivilegedRoleSettings",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": true,
       "isNullable": false,
@@ -67,7 +67,7 @@
       "dataType": "PrivilegedRoleAssignment",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": true,
       "isNullable": true,
@@ -83,9 +83,10 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "TicketSystem",
+          "name": "Reason",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -94,7 +95,7 @@
           "isUnicode": false
         },
         {
-          "name": "TicketSystem",
+          "name": "Duration",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -103,7 +104,7 @@
           "isUnicode": false
         },
         {
-          "name": "TicketSystem",
+          "name": "TicketNumber",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -120,8 +121,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "SelfDeactivate",
@@ -131,8 +131,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     }
   ]
 }

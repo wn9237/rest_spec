@@ -19,7 +19,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": false,
@@ -31,7 +31,7 @@
       "dataType": "thumbnail",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -43,7 +43,7 @@
       "dataType": "thumbnail",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -55,7 +55,7 @@
       "dataType": "thumbnail",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -71,6 +71,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": true,
       "parameters": [
         {
           "name": "size",
@@ -81,8 +82,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": true
+      ]
     }
   ]
 }

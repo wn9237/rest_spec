@@ -19,7 +19,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -31,7 +31,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -43,7 +43,7 @@
       "dataType": "Int32",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -55,7 +55,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": false,
@@ -67,7 +67,7 @@
       "dataType": "MailFolder",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": true,
       "isNullable": true,
@@ -79,7 +79,7 @@
       "dataType": "Message",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": true,
       "isNullable": true,
@@ -91,7 +91,7 @@
       "dataType": "Extension",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": true,
       "isNullable": true,
@@ -107,6 +107,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "DestinationId",
@@ -117,8 +118,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Move",
@@ -128,6 +128,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "DestinationId",
@@ -138,8 +139,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     }
   ]
 }

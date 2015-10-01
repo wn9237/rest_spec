@@ -19,7 +19,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -31,7 +31,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": false,
       "isNullable": true,
@@ -43,7 +43,7 @@
       "dataType": "DateTimeOffset",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -55,7 +55,7 @@
       "dataType": "DateTimeOffset",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -67,7 +67,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": false,
@@ -79,7 +79,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -91,7 +91,7 @@
       "dataType": "ItemBody",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -103,7 +103,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -115,11 +115,12 @@
       "dataType": "Enumeration",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": "Importance",
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
-      "isUnicode": null
+      "isUnicode": null,
+      "enumNameJs": "Importance"
     },
     {
       "name": "HasAttachments",
@@ -127,7 +128,7 @@
       "dataType": "Boolean",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -139,7 +140,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -151,7 +152,7 @@
       "dataType": "Recipient",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -163,7 +164,7 @@
       "dataType": "Recipient",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -175,7 +176,7 @@
       "dataType": "Recipient",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": false,
       "isNullable": true,
@@ -187,7 +188,7 @@
       "dataType": "Recipient",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": false,
       "isNullable": true,
@@ -199,7 +200,7 @@
       "dataType": "Recipient",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": false,
       "isNullable": true,
@@ -211,7 +212,7 @@
       "dataType": "Recipient",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": false,
       "isNullable": true,
@@ -223,7 +224,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -235,7 +236,7 @@
       "dataType": "ItemBody",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -247,7 +248,7 @@
       "dataType": "DateTimeOffset",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -259,7 +260,7 @@
       "dataType": "DateTimeOffset",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -271,7 +272,7 @@
       "dataType": "Boolean",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -283,7 +284,7 @@
       "dataType": "Boolean",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -295,7 +296,7 @@
       "dataType": "Boolean",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -307,7 +308,7 @@
       "dataType": "Boolean",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -319,7 +320,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -331,7 +332,7 @@
       "dataType": "Extension",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": true,
       "isNullable": true,
@@ -343,7 +344,7 @@
       "dataType": "Attachment",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": true,
       "isNullable": true,
@@ -359,6 +360,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "DestinationId",
@@ -369,8 +371,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Move",
@@ -380,6 +381,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "DestinationId",
@@ -390,8 +392,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "CreateReply",
@@ -401,8 +402,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "CreateReplyAll",
@@ -412,8 +413,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "CreateForward",
@@ -423,8 +424,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "Reply",
@@ -434,6 +435,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "Comment",
@@ -444,8 +446,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "ReplyAll",
@@ -455,6 +456,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "Comment",
@@ -465,8 +467,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Forward",
@@ -476,10 +477,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "ToRecipients",
-          "dataType": "Recipient",
+          "name": "Comment",
+          "dataType": "String",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -493,10 +495,9 @@
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Send",
@@ -506,8 +507,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     }
   ]
 }

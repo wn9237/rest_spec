@@ -19,11 +19,12 @@
       "dataType": "Enumeration",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": "ResponseType",
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
-      "isUnicode": null
+      "isUnicode": null,
+      "enumNameJs": "ResponseType"
     },
     {
       "name": "Time",
@@ -31,7 +32,7 @@
       "dataType": "DateTimeOffset",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,

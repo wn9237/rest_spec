@@ -19,7 +19,7 @@
       "dataType": "identitySet",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -31,7 +31,7 @@
       "dataType": "DateTimeOffset",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": false,
@@ -43,7 +43,7 @@
       "dataType": "deleted",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -55,7 +55,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -67,7 +67,7 @@
       "dataType": "file",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -79,7 +79,7 @@
       "dataType": "folder",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -91,7 +91,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": false,
@@ -103,7 +103,7 @@
       "dataType": "image",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -115,7 +115,7 @@
       "dataType": "identitySet",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -127,7 +127,7 @@
       "dataType": "DateTimeOffset",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": false,
@@ -139,7 +139,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -151,7 +151,7 @@
       "dataType": "itemReference",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -163,7 +163,7 @@
       "dataType": "photo",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -175,7 +175,7 @@
       "dataType": "searchResult",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -187,7 +187,7 @@
       "dataType": "Int64",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": false,
@@ -199,7 +199,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -211,7 +211,7 @@
       "dataType": "String",
       "description": null,
       "isReadOnly": false,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "isNullable": true,
@@ -223,7 +223,7 @@
       "dataType": "User",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": true,
       "isNullable": false,
@@ -235,7 +235,7 @@
       "dataType": "User",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": false,
       "isRelationship": true,
       "isNullable": false,
@@ -247,7 +247,7 @@
       "dataType": "item",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": true,
       "isNullable": true,
@@ -259,7 +259,7 @@
       "dataType": "thumbnailSet",
       "description": null,
       "isReadOnly": true,
-      "enumNameJs": null,
+      "enumName": null,
       "isCollection": true,
       "isRelationship": true,
       "isNullable": true,
@@ -275,15 +275,16 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "name",
-          "dataType": "String",
+          "name": "parentReference",
+          "dataType": "itemReference",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         },
         {
           "name": "name",
@@ -294,8 +295,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "createLink",
@@ -305,6 +305,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "type",
@@ -315,8 +316,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "createSession",
@@ -326,10 +326,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "item",
-          "dataType": "FileSystemItemInformation",
+          "name": "path",
+          "dataType": "String",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -343,10 +344,9 @@
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "uploadContent",
@@ -356,6 +356,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "contentStream",
@@ -366,8 +367,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "content",
@@ -377,8 +377,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     },
     {
       "name": "delta",
@@ -388,8 +388,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     },
     {
       "name": "search",
@@ -399,6 +399,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": true,
       "parameters": [
         {
           "name": "q",
@@ -409,8 +410,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": true
+      ]
     }
   ]
 }

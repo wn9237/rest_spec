@@ -5,7 +5,7 @@
 	  "dataType": null,
 	  "description": null,
 	  "isReadOnly": false,
-	  "enumNameJs": null,
+	  "enumName": null,
 	  "isCollection": false,
 	  "isRelationship": false,
 	  "isNullable" : true,
@@ -20,8 +20,8 @@
 	  "description": null,
 	  "syntax": null,  
 	  "httpSuccessResponseCode": null,
-	  "parameters" : null,
-	  "isFunction" : null
+	  "isFunction" : null,
+	  "parameters" : null
 	},
   "parameter":	
   	{

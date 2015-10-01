@@ -8,6 +8,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "groupIds",
@@ -18,8 +19,7 @@
           "isNullable": false,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "getMemberGroups",
@@ -29,6 +29,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -39,8 +40,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "getMemberObjects",
@@ -50,6 +50,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -60,8 +61,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "Application": [
@@ -73,6 +73,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "identifierUris",
@@ -83,8 +84,7 @@
           "isNullable": false,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "User": [
@@ -96,10 +96,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "removeLicenses",
-          "dataType": "Guid",
+          "name": "addLicenses",
+          "dataType": "AssignedLicense",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -115,8 +116,7 @@
           "isNullable": false,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "SendMail",
@@ -126,10 +126,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "SaveToSentItems",
-          "dataType": "Boolean",
+          "name": "Message",
+          "dataType": "Message",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -142,11 +143,10 @@
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
-          "isNullable": false,
+          "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "MailFolder": [
@@ -158,6 +158,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "DestinationId",
@@ -168,8 +169,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Move",
@@ -179,6 +179,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "DestinationId",
@@ -189,8 +190,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "Message": [
@@ -202,6 +202,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "DestinationId",
@@ -212,8 +213,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Move",
@@ -223,6 +223,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "DestinationId",
@@ -233,8 +234,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "CreateReply",
@@ -244,8 +244,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "CreateReplyAll",
@@ -255,8 +255,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "CreateForward",
@@ -266,8 +266,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "Reply",
@@ -277,6 +277,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "Comment",
@@ -287,8 +288,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "ReplyAll",
@@ -298,6 +298,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "Comment",
@@ -308,8 +309,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Forward",
@@ -319,10 +319,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "ToRecipients",
-          "dataType": "Recipient",
+          "name": "Comment",
+          "dataType": "String",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -336,10 +337,9 @@
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Send",
@@ -349,8 +349,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     }
   ],
   "Event": [
@@ -362,10 +362,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "SendResponse",
-          "dataType": "Boolean",
+          "name": "Comment",
+          "dataType": "String",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -379,10 +380,9 @@
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Decline",
@@ -392,10 +392,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "SendResponse",
-          "dataType": "Boolean",
+          "name": "Comment",
+          "dataType": "String",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -409,10 +410,9 @@
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "TentativelyAccept",
@@ -422,10 +422,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "SendResponse",
-          "dataType": "Boolean",
+          "name": "Comment",
+          "dataType": "String",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -439,10 +440,9 @@
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "Group": [
@@ -454,8 +454,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "UnsubscribeByMail",
@@ -465,8 +465,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "AddFavorite",
@@ -476,8 +476,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "RemoveFavorite",
@@ -487,8 +487,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "ResetUnseenCount",
@@ -498,8 +498,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     }
   ],
   "ConversationThread": [
@@ -511,6 +511,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "Post",
@@ -521,8 +522,7 @@
           "isNullable": false,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "Post": [
@@ -534,14 +534,15 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "ToRecipients",
-          "dataType": "Recipient",
+          "name": "Comment",
+          "dataType": "String",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
-          "isNullable": false,
+          "isNullable": null,
           "isUnicode": false
         },
         {
@@ -551,10 +552,9 @@
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": false,
-          "isUnicode": false
+          "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Reply",
@@ -564,6 +564,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "Post",
@@ -574,8 +575,7 @@
           "isNullable": false,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "item": [
@@ -587,15 +587,16 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "name",
-          "dataType": "String",
+          "name": "parentReference",
+          "dataType": "itemReference",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         },
         {
           "name": "name",
@@ -606,8 +607,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "createLink",
@@ -617,6 +617,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "type",
@@ -627,8 +628,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "createSession",
@@ -638,10 +638,11 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "item",
-          "dataType": "FileSystemItemInformation",
+          "name": "path",
+          "dataType": "String",
           "description": null,
           "isRequired": true,
           "enumNameJs": null,
@@ -655,10 +656,9 @@
           "isRequired": true,
           "enumNameJs": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "uploadContent",
@@ -668,6 +668,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "contentStream",
@@ -678,8 +679,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "content",
@@ -689,8 +689,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     },
     {
       "name": "delta",
@@ -700,8 +700,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     },
     {
       "name": "search",
@@ -711,6 +711,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": true,
       "parameters": [
         {
           "name": "q",
@@ -721,8 +722,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": true
+      ]
     }
   ],
   "Page": [
@@ -734,6 +734,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "commands",
@@ -744,8 +745,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "CopyToSection",
@@ -755,9 +755,10 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "siteId",
+          "name": "id",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -766,7 +767,7 @@
           "isUnicode": false
         },
         {
-          "name": "siteId",
+          "name": "siteCollectionId",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -783,8 +784,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Thumbnail",
@@ -794,8 +794,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     }
   ],
   "Notebook": [
@@ -807,9 +807,10 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "renameAs",
+          "name": "siteCollectionId",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -818,7 +819,7 @@
           "isUnicode": false
         },
         {
-          "name": "renameAs",
+          "name": "siteId",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -835,8 +836,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "Section": [
@@ -848,9 +848,10 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "renameAs",
+          "name": "id",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -859,7 +860,7 @@
           "isUnicode": false
         },
         {
-          "name": "renameAs",
+          "name": "siteCollectionId",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -868,7 +869,7 @@
           "isUnicode": false
         },
         {
-          "name": "renameAs",
+          "name": "siteId",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -885,8 +886,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "CopyToSectionGroup",
@@ -896,9 +896,10 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "renameAs",
+          "name": "id",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -907,7 +908,7 @@
           "isUnicode": false
         },
         {
-          "name": "renameAs",
+          "name": "siteCollectionId",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -916,7 +917,7 @@
           "isUnicode": false
         },
         {
-          "name": "renameAs",
+          "name": "siteId",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -933,8 +934,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Thumbnail",
@@ -944,8 +944,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     }
   ],
   "PrivilegedRoleAssignment": [
@@ -957,9 +957,10 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "TicketSystem",
+          "name": "Reason",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -968,7 +969,7 @@
           "isUnicode": false
         },
         {
-          "name": "TicketSystem",
+          "name": "Duration",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -977,7 +978,7 @@
           "isUnicode": false
         },
         {
-          "name": "TicketSystem",
+          "name": "TicketNumber",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -994,8 +995,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "Deactivate",
@@ -1005,8 +1005,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     }
   ],
   "PrivilegedRole": [
@@ -1018,9 +1018,10 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
-          "name": "TicketSystem",
+          "name": "Reason",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -1029,7 +1030,7 @@
           "isUnicode": false
         },
         {
-          "name": "TicketSystem",
+          "name": "Duration",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -1038,7 +1039,7 @@
           "isUnicode": false
         },
         {
-          "name": "TicketSystem",
+          "name": "TicketNumber",
           "dataType": "String",
           "description": null,
           "isRequired": true,
@@ -1055,8 +1056,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": false
+      ]
     },
     {
       "name": "SelfDeactivate",
@@ -1066,8 +1066,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     }
   ],
   "PimAlert": [
@@ -1079,8 +1079,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "Reactivate",
@@ -1090,8 +1090,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "Fix",
@@ -1101,6 +1101,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": false,
       "parameters": [
         {
           "name": "ItemId",
@@ -1111,8 +1112,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "isFunction": false
+      ]
     }
   ],
   "PrivilegedSignupStatus)": [
@@ -1124,8 +1124,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "CompleteSetup",
@@ -1135,8 +1135,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "SkipSetup",
@@ -1146,8 +1146,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": false
+      "isFunction": false,
+      "parameters": null
     },
     {
       "name": "IsSignedUp",
@@ -1157,8 +1157,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     },
     {
       "name": "CanSignUp",
@@ -1168,8 +1168,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     }
   ],
   "thumbnailSet": [
@@ -1181,6 +1181,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": true,
       "parameters": [
         {
           "name": "size",
@@ -1191,8 +1192,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": true
+      ]
     }
   ],
   "SiteCollection)": [
@@ -1204,6 +1204,7 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
+      "isFunction": true,
       "parameters": [
         {
           "name": "url",
@@ -1214,8 +1215,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "isFunction": true
+      ]
     }
   ],
   "PrivilegedRoleAssignment)": [
@@ -1227,8 +1227,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     }
   ],
   "Notification)": [
@@ -1240,8 +1240,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     }
   ],
   "NotificationRule)": [
@@ -1253,8 +1253,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null,
-      "isFunction": true
+      "isFunction": true,
+      "parameters": null
     }
   ]
 }

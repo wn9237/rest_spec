@@ -46,6 +46,8 @@ module SpecMaker
 	@icollection = 0	
 	@ibasetypemerges = 0
 
+	@methods = {}
+
 	def self.deep_copy(o)
 	  Marshal.load(Marshal.dump(o))
 	end
@@ -147,9 +149,68 @@ module SpecMaker
 		return prop		
 	end
 
+	# Process methods
+	def self.process_method (item=nil, type=nil)
+		mtd = deep_copy(@struct[:method]) 
+		mtd[:name] = item[:Name]
+		if type == 'function'
+			mtd[:isFunction] = true
+		else
+			mtd[:isFunction] = false
+		end
 
-	#JSON.pretty_generate()
-	#File.write('onedrive.json',j)
+		if item.has_key?(:ReturnType)
+			dt = item[:ReturnType][:Type]
+			if dt.start_with?('Collection(')
+				mtd[:isReturnTypeCollection] = true
+				dt = dt[(dt.rindex('.') + 1)..-1].chomp(')')
+			else
+				dt = dt[(dt.rindex('.') + 1)..-1]
+			end
+			mtd[:returnType] = dt
+			mtd[:isReturnNullable] = false if item[:ReturnType][:Nullable] == 'false'
+		end
+		# don't need to worry about param being hash as in that case, it'll just be the binding info.
+		if item[:Parameter].is_a?(Array)
+			mtd[:parameters] = []
+			item[:Parameter].each_with_index do |p, i|
+				parm = deep_copy(@struct[:parameter]) 
+				next if i == 0
+				@iparam = @iparam + 1
+				parm[:name] = p[:Name]
+				if p[:Type].start_with?('Collection(')
+					dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1].chomp(')')
+				else
+					dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1]
+				end
+				parm[:dataType] = dtp
+				if p[:Nullable] == 'false'
+					parm[:isNullable] = false
+				end
+				if p[:Unicode] == 'false'
+					parm[:isUnicode] = false
+				end
+				mtd[:parameters].push parm
+								puts mtd[:parameters]
+			end
+		end
+
+		if item[:Parameter].is_a?(Array)
+			enamef = item[:Parameter][0][:Type]
+		elsif item[:Parameter].is_a?(Hash)
+			enamef = item[:Parameter][:Type]
+		end
+
+		entity_name = enamef[(enamef.rindex('.') + 1)..-1]		
+
+		if @methods.has_key?(entity_name.to_sym)
+			@methods[entity_name.to_sym].push mtd
+		else			
+			@methods[entity_name.to_sym] = []			
+			@methods[entity_name.to_sym].push mtd
+		end
+		return 
+	end
 
 	# Get to the schema node
 	@enum_objects = {}
@@ -190,64 +251,65 @@ module SpecMaker
 
 	# Process ACTIONS
 
-	@methods = {}
+
 
 	schema[:Action].each do |item|		
 		puts "-> Processing Action #{item[:Name]}"
 		@iaction = @iaction + 1
-		mtd = deep_copy(@struct[:method]) 
-		mtd[:name] = item[:Name]
-		mtd[:isFunction] = false
-		if item.has_key?(:ReturnType)
-			dt = item[:ReturnType][:Type]
-			if dt.start_with?('Collection(')
-				mtd[:isReturnTypeCollection] = true
-				dt = dt[(dt.rindex('.') + 1)..-1].chomp(')')
-			else
-				dt = dt[(dt.rindex('.') + 1)..-1]
-			end
-			mtd[:returnType] = dt
-			mtd[:isReturnNullable] = false if item[:ReturnType][:Nullable] == 'false'
-		end
-		# don't need to worry about param being hash as in that case, it'll just be the binding info.
-		if item[:Parameter].is_a?(Array)
+		process_method(item, 'action')
+		# mtd = deep_copy(@struct[:method]) 
+		# mtd[:name] = item[:Name]
+		# mtd[:isFunction] = false
+		# if item.has_key?(:ReturnType)
+		# 	dt = item[:ReturnType][:Type]
+		# 	if dt.start_with?('Collection(')
+		# 		mtd[:isReturnTypeCollection] = true
+		# 		dt = dt[(dt.rindex('.') + 1)..-1].chomp(')')
+		# 	else
+		# 		dt = dt[(dt.rindex('.') + 1)..-1]
+		# 	end
+		# 	mtd[:returnType] = dt
+		# 	mtd[:isReturnNullable] = false if item[:ReturnType][:Nullable] == 'false'
+		# end
+		# # don't need to worry about param being hash as in that case, it'll just be the binding info.
+		# if item[:Parameter].is_a?(Array)
 			
-			parm = deep_copy(@struct[:parameter]) 
-			mtd[:parameters] = []
-			item[:Parameter].each_with_index do |p, i|
-				next if i == 0
-				@iparam = @iparam + 1
-				parm[:name] = p[:Name]
-				if p[:Type].start_with?('Collection(')
-					dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1].chomp(')')
-				else
-					dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1]
-				end
-				parm[:dataType] = dtp
-				if p[:Nullable] == 'false'
-					parm[:isNullable] = false
-				end
-				if p[:Unicode] == 'false'
-					parm[:isUnicode] = false
-				end
-				mtd[:parameters].push parm
-			end
-		end
+		# 	parm = deep_copy(@struct[:parameter]) 
+		# 	mtd[:parameters] = []
+		# 	item[:Parameter].each_with_index do |p, i|
+		# 		next if i == 0
+		# 		@iparam = @iparam + 1
+		# 		parm[:name] = p[:Name]
+		# 		if p[:Type].start_with?('Collection(')
+		# 			dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1].chomp(')')
+		# 		else
+		# 			dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1]
+		# 		end
+		# 		parm[:dataType] = dtp
+		# 		if p[:Nullable] == 'false'
+		# 			parm[:isNullable] = false
+		# 		end
+		# 		if p[:Unicode] == 'false'
+		# 			parm[:isUnicode] = false
+		# 		end
+		# 		mtd[:parameters].push parm
+		# 	end
+		# end
 
-		if item[:Parameter].is_a?(Array)
-			enamef = item[:Parameter][0][:Type]
-		elsif item[:Parameter].is_a?(Hash)
-			enamef = item[:Parameter][:Type]
-		end
+		# if item[:Parameter].is_a?(Array)
+		# 	enamef = item[:Parameter][0][:Type]
+		# elsif item[:Parameter].is_a?(Hash)
+		# 	enamef = item[:Parameter][:Type]
+		# end
 
-		entity_name = enamef[(enamef.rindex('.') + 1)..-1]		
+		# entity_name = enamef[(enamef.rindex('.') + 1)..-1]		
 
-		if @methods.has_key?(entity_name.to_sym)
-			@methods[entity_name.to_sym].push mtd
-		else			
-			@methods[entity_name.to_sym] = []			
-			@methods[entity_name.to_sym].push mtd
-		end
+		# if @methods.has_key?(entity_name.to_sym)
+		# 	@methods[entity_name.to_sym].push mtd
+		# else			
+		# 	@methods[entity_name.to_sym] = []			
+		# 	@methods[entity_name.to_sym].push mtd
+		# end
 	end
 
 	# Process FUNCTIONS
@@ -255,60 +317,61 @@ module SpecMaker
 	schema[:Function].each do |item|		
 		puts "-> Processing Function #{item[:Name]}"
 		@ifunction = @ifunction + 1
-		mtd = deep_copy(@struct[:method]) 
-		mtd[:name] = item[:Name]
-		mtd[:isFunction] = true
-		if item.has_key?(:ReturnType)
-			dt = item[:ReturnType][:Type]
-			if dt.start_with?('Collection(')
-				mtd[:isReturnTypeCollection] = true
-				dt = dt[(dt.rindex('.') + 1)..-1].chomp(')')
-			else
-				dt = dt[(dt.rindex('.') + 1)..-1]
-			end
-			mtd[:returnType] = dt
-			mtd[:isReturnNullable] = false if item[:ReturnType][:Nullable] == 'false'
-		end
+		process_method(item, 'function')
+		# mtd = deep_copy(@struct[:method]) 
+		# mtd[:name] = item[:Name]
+		# mtd[:isFunction] = true
+		# if item.has_key?(:ReturnType)
+		# 	dt = item[:ReturnType][:Type]
+		# 	if dt.start_with?('Collection(')
+		# 		mtd[:isReturnTypeCollection] = true
+		# 		dt = dt[(dt.rindex('.') + 1)..-1].chomp(')')
+		# 	else
+		# 		dt = dt[(dt.rindex('.') + 1)..-1]
+		# 	end
+		# 	mtd[:returnType] = dt
+		# 	mtd[:isReturnNullable] = false if item[:ReturnType][:Nullable] == 'false'
+		# end
 
-		# don't need to worry about param being hash as in that case, it'll just be the binding info.
-		if item[:Parameter].is_a?(Array)
+		# # don't need to worry about param being hash as in that case, it'll just be the binding info.
+		# if item[:Parameter].is_a?(Array)
 			
-			parm = deep_copy(@struct[:parameter]) 
-			mtd[:parameters] = []
-			item[:Parameter].each_with_index do |p, i|
-				next if i == 0
-				@iparam = @iparam + 1
-				parm[:name] = p[:Name]
-				if p[:Type].start_with?('Collection(')
-					dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1].chomp(')')
-				else
-					dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1]
-				end
-				parm[:dataType] = dtp
-				if p[:Nullable] == 'false'
-					parm[:isNullable] = false
-				end
-				if p[:Unicode] == 'false'
-					parm[:isUnicode] = false
-				end
-				mtd[:parameters].push parm
-			end
-		end
+		# 	parm = deep_copy(@struct[:parameter]) 
+		# 	mtd[:parameters] = []
+		# 	item[:Parameter].each_with_index do |p, i|
+		# 		next if i == 0
+		# 		@iparam = @iparam + 1
+		# 		parm[:name] = p[:Name]
+		# 		if p[:Type].start_with?('Collection(')
+		# 			dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1].chomp(')')
+		# 		else
+		# 			dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1]
+		# 		end
+		# 		parm[:dataType] = dtp
+		# 		if p[:Nullable] == 'false'
+		# 			parm[:isNullable] = false
+		# 		end
+		# 		if p[:Unicode] == 'false'
+		# 			parm[:isUnicode] = false
+		# 		end
+		# 		mtd[:parameters].push parm
+		# 	end
+		# end
 
-		if item[:Parameter].is_a?(Array)
-			enamef = item[:Parameter][0][:Type]
-		elsif item[:Parameter].is_a?(Hash)
-			enamef = item[:Parameter][:Type]
-		end
+		# if item[:Parameter].is_a?(Array)
+		# 	enamef = item[:Parameter][0][:Type]
+		# elsif item[:Parameter].is_a?(Hash)
+		# 	enamef = item[:Parameter][:Type]
+		# end
 
-		entity_name = enamef[(enamef.rindex('.') + 1)..-1]		
+		# entity_name = enamef[(enamef.rindex('.') + 1)..-1]		
 
-		if @methods.has_key?(entity_name.to_sym)
-			@methods[entity_name.to_sym].push mtd
-		else			
-			@methods[entity_name.to_sym] = []			
-			@methods[entity_name.to_sym].push mtd
-		end
+		# if @methods.has_key?(entity_name.to_sym)
+		# 	@methods[entity_name.to_sym].push mtd
+		# else			
+		# 	@methods[entity_name.to_sym] = []			
+		# 	@methods[entity_name.to_sym].push mtd
+		# end
 	end
 
 	# Write Functions & Actions
