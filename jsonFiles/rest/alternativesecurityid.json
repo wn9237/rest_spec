@@ -1,0 +1,32 @@
+{
+  "name": "AlternativeSecurityId",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "type",
+      "Type": "Edm.Int32"
+    },
+    {
+      "Name": "identityProvider",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "key",
+      "Type": "Edm.Binary"
+    }
+  ],
+  "methods": [
+
+  ]
+}

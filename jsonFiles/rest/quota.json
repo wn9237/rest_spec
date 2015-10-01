@@ -1,0 +1,39 @@
+{
+  "name": "quota",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "deleted",
+      "Type": "Edm.Int64",
+      "Nullable": "false"
+    },
+    {
+      "Name": "remaining",
+      "Type": "Edm.Int64",
+      "Nullable": "false"
+    },
+    {
+      "Name": "state",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "total",
+      "Type": "Edm.Int64",
+      "Nullable": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

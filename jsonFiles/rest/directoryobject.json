@@ -1,0 +1,114 @@
+{
+  "name": "DirectoryObject",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "objectType",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "objectId",
+      "isKey": true,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "deletionTimestamp",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "checkMemberGroups",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "groupIds",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "getMemberGroups",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "securityEnabledOnly",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "getMemberObjects",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "securityEnabledOnly",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Diagnostic",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "message",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "url",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

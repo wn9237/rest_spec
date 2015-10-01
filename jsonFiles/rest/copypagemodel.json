@@ -1,0 +1,64 @@
+{
+  "name": "CopyPageModel",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "parentSection",
+      "Type": "Microsoft.Graph.CopySectionModel"
+    },
+    {
+      "Name": "parentNotebook",
+      "Type": "Microsoft.Graph.CopyNotebookModel"
+    },
+    {
+      "Name": "title",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "createdByAppId",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "links",
+      "Type": "Microsoft.Graph.PageLinks"
+    },
+    {
+      "Name": "contentUrl",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "lastModifiedTime",
+      "Type": "Edm.DateTimeOffset"
+    },
+    {
+      "Name": "id",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "self",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "createdTime",
+      "Type": "Edm.DateTimeOffset"
+    }
+  ],
+  "methods": [
+
+  ]
+}

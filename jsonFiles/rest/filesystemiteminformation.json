@@ -1,0 +1,36 @@
+{
+  "name": "FileSystemItemInformation",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "file",
+      "Type": "Microsoft.Graph.file"
+    },
+    {
+      "Name": "folder",
+      "Type": "Microsoft.Graph.folder"
+    },
+    {
+      "Name": "name",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "parentReference",
+      "Type": "Microsoft.Graph.itemReference"
+    }
+  ],
+  "methods": [
+
+  ]
+}

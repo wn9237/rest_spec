@@ -1,0 +1,28 @@
+{
+  "name": "ServicePlanInfo",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "servicePlanId",
+      "Type": "Edm.Guid"
+    },
+    {
+      "Name": "servicePlanName",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

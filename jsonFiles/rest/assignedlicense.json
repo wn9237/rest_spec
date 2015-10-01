@@ -1,0 +1,28 @@
+{
+  "name": "AssignedLicense",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "disabledPlans",
+      "Type": "Collection(Edm.Guid)",
+      "Nullable": "false"
+    },
+    {
+      "Name": "skuId",
+      "Type": "Edm.Guid"
+    }
+  ],
+  "methods": [
+
+  ]
+}

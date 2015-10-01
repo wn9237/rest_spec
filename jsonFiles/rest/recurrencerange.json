@@ -1,0 +1,36 @@
+{
+  "name": "RecurrenceRange",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "Type",
+      "Type": "Microsoft.Graph.RecurrenceRangeType"
+    },
+    {
+      "Name": "StartDate",
+      "Type": "Edm.DateTimeOffset"
+    },
+    {
+      "Name": "EndDate",
+      "Type": "Edm.DateTimeOffset"
+    },
+    {
+      "Name": "NumberOfOccurrences",
+      "Type": "Edm.Int32",
+      "Nullable": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

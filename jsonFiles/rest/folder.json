@@ -1,0 +1,24 @@
+{
+  "name": "folder",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "childCount",
+      "Type": "Edm.Int32",
+      "Nullable": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

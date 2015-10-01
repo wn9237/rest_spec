@@ -1,0 +1,34 @@
+{
+  "name": "uploadSession",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "expirationDateTime",
+      "Type": "Edm.DateTimeOffset",
+      "Nullable": "false"
+    },
+    {
+      "Name": "nextExpectedRanges",
+      "Type": "Collection(Edm.String)",
+      "Unicode": "false"
+    },
+    {
+      "Name": "uploadUrl",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

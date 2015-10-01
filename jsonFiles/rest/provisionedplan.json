@@ -1,0 +1,34 @@
+{
+  "name": "ProvisionedPlan",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "capabilityStatus",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "provisioningStatus",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "service",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

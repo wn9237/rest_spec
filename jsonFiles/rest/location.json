@@ -1,0 +1,32 @@
+{
+  "name": "Location",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "DisplayName",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "Address",
+      "Type": "Microsoft.Graph.PhysicalAddress"
+    },
+    {
+      "Name": "Coordinates",
+      "Type": "Microsoft.Graph.GeoCoordinates"
+    }
+  ],
+  "methods": [
+
+  ]
+}

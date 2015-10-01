@@ -1,0 +1,27 @@
+{
+  "name": "identitySet",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "application",
+      "Type": "Microsoft.Graph.identity"
+    },
+    {
+      "Name": "user",
+      "Type": "Microsoft.Graph.identity"
+    }
+  ],
+  "methods": [
+
+  ]
+}

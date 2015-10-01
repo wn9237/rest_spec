@@ -1,0 +1,47 @@
+{
+  "name": "VerifiedDomain",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "capabilities",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "default",
+      "Type": "Edm.Boolean"
+    },
+    {
+      "Name": "id",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "initial",
+      "Type": "Edm.Boolean"
+    },
+    {
+      "Name": "name",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "type",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "PatchContentCommand",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "action",
+      "Type": "Microsoft.Graph.PatchActionType",
+      "Nullable": "false"
+    },
+    {
+      "Name": "target",
+      "Type": "Edm.String",
+      "Nullable": "false",
+      "Unicode": "false"
+    },
+    {
+      "Name": "content",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "position",
+      "Type": "Microsoft.Graph.PatchInsertPosition"
+    }
+  ],
+  "methods": [
+
+  ]
+}

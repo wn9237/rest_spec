@@ -1,0 +1,43 @@
+{
+  "name": "ExternalReference",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "alias",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "type",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "previewPriority",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "modifiedBy",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "modifiedDate",
+      "Type": "Edm.DateTimeOffset"
+    }
+  ],
+  "methods": [
+
+  ]
+}

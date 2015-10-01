@@ -1,0 +1,14 @@
+{
+  "name": null,
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": false,
+  "allowPatch": true,  
+  "allowUpsert": true,    
+  "allowPatchCreate": true,
+  "allowDelete": true,  
+  "restPath": [],	
+  "info": null,
+  "properties": [],
+  "methods": []
+}

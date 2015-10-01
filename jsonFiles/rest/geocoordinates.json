@@ -1,0 +1,39 @@
+{
+  "name": "GeoCoordinates",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "Altitude",
+      "Type": "Edm.Double"
+    },
+    {
+      "Name": "Latitude",
+      "Type": "Edm.Double"
+    },
+    {
+      "Name": "Longitude",
+      "Type": "Edm.Double"
+    },
+    {
+      "Name": "Accuracy",
+      "Type": "Edm.Double"
+    },
+    {
+      "Name": "AltitudeAccuracy",
+      "Type": "Edm.Double"
+    }
+  ],
+  "methods": [
+
+  ]
+}

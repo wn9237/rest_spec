@@ -1,0 +1,50 @@
+{
+  "name": "RecurrencePattern",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "Type",
+      "Type": "Microsoft.Graph.RecurrencePatternType"
+    },
+    {
+      "Name": "Interval",
+      "Type": "Edm.Int32",
+      "Nullable": "false"
+    },
+    {
+      "Name": "Month",
+      "Type": "Edm.Int32",
+      "Nullable": "false"
+    },
+    {
+      "Name": "DayOfMonth",
+      "Type": "Edm.Int32",
+      "Nullable": "false"
+    },
+    {
+      "Name": "DaysOfWeek",
+      "Type": "Collection(Microsoft.Graph.DayOfWeek)"
+    },
+    {
+      "Name": "FirstDayOfWeek",
+      "Type": "Microsoft.Graph.DayOfWeek"
+    },
+    {
+      "Name": "Index",
+      "Type": "Microsoft.Graph.WeekIndex"
+    }
+  ],
+  "methods": [
+
+  ]
+}

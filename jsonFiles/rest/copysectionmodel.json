@@ -1,0 +1,61 @@
+{
+  "name": "CopySectionModel",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "isDefault",
+      "Type": "Edm.Boolean"
+    },
+    {
+      "Name": "pagesUrl",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "name",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "createdBy",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "lastModifiedBy",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "lastModifiedTime",
+      "Type": "Edm.DateTimeOffset"
+    },
+    {
+      "Name": "id",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "self",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "createdTime",
+      "Type": "Edm.DateTimeOffset"
+    }
+  ],
+  "methods": [
+
+  ]
+}

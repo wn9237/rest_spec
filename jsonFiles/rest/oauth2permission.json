@@ -1,0 +1,59 @@
+{
+  "name": "OAuth2Permission",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "adminConsentDescription",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "adminConsentDisplayName",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "id",
+      "Type": "Edm.Guid",
+      "Nullable": "false"
+    },
+    {
+      "Name": "isEnabled",
+      "Type": "Edm.Boolean",
+      "Nullable": "false"
+    },
+    {
+      "Name": "type",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "userConsentDescription",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "userConsentDisplayName",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "value",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

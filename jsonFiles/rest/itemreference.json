@@ -1,0 +1,34 @@
+{
+  "name": "itemReference",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "driveId",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "id",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "path",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

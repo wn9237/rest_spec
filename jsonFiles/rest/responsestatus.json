@@ -1,0 +1,27 @@
+{
+  "name": "ResponseStatus",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "Response",
+      "Type": "Microsoft.Graph.ResponseType"
+    },
+    {
+      "Name": "Time",
+      "Type": "Edm.DateTimeOffset"
+    }
+  ],
+  "methods": [
+
+  ]
+}

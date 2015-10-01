@@ -1,0 +1,27 @@
+{
+  "name": "PageLinks",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "oneNoteClientUrl",
+      "Type": "Microsoft.Graph.ExternalLink"
+    },
+    {
+      "Name": "oneNoteWebUrl",
+      "Type": "Microsoft.Graph.ExternalLink"
+    }
+  ],
+  "methods": [
+
+  ]
+}

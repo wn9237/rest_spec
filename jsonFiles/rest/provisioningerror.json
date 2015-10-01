@@ -1,0 +1,37 @@
+{
+  "name": "ProvisioningError",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "errorDetail",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "resolved",
+      "Type": "Edm.Boolean"
+    },
+    {
+      "Name": "service",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "timestamp",
+      "Type": "Edm.DateTimeOffset"
+    }
+  ],
+  "methods": [
+
+  ]
+}

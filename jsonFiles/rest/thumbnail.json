@@ -1,0 +1,34 @@
+{
+  "name": "thumbnail",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "height",
+      "Type": "Edm.Int32",
+      "Nullable": "false"
+    },
+    {
+      "Name": "url",
+      "Type": "Edm.String",
+      "Unicode": "false"
+    },
+    {
+      "Name": "width",
+      "Type": "Edm.Int32",
+      "Nullable": "false"
+    }
+  ],
+  "methods": [
+
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "PatternedRecurrence",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "Pattern",
+      "Type": "Microsoft.Graph.RecurrencePattern"
+    },
+    {
+      "Name": "Range",
+      "Type": "Microsoft.Graph.RecurrenceRange"
+    }
+  ],
+  "methods": [
+
+  ]
+}

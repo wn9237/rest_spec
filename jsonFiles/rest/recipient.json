@@ -1,0 +1,23 @@
+{
+  "name": "Recipient",
+  "description": null,
+  "collectionOf": null,
+  "isComplexType": true,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "Name": "EmailAddress",
+      "Type": "Microsoft.Graph.EmailAddress"
+    }
+  ],
+  "methods": [
+
+  ]
+}
