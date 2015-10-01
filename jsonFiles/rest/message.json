@@ -3,6 +3,7 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": false,
+  "isEntitySet": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,
@@ -368,7 +369,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "Move",
@@ -388,7 +390,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "CreateReply",
@@ -398,7 +401,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     },
     {
       "name": "CreateReplyAll",
@@ -408,7 +412,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     },
     {
       "name": "CreateForward",
@@ -418,7 +423,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     },
     {
       "name": "Reply",
@@ -438,7 +444,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "ReplyAll",
@@ -458,7 +465,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "Forward",
@@ -487,7 +495,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "Send",
@@ -497,7 +506,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     }
   ]
 }

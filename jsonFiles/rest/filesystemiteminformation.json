@@ -3,31 +3,63 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "file",
-      "Type": "Microsoft.Graph.file"
+      "name": "file",
+      "isKey": false,
+      "dataType": "file",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "folder",
-      "Type": "Microsoft.Graph.folder"
+      "name": "folder",
+      "isKey": false,
+      "dataType": "folder",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "name",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "name",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "parentReference",
-      "Type": "Microsoft.Graph.itemReference"
+      "name": "parentReference",
+      "isKey": false,
+      "dataType": "itemReference",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [

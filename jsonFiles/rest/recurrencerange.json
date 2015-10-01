@@ -3,31 +3,63 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "Type",
-      "Type": "Microsoft.Graph.RecurrenceRangeType"
+      "name": "Type",
+      "isKey": false,
+      "dataType": "Enumeration",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": "RecurrenceRangeType",
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "StartDate",
-      "Type": "Edm.DateTimeOffset"
+      "name": "StartDate",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "EndDate",
-      "Type": "Edm.DateTimeOffset"
+      "name": "EndDate",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "NumberOfOccurrences",
-      "Type": "Edm.Int32",
-      "Nullable": "false"
+      "name": "NumberOfOccurrences",
+      "isKey": false,
+      "dataType": "Int32",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     }
   ],
   "methods": [

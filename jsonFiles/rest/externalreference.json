@@ -3,38 +3,75 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "alias",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "alias",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "type",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "type",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "previewPriority",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "previewPriority",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "modifiedBy",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "modifiedBy",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "modifiedDate",
-      "Type": "Edm.DateTimeOffset"
+      "name": "modifiedDate",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [

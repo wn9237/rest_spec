@@ -3,26 +3,51 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "EmailAddress",
-      "Type": "Microsoft.Graph.EmailAddress"
+      "name": "EmailAddress",
+      "isKey": false,
+      "dataType": "EmailAddress",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "Status",
-      "Type": "Microsoft.Graph.ResponseStatus"
+      "name": "Status",
+      "isKey": false,
+      "dataType": "ResponseStatus",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "Type",
-      "Type": "Microsoft.Graph.AttendeeType"
+      "name": "Type",
+      "isKey": false,
+      "dataType": "Enumeration",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": "AttendeeType",
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [

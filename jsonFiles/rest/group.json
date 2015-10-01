@@ -3,6 +3,7 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": false,
+  "isEntitySet": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,
@@ -1522,7 +1523,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     },
     {
       "name": "UnsubscribeByMail",
@@ -1532,7 +1534,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     },
     {
       "name": "AddFavorite",
@@ -1542,7 +1545,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     },
     {
       "name": "RemoveFavorite",
@@ -1552,7 +1556,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     },
     {
       "name": "ResetUnseenCount",
@@ -1562,7 +1567,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": false
     },
     {
       "name": "checkMemberGroups",
@@ -1582,7 +1588,8 @@
           "isNullable": false,
           "isUnicode": false
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "getMemberGroups",
@@ -1602,7 +1609,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "getMemberObjects",
@@ -1622,7 +1630,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "isFunction": false
     }
   ]
 }

@@ -3,6 +3,7 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": false,
+  "isEntitySet": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,
@@ -164,7 +165,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "CopyToSection",
@@ -202,7 +204,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "Thumbnail",
@@ -212,7 +215,8 @@
       "description": null,
       "syntax": null,
       "httpSuccessResponseCode": null,
-      "parameters": null
+      "parameters": null,
+      "isFunction": true
     }
   ]
 }

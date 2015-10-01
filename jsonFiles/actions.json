@@ -1,0 +1,1260 @@
+{
+  "DirectoryObject": [
+    {
+      "name": "checkMemberGroups",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "groupIds",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "getMemberGroups",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "securityEnabledOnly",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "getMemberObjects",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "securityEnabledOnly",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "Application": [
+    {
+      "name": "restore",
+      "returnType": "Application",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "identifierUris",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "User": [
+    {
+      "name": "assignLicense",
+      "returnType": "User",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "removeLicenses",
+          "dataType": "Guid",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": null
+        },
+        {
+          "name": "removeLicenses",
+          "dataType": "Guid",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "SendMail",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "SaveToSentItems",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": null
+        },
+        {
+          "name": "SaveToSentItems",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "MailFolder": [
+    {
+      "name": "Copy",
+      "returnType": "MailFolder",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "DestinationId",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Move",
+      "returnType": "MailFolder",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "DestinationId",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "Message": [
+    {
+      "name": "Copy",
+      "returnType": "Message",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "DestinationId",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Move",
+      "returnType": "Message",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "DestinationId",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "CreateReply",
+      "returnType": "Message",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "CreateReplyAll",
+      "returnType": "Message",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "CreateForward",
+      "returnType": "Message",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "Reply",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "Comment",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "ReplyAll",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "Comment",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Forward",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "ToRecipients",
+          "dataType": "Recipient",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "ToRecipients",
+          "dataType": "Recipient",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Send",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    }
+  ],
+  "Event": [
+    {
+      "name": "Accept",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "SendResponse",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "SendResponse",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Decline",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "SendResponse",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "SendResponse",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "TentativelyAccept",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "SendResponse",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "SendResponse",
+          "dataType": "Boolean",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "Group": [
+    {
+      "name": "SubscribeByMail",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "UnsubscribeByMail",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "AddFavorite",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "RemoveFavorite",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "ResetUnseenCount",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    }
+  ],
+  "ConversationThread": [
+    {
+      "name": "Reply",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "Post",
+          "dataType": "Post",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "Post": [
+    {
+      "name": "Forward",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "ToRecipients",
+          "dataType": "Recipient",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": false
+        },
+        {
+          "name": "ToRecipients",
+          "dataType": "Recipient",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Reply",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "Post",
+          "dataType": "Post",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "item": [
+    {
+      "name": "copy",
+      "returnType": "item",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "name",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "name",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "createLink",
+      "returnType": "permission",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "type",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "createSession",
+      "returnType": "uploadSession",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "item",
+          "dataType": "FileSystemItemInformation",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "item",
+          "dataType": "FileSystemItemInformation",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "uploadContent",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "contentStream",
+          "dataType": "Stream",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "content",
+      "returnType": "Stream",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    },
+    {
+      "name": "delta",
+      "returnType": "item",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    },
+    {
+      "name": "search",
+      "returnType": "item",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "q",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": true
+    }
+  ],
+  "Page": [
+    {
+      "name": "PatchContent",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "commands",
+          "dataType": "PatchContentCommand",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "CopyToSection",
+      "returnType": "CopyPageModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "siteId",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteId",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteId",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Thumbnail",
+      "returnType": "Stream",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    }
+  ],
+  "Notebook": [
+    {
+      "name": "CopyNotebook",
+      "returnType": "CopyNotebookModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "Section": [
+    {
+      "name": "CopyToNotebook",
+      "returnType": "CopySectionModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "CopyToSectionGroup",
+      "returnType": "CopySectionModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Thumbnail",
+      "returnType": "Stream",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    }
+  ],
+  "PrivilegedRoleAssignment": [
+    {
+      "name": "Activate",
+      "returnType": "PrivilegedRoleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "TicketSystem",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "TicketSystem",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "TicketSystem",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "TicketSystem",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "Deactivate",
+      "returnType": "PrivilegedRoleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    }
+  ],
+  "PrivilegedRole": [
+    {
+      "name": "SelfActivate",
+      "returnType": "PrivilegedRoleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "TicketSystem",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "TicketSystem",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "TicketSystem",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "TicketSystem",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": false
+    },
+    {
+      "name": "SelfDeactivate",
+      "returnType": "PrivilegedRoleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    }
+  ],
+  "PimAlert": [
+    {
+      "name": "Dismiss",
+      "returnType": "PimAlert",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "Reactivate",
+      "returnType": "PimAlert",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "Fix",
+      "returnType": "PimAlert",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "ItemId",
+          "dataType": "Int32",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ],
+      "isFunction": false
+    }
+  ],
+  "PrivilegedSignupStatus)": [
+    {
+      "name": "SignUp",
+      "returnType": "PrivilegedSignupStatus",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "CompleteSetup",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "SkipSetup",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": false
+    },
+    {
+      "name": "IsSignedUp",
+      "returnType": "Boolean",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    },
+    {
+      "name": "CanSignUp",
+      "returnType": "Boolean",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    }
+  ],
+  "thumbnailSet": [
+    {
+      "name": "getCustomThumbnail",
+      "returnType": "thumbnail",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "size",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": true
+    }
+  ],
+  "SiteCollection)": [
+    {
+      "name": "FromUrl",
+      "returnType": "SiteMetadata",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": [
+        {
+          "name": "url",
+          "dataType": "String",
+          "description": null,
+          "isRequired": true,
+          "enumNameJs": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ],
+      "isFunction": true
+    }
+  ],
+  "PrivilegedRoleAssignment)": [
+    {
+      "name": "My",
+      "returnType": "PrivilegedRoleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    }
+  ],
+  "Notification)": [
+    {
+      "name": "NotificationTypes",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    }
+  ],
+  "NotificationRule)": [
+    {
+      "name": "EventTypes",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "description": null,
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "parameters": null,
+      "isFunction": true
+    }
+  ]
+}

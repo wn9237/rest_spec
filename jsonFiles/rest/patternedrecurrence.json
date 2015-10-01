@@ -3,22 +3,39 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "Pattern",
-      "Type": "Microsoft.Graph.RecurrencePattern"
+      "name": "Pattern",
+      "isKey": false,
+      "dataType": "RecurrencePattern",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "Range",
-      "Type": "Microsoft.Graph.RecurrenceRange"
+      "name": "Range",
+      "isKey": false,
+      "dataType": "RecurrenceRange",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [

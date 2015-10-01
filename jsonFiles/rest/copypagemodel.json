@@ -3,59 +3,135 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "parentSection",
-      "Type": "Microsoft.Graph.CopySectionModel"
+      "name": "parentSection",
+      "isKey": false,
+      "dataType": "CopySectionModel",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "parentNotebook",
-      "Type": "Microsoft.Graph.CopyNotebookModel"
+      "name": "parentNotebook",
+      "isKey": false,
+      "dataType": "CopyNotebookModel",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "title",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "title",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "createdByAppId",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "createdByAppId",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "links",
-      "Type": "Microsoft.Graph.PageLinks"
+      "name": "links",
+      "isKey": false,
+      "dataType": "PageLinks",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "contentUrl",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "contentUrl",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "lastModifiedTime",
-      "Type": "Edm.DateTimeOffset"
+      "name": "lastModifiedTime",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "id",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "id",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "self",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "self",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "createdTime",
-      "Type": "Edm.DateTimeOffset"
+      "name": "createdTime",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [

@@ -3,45 +3,99 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "Type",
-      "Type": "Microsoft.Graph.RecurrencePatternType"
+      "name": "Type",
+      "isKey": false,
+      "dataType": "Enumeration",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": "RecurrencePatternType",
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "Interval",
-      "Type": "Edm.Int32",
-      "Nullable": "false"
+      "name": "Interval",
+      "isKey": false,
+      "dataType": "Int32",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "Month",
-      "Type": "Edm.Int32",
-      "Nullable": "false"
+      "name": "Month",
+      "isKey": false,
+      "dataType": "Int32",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "DayOfMonth",
-      "Type": "Edm.Int32",
-      "Nullable": "false"
+      "name": "DayOfMonth",
+      "isKey": false,
+      "dataType": "Int32",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "DaysOfWeek",
-      "Type": "Collection(Microsoft.Graph.DayOfWeek)"
+      "name": "DaysOfWeek",
+      "isKey": false,
+      "dataType": "Enumeration",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": "DayOfWeek",
+      "isCollection": true,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "FirstDayOfWeek",
-      "Type": "Microsoft.Graph.DayOfWeek"
+      "name": "FirstDayOfWeek",
+      "isKey": false,
+      "dataType": "Enumeration",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": "DayOfWeek",
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "Index",
-      "Type": "Microsoft.Graph.WeekIndex"
+      "name": "Index",
+      "isKey": false,
+      "dataType": "Enumeration",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": "WeekIndex",
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [

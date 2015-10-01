@@ -3,56 +3,123 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "isDefault",
-      "Type": "Edm.Boolean"
+      "name": "isDefault",
+      "isKey": false,
+      "dataType": "Boolean",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "pagesUrl",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "pagesUrl",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "name",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "name",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "createdBy",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "createdBy",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "lastModifiedBy",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "lastModifiedBy",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "lastModifiedTime",
-      "Type": "Edm.DateTimeOffset"
+      "name": "lastModifiedTime",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "id",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "id",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "self",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "self",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "createdTime",
-      "Type": "Edm.DateTimeOffset"
+      "name": "createdTime",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [

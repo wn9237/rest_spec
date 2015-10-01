@@ -20,7 +20,8 @@
 	  "description": null,
 	  "syntax": null,  
 	  "httpSuccessResponseCode": null,
-	  "parameters" : null
+	  "parameters" : null,
+	  "isFunction" : null
 	},
   "parameter":	
   	{

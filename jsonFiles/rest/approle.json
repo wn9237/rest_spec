@@ -3,45 +3,87 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "allowedMemberTypes",
-      "Type": "Collection(Edm.String)",
-      "Nullable": "false",
-      "Unicode": "false"
+      "name": "allowedMemberTypes",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
     },
     {
-      "Name": "description",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "description",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "displayName",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "displayName",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "id",
-      "Type": "Edm.Guid",
-      "Nullable": "false"
+      "name": "id",
+      "isKey": false,
+      "dataType": "Guid",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "isEnabled",
-      "Type": "Edm.Boolean",
-      "Nullable": "false"
+      "name": "isEnabled",
+      "isKey": false,
+      "dataType": "Boolean",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "value",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "value",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     }
   ],
   "methods": [

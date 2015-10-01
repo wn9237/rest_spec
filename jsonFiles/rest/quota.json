@@ -3,34 +3,63 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "deleted",
-      "Type": "Edm.Int64",
-      "Nullable": "false"
+      "name": "deleted",
+      "isKey": false,
+      "dataType": "Int64",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "remaining",
-      "Type": "Edm.Int64",
-      "Nullable": "false"
+      "name": "remaining",
+      "isKey": false,
+      "dataType": "Int64",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "state",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "state",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "total",
-      "Type": "Edm.Int64",
-      "Nullable": "false"
+      "name": "total",
+      "isKey": false,
+      "dataType": "Int64",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     }
   ],
   "methods": [

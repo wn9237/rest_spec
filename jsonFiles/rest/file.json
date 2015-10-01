@@ -1,8 +1,9 @@
 {
-  "name": "file",
+  "name": "File",
   "description": null,
   "collectionOf": null,
-  "isComplexType": true,
+  "isComplexType": false,
+  "isEntitySet": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,

@@ -42,6 +42,8 @@ module SpecMaker
 	@iparam = 0
 	@iaction = 0
 	@ifunction = 0
+	@ientityset = 0
+	@icollection = 0	
 	@ibasetypemerges = 0
 
 	def self.deep_copy(o)
@@ -142,7 +144,7 @@ module SpecMaker
 		if item[:Unicode] == 'false'
 			prop[:isUnicode] = false
 		end
-		return item		
+		return prop		
 	end
 
 
@@ -160,10 +162,11 @@ module SpecMaker
 	end
 	schema = csdl[:Edmx][:DataServices][:Schema]
 
-	@logger.debug("Staring...")
+	puts "Staring..."
 
 	# Process all Enums. Load in memory.
 	schema[:EnumType].each do |item|
+		puts "--> Processing Enum #{item[:Name]}"
 		enum = {}
 		if item[:IsFlags] 
 			enum[:isExclusive] = false
@@ -190,10 +193,11 @@ module SpecMaker
 	@methods = {}
 
 	schema[:Action].each do |item|		
-		@logger.debug("-> Processing Action #{item[:Name]}"
+		puts "-> Processing Action #{item[:Name]}"
 		@iaction = @iaction + 1
 		mtd = deep_copy(@struct[:method]) 
 		mtd[:name] = item[:Name]
+		mtd[:isFunction] = false
 		if item.has_key?(:ReturnType)
 			dt = item[:ReturnType][:Type]
 			if dt.start_with?('Collection(')
@@ -249,10 +253,11 @@ module SpecMaker
 	# Process FUNCTIONS
 
 	schema[:Function].each do |item|		
-		@logger.debug("-> Processing Function #{item[:Name]}"
+		puts "-> Processing Function #{item[:Name]}"
 		@ifunction = @ifunction + 1
 		mtd = deep_copy(@struct[:method]) 
 		mtd[:name] = item[:Name]
+		mtd[:isFunction] = true
 		if item.has_key?(:ReturnType)
 			dt = item[:ReturnType][:Type]
 			if dt.start_with?('Collection(')
@@ -315,15 +320,45 @@ module SpecMaker
 	#####
 	@json_object = nil 
 	@base_types = {}
-	# For each entity, write the property node
+
+	# Process complex-types
+	schema[:ComplexType].each do |entity|
+		@ictypes = @ictypes + 1
+		@json_object = nil 
+		@json_object = deep_copy(@template) 
+
+		puts "-> Processing Complex Type #{entity[:Name]}"
+		@json_object[:name] = entity[:Name]
+		@json_object[:isComplexType] = true
+		@json_object[:allowPatch] = false
+		@json_object[:allowUpsert] = false
+		@json_object[:allowPatchCreate] = false
+		@json_object[:allowDelete] = false
+
+		# PROCESS Properties
+		if entity[:Property].is_a?(Array)
+			entity[:Property].each do |item|		
+				@json_object[:properties].push process_complextype(item)
+			end
+		elsif entity[:Property].is_a?(Hash)
+			@json_object[:properties].push process_complextype(entity[:Property])
+		end
+
+		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
+			f.write(JSON.pretty_generate @json_object)
+		end
+		
+		GC.start
+	end
+
 
 	schema[:EntityType].each do |entity|
 
-		@logger.debug("-> Processing Entity #{entity[:Name]}"		
+		puts "-> Processing Entity #{entity[:Name]}"
 		@ient = @ient + 1
 
 		if BASETYPES.include?(entity[:Name])
-			@logger.debug("----> This is a BaseType"
+			puts "----> This is a BaseType"
 			@base_types[entity[:Name].to_sym] = entity
 		end
 
@@ -333,14 +368,14 @@ module SpecMaker
 		if entity.has_key?(:BaseType)
 			@ibasetypemerges = @ibasetypemerges + 1
 			baseType = entity[:BaseType][(entity[:BaseType].rindex('.') + 1)..-1]
-			@logger.debug("----> Merging with BaseType #{baseType}"
+			puts "----> Merging with BaseType #{baseType}"
 			BASETYPE_MAPPING.each do |k, v|
 				 if k == baseType
-					@logger.debug("------> Mapping BaseType #{baseType} back to #{v}"
+					puts "------> Mapping BaseType #{baseType} back to #{v}"
 					baseType = v
 				end
 			end
-			#@logger.debug(@base_types[baseType.to_sym]
+			#puts @base_types[baseType.to_sym]
 			entity[:Key] = @base_types[baseType.to_sym][:Key]
 			entity[:Property] = merge_members(entity[:Property], 
 												@base_types[baseType.to_sym][:Property])
@@ -380,7 +415,7 @@ module SpecMaker
 
 		# Add methods and pull in methods from base type.
 		if @methods.has_key?(@json_object[:name].to_sym)
-			@logger.debug("----> Found actions or functions to merge"
+			puts "----> Found actions or functions to merge"
 			@json_object[:methods] = @methods[@json_object[:name].to_sym]
 			if !baseType.nil? && @methods.has_key?(baseType.to_sym)
 				@json_object[:methods].concat @methods[baseType.to_sym]
@@ -399,42 +434,39 @@ module SpecMaker
 		GC.start
 	end
 
-	# Process complex-types
-	# For each entity, write the property node
-	schema[:ComplexType].each do |entity|
-		@ictypes = @ictypes + 1
+	# Process EntitySets
+	schema[:EntityContainer][:EntitySet].each do |entity|
+		@ientityset = @ientityset + 1
+		@icollection = @icollection + 1
 		@json_object = nil 
 		@json_object = deep_copy(@template) 
 
-		@logger.debug("-> Processing Complex Type #{entity[:Name]}"		
+		puts "-> Processing EntitySet Type #{entity[:Name]}"
 		@json_object[:name] = entity[:Name]
-		@json_object[:isComplexType] = true
-				
-		# PROCESS Properties
-		if entity[:Property].is_a?(Array)
-			entity[:Property].each do |item|		
-				@json_object[:properties].push process_complextype(item)
-			end
-		elsif entity[:Property].is_a?(Hash)
-			@json_object[:properties].push process_complextype(entity[:Property])
-		end
+		@json_object[:isEntitySet] = true
+		@json_object[:collectionOf] = 
+			entity[:EntityType][(entity[:EntityType].rindex('.') + 1)..-1]		
+		@json_object[:allowPatch] = false
+		@json_object[:allowUpsert] = false
+		@json_object[:allowPatchCreate] = false
+		@json_object[:allowDelete] = false
 
-		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
+		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}_collection.json", "w") do |f|
 			f.write(JSON.pretty_generate @json_object)
 		end
-		
 		GC.start
 	end
 
-	@logger.debug("....Completed."
-	@logger.debug("Entities: #{@ient}"
-	@logger.debug("Base Types Merged: #{@ibasetypemerges}"
-	@logger.debug("Complex Types: #{@ictypes}"
-	@logger.debug("Properties: #{@iprop}"
-	@logger.debug("Navigation Properties: #{@inprop}"
-	@logger.debug("Actions: #{@iaction}" 
-	@logger.debug("Functions: #{@ifunction}" 
-	@logger.debug("Parameters: #{@iparam}" 
-	@logger.debug("Enums: #{@ienums}" 
-
+	puts "....Completed."
+	puts "Entities: #{@ient}"
+	puts "Base Types Merged: #{@ibasetypemerges}"
+	puts "Complex Types: #{@ictypes}"
+	puts "Properties: #{@iprop}"
+	puts "Navigation Properties: #{@inprop}"
+	puts "Actions: #{@iaction}"
+	puts "Functions: #{@ifunction}"
+	puts "Parameters: #{@iparam}"
+	puts "Enums: #{@ienums}"
+	#puts "Collections: #{@icollection}"	
+	puts "EntitySet: #{@ientityset}"	
 end

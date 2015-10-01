@@ -1,0 +1,21 @@
+{
+  "name": "servicePrincipals",
+  "description": null,
+  "collectionOf": "ServicePrincipal",
+  "isComplexType": false,
+  "isEntitySet": true,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+
+  ],
+  "methods": [
+
+  ]
+}

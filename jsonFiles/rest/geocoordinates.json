@@ -3,34 +3,75 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "Altitude",
-      "Type": "Edm.Double"
+      "name": "Altitude",
+      "isKey": false,
+      "dataType": "Double",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "Latitude",
-      "Type": "Edm.Double"
+      "name": "Latitude",
+      "isKey": false,
+      "dataType": "Double",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "Longitude",
-      "Type": "Edm.Double"
+      "name": "Longitude",
+      "isKey": false,
+      "dataType": "Double",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "Accuracy",
-      "Type": "Edm.Double"
+      "name": "Accuracy",
+      "isKey": false,
+      "dataType": "Double",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
-      "Name": "AltitudeAccuracy",
-      "Type": "Edm.Double"
+      "name": "AltitudeAccuracy",
+      "isKey": false,
+      "dataType": "Double",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [

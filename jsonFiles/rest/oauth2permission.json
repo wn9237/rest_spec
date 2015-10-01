@@ -3,54 +3,111 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": true,
-  "allowPatch": true,
-  "allowUpsert": true,
-  "allowPatchCreate": true,
-  "allowDelete": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
   "restPath": [
 
   ],
   "info": null,
   "properties": [
     {
-      "Name": "adminConsentDescription",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "adminConsentDescription",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "adminConsentDisplayName",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "adminConsentDisplayName",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "id",
-      "Type": "Edm.Guid",
-      "Nullable": "false"
+      "name": "id",
+      "isKey": false,
+      "dataType": "Guid",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "isEnabled",
-      "Type": "Edm.Boolean",
-      "Nullable": "false"
+      "name": "isEnabled",
+      "isKey": false,
+      "dataType": "Boolean",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
     },
     {
-      "Name": "type",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "type",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "userConsentDescription",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "userConsentDescription",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "userConsentDisplayName",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "userConsentDisplayName",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     },
     {
-      "Name": "value",
-      "Type": "Edm.String",
-      "Unicode": "false"
+      "name": "value",
+      "isKey": false,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
     }
   ],
   "methods": [

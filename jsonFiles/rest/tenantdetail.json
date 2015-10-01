@@ -3,6 +3,7 @@
   "description": null,
   "collectionOf": null,
   "isComplexType": false,
+  "isEntitySet": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,
@@ -2396,7 +2397,8 @@
           "isNullable": false,
           "isUnicode": false
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "getMemberGroups",
@@ -2416,7 +2418,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "isFunction": false
     },
     {
       "name": "getMemberObjects",
@@ -2436,7 +2439,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "isFunction": false
     }
   ]
 }

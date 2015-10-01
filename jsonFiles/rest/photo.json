@@ -1,8 +1,9 @@
 {
-  "name": "photo",
+  "name": "Photo",
   "description": null,
   "collectionOf": null,
-  "isComplexType": true,
+  "isComplexType": false,
+  "isEntitySet": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,
@@ -13,9 +14,40 @@
   "info": null,
   "properties": [
     {
-      "Name": "takenDateTime",
-      "Type": "Edm.DateTimeOffset",
-      "Nullable": "false"
+      "name": "Width",
+      "isKey": false,
+      "dataType": "Int32",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Height",
+      "isKey": false,
+      "dataType": "Int32",
+      "description": null,
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Id",
+      "isKey": true,
+      "dataType": "String",
+      "description": null,
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
     }
   ],
   "methods": [
