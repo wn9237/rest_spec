@@ -106,15 +106,21 @@ module SpecMaker
 		end
 
 		# If the type is of	an object, then provide markdown link.
+		puts "comparing #{prop[:dataType] }"
 		if SIMPLETYPES.include? prop[:dataType] 	
 			dataTypePlusLink = prop[:dataType] 	
+			if prop[:isCollection] 
+				dataTypePlusLink = dataTypePlusLink + "collection"
+			end			
+			puts "simple"
 		else			
+			puts "complex"
 			dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
+			if prop[:isCollection] 
+				dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].chomp('[]').downcase + ".md)"
+			end
 		end
 
-		if prop[:isCollection] 
-			dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].chomp('[]').downcase + ".md)"
-		end
 			
 		@mdlines.push (PIPE + prop[:name] + PIPE + dataTypePlusLink + PIPE + finalDesc + PIPE ) + NEWLINE
 	end
