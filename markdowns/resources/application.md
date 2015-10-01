@@ -13,9 +13,9 @@
 |errorUrl|String||
 |groupMembershipClaims|String||
 |homepage|String||
-|identifierUris|Stringcollection||
+|identifierUris|String collection||
 |keyCredentials|[KeyCredential](keycredential.md)||
-|knownClientApplications|Guidcollection||
+|knownClientApplications|Guid collection||
 |logoutUrl|String||
 |mainLogo|Stream||
 |oauth2AllowImplicitFlow|Boolean||
@@ -26,7 +26,7 @@
 |objectType|String||
 |passwordCredentials|[PasswordCredential](passwordcredential.md)||
 |publicClient|Boolean||
-|replyUrls|Stringcollection||
+|replyUrls|String collection||
 |requiredResourceAccess|[RequiredResourceAccess](requiredresourceaccess.md)||
 |samlMetadataUrl|String||
 
