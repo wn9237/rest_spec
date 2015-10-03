@@ -1,0 +1,106 @@
+{
+  "name": "Calendar",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "Name",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "ChangeKey",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "Color",
+      "isKey": false,
+      "dataType": "Enumeration",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null,
+      "enumNameJs": "CalendarColor"
+    },
+    {
+      "name": "Id",
+      "isKey": true,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "CalendarView",
+      "isKey": false,
+      "dataType": "Event",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Events",
+      "isKey": false,
+      "dataType": "Event",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Extensions",
+      "isKey": false,
+      "dataType": "Extension",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "isNullable": true,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+
+  ]
+}

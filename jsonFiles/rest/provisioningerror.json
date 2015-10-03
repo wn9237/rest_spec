@@ -1,0 +1,69 @@
+{
+  "name": "ProvisioningError",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "errorDetail",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "resolved",
+      "isKey": false,
+      "dataType": "Boolean",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "service",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "timestamp",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "OutlookItem",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "ChangeKey",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "Categories",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "DateTimeCreated",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "DateTimeLastModified",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Id",
+      "isKey": true,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    }
+  ],
+  "methods": [
+
+  ]
+}

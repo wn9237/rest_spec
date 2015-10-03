@@ -6,6 +6,7 @@ require 'logger'
 
 module SpecMaker
 	require_relative 'utils'
+	require_relative 'graphrulescheck'
 	# Read and load the CSDL file
 	f=File.read(CSDL_LOCATION + 'alpha_graph.xml')
 
@@ -20,7 +21,8 @@ module SpecMaker
 
 	# Process all Enums. Load in memory.
 	schema[:EnumType].each do |item|
-		puts "--> Processing Enum #{item[:Name]}"
+		puts "-> Processing Enum #{item[:Name]}"
+		name_check(item[:Name])
 		enum = {}
 		if item[:IsFlags] 
 			enum[:isExclusive] = false
@@ -157,11 +159,12 @@ module SpecMaker
 			@json_object[:methods] = @methods[@json_object[:name].to_sym]
 			if !baseType.nil? && @methods.has_key?(baseType.to_sym)
 				@json_object[:methods].concat @methods[baseType.to_sym]
+				create_basetype_examplefiles(@methods[baseType.to_sym], @json_object[:name])
 			end
-			
 		else
 			if !baseType.nil? && @methods.has_key?(baseType.to_sym)
 				@json_object[:methods] = @methods[baseType.to_sym]
+				create_basetype_examplefiles(@methods[baseType.to_sym], @json_object[:name])
 			end
 		end
 
@@ -203,6 +206,7 @@ module SpecMaker
 	puts "Navigation Properties: #{@inprop}"
 	puts "Actions: #{@iaction}"
 	puts "Functions: #{@ifunction}"
+	puts "--> Example files written: #{@iexampleFilesWrittem}"
 	puts "Parameters: #{@iparam}"
 	puts "Enums: #{@ienums}"
 	#puts "Collections: #{@icollection}"	

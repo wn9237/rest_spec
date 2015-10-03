@@ -9,6 +9,7 @@ module SpecMaker
 	ENUMS = JSON_BASE_FOLDER + 'settings/restenums.json'
 	CSDL_LOCATION = "../data/"
 	
+	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"
 	BASETYPES = %w[Entity DirectoryObject Attachment Message OutlookItem]
 	BASETYPE_MAPPING = {
 		"Extension" => "Entity",
@@ -49,10 +50,45 @@ module SpecMaker
 	@enum_objects = {}
 	@json_object = nil 
 	@base_types = {}
+	@iexampleFilesWrittem = 0
+
+	###
+	# Create object_method-name.md file in lowercase.
+	#
+	#	
+	def self.create_examplefile(objectName=nil, methodName=nil)
+		File.open(JSON_EXAMPLE_FOLDER + (objectName + '_' + methodName).downcase + ".md", "w") do |f|
+			f.write('##### Example')
+			@iexampleFilesWrittem = @iexampleFilesWrittem + 1
+		end
+	end
+
+	###
+	# Create example files from array that contains many methods (1 per method)
+	#
+	#	
+	def self.create_basetype_examplefiles(methods=[], objectName=nil)
+		methods.each do |item|
+			create_examplefile(objectName, item[:name])
+		end
+
+	end
 
 
+	###
+	# To prevent shallow copy errors, need to get a new object each time.
+	# 
+	#	
 	def self.deep_copy(o)
 	  Marshal.load(Marshal.dump(o))
+	end
+
+	###
+	# Extract only the type name. Example: Collection(Microsoft.Graph.Recipient) to Recipient
+	# and Microsoft.Graph.Recipient to Recipient
+	#
+	def self.get_type(t=nil)
+		return t[(t.rindex('.') + 1)..-1].chomp(')')
 	end
 
 	def self.merge_members(current=nil, base=nil)
@@ -83,12 +119,8 @@ module SpecMaker
 	def self.process_property (item=nil)
 		prop = deep_copy(@struct[:property])
 		prop[:name] = item[:Name]
-		if item[:Type].start_with?('Collection(')
-			prop[:isCollection] = true 
-			dt = item[:Type][(item[:Type].rindex('.') + 1)..-1].chomp(')')
-		else
-			dt = item[:Type][(item[:Type].rindex('.') + 1)..-1]
-		end
+		dt = get_type(item[:Type])
+		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
 		prop[:dataType] = dt
 		if @enum_objects.has_key?(dt.to_sym) 
 			prop[:enumNameJs] = dt 
@@ -111,12 +143,8 @@ module SpecMaker
 		prop = deep_copy(@struct[:property])
 		prop[:name] = item[:Name]
 		prop[:isRelationship] = true
-		if item[:Type].start_with?('Collection(')
-			prop[:isCollection] = true 			
-			dt = item[:Type][(item[:Type].rindex('.') + 1)..-1].chomp(')')
-		else
-			dt = item[:Type][(item[:Type].rindex('.') + 1)..-1]
-		end
+		dt = get_type(item[:Type])
+		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
 		prop[:dataType] = dt
 		prop[:isReadOnly] = true
 		if item[:Nullable] == 'false'
@@ -132,12 +160,8 @@ module SpecMaker
 	def self.process_complextype (item=nil)
 		prop = deep_copy(@struct[:property])
 		prop[:name] = item[:Name]
-		if item[:Type].start_with?('Collection(')
-			prop[:isCollection] = true 
-			dt = item[:Type][(item[:Type].rindex('.') + 1)..-1].chomp(')')
-		else
-			dt = item[:Type][(item[:Type].rindex('.') + 1)..-1]
-		end
+		dt = get_type(item[:Type])
+		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
 		prop[:dataType] = dt
 		if @enum_objects.has_key?(dt.to_sym) 
 			prop[:enumNameJs] = dt 
@@ -155,7 +179,7 @@ module SpecMaker
 	# Process methods
 	def self.process_method (item=nil, type=nil)
 		mtd = deep_copy(@struct[:method]) 
-		mtd[:name] = item[:Name]
+		mtd[:name] = item[:Name].chomp(')')
 		if type == 'function'
 			mtd[:isFunction] = true
 		else
@@ -163,13 +187,9 @@ module SpecMaker
 		end
 
 		if item.has_key?(:ReturnType)
-			dt = item[:ReturnType][:Type]
-			if dt.start_with?('Collection(')
-				mtd[:isReturnTypeCollection] = true
-				dt = dt[(dt.rindex('.') + 1)..-1].chomp(')')
-			else
-				dt = dt[(dt.rindex('.') + 1)..-1]
-			end
+			puts item[:ReturnType]
+			dt = get_type(item[:ReturnType][:Type])
+			mtd[:isReturnTypeCollection] = true if item[:ReturnType][:Type].start_with?('Collection(')
 			mtd[:returnType] = dt
 			mtd[:isReturnNullable] = false if item[:ReturnType][:Nullable] == 'false'
 		end
@@ -181,11 +201,8 @@ module SpecMaker
 				next if i == 0
 				@iparam = @iparam + 1
 				parm[:name] = p[:Name]
-				if p[:Type].start_with?('Collection(')
-					dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1].chomp(')')
-				else
-					dtp = p[:Type][(p[:Type].rindex('.') + 1)..-1]
-				end
+
+				dtp = get_type(p[:Type])
 				parm[:dataType] = dtp
 				if p[:Nullable] == 'false'
 					parm[:isNullable] = false
@@ -204,13 +221,16 @@ module SpecMaker
 		end
 
 		entity_name = enamef[(enamef.rindex('.') + 1)..-1]		
-
+		entity_name = entity_name.chomp(')')
 		if @methods.has_key?(entity_name.to_sym)
 			@methods[entity_name.to_sym].push mtd
 		else			
 			@methods[entity_name.to_sym] = []			
 			@methods[entity_name.to_sym].push mtd
 		end
+
+		create_examplefile(entity_name, mtd[:name])				
+
 		return 
 	end
 end

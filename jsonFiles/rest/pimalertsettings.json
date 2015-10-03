@@ -1,0 +1,45 @@
+{
+  "name": "PimAlertSettings",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "AlertId",
+      "isKey": true,
+      "dataType": "Guid",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "AlertSettings",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    }
+  ],
+  "methods": [
+
+  ]
+}

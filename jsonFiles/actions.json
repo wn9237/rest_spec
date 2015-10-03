@@ -2,6 +2,8 @@
   "DirectoryObject": [
     {
       "name": "checkMemberGroups",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
@@ -23,6 +25,8 @@
     },
     {
       "name": "getMemberGroups",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
@@ -44,6 +48,8 @@
     },
     {
       "name": "getMemberObjects",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
@@ -67,6 +73,8 @@
   "Application": [
     {
       "name": "restore",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Application",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -90,6 +98,8 @@
   "User": [
     {
       "name": "assignLicense",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "User",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -120,6 +130,8 @@
     },
     {
       "name": "SendMail",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -152,6 +164,8 @@
   "MailFolder": [
     {
       "name": "Copy",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "MailFolder",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -173,6 +187,8 @@
     },
     {
       "name": "Move",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "MailFolder",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -196,6 +212,8 @@
   "Message": [
     {
       "name": "Copy",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -217,6 +235,8 @@
     },
     {
       "name": "Move",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -238,6 +258,8 @@
     },
     {
       "name": "CreateReply",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -249,6 +271,8 @@
     },
     {
       "name": "CreateReplyAll",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -260,6 +284,8 @@
     },
     {
       "name": "CreateForward",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -271,6 +297,8 @@
     },
     {
       "name": "Reply",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -292,6 +320,8 @@
     },
     {
       "name": "ReplyAll",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -313,6 +343,8 @@
     },
     {
       "name": "Forward",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -343,6 +375,8 @@
     },
     {
       "name": "Send",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -356,6 +390,8 @@
   "Event": [
     {
       "name": "Accept",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -386,6 +422,8 @@
     },
     {
       "name": "Decline",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -416,6 +454,8 @@
     },
     {
       "name": "TentativelyAccept",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -448,6 +488,8 @@
   "Group": [
     {
       "name": "SubscribeByMail",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -459,6 +501,8 @@
     },
     {
       "name": "UnsubscribeByMail",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -470,6 +514,8 @@
     },
     {
       "name": "AddFavorite",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -481,6 +527,8 @@
     },
     {
       "name": "RemoveFavorite",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -492,6 +540,8 @@
     },
     {
       "name": "ResetUnseenCount",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -505,6 +555,8 @@
   "ConversationThread": [
     {
       "name": "Reply",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -528,6 +580,8 @@
   "Post": [
     {
       "name": "Forward",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -558,6 +612,8 @@
     },
     {
       "name": "Reply",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -581,6 +637,8 @@
   "item": [
     {
       "name": "copy",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -611,6 +669,8 @@
     },
     {
       "name": "createLink",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "permission",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -632,6 +692,8 @@
     },
     {
       "name": "createSession",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "uploadSession",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -662,6 +724,8 @@
     },
     {
       "name": "uploadContent",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -683,6 +747,8 @@
     },
     {
       "name": "content",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Stream",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -694,6 +760,8 @@
     },
     {
       "name": "delta",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
@@ -705,6 +773,8 @@
     },
     {
       "name": "search",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
@@ -728,6 +798,8 @@
   "Page": [
     {
       "name": "PatchContent",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -749,6 +821,8 @@
     },
     {
       "name": "CopyToSection",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "CopyPageModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -788,6 +862,8 @@
     },
     {
       "name": "Thumbnail",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Stream",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -801,6 +877,8 @@
   "Notebook": [
     {
       "name": "CopyNotebook",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "CopyNotebookModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -842,6 +920,8 @@
   "Section": [
     {
       "name": "CopyToNotebook",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "CopySectionModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -890,6 +970,8 @@
     },
     {
       "name": "CopyToSectionGroup",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "CopySectionModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -938,6 +1020,8 @@
     },
     {
       "name": "Thumbnail",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Stream",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -951,6 +1035,8 @@
   "PrivilegedRoleAssignment": [
     {
       "name": "Activate",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -999,6 +1085,8 @@
     },
     {
       "name": "Deactivate",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1007,11 +1095,26 @@
       "httpSuccessResponseCode": null,
       "isFunction": false,
       "parameters": null
+    },
+    {
+      "name": "My",
+      "displayName": "",
+      "prerequisites": "",
+      "returnType": "PrivilegedRoleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": "",
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "isFunction": true,
+      "parameters": null
     }
   ],
   "PrivilegedRole": [
     {
       "name": "SelfActivate",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1060,6 +1163,8 @@
     },
     {
       "name": "SelfDeactivate",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1073,6 +1178,8 @@
   "PimAlert": [
     {
       "name": "Dismiss",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1084,6 +1191,8 @@
     },
     {
       "name": "Reactivate",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1095,6 +1204,8 @@
     },
     {
       "name": "Fix",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1115,9 +1226,11 @@
       ]
     }
   ],
-  "PrivilegedSignupStatus)": [
+  "PrivilegedSignupStatus": [
     {
       "name": "SignUp",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "PrivilegedSignupStatus",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1129,6 +1242,8 @@
     },
     {
       "name": "CompleteSetup",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1140,6 +1255,8 @@
     },
     {
       "name": "SkipSetup",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1151,6 +1268,8 @@
     },
     {
       "name": "IsSignedUp",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Boolean",
       "isReturnNullable": false,
       "isReturnTypeCollection": false,
@@ -1162,6 +1281,8 @@
     },
     {
       "name": "CanSignUp",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Boolean",
       "isReturnNullable": false,
       "isReturnTypeCollection": false,
@@ -1175,6 +1296,8 @@
   "thumbnailSet": [
     {
       "name": "getCustomThumbnail",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "thumbnail",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1195,9 +1318,11 @@
       ]
     }
   ],
-  "SiteCollection)": [
+  "SiteCollection": [
     {
       "name": "FromUrl",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "SiteMetadata",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -1218,22 +1343,11 @@
       ]
     }
   ],
-  "PrivilegedRoleAssignment)": [
-    {
-      "name": "My",
-      "returnType": "PrivilegedRoleAssignment",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
-      "isFunction": true,
-      "parameters": null
-    }
-  ],
-  "Notification)": [
+  "Notification": [
     {
       "name": "NotificationTypes",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
@@ -1244,9 +1358,11 @@
       "parameters": null
     }
   ],
-  "NotificationRule)": [
+  "NotificationRule": [
     {
       "name": "EventTypes",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,

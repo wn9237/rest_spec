@@ -1,0 +1,57 @@
+{
+  "name": "Photo",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "Width",
+      "isKey": false,
+      "dataType": "Int32",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Height",
+      "isKey": false,
+      "dataType": "Int32",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Id",
+      "isKey": true,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    }
+  ],
+  "methods": [
+
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "SiteMetadata",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "siteCollectionId",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "siteId",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    }
+  ],
+  "methods": [
+
+  ]
+}

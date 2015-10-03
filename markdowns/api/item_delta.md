@@ -16,6 +16,5 @@ Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `` response code and [item](../resources/item.md) object in the response body.
-## Example
 ### HTTP request
 ### Response

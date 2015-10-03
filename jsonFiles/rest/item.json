@@ -2,6 +2,7 @@
   "name": "item",
   "description": "",
   "collectionOf": null,
+  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -269,6 +270,8 @@
   "methods": [
     {
       "name": "copy",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -299,6 +302,8 @@
     },
     {
       "name": "createLink",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "permission",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -320,6 +325,8 @@
     },
     {
       "name": "createSession",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "uploadSession",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -350,6 +357,8 @@
     },
     {
       "name": "uploadContent",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -371,6 +380,8 @@
     },
     {
       "name": "content",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "Stream",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -382,6 +393,8 @@
     },
     {
       "name": "delta",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
@@ -393,6 +406,8 @@
     },
     {
       "name": "search",
+      "displayName": "",
+      "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,

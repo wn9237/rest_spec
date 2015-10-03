@@ -1,0 +1,57 @@
+{
+  "name": "sharingLink",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": true,
+  "isEntitySet": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "application",
+      "isKey": false,
+      "dataType": "identity",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "type",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    },
+    {
+      "name": "webUrl",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": true,
+      "isUnicode": false
+    }
+  ],
+  "methods": [
+
+  ]
+}

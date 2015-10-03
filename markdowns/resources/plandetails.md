@@ -1,0 +1,27 @@
+# PlanDetails
+
+
+
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|category0Description|String||
+|category1Description|String||
+|category2Description|String||
+|category3Description|String||
+|category4Description|String||
+|category5Description|String||
+|id|String| Read-only.|
+|sharedWith|[UserIdCollection](useridcollection.md)||
+|version|String||
+
+## Relationships
+None
+
+
+## Tasks
+
+| Task		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get metadata](../api/plandetails_get.md) | PlanDetails |Read properties and relationships of planDetails object.|
+|[Update](../api/plandetails_update.md) | PlanDetails	|Update planDetails object. |

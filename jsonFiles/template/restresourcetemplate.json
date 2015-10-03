@@ -2,6 +2,7 @@
   "name": null,
   "description": "",
   "collectionOf": null,
+  "allowPostToCollection": null,  
   "isComplexType": false,
   "isEntitySet" : false,
   "allowPatch": true,  

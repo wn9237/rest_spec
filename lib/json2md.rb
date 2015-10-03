@@ -16,6 +16,8 @@ module SpecMaker
 	MARKDOWN_RESOURCE_FOLDER = "../markdowns/resources/"
 	MARKDOWN_API_FOLDER = "../markdowns/api/"
 	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
+	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"	
+
 	HEADER1 = '# '
 	HEADER2 = '## '
 	HEADER3 = '### '
@@ -106,15 +108,12 @@ module SpecMaker
 		end
 
 		# If the type is of	an object, then provide markdown link.
-		puts "comparing #{prop[:dataType] }"
 		if SIMPLETYPES.include? prop[:dataType] 	
 			dataTypePlusLink = prop[:dataType] 	
 			if prop[:isCollection] 
 				dataTypePlusLink = dataTypePlusLink + " collection"
 			end			
-			puts "simple"
 		else			
-			puts "complex"
 			dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
 			if prop[:isCollection] 
 				dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].chomp('[]').downcase + ".md)"
@@ -138,8 +137,6 @@ module SpecMaker
 		if SIMPLETYPES.include? method[:returnType]
 			dataTypePlusLink = method[:returnType]
 		else	
-			puts " m- " + method[:name]
-			puts method[:returnType]		
 			dataTypePlusLink = "[" + method[:returnType] + "](" + method[:returnType].downcase + ".md)"
 		end
 		dataTypePlusLink = (dataTypePlusLink == 'void') ? 'None' : dataTypePlusLink
@@ -228,6 +225,7 @@ module SpecMaker
 		else			
 			dataTypePlusLink = "[" + method[:returnType] + "](../resources/" + method[:returnType].downcase + ".md)"
 		end
+
 		if method[:returnType] == 'void'
 			actionLines.push "If successful, this method returns a `#{method[:httpSuccessResponse]}` response code. It does not return anything in the response body."  + NEWLINE
 		else
@@ -235,9 +233,19 @@ module SpecMaker
 		end
 
 		#Example
-		actionLines.push HEADER2 + "Example" + NEWLINE
+		#actionLines.push HEADER2 + "Example" + NEWLINE
+		puts "-----> #{JSON_EXAMPLE_FOLDER + (@resource + '_' + method[:name]).downcase}"
+
+		#begin
+			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource + '_' + method[:name]).downcase + ".md"))
+			actionLines.push
+		# rescue => err
+		# 	@logger.error("....Example File does not exist for: #{@resource}, ")
+		# end
+
 		actionLines.push HEADER3 + "HTTP request" + NEWLINE
 		actionLines.push HEADER3 + "Response" + NEWLINE
+
 
 		# Write the output file. 
 		fileName = "#{@jsonHash[:name].downcase}_#{method[:name].downcase}.md"

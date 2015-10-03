@@ -1,0 +1,117 @@
+{
+  "name": "Conversation",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "Topic",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "HasAttachments",
+      "isKey": false,
+      "dataType": "Boolean",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "DateTimeLastDelivered",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "UniqueSenders",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "Preview",
+      "isKey": false,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "Id",
+      "isKey": true,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "Extensions",
+      "isKey": false,
+      "dataType": "Extension",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Threads",
+      "isKey": false,
+      "dataType": "ConversationThread",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "isNullable": true,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "PrivilegedRoleAssignments",
+  "description": "",
+  "collectionOf": "PrivilegedRoleAssignment",
+  "allowPostToCollection": null,
+  "isComplexType": false,
+  "isEntitySet": true,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+
+  ],
+  "methods": [
+
+  ]
+}

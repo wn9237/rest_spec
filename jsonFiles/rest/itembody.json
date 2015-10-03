@@ -2,6 +2,7 @@
   "name": "ItemBody",
   "description": "",
   "collectionOf": null,
+  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
