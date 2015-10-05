@@ -139,6 +139,16 @@ module SpecMaker
 		end
 	end
 
+	def self.get_postmessage (objectName=nil)
+		fullpath = JSON_SOURCE_FOLDER + objectName.downcase + '.json'
+		if File.file?(fullpath)
+			readObject = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			# puts "#{readObject}"
+			# puts "returning #{readObject[:createDescription]}"
+			return readObject[:createDescription]
+		end
+		return ""
+	end
 
 	def self.get_syntax(methodName=nil, restpath=[])
 		case methodName
@@ -397,8 +407,11 @@ module SpecMaker
 
 		# Header and description	
 		patchMethodLines.push HEADER1 + "Update #{@jsonHash[:name]}"  + TWONEWLINES
-		patchMethodLines.push "Update the properties of #{@jsonHash[:name].downcase} object."  + NEWLINE
-
+		if @jsonHash[:restPath].empty?
+			patchMethodLines.push "Update the properties of #{@jsonHash[:name].downcase} object."  + NEWLINE
+		else
+			patchMethodLines.push "#{updateDescription}"  + NEWLINE			
+		end
 		# HTTP request
 		patchMethodLines.push HEADER4 + "HTTP request" + NEWLINE
 		patchMethodLines.push '```http' + NEWLINE
@@ -595,7 +608,12 @@ module SpecMaker
 						mtd[:name] = 'auto_post'
 						mtd[:displayName] = postName
 						mtd[:returnType] = prop[:dataType]
-						mtd[:description] = "Use this API to create a new #{useName}."
+						postDescription = get_postmessage(prop[:dataType])
+						if postDescription.empty?
+							mtd[:description] = "Use this API to create a new #{useName}."
+						else
+							mtd[:description] = postDescription
+						end
 						mtd[:parameters] = nil					
 						mtd[:httpSuccessCode] = '201'
 					    crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md")
@@ -622,7 +640,12 @@ module SpecMaker
 				mtd = deep_copy(@struct[:method]) 
 				mtd[:displayName] = 'Delete'
 				mtd[:name] = 'auto_delete'
-				mtd[:description] = "Delete #{@jsonHash[:name]}."
+				
+				if @jsonHash[:deleteDescription].empty?
+					mtd[:description] = mtd[:description] = "Delete #{@jsonHash[:name]}."
+				else
+					mtd[:description] = @jsonHash[:deleteDescription]
+				end				
 				mtd[:httpSuccessCode] = '204'			
 				mtd[:parameters] = nil			
 				crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_delete.md")

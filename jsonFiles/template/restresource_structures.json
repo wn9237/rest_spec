@@ -21,6 +21,9 @@
 	  "propertyNotes" : "",
 	  "relationshipNotes" : "",  
 	  "methodNotes": "",
+	  "createDescription": "",
+	  "updateDescription": "",
+	  "deleteDescription": "",
 	  "restPath": [],		
 	  "properties": [],
 	  "methods": []

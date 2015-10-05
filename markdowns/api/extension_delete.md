@@ -1,6 +1,6 @@
 # Delete
 
-Delete Extension.
+CCCCCCCCCCCCCCCCCCC
 #### HTTP request
 ```http
 to be completed....

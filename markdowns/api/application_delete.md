@@ -1,6 +1,6 @@
 # Delete
 
-Delete Application.
+I want this message to show up when i delete a  resource
 #### HTTP request
 ```http
 to be completed....

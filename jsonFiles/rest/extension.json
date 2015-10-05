@@ -12,6 +12,9 @@
   "propertyNotes": "",
   "relationshipNotes": "",
   "methodNotes": "",
+  "createDescription": "AAAAAAAAAAAAAAAAAAA",
+  "updateDescription": "BBBBBBBBBBBBBBBBBBB",
+  "deleteDescription": "CCCCCCCCCCCCCCCCCCC",
   "restPath": [
 
   ],
