@@ -8,10 +8,13 @@
   "allowUpsert": true,
   "allowPatchCreate": true,
   "allowDelete": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
   "restPath": [
 
   ],
-  "info": null,
   "properties": [
     {
       "name": "UserId",
@@ -79,8 +82,6 @@
       "isUnicode": false
     }
   ],
-  "propertyNotes": "",
-  "relationshipNotes": "",
   "methods": [
     {
       "name": "Activate",
@@ -180,6 +181,5 @@
       ],
       "httpSuccessResponse": "200"
     }
-  ],
-  "methodNotes": ""
+  ]
 }

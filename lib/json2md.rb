@@ -524,7 +524,7 @@ module SpecMaker
 				end
 			end
 			if !@jsonHash[:propertyNotes].empty?
-				@mdlines.push "**Note:** #{@jsonHash[:propertyNotes]}" + NEWLINE
+				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:propertyNotes]}" + NEWLINE
 			end
 		else
 			@mdlines.push "None"  + NEWLINE
@@ -544,7 +544,7 @@ module SpecMaker
 					end
 				end
 				if !@jsonHash[:relationshipNotes].empty?
-					@mdlines.push "**Note:** #{@jsonHash[:relationshipNotes]}" + NEWLINE
+					@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:relationshipNotes]}" + NEWLINE
 				end			
 			else
 				@mdlines.push "None"  + TWONEWLINES
@@ -638,7 +638,7 @@ module SpecMaker
 			end	
 
 			if !@jsonHash[:methodNotes].empty?
-				@mdlines.push "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
+				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
 			end	
 		end	
 		# Write the output file. 

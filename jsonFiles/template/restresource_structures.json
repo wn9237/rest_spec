@@ -17,13 +17,13 @@
 	  "allowUpsert": true,    
 	  "allowPatchCreate": true,
 	  "allowDelete": true,  
-	  "restPath": [],		
 	  "info": null,
-	  "properties": [],
 	  "propertyNotes" : "",
 	  "relationshipNotes" : "",  
-	  "methods": [],
-	  "methodNotes": ""
+	  "methodNotes": "",
+	  "restPath": [],		
+	  "properties": [],
+	  "methods": []
 	},	
   "property": {
 	  "name": null,

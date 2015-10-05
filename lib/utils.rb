@@ -239,7 +239,7 @@ module SpecMaker
 		else
 			mtd[:isFunction] = false
 		end
-		mtd[:httpSuccessResponse] = '200'
+		mtd[:httpSuccessCode] = '200'
 		if item.has_key?(:ReturnType)
 			dt = get_type(item[:ReturnType][:Type])
 			mtd[:isReturnTypeCollection] = true if item[:ReturnType][:Type].start_with?('Collection(')

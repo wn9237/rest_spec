@@ -8,10 +8,13 @@
   "allowUpsert": true,
   "allowPatchCreate": true,
   "allowDelete": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
   "restPath": [
 
   ],
-  "info": null,
   "properties": [
     {
       "name": "capabilityStatus",
@@ -105,10 +108,7 @@
       "isUnicode": false
     }
   ],
-  "propertyNotes": "",
-  "relationshipNotes": "",
   "methods": [
 
-  ],
-  "methodNotes": ""
+  ]
 }

@@ -8,10 +8,13 @@
   "allowUpsert": true,
   "allowPatchCreate": true,
   "allowDelete": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
   "restPath": [
 
   ],
-  "info": null,
   "properties": [
     {
       "name": "Id",
@@ -79,8 +82,6 @@
       "isUnicode": null
     }
   ],
-  "propertyNotes": "",
-  "relationshipNotes": "",
   "methods": [
     {
       "name": "SelfActivate",
@@ -159,6 +160,5 @@
       ],
       "httpSuccessResponse": "200"
     }
-  ],
-  "methodNotes": ""
+  ]
 }

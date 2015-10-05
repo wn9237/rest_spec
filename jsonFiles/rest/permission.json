@@ -8,10 +8,13 @@
   "allowUpsert": true,
   "allowPatchCreate": true,
   "allowDelete": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
   "restPath": [
 
   ],
-  "info": null,
   "properties": [
     {
       "name": "id",
@@ -53,10 +56,7 @@
       "isUnicode": null
     }
   ],
-  "propertyNotes": "",
-  "relationshipNotes": "",
   "methods": [
 
-  ],
-  "methodNotes": ""
+  ]
 }

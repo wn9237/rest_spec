@@ -8,17 +8,17 @@
   "allowUpsert": false,
   "allowPatchCreate": false,
   "allowDelete": false,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
   "restPath": [
 
   ],
-  "info": null,
   "properties": [
 
   ],
-  "propertyNotes": "",
-  "relationshipNotes": "",
   "methods": [
 
-  ],
-  "methodNotes": ""
+  ]
 }

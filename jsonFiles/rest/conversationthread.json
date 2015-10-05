@@ -8,10 +8,13 @@
   "allowUpsert": true,
   "allowPatchCreate": true,
   "allowDelete": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
   "restPath": [
 
   ],
-  "info": null,
   "properties": [
     {
       "name": "ToRecipients",
@@ -157,8 +160,6 @@
       "isUnicode": null
     }
   ],
-  "propertyNotes": "",
-  "relationshipNotes": "",
   "methods": [
     {
       "name": "Reply",
@@ -189,6 +190,5 @@
       ],
       "httpSuccessResponse": "200"
     }
-  ],
-  "methodNotes": ""
+  ]
 }

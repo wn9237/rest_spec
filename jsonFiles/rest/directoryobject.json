@@ -8,10 +8,13 @@
   "allowUpsert": true,
   "allowPatchCreate": true,
   "allowDelete": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
   "restPath": [
 
   ],
-  "info": null,
   "properties": [
     {
       "name": "objectType",
@@ -53,8 +56,6 @@
       "isUnicode": null
     }
   ],
-  "propertyNotes": "",
-  "relationshipNotes": "",
   "methods": [
     {
       "name": "checkMemberGroups",
@@ -143,6 +144,5 @@
       ],
       "httpSuccessResponse": "200"
     }
-  ],
-  "methodNotes": ""
+  ]
 }

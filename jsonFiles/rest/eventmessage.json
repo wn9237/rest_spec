@@ -8,10 +8,13 @@
   "allowUpsert": true,
   "allowPatchCreate": true,
   "allowDelete": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
   "restPath": [
 
   ],
-  "info": null,
   "properties": [
     {
       "name": "Subject",
@@ -404,8 +407,6 @@
       "isUnicode": null
     }
   ],
-  "propertyNotes": "",
-  "relationshipNotes": "",
   "methods": [
     {
       "name": "Copy",
@@ -645,6 +646,5 @@
       ],
       "httpSuccessResponse": "200"
     }
-  ],
-  "methodNotes": ""
+  ]
 }
