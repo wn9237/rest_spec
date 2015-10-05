@@ -13,4 +13,4 @@ to be completed....
 #### Request body
 
 #### Response
-If successful, this method returns `, ` response code and [item](../resources/item.md) collection object in the response body.
+If successful, this method returns `200, ` response code and [item](../resources/item.md) collection object in the response body.

@@ -20,4 +20,4 @@ In the request body, provide a JSON object with the following parameters.
 |siteId|String||
 
 #### Response
-If successful, this method returns `, ` response code and [CopyPageModel](../resources/copypagemodel.md) object in the response body.
+If successful, this method returns `200, ` response code and [CopyPageModel](../resources/copypagemodel.md) object in the response body.

@@ -18,4 +18,4 @@ In the request body, provide a JSON object with the following parameters.
 |DestinationId|String||
 
 #### Response
-If successful, this method returns `, ` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `200, ` response code and [MailFolder](../resources/mailfolder.md) object in the response body.

@@ -18,4 +18,4 @@ In the request body, provide a JSON object with the following parameters.
 |identifierUris|String|sample description of the uri param.|
 
 #### Response
-If successful, this method returns `, ` response code and [Application](../resources/application.md) object in the response body.
+If successful, this method returns `200, ` response code and [Application](../resources/application.md) object in the response body.

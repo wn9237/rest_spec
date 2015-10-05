@@ -18,4 +18,4 @@ In the request body, provide a JSON object with the following parameters.
 |commands|PatchContentCommand||
 
 #### Response
-If successful, this method returns `, ` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, ` response code and [None](../resources/none.md) object in the response body.
