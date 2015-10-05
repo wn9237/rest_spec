@@ -13,4 +13,4 @@ to be completed....
 #### Request body
 
 #### Response
-If successful, this method returns `` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns `, ` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.

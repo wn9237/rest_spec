@@ -21,4 +21,4 @@ In the request body, provide a JSON object with the following parameters.
 |name|String|description of name|
 
 #### Response
-If successful, this method returns `` response code and [item](../resources/item.md) object in the response body.
+If successful, this method returns `, ` response code and [item](../resources/item.md) object in the response body.

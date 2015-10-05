@@ -18,4 +18,4 @@ In the request body, provide a JSON object with the following parameters.
 |groupIds|String||
 
 #### Response
-If successful, this method returns `` response code and String object in the response body.
+If successful, this method returns `, ` response code and String collection object in the response body.

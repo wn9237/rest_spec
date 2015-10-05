@@ -18,4 +18,4 @@ In the request body, provide a JSON object with the following parameters.
 |size|String||
 
 #### Response
-If successful, this method returns `` response code and [thumbnail](../resources/thumbnail.md) object in the response body.
+If successful, this method returns `, ` response code and [thumbnail](../resources/thumbnail.md) object in the response body.

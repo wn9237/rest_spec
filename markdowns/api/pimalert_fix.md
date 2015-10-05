@@ -18,4 +18,4 @@ In the request body, provide a JSON object with the following parameters.
 |ItemId|Int32||
 
 #### Response
-If successful, this method returns `` response code and [PimAlert](../resources/pimalert.md) object in the response body.
+If successful, this method returns `, ` response code and [PimAlert](../resources/pimalert.md) object in the response body.

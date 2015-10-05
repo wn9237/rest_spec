@@ -61,7 +61,24 @@ module SpecMaker
 	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
 	@struct = JSON.parse(File.read(JSON_STRUCTURE), {:symbolize_names => true})
 	@template = @struct[:object]
-	
+
+	HTTP_CODES = {
+					"200" => "OK",
+					"201" => "Created",
+					"202" => "Accepted",
+					"203" => "Non-Authoritative Information",
+					"204" => "No Content",
+					"205" => "Reset Content",
+					"206" => "Partial Content",
+					"300" => "Multiple Choices",
+					"301" => "Moved Permanently",
+					"302" => "Found",
+					"303" => "See Other",
+					"304" => "Not Modified",
+					"306" => "Switch Proxy",
+					"307" => "Temporary Redirect",
+					"308" => "Resume Incomplete"					
+				}	
 	###
 	# To prevent shallow copy errors, need to get a new object each time.
 	# 
@@ -284,9 +301,11 @@ module SpecMaker
 		end
 
 		if method[:returnType].nil?
-			actionLines.push "If successful, this method returns `#{method[:httpSuccessResponse]}` response code. It does not return anything in the response body."  + NEWLINE
+			actionLines.push "If successful, this method returns `#{method[:httpSuccessResponse]}, #{HTTP_CODES[method[:httpSuccessResponse]]}` response code. It does not return anything in the response body."  + NEWLINE
 		else
-			actionLines.push "If successful, this method returns `#{method[:httpSuccessResponse]}` response code and #{dataTypePlusLink} object in the response body."  + NEWLINE
+			trueReturn = dataTypePlusLink
+			trueReturn = trueReturn + ' collection' if method[:isReturnTypeCollection] 
+			actionLines.push "If successful, this method returns `#{method[:httpSuccessResponse]}, #{HTTP_CODES[method[:httpSuccessResponse]]}` response code and #{trueReturn} object in the response body."  + NEWLINE
 		end
 
 		#loc0

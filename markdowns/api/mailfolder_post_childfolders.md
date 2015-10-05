@@ -13,4 +13,4 @@ to be completed....
 #### Request body
 
 #### Response
-If successful, this method returns `` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `, ` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
