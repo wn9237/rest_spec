@@ -11,6 +11,8 @@ to be completed....
 | X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
 
 #### Request body
+In the request body, supply a JSON representation of [ServicePrincipal]('../api/serviceprincipal.md') object.
+
 
 #### Response
 If successful, this method returns `201, Created` response code and [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
