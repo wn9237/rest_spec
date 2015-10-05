@@ -31,9 +31,9 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Post](../api/post_get.md) | Post |Read properties and relationships of post object.|
-|[Create Attachment]((../api/post_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
-|[Create Extension]((../api/post_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Update](../api/post_update.md) | Post	|Update Post object. |
+|[Create Attachment]((../api/post_post_attachments.md)) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
+|[Create Extension]((../api/post_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[Update](../api/post_update.md) | [Post](post.md)	|Update Post object. |
 |[Delete](../api/post_delete.md) | Void	|Delete Post object. |
 |[Forward](../api/post_forward.md)|[None](none.md)||
 |[Reply](../api/post_reply.md)|[None](none.md)||

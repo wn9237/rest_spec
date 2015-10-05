@@ -23,7 +23,7 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Conversation](../api/conversation_get.md) | Conversation |Read properties and relationships of conversation object.|
-|[Create Extension]((../api/conversation_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create Thread]((../api/conversation_post_threads.md)) |ConversationThread| Create a new Thread by posting to the Threads collection.|
-|[Update](../api/conversation_update.md) | Conversation	|Update Conversation object. |
+|[Create Extension]((../api/conversation_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[Create Thread]((../api/conversation_post_threads.md)) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
+|[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
 |[Delete](../api/conversation_delete.md) | Void	|Delete Conversation object. |

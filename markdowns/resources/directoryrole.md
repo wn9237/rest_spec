@@ -28,13 +28,13 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get DirectoryRole](../api/directoryrole_get.md) | DirectoryRole |Read properties and relationships of directoryRole object.|
-|[Create Extension]((../api/directoryrole_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create memberOf]((../api/directoryrole_post_memberof.md)) |DirectoryObject| Create a new memberOf by posting to the memberOf collection.|
-|[Create member]((../api/directoryrole_post_members.md)) |DirectoryObject| Create a new member by posting to the members collection.|
-|[Create ownedObject]((../api/directoryrole_post_ownedobjects.md)) |DirectoryObject| Create a new ownedObject by posting to the ownedObjects collection.|
-|[Create owner]((../api/directoryrole_post_owners.md)) |DirectoryObject| Create a new owner by posting to the owners collection.|
-|[Update](../api/directoryrole_update.md) | DirectoryRole	|Update DirectoryRole object. |
+|[Create Extension]((../api/directoryrole_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[Create memberOf]((../api/directoryrole_post_memberof.md)) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[Create member]((../api/directoryrole_post_members.md)) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
+|[Create ownedObject]((../api/directoryrole_post_ownedobjects.md)) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
+|[Create owner]((../api/directoryrole_post_owners.md)) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[Update](../api/directoryrole_update.md) | [DirectoryRole](directoryrole.md)	|Update DirectoryRole object. |
 |[Delete](../api/directoryrole_delete.md) | Void	|Delete DirectoryRole object. |
 |[Checkmembergroups](../api/directoryrole_checkmembergroups.md)|String||
-|[Get getMemberGroups](../api/directoryrole_getmembergroups.md)|String||
-|[Get getMemberObjects](../api/directoryrole_getmemberobjects.md)|String||
+|[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String||
+|[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String||

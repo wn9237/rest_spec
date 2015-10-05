@@ -18,5 +18,5 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get PlanTaskBoard](../api/plantaskboard_get.md) | PlanTaskBoard |Read properties and relationships of planTaskBoard object.|
-|[Update](../api/plantaskboard_update.md) | PlanTaskBoard	|Update PlanTaskBoard object. |
+|[Update](../api/plantaskboard_update.md) | [PlanTaskBoard](plantaskboard.md)	|Update PlanTaskBoard object. |
 |[Delete](../api/plantaskboard_delete.md) | Void	|Delete PlanTaskBoard object. |

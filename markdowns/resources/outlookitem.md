@@ -20,5 +20,5 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get OutlookItem](../api/outlookitem_get.md) | OutlookItem |Read properties and relationships of outlookItem object.|
-|[Update](../api/outlookitem_update.md) | OutlookItem	|Update OutlookItem object. |
+|[Update](../api/outlookitem_update.md) | [OutlookItem](outlookitem.md)	|Update OutlookItem object. |
 |[Delete](../api/outlookitem_delete.md) | Void	|Delete OutlookItem object. |

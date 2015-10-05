@@ -24,5 +24,5 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get PlanDetails](../api/plandetails_get.md) | PlanDetails |Read properties and relationships of planDetails object.|
-|[Update](../api/plandetails_update.md) | PlanDetails	|Update PlanDetails object. |
+|[Update](../api/plandetails_update.md) | [PlanDetails](plandetails.md)	|Update PlanDetails object. |
 |[Delete](../api/plandetails_delete.md) | Void	|Delete PlanDetails object. |

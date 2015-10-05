@@ -43,12 +43,12 @@ This is a sample application description.
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Application](../api/application_get.md) | Application |Read properties and relationships of application object.|
-|[Create Extension]((../api/application_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create ExtensionProperty]((../api/application_post_extensionproperties.md)) |ExtensionProperty| Create a new ExtensionProperty by posting to the extensionProperties collection.|
-|[Create owner]((../api/application_post_owners.md)) |DirectoryObject| Create a new owner by posting to the owners collection.|
-|[Update](../api/application_update.md) | Application	|Update Application object. |
+|[Create Extension]((../api/application_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[Create ExtensionProperty]((../api/application_post_extensionproperties.md)) |[ExtensionProperty](extensionproperty.md)| Create a new ExtensionProperty by posting to the extensionProperties collection.|
+|[Create owner]((../api/application_post_owners.md)) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[Update](../api/application_update.md) | [Application](application.md)	|Update Application object. |
 |[Delete](../api/application_delete.md) | Void	|Delete Application object. |
 |[Checkmembergroups](../api/application_checkmembergroups.md)|String||
-|[Get getMemberGroups](../api/application_getmembergroups.md)|String||
-|[Get getMemberObjects](../api/application_getmemberobjects.md)|String||
+|[Get MemberGroups](../api/application_getmembergroups.md)|String||
+|[Get MemberObjects](../api/application_getmemberobjects.md)|String||
 |[Restore](../api/application_restore.md)|[Application](application.md)|Sample description of the restore method.|

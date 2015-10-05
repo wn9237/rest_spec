@@ -22,5 +22,5 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get SubscribedSku](../api/subscribedsku_get.md) | SubscribedSku |Read properties and relationships of subscribedSku object.|
-|[Update](../api/subscribedsku_update.md) | SubscribedSku	|Update SubscribedSku object. |
+|[Update](../api/subscribedsku_update.md) | [SubscribedSku](subscribedsku.md)	|Update SubscribedSku object. |
 |[Delete](../api/subscribedsku_delete.md) | Void	|Delete SubscribedSku object. |

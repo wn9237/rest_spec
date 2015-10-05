@@ -184,10 +184,8 @@ module SpecMaker
 		else	
 			dataTypePlusLink = "[" + method[:returnType] + "](" + method[:returnType].downcase + ".md)"
 		end
-		dataTypePlusLink = (dataTypePlusLink == 'void') ? 'None' : dataTypePlusLink
-
 		# Add anchor links to method. 
-		restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name]) : method[:name].capitalize
+		restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name][3..-1]) : method[:name].capitalize
 		methodPlusLink = "[" + restfulTask.strip + "](../api/" + @jsonHash[:name].downcase + "_" + method[:name].downcase + ".md)"
 		@mdlines.push (PIPE + methodPlusLink + PIPE + dataTypePlusLink + PIPE + method[:description] + PIPE) + NEWLINE
 		crate_method_mdfile method
@@ -558,7 +556,12 @@ module SpecMaker
 						postName = "Create " + useName
 					end
 					postLink = "(../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md)"					
-					@mdlines.push "|[#{postName}](#{postLink}) |#{prop[:dataType]}| Create a new #{useName} by posting to the #{prop[:name]} collection.|" + NEWLINE				
+					if SIMPLETYPES.include? prop[:dataType]
+						returnLink = prop[:dataType]
+					else	
+						returnLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
+					end					
+					@mdlines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{prop[:name]} collection.|" + NEWLINE				
 					mtd = deep_copy(@struct[:method]) 
 
 					mtd[:name] = 'auto_post'
@@ -573,7 +576,8 @@ module SpecMaker
 		end
 
 		if patchable
-			@mdlines.push "|[Update](../api/#{@jsonHash[:name].downcase}_update.md) | #{@jsonHash[:name]}	|Update #{@jsonHash[:name]} object. |" + NEWLINE
+			returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
+			@mdlines.push "|[Update](../api/#{@jsonHash[:name].downcase}_update.md) | #{returnLink}	|Update #{@jsonHash[:name]} object. |" + NEWLINE
 			create_patch_method propreties
 			# mtd = deep_copy(@struct[:method]) 
 			# mtd[:name] = 'auto_patch'

@@ -21,5 +21,5 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get TaskDetails](../api/taskdetails_get.md) | TaskDetails |Read properties and relationships of taskDetails object.|
-|[Update](../api/taskdetails_update.md) | TaskDetails	|Update TaskDetails object. |
+|[Update](../api/taskdetails_update.md) | [TaskDetails](taskdetails.md)	|Update TaskDetails object. |
 |[Delete](../api/taskdetails_delete.md) | Void	|Delete TaskDetails object. |

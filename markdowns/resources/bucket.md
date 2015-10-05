@@ -22,5 +22,5 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Bucket](../api/bucket_get.md) | Bucket |Read properties and relationships of bucket object.|
-|[Update](../api/bucket_update.md) | Bucket	|Update Bucket object. |
+|[Update](../api/bucket_update.md) | [Bucket](bucket.md)	|Update Bucket object. |
 |[Delete](../api/bucket_delete.md) | Void	|Delete Bucket object. |

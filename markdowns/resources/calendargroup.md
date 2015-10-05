@@ -21,7 +21,7 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get CalendarGroup](../api/calendargroup_get.md) | CalendarGroup |Read properties and relationships of calendarGroup object.|
-|[Create Calendar]((../api/calendargroup_post_calendars.md)) |Calendar| Create a new Calendar by posting to the Calendars collection.|
-|[Create Extension]((../api/calendargroup_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Update](../api/calendargroup_update.md) | CalendarGroup	|Update CalendarGroup object. |
+|[Create Calendar]((../api/calendargroup_post_calendars.md)) |[Calendar](calendar.md)| Create a new Calendar by posting to the Calendars collection.|
+|[Create Extension]((../api/calendargroup_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[Update](../api/calendargroup_update.md) | [CalendarGroup](calendargroup.md)	|Update CalendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | Void	|Delete CalendarGroup object. |
