@@ -12,7 +12,3 @@
 |type|String||
 |usage|String||
 |value|Binary||
-
-#### Relationships
-None
-

@@ -6,7 +6,3 @@
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |state|String||
-
-#### Relationships
-None
-

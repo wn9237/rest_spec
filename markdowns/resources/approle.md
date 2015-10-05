@@ -11,7 +11,3 @@ Appl role description
 |id|Guid||
 |isEnabled|Boolean||
 |value|String||
-
-#### Relationships
-None
-

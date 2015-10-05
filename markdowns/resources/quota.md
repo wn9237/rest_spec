@@ -9,7 +9,3 @@
 |remaining|Int64||
 |state|String||
 |total|Int64||
-
-#### Relationships
-None
-

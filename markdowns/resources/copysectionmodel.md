@@ -14,7 +14,3 @@
 |name|String||
 |pagesUrl|String||
 |self|String||
-
-#### Relationships
-None
-

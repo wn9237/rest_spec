@@ -12,7 +12,3 @@
 |Interval|Int32||
 |Month|Int32||
 |Type|String| Possible values are: `Daily`, `Weekly`, `AbsoluteMonthly`, `RelativeMonthly`, `AbsoluteYearly`, `RelativeYearly`.|
-
-#### Relationships
-None
-

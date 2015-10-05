@@ -9,7 +9,3 @@
 |capabilityStatus|String||
 |service|String||
 |servicePlanId|Guid||
-
-#### Relationships
-None
-

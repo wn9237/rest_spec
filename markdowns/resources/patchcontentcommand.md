@@ -9,7 +9,3 @@
 |content|String||
 |position|String| Possible values are: `After`, `Before`.|
 |target|String||
-
-#### Relationships
-None
-

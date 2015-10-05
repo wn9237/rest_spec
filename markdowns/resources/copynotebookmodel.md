@@ -18,7 +18,3 @@
 |sectionsUrl|String||
 |self|String||
 |userRole|String| Possible values are: `Owner`, `Contributor`, `Reader`, `None`.|
-
-#### Relationships
-None
-

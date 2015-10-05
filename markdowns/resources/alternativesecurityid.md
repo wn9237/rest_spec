@@ -8,7 +8,3 @@
 |identityProvider|String||
 |key|Binary||
 |type|Int32||
-
-#### Relationships
-None
-

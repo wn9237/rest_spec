@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |forceChangePasswordNextLogin|Boolean||
 |password|String||
-
-#### Relationships
-None
-

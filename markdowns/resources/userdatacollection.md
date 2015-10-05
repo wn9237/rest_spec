@@ -4,7 +4,3 @@
 
 #### Properties
 None
-
-#### Relationships
-None
-

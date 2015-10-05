@@ -531,23 +531,25 @@ module SpecMaker
 		end		
 
 		# Add Relationship table. 
-		@mdlines.push NEWLINE
-		@mdlines.push HEADER4 + 'Relationships' + NEWLINE
-		if isRelation
-			@mdlines.push RELATIONSHIP_HEADER + TABLE_2ND_LINE 
-			propreties.each do |prop|
-				if prop[:isRelationship]
-					@logger.debug("....Processing relationship: #{prop[:name]} ..........")		
-				   push_property prop
+		if !@jsonHash[:isComplexType]
+	
+			@mdlines.push NEWLINE
+			@mdlines.push HEADER4 + 'Relationships' + NEWLINE
+			if isRelation
+				@mdlines.push RELATIONSHIP_HEADER + TABLE_2ND_LINE 
+				propreties.each do |prop|
+					if prop[:isRelationship]
+						@logger.debug("....Processing relationship: #{prop[:name]} ..........")		
+					   push_property prop
+					end
 				end
-			end
-			if !@jsonHash[:relationshipNotes].empty?
-				@mdlines.push "**Note:** #{@jsonHash[:relationshipNotes]}" + NEWLINE
-			end			
-		else
-			@mdlines.push "None"  + TWONEWLINES
-		end		
-
+				if !@jsonHash[:relationshipNotes].empty?
+					@mdlines.push "**Note:** #{@jsonHash[:relationshipNotes]}" + NEWLINE
+				end			
+			else
+				@mdlines.push "None"  + TWONEWLINES
+			end		
+		end
 		# Add method table. 
 		if !@jsonHash[:isComplexType]
 			@mdlines.push NEWLINE + HEADER4 + 'Tasks' + NEWLINE

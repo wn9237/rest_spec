@@ -8,7 +8,3 @@
 |capabilityStatus|String||
 |provisioningStatus|String||
 |service|String||
-
-#### Relationships
-None
-

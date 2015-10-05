@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |id|Guid||
 |type|String||
-
-#### Relationships
-None
-

@@ -8,7 +8,3 @@
 |EmailAddress|[EmailAddress](emailaddress.md)||
 |Status|[ResponseStatus](responsestatus.md)||
 |Type|String| Possible values are: `Required`, `Optional`, `Resource`.|
-
-#### Relationships
-None
-

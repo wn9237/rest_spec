@@ -10,7 +10,3 @@
 |AltitudeAccuracy|Double||
 |Latitude|Double||
 |Longitude|Double||
-
-#### Relationships
-None
-

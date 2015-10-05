@@ -13,7 +13,3 @@
 |userConsentDescription|String||
 |userConsentDisplayName|String||
 |value|String||
-
-#### Relationships
-None
-

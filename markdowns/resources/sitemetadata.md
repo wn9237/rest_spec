@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |siteCollectionId|String||
 |siteId|String||
-
-#### Relationships
-None
-

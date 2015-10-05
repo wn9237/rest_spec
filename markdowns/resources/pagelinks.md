@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[ExternalLink](externallink.md)||
 |oneNoteWebUrl|[ExternalLink](externallink.md)||
-
-#### Relationships
-None
-

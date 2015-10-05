@@ -8,7 +8,3 @@
 |application|[identity](identity.md)||
 |type|String||
 |webUrl|String||
-
-#### Relationships
-None
-

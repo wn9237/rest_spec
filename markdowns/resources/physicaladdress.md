@@ -10,7 +10,3 @@
 |PostalCode|String||
 |State|String||
 |Street|String||
-
-#### Relationships
-None
-

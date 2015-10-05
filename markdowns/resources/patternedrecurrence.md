@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |Pattern|[RecurrencePattern](recurrencepattern.md)||
 |Range|[RecurrenceRange](recurrencerange.md)||
-
-#### Relationships
-None
-

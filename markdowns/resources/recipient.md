@@ -6,7 +6,3 @@
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |EmailAddress|[EmailAddress](emailaddress.md)||
-
-#### Relationships
-None
-

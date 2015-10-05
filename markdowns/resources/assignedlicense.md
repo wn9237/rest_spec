@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |disabledPlans|Guid collection||
 |skuId|Guid||
-
-#### Relationships
-None
-

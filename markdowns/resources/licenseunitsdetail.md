@@ -8,7 +8,3 @@
 |enabled|Int32||
 |suspended|Int32||
 |warning|Int32||
-
-#### Relationships
-None
-

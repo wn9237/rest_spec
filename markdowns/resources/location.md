@@ -8,7 +8,3 @@
 |Address|[PhysicalAddress](physicaladdress.md)||
 |Coordinates|[GeoCoordinates](geocoordinates.md)||
 |DisplayName|String||
-
-#### Relationships
-None
-

@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |Address|String||
 |Name|String||
-
-#### Relationships
-None
-

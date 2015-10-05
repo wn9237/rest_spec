@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |servicePlanId|Guid||
 |servicePlanName|String||
-
-#### Relationships
-None
-

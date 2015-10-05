@@ -6,7 +6,3 @@
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |childCount|Int32||
-
-#### Relationships
-None
-

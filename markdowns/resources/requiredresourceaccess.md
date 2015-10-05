@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |resourceAccess|[ResourceAccess](resourceaccess.md) collection||
 |resourceAppId|String||
-
-#### Relationships
-None
-

@@ -9,7 +9,3 @@
 |folder|[folder](folder.md)||
 |name|String||
 |parentReference|[itemReference](itemreference.md)||
-
-#### Relationships
-None
-

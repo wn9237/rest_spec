@@ -11,7 +11,3 @@
 |initial|Boolean||
 |name|String||
 |type|String||
-
-#### Relationships
-None
-

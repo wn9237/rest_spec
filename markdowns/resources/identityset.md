@@ -7,7 +7,3 @@
 |:---------------|:--------|:----------|
 |application|[identity](identity.md)||
 |user|[identity](identity.md)||
-
-#### Relationships
-None
-

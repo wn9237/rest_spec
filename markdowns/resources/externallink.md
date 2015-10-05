@@ -6,7 +6,3 @@
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |href|String||
-
-#### Relationships
-None
-

@@ -8,7 +8,3 @@
 |driveId|String||
 |id|String||
 |path|String||
-
-#### Relationships
-None
-

@@ -15,7 +15,3 @@
 |parentSection|[CopySectionModel](copysectionmodel.md)||
 |self|String||
 |title|String||
-
-#### Relationships
-None
-
