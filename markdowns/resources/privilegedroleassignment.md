@@ -12,8 +12,9 @@
 |UserId|Guid| Read-only.|
 
 #### Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|RoleInfo|[PrivilegedRole](privilegedrole.md)| Read-only.|
 
 #### Tasks
 

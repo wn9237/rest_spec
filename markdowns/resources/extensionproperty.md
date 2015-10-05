@@ -15,14 +15,16 @@
 |targetObjects|String collection||
 
 #### Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|Extensions|[Extension](extension.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ExtensionProperty](../api/extensionproperty_get.md) | [ExtensionProperty](extensionproperty.md) |Read properties and relationships of extensionProperty object.|
+|[Create Extension](../api/extensionproperty_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/extensionproperty_update.md) | [ExtensionProperty](extensionproperty.md)	|Update ExtensionProperty object. |
 |[Delete](../api/extensionproperty_delete.md) | Void	|Delete ExtensionProperty object. |
 |[Checkmembergroups](../api/extensionproperty_checkmembergroups.md)|String||

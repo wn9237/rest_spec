@@ -80,6 +80,19 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
+    },
+    {
+      "name": "RoleInfo",
+      "description": "",
+      "isKey": false,
+      "dataType": "PrivilegedRole",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
     }
   ],
   "methods": [

@@ -17,14 +17,16 @@
 |targetObjectUri|String||
 
 #### Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|Extensions|[Extension](extension.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get DirectoryLinkChange](../api/directorylinkchange_get.md) | [DirectoryLinkChange](directorylinkchange.md) |Read properties and relationships of directoryLinkChange object.|
+|[Create Extension](../api/directorylinkchange_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/directorylinkchange_update.md) | [DirectoryLinkChange](directorylinkchange.md)	|Update DirectoryLinkChange object. |
 |[Delete](../api/directorylinkchange_delete.md) | Void	|Delete DirectoryLinkChange object. |
 |[Checkmembergroups](../api/directorylinkchange_checkmembergroups.md)|String||

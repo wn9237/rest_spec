@@ -29,14 +29,16 @@
 |verifiedDomains|[VerifiedDomain](verifieddomain.md) collection||
 
 #### Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|Extensions|[Extension](extension.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get TenantDetail](../api/tenantdetail_get.md) | [TenantDetail](tenantdetail.md) |Read properties and relationships of tenantDetail object.|
+|[Create Extension](../api/tenantdetail_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/tenantdetail_update.md) | [TenantDetail](tenantdetail.md)	|Update TenantDetail object. |
 |[Delete](../api/tenantdetail_delete.md) | Void	|Delete TenantDetail object. |
 |[Checkmembergroups](../api/tenantdetail_checkmembergroups.md)|String||

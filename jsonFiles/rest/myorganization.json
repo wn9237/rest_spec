@@ -28,6 +28,19 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
+    },
+    {
+      "name": "siteCollections",
+      "description": "",
+      "isKey": false,
+      "dataType": "SiteCollection",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     }
   ],
   "methods": [

@@ -8,8 +8,9 @@
 |id|String| Read-only.|
 
 #### Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|notes|[Notes](notes.md)| Read-only.|
 
 #### Tasks
 

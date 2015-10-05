@@ -1,0 +1,373 @@
+Staring...
+-> Processing Enum MeetingMessageType
+-> Processing Enum BodyType
+-> Processing Enum Importance
+-> Processing Enum CalendarColor
+-> Processing Enum FreeBusyStatus
+-> Processing Enum EventType
+-> Processing Enum ResponseType
+-> Processing Enum AttendeeType
+-> Processing Enum RecurrencePatternType
+-> Processing Enum DayOfWeek
+-> Processing Enum WeekIndex
+-> Processing Enum RecurrenceRangeType
+-> Processing Enum GroupAccessType
+-> Processing Enum DisplaySettings
+-> Processing Enum DrawingStyle
+-> Processing Enum AnchorPosition
+-> Processing Enum TaskBoardType
+-> Processing Enum PreviewType
+-> Processing Enum PatchInsertPosition
+-> Processing Enum PatchActionType
+-> Processing Enum UserRole
+-> Processing Enum RoleSummaryStatus
+-> Processing Enum SetupStatus
+-> Processing Action checkMemberGroups
+-> Processing Action getMemberGroups
+-> Processing Action getMemberObjects
+-> Processing Action restore
+-> Processing Action assignLicense
+-> Processing Action SendMail
+-> Processing Action Copy
+-> Processing Action Move
+-> Processing Action Copy
+-> Processing Action Move
+-> Processing Action CreateReply
+-> Processing Action CreateReplyAll
+-> Processing Action CreateForward
+-> Processing Action Reply
+-> Processing Action ReplyAll
+-> Processing Action Forward
+-> Processing Action Send
+-> Processing Action Accept
+-> Processing Action Decline
+-> Processing Action TentativelyAccept
+-> Processing Action SubscribeByMail
+-> Processing Action UnsubscribeByMail
+-> Processing Action AddFavorite
+-> Processing Action RemoveFavorite
+-> Processing Action ResetUnseenCount
+-> Processing Action Reply
+-> Processing Action Forward
+-> Processing Action Reply
+-> Processing Action copy
+-> Processing Action createLink
+-> Processing Action createSession
+-> Processing Action uploadContent
+-> Processing Action PatchContent
+-> Processing Action CopyNotebook
+-> Processing Action CopyToNotebook
+-> Processing Action CopyToSectionGroup
+-> Processing Action CopyToSection
+-> Processing Action Activate
+-> Processing Action Deactivate
+-> Processing Action SelfActivate
+-> Processing Action SelfDeactivate
+-> Processing Action Dismiss
+-> Processing Action Reactivate
+-> Processing Action Fix
+-> Processing Action SignUp
+-> Processing Action CompleteSetup
+-> Processing Action SkipSetup
+-> Processing Function content
+-> Processing Function delta
+-> Processing Function search
+-> Processing Function getCustomThumbnail
+-> Processing Function FromUrl
+-> Processing Function Thumbnail
+-> Processing Function Thumbnail
+-> Processing Function My
+-> Processing Function NotificationTypes
+-> Processing Function EventTypes
+-> Processing Function IsSignedUp
+-> Processing Function CanSignUp
+-> Processing Complex Type AppRole
+-> Processing Complex Type KeyCredential
+-> Processing Complex Type OAuth2Permission
+-> Processing Complex Type PasswordCredential
+-> Processing Complex Type RequiredResourceAccess
+-> Processing Complex Type ResourceAccess
+-> Processing Complex Type AssignedLicense
+-> Processing Complex Type AssignedPlan
+-> Processing Complex Type PasswordProfile
+-> Processing Complex Type ProvisionedPlan
+-> Processing Complex Type ProvisioningError
+-> Processing Complex Type AlternativeSecurityId
+-> Processing Complex Type VerifiedDomain
+-> Processing Complex Type LicenseUnitsDetail
+-> Processing Complex Type ServicePlanInfo
+-> Processing Complex Type ItemBody
+-> Processing Complex Type Recipient
+-> Processing Complex Type EmailAddress
+-> Processing Complex Type Location
+-> Processing Complex Type PhysicalAddress
+-> Processing Complex Type GeoCoordinates
+-> Processing Complex Type ResponseStatus
+-> Processing Complex Type Attendee
+-> Processing Complex Type PatternedRecurrence
+-> Processing Complex Type RecurrencePattern
+-> Processing Complex Type RecurrenceRange
+-> Processing Complex Type deleted
+-> Processing Complex Type FileSystemItemInformation
+-> Processing Complex Type file
+-> Processing Complex Type folder
+-> Processing Complex Type itemReference
+-> Processing Complex Type quota
+-> Processing Complex Type identitySet
+-> Processing Complex Type identity
+-> Processing Complex Type image
+-> Processing Complex Type photo
+-> Processing Complex Type searchResult
+-> Processing Complex Type sharingLink
+-> Processing Complex Type thumbnail
+-> Processing Complex Type uploadSession
+-> Processing Complex Type AppliedCategoriesCollection
+-> Processing Complex Type ExternalReference
+-> Processing Complex Type UserDataCollection
+-> Processing Complex Type ExternalReferenceCollection
+-> Processing Complex Type UserIdCollection
+-> Processing Complex Type NotebookLinks
+-> Processing Complex Type ExternalLink
+-> Processing Complex Type PageLinks
+-> Processing Complex Type Diagnostic
+-> Processing Complex Type SiteMetadata
+-> Processing Complex Type PatchContentCommand
+-> Processing Complex Type CopyNotebookModel
+-> Processing Complex Type CopySectionModel
+-> Processing Complex Type CopyPageModel
+-> Processing Entity DirectoryObject
+----> This is a BaseType
+!!!!! Hello [{:name=>"objectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectId", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"deletionTimestamp", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+----> Found actions or functions to merge
+-> Processing Entity Entity
+----> This is a BaseType
+!!!!! Hello [{:name=>"Id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity Extension
+returning {:Name=>"Id", :Type=>"Edm.String", :Nullable=>"false", :Unicode=>"false"}
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"Id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity Application
+before: [{:Name=>"extensionProperties", :Type=>"Collection(Microsoft.Graph.ExtensionProperty)"}, {:Name=>"createdOnBehalfOf", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"owners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}]
+after: [{:Name=>"extensionProperties", :Type=>"Collection(Microsoft.Graph.ExtensionProperty)"}, {:Name=>"createdOnBehalfOf", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"owners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+----> Found actions or functions to merge
+-> Processing Entity ExtensionProperty
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"appDisplayName", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"name", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"dataType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"isSyncedFromOnPremises", :description=>"", :isKey=>false, :dataType=>"Boolean", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"targetObjects", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"objectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectId", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"deletionTimestamp", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity User
+before: [{:Name=>"appRoleAssignments", :Type=>"Collection(Microsoft.Graph.AppRoleAssignment)"}, {:Name=>"oauth2PermissionGrants", :Type=>"Collection(Microsoft.Graph.OAuth2PermissionGrant)"}, {:Name=>"ownedDevices", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"registeredDevices", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"manager", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"directReports", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"createdObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"ownedObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"Folders", :Type=>"Collection(Microsoft.Graph.MailFolder)", :ContainsTarget=>"true"}, {:Name=>"Messages", :Type=>"Collection(Microsoft.Graph.Message)", :ContainsTarget=>"true"}, {:Name=>"RootFolder", :Type=>"Microsoft.Graph.MailFolder", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"Calendars", :Type=>"Collection(Microsoft.Graph.Calendar)", :ContainsTarget=>"true"}, {:Name=>"Calendar", :Type=>"Microsoft.Graph.Calendar", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"CalendarGroups", :Type=>"Collection(Microsoft.Graph.CalendarGroup)", :ContainsTarget=>"true"}, {:Name=>"Events", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"CalendarView", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"Contacts", :Type=>"Collection(Microsoft.Graph.Contact)", :ContainsTarget=>"true"}, {:Name=>"ContactFolders", :Type=>"Collection(Microsoft.Graph.ContactFolder)", :ContainsTarget=>"true"}, {:Name=>"UserPhoto", :Type=>"Microsoft.Graph.Photo", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"UserPhotos", :Type=>"Collection(Microsoft.Graph.Photo)", :ContainsTarget=>"true"}, {:Name=>"TrendingAround", :Type=>"Collection(Microsoft.Graph.File)", :ContainsTarget=>"true"}, {:Name=>"WorkingWith", :Type=>"Collection(Microsoft.Graph.User)", :ContainsTarget=>"true"}, {:Name=>"JoinedGroups", :Type=>"Collection(Microsoft.Graph.Group)", :ContainsTarget=>"true"}, {:Name=>"drive", :Type=>"Microsoft.Graph.drive", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"details", :Type=>"Microsoft.Graph.UserDetails", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"tasks", :Type=>"Collection(Microsoft.Graph.Task)"}, {:Name=>"plans", :Type=>"Collection(Microsoft.Graph.Plan)"}, {:Name=>"notes", :Type=>"Microsoft.Graph.Notes", :Nullable=>"false", :ContainsTarget=>"true"}]
+after: [{:Name=>"appRoleAssignments", :Type=>"Collection(Microsoft.Graph.AppRoleAssignment)"}, {:Name=>"oauth2PermissionGrants", :Type=>"Collection(Microsoft.Graph.OAuth2PermissionGrant)"}, {:Name=>"ownedDevices", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"registeredDevices", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"manager", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"directReports", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"createdObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"ownedObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"Folders", :Type=>"Collection(Microsoft.Graph.MailFolder)", :ContainsTarget=>"true"}, {:Name=>"Messages", :Type=>"Collection(Microsoft.Graph.Message)", :ContainsTarget=>"true"}, {:Name=>"RootFolder", :Type=>"Microsoft.Graph.MailFolder", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"Calendars", :Type=>"Collection(Microsoft.Graph.Calendar)", :ContainsTarget=>"true"}, {:Name=>"Calendar", :Type=>"Microsoft.Graph.Calendar", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"CalendarGroups", :Type=>"Collection(Microsoft.Graph.CalendarGroup)", :ContainsTarget=>"true"}, {:Name=>"Events", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"CalendarView", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"Contacts", :Type=>"Collection(Microsoft.Graph.Contact)", :ContainsTarget=>"true"}, {:Name=>"ContactFolders", :Type=>"Collection(Microsoft.Graph.ContactFolder)", :ContainsTarget=>"true"}, {:Name=>"UserPhoto", :Type=>"Microsoft.Graph.Photo", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"UserPhotos", :Type=>"Collection(Microsoft.Graph.Photo)", :ContainsTarget=>"true"}, {:Name=>"TrendingAround", :Type=>"Collection(Microsoft.Graph.File)", :ContainsTarget=>"true"}, {:Name=>"WorkingWith", :Type=>"Collection(Microsoft.Graph.User)", :ContainsTarget=>"true"}, {:Name=>"JoinedGroups", :Type=>"Collection(Microsoft.Graph.Group)", :ContainsTarget=>"true"}, {:Name=>"drive", :Type=>"Microsoft.Graph.drive", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"details", :Type=>"Microsoft.Graph.UserDetails", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"tasks", :Type=>"Collection(Microsoft.Graph.Task)"}, {:Name=>"plans", :Type=>"Collection(Microsoft.Graph.Plan)"}, {:Name=>"notes", :Type=>"Microsoft.Graph.Notes", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+----> Found actions or functions to merge
+-> Processing Entity AppRoleAssignment
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"creationTimestamp", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"id", :description=>"", :isKey=>false, :dataType=>"Guid", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"principalDisplayName", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"principalId", :description=>"", :isKey=>false, :dataType=>"Guid", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"principalType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"resourceDisplayName", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"resourceId", :description=>"", :isKey=>false, :dataType=>"Guid", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"objectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectId", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"deletionTimestamp", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity OAuth2PermissionGrant
+-> Processing Entity MailFolder
+before: [{:Name=>"ChildFolders", :Type=>"Collection(Microsoft.Graph.MailFolder)", :ContainsTarget=>"true"}, {:Name=>"Messages", :Type=>"Collection(Microsoft.Graph.Message)", :ContainsTarget=>"true"}]
+after: [{:Name=>"ChildFolders", :Type=>"Collection(Microsoft.Graph.MailFolder)", :ContainsTarget=>"true"}, {:Name=>"Messages", :Type=>"Collection(Microsoft.Graph.Message)", :ContainsTarget=>"true"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+----> Found actions or functions to merge
+-> Processing Entity OutlookItem
+----> This is a BaseType
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"ChangeKey", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"Categories", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"DateTimeCreated", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"DateTimeLastModified", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity Message
+----> This is a BaseType
+before: {:Name=>"Attachments", :Type=>"Collection(Microsoft.Graph.Attachment)", :ContainsTarget=>"true"}
+after: [{:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}, {:Name=>"Attachments", :Type=>"Collection(Microsoft.Graph.Attachment)", :ContainsTarget=>"true"}]
+----> Found actions or functions to merge
+-> Processing Entity Calendar
+before: [{:Name=>"CalendarView", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"Events", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}]
+after: [{:Name=>"CalendarView", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"Events", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+-> Processing Entity CalendarGroup
+before: {:Name=>"Calendars", :Type=>"Collection(Microsoft.Graph.Calendar)", :ContainsTarget=>"true"}
+after: [{:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}, {:Name=>"Calendars", :Type=>"Collection(Microsoft.Graph.Calendar)", :ContainsTarget=>"true"}]
+-> Processing Entity Event
+before: [{:Name=>"Attachments", :Type=>"Collection(Microsoft.Graph.Attachment)", :ContainsTarget=>"true"}, {:Name=>"Calendar", :Type=>"Microsoft.Graph.Calendar", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"Instances", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}]
+after: [{:Name=>"Attachments", :Type=>"Collection(Microsoft.Graph.Attachment)", :ContainsTarget=>"true"}, {:Name=>"Calendar", :Type=>"Microsoft.Graph.Calendar", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"Instances", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+----> Found actions or functions to merge
+-> Processing Entity Contact
+before: {:Name=>"ContactPhoto", :Type=>"Microsoft.Graph.Photo", :Nullable=>"false", :ContainsTarget=>"true"}
+after: [{:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}, {:Name=>"ContactPhoto", :Type=>"Microsoft.Graph.Photo", :Nullable=>"false", :ContainsTarget=>"true"}]
+-> Processing Entity ContactFolder
+before: [{:Name=>"Contacts", :Type=>"Collection(Microsoft.Graph.Contact)", :ContainsTarget=>"true"}, {:Name=>"ChildFolders", :Type=>"Collection(Microsoft.Graph.ContactFolder)", :ContainsTarget=>"true"}]
+after: [{:Name=>"Contacts", :Type=>"Collection(Microsoft.Graph.Contact)", :ContainsTarget=>"true"}, {:Name=>"ChildFolders", :Type=>"Collection(Microsoft.Graph.ContactFolder)", :ContainsTarget=>"true"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+-> Processing Entity Photo
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"Width", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Height", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity File
+-> Processing Entity Group
+before: [{:Name=>"appRoleAssignments", :Type=>"Collection(Microsoft.Graph.AppRoleAssignment)"}, {:Name=>"members", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"createdOnBehalfOf", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"owners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"GroupPhoto", :Type=>"Microsoft.Graph.Photo", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"GroupPhotos", :Type=>"Collection(Microsoft.Graph.Photo)", :ContainsTarget=>"true"}, {:Name=>"Conversations", :Type=>"Collection(Microsoft.Graph.Conversation)", :ContainsTarget=>"true"}, {:Name=>"Threads", :Type=>"Collection(Microsoft.Graph.ConversationThread)", :ContainsTarget=>"true"}, {:Name=>"Calendar", :Type=>"Microsoft.Graph.Calendar", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"Events", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"CalendarView", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"AcceptedSenders", :Type=>"Collection(Microsoft.Graph.DirectoryObject)", :ContainsTarget=>"true"}, {:Name=>"RejectedSenders", :Type=>"Collection(Microsoft.Graph.DirectoryObject)", :ContainsTarget=>"true"}, {:Name=>"drive", :Type=>"Microsoft.Graph.drive", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"details", :Type=>"Microsoft.Graph.UserDetails", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"tasks", :Type=>"Collection(Microsoft.Graph.Task)"}, {:Name=>"plans", :Type=>"Collection(Microsoft.Graph.Plan)"}]
+after: [{:Name=>"appRoleAssignments", :Type=>"Collection(Microsoft.Graph.AppRoleAssignment)"}, {:Name=>"members", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"createdOnBehalfOf", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"owners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"GroupPhoto", :Type=>"Microsoft.Graph.Photo", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"GroupPhotos", :Type=>"Collection(Microsoft.Graph.Photo)", :ContainsTarget=>"true"}, {:Name=>"Conversations", :Type=>"Collection(Microsoft.Graph.Conversation)", :ContainsTarget=>"true"}, {:Name=>"Threads", :Type=>"Collection(Microsoft.Graph.ConversationThread)", :ContainsTarget=>"true"}, {:Name=>"Calendar", :Type=>"Microsoft.Graph.Calendar", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"Events", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"CalendarView", :Type=>"Collection(Microsoft.Graph.Event)", :ContainsTarget=>"true"}, {:Name=>"AcceptedSenders", :Type=>"Collection(Microsoft.Graph.DirectoryObject)", :ContainsTarget=>"true"}, {:Name=>"RejectedSenders", :Type=>"Collection(Microsoft.Graph.DirectoryObject)", :ContainsTarget=>"true"}, {:Name=>"drive", :Type=>"Microsoft.Graph.drive", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"details", :Type=>"Microsoft.Graph.UserDetails", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"tasks", :Type=>"Collection(Microsoft.Graph.Task)"}, {:Name=>"plans", :Type=>"Collection(Microsoft.Graph.Plan)"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+----> Found actions or functions to merge
+-> Processing Entity drive
+-> Processing Entity UserDetails
+-> Processing Entity Task
+-> Processing Entity Plan
+-> Processing Entity Notes
+-> Processing Entity OrgContact
+before: [{:Name=>"manager", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"directReports", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}]
+after: [{:Name=>"manager", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"directReports", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+-> Processing Entity Device
+before: [{:Name=>"registeredOwners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"registeredUsers", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}]
+after: [{:Name=>"registeredOwners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"registeredUsers", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+-> Processing Entity DeviceConfiguration
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"publicIssuerCertificates", :description=>"", :isKey=>false, :dataType=>"Binary", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"cloudPublicIssuerCertificates", :description=>"", :isKey=>false, :dataType=>"Binary", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"registrationQuota", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"maximumRegistrationInactivityPeriod", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"objectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectId", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"deletionTimestamp", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity DirectoryLinkChange
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"associationType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"sourceObjectId", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"sourceObjectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"sourceObjectUri", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"targetObjectId", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"targetObjectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"targetObjectUri", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectId", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"deletionTimestamp", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity DirectoryRole
+before: [{:Name=>"members", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"owners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"ownedObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}]
+after: [{:Name=>"members", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"owners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"ownedObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+-> Processing Entity DirectoryRoleTemplate
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"description", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"displayName", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectId", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"deletionTimestamp", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity Conversation
+before: {:Name=>"Threads", :Type=>"Collection(Microsoft.Graph.ConversationThread)", :ContainsTarget=>"true"}
+after: [{:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}, {:Name=>"Threads", :Type=>"Collection(Microsoft.Graph.ConversationThread)", :ContainsTarget=>"true"}]
+-> Processing Entity ConversationThread
+before: {:Name=>"Posts", :Type=>"Collection(Microsoft.Graph.Post)", :ContainsTarget=>"true"}
+after: [{:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}, {:Name=>"Posts", :Type=>"Collection(Microsoft.Graph.Post)", :ContainsTarget=>"true"}]
+----> Found actions or functions to merge
+-> Processing Entity ServicePrincipal
+before: [{:Name=>"appRoleAssignedTo", :Type=>"Microsoft.Graph.AppRoleAssignment", :Nullable=>"false"}, {:Name=>"appRoleAssignments", :Type=>"Collection(Microsoft.Graph.AppRoleAssignment)"}, {:Name=>"oauth2PermissionGrants", :Type=>"Collection(Microsoft.Graph.OAuth2PermissionGrant)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"createdOnBehalfOf", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"createdObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"owners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"ownedObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}]
+after: [{:Name=>"appRoleAssignedTo", :Type=>"Microsoft.Graph.AppRoleAssignment", :Nullable=>"false"}, {:Name=>"appRoleAssignments", :Type=>"Collection(Microsoft.Graph.AppRoleAssignment)"}, {:Name=>"oauth2PermissionGrants", :Type=>"Collection(Microsoft.Graph.OAuth2PermissionGrant)"}, {:Name=>"memberOf", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"createdOnBehalfOf", :Type=>"Microsoft.Graph.DirectoryObject", :Nullable=>"false"}, {:Name=>"createdObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"owners", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"ownedObjects", :Type=>"Collection(Microsoft.Graph.DirectoryObject)"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+-> Processing Entity TenantDetail
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"assignedPlans", :description=>"", :isKey=>false, :dataType=>"AssignedPlan", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"city", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"companyLastDirSyncTime", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"country", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"countryLetterCode", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"dirSyncEnabled", :description=>"", :isKey=>false, :dataType=>"Boolean", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"displayName", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"marketingNotificationEmails", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"postalCode", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"preferredLanguage", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"provisionedPlans", :description=>"", :isKey=>false, :dataType=>"ProvisionedPlan", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"provisioningErrors", :description=>"", :isKey=>false, :dataType=>"ProvisioningError", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"securityComplianceNotificationMails", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"securityComplianceNotificationPhones", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"state", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"street", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"technicalNotificationMails", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"telephoneNumber", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"verifiedDomains", :description=>"", :isKey=>false, :dataType=>"VerifiedDomain", :isReadOnly=>false, :enumName=>nil, :isCollection=>true, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"objectType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"objectId", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"deletionTimestamp", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity SubscribedSku
+-> Processing Entity Attachment
+----> This is a BaseType
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"Name", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"ContentType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"Size", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"IsInline", :description=>"", :isKey=>false, :dataType=>"Boolean", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"DateTimeLastModified", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity FileAttachment
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"ContentId", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"ContentLocation", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"IsContactPhoto", :description=>"", :isKey=>false, :dataType=>"Boolean", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"ContentBytes", :description=>"", :isKey=>false, :dataType=>"Binary", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Name", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"ContentType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"Size", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"IsInline", :description=>"", :isKey=>false, :dataType=>"Boolean", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"DateTimeLastModified", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity ItemAttachment
+returning [{:Name=>"Name", :Type=>"Edm.String", :Unicode=>"false"}, {:Name=>"ContentType", :Type=>"Edm.String", :Unicode=>"false"}, {:Name=>"Size", :Type=>"Edm.Int32", :Nullable=>"false"}, {:Name=>"IsInline", :Type=>"Edm.Boolean", :Nullable=>"false"}, {:Name=>"DateTimeLastModified", :Type=>"Edm.DateTimeOffset"}, {:Name=>"Id", :Type=>"Edm.String", :Nullable=>"false", :Unicode=>"false"}]
+before: {:Name=>"Item", :Type=>"Microsoft.Graph.OutlookItem", :Nullable=>"false", :ContainsTarget=>"true"}
+after: [{:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}, {:Name=>"Item", :Type=>"Microsoft.Graph.OutlookItem", :Nullable=>"false", :ContainsTarget=>"true"}]
+-> Processing Entity EventMessage
+before: {:Name=>"Event", :Type=>"Microsoft.Graph.Event", :Nullable=>"false", :ContainsTarget=>"true"}
+after: [{:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}, {:Name=>"Attachments", :Type=>"Collection(Microsoft.Graph.Attachment)", :ContainsTarget=>"true"}, {:Name=>"Event", :Type=>"Microsoft.Graph.Event", :Nullable=>"false", :ContainsTarget=>"true"}]
+-> Processing Entity ReferenceAttachment
+returning [{:Name=>"Name", :Type=>"Edm.String", :Unicode=>"false"}, {:Name=>"ContentType", :Type=>"Edm.String", :Unicode=>"false"}, {:Name=>"Size", :Type=>"Edm.Int32", :Nullable=>"false"}, {:Name=>"IsInline", :Type=>"Edm.Boolean", :Nullable=>"false"}, {:Name=>"DateTimeLastModified", :Type=>"Edm.DateTimeOffset"}, {:Name=>"Id", :Type=>"Edm.String", :Nullable=>"false", :Unicode=>"false"}]
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"Name", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"ContentType", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"Size", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"IsInline", :description=>"", :isKey=>false, :dataType=>"Boolean", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"DateTimeLastModified", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"Id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity Post
+before: [{:Name=>"Attachments", :Type=>"Collection(Microsoft.Graph.Attachment)", :ContainsTarget=>"true"}, {:Name=>"InReplyTo", :Type=>"Microsoft.Graph.Post", :Nullable=>"false", :ContainsTarget=>"true"}]
+after: [{:Name=>"Attachments", :Type=>"Collection(Microsoft.Graph.Attachment)", :ContainsTarget=>"true"}, {:Name=>"InReplyTo", :Type=>"Microsoft.Graph.Post", :Nullable=>"false", :ContainsTarget=>"true"}, {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}]
+----> Found actions or functions to merge
+-> Processing Entity OpenTypeExtension
+------> Mapping BaseType Extension back to Entity
+before: 
+returning {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+after: {:Name=>"Extensions", :Type=>"Collection(Microsoft.Graph.Extension)", :ContainsTarget=>"true"}
+!!!!! Hello [{:name=>"Id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"ExtensionName", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"Extensions", :description=>"", :isKey=>false, :dataType=>"Extension", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity item
+----> Found actions or functions to merge
+-> Processing Entity thumbnailSet
+----> Found actions or functions to merge
+-> Processing Entity permission
+-> Processing Entity TaskDetails
+-> Processing Entity TimelineTaskFormat
+-> Processing Entity TaskBoardTaskFormat
+-> Processing Entity Bucket
+!!!!! Hello [{:name=>"name", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"planId", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"orderHint", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"totalTasks", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"activeTasks", :description=>"", :isKey=>false, :dataType=>"Int32", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"version", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"tasks", :description=>"", :isKey=>false, :dataType=>"Task", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity PlanDetails
+-> Processing Entity PlanTimeline
+-> Processing Entity PlanTaskBoard
+-> Processing Entity MyOrganization
+!!!!! Hello [{:name=>"id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"siteCollections", :description=>"", :isKey=>false, :dataType=>"SiteCollection", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+-> Processing Entity SiteCollection
+!!!!! Hello [{:name=>"id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"sites", :description=>"", :isKey=>false, :dataType=>"Site", :isReadOnly=>true, :enumName=>nil, :isCollection=>true, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}]
+----> Found actions or functions to merge
+-> Processing Entity Notebook
+----> Found actions or functions to merge
+-> Processing Entity Section
+----> Found actions or functions to merge
+-> Processing Entity SectionGroup
+-> Processing Entity Page
+----> Found actions or functions to merge
+-> Processing Entity Resource
+-> Processing Entity Site
+!!!!! Hello [{:name=>"id", :description=>"", :isKey=>true, :dataType=>"String", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>false}, {:name=>"notes", :description=>"", :isKey=>false, :dataType=>"Notes", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}]
+-> Processing Entity PrivilegedRole
+----> Found actions or functions to merge
+-> Processing Entity PrivilegedRoleSummary
+-> Processing Entity PrivilegedRoleSettings
+-> Processing Entity PrivilegedRoleAssignment
+!!!!! Hello [{:name=>"UserId", :description=>"", :isKey=>true, :dataType=>"Guid", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"RoleId", :description=>"", :isKey=>true, :dataType=>"Guid", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}, {:name=>"IsElevated", :description=>"", :isKey=>false, :dataType=>"Boolean", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"ExpirationTime", :description=>"", :isKey=>false, :dataType=>"DateTimeOffset", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>nil}, {:name=>"ResultMessage", :description=>"", :isKey=>false, :dataType=>"String", :isReadOnly=>false, :enumName=>nil, :isCollection=>false, :isRelationship=>false, :allowPostToCollection=>true, :isNullable=>nil, :isUnicode=>false}, {:name=>"RoleInfo", :description=>"", :isKey=>false, :dataType=>"PrivilegedRole", :isReadOnly=>true, :enumName=>nil, :isCollection=>false, :isRelationship=>true, :allowPostToCollection=>true, :isNullable=>false, :isUnicode=>nil}]
+----> Found actions or functions to merge
+-> Processing Entity PrivilegedOperationEvent
+-> Processing Entity PrivilegedSignupStatus
+----> Found actions or functions to merge
+-> Processing Entity Notification
+----> Found actions or functions to merge
+-> Processing Entity NotificationRule
+----> Found actions or functions to merge
+-> Processing Entity PimAlert
+----> Found actions or functions to merge
+-> Processing Entity PimAlertSettings
+-> Processing Entity PimAlertInfo
+-> Processing EntitySet Type directoryObjects
+-> Processing EntitySet Type applications
+-> Processing EntitySet Type contacts
+-> Processing EntitySet Type deviceConfiguration
+-> Processing EntitySet Type devices
+-> Processing EntitySet Type groups
+-> Processing EntitySet Type directoryRoles
+-> Processing EntitySet Type directoryRoleTemplates
+-> Processing EntitySet Type servicePrincipals
+-> Processing EntitySet Type tenantDetails
+-> Processing EntitySet Type users
+-> Processing EntitySet Type oauth2PermissionGrants
+-> Processing EntitySet Type subscribedSkus
+-> Processing EntitySet Type drives
+-> Processing EntitySet Type tasks
+-> Processing EntitySet Type plans
+-> Processing EntitySet Type buckets
+-> Processing EntitySet Type PrivilegedRoles
+-> Processing EntitySet Type PrivilegedRoleAssignments
+-> Processing EntitySet Type PrivilegedOperationEvents
+-> Processing EntitySet Type PrivilegedSignupStatus
+-> Processing EntitySet Type Notifications
+-> Processing EntitySet Type NotificationRules
+-> Processing EntitySet Type Alerts
+-> Processing EntitySet Type AlertSettings
+-> Processing EntitySet Type AlertInfo
+....Completed.
+Entities: 71
+Base Types Merged: 32
+Complex Types: 54
+Properties: 679
+Navigation Properties: 162
+Actions: 47
+Functions: 12
+--> Example files written: 107
+Parameters: 59
+Enums: 23
+EntitySet: 26

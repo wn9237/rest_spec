@@ -106,6 +106,19 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
+    },
+    {
+      "name": "tasks",
+      "description": "",
+      "isKey": false,
+      "dataType": "Task",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     }
   ],
   "methods": [

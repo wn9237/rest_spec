@@ -28,6 +28,19 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
+    },
+    {
+      "name": "notes",
+      "description": "",
+      "isKey": false,
+      "dataType": "Notes",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
     }
   ],
   "methods": [

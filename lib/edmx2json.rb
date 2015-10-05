@@ -123,7 +123,6 @@ module SpecMaker
 												@base_types[baseType.to_sym][:Property])
 			entity[:NavigationProperty]  = merge_members(entity[:NavigationProperty],
 											@base_types[baseType.to_sym][:NavigationProperty])
-
 			@base_types[entity[:Name].to_sym] = deep_copy(entity)	
 		end
 		
@@ -152,8 +151,8 @@ module SpecMaker
 				@json_object[:properties].push process_navigation(item)
 			end
 		elsif entity[:NavigationProperty].is_a?(Hash)
-			@json_object[:properties].push 
-				process_navigation(entity[:NavigationProperty])
+
+			@json_object[:properties].push process_navigation(entity[:NavigationProperty])
 		end
 
 		# Add methods and pull in methods from base type.
