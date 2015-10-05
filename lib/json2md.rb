@@ -407,7 +407,7 @@ module SpecMaker
 
 		# Header and description	
 		patchMethodLines.push HEADER1 + "Update #{@jsonHash[:name]}"  + TWONEWLINES
-		if @jsonHash[:restPath].empty?
+		if @jsonHash[:updateDescription].empty?
 			patchMethodLines.push "Update the properties of #{@jsonHash[:name].downcase} object."  + NEWLINE
 		else
 			patchMethodLines.push "#{updateDescription}"  + NEWLINE			
