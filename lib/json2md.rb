@@ -75,6 +75,7 @@ module SpecMaker
 	@get_list_files_created = 0
 	@patch_files_created = 0
 	@method_files_created = 0
+	@ientityset = 0
 
 	# Log file
 	LOG_FOLDER = '../../logs'
