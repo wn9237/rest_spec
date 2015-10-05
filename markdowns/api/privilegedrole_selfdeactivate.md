@@ -13,4 +13,4 @@ to be completed....
 #### Request body
 
 #### Response
-If successful, this method returns `200, ` response code and [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
+If successful, this method returns `200, OK` response code and [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.

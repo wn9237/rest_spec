@@ -13,4 +13,4 @@ to be completed....
 #### Request body
 
 #### Response
-If successful, this method returns `201, ` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.

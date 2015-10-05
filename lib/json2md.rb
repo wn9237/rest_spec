@@ -301,11 +301,11 @@ module SpecMaker
 		end
 
 		if method[:returnType].nil?
-			actionLines.push "If successful, this method returns `#{method[:httpSuccessCode]}, #{HTTP_CODES[method[:httpSuccessResponse]]}` response code. It does not return anything in the response body."  + NEWLINE
+			actionLines.push "If successful, this method returns `#{method[:httpSuccessCode]}, #{HTTP_CODES[method[:httpSuccessCode]]}` response code. It does not return anything in the response body."  + NEWLINE
 		else
 			trueReturn = dataTypePlusLink
 			trueReturn = trueReturn + ' collection' if method[:isReturnTypeCollection] 
-			actionLines.push "If successful, this method returns `#{method[:httpSuccessCode]}, #{HTTP_CODES[method[:httpSuccessResponse]]}` response code and #{trueReturn} object in the response body."  + NEWLINE
+			actionLines.push "If successful, this method returns `#{method[:httpSuccessCode]}, #{HTTP_CODES[method[:httpSuccessCode]]}` response code and #{trueReturn} object in the response body."  + NEWLINE
 		end
 
 		begin
