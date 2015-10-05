@@ -1,4 +1,4 @@
-# thumbnailSet: getCustomThumbnail
+# 
 
 
 #### HTTP request

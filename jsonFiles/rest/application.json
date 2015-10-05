@@ -1,6 +1,6 @@
 {
   "name": "Application",
-  "description": "",
+  "description": "This is a sample application description.",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -15,7 +15,7 @@
   "properties": [
     {
       "name": "appId",
-      "description": "",
+      "description": "sample appid description.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -383,8 +383,8 @@
   "methods": [
     {
       "name": "restore",
-      "displayName": null,
-      "description": "",
+      "displayName": "the restore method.",
+      "description": "Sample description of the restore method.",
       "prerequisites": "",
       "returnType": "Application",
       "isReturnNullable": null,
@@ -400,7 +400,7 @@
       "parameters": [
         {
           "name": "identifierUris",
-          "description": "",
+          "description": "sample description of the uri param.",
           "dataType": "String",
           "isRequired": true,
           "enumName": null,
@@ -411,7 +411,7 @@
     },
     {
       "name": "checkMemberGroups",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",
@@ -439,7 +439,7 @@
     },
     {
       "name": "getMemberGroups",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",
@@ -467,7 +467,7 @@
     },
     {
       "name": "getMemberObjects",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",

@@ -1,8 +1,7 @@
 {
-  "name": "AlertSettings",
+  "name": "tenantDetails",
   "description": "",
-  "collectionOf": "PimAlertSettings",
-  "allowPostToCollection": null,
+  "collectionOf": "TenantDetail",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

@@ -1,4 +1,4 @@
-# ExtensionProperty: checkMemberGroups
+# 
 
 
 #### HTTP request

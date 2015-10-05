@@ -175,7 +175,7 @@
   "methods": [
     {
       "name": "CopyToNotebook",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "CopySectionModel",
@@ -230,7 +230,7 @@
     },
     {
       "name": "CopyToSectionGroup",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "CopySectionModel",
@@ -285,7 +285,7 @@
     },
     {
       "name": "Thumbnail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Stream",

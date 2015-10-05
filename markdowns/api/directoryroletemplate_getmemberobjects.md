@@ -1,4 +1,4 @@
-# DirectoryRoleTemplate: getMemberObjects
+# 
 
 
 #### HTTP request

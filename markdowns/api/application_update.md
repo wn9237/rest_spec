@@ -16,7 +16,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appId|String||
+|appId|String|sample appid description.|
 |appRoles|AppRole||
 |availableToOtherTenants|Boolean||
 |deletionTimestamp|DateTimeOffset||

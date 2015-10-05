@@ -2,7 +2,6 @@
   "name": "Page",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -16,154 +15,173 @@
   "properties": [
     {
       "name": "title",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "createdByAppId",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "links",
+      "description": "",
       "isKey": false,
       "dataType": "PageLinks",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "contentUrl",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "content",
+      "description": "",
       "isKey": false,
       "dataType": "Stream",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "lastModifiedTime",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "id",
+      "description": "",
       "isKey": true,
       "dataType": "String",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
     },
     {
       "name": "self",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "createdTime",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "parentSection",
+      "description": "",
       "isKey": false,
       "dataType": "Section",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "parentNotebook",
+      "description": "",
       "isKey": false,
       "dataType": "Notebook",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
     {
       "name": "PatchContent",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "commands",
-          "dataType": "PatchContentCommand",
           "description": "",
+          "dataType": "PatchContentCommand",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -174,19 +192,25 @@
     {
       "name": "CopyToSection",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "CopyPageModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "id",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -194,8 +218,8 @@
         },
         {
           "name": "siteCollectionId",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -203,8 +227,8 @@
         },
         {
           "name": "siteId",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -215,15 +239,24 @@
     {
       "name": "Thumbnail",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "Stream",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": true,
-      "parameters": null
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     }
-  ]
+  ],
+  "methodNotes": ""
 }

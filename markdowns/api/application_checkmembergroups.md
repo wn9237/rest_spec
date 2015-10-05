@@ -1,4 +1,4 @@
-# Application: checkMemberGroups
+# 
 
 
 #### HTTP request

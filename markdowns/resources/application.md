@@ -1,11 +1,11 @@
 # Application resource type
 
-
+This is a sample application description.
 
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appId|String||
+|appId|String|sample appid description.|
 |appRoles|[AppRole](approle.md)||
 |availableToOtherTenants|Boolean||
 |deletionTimestamp|DateTimeOffset||
@@ -54,4 +54,4 @@
 |[Checkmembergroups](../api/application_checkmembergroups.md)|String||
 |[Get getMemberGroups](../api/application_getmembergroups.md)|String||
 |[Get getMemberObjects](../api/application_getmemberobjects.md)|String||
-|[Restore](../api/application_restore.md)|[Application](application.md)||
+|[Restore](../api/application_restore.md)|[Application](application.md)|Sample description of the restore method.|

@@ -1,4 +1,4 @@
-# Device: getMemberGroups
+# 
 
 
 #### HTTP request

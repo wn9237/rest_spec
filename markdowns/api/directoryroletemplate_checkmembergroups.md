@@ -1,4 +1,4 @@
-# DirectoryRoleTemplate: checkMemberGroups
+# 
 
 
 #### HTTP request

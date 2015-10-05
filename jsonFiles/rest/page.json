@@ -162,7 +162,7 @@
   "methods": [
     {
       "name": "PatchContent",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -190,7 +190,7 @@
     },
     {
       "name": "CopyToSection",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "CopyPageModel",
@@ -236,7 +236,7 @@
     },
     {
       "name": "Thumbnail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Stream",

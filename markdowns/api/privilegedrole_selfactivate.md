@@ -1,4 +1,4 @@
-# PrivilegedRole: SelfActivate
+# 
 
 
 #### HTTP request

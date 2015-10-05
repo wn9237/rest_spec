@@ -1,4 +1,4 @@
-# Section: Thumbnail
+# 
 
 
 #### HTTP request

@@ -1,4 +1,4 @@
-# DeviceConfiguration: checkMemberGroups
+# 
 
 
 #### HTTP request

@@ -84,7 +84,7 @@
   "methods": [
     {
       "name": "Activate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
@@ -139,7 +139,7 @@
     },
     {
       "name": "Deactivate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
@@ -159,7 +159,7 @@
     },
     {
       "name": "My",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",

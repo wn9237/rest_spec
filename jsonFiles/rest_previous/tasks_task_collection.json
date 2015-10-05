@@ -1,8 +1,7 @@
 {
-  "name": "contacts",
+  "name": "tasks",
   "description": "",
-  "collectionOf": "OrgContact",
-  "allowPostToCollection": null,
+  "collectionOf": "Task",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

@@ -1,8 +1,7 @@
 {
-  "name": "AlertInfo",
+  "name": "devices",
   "description": "",
-  "collectionOf": "PimAlertInfo",
-  "allowPostToCollection": null,
+  "collectionOf": "Device",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

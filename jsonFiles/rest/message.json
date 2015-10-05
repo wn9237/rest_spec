@@ -383,7 +383,7 @@
   "methods": [
     {
       "name": "Copy",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -411,7 +411,7 @@
     },
     {
       "name": "Move",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -439,7 +439,7 @@
     },
     {
       "name": "CreateReply",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -459,7 +459,7 @@
     },
     {
       "name": "CreateReplyAll",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -479,7 +479,7 @@
     },
     {
       "name": "CreateForward",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -499,7 +499,7 @@
     },
     {
       "name": "Reply",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -527,7 +527,7 @@
     },
     {
       "name": "ReplyAll",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -555,7 +555,7 @@
     },
     {
       "name": "Forward",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -592,7 +592,7 @@
     },
     {
       "name": "Send",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,

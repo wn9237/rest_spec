@@ -1,4 +1,4 @@
-# NotificationRule: EventTypes
+# 
 
 
 #### HTTP request

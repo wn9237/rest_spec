@@ -2,7 +2,6 @@
   "name": "item",
   "description": "This is item object description",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -16,274 +15,303 @@
   "properties": [
     {
       "name": "createdBy",
+      "description": "created by desc",
       "isKey": false,
       "dataType": "identitySet",
-      "description": "created by desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "createdDateTime",
+      "description": "createdDateTime desc",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "createdDateTime desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "deleted",
+      "description": "deleted desc",
       "isKey": false,
       "dataType": "deleted",
-      "description": "deleted desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "eTag",
+      "description": "eTag desc",
       "isKey": false,
       "dataType": "String",
-      "description": "eTag desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "file",
+      "description": "file desc",
       "isKey": false,
       "dataType": "file",
-      "description": "file desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "folder",
+      "description": "",
       "isKey": false,
       "dataType": "folder",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "id",
+      "description": "id desc",
       "isKey": true,
       "dataType": "String",
-      "description": "id desc",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
     },
     {
       "name": "image",
+      "description": "image desc",
       "isKey": false,
       "dataType": "image",
-      "description": "image desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "lastModifiedBy",
+      "description": "lastModifiedBy desc",
       "isKey": false,
       "dataType": "identitySet",
-      "description": "lastModifiedBy desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "lastModifiedDateTime",
+      "description": "lastModifiedDateTime desc",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "lastModifiedDateTime desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "name",
+      "description": "name desc",
       "isKey": false,
       "dataType": "String",
-      "description": "name desc",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "parentReference",
+      "description": "",
       "isKey": false,
       "dataType": "itemReference",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "photo",
+      "description": "",
       "isKey": false,
       "dataType": "photo",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "searchResult",
+      "description": "",
       "isKey": false,
       "dataType": "searchResult",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "size",
+      "description": "",
       "isKey": false,
       "dataType": "Int64",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "webUrl",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "webDavUrl",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "createdByUser",
+      "description": "",
       "isKey": false,
       "dataType": "User",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "lastModifiedByUser",
+      "description": "",
       "isKey": false,
       "dataType": "User",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "children",
+      "description": "",
       "isKey": false,
       "dataType": "item",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "thumbnails",
+      "description": "",
       "isKey": false,
       "dataType": "thumbnailSet",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
     {
       "name": "copy",
       "displayName": "This is the display name of the Copy",
+      "description": "This is the description of Copy",
       "prerequisites": "Pre-req of copy",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "This is the description of Copy",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "parentReference",
-          "dataType": "itemReference",
           "description": "Description of parentReference",
+          "dataType": "itemReference",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -291,8 +319,8 @@
         },
         {
           "name": "name",
-          "dataType": "String",
           "description": "description of name",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -303,19 +331,25 @@
     {
       "name": "createLink",
       "displayName": null,
+      "description": "Create link description",
       "prerequisites": "Create link pre-requisites",
       "returnType": "permission",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "Create link description",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "type",
-          "dataType": "String",
           "description": "type description",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -326,19 +360,25 @@
     {
       "name": "createSession",
       "displayName": "Display name of creation session",
-      "prerequisites": "create session pre-req",
-      "returnType": "blah",
-      "isReturnNullable": "Blah",
-      "isReturnTypeCollection": false,
       "description": "this is create sesssion method",
-      "syntax": "blah",
-      "httpSuccessResponseCode": null,
+      "prerequisites": "create session pre-req",
+      "returnType": "uploadSession",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "path",
-          "dataType": "String",
           "description": "This is path parameter",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -346,8 +386,8 @@
         },
         {
           "name": "item",
-          "dataType": "FileSystemItemInformation",
           "description": "I am item parameter",
+          "dataType": "FileSystemItemInformation",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -358,19 +398,25 @@
     {
       "name": "uploadContent",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "contentStream",
-          "dataType": "Stream",
           "description": "",
+          "dataType": "Stream",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -381,45 +427,67 @@
     {
       "name": "content",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "Stream",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": true,
-      "parameters": null
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     },
     {
       "name": "delta",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": true,
-      "parameters": null
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     },
     {
       "name": "search",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": true,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "q",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -427,5 +495,6 @@
         }
       ]
     }
-  ]
+  ],
+  "methodNotes": ""
 }

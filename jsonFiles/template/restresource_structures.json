@@ -41,7 +41,7 @@
   "method":
 	{
 	  "name": null,
-	  "displayName": null,
+	  "displayName": "",
 	  "description": "",
 	  "prerequisites": "",	  	  
 	  "returnType": null,

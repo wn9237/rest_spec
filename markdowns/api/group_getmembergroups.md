@@ -1,4 +1,4 @@
-# Group: getMemberGroups
+# 
 
 
 #### HTTP request

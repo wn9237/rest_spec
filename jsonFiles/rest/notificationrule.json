@@ -123,7 +123,7 @@
   "methods": [
     {
       "name": "EventTypes",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",

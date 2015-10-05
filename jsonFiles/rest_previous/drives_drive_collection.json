@@ -1,8 +1,7 @@
 {
-  "name": "groups",
+  "name": "drives",
   "description": "",
-  "collectionOf": "Group",
-  "allowPostToCollection": null,
+  "collectionOf": "drive",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

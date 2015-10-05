@@ -102,13 +102,13 @@ module SpecMaker
 			prevMethods = prevObject[:methods]
 			prevMethods.each do |item|
 				if item[:name] == method[:name]
-					method[:description] = item[:description]
-					method[:displayName] = item[:displayName]
-					method[:prerequisites] = item[:prerequisites]
+					method[:description] = item[:description] if !item[:description].empty?
+					method[:displayName] = item[:displayName] if item[:displayName] && !item[:displayName].empty?
+					method[:prerequisites] = item[:prerequisites] if !item[:prerequisites].empty?
  					method[:parameters].each do |param|
 						item[:parameters].each do |paramOld|
 							if paramOld[:name] == param[:name]
-								param[:description] = paramOld[:description]
+								param[:description] = paramOld[:description] if !paramOld[:description].empty?
 							end
 						end
 					end	

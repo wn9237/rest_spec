@@ -1,8 +1,7 @@
 {
-  "name": "devices",
+  "name": "users",
   "description": "",
-  "collectionOf": "Device",
-  "allowPostToCollection": null,
+  "collectionOf": "User",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

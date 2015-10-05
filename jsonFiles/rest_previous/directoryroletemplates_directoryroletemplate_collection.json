@@ -1,8 +1,7 @@
 {
-  "name": "Notifications",
+  "name": "directoryRoleTemplates",
   "description": "",
-  "collectionOf": "Notification",
-  "allowPostToCollection": null,
+  "collectionOf": "DirectoryRoleTemplate",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

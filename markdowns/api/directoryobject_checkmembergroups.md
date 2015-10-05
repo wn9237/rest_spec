@@ -1,4 +1,4 @@
-# DirectoryObject: checkMemberGroups
+# 
 
 
 #### HTTP request

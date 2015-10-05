@@ -71,7 +71,7 @@
   "methods": [
     {
       "name": "NotificationTypes",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",

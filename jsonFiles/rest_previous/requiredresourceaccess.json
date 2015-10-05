@@ -2,7 +2,6 @@
   "name": "RequiredResourceAccess",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
@@ -16,30 +15,35 @@
   "properties": [
     {
       "name": "resourceAppId",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "resourceAccess",
+      "description": "",
       "isKey": false,
       "dataType": "ResourceAccess",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": true,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

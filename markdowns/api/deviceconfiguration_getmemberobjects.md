@@ -1,4 +1,4 @@
-# DeviceConfiguration: getMemberObjects
+# 
 
 
 #### HTTP request

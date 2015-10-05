@@ -1,4 +1,4 @@
-# ServicePrincipal: getMemberGroups
+# 
 
 
 #### HTTP request

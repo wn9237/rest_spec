@@ -1,4 +1,4 @@
-# PrivilegedSignupStatus: CanSignUp
+# 
 
 
 #### HTTP request

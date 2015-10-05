@@ -58,7 +58,7 @@
   "methods": [
     {
       "name": "SignUp",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedSignupStatus",
@@ -78,7 +78,7 @@
     },
     {
       "name": "CompleteSetup",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -98,7 +98,7 @@
     },
     {
       "name": "SkipSetup",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -118,7 +118,7 @@
     },
     {
       "name": "IsSignedUp",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Boolean",
@@ -138,7 +138,7 @@
     },
     {
       "name": "CanSignUp",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Boolean",

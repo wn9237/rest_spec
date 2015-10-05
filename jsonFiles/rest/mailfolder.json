@@ -110,7 +110,7 @@
   "methods": [
     {
       "name": "Copy",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "MailFolder",
@@ -138,7 +138,7 @@
     },
     {
       "name": "Move",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "MailFolder",

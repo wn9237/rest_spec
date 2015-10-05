@@ -2,7 +2,6 @@
   "name": "AssignedLicense",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
@@ -16,30 +15,35 @@
   "properties": [
     {
       "name": "disabledPlans",
+      "description": "",
       "isKey": false,
       "dataType": "Guid",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": true,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "skuId",
+      "description": "",
       "isKey": false,
       "dataType": "Guid",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

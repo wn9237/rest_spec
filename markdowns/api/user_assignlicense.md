@@ -1,4 +1,4 @@
-# User: assignLicense
+# 
 
 
 #### HTTP request

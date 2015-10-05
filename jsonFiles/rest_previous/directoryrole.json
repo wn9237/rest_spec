@@ -2,7 +2,6 @@
   "name": "DirectoryRole",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -16,178 +15,199 @@
   "properties": [
     {
       "name": "description",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "displayName",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "isSystem",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "roleDisabled",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "roleTemplateId",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "objectType",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "objectId",
+      "description": "",
       "isKey": true,
       "dataType": "String",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
     },
     {
       "name": "deletionTimestamp",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "members",
+      "description": "",
       "isKey": false,
       "dataType": "DirectoryObject",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "memberOf",
+      "description": "",
       "isKey": false,
       "dataType": "DirectoryObject",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "owners",
+      "description": "",
       "isKey": false,
       "dataType": "DirectoryObject",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "ownedObjects",
+      "description": "",
       "isKey": false,
       "dataType": "DirectoryObject",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "Extensions",
+      "description": "",
       "isKey": false,
       "dataType": "Extension",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
     {
       "name": "checkMemberGroups",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "groupIds",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": false,
@@ -198,19 +218,25 @@
     {
       "name": "getMemberGroups",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",
-          "dataType": "Boolean",
           "description": "",
+          "dataType": "Boolean",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -221,19 +247,25 @@
     {
       "name": "getMemberObjects",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",
-          "dataType": "Boolean",
           "description": "",
+          "dataType": "Boolean",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -241,5 +273,6 @@
         }
       ]
     }
-  ]
+  ],
+  "methodNotes": ""
 }

@@ -214,7 +214,7 @@
   "methods": [
     {
       "name": "CopyNotebook",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "CopyNotebookModel",

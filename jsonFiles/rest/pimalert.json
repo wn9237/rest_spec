@@ -227,7 +227,7 @@
   "methods": [
     {
       "name": "Dismiss",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",
@@ -247,7 +247,7 @@
     },
     {
       "name": "Reactivate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",
@@ -267,7 +267,7 @@
     },
     {
       "name": "Fix",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",

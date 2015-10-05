@@ -329,7 +329,7 @@
     },
     {
       "name": "createLink",
-      "displayName": null,
+      "displayName": "",
       "description": "Create link description",
       "prerequisites": "Create link pre-requisites",
       "returnType": "permission",
@@ -394,7 +394,7 @@
     },
     {
       "name": "uploadContent",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -422,7 +422,7 @@
     },
     {
       "name": "content",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Stream",
@@ -442,7 +442,7 @@
     },
     {
       "name": "delta",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "item",
@@ -462,7 +462,7 @@
     },
     {
       "name": "search",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "item",

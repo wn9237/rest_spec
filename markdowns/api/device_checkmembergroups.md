@@ -1,4 +1,4 @@
-# Device: checkMemberGroups
+# 
 
 
 #### HTTP request

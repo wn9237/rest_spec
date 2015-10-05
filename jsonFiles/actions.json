@@ -2,7 +2,7 @@
   "DirectoryObject": [
     {
       "name": "checkMemberGroups",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",
@@ -30,7 +30,7 @@
     },
     {
       "name": "getMemberGroups",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",
@@ -58,7 +58,7 @@
     },
     {
       "name": "getMemberObjects",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",
@@ -88,8 +88,8 @@
   "Application": [
     {
       "name": "restore",
-      "displayName": null,
-      "description": "",
+      "displayName": "the restore method.",
+      "description": "Sample description of the restore method.",
       "prerequisites": "",
       "returnType": "Application",
       "isReturnNullable": null,
@@ -105,7 +105,7 @@
       "parameters": [
         {
           "name": "identifierUris",
-          "description": "",
+          "description": "sample description of the uri param.",
           "dataType": "String",
           "isRequired": true,
           "enumName": null,
@@ -118,7 +118,7 @@
   "User": [
     {
       "name": "assignLicense",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "User",
@@ -155,7 +155,7 @@
     },
     {
       "name": "SendMail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -194,7 +194,7 @@
   "MailFolder": [
     {
       "name": "Copy",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "MailFolder",
@@ -222,7 +222,7 @@
     },
     {
       "name": "Move",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "MailFolder",
@@ -252,7 +252,7 @@
   "Message": [
     {
       "name": "Copy",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -280,7 +280,7 @@
     },
     {
       "name": "Move",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -308,7 +308,7 @@
     },
     {
       "name": "CreateReply",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -328,7 +328,7 @@
     },
     {
       "name": "CreateReplyAll",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -348,7 +348,7 @@
     },
     {
       "name": "CreateForward",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Message",
@@ -368,7 +368,7 @@
     },
     {
       "name": "Reply",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -396,7 +396,7 @@
     },
     {
       "name": "ReplyAll",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -424,7 +424,7 @@
     },
     {
       "name": "Forward",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -461,7 +461,7 @@
     },
     {
       "name": "Send",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -483,7 +483,7 @@
   "Event": [
     {
       "name": "Accept",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -520,7 +520,7 @@
     },
     {
       "name": "Decline",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -557,7 +557,7 @@
     },
     {
       "name": "TentativelyAccept",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -596,7 +596,7 @@
   "Group": [
     {
       "name": "SubscribeByMail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -616,7 +616,7 @@
     },
     {
       "name": "UnsubscribeByMail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -636,7 +636,7 @@
     },
     {
       "name": "AddFavorite",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -656,7 +656,7 @@
     },
     {
       "name": "RemoveFavorite",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -676,7 +676,7 @@
     },
     {
       "name": "ResetUnseenCount",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -698,7 +698,7 @@
   "ConversationThread": [
     {
       "name": "Reply",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -728,7 +728,7 @@
   "Post": [
     {
       "name": "Forward",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -765,7 +765,7 @@
     },
     {
       "name": "Reply",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -832,7 +832,7 @@
     },
     {
       "name": "createLink",
-      "displayName": null,
+      "displayName": "",
       "description": "Create link description",
       "prerequisites": "Create link pre-requisites",
       "returnType": "permission",
@@ -897,7 +897,7 @@
     },
     {
       "name": "uploadContent",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -925,7 +925,7 @@
     },
     {
       "name": "content",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Stream",
@@ -945,7 +945,7 @@
     },
     {
       "name": "delta",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "item",
@@ -965,7 +965,7 @@
     },
     {
       "name": "search",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "item",
@@ -995,7 +995,7 @@
   "Page": [
     {
       "name": "PatchContent",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -1023,7 +1023,7 @@
     },
     {
       "name": "CopyToSection",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "CopyPageModel",
@@ -1069,7 +1069,7 @@
     },
     {
       "name": "Thumbnail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Stream",
@@ -1091,7 +1091,7 @@
   "Notebook": [
     {
       "name": "CopyNotebook",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "CopyNotebookModel",
@@ -1139,7 +1139,7 @@
   "Section": [
     {
       "name": "CopyToNotebook",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "CopySectionModel",
@@ -1194,7 +1194,7 @@
     },
     {
       "name": "CopyToSectionGroup",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "CopySectionModel",
@@ -1249,7 +1249,7 @@
     },
     {
       "name": "Thumbnail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Stream",
@@ -1271,7 +1271,7 @@
   "PrivilegedRoleAssignment": [
     {
       "name": "Activate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
@@ -1326,7 +1326,7 @@
     },
     {
       "name": "Deactivate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
@@ -1346,7 +1346,7 @@
     },
     {
       "name": "My",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
@@ -1368,7 +1368,7 @@
   "PrivilegedRole": [
     {
       "name": "SelfActivate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
@@ -1423,7 +1423,7 @@
     },
     {
       "name": "SelfDeactivate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
@@ -1445,7 +1445,7 @@
   "PimAlert": [
     {
       "name": "Dismiss",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",
@@ -1465,7 +1465,7 @@
     },
     {
       "name": "Reactivate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",
@@ -1485,7 +1485,7 @@
     },
     {
       "name": "Fix",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",
@@ -1515,7 +1515,7 @@
   "PrivilegedSignupStatus": [
     {
       "name": "SignUp",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedSignupStatus",
@@ -1535,7 +1535,7 @@
     },
     {
       "name": "CompleteSetup",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -1555,7 +1555,7 @@
     },
     {
       "name": "SkipSetup",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -1575,7 +1575,7 @@
     },
     {
       "name": "IsSignedUp",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Boolean",
@@ -1595,7 +1595,7 @@
     },
     {
       "name": "CanSignUp",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "Boolean",
@@ -1617,7 +1617,7 @@
   "thumbnailSet": [
     {
       "name": "getCustomThumbnail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "thumbnail",
@@ -1647,7 +1647,7 @@
   "SiteCollection": [
     {
       "name": "FromUrl",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "SiteMetadata",
@@ -1677,7 +1677,7 @@
   "Notification": [
     {
       "name": "NotificationTypes",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",
@@ -1699,7 +1699,7 @@
   "NotificationRule": [
     {
       "name": "EventTypes",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",

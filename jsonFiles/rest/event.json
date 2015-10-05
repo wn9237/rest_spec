@@ -461,7 +461,7 @@
   "methods": [
     {
       "name": "Accept",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -498,7 +498,7 @@
     },
     {
       "name": "Decline",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -535,7 +535,7 @@
     },
     {
       "name": "TentativelyAccept",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,

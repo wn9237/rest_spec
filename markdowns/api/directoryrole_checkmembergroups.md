@@ -1,4 +1,4 @@
-# DirectoryRole: checkMemberGroups
+# 
 
 
 #### HTTP request

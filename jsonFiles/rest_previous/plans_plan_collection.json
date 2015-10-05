@@ -1,8 +1,7 @@
 {
-  "name": "buckets",
+  "name": "plans",
   "description": "",
-  "collectionOf": "Bucket",
-  "allowPostToCollection": null,
+  "collectionOf": "Plan",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

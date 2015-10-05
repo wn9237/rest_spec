@@ -1,4 +1,4 @@
-# Event: Accept
+# 
 
 
 #### HTTP request

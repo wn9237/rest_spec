@@ -84,7 +84,7 @@
   "methods": [
     {
       "name": "SelfActivate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
@@ -139,7 +139,7 @@
     },
     {
       "name": "SelfDeactivate",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",

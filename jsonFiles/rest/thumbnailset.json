@@ -71,7 +71,7 @@
   "methods": [
     {
       "name": "getCustomThumbnail",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "thumbnail",

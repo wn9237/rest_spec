@@ -227,7 +227,7 @@
   "methods": [
     {
       "name": "Forward",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,
@@ -264,7 +264,7 @@
     },
     {
       "name": "Reply",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": null,

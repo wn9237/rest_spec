@@ -1,4 +1,4 @@
-# ServicePrincipal: getMemberObjects
+# 
 
 
 #### HTTP request

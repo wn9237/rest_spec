@@ -1,4 +1,4 @@
-# Group: RemoveFavorite
+# 
 
 
 #### HTTP request

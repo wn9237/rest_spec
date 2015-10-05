@@ -1,8 +1,7 @@
 {
-  "name": "PrivilegedRoleAssignments",
+  "name": "directoryRoles",
   "description": "",
-  "collectionOf": "PrivilegedRoleAssignment",
-  "allowPostToCollection": null,
+  "collectionOf": "DirectoryRole",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

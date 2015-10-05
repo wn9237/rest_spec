@@ -2,7 +2,6 @@
   "name": "SiteCollection",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -16,34 +15,43 @@
   "properties": [
     {
       "name": "id",
+      "description": "",
       "isKey": true,
       "dataType": "String",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
     {
       "name": "FromUrl",
       "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "SiteMetadata",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": true,
+      "scopes": [
+
+      ],
+      "test": "hello",
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "url",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -51,5 +59,6 @@
         }
       ]
     }
-  ]
+  ],
+  "methodNotes": ""
 }

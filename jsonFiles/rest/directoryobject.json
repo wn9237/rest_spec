@@ -58,7 +58,7 @@
   "methods": [
     {
       "name": "checkMemberGroups",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",
@@ -86,7 +86,7 @@
     },
     {
       "name": "getMemberGroups",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",
@@ -114,7 +114,7 @@
     },
     {
       "name": "getMemberObjects",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "String",

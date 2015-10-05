@@ -1,4 +1,4 @@
-# TenantDetail: getMemberGroups
+# 
 
 
 #### HTTP request

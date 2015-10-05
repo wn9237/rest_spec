@@ -32,7 +32,7 @@
   "methods": [
     {
       "name": "FromUrl",
-      "displayName": null,
+      "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "SiteMetadata",

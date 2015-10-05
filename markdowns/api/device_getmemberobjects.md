@@ -1,4 +1,4 @@
-# Device: getMemberObjects
+# 
 
 
 #### HTTP request

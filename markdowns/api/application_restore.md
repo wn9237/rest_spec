@@ -1,6 +1,6 @@
-# Application: restore
+# the restore method.
 
-
+Sample description of the restore method.
 #### HTTP request
 ```http
 to be completed....
@@ -17,7 +17,7 @@ In the request body, provide a JSON object that with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|identifierUris|String||
+|identifierUris|String|sample description of the uri param.|
 
 #### Response
 If successful, this method returns `` response code and [Application](../resources/application.md) object in the response body.

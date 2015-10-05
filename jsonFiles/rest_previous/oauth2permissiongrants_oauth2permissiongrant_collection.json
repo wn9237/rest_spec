@@ -1,8 +1,7 @@
 {
-  "name": "users",
+  "name": "oauth2PermissionGrants",
   "description": "",
-  "collectionOf": "User",
-  "allowPostToCollection": null,
+  "collectionOf": "OAuth2PermissionGrant",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -16,7 +15,10 @@
   "properties": [
 
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

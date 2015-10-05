@@ -1,4 +1,4 @@
-# DirectoryObject: getMemberObjects
+# 
 
 
 #### HTTP request
