@@ -160,15 +160,15 @@ module SpecMaker
 		# If the type is of	an object, then provide markdown link.
 		if SIMPLETYPES.include? prop[:dataType] 
 			dataTypePlusLink = prop[:dataType] 	
-			if prop[:isCollection] 
-				dataTypePlusLink = dataTypePlusLink + " collection"
-			end			
 		else			
 			dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
 			# if prop[:isCollection] 
 			# 	dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].chomp('[]').downcase + ".md)"
 			# end
 		end
+		if prop[:isCollection] 
+			dataTypePlusLink = dataTypePlusLink + " collection"
+		end			
 
 		@mdlines.push (PIPE + prop[:name] + PIPE + dataTypePlusLink + PIPE + finalDesc + PIPE ) + NEWLINE
 	end
@@ -538,7 +538,7 @@ module SpecMaker
 			if @jsonHash[:isCollection]
 				@mdlines.push "|[List](../api/#{@jsonHash[:name].downcase}_list.md) | #{@jsonHash[:collectionOf]}[]|Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
 			else
-				@mdlines.push "|[Get metadata](../api/#{@jsonHash[:name].downcase}_get.md) | #{@jsonHash[:name]} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
+				@mdlines.push "|[Get #{@jsonHash[:name]}](../api/#{@jsonHash[:name].downcase}_get.md) | #{@jsonHash[:name]} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
 			end
 			create_get_method
 		end
@@ -573,7 +573,7 @@ module SpecMaker
 		end
 
 		if patchable
-			@mdlines.push "|[Update](../api/#{@jsonHash[:name].downcase}_update.md) | #{@jsonHash[:name]}	|Update #{uncapitalize @jsonHash[:name]} object. |" + NEWLINE
+			@mdlines.push "|[Update](../api/#{@jsonHash[:name].downcase}_update.md) | #{@jsonHash[:name]}	|Update #{@jsonHash[:name]} object. |" + NEWLINE
 			create_patch_method propreties
 			# mtd = deep_copy(@struct[:method]) 
 			# mtd[:name] = 'auto_patch'
@@ -586,11 +586,13 @@ module SpecMaker
 		end
 
 		if @jsonHash[:allowDelete]
-			@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | #{@jsonHash[:name]}	|Update #{uncapitalize @jsonHash[:name]} object. |" + NEWLINE
+			puts 'delete allowed'
+			@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | #{@jsonHash[:name]}	|Delete #{@jsonHash[:name]} object. |" + NEWLINE
+			puts "pushed del line"
 			mtd = deep_copy(@struct[:method]) 
 			mtd[:displayName] = 'Delete'
 			mtd[:name] = 'auto_delete'
-			mtd[:description] = "Delete @jsonHash[:name]."
+			mtd[:description] = "Delete #{@jsonHash[:name]}."
 			mtd[:httpSuccessCode] = '204'			
 			mtd[:parameters] = nil			
 			crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_delete.md")
