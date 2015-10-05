@@ -549,96 +549,96 @@ module SpecMaker
 		end		
 
 		# Add method table. 
+		if !@jsonHash[:isComplexType]
+			@mdlines.push NEWLINE + HEADER4 + 'Tasks' + NEWLINE
 
-		@mdlines.push NEWLINE + HEADER4 + 'Tasks' + NEWLINE
-
-		if isMethod || isProperty || isPost || @jsonHash[:allowDelete]
-			@mdlines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
-		end
-		if isProperty && !@jsonHash[:isComplexType]
-			if @jsonHash[:isCollection]
-				returnLink = "[" + @jsonHash[:collectionOf] + "](" + @jsonHash[:collectionOf].downcase + ".md)"			
-				@mdlines.push "|[List](../api/#{@jsonHash[:name].downcase}_list.md) | #{returnLink} [] |Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
-			else
-				returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
-				@mdlines.push "|[Get #{@jsonHash[:name]}](../api/#{@jsonHash[:name].downcase}_get.md) | #{returnLink} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
+			if isMethod || isProperty || isPost || @jsonHash[:allowDelete]
+				@mdlines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
 			end
-			create_get_method
-		end
-
-		# Run through all the collection relationships and add a task for posting 
-		# to the right resouce to create the object.
-		# Based on the data type, the name of the API varies. 
-		if isPost			
-			propreties.each do |prop|
-				if prop[:isRelationship] && prop[:isCollection] && prop[:allowPostToCollection]
-					if SIMPLETYPES.include?(prop[:dataType]) || 
-							POST_NAME_MAPPING.include?(prop[:dataType].downcase)
-						useName = prop[:name].chomp('s')
-						postName = "Create " + useName
-					else
-						useName = prop[:dataType]					
-						postName = "Create " + useName
-					end
-					postLink = "../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md"					
-					if SIMPLETYPES.include? prop[:dataType]
-						returnLink = prop[:dataType]
-					else	
-						returnLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
-					end					
-					@mdlines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{prop[:name]} collection.|" + NEWLINE				
-					mtd = deep_copy(@struct[:method]) 
-
-					mtd[:name] = 'auto_post'
-					mtd[:displayName] = 'Create'
-					mtd[:returnType] = prop[:dataType]
-					mtd[:description] = "Create a new #{postName}."
-					mtd[:parameters] = nil					
-					mtd[:httpSuccessCode] = '201'
-				    crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md")
+			if isProperty && !@jsonHash[:isComplexType]
+				if @jsonHash[:isCollection]
+					returnLink = "[" + @jsonHash[:collectionOf] + "](" + @jsonHash[:collectionOf].downcase + ".md)"			
+					@mdlines.push "|[List](../api/#{@jsonHash[:name].downcase}_list.md) | #{returnLink} [] |Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
+				else
+					returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
+					@mdlines.push "|[Get #{@jsonHash[:name]}](../api/#{@jsonHash[:name].downcase}_get.md) | #{returnLink} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
 				end
-			end			
-		end
-
-		if patchable
-			returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
-			@mdlines.push "|[Update](../api/#{@jsonHash[:name].downcase}_update.md) | #{returnLink}	|Update #{@jsonHash[:name]} object. |" + NEWLINE
-			create_patch_method propreties
-			# mtd = deep_copy(@struct[:method]) 
-			# mtd[:name] = 'auto_patch'
-			# mtd[:displayName] = 'Update'
-			# mtd[:returnType] = @jsonHash[:name]
-			# mtd[:description] = "Update @jsonHash[:name]."
-			# mtd[:parameters] = nil
-			# mtd[:httpSuccessCode] = '200'			
-			# crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_update.md")
-		end
-
-		if @jsonHash[:allowDelete]
-			@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | Void	|Delete #{@jsonHash[:name]} object. |" + NEWLINE
-			mtd = deep_copy(@struct[:method]) 
-			mtd[:displayName] = 'Delete'
-			mtd[:name] = 'auto_delete'
-			mtd[:description] = "Delete #{@jsonHash[:name]}."
-			mtd[:httpSuccessCode] = '204'			
-			mtd[:parameters] = nil			
-			crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_delete.md")
-		end
-
-		if isMethod
-			methods.each do |mtd|
-				@logger.debug("....Processing method: #{mtd[:name]} ..........")					
-				push_method mtd
+				create_get_method
 			end
-		end
-		if !isProperty && !isMethod && !isPost
-			@mdlines.push "None"  + TWONEWLINES
-		end	
 
-		if !@jsonHash[:methodNotes].empty?
-			@mdlines.push "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
-		end	
+			# Run through all the collection relationships and add a task for posting 
+			# to the right resouce to create the object.
+			# Based on the data type, the name of the API varies. 
+			if isPost			
+				propreties.each do |prop|
+					if prop[:isRelationship] && prop[:isCollection] && prop[:allowPostToCollection]
+						if SIMPLETYPES.include?(prop[:dataType]) || 
+								POST_NAME_MAPPING.include?(prop[:dataType].downcase)
+							useName = prop[:name].chomp('s')
+							postName = "Create " + useName
+						else
+							useName = prop[:dataType]					
+							postName = "Create " + useName
+						end
+						postLink = "../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md"					
+						if SIMPLETYPES.include? prop[:dataType]
+							returnLink = prop[:dataType]
+						else	
+							returnLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
+						end					
+						@mdlines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{prop[:name]} collection.|" + NEWLINE				
+						mtd = deep_copy(@struct[:method]) 
 
+						mtd[:name] = 'auto_post'
+						mtd[:displayName] = 'Create'
+						mtd[:returnType] = prop[:dataType]
+						mtd[:description] = "Create a new #{postName}."
+						mtd[:parameters] = nil					
+						mtd[:httpSuccessCode] = '201'
+					    crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md")
+					end
+				end			
+			end
+
+			if patchable
+				returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
+				@mdlines.push "|[Update](../api/#{@jsonHash[:name].downcase}_update.md) | #{returnLink}	|Update #{@jsonHash[:name]} object. |" + NEWLINE
+				create_patch_method propreties
+				# mtd = deep_copy(@struct[:method]) 
+				# mtd[:name] = 'auto_patch'
+				# mtd[:displayName] = 'Update'
+				# mtd[:returnType] = @jsonHash[:name]
+				# mtd[:description] = "Update @jsonHash[:name]."
+				# mtd[:parameters] = nil
+				# mtd[:httpSuccessCode] = '200'			
+				# crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_update.md")
+			end
+
+			if @jsonHash[:allowDelete]
+				@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | Void	|Delete #{@jsonHash[:name]} object. |" + NEWLINE
+				mtd = deep_copy(@struct[:method]) 
+				mtd[:displayName] = 'Delete'
+				mtd[:name] = 'auto_delete'
+				mtd[:description] = "Delete #{@jsonHash[:name]}."
+				mtd[:httpSuccessCode] = '204'			
+				mtd[:parameters] = nil			
+				crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_delete.md")
+			end
+
+			if isMethod
+				methods.each do |mtd|
+					@logger.debug("....Processing method: #{mtd[:name]} ..........")					
+					push_method mtd
+				end
+			end
+			if !isProperty && !isMethod && !isPost
+				@mdlines.push "None"  + TWONEWLINES
+			end	
+
+			if !@jsonHash[:methodNotes].empty?
+				@mdlines.push "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
+			end	
+		end	
 		# Write the output file. 
 		outfile = MARKDOWN_RESOURCE_FOLDER + @resource.downcase + '.md'
 		file=File.new(outfile,'w')
