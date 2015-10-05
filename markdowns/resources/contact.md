@@ -6,15 +6,18 @@
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |AssistantName|String||
-|Birthday|DateTimeOffset||
+|Birthday|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |BusinessAddress|[PhysicalAddress](physicaladdress.md)||
 |BusinessHomePage|String||
 |BusinessPhones|String collection||
 |Categories|String collection||
 |ChangeKey|String||
 |CompanyName|String||
-|DateTimeCreated|DateTimeOffset||
-|DateTimeLastModified|DateTimeOffset||
+|DateTimeCreated|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeLastModified|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Department|String||
 |DisplayName|String||
 |EmailAddresses|[EmailAddress](emailaddress.md) collection||

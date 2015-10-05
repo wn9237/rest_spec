@@ -150,7 +150,7 @@ module SpecMaker
 		if prop[:dataType] == 'DateTimeOffset'
 			finalDesc = finalDesc + TIMESTAMP_DESC	
 		end
-		finalDesc = prop[:isReadOnly] ? prop[:description]  + ' Read-only.' : prop[:description]
+		finalDesc = prop[:isReadOnly] ? finalDesc  + ' Read-only.' : finalDesc
 		finalDesc = prop[:isNullable] ? finalDesc + ' Nulable.' : finalDesc
 		appendEnum = ''
 		if (prop[:enumName] != nil) && (@enumHash.has_key? prop[:enumName])

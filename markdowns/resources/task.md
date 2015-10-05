@@ -8,13 +8,17 @@
 |appliedCategories|[AppliedCategoriesCollection](appliedcategoriescollection.md)||
 |assignedBy|String||
 |assignedTo|String||
-|assignedToDate|DateTimeOffset||
+|assignedToDate|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |assigneePriority|String||
 |bucketId|String||
-|completedDate|DateTimeOffset||
+|completedDate|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |createdBy|String||
-|createdDate|DateTimeOffset||
-|dueDate|DateTimeOffset||
+|createdDate|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|dueDate|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |hasNotes|Boolean||
 |id|String| Read-only.|
 |numberOfReferences|Int32||
@@ -22,7 +26,8 @@
 |percentComplete|Int32||
 |planId|String||
 |previewType|String| Possible values are: `Automatic`, `NoPreview`, `CheckList`, `Notes`, `Reference`.|
-|startDate|DateTimeOffset||
+|startDate|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |title|String||
 |version|String||
 

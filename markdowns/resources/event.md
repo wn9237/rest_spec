@@ -10,9 +10,12 @@
 |BodyPreview|String||
 |Categories|String collection||
 |ChangeKey|String||
-|DateTimeCreated|DateTimeOffset||
-|DateTimeLastModified|DateTimeOffset||
-|End|DateTimeOffset||
+|DateTimeCreated|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeLastModified|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|End|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |EndTimeZone|String||
 |HasAttachments|Boolean||
 |Id|String| Read-only.|
@@ -22,14 +25,16 @@
 |IsOrganizer|Boolean||
 |Location|[Location](location.md)||
 |Organizer|[Recipient](recipient.md)||
-|OriginalStart|DateTimeOffset||
+|OriginalStart|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Recurrence|[PatternedRecurrence](patternedrecurrence.md)||
 |Reminder|Int32||
 |ResponseRequested|Boolean||
 |ResponseStatus|[ResponseStatus](responsestatus.md)||
 |SeriesMasterId|String||
 |ShowAs|String| Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
-|Start|DateTimeOffset||
+|Start|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |StartTimeZone|String||
 |Subject|String||
 |Type|String| Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
