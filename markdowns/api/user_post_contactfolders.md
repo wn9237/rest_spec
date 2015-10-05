@@ -11,7 +11,7 @@ to be completed....
 | X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
 
 #### Request body
-In the request body, supply a JSON representation of [ContactFolder](../api/contactfolder.md) object.
+In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
 
 
 #### Response

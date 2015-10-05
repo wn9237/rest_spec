@@ -277,7 +277,7 @@ module SpecMaker
 		else
 			case method[:name] 
 			when 'auto_post'
-				actionLines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../api/#{method[:returnType].downcase}.md) object." + NEWLINE
+				actionLines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../resources/#{method[:returnType].downcase}.md) object." + NEWLINE
 				actionLines.push NEWLINE				
 			when 'auto_delete'
 				actionLines.push "Do not supply a request body for this method." + NEWLINE
