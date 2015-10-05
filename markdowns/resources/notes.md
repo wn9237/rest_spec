@@ -26,4 +26,4 @@
 |[Create Resource]((../api/notes_post_resources.md)) |Resource| Create a new Resource by posting to the resources collection.|
 |[Create SectionGroup]((../api/notes_post_sectiongroups.md)) |SectionGroup| Create a new SectionGroup by posting to the sectionGroups collection.|
 |[Create Section]((../api/notes_post_sections.md)) |Section| Create a new Section by posting to the sections collection.|
-|[Delete](../api/notes_delete.md) | Notes	|Delete Notes object. |
+|[Delete](../api/notes_delete.md) | Void	|Delete Notes object. |

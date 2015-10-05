@@ -46,7 +46,7 @@
 |[Create Attachment]((../api/message_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension]((../api/message_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/message_update.md) | Message	|Update Message object. |
-|[Delete](../api/message_delete.md) | Message	|Delete Message object. |
+|[Delete](../api/message_delete.md) | Void	|Delete Message object. |
 |[Copy](../api/message_copy.md)|[Message](message.md)||
 |[Createforward](../api/message_createforward.md)|[Message](message.md)||
 |[Createreply](../api/message_createreply.md)|[Message](message.md)||

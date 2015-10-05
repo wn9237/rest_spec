@@ -21,4 +21,4 @@ None
 |:---------------|:--------|:----------|
 |[Get OutlookItem](../api/outlookitem_get.md) | OutlookItem |Read properties and relationships of outlookItem object.|
 |[Update](../api/outlookitem_update.md) | OutlookItem	|Update OutlookItem object. |
-|[Delete](../api/outlookitem_delete.md) | OutlookItem	|Delete OutlookItem object. |
+|[Delete](../api/outlookitem_delete.md) | Void	|Delete OutlookItem object. |

@@ -16,4 +16,4 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Entity](../api/entity_get.md) | Entity |Read properties and relationships of entity object.|
-|[Delete](../api/entity_delete.md) | Entity	|Delete Entity object. |
+|[Delete](../api/entity_delete.md) | Void	|Delete Entity object. |

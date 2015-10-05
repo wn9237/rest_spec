@@ -48,7 +48,7 @@
 |[Create Attachment]((../api/eventmessage_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension]((../api/eventmessage_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/eventmessage_update.md) | EventMessage	|Update EventMessage object. |
-|[Delete](../api/eventmessage_delete.md) | EventMessage	|Delete EventMessage object. |
+|[Delete](../api/eventmessage_delete.md) | Void	|Delete EventMessage object. |
 |[Copy](../api/eventmessage_copy.md)|[Message](message.md)||
 |[Createforward](../api/eventmessage_createforward.md)|[Message](message.md)||
 |[Createreply](../api/eventmessage_createreply.md)|[Message](message.md)||

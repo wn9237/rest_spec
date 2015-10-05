@@ -22,4 +22,4 @@ None
 |:---------------|:--------|:----------|
 |[Get Attachment](../api/attachment_get.md) | Attachment |Read properties and relationships of attachment object.|
 |[Update](../api/attachment_update.md) | Attachment	|Update Attachment object. |
-|[Delete](../api/attachment_delete.md) | Attachment	|Delete Attachment object. |
+|[Delete](../api/attachment_delete.md) | Void	|Delete Attachment object. |

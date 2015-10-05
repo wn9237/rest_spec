@@ -25,4 +25,4 @@
 |[Get ItemAttachment](../api/itemattachment_get.md) | ItemAttachment |Read properties and relationships of itemAttachment object.|
 |[Create Extension]((../api/itemattachment_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/itemattachment_update.md) | ItemAttachment	|Update ItemAttachment object. |
-|[Delete](../api/itemattachment_delete.md) | ItemAttachment	|Delete ItemAttachment object. |
+|[Delete](../api/itemattachment_delete.md) | Void	|Delete ItemAttachment object. |

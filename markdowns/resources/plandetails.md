@@ -25,4 +25,4 @@ None
 |:---------------|:--------|:----------|
 |[Get PlanDetails](../api/plandetails_get.md) | PlanDetails |Read properties and relationships of planDetails object.|
 |[Update](../api/plandetails_update.md) | PlanDetails	|Update PlanDetails object. |
-|[Delete](../api/plandetails_delete.md) | PlanDetails	|Delete PlanDetails object. |
+|[Delete](../api/plandetails_delete.md) | Void	|Delete PlanDetails object. |

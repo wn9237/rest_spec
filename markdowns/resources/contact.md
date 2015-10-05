@@ -54,4 +54,4 @@
 |[Get Contact](../api/contact_get.md) | Contact |Read properties and relationships of contact object.|
 |[Create Extension]((../api/contact_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/contact_update.md) | Contact	|Update Contact object. |
-|[Delete](../api/contact_delete.md) | Contact	|Delete Contact object. |
+|[Delete](../api/contact_delete.md) | Void	|Delete Contact object. |

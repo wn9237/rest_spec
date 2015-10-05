@@ -24,5 +24,5 @@ None
 |:---------------|:--------|:----------|
 |[Get NotificationRule](../api/notificationrule_get.md) | NotificationRule |Read properties and relationships of notificationRule object.|
 |[Update](../api/notificationrule_update.md) | NotificationRule	|Update NotificationRule object. |
-|[Delete](../api/notificationrule_delete.md) | NotificationRule	|Delete NotificationRule object. |
+|[Delete](../api/notificationrule_delete.md) | Void	|Delete NotificationRule object. |
 |[Eventtypes](../api/notificationrule_eventtypes.md)|String||

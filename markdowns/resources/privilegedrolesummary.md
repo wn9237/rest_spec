@@ -22,4 +22,4 @@ None
 |:---------------|:--------|:----------|
 |[Get PrivilegedRoleSummary](../api/privilegedrolesummary_get.md) | PrivilegedRoleSummary |Read properties and relationships of privilegedRoleSummary object.|
 |[Update](../api/privilegedrolesummary_update.md) | PrivilegedRoleSummary	|Update PrivilegedRoleSummary object. |
-|[Delete](../api/privilegedrolesummary_delete.md) | PrivilegedRoleSummary	|Delete PrivilegedRoleSummary object. |
+|[Delete](../api/privilegedrolesummary_delete.md) | Void	|Delete PrivilegedRoleSummary object. |

@@ -35,10 +35,10 @@
 |:---------------|:--------|:----------|
 |[Get Device](../api/device_get.md) | Device |Read properties and relationships of device object.|
 |[Create Extension]((../api/device_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create DirectoryObject]((../api/device_post_registeredowners.md)) |DirectoryObject| Create a new DirectoryObject by posting to the registeredOwners collection.|
-|[Create DirectoryObject]((../api/device_post_registeredusers.md)) |DirectoryObject| Create a new DirectoryObject by posting to the registeredUsers collection.|
+|[Create registeredOwner]((../api/device_post_registeredowners.md)) |DirectoryObject| Create a new registeredOwner by posting to the registeredOwners collection.|
+|[Create registeredUser]((../api/device_post_registeredusers.md)) |DirectoryObject| Create a new registeredUser by posting to the registeredUsers collection.|
 |[Update](../api/device_update.md) | Device	|Update Device object. |
-|[Delete](../api/device_delete.md) | Device	|Delete Device object. |
+|[Delete](../api/device_delete.md) | Void	|Delete Device object. |
 |[Checkmembergroups](../api/device_checkmembergroups.md)|String||
 |[Get getMemberGroups](../api/device_getmembergroups.md)|String||
 |[Get getMemberObjects](../api/device_getmemberobjects.md)|String||

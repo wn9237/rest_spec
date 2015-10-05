@@ -53,7 +53,7 @@
 |[Create Extension]((../api/event_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Create Instance]((../api/event_post_instances.md)) |Event| Create a new Instance by posting to the Instances collection.|
 |[Update](../api/event_update.md) | Event	|Update Event object. |
-|[Delete](../api/event_delete.md) | Event	|Delete Event object. |
+|[Delete](../api/event_delete.md) | Void	|Delete Event object. |
 |[Accept](../api/event_accept.md)|[None](none.md)||
 |[Decline](../api/event_decline.md)|[None](none.md)||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|[None](none.md)||

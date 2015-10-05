@@ -24,4 +24,4 @@
 |[Create Calendar]((../api/calendargroup_post_calendars.md)) |Calendar| Create a new Calendar by posting to the Calendars collection.|
 |[Create Extension]((../api/calendargroup_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/calendargroup_update.md) | CalendarGroup	|Update CalendarGroup object. |
-|[Delete](../api/calendargroup_delete.md) | CalendarGroup	|Delete CalendarGroup object. |
+|[Delete](../api/calendargroup_delete.md) | Void	|Delete CalendarGroup object. |

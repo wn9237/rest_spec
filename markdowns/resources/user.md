@@ -111,17 +111,17 @@
 |[Create UserPhoto]((../api/user_post_userphotos.md)) |Photo| Create a new UserPhoto by posting to the UserPhotos collection.|
 |[Create User]((../api/user_post_workingwith.md)) |User| Create a new User by posting to the WorkingWith collection.|
 |[Create AppRoleAssignment]((../api/user_post_approleassignments.md)) |AppRoleAssignment| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[Create DirectoryObject]((../api/user_post_createdobjects.md)) |DirectoryObject| Create a new DirectoryObject by posting to the createdObjects collection.|
-|[Create DirectoryObject]((../api/user_post_directreports.md)) |DirectoryObject| Create a new DirectoryObject by posting to the directReports collection.|
-|[Create DirectoryObject]((../api/user_post_memberof.md)) |DirectoryObject| Create a new DirectoryObject by posting to the memberOf collection.|
+|[Create createdObject]((../api/user_post_createdobjects.md)) |DirectoryObject| Create a new createdObject by posting to the createdObjects collection.|
+|[Create directReport]((../api/user_post_directreports.md)) |DirectoryObject| Create a new directReport by posting to the directReports collection.|
+|[Create memberOf]((../api/user_post_memberof.md)) |DirectoryObject| Create a new memberOf by posting to the memberOf collection.|
 |[Create OAuth2PermissionGrant]((../api/user_post_oauth2permissiongrants.md)) |OAuth2PermissionGrant| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
-|[Create DirectoryObject]((../api/user_post_owneddevices.md)) |DirectoryObject| Create a new DirectoryObject by posting to the ownedDevices collection.|
-|[Create DirectoryObject]((../api/user_post_ownedobjects.md)) |DirectoryObject| Create a new DirectoryObject by posting to the ownedObjects collection.|
+|[Create ownedDevice]((../api/user_post_owneddevices.md)) |DirectoryObject| Create a new ownedDevice by posting to the ownedDevices collection.|
+|[Create ownedObject]((../api/user_post_ownedobjects.md)) |DirectoryObject| Create a new ownedObject by posting to the ownedObjects collection.|
 |[Create Plan]((../api/user_post_plans.md)) |Plan| Create a new Plan by posting to the plans collection.|
-|[Create DirectoryObject]((../api/user_post_registereddevices.md)) |DirectoryObject| Create a new DirectoryObject by posting to the registeredDevices collection.|
+|[Create registeredDevice]((../api/user_post_registereddevices.md)) |DirectoryObject| Create a new registeredDevice by posting to the registeredDevices collection.|
 |[Create Task]((../api/user_post_tasks.md)) |Task| Create a new Task by posting to the tasks collection.|
 |[Update](../api/user_update.md) | User	|Update User object. |
-|[Delete](../api/user_delete.md) | User	|Delete User object. |
+|[Delete](../api/user_delete.md) | Void	|Delete User object. |
 |[Sendmail](../api/user_sendmail.md)|[None](none.md)||
 |[Assignlicense](../api/user_assignlicense.md)|[User](user.md)||
 |[Checkmembergroups](../api/user_checkmembergroups.md)|String||

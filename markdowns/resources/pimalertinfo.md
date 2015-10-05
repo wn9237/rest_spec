@@ -27,4 +27,4 @@ None
 |:---------------|:--------|:----------|
 |[Get PimAlertInfo](../api/pimalertinfo_get.md) | PimAlertInfo |Read properties and relationships of pimAlertInfo object.|
 |[Update](../api/pimalertinfo_update.md) | PimAlertInfo	|Update PimAlertInfo object. |
-|[Delete](../api/pimalertinfo_delete.md) | PimAlertInfo	|Delete PimAlertInfo object. |
+|[Delete](../api/pimalertinfo_delete.md) | Void	|Delete PimAlertInfo object. |

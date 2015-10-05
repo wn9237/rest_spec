@@ -26,6 +26,6 @@
 |[Create Extension]((../api/mailfolder_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Create Message]((../api/mailfolder_post_messages.md)) |Message| Create a new Message by posting to the Messages collection.|
 |[Update](../api/mailfolder_update.md) | MailFolder	|Update MailFolder object. |
-|[Delete](../api/mailfolder_delete.md) | MailFolder	|Delete MailFolder object. |
+|[Delete](../api/mailfolder_delete.md) | Void	|Delete MailFolder object. |
 |[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
 |[Move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||

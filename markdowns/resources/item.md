@@ -39,7 +39,7 @@ This is item object description
 |[Create item]((../api/item_post_children.md)) |item| Create a new item by posting to the children collection.|
 |[Create thumbnailSet]((../api/item_post_thumbnails.md)) |thumbnailSet| Create a new thumbnailSet by posting to the thumbnails collection.|
 |[Update](../api/item_update.md) | item	|Update item object. |
-|[Delete](../api/item_delete.md) | item	|Delete item object. |
+|[Delete](../api/item_delete.md) | Void	|Delete item object. |
 |[Content](../api/item_content.md)|Stream||
 |[Copy](../api/item_copy.md)|[item](item.md)|This is the description of Copy|
 |[Createlink](../api/item_createlink.md)|[permission](permission.md)|Create link description|

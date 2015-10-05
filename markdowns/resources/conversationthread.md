@@ -29,5 +29,5 @@
 |[Create Extension]((../api/conversationthread_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Create Post]((../api/conversationthread_post_posts.md)) |Post| Create a new Post by posting to the Posts collection.|
 |[Update](../api/conversationthread_update.md) | ConversationThread	|Update ConversationThread object. |
-|[Delete](../api/conversationthread_delete.md) | ConversationThread	|Delete ConversationThread object. |
+|[Delete](../api/conversationthread_delete.md) | Void	|Delete ConversationThread object. |
 |[Reply](../api/conversationthread_reply.md)|[None](none.md)||

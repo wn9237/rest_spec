@@ -45,10 +45,10 @@
 |:---------------|:--------|:----------|
 |[Get OrgContact](../api/orgcontact_get.md) | OrgContact |Read properties and relationships of orgContact object.|
 |[Create Extension]((../api/orgcontact_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create DirectoryObject]((../api/orgcontact_post_directreports.md)) |DirectoryObject| Create a new DirectoryObject by posting to the directReports collection.|
-|[Create DirectoryObject]((../api/orgcontact_post_memberof.md)) |DirectoryObject| Create a new DirectoryObject by posting to the memberOf collection.|
+|[Create directReport]((../api/orgcontact_post_directreports.md)) |DirectoryObject| Create a new directReport by posting to the directReports collection.|
+|[Create memberOf]((../api/orgcontact_post_memberof.md)) |DirectoryObject| Create a new memberOf by posting to the memberOf collection.|
 |[Update](../api/orgcontact_update.md) | OrgContact	|Update OrgContact object. |
-|[Delete](../api/orgcontact_delete.md) | OrgContact	|Delete OrgContact object. |
+|[Delete](../api/orgcontact_delete.md) | Void	|Delete OrgContact object. |
 |[Checkmembergroups](../api/orgcontact_checkmembergroups.md)|String||
 |[Get getMemberGroups](../api/orgcontact_getmembergroups.md)|String||
 |[Get getMemberObjects](../api/orgcontact_getmemberobjects.md)|String||

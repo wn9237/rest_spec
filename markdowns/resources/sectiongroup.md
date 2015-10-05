@@ -31,4 +31,4 @@
 |[Create SectionGroup]((../api/sectiongroup_post_sectiongroups.md)) |SectionGroup| Create a new SectionGroup by posting to the sectionGroups collection.|
 |[Create Section]((../api/sectiongroup_post_sections.md)) |Section| Create a new Section by posting to the sections collection.|
 |[Update](../api/sectiongroup_update.md) | SectionGroup	|Update SectionGroup object. |
-|[Delete](../api/sectiongroup_delete.md) | SectionGroup	|Delete SectionGroup object. |
+|[Delete](../api/sectiongroup_delete.md) | Void	|Delete SectionGroup object. |

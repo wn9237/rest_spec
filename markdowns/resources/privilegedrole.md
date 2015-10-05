@@ -22,6 +22,6 @@
 |[Get PrivilegedRole](../api/privilegedrole_get.md) | PrivilegedRole |Read properties and relationships of privilegedRole object.|
 |[Create Assignment]((../api/privilegedrole_post_assignments.md)) |PrivilegedRoleAssignment| Create a new Assignment by posting to the Assignments collection.|
 |[Update](../api/privilegedrole_update.md) | PrivilegedRole	|Update PrivilegedRole object. |
-|[Delete](../api/privilegedrole_delete.md) | PrivilegedRole	|Delete PrivilegedRole object. |
+|[Delete](../api/privilegedrole_delete.md) | Void	|Delete PrivilegedRole object. |
 |[Selfactivate](../api/privilegedrole_selfactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[Selfdeactivate](../api/privilegedrole_selfdeactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||

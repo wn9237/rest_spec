@@ -38,7 +38,7 @@ None
 |:---------------|:--------|:----------|
 |[Get TenantDetail](../api/tenantdetail_get.md) | TenantDetail |Read properties and relationships of tenantDetail object.|
 |[Update](../api/tenantdetail_update.md) | TenantDetail	|Update TenantDetail object. |
-|[Delete](../api/tenantdetail_delete.md) | TenantDetail	|Delete TenantDetail object. |
+|[Delete](../api/tenantdetail_delete.md) | Void	|Delete TenantDetail object. |
 |[Checkmembergroups](../api/tenantdetail_checkmembergroups.md)|String||
 |[Get getMemberGroups](../api/tenantdetail_getmembergroups.md)|String||
 |[Get getMemberObjects](../api/tenantdetail_getmemberobjects.md)|String||

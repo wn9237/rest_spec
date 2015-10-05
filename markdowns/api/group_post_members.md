@@ -1,6 +1,6 @@
 # Create
 
-Create a new Create DirectoryObject.
+Create a new Create member.
 #### HTTP request
 ```http
 to be completed....

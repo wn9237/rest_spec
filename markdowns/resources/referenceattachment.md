@@ -22,4 +22,4 @@ None
 |:---------------|:--------|:----------|
 |[Get ReferenceAttachment](../api/referenceattachment_get.md) | ReferenceAttachment |Read properties and relationships of referenceAttachment object.|
 |[Update](../api/referenceattachment_update.md) | ReferenceAttachment	|Update ReferenceAttachment object. |
-|[Delete](../api/referenceattachment_delete.md) | ReferenceAttachment	|Delete ReferenceAttachment object. |
+|[Delete](../api/referenceattachment_delete.md) | Void	|Delete ReferenceAttachment object. |

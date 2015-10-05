@@ -33,5 +33,5 @@
 |[Create SectionGroup]((../api/notebook_post_sectiongroups.md)) |SectionGroup| Create a new SectionGroup by posting to the sectionGroups collection.|
 |[Create Section]((../api/notebook_post_sections.md)) |Section| Create a new Section by posting to the sections collection.|
 |[Update](../api/notebook_update.md) | Notebook	|Update Notebook object. |
-|[Delete](../api/notebook_delete.md) | Notebook	|Delete Notebook object. |
+|[Delete](../api/notebook_delete.md) | Void	|Delete Notebook object. |
 |[Copynotebook](../api/notebook_copynotebook.md)|[CopyNotebookModel](copynotebookmodel.md)||

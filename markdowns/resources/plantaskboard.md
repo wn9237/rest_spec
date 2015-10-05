@@ -19,4 +19,4 @@ None
 |:---------------|:--------|:----------|
 |[Get PlanTaskBoard](../api/plantaskboard_get.md) | PlanTaskBoard |Read properties and relationships of planTaskBoard object.|
 |[Update](../api/plantaskboard_update.md) | PlanTaskBoard	|Update PlanTaskBoard object. |
-|[Delete](../api/plantaskboard_delete.md) | PlanTaskBoard	|Delete PlanTaskBoard object. |
+|[Delete](../api/plantaskboard_delete.md) | Void	|Delete PlanTaskBoard object. |

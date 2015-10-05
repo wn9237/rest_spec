@@ -26,7 +26,7 @@ None
 |:---------------|:--------|:----------|
 |[Get PrivilegedSignupStatus](../api/privilegedsignupstatus_get.md) | PrivilegedSignupStatus |Read properties and relationships of privilegedSignupStatus object.|
 |[Update](../api/privilegedsignupstatus_update.md) | PrivilegedSignupStatus	|Update PrivilegedSignupStatus object. |
-|[Delete](../api/privilegedsignupstatus_delete.md) | PrivilegedSignupStatus	|Delete PrivilegedSignupStatus object. |
+|[Delete](../api/privilegedsignupstatus_delete.md) | Void	|Delete PrivilegedSignupStatus object. |
 |[Cansignup](../api/privilegedsignupstatus_cansignup.md)|Boolean||
 |[Completesetup](../api/privilegedsignupstatus_completesetup.md)|[None](none.md)||
 |[Issignedup](../api/privilegedsignupstatus_issignedup.md)|Boolean||

@@ -20,4 +20,4 @@ None
 |:---------------|:--------|:----------|
 |[Get PlanTimeline](../api/plantimeline_get.md) | PlanTimeline |Read properties and relationships of planTimeline object.|
 |[Update](../api/plantimeline_update.md) | PlanTimeline	|Update PlanTimeline object. |
-|[Delete](../api/plantimeline_delete.md) | PlanTimeline	|Delete PlanTimeline object. |
+|[Delete](../api/plantimeline_delete.md) | Void	|Delete PlanTimeline object. |

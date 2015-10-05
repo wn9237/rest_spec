@@ -20,4 +20,4 @@ None
 |:---------------|:--------|:----------|
 |[Get TaskBoardTaskFormat](../api/taskboardtaskformat_get.md) | TaskBoardTaskFormat |Read properties and relationships of taskBoardTaskFormat object.|
 |[Update](../api/taskboardtaskformat_update.md) | TaskBoardTaskFormat	|Update TaskBoardTaskFormat object. |
-|[Delete](../api/taskboardtaskformat_delete.md) | TaskBoardTaskFormat	|Delete TaskBoardTaskFormat object. |
+|[Delete](../api/taskboardtaskformat_delete.md) | Void	|Delete TaskBoardTaskFormat object. |

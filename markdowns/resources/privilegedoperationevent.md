@@ -29,4 +29,4 @@ None
 |:---------------|:--------|:----------|
 |[Get PrivilegedOperationEvent](../api/privilegedoperationevent_get.md) | PrivilegedOperationEvent |Read properties and relationships of privilegedOperationEvent object.|
 |[Update](../api/privilegedoperationevent_update.md) | PrivilegedOperationEvent	|Update PrivilegedOperationEvent object. |
-|[Delete](../api/privilegedoperationevent_delete.md) | PrivilegedOperationEvent	|Delete PrivilegedOperationEvent object. |
+|[Delete](../api/privilegedoperationevent_delete.md) | Void	|Delete PrivilegedOperationEvent object. |

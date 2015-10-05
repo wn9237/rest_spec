@@ -24,7 +24,7 @@ None
 |:---------------|:--------|:----------|
 |[Get ExtensionProperty](../api/extensionproperty_get.md) | ExtensionProperty |Read properties and relationships of extensionProperty object.|
 |[Update](../api/extensionproperty_update.md) | ExtensionProperty	|Update ExtensionProperty object. |
-|[Delete](../api/extensionproperty_delete.md) | ExtensionProperty	|Delete ExtensionProperty object. |
+|[Delete](../api/extensionproperty_delete.md) | Void	|Delete ExtensionProperty object. |
 |[Checkmembergroups](../api/extensionproperty_checkmembergroups.md)|String||
 |[Get getMemberGroups](../api/extensionproperty_getmembergroups.md)|String||
 |[Get getMemberObjects](../api/extensionproperty_getmemberobjects.md)|String||

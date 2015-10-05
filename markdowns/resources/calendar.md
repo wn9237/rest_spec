@@ -26,4 +26,4 @@
 |[Create Event]((../api/calendar_post_events.md)) |Event| Create a new Event by posting to the Events collection.|
 |[Create Extension]((../api/calendar_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/calendar_update.md) | Calendar	|Update Calendar object. |
-|[Delete](../api/calendar_delete.md) | Calendar	|Delete Calendar object. |
+|[Delete](../api/calendar_delete.md) | Void	|Delete Calendar object. |

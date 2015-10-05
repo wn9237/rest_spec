@@ -26,4 +26,4 @@ None
 |:---------------|:--------|:----------|
 |[Get FileAttachment](../api/fileattachment_get.md) | FileAttachment |Read properties and relationships of fileAttachment object.|
 |[Update](../api/fileattachment_update.md) | FileAttachment	|Update FileAttachment object. |
-|[Delete](../api/fileattachment_delete.md) | FileAttachment	|Delete FileAttachment object. |
+|[Delete](../api/fileattachment_delete.md) | Void	|Delete FileAttachment object. |

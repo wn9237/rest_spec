@@ -41,4 +41,4 @@
 |:---------------|:--------|:----------|
 |[Get Task](../api/task_get.md) | Task |Read properties and relationships of task object.|
 |[Update](../api/task_update.md) | Task	|Update Task object. |
-|[Delete](../api/task_delete.md) | Task	|Delete Task object. |
+|[Delete](../api/task_delete.md) | Void	|Delete Task object. |

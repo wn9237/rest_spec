@@ -23,4 +23,4 @@
 |[Get drive](../api/drive_get.md) | drive |Read properties and relationships of drive object.|
 |[Create item]((../api/drive_post_items.md)) |item| Create a new item by posting to the items collection.|
 |[Update](../api/drive_update.md) | drive	|Update drive object. |
-|[Delete](../api/drive_delete.md) | drive	|Delete drive object. |
+|[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
