@@ -276,7 +276,7 @@ module SpecMaker
 			end
 		else
 			case method[:name] 
-			when 'auto-post'
+			when 'auto_post'
 				actionLines.push "In the request body, supply a JSON representation of [#{@jsonHash[:name]}]('../api/#{jsonHash[:name].downcase}.md') object." + NEWLINE
 				actionLines.push NEWLINE				
 			when 'auto_delete'
