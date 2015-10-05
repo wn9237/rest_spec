@@ -446,7 +446,11 @@ module SpecMaker
 		
 		# Obtain the resource name. 
 		@resource = @jsonHash[:name]
-		return if @jsonHash[:isEntitySet] 
+		if @jsonHash[:isEntitySet] 
+			@ientityset = @ientityset + 1
+			return 
+		end
+
 		@logger.debug("")	
 		@logger.debug("...............Report for: #{@resource}...........")	
 		puts "--> #{@resource}"
@@ -647,4 +651,5 @@ module SpecMaker
 	puts "*** @get_list_files_created #{@get_list_files_created} "
 	puts "*** @patch_files_created #{@patch_files_created}"
 	puts "*** @method_files_created #{@method_files_created}"
+	puts "*** @ientityset #{@ientityset}"
 end
