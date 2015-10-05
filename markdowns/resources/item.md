@@ -6,8 +6,7 @@ This is item object description
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|created by desc|
-|createdDateTime|DateTimeOffset|createdDateTime descThe Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-		For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|createdDateTime descThe Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |deleted|[deleted](deleted.md)|deleted desc|
 |eTag|String|eTag desc|
 |file|[file](file.md)|file desc|
@@ -15,8 +14,7 @@ This is item object description
 |id|String|id desc Read-only.|
 |image|[image](image.md)|image desc|
 |lastModifiedBy|[identitySet](identityset.md)|lastModifiedBy desc|
-|lastModifiedDateTime|DateTimeOffset|lastModifiedDateTime descThe Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-		For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|lastModifiedDateTime descThe Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |name|String|name desc|
 |parentReference|[itemReference](itemreference.md)||
 |photo|[photo](photo.md)||

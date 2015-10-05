@@ -1,4 +1,4 @@
-# 
+# item: delta
 
 
 #### HTTP request
@@ -7,9 +7,7 @@ to be completed....
 ```
 #### Request headers
 | Name       | Type | Description|
-
 |:---------------|:--------|:----------|
-
 | X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
 
 #### Request body

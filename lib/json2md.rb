@@ -55,8 +55,7 @@ module SpecMaker
 	POST_NAME_MAPPING = %w[recipient directoryobject event photo 
 						conversationthread recipient privilegedroleassignment]
 
-	TIMESTAMP_DESC = %q{The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-		For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`}
+	TIMESTAMP_DESC = %q{The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`}
 
 	# Load the structure
 	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
@@ -196,7 +195,7 @@ module SpecMaker
 	def self.crate_method_mdfile (method = {}, autoFilename=nil)
 		actionLines = []		
 		# Header and description	
-		if !method[:displayName]			
+		if method[:displayName].empty?
 			actionLines.push HEADER1 + "#{@jsonHash[:name]}: #{method[:name]}"  + TWONEWLINES
 		else
 			actionLines.push HEADER1 + "#{method[:displayName]}"  + TWONEWLINES			
@@ -231,8 +230,8 @@ module SpecMaker
 
 		#Request headers  
 		actionLines.push HEADER4 + "Request headers" + NEWLINE
-		actionLines.push HTTP_HEADER + NEWLINE
-		actionLines.push TABLE_2ND_LINE + NEWLINE
+		actionLines.push HTTP_HEADER
+		actionLines.push TABLE_2ND_LINE
 		actionLines.push HTTP_HEADER_SAMPLE + NEWLINE
 		actionLines.push NEWLINE
 		
@@ -241,7 +240,7 @@ module SpecMaker
 	
 		# Provide parameters: 
 		if method[:parameters] !=nil && method[:parameters].length > 0
-			actionLines.push "In the request body, provide a JSON object that with the following parameters." + TWONEWLINES
+			actionLines.push "In the request body, provide a JSON object with the following parameters." + TWONEWLINES
 			actionLines.push PARAM_HEADER + TABLE_2ND_LINE 
 			method[:parameters].each do |param|
 				# Append optional and enum possible values (if applicable).
