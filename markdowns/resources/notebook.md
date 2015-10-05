@@ -30,8 +30,8 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Notebook](../api/notebook_get.md) | [Notebook](notebook.md) |Read properties and relationships of notebook object.|
-|[Create SectionGroup]((../api/notebook_post_sectiongroups.md)) |[SectionGroup](sectiongroup.md)| Create a new SectionGroup by posting to the sectionGroups collection.|
-|[Create Section]((../api/notebook_post_sections.md)) |[Section](section.md)| Create a new Section by posting to the sections collection.|
+|[Create SectionGroup](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a new SectionGroup by posting to the sectionGroups collection.|
+|[Create Section](../api/notebook_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
 |[Update](../api/notebook_update.md) | [Notebook](notebook.md)	|Update Notebook object. |
 |[Delete](../api/notebook_delete.md) | Void	|Delete Notebook object. |
 |[Copynotebook](../api/notebook_copynotebook.md)|[CopyNotebookModel](copynotebookmodel.md)||

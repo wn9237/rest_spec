@@ -3,17 +3,10 @@
 
 
 #### Properties
-None
-
-#### Relationships
-None
-
-
-#### Tasks
-
-| Task		   | Return Type	|Description|
+| Property	   | Type	|Description|
 |:---------------|:--------|:----------|
- are: `Unknown`, `NotRegisteredYet`, `RegisteredSetupNotStarted`, `RegisteredSetupInProgress`, `RegistrationAndSetupCompleted`.|
+|IsRegistered|Boolean||
+|Status|String| Possible values are: `Unknown`, `NotRegisteredYet`, `RegisteredSetupNotStarted`, `RegisteredSetupInProgress`, `RegistrationAndSetupCompleted`.|
 |TenantId|String| Read-only.|
 
 #### Relationships

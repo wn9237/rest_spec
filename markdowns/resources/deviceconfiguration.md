@@ -1,19 +1,12 @@
-# deviceConfiguration resource type
+# DeviceConfiguration resource type
 
 
 
 #### Properties
-None
-
-#### Relationships
-None
-
-
-#### Tasks
-
-| Task		   | Return Type	|Description|
+| Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-etionTimestamp|DateTimeOffset||
+|cloudPublicIssuerCertificates|Binary collection||
+|deletionTimestamp|DateTimeOffset||
 |maximumRegistrationInactivityPeriod|Int32||
 |objectId|String| Read-only.|
 |objectType|String||

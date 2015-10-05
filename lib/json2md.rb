@@ -446,6 +446,7 @@ module SpecMaker
 		
 		# Obtain the resource name. 
 		@resource = @jsonHash[:name]
+		return if @jsonHash[:isEntitySet] 
 		@logger.debug("")	
 		@logger.debug("...............Report for: #{@resource}...........")	
 		puts "--> #{@resource}"
@@ -557,7 +558,7 @@ module SpecMaker
 						useName = prop[:dataType]					
 						postName = "Create " + useName
 					end
-					postLink = "(../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md)"					
+					postLink = "../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md"					
 					if SIMPLETYPES.include? prop[:dataType]
 						returnLink = prop[:dataType]
 					else	

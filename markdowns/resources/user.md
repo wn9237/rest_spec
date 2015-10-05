@@ -97,29 +97,29 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get User](../api/user_get.md) | [User](user.md) |Read properties and relationships of user object.|
-|[Create CalendarGroup]((../api/user_post_calendargroups.md)) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the CalendarGroups collection.|
-|[Create CalendarView]((../api/user_post_calendarview.md)) |[Event](event.md)| Create a new CalendarView by posting to the CalendarView collection.|
-|[Create Calendar]((../api/user_post_calendars.md)) |[Calendar](calendar.md)| Create a new Calendar by posting to the Calendars collection.|
-|[Create ContactFolder]((../api/user_post_contactfolders.md)) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the ContactFolders collection.|
-|[Create Contact]((../api/user_post_contacts.md)) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
-|[Create Event]((../api/user_post_events.md)) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[Create Extension]((../api/user_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[Create MailFolder]((../api/user_post_folders.md)) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the Folders collection.|
-|[Create Group]((../api/user_post_joinedgroups.md)) |[Group](group.md)| Create a new Group by posting to the JoinedGroups collection.|
-|[Create Message]((../api/user_post_messages.md)) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
-|[Create File]((../api/user_post_trendingaround.md)) |[File](file.md)| Create a new File by posting to the TrendingAround collection.|
-|[Create UserPhoto]((../api/user_post_userphotos.md)) |[Photo](photo.md)| Create a new UserPhoto by posting to the UserPhotos collection.|
-|[Create User]((../api/user_post_workingwith.md)) |[User](user.md)| Create a new User by posting to the WorkingWith collection.|
-|[Create AppRoleAssignment]((../api/user_post_approleassignments.md)) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[Create createdObject]((../api/user_post_createdobjects.md)) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
-|[Create directReport]((../api/user_post_directreports.md)) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
-|[Create memberOf]((../api/user_post_memberof.md)) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[Create OAuth2PermissionGrant]((../api/user_post_oauth2permissiongrants.md)) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
-|[Create ownedDevice]((../api/user_post_owneddevices.md)) |[DirectoryObject](directoryobject.md)| Create a new ownedDevice by posting to the ownedDevices collection.|
-|[Create ownedObject]((../api/user_post_ownedobjects.md)) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
-|[Create Plan]((../api/user_post_plans.md)) |[Plan](plan.md)| Create a new Plan by posting to the plans collection.|
-|[Create registeredDevice]((../api/user_post_registereddevices.md)) |[DirectoryObject](directoryobject.md)| Create a new registeredDevice by posting to the registeredDevices collection.|
-|[Create Task]((../api/user_post_tasks.md)) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
+|[Create CalendarGroup](../api/user_post_calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the CalendarGroups collection.|
+|[Create CalendarView](../api/user_post_calendarview.md) |[Event](event.md)| Create a new CalendarView by posting to the CalendarView collection.|
+|[Create Calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the Calendars collection.|
+|[Create ContactFolder](../api/user_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the ContactFolders collection.|
+|[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
+|[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
+|[Create Extension](../api/user_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[Create MailFolder](../api/user_post_folders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the Folders collection.|
+|[Create Group](../api/user_post_joinedgroups.md) |[Group](group.md)| Create a new Group by posting to the JoinedGroups collection.|
+|[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
+|[Create File](../api/user_post_trendingaround.md) |[File](file.md)| Create a new File by posting to the TrendingAround collection.|
+|[Create UserPhoto](../api/user_post_userphotos.md) |[Photo](photo.md)| Create a new UserPhoto by posting to the UserPhotos collection.|
+|[Create User](../api/user_post_workingwith.md) |[User](user.md)| Create a new User by posting to the WorkingWith collection.|
+|[Create AppRoleAssignment](../api/user_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
+|[Create createdObject](../api/user_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
+|[Create directReport](../api/user_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
+|[Create memberOf](../api/user_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[Create OAuth2PermissionGrant](../api/user_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
+|[Create ownedDevice](../api/user_post_owneddevices.md) |[DirectoryObject](directoryobject.md)| Create a new ownedDevice by posting to the ownedDevices collection.|
+|[Create ownedObject](../api/user_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
+|[Create Plan](../api/user_post_plans.md) |[Plan](plan.md)| Create a new Plan by posting to the plans collection.|
+|[Create registeredDevice](../api/user_post_registereddevices.md) |[DirectoryObject](directoryobject.md)| Create a new registeredDevice by posting to the registeredDevices collection.|
+|[Create Task](../api/user_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
 |[Update](../api/user_update.md) | [User](user.md)	|Update User object. |
 |[Delete](../api/user_delete.md) | Void	|Delete User object. |
 |[Sendmail](../api/user_sendmail.md)|[None](none.md)||

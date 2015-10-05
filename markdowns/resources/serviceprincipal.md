@@ -46,13 +46,13 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ServicePrincipal](../api/serviceprincipal_get.md) | [ServicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
-|[Create Extension]((../api/serviceprincipal_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[Create AppRoleAssignment]((../api/serviceprincipal_post_approleassignments.md)) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[Create createdObject]((../api/serviceprincipal_post_createdobjects.md)) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
-|[Create memberOf]((../api/serviceprincipal_post_memberof.md)) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[Create OAuth2PermissionGrant]((../api/serviceprincipal_post_oauth2permissiongrants.md)) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
-|[Create ownedObject]((../api/serviceprincipal_post_ownedobjects.md)) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
-|[Create owner]((../api/serviceprincipal_post_owners.md)) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[Create Extension](../api/serviceprincipal_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[Create AppRoleAssignment](../api/serviceprincipal_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
+|[Create createdObject](../api/serviceprincipal_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
+|[Create memberOf](../api/serviceprincipal_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[Create OAuth2PermissionGrant](../api/serviceprincipal_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
+|[Create ownedObject](../api/serviceprincipal_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
+|[Create owner](../api/serviceprincipal_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[Update](../api/serviceprincipal_update.md) | [ServicePrincipal](serviceprincipal.md)	|Update ServicePrincipal object. |
 |[Delete](../api/serviceprincipal_delete.md) | Void	|Delete ServicePrincipal object. |
 |[Checkmembergroups](../api/serviceprincipal_checkmembergroups.md)|String||
