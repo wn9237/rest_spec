@@ -39,6 +39,6 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/task_get.md) | Task |Read properties and relationships of task object.|
-|[Update](../api/task_update.md) | Task	|Update task object. |
-|[Delete](../api/task_delete.md) | Task	|Update task object. |
+|[Get Task](../api/task_get.md) | Task |Read properties and relationships of task object.|
+|[Update](../api/task_update.md) | Task	|Update Task object. |
+|[Delete](../api/task_delete.md) | Task	|Delete Task object. |

@@ -23,6 +23,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/plandetails_get.md) | PlanDetails |Read properties and relationships of planDetails object.|
-|[Update](../api/plandetails_update.md) | PlanDetails	|Update planDetails object. |
-|[Delete](../api/plandetails_delete.md) | PlanDetails	|Update planDetails object. |
+|[Get PlanDetails](../api/plandetails_get.md) | PlanDetails |Read properties and relationships of planDetails object.|
+|[Update](../api/plandetails_update.md) | PlanDetails	|Update PlanDetails object. |
+|[Delete](../api/plandetails_delete.md) | PlanDetails	|Delete PlanDetails object. |

@@ -15,5 +15,5 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/site_get.md) | Site |Read properties and relationships of site object.|
-|[Delete](../api/site_delete.md) | Site	|Update site object. |
+|[Get Site](../api/site_get.md) | Site |Read properties and relationships of site object.|
+|[Delete](../api/site_delete.md) | Site	|Delete Site object. |

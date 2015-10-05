@@ -17,7 +17,7 @@
 |DateTimeLastModified|DateTimeOffset||
 |Department|String||
 |DisplayName|String||
-|EmailAddresses|[EmailAddress](emailaddress.md)||
+|EmailAddresses|[EmailAddress](emailaddress.md) collection||
 |FileAs|String||
 |Generation|String||
 |GivenName|String||
@@ -45,13 +45,13 @@
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |ContactPhoto|[Photo](photo.md)| Read-only.|
-|Extensions|[Extension](extension.md)| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/contact_get.md) | Contact |Read properties and relationships of contact object.|
+|[Get Contact](../api/contact_get.md) | Contact |Read properties and relationships of contact object.|
 |[Create Extension]((../api/contact_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Update](../api/contact_update.md) | Contact	|Update contact object. |
-|[Delete](../api/contact_delete.md) | Contact	|Update contact object. |
+|[Update](../api/contact_update.md) | Contact	|Update Contact object. |
+|[Delete](../api/contact_delete.md) | Contact	|Delete Contact object. |

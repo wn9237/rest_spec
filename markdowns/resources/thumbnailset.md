@@ -18,7 +18,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/thumbnailset_get.md) | thumbnailSet |Read properties and relationships of thumbnailSet object.|
+|[Get thumbnailSet](../api/thumbnailset_get.md) | thumbnailSet |Read properties and relationships of thumbnailSet object.|
 |[Update](../api/thumbnailset_update.md) | thumbnailSet	|Update thumbnailSet object. |
-|[Delete](../api/thumbnailset_delete.md) | thumbnailSet	|Update thumbnailSet object. |
+|[Delete](../api/thumbnailset_delete.md) | thumbnailSet	|Delete thumbnailSet object. |
 |[Get getCustomThumbnail](../api/thumbnailset_getcustomthumbnail.md)|[thumbnail](thumbnail.md)||

@@ -1,6 +1,6 @@
 # Delete
 
-Delete @jsonHash[:name].
+Delete File.
 #### HTTP request
 ```http
 to be completed....

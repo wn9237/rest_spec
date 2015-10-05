@@ -19,9 +19,9 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/directoryroletemplate_get.md) | DirectoryRoleTemplate |Read properties and relationships of directoryRoleTemplate object.|
-|[Update](../api/directoryroletemplate_update.md) | DirectoryRoleTemplate	|Update directoryRoleTemplate object. |
-|[Delete](../api/directoryroletemplate_delete.md) | DirectoryRoleTemplate	|Update directoryRoleTemplate object. |
+|[Get DirectoryRoleTemplate](../api/directoryroletemplate_get.md) | DirectoryRoleTemplate |Read properties and relationships of directoryRoleTemplate object.|
+|[Update](../api/directoryroletemplate_update.md) | DirectoryRoleTemplate	|Update DirectoryRoleTemplate object. |
+|[Delete](../api/directoryroletemplate_delete.md) | DirectoryRoleTemplate	|Delete DirectoryRoleTemplate object. |
 |[Checkmembergroups](../api/directoryroletemplate_checkmembergroups.md)|String||
 |[Get getMemberGroups](../api/directoryroletemplate_getmembergroups.md)|String||
 |[Get getMemberObjects](../api/directoryroletemplate_getmemberobjects.md)|String||

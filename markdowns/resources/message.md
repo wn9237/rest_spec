@@ -5,11 +5,11 @@
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|BccRecipients|[Recipient](recipient.md)||
+|BccRecipients|[Recipient](recipient.md) collection||
 |Body|[ItemBody](itembody.md)||
 |BodyPreview|String||
 |Categories|String collection||
-|CcRecipients|[Recipient](recipient.md)||
+|CcRecipients|[Recipient](recipient.md) collection||
 |ChangeKey|String||
 |ConversationId|String||
 |DateTimeCreated|DateTimeOffset||
@@ -25,28 +25,28 @@
 |IsRead|Boolean||
 |IsReadReceiptRequested|Boolean||
 |ParentFolderId|String||
-|ReplyTo|[Recipient](recipient.md)||
+|ReplyTo|[Recipient](recipient.md) collection||
 |Sender|[Recipient](recipient.md)||
 |Subject|String||
-|ToRecipients|[Recipient](recipient.md)||
+|ToRecipients|[Recipient](recipient.md) collection||
 |UniqueBody|[ItemBody](itembody.md)||
 |WebLink|String||
 
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Attachments|[Attachment](attachment.md)| Read-only.|
-|Extensions|[Extension](extension.md)| Read-only.|
+|Attachments|[Attachment](attachment.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/message_get.md) | Message |Read properties and relationships of message object.|
+|[Get Message](../api/message_get.md) | Message |Read properties and relationships of message object.|
 |[Create Attachment]((../api/message_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension]((../api/message_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Update](../api/message_update.md) | Message	|Update message object. |
-|[Delete](../api/message_delete.md) | Message	|Update message object. |
+|[Update](../api/message_update.md) | Message	|Update Message object. |
+|[Delete](../api/message_delete.md) | Message	|Delete Message object. |
 |[Copy](../api/message_copy.md)|[Message](message.md)||
 |[Createforward](../api/message_createforward.md)|[Message](message.md)||
 |[Createreply](../api/message_createreply.md)|[Message](message.md)||

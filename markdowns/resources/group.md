@@ -26,38 +26,38 @@
 |objectId|String| Read-only.|
 |objectType|String||
 |onPremisesSecurityIdentifier|String||
-|provisioningErrors|[ProvisioningError](provisioningerror.md)||
+|provisioningErrors|[ProvisioningError](provisioningerror.md) collection||
 |proxyAddresses|String collection||
 |securityEnabled|Boolean||
 
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|AcceptedSenders|[DirectoryObject](directoryobject.md)| Read-only.|
+|AcceptedSenders|[DirectoryObject](directoryobject.md) collection| Read-only.|
 |Calendar|[Calendar](calendar.md)| Read-only.|
-|CalendarView|[Event](event.md)| Read-only.|
-|Conversations|[Conversation](conversation.md)| Read-only.|
-|Events|[Event](event.md)| Read-only.|
-|Extensions|[Extension](extension.md)| Read-only.|
+|CalendarView|[Event](event.md) collection| Read-only.|
+|Conversations|[Conversation](conversation.md) collection| Read-only.|
+|Events|[Event](event.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only.|
 |GroupPhoto|[Photo](photo.md)| Read-only.|
-|GroupPhotos|[Photo](photo.md)| Read-only.|
-|RejectedSenders|[DirectoryObject](directoryobject.md)| Read-only.|
-|Threads|[ConversationThread](conversationthread.md)| Read-only.|
-|appRoleAssignments|[AppRoleAssignment](approleassignment.md)| Read-only.|
+|GroupPhotos|[Photo](photo.md) collection| Read-only.|
+|RejectedSenders|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|Threads|[ConversationThread](conversationthread.md) collection| Read-only.|
+|appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only.|
 |createdOnBehalfOf|[DirectoryObject](directoryobject.md)| Read-only.|
 |details|[UserDetails](userdetails.md)| Read-only.|
 |drive|[drive](drive.md)| Read-only.|
-|memberOf|[DirectoryObject](directoryobject.md)| Read-only.|
-|members|[DirectoryObject](directoryobject.md)| Read-only.|
-|owners|[DirectoryObject](directoryobject.md)| Read-only.|
-|plans|[Plan](plan.md)| Read-only.|
-|tasks|[Task](task.md)| Read-only.|
+|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|members|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|owners|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|plans|[Plan](plan.md) collection| Read-only.|
+|tasks|[Task](task.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/group_get.md) | Group |Read properties and relationships of group object.|
+|[Get Group](../api/group_get.md) | Group |Read properties and relationships of group object.|
 |[Create DirectoryObject]((../api/group_post_acceptedsenders.md)) |DirectoryObject| Create a new DirectoryObject by posting to the AcceptedSenders collection.|
 |[Create CalendarView]((../api/group_post_calendarview.md)) |Event| Create a new CalendarView by posting to the CalendarView collection.|
 |[Create Conversation]((../api/group_post_conversations.md)) |Conversation| Create a new Conversation by posting to the Conversations collection.|
@@ -72,8 +72,8 @@
 |[Create DirectoryObject]((../api/group_post_owners.md)) |DirectoryObject| Create a new DirectoryObject by posting to the owners collection.|
 |[Create Plan]((../api/group_post_plans.md)) |Plan| Create a new Plan by posting to the plans collection.|
 |[Create Task]((../api/group_post_tasks.md)) |Task| Create a new Task by posting to the tasks collection.|
-|[Update](../api/group_update.md) | Group	|Update group object. |
-|[Delete](../api/group_delete.md) | Group	|Update group object. |
+|[Update](../api/group_update.md) | Group	|Update Group object. |
+|[Delete](../api/group_delete.md) | Group	|Delete Group object. |
 |[Addfavorite](../api/group_addfavorite.md)|[None](none.md)||
 |[Removefavorite](../api/group_removefavorite.md)|[None](none.md)||
 |[Resetunseencount](../api/group_resetunseencount.md)|[None](none.md)||

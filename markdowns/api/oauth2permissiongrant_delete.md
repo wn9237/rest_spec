@@ -1,6 +1,6 @@
 # Delete
 
-Delete @jsonHash[:name].
+Delete OAuth2PermissionGrant.
 #### HTTP request
 ```http
 to be completed....

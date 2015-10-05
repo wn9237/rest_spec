@@ -1,6 +1,6 @@
 # Delete
 
-Delete @jsonHash[:name].
+Delete TaskBoardTaskFormat.
 #### HTTP request
 ```http
 to be completed....

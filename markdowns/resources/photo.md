@@ -17,6 +17,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/photo_get.md) | Photo |Read properties and relationships of photo object.|
-|[Update](../api/photo_update.md) | Photo	|Update photo object. |
-|[Delete](../api/photo_delete.md) | Photo	|Update photo object. |
+|[Get Photo](../api/photo_get.md) | Photo |Read properties and relationships of photo object.|
+|[Update](../api/photo_update.md) | Photo	|Update Photo object. |
+|[Delete](../api/photo_delete.md) | Photo	|Delete Photo object. |

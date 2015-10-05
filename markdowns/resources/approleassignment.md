@@ -24,9 +24,9 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/approleassignment_get.md) | AppRoleAssignment |Read properties and relationships of appRoleAssignment object.|
-|[Update](../api/approleassignment_update.md) | AppRoleAssignment	|Update appRoleAssignment object. |
-|[Delete](../api/approleassignment_delete.md) | AppRoleAssignment	|Update appRoleAssignment object. |
+|[Get AppRoleAssignment](../api/approleassignment_get.md) | AppRoleAssignment |Read properties and relationships of appRoleAssignment object.|
+|[Update](../api/approleassignment_update.md) | AppRoleAssignment	|Update AppRoleAssignment object. |
+|[Delete](../api/approleassignment_delete.md) | AppRoleAssignment	|Delete AppRoleAssignment object. |
 |[Checkmembergroups](../api/approleassignment_checkmembergroups.md)|String||
 |[Get getMemberGroups](../api/approleassignment_getmembergroups.md)|String||
 |[Get getMemberObjects](../api/approleassignment_getmemberobjects.md)|String||

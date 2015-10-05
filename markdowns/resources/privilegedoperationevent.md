@@ -27,6 +27,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/privilegedoperationevent_get.md) | PrivilegedOperationEvent |Read properties and relationships of privilegedOperationEvent object.|
-|[Update](../api/privilegedoperationevent_update.md) | PrivilegedOperationEvent	|Update privilegedOperationEvent object. |
-|[Delete](../api/privilegedoperationevent_delete.md) | PrivilegedOperationEvent	|Update privilegedOperationEvent object. |
+|[Get PrivilegedOperationEvent](../api/privilegedoperationevent_get.md) | PrivilegedOperationEvent |Read properties and relationships of privilegedOperationEvent object.|
+|[Update](../api/privilegedoperationevent_update.md) | PrivilegedOperationEvent	|Update PrivilegedOperationEvent object. |
+|[Delete](../api/privilegedoperationevent_delete.md) | PrivilegedOperationEvent	|Delete PrivilegedOperationEvent object. |

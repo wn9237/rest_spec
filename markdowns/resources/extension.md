@@ -15,5 +15,5 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/extension_get.md) | Extension |Read properties and relationships of extension object.|
-|[Delete](../api/extension_delete.md) | Extension	|Update extension object. |
+|[Get Extension](../api/extension_get.md) | Extension |Read properties and relationships of extension object.|
+|[Delete](../api/extension_delete.md) | Extension	|Delete Extension object. |

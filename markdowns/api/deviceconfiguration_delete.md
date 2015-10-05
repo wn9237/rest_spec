@@ -1,6 +1,6 @@
 # Delete
 
-Delete @jsonHash[:name].
+Delete DeviceConfiguration.
 #### HTTP request
 ```http
 to be completed....

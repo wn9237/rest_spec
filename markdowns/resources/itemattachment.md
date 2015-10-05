@@ -15,14 +15,14 @@
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md)| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only.|
 |Item|[OutlookItem](outlookitem.md)| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/itemattachment_get.md) | ItemAttachment |Read properties and relationships of itemAttachment object.|
+|[Get ItemAttachment](../api/itemattachment_get.md) | ItemAttachment |Read properties and relationships of itemAttachment object.|
 |[Create Extension]((../api/itemattachment_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Update](../api/itemattachment_update.md) | ItemAttachment	|Update itemAttachment object. |
-|[Delete](../api/itemattachment_delete.md) | ItemAttachment	|Update itemAttachment object. |
+|[Update](../api/itemattachment_update.md) | ItemAttachment	|Update ItemAttachment object. |
+|[Delete](../api/itemattachment_delete.md) | ItemAttachment	|Delete ItemAttachment object. |

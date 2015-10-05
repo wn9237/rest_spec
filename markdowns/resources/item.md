@@ -26,20 +26,20 @@ This is item object description
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|children|[item](item.md)| Read-only.|
+|children|[item](item.md) collection| Read-only.|
 |createdByUser|[User](user.md)| Read-only.|
 |lastModifiedByUser|[User](user.md)| Read-only.|
-|thumbnails|[thumbnailSet](thumbnailset.md)| Read-only.|
+|thumbnails|[thumbnailSet](thumbnailset.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/item_get.md) | item |Read properties and relationships of item object.|
+|[Get item](../api/item_get.md) | item |Read properties and relationships of item object.|
 |[Create item]((../api/item_post_children.md)) |item| Create a new item by posting to the children collection.|
 |[Create thumbnailSet]((../api/item_post_thumbnails.md)) |thumbnailSet| Create a new thumbnailSet by posting to the thumbnails collection.|
 |[Update](../api/item_update.md) | item	|Update item object. |
-|[Delete](../api/item_delete.md) | item	|Update item object. |
+|[Delete](../api/item_delete.md) | item	|Delete item object. |
 |[Content](../api/item_content.md)|Stream||
 |[Copy](../api/item_copy.md)|[item](item.md)|This is the description of Copy|
 |[Createlink](../api/item_createlink.md)|[permission](permission.md)|Create link description|

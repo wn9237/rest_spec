@@ -9,7 +9,7 @@
 |consumedUnits|Int32||
 |objectId|String| Read-only.|
 |prepaidUnits|[LicenseUnitsDetail](licenseunitsdetail.md)||
-|servicePlans|[ServicePlanInfo](serviceplaninfo.md)||
+|servicePlans|[ServicePlanInfo](serviceplaninfo.md) collection||
 |skuId|Guid||
 |skuPartNumber|String||
 
@@ -21,6 +21,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/subscribedsku_get.md) | SubscribedSku |Read properties and relationships of subscribedSku object.|
-|[Update](../api/subscribedsku_update.md) | SubscribedSku	|Update subscribedSku object. |
-|[Delete](../api/subscribedsku_delete.md) | SubscribedSku	|Update subscribedSku object. |
+|[Get SubscribedSku](../api/subscribedsku_get.md) | SubscribedSku |Read properties and relationships of subscribedSku object.|
+|[Update](../api/subscribedsku_update.md) | SubscribedSku	|Update SubscribedSku object. |
+|[Delete](../api/subscribedsku_delete.md) | SubscribedSku	|Delete SubscribedSku object. |

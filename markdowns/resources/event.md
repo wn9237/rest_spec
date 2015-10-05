@@ -5,7 +5,7 @@
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Attendees|[Attendee](attendee.md)||
+|Attendees|[Attendee](attendee.md) collection||
 |Body|[ItemBody](itembody.md)||
 |BodyPreview|String||
 |Categories|String collection||
@@ -39,21 +39,21 @@
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Attachments|[Attachment](attachment.md)| Read-only.|
+|Attachments|[Attachment](attachment.md) collection| Read-only.|
 |Calendar|[Calendar](calendar.md)| Read-only.|
-|Extensions|[Extension](extension.md)| Read-only.|
-|Instances|[Event](event.md)| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only.|
+|Instances|[Event](event.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/event_get.md) | Event |Read properties and relationships of event object.|
+|[Get Event](../api/event_get.md) | Event |Read properties and relationships of event object.|
 |[Create Attachment]((../api/event_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension]((../api/event_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Create Instance]((../api/event_post_instances.md)) |Event| Create a new Instance by posting to the Instances collection.|
-|[Update](../api/event_update.md) | Event	|Update event object. |
-|[Delete](../api/event_delete.md) | Event	|Update event object. |
+|[Update](../api/event_update.md) | Event	|Update Event object. |
+|[Delete](../api/event_delete.md) | Event	|Delete Event object. |
 |[Accept](../api/event_accept.md)|[None](none.md)||
 |[Decline](../api/event_decline.md)|[None](none.md)||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|[None](none.md)||

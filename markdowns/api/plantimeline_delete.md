@@ -1,6 +1,6 @@
 # Delete
 
-Delete @jsonHash[:name].
+Delete PlanTimeline.
 #### HTTP request
 ```http
 to be completed....

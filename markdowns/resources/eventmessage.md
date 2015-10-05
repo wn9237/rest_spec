@@ -5,11 +5,11 @@
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|BccRecipients|[Recipient](recipient.md)||
+|BccRecipients|[Recipient](recipient.md) collection||
 |Body|[ItemBody](itembody.md)||
 |BodyPreview|String||
 |Categories|String collection||
-|CcRecipients|[Recipient](recipient.md)||
+|CcRecipients|[Recipient](recipient.md) collection||
 |ChangeKey|String||
 |ConversationId|String||
 |DateTimeCreated|DateTimeOffset||
@@ -26,29 +26,29 @@
 |IsReadReceiptRequested|Boolean||
 |MeetingMessageType|String| Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
 |ParentFolderId|String||
-|ReplyTo|[Recipient](recipient.md)||
+|ReplyTo|[Recipient](recipient.md) collection||
 |Sender|[Recipient](recipient.md)||
 |Subject|String||
-|ToRecipients|[Recipient](recipient.md)||
+|ToRecipients|[Recipient](recipient.md) collection||
 |UniqueBody|[ItemBody](itembody.md)||
 |WebLink|String||
 
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Attachments|[Attachment](attachment.md)| Read-only.|
+|Attachments|[Attachment](attachment.md) collection| Read-only.|
 |Event|[Event](event.md)| Read-only.|
-|Extensions|[Extension](extension.md)| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only.|
 
 #### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/eventmessage_get.md) | EventMessage |Read properties and relationships of eventMessage object.|
+|[Get EventMessage](../api/eventmessage_get.md) | EventMessage |Read properties and relationships of eventMessage object.|
 |[Create Attachment]((../api/eventmessage_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension]((../api/eventmessage_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
-|[Update](../api/eventmessage_update.md) | EventMessage	|Update eventMessage object. |
-|[Delete](../api/eventmessage_delete.md) | EventMessage	|Update eventMessage object. |
+|[Update](../api/eventmessage_update.md) | EventMessage	|Update EventMessage object. |
+|[Delete](../api/eventmessage_delete.md) | EventMessage	|Delete EventMessage object. |
 |[Copy](../api/eventmessage_copy.md)|[Message](message.md)||
 |[Createforward](../api/eventmessage_createforward.md)|[Message](message.md)||
 |[Createreply](../api/eventmessage_createreply.md)|[Message](message.md)||

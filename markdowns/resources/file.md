@@ -13,4 +13,4 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Delete](../api/file_delete.md) | File	|Update file object. |
+|[Delete](../api/file_delete.md) | File	|Delete File object. |

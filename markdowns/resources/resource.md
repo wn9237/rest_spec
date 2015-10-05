@@ -18,6 +18,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/resource_get.md) | Resource |Read properties and relationships of resource object.|
-|[Update](../api/resource_update.md) | Resource	|Update resource object. |
-|[Delete](../api/resource_delete.md) | Resource	|Update resource object. |
+|[Get Resource](../api/resource_get.md) | Resource |Read properties and relationships of resource object.|
+|[Update](../api/resource_update.md) | Resource	|Update Resource object. |
+|[Delete](../api/resource_delete.md) | Resource	|Delete Resource object. |

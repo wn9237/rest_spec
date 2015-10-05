@@ -25,9 +25,9 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/page_get.md) | Page |Read properties and relationships of page object.|
-|[Update](../api/page_update.md) | Page	|Update page object. |
-|[Delete](../api/page_delete.md) | Page	|Update page object. |
+|[Get Page](../api/page_get.md) | Page |Read properties and relationships of page object.|
+|[Update](../api/page_update.md) | Page	|Update Page object. |
+|[Delete](../api/page_delete.md) | Page	|Delete Page object. |
 |[Copytosection](../api/page_copytosection.md)|[CopyPageModel](copypagemodel.md)||
 |[Patchcontent](../api/page_patchcontent.md)|[None](none.md)||
 |[Thumbnail](../api/page_thumbnail.md)|Stream||

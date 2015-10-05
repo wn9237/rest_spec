@@ -15,5 +15,5 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/entity_get.md) | Entity |Read properties and relationships of entity object.|
-|[Delete](../api/entity_delete.md) | Entity	|Update entity object. |
+|[Get Entity](../api/entity_get.md) | Entity |Read properties and relationships of entity object.|
+|[Delete](../api/entity_delete.md) | Entity	|Delete Entity object. |

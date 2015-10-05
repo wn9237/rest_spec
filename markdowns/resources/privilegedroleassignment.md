@@ -19,9 +19,9 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/privilegedroleassignment_get.md) | PrivilegedRoleAssignment |Read properties and relationships of privilegedRoleAssignment object.|
-|[Update](../api/privilegedroleassignment_update.md) | PrivilegedRoleAssignment	|Update privilegedRoleAssignment object. |
-|[Delete](../api/privilegedroleassignment_delete.md) | PrivilegedRoleAssignment	|Update privilegedRoleAssignment object. |
+|[Get PrivilegedRoleAssignment](../api/privilegedroleassignment_get.md) | PrivilegedRoleAssignment |Read properties and relationships of privilegedRoleAssignment object.|
+|[Update](../api/privilegedroleassignment_update.md) | PrivilegedRoleAssignment	|Update PrivilegedRoleAssignment object. |
+|[Delete](../api/privilegedroleassignment_delete.md) | PrivilegedRoleAssignment	|Delete PrivilegedRoleAssignment object. |
 |[Activate](../api/privilegedroleassignment_activate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[Deactivate](../api/privilegedroleassignment_deactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[My](../api/privilegedroleassignment_my.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||

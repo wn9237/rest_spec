@@ -22,6 +22,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/privilegedrolesettings_get.md) | PrivilegedRoleSettings |Read properties and relationships of privilegedRoleSettings object.|
-|[Update](../api/privilegedrolesettings_update.md) | PrivilegedRoleSettings	|Update privilegedRoleSettings object. |
-|[Delete](../api/privilegedrolesettings_delete.md) | PrivilegedRoleSettings	|Update privilegedRoleSettings object. |
+|[Get PrivilegedRoleSettings](../api/privilegedrolesettings_get.md) | PrivilegedRoleSettings |Read properties and relationships of privilegedRoleSettings object.|
+|[Update](../api/privilegedrolesettings_update.md) | PrivilegedRoleSettings	|Update PrivilegedRoleSettings object. |
+|[Delete](../api/privilegedrolesettings_delete.md) | PrivilegedRoleSettings	|Delete PrivilegedRoleSettings object. |
