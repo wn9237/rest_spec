@@ -52,7 +52,7 @@ module SpecMaker
 	# For POST /Collection, we want to use a name that's sensible such as 
 	# Add Owner or Create Owner instead of Add DirectoryObject. Hence, if the 
 		# collection(datatype) happens to be one the below, we'll use the name in the API name.
-	POST_NAME_MAPPING = %w[recipient directoryobjects event photo 
+	POST_NAME_MAPPING = %w[recipient directoryobject event photo 
 						conversationthread recipient privilegedroleassignment]
 
 	TIMESTAMP_DESC = " The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -586,9 +586,7 @@ module SpecMaker
 		end
 
 		if @jsonHash[:allowDelete]
-			puts 'delete allowed'
-			@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | #{@jsonHash[:name]}	|Delete #{@jsonHash[:name]} object. |" + NEWLINE
-			puts "pushed del line"
+			@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | Void	|Delete #{@jsonHash[:name]} object. |" + NEWLINE
 			mtd = deep_copy(@struct[:method]) 
 			mtd[:displayName] = 'Delete'
 			mtd[:name] = 'auto_delete'
