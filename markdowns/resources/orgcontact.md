@@ -44,12 +44,9 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/orgcontact_get.md) | OrgContact |Read properties and relationships of orgContact object.|
-|[Create Extension]((../api/orgcontact_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create DirectoryObject]((../api/orgcontact_post_directreports.md)) | 
-									DirectoryObject| Create a new DirectoryObject by posting to the directReports collection.|
-|[Create DirectoryObject]((../api/orgcontact_post_memberof.md)) | 
-									DirectoryObject| Create a new DirectoryObject by posting to the memberOf collection.|
+|[Create Extension]((../api/orgcontact_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create DirectoryObject]((../api/orgcontact_post_directreports.md)) |DirectoryObject| Create a new DirectoryObject by posting to the directReports collection.|
+|[Create DirectoryObject]((../api/orgcontact_post_memberof.md)) |DirectoryObject| Create a new DirectoryObject by posting to the memberOf collection.|
 |[Update](../api/orgcontact_update.md) | OrgContact	|Update orgContact object. |
 |[Delete](../api/orgcontact_delete.md) | OrgContact	|Update orgContact object. |
 |[Checkmembergroups](../api/orgcontact_checkmembergroups.md)|String||

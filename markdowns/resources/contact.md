@@ -52,7 +52,6 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/contact_get.md) | Contact |Read properties and relationships of contact object.|
-|[Create Extension]((../api/contact_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create Extension]((../api/contact_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/contact_update.md) | Contact	|Update contact object. |
 |[Delete](../api/contact_delete.md) | Contact	|Update contact object. |

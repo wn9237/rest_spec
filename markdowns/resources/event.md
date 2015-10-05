@@ -49,12 +49,9 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/event_get.md) | Event |Read properties and relationships of event object.|
-|[Create Attachment]((../api/event_post_attachments.md)) | 
-									Attachment| Create a new Attachment by posting to the Attachments collection.|
-|[Create Extension]((../api/event_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create Instance]((../api/event_post_instances.md)) | 
-									Event| Create a new Instance by posting to the Instances collection.|
+|[Create Attachment]((../api/event_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
+|[Create Extension]((../api/event_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create Instance]((../api/event_post_instances.md)) |Event| Create a new Instance by posting to the Instances collection.|
 |[Update](../api/event_update.md) | Event	|Update event object. |
 |[Delete](../api/event_delete.md) | Event	|Update event object. |
 |[Accept](../api/event_accept.md)|[None](none.md)||

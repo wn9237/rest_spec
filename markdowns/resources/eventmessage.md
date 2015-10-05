@@ -45,10 +45,8 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/eventmessage_get.md) | EventMessage |Read properties and relationships of eventMessage object.|
-|[Create Attachment]((../api/eventmessage_post_attachments.md)) | 
-									Attachment| Create a new Attachment by posting to the Attachments collection.|
-|[Create Extension]((../api/eventmessage_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create Attachment]((../api/eventmessage_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
+|[Create Extension]((../api/eventmessage_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/eventmessage_update.md) | EventMessage	|Update eventMessage object. |
 |[Delete](../api/eventmessage_delete.md) | EventMessage	|Update eventMessage object. |
 |[Copy](../api/eventmessage_copy.md)|[Message](message.md)||

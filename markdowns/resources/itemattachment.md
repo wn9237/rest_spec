@@ -23,7 +23,6 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/itemattachment_get.md) | ItemAttachment |Read properties and relationships of itemAttachment object.|
-|[Create Extension]((../api/itemattachment_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create Extension]((../api/itemattachment_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/itemattachment_update.md) | ItemAttachment	|Update itemAttachment object. |
 |[Delete](../api/itemattachment_delete.md) | ItemAttachment	|Update itemAttachment object. |

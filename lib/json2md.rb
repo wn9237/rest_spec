@@ -558,8 +558,7 @@ module SpecMaker
 						postName = "Create " + useName
 					end
 					postLink = "(../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md)"					
-					@mdlines.push "|[#{postName}](#{postLink}) | 
-									#{prop[:dataType]}| Create a new #{useName} by posting to the #{prop[:name]} collection.|" + NEWLINE				
+					@mdlines.push "|[#{postName}](#{postLink}) |#{prop[:dataType]}| Create a new #{useName} by posting to the #{prop[:name]} collection.|" + NEWLINE				
 					mtd = deep_copy(@struct[:method]) 
 
 					mtd[:name] = 'auto_post'

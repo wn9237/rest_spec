@@ -43,10 +43,8 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/message_get.md) | Message |Read properties and relationships of message object.|
-|[Create Attachment]((../api/message_post_attachments.md)) | 
-									Attachment| Create a new Attachment by posting to the Attachments collection.|
-|[Create Extension]((../api/message_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create Attachment]((../api/message_post_attachments.md)) |Attachment| Create a new Attachment by posting to the Attachments collection.|
+|[Create Extension]((../api/message_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/message_update.md) | Message	|Update message object. |
 |[Delete](../api/message_delete.md) | Message	|Update message object. |
 |[Copy](../api/message_copy.md)|[Message](message.md)||

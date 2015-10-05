@@ -22,12 +22,9 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/mailfolder_get.md) | MailFolder |Read properties and relationships of mailFolder object.|
-|[Create MailFolder]((../api/mailfolder_post_childfolders.md)) | 
-									MailFolder| Create a new MailFolder by posting to the ChildFolders collection.|
-|[Create Extension]((../api/mailfolder_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create Message]((../api/mailfolder_post_messages.md)) | 
-									Message| Create a new Message by posting to the Messages collection.|
+|[Create MailFolder]((../api/mailfolder_post_childfolders.md)) |MailFolder| Create a new MailFolder by posting to the ChildFolders collection.|
+|[Create Extension]((../api/mailfolder_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create Message]((../api/mailfolder_post_messages.md)) |Message| Create a new Message by posting to the Messages collection.|
 |[Update](../api/mailfolder_update.md) | MailFolder	|Update mailFolder object. |
 |[Delete](../api/mailfolder_delete.md) | MailFolder	|Update mailFolder object. |
 |[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||

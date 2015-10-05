@@ -27,8 +27,7 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/section_get.md) | Section |Read properties and relationships of section object.|
-|[Create Page]((../api/section_post_pages.md)) | 
-									Page| Create a new Page by posting to the pages collection.|
+|[Create Page]((../api/section_post_pages.md)) |Page| Create a new Page by posting to the pages collection.|
 |[Update](../api/section_update.md) | Section	|Update section object. |
 |[Delete](../api/section_delete.md) | Section	|Update section object. |
 |[Copytonotebook](../api/section_copytonotebook.md)|[CopySectionModel](copysectionmodel.md)||

@@ -58,34 +58,20 @@
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/group_get.md) | Group |Read properties and relationships of group object.|
-|[Create DirectoryObject]((../api/group_post_acceptedsenders.md)) | 
-									DirectoryObject| Create a new DirectoryObject by posting to the AcceptedSenders collection.|
-|[Create CalendarView]((../api/group_post_calendarview.md)) | 
-									Event| Create a new CalendarView by posting to the CalendarView collection.|
-|[Create Conversation]((../api/group_post_conversations.md)) | 
-									Conversation| Create a new Conversation by posting to the Conversations collection.|
-|[Create Event]((../api/group_post_events.md)) | 
-									Event| Create a new Event by posting to the Events collection.|
-|[Create Extension]((../api/group_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create GroupPhoto]((../api/group_post_groupphotos.md)) | 
-									Photo| Create a new GroupPhoto by posting to the GroupPhotos collection.|
-|[Create DirectoryObject]((../api/group_post_rejectedsenders.md)) | 
-									DirectoryObject| Create a new DirectoryObject by posting to the RejectedSenders collection.|
-|[Create Thread]((../api/group_post_threads.md)) | 
-									ConversationThread| Create a new Thread by posting to the Threads collection.|
-|[Create AppRoleAssignment]((../api/group_post_approleassignments.md)) | 
-									AppRoleAssignment| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[Create DirectoryObject]((../api/group_post_memberof.md)) | 
-									DirectoryObject| Create a new DirectoryObject by posting to the memberOf collection.|
-|[Create DirectoryObject]((../api/group_post_members.md)) | 
-									DirectoryObject| Create a new DirectoryObject by posting to the members collection.|
-|[Create DirectoryObject]((../api/group_post_owners.md)) | 
-									DirectoryObject| Create a new DirectoryObject by posting to the owners collection.|
-|[Create Plan]((../api/group_post_plans.md)) | 
-									Plan| Create a new Plan by posting to the plans collection.|
-|[Create Task]((../api/group_post_tasks.md)) | 
-									Task| Create a new Task by posting to the tasks collection.|
+|[Create DirectoryObject]((../api/group_post_acceptedsenders.md)) |DirectoryObject| Create a new DirectoryObject by posting to the AcceptedSenders collection.|
+|[Create CalendarView]((../api/group_post_calendarview.md)) |Event| Create a new CalendarView by posting to the CalendarView collection.|
+|[Create Conversation]((../api/group_post_conversations.md)) |Conversation| Create a new Conversation by posting to the Conversations collection.|
+|[Create Event]((../api/group_post_events.md)) |Event| Create a new Event by posting to the Events collection.|
+|[Create Extension]((../api/group_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create GroupPhoto]((../api/group_post_groupphotos.md)) |Photo| Create a new GroupPhoto by posting to the GroupPhotos collection.|
+|[Create DirectoryObject]((../api/group_post_rejectedsenders.md)) |DirectoryObject| Create a new DirectoryObject by posting to the RejectedSenders collection.|
+|[Create Thread]((../api/group_post_threads.md)) |ConversationThread| Create a new Thread by posting to the Threads collection.|
+|[Create AppRoleAssignment]((../api/group_post_approleassignments.md)) |AppRoleAssignment| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
+|[Create DirectoryObject]((../api/group_post_memberof.md)) |DirectoryObject| Create a new DirectoryObject by posting to the memberOf collection.|
+|[Create DirectoryObject]((../api/group_post_members.md)) |DirectoryObject| Create a new DirectoryObject by posting to the members collection.|
+|[Create DirectoryObject]((../api/group_post_owners.md)) |DirectoryObject| Create a new DirectoryObject by posting to the owners collection.|
+|[Create Plan]((../api/group_post_plans.md)) |Plan| Create a new Plan by posting to the plans collection.|
+|[Create Task]((../api/group_post_tasks.md)) |Task| Create a new Task by posting to the tasks collection.|
 |[Update](../api/group_update.md) | Group	|Update group object. |
 |[Delete](../api/group_delete.md) | Group	|Update group object. |
 |[Addfavorite](../api/group_addfavorite.md)|[None](none.md)||

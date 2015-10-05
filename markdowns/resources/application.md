@@ -43,12 +43,9 @@ This is a sample application description.
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/application_get.md) | Application |Read properties and relationships of application object.|
-|[Create Extension]((../api/application_post_extensions.md)) | 
-									Extension| Create a new Extension by posting to the Extensions collection.|
-|[Create ExtensionProperty]((../api/application_post_extensionproperties.md)) | 
-									ExtensionProperty| Create a new ExtensionProperty by posting to the extensionProperties collection.|
-|[Create DirectoryObject]((../api/application_post_owners.md)) | 
-									DirectoryObject| Create a new DirectoryObject by posting to the owners collection.|
+|[Create Extension]((../api/application_post_extensions.md)) |Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create ExtensionProperty]((../api/application_post_extensionproperties.md)) |ExtensionProperty| Create a new ExtensionProperty by posting to the extensionProperties collection.|
+|[Create DirectoryObject]((../api/application_post_owners.md)) |DirectoryObject| Create a new DirectoryObject by posting to the owners collection.|
 |[Update](../api/application_update.md) | Application	|Update application object. |
 |[Delete](../api/application_delete.md) | Application	|Update application object. |
 |[Checkmembergroups](../api/application_checkmembergroups.md)|String||
