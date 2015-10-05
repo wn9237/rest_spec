@@ -2,7 +2,6 @@
   "name": "PhysicalAddress",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
@@ -16,66 +15,74 @@
   "properties": [
     {
       "name": "Street",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "City",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "State",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "CountryOrRegion",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "PostalCode",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

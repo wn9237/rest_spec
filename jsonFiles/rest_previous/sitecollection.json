@@ -1,0 +1,55 @@
+{
+  "name": "SiteCollection",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "id",
+      "isKey": true,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    }
+  ],
+  "methods": [
+    {
+      "name": "FromUrl",
+      "displayName": null,
+      "prerequisites": "",
+      "returnType": "SiteMetadata",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": "",
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "isFunction": true,
+      "parameters": [
+        {
+          "name": "url",
+          "dataType": "String",
+          "description": "",
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    }
+  ]
+}

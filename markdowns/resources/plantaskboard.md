@@ -1,21 +1,22 @@
-# PlanTaskBoard
+# PlanTaskBoard resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
-|type|[Enumeration](enumeration.md)| Read-only. Possible values are: `Status`, `AssignedTo`, `Bucket`.|
+|type|String| Read-only. Possible values are: `Status`, `AssignedTo`, `Bucket`.|
 |version|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/plantaskboard_get.md) | PlanTaskBoard |Read properties and relationships of planTaskBoard object.|
 |[Update](../api/plantaskboard_update.md) | PlanTaskBoard	|Update planTaskBoard object. |
+|[Delete](../api/plantaskboard_delete.md) | PlanTaskBoard	|Update planTaskBoard object. |

@@ -1,37 +1,65 @@
 {
+  "serviceSettings" : {
+	  "name": "",
+	  "description": "",
+	  "allowPatch": true,  
+	  "allowUpsert": true,    
+	  "allowPatchCreate": false,
+	  "errorCodes" : []
+	},
+  "object" : {
+	  "name": null,
+	  "description": "",
+	  "collectionOf": null,
+	  "isComplexType": false,
+	  "isEntitySet" : false,
+	  "allowPatch": true,  
+	  "allowUpsert": true,    
+	  "allowPatchCreate": true,
+	  "allowDelete": true,  
+	  "restPath": [],		
+	  "info": null,
+	  "properties": [],
+	  "propertyNotes" : "",
+	  "relationshipNotes" : "",  
+	  "methods": [],
+	  "methodNotes": ""
+	},	
   "property": {
 	  "name": null,
+	  "description": "",
 	  "isKey": false,
 	  "dataType": null,
-	  "description": "",
 	  "isReadOnly": false,
 	  "enumName": null,
 	  "isCollection": false,
 	  "isRelationship": false,
-	  "isNullable" : true,
+	  "allowPostToCollection": true,	  
+	  "isNullable" : null,
 	  "isUnicode" : null
 	},
   "method":
 	{
 	  "name": null,
 	  "displayName": null,
+	  "description": "",
 	  "prerequisites": "",	  	  
 	  "returnType": null,
 	  "isReturnNullable" : null,
 	  "isReturnTypeCollection": false,
-	  "description": "",
-	  "syntax": null,  
-	  "httpSuccessResponseCode": null,
+	  "httpSuccessCode": null,
 	  "isFunction" : null,
-	  "parameters" : null
+	  "scopes" : [],
+	  "errorCodes" : [],
+	  "parameters" : []
 	},
   "parameter":	
   	{
 	  "name": null,
-	  "dataType": null,
 	  "description": "",
+	  "dataType": null,
 	  "isRequired": true,
-	  "enumNameJs": null,
+	  "enumName": null,
 	  "isNullable" : null,
 	  "isUnicode" : null
 	}

@@ -1,8 +1,8 @@
-# FileAttachment
+# FileAttachment resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ContentBytes|Binary||
@@ -16,13 +16,14 @@
 |Name|String||
 |Size|Int32||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/fileattachment_get.md) | FileAttachment |Read properties and relationships of fileAttachment object.|
 |[Update](../api/fileattachment_update.md) | FileAttachment	|Update fileAttachment object. |
+|[Delete](../api/fileattachment_delete.md) | FileAttachment	|Update fileAttachment object. |

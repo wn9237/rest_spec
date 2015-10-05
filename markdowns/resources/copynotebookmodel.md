@@ -1,8 +1,8 @@
-# CopyNotebookModel
+# CopyNotebookModel resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|String||
@@ -17,15 +17,13 @@
 |sectionGroupsUrl|String||
 |sectionsUrl|String||
 |self|String||
-|userRole|[Enumeration](enumeration.md)| Possible values are: `Owner`, `Contributor`, `Reader`, `None`.|
+|userRole|String| Possible values are: `Owner`, `Contributor`, `Reader`, `None`.|
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/copynotebookmodel_get.md) | CopyNotebookModel |Read properties and relationships of copyNotebookModel object.|
-|[Update](../api/copynotebookmodel_update.md) | CopyNotebookModel	|Update copyNotebookModel object. |

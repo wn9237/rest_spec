@@ -1,8 +1,8 @@
-# CopyPageModel
+# CopyPageModel resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |contentUrl|String||
@@ -16,13 +16,11 @@
 |self|String||
 |title|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/copypagemodel_get.md) | CopyPageModel |Read properties and relationships of copyPageModel object.|
-|[Update](../api/copypagemodel_update.md) | CopyPageModel	|Update copyPageModel object. |

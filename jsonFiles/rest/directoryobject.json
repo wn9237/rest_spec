@@ -2,7 +2,6 @@
   "name": "DirectoryObject",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -16,60 +15,70 @@
   "properties": [
     {
       "name": "objectType",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "objectId",
+      "description": "",
       "isKey": true,
       "dataType": "String",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
     },
     {
       "name": "deletionTimestamp",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
     {
       "name": "checkMemberGroups",
-      "displayName": "",
+      "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "groupIds",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
-          "enumNameJs": null,
+          "enumName": null,
           "isNullable": false,
           "isUnicode": false
         }
@@ -77,22 +86,27 @@
     },
     {
       "name": "getMemberGroups",
-      "displayName": "",
+      "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",
-          "dataType": "Boolean",
           "description": "",
+          "dataType": "Boolean",
           "isRequired": true,
-          "enumNameJs": null,
+          "enumName": null,
           "isNullable": null,
           "isUnicode": null
         }
@@ -100,26 +114,32 @@
     },
     {
       "name": "getMemberObjects",
-      "displayName": "",
+      "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",
-          "dataType": "Boolean",
           "description": "",
+          "dataType": "Boolean",
           "isRequired": true,
-          "enumNameJs": null,
+          "enumName": null,
           "isNullable": null,
           "isUnicode": null
         }
       ]
     }
-  ]
+  ],
+  "methodNotes": ""
 }

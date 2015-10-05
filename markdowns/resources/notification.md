@@ -1,8 +1,8 @@
-# Notification
+# Notification resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |DisplayName|String||
@@ -10,14 +10,15 @@
 |NotificationTarget|String||
 |NotificationType|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/notification_get.md) | Notification |Read properties and relationships of notification object.|
 |[Update](../api/notification_update.md) | Notification	|Update notification object. |
+|[Delete](../api/notification_delete.md) | Notification	|Update notification object. |
 |[Notificationtypes](../api/notification_notificationtypes.md)|String||

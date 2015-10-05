@@ -1,21 +1,21 @@
-# item
+# item resource type
 
+This is item object description
 
-
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)||
-|createdDateTime|DateTimeOffset||
-|deleted|[deleted](deleted.md)||
-|eTag|String||
-|file|[file](file.md)||
+|createdBy|[identitySet](identityset.md)|created by desc|
+|createdDateTime|DateTimeOffset|createdDateTime desc|
+|deleted|[deleted](deleted.md)|deleted desc|
+|eTag|String|eTag desc|
+|file|[file](file.md)|file desc|
 |folder|[folder](folder.md)||
-|id|String| Read-only.|
-|image|[image](image.md)||
-|lastModifiedBy|[identitySet](identityset.md)||
-|lastModifiedDateTime|DateTimeOffset||
-|name|String||
+|id|String|id desc Read-only.|
+|image|[image](image.md)|image desc|
+|lastModifiedBy|[identitySet](identityset.md)|lastModifiedBy desc|
+|lastModifiedDateTime|DateTimeOffset|lastModifiedDateTime desc|
+|name|String|name desc|
 |parentReference|[itemReference](itemreference.md)||
 |photo|[photo](photo.md)||
 |searchResult|[searchResult](searchresult.md)||
@@ -23,7 +23,7 @@
 |webDavUrl|String||
 |webUrl|String||
 
-## Relationships
+#### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |children|[item](item.md)| Read-only.|
@@ -31,16 +31,21 @@
 |lastModifiedByUser|[User](user.md)| Read-only.|
 |thumbnails|[thumbnailSet](thumbnailset.md)| Read-only.|
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/item_get.md) | item |Read properties and relationships of item object.|
+|[Create item]((../api/item_post_children.md)) | 
+									item| Create a new item by posting to the children collection.|
+|[Create thumbnailSet]((../api/item_post_thumbnails.md)) | 
+									thumbnailSet| Create a new thumbnailSet by posting to the thumbnails collection.|
 |[Update](../api/item_update.md) | item	|Update item object. |
+|[Delete](../api/item_delete.md) | item	|Update item object. |
 |[Content](../api/item_content.md)|Stream||
-|[Copy](../api/item_copy.md)|[item](item.md)||
-|[Createlink](../api/item_createlink.md)|[permission](permission.md)||
-|[Createsession](../api/item_createsession.md)|[uploadSession](uploadsession.md)||
+|[Copy](../api/item_copy.md)|[item](item.md)|This is the description of Copy|
+|[Createlink](../api/item_createlink.md)|[permission](permission.md)|Create link description|
+|[Createsession](../api/item_createsession.md)|[uploadSession](uploadsession.md)|this is create sesssion method|
 |[Delta](../api/item_delta.md)|[item](item.md)||
 |[Search](../api/item_search.md)|[item](item.md)||
 |[Uploadcontent](../api/item_uploadcontent.md)|[None](none.md)||

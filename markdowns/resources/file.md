@@ -1,15 +1,16 @@
-# File
+# File resource type
 
 
 
-## Properties
+#### Properties
 None
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[Delete](../api/file_delete.md) | File	|Update file object. |

@@ -2,7 +2,6 @@
   "name": "RecurrencePattern",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
@@ -16,94 +15,100 @@
   "properties": [
     {
       "name": "Type",
-      "isKey": false,
-      "dataType": "Enumeration",
       "description": "",
+      "isKey": false,
+      "dataType": "String",
       "isReadOnly": false,
-      "enumName": null,
+      "enumName": "RecurrencePatternType",
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
-      "isUnicode": null,
-      "enumNameJs": "RecurrencePatternType"
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "Interval",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "Month",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "DayOfMonth",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "DaysOfWeek",
-      "isKey": false,
-      "dataType": "Enumeration",
       "description": "",
+      "isKey": false,
+      "dataType": "String",
       "isReadOnly": false,
-      "enumName": null,
+      "enumName": "DayOfWeek",
       "isCollection": true,
       "isRelationship": false,
-      "isNullable": true,
-      "isUnicode": null,
-      "enumNameJs": "DayOfWeek"
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "FirstDayOfWeek",
-      "isKey": false,
-      "dataType": "Enumeration",
       "description": "",
+      "isKey": false,
+      "dataType": "String",
       "isReadOnly": false,
-      "enumName": null,
+      "enumName": "DayOfWeek",
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
-      "isUnicode": null,
-      "enumNameJs": "DayOfWeek"
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "Index",
-      "isKey": false,
-      "dataType": "Enumeration",
       "description": "",
+      "isKey": false,
+      "dataType": "String",
       "isReadOnly": false,
-      "enumName": null,
+      "enumName": "WeekIndex",
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
-      "isUnicode": null,
-      "enumNameJs": "WeekIndex"
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

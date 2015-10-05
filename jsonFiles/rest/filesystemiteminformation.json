@@ -2,7 +2,6 @@
   "name": "FileSystemItemInformation",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
@@ -16,54 +15,61 @@
   "properties": [
     {
       "name": "file",
+      "description": "",
       "isKey": false,
       "dataType": "file",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "folder",
+      "description": "",
       "isKey": false,
       "dataType": "folder",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "name",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "parentReference",
+      "description": "",
       "isKey": false,
       "dataType": "itemReference",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

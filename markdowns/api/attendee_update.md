@@ -1,27 +1,27 @@
 # Update Attendee
 
 Update the properties of attendee object.
-## HTTP request
+#### HTTP request
 ```http
 
 ```
 
-## Optional request headers
+#### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
 
-## Request body
+#### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |EmailAddress|EmailAddress||
 |Status|ResponseStatus||
-|Type|Enumeration| Possible values are: `isExclusive` true,`options` {"Required"=>{"value"=>"0", "description"=>""}, "Optional"=>{"value"=>"1", "description"=>""}, "Resource"=>{"value"=>"2", "description"=>""}}|
+|Type|String| Possible values are: `isExclusive` true,`options` {"Required"=>{"value"=>"0", "description"=>""}, "Optional"=>{"value"=>"1", "description"=>""}, "Resource"=>{"value"=>"2", "description"=>""}}|
 
-## Response
+#### Response
 If successful, this method returns a `200 OK` response code and updated [Attendee](../resources/attendee.md) object in the response body.
-## Example
-### HTTP request
-### Response
+#### Example
+##### HTTP request
+##### Response

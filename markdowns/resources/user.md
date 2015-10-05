@@ -1,8 +1,8 @@
-# User
+# User resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |AboutMe|String||
@@ -20,47 +20,26 @@
 |Skills|String collection||
 |Tags|String collection||
 |accountEnabled|Boolean||
-|appDisplayName|String||
-|appId|String||
-|appRoles|[AppRole](approle.md)||
 |assignedLicenses|[AssignedLicense](assignedlicense.md)||
 |assignedPlans|[AssignedPlan](assignedplan.md)||
-|availableToOtherTenants|Boolean||
 |city|String||
 |country|String||
-|dataType|String||
 |deletionTimestamp|DateTimeOffset||
 |department|String||
 |dirSyncEnabled|Boolean||
 |displayName|String||
-|displayName|String||
-|errorUrl|String||
 |facsimileTelephoneNumber|String||
 |givenName|String||
-|groupMembershipClaims|String||
-|homepage|String||
-|identifierUris|String collection||
 |immutableId|String||
-|isSyncedFromOnPremises|Boolean||
 |jobTitle|String||
-|keyCredentials|[KeyCredential](keycredential.md)||
-|knownClientApplications|Guid collection||
 |lastDirSyncTime|DateTimeOffset||
-|logoutUrl|String||
 |mail|String||
 |mailNickname|String||
-|mainLogo|Stream||
 |mobile|String||
-|name|String||
-|oauth2AllowImplicitFlow|Boolean||
-|oauth2AllowUrlPathMatching|Boolean||
-|oauth2Permissions|[OAuth2Permission](oauth2permission.md)||
-|oauth2RequirePostResponse|Boolean||
 |objectId|String| Read-only.|
 |objectType|String||
 |onPremisesSecurityIdentifier|String||
 |otherMails|String collection||
-|passwordCredentials|[PasswordCredential](passwordcredential.md)||
 |passwordPolicies|String||
 |passwordProfile|[PasswordProfile](passwordprofile.md)||
 |physicalDeliveryOfficeName|String||
@@ -69,22 +48,17 @@
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md)||
 |provisioningErrors|[ProvisioningError](provisioningerror.md)||
 |proxyAddresses|String collection||
-|publicClient|Boolean||
-|replyUrls|String collection||
-|requiredResourceAccess|[RequiredResourceAccess](requiredresourceaccess.md)||
-|samlMetadataUrl|String||
 |sipProxyAddress|String||
 |state|String||
 |streetAddress|String||
 |surname|String||
-|targetObjects|String collection||
 |telephoneNumber|String||
 |thumbnailPhoto|Stream||
 |usageLocation|String||
 |userPrincipalName|String||
 |userType|String||
 
-## Relationships
+#### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Calendar|[Calendar](calendar.md)| Read-only.|
@@ -118,12 +92,59 @@
 |registeredDevices|[DirectoryObject](directoryobject.md)| Read-only.|
 |tasks|[Task](task.md)| Read-only.|
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/user_get.md) | User |Read properties and relationships of user object.|
+|[Create CalendarGroup]((../api/user_post_calendargroups.md)) | 
+									CalendarGroup| Create a new CalendarGroup by posting to the CalendarGroups collection.|
+|[Create CalendarView]((../api/user_post_calendarview.md)) | 
+									Event| Create a new CalendarView by posting to the CalendarView collection.|
+|[Create Calendar]((../api/user_post_calendars.md)) | 
+									Calendar| Create a new Calendar by posting to the Calendars collection.|
+|[Create ContactFolder]((../api/user_post_contactfolders.md)) | 
+									ContactFolder| Create a new ContactFolder by posting to the ContactFolders collection.|
+|[Create Contact]((../api/user_post_contacts.md)) | 
+									Contact| Create a new Contact by posting to the Contacts collection.|
+|[Create Event]((../api/user_post_events.md)) | 
+									Event| Create a new Event by posting to the Events collection.|
+|[Create Extension]((../api/user_post_extensions.md)) | 
+									Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create MailFolder]((../api/user_post_folders.md)) | 
+									MailFolder| Create a new MailFolder by posting to the Folders collection.|
+|[Create Group]((../api/user_post_joinedgroups.md)) | 
+									Group| Create a new Group by posting to the JoinedGroups collection.|
+|[Create Message]((../api/user_post_messages.md)) | 
+									Message| Create a new Message by posting to the Messages collection.|
+|[Create File]((../api/user_post_trendingaround.md)) | 
+									File| Create a new File by posting to the TrendingAround collection.|
+|[Create UserPhoto]((../api/user_post_userphotos.md)) | 
+									Photo| Create a new UserPhoto by posting to the UserPhotos collection.|
+|[Create User]((../api/user_post_workingwith.md)) | 
+									User| Create a new User by posting to the WorkingWith collection.|
+|[Create AppRoleAssignment]((../api/user_post_approleassignments.md)) | 
+									AppRoleAssignment| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
+|[Create DirectoryObject]((../api/user_post_createdobjects.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the createdObjects collection.|
+|[Create DirectoryObject]((../api/user_post_directreports.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the directReports collection.|
+|[Create DirectoryObject]((../api/user_post_memberof.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the memberOf collection.|
+|[Create OAuth2PermissionGrant]((../api/user_post_oauth2permissiongrants.md)) | 
+									OAuth2PermissionGrant| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
+|[Create DirectoryObject]((../api/user_post_owneddevices.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the ownedDevices collection.|
+|[Create DirectoryObject]((../api/user_post_ownedobjects.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the ownedObjects collection.|
+|[Create Plan]((../api/user_post_plans.md)) | 
+									Plan| Create a new Plan by posting to the plans collection.|
+|[Create DirectoryObject]((../api/user_post_registereddevices.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the registeredDevices collection.|
+|[Create Task]((../api/user_post_tasks.md)) | 
+									Task| Create a new Task by posting to the tasks collection.|
 |[Update](../api/user_update.md) | User	|Update user object. |
+|[Delete](../api/user_delete.md) | User	|Update user object. |
 |[Sendmail](../api/user_sendmail.md)|[None](none.md)||
 |[Assignlicense](../api/user_assignlicense.md)|[User](user.md)||
 |[Checkmembergroups](../api/user_checkmembergroups.md)|String||

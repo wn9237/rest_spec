@@ -1,0 +1,121 @@
+{
+  "name": "PrivilegedSignupStatus",
+  "description": "",
+  "collectionOf": null,
+  "allowPostToCollection": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "restPath": [
+
+  ],
+  "info": null,
+  "properties": [
+    {
+      "name": "TenantId",
+      "isKey": true,
+      "dataType": "String",
+      "description": "",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "IsRegistered",
+      "isKey": false,
+      "dataType": "Boolean",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "Status",
+      "isKey": false,
+      "dataType": "StringX",
+      "description": "",
+      "isReadOnly": false,
+      "enumName": "SetupStatus",
+      "isCollection": false,
+      "isRelationship": false,
+      "isNullable": false,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "SignUp",
+      "displayName": null,
+      "prerequisites": "",
+      "returnType": "PrivilegedSignupStatus",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": "",
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "isFunction": false,
+      "parameters": null
+    },
+    {
+      "name": "CompleteSetup",
+      "displayName": null,
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": "",
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "isFunction": false,
+      "parameters": null
+    },
+    {
+      "name": "SkipSetup",
+      "displayName": null,
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "description": "",
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "isFunction": false,
+      "parameters": null
+    },
+    {
+      "name": "IsSignedUp",
+      "displayName": null,
+      "prerequisites": "",
+      "returnType": "Boolean",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "description": "",
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "isFunction": true,
+      "parameters": null
+    },
+    {
+      "name": "CanSignUp",
+      "displayName": null,
+      "prerequisites": "",
+      "returnType": "Boolean",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "description": "",
+      "syntax": null,
+      "httpSuccessResponseCode": null,
+      "isFunction": true,
+      "parameters": null
+    }
+  ]
+}

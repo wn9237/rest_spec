@@ -6,22 +6,31 @@ require 'logger'
 module SpecMaker
 	JSON_BASE_FOLDER = "../jsonFiles/"
 	JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
+	JSON_PREV_SOURCE_FOLDER = "../jsonFiles/rest_previous/"
 	ENUMS = JSON_BASE_FOLDER + 'settings/restenums.json'
 	CSDL_LOCATION = "../data/"
 	
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"
 	BASETYPES = %w[Entity DirectoryObject Attachment Message OutlookItem]
+	####
+	# This is to address the special entityType: 
+	# <EntityType Name="Extension" BaseType="Microsoft.Graph.Entity" />
+	# Here, there is no property or nav.prop defined for Extension. It simply 
+	# points back to the Entity. If more such cases arise, add an entry here. 
+	#
+	##
 	BASETYPE_MAPPING = {
 		"Extension" => "Entity",
 	}
 	# Load the template 
-	JSON_TEMPLATE = "../jsonFiles/template/restresourcetemplate.json"
-	@template = JSON.parse(File.read(JSON_TEMPLATE), {:symbolize_names => true})
+	# JSON_TEMPLATE = "../jsonFiles/template/restresourcetemplate.json"
+	# @template = JSON.parse(File.read(JSON_TEMPLATE), {:symbolize_names => true})
 
 	# Load the structure
 	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
 	@struct = JSON.parse(File.read(JSON_STRUCTURE), {:symbolize_names => true})
-
+	@template = @struct[:object]
+	
 # Log file
 	LOG_FOLDER = '../../logs'
 	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
@@ -71,9 +80,7 @@ module SpecMaker
 		methods.each do |item|
 			create_examplefile(objectName, item[:name])
 		end
-
 	end
-
 
 	###
 	# To prevent shallow copy errors, need to get a new object each time.
@@ -81,6 +88,52 @@ module SpecMaker
 	#	
 	def self.deep_copy(o)
 	  Marshal.load(Marshal.dump(o))
+	end
+
+	###
+	# Copy method description, display name, parameter descriptions, etc. 
+	#	from an existing JSON file from previous run. 
+	# 
+	##	
+	def self.preserve_method_descriptions (objectName=nil, method=nil)
+		fullpath = JSON_PREV_SOURCE_FOLDER + objectName.downcase + '.json'
+		if File.file?(fullpath)
+			prevObject = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			prevMethods = prevObject[:methods]
+			prevMethods.each do |item|
+				if item[:name] == method[:name]
+					method[:description] = item[:description]
+					method[:displayName] = item[:displayName]
+					method[:prerequisites] = item[:prerequisites]
+ 					method[:parameters].each do |param|
+						item[:parameters].each do |paramOld|
+							if paramOld[:name] == param[:name]
+								param[:description] = paramOld[:description]
+							end
+						end
+					end	
+				end
+			end
+		end
+		return method
+	end
+
+	def self.preserve_object_property_descriptions(objectName=nil)
+		fullpath = JSON_PREV_SOURCE_FOLDER + objectName.downcase + '.json'
+		if File.file?(fullpath)
+			prevObject = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			@json_object[:description] = prevObject[:description]			
+			prevProperties = prevObject[:properties]
+			prevProperties.each do |item|
+				@json_object[:properties].each do |currentProp|
+					if item[:name] == currentProp[:name]
+						currentProp[:description] = item[:description]
+					end
+				end
+			end
+		else
+			puts "-----> No previous JSON file version exists for this resource."
+		end
 	end
 
 	###
@@ -99,7 +152,7 @@ module SpecMaker
 			if base.nil? 
 				return current
 			elsif base.is_a?(Array)
-				return base.concat current
+				return current.concat base
 			elsif base.is_a?(Hash)
 				return current.push base 
 			end
@@ -107,7 +160,8 @@ module SpecMaker
 			if base.nil? 
 				return current
 			elsif base.is_a?(Array)
-				return base.push current
+				arr = base
+				return arr.push current
 			elsif base.is_a?(Hash)
 				arr.push base
 				arr.push current
@@ -118,13 +172,13 @@ module SpecMaker
 
 	def self.process_property (item=nil)
 		prop = deep_copy(@struct[:property])
-		prop[:name] = item[:Name]
+			prop[:name] = item[:Name]
 		dt = get_type(item[:Type])
 		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
 		prop[:dataType] = dt
 		if @enum_objects.has_key?(dt.to_sym) 
-			prop[:enumNameJs] = dt 
-			prop[:dataType] = "Enumeration"
+			prop[:enumName] = dt 
+			prop[:dataType] = "String"
 		end
 		if @key_save.include?(item[:Name])
 			prop[:isKey], prop[:isReadOnly] = true, true 
@@ -164,8 +218,8 @@ module SpecMaker
 		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
 		prop[:dataType] = dt
 		if @enum_objects.has_key?(dt.to_sym) 
-			prop[:enumNameJs] = dt 
-			prop[:dataType] = "Enumeration"
+			prop[:enumName] = dt 
+			prop[:dataType] = "String"
 		end
 		if item[:Nullable] == 'false'
 			prop[:isNullable] = false
@@ -187,7 +241,6 @@ module SpecMaker
 		end
 
 		if item.has_key?(:ReturnType)
-			puts item[:ReturnType]
 			dt = get_type(item[:ReturnType][:Type])
 			mtd[:isReturnTypeCollection] = true if item[:ReturnType][:Type].start_with?('Collection(')
 			mtd[:returnType] = dt
@@ -222,15 +275,15 @@ module SpecMaker
 
 		entity_name = enamef[(enamef.rindex('.') + 1)..-1]		
 		entity_name = entity_name.chomp(')')
+
+		mtd = preserve_method_descriptions(entity_name, mtd)		
 		if @methods.has_key?(entity_name.to_sym)
 			@methods[entity_name.to_sym].push mtd
 		else			
 			@methods[entity_name.to_sym] = []			
 			@methods[entity_name.to_sym].push mtd
 		end
-
 		create_examplefile(entity_name, mtd[:name])				
-
 		return 
 	end
 end

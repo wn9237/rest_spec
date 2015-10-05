@@ -1,25 +1,32 @@
-# Calendar
+# Calendar resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ChangeKey|String||
-|Color|[Enumeration](enumeration.md)| Possible values are: `LightBlue`, `LightGreen`, `LightOrange`, `LightGray`, `LightYellow`, `LightTeal`, `LightPink`, `LightBrown`, `LightRed`, `MaxColor`, `Auto`.|
+|Color|String| Possible values are: `LightBlue`, `LightGreen`, `LightOrange`, `LightGray`, `LightYellow`, `LightTeal`, `LightPink`, `LightBrown`, `LightRed`, `MaxColor`, `Auto`.|
 |Id|String| Read-only.|
 |Name|String||
 
-## Relationships
+#### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |CalendarView|[Event](event.md)| Read-only.|
 |Events|[Event](event.md)| Read-only.|
 |Extensions|[Extension](extension.md)| Read-only.|
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/calendar_get.md) | Calendar |Read properties and relationships of calendar object.|
+|[Create CalendarView]((../api/calendar_post_calendarview.md)) | 
+									Event| Create a new CalendarView by posting to the CalendarView collection.|
+|[Create Event]((../api/calendar_post_events.md)) | 
+									Event| Create a new Event by posting to the Events collection.|
+|[Create Extension]((../api/calendar_post_extensions.md)) | 
+									Extension| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/calendar_update.md) | Calendar	|Update calendar object. |
+|[Delete](../api/calendar_delete.md) | Calendar	|Update calendar object. |

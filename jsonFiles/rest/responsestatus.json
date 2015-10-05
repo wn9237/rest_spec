@@ -2,7 +2,6 @@
   "name": "ResponseStatus",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
@@ -16,31 +15,35 @@
   "properties": [
     {
       "name": "Response",
-      "isKey": false,
-      "dataType": "Enumeration",
       "description": "",
+      "isKey": false,
+      "dataType": "String",
       "isReadOnly": false,
-      "enumName": null,
+      "enumName": "ResponseType",
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
-      "isUnicode": null,
-      "enumNameJs": "ResponseType"
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "Time",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

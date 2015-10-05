@@ -1,17 +1,17 @@
 # Update User
 
 Update the properties of user object.
-## HTTP request
+#### HTTP request
 ```http
 
 ```
 
-## Optional request headers
+#### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
 
-## Request body
+#### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -31,46 +31,25 @@ In the request body, supply the values for relevant fields that should be update
 |Skills|String||
 |Tags|String||
 |accountEnabled|Boolean||
-|appDisplayName|String||
-|appId|String||
-|appRoles|AppRole||
 |assignedLicenses|AssignedLicense||
 |assignedPlans|AssignedPlan||
-|availableToOtherTenants|Boolean||
 |city|String||
 |country|String||
-|dataType|String||
 |deletionTimestamp|DateTimeOffset||
 |department|String||
 |dirSyncEnabled|Boolean||
 |displayName|String||
-|displayName|String||
-|errorUrl|String||
 |facsimileTelephoneNumber|String||
 |givenName|String||
-|groupMembershipClaims|String||
-|homepage|String||
-|identifierUris|String||
 |immutableId|String||
-|isSyncedFromOnPremises|Boolean||
 |jobTitle|String||
-|keyCredentials|KeyCredential||
-|knownClientApplications|Guid||
 |lastDirSyncTime|DateTimeOffset||
-|logoutUrl|String||
 |mail|String||
 |mailNickname|String||
-|mainLogo|Stream||
 |mobile|String||
-|name|String||
-|oauth2AllowImplicitFlow|Boolean||
-|oauth2AllowUrlPathMatching|Boolean||
-|oauth2Permissions|OAuth2Permission||
-|oauth2RequirePostResponse|Boolean||
 |objectType|String||
 |onPremisesSecurityIdentifier|String||
 |otherMails|String||
-|passwordCredentials|PasswordCredential||
 |passwordPolicies|String||
 |passwordProfile|PasswordProfile||
 |physicalDeliveryOfficeName|String||
@@ -79,23 +58,18 @@ In the request body, supply the values for relevant fields that should be update
 |provisionedPlans|ProvisionedPlan||
 |provisioningErrors|ProvisioningError||
 |proxyAddresses|String||
-|publicClient|Boolean||
-|replyUrls|String||
-|requiredResourceAccess|RequiredResourceAccess||
-|samlMetadataUrl|String||
 |sipProxyAddress|String||
 |state|String||
 |streetAddress|String||
 |surname|String||
-|targetObjects|String||
 |telephoneNumber|String||
 |thumbnailPhoto|Stream||
 |usageLocation|String||
 |userPrincipalName|String||
 |userType|String||
 
-## Response
+#### Response
 If successful, this method returns a `200 OK` response code and updated [User](../resources/user.md) object in the response body.
-## Example
-### HTTP request
-### Response
+#### Example
+##### HTTP request
+##### Response

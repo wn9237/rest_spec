@@ -1,8 +1,8 @@
-# ProvisioningError
+# ProvisioningError resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |errorDetail|String||
@@ -10,13 +10,11 @@
 |service|String||
 |timestamp|DateTimeOffset||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/provisioningerror_get.md) | ProvisioningError |Read properties and relationships of provisioningError object.|
-|[Update](../api/provisioningerror_update.md) | ProvisioningError	|Update provisioningError object. |

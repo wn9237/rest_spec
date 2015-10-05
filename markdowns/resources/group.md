@@ -1,118 +1,36 @@
-# Group
+# Group resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|AboutMe|String||
-|AccessType|[Enumeration](enumeration.md)| Possible values are: `None`, `Private`, `Secret`, `Public`.|
-|Alias|String||
+|AccessType|String| Possible values are: `None`, `Private`, `Secret`, `Public`.|
 |AllowExternalSenders|Boolean||
 |AutoSubscribeNewMembers|Boolean||
-|Birthday|DateTimeOffset||
 |EmailAddress|String||
-|HireDate|DateTimeOffset||
-|Interests|String collection||
 |IsFavorite|Boolean||
 |IsSubscribedByMail|Boolean||
-|MailboxGuid|Guid||
-|MySite|String||
-|PastProjects|String collection||
-|PreferredName|String||
-|PrincipalName|String||
-|Responsibilities|String collection||
-|Schools|String collection||
-|Skills|String collection||
-|Tags|String collection||
 |UnseenCount|Int32||
-|accountEnabled|Boolean||
-|appDisplayName|String||
-|appId|String||
-|appRoles|[AppRole](approle.md)||
-|assignedLicenses|[AssignedLicense](assignedlicense.md)||
-|assignedPlans|[AssignedPlan](assignedplan.md)||
-|availableToOtherTenants|Boolean||
-|city|String||
-|country|String||
 |creationOptions|String collection||
-|creationTimestamp|DateTimeOffset||
-|dataType|String||
 |deletionTimestamp|DateTimeOffset||
-|department|String||
 |description|String||
 |dirSyncEnabled|Boolean||
-|dirSyncEnabled|Boolean||
 |displayName|String||
-|displayName|String||
-|displayName|String||
-|errorUrl|String||
-|facsimileTelephoneNumber|String||
-|givenName|String||
-|groupMembershipClaims|String||
 |groupTypes|String collection||
-|homepage|String||
-|id|Guid||
-|identifierUris|String collection||
-|immutableId|String||
 |isPublic|Boolean||
-|isSyncedFromOnPremises|Boolean||
-|jobTitle|String||
-|keyCredentials|[KeyCredential](keycredential.md)||
-|knownClientApplications|Guid collection||
 |lastDirSyncTime|DateTimeOffset||
-|lastDirSyncTime|DateTimeOffset||
-|logoutUrl|String||
-|mail|String||
 |mail|String||
 |mailEnabled|Boolean||
 |mailNickname|String||
-|mailNickname|String||
-|mainLogo|Stream||
-|mobile|String||
-|name|String||
-|oauth2AllowImplicitFlow|Boolean||
-|oauth2AllowUrlPathMatching|Boolean||
-|oauth2Permissions|[OAuth2Permission](oauth2permission.md)||
-|oauth2RequirePostResponse|Boolean||
 |objectId|String| Read-only.|
 |objectType|String||
 |onPremisesSecurityIdentifier|String||
-|onPremisesSecurityIdentifier|String||
-|otherMails|String collection||
-|passwordCredentials|[PasswordCredential](passwordcredential.md)||
-|passwordPolicies|String||
-|passwordProfile|[PasswordProfile](passwordprofile.md)||
-|physicalDeliveryOfficeName|String||
-|postalCode|String||
-|preferredLanguage|String||
-|principalDisplayName|String||
-|principalId|Guid||
-|principalType|String||
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md)||
-|provisioningErrors|[ProvisioningError](provisioningerror.md)||
 |provisioningErrors|[ProvisioningError](provisioningerror.md)||
 |proxyAddresses|String collection||
-|proxyAddresses|String collection||
-|publicClient|Boolean||
-|replyUrls|String collection||
-|requiredResourceAccess|[RequiredResourceAccess](requiredresourceaccess.md)||
-|resourceDisplayName|String||
-|resourceId|Guid||
-|samlMetadataUrl|String||
 |securityEnabled|Boolean||
-|sipProxyAddress|String||
-|state|String||
-|streetAddress|String||
-|surname|String||
-|targetObjects|String collection||
-|telephoneNumber|String||
-|thumbnailPhoto|Stream||
-|usageLocation|String||
-|userPrincipalName|String||
-|userType|String||
 
-## Relationships
+#### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |AcceptedSenders|[DirectoryObject](directoryobject.md)| Read-only.|
@@ -135,12 +53,41 @@
 |plans|[Plan](plan.md)| Read-only.|
 |tasks|[Task](task.md)| Read-only.|
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/group_get.md) | Group |Read properties and relationships of group object.|
+|[Create DirectoryObject]((../api/group_post_acceptedsenders.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the AcceptedSenders collection.|
+|[Create CalendarView]((../api/group_post_calendarview.md)) | 
+									Event| Create a new CalendarView by posting to the CalendarView collection.|
+|[Create Conversation]((../api/group_post_conversations.md)) | 
+									Conversation| Create a new Conversation by posting to the Conversations collection.|
+|[Create Event]((../api/group_post_events.md)) | 
+									Event| Create a new Event by posting to the Events collection.|
+|[Create Extension]((../api/group_post_extensions.md)) | 
+									Extension| Create a new Extension by posting to the Extensions collection.|
+|[Create GroupPhoto]((../api/group_post_groupphotos.md)) | 
+									Photo| Create a new GroupPhoto by posting to the GroupPhotos collection.|
+|[Create DirectoryObject]((../api/group_post_rejectedsenders.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the RejectedSenders collection.|
+|[Create Thread]((../api/group_post_threads.md)) | 
+									ConversationThread| Create a new Thread by posting to the Threads collection.|
+|[Create AppRoleAssignment]((../api/group_post_approleassignments.md)) | 
+									AppRoleAssignment| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
+|[Create DirectoryObject]((../api/group_post_memberof.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the memberOf collection.|
+|[Create DirectoryObject]((../api/group_post_members.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the members collection.|
+|[Create DirectoryObject]((../api/group_post_owners.md)) | 
+									DirectoryObject| Create a new DirectoryObject by posting to the owners collection.|
+|[Create Plan]((../api/group_post_plans.md)) | 
+									Plan| Create a new Plan by posting to the plans collection.|
+|[Create Task]((../api/group_post_tasks.md)) | 
+									Task| Create a new Task by posting to the tasks collection.|
 |[Update](../api/group_update.md) | Group	|Update group object. |
+|[Delete](../api/group_delete.md) | Group	|Update group object. |
 |[Addfavorite](../api/group_addfavorite.md)|[None](none.md)||
 |[Removefavorite](../api/group_removefavorite.md)|[None](none.md)||
 |[Resetunseencount](../api/group_resetunseencount.md)|[None](none.md)||

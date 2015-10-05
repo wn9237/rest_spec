@@ -1,8 +1,8 @@
-# KeyCredential
+# KeyCredential resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binary||
@@ -13,13 +13,11 @@
 |usage|String||
 |value|Binary||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/keycredential_get.md) | KeyCredential |Read properties and relationships of keyCredential object.|
-|[Update](../api/keycredential_update.md) | KeyCredential	|Update keyCredential object. |

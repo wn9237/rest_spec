@@ -1,8 +1,8 @@
-# PrivilegedRoleSettings
+# PrivilegedRoleSettings resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ElevationDuration|Duration||
@@ -14,13 +14,14 @@
 |RoleId|Guid| Read-only.|
 |TicketingInfoOnElevation|Boolean||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/privilegedrolesettings_get.md) | PrivilegedRoleSettings |Read properties and relationships of privilegedRoleSettings object.|
 |[Update](../api/privilegedrolesettings_update.md) | PrivilegedRoleSettings	|Update privilegedRoleSettings object. |
+|[Delete](../api/privilegedrolesettings_delete.md) | PrivilegedRoleSettings	|Update privilegedRoleSettings object. |

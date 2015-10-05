@@ -28,22 +28,48 @@ module SpecMaker
 	BACKTOPROPERTY = NEWLINE + '[Back](#properties)'
 	PIPE = '|'
 	TWONEWLINES = "\n\n"
-	PROPERTY_HEADER = "| Property	   | Type	|Description|" + NEWLINE
-	TABLE_2ND_LINE =  "|:---------------|:--------|:----------|" + NEWLINE
-	PARAM_HEADER = "| Parameter	   | Type	|Description|" + NEWLINE
-	TABLE_2ND_LINE_PARAM =  "|:---------------|:--------|:-----------|" + NEWLINE
-	HTTP_HEADER_SAMPLE = "| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|"
 
+	TABLE_2ND_LINE =  "|:---------------|:--------|:----------|" + NEWLINE
+	PROPERTY_HEADER = "| Property	   | Type	|Description|" + NEWLINE
+	PARAM_HEADER = "| Parameter	   | Type	|Description|" + NEWLINE
+	HTTP_HEADER =  "| Name       | Type | Description|" + NEWLINE
 	RELATIONSHIP_HEADER = "| Relationship | Type	|Description|" + NEWLINE
 	TASKS_HEADER = "| Task		   | Return Type	|Description|" + NEWLINE
-	SIMPLETYPES = %w[Binary Boolean Byte Date DateTimeOffset Decimal Double Duration 
-				Guid Int16 Int32 Int64 SByte Single Stream String TimeOfDay 
+
+	HTTP_HEADER_SAMPLE = "| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|"
+	
+	odata_types = %w[Binary Boolean Byte Date DateTimeOffset Decimal Double Duration 
+				Guid Int Int16 Int32 Int64 SByte Single Stream String TimeOfDay 
 				Geography GeographyPoint GeographyLineString GeographyPolygon GeographyMultiPoint 
 				GeographyMultiLineString GeographyMultiPolygon GeographyCollection Geometry 
 				GeometryPoint GeometryLineString GeometryPolygon GeometryMultiPoint GeometryMultiLineString 
-				GeometryMultiPolygon GeometryCollection]
+				GeometryMultiPolygon GeometryCollection Octet-Stream Octet] 
 
-	SKIP_TASKS = %w[aaa bbb]
+	SIMPLETYPES = odata_types.concat odata_types.map(&:downcase)
+
+	# Below objects appear as the generic datatypes of collections. 
+	# e.g: <NavigationProperty Name="owners" Type="Collection(Microsoft.Graph.DirectoryObject)" />
+	# For POST /Collection, we want to use a name that's sensible such as 
+	# Add Owner or Create Owner instead of Add DirectoryObject. Hence, if the 
+		# collection(datatype) happens to be one the below, we'll use the name in the API name.
+	POST_NAME_MAPPING = %w[recipient directoryobjects event photo 
+						conversationthread recipient privilegedroleassignment]
+
+	TIMESTAMP_DESC = " The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`"
+
+	# Load the structure
+	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
+	@struct = JSON.parse(File.read(JSON_STRUCTURE), {:symbolize_names => true})
+	@template = @struct[:object]
+	
+	###
+	# To prevent shallow copy errors, need to get a new object each time.
+	# 
+	#	
+	def self.deep_copy(o)
+	  Marshal.load(Marshal.dump(o))
+	end
 
 	@resources_files_created = 0
 	@get_list_files_created = 0
@@ -96,45 +122,64 @@ module SpecMaker
 		end
 	end
 
+
+	def self.get_syntax(methodName=nil, restpath=[])
+		case methodName
+		when 'auto_get', 'auto_list' 
+			arr = restpath.map {|a| "GET " + a}
+		when 'auto_add'
+			arr = restpath.map {|a| "POST " + a}				
+		when 'auto_delete'
+			arr = restpath.map {|a| "DELETE " + a }
+		when 'auto_put'
+			arr = restpath.map {|a| "PUT " + a}				
+		when 'auto_patch'
+			arr = restpath.map {|a| "PATCH " + a}				
+		else
+			arr = restpath.map {|a| "POST " + a + "/#{methodName}"}				
+		end
+		return arr
+	end
+
 	# Write properties and methods to the final array.
 	def self.push_property  (prop = {})
-		# Add read-only and possible Enum values from the list. 
-		
+
+		# Add read-only and possible Enum values from the list. 		
+		finalDesc = prop[:description]
+		if prop[:dataType] == 'DateTimeOffset'
+			finalDesc = finalDesc + TIMESTAMP_DESC	
+		end
 		finalDesc = prop[:isReadOnly] ? prop[:description]  + ' Read-only.' : prop[:description]
+		finalDesc = prop[:isNullable] ? finalDesc + ' Nulable.' : finalDesc
 		appendEnum = ''
-		if (prop[:enumNameJs] != nil) && (@enumHash.has_key? prop[:enumNameJs])
-			appendEnum = " Possible values are: `" + @enumHash[prop[:enumNameJs]]["options"].keys.join('`, `') + "`."
+		if (prop[:enumName] != nil) && (@enumHash.has_key? prop[:enumName])
+			appendEnum = " Possible values are: `" + @enumHash[prop[:enumName]]["options"].keys.join('`, `') + "`."
 			finalDesc = finalDesc + appendEnum
 		end
 
 		# If the type is of	an object, then provide markdown link.
-		if SIMPLETYPES.include? prop[:dataType] 	
+		if SIMPLETYPES.include? prop[:dataType] 
 			dataTypePlusLink = prop[:dataType] 	
 			if prop[:isCollection] 
 				dataTypePlusLink = dataTypePlusLink + " collection"
 			end			
 		else			
 			dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
-			if prop[:isCollection] 
-				dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].chomp('[]').downcase + ".md)"
-			end
+			# if prop[:isCollection] 
+			# 	dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].chomp('[]').downcase + ".md)"
+			# end
 		end
 
-			
 		@mdlines.push (PIPE + prop[:name] + PIPE + dataTypePlusLink + PIPE + finalDesc + PIPE ) + NEWLINE
 	end
 
 	# Write methods to the final array (in resource file).
 	def self.push_method (method = {})
-		# Skip JS methods
-		if SKIP_TASKS.include? method[:name] 	
-			return
-		end
 		# If the type is of	an object, then provide markdown link.
 		if method[:returnType].to_s.empty?
 			method[:returnType] = 'None'
 		end 
-		if SIMPLETYPES.include? method[:returnType]
+		if SIMPLETYPES.include? method[:returnType] 
 			dataTypePlusLink = method[:returnType]
 		else	
 			dataTypePlusLink = "[" + method[:returnType] + "](" + method[:returnType].downcase + ".md)"
@@ -145,110 +190,126 @@ module SpecMaker
 		restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name]) : method[:name].capitalize
 		methodPlusLink = "[" + restfulTask.strip + "](../api/" + @jsonHash[:name].downcase + "_" + method[:name].downcase + ".md)"
 		@mdlines.push (PIPE + methodPlusLink + PIPE + dataTypePlusLink + PIPE + method[:description] + PIPE) + NEWLINE
-		create_action_and_function method
+		crate_method_mdfile method
 	end
 
 	# Create separate actions and functions file 
-	def self.create_action_and_function (method = {})
-		actionLines = []
-		
+	def self.crate_method_mdfile (method = {}, autoFilename=nil)
+		actionLines = []		
 		# Header and description	
-		actionLines.push HEADER1 + "#{@jsonHash[:name]}: #{method[:name]}"  + TWONEWLINES
+		if !method[:displayName]			
+			actionLines.push HEADER1 + "#{@jsonHash[:name]}: #{method[:name]}"  + TWONEWLINES
+		else
+			actionLines.push HEADER1 + "#{method[:displayName]}"  + TWONEWLINES			
+		end
+
 		actionLines.push "#{method[:description]}"  + NEWLINE
 
-		# HTTP request
-		actionLines.push HEADER2 + "HTTP request" + NEWLINE
+		if !method[:prerequisites].empty?
+			actionLines.push HEADER4 + "Prerequisites" + NEWLINE
+			actionLines.push method[:prerequisites] + NEWLINE	
+		end 
+
+		### HTTP request
+		# Select only the keys (that contains the REST path) for which the value (display or not flag)
+		# is set to true. 
+		#
+		actionLines.push HEADER4 + "HTTP request" + NEWLINE		
 		actionLines.push '```http' + NEWLINE
-		if method[:name].start_with?('get')
-			httpActionArray = @jsonHash[:restPath].map {|a| "GET " + a + "/#{method[:name]}"}
+		if @jsonHash[:restPath].length > 0
+			httpSyntax = get_syntax(method[:name], @jsonHash[:restPath].select { |_, v| v }.keys)
+			actionLines.push httpSyntax.join("\n")
 		else
-			if method[:name] == 'delete' && !method[:parameters]  
-				httpActionArray = @jsonHash[:restPath].map {|a| "DELETE " + a }
-			else
-				if method[:name] == 'add'
-					httpActionArray = @jsonHash[:restPath].map {|a| "POST " + a}				
-				else
-					httpActionArray = @jsonHash[:restPath].map {|a| "POST " + a + "/#{method[:name]}"}				
-				end
-			end
+			actionLines.push "to be completed...."
 		end
-		actionLines.push httpActionArray.join("\n") + NEWLINE
-		actionLines.push  '```' + NEWLINE
+
+		actionLines.push NEWLINE + '```' + NEWLINE
 
 		#Query parameters 
-		if method[:name].start_with?('get')
-			actionLines.push HEADER2 + "Optional query parameters" + NEWLINE
-			actionLines.push "You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call." + NEWLINE
+		if method[:name] == 'auto_get' || method[:name] == 'auto_list'
+			#Handle Query Params:::
 		end
 
 		#Request headers  
-		actionLines.push HEADER2 + "Request headers" + NEWLINE
-		actionLines.push "| Name       | Type | Description|" + NEWLINE
-		actionLines.push "|:-----------|:------|:----------|" + NEWLINE
+		actionLines.push HEADER4 + "Request headers" + NEWLINE
+		actionLines.push HTTP_HEADER + NEWLINE
+		actionLines.push TABLE_2ND_LINE + NEWLINE
 		actionLines.push HTTP_HEADER_SAMPLE + NEWLINE
 		actionLines.push NEWLINE
 		
 		#Request body
-		actionLines.push HEADER2 + "Request body" + NEWLINE
+		actionLines.push HEADER4 + "Request body" + NEWLINE
 	
 		# Provide parameters: 
-		if method[:parameters] !=nil  			
+		if method[:parameters] !=nil && method[:parameters].length > 0
 			actionLines.push "In the request body, provide a JSON object that with the following parameters." + TWONEWLINES
-			actionLines.push PARAM_HEADER + TABLE_2ND_LINE_PARAM 
+			actionLines.push PARAM_HEADER + TABLE_2ND_LINE 
 			method[:parameters].each do |param|
 				# Append optional and enum possible values (if applicable).
 				finalPDesc = param[:isRequired] ? param[:description] : 'Optional. ' + param[:description]
 				appendEnum = ''
-				if (param[:enumNameJs] != nil) && (@enumHash.has_key? param[:enumNameJs])
+				if (param[:enumName] != nil) && (@enumHash.has_key? param[:enumName])
 
-					if @enumHash[param[:enumNameJs]].values[0] == "" || @enumHash[param[:enumNameJs]].values[0] == nil
-						appendEnum = " " + " Possible values are: " + @enumHash[param[:enumNameJs]].keys.join(', ')  
+					if @enumHash[param[:enumName]].values[0] == "" || @enumHash[param[:enumName]].values[0] == nil
+						appendEnum = " " + " Possible values are: " + @enumHash[param[:enumName]].keys.join(', ')  
 					else
-						appendEnum = " Possible values are: " + @enumHash[param[:enumNameJs]].map{|k,v| "`#{k}` #{v}"}.join(',')
+						appendEnum = " Possible values are: " + @enumHash[param[:enumName]].map{|k,v| "`#{k}` #{v}"}.join(',')
 					end
 					finalPDesc = finalPDesc + appendEnum
 				end
 				actionLines.push (PIPE + param[:name] + PIPE + param[:dataType] + PIPE + finalPDesc + PIPE) + NEWLINE	
 			end
 		else
-			actionLines.push "Do not supply a request body for this method." + NEWLINE
-			actionLines.push NEWLINE
+			case method[:name] 
+			when 'auto-post'
+				actionLines.push "In the request body, supply a JSON representation of [#{@jsonHash[:name]}]('../api/#{jsonHash[:name].downcase}.md') object." + NEWLINE
+				actionLines.push NEWLINE				
+			when 'auto_delete'
+				actionLines.push "Do not supply a request body for this method." + NEWLINE
+				actionLines.push NEWLINE
+			end
 		end
 
 		actionLines.push NEWLINE
 
 		#Response body
-		actionLines.push HEADER2 + "Response" + NEWLINE
+		actionLines.push HEADER4 + "Response" + NEWLINE
 
-		if SIMPLETYPES.include? method[:returnType]
-			dataTypePlusLink = method[:returnType]
-		else			
-			dataTypePlusLink = "[" + method[:returnType] + "](../resources/" + method[:returnType].downcase + ".md)"
-		end
-
-		if method[:returnType] == 'void'
-			actionLines.push "If successful, this method returns a `#{method[:httpSuccessResponse]}` response code. It does not return anything in the response body."  + NEWLINE
+		if !method[:returnType].nil?
+			if SIMPLETYPES.include? method[:returnType] 
+				dataTypePlusLink = method[:returnType]
+			else						
+				dataTypePlusLink = "[" + method[:returnType] + "](../resources/" + method[:returnType].downcase + ".md)"
+			end
 		else
-			actionLines.push "If successful, this method returns a `#{method[:httpSuccessResponse]}` response code and #{dataTypePlusLink} object in the response body."  + NEWLINE
+			dataTypePlusLink = 'none'
 		end
 
-		#Example
-		#actionLines.push HEADER2 + "Example" + NEWLINE
-		puts "-----> #{JSON_EXAMPLE_FOLDER + (@resource + '_' + method[:name]).downcase}"
+		if method[:returnType].nil?
+			actionLines.push "If successful, this method returns `#{method[:httpSuccessResponse]}` response code. It does not return anything in the response body."  + NEWLINE
+		else
+			actionLines.push "If successful, this method returns `#{method[:httpSuccessResponse]}` response code and #{dataTypePlusLink} object in the response body."  + NEWLINE
+		end
 
-		#begin
+		#loc0
+		begin
 			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource + '_' + method[:name]).downcase + ".md"))
-			actionLines.push
-		# rescue => err
-		# 	@logger.error("....Example File does not exist for: #{@resource}, ")
-		# end
-
-		actionLines.push HEADER3 + "HTTP request" + NEWLINE
-		actionLines.push HEADER3 + "Response" + NEWLINE
-
+			if example_lines.length > 1
+				actionLines.push NEWLINE
+				example_lines.each do |line|
+					actionLines.push line
+				end
+			end
+		rescue => err
+			@logger.error("....Example File does not exist for: #{@resource}, ")
+		end
 
 		# Write the output file. 
-		fileName = "#{@jsonHash[:name].downcase}_#{method[:name].downcase}.md"
+		if autoFilename
+			fileName = autoFilename
+		else	
+			fileName = "#{@jsonHash[:name].downcase}_#{method[:name].downcase}.md"
+		end
 		outfile = MARKDOWN_API_FOLDER + fileName
 
 		file=File.new(outfile,'w')
@@ -271,29 +332,29 @@ module SpecMaker
 		end
 
 		# HTTP request
-		getMethodLines.push HEADER2 + "HTTP request" + NEWLINE
+		getMethodLines.push HEADER4 + "HTTP request" + NEWLINE
 		getMethodLines.push '```http' + NEWLINE
 		httpGetArray = @jsonHash[:restPath].map {|a| "GET " + a}
 		getMethodLines.push httpGetArray.join("\n") + NEWLINE
 		getMethodLines.push  '```' + TWONEWLINES
 
 		#Query parameters 
-		getMethodLines.push HEADER2 + "Optional query parameters" + NEWLINE
+		getMethodLines.push HEADER4 + "Optional query parameters" + NEWLINE
 		getMethodLines.push "You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call." + NEWLINE
 
 		#Request headers  
-		getMethodLines.push HEADER2 + "Request headers" + NEWLINE
+		getMethodLines.push HEADER4 + "Request headers" + NEWLINE
 		getMethodLines.push "| Name       | Type | Description|" + NEWLINE
 		getMethodLines.push "|:-----------|:------|:----------|" + NEWLINE
 		getMethodLines.push HTTP_HEADER_SAMPLE + NEWLINE
 		getMethodLines.push NEWLINE
 
 		#Request body
-		getMethodLines.push HEADER2 + "Request body" + NEWLINE
+		getMethodLines.push HEADER4 + "Request body" + NEWLINE
 		getMethodLines.push "Do not supply a request body for this method." + NEWLINE
 
 		#Response body
-		getMethodLines.push HEADER2 + "Response" + NEWLINE
+		getMethodLines.push HEADER4 + "Response" + NEWLINE
 		if @jsonHash[:isCollection] 
 			getMethodLines.push "If successful, this method returns a `200 OK` response code and collection of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) objects in the response body."  + NEWLINE
 		else
@@ -301,9 +362,9 @@ module SpecMaker
 		end
 
 		#Example
-		getMethodLines.push HEADER2 + "Example" + NEWLINE
-		getMethodLines.push HEADER3 + "HTTP request" + NEWLINE
-		getMethodLines.push HEADER3 + "Response" + NEWLINE
+		getMethodLines.push HEADER4 + "Example" + NEWLINE
+		getMethodLines.push HEADER5 + "HTTP request" + NEWLINE
+		getMethodLines.push HEADER5 + "Response" + NEWLINE
 
 		# Write the output file. 
 		fileName = @jsonHash[:isCollection] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"
@@ -323,21 +384,21 @@ module SpecMaker
 		patchMethodLines.push "Update the properties of #{@jsonHash[:name].downcase} object."  + NEWLINE
 
 		# HTTP request
-		patchMethodLines.push HEADER2 + "HTTP request" + NEWLINE
+		patchMethodLines.push HEADER4 + "HTTP request" + NEWLINE
 		patchMethodLines.push '```http' + NEWLINE
 		httpPatchArray = @jsonHash[:restPath].map {|a| "PATCH " + a}
 		patchMethodLines.push httpPatchArray.join("\n") + NEWLINE
 		patchMethodLines.push  '```' + TWONEWLINES
 
 		#Request headers  
-		patchMethodLines.push HEADER2 + "Optional request headers" + NEWLINE
+		patchMethodLines.push HEADER4 + "Optional request headers" + NEWLINE
 		patchMethodLines.push "| Name       | Type | Description|" + NEWLINE
 		patchMethodLines.push "|:-----------|:------|:----------|" + NEWLINE
 		patchMethodLines.push HTTP_HEADER_SAMPLE  + NEWLINE
 		patchMethodLines.push NEWLINE
 		
 		#Request body
-		patchMethodLines.push HEADER2 + "Request body" + NEWLINE
+		patchMethodLines.push HEADER4 + "Request body" + NEWLINE
 		patchMethodLines.push "In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed." + NEWLINE
 		patchMethodLines.push NEWLINE
 
@@ -346,11 +407,11 @@ module SpecMaker
 			if !prop[:isReadOnly]
 		   		finalDesc = prop[:description]
 				appendEnum = ''
-				if (prop[:enumNameJs] != nil) && (@enumHash.has_key? prop[:enumNameJs])
-					if @enumHash[prop[:enumNameJs]].values[0] == "" || @enumHash[prop[:enumNameJs]].values[0] == nil
-						appendEnum = " Possible values are: `" + @enumHash[prop[:enumNameJs]].keys.join('`, `') + "`."
+				if (prop[:enumName] != nil) && (@enumHash.has_key? prop[:enumName])
+					if @enumHash[prop[:enumName]].values[0] == "" || @enumHash[prop[:enumName]].values[0] == nil
+						appendEnum = " Possible values are: `" + @enumHash[prop[:enumName]].keys.join('`, `') + "`."
 					else
-						appendEnum = " Possible values are: " + @enumHash[prop[:enumNameJs]].map{|k,v| "`#{k}` #{v}"}.join(',') 
+						appendEnum = " Possible values are: " + @enumHash[prop[:enumName]].map{|k,v| "`#{k}` #{v}"}.join(',') 
 					end
 					finalDesc = finalDesc + appendEnum
 				end				
@@ -360,13 +421,13 @@ module SpecMaker
 		patchMethodLines.push NEWLINE
 
 		#Response body
-		patchMethodLines.push HEADER2 + "Response" + NEWLINE
+		patchMethodLines.push HEADER4 + "Response" + NEWLINE
 		patchMethodLines.push "If successful, this method returns a `200 OK` response code and updated [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object in the response body."  + NEWLINE
 
 		#Example
-		patchMethodLines.push HEADER2 + "Example" + NEWLINE
-		patchMethodLines.push HEADER3 + "HTTP request" + NEWLINE
-		patchMethodLines.push HEADER3 + "Response" + NEWLINE
+		patchMethodLines.push HEADER4 + "Example" + NEWLINE
+		patchMethodLines.push HEADER5 + "HTTP request" + NEWLINE
+		patchMethodLines.push HEADER5 + "Response" + NEWLINE
 
 		# Write the output file. 
 		fileName = "#{@jsonHash[:name].downcase}_update.md"  
@@ -382,24 +443,27 @@ module SpecMaker
 	# Conversion to specification 
 	def self.convert_to_spec (item=nil)
 		@mdlines = []
+		isPost = nil
 		@jsonHash = JSON.parse(item, {:symbolize_names => true})
-		# Obtain the resource name. Read the examples file, if it exists. 
+		
+		# Obtain the resource name. 
 		@resource = @jsonHash[:name]
 		@logger.debug("")	
 		@logger.debug("...............Report for: #{@resource}...........")	
 		puts "--> #{@resource}"
 		propreties = @jsonHash[:properties]
 
-		if propreties != nil && propreties.length > 1 
+		if propreties && propreties.length > 1 
 			propreties = propreties.sort_by { |v| v[:name] }
 		end
+
 		methods = @jsonHash[:methods]
 		if methods != nil && methods.length > 1 
 			methods = methods.sort_by { |v| v[:name] }
 		end
 
 		# Header and description		
-		@mdlines.push HEADER1 + @jsonHash[:name] + TWONEWLINES
+		@mdlines.push HEADER1 + @jsonHash[:name] + ' resource type' + TWONEWLINES
 		@mdlines.push @jsonHash[:description] + TWONEWLINES
 
 		# Determine if there is/are: relations, properties and methods. 
@@ -409,12 +473,15 @@ module SpecMaker
 			propreties.each do |prop|
 				if !prop[:isRelationship]
 				   isProperty = true
-				   if !prop[:isReadOnly]
+				   if !prop[:isReadOnly] && @jsonHash[:allowPatch]
 				   	  patchable = true
 				   end
 				end
-				if prop[:isRelationship]			  
+				if prop[:isRelationship]
 				   isRelation = true
+				   if prop[:isCollection] && prop[:allowPostToCollection]
+				   		isPost = true
+				   end
 				end
 			end
 		end
@@ -426,7 +493,7 @@ module SpecMaker
 		@logger.debug("....Is there: property?: #{isProperty}, relationship?: #{isRelation}, method?: #{isMethod} ..........")	
 
 		# Add property table. 	
-		@mdlines.push HEADER2 + 'Properties' + NEWLINE
+		@mdlines.push HEADER4 + 'Properties' + NEWLINE
 		if isProperty
 			@mdlines.push PROPERTY_HEADER + TABLE_2ND_LINE 
 			propreties.each do |prop|
@@ -435,13 +502,16 @@ module SpecMaker
 				   push_property prop
 				end
 			end
+			if !@jsonHash[:propertyNotes].empty?
+				@mdlines.push "**Note:** #{@jsonHash[:propertyNotes]}" + NEWLINE
+			end
 		else
 			@mdlines.push "None"  + NEWLINE
 		end		
 
 		# Add Relationship table. 
 		@mdlines.push NEWLINE
-		@mdlines.push HEADER2 + 'Relationships' + NEWLINE
+		@mdlines.push HEADER4 + 'Relationships' + NEWLINE
 		if isRelation
 			@mdlines.push RELATIONSHIP_HEADER + TABLE_2ND_LINE 
 			propreties.each do |prop|
@@ -450,29 +520,81 @@ module SpecMaker
 				   push_property prop
 				end
 			end
+			if !@jsonHash[:relationshipNotes].empty?
+				@mdlines.push "**Note:** #{@jsonHash[:relationshipNotes]}" + NEWLINE
+			end			
 		else
 			@mdlines.push "None"  + TWONEWLINES
 		end		
 
 		# Add method table. 
 
-		@mdlines.push NEWLINE + HEADER2 + 'Tasks' + NEWLINE
+		@mdlines.push NEWLINE + HEADER4 + 'Tasks' + NEWLINE
 
-		if isMethod || isProperty 
+		if isMethod || isProperty || isPost || @jsonHash[:allowDelete]
 			@mdlines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
-			if isProperty
-				if @jsonHash[:isCollection]
-					@mdlines.push "|[List](../api/#{@jsonHash[:name].downcase}_list.md) | #{@jsonHash[:collectionOf]}[]|Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
-				else
-					@mdlines.push "|[Get metadata](../api/#{@jsonHash[:name].downcase}_get.md) | #{@jsonHash[:name]} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
-				end
-				create_get_method
+		end
+		if isProperty && !@jsonHash[:isComplexType]
+			if @jsonHash[:isCollection]
+				@mdlines.push "|[List](../api/#{@jsonHash[:name].downcase}_list.md) | #{@jsonHash[:collectionOf]}[]|Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
+			else
+				@mdlines.push "|[Get metadata](../api/#{@jsonHash[:name].downcase}_get.md) | #{@jsonHash[:name]} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
 			end
+			create_get_method
+		end
 
-			if patchable
-				@mdlines.push "|[Update](../api/#{@jsonHash[:name].downcase}_update.md) | #{@jsonHash[:name]}	|Update #{uncapitalize @jsonHash[:name]} object. |" + NEWLINE
-				create_patch_method propreties
-			end
+		# Run through all the collection relationships and add a task for posting 
+		# to the right resouce to create the object.
+		# Based on the data type, the name of the API varies. 
+		if isPost			
+			propreties.each do |prop|
+				if prop[:isRelationship] && prop[:isCollection] && prop[:allowPostToCollection]
+					if SIMPLETYPES.include?(prop[:dataType]) || 
+							POST_NAME_MAPPING.include?(prop[:dataType].downcase)
+						useName = prop[:name].chomp('s')
+						postName = "Create " + useName
+					else
+						useName = prop[:dataType]					
+						postName = "Create " + useName
+					end
+					postLink = "(../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md)"					
+					@mdlines.push "|[#{postName}](#{postLink}) | 
+									#{prop[:dataType]}| Create a new #{useName} by posting to the #{prop[:name]} collection.|" + NEWLINE				
+					mtd = deep_copy(@struct[:method]) 
+
+					mtd[:name] = 'auto_post'
+					mtd[:displayName] = 'Create'
+					mtd[:returnType] = prop[:dataType]
+					mtd[:description] = "Create a new #{postName}."
+					mtd[:parameters] = nil					
+					mtd[:httpSuccessCode] = '201'
+				    crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md")
+				end
+			end			
+		end
+
+		if patchable
+			@mdlines.push "|[Update](../api/#{@jsonHash[:name].downcase}_update.md) | #{@jsonHash[:name]}	|Update #{uncapitalize @jsonHash[:name]} object. |" + NEWLINE
+			create_patch_method propreties
+			# mtd = deep_copy(@struct[:method]) 
+			# mtd[:name] = 'auto_patch'
+			# mtd[:displayName] = 'Update'
+			# mtd[:returnType] = @jsonHash[:name]
+			# mtd[:description] = "Update @jsonHash[:name]."
+			# mtd[:parameters] = nil
+			# mtd[:httpSuccessCode] = '200'			
+			# crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_update.md")
+		end
+
+		if @jsonHash[:allowDelete]
+			@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | #{@jsonHash[:name]}	|Update #{uncapitalize @jsonHash[:name]} object. |" + NEWLINE
+			mtd = deep_copy(@struct[:method]) 
+			mtd[:displayName] = 'Delete'
+			mtd[:name] = 'auto_delete'
+			mtd[:description] = "Delete @jsonHash[:name]."
+			mtd[:httpSuccessCode] = '204'			
+			mtd[:parameters] = nil			
+			crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_delete.md")
 		end
 
 		if isMethod
@@ -480,8 +602,13 @@ module SpecMaker
 				@logger.debug("....Processing method: #{mtd[:name]} ..........")					
 				push_method mtd
 			end
-		else
+		end
+		if !isProperty && !isMethod && !isPost
 			@mdlines.push "None"  + TWONEWLINES
+		end	
+
+		if !@jsonHash[:methodNotes].empty?
+			@mdlines.push "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
 		end	
 
 		# Write the output file. 
@@ -493,7 +620,10 @@ module SpecMaker
 		@resources_files_created = @resources_files_created + 1
 	end
 
-	# Main loop. 
+	##### 
+	# Main loop. Process each JSON files.
+	# 
+	###
 	processed_files = 0
 	Dir.foreach(JSON_SOURCE_FOLDER) do |item|
 		next if item == '.' or item == '..'
@@ -504,11 +634,11 @@ module SpecMaker
 			processed_files = processed_files + 1
 		end
 	end
+
 	puts ""
 	puts "*** OK. Processed #{processed_files} input files. Check #{File.expand_path(LOG_FOLDER)} folder for results. ***"
 	puts "*** @resources_files_created #{@resources_files_created}"
 	puts "*** @get_list_files_created #{@get_list_files_created} "
 	puts "*** @patch_files_created #{@patch_files_created}"
 	puts "*** @method_files_created #{@method_files_created}"
-
 end

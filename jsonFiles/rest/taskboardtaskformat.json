@@ -2,7 +2,6 @@
   "name": "TaskBoardTaskFormat",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -16,55 +15,61 @@
   "properties": [
     {
       "name": "type",
-      "isKey": true,
-      "dataType": "Enumeration",
       "description": "",
+      "isKey": true,
+      "dataType": "String",
       "isReadOnly": true,
-      "enumName": null,
+      "enumName": "TaskBoardType",
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
-      "isUnicode": null,
-      "enumNameJs": "TaskBoardType"
+      "isUnicode": null
     },
     {
       "name": "orderHint",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "id",
+      "description": "",
       "isKey": true,
       "dataType": "String",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
     },
     {
       "name": "version",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

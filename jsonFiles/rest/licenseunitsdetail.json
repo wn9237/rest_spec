@@ -2,7 +2,6 @@
   "name": "LicenseUnitsDetail",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
@@ -16,42 +15,48 @@
   "properties": [
     {
       "name": "enabled",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "suspended",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     },
     {
       "name": "warning",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

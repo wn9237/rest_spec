@@ -1,8 +1,8 @@
-# VerifiedDomain
+# VerifiedDomain resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |capabilities|String||
@@ -12,13 +12,11 @@
 |name|String||
 |type|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/verifieddomain_get.md) | VerifiedDomain |Read properties and relationships of verifiedDomain object.|
-|[Update](../api/verifieddomain_update.md) | VerifiedDomain	|Update verifiedDomain object. |

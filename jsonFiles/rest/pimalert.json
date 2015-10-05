@@ -2,7 +2,6 @@
   "name": "PimAlert",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -16,246 +15,284 @@
   "properties": [
     {
       "name": "AlertId",
+      "description": "",
       "isKey": true,
       "dataType": "Guid",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "NumberOfAffected",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "AdditionalData",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "AlertName",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "AlertDescription",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "LastModifiedTime",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "LastScannedTime",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "SeverityLevel",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "AlertType",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "SecurityImpact",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "MitigationSteps",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "HowToPrevent",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "WasDismissed",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "IsActive",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "IsResolvable",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "IsConfigurable",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
     {
       "name": "Dismiss",
-      "displayName": "",
+      "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
-      "parameters": null
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     },
     {
       "name": "Reactivate",
-      "displayName": "",
+      "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
-      "parameters": null
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     },
     {
       "name": "Fix",
-      "displayName": "",
+      "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "ItemId",
-          "dataType": "Int32",
           "description": "",
+          "dataType": "Int32",
           "isRequired": true,
-          "enumNameJs": null,
+          "enumName": null,
           "isNullable": null,
           "isUnicode": null
         }
       ]
     }
-  ]
+  ],
+  "methodNotes": ""
 }

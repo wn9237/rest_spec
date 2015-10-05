@@ -1,8 +1,8 @@
-# Task
+# Task resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |appliedCategories|[AppliedCategoriesCollection](appliedcategoriescollection.md)||
@@ -21,12 +21,12 @@
 |orderHint|String||
 |percentComplete|Int32||
 |planId|String||
-|previewType|[Enumeration](enumeration.md)| Possible values are: `Automatic`, `NoPreview`, `CheckList`, `Notes`, `Reference`.|
+|previewType|String| Possible values are: `Automatic`, `NoPreview`, `CheckList`, `Notes`, `Reference`.|
 |startDate|DateTimeOffset||
 |title|String||
 |version|String||
 
-## Relationships
+#### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[TaskBoardTaskFormat](taskboardtaskformat.md)| Read-only.|
@@ -35,9 +35,10 @@
 |statusTaskBoardFormat|[TaskBoardTaskFormat](taskboardtaskformat.md)| Read-only.|
 |timelineFormat|[TimelineTaskFormat](timelinetaskformat.md)| Read-only.|
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/task_get.md) | Task |Read properties and relationships of task object.|
 |[Update](../api/task_update.md) | Task	|Update task object. |
+|[Delete](../api/task_delete.md) | Task	|Update task object. |

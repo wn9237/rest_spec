@@ -1,8 +1,8 @@
-# AssignedPlan
+# AssignedPlan resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedTimestamp|DateTimeOffset||
@@ -10,13 +10,11 @@
 |service|String||
 |servicePlanId|Guid||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/assignedplan_get.md) | AssignedPlan |Read properties and relationships of assignedPlan object.|
-|[Update](../api/assignedplan_update.md) | AssignedPlan	|Update assignedPlan object. |

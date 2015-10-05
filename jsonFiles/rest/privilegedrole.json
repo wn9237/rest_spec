@@ -2,7 +2,6 @@
   "name": "PrivilegedRole",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": false,
   "isEntitySet": false,
   "allowPatch": true,
@@ -16,111 +15,123 @@
   "properties": [
     {
       "name": "Id",
+      "description": "",
       "isKey": true,
       "dataType": "Guid",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "Name",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "Summary",
+      "description": "",
       "isKey": false,
       "dataType": "PrivilegedRoleSummary",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "Settings",
+      "description": "",
       "isKey": false,
       "dataType": "PrivilegedRoleSettings",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
     },
     {
       "name": "Assignments",
+      "description": "",
       "isKey": false,
       "dataType": "PrivilegedRoleAssignment",
-      "description": "",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
     {
       "name": "SelfActivate",
-      "displayName": "",
+      "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "Reason",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
-          "enumNameJs": null,
+          "enumName": null,
           "isNullable": null,
           "isUnicode": false
         },
         {
           "name": "Duration",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
-          "enumNameJs": null,
+          "enumName": null,
           "isNullable": null,
           "isUnicode": false
         },
         {
           "name": "TicketNumber",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
-          "enumNameJs": null,
+          "enumName": null,
           "isNullable": null,
           "isUnicode": false
         },
         {
           "name": "TicketSystem",
-          "dataType": "String",
           "description": "",
+          "dataType": "String",
           "isRequired": true,
-          "enumNameJs": null,
+          "enumName": null,
           "isNullable": null,
           "isUnicode": false
         }
@@ -128,16 +139,24 @@
     },
     {
       "name": "SelfDeactivate",
-      "displayName": "",
+      "displayName": null,
+      "description": "",
       "prerequisites": "",
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "description": "",
-      "syntax": null,
-      "httpSuccessResponseCode": null,
+      "httpSuccessCode": null,
       "isFunction": false,
-      "parameters": null
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     }
-  ]
+  ],
+  "methodNotes": ""
 }

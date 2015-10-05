@@ -1,8 +1,8 @@
-# SubscribedSku
+# SubscribedSku resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |capabilityStatus|String||
@@ -13,13 +13,14 @@
 |skuId|Guid||
 |skuPartNumber|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/subscribedsku_get.md) | SubscribedSku |Read properties and relationships of subscribedSku object.|
 |[Update](../api/subscribedsku_update.md) | SubscribedSku	|Update subscribedSku object. |
+|[Delete](../api/subscribedsku_delete.md) | SubscribedSku	|Update subscribedSku object. |

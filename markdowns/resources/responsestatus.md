@@ -1,20 +1,18 @@
-# ResponseStatus
+# ResponseStatus resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Response|[Enumeration](enumeration.md)| Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.|
+|Response|String| Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.|
 |Time|DateTimeOffset||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/responsestatus_get.md) | ResponseStatus |Read properties and relationships of responseStatus object.|
-|[Update](../api/responsestatus_update.md) | ResponseStatus	|Update responseStatus object. |

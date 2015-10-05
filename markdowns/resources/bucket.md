@@ -1,8 +1,8 @@
-# Bucket
+# Bucket resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |activeTasks|Int32||
@@ -13,13 +13,14 @@
 |totalTasks|Int32||
 |version|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/bucket_get.md) | Bucket |Read properties and relationships of bucket object.|
 |[Update](../api/bucket_update.md) | Bucket	|Update bucket object. |
+|[Delete](../api/bucket_delete.md) | Bucket	|Update bucket object. |

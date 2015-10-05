@@ -1,8 +1,8 @@
-# NotificationRule
+# NotificationRule resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |Event|String||
@@ -14,14 +14,15 @@
 |UserId|String||
 |UserName|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/notificationrule_get.md) | NotificationRule |Read properties and relationships of notificationRule object.|
 |[Update](../api/notificationrule_update.md) | NotificationRule	|Update notificationRule object. |
+|[Delete](../api/notificationrule_delete.md) | NotificationRule	|Update notificationRule object. |
 |[Eventtypes](../api/notificationrule_eventtypes.md)|String||

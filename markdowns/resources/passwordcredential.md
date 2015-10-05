@@ -1,8 +1,8 @@
-# PasswordCredential
+# PasswordCredential resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binary||
@@ -11,13 +11,11 @@
 |startDate|DateTimeOffset||
 |value|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/passwordcredential_get.md) | PasswordCredential |Read properties and relationships of passwordCredential object.|
-|[Update](../api/passwordcredential_update.md) | PasswordCredential	|Update passwordCredential object. |

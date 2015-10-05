@@ -2,7 +2,6 @@
   "name": "PatchContentCommand",
   "description": "",
   "collectionOf": null,
-  "allowPostToCollection": null,
   "isComplexType": true,
   "isEntitySet": false,
   "allowPatch": false,
@@ -16,56 +15,61 @@
   "properties": [
     {
       "name": "action",
-      "isKey": false,
-      "dataType": "Enumeration",
       "description": "",
+      "isKey": false,
+      "dataType": "String",
       "isReadOnly": false,
-      "enumName": null,
+      "enumName": "PatchActionType",
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
-      "isUnicode": null,
-      "enumNameJs": "PatchActionType"
+      "isUnicode": null
     },
     {
       "name": "target",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
     },
     {
       "name": "content",
+      "description": "",
       "isKey": false,
       "dataType": "String",
-      "description": "",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
       "name": "position",
-      "isKey": false,
-      "dataType": "Enumeration",
       "description": "",
+      "isKey": false,
+      "dataType": "String",
       "isReadOnly": false,
-      "enumName": null,
+      "enumName": "PatchInsertPosition",
       "isCollection": false,
       "isRelationship": false,
-      "isNullable": true,
-      "isUnicode": null,
-      "enumNameJs": "PatchInsertPosition"
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     }
   ],
+  "propertyNotes": "",
+  "relationshipNotes": "",
   "methods": [
 
-  ]
+  ],
+  "methodNotes": ""
 }

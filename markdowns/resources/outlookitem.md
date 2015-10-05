@@ -1,8 +1,8 @@
-# OutlookItem
+# OutlookItem resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |Categories|String collection||
@@ -11,13 +11,14 @@
 |DateTimeLastModified|DateTimeOffset||
 |Id|String| Read-only.|
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/outlookitem_get.md) | OutlookItem |Read properties and relationships of outlookItem object.|
 |[Update](../api/outlookitem_update.md) | OutlookItem	|Update outlookItem object. |
+|[Delete](../api/outlookitem_delete.md) | OutlookItem	|Update outlookItem object. |

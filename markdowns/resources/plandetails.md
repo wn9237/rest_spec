@@ -1,8 +1,8 @@
-# PlanDetails
+# PlanDetails resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |category0Description|String||
@@ -15,13 +15,14 @@
 |sharedWith|[UserIdCollection](useridcollection.md)||
 |version|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/plandetails_get.md) | PlanDetails |Read properties and relationships of planDetails object.|
 |[Update](../api/plandetails_update.md) | PlanDetails	|Update planDetails object. |
+|[Delete](../api/plandetails_delete.md) | PlanDetails	|Update planDetails object. |

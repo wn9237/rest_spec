@@ -1,8 +1,8 @@
-# CopySectionModel
+# CopySectionModel resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|String||
@@ -15,13 +15,11 @@
 |pagesUrl|String||
 |self|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/copysectionmodel_get.md) | CopySectionModel |Read properties and relationships of copySectionModel object.|
-|[Update](../api/copysectionmodel_update.md) | CopySectionModel	|Update copySectionModel object. |

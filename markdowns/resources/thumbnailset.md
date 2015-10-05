@@ -1,8 +1,8 @@
-# thumbnailSet
+# thumbnailSet resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
@@ -10,14 +10,15 @@
 |medium|[thumbnail](thumbnail.md)||
 |small|[thumbnail](thumbnail.md)||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/thumbnailset_get.md) | thumbnailSet |Read properties and relationships of thumbnailSet object.|
 |[Update](../api/thumbnailset_update.md) | thumbnailSet	|Update thumbnailSet object. |
+|[Delete](../api/thumbnailset_delete.md) | thumbnailSet	|Update thumbnailSet object. |
 |[Get getCustomThumbnail](../api/thumbnailset_getcustomthumbnail.md)|[thumbnail](thumbnail.md)||

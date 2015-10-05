@@ -44,14 +44,14 @@ module SpecMaker
 		f.write(JSON.pretty_generate @enum_objects)
 	end
 
-	# Process ACTIONS
+	# # Process ACTIONS
 	schema[:Action].each do |item|		
 		puts "-> Processing Action #{item[:Name]}"
 		@iaction = @iaction + 1
 		process_method(item, 'action')
 	end
 
-	# Process FUNCTIONS
+	# # Process FUNCTIONS
 
 	schema[:Function].each do |item|		
 		puts "-> Processing Function #{item[:Name]}"
@@ -88,11 +88,10 @@ module SpecMaker
 		elsif entity[:Property].is_a?(Hash)
 			@json_object[:properties].push process_complextype(entity[:Property])
 		end
-
+		preserve_object_property_descriptions(@json_object[:name])
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
 			f.write(JSON.pretty_generate @json_object)
-		end
-		
+		end		
 		GC.start
 	end
 
@@ -102,15 +101,15 @@ module SpecMaker
 		@ient = @ient + 1
 		if BASETYPES.include?(entity[:Name])
 			puts "----> This is a BaseType"
-			@base_types[entity[:Name].to_sym] = entity
+			@base_types[entity[:Name].to_sym] = deep_copy(entity)
 		end
 		@json_object = deep_copy(@template) 		
+		
 		# If you find BaseType, pull in Key, Properties and Nav-Properties from BaseType and proceed as usual
 		baseType = nil
 		if entity.has_key?(:BaseType)
 			@ibasetypemerges = @ibasetypemerges + 1
 			baseType = entity[:BaseType][(entity[:BaseType].rindex('.') + 1)..-1]
-			puts "----> Merging with BaseType #{baseType}"
 			BASETYPE_MAPPING.each do |k, v|
 				 if k == baseType
 					puts "------> Mapping BaseType #{baseType} back to #{v}"
@@ -119,11 +118,15 @@ module SpecMaker
 			end
 			#puts @base_types[baseType.to_sym]
 			entity[:Key] = @base_types[baseType.to_sym][:Key]
+
 			entity[:Property] = merge_members(entity[:Property], 
 												@base_types[baseType.to_sym][:Property])
 			entity[:NavigationProperty]  = merge_members(entity[:NavigationProperty],
 											@base_types[baseType.to_sym][:NavigationProperty])
+
+			@base_types[entity[:Name].to_sym] = deep_copy(entity)	
 		end
+		
 		@json_object[:name] = entity[:Name]
 		if !entity[:Key].nil? && entity[:Key][:PropertyRef].is_a?(Hash)
 			@key_save = entity[:Key][:PropertyRef][:Name]
@@ -136,7 +139,7 @@ module SpecMaker
 		
 		# PROCESS Properties
 		if entity[:Property].is_a?(Array)
-			entity[:Property].each do |item|		
+			entity[:Property].each do |item|	
 				@json_object[:properties].push process_property(item)
 			end
 		elsif entity[:Property].is_a?(Hash)
@@ -168,6 +171,8 @@ module SpecMaker
 			end
 		end
 
+		preserve_object_property_descriptions(@json_object[:name])
+
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
 			f.write(JSON.pretty_generate @json_object)
 		end
@@ -175,6 +180,7 @@ module SpecMaker
 		GC.start
 	end
 
+	@collectionNames = {}
 	# Process EntitySets
 	schema[:EntityContainer][:EntitySet].each do |entity|
 		@ientityset = @ientityset + 1
@@ -185,16 +191,21 @@ module SpecMaker
 		puts "-> Processing EntitySet Type #{entity[:Name]}"
 		@json_object[:name] = entity[:Name]
 		@json_object[:isEntitySet] = true
-		@json_object[:collectionOf] = 
-			entity[:EntityType][(entity[:EntityType].rindex('.') + 1)..-1]		
+		dt = entity[:EntityType][(entity[:EntityType].rindex('.') + 1)..-1].chomp(')')		
+		@json_object[:collectionOf] = dt
+
+		# save the collection names & types being created for later checks.
+		@collectionNames[entity[:Name]] = dt
+
 		@json_object[:allowPatch] = false
 		@json_object[:allowUpsert] = false
 		@json_object[:allowPatchCreate] = false
 		@json_object[:allowDelete] = false
 
-		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}_collection.json", "w") do |f|
-			f.write(JSON.pretty_generate @json_object)
-		end
+		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
+		 File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
+		 	f.write(JSON.pretty_generate @json_object)
+		 end
 		GC.start
 	end
 

@@ -1,8 +1,8 @@
-# PrivilegedOperationEvent
+# PrivilegedOperationEvent resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |AdditionalInformation|String||
@@ -19,13 +19,14 @@
 |UserMail|String||
 |UserName|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get metadata](../api/privilegedoperationevent_get.md) | PrivilegedOperationEvent |Read properties and relationships of privilegedOperationEvent object.|
 |[Update](../api/privilegedoperationevent_update.md) | PrivilegedOperationEvent	|Update privilegedOperationEvent object. |
+|[Delete](../api/privilegedoperationevent_delete.md) | PrivilegedOperationEvent	|Update privilegedOperationEvent object. |

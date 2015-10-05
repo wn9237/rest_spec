@@ -1,15 +1,15 @@
-# devices
+# devices resource type
 
 
 
-## Properties
+#### Properties
 None
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

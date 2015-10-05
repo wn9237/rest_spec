@@ -1,21 +1,19 @@
-# ProvisionedPlan
+# ProvisionedPlan resource type
 
 
 
-## Properties
+#### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |capabilityStatus|String||
 |provisioningStatus|String||
 |service|String||
 
-## Relationships
+#### Relationships
 None
 
 
-## Tasks
+#### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get metadata](../api/provisionedplan_get.md) | ProvisionedPlan |Read properties and relationships of provisionedPlan object.|
-|[Update](../api/provisionedplan_update.md) | ProvisionedPlan	|Update provisionedPlan object. |
