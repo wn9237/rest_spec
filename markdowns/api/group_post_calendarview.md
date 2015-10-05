@@ -1,6 +1,6 @@
-# Create
+# Create CalendarView
 
-Create a new Create CalendarView.
+Use this API to create a new CalendarView.
 #### HTTP request
 ```http
 to be completed....

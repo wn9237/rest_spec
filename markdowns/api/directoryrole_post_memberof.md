@@ -1,6 +1,6 @@
-# Create
+# Create memberOf
 
-Create a new Create memberOf.
+Use this API to create a new memberOf.
 #### HTTP request
 ```http
 to be completed....

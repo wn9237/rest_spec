@@ -1,6 +1,6 @@
-# Create
+# Create MailFolder
 
-Create a new Create MailFolder.
+Use this API to create a new MailFolder.
 #### HTTP request
 ```http
 to be completed....

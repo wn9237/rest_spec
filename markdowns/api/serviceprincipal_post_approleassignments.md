@@ -1,6 +1,6 @@
-# Create
+# Create AppRoleAssignment
 
-Create a new Create AppRoleAssignment.
+Use this API to create a new AppRoleAssignment.
 #### HTTP request
 ```http
 to be completed....

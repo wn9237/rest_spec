@@ -1,6 +1,6 @@
-# Create
+# Create ContactFolder
 
-Create a new Create ContactFolder.
+Use this API to create a new ContactFolder.
 #### HTTP request
 ```http
 to be completed....

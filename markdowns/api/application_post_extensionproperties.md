@@ -1,6 +1,6 @@
-# Create
+# Create ExtensionProperty
 
-Create a new Create ExtensionProperty.
+Use this API to create a new ExtensionProperty.
 #### HTTP request
 ```http
 to be completed....

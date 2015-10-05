@@ -1,6 +1,6 @@
-# Create
+# Create OAuth2PermissionGrant
 
-Create a new Create OAuth2PermissionGrant.
+Use this API to create a new OAuth2PermissionGrant.
 #### HTTP request
 ```http
 to be completed....

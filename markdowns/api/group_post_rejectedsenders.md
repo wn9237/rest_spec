@@ -1,6 +1,6 @@
-# Create
+# Create RejectedSender
 
-Create a new Create RejectedSender.
+Use this API to create a new RejectedSender.
 #### HTTP request
 ```http
 to be completed....

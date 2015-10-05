@@ -1,6 +1,6 @@
-# Create
+# Create Instance
 
-Create a new Create Instance.
+Use this API to create a new Instance.
 #### HTTP request
 ```http
 to be completed....

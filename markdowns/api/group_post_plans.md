@@ -1,6 +1,6 @@
-# Create
+# Create Plan
 
-Create a new Create Plan.
+Use this API to create a new Plan.
 #### HTTP request
 ```http
 to be completed....

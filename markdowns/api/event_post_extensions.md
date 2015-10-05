@@ -1,6 +1,6 @@
-# Create
+# Create Extension
 
-Create a new Create Extension.
+Use this API to create a new Extension.
 #### HTTP request
 ```http
 to be completed....

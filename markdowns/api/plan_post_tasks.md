@@ -1,6 +1,6 @@
-# Create
+# Create Task
 
-Create a new Create Task.
+Use this API to create a new Task.
 #### HTTP request
 ```http
 to be completed....

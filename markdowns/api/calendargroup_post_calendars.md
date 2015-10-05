@@ -1,6 +1,6 @@
-# Create
+# Create Calendar
 
-Create a new Create Calendar.
+Use this API to create a new Calendar.
 #### HTTP request
 ```http
 to be completed....

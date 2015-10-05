@@ -1,6 +1,6 @@
-# Create
+# Create Post
 
-Create a new Create Post.
+Use this API to create a new Post.
 #### HTTP request
 ```http
 to be completed....

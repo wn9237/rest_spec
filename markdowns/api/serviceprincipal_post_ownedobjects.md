@@ -1,6 +1,6 @@
-# Create
+# Create ownedObject
 
-Create a new Create ownedObject.
+Use this API to create a new ownedObject.
 #### HTTP request
 ```http
 to be completed....

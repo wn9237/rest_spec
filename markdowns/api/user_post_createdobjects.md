@@ -1,6 +1,6 @@
-# Create
+# Create createdObject
 
-Create a new Create createdObject.
+Use this API to create a new createdObject.
 #### HTTP request
 ```http
 to be completed....

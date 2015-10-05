@@ -1,6 +1,6 @@
-# Create
+# Create SectionGroup
 
-Create a new Create SectionGroup.
+Use this API to create a new SectionGroup.
 #### HTTP request
 ```http
 to be completed....

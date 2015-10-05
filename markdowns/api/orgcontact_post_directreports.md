@@ -1,6 +1,6 @@
-# Create
+# Create directReport
 
-Create a new Create directReport.
+Use this API to create a new directReport.
 #### HTTP request
 ```http
 to be completed....

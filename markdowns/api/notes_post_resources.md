@@ -1,6 +1,6 @@
-# Create
+# Create Resource
 
-Create a new Create Resource.
+Use this API to create a new Resource.
 #### HTTP request
 ```http
 to be completed....

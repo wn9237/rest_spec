@@ -1,6 +1,6 @@
-# Create
+# Create Page
 
-Create a new Create Page.
+Use this API to create a new Page.
 #### HTTP request
 ```http
 to be completed....

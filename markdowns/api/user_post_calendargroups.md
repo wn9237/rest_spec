@@ -1,6 +1,6 @@
-# Create
+# Create CalendarGroup
 
-Create a new Create CalendarGroup.
+Use this API to create a new CalendarGroup.
 #### HTTP request
 ```http
 to be completed....

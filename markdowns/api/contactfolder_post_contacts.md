@@ -1,6 +1,6 @@
-# Create
+# Create Contact
 
-Create a new Create Contact.
+Use this API to create a new Contact.
 #### HTTP request
 ```http
 to be completed....

@@ -1,6 +1,6 @@
-# Create
+# Create File
 
-Create a new Create File.
+Use this API to create a new File.
 #### HTTP request
 ```http
 to be completed....

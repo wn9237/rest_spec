@@ -1,6 +1,6 @@
-# Create
+# Create Section
 
-Create a new Create Section.
+Use this API to create a new Section.
 #### HTTP request
 ```http
 to be completed....

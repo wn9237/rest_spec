@@ -1,6 +1,6 @@
-# Create
+# Create Thread
 
-Create a new Create Thread.
+Use this API to create a new Thread.
 #### HTTP request
 ```http
 to be completed....

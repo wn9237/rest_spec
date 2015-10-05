@@ -1,6 +1,6 @@
-# Create
+# Create item
 
-Create a new Create item.
+Use this API to create a new item.
 #### HTTP request
 ```http
 to be completed....

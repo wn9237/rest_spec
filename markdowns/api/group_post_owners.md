@@ -1,6 +1,6 @@
-# Create
+# Create owner
 
-Create a new Create owner.
+Use this API to create a new owner.
 #### HTTP request
 ```http
 to be completed....

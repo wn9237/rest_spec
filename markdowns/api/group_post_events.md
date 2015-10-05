@@ -1,6 +1,6 @@
-# Create
+# Create Event
 
-Create a new Create Event.
+Use this API to create a new Event.
 #### HTTP request
 ```http
 to be completed....

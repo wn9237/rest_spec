@@ -1,6 +1,6 @@
-# Create
+# Create ownedDevice
 
-Create a new Create ownedDevice.
+Use this API to create a new ownedDevice.
 #### HTTP request
 ```http
 to be completed....

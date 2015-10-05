@@ -1,6 +1,6 @@
-# Create
+# Create Bucket
 
-Create a new Create Bucket.
+Use this API to create a new Bucket.
 #### HTTP request
 ```http
 to be completed....

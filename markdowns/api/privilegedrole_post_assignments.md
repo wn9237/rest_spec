@@ -1,6 +1,6 @@
-# Create
+# Create Assignment
 
-Create a new Create Assignment.
+Use this API to create a new Assignment.
 #### HTTP request
 ```http
 to be completed....

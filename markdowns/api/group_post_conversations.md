@@ -1,6 +1,6 @@
-# Create
+# Create Conversation
 
-Create a new Create Conversation.
+Use this API to create a new Conversation.
 #### HTTP request
 ```http
 to be completed....

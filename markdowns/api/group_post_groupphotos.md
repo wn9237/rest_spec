@@ -1,6 +1,6 @@
-# Create
+# Create GroupPhoto
 
-Create a new Create GroupPhoto.
+Use this API to create a new GroupPhoto.
 #### HTTP request
 ```http
 to be completed....

@@ -1,6 +1,6 @@
-# Create
+# Create registeredDevice
 
-Create a new Create registeredDevice.
+Use this API to create a new registeredDevice.
 #### HTTP request
 ```http
 to be completed....

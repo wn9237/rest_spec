@@ -1,6 +1,6 @@
-# Create
+# Create Attachment
 
-Create a new Create Attachment.
+Use this API to create a new Attachment.
 #### HTTP request
 ```http
 to be completed....

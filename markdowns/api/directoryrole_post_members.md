@@ -1,6 +1,6 @@
-# Create
+# Create member
 
-Create a new Create member.
+Use this API to create a new member.
 #### HTTP request
 ```http
 to be completed....

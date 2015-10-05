@@ -1,6 +1,6 @@
-# Create
+# Create UserPhoto
 
-Create a new Create UserPhoto.
+Use this API to create a new UserPhoto.
 #### HTTP request
 ```http
 to be completed....

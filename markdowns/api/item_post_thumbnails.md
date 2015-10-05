@@ -1,6 +1,6 @@
-# Create
+# Create thumbnailSet
 
-Create a new Create thumbnailSet.
+Use this API to create a new thumbnailSet.
 #### HTTP request
 ```http
 to be completed....

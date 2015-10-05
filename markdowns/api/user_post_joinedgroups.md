@@ -1,6 +1,6 @@
-# Create
+# Create Group
 
-Create a new Create Group.
+Use this API to create a new Group.
 #### HTTP request
 ```http
 to be completed....

@@ -1,6 +1,6 @@
-# Create
+# Create registeredUser
 
-Create a new Create registeredUser.
+Use this API to create a new registeredUser.
 #### HTTP request
 ```http
 to be completed....

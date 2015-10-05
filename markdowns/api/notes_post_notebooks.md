@@ -1,6 +1,6 @@
-# Create
+# Create Notebook
 
-Create a new Create Notebook.
+Use this API to create a new Notebook.
 #### HTTP request
 ```http
 to be completed....

@@ -1,6 +1,6 @@
-# Create
+# Create Message
 
-Create a new Create Message.
+Use this API to create a new Message.
 #### HTTP request
 ```http
 to be completed....

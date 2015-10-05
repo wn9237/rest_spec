@@ -582,6 +582,7 @@ module SpecMaker
 							useName = prop[:dataType]					
 							postName = "Create " + useName
 						end
+
 						postLink = "../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md"					
 						if SIMPLETYPES.include? prop[:dataType]
 							returnLink = prop[:dataType]
@@ -592,9 +593,9 @@ module SpecMaker
 						mtd = deep_copy(@struct[:method]) 
 
 						mtd[:name] = 'auto_post'
-						mtd[:displayName] = 'Create'
+						mtd[:displayName] = postName
 						mtd[:returnType] = prop[:dataType]
-						mtd[:description] = "Create a new #{postName}."
+						mtd[:description] = "Use this API to create a new #{useName}."
 						mtd[:parameters] = nil					
 						mtd[:httpSuccessCode] = '201'
 					    crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md")

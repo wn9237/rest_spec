@@ -1,6 +1,6 @@
-# Create
+# Create AcceptedSender
 
-Create a new Create AcceptedSender.
+Use this API to create a new AcceptedSender.
 #### HTTP request
 ```http
 to be completed....

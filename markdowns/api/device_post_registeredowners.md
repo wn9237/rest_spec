@@ -1,6 +1,6 @@
-# Create
+# Create registeredOwner
 
-Create a new Create registeredOwner.
+Use this API to create a new registeredOwner.
 #### HTTP request
 ```http
 to be completed....
