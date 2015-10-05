@@ -407,7 +407,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "Move",
@@ -435,7 +436,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "CreateReply",
@@ -455,7 +457,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "CreateReplyAll",
@@ -475,7 +478,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "CreateForward",
@@ -495,7 +499,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "Reply",
@@ -523,7 +528,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "ReplyAll",
@@ -551,7 +557,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "Forward",
@@ -588,7 +595,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "Send",
@@ -608,7 +616,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

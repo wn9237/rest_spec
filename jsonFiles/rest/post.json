@@ -260,7 +260,8 @@
           "isNullable": false,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "Reply",
@@ -288,7 +289,8 @@
           "isNullable": false,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

@@ -494,7 +494,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "Decline",
@@ -531,7 +532,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "TentativelyAccept",
@@ -568,7 +570,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

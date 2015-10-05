@@ -243,7 +243,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "Reactivate",
@@ -263,7 +264,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "Fix",
@@ -291,7 +293,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

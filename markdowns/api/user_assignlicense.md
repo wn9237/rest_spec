@@ -19,4 +19,4 @@ In the request body, provide a JSON object with the following parameters.
 |removeLicenses|Guid||
 
 #### Response
-If successful, this method returns `, ` response code and [User](../resources/user.md) object in the response body.
+If successful, this method returns `200, OK` response code and [User](../resources/user.md) object in the response body.

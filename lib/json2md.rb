@@ -308,7 +308,6 @@ module SpecMaker
 			actionLines.push "If successful, this method returns `#{method[:httpSuccessResponse]}, #{HTTP_CODES[method[:httpSuccessResponse]]}` response code and #{trueReturn} object in the response body."  + NEWLINE
 		end
 
-		#loc0
 		begin
 			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource + '_' + method[:name]).downcase + ".md"))
 			if example_lines.length > 1

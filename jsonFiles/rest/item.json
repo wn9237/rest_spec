@@ -325,7 +325,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "createLink",
@@ -353,7 +354,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "createSession",
@@ -390,7 +392,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "uploadContent",
@@ -418,7 +421,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "content",
@@ -438,7 +442,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "delta",
@@ -458,7 +463,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "search",
@@ -486,7 +492,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

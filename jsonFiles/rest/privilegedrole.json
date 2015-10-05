@@ -135,7 +135,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "SelfDeactivate",
@@ -155,7 +156,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

@@ -74,7 +74,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "CompleteSetup",
@@ -94,7 +95,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "SkipSetup",
@@ -114,7 +116,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "IsSignedUp",
@@ -134,7 +137,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "CanSignUp",
@@ -154,7 +158,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

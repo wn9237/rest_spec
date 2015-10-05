@@ -594,7 +594,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "UnsubscribeByMail",
@@ -614,7 +615,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "AddFavorite",
@@ -634,7 +636,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "RemoveFavorite",
@@ -654,7 +657,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "ResetUnseenCount",
@@ -674,7 +678,8 @@
       ],
       "parameters": [
 
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "checkMemberGroups",
@@ -702,7 +707,8 @@
           "isNullable": false,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "getMemberGroups",
@@ -730,7 +736,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     },
     {
       "name": "getMemberObjects",
@@ -758,7 +765,8 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

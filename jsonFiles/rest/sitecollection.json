@@ -56,7 +56,8 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ]
+      ],
+      "httpSuccessResponse": "200"
     }
   ],
   "methodNotes": ""

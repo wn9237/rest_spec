@@ -21,4 +21,4 @@ In the request body, provide a JSON object with the following parameters.
 |renameAs|String||
 
 #### Response
-If successful, this method returns `, ` response code and [CopySectionModel](../resources/copysectionmodel.md) object in the response body.
+If successful, this method returns `200, OK` response code and [CopySectionModel](../resources/copysectionmodel.md) object in the response body.
