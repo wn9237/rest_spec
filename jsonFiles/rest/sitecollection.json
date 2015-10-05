@@ -39,7 +39,7 @@
       "returnType": "SiteMetadata",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -57,8 +57,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

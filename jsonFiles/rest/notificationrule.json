@@ -130,7 +130,7 @@
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -140,8 +140,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

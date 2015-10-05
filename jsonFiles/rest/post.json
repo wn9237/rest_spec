@@ -234,7 +234,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -261,8 +261,7 @@
           "isNullable": false,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Reply",
@@ -272,7 +271,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -290,8 +289,7 @@
           "isNullable": false,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

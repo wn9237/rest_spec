@@ -65,7 +65,7 @@
       "returnType": "PrivilegedSignupStatus",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -75,8 +75,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "CompleteSetup",
@@ -86,7 +85,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -96,8 +95,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "SkipSetup",
@@ -107,7 +105,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -117,8 +115,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "IsSignedUp",
@@ -128,7 +125,7 @@
       "returnType": "Boolean",
       "isReturnNullable": false,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -138,8 +135,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "CanSignUp",
@@ -149,7 +145,7 @@
       "returnType": "Boolean",
       "isReturnNullable": false,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -159,8 +155,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

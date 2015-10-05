@@ -182,7 +182,7 @@
       "returnType": "CopySectionModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -227,8 +227,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "CopyToSectionGroup",
@@ -238,7 +237,7 @@
       "returnType": "CopySectionModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -283,8 +282,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Thumbnail",
@@ -294,7 +292,7 @@
       "returnType": "Stream",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -304,8 +302,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

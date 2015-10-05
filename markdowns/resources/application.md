@@ -30,8 +30,6 @@ This is a sample application description.
 |requiredResourceAccess|[RequiredResourceAccess](requiredresourceaccess.md) collection||
 |samlMetadataUrl|String||
 
-**Note:** Post property notes example.
-
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -39,8 +37,6 @@ This is a sample application description.
 |createdOnBehalfOf|[DirectoryObject](directoryobject.md)| Read-only.|
 |extensionProperties|[ExtensionProperty](extensionproperty.md) collection| Read-only.|
 |owners|[DirectoryObject](directoryobject.md) collection| Read-only.|
-
-**Note:** Post relationship notes example.
 
 #### Tasks
 
@@ -56,5 +52,3 @@ This is a sample application description.
 |[Get MemberGroups](../api/application_getmembergroups.md)|String||
 |[Get MemberObjects](../api/application_getmemberobjects.md)|String||
 |[Restore](../api/application_restore.md)|[Application](application.md)|Sample description of the restore method.|
-
-**Note:** Post method notes example.

@@ -91,7 +91,7 @@
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -136,8 +136,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Deactivate",
@@ -147,7 +146,7 @@
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -157,8 +156,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "My",
@@ -168,7 +166,7 @@
       "returnType": "PrivilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -178,8 +176,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

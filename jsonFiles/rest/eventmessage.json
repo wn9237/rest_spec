@@ -416,7 +416,7 @@
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -434,8 +434,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Move",
@@ -445,7 +444,7 @@
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -463,8 +462,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "CreateReply",
@@ -474,7 +472,7 @@
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -484,8 +482,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "CreateReplyAll",
@@ -495,7 +492,7 @@
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -505,8 +502,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "CreateForward",
@@ -516,7 +512,7 @@
       "returnType": "Message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -526,8 +522,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Reply",
@@ -537,7 +532,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -555,8 +550,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "ReplyAll",
@@ -566,7 +560,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -584,8 +578,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Forward",
@@ -595,7 +588,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -622,8 +615,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Send",
@@ -633,7 +625,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -643,8 +635,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

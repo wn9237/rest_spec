@@ -234,7 +234,7 @@
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -244,8 +244,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Reactivate",
@@ -255,7 +254,7 @@
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -265,8 +264,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Fix",
@@ -276,7 +274,7 @@
       "returnType": "PimAlert",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -294,8 +292,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

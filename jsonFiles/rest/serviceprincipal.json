@@ -429,7 +429,7 @@
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -447,8 +447,7 @@
           "isNullable": false,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "getMemberGroups",
@@ -458,7 +457,7 @@
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -476,8 +475,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "getMemberObjects",
@@ -487,7 +485,7 @@
       "returnType": "String",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -505,8 +503,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

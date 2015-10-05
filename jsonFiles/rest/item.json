@@ -299,7 +299,7 @@
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -326,8 +326,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "createLink",
@@ -337,7 +336,7 @@
       "returnType": "permission",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -355,8 +354,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "createSession",
@@ -366,7 +364,7 @@
       "returnType": "uploadSession",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -393,8 +391,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "uploadContent",
@@ -404,7 +401,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -422,8 +419,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "content",
@@ -433,7 +429,7 @@
       "returnType": "Stream",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -443,8 +439,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "delta",
@@ -454,7 +449,7 @@
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -464,8 +459,7 @@
       ],
       "parameters": [
 
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "search",
@@ -475,7 +469,7 @@
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -493,8 +487,7 @@
           "isNullable": null,
           "isUnicode": false
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }

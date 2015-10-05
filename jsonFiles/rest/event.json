@@ -468,7 +468,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -495,8 +495,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "Decline",
@@ -506,7 +505,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -533,8 +532,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     },
     {
       "name": "TentativelyAccept",
@@ -544,7 +542,7 @@
       "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
-      "httpSuccessCode": null,
+      "httpSuccessCode": "200",
       "isFunction": false,
       "scopes": [
 
@@ -571,8 +569,7 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ],
-      "httpSuccessResponse": "200"
+      ]
     }
   ]
 }
