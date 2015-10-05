@@ -13,15 +13,15 @@
 |IsSubscribedByMail|Boolean||
 |UnseenCount|Int32||
 |creationOptions|String collection||
-|deletionTimestamp|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|deletionTimestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+		For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |description|String||
 |dirSyncEnabled|Boolean||
 |displayName|String||
 |groupTypes|String collection||
 |isPublic|Boolean||
-|lastDirSyncTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastDirSyncTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+		For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |mail|String||
 |mailEnabled|Boolean||
 |mailNickname|String||

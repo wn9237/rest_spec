@@ -55,8 +55,8 @@ module SpecMaker
 	POST_NAME_MAPPING = %w[recipient directoryobject event photo 
 						conversationthread recipient privilegedroleassignment]
 
-	TIMESTAMP_DESC = " The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-						For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`"
+	TIMESTAMP_DESC = %q{The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+		For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`}
 
 	# Load the structure
 	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
