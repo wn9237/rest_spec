@@ -1,6 +1,6 @@
 # Update Application
 
-Update the properties of application object.
+I want this message to show up when i update a  resource
 #### HTTP request
 ```http
 

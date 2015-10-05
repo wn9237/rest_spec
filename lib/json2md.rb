@@ -410,7 +410,7 @@ module SpecMaker
 		if @jsonHash[:updateDescription].empty?
 			patchMethodLines.push "Update the properties of #{@jsonHash[:name].downcase} object."  + NEWLINE
 		else
-			patchMethodLines.push "#{updateDescription}"  + NEWLINE			
+			patchMethodLines.push "#{@jsonHash[:updateDescription]}"  + NEWLINE			
 		end
 		# HTTP request
 		patchMethodLines.push HEADER4 + "HTTP request" + NEWLINE

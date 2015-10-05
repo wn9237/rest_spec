@@ -1,6 +1,6 @@
 # Update Contact
 
-Update the properties of contact object.
+ZZZZZZZZZZZZZZZZZZZZZ
 #### HTTP request
 ```http
 
