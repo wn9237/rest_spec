@@ -43,7 +43,7 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get OrgContact](../api/orgcontact_get.md) | OrgContact |Read properties and relationships of orgContact object.|
+|[Get OrgContact](../api/orgcontact_get.md) | [OrgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
 |[Create Extension]((../api/orgcontact_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create directReport]((../api/orgcontact_post_directreports.md)) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
 |[Create memberOf]((../api/orgcontact_post_memberof.md)) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|

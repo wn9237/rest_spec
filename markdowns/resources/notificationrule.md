@@ -22,7 +22,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get NotificationRule](../api/notificationrule_get.md) | NotificationRule |Read properties and relationships of notificationRule object.|
+|[Get NotificationRule](../api/notificationrule_get.md) | [NotificationRule](notificationrule.md) |Read properties and relationships of notificationRule object.|
 |[Update](../api/notificationrule_update.md) | [NotificationRule](notificationrule.md)	|Update NotificationRule object. |
 |[Delete](../api/notificationrule_delete.md) | Void	|Delete NotificationRule object. |
 |[Eventtypes](../api/notificationrule_eventtypes.md)|String||

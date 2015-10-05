@@ -28,7 +28,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get DeviceConfiguration](../api/deviceconfiguration_get.md) | DeviceConfiguration |Read properties and relationships of deviceConfiguration object.|
+|[Get DeviceConfiguration](../api/deviceconfiguration_get.md) | [DeviceConfiguration](deviceconfiguration.md) |Read properties and relationships of deviceConfiguration object.|
 |[Update](../api/deviceconfiguration_update.md) | [DeviceConfiguration](deviceconfiguration.md)	|Update DeviceConfiguration object. |
 |[Delete](../api/deviceconfiguration_delete.md) | Void	|Delete DeviceConfiguration object. |
 |[Checkmembergroups](../api/deviceconfiguration_checkmembergroups.md)|String||

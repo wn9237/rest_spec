@@ -48,7 +48,7 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Event](../api/event_get.md) | Event |Read properties and relationships of event object.|
+|[Get Event](../api/event_get.md) | [Event](event.md) |Read properties and relationships of event object.|
 |[Create Attachment]((../api/event_post_attachments.md)) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension]((../api/event_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create Instance]((../api/event_post_instances.md)) |[Event](event.md)| Create a new Instance by posting to the Instances collection.|

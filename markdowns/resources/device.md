@@ -33,7 +33,7 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Device](../api/device_get.md) | Device |Read properties and relationships of device object.|
+|[Get Device](../api/device_get.md) | [Device](device.md) |Read properties and relationships of device object.|
 |[Create Extension]((../api/device_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create registeredOwner]((../api/device_post_registeredowners.md)) |[DirectoryObject](directoryobject.md)| Create a new registeredOwner by posting to the registeredOwners collection.|
 |[Create registeredUser]((../api/device_post_registeredusers.md)) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|

@@ -24,7 +24,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get DirectoryLinkChange](../api/directorylinkchange_get.md) | DirectoryLinkChange |Read properties and relationships of directoryLinkChange object.|
+|[Get DirectoryLinkChange](../api/directorylinkchange_get.md) | [DirectoryLinkChange](directorylinkchange.md) |Read properties and relationships of directoryLinkChange object.|
 |[Update](../api/directorylinkchange_update.md) | [DirectoryLinkChange](directorylinkchange.md)	|Update DirectoryLinkChange object. |
 |[Delete](../api/directorylinkchange_delete.md) | Void	|Delete DirectoryLinkChange object. |
 |[Checkmembergroups](../api/directorylinkchange_checkmembergroups.md)|String||

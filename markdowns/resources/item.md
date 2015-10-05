@@ -35,7 +35,7 @@ This is item object description
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get item](../api/item_get.md) | item |Read properties and relationships of item object.|
+|[Get item](../api/item_get.md) | [item](item.md) |Read properties and relationships of item object.|
 |[Create item]((../api/item_post_children.md)) |[item](item.md)| Create a new item by posting to the children collection.|
 |[Create thumbnailSet]((../api/item_post_thumbnails.md)) |[thumbnailSet](thumbnailset.md)| Create a new thumbnailSet by posting to the thumbnails collection.|
 |[Update](../api/item_update.md) | [item](item.md)	|Update item object. |

@@ -57,7 +57,7 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Group](../api/group_get.md) | Group |Read properties and relationships of group object.|
+|[Get Group](../api/group_get.md) | [Group](group.md) |Read properties and relationships of group object.|
 |[Create AcceptedSender]((../api/group_post_acceptedsenders.md)) |[DirectoryObject](directoryobject.md)| Create a new AcceptedSender by posting to the AcceptedSenders collection.|
 |[Create CalendarView]((../api/group_post_calendarview.md)) |[Event](event.md)| Create a new CalendarView by posting to the CalendarView collection.|
 |[Create Conversation]((../api/group_post_conversations.md)) |[Conversation](conversation.md)| Create a new Conversation by posting to the Conversations collection.|

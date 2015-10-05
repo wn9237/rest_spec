@@ -25,7 +25,7 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ConversationThread](../api/conversationthread_get.md) | ConversationThread |Read properties and relationships of conversationThread object.|
+|[Get ConversationThread](../api/conversationthread_get.md) | [ConversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
 |[Create Extension]((../api/conversationthread_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create Post]((../api/conversationthread_post_posts.md)) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
 |[Update](../api/conversationthread_update.md) | [ConversationThread](conversationthread.md)	|Update ConversationThread object. |

@@ -25,6 +25,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get PimAlertInfo](../api/pimalertinfo_get.md) | PimAlertInfo |Read properties and relationships of pimAlertInfo object.|
+|[Get PimAlertInfo](../api/pimalertinfo_get.md) | [PimAlertInfo](pimalertinfo.md) |Read properties and relationships of pimAlertInfo object.|
 |[Update](../api/pimalertinfo_update.md) | [PimAlertInfo](pimalertinfo.md)	|Update PimAlertInfo object. |
 |[Delete](../api/pimalertinfo_delete.md) | Void	|Delete PimAlertInfo object. |

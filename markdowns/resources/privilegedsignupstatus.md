@@ -3,10 +3,17 @@
 
 
 #### Properties
-| Property	   | Type	|Description|
+None
+
+#### Relationships
+None
+
+
+#### Tasks
+
+| Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|IsRegistered|Boolean||
-|Status|String| Possible values are: `Unknown`, `NotRegisteredYet`, `RegisteredSetupNotStarted`, `RegisteredSetupInProgress`, `RegistrationAndSetupCompleted`.|
+ are: `Unknown`, `NotRegisteredYet`, `RegisteredSetupNotStarted`, `RegisteredSetupInProgress`, `RegistrationAndSetupCompleted`.|
 |TenantId|String| Read-only.|
 
 #### Relationships
@@ -17,7 +24,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get PrivilegedSignupStatus](../api/privilegedsignupstatus_get.md) | PrivilegedSignupStatus |Read properties and relationships of privilegedSignupStatus object.|
+|[Get PrivilegedSignupStatus](../api/privilegedsignupstatus_get.md) | [PrivilegedSignupStatus](privilegedsignupstatus.md) |Read properties and relationships of privilegedSignupStatus object.|
 |[Update](../api/privilegedsignupstatus_update.md) | [PrivilegedSignupStatus](privilegedsignupstatus.md)	|Update PrivilegedSignupStatus object. |
 |[Delete](../api/privilegedsignupstatus_delete.md) | Void	|Delete PrivilegedSignupStatus object. |
 |[Cansignup](../api/privilegedsignupstatus_cansignup.md)|Boolean||

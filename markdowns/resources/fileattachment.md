@@ -24,6 +24,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get FileAttachment](../api/fileattachment_get.md) | FileAttachment |Read properties and relationships of fileAttachment object.|
+|[Get FileAttachment](../api/fileattachment_get.md) | [FileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
 |[Update](../api/fileattachment_update.md) | [FileAttachment](fileattachment.md)	|Update FileAttachment object. |
 |[Delete](../api/fileattachment_delete.md) | Void	|Delete FileAttachment object. |

@@ -24,6 +24,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TimelineTaskFormat](../api/timelinetaskformat_get.md) | TimelineTaskFormat |Read properties and relationships of timelineTaskFormat object.|
+|[Get TimelineTaskFormat](../api/timelinetaskformat_get.md) | [TimelineTaskFormat](timelinetaskformat.md) |Read properties and relationships of timelineTaskFormat object.|
 |[Update](../api/timelinetaskformat_update.md) | [TimelineTaskFormat](timelinetaskformat.md)	|Update TimelineTaskFormat object. |
 |[Delete](../api/timelinetaskformat_delete.md) | Void	|Delete TimelineTaskFormat object. |

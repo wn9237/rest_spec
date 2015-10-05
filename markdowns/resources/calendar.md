@@ -21,7 +21,7 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Calendar](../api/calendar_get.md) | Calendar |Read properties and relationships of calendar object.|
+|[Get Calendar](../api/calendar_get.md) | [Calendar](calendar.md) |Read properties and relationships of calendar object.|
 |[Create CalendarView]((../api/calendar_post_calendarview.md)) |[Event](event.md)| Create a new CalendarView by posting to the CalendarView collection.|
 |[Create Event]((../api/calendar_post_events.md)) |[Event](event.md)| Create a new Event by posting to the Events collection.|
 |[Create Extension]((../api/calendar_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|

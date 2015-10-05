@@ -18,6 +18,6 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get PlanTimeline](../api/plantimeline_get.md) | PlanTimeline |Read properties and relationships of planTimeline object.|
+|[Get PlanTimeline](../api/plantimeline_get.md) | [PlanTimeline](plantimeline.md) |Read properties and relationships of planTimeline object.|
 |[Update](../api/plantimeline_update.md) | [PlanTimeline](plantimeline.md)	|Update PlanTimeline object. |
 |[Delete](../api/plantimeline_delete.md) | Void	|Delete PlanTimeline object. |

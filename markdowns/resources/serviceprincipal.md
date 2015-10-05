@@ -45,7 +45,7 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ServicePrincipal](../api/serviceprincipal_get.md) | ServicePrincipal |Read properties and relationships of servicePrincipal object.|
+|[Get ServicePrincipal](../api/serviceprincipal_get.md) | [ServicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
 |[Create Extension]((../api/serviceprincipal_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create AppRoleAssignment]((../api/serviceprincipal_post_approleassignments.md)) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
 |[Create createdObject]((../api/serviceprincipal_post_createdobjects.md)) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|

@@ -96,7 +96,7 @@
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get User](../api/user_get.md) | User |Read properties and relationships of user object.|
+|[Get User](../api/user_get.md) | [User](user.md) |Read properties and relationships of user object.|
 |[Create CalendarGroup]((../api/user_post_calendargroups.md)) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the CalendarGroups collection.|
 |[Create CalendarView]((../api/user_post_calendarview.md)) |[Event](event.md)| Create a new CalendarView by posting to the CalendarView collection.|
 |[Create Calendar]((../api/user_post_calendars.md)) |[Calendar](calendar.md)| Create a new Calendar by posting to the Calendars collection.|

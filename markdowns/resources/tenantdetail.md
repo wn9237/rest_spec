@@ -36,7 +36,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TenantDetail](../api/tenantdetail_get.md) | TenantDetail |Read properties and relationships of tenantDetail object.|
+|[Get TenantDetail](../api/tenantdetail_get.md) | [TenantDetail](tenantdetail.md) |Read properties and relationships of tenantDetail object.|
 |[Update](../api/tenantdetail_update.md) | [TenantDetail](tenantdetail.md)	|Update TenantDetail object. |
 |[Delete](../api/tenantdetail_delete.md) | Void	|Delete TenantDetail object. |
 |[Checkmembergroups](../api/tenantdetail_checkmembergroups.md)|String||

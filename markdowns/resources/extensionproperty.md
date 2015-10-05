@@ -22,7 +22,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ExtensionProperty](../api/extensionproperty_get.md) | ExtensionProperty |Read properties and relationships of extensionProperty object.|
+|[Get ExtensionProperty](../api/extensionproperty_get.md) | [ExtensionProperty](extensionproperty.md) |Read properties and relationships of extensionProperty object.|
 |[Update](../api/extensionproperty_update.md) | [ExtensionProperty](extensionproperty.md)	|Update ExtensionProperty object. |
 |[Delete](../api/extensionproperty_delete.md) | Void	|Delete ExtensionProperty object. |
 |[Checkmembergroups](../api/extensionproperty_checkmembergroups.md)|String||

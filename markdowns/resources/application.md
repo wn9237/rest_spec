@@ -42,7 +42,7 @@ This is a sample application description.
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Application](../api/application_get.md) | Application |Read properties and relationships of application object.|
+|[Get Application](../api/application_get.md) | [Application](application.md) |Read properties and relationships of application object.|
 |[Create Extension]((../api/application_post_extensions.md)) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create ExtensionProperty]((../api/application_post_extensionproperties.md)) |[ExtensionProperty](extensionproperty.md)| Create a new ExtensionProperty by posting to the extensionProperties collection.|
 |[Create owner]((../api/application_post_owners.md)) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|

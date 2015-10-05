@@ -17,7 +17,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get DirectoryObject](../api/directoryobject_get.md) | DirectoryObject |Read properties and relationships of directoryObject object.|
+|[Get DirectoryObject](../api/directoryobject_get.md) | [DirectoryObject](directoryobject.md) |Read properties and relationships of directoryObject object.|
 |[Update](../api/directoryobject_update.md) | [DirectoryObject](directoryobject.md)	|Update DirectoryObject object. |
 |[Delete](../api/directoryobject_delete.md) | Void	|Delete DirectoryObject object. |
 |[Checkmembergroups](../api/directoryobject_checkmembergroups.md)|String||

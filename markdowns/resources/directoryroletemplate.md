@@ -19,7 +19,7 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get DirectoryRoleTemplate](../api/directoryroletemplate_get.md) | DirectoryRoleTemplate |Read properties and relationships of directoryRoleTemplate object.|
+|[Get DirectoryRoleTemplate](../api/directoryroletemplate_get.md) | [DirectoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
 |[Update](../api/directoryroletemplate_update.md) | [DirectoryRoleTemplate](directoryroletemplate.md)	|Update DirectoryRoleTemplate object. |
 |[Delete](../api/directoryroletemplate_delete.md) | Void	|Delete DirectoryRoleTemplate object. |
 |[Checkmembergroups](../api/directoryroletemplate_checkmembergroups.md)|String||
