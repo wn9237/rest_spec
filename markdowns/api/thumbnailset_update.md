@@ -2,6 +2,7 @@
 
 Update the properties of thumbnailset object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

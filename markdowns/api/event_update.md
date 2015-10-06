@@ -2,6 +2,7 @@
 
 Update the properties of event object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

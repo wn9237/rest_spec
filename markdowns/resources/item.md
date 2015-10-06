@@ -6,6 +6,15 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "children",
+    "thumbnails"
+  ],
+  "@odata.type": "microsoft.graph.item"
+}-->
+
 ```json
 {
   "children": [
@@ -86,10 +95,10 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|children|[item](item.md) collection| Read-only.|
+|children|[item](item.md) collection| Read-only. Nullable.|
 |createdByUser|[User](user.md)| Read-only.|
 |lastModifiedByUser|[User](user.md)| Read-only.|
-|thumbnails|[thumbnailSet](thumbnailset.md) collection| Read-only.|
+|thumbnails|[thumbnailSet](thumbnailset.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

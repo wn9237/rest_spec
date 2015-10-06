@@ -6,6 +6,14 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "items"
+  ],
+  "@odata.type": "microsoft.graph.drive"
+}-->
+
 ```json
 {
   "driveType": "String",
@@ -38,7 +46,7 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|items|[item](item.md) collection| Read-only.|
+|items|[item](item.md) collection| Read-only. Nullable.|
 |root|[item](item.md)| Read-only.|
 
 #### Tasks

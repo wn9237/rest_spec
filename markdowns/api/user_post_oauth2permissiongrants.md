@@ -2,6 +2,7 @@
 
 Use this API to create a new OAuth2PermissionGrant.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

@@ -2,6 +2,7 @@
 
 Retrieve the properties and relationships of calendar object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

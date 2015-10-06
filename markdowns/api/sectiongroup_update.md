@@ -2,6 +2,7 @@
 
 Update the properties of sectiongroup object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

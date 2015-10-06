@@ -2,6 +2,7 @@
 
 Delete PrivilegedRole.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

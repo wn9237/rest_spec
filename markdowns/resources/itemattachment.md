@@ -6,6 +6,14 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Extensions"
+  ],
+  "@odata.type": "microsoft.graph.ItemAttachment"
+}-->
+
 ```json
 {
   "ContentType": "String",
@@ -38,7 +46,7 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |Item|[OutlookItem](outlookitem.md)| Read-only.|
 
 #### Tasks

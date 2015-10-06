@@ -2,6 +2,7 @@
 
 Delete ContactFolder.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

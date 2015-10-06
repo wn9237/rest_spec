@@ -2,6 +2,7 @@
 
 Update the properties of tenantdetail object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

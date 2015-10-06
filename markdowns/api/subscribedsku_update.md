@@ -2,6 +2,7 @@
 
 Update the properties of subscribedsku object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

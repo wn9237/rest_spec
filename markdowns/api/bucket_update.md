@@ -2,6 +2,7 @@
 
 Update the properties of bucket object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

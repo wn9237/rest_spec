@@ -6,6 +6,14 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "tasks"
+  ],
+  "@odata.type": "microsoft.graph.Bucket"
+}-->
+
 ```json
 {
   "activeTasks": 1024,
@@ -37,7 +45,7 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|tasks|[Task](task.md) collection| Read-only.|
+|tasks|[Task](task.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

@@ -2,6 +2,7 @@
 
 Update the properties of directorylinkchange object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

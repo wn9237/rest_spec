@@ -2,6 +2,7 @@
 
 Update the properties of outlookitem object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

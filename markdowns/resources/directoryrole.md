@@ -6,6 +6,18 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Extensions",
+    "memberOf",
+    "members",
+    "ownedObjects",
+    "owners"
+  ],
+  "@odata.type": "microsoft.graph.DirectoryRole"
+}-->
+
 ```json
 {
   "Extensions": [
@@ -59,11 +71,11 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only.|
-|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|members|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|owners|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|members|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

@@ -2,6 +2,7 @@
 
 Update the properties of privilegedrole object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

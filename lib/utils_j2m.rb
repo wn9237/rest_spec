@@ -173,4 +173,15 @@ module SpecMaker
 		return JSON.pretty_generate model
 	end
 
+	def self.get_json_model_pretext (objectName="", properties=[])
+		model = deep_copy(@mdresource)
+		model["@odata.type"] = "#{@service[:namespace]}.#{objectName}"
+		properties.each do |item|
+			if item[:isNullable] 
+				model[:optionalProperties].push item[:name]
+			end
+		end 
+		return "<!-- " + (JSON.pretty_generate model) + "-->"
+	end
+
 end

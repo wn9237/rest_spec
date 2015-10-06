@@ -2,6 +2,7 @@
 
 Update the properties of application object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

@@ -6,6 +6,20 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Extensions",
+    "appRoleAssignments",
+    "createdObjects",
+    "memberOf",
+    "oauth2PermissionGrants",
+    "ownedObjects",
+    "owners"
+  ],
+  "@odata.type": "microsoft.graph.ServicePrincipal"
+}-->
+
 ```json
 {
   "Extensions": [
@@ -125,15 +139,15 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |appRoleAssignedTo|[AppRoleAssignment](approleassignment.md)| Read-only.|
-|appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only.|
-|createdObjects|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only. Nullable.|
+|createdObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |createdOnBehalfOf|[DirectoryObject](directoryobject.md)| Read-only.|
-|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|oauth2PermissionGrants|[OAuth2PermissionGrant](oauth2permissiongrant.md) collection| Read-only.|
-|ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|owners|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|oauth2PermissionGrants|[OAuth2PermissionGrant](oauth2permissiongrant.md) collection| Read-only. Nullable.|
+|ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

@@ -2,6 +2,7 @@
 
 Update the properties of drive object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

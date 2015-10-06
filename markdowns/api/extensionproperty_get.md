@@ -2,6 +2,7 @@
 
 Retrieve the properties and relationships of extensionproperty object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

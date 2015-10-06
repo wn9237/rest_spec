@@ -6,6 +6,14 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Assignments"
+  ],
+  "@odata.type": "microsoft.graph.PrivilegedRole"
+}-->
+
 ```json
 {
   "Assignments": [
@@ -33,7 +41,7 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Assignments|[PrivilegedRoleAssignment](privilegedroleassignment.md) collection| Read-only.|
+|Assignments|[PrivilegedRoleAssignment](privilegedroleassignment.md) collection| Read-only. Nullable.|
 |Settings|[PrivilegedRoleSettings](privilegedrolesettings.md)| Read-only.|
 |Summary|[PrivilegedRoleSummary](privilegedrolesummary.md)| Read-only.|
 

@@ -2,6 +2,7 @@
 
 Delete Entity.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

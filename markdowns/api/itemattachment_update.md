@@ -2,6 +2,7 @@
 
 Update the properties of itemattachment object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

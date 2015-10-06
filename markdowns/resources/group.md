@@ -6,6 +6,27 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "AcceptedSenders",
+    "CalendarView",
+    "Conversations",
+    "Events",
+    "Extensions",
+    "GroupPhotos",
+    "RejectedSenders",
+    "Threads",
+    "appRoleAssignments",
+    "memberOf",
+    "members",
+    "owners",
+    "plans",
+    "tasks"
+  ],
+  "@odata.type": "microsoft.graph.Group"
+}-->
+
 ```json
 {
   "AcceptedSenders": [
@@ -161,25 +182,25 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|AcceptedSenders|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|AcceptedSenders|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |Calendar|[Calendar](calendar.md)| Read-only.|
-|CalendarView|[Event](event.md) collection| Read-only.|
-|Conversations|[Conversation](conversation.md) collection| Read-only.|
-|Events|[Event](event.md) collection| Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only.|
+|CalendarView|[Event](event.md) collection| Read-only. Nullable.|
+|Conversations|[Conversation](conversation.md) collection| Read-only. Nullable.|
+|Events|[Event](event.md) collection| Read-only. Nullable.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |GroupPhoto|[Photo](photo.md)| Read-only.|
-|GroupPhotos|[Photo](photo.md) collection| Read-only.|
-|RejectedSenders|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|Threads|[ConversationThread](conversationthread.md) collection| Read-only.|
-|appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only.|
+|GroupPhotos|[Photo](photo.md) collection| Read-only. Nullable.|
+|RejectedSenders|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|Threads|[ConversationThread](conversationthread.md) collection| Read-only. Nullable.|
+|appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only. Nullable.|
 |createdOnBehalfOf|[DirectoryObject](directoryobject.md)| Read-only.|
 |details|[UserDetails](userdetails.md)| Read-only.|
 |drive|[drive](drive.md)| Read-only.|
-|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|members|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|owners|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|plans|[Plan](plan.md) collection| Read-only.|
-|tasks|[Task](task.md) collection| Read-only.|
+|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|members|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|plans|[Plan](plan.md) collection| Read-only. Nullable.|
+|tasks|[Task](task.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

@@ -2,6 +2,7 @@
 
 Delete DirectoryLinkChange.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

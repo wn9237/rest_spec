@@ -2,6 +2,7 @@
 
 Update the properties of page object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

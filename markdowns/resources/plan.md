@@ -6,6 +6,15 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "buckets",
+    "tasks"
+  ],
+  "@odata.type": "microsoft.graph.Plan"
+}-->
+
 ```json
 {
   "activeTasks": 1024,
@@ -59,10 +68,10 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |assignedToTaskBoard|[PlanTaskBoard](plantaskboard.md)| Read-only.|
 |bucketTaskBoard|[PlanTaskBoard](plantaskboard.md)| Read-only.|
-|buckets|[Bucket](bucket.md) collection| Read-only.|
+|buckets|[Bucket](bucket.md) collection| Read-only. Nullable.|
 |details|[PlanDetails](plandetails.md)| Read-only.|
 |statusTaskBoard|[PlanTaskBoard](plantaskboard.md)| Read-only.|
-|tasks|[Task](task.md) collection| Read-only.|
+|tasks|[Task](task.md) collection| Read-only. Nullable.|
 |timeline|[PlanTimeline](plantimeline.md)| Read-only.|
 
 #### Tasks

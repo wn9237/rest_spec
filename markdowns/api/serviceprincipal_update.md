@@ -2,6 +2,7 @@
 
 Update the properties of serviceprincipal object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

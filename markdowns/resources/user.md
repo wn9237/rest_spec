@@ -6,6 +6,36 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "CalendarGroups",
+    "CalendarView",
+    "Calendars",
+    "ContactFolders",
+    "Contacts",
+    "Events",
+    "Extensions",
+    "Folders",
+    "JoinedGroups",
+    "Messages",
+    "TrendingAround",
+    "UserPhotos",
+    "WorkingWith",
+    "appRoleAssignments",
+    "createdObjects",
+    "directReports",
+    "memberOf",
+    "oauth2PermissionGrants",
+    "ownedDevices",
+    "ownedObjects",
+    "plans",
+    "registeredDevices",
+    "tasks"
+  ],
+  "@odata.type": "microsoft.graph.User"
+}-->
+
 ```json
 {
   "AboutMe": "String",
@@ -293,35 +323,35 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Calendar|[Calendar](calendar.md)| Read-only.|
-|CalendarGroups|[CalendarGroup](calendargroup.md) collection| Read-only.|
-|CalendarView|[Event](event.md) collection| Read-only.|
-|Calendars|[Calendar](calendar.md) collection| Read-only.|
-|ContactFolders|[ContactFolder](contactfolder.md) collection| Read-only.|
-|Contacts|[Contact](contact.md) collection| Read-only.|
-|Events|[Event](event.md) collection| Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only.|
-|Folders|[MailFolder](mailfolder.md) collection| Read-only.|
-|JoinedGroups|[Group](group.md) collection| Read-only.|
-|Messages|[Message](message.md) collection| Read-only.|
+|CalendarGroups|[CalendarGroup](calendargroup.md) collection| Read-only. Nullable.|
+|CalendarView|[Event](event.md) collection| Read-only. Nullable.|
+|Calendars|[Calendar](calendar.md) collection| Read-only. Nullable.|
+|ContactFolders|[ContactFolder](contactfolder.md) collection| Read-only. Nullable.|
+|Contacts|[Contact](contact.md) collection| Read-only. Nullable.|
+|Events|[Event](event.md) collection| Read-only. Nullable.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|Folders|[MailFolder](mailfolder.md) collection| Read-only. Nullable.|
+|JoinedGroups|[Group](group.md) collection| Read-only. Nullable.|
+|Messages|[Message](message.md) collection| Read-only. Nullable.|
 |RootFolder|[MailFolder](mailfolder.md)| Read-only.|
-|TrendingAround|[File](file.md) collection| Read-only.|
+|TrendingAround|[File](file.md) collection| Read-only. Nullable.|
 |UserPhoto|[Photo](photo.md)| Read-only.|
-|UserPhotos|[Photo](photo.md) collection| Read-only.|
-|WorkingWith|[User](user.md) collection| Read-only.|
-|appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only.|
-|createdObjects|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|UserPhotos|[Photo](photo.md) collection| Read-only. Nullable.|
+|WorkingWith|[User](user.md) collection| Read-only. Nullable.|
+|appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only. Nullable.|
+|createdObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |details|[UserDetails](userdetails.md)| Read-only.|
-|directReports|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|directReports|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |drive|[drive](drive.md)| Read-only.|
 |manager|[DirectoryObject](directoryobject.md)| Read-only.|
-|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |notes|[Notes](notes.md)| Read-only.|
-|oauth2PermissionGrants|[OAuth2PermissionGrant](oauth2permissiongrant.md) collection| Read-only.|
-|ownedDevices|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|plans|[Plan](plan.md) collection| Read-only.|
-|registeredDevices|[DirectoryObject](directoryobject.md) collection| Read-only.|
-|tasks|[Task](task.md) collection| Read-only.|
+|oauth2PermissionGrants|[OAuth2PermissionGrant](oauth2permissiongrant.md) collection| Read-only. Nullable.|
+|ownedDevices|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|plans|[Plan](plan.md) collection| Read-only. Nullable.|
+|registeredDevices|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|tasks|[Task](task.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

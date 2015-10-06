@@ -2,6 +2,7 @@
 
 Update the properties of oauth2permissiongrant object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

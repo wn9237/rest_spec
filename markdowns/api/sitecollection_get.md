@@ -2,6 +2,7 @@
 
 Retrieve the properties and relationships of sitecollection object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

@@ -2,6 +2,7 @@
 
 Delete OAuth2PermissionGrant.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

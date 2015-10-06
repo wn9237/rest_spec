@@ -2,6 +2,7 @@
 
 Use this API to create a new AcceptedSender.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

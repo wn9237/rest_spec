@@ -6,6 +6,15 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Calendars",
+    "Extensions"
+  ],
+  "@odata.type": "microsoft.graph.CalendarGroup"
+}-->
+
 ```json
 {
   "Calendars": [
@@ -36,8 +45,8 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Calendars|[Calendar](calendar.md) collection| Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only.|
+|Calendars|[Calendar](calendar.md) collection| Read-only. Nullable.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

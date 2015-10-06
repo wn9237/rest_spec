@@ -2,6 +2,7 @@
 
 Update the properties of conversation object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

@@ -2,6 +2,7 @@
 
 Use this API to create a new registeredOwner.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

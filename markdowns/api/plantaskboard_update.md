@@ -2,6 +2,7 @@
 
 Update the properties of plantaskboard object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

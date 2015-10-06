@@ -2,6 +2,7 @@
 
 Delete File.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

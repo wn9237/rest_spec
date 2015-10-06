@@ -2,6 +2,7 @@
 
 Update the properties of calendargroup object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

@@ -2,6 +2,7 @@
 
 Update the properties of directoryrole object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

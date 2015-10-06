@@ -2,6 +2,7 @@
 
 Delete EventMessage.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

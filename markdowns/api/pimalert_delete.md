@@ -2,6 +2,7 @@
 
 Delete PimAlert.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

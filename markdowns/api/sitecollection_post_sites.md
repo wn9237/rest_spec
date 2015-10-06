@@ -2,6 +2,7 @@
 
 Use this API to create a new Site.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

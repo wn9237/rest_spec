@@ -2,6 +2,7 @@
 
 Update the properties of photo object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

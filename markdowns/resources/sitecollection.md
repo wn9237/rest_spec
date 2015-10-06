@@ -6,6 +6,14 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "sites"
+  ],
+  "@odata.type": "microsoft.graph.SiteCollection"
+}-->
+
 ```json
 {
   "id": "String (identifier)",
@@ -25,7 +33,7 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|sites|[Site](site.md) collection| Read-only.|
+|sites|[Site](site.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

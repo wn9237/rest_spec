@@ -148,8 +148,8 @@ module SpecMaker
 					end
 				end
 			end
-		else
-			puts "-----> No previous JSON file version exists for this resource."
+		# else
+		# 	puts "-----> No previous JSON file version exists for this resource."
 		end
 	end
 
@@ -217,6 +217,7 @@ module SpecMaker
 		dt = get_type(item[:Type])
 		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
 		prop[:dataType] = dt
+		prop[:isNullable] = true
 		prop[:isReadOnly] = true
 		if item[:Nullable] == 'false'
 			prop[:isNullable] = false

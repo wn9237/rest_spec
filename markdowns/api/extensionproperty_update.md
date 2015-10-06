@@ -2,6 +2,7 @@
 
 Update the properties of extensionproperty object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

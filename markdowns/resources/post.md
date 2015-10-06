@@ -6,6 +6,15 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Attachments",
+    "Extensions"
+  ],
+  "@odata.type": "microsoft.graph.Post"
+}-->
+
 ```json
 {
   "Attachments": [
@@ -69,8 +78,8 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Attachments|[Attachment](attachment.md) collection| Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only.|
+|Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |InReplyTo|[Post](post.md)| Read-only.|
 
 #### Tasks

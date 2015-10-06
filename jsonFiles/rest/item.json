@@ -276,7 +276,7 @@
       "isCollection": true,
       "isRelationship": true,
       "allowPostToCollection": true,
-      "isNullable": null,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -289,7 +289,7 @@
       "isCollection": true,
       "isRelationship": true,
       "allowPostToCollection": true,
-      "isNullable": null,
+      "isNullable": true,
       "isUnicode": null
     }
   ],

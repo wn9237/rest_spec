@@ -2,6 +2,7 @@
 
 Use this API to create a new UserPhoto.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

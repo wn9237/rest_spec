@@ -2,6 +2,7 @@
 
 Retrieve the properties and relationships of page object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

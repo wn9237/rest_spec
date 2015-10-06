@@ -2,6 +2,7 @@
 
 Update the properties of item object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

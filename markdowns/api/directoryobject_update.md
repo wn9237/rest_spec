@@ -2,6 +2,7 @@
 
 Update the properties of directoryobject object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

@@ -2,6 +2,7 @@
 
 Update the properties of post object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

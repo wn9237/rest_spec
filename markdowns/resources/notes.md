@@ -6,6 +6,18 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "notebooks",
+    "pages",
+    "resources",
+    "sectionGroups",
+    "sections"
+  ],
+  "@odata.type": "microsoft.graph.Notes"
+}-->
+
 ```json
 {
   "id": "String (identifier)",
@@ -45,11 +57,11 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|notebooks|[Notebook](notebook.md) collection| Read-only.|
-|pages|[Page](page.md) collection| Read-only.|
-|resources|[Resource](resource.md) collection| Read-only.|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection| Read-only.|
-|sections|[Section](section.md) collection| Read-only.|
+|notebooks|[Notebook](notebook.md) collection| Read-only. Nullable.|
+|pages|[Page](page.md) collection| Read-only. Nullable.|
+|resources|[Resource](resource.md) collection| Read-only. Nullable.|
+|sectionGroups|[SectionGroup](sectiongroup.md) collection| Read-only. Nullable.|
+|sections|[Section](section.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

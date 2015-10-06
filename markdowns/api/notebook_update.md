@@ -2,6 +2,7 @@
 
 Update the properties of notebook object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

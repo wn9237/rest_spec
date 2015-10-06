@@ -2,6 +2,7 @@
 
 Update the properties of notificationrule object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

@@ -2,6 +2,7 @@
 
 Update the properties of pimalert object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

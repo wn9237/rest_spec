@@ -111,6 +111,7 @@ module SpecMaker
 		# is set to true. 
 		#
 		actionLines.push HEADER4 + "HTTP request" + NEWLINE		
+		actionLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 		actionLines.push '```http' + NEWLINE
 		if @jsonHash[:restPath].length > 0
 			httpSyntax = get_syntax(method[:name], @jsonHash[:restPath].select { |_, v| v }.keys)
@@ -243,6 +244,8 @@ module SpecMaker
 
 		# HTTP request
 		getMethodLines.push HEADER4 + "HTTP request" + NEWLINE
+		getMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
+
 		getMethodLines.push '```http' + NEWLINE
 		httpGetArray = @jsonHash[:restPath].map {|a| "GET " + a}
 		getMethodLines.push httpGetArray.join("\n") + NEWLINE
@@ -306,6 +309,7 @@ module SpecMaker
 		end
 		# HTTP request
 		patchMethodLines.push HEADER4 + "HTTP request" + NEWLINE
+		patchMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 		patchMethodLines.push '```http' + NEWLINE
 		httpPatchArray = @jsonHash[:restPath].map {|a| "PATCH " + a}
 		patchMethodLines.push httpPatchArray.join("\n") + NEWLINE
@@ -430,6 +434,7 @@ module SpecMaker
 		if isProperty || isRelation 
 			@mdlines.push HEADER4 + 'JSON representation' + TWONEWLINES
 			@mdlines.push 'Here is a JSON representation of the resource' + TWONEWLINES
+			@mdlines.push get_json_model_pretext(@jsonHash[:name],propreties) + TWONEWLINES
 			@mdlines.push "```json" + NEWLINE
 			@mdlines.push get_json_model(propreties) + TWONEWLINES
 			@mdlines.push "```" + NEWLINE			

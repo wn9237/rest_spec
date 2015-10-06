@@ -2,6 +2,7 @@
 
 Update the properties of notification object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

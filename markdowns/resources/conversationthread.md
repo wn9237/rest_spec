@@ -6,6 +6,15 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Extensions",
+    "Posts"
+  ],
+  "@odata.type": "microsoft.graph.ConversationThread"
+}-->
+
 ```json
 {
   "CcRecipients": [
@@ -56,8 +65,8 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only.|
-|Posts|[Post](post.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|Posts|[Post](post.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

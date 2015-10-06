@@ -2,6 +2,7 @@
 
 Update the properties of group object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

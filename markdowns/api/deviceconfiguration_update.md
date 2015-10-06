@@ -2,6 +2,7 @@
 
 Update the properties of deviceconfiguration object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

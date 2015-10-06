@@ -2,6 +2,7 @@
 
 Retrieve the properties and relationships of oauth2permissiongrant object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

@@ -2,6 +2,7 @@
 
 Update the properties of permission object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

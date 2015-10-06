@@ -6,6 +6,14 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "pages"
+  ],
+  "@odata.type": "microsoft.graph.Section"
+}-->
+
 ```json
 {
   "createdBy": "String",
@@ -47,7 +55,7 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|pages|[Page](page.md) collection| Read-only.|
+|pages|[Page](page.md) collection| Read-only. Nullable.|
 |parentNotebook|[Notebook](notebook.md)| Read-only.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)| Read-only.|
 

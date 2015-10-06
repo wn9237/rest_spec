@@ -2,6 +2,7 @@
 
 Delete MailFolder.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

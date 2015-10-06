@@ -6,6 +6,14 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Extensions"
+  ],
+  "@odata.type": "microsoft.graph.Contact"
+}-->
+
 ```json
 {
   "AssistantName": "String",
@@ -115,7 +123,7 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |ContactPhoto|[Photo](photo.md)| Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

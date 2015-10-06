@@ -2,6 +2,7 @@
 
 Retrieve the properties and relationships of deviceconfiguration object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

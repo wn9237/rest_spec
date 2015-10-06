@@ -6,6 +6,15 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Extensions",
+    "Threads"
+  ],
+  "@odata.type": "microsoft.graph.Conversation"
+}-->
+
 ```json
 {
   "DateTimeLastDelivered": "String (timestamp)",
@@ -42,8 +51,8 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only.|
-|Threads|[ConversationThread](conversationthread.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|Threads|[ConversationThread](conversationthread.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

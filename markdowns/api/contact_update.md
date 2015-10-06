@@ -2,6 +2,7 @@
 
 Update the properties of contact object.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```

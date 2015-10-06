@@ -6,6 +6,16 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Extensions",
+    "extensionProperties",
+    "owners"
+  ],
+  "@odata.type": "microsoft.graph.Application"
+}-->
+
 ```json
 {
   "Extensions": [
@@ -110,10 +120,10 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |createdOnBehalfOf|[DirectoryObject](directoryobject.md)| Read-only.|
-|extensionProperties|[ExtensionProperty](extensionproperty.md) collection| Read-only.|
-|owners|[DirectoryObject](directoryobject.md) collection| Read-only.|
+|extensionProperties|[ExtensionProperty](extensionproperty.md) collection| Read-only. Nullable.|
+|owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

@@ -2,6 +2,7 @@
 
 Delete Attachment.
 #### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 to be completed....
 ```

@@ -6,6 +6,16 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Attachments",
+    "Extensions",
+    "Instances"
+  ],
+  "@odata.type": "microsoft.graph.Event"
+}-->
+
 ```json
 {
   "Attachments": [
@@ -112,10 +122,10 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Attachments|[Attachment](attachment.md) collection| Read-only.|
+|Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
 |Calendar|[Calendar](calendar.md)| Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only.|
-|Instances|[Event](event.md) collection| Read-only.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|Instances|[Event](event.md) collection| Read-only. Nullable.|
 
 #### Tasks
 

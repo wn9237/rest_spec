@@ -6,6 +6,16 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "ChildFolders",
+    "Contacts",
+    "Extensions"
+  ],
+  "@odata.type": "microsoft.graph.ContactFolder"
+}-->
+
 ```json
 {
   "ChildFolders": [
@@ -39,9 +49,9 @@ Here is a JSON representation of the resource
 #### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|ChildFolders|[ContactFolder](contactfolder.md) collection| Read-only.|
-|Contacts|[Contact](contact.md) collection| Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only.|
+|ChildFolders|[ContactFolder](contactfolder.md) collection| Read-only. Nullable.|
+|Contacts|[Contact](contact.md) collection| Read-only. Nullable.|
+|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
 #### Tasks
 
