@@ -28,6 +28,3 @@ In the request body, supply the values for relevant fields that should be update
 
 #### Response
 If successful, this method returns a `200 OK` response code and updated [DirectoryLinkChange](../resources/directorylinkchange.md) object in the response body.
-#### Example
-##### HTTP request
-##### Response

@@ -1,8 +1,6 @@
-# Display name of creation session
+# item: createSession
 
-this is create sesssion method
-#### Prerequisites
-create session pre-req
+
 #### HTTP request
 ```http
 to be completed....
@@ -17,8 +15,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|path|String|This is path parameter|
-|item|FileSystemItemInformation|I am item parameter|
+|path|String||
+|item|FileSystemItemInformation||
 
 #### Response
 If successful, this method returns `200, OK` response code and [uploadSession](../resources/uploadsession.md) object in the response body.

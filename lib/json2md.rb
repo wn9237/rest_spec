@@ -138,7 +138,11 @@ module SpecMaker
 	
 		# Provide parameters: 
 		if method[:parameters] !=nil && method[:parameters].length > 0
-			actionLines.push "In the request body, provide a JSON object with the following parameters." + TWONEWLINES
+			if method[:isFunction]
+				actionLines.push "In the request URL, provide following query parameters with values." + TWONEWLINES
+			else
+				actionLines.push "In the request body, provide a JSON object with the following parameters." + TWONEWLINES				
+			end
 			actionLines.push PARAM_HEADER + TABLE_2ND_LINE 
 			method[:parameters].each do |param|
 				# Append optional and enum possible values (if applicable).
@@ -189,17 +193,26 @@ module SpecMaker
 			actionLines.push "If successful, this method returns `#{method[:httpSuccessCode]}, #{HTTP_CODES[method[:httpSuccessCode]]}` response code and #{trueReturn} object in the response body."  + NEWLINE
 		end
 
-		begin
-			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource + '_' + method[:name]).downcase + ".md"))
+		# Write example files
+		# begin
+			case method[:name]
+			when 'auto_post'
+				#puts '1---- '
+			
+				example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (method[:returnType] + '_' + method[:name]).downcase + ".md"))
+				#puts '2---- '
+			else
+				example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource.downcase + '_' + method[:name]).downcase + ".md"))
+			end
 			if example_lines.length > 1
 				actionLines.push NEWLINE
 				example_lines.each do |line|
 					actionLines.push line
 				end
 			end
-		rescue => err
-			@logger.error("....Example File does not exist for: #{@resource}, ")
-		end
+		# rescue => err
+		# 	@logger.error("....Example File does not exist for: #{@resource}, ")
+		# end
 
 		# Write the output file. 
 		if autoFilename
@@ -260,11 +273,11 @@ module SpecMaker
 
 		#Example
 		begin
-			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource + '_' + "auto_get" + ".md"))
+			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@jsonHash[:name].downcase + '_' + "auto_get" + ".md")))
 			if example_lines.length > 1
-				patchMethodLines.push NEWLINE
+				getMethodLines.push NEWLINE
 				example_lines.each do |line|
-					patchMethodLines.push line
+					getMethodLines.push line
 				end
 			end
 		rescue => err
@@ -334,7 +347,10 @@ module SpecMaker
 
 		#Example
 		begin
-			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource + '_' + "auto_patch" + ".md"))
+
+			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@jsonHash[:name].downcase + '_' + "auto_patch" + ".md")))
+
+
 			if example_lines.length > 1
 				patchMethodLines.push NEWLINE
 				example_lines.each do |line|

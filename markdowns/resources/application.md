@@ -1,6 +1,6 @@
 # Application resource type
 
-This is a sample application description.
+
 
 #### JSON representation
 
@@ -82,7 +82,7 @@ Here is a JSON representation of the resource
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appId|String|sample appid description.|
+|appId|String||
 |appRoles|[AppRole](approle.md) collection||
 |availableToOtherTenants|Boolean||
 |deletionTimestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -128,4 +128,4 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/application_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/application_getmembergroups.md)|String||
 |[Get MemberObjects](../api/application_getmemberobjects.md)|String||
-|[Restore](../api/application_restore.md)|[Application](application.md)|Sample description of the restore method.|
+|[Restore](../api/application_restore.md)|[Application](application.md)||

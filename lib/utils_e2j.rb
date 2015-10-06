@@ -83,6 +83,7 @@ module SpecMaker
 			create_examplefile(objectName, 'auto_post')
 			create_examplefile(objectName, 'auto_patch')
 			create_examplefile(objectName, 'auto_put')
+			create_examplefile(objectName, 'auto_delete')			
 		else
 			create_examplefile(objectName, 'auto_list')							
 		end

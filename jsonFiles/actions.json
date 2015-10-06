@@ -88,8 +88,8 @@
   "Application": [
     {
       "name": "restore",
-      "displayName": "the restore method.",
-      "description": "Sample description of the restore method.",
+      "displayName": "",
+      "description": "",
       "prerequisites": "",
       "returnType": "Application",
       "isReturnNullable": null,
@@ -105,7 +105,7 @@
       "parameters": [
         {
           "name": "identifierUris",
-          "description": "sample description of the uri param.",
+          "description": "",
           "dataType": "String",
           "isRequired": true,
           "enumName": null,
@@ -795,9 +795,9 @@
   "item": [
     {
       "name": "copy",
-      "displayName": "This is the display name of the Copy",
-      "description": "This is the description of Copy",
-      "prerequisites": "Pre-req of copy",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
       "returnType": "item",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -812,7 +812,7 @@
       "parameters": [
         {
           "name": "parentReference",
-          "description": "Description of parentReference",
+          "description": "",
           "dataType": "itemReference",
           "isRequired": true,
           "enumName": null,
@@ -821,7 +821,7 @@
         },
         {
           "name": "name",
-          "description": "description of name",
+          "description": "",
           "dataType": "String",
           "isRequired": true,
           "enumName": null,
@@ -833,8 +833,8 @@
     {
       "name": "createLink",
       "displayName": "",
-      "description": "Create link description",
-      "prerequisites": "Create link pre-requisites",
+      "description": "",
+      "prerequisites": "",
       "returnType": "permission",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -849,7 +849,7 @@
       "parameters": [
         {
           "name": "type",
-          "description": "type description",
+          "description": "",
           "dataType": "String",
           "isRequired": true,
           "enumName": null,
@@ -860,9 +860,9 @@
     },
     {
       "name": "createSession",
-      "displayName": "Display name of creation session",
-      "description": "this is create sesssion method",
-      "prerequisites": "create session pre-req",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
       "returnType": "uploadSession",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
@@ -877,7 +877,7 @@
       "parameters": [
         {
           "name": "path",
-          "description": "This is path parameter",
+          "description": "",
           "dataType": "String",
           "isRequired": true,
           "enumName": null,
@@ -886,7 +886,7 @@
         },
         {
           "name": "item",
-          "description": "I am item parameter",
+          "description": "",
           "dataType": "FileSystemItemInformation",
           "isRequired": true,
           "enumName": null,

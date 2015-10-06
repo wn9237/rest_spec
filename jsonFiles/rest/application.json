@@ -1,6 +1,6 @@
 {
   "name": "Application",
-  "description": "This is a sample application description.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -21,7 +21,7 @@
   "properties": [
     {
       "name": "appId",
-      "description": "sample appid description.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -387,8 +387,8 @@
   "methods": [
     {
       "name": "restore",
-      "displayName": "the restore method.",
-      "description": "Sample description of the restore method.",
+      "displayName": "",
+      "description": "",
       "prerequisites": "",
       "returnType": "Application",
       "isReturnNullable": null,
@@ -404,7 +404,7 @@
       "parameters": [
         {
           "name": "identifierUris",
-          "description": "sample description of the uri param.",
+          "description": "",
           "dataType": "String",
           "isRequired": true,
           "enumName": null,

@@ -1,6 +1,6 @@
 {
   "name": "AppRole",
-  "description": "Appl role description",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -21,7 +21,7 @@
   "properties": [
     {
       "name": "allowedMemberTypes",
-      "description": "allow mem type description",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -34,7 +34,7 @@
     },
     {
       "name": "description",
-      "description": "desc of desc",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,

@@ -1,6 +1,6 @@
 # AppRole resource type
 
-Appl role description
+
 
 #### JSON representation
 
@@ -22,8 +22,8 @@ Here is a JSON representation of the resource
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|allow mem type description|
-|description|String|desc of desc|
+|allowedMemberTypes|String collection||
+|description|String||
 |displayName|String||
 |id|Guid||
 |isEnabled|Boolean||

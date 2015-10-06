@@ -1,8 +1,6 @@
 # item: createLink
 
-Create link description
-#### Prerequisites
-Create link pre-requisites
+
 #### HTTP request
 ```http
 to be completed....
@@ -17,7 +15,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|String|type description|
+|type|String||
 
 #### Response
 If successful, this method returns `200, OK` response code and [permission](../resources/permission.md) object in the response body.

@@ -1,6 +1,6 @@
 # Update Application
 
-I want this message to show up when i update a  resource
+Update the properties of application object.
 #### HTTP request
 ```http
 
@@ -16,7 +16,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appId|String|sample appid description.|
+|appId|String||
 |appRoles|AppRole||
 |availableToOtherTenants|Boolean||
 |deletionTimestamp|DateTimeOffset||
@@ -42,6 +42,3 @@ In the request body, supply the values for relevant fields that should be update
 
 #### Response
 If successful, this method returns a `200 OK` response code and updated [Application](../resources/application.md) object in the response body.
-#### Example
-##### HTTP request
-##### Response

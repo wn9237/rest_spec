@@ -16,16 +16,16 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|identitySet|created by desc|
-|createdDateTime|DateTimeOffset|createdDateTime desc|
-|deleted|deleted|deleted desc|
-|eTag|String|eTag desc|
-|file|file|file desc|
+|createdBy|identitySet||
+|createdDateTime|DateTimeOffset||
+|deleted|deleted||
+|eTag|String||
+|file|file||
 |folder|folder||
-|image|image|image desc|
-|lastModifiedBy|identitySet|lastModifiedBy desc|
-|lastModifiedDateTime|DateTimeOffset|lastModifiedDateTime desc|
-|name|String|name desc|
+|image|image||
+|lastModifiedBy|identitySet||
+|lastModifiedDateTime|DateTimeOffset||
+|name|String||
 |parentReference|itemReference||
 |photo|photo||
 |searchResult|searchResult||
@@ -35,6 +35,3 @@ In the request body, supply the values for relevant fields that should be update
 
 #### Response
 If successful, this method returns a `200 OK` response code and updated [item](../resources/item.md) object in the response body.
-#### Example
-##### HTTP request
-##### Response

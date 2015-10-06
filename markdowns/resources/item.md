@@ -1,6 +1,6 @@
 # item resource type
 
-This is item object description
+
 
 #### JSON representation
 
@@ -65,17 +65,17 @@ Here is a JSON representation of the resource
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)|created by desc|
-|createdDateTime|DateTimeOffset|createdDateTime descThe Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|deleted|[deleted](deleted.md)|deleted desc|
-|eTag|String|eTag desc|
-|file|[file](file.md)|file desc|
+|createdBy|[identitySet](identityset.md)||
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|deleted|[deleted](deleted.md)||
+|eTag|String||
+|file|[file](file.md)||
 |folder|[folder](folder.md)||
-|id|String|id desc Read-only.|
-|image|[image](image.md)|image desc|
-|lastModifiedBy|[identitySet](identityset.md)|lastModifiedBy desc|
-|lastModifiedDateTime|DateTimeOffset|lastModifiedDateTime descThe Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|name|String|name desc|
+|id|String| Read-only.|
+|image|[image](image.md)||
+|lastModifiedBy|[identitySet](identityset.md)||
+|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|name|String||
 |parentReference|[itemReference](itemreference.md)||
 |photo|[photo](photo.md)||
 |searchResult|[searchResult](searchresult.md)||
@@ -101,9 +101,9 @@ Here is a JSON representation of the resource
 |[Update](../api/item_update.md) | [item](item.md)	|Update item object. |
 |[Delete](../api/item_delete.md) | Void	|Delete item object. |
 |[Content](../api/item_content.md)|Stream||
-|[Copy](../api/item_copy.md)|[item](item.md)|This is the description of Copy|
-|[Createlink](../api/item_createlink.md)|[permission](permission.md)|Create link description|
-|[Createsession](../api/item_createsession.md)|[uploadSession](uploadsession.md)|this is create sesssion method|
+|[Copy](../api/item_copy.md)|[item](item.md)||
+|[Createlink](../api/item_createlink.md)|[permission](permission.md)||
+|[Createsession](../api/item_createsession.md)|[uploadSession](uploadsession.md)||
 |[Delta](../api/item_delta.md)|[item](item.md)||
 |[Search](../api/item_search.md)|[item](item.md)||
 |[Uploadcontent](../api/item_uploadcontent.md)|[None](none.md)||
