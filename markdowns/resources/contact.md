@@ -2,6 +2,76 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "AssistantName": "String",
+  "Birthday": "String (timestamp)",
+  "BusinessAddress": {
+    "@odata.type": "microsoft.graph.PhysicalAddress"
+  },
+  "BusinessHomePage": "String",
+  "BusinessPhones": [
+    "String"
+  ],
+  "Categories": [
+    "String"
+  ],
+  "ChangeKey": "String",
+  "CompanyName": "String",
+  "ContactPhoto": {
+    "@odata.type": "microsoft.graph.Photo"
+  },
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
+  "Department": "String",
+  "DisplayName": "String",
+  "EmailAddresses": [
+    {
+      "@odata.type": "microsoft.graph.EmailAddress"
+    }
+  ],
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "FileAs": "String",
+  "Generation": "String",
+  "GivenName": "String",
+  "HomeAddress": {
+    "@odata.type": "microsoft.graph.PhysicalAddress"
+  },
+  "HomePhones": [
+    "String"
+  ],
+  "Id": "String (identifier)",
+  "ImAddresses": [
+    "String"
+  ],
+  "Initials": "String",
+  "JobTitle": "String",
+  "Manager": "String",
+  "MiddleName": "String",
+  "MobilePhone1": "String",
+  "NickName": "String",
+  "OfficeLocation": "String",
+  "OtherAddress": {
+    "@odata.type": "microsoft.graph.PhysicalAddress"
+  },
+  "ParentFolderId": "String",
+  "Profession": "String",
+  "Surname": "String",
+  "Title": "String",
+  "YomiCompanyName": "String",
+  "YomiGivenName": "String",
+  "YomiSurname": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

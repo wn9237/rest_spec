@@ -2,6 +2,29 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Calendars": [
+    {
+      "@odata.type": "microsoft.graph.Calendar"
+    }
+  ],
+  "ChangeKey": "String",
+  "ClassId": "String",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "Id": "String (identifier)",
+  "Name": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

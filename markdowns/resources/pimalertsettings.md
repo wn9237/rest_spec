@@ -2,6 +2,17 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "AlertId": "String (identifier)",
+  "AlertSettings": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

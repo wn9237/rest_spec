@@ -2,6 +2,52 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "accountEnabled": true,
+  "alternativeSecurityIds": [
+    {
+      "@odata.type": "microsoft.graph.AlternativeSecurityId"
+    }
+  ],
+  "approximateLastLogonTimestamp": "String (timestamp)",
+  "deletionTimestamp": "String (timestamp)",
+  "deviceId": "String",
+  "deviceMetadata": "String",
+  "deviceOSType": "String",
+  "deviceOSVersion": "String",
+  "deviceObjectVersion": 1024,
+  "devicePhysicalIds": [
+    "String"
+  ],
+  "deviceTrustType": "String",
+  "dirSyncEnabled": true,
+  "displayName": "String",
+  "lastDirSyncTime": "String (timestamp)",
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "registeredOwners": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "registeredUsers": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

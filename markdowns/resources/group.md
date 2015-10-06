@@ -2,6 +2,134 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "AcceptedSenders": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "AccessType": "String",
+  "AllowExternalSenders": true,
+  "AutoSubscribeNewMembers": true,
+  "Calendar": {
+    "@odata.type": "microsoft.graph.Calendar"
+  },
+  "CalendarView": [
+    {
+      "@odata.type": "microsoft.graph.Event"
+    }
+  ],
+  "Conversations": [
+    {
+      "@odata.type": "microsoft.graph.Conversation"
+    }
+  ],
+  "EmailAddress": "String",
+  "Events": [
+    {
+      "@odata.type": "microsoft.graph.Event"
+    }
+  ],
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "GroupPhoto": {
+    "@odata.type": "microsoft.graph.Photo"
+  },
+  "GroupPhotos": [
+    {
+      "@odata.type": "microsoft.graph.Photo"
+    }
+  ],
+  "IsFavorite": true,
+  "IsSubscribedByMail": true,
+  "RejectedSenders": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "Threads": [
+    {
+      "@odata.type": "microsoft.graph.ConversationThread"
+    }
+  ],
+  "UnseenCount": 1024,
+  "appRoleAssignments": [
+    {
+      "@odata.type": "microsoft.graph.AppRoleAssignment"
+    }
+  ],
+  "createdOnBehalfOf": {
+    "@odata.type": "microsoft.graph.DirectoryObject"
+  },
+  "creationOptions": [
+    "String"
+  ],
+  "deletionTimestamp": "String (timestamp)",
+  "description": "String",
+  "details": {
+    "@odata.type": "microsoft.graph.UserDetails"
+  },
+  "dirSyncEnabled": true,
+  "displayName": "String",
+  "drive": {
+    "@odata.type": "microsoft.graph.drive"
+  },
+  "groupTypes": [
+    "String"
+  ],
+  "isPublic": true,
+  "lastDirSyncTime": "String (timestamp)",
+  "mail": "String",
+  "mailEnabled": true,
+  "mailNickname": "String",
+  "memberOf": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "members": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "onPremisesSecurityIdentifier": "String",
+  "owners": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "plans": [
+    {
+      "@odata.type": "microsoft.graph.Plan"
+    }
+  ],
+  "provisioningErrors": [
+    {
+      "@odata.type": "microsoft.graph.ProvisioningError"
+    }
+  ],
+  "proxyAddresses": [
+    "String"
+  ],
+  "securityEnabled": true,
+  "tasks": [
+    {
+      "@odata.type": "microsoft.graph.Task"
+    }
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

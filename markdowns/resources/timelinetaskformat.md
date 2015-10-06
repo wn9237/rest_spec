@@ -2,6 +2,25 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "anchorPosition": "String",
+  "calloutHeight": 1024,
+  "color": 1024,
+  "drawingStyle": "String",
+  "id": "String (identifier)",
+  "labelOffsetX": 1024,
+  "labelOffsetY": 1024,
+  "swimlane": 1024,
+  "version": "String",
+  "visible": true
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

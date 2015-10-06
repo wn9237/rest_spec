@@ -2,6 +2,23 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "ExpirationTime": "String (timestamp)",
+  "IsElevated": true,
+  "ResultMessage": "String",
+  "RoleId": "String (identifier)",
+  "RoleInfo": {
+    "@odata.type": "microsoft.graph.PrivilegedRole"
+  },
+  "UserId": "String (identifier)"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

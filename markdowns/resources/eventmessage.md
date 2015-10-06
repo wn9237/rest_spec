@@ -2,6 +2,81 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Attachments": [
+    {
+      "@odata.type": "microsoft.graph.Attachment"
+    }
+  ],
+  "BccRecipients": [
+    {
+      "@odata.type": "microsoft.graph.Recipient"
+    }
+  ],
+  "Body": {
+    "@odata.type": "microsoft.graph.ItemBody"
+  },
+  "BodyPreview": "String",
+  "Categories": [
+    "String"
+  ],
+  "CcRecipients": [
+    {
+      "@odata.type": "microsoft.graph.Recipient"
+    }
+  ],
+  "ChangeKey": "String",
+  "ConversationId": "String",
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
+  "DateTimeReceived": "String (timestamp)",
+  "DateTimeSent": "String (timestamp)",
+  "Event": {
+    "@odata.type": "microsoft.graph.Event"
+  },
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "From": {
+    "@odata.type": "microsoft.graph.Recipient"
+  },
+  "HasAttachments": true,
+  "Id": "String (identifier)",
+  "Importance": "String",
+  "IsDeliveryReceiptRequested": true,
+  "IsDraft": true,
+  "IsRead": true,
+  "IsReadReceiptRequested": true,
+  "MeetingMessageType": "String",
+  "ParentFolderId": "String",
+  "ReplyTo": [
+    {
+      "@odata.type": "microsoft.graph.Recipient"
+    }
+  ],
+  "Sender": {
+    "@odata.type": "microsoft.graph.Recipient"
+  },
+  "Subject": "String",
+  "ToRecipients": [
+    {
+      "@odata.type": "microsoft.graph.Recipient"
+    }
+  ],
+  "UniqueBody": {
+    "@odata.type": "microsoft.graph.ItemBody"
+  },
+  "WebLink": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

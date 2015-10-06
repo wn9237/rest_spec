@@ -2,6 +2,34 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "ChildFolderCount": 1024,
+  "ChildFolders": [
+    {
+      "@odata.type": "microsoft.graph.MailFolder"
+    }
+  ],
+  "DisplayName": "String",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "Id": "String (identifier)",
+  "Messages": [
+    {
+      "@odata.type": "microsoft.graph.Message"
+    }
+  ],
+  "ParentFolderId": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

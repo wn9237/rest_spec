@@ -2,6 +2,19 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "deleted": 1024,
+  "remaining": 1024,
+  "state": "String",
+  "total": 1024
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

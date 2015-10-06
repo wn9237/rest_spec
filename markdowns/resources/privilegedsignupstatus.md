@@ -2,6 +2,18 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "IsRegistered": true,
+  "Status": "String",
+  "TenantId": "String (identifier)"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

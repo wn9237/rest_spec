@@ -2,6 +2,19 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "displaySettings": "String",
+  "id": "String (identifier)",
+  "lockedWidth": 1024,
+  "version": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

@@ -2,6 +2,23 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "adminConsentDescription": "String",
+  "adminConsentDisplayName": "String",
+  "id": "String",
+  "isEnabled": true,
+  "type": "String",
+  "userConsentDescription": "String",
+  "userConsentDisplayName": "String",
+  "value": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

@@ -2,6 +2,30 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "appDisplayName": "String",
+  "dataType": "String",
+  "deletionTimestamp": "String (timestamp)",
+  "isSyncedFromOnPremises": true,
+  "name": "String",
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "targetObjects": [
+    "String"
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

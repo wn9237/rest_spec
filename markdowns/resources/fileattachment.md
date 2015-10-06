@@ -2,6 +2,30 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "ContentBytes": "String",
+  "ContentId": "String",
+  "ContentLocation": "String",
+  "ContentType": "String",
+  "DateTimeLastModified": "String (timestamp)",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "Id": "String (identifier)",
+  "IsContactPhoto": true,
+  "IsInline": true,
+  "Name": "String",
+  "Size": 1024
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

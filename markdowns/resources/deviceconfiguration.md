@@ -2,6 +2,31 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "cloudPublicIssuerCertificates": [
+    "String"
+  ],
+  "deletionTimestamp": "String (timestamp)",
+  "maximumRegistrationInactivityPeriod": 1024,
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "publicIssuerCertificates": [
+    "String"
+  ],
+  "registrationQuota": 1024
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

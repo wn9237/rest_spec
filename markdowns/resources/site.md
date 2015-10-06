@@ -2,6 +2,19 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "id": "String (identifier)",
+  "notes": {
+    "@odata.type": "microsoft.graph.Notes"
+  }
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

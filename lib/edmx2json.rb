@@ -5,8 +5,7 @@ require 'logger'
 
 
 module SpecMaker
-	require_relative 'utils'
-	require_relative 'graphrulescheck'
+	require_relative 'utils_e2j'
 	# Read and load the CSDL file
 	f=File.read(CSDL_LOCATION + 'alpha_graph.xml')
 
@@ -22,7 +21,6 @@ module SpecMaker
 	# Process all Enums. Load in memory.
 	schema[:EnumType].each do |item|
 		puts "-> Processing Enum #{item[:Name]}"
-		name_check(item[:Name])
 		enum = {}
 		if item[:IsFlags] 
 			enum[:isExclusive] = false
@@ -175,7 +173,9 @@ module SpecMaker
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
 			f.write(JSON.pretty_generate @json_object)
 		end
-		
+		if !@json_object[:isComplexType]
+			create_auto_examplefiles((@json_object[:name]).downcase, false)		 
+		end		
 		GC.start
 	end
 
@@ -202,9 +202,10 @@ module SpecMaker
 		@json_object[:allowDelete] = false
 
 		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
-		 File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
-		 	f.write(JSON.pretty_generate @json_object)
-		 end
+		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
+			f.write(JSON.pretty_generate @json_object)
+		end
+		create_auto_examplefiles((@json_object[:name]).downcase, true)		 
 		GC.start
 	end
 

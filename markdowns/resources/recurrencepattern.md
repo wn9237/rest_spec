@@ -2,6 +2,24 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "DayOfMonth": 1024,
+  "DaysOfWeek": [
+    "String"
+  ],
+  "FirstDayOfWeek": "String",
+  "Index": "String",
+  "Interval": 1024,
+  "Month": 1024,
+  "Type": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

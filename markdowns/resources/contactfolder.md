@@ -2,6 +2,33 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "ChildFolders": [
+    {
+      "@odata.type": "microsoft.graph.ContactFolder"
+    }
+  ],
+  "Contacts": [
+    {
+      "@odata.type": "microsoft.graph.Contact"
+    }
+  ],
+  "DisplayName": "String",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "Id": "String (identifier)",
+  "ParentFolderId": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

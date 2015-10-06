@@ -2,6 +2,31 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "AdditionalData": "String",
+  "AlertDescription": "String",
+  "AlertId": "String (identifier)",
+  "AlertName": "String",
+  "AlertType": 1024,
+  "HowToPrevent": "String",
+  "IsActive": true,
+  "IsConfigurable": true,
+  "IsResolvable": true,
+  "LastModifiedTime": "String (timestamp)",
+  "LastScannedTime": "String (timestamp)",
+  "MitigationSteps": "String",
+  "NumberOfAffected": 1024,
+  "SecurityImpact": "String",
+  "SeverityLevel": 1024,
+  "WasDismissed": true
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

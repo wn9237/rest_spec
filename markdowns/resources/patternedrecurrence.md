@@ -2,6 +2,21 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Pattern": {
+    "@odata.type": "microsoft.graph.RecurrencePattern"
+  },
+  "Range": {
+    "@odata.type": "microsoft.graph.RecurrenceRange"
+  }
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

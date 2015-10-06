@@ -2,6 +2,66 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "assignedPlans": [
+    {
+      "@odata.type": "microsoft.graph.AssignedPlan"
+    }
+  ],
+  "city": "String",
+  "companyLastDirSyncTime": "String (timestamp)",
+  "country": "String",
+  "countryLetterCode": "String",
+  "deletionTimestamp": "String (timestamp)",
+  "dirSyncEnabled": true,
+  "displayName": "String",
+  "marketingNotificationEmails": [
+    "String"
+  ],
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "postalCode": "String",
+  "preferredLanguage": "String",
+  "provisionedPlans": [
+    {
+      "@odata.type": "microsoft.graph.ProvisionedPlan"
+    }
+  ],
+  "provisioningErrors": [
+    {
+      "@odata.type": "microsoft.graph.ProvisioningError"
+    }
+  ],
+  "securityComplianceNotificationMails": [
+    "String"
+  ],
+  "securityComplianceNotificationPhones": [
+    "String"
+  ],
+  "state": "String",
+  "street": "String",
+  "technicalNotificationMails": [
+    "String"
+  ],
+  "telephoneNumber": "String",
+  "verifiedDomains": [
+    {
+      "@odata.type": "microsoft.graph.VerifiedDomain"
+    }
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

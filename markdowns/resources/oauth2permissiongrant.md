@@ -2,6 +2,23 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "clientId": "String",
+  "consentType": "String",
+  "expiryTime": "String (timestamp)",
+  "objectId": "String (identifier)",
+  "principalId": "String",
+  "resourceId": "String",
+  "scope": "String",
+  "startTime": "String (timestamp)"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

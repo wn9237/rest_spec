@@ -2,6 +2,26 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "category0Description": "String",
+  "category1Description": "String",
+  "category2Description": "String",
+  "category3Description": "String",
+  "category4Description": "String",
+  "category5Description": "String",
+  "id": "String (identifier)",
+  "sharedWith": {
+    "@odata.type": "microsoft.graph.UserIdCollection"
+  },
+  "version": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

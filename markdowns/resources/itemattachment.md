@@ -2,6 +2,29 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "ContentType": "String",
+  "DateTimeLastModified": "String (timestamp)",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "Id": "String (identifier)",
+  "IsInline": true,
+  "Item": {
+    "@odata.type": "microsoft.graph.OutlookItem"
+  },
+  "Name": "String",
+  "Size": 1024
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

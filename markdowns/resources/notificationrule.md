@@ -2,6 +2,23 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Event": "String",
+  "Id": "String (identifier)",
+  "NotificationId": "String",
+  "NotificationName": "String",
+  "RoleId": "String",
+  "RoleName": "String",
+  "UserId": "String",
+  "UserName": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

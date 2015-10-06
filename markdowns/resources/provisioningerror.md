@@ -2,6 +2,19 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "errorDetail": "String",
+  "resolved": true,
+  "service": "String",
+  "timestamp": "String (timestamp)"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

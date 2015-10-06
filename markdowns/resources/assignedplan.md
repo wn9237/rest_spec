@@ -2,6 +2,19 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "assignedTimestamp": "String (timestamp)",
+  "capabilityStatus": "String",
+  "service": "String",
+  "servicePlanId": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

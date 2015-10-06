@@ -2,6 +2,19 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "DisplayName": "String",
+  "Id": "String (identifier)",
+  "NotificationTarget": "String",
+  "NotificationType": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

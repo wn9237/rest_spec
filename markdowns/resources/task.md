@@ -2,6 +2,52 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "appliedCategories": {
+    "@odata.type": "microsoft.graph.AppliedCategoriesCollection"
+  },
+  "assignedBy": "String",
+  "assignedTo": "String",
+  "assignedToDate": "String (timestamp)",
+  "assignedToTaskBoardFormat": {
+    "@odata.type": "microsoft.graph.TaskBoardTaskFormat"
+  },
+  "assigneePriority": "String",
+  "bucketId": "String",
+  "bucketTaskBoardFormat": {
+    "@odata.type": "microsoft.graph.TaskBoardTaskFormat"
+  },
+  "completedDate": "String (timestamp)",
+  "createdBy": "String",
+  "createdDate": "String (timestamp)",
+  "details": {
+    "@odata.type": "microsoft.graph.TaskDetails"
+  },
+  "dueDate": "String (timestamp)",
+  "hasNotes": true,
+  "id": "String (identifier)",
+  "numberOfReferences": 1024,
+  "orderHint": "String",
+  "percentComplete": 1024,
+  "planId": "String",
+  "previewType": "String",
+  "startDate": "String (timestamp)",
+  "statusTaskBoardFormat": {
+    "@odata.type": "microsoft.graph.TaskBoardTaskFormat"
+  },
+  "timelineFormat": {
+    "@odata.type": "microsoft.graph.TimelineTaskFormat"
+  },
+  "title": "String",
+  "version": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

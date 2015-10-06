@@ -2,6 +2,21 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "id": "String (identifier)",
+  "sites": [
+    {
+      "@odata.type": "microsoft.graph.Site"
+    }
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

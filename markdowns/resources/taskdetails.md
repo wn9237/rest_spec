@@ -2,6 +2,23 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "completedBy": "String",
+  "id": "String (identifier)",
+  "notes": "String",
+  "previewType": "String",
+  "references": {
+    "@odata.type": "microsoft.graph.ExternalReferenceCollection"
+  },
+  "version": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

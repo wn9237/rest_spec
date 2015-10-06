@@ -2,12 +2,25 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "id": "String (identifier)",
+  "orderHint": "String",
+  "type": "String (identifier)",
+  "version": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |orderHint|String||
-|type|String| Read-only. Possible values are: `Status`, `AssignedTo`, `Bucket`.|
+|type|String| Possible values are: `Status`, `AssignedTo`, `Bucket`. Read-only.|
 |version|String||
 
 #### Relationships

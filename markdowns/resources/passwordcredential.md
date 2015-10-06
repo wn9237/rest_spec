@@ -2,6 +2,20 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "customKeyIdentifier": "String",
+  "endDate": "String (timestamp)",
+  "keyId": "String",
+  "startDate": "String (timestamp)",
+  "value": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

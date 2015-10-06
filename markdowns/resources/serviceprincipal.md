@@ -2,6 +2,100 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "accountEnabled": true,
+  "appDisplayName": "String",
+  "appId": "String",
+  "appOwnerTenantId": "String",
+  "appRoleAssignedTo": {
+    "@odata.type": "microsoft.graph.AppRoleAssignment"
+  },
+  "appRoleAssignmentRequired": true,
+  "appRoleAssignments": [
+    {
+      "@odata.type": "microsoft.graph.AppRoleAssignment"
+    }
+  ],
+  "appRoles": [
+    {
+      "@odata.type": "microsoft.graph.AppRole"
+    }
+  ],
+  "createdObjects": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "createdOnBehalfOf": {
+    "@odata.type": "microsoft.graph.DirectoryObject"
+  },
+  "deletionTimestamp": "String (timestamp)",
+  "displayName": "String",
+  "errorUrl": "String",
+  "homepage": "String",
+  "keyCredentials": [
+    {
+      "@odata.type": "microsoft.graph.KeyCredential"
+    }
+  ],
+  "logoutUrl": "String",
+  "memberOf": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "oauth2PermissionGrants": [
+    {
+      "@odata.type": "microsoft.graph.OAuth2PermissionGrant"
+    }
+  ],
+  "oauth2Permissions": [
+    {
+      "@odata.type": "microsoft.graph.OAuth2Permission"
+    }
+  ],
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "ownedObjects": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "owners": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "passwordCredentials": [
+    {
+      "@odata.type": "microsoft.graph.PasswordCredential"
+    }
+  ],
+  "preferredTokenSigningKeyThumbprint": "String",
+  "publisherName": "String",
+  "replyUrls": [
+    "String"
+  ],
+  "samlMetadataUrl": "String",
+  "servicePrincipalNames": [
+    "String"
+  ],
+  "tags": [
+    "String"
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

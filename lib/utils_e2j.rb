@@ -30,7 +30,8 @@ module SpecMaker
 	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
 	@struct = JSON.parse(File.read(JSON_STRUCTURE), {:symbolize_names => true})
 	@template = @struct[:object]
-	
+	@service = @struct[:serviceSettings]
+
 # Log file
 	LOG_FOLDER = '../../logs'
 	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
@@ -69,6 +70,21 @@ module SpecMaker
 		File.open(JSON_EXAMPLE_FOLDER + (objectName + '_' + methodName).downcase + ".md", "w") do |f|
 			f.write('##### Example')
 			@iexampleFilesWrittem = @iexampleFilesWrittem + 1
+		end
+	end
+
+	###
+	# Create example files for object/collection. 
+	#
+	#	
+	def self.create_auto_examplefiles(objectName=nil, isCollection)
+		if !isCollection
+			create_examplefile(objectName, 'auto_get')
+			create_examplefile(objectName, 'auto_post')
+			create_examplefile(objectName, 'auto_patch')
+			create_examplefile(objectName, 'auto_put')
+		else
+			create_examplefile(objectName, 'auto_list')							
 		end
 	end
 

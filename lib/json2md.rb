@@ -8,136 +8,7 @@ require 'json'
 
 module SpecMaker
 
-	# Initialize 
-	# JSON_SOURCE_FOLDER = "../../inputJsonFiles"	
-	JSON_BASE_FOLDER = "../jsonFiles/"
-	JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
-	ENUMS = JSON_BASE_FOLDER + '/settings/restenums.json'
-	MARKDOWN_RESOURCE_FOLDER = "../markdowns/resources/"
-	MARKDOWN_API_FOLDER = "../markdowns/api/"
-	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
-	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"	
-
-	HEADER1 = '# '
-	HEADER2 = '## '
-	HEADER3 = '### '
-	HEADER4 = '#### '
-	HEADER5 = '##### '
-	BACKTOMETHOD = '[Back](#methods)'
-	NEWLINE = "\n"
-	BACKTOPROPERTY = NEWLINE + '[Back](#properties)'
-	PIPE = '|'
-	TWONEWLINES = "\n\n"
-
-	TABLE_2ND_LINE =  "|:---------------|:--------|:----------|" + NEWLINE
-	PROPERTY_HEADER = "| Property	   | Type	|Description|" + NEWLINE
-	PARAM_HEADER = "| Parameter	   | Type	|Description|" + NEWLINE
-	HTTP_HEADER =  "| Name       | Type | Description|" + NEWLINE
-	RELATIONSHIP_HEADER = "| Relationship | Type	|Description|" + NEWLINE
-	TASKS_HEADER = "| Task		   | Return Type	|Description|" + NEWLINE
-
-	HTTP_HEADER_SAMPLE = "| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|"
-	
-	odata_types = %w[Binary Boolean Byte Date DateTimeOffset Decimal Double Duration 
-				Guid Int Int16 Int32 Int64 SByte Single Stream String TimeOfDay 
-				Geography GeographyPoint GeographyLineString GeographyPolygon GeographyMultiPoint 
-				GeographyMultiLineString GeographyMultiPolygon GeographyCollection Geometry 
-				GeometryPoint GeometryLineString GeometryPolygon GeometryMultiPoint GeometryMultiLineString 
-				GeometryMultiPolygon GeometryCollection Octet-Stream Octet] 
-
-	SIMPLETYPES = odata_types.concat odata_types.map(&:downcase)
-
-	# Below objects appear as the generic datatypes of collections. 
-	# e.g: <NavigationProperty Name="owners" Type="Collection(Microsoft.Graph.DirectoryObject)" />
-	# For POST /Collection, we want to use a name that's sensible such as 
-	# Add Owner or Create Owner instead of Add DirectoryObject. Hence, if the 
-		# collection(datatype) happens to be one the below, we'll use the name in the API name.
-	POST_NAME_MAPPING = %w[recipient directoryobject event photo 
-						conversationthread recipient privilegedroleassignment]
-
-	TIMESTAMP_DESC = %q{The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`}
-
-	# Load the structure
-	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
-	@struct = JSON.parse(File.read(JSON_STRUCTURE), {:symbolize_names => true})
-	@template = @struct[:object]
-
-	HTTP_CODES = {
-					"200" => "OK",
-					"201" => "Created",
-					"202" => "Accepted",
-					"203" => "Non-Authoritative Information",
-					"204" => "No Content",
-					"205" => "Reset Content",
-					"206" => "Partial Content",
-					"300" => "Multiple Choices",
-					"301" => "Moved Permanently",
-					"302" => "Found",
-					"303" => "See Other",
-					"304" => "Not Modified",
-					"306" => "Switch Proxy",
-					"307" => "Temporary Redirect",
-					"308" => "Resume Incomplete"					
-				}	
-	###
-	# To prevent shallow copy errors, need to get a new object each time.
-	# 
-	#	
-	def self.deep_copy(o)
-	  Marshal.load(Marshal.dump(o))
-	end
-
-	@resources_files_created = 0
-	@get_list_files_created = 0
-	@patch_files_created = 0
-	@method_files_created = 0
-	@ientityset = 0
-
-	# Log file
-	LOG_FOLDER = '../../logs'
-	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
-
-	if File.exists?("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
-		File.delete("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
-	end
-	@logger = Logger.new("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
-	@logger.level = Logger::DEBUG
-	# End log file
-
-	# Create markdown folder if it doesn't already exist
-	Dir.mkdir(MARKDOWN_RESOURCE_FOLDER) unless 
-									File.exists?(MARKDOWN_RESOURCE_FOLDER)	
-
-	if !File.exists?(JSON_SOURCE_FOLDER)
-		@logger.fatal("JSON Resource File folder does not exist. Aborting")
-		abort("*** FATAL ERROR *** Input JSON resource folder: #{JSON_SOURCE_FOLDER} doesn't exist. Correct and re-run." )
-	end
-
-	if !File.exists?(EXAMPLES_FOLDER)
-		@logger.warn("API examples folder does not exist")
-	end		
-
-	## 
-	# Load up all the known existing enums.
-	###
-	@enumHash = {}
-
-	begin
-		@enumHash = JSON.parse File.read(ENUMS)
-	rescue => err
-		@logger.warn("JSON Enumeration input file doesn't exist: #{@current_object}")
-	end
-
-	@mdlines = []
-	@resource = ''
-
-	def self.uncapitalize (str="")
-		if str.length > 0
-			str[0, 1].downcase + str[1..-1]
-		else
-			str
-		end
-	end
+	require_relative 'utils_j2m'
 
 	def self.get_postmessage (objectName=nil)
 		fullpath = JSON_SOURCE_FOLDER + objectName.downcase + '.json'
@@ -176,13 +47,13 @@ module SpecMaker
 		if prop[:dataType] == 'DateTimeOffset'
 			finalDesc = finalDesc + TIMESTAMP_DESC	
 		end
-		finalDesc = prop[:isReadOnly] ? finalDesc  + ' Read-only.' : finalDesc
-		finalDesc = prop[:isNullable] ? finalDesc + ' Nulable.' : finalDesc
 		appendEnum = ''
 		if (prop[:enumName] != nil) && (@enumHash.has_key? prop[:enumName])
 			appendEnum = " Possible values are: `" + @enumHash[prop[:enumName]]["options"].keys.join('`, `') + "`."
 			finalDesc = finalDesc + appendEnum
 		end
+		finalDesc = (prop[:isReadOnly] || prop[:isKey]) ? finalDesc  + ' Read-only.' : finalDesc
+		finalDesc = prop[:isNullable] ? finalDesc + ' Nullable.' : finalDesc
 
 		# If the type is of	an object, then provide markdown link.
 		if SIMPLETYPES.include? prop[:dataType] 
@@ -211,7 +82,7 @@ module SpecMaker
 		else	
 			dataTypePlusLink = "[" + method[:returnType] + "](" + method[:returnType].downcase + ".md)"
 		end
-		# Add anchor links to method. 
+		# Add links to method. 
 		restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name][3..-1]) : method[:name].capitalize
 		methodPlusLink = "[" + restfulTask.strip + "](../api/" + @jsonHash[:name].downcase + "_" + method[:name].downcase + ".md)"
 		@mdlines.push (PIPE + methodPlusLink + PIPE + dataTypePlusLink + PIPE + method[:description] + PIPE) + NEWLINE
@@ -388,9 +259,17 @@ module SpecMaker
 		end
 
 		#Example
-		getMethodLines.push HEADER4 + "Example" + NEWLINE
-		getMethodLines.push HEADER5 + "HTTP request" + NEWLINE
-		getMethodLines.push HEADER5 + "Response" + NEWLINE
+		begin
+			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource + '_' + "auto_get" + ".md"))
+			if example_lines.length > 1
+				patchMethodLines.push NEWLINE
+				example_lines.each do |line|
+					patchMethodLines.push line
+				end
+			end
+		rescue => err
+			@logger.error("....Get Example File does not exist for: #{@resource}, ")
+		end
 
 		# Write the output file. 
 		fileName = @jsonHash[:isCollection] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"
@@ -454,9 +333,17 @@ module SpecMaker
 		patchMethodLines.push "If successful, this method returns a `200 OK` response code and updated [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object in the response body."  + NEWLINE
 
 		#Example
-		patchMethodLines.push HEADER4 + "Example" + NEWLINE
-		patchMethodLines.push HEADER5 + "HTTP request" + NEWLINE
-		patchMethodLines.push HEADER5 + "Response" + NEWLINE
+		begin
+			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@resource + '_' + "auto_patch" + ".md"))
+			if example_lines.length > 1
+				patchMethodLines.push NEWLINE
+				example_lines.each do |line|
+					patchMethodLines.push line
+				end
+			end
+		rescue => err
+			@logger.error("....Patch Example File does not exist for: #{@resource}, ")
+		end
 
 		# Write the output file. 
 		fileName = "#{@jsonHash[:name].downcase}_update.md"  
@@ -485,8 +372,8 @@ module SpecMaker
 		@logger.debug("")	
 		@logger.debug("...............Report for: #{@resource}...........")	
 		puts "--> #{@resource}"
-		propreties = @jsonHash[:properties]
 
+		propreties = @jsonHash[:properties]
 		if propreties && propreties.length > 1 
 			propreties = propreties.sort_by { |v| v[:name] }
 		end
@@ -503,25 +390,33 @@ module SpecMaker
 		# Determine if there is/are: relations, properties and methods. 
 		isRelation, isProperty, isMethod, patchable = false, false, false, false 
 
-		if propreties 
-			propreties.each do |prop|
-				if !prop[:isRelationship]
-				   isProperty = true
-				   if !prop[:isReadOnly] && @jsonHash[:allowPatch]
-				   	  patchable = true
-				   end
-				end
-				if prop[:isRelationship]
-				   isRelation = true
-				   if prop[:isCollection] && prop[:allowPostToCollection]
-				   		isPost = true
-				   end
-				end
+		propreties.each do |prop|
+			if !prop[:isRelationship]
+			   isProperty = true
+			   if !prop[:isReadOnly] && @jsonHash[:allowPatch]
+			   	  patchable = true
+			   end
+			end
+			if prop[:isRelationship]
+			   isRelation = true
+			   if prop[:isCollection] && prop[:allowPostToCollection]
+			   		isPost = true
+			   end
 			end
 		end
 
+
 		if methods 
 			isMethod = true
+		end
+
+		# Header and description		
+		if isProperty || isRelation 
+			@mdlines.push HEADER4 + 'JSON representation' + TWONEWLINES
+			@mdlines.push 'Here is a JSON representation of the resource' + TWONEWLINES
+			@mdlines.push "```json" + NEWLINE
+			@mdlines.push get_json_model(propreties) + TWONEWLINES
+			@mdlines.push "```" + NEWLINE			
 		end
 
 		@logger.debug("....Is there: property?: #{isProperty}, relationship?: #{isRelation}, method?: #{isMethod} ..........")	
@@ -545,7 +440,6 @@ module SpecMaker
 
 		# Add Relationship table. 
 		if !@jsonHash[:isComplexType]
-	
 			@mdlines.push NEWLINE
 			@mdlines.push HEADER4 + 'Relationships' + NEWLINE
 			if isRelation
@@ -663,15 +557,18 @@ module SpecMaker
 
 			if !@jsonHash[:methodNotes].empty?
 				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
-			end	
-		end	
+			end
+		end
+
 		# Write the output file. 
 		outfile = MARKDOWN_RESOURCE_FOLDER + @resource.downcase + '.md'
 		file=File.new(outfile,'w')
 		@mdlines.each do |line|
 			file.write line
 		end
+
 		@resources_files_created = @resources_files_created + 1
+
 	end
 
 	##### 

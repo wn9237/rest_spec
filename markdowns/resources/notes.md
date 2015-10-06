@@ -2,6 +2,41 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "id": "String (identifier)",
+  "notebooks": [
+    {
+      "@odata.type": "microsoft.graph.Notebook"
+    }
+  ],
+  "pages": [
+    {
+      "@odata.type": "microsoft.graph.Page"
+    }
+  ],
+  "resources": [
+    {
+      "@odata.type": "microsoft.graph.Resource"
+    }
+  ],
+  "sectionGroups": [
+    {
+      "@odata.type": "microsoft.graph.SectionGroup"
+    }
+  ],
+  "sections": [
+    {
+      "@odata.type": "microsoft.graph.Section"
+    }
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

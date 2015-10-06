@@ -2,6 +2,20 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "id": "String (identifier)",
+  "userData": {
+    "@odata.type": "microsoft.graph.UserDataCollection"
+  },
+  "version": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

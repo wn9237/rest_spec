@@ -2,6 +2,20 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "expirationDateTime": "String (timestamp)",
+  "nextExpectedRanges": [
+    "String"
+  ],
+  "uploadUrl": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

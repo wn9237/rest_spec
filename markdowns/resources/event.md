@@ -2,6 +2,79 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Attachments": [
+    {
+      "@odata.type": "microsoft.graph.Attachment"
+    }
+  ],
+  "Attendees": [
+    {
+      "@odata.type": "microsoft.graph.Attendee"
+    }
+  ],
+  "Body": {
+    "@odata.type": "microsoft.graph.ItemBody"
+  },
+  "BodyPreview": "String",
+  "Calendar": {
+    "@odata.type": "microsoft.graph.Calendar"
+  },
+  "Categories": [
+    "String"
+  ],
+  "ChangeKey": "String",
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
+  "End": "String (timestamp)",
+  "EndTimeZone": "String",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "HasAttachments": true,
+  "Id": "String (identifier)",
+  "Importance": "String",
+  "Instances": [
+    {
+      "@odata.type": "microsoft.graph.Event"
+    }
+  ],
+  "IsAllDay": true,
+  "IsCancelled": true,
+  "IsOrganizer": true,
+  "Location": {
+    "@odata.type": "microsoft.graph.Location"
+  },
+  "Organizer": {
+    "@odata.type": "microsoft.graph.Recipient"
+  },
+  "OriginalStart": "String (timestamp)",
+  "Recurrence": {
+    "@odata.type": "microsoft.graph.PatternedRecurrence"
+  },
+  "Reminder": 1024,
+  "ResponseRequested": true,
+  "ResponseStatus": {
+    "@odata.type": "microsoft.graph.ResponseStatus"
+  },
+  "SeriesMasterId": "String",
+  "ShowAs": "String",
+  "Start": "String (timestamp)",
+  "StartTimeZone": "String",
+  "Subject": "String",
+  "Type": "String",
+  "WebLink": "String",
+  "iCalUId": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

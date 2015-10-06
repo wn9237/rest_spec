@@ -2,6 +2,23 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "ElevationDuration": "String (timestamp)",
+  "LastGlobalAdmin": true,
+  "MaxElavationDuration": "String (timestamp)",
+  "MfaOnElevation": true,
+  "MinElevationDuration": "String (timestamp)",
+  "NotificationToUserOnElevation": true,
+  "RoleId": "String (identifier)",
+  "TicketingInfoOnElevation": true
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

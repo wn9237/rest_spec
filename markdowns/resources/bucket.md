@@ -2,6 +2,27 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "activeTasks": 1024,
+  "id": "String (identifier)",
+  "name": "String",
+  "orderHint": "String",
+  "planId": "String",
+  "tasks": [
+    {
+      "@odata.type": "microsoft.graph.Task"
+    }
+  ],
+  "totalTasks": 1024,
+  "version": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

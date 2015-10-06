@@ -2,6 +2,53 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Attachments": [
+    {
+      "@odata.type": "microsoft.graph.Attachment"
+    }
+  ],
+  "Body": {
+    "@odata.type": "microsoft.graph.ItemBody"
+  },
+  "Categories": [
+    "String"
+  ],
+  "ChangeKey": "String",
+  "ConversationId": "String",
+  "ConversationThreadId": "String",
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
+  "DateTimeReceived": "String (timestamp)",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "From": {
+    "@odata.type": "microsoft.graph.Recipient"
+  },
+  "HasAttachments": true,
+  "Id": "String (identifier)",
+  "InReplyTo": {
+    "@odata.type": "microsoft.graph.Post"
+  },
+  "NewParticipants": [
+    {
+      "@odata.type": "microsoft.graph.Recipient"
+    }
+  ],
+  "Sender": {
+    "@odata.type": "microsoft.graph.Recipient"
+  }
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

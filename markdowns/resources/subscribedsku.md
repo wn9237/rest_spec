@@ -2,6 +2,28 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "capabilityStatus": "String",
+  "consumedUnits": 1024,
+  "objectId": "String (identifier)",
+  "prepaidUnits": {
+    "@odata.type": "microsoft.graph.LicenseUnitsDetail"
+  },
+  "servicePlans": [
+    {
+      "@odata.type": "microsoft.graph.ServicePlanInfo"
+    }
+  ],
+  "skuId": "String",
+  "skuPartNumber": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

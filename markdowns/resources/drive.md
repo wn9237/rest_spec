@@ -2,6 +2,31 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "driveType": "String",
+  "id": "String (identifier)",
+  "items": [
+    {
+      "@odata.type": "microsoft.graph.item"
+    }
+  ],
+  "owner": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "quota": {
+    "@odata.type": "microsoft.graph.quota"
+  },
+  "root": {
+    "@odata.type": "microsoft.graph.item"
+  }
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

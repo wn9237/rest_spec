@@ -2,6 +2,48 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "deletionTimestamp": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "isSystem": true,
+  "memberOf": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "members": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "ownedObjects": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "owners": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "roleDisabled": true,
+  "roleTemplateId": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

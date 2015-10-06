@@ -2,6 +2,31 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "contentUrl": "String",
+  "createdByAppId": "String",
+  "createdTime": "String (timestamp)",
+  "id": "String",
+  "lastModifiedTime": "String (timestamp)",
+  "links": {
+    "@odata.type": "microsoft.graph.PageLinks"
+  },
+  "parentNotebook": {
+    "@odata.type": "microsoft.graph.CopyNotebookModel"
+  },
+  "parentSection": {
+    "@odata.type": "microsoft.graph.CopySectionModel"
+  },
+  "self": "String",
+  "title": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

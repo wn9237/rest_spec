@@ -2,6 +2,83 @@
 
 This is a sample application description.
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "appId": "String",
+  "appRoles": [
+    {
+      "@odata.type": "microsoft.graph.AppRole"
+    }
+  ],
+  "availableToOtherTenants": true,
+  "createdOnBehalfOf": {
+    "@odata.type": "microsoft.graph.DirectoryObject"
+  },
+  "deletionTimestamp": "String (timestamp)",
+  "displayName": "String",
+  "errorUrl": "String",
+  "extensionProperties": [
+    {
+      "@odata.type": "microsoft.graph.ExtensionProperty"
+    }
+  ],
+  "groupMembershipClaims": "String",
+  "homepage": "String",
+  "identifierUris": [
+    "String"
+  ],
+  "keyCredentials": [
+    {
+      "@odata.type": "microsoft.graph.KeyCredential"
+    }
+  ],
+  "knownClientApplications": [
+    "String"
+  ],
+  "logoutUrl": "String",
+  "mainLogo": "String",
+  "oauth2AllowImplicitFlow": true,
+  "oauth2AllowUrlPathMatching": true,
+  "oauth2Permissions": [
+    {
+      "@odata.type": "microsoft.graph.OAuth2Permission"
+    }
+  ],
+  "oauth2RequirePostResponse": true,
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "owners": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "passwordCredentials": [
+    {
+      "@odata.type": "microsoft.graph.PasswordCredential"
+    }
+  ],
+  "publicClient": true,
+  "replyUrls": [
+    "String"
+  ],
+  "requiredResourceAccess": [
+    {
+      "@odata.type": "microsoft.graph.RequiredResourceAccess"
+    }
+  ],
+  "samlMetadataUrl": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

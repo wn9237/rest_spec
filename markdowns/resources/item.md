@@ -2,6 +2,66 @@
 
 This is item object description
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "children": [
+    {
+      "@odata.type": "microsoft.graph.item"
+    }
+  ],
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "createdByUser": {
+    "@odata.type": "microsoft.graph.User"
+  },
+  "createdDateTime": "String (timestamp)",
+  "deleted": {
+    "@odata.type": "microsoft.graph.deleted"
+  },
+  "eTag": "String",
+  "file": {
+    "@odata.type": "microsoft.graph.file"
+  },
+  "folder": {
+    "@odata.type": "microsoft.graph.folder"
+  },
+  "id": "String (identifier)",
+  "image": {
+    "@odata.type": "microsoft.graph.image"
+  },
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedByUser": {
+    "@odata.type": "microsoft.graph.User"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "String",
+  "parentReference": {
+    "@odata.type": "microsoft.graph.itemReference"
+  },
+  "photo": {
+    "@odata.type": "microsoft.graph.photo"
+  },
+  "searchResult": {
+    "@odata.type": "microsoft.graph.searchResult"
+  },
+  "size": 1024,
+  "thumbnails": [
+    {
+      "@odata.type": "microsoft.graph.thumbnailSet"
+    }
+  ],
+  "webDavUrl": "String",
+  "webUrl": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

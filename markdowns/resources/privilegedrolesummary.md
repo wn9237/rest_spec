@@ -2,6 +2,21 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "ElevatedCount": 1024,
+  "ManagedCount": 1024,
+  "MfaEnabled": true,
+  "RoleId": "String (identifier)",
+  "Status": "String",
+  "UsersCount": 1024
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

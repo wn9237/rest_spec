@@ -2,6 +2,64 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "city": "String",
+  "country": "String",
+  "deletionTimestamp": "String (timestamp)",
+  "department": "String",
+  "dirSyncEnabled": true,
+  "directReports": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "displayName": "String",
+  "facsimileTelephoneNumber": "String",
+  "givenName": "String",
+  "jobTitle": "String",
+  "lastDirSyncTime": "String (timestamp)",
+  "mail": "String",
+  "mailNickname": "String",
+  "manager": {
+    "@odata.type": "microsoft.graph.DirectoryObject"
+  },
+  "memberOf": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "mobile": "String",
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "physicalDeliveryOfficeName": "String",
+  "postalCode": "String",
+  "provisioningErrors": [
+    {
+      "@odata.type": "microsoft.graph.ProvisioningError"
+    }
+  ],
+  "proxyAddresses": [
+    "String"
+  ],
+  "sipProxyAddress": "String",
+  "state": "String",
+  "streetAddress": "String",
+  "surname": "String",
+  "telephoneNumber": "String",
+  "thumbnailPhoto": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

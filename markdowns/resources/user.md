@@ -2,6 +2,237 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "AboutMe": "String",
+  "Alias": "String",
+  "Birthday": "String (timestamp)",
+  "Calendar": {
+    "@odata.type": "microsoft.graph.Calendar"
+  },
+  "CalendarGroups": [
+    {
+      "@odata.type": "microsoft.graph.CalendarGroup"
+    }
+  ],
+  "CalendarView": [
+    {
+      "@odata.type": "microsoft.graph.Event"
+    }
+  ],
+  "Calendars": [
+    {
+      "@odata.type": "microsoft.graph.Calendar"
+    }
+  ],
+  "ContactFolders": [
+    {
+      "@odata.type": "microsoft.graph.ContactFolder"
+    }
+  ],
+  "Contacts": [
+    {
+      "@odata.type": "microsoft.graph.Contact"
+    }
+  ],
+  "Events": [
+    {
+      "@odata.type": "microsoft.graph.Event"
+    }
+  ],
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "Folders": [
+    {
+      "@odata.type": "microsoft.graph.MailFolder"
+    }
+  ],
+  "HireDate": "String (timestamp)",
+  "Interests": [
+    "String"
+  ],
+  "JoinedGroups": [
+    {
+      "@odata.type": "microsoft.graph.Group"
+    }
+  ],
+  "MailboxGuid": "String",
+  "Messages": [
+    {
+      "@odata.type": "microsoft.graph.Message"
+    }
+  ],
+  "MySite": "String",
+  "PastProjects": [
+    "String"
+  ],
+  "PreferredName": "String",
+  "PrincipalName": "String",
+  "Responsibilities": [
+    "String"
+  ],
+  "RootFolder": {
+    "@odata.type": "microsoft.graph.MailFolder"
+  },
+  "Schools": [
+    "String"
+  ],
+  "Skills": [
+    "String"
+  ],
+  "Tags": [
+    "String"
+  ],
+  "TrendingAround": [
+    {
+      "@odata.type": "microsoft.graph.File"
+    }
+  ],
+  "UserPhoto": {
+    "@odata.type": "microsoft.graph.Photo"
+  },
+  "UserPhotos": [
+    {
+      "@odata.type": "microsoft.graph.Photo"
+    }
+  ],
+  "WorkingWith": [
+    {
+      "@odata.type": "microsoft.graph.User"
+    }
+  ],
+  "accountEnabled": true,
+  "appRoleAssignments": [
+    {
+      "@odata.type": "microsoft.graph.AppRoleAssignment"
+    }
+  ],
+  "assignedLicenses": [
+    {
+      "@odata.type": "microsoft.graph.AssignedLicense"
+    }
+  ],
+  "assignedPlans": [
+    {
+      "@odata.type": "microsoft.graph.AssignedPlan"
+    }
+  ],
+  "city": "String",
+  "country": "String",
+  "createdObjects": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "deletionTimestamp": "String (timestamp)",
+  "department": "String",
+  "details": {
+    "@odata.type": "microsoft.graph.UserDetails"
+  },
+  "dirSyncEnabled": true,
+  "directReports": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "displayName": "String",
+  "drive": {
+    "@odata.type": "microsoft.graph.drive"
+  },
+  "facsimileTelephoneNumber": "String",
+  "givenName": "String",
+  "immutableId": "String",
+  "jobTitle": "String",
+  "lastDirSyncTime": "String (timestamp)",
+  "mail": "String",
+  "mailNickname": "String",
+  "manager": {
+    "@odata.type": "microsoft.graph.DirectoryObject"
+  },
+  "memberOf": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "mobile": "String",
+  "notes": {
+    "@odata.type": "microsoft.graph.Notes"
+  },
+  "oauth2PermissionGrants": [
+    {
+      "@odata.type": "microsoft.graph.OAuth2PermissionGrant"
+    }
+  ],
+  "objectId": "String (identifier)",
+  "objectType": "String",
+  "onPremisesSecurityIdentifier": "String",
+  "otherMails": [
+    "String"
+  ],
+  "ownedDevices": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "ownedObjects": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "passwordPolicies": "String",
+  "passwordProfile": {
+    "@odata.type": "microsoft.graph.PasswordProfile"
+  },
+  "physicalDeliveryOfficeName": "String",
+  "plans": [
+    {
+      "@odata.type": "microsoft.graph.Plan"
+    }
+  ],
+  "postalCode": "String",
+  "preferredLanguage": "String",
+  "provisionedPlans": [
+    {
+      "@odata.type": "microsoft.graph.ProvisionedPlan"
+    }
+  ],
+  "provisioningErrors": [
+    {
+      "@odata.type": "microsoft.graph.ProvisioningError"
+    }
+  ],
+  "proxyAddresses": [
+    "String"
+  ],
+  "registeredDevices": [
+    {
+      "@odata.type": "microsoft.graph.DirectoryObject"
+    }
+  ],
+  "sipProxyAddress": "String",
+  "state": "String",
+  "streetAddress": "String",
+  "surname": "String",
+  "tasks": [
+    {
+      "@odata.type": "microsoft.graph.Task"
+    }
+  ],
+  "telephoneNumber": "String",
+  "thumbnailPhoto": "String",
+  "usageLocation": "String",
+  "userPrincipalName": "String",
+  "userType": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

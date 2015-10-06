@@ -12,9 +12,9 @@
   "propertyNotes": "",
   "relationshipNotes": "",
   "methodNotes": "",
-  "createDescription": "I want this message to show up when i create a new resource",
-  "updateDescription": "I want this message to show up when i update a  resource",
-  "deleteDescription": "I want this message to show up when i delete a  resource",
+  "createDescription": "",
+  "updateDescription": "",
+  "deleteDescription": "",
   "restPath": [
 
   ],

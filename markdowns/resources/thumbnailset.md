@@ -2,6 +2,25 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "id": "String (identifier)",
+  "large": {
+    "@odata.type": "microsoft.graph.thumbnail"
+  },
+  "medium": {
+    "@odata.type": "microsoft.graph.thumbnail"
+  },
+  "small": {
+    "@odata.type": "microsoft.graph.thumbnail"
+  }
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

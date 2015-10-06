@@ -2,6 +2,34 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "CalendarView": [
+    {
+      "@odata.type": "microsoft.graph.Event"
+    }
+  ],
+  "ChangeKey": "String",
+  "Color": "String",
+  "Events": [
+    {
+      "@odata.type": "microsoft.graph.Event"
+    }
+  ],
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "Id": "String (identifier)",
+  "Name": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

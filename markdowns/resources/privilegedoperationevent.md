@@ -2,6 +2,28 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "AdditionalInformation": "String",
+  "CreationTime": "String (timestamp)",
+  "ExpirationTime": "String (timestamp)",
+  "Id": "String (identifier)",
+  "RequestType": "String",
+  "RequestorId": "String",
+  "RequestorName": "String",
+  "RoleId": "String",
+  "RoleName": "String",
+  "TenantId": "String",
+  "UserId": "String",
+  "UserMail": "String",
+  "UserName": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

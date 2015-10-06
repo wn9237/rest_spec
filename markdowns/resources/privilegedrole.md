@@ -2,6 +2,28 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "Assignments": [
+    {
+      "@odata.type": "microsoft.graph.PrivilegedRoleAssignment"
+    }
+  ],
+  "Id": "String (identifier)",
+  "Name": "String",
+  "Settings": {
+    "@odata.type": "microsoft.graph.PrivilegedRoleSettings"
+  },
+  "Summary": {
+    "@odata.type": "microsoft.graph.PrivilegedRoleSummary"
+  }
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

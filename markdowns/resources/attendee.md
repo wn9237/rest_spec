@@ -2,6 +2,22 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "EmailAddress": {
+    "@odata.type": "microsoft.graph.EmailAddress"
+  },
+  "Status": {
+    "@odata.type": "microsoft.graph.ResponseStatus"
+  },
+  "Type": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

@@ -2,6 +2,33 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "DateTimeLastDelivered": "String (timestamp)",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "HasAttachments": true,
+  "Id": "String (identifier)",
+  "Preview": "String",
+  "Threads": [
+    {
+      "@odata.type": "microsoft.graph.ConversationThread"
+    }
+  ],
+  "Topic": "String",
+  "UniqueSenders": [
+    "String"
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

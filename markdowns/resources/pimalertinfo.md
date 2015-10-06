@@ -2,6 +2,26 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "AlertDescription": "String",
+  "AlertId": "String (identifier)",
+  "AlertName": "String",
+  "HighSeverityThreshold": 1024,
+  "HowToPrevent": "String",
+  "LowSeverityThreshold": 1024,
+  "MediumSeverityThreshold": 1024,
+  "MitigationSteps": "String",
+  "SecurityImpact": "String",
+  "Severity": 1024,
+  "Type": 1024
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

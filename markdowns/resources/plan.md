@@ -2,6 +2,47 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "activeTasks": 1024,
+  "assignedToTaskBoard": {
+    "@odata.type": "microsoft.graph.PlanTaskBoard"
+  },
+  "bucketTaskBoard": {
+    "@odata.type": "microsoft.graph.PlanTaskBoard"
+  },
+  "buckets": [
+    {
+      "@odata.type": "microsoft.graph.Bucket"
+    }
+  ],
+  "createdBy": "String",
+  "details": {
+    "@odata.type": "microsoft.graph.PlanDetails"
+  },
+  "id": "String (identifier)",
+  "owner": "String",
+  "statusTaskBoard": {
+    "@odata.type": "microsoft.graph.PlanTaskBoard"
+  },
+  "tasks": [
+    {
+      "@odata.type": "microsoft.graph.Task"
+    }
+  ],
+  "timeline": {
+    "@odata.type": "microsoft.graph.PlanTimeline"
+  },
+  "title": "String",
+  "totalTasks": 1024,
+  "version": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

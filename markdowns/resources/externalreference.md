@@ -2,6 +2,20 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "alias": "String",
+  "modifiedBy": "String",
+  "modifiedDate": "String (timestamp)",
+  "previewPriority": "String",
+  "type": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

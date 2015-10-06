@@ -2,6 +2,44 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "CcRecipients": [
+    {
+      "@odata.type": "microsoft.graph.Recipient"
+    }
+  ],
+  "DateTimeLastDelivered": "String (timestamp)",
+  "Extensions": [
+    {
+      "@odata.type": "microsoft.graph.Extension"
+    }
+  ],
+  "HasAttachments": true,
+  "Id": "String (identifier)",
+  "IsLocked": true,
+  "Posts": [
+    {
+      "@odata.type": "microsoft.graph.Post"
+    }
+  ],
+  "Preview": "String",
+  "ToRecipients": [
+    {
+      "@odata.type": "microsoft.graph.Recipient"
+    }
+  ],
+  "Topic": "String",
+  "UniqueSenders": [
+    "String"
+  ]
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

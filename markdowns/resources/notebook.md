@@ -2,6 +2,40 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "createdBy": "String",
+  "createdTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "isDefault": true,
+  "isShared": true,
+  "lastModifiedBy": "String",
+  "lastModifiedTime": "String (timestamp)",
+  "links": {
+    "@odata.type": "microsoft.graph.NotebookLinks"
+  },
+  "name": "String",
+  "sectionGroups": [
+    {
+      "@odata.type": "microsoft.graph.SectionGroup"
+    }
+  ],
+  "sectionGroupsUrl": "String",
+  "sections": [
+    {
+      "@odata.type": "microsoft.graph.Section"
+    }
+  ],
+  "sectionsUrl": "String",
+  "self": "String",
+  "userRole": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

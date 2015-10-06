@@ -2,6 +2,19 @@
 
 
 
+#### JSON representation
+
+Here is a JSON representation of the resource
+
+```json
+{
+  "EndDate": "String (timestamp)",
+  "NumberOfOccurrences": 1024,
+  "StartDate": "String (timestamp)",
+  "Type": "String"
+}
+
+```
 #### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
