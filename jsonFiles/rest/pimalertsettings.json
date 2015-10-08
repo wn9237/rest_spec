@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/alertsettings/<AlertId>": false
+    }
   ],
   "properties": [
     {

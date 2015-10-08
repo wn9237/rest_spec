@@ -16,7 +16,24 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectId>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectId>": false
+    }
   ],
   "properties": [
     {

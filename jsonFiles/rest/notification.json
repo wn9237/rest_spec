@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/notifications/<Id>": false
+    }
   ],
   "properties": [
     {

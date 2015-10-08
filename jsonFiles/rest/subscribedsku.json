@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/subscribedskus/<objectId>": false
+    }
   ],
   "properties": [
     {

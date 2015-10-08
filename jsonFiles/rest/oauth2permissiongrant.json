@@ -16,7 +16,39 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/users/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/oauth2permissiongrants/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/oauth2permissiongrants/<objectId>": false
+    }
   ],
   "properties": [
     {

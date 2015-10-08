@@ -16,7 +16,354 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/directoryobjects/<objectId>": false
+    },
+    {
+      "/applications/<objectid>/createdonbehalfof/<objectId>": false
+    },
+    {
+      "/applications/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/contacts/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/contacts/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/contacts/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/devices/<objectid>/registeredowners/<objectId>": false
+    },
+    {
+      "/devices/<objectid>/registeredusers/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/members/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/createdonbehalfof/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/acceptedsenders/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/rejectedsenders/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/directoryroles/<objectid>/members/<objectId>": false
+    },
+    {
+      "/directoryroles/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/directoryroles/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/directoryroles/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/createdonbehalfof/<objectId>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/users/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/users/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/users/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/users/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/users/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/users/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/users/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/members/<objectId>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectId>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectId>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/members/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/members/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/members/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/owneddevices/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/registereddevices/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/manager/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/directreports/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/createdobjects/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/ownedobjects/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/members/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/memberof/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/owners/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectId>": false
+    }
   ],
   "properties": [
     {

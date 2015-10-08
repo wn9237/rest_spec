@@ -16,7 +16,57 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/approleassignedto/<objectId>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/users/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/approleassignments/<objectId>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/approleassignments/<objectId>": false
+    }
   ],
   "properties": [
     {

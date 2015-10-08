@@ -16,7 +16,447 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/plans/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/plans/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/plans/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/plans/<id>/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/plans/<id>/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/plans/<id>/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    },
+    {
+      "/buckets/<id>/tasks/<id>/assignedtotaskboardformat/<type|id>": false
+    },
+    {
+      "/buckets/<id>/tasks/<id>/statustaskboardformat/<type|id>": false
+    },
+    {
+      "/buckets/<id>/tasks/<id>/buckettaskboardformat/<type|id>": false
+    }
   ],
   "properties": [
     {

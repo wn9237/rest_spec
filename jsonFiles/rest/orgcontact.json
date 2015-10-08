@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/contacts/<objectId>": false
+    }
   ],
   "properties": [
     {

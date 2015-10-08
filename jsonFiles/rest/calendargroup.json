@@ -16,7 +16,33 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendargroups/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<Id>": false
+    }
   ],
   "properties": [
     {

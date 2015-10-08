@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/applications/<objectid>/extensionproperties/<objectId>": false
+    }
   ],
   "properties": [
     {

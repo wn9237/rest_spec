@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/tenantdetails/<objectId>": false
+    }
   ],
   "properties": [
     {

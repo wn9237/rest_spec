@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/directoryroletemplates/<objectId>": false
+    }
   ],
   "properties": [
     {

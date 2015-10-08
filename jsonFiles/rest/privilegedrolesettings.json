@@ -16,7 +16,12 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/privilegedroles/<id>/settings/<RoleId>": false
+    },
+    {
+      "/privilegedroleassignments/<userid|roleid>/roleinfo/<id>/settings/<RoleId>": false
+    }
   ],
   "properties": [
     {

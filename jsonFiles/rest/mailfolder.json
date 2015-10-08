@@ -16,7 +16,60 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/folders/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/folders/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<Id>": false
+    },
+    {
+      "/users/<objectid>/folders/<Id>": false
+    },
+    {
+      "/users/<objectid>/rootfolder/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/folders/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/folders/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<Id>": false
+    }
   ],
   "properties": [
     {

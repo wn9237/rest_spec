@@ -16,7 +16,1836 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/directoryobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/applications/<objectid>/extensionproperties/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/applications/<objectid>/createdonbehalfof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/applications/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/applications/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/contacts/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/contacts/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/contacts/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/contacts/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/deviceconfiguration/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/devices/<objectid>/registeredowners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/devices/<objectid>/registeredusers/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/devices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/members/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/createdonbehalfof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/groupphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/groupphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/conversations/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/conversations/<id>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/acceptedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/rejectedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/groups/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/directoryroles/<objectid>/members/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/directoryroles/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/directoryroles/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/directoryroles/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/directoryroles/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/directoryroletemplates/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/approleassignedto/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/createdonbehalfof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/serviceprincipals/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/tenantdetails/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/members/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/groupphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/groupphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/conversations/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/users/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/members/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/groupphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/groupphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/members/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/groupphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/groupphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/members/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/groupphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/groupphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/owneddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/registereddevices/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/manager/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/directreports/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/createdobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/ownedobjects/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/userphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/userphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/approleassignments/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/members/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/memberof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/createdonbehalfof/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/owners/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/groupphoto/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/groupphotos/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/calendar/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/acceptedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/rejectedsenders/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/extensions/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/extensions/<Id>": false
+    }
   ],
   "properties": [
     {
@@ -31,19 +1860,6 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
-    },
-    {
-      "name": "Extensions",
-      "description": "",
-      "isKey": false,
-      "dataType": "Extension",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
     }
   ],
   "methods": [

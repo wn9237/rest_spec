@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/privilegedsignupstatus/<TenantId>": false
+    }
   ],
   "properties": [
     {

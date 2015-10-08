@@ -16,7 +16,33 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/trendingaround": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/trendingaround": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/trendingaround": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/trendingaround": false
+    },
+    {
+      "/users/<objectid>/trendingaround": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/trendingaround": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/trendingaround": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/trendingaround": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/trendingaround": false
+    }
   ],
   "properties": [
 

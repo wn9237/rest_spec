@@ -16,7 +16,153 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/users/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/plans/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    },
+    {
+      "/buckets/<id>/tasks/<id>/timelineformat/<id>": false
+    }
   ],
   "properties": [
     {

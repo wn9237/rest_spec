@@ -16,7 +16,33 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>": false
+    },
+    {
+      "/users/<objectid>/notes/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>": false
+    }
   ],
   "properties": [
     {

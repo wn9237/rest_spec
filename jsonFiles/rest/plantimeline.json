@@ -16,7 +16,54 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/timeline/<id>": false
+    },
+    {
+      "/plans/<id>/timeline/<id>": false
+    }
   ],
   "properties": [
     {

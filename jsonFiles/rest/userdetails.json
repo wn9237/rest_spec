@@ -16,7 +16,51 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/details/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/details/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/details/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/details/<id>": false
+    },
+    {
+      "/groups/<objectid>/details/<id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/details/<id>": false
+    },
+    {
+      "/users/<objectid>/details/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/details/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/details/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/details/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/details/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/details/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/details/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/details/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/details/<id>": false
+    }
   ],
   "properties": [
     {

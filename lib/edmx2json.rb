@@ -120,7 +120,7 @@ module SpecMaker
 			entity[:Property] = merge_members(entity[:Property], 
 												@base_types[baseType.to_sym][:Property])
 			entity[:NavigationProperty]  = merge_members(entity[:NavigationProperty],
-											@base_types[baseType.to_sym][:NavigationProperty])
+											@base_types[baseType.to_sym][:NavigationProperty], entity[:Name])
 			@base_types[entity[:Name].to_sym] = deep_copy(entity)	
 		end
 		
@@ -206,8 +206,18 @@ module SpecMaker
 			f.write(JSON.pretty_generate @json_object)
 		end
 		create_auto_examplefiles((@json_object[:name]).downcase, true)		 
+
+		puts "calling with #{(@json_object[:name]).downcase}"
+		fill_rest_path("/#{(@json_object[:name]).downcase}", dt)
+
 		GC.start
 	end
+
+	# Process REST Paths
+
+
+
+
 
 	puts "....Completed."
 	puts "Entities: #{@ient}"

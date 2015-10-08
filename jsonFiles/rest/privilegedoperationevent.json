@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/privilegedoperationevents/<Id>": false
+    }
   ],
   "properties": [
     {

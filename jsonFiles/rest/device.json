@@ -16,7 +16,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/devices/<objectId>": false
+    }
   ],
   "properties": [
     {

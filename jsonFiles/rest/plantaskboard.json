@@ -16,7 +16,150 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckettaskboard/<type|id>": false
+    },
+    {
+      "/plans/<id>/assignedtotaskboard/<type|id>": false
+    },
+    {
+      "/plans/<id>/statustaskboard/<type|id>": false
+    },
+    {
+      "/plans/<id>/buckettaskboard/<type|id>": false
+    }
   ],
   "properties": [
     {

@@ -16,7 +16,18 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/drive/<id>": false
+    },
+    {
+      "/users/<objectid>/drive/<id>": false
+    },
+    {
+      "/drives/<id>": false
+    }
   ],
   "properties": [
     {

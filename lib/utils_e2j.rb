@@ -161,7 +161,20 @@ module SpecMaker
 		return t[(t.rindex('.') + 1)..-1].chomp(')')
 	end
 
-	def self.merge_members(current=nil, base=nil)
+	def self.merge_members(current=nil, base=nil, objectName=nil)
+
+		if objectName != nil 
+			if base.is_a?(Hash)
+				dt = get_type(base[:Type])
+				return current if dt.downcase == objectName.downcase
+			elsif base.is_a?(Array)
+				base.each_with_index do |item, i|	
+					dt = get_type(item[:Type])	
+ 					base.delete_at(i) if dt == objectName
+				end
+			end
+		end
+
 		arr = []
 		if current.nil? 
 			return base
@@ -304,4 +317,51 @@ module SpecMaker
 		create_examplefile(entity_name, mtd[:name])				
 		return 
 	end
+
+	def self.fill_rest_path (parentPath=nil, entity=nil)
+
+		fullpath = JSON_SOURCE_FOLDER + '/' + entity.downcase + '.json'
+		path={}
+		ids = ''
+		#puts "=1 filling for: #{entity} with #{parentPath}" 
+
+		# append Id at the end.
+		if File.file?(fullpath)
+			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			if object[:restPath].length > 0 
+				object[:restPath].each do |h|
+					# Limit the number of paths being genetated. if we want more, we could try - && parentPath.split('/').length > 8
+					if parentPath.downcase.include?(h.keys.join.to_s.downcase) 
+						#puts "exiting #{entity}, #{parentPath}, #{h.keys.join.to_s.downcase}"
+						return 
+					end
+				end
+			end
+			object[:properties].each do |item|
+				if item[:isKey]
+					ids = ids + item[:name] + '|'
+				end
+			end
+			# construct the path and account for no key being available on the object. 
+			k = "#{parentPath.downcase}/<#{ids.chomp('|')}>".chomp('/<>')
+			path[k.to_sym] = false
+			object[:restPath].push path
+			File.open(fullpath, "w") do |f|
+				f.write(JSON.pretty_generate object)
+			end
+			return if object[:properties].length == 0
+			object[:properties].each do |item|
+				#` "checking for isRelationship: #{item[:name]}, #{item[:dataType].downcase} ==  #{entity.downcase}"
+				if item[:isRelationship] 
+					fill_rest_path("#{k}/#{item[:name]}", item[:dataType])
+				end				
+			end
+			return
+		else
+			return
+		end	
+		
+
+	end
+
 end

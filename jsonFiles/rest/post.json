@@ -16,7 +16,42 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/groups/<objectid>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
+    }
   ],
   "properties": [
     {

@@ -16,7 +16,57 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": [
-
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/groups/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/users/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/plans/<id>/buckets/<id>": false
+    },
+    {
+      "/buckets/<id>": false
+    }
   ],
   "properties": [
     {
