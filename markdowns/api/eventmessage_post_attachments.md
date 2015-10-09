@@ -24,16 +24,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 162
+Content-length: 3
 {
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "DateTimeLastModified": "datetime-value",
-  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: cabbfff4-c4f1-44c3-bf4b-75420684b869
-2015-10-09 18:34:12 UTC -->
+<!-- uuid: 4551ca85-f441-4cfd-8dd2-1b64f650a930
+2015-10-09 18:53:45 UTC -->

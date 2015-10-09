@@ -28,54 +28,10 @@ Content-length: 0
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 838
+Content-length: 3
 {
-  "Subject": "Subject-value",
-  "Body": {
-  },
-  "BodyPreview": "BodyPreview-value",
-  "Importance": "Importance-value",
-  "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value",
-  "From": {
-  },
-  "Sender": {
-  },
-  "ToRecipients": [
-    {
-    }
-  ],
-  "CcRecipients": [
-    {
-    }
-  ],
-  "BccRecipients": [
-    {
-    }
-  ],
-  "ReplyTo": [
-    {
-    }
-  ],
-  "ConversationId": "ConversationId-value",
-  "UniqueBody": {
-  },
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
-  "IsDeliveryReceiptRequested": true,
-  "IsReadReceiptRequested": true,
-  "IsDraft": true,
-  "IsRead": true,
-  "WebLink": "WebLink-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
-  ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
-  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 946ee5f1-387c-48b5-b412-a402d93cdd75
-2015-10-09 18:34:12 UTC -->
+<!-- uuid: eeb4d286-f95b-4742-93f1-f71c0fe2040d
+2015-10-09 18:53:45 UTC -->
