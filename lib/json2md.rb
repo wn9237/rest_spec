@@ -81,9 +81,13 @@ module SpecMaker
 			example_lines.push '```http' + NEWLINE
 			httpSyntax = get_syntax(method[:name], top_one_restpath)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
+			example_lines.push "Content-type: application/json" + NEWLINE			
 			if !method[:isFunction] && method[:parameters].length > 0
 				modeldump = get_json_model_params(method[:parameters])
+				example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE				
 				example_lines.push modeldump + NEWLINE	
+			else
+				example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE				
 			end			
 			example_lines.push '```' + NEWLINE
 			example_lines.push HEADER5 + "Response" + NEWLINE											

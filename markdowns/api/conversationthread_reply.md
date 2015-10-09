@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /groups/<objectId>/Threads/<Id>/Reply
+Content-type: application/json
+Content-length: 19
 {
   "Post": {
   }

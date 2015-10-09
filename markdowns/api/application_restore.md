@@ -26,6 +26,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /applications/<objectId>/restore
+Content-type: application/json
+Content-length: 56
 {
   "identifierUris": [
     "identifierUris-value"
