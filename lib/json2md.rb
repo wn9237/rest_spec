@@ -5,6 +5,7 @@
 require 'pathname'
 require 'logger'
 require 'json'
+require 'securerandom'
 
 module SpecMaker
 
@@ -296,10 +297,12 @@ module SpecMaker
 		end
 
 		actionLines.push NEWLINE
+
 		example_lines.each do |line|
 			actionLines.push line
 		end
 
+		actionLines.push uuid_date
 		# Write the output file. 
 		if autoFilename
 			fileName = autoFilename
@@ -366,7 +369,7 @@ module SpecMaker
 		example_lines.each do |line|
 			getMethodLines.push line
 		end
-
+		getMethodLines.push uuid_date
 		# Write the output file. 
 		fileName = @jsonHash[:isCollection] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"
 		outfile = MARKDOWN_API_FOLDER + fileName
@@ -433,7 +436,7 @@ module SpecMaker
 		example_lines.each do |line|
 			patchMethodLines.push line
 		end
-
+		patchMethodLines.push uuid_date
 
 		# Write the output file. 
 		fileName = "#{@jsonHash[:name].downcase}_update.md"  
@@ -651,6 +654,7 @@ module SpecMaker
 				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
 			end
 		end
+		@mdlines.push uuid_date
 
 		# Write the output file. 
 		outfile = MARKDOWN_RESOURCE_FOLDER + @resource.downcase + '.md'

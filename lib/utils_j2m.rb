@@ -142,6 +142,10 @@ module SpecMaker
 		end
 	end
 
+	def self.uuid_date 
+	  return "<!-- uuid: " SecureRandom.uuid  + '\n' + Time.now.utc.to_s " -->"
+	end
+
 	def self.get_create_description(objectName=nil)
 		createDescription = ''
 		fullpath = JSON_SOURCE_FOLDER + '/' + objectName.downcase + '.json'
