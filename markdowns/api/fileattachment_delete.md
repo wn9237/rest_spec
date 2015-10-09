@@ -19,5 +19,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 95077e73-3e19-47af-968f-62cbb2fcb7b0
-2015-10-09 18:12:08 UTC -->
+<!-- uuid: 1f3b9dc3-7e23-4ebc-88f6-e0d084d4a6e5
+2015-10-09 18:16:06 UTC -->

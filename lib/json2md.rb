@@ -361,14 +361,14 @@ module SpecMaker
 
 		#Response body
 		getMethodLines.push HEADER3 + "Response" + NEWLINE
-		if @jsonHash[:isCollection] 
+		if @jsonHash[:collectionOf] 
 			getMethodLines.push "If successful, this method returns a `200 OK` response code and collection of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) objects in the response body."  + NEWLINE
 		else
 			getMethodLines.push "If successful, this method returns a `200 OK` response code and [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object in the response body."  + NEWLINE
 		end
 
 		#Example
-		if @jsonHash[:isCollection] 
+		if @jsonHash[:collectionOf] 
 			example_lines = gen_example("auto_list")
 		else
 			example_lines = gen_example("auto_get")
@@ -378,7 +378,11 @@ module SpecMaker
 		end
 		getMethodLines.push NEWLINE + uuid_date
 		# Write the output file. 
-		fileName = @jsonHash[:isCollection] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"
+		if @jsonHash[:collectionOf] 
+			fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_list.md"
+		else
+			fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
+		end
 		outfile = MARKDOWN_API_FOLDER + fileName
 		file=File.new(outfile,'w')
 		getMethodLines.each do |line|
@@ -570,7 +574,6 @@ module SpecMaker
 					if isProperty 
 						returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
 						@mdlines.push "|[Get #{@jsonHash[:name]}](../api/#{@jsonHash[:name].downcase}_get.md) | #{returnLink} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
-						puts "simple get: #{@jsonHash[:name]}" 					
 					end
 
 				end

@@ -19,5 +19,5 @@ Here is a JSON representation of the resource
 |height|Int32||
 |width|Int32||
 
-<!-- uuid: d6eba5ff-5e2a-443c-81b3-1717ca4da0a6
-2015-10-09 18:12:08 UTC -->
+<!-- uuid: 7ce6bad5-aa92-46fc-9610-142adb670d47
+2015-10-09 18:16:06 UTC -->

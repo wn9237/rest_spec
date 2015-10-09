@@ -131,5 +131,5 @@ Here is a JSON representation of the resource
 |[Decline](../api/event_decline.md)|[None](none.md)||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|[None](none.md)||
 
-<!-- uuid: 91432717-5684-4a7b-a69c-6d056dd784e1
-2015-10-09 18:12:08 UTC -->
+<!-- uuid: 74ad9c6b-1cc3-4744-8f9b-ebd6128906e4
+2015-10-09 18:16:06 UTC -->

@@ -27,5 +27,5 @@ Here is a JSON representation of the resource
 |viewPostParameters|String||
 |viewUrl|String||
 
-<!-- uuid: 3bb4e01d-1559-4045-a8d0-142482356e02
-2015-10-09 18:12:09 UTC -->
+<!-- uuid: 50f3eba1-4f84-4386-8f5d-208782e226d4
+2015-10-09 18:16:07 UTC -->

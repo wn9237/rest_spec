@@ -153,5 +153,5 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String||
 |[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String||
 
-<!-- uuid: 96ab2276-6790-47f0-9029-1f350c5b6eb9
-2015-10-09 18:12:09 UTC -->
+<!-- uuid: f54172c0-12c6-436d-8bdc-41f2cddaba98
+2015-10-09 18:16:07 UTC -->

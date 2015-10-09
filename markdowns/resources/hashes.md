@@ -19,5 +19,5 @@ Here is a JSON representation of the resource
 |crc32Hash|String||
 |sha1Hash|String||
 
-<!-- uuid: fc4f4d77-b7d4-4084-a1c3-0933a1697bc4
-2015-10-09 18:12:08 UTC -->
+<!-- uuid: 887d4537-51e1-4963-b729-b016482e81b2
+2015-10-09 18:16:06 UTC -->

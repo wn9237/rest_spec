@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/privilegedsignupstatus_list.md) | [PrivilegedSignupStatus](privilegedsignupstatus.md) [] |Get privilegedSignupStatus object collection. |
 
-<!-- uuid: 6379e74e-b344-4de3-b6e4-602481cc5276
-2015-10-09 18:12:09 UTC -->dSetupNotStarted`, `RegisteredSetupInProgress`, `RegistrationAndSetupCompleted`.|
+<!-- uuid: e99ef016-112d-4d49-9325-b4e1bf36da6c
+2015-10-09 18:16:07 UTC -->dSetupNotStarted`, `RegisteredSetupInProgress`, `RegistrationAndSetupCompleted`.|
 |TenantId|String| Read-only.|
 
 ### Relationships
@@ -36,5 +36,5 @@ None
 |[Signup](../api/privilegedsignupstatus_signup.md)|[PrivilegedSignupStatus](privilegedsignupstatus.md)||
 |[Skipsetup](../api/privilegedsignupstatus_skipsetup.md)|[None](none.md)||
 
-<!-- uuid: 468bf119-9eb4-4ec7-a4a4-511bb70b8445
-2015-10-09 18:12:09 UTC -->
+<!-- uuid: 71793065-8c00-40f4-a729-2c986f4278fa
+2015-10-09 18:16:07 UTC -->

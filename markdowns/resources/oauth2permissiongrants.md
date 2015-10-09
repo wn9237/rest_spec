@@ -15,5 +15,5 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/oauth2permissiongrant_list.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md) [] |Get oAuth2PermissionGrant object collection. |
 
-<!-- uuid: 68b828a2-01f7-496c-a4c4-6068b5555393
-2015-10-09 18:12:09 UTC -->
+<!-- uuid: d6c7e8f0-be13-46ef-90b5-ad53182467c1
+2015-10-09 18:16:07 UTC -->

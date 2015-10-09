@@ -25,5 +25,5 @@ Here is a JSON representation of the resource
 |State|String||
 |Street|String||
 
-<!-- uuid: 7b5ed016-065c-48de-9c32-8ad31253d8f7
-2015-10-09 18:12:09 UTC -->
+<!-- uuid: 63f5ec33-df8a-48b6-916f-22586df820a0
+2015-10-09 18:16:07 UTC -->
