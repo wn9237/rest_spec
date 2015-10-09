@@ -48,4 +48,5 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/calendargroup_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/calendargroup_update.md) | [CalendarGroup](calendargroup.md)	|Update CalendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | Void	|Delete CalendarGroup object. |
-<!-- uuid: 4c4038fa-f95c-4f10-b72b-b60af342f808\n2015-10-09 15:14:07 UTC -->
+
+<!-- uuid: 663584b2-71f5-4a94-8b45-c52573f9960d\n2015-10-09 15:15:43 UTC -->

@@ -37,4 +37,5 @@ None
 |[Issignedup](../api/privilegedsignupstatus_issignedup.md)|Boolean||
 |[Signup](../api/privilegedsignupstatus_signup.md)|[PrivilegedSignupStatus](privilegedsignupstatus.md)||
 |[Skipsetup](../api/privilegedsignupstatus_skipsetup.md)|[None](none.md)||
-<!-- uuid: 725f64fa-f5b5-4d2b-8b54-2f6d8309afc3\n2015-10-09 15:14:09 UTC -->
+
+<!-- uuid: b0b3e473-e49f-4ad9-ab36-a9e3aef1cca7\n2015-10-09 15:15:46 UTC -->

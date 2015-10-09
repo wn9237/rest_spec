@@ -46,4 +46,5 @@ None
 |[Get SubscribedSku](../api/subscribedsku_get.md) | [SubscribedSku](subscribedsku.md) |Read properties and relationships of subscribedSku object.|
 |[Update](../api/subscribedsku_update.md) | [SubscribedSku](subscribedsku.md)	|Update SubscribedSku object. |
 |[Delete](../api/subscribedsku_delete.md) | Void	|Delete SubscribedSku object. |
-<!-- uuid: b30e11b5-f4b4-4d0c-a588-88371085fd41\n2015-10-09 15:14:09 UTC -->
+
+<!-- uuid: fd86285c-c823-4769-b3e6-e9ac9bfde6e8\n2015-10-09 15:15:46 UTC -->

@@ -16,4 +16,5 @@ Here is a JSON representation of the resource
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |state|String||
-<!-- uuid: 4a54aedc-9941-48b5-a127-85135bedb3ea\n2015-10-09 15:14:07 UTC -->
+
+<!-- uuid: 271f659e-8246-4337-8e9b-742d2da3c9dc\n2015-10-09 15:15:43 UTC -->

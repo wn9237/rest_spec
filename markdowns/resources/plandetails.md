@@ -46,4 +46,5 @@ None
 |[Get PlanDetails](../api/plandetails_get.md) | [PlanDetails](plandetails.md) |Read properties and relationships of planDetails object.|
 |[Update](../api/plandetails_update.md) | [PlanDetails](plandetails.md)	|Update PlanDetails object. |
 |[Delete](../api/plandetails_delete.md) | Void	|Delete PlanDetails object. |
-<!-- uuid: 8b3862cb-06ba-44c4-906f-4d4f789c670d\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 4f22215e-47b4-437a-b5b8-1a98bc000a11\n2015-10-09 15:15:45 UTC -->

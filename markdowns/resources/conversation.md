@@ -54,4 +54,5 @@ Here is a JSON representation of the resource
 |[Create Thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
 |[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
 |[Delete](../api/conversation_delete.md) | Void	|Delete Conversation object. |
-<!-- uuid: 933c9918-f515-4453-9b63-01cac855d413\n2015-10-09 15:14:07 UTC -->
+
+<!-- uuid: 61dba1c0-54b8-4d1d-80bf-3b16c9667d57\n2015-10-09 15:15:43 UTC -->

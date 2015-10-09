@@ -53,4 +53,5 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/contactfolder_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/contactfolder_update.md) | [ContactFolder](contactfolder.md)	|Update ContactFolder object. |
 |[Delete](../api/contactfolder_delete.md) | Void	|Delete ContactFolder object. |
-<!-- uuid: b02ad0ea-ebdc-4cd3-bd36-42880a9360ed\n2015-10-09 15:14:07 UTC -->
+
+<!-- uuid: c099df64-469c-40e5-a6af-d6e5f6c2dd60\n2015-10-09 15:15:43 UTC -->

@@ -48,4 +48,5 @@ None
 |[Get PimAlertInfo](../api/pimalertinfo_get.md) | [PimAlertInfo](pimalertinfo.md) |Read properties and relationships of pimAlertInfo object.|
 |[Update](../api/pimalertinfo_update.md) | [PimAlertInfo](pimalertinfo.md)	|Update PimAlertInfo object. |
 |[Delete](../api/pimalertinfo_delete.md) | Void	|Delete PimAlertInfo object. |
-<!-- uuid: 58b6cea7-8b21-4fd5-bb16-fd2649e2962e\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: f4e063c8-23c4-4d75-9d43-b93ddc05d1e7\n2015-10-09 15:15:45 UTC -->

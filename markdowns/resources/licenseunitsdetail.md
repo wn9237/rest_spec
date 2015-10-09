@@ -20,4 +20,5 @@ Here is a JSON representation of the resource
 |enabled|Int32||
 |suspended|Int32||
 |warning|Int32||
-<!-- uuid: f0bd8bcd-11cf-4ed0-9350-ee0d86aea638\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 065a8807-a742-4309-9e60-156d5ed86733\n2015-10-09 15:15:44 UTC -->

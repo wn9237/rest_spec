@@ -28,4 +28,5 @@ Here is a JSON representation of the resource
 |type|String||
 |usage|String||
 |value|Binary||
-<!-- uuid: 21a024a6-344f-4527-9b97-67daeb412321\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 1aed7ed3-72e4-4d5e-ae0a-7a9edff6f0da\n2015-10-09 15:15:44 UTC -->

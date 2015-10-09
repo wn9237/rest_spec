@@ -65,4 +65,5 @@ Content-length: 235
   "skuPartNumber": "skuPartNumber-value"
 }
 ```
-<!-- uuid: 8c8da367-508b-483d-a85e-0574a37c7df9\n2015-10-09 15:14:09 UTC -->
+
+<!-- uuid: c26d851a-b90e-4fa7-b276-410d08c944fe\n2015-10-09 15:15:46 UTC -->

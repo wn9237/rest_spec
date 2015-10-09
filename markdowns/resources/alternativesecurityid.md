@@ -20,4 +20,5 @@ Here is a JSON representation of the resource
 |identityProvider|String||
 |key|Binary||
 |type|Int32||
-<!-- uuid: 2fb799e9-234a-4a3f-a2ce-05596a9f71b8\n2015-10-09 15:14:07 UTC -->
+
+<!-- uuid: eb8d11f9-99b8-41a4-b3a3-ea7513ab419a\n2015-10-09 15:15:43 UTC -->

@@ -24,4 +24,5 @@ Here is a JSON representation of the resource
 |PostalCode|String||
 |State|String||
 |Street|String||
-<!-- uuid: f0ebbf20-6318-4e6f-9e8a-c68474e2075d\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 95bb200a-32af-46c5-a710-ac7df8af7ad9\n2015-10-09 15:15:45 UTC -->

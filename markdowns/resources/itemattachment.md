@@ -49,4 +49,5 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/itemattachment_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/itemattachment_update.md) | [ItemAttachment](itemattachment.md)	|Update ItemAttachment object. |
 |[Delete](../api/itemattachment_delete.md) | Void	|Delete ItemAttachment object. |
-<!-- uuid: 61f02d6a-4392-48e7-ae66-59d4f6fdc1f3\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 1bb5087c-adc8-46c3-858a-b21e2400b18d\n2015-10-09 15:15:44 UTC -->

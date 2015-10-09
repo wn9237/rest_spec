@@ -34,4 +34,5 @@ Here is a JSON representation of the resource
 |[Get Extension](../api/extension_get.md) | [Extension](extension.md) |Read properties and relationships of extension object.|
 |[Create Extension](../api/extension_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Delete](../api/extension_delete.md) | Void	|Delete Extension object. |
-<!-- uuid: e5e9fc05-39cd-4f2f-8e81-f8a1449a9bc3\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: da478fec-7d39-4558-9aae-49663681dbe9\n2015-10-09 15:15:44 UTC -->

@@ -52,4 +52,5 @@ None
 |[Get PrivilegedOperationEvent](../api/privilegedoperationevent_get.md) | [PrivilegedOperationEvent](privilegedoperationevent.md) |Read properties and relationships of privilegedOperationEvent object.|
 |[Update](../api/privilegedoperationevent_update.md) | [PrivilegedOperationEvent](privilegedoperationevent.md)	|Update PrivilegedOperationEvent object. |
 |[Delete](../api/privilegedoperationevent_delete.md) | Void	|Delete PrivilegedOperationEvent object. |
-<!-- uuid: 9a44a1bb-967c-4f77-8414-c483236cc376\n2015-10-09 15:14:09 UTC -->
+
+<!-- uuid: 1f73daa5-78a4-4a4b-9fed-3cdb946f8a50\n2015-10-09 15:15:46 UTC -->

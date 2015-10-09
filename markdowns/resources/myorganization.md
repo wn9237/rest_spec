@@ -34,4 +34,5 @@ Here is a JSON representation of the resource
 |[Get MyOrganization](../api/myorganization_get.md) | [MyOrganization](myorganization.md) |Read properties and relationships of myOrganization object.|
 |[Create SiteCollection](../api/myorganization_post_sitecollections.md) |[SiteCollection](sitecollection.md)| Create a new SiteCollection by posting to the siteCollections collection.|
 |[Delete](../api/myorganization_delete.md) | Void	|Delete MyOrganization object. |
-<!-- uuid: 191f28bb-6d1c-432e-93ab-2b8a30a67494\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: d27e2147-23b4-45ba-af74-9c5a228746fe\n2015-10-09 15:15:45 UTC -->

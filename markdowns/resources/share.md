@@ -41,4 +41,5 @@ Here is a JSON representation of the resource
 |[Create item](../api/share_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
 |[Update](../api/share_update.md) | [share](share.md)	|Update share object. |
 |[Delete](../api/share_delete.md) | Void	|Delete share object. |
-<!-- uuid: 7eb51dc8-fc83-441e-a228-0dcfa45d067f\n2015-10-09 15:14:09 UTC -->
+
+<!-- uuid: e52e9a14-d7fd-404a-8ead-85eb40e81ad4\n2015-10-09 15:15:46 UTC -->

@@ -69,4 +69,5 @@ Here is a JSON representation of the resource
 |[Update](../api/notebook_update.md) | [Notebook](notebook.md)	|Update Notebook object. |
 |[Delete](../api/notebook_delete.md) | Void	|Delete Notebook object. |
 |[Copynotebook](../api/notebook_copynotebook.md)|[CopyNotebookModel](copynotebookmodel.md)||
-<!-- uuid: b33645be-1842-4e86-a83d-e372f2d73e36\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: b33e3c5a-555c-4146-a086-a50f58d1c8c7\n2015-10-09 15:15:45 UTC -->

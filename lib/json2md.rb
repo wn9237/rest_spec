@@ -302,7 +302,7 @@ module SpecMaker
 			actionLines.push line
 		end
 
-		actionLines.push uuid_date
+		actionLines.push NEWLINE + uuid_date
 		# Write the output file. 
 		if autoFilename
 			fileName = autoFilename
@@ -369,7 +369,7 @@ module SpecMaker
 		example_lines.each do |line|
 			getMethodLines.push line
 		end
-		getMethodLines.push uuid_date
+		getMethodLines.push NEWLINE + uuid_date
 		# Write the output file. 
 		fileName = @jsonHash[:isCollection] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"
 		outfile = MARKDOWN_API_FOLDER + fileName
@@ -436,7 +436,7 @@ module SpecMaker
 		example_lines.each do |line|
 			patchMethodLines.push line
 		end
-		patchMethodLines.push uuid_date
+		patchMethodLines.push NEWLINE + uuid_date
 
 		# Write the output file. 
 		fileName = "#{@jsonHash[:name].downcase}_update.md"  
@@ -654,7 +654,7 @@ module SpecMaker
 				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
 			end
 		end
-		@mdlines.push uuid_date
+		@mdlines.push NEWLINE + uuid_date
 
 		# Write the output file. 
 		outfile = MARKDOWN_RESOURCE_FOLDER + @resource.downcase + '.md'

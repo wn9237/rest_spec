@@ -358,4 +358,5 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/user_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/user_getmembergroups.md)|String||
 |[Get MemberObjects](../api/user_getmemberobjects.md)|String||
-<!-- uuid: c5be3e8c-b23b-40c2-844a-ded1a9531430\n2015-10-09 15:14:09 UTC -->
+
+<!-- uuid: 832a878d-b328-47a7-a873-1af7e740b807\n2015-10-09 15:15:47 UTC -->

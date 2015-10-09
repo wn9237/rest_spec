@@ -42,4 +42,5 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/directoryobject_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/directoryobject_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryobject_getmemberobjects.md)|String||
-<!-- uuid: 690466eb-af65-4b84-9019-f37940eafe37\n2015-10-09 15:14:07 UTC -->
+
+<!-- uuid: f2b1af7f-0aa1-420a-a9bb-699177fdef6a\n2015-10-09 15:15:43 UTC -->

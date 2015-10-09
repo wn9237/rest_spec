@@ -155,4 +155,5 @@ Here is a JSON representation of the resource
 |[Delta](../api/item_delta.md)|[item](item.md)||
 |[Invite](../api/item_invite.md)|[permission](permission.md)||
 |[Search](../api/item_search.md)|[item](item.md)||
-<!-- uuid: c45cb887-8e2a-4556-b1a9-a8de41440f5e\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 917bcedb-c8cc-4c8b-b5b6-e907851b852b\n2015-10-09 15:15:44 UTC -->

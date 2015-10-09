@@ -47,4 +47,5 @@ Here is a JSON representation of the resource
 |[Delete](../api/privilegedrole_delete.md) | Void	|Delete PrivilegedRole object. |
 |[Selfactivate](../api/privilegedrole_selfactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[Selfdeactivate](../api/privilegedrole_selfdeactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
-<!-- uuid: 696295b4-dd5f-41f3-85c3-b5532de2dba3\n2015-10-09 15:14:09 UTC -->
+
+<!-- uuid: 679e81d5-3942-41ab-bd3e-4f12985c4cc3\n2015-10-09 15:15:46 UTC -->

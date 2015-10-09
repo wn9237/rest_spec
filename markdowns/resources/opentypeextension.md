@@ -37,4 +37,5 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/opentypeextension_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
 |[Delete](../api/opentypeextension_delete.md) | Void	|Delete OpenTypeExtension object. |
-<!-- uuid: 39af4daa-d0dd-4b43-8716-ffc0cd04d7de\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 842a629e-52d8-4e1a-8aa1-f6c44d74f3ec\n2015-10-09 15:15:45 UTC -->

@@ -39,4 +39,5 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/photo_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/photo_update.md) | [Photo](photo.md)	|Update Photo object. |
 |[Delete](../api/photo_delete.md) | Void	|Delete Photo object. |
-<!-- uuid: bc0c4bef-55fe-4feb-bee0-bfd46dbd0427\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 2eec8115-75fe-4746-99df-937b34b96859\n2015-10-09 15:15:45 UTC -->

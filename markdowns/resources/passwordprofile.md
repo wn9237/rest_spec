@@ -18,4 +18,5 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |forceChangePasswordNextLogin|Boolean||
 |password|String||
-<!-- uuid: 39b7023a-a1b7-4963-81ee-61ad547c3df0\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 7a6c4e2e-834f-4844-86a5-7665f2484b2d\n2015-10-09 15:15:45 UTC -->

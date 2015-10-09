@@ -57,4 +57,5 @@ Here is a JSON representation of the resource
 |[Copytosection](../api/page_copytosection.md)|[CopyPageModel](copypagemodel.md)||
 |[Patchcontent](../api/page_patchcontent.md)|[None](none.md)||
 |[Thumbnail](../api/page_thumbnail.md)|Stream||
-<!-- uuid: c4d13ae4-19e7-4094-baf0-1f7aa3e42d0e\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: bb6a0feb-cb5f-4252-92a8-6f44b7686048\n2015-10-09 15:15:45 UTC -->

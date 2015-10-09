@@ -66,4 +66,5 @@ Here is a JSON representation of the resource
 |[Create Section](../api/sectiongroup_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
 |[Update](../api/sectiongroup_update.md) | [SectionGroup](sectiongroup.md)	|Update SectionGroup object. |
 |[Delete](../api/sectiongroup_delete.md) | Void	|Delete SectionGroup object. |
-<!-- uuid: dcdf78e9-2b97-46b2-af82-062667466655\n2015-10-09 15:14:09 UTC -->
+
+<!-- uuid: 08b40b7e-90f4-4792-afa2-d3c5798dc6c7\n2015-10-09 15:15:46 UTC -->

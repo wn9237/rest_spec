@@ -24,4 +24,5 @@ Here is a JSON representation of the resource
 |EmailAddress|[EmailAddress](emailaddress.md)||
 |Status|[ResponseStatus](responsestatus.md)||
 |Type|String| Possible values are: `Required`, `Optional`, `Resource`.|
-<!-- uuid: 3f68d382-1911-4038-ac09-3214377124f1\n2015-10-09 15:14:07 UTC -->
+
+<!-- uuid: 761ed72f-518f-4845-bcce-829d51816c98\n2015-10-09 15:15:43 UTC -->

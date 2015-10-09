@@ -22,4 +22,5 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[ExternalLink](externallink.md)||
 |oneNoteWebUrl|[ExternalLink](externallink.md)||
-<!-- uuid: d1fe7def-4a44-4d44-a020-f9d52bb304a3\n2015-10-09 15:14:08 UTC -->
+
+<!-- uuid: 62c4888d-d525-429e-8279-bdb462cdbf43\n2015-10-09 15:15:45 UTC -->
