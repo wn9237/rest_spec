@@ -22,10 +22,43 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 873
 {
+  "description": "description-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "creationOptions": [
+    "creationOptions-value"
+  ],
+  "groupTypes": [
+    "groupTypes-value"
+  ],
+  "isPublic": true,
+  "lastDirSyncTime": "datetime-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mailEnabled": true,
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "provisioningErrors": [
+    {
+    }
+  ],
+  "proxyAddresses": [
+    "proxyAddresses-value"
+  ],
+  "securityEnabled": true,
+  "AccessType": "AccessType-value",
+  "EmailAddress": "EmailAddress-value",
+  "AllowExternalSenders": true,
+  "AutoSubscribeNewMembers": true,
+  "IsSubscribedByMail": true,
+  "IsFavorite": true,
+  "UnseenCount": 99,
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 62fe807f-638c-48c0-a3ad-2193960fb08d
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: c70d662a-2efe-466a-8d00-74382f9c6218
+2015-10-09 18:31:37 UTC -->

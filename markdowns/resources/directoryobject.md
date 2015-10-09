@@ -43,5 +43,5 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directoryobject_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryobject_getmemberobjects.md)|String||
 
-<!-- uuid: 3af53c50-faae-4149-8c9d-192d92ce4f03
-2015-10-09 18:28:46 UTC -->
+<!-- uuid: 13c1ab0f-830f-4b42-8be3-68c8041961d7
+2015-10-09 18:31:36 UTC -->

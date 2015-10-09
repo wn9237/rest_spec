@@ -22,10 +22,40 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 961
 {
+  "city": "city-value",
+  "country": "country-value",
+  "department": "department-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+  "givenName": "givenName-value",
+  "jobTitle": "jobTitle-value",
+  "lastDirSyncTime": "datetime-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mobile": "mobile-value",
+  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+  "postalCode": "postalCode-value",
+  "provisioningErrors": [
+    {
+    }
+  ],
+  "proxyAddresses": [
+    "proxyAddresses-value"
+  ],
+  "sipProxyAddress": "sipProxyAddress-value",
+  "state": "state-value",
+  "streetAddress": "streetAddress-value",
+  "surname": "surname-value",
+  "telephoneNumber": "telephoneNumber-value",
+  "thumbnailPhoto": "thumbnailPhoto-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 5061b239-d13a-4d18-b82f-380a26be07e3
-2015-10-09 18:28:46 UTC -->
+<!-- uuid: 8f84e45a-2621-4098-867b-7a757ccab008
+2015-10-09 18:31:36 UTC -->

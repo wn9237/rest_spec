@@ -22,10 +22,15 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 187
 {
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 6f352799-8987-4521-a1d3-4e2872d62873
-2015-10-09 18:28:46 UTC -->
+<!-- uuid: a1f66bde-cd94-4228-bd84-53b5e47fede3
+2015-10-09 18:31:36 UTC -->

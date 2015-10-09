@@ -22,10 +22,91 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 2047
 {
+  "accountEnabled": true,
+  "assignedLicenses": [
+    {
+    }
+  ],
+  "assignedPlans": [
+    {
+    }
+  ],
+  "city": "city-value",
+  "country": "country-value",
+  "department": "department-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+  "givenName": "givenName-value",
+  "immutableId": "immutableId-value",
+  "jobTitle": "jobTitle-value",
+  "lastDirSyncTime": "datetime-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mobile": "mobile-value",
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "otherMails": [
+    "otherMails-value"
+  ],
+  "passwordPolicies": "passwordPolicies-value",
+  "passwordProfile": {
+  },
+  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
+  "provisionedPlans": [
+    {
+    }
+  ],
+  "provisioningErrors": [
+    {
+    }
+  ],
+  "proxyAddresses": [
+    "proxyAddresses-value"
+  ],
+  "sipProxyAddress": "sipProxyAddress-value",
+  "state": "state-value",
+  "streetAddress": "streetAddress-value",
+  "surname": "surname-value",
+  "telephoneNumber": "telephoneNumber-value",
+  "thumbnailPhoto": "thumbnailPhoto-value",
+  "usageLocation": "usageLocation-value",
+  "userPrincipalName": "userPrincipalName-value",
+  "userType": "userType-value",
+  "MailboxGuid": "MailboxGuid-value",
+  "AboutMe": "AboutMe-value",
+  "Alias": "Alias-value",
+  "Birthday": "datetime-value",
+  "HireDate": "datetime-value",
+  "Interests": [
+    "Interests-value"
+  ],
+  "MySite": "MySite-value",
+  "PastProjects": [
+    "PastProjects-value"
+  ],
+  "PreferredName": "PreferredName-value",
+  "PrincipalName": "PrincipalName-value",
+  "Responsibilities": [
+    "Responsibilities-value"
+  ],
+  "Schools": [
+    "Schools-value"
+  ],
+  "Skills": [
+    "Skills-value"
+  ],
+  "Tags": [
+    "Tags-value"
+  ],
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: e7a4a776-643d-43ce-8992-1c47a6bfc08a
-2015-10-09 18:28:48 UTC -->
+<!-- uuid: 029c2987-1310-4ff9-882c-fdb57063122a
+2015-10-09 18:31:38 UTC -->

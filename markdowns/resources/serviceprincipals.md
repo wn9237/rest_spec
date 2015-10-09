@@ -15,5 +15,5 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/serviceprincipal_list.md) | [ServicePrincipal](serviceprincipal.md) [] |Get servicePrincipal object collection. |
 
-<!-- uuid: 9ed7825c-b88d-48b8-8cda-45ae91e7af3e
-2015-10-09 18:28:48 UTC -->
+<!-- uuid: 3dd296d3-96a3-4bc4-9526-36904955412c
+2015-10-09 18:31:37 UTC -->

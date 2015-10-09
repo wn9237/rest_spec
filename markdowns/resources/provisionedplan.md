@@ -21,5 +21,5 @@ Here is a JSON representation of the resource
 |provisioningStatus|String||
 |service|String||
 
-<!-- uuid: 3d548566-ac63-4557-ab31-5e7c32ec7642
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: dfd0e5d3-8045-4937-a56a-15534bc618e2
+2015-10-09 18:31:37 UTC -->

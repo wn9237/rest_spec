@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/myorganization_list.md) | [MyOrganization](myorganization.md) [] |Get myOrganization object collection. |
 
-<!-- uuid: 8f7ee3fe-4da8-4461-b583-bb8e811cec50
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: 88ac8023-b6e1-4a57-866a-ed51d101bc12
+2015-10-09 18:31:37 UTC -->
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -30,5 +30,5 @@ None
 |[Create SiteCollection](../api/myorganization_post_sitecollections.md) |[SiteCollection](sitecollection.md)| Create a new SiteCollection by posting to the siteCollections collection.|
 |[Delete](../api/myorganization_delete.md) | Void	|Delete MyOrganization object. |
 
-<!-- uuid: a191c871-0af8-43c2-bbae-5a9bde5b8bf7
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: c0f87b9c-496a-4638-aca0-70437581eafa
+2015-10-09 18:31:37 UTC -->

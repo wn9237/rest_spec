@@ -22,10 +22,18 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 260
 {
+  "Id": "Id-value",
+  "UserName": "UserName-value",
+  "UserId": "UserId-value",
+  "RoleName": "RoleName-value",
+  "RoleId": "RoleId-value",
+  "NotificationId": "NotificationId-value",
+  "NotificationName": "NotificationName-value",
+  "Event": "Event-value"
 }
 ```
 
-<!-- uuid: ff9b8e44-4b78-4908-acbf-45c5e1ac536d
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: dda7b952-c92f-4186-b72b-db6147ebd590
+2015-10-09 18:31:37 UTC -->

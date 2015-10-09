@@ -22,10 +22,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 160
 {
+  "Id": "Id-value",
+  "DisplayName": "DisplayName-value",
+  "NotificationType": "NotificationType-value",
+  "NotificationTarget": "NotificationTarget-value"
 }
 ```
 
-<!-- uuid: e3a37086-bae8-45e6-a6dc-38e089476171
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: 4a658743-0879-49d9-b971-d442674b6f20
+2015-10-09 18:31:37 UTC -->

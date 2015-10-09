@@ -34,7 +34,7 @@ module SpecMaker
 			example_lines.push HEADER5 + "Response" + NEWLINE											
 			example_lines.push "Here is an example of the response." + NEWLINE
 			if type == 'auto_list'
-				modeldump = get_json_model_method(@jsonHash[:name], true)
+				modeldump = get_json_model_method(@jsonHash[:collectionOf], true)
 			else
 				modeldump = get_json_model_method(@jsonHash[:name])
 			end

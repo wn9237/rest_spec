@@ -22,10 +22,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 179
 {
+  "name": "name-value",
+  "planId": "planId-value",
+  "orderHint": "orderHint-value",
+  "totalTasks": 99,
+  "activeTasks": 99,
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: 7c9c1da6-b16d-44bc-b89e-72bd6bf9fd9c
-2015-10-09 18:28:46 UTC -->
+<!-- uuid: 452bb41c-d66a-4965-81a7-6f707041d85b
+2015-10-09 18:31:36 UTC -->

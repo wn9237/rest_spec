@@ -17,5 +17,5 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |onClickTelemetryUrl|String||
 
-<!-- uuid: afe42590-a21b-47f6-80af-c45d217695f9
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: e4ce2200-5bfb-4ef0-a6d2-d9a841db9d9b
+2015-10-09 18:31:37 UTC -->

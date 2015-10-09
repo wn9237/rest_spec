@@ -48,5 +48,5 @@ Here is a JSON representation of the resource
 |[Selfactivate](../api/privilegedrole_selfactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[Selfdeactivate](../api/privilegedrole_selfdeactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 
-<!-- uuid: d3118bb4-8b4e-47ec-ad46-92f134fcef4c
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: b5390d80-a38c-4b28-aa98-9bdfc1a9df6d
+2015-10-09 18:31:37 UTC -->

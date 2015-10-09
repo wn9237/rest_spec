@@ -22,10 +22,50 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 904
 {
+  "accountEnabled": true,
+  "appDisplayName": "appDisplayName-value",
+  "appId": "appId-value",
+  "appOwnerTenantId": "appOwnerTenantId-value",
+  "appRoleAssignmentRequired": true,
+  "appRoles": [
+    {
+    }
+  ],
+  "displayName": "displayName-value",
+  "errorUrl": "errorUrl-value",
+  "homepage": "homepage-value",
+  "keyCredentials": [
+    {
+    }
+  ],
+  "logoutUrl": "logoutUrl-value",
+  "oauth2Permissions": [
+    {
+    }
+  ],
+  "passwordCredentials": [
+    {
+    }
+  ],
+  "preferredTokenSigningKeyThumbprint": "preferredTokenSigningKeyThumbprint-value",
+  "publisherName": "publisherName-value",
+  "replyUrls": [
+    "replyUrls-value"
+  ],
+  "samlMetadataUrl": "samlMetadataUrl-value",
+  "servicePrincipalNames": [
+    "servicePrincipalNames-value"
+  ],
+  "tags": [
+    "tags-value"
+  ],
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 72625e6f-319f-4504-8f97-bc315f472e25
-2015-10-09 18:28:48 UTC -->
+<!-- uuid: cf00236c-de36-43ce-8646-e0fe7b092e54
+2015-10-09 18:31:37 UTC -->

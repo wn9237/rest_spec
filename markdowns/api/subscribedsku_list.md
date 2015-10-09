@@ -22,10 +22,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 235
 {
+  "capabilityStatus": "capabilityStatus-value",
+  "consumedUnits": 99,
+  "objectId": "objectId-value",
+  "prepaidUnits": {
+  },
+  "servicePlans": [
+    {
+    }
+  ],
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 
-<!-- uuid: 0075735d-1e90-445a-b690-8fa66992feda
-2015-10-09 18:28:48 UTC -->
+<!-- uuid: 884d64a4-8137-4507-aa6e-3dba48a98155
+2015-10-09 18:31:37 UTC -->

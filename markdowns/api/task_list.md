@@ -22,10 +22,31 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 641
 {
+  "createdBy": "createdBy-value",
+  "assignedTo": "assignedTo-value",
+  "planId": "planId-value",
+  "bucketId": "bucketId-value",
+  "title": "title-value",
+  "orderHint": "orderHint-value",
+  "assigneePriority": "assigneePriority-value",
+  "percentComplete": 99,
+  "startDate": "datetime-value",
+  "assignedToDate": "datetime-value",
+  "createdDate": "datetime-value",
+  "assignedBy": "assignedBy-value",
+  "dueDate": "datetime-value",
+  "hasNotes": true,
+  "previewType": "previewType-value",
+  "completedDate": "datetime-value",
+  "numberOfReferences": 99,
+  "appliedCategories": {
+  },
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: 745d24fb-d8a4-44a5-b26e-d717131256bc
-2015-10-09 18:28:48 UTC -->
+<!-- uuid: 8e06f5fd-3cc5-4cbd-b70a-569870649abb
+2015-10-09 18:31:37 UTC -->

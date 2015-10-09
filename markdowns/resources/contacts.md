@@ -15,5 +15,5 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/orgcontact_list.md) | [OrgContact](orgcontact.md) [] |Get orgContact object collection. |
 
-<!-- uuid: bee5fffd-cd34-4f6e-af05-629f416adce1
-2015-10-09 18:28:46 UTC -->
+<!-- uuid: a1af9ad0-9acb-460d-94a8-900f484fe958
+2015-10-09 18:31:36 UTC -->

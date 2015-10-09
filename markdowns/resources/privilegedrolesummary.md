@@ -39,5 +39,5 @@ None
 |[Update](../api/privilegedrolesummary_update.md) | [PrivilegedRoleSummary](privilegedrolesummary.md)	|Update PrivilegedRoleSummary object. |
 |[Delete](../api/privilegedrolesummary_delete.md) | Void	|Delete PrivilegedRoleSummary object. |
 
-<!-- uuid: 50446392-7596-41dd-ac08-50196f175503
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: 9a94b6b7-46d8-4048-bad5-4d3d34cf22b6
+2015-10-09 18:31:37 UTC -->

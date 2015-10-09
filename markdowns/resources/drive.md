@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/drive_list.md) | [drive](drive.md) [] |Get drive object collection. |
 
-<!-- uuid: 94cf9d1a-7291-468f-af31-923e030fbe50
-2015-10-09 18:28:47 UTC --> "@odata.type": "microsoft.graph.quota"
+<!-- uuid: 13fbd4e6-c18f-4d87-9b6a-3cd88f37ed1d
+2015-10-09 18:31:36 UTC --> "@odata.type": "microsoft.graph.quota"
   },
   "root": {
     "@odata.type": "microsoft.graph.item"
@@ -62,5 +62,5 @@ None
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: 1fb2e03d-f689-4f3a-9136-fc3a9c9a0be6
-2015-10-09 18:28:47 UTC -->
+<!-- uuid: 45597cfa-a84a-4f9a-b758-9b6eb43354f7
+2015-10-09 18:31:36 UTC -->
