@@ -25,5 +25,5 @@ Here is a JSON representation of the resource
 |Status|[ResponseStatus](responsestatus.md)||
 |Type|String| Possible values are: `Required`, `Optional`, `Resource`.|
 
-<!-- uuid: c0b6fb16-927d-46f0-8537-21be2290c004
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: 5485972c-e69e-4f4b-afd3-b91958cf0e92
+2015-10-09 18:34:12 UTC -->

@@ -22,12 +22,16 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 74
+Content-length: 112
 {
-  "AlertId": "AlertId-value",
-  "AlertSettings": "AlertSettings-value"
+  "values": [
+    {
+      "AlertId": "AlertId-value",
+      "AlertSettings": "AlertSettings-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 79ebe35e-cc93-49e0-bc15-911549fad29c
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: e74307d8-e11a-47b9-9c2d-d7326d5e9562
+2015-10-09 18:34:12 UTC -->

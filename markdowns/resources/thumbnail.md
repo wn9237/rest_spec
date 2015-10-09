@@ -23,5 +23,5 @@ Here is a JSON representation of the resource
 |url|String||
 |width|Int32||
 
-<!-- uuid: 7778783d-8a11-46b2-81e4-1b897c4c8930
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 62819ff0-fd73-4f9b-92f7-6358210467d9
+2015-10-09 18:34:13 UTC -->

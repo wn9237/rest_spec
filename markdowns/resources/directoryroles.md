@@ -15,5 +15,5 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/directoryrole_list.md) | [DirectoryRole](directoryrole.md) [] |Get directoryRole object collection. |
 
-<!-- uuid: 5734e189-fa0c-4d57-a629-f1c7510edde2
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: dd27d144-793b-4d80-ae3d-a73877183ee2
+2015-10-09 18:34:12 UTC -->

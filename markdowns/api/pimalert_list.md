@@ -22,26 +22,30 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 529
+Content-length: 623
 {
-  "AlertId": "AlertId-value",
-  "NumberOfAffected": 99,
-  "AdditionalData": "AdditionalData-value",
-  "AlertName": "AlertName-value",
-  "AlertDescription": "AlertDescription-value",
-  "LastModifiedTime": "datetime-value",
-  "LastScannedTime": "datetime-value",
-  "SeverityLevel": 99,
-  "AlertType": 99,
-  "SecurityImpact": "SecurityImpact-value",
-  "MitigationSteps": "MitigationSteps-value",
-  "HowToPrevent": "HowToPrevent-value",
-  "WasDismissed": true,
-  "IsActive": true,
-  "IsResolvable": true,
-  "IsConfigurable": true
+  "values": [
+    {
+      "AlertId": "AlertId-value",
+      "NumberOfAffected": 99,
+      "AdditionalData": "AdditionalData-value",
+      "AlertName": "AlertName-value",
+      "AlertDescription": "AlertDescription-value",
+      "LastModifiedTime": "datetime-value",
+      "LastScannedTime": "datetime-value",
+      "SeverityLevel": 99,
+      "AlertType": 99,
+      "SecurityImpact": "SecurityImpact-value",
+      "MitigationSteps": "MitigationSteps-value",
+      "HowToPrevent": "HowToPrevent-value",
+      "WasDismissed": true,
+      "IsActive": true,
+      "IsResolvable": true,
+      "IsConfigurable": true
+    }
+  ]
 }
 ```
 
-<!-- uuid: b1f46dca-d7db-4b6a-903b-667b066c6ea9
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: 3ef5bb02-d8f2-4a68-b8f6-81d9f5cf4913
+2015-10-09 18:34:12 UTC -->

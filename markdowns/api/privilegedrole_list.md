@@ -22,12 +22,16 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 46
+Content-length: 84
 {
-  "Id": "Id-value",
-  "Name": "Name-value"
+  "values": [
+    {
+      "Id": "Id-value",
+      "Name": "Name-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 4138c48c-d631-4741-add4-fade7953ca01
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 5392507a-0ff4-4a37-9511-1810fc6e1167
+2015-10-09 18:34:13 UTC -->

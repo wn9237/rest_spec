@@ -22,11 +22,15 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 22
+Content-length: 56
 {
-  "id": "id-value"
+  "values": [
+    {
+      "id": "id-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: fac13c2a-20f3-44bb-90ca-2085d79af251
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: a7d21317-e0a5-4791-82ea-d16284d283c5
+2015-10-09 18:34:13 UTC -->

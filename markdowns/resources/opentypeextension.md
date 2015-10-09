@@ -38,5 +38,5 @@ Here is a JSON representation of the resource
 |[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
 |[Delete](../api/opentypeextension_delete.md) | Void	|Delete OpenTypeExtension object. |
 
-<!-- uuid: 8a7d507d-b38c-4290-9944-708eb07a834c
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 73b3df10-e87c-4634-a967-1b04092e9266
+2015-10-09 18:34:13 UTC -->

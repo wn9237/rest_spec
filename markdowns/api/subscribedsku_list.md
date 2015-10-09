@@ -22,21 +22,25 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 235
+Content-length: 309
 {
-  "capabilityStatus": "capabilityStatus-value",
-  "consumedUnits": 99,
-  "objectId": "objectId-value",
-  "prepaidUnits": {
-  },
-  "servicePlans": [
+  "values": [
     {
+      "capabilityStatus": "capabilityStatus-value",
+      "consumedUnits": 99,
+      "objectId": "objectId-value",
+      "prepaidUnits": {
+      },
+      "servicePlans": [
+        {
+        }
+      ],
+      "skuId": "skuId-value",
+      "skuPartNumber": "skuPartNumber-value"
     }
-  ],
-  "skuId": "skuId-value",
-  "skuPartNumber": "skuPartNumber-value"
+  ]
 }
 ```
 
-<!-- uuid: 884d64a4-8137-4507-aa6e-3dba48a98155
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 096b4d3c-21f7-4fa6-9637-41e5d1783f52
+2015-10-09 18:34:13 UTC -->

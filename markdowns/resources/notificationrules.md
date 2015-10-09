@@ -15,5 +15,5 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/notificationrule_list.md) | [NotificationRule](notificationrule.md) [] |Get notificationRule object collection. |
 
-<!-- uuid: b72f0729-b4c6-43b1-8793-cc8072db0e7f
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 5d5af226-bf2b-41d7-9d96-b2dd62c0f8d4
+2015-10-09 18:34:13 UTC -->

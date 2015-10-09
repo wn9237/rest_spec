@@ -58,5 +58,5 @@ Here is a JSON representation of the resource
 |[Patchcontent](../api/page_patchcontent.md)|[None](none.md)||
 |[Thumbnail](../api/page_thumbnail.md)|Stream||
 
-<!-- uuid: cbe7717f-3f82-44ba-b29f-3daa53f1acf1
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: d8197c8b-2af6-45dc-9080-96ca6f9d69d6
+2015-10-09 18:34:13 UTC -->

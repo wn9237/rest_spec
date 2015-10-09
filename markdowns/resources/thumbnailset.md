@@ -45,5 +45,5 @@ None
 |[Update](../api/thumbnailset_update.md) | [thumbnailSet](thumbnailset.md)	|Update thumbnailSet object. |
 |[Delete](../api/thumbnailset_delete.md) | Void	|Delete thumbnailSet object. |
 
-<!-- uuid: 91177050-5ad4-44bb-890b-0cfc63b5a39e
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 1d8a6fc4-afd1-4848-abb5-906e8ff6baaa
+2015-10-09 18:34:13 UTC -->

@@ -22,55 +22,59 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 953
+Content-length: 1163
 {
-  "appId": "appId-value",
-  "appRoles": [
+  "values": [
     {
+      "appId": "appId-value",
+      "appRoles": [
+        {
+        }
+      ],
+      "availableToOtherTenants": true,
+      "displayName": "displayName-value",
+      "errorUrl": "errorUrl-value",
+      "groupMembershipClaims": "groupMembershipClaims-value",
+      "homepage": "homepage-value",
+      "identifierUris": [
+        "identifierUris-value"
+      ],
+      "keyCredentials": [
+        {
+        }
+      ],
+      "knownClientApplications": [
+        "knownClientApplications-value"
+      ],
+      "mainLogo": "mainLogo-value",
+      "logoutUrl": "logoutUrl-value",
+      "oauth2AllowImplicitFlow": true,
+      "oauth2AllowUrlPathMatching": true,
+      "oauth2Permissions": [
+        {
+        }
+      ],
+      "oauth2RequirePostResponse": true,
+      "passwordCredentials": [
+        {
+        }
+      ],
+      "publicClient": true,
+      "replyUrls": [
+        "replyUrls-value"
+      ],
+      "requiredResourceAccess": [
+        {
+        }
+      ],
+      "samlMetadataUrl": "samlMetadataUrl-value",
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "availableToOtherTenants": true,
-  "displayName": "displayName-value",
-  "errorUrl": "errorUrl-value",
-  "groupMembershipClaims": "groupMembershipClaims-value",
-  "homepage": "homepage-value",
-  "identifierUris": [
-    "identifierUris-value"
-  ],
-  "keyCredentials": [
-    {
-    }
-  ],
-  "knownClientApplications": [
-    "knownClientApplications-value"
-  ],
-  "mainLogo": "mainLogo-value",
-  "logoutUrl": "logoutUrl-value",
-  "oauth2AllowImplicitFlow": true,
-  "oauth2AllowUrlPathMatching": true,
-  "oauth2Permissions": [
-    {
-    }
-  ],
-  "oauth2RequirePostResponse": true,
-  "passwordCredentials": [
-    {
-    }
-  ],
-  "publicClient": true,
-  "replyUrls": [
-    "replyUrls-value"
-  ],
-  "requiredResourceAccess": [
-    {
-    }
-  ],
-  "samlMetadataUrl": "samlMetadataUrl-value",
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: a8b716f7-acb2-4261-b515-c1ee3618606d
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: 7d000571-e5c1-4878-a1c7-5b8fb3df77b6
+2015-10-09 18:34:12 UTC -->

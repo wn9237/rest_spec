@@ -22,31 +22,35 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 637
+Content-length: 751
 {
-  "accountEnabled": true,
-  "alternativeSecurityIds": [
+  "values": [
     {
+      "accountEnabled": true,
+      "alternativeSecurityIds": [
+        {
+        }
+      ],
+      "approximateLastLogonTimestamp": "datetime-value",
+      "deviceId": "deviceId-value",
+      "deviceMetadata": "deviceMetadata-value",
+      "deviceObjectVersion": 99,
+      "deviceOSType": "deviceOSType-value",
+      "deviceOSVersion": "deviceOSVersion-value",
+      "devicePhysicalIds": [
+        "devicePhysicalIds-value"
+      ],
+      "deviceTrustType": "deviceTrustType-value",
+      "dirSyncEnabled": true,
+      "displayName": "displayName-value",
+      "lastDirSyncTime": "datetime-value",
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "approximateLastLogonTimestamp": "datetime-value",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceObjectVersion": 99,
-  "deviceOSType": "deviceOSType-value",
-  "deviceOSVersion": "deviceOSVersion-value",
-  "devicePhysicalIds": [
-    "devicePhysicalIds-value"
-  ],
-  "deviceTrustType": "deviceTrustType-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "lastDirSyncTime": "datetime-value",
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 01defec7-d6b2-438e-be6b-9cbbfa2798ba
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: f4f56e6f-f904-4313-94df-069db2d0c226
+2015-10-09 18:34:12 UTC -->

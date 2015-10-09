@@ -22,43 +22,47 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 873
+Content-length: 1035
 {
-  "description": "description-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "creationOptions": [
-    "creationOptions-value"
-  ],
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "isPublic": true,
-  "lastDirSyncTime": "datetime-value",
-  "mail": "mail-value",
-  "mailNickname": "mailNickname-value",
-  "mailEnabled": true,
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "provisioningErrors": [
+  "values": [
     {
+      "description": "description-value",
+      "dirSyncEnabled": true,
+      "displayName": "displayName-value",
+      "creationOptions": [
+        "creationOptions-value"
+      ],
+      "groupTypes": [
+        "groupTypes-value"
+      ],
+      "isPublic": true,
+      "lastDirSyncTime": "datetime-value",
+      "mail": "mail-value",
+      "mailNickname": "mailNickname-value",
+      "mailEnabled": true,
+      "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+      "provisioningErrors": [
+        {
+        }
+      ],
+      "proxyAddresses": [
+        "proxyAddresses-value"
+      ],
+      "securityEnabled": true,
+      "AccessType": "AccessType-value",
+      "EmailAddress": "EmailAddress-value",
+      "AllowExternalSenders": true,
+      "AutoSubscribeNewMembers": true,
+      "IsSubscribedByMail": true,
+      "IsFavorite": true,
+      "UnseenCount": 99,
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "proxyAddresses": [
-    "proxyAddresses-value"
-  ],
-  "securityEnabled": true,
-  "AccessType": "AccessType-value",
-  "EmailAddress": "EmailAddress-value",
-  "AllowExternalSenders": true,
-  "AutoSubscribeNewMembers": true,
-  "IsSubscribedByMail": true,
-  "IsFavorite": true,
-  "UnseenCount": 99,
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: c70d662a-2efe-466a-8d00-74382f9c6218
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 018cd03d-208d-4a38-834a-ca586b5ab586
+2015-10-09 18:34:12 UTC -->

@@ -22,21 +22,25 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 341
+Content-length: 415
 {
-  "publicIssuerCertificates": [
-    "publicIssuerCertificates-value"
-  ],
-  "cloudPublicIssuerCertificates": [
-    "cloudPublicIssuerCertificates-value"
-  ],
-  "registrationQuota": 99,
-  "maximumRegistrationInactivityPeriod": 99,
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  "values": [
+    {
+      "publicIssuerCertificates": [
+        "publicIssuerCertificates-value"
+      ],
+      "cloudPublicIssuerCertificates": [
+        "cloudPublicIssuerCertificates-value"
+      ],
+      "registrationQuota": 99,
+      "maximumRegistrationInactivityPeriod": 99,
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: ae55f010-0310-48e8-b97c-3b7a5aef9faf
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: dc2f9e6d-8d1d-4a7d-9d35-21cf62c0fab7
+2015-10-09 18:34:12 UTC -->

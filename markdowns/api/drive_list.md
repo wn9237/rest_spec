@@ -22,16 +22,20 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 92
+Content-length: 146
 {
-  "id": "id-value",
-  "driveType": "driveType-value",
-  "owner": {
-  },
-  "quota": {
-  }
+  "values": [
+    {
+      "id": "id-value",
+      "driveType": "driveType-value",
+      "owner": {
+      },
+      "quota": {
+      }
+    }
+  ]
 }
 ```
 
-<!-- uuid: 09c317fd-b5d3-4963-9412-345b3889e3ce
-2015-10-09 18:31:36 UTC -->>
+<!-- uuid: 13e89572-b4ad-4dd7-8387-d1221dce50eb
+2015-10-09 18:34:12 UTC -->>

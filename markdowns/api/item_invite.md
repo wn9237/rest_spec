@@ -51,23 +51,27 @@ Content-length: 154
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 176
+Content-length: 258
 {
-  "grantedTo": {
-  },
-  "id": "id-value",
-  "invitation": {
-  },
-  "inheritedFrom": {
-  },
-  "link": {
-  },
-  "roles": [
-    "roles-value"
-  ],
-  "shareId": "shareId-value"
+  "values": [
+    {
+      "grantedTo": {
+      },
+      "id": "id-value",
+      "invitation": {
+      },
+      "inheritedFrom": {
+      },
+      "link": {
+      },
+      "roles": [
+        "roles-value"
+      ],
+      "shareId": "shareId-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 3a06edec-d7be-4bb4-baeb-2b5919a0d428
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: d199df0a-4bc4-45ad-9ebb-7264e7409172
+2015-10-09 18:34:12 UTC -->

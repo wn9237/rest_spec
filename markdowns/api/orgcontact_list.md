@@ -22,40 +22,44 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 961
+Content-length: 1111
 {
-  "city": "city-value",
-  "country": "country-value",
-  "department": "department-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
-  "givenName": "givenName-value",
-  "jobTitle": "jobTitle-value",
-  "lastDirSyncTime": "datetime-value",
-  "mail": "mail-value",
-  "mailNickname": "mailNickname-value",
-  "mobile": "mobile-value",
-  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
-  "postalCode": "postalCode-value",
-  "provisioningErrors": [
+  "values": [
     {
+      "city": "city-value",
+      "country": "country-value",
+      "department": "department-value",
+      "dirSyncEnabled": true,
+      "displayName": "displayName-value",
+      "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "lastDirSyncTime": "datetime-value",
+      "mail": "mail-value",
+      "mailNickname": "mailNickname-value",
+      "mobile": "mobile-value",
+      "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+      "postalCode": "postalCode-value",
+      "provisioningErrors": [
+        {
+        }
+      ],
+      "proxyAddresses": [
+        "proxyAddresses-value"
+      ],
+      "sipProxyAddress": "sipProxyAddress-value",
+      "state": "state-value",
+      "streetAddress": "streetAddress-value",
+      "surname": "surname-value",
+      "telephoneNumber": "telephoneNumber-value",
+      "thumbnailPhoto": "thumbnailPhoto-value",
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "proxyAddresses": [
-    "proxyAddresses-value"
-  ],
-  "sipProxyAddress": "sipProxyAddress-value",
-  "state": "state-value",
-  "streetAddress": "streetAddress-value",
-  "surname": "surname-value",
-  "telephoneNumber": "telephoneNumber-value",
-  "thumbnailPhoto": "thumbnailPhoto-value",
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 8f84e45a-2621-4098-867b-7a757ccab008
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: ba1c2fbb-7b91-47c5-a2db-fa5a063a2505
+2015-10-09 18:34:12 UTC -->

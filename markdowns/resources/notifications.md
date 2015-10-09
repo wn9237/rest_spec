@@ -15,5 +15,5 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/notification_list.md) | [Notification](notification.md) [] |Get notification object collection. |
 
-<!-- uuid: 893255e9-9a3b-4f1a-b197-0ff53a3f0c72
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 61870592-8dae-4502-b52e-267b6e6048f4
+2015-10-09 18:34:13 UTC -->

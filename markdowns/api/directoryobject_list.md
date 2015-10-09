@@ -22,13 +22,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 111
+Content-length: 153
 {
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  "values": [
+    {
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: ce225a3f-5482-457a-af9d-ef1359d6bc00
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: 0b8a341f-a0c8-4160-b9e4-8b1d2f7b7f4c
+2015-10-09 18:34:12 UTC -->

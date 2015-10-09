@@ -22,21 +22,25 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 370
+Content-length: 444
 {
-  "AlertId": "AlertId-value",
-  "AlertName": "AlertName-value",
-  "AlertDescription": "AlertDescription-value",
-  "LowSeverityThreshold": 99,
-  "MediumSeverityThreshold": 99,
-  "HighSeverityThreshold": 99,
-  "Type": 99,
-  "Severity": 99,
-  "SecurityImpact": "SecurityImpact-value",
-  "MitigationSteps": "MitigationSteps-value",
-  "HowToPrevent": "HowToPrevent-value"
+  "values": [
+    {
+      "AlertId": "AlertId-value",
+      "AlertName": "AlertName-value",
+      "AlertDescription": "AlertDescription-value",
+      "LowSeverityThreshold": 99,
+      "MediumSeverityThreshold": 99,
+      "HighSeverityThreshold": 99,
+      "Type": 99,
+      "Severity": 99,
+      "SecurityImpact": "SecurityImpact-value",
+      "MitigationSteps": "MitigationSteps-value",
+      "HowToPrevent": "HowToPrevent-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 37dd1a98-14d0-41e8-a20e-80c7e223f2e3
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: df8c4e74-8199-4a76-a83b-66608ffeaecd
+2015-10-09 18:34:12 UTC -->

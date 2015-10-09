@@ -22,13 +22,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 86
+Content-length: 128
 {
-  "TenantId": "TenantId-value",
-  "IsRegistered": true,
-  "Status": "Status-value"
+  "values": [
+    {
+      "TenantId": "TenantId-value",
+      "IsRegistered": true,
+      "Status": "Status-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 9710bf05-a1ea-416a-9810-febb97e4d11b
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 96ea8eff-efd9-40ee-b385-87a032edbc90
+2015-10-09 18:34:13 UTC -->

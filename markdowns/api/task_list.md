@@ -22,31 +22,35 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 641
+Content-length: 755
 {
-  "createdBy": "createdBy-value",
-  "assignedTo": "assignedTo-value",
-  "planId": "planId-value",
-  "bucketId": "bucketId-value",
-  "title": "title-value",
-  "orderHint": "orderHint-value",
-  "assigneePriority": "assigneePriority-value",
-  "percentComplete": 99,
-  "startDate": "datetime-value",
-  "assignedToDate": "datetime-value",
-  "createdDate": "datetime-value",
-  "assignedBy": "assignedBy-value",
-  "dueDate": "datetime-value",
-  "hasNotes": true,
-  "previewType": "previewType-value",
-  "completedDate": "datetime-value",
-  "numberOfReferences": 99,
-  "appliedCategories": {
-  },
-  "id": "id-value",
-  "version": "version-value"
+  "values": [
+    {
+      "createdBy": "createdBy-value",
+      "assignedTo": "assignedTo-value",
+      "planId": "planId-value",
+      "bucketId": "bucketId-value",
+      "title": "title-value",
+      "orderHint": "orderHint-value",
+      "assigneePriority": "assigneePriority-value",
+      "percentComplete": 99,
+      "startDate": "datetime-value",
+      "assignedToDate": "datetime-value",
+      "createdDate": "datetime-value",
+      "assignedBy": "assignedBy-value",
+      "dueDate": "datetime-value",
+      "hasNotes": true,
+      "previewType": "previewType-value",
+      "completedDate": "datetime-value",
+      "numberOfReferences": 99,
+      "appliedCategories": {
+      },
+      "id": "id-value",
+      "version": "version-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 8e06f5fd-3cc5-4cbd-b70a-569870649abb
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 80b6cda2-6146-4662-9644-ff0d977f6edf
+2015-10-09 18:34:13 UTC -->

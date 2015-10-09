@@ -22,52 +22,56 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1025
+Content-length: 1223
 {
-  "assignedPlans": [
+  "values": [
     {
+      "assignedPlans": [
+        {
+        }
+      ],
+      "city": "city-value",
+      "companyLastDirSyncTime": "datetime-value",
+      "country": "country-value",
+      "countryLetterCode": "countryLetterCode-value",
+      "dirSyncEnabled": true,
+      "displayName": "displayName-value",
+      "marketingNotificationEmails": [
+        "marketingNotificationEmails-value"
+      ],
+      "postalCode": "postalCode-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "provisionedPlans": [
+        {
+        }
+      ],
+      "provisioningErrors": [
+        {
+        }
+      ],
+      "securityComplianceNotificationMails": [
+        "securityComplianceNotificationMails-value"
+      ],
+      "securityComplianceNotificationPhones": [
+        "securityComplianceNotificationPhones-value"
+      ],
+      "state": "state-value",
+      "street": "street-value",
+      "technicalNotificationMails": [
+        "technicalNotificationMails-value"
+      ],
+      "telephoneNumber": "telephoneNumber-value",
+      "verifiedDomains": [
+        {
+        }
+      ],
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "city": "city-value",
-  "companyLastDirSyncTime": "datetime-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "marketingNotificationEmails": [
-    "marketingNotificationEmails-value"
-  ],
-  "postalCode": "postalCode-value",
-  "preferredLanguage": "preferredLanguage-value",
-  "provisionedPlans": [
-    {
-    }
-  ],
-  "provisioningErrors": [
-    {
-    }
-  ],
-  "securityComplianceNotificationMails": [
-    "securityComplianceNotificationMails-value"
-  ],
-  "securityComplianceNotificationPhones": [
-    "securityComplianceNotificationPhones-value"
-  ],
-  "state": "state-value",
-  "street": "street-value",
-  "technicalNotificationMails": [
-    "technicalNotificationMails-value"
-  ],
-  "telephoneNumber": "telephoneNumber-value",
-  "verifiedDomains": [
-    {
-    }
-  ],
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 03945b38-e5ef-43c4-8f71-690f519cfb6d
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 563a989e-dcbc-4bb8-b1c4-ec63eacf23f9
+2015-10-09 18:34:13 UTC -->

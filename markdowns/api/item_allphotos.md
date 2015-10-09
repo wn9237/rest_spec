@@ -30,53 +30,57 @@ Content-length: 0
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 665
+Content-length: 867
 {
-  "content": "content-value",
-  "createdBy": {
-  },
-  "createdDateTime": "datetime-value",
-  "cTag": "cTag-value",
-  "description": "description-value",
-  "eTag": "eTag-value",
-  "id": "id-value",
-  "lastModifiedBy": {
-  },
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "parentReference": {
-  },
-  "size": 99,
-  "webDavUrl": "webDavUrl-value",
-  "webUrl": "webUrl-value",
-  "audio": {
-  },
-  "deleted": {
-  },
-  "file": {
-  },
-  "fileSystemInfo": {
-  },
-  "folder": {
-  },
-  "image": {
-  },
-  "location": {
-  },
-  "openWith": {
-  },
-  "photo": {
-  },
-  "searchResult": {
-  },
-  "shared": {
-  },
-  "specialFolder": {
-  },
-  "video": {
-  }
+  "values": [
+    {
+      "content": "content-value",
+      "createdBy": {
+      },
+      "createdDateTime": "datetime-value",
+      "cTag": "cTag-value",
+      "description": "description-value",
+      "eTag": "eTag-value",
+      "id": "id-value",
+      "lastModifiedBy": {
+      },
+      "lastModifiedDateTime": "datetime-value",
+      "name": "name-value",
+      "parentReference": {
+      },
+      "size": 99,
+      "webDavUrl": "webDavUrl-value",
+      "webUrl": "webUrl-value",
+      "audio": {
+      },
+      "deleted": {
+      },
+      "file": {
+      },
+      "fileSystemInfo": {
+      },
+      "folder": {
+      },
+      "image": {
+      },
+      "location": {
+      },
+      "openWith": {
+      },
+      "photo": {
+      },
+      "searchResult": {
+      },
+      "shared": {
+      },
+      "specialFolder": {
+      },
+      "video": {
+      }
+    }
+  ]
 }
 ```
 
-<!-- uuid: b31cd0c4-6471-4f01-97d7-448032ff05e6
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: dde1d09c-9dd1-4a8f-b45e-8eea64d7b643
+2015-10-09 18:34:12 UTC -->

@@ -22,15 +22,19 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 160
+Content-length: 210
 {
-  "UserId": "UserId-value",
-  "RoleId": "RoleId-value",
-  "IsElevated": true,
-  "ExpirationTime": "datetime-value",
-  "ResultMessage": "ResultMessage-value"
+  "values": [
+    {
+      "UserId": "UserId-value",
+      "RoleId": "RoleId-value",
+      "IsElevated": true,
+      "ExpirationTime": "datetime-value",
+      "ResultMessage": "ResultMessage-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 9c9f1857-5461-4782-ba51-4670591fd7df
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 6cbe37aa-917f-42f9-b696-ffe60975f459
+2015-10-09 18:34:13 UTC -->

@@ -22,23 +22,27 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 456
+Content-length: 538
 {
-  "Id": "Id-value",
-  "UserId": "UserId-value",
-  "UserName": "UserName-value",
-  "UserMail": "UserMail-value",
-  "RoleId": "RoleId-value",
-  "RoleName": "RoleName-value",
-  "ExpirationTime": "datetime-value",
-  "CreationTime": "datetime-value",
-  "RequestorId": "RequestorId-value",
-  "RequestorName": "RequestorName-value",
-  "TenantId": "TenantId-value",
-  "RequestType": "RequestType-value",
-  "AdditionalInformation": "AdditionalInformation-value"
+  "values": [
+    {
+      "Id": "Id-value",
+      "UserId": "UserId-value",
+      "UserName": "UserName-value",
+      "UserMail": "UserMail-value",
+      "RoleId": "RoleId-value",
+      "RoleName": "RoleName-value",
+      "ExpirationTime": "datetime-value",
+      "CreationTime": "datetime-value",
+      "RequestorId": "RequestorId-value",
+      "RequestorName": "RequestorName-value",
+      "TenantId": "TenantId-value",
+      "RequestType": "RequestType-value",
+      "AdditionalInformation": "AdditionalInformation-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: f7580dfd-b604-4121-8068-7db4e0a99428
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: ca9eb5f0-8e7e-46f4-842a-2e10a114575d
+2015-10-09 18:34:13 UTC -->

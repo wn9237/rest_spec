@@ -49,5 +49,5 @@ Here is a JSON representation of the resource
 |[Update](../api/calendargroup_update.md) | [CalendarGroup](calendargroup.md)	|Update CalendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | Void	|Delete CalendarGroup object. |
 
-<!-- uuid: bc756dbf-1294-42f4-a2ff-841165c2c562
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: ea93dbe1-0215-4b39-b399-e7055d3a56eb
+2015-10-09 18:34:12 UTC -->

@@ -22,18 +22,22 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 271
+Content-length: 333
 {
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "expiryTime": "datetime-value",
-  "objectId": "objectId-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value",
-  "startTime": "datetime-value"
+  "values": [
+    {
+      "clientId": "clientId-value",
+      "consentType": "consentType-value",
+      "expiryTime": "datetime-value",
+      "objectId": "objectId-value",
+      "principalId": "principalId-value",
+      "resourceId": "resourceId-value",
+      "scope": "scope-value",
+      "startTime": "datetime-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 3e19f285-579f-4979-a3e1-be7b2008664d
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 717f17b7-0d0d-4279-97d0-459660773da7
+2015-10-09 18:34:13 UTC -->

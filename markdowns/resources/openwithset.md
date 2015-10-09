@@ -23,5 +23,5 @@ Here is a JSON representation of the resource
 |web|[openWithApp](openwithapp.md)||
 |webEmbedded|[openWithApp](openwithapp.md)||
 
-<!-- uuid: bf55013b-ce58-4d4d-bbdd-aa64b23c4f4a
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: 8f6cc8d5-8563-4722-8131-b1cc3fb7d0ba
+2015-10-09 18:34:13 UTC -->

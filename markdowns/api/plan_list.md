@@ -22,17 +22,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
+Content-length: 237
 {
-  "createdBy": "createdBy-value",
-  "owner": "owner-value",
-  "title": "title-value",
-  "totalTasks": 99,
-  "activeTasks": 99,
-  "id": "id-value",
-  "version": "version-value"
+  "values": [
+    {
+      "createdBy": "createdBy-value",
+      "owner": "owner-value",
+      "title": "title-value",
+      "totalTasks": 99,
+      "activeTasks": 99,
+      "id": "id-value",
+      "version": "version-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 09c7b902-bff5-4278-a0a0-ac99c55401de
-2015-10-09 18:31:37 UTC -->
+<!-- uuid: e281f806-1f12-44e7-a010-3c17eb0873be
+2015-10-09 18:34:13 UTC -->

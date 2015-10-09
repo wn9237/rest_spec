@@ -15,5 +15,5 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/bucket_list.md) | [Bucket](bucket.md) [] |Get bucket object collection. |
 
-<!-- uuid: 2671f3ae-7a68-4599-bf54-42858c9f21d8
-2015-10-09 18:31:36 UTC -->
+<!-- uuid: 45ad70f0-8f75-4288-8326-460c67fbeadd
+2015-10-09 18:34:12 UTC -->

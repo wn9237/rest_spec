@@ -22,91 +22,95 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2047
+Content-length: 2401
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
+  "values": [
     {
+      "accountEnabled": true,
+      "assignedLicenses": [
+        {
+        }
+      ],
+      "assignedPlans": [
+        {
+        }
+      ],
+      "city": "city-value",
+      "country": "country-value",
+      "department": "department-value",
+      "dirSyncEnabled": true,
+      "displayName": "displayName-value",
+      "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+      "givenName": "givenName-value",
+      "immutableId": "immutableId-value",
+      "jobTitle": "jobTitle-value",
+      "lastDirSyncTime": "datetime-value",
+      "mail": "mail-value",
+      "mailNickname": "mailNickname-value",
+      "mobile": "mobile-value",
+      "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+      "otherMails": [
+        "otherMails-value"
+      ],
+      "passwordPolicies": "passwordPolicies-value",
+      "passwordProfile": {
+      },
+      "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+      "postalCode": "postalCode-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "provisionedPlans": [
+        {
+        }
+      ],
+      "provisioningErrors": [
+        {
+        }
+      ],
+      "proxyAddresses": [
+        "proxyAddresses-value"
+      ],
+      "sipProxyAddress": "sipProxyAddress-value",
+      "state": "state-value",
+      "streetAddress": "streetAddress-value",
+      "surname": "surname-value",
+      "telephoneNumber": "telephoneNumber-value",
+      "thumbnailPhoto": "thumbnailPhoto-value",
+      "usageLocation": "usageLocation-value",
+      "userPrincipalName": "userPrincipalName-value",
+      "userType": "userType-value",
+      "MailboxGuid": "MailboxGuid-value",
+      "AboutMe": "AboutMe-value",
+      "Alias": "Alias-value",
+      "Birthday": "datetime-value",
+      "HireDate": "datetime-value",
+      "Interests": [
+        "Interests-value"
+      ],
+      "MySite": "MySite-value",
+      "PastProjects": [
+        "PastProjects-value"
+      ],
+      "PreferredName": "PreferredName-value",
+      "PrincipalName": "PrincipalName-value",
+      "Responsibilities": [
+        "Responsibilities-value"
+      ],
+      "Schools": [
+        "Schools-value"
+      ],
+      "Skills": [
+        "Skills-value"
+      ],
+      "Tags": [
+        "Tags-value"
+      ],
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "assignedPlans": [
-    {
-    }
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "department": "department-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
-  "givenName": "givenName-value",
-  "immutableId": "immutableId-value",
-  "jobTitle": "jobTitle-value",
-  "lastDirSyncTime": "datetime-value",
-  "mail": "mail-value",
-  "mailNickname": "mailNickname-value",
-  "mobile": "mobile-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "otherMails": [
-    "otherMails-value"
-  ],
-  "passwordPolicies": "passwordPolicies-value",
-  "passwordProfile": {
-  },
-  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
-  "postalCode": "postalCode-value",
-  "preferredLanguage": "preferredLanguage-value",
-  "provisionedPlans": [
-    {
-    }
-  ],
-  "provisioningErrors": [
-    {
-    }
-  ],
-  "proxyAddresses": [
-    "proxyAddresses-value"
-  ],
-  "sipProxyAddress": "sipProxyAddress-value",
-  "state": "state-value",
-  "streetAddress": "streetAddress-value",
-  "surname": "surname-value",
-  "telephoneNumber": "telephoneNumber-value",
-  "thumbnailPhoto": "thumbnailPhoto-value",
-  "usageLocation": "usageLocation-value",
-  "userPrincipalName": "userPrincipalName-value",
-  "userType": "userType-value",
-  "MailboxGuid": "MailboxGuid-value",
-  "AboutMe": "AboutMe-value",
-  "Alias": "Alias-value",
-  "Birthday": "datetime-value",
-  "HireDate": "datetime-value",
-  "Interests": [
-    "Interests-value"
-  ],
-  "MySite": "MySite-value",
-  "PastProjects": [
-    "PastProjects-value"
-  ],
-  "PreferredName": "PreferredName-value",
-  "PrincipalName": "PrincipalName-value",
-  "Responsibilities": [
-    "Responsibilities-value"
-  ],
-  "Schools": [
-    "Schools-value"
-  ],
-  "Skills": [
-    "Skills-value"
-  ],
-  "Tags": [
-    "Tags-value"
-  ],
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 029c2987-1310-4ff9-882c-fdb57063122a
-2015-10-09 18:31:38 UTC -->
+<!-- uuid: dfe87071-2bb8-4ec6-9afd-57f434d2a0e5
+2015-10-09 18:34:14 UTC -->

@@ -211,6 +211,9 @@ module SpecMaker
 				end
 			end
 		end 
+		if collFlag 
+			model = {"values" => [model]}
+		end
 		return JSON.pretty_generate model
 	end
 
