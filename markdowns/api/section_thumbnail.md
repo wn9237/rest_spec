@@ -28,8 +28,8 @@ POST /users/<objectId>/notes/sections/<id>/Thumbnail
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 23
+Content-length: 29
 {
-  "value": "-value"
+  "value": "Stream-value"
 }
 ```

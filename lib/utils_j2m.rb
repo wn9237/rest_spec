@@ -187,11 +187,11 @@ module SpecMaker
 	def self.get_json_model_method (objectName=nil, collFlag=false)
 		model = {}
 		if SIMPLETYPES.include? objectName
-			model[:value] = assign_value(objectName)
+			model[:value] = assign_value(objectName, objectName)
 			if collFlag
-				model[:value] = [assign_value(objectName)]
+				model[:value] = [assign_value(objectName, objectName)]
 			else
-				model[:value] = assign_value(objectName)
+				model[:value] = assign_value(objectName, objectName)
 			end
 			return JSON.pretty_generate model
 		end

@@ -36,10 +36,10 @@ POST /users/<objectId>/getMemberObjects
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 33
+Content-length: 39
 {
   "value": [
-    "-value"
+    "String-value"
   ]
 }
 ```
