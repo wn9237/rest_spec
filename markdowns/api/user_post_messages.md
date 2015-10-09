@@ -4,8 +4,8 @@ Use this API to create a new Message.
 ### HTTP request
 ```http
 POST /users/<objectId>/Messages
-POST /drives/<id>/root/createdByUser/Messages
-POST /drives/<id>/root/lastModifiedByUser/Messages
+POST /drive/root/createdByUser/Messages
+POST /drive/root/lastModifiedByUser/Messages
 
 ```
 ### Request headers
@@ -75,5 +75,5 @@ Content-length: 838
 }
 ```
 
-<!-- uuid: f411b1c4-9cf7-4610-acf9-cafb457a1235
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: d1e640df-fe6a-490a-a5d9-d4543263e126
+2015-10-09 17:20:42 UTC -->

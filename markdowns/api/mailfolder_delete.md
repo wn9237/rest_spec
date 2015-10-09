@@ -5,7 +5,7 @@ Delete MailFolder.
 ```http
 DELETE /users/<objectId>/RootFolder
 DELETE /users/<objectId>/Folders/<Id>
-DELETE /drives/<id>/root/createdByUser/RootFolder
+DELETE /drive/root/createdByUser/RootFolder
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: a14b1837-1e2f-4388-8ad6-5f7962a1521b
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 8ac03bd4-386e-4fd0-8232-4236ccb70605
+2015-10-09 17:20:41 UTC -->

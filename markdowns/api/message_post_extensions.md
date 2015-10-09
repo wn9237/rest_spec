@@ -4,8 +4,8 @@ Use this API to create a new Extension.
 ### HTTP request
 ```http
 POST /users/<objectId>/Messages/<Id>/Extensions
+POST /drive/root/createdByUser/Messages/<Id>/Extensions
 POST /users/<objectId>/RootFolder/Messages/<Id>/Extensions
-POST /users/<objectId>/Folders/<Id>/Messages/<Id>/Extensions
 
 ```
 ### Request headers
@@ -32,5 +32,5 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 1b6f10d9-125b-43ff-b938-612787f78c13
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: d1c6696c-a60f-44a4-b504-3dba01c67950
+2015-10-09 17:20:41 UTC -->

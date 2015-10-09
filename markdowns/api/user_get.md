@@ -4,8 +4,8 @@ Retrieve the properties and relationships of user object.
 ### HTTP request
 ```http
 GET /users/<objectId>
-GET /drives/<id>/root/createdByUser
-GET /drives/<id>/root/lastModifiedByUser
+GET /drive/root/createdByUser
+GET /drive/root/lastModifiedByUser
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -110,5 +110,5 @@ Content-length: 2047
 }
 ```
 
-<!-- uuid: 1aa7bddc-00e0-4182-9bb9-1c8d10e7819d
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 40ede414-5a90-45c3-b348-888ca02df476
+2015-10-09 17:20:42 UTC -->

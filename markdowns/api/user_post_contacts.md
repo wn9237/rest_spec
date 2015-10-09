@@ -4,8 +4,8 @@ Use this API to create a new Contact.
 ### HTTP request
 ```http
 POST /users/<objectId>/Contacts
-POST /drives/<id>/root/createdByUser/Contacts
-POST /drives/<id>/root/lastModifiedByUser/Contacts
+POST /drive/root/createdByUser/Contacts
+POST /drive/root/lastModifiedByUser/Contacts
 
 ```
 ### Request headers
@@ -80,5 +80,5 @@ Content-length: 1289
 }
 ```
 
-<!-- uuid: 94a4eb6a-5e9f-4c3a-bd07-1e70db5f126e
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 1f1135e9-1031-4266-a754-d4ce6765e33b
+2015-10-09 17:20:42 UTC -->

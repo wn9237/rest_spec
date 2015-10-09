@@ -3,9 +3,9 @@
 Delete thumbnailSet.
 ### HTTP request
 ```http
+DELETE /drive/root/thumbnails/<id>
+DELETE /drive/items/<id>/thumbnails/<id>
 DELETE /drives/<id>/root/thumbnails/<id>
-DELETE /shares/<id>/items/<id>/thumbnails/<id>
-DELETE /drives/<id>/items/<id>/thumbnails/<id>
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 911a8b84-085c-46f0-a489-5019f9a24e7f
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: c42f392e-18f9-49e6-ad0e-a96539679790
+2015-10-09 17:20:42 UTC -->

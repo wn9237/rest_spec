@@ -4,8 +4,8 @@ Retrieve the properties and relationships of resource object.
 ### HTTP request
 ```http
 GET /users/<objectId>/notes/resources/<id>
-GET /drives/<id>/root/createdByUser/notes/resources/<id>
-GET /drives/<id>/root/lastModifiedByUser/notes/resources/<id>
+GET /drive/root/createdByUser/notes/resources/<id>
+GET /drive/root/lastModifiedByUser/notes/resources/<id>
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -33,5 +33,5 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: 6da665aa-e730-4850-b55d-7d4e7a1aa948
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: f2480e21-2bfa-43ed-b6b6-a63065c3c2ec
+2015-10-09 17:20:42 UTC -->

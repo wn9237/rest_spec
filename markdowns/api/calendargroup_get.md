@@ -4,8 +4,8 @@ Retrieve the properties and relationships of calendargroup object.
 ### HTTP request
 ```http
 GET /users/<objectId>/CalendarGroups/<Id>
-GET /drives/<id>/root/createdByUser/CalendarGroups/<Id>
-GET /drives/<id>/root/lastModifiedByUser/CalendarGroups/<Id>
+GET /drive/root/createdByUser/CalendarGroups/<Id>
+GET /drive/root/lastModifiedByUser/CalendarGroups/<Id>
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -33,5 +33,5 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: 5101273f-4d51-414a-8852-98235bd09581
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: 2cb58f18-7f14-4695-997e-3f9e4cadab6e
+2015-10-09 17:20:40 UTC -->

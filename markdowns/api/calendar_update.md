@@ -1,6 +1,6 @@
 # Update Calendar
 
-This is the overriden update description
+Update the properties of calendar object.
 ### HTTP request
 ```http
 PATCH /users/<objectId>/Calendar
@@ -51,5 +51,5 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: 8c1e59fb-5b39-427b-a376-b22d049b0262
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: d184b372-58fb-42ae-a6f1-19f96c94608f
+2015-10-09 17:20:40 UTC -->

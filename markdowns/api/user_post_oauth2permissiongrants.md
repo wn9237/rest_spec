@@ -4,8 +4,8 @@ Use this API to create a new OAuth2PermissionGrant.
 ### HTTP request
 ```http
 POST /users/<objectId>/oauth2PermissionGrants
-POST /drives/<id>/root/createdByUser/oauth2PermissionGrants
-POST /drives/<id>/root/lastModifiedByUser/oauth2PermissionGrants
+POST /drive/root/createdByUser/oauth2PermissionGrants
+POST /drive/root/lastModifiedByUser/oauth2PermissionGrants
 
 ```
 ### Request headers
@@ -39,5 +39,5 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 74b141f9-bd65-49b8-ac32-7bc8259c6aa6
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: a233390f-2f23-4fdd-b3c6-7020b19a74a0
+2015-10-09 17:20:42 UTC -->

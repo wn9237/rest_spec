@@ -5,7 +5,7 @@ Retrieve the properties and relationships of photo object.
 ```http
 GET /users/<objectId>/UserPhoto
 GET /groups/<objectId>/GroupPhoto
-GET /drives/<id>/root/createdByUser/UserPhoto
+GET /drive/root/createdByUser/UserPhoto
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -32,5 +32,5 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 95b3c970-0880-460d-82e5-5a88aa02c084
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 052e8edc-9115-4e17-b06c-5ebb2cf83c63
+2015-10-09 17:20:41 UTC -->

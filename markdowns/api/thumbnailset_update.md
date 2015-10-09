@@ -3,9 +3,9 @@
 Update the properties of thumbnailset object.
 ### HTTP request
 ```http
+PATCH /drive/root/thumbnails/<id>
+PATCH /drive/items/<id>/thumbnails/<id>
 PATCH /drives/<id>/root/thumbnails/<id>
-PATCH /shares/<id>/items/<id>/thumbnails/<id>
-PATCH /drives/<id>/items/<id>/thumbnails/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -28,7 +28,7 @@ If successful, this method returns a `200 OK` response code and updated [thumbna
 ##### Request
 Here is an example of the request.
 ```http
-PUT /drives/<id>/root/thumbnails/<id>
+PUT /drive/root/thumbnails/<id>
 Content-type: application/json
 Content-length: 96
 {
@@ -62,5 +62,5 @@ Content-length: 96
 }
 ```
 
-<!-- uuid: b1d1ea9d-5e48-4af7-85c5-30ea85a08f0f
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 41a49f24-79a5-42d7-a705-0eecbc0eaa2c
+2015-10-09 17:20:42 UTC -->

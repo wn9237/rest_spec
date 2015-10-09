@@ -5,7 +5,7 @@ Delete Conversation.
 ```http
 DELETE /groups/<objectId>/Conversations/<Id>
 DELETE /users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>
-DELETE /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
+DELETE /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 2ac90e85-c8b2-412a-be84-5c30e8eb22b5
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: 1f6e6c13-4450-447f-9269-050a062242dd
+2015-10-09 17:20:41 UTC -->

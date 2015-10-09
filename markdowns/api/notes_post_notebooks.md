@@ -4,8 +4,8 @@ Use this API to create a new Notebook.
 ### HTTP request
 ```http
 POST /users/<objectId>/notes/notebooks
-POST /drives/<id>/root/createdByUser/notes/notebooks
-POST /drives/<id>/root/lastModifiedByUser/notes/notebooks
+POST /drive/root/createdByUser/notes/notebooks
+POST /drive/root/lastModifiedByUser/notes/notebooks
 
 ```
 ### Request headers
@@ -45,5 +45,5 @@ Content-length: 400
 }
 ```
 
-<!-- uuid: 9f5aec37-00d3-4cf9-afea-aac2cc41fc59
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 7a5ba59b-010f-4789-90a9-e1c64df61281
+2015-10-09 17:20:41 UTC -->

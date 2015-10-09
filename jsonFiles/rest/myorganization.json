@@ -16,6 +16,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
+    "/myOrganization": true
   },
   "properties": [
     {

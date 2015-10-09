@@ -4,8 +4,8 @@ Update the properties of resource object.
 ### HTTP request
 ```http
 PATCH /users/<objectId>/notes/resources/<id>
-PATCH /drives/<id>/root/createdByUser/notes/resources/<id>
-PATCH /drives/<id>/root/lastModifiedByUser/notes/resources/<id>
+PATCH /drive/root/createdByUser/notes/resources/<id>
+PATCH /drive/root/lastModifiedByUser/notes/resources/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -51,5 +51,5 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: 66e65add-5d4d-4814-8ece-7740ee9bc34f
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 2c13902c-3655-4ef5-886c-f00fec8199b8
+2015-10-09 17:20:42 UTC -->

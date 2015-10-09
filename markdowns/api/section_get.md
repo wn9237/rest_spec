@@ -4,8 +4,8 @@ Retrieve the properties and relationships of section object.
 ### HTTP request
 ```http
 GET /users/<objectId>/notes/sections/<id>
+GET /drive/root/createdByUser/notes/sections/<id>
 GET /users/<objectId>/notes/pages/<id>/parentSection
-GET /drives/<id>/root/createdByUser/notes/sections/<id>
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -38,5 +38,5 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: 992fc1be-1cf0-4f78-91fb-53507bd55dff
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 1f23ffd4-d4da-4c6f-b79b-9df132e90b5f
+2015-10-09 17:20:42 UTC -->

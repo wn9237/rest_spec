@@ -3,9 +3,9 @@
 Use this API to create a new children.
 ### HTTP request
 ```http
+POST /drive/root/children
+POST /drive/items/<id>/children
 POST /drives/<id>/root/children
-POST /shares/<id>/items/<id>/children
-POST /drives/<id>/items/<id>/children
 
 ```
 ### Request headers
@@ -74,5 +74,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: 15b0f8c1-f96f-41b3-840e-8ee46d341882
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: b5ed0190-069f-4ba3-92ef-c19bf8c237f1
+2015-10-09 17:20:41 UTC -->

@@ -4,8 +4,8 @@ Retrieve the properties and relationships of sectiongroup object.
 ### HTTP request
 ```http
 GET /users/<objectId>/notes/sectionGroups/<id>
-GET /drives/<id>/root/createdByUser/notes/sectionGroups/<id>
-GET /users/<objectId>/notes/sections/<id>/parentSectionGroup
+GET /drive/root/createdByUser/notes/sectionGroups/<id>
+GET /drive/root/lastModifiedByUser/notes/sectionGroups/<id>
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -38,5 +38,5 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 89f2764b-07ca-4035-b253-fc0edeb1a13d
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 00f23487-929d-49af-bfb8-1462012aaa04
+2015-10-09 17:20:42 UTC -->

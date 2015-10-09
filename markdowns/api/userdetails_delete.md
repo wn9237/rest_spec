@@ -5,7 +5,7 @@ Delete UserDetails.
 ```http
 DELETE /users/<objectId>/details
 DELETE /groups/<objectId>/details
-DELETE /drives/<id>/root/createdByUser/details
+DELETE /drive/root/createdByUser/details
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 14277034-9faf-4934-8b86-7294f9b3b732
-2015-10-09 16:05:04 UTC -->
+<!-- uuid: f15d4aa7-06d2-4428-bcc5-d88f8d46ddd9
+2015-10-09 17:20:42 UTC -->

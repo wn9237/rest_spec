@@ -3,9 +3,9 @@
 
 ### HTTP request
 ```http
+POST /drive/root/delta
+POST /drive/items/<id>/delta
 POST /drives/<id>/root/delta
-POST /shares/<id>/items/<id>/delta
-POST /drives/<id>/items/<id>/delta
 
 ```
 ### Request headers
@@ -27,7 +27,7 @@ If successful, this method returns `200, OK` response code and [item](../resourc
 Here is an example of how to call this API.
 ##### Request
 ```http
-POST /drives/<id>/root/delta
+POST /drive/root/delta
 Content-type: application/json
 Content-length: 0
 ```
@@ -83,5 +83,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: 83a4b6b9-1842-46f5-9337-5f1166f41d22
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 3537fa1c-8cb5-41f7-aa7f-abab7da7a556
+2015-10-09 17:20:41 UTC -->

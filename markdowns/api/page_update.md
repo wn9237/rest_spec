@@ -4,8 +4,8 @@ Update the properties of page object.
 ### HTTP request
 ```http
 PATCH /users/<objectId>/notes/pages/<id>
-PATCH /drives/<id>/root/createdByUser/notes/pages/<id>
-PATCH /users/<objectId>/notes/sections/<id>/pages/<id>
+PATCH /drive/root/createdByUser/notes/pages/<id>
+PATCH /drive/root/lastModifiedByUser/notes/pages/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -68,5 +68,5 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: 2eeba47d-0dd4-4a3f-a268-5288e25f893b
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 5ea16838-e35e-47e5-8c18-398cd896e473
+2015-10-09 17:20:41 UTC -->

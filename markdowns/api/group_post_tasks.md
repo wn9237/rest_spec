@@ -5,7 +5,7 @@ Use this API to create a new Task.
 ```http
 POST /groups/<objectId>/tasks
 POST /users/<objectId>/JoinedGroups/<objectId>/tasks
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/tasks
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/tasks
 
 ```
 ### Request headers
@@ -52,5 +52,5 @@ Content-length: 641
 }
 ```
 
-<!-- uuid: 6b98c2a5-0c51-4a09-ab31-237802596b29
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: ce40e84f-f121-46b0-9676-9ef8ee462661
+2015-10-09 17:20:41 UTC -->

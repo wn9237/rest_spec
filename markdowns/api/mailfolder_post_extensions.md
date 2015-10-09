@@ -5,7 +5,7 @@ Use this API to create a new Extension.
 ```http
 POST /users/<objectId>/RootFolder/Extensions
 POST /users/<objectId>/Folders/<Id>/Extensions
-POST /drives/<id>/root/createdByUser/RootFolder/Extensions
+POST /drive/root/createdByUser/RootFolder/Extensions
 
 ```
 ### Request headers
@@ -32,5 +32,5 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 4ffc4cf1-042a-4c8d-a468-6ad91650d2ed
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: d1644a68-e9b2-4f00-911b-1ba295a937af
+2015-10-09 17:20:41 UTC -->

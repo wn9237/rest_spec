@@ -3,9 +3,9 @@
 Use this API to create a new thumbnailSet.
 ### HTTP request
 ```http
+POST /drive/root/thumbnails
+POST /drive/items/<id>/thumbnails
 POST /drives/<id>/root/thumbnails
-POST /shares/<id>/items/<id>/thumbnails
-POST /drives/<id>/items/<id>/thumbnails
 
 ```
 ### Request headers
@@ -40,5 +40,5 @@ Content-length: 96
 }
 ```
 
-<!-- uuid: 1c58e7ac-71ac-4f21-83d9-c873a4372c24
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: edbd1c63-3d63-480e-be44-21d7be9e7c13
+2015-10-09 17:20:41 UTC -->

@@ -3,8 +3,8 @@
 Update the properties of approleassignment object.
 ### HTTP request
 ```http
-PATCH /servicePrincipals/<objectId>/appRoleAssignedTo
 PATCH /users/<objectId>/appRoleAssignments/<objectId>
+PATCH /servicePrincipals/<objectId>/appRoleAssignedTo
 PATCH /groups/<objectId>/appRoleAssignments/<objectId>
 ```
 ### Optional request headers
@@ -33,7 +33,7 @@ If successful, this method returns a `200 OK` response code and updated [AppRole
 ##### Request
 Here is an example of the request.
 ```http
-PUT /servicePrincipals/<objectId>/appRoleAssignedTo
+PUT /users/<objectId>/appRoleAssignments/<objectId>
 Content-type: application/json
 Content-length: 398
 {
@@ -69,5 +69,5 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: 9d12d56b-3b10-4596-87f7-a4a752ca7dcc
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: 2d69a163-9a5f-45ac-a208-1b90c76d98c5
+2015-10-09 17:20:40 UTC -->

@@ -3,9 +3,9 @@
 Use this API to create a new version.
 ### HTTP request
 ```http
+POST /drive/root/versions
+POST /drive/items/<id>/versions
 POST /drives/<id>/root/versions
-POST /shares/<id>/items/<id>/versions
-POST /drives/<id>/items/<id>/versions
 
 ```
 ### Request headers
@@ -74,5 +74,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: 2e47f5d2-dea1-4d21-915f-22d119d5ea22
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: a8a4d84b-9cfb-44a7-b63c-7fab48ac6eb1
+2015-10-09 17:20:41 UTC -->

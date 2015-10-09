@@ -4,8 +4,8 @@ Update the properties of section object.
 ### HTTP request
 ```http
 PATCH /users/<objectId>/notes/sections/<id>
+PATCH /drive/root/createdByUser/notes/sections/<id>
 PATCH /users/<objectId>/notes/pages/<id>/parentSection
-PATCH /drives/<id>/root/createdByUser/notes/sections/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -66,5 +66,5 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: 46785d47-e0c9-44a4-8868-daf2f08e9a8d
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 30628f5b-ee29-410e-a4d4-a1fe8c40504f
+2015-10-09 17:20:42 UTC -->

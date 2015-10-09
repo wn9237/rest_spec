@@ -4,8 +4,8 @@ Use this API to create a new createdObject.
 ### HTTP request
 ```http
 POST /users/<objectId>/createdObjects
-POST /drives/<id>/root/createdByUser/createdObjects
-POST /drives/<id>/root/lastModifiedByUser/createdObjects
+POST /drive/root/createdByUser/createdObjects
+POST /drive/root/lastModifiedByUser/createdObjects
 
 ```
 ### Request headers
@@ -34,5 +34,5 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: f0cfb913-596e-4434-845c-0a285465a103
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 481dca57-6912-4a2a-b565-448c93bc5b58
+2015-10-09 17:20:42 UTC -->

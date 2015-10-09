@@ -1,11 +1,11 @@
 # Create Calendar
 
-This is the overriden create description
+Use this API to create a new Calendar.
 ### HTTP request
 ```http
 POST /users/<objectId>/Calendars
-POST /drives/<id>/root/createdByUser/Calendars
-POST /drives/<id>/root/lastModifiedByUser/Calendars
+POST /drive/root/createdByUser/Calendars
+POST /drive/root/lastModifiedByUser/Calendars
 
 ```
 ### Request headers
@@ -35,5 +35,5 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: 120da4ea-e0d1-46a8-a5f2-8c4d25fcd598
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 641b2939-434e-4797-a726-e13f50f60176
+2015-10-09 17:20:42 UTC -->

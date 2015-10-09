@@ -31,5 +31,5 @@ None
 |[Update](../api/pimalertsettings_update.md) | [PimAlertSettings](pimalertsettings.md)	|Update PimAlertSettings object. |
 |[Delete](../api/pimalertsettings_delete.md) | Void	|Delete PimAlertSettings object. |
 
-<!-- uuid: cd4d950c-df8c-4006-b7c6-b1a032ca9680
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: aa964c4a-28ed-4321-8ebb-97b0cc4bf63f
+2015-10-09 17:20:42 UTC -->

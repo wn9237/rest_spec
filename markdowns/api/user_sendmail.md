@@ -4,8 +4,8 @@
 ### HTTP request
 ```http
 POST /users/<objectId>/SendMail
-POST /drives/<id>/root/createdByUser/SendMail
-POST /drives/<id>/root/lastModifiedByUser/SendMail
+POST /drive/root/createdByUser/SendMail
+POST /drive/root/lastModifiedByUser/SendMail
 
 ```
 ### Request headers
@@ -46,5 +46,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 835a069f-41a6-45d6-8a8e-fe1dfa974e48
-2015-10-09 16:05:04 UTC -->
+<!-- uuid: 439a124d-bbcd-4a2a-9d2c-60686182b761
+2015-10-09 17:20:42 UTC -->

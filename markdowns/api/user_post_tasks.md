@@ -4,8 +4,8 @@ Use this API to create a new Task.
 ### HTTP request
 ```http
 POST /users/<objectId>/tasks
-POST /drives/<id>/root/createdByUser/tasks
-POST /drives/<id>/root/lastModifiedByUser/tasks
+POST /drive/root/createdByUser/tasks
+POST /drive/root/lastModifiedByUser/tasks
 
 ```
 ### Request headers
@@ -52,5 +52,5 @@ Content-length: 641
 }
 ```
 
-<!-- uuid: a016057c-a3cb-4ad8-8352-2879c67cda9e
-2015-10-09 16:05:04 UTC -->
+<!-- uuid: 1e1716d1-91ae-4f30-8f9c-3c2bdb653aa9
+2015-10-09 17:20:42 UTC -->

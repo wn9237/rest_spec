@@ -5,7 +5,7 @@ Use this API to create a new Plan.
 ```http
 POST /groups/<objectId>/plans
 POST /users/<objectId>/JoinedGroups/<objectId>/plans
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/plans
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/plans
 
 ```
 ### Request headers
@@ -38,5 +38,5 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 88996233-131e-40e2-898f-4580aeeef2b7
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 073ed238-4f6d-4047-a84d-9d90c6fafe5d
+2015-10-09 17:20:41 UTC -->

@@ -16,6 +16,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
+    "/myOrganization/siteCollections/<id>/sites/<id>": true
   },
   "properties": [
     {

@@ -3,7 +3,7 @@
 Use this API to create a new SiteCollection.
 ### HTTP request
 ```http
-
+POST /myOrganization/siteCollections
 
 ```
 ### Request headers
@@ -30,5 +30,5 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 7e0eb6a9-529b-44dc-a26d-f0eb8811dfda
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: cec27e17-a534-4b07-b6d9-32874a45655c
+2015-10-09 17:20:41 UTC -->

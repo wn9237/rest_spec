@@ -3,7 +3,7 @@
 Use this API to create a new Site.
 ### HTTP request
 ```http
-
+POST /myOrganization/siteCollections/<id>/sites
 
 ```
 ### Request headers
@@ -30,5 +30,5 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: fe613613-c973-4d1c-95ab-53c487fab17f
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 68a53cd1-b6c0-48c9-a0c5-f8bef004296a
+2015-10-09 17:20:42 UTC -->

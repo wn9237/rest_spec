@@ -5,7 +5,7 @@ Retrieve the properties and relationships of conversation object.
 ```http
 GET /groups/<objectId>/Conversations/<Id>
 GET /users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>
-GET /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
+GET /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -37,5 +37,5 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: 343307f2-6d7c-4660-9e22-b687f87c6f29
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: a0f7c2ed-e2ac-457d-901a-b94600e3d530
+2015-10-09 17:20:41 UTC -->

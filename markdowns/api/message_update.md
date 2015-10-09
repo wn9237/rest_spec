@@ -4,8 +4,8 @@ Update the properties of message object.
 ### HTTP request
 ```http
 PATCH /users/<objectId>/Messages/<Id>
+PATCH /drive/root/createdByUser/Messages/<Id>
 PATCH /users/<objectId>/RootFolder/Messages/<Id>
-PATCH /users/<objectId>/Folders/<Id>/Messages/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -153,5 +153,5 @@ Content-length: 838
 }
 ```
 
-<!-- uuid: c6278aa0-65bb-438c-9c22-e295c33c4c34
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 8143766a-66be-4431-80e5-dd3675aa4fce
+2015-10-09 17:20:41 UTC -->

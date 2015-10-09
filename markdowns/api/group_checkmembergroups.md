@@ -5,7 +5,7 @@
 ```http
 POST /groups/<objectId>/checkMemberGroups
 POST /users/<objectId>/JoinedGroups/<objectId>/checkMemberGroups
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/checkMemberGroups
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/checkMemberGroups
 
 ```
 ### Request headers
@@ -48,5 +48,5 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: ba5c36aa-7354-4185-81f3-bf147f94df58
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 14a099eb-7ad2-45ea-b35e-dde97527be99
+2015-10-09 17:20:41 UTC -->

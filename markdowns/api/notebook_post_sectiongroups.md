@@ -4,8 +4,8 @@ Use this API to create a new SectionGroup.
 ### HTTP request
 ```http
 POST /users/<objectId>/notes/notebooks/<id>/sectionGroups
+POST /drive/root/createdByUser/notes/notebooks/<id>/sectionGroups
 POST /users/<objectId>/notes/pages/<id>/parentNotebook/sectionGroups
-POST /users/<objectId>/notes/sections/<id>/parentNotebook/sectionGroups
 
 ```
 ### Request headers
@@ -40,5 +40,5 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 7d9e3b89-ea27-43f6-b798-f4cb4546b4ab
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 8f59d00d-d77e-425e-b961-49fc1d67b1c7
+2015-10-09 17:20:41 UTC -->

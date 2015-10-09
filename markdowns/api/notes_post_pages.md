@@ -4,8 +4,8 @@ Use this API to create a new Page.
 ### HTTP request
 ```http
 POST /users/<objectId>/notes/pages
-POST /drives/<id>/root/createdByUser/notes/pages
-POST /drives/<id>/root/lastModifiedByUser/notes/pages
+POST /drive/root/createdByUser/notes/pages
+POST /drive/root/lastModifiedByUser/notes/pages
 
 ```
 ### Request headers
@@ -41,5 +41,5 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: e1d2ffe8-8594-4332-896f-95289144fde5
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 87cb9325-70ae-4b6b-918f-3fac569cc958
+2015-10-09 17:20:41 UTC -->

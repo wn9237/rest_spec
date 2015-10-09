@@ -5,7 +5,7 @@
 ```http
 POST /users/<objectId>/RootFolder/Copy
 POST /users/<objectId>/Folders/<Id>/Copy
-POST /drives/<id>/root/createdByUser/RootFolder/Copy
+POST /drive/root/createdByUser/RootFolder/Copy
 
 ```
 ### Request headers
@@ -47,5 +47,5 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 42c47633-781b-4aff-886b-d514ba8f6dda
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: c97d532c-6e1c-4492-897d-a2d8a6796e68
+2015-10-09 17:20:41 UTC -->

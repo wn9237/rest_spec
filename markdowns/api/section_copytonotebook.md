@@ -4,8 +4,8 @@
 ### HTTP request
 ```http
 POST /users/<objectId>/notes/sections/<id>/CopyToNotebook
+POST /drive/root/createdByUser/notes/sections/<id>/CopyToNotebook
 POST /users/<objectId>/notes/pages/<id>/parentSection/CopyToNotebook
-POST /drives/<id>/root/createdByUser/notes/sections/<id>/CopyToNotebook
 
 ```
 ### Request headers
@@ -58,5 +58,5 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: 298ab782-ddf4-461c-b745-e3af100f42db
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 7de2e726-a53b-4c90-bc35-1ac1963ef6f9
+2015-10-09 17:20:42 UTC -->

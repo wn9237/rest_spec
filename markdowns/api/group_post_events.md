@@ -5,7 +5,7 @@ Use this API to create a new Event.
 ```http
 POST /groups/<objectId>/Events
 POST /users/<objectId>/JoinedGroups/<objectId>/Events
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Events
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/Events
 
 ```
 ### Request headers
@@ -71,5 +71,5 @@ Content-length: 901
 }
 ```
 
-<!-- uuid: e9c98b7a-77b5-4d05-9991-3cded2c2bb96
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 35df2ba5-cd55-4a4b-9794-b64d59a93103
+2015-10-09 17:20:41 UTC -->

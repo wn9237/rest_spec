@@ -3,9 +3,9 @@
 
 ### HTTP request
 ```http
+POST /drive/root/createSession
+POST /drive/items/<id>/createSession
 POST /drives/<id>/root/createSession
-POST /shares/<id>/items/<id>/createSession
-POST /drives/<id>/items/<id>/createSession
 
 ```
 ### Request headers
@@ -27,7 +27,7 @@ If successful, this method returns `200, OK` response code and [uploadSession](.
 Here is an example of how to call this API.
 ##### Request
 ```http
-POST /drives/<id>/root/createSession
+POST /drive/root/createSession
 Content-type: application/json
 Content-length: 19
 {
@@ -49,5 +49,5 @@ Content-length: 140
 }
 ```
 
-<!-- uuid: d020848c-1fef-429f-89e1-1e76ce0aec28
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 7332ab4a-1b4b-41db-8f45-818e93519084
+2015-10-09 17:20:41 UTC -->

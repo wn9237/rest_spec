@@ -19,5 +19,5 @@ Here is a JSON representation of the resource
 |Content|String||
 |ContentType|String| Possible values are: `Text`, `HTML`.|
 
-<!-- uuid: eeb998e8-eef6-4674-ba9a-3533411916f7
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 860f4e67-5da6-40a6-9c01-af5f2db05942
+2015-10-09 17:20:41 UTC -->

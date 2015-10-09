@@ -3,7 +3,7 @@
 
 ### HTTP request
 ```http
-
+POST /myOrganization/siteCollections/<id>/FromUrl
 
 ```
 ### Request headers
@@ -25,7 +25,7 @@ If successful, this method returns `200, OK` response code and [SiteMetadata](..
 Here is an example of how to call this API.
 ##### Request
 ```http
-
+POST /myOrganization/siteCollections/<id>/FromUrl
 Content-type: application/json
 Content-length: 0
 ```
@@ -40,5 +40,5 @@ Content-length: 78
 }
 ```
 
-<!-- uuid: cdabce5a-ca10-426b-b744-5efd74043044
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 9e5405e8-8eec-4d63-96da-95d7b5b71ddf
+2015-10-09 17:20:42 UTC -->

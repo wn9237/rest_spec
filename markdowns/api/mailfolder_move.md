@@ -5,7 +5,7 @@
 ```http
 POST /users/<objectId>/RootFolder/Move
 POST /users/<objectId>/Folders/<Id>/Move
-POST /drives/<id>/root/createdByUser/RootFolder/Move
+POST /drive/root/createdByUser/RootFolder/Move
 
 ```
 ### Request headers
@@ -47,5 +47,5 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 41b745aa-ab19-47a5-ab31-2ec971caa1ef
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: e44525d8-e406-4926-a269-4aca87d550e5
+2015-10-09 17:20:41 UTC -->

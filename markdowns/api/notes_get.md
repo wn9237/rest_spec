@@ -4,8 +4,8 @@ Retrieve the properties and relationships of notes object.
 ### HTTP request
 ```http
 GET /users/<objectId>/notes
-GET /drives/<id>/root/createdByUser/notes
-GET /drives/<id>/root/lastModifiedByUser/notes
+GET /drive/root/createdByUser/notes
+GET /drive/root/lastModifiedByUser/notes
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -30,5 +30,5 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 81fef23c-6d13-4433-94aa-e5f2b89bd2fe
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: be05d4f1-715e-4e12-87ca-20535dfeef51
+2015-10-09 17:20:41 UTC -->

@@ -5,7 +5,7 @@ Use this API to create a new member.
 ```http
 POST /groups/<objectId>/members
 POST /users/<objectId>/JoinedGroups/<objectId>/members
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/members
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/members
 
 ```
 ### Request headers
@@ -34,5 +34,5 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: b5414868-6ef1-4836-a59e-7071851969a4
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 1ca542d4-b58f-458c-8e7b-cfa3a5f06dc1
+2015-10-09 17:20:41 UTC -->

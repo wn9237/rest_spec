@@ -38,5 +38,5 @@ None
 |[Signup](../api/privilegedsignupstatus_signup.md)|[PrivilegedSignupStatus](privilegedsignupstatus.md)||
 |[Skipsetup](../api/privilegedsignupstatus_skipsetup.md)|[None](none.md)||
 
-<!-- uuid: 1ece1810-002c-4851-8a33-c391dec28522
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 28319ffc-21d3-4d3f-88a7-17051d82c282
+2015-10-09 17:20:42 UTC -->

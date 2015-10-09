@@ -35,5 +35,5 @@ Here is a JSON representation of the resource
 |[Create SiteCollection](../api/myorganization_post_sitecollections.md) |[SiteCollection](sitecollection.md)| Create a new SiteCollection by posting to the siteCollections collection.|
 |[Delete](../api/myorganization_delete.md) | Void	|Delete MyOrganization object. |
 
-<!-- uuid: 13cb16ce-22df-40a7-9d59-844a262f6dad
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 7a71912b-b4ed-41f7-90ec-abcd60e9d10c
+2015-10-09 17:20:41 UTC -->

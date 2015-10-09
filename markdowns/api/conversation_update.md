@@ -5,7 +5,7 @@ Update the properties of conversation object.
 ```http
 PATCH /groups/<objectId>/Conversations/<Id>
 PATCH /users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>
-PATCH /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
+PATCH /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -61,5 +61,5 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: d16f9388-3573-4f6d-8a22-9da878a2620e
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: 991f0d34-a460-4e18-b907-56b4da9217d8
+2015-10-09 17:20:41 UTC -->

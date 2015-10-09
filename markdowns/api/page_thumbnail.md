@@ -4,8 +4,8 @@
 ### HTTP request
 ```http
 POST /users/<objectId>/notes/pages/<id>/Thumbnail
-POST /drives/<id>/root/createdByUser/notes/pages/<id>/Thumbnail
-POST /users/<objectId>/notes/sections/<id>/pages/<id>/Thumbnail
+POST /drive/root/createdByUser/notes/pages/<id>/Thumbnail
+POST /drive/root/lastModifiedByUser/notes/pages/<id>/Thumbnail
 
 ```
 ### Request headers
@@ -36,5 +36,5 @@ Content-length: 29
 }
 ```
 
-<!-- uuid: cf00aceb-9d03-46f4-bc5a-10e192031a4e
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 99f61305-3885-44ea-80e6-139d12f69a44
+2015-10-09 17:20:41 UTC -->

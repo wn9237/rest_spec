@@ -4,8 +4,8 @@ Update the properties of notebook object.
 ### HTTP request
 ```http
 PATCH /users/<objectId>/notes/notebooks/<id>
+PATCH /drive/root/createdByUser/notes/notebooks/<id>
 PATCH /users/<objectId>/notes/pages/<id>/parentNotebook
-PATCH /users/<objectId>/notes/sections/<id>/parentNotebook
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -80,5 +80,5 @@ Content-length: 400
 }
 ```
 
-<!-- uuid: a0842a01-c636-4acb-8813-6180081204a7
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 99737e34-9735-4401-97fa-472f835e33c2
+2015-10-09 17:20:41 UTC -->

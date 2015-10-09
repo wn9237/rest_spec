@@ -114,7 +114,7 @@ module SpecMaker
 					baseType = v
 				end
 			end
-			#puts @base_types[baseType.to_sym]
+
 			entity[:Key] = @base_types[baseType.to_sym][:Key]
 
 			entity[:Property] = merge_members(entity[:Property], 
@@ -190,7 +190,8 @@ module SpecMaker
 		puts "-> Processing EntitySet Type #{entity[:Name]}"
 		@json_object[:name] = entity[:Name]
 		@json_object[:isEntitySet] = true
-		dt = entity[:EntityType][(entity[:EntityType].rindex('.') + 1)..-1].chomp(')')		
+		#dt = entity[:EntityType][(entity[:EntityType].rindex('.') + 1)..-1].chomp(')')		
+		dt = get_type(entity[:EntityType])
 		@json_object[:collectionOf] = dt
 
 		# save the collection names & types being created for later checks.
@@ -207,14 +208,43 @@ module SpecMaker
 		end
 		#create_auto_examplefiles((@json_object[:name]).downcase, true)		 
 
-		#puts "calling with #{(@json_object[:name]).downcase}"
 		fill_rest_path("/#{(@json_object[:name])}", dt, true)
 
 		GC.start
 	end
 
-	# Process REST Paths
+	# Process Singleton
+	schema[:EntityContainer][:Singleton].each do |entity|
+		@ientityset = @ientityset + 1
+		@icollection = @icollection + 1
+		@json_object = nil 
+		@json_object = deep_copy(@template) 
 
+		puts "-> Processing Singleton Type #{entity[:Name]}"
+		@json_object[:name] = entity[:Name]
+		@json_object[:isEntitySet] = true
+		#dt = entity[:Type][(entity[:Type].rindex('.') + 1)..-1].chomp(')')		
+		dt = get_type(entity[:Type])
+		@json_object[:collectionOf] = dt
+
+		# save the collection names & types being created for later checks.
+		@collectionNames[entity[:Name]] = dt
+
+		@json_object[:allowPatch] = false
+		@json_object[:allowUpsert] = false
+		@json_object[:allowPatchCreate] = false
+		@json_object[:allowDelete] = false
+
+		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
+		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
+			f.write(JSON.pretty_generate @json_object)
+		end
+		#create_auto_examplefiles((@json_object[:name]).downcase, true)		 
+
+		fill_rest_path("/#{(@json_object[:name])}", dt, false)
+
+		GC.start
+	end
 
 
 

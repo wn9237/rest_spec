@@ -4,8 +4,8 @@ Retrieve the properties and relationships of page object.
 ### HTTP request
 ```http
 GET /users/<objectId>/notes/pages/<id>
-GET /drives/<id>/root/createdByUser/notes/pages/<id>
-GET /users/<objectId>/notes/sections/<id>/pages/<id>
+GET /drive/root/createdByUser/notes/pages/<id>
+GET /drive/root/lastModifiedByUser/notes/pages/<id>
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -39,5 +39,5 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: 024c49eb-dad2-4687-95cd-bb1ecf0072c5
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: fe02587b-d512-40b5-bedb-7a144d22d95c
+2015-10-09 17:20:41 UTC -->

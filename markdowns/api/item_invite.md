@@ -3,9 +3,9 @@
 
 ### HTTP request
 ```http
+POST /drive/root/invite
+POST /drive/items/<id>/invite
 POST /drives/<id>/root/invite
-POST /shares/<id>/items/<id>/invite
-POST /drives/<id>/items/<id>/invite
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ If successful, this method returns `200, OK` response code and [permission](../r
 Here is an example of how to call this API.
 ##### Request
 ```http
-POST /drives/<id>/root/invite
+POST /drive/root/invite
 Content-type: application/json
 Content-length: 154
 {
@@ -69,5 +69,5 @@ Content-length: 176
 }
 ```
 
-<!-- uuid: df339ac0-17e3-440f-bfa1-9a78e41b94db
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: cf6d24d4-ae42-4954-b755-6ab01f34dd17
+2015-10-09 17:20:41 UTC -->

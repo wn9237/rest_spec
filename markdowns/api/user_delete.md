@@ -4,8 +4,8 @@ Delete User.
 ### HTTP request
 ```http
 DELETE /users/<objectId>
-DELETE /drives/<id>/root/createdByUser
-DELETE /drives/<id>/root/lastModifiedByUser
+DELETE /drive/root/createdByUser
+DELETE /drive/root/lastModifiedByUser
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: affb4e46-89b5-4cbd-90e0-ea6f12c6e050
-2015-10-09 16:05:04 UTC -->
+<!-- uuid: aa4a9e62-362a-4089-8fe9-632d0c1eaa9b
+2015-10-09 17:20:42 UTC -->

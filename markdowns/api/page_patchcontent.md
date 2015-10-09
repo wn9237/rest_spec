@@ -4,8 +4,8 @@
 ### HTTP request
 ```http
 POST /users/<objectId>/notes/pages/<id>/PatchContent
-POST /drives/<id>/root/createdByUser/notes/pages/<id>/PatchContent
-POST /users/<objectId>/notes/sections/<id>/pages/<id>/PatchContent
+POST /drive/root/createdByUser/notes/pages/<id>/PatchContent
+POST /drive/root/lastModifiedByUser/notes/pages/<id>/PatchContent
 
 ```
 ### Request headers
@@ -46,5 +46,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: cc57c50b-49fd-48b7-8891-eeb3f675bfed
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: f01649bd-8e9f-49ac-9166-f96618549924
+2015-10-09 17:20:41 UTC -->

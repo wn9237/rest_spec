@@ -5,7 +5,7 @@ Use this API to create a new Conversation.
 ```http
 POST /groups/<objectId>/Conversations
 POST /users/<objectId>/JoinedGroups/<objectId>/Conversations
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Conversations
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations
 
 ```
 ### Request headers
@@ -39,5 +39,5 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: 832d1dd3-8e11-46e3-8968-04a3e6d0099f
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 77816832-fe8c-449e-b675-9d087fa60a46
+2015-10-09 17:20:41 UTC -->

@@ -5,7 +5,7 @@ Update the properties of oauth2permissiongrant object.
 ```http
 PATCH /oauth2PermissionGrants/<objectId>
 PATCH /users/<objectId>/oauth2PermissionGrants/<objectId>
-PATCH /servicePrincipals/<objectId>/oauth2PermissionGrants/<objectId>
+PATCH /drive/root/createdByUser/oauth2PermissionGrants/<objectId>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -63,5 +63,5 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 9068afcf-1585-429c-8a8f-0e7ccfa5907b
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 67981d10-41d9-4f18-9a3c-4e2107be468c
+2015-10-09 17:20:41 UTC -->

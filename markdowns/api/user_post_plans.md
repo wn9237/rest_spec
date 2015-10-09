@@ -4,8 +4,8 @@ Use this API to create a new Plan.
 ### HTTP request
 ```http
 POST /users/<objectId>/plans
-POST /drives/<id>/root/createdByUser/plans
-POST /drives/<id>/root/lastModifiedByUser/plans
+POST /drive/root/createdByUser/plans
+POST /drive/root/lastModifiedByUser/plans
 
 ```
 ### Request headers
@@ -38,5 +38,5 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: acb2ce32-aac8-460c-b863-3b0bc9fac510
-2015-10-09 16:05:04 UTC -->
+<!-- uuid: dc263782-e44a-40c5-9fb9-aea6f1e7ec63
+2015-10-09 17:20:42 UTC -->

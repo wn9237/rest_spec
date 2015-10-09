@@ -4,8 +4,8 @@ Use this API to create a new Extension.
 ### HTTP request
 ```http
 POST /users/<objectId>/CalendarGroups/<Id>/Extensions
-POST /drives/<id>/root/createdByUser/CalendarGroups/<Id>/Extensions
-POST /drives/<id>/root/lastModifiedByUser/CalendarGroups/<Id>/Extensions
+POST /drive/root/createdByUser/CalendarGroups/<Id>/Extensions
+POST /drive/root/lastModifiedByUser/CalendarGroups/<Id>/Extensions
 
 ```
 ### Request headers
@@ -32,5 +32,5 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 4aa09395-03a7-4708-9f5a-5b5f4a1ab657
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: 830e4fa7-582d-4e33-a8d2-947df0fe9f75
+2015-10-09 17:20:40 UTC -->

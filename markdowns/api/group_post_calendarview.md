@@ -5,7 +5,7 @@ Use this API to create a new CalendarView.
 ```http
 POST /groups/<objectId>/CalendarView
 POST /users/<objectId>/JoinedGroups/<objectId>/CalendarView
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/CalendarView
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/CalendarView
 
 ```
 ### Request headers
@@ -71,5 +71,5 @@ Content-length: 901
 }
 ```
 
-<!-- uuid: c3b95e4d-7346-47a7-a284-cc6e5d38fee9
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 53a4599b-10a1-46fb-928c-dfff6924b122
+2015-10-09 17:20:41 UTC -->

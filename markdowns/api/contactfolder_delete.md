@@ -4,8 +4,8 @@ Delete ContactFolder.
 ### HTTP request
 ```http
 DELETE /users/<objectId>/ContactFolders/<Id>
-DELETE /drives/<id>/root/createdByUser/ContactFolders/<Id>
-DELETE /drives/<id>/root/lastModifiedByUser/ContactFolders/<Id>
+DELETE /drive/root/createdByUser/ContactFolders/<Id>
+DELETE /drive/root/lastModifiedByUser/ContactFolders/<Id>
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 33cbf9b8-f547-4554-85f5-987c0bca4760
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: b0c9b2ab-05b4-4e4b-bece-58708811bce7
+2015-10-09 17:20:41 UTC -->

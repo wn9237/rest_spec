@@ -3,9 +3,9 @@
 Use this API to create a new item.
 ### HTTP request
 ```http
+POST /drive/items
 POST /drives/<id>/items
 POST /users/<objectId>/drive/items
-POST /groups/<objectId>/drive/items
 
 ```
 ### Request headers
@@ -74,5 +74,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: ccb35e42-6379-4311-9f86-f60a66882b79
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: 0e5d0aab-ceee-46c3-8c72-58412e4be974
+2015-10-09 17:20:41 UTC -->

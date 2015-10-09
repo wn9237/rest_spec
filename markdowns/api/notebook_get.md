@@ -4,8 +4,8 @@ Retrieve the properties and relationships of notebook object.
 ### HTTP request
 ```http
 GET /users/<objectId>/notes/notebooks/<id>
+GET /drive/root/createdByUser/notes/notebooks/<id>
 GET /users/<objectId>/notes/pages/<id>/parentNotebook
-GET /users/<objectId>/notes/sections/<id>/parentNotebook
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -43,5 +43,5 @@ Content-length: 400
 }
 ```
 
-<!-- uuid: 0fa5692c-f512-4c20-b920-b5096e6db5dd
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 0b69b803-a891-4a5c-a38d-b344008f06be
+2015-10-09 17:20:41 UTC -->

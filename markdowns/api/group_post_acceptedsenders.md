@@ -5,7 +5,7 @@ Use this API to create a new AcceptedSender.
 ```http
 POST /groups/<objectId>/AcceptedSenders
 POST /users/<objectId>/JoinedGroups/<objectId>/AcceptedSenders
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/AcceptedSenders
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/AcceptedSenders
 
 ```
 ### Request headers
@@ -34,5 +34,5 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 3c208dce-ccdf-4cb8-af4c-01d43d3b222f
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: e9bc1ab9-e07e-4bca-ab85-fdeece1e7766
+2015-10-09 17:20:41 UTC -->

@@ -5,7 +5,7 @@ Retrieve the properties and relationships of mailfolder object.
 ```http
 GET /users/<objectId>/RootFolder
 GET /users/<objectId>/Folders/<Id>
-GET /drives/<id>/root/createdByUser/RootFolder
+GET /drive/root/createdByUser/RootFolder
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -33,5 +33,5 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: dffb01a4-dcf4-40b0-a5a0-67fb8da5b8fc
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 0013376a-7d39-4932-859f-c576611b9f45
+2015-10-09 17:20:41 UTC -->

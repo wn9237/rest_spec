@@ -4,8 +4,8 @@ Use this API to create a new Resource.
 ### HTTP request
 ```http
 POST /users/<objectId>/notes/resources
-POST /drives/<id>/root/createdByUser/notes/resources
-POST /drives/<id>/root/lastModifiedByUser/notes/resources
+POST /drive/root/createdByUser/notes/resources
+POST /drive/root/lastModifiedByUser/notes/resources
 
 ```
 ### Request headers
@@ -35,5 +35,5 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: 76535c31-7635-4155-81c5-3490afbca8f5
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 056bbfee-9c7e-43e7-840c-fed78f75937b
+2015-10-09 17:20:41 UTC -->

@@ -3,9 +3,9 @@
 Delete item.
 ### HTTP request
 ```http
+DELETE /drive/root
+DELETE /drive/items/<id>
 DELETE /drives/<id>/root
-DELETE /shares/<id>/items/<id>
-DELETE /drives/<id>/items/<id>
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: fce75ab4-0689-4091-9cee-650917b91af7
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 04c285aa-4817-4e2c-a206-2240341318ba
+2015-10-09 17:20:41 UTC -->

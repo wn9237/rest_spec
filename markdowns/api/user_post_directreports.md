@@ -4,8 +4,8 @@ Use this API to create a new directReport.
 ### HTTP request
 ```http
 POST /users/<objectId>/directReports
-POST /drives/<id>/root/createdByUser/directReports
-POST /drives/<id>/root/lastModifiedByUser/directReports
+POST /drive/root/createdByUser/directReports
+POST /drive/root/lastModifiedByUser/directReports
 
 ```
 ### Request headers
@@ -34,5 +34,5 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: f5ec791e-d4dc-4900-8f55-f69b7515e728
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 0eeb2e8f-4228-47de-91a5-2628fd740639
+2015-10-09 17:20:42 UTC -->

@@ -4,8 +4,8 @@ Delete File.
 ### HTTP request
 ```http
 DELETE /users/<objectId>/TrendingAround
-DELETE /drives/<id>/root/createdByUser/TrendingAround
-DELETE /drives/<id>/root/lastModifiedByUser/TrendingAround
+DELETE /drive/root/createdByUser/TrendingAround
+DELETE /drive/root/lastModifiedByUser/TrendingAround
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: dfa73e21-f412-461f-9dcd-d28ee47bd168
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 638ff696-b95d-4212-bb37-2bbedf1d78ba
+2015-10-09 17:20:41 UTC -->

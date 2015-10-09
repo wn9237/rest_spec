@@ -5,7 +5,7 @@ Delete OAuth2PermissionGrant.
 ```http
 DELETE /oauth2PermissionGrants/<objectId>
 DELETE /users/<objectId>/oauth2PermissionGrants/<objectId>
-DELETE /servicePrincipals/<objectId>/oauth2PermissionGrants/<objectId>
+DELETE /drive/root/createdByUser/oauth2PermissionGrants/<objectId>
 
 ```
 ### Request headers
@@ -21,5 +21,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: e8daeaa5-9e81-4d8d-841f-978e797bfbc5
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: d1060f05-131a-45a1-830d-41e0af8335ea
+2015-10-09 17:20:41 UTC -->

@@ -4,8 +4,8 @@ Update the properties of user object.
 ### HTTP request
 ```http
 PATCH /users/<objectId>
-PATCH /drives/<id>/root/createdByUser
-PATCH /drives/<id>/root/lastModifiedByUser
+PATCH /drive/root/createdByUser
+PATCH /drive/root/lastModifiedByUser
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -253,5 +253,5 @@ Content-length: 2047
 }
 ```
 
-<!-- uuid: a51b8e36-d4c2-437d-b557-75d327225134
-2015-10-09 16:05:04 UTC -->
+<!-- uuid: 9ca51c24-1ab4-4c1b-9864-ebcbfde55276
+2015-10-09 17:20:42 UTC -->

@@ -5,7 +5,7 @@ Use this API to create a new GroupPhoto.
 ```http
 POST /groups/<objectId>/GroupPhotos
 POST /users/<objectId>/JoinedGroups/<objectId>/GroupPhotos
-POST /drives/<id>/root/createdByUser/JoinedGroups/<objectId>/GroupPhotos
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/GroupPhotos
 
 ```
 ### Request headers
@@ -34,5 +34,5 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 3b83e5d8-4141-4d45-a8bc-8ce04d03d29c
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 5d56a871-dd01-4240-a5cf-165f035ed9f7
+2015-10-09 17:20:41 UTC -->

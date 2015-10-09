@@ -3,9 +3,9 @@
 
 ### HTTP request
 ```http
+POST /drive/allPhotos
 POST /drives/<id>/allPhotos
 POST /users/<objectId>/drive/allPhotos
-POST /groups/<objectId>/drive/allPhotos
 
 ```
 ### Request headers
@@ -22,7 +22,7 @@ If successful, this method returns `200, OK` response code and [item](../resourc
 Here is an example of how to call this API.
 ##### Request
 ```http
-POST /drives/<id>/allPhotos
+POST /drive/allPhotos
 Content-type: application/json
 Content-length: 0
 ```
@@ -78,5 +78,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: 3cdd49a1-7d0e-4c70-80bd-9549f61622f1
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: 9143cf86-0018-4959-a77b-694401f3ad05
+2015-10-09 17:20:41 UTC -->

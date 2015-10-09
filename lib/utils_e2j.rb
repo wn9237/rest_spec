@@ -328,7 +328,7 @@ module SpecMaker
 		fullpath = JSON_SOURCE_FOLDER + '/' + entity.downcase + '.json'
 		path={}
 		ids = ''
-		#puts "=1 filling for: #{entity} with #{parentPath}" 
+
 
 		# append Id at the end.
 		if File.file?(fullpath)

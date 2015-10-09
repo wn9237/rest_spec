@@ -3,9 +3,9 @@
 Update the properties of drive object.
 ### HTTP request
 ```http
+PATCH /drive
 PATCH /drives/<id>
 PATCH /users/<objectId>/drive
-PATCH /groups/<objectId>/drive
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -27,7 +27,7 @@ If successful, this method returns a `200 OK` response code and updated [drive](
 ##### Request
 Here is an example of the request.
 ```http
-PUT /drives/<id>
+PUT /drive
 Content-type: application/json
 Content-length: 92
 {
@@ -55,5 +55,5 @@ Content-length: 92
 }
 ```
 
-<!-- uuid: 891069b0-5b93-43ad-9f3c-31490ecc5aae
-2015-10-09 16:05:01 UTC -->
+<!-- uuid: 012ba770-48c0-45e2-a448-26aceaeb526a
+2015-10-09 17:20:41 UTC -->

@@ -3,7 +3,7 @@
 Delete Site.
 ### HTTP request
 ```http
-
+DELETE /myOrganization/siteCollections/<id>/sites/<id>
 
 ```
 ### Request headers
@@ -19,5 +19,5 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 5f252010-b38b-45ae-bedf-783b1561d004
-2015-10-09 16:05:03 UTC -->
+<!-- uuid: 7c5ebfba-d6c5-40cf-8eaf-962170eb76f3
+2015-10-09 17:20:42 UTC -->

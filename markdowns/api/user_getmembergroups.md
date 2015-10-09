@@ -4,8 +4,8 @@
 ### HTTP request
 ```http
 POST /users/<objectId>/getMemberGroups
-POST /drives/<id>/root/createdByUser/getMemberGroups
-POST /drives/<id>/root/lastModifiedByUser/getMemberGroups
+POST /drive/root/createdByUser/getMemberGroups
+POST /drive/root/lastModifiedByUser/getMemberGroups
 
 ```
 ### Request headers
@@ -46,5 +46,5 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 4a9b24fb-bcda-4e20-a7d8-eead00c4a338
-2015-10-09 16:05:04 UTC -->
+<!-- uuid: 26c8dc57-f978-4ba5-8883-a6b18064e844
+2015-10-09 17:20:42 UTC -->

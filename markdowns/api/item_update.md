@@ -3,9 +3,9 @@
 Update the properties of item object.
 ### HTTP request
 ```http
+PATCH /drive/root
+PATCH /drive/items/<id>
 PATCH /drives/<id>/root
-PATCH /shares/<id>/items/<id>
-PATCH /drives/<id>/items/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and updated [item](.
 ##### Request
 Here is an example of the request.
 ```http
-PUT /drives/<id>/root
+PUT /drive/root
 Content-type: application/json
 Content-length: 665
 {
@@ -152,5 +152,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: 8891961c-0ebf-40de-b71a-6ec4e6361bae
-2015-10-09 16:05:02 UTC -->
+<!-- uuid: 16aa5c3c-2e74-43dc-bc00-fbd11f3a68ee
+2015-10-09 17:20:41 UTC -->
