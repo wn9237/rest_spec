@@ -17,7 +17,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|AccessType|String| Possible values are: `isExclusive` true,`options` {"None"=>{"value"=>"0", "description"=>""}, "Private"=>{"value"=>"1", "description"=>""}, "Secret"=>{"value"=>"2", "description"=>""}, "Public"=>{"value"=>"3", "description"=>""}}|
+|AccessType|String| Possible values are: `None`, `Private`, `Secret`, `Public`.|
 |AllowExternalSenders|Boolean||
 |AutoSubscribeNewMembers|Boolean||
 |EmailAddress|String||

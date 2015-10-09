@@ -19,7 +19,7 @@ In the request body, supply the values for relevant fields that should be update
 |ElevatedCount|Int32||
 |ManagedCount|Int32||
 |MfaEnabled|Boolean||
-|Status|String| Possible values are: `isExclusive` true,`options` {"Ok"=>{"value"=>"0", "description"=>""}, "Bad"=>{"value"=>"1", "description"=>""}}|
+|Status|String| Possible values are: `Ok`, `Bad`.|
 |UsersCount|Int32||
 
 ### Response

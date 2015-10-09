@@ -32,7 +32,7 @@ In the request body, supply the values for relevant fields that should be update
 |orderHint|String||
 |percentComplete|Int32||
 |planId|String||
-|previewType|String| Possible values are: `isExclusive` true,`options` {"Automatic"=>{"value"=>"0", "description"=>""}, "NoPreview"=>{"value"=>"1", "description"=>""}, "CheckList"=>{"value"=>"2", "description"=>""}, "Notes"=>{"value"=>"3", "description"=>""}, "Reference"=>{"value"=>"4", "description"=>""}}|
+|previewType|String| Possible values are: `Automatic`, `NoPreview`, `CheckList`, `Notes`, `Reference`.|
 |startDate|DateTimeOffset||
 |title|String||
 |version|String||

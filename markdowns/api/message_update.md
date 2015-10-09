@@ -30,7 +30,7 @@ In the request body, supply the values for relevant fields that should be update
 |DateTimeSent|DateTimeOffset||
 |From|Recipient||
 |HasAttachments|Boolean||
-|Importance|String| Possible values are: `isExclusive` true,`options` {"Low"=>{"value"=>"0", "description"=>""}, "Normal"=>{"value"=>"1", "description"=>""}, "High"=>{"value"=>"2", "description"=>""}}|
+|Importance|String| Possible values are: `Low`, `Normal`, `High`.|
 |IsDeliveryReceiptRequested|Boolean||
 |IsDraft|Boolean||
 |IsRead|Boolean||

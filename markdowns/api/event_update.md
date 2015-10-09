@@ -27,7 +27,7 @@ In the request body, supply the values for relevant fields that should be update
 |End|DateTimeOffset||
 |EndTimeZone|String||
 |HasAttachments|Boolean||
-|Importance|String| Possible values are: `isExclusive` true,`options` {"Low"=>{"value"=>"0", "description"=>""}, "Normal"=>{"value"=>"1", "description"=>""}, "High"=>{"value"=>"2", "description"=>""}}|
+|Importance|String| Possible values are: `Low`, `Normal`, `High`.|
 |IsAllDay|Boolean||
 |IsCancelled|Boolean||
 |IsOrganizer|Boolean||
@@ -39,11 +39,11 @@ In the request body, supply the values for relevant fields that should be update
 |ResponseRequested|Boolean||
 |ResponseStatus|ResponseStatus||
 |SeriesMasterId|String||
-|ShowAs|String| Possible values are: `isExclusive` true,`options` {"Free"=>{"value"=>"0", "description"=>""}, "Tentative"=>{"value"=>"1", "description"=>""}, "Busy"=>{"value"=>"2", "description"=>""}, "Oof"=>{"value"=>"3", "description"=>""}, "WorkingElsewhere"=>{"value"=>"4", "description"=>""}, "Unknown"=>{"value"=>"-1", "description"=>""}}|
+|ShowAs|String| Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |Start|DateTimeOffset||
 |StartTimeZone|String||
 |Subject|String||
-|Type|String| Possible values are: `isExclusive` true,`options` {"SingleInstance"=>{"value"=>"0", "description"=>""}, "Occurrence"=>{"value"=>"1", "description"=>""}, "Exception"=>{"value"=>"2", "description"=>""}, "SeriesMaster"=>{"value"=>"3", "description"=>""}}|
+|Type|String| Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
 |WebLink|String||
 |iCalUId|String||
 

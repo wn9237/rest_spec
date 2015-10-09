@@ -201,11 +201,7 @@ module SpecMaker
 				appendEnum = ''
 				if (param[:enumName] != nil) && (@enumHash.has_key? param[:enumName])
 
-					if @enumHash[param[:enumName]].values[0] == "" || @enumHash[param[:enumName]].values[0] == nil
-						appendEnum = " " + " Possible values are: " + @enumHash[param[:enumName]].keys.join(', ')  
-					else
-						appendEnum = " Possible values are: " + @enumHash[param[:enumName]].map{|k,v| "`#{k}` #{v}"}.join(',')
-					end
+					appendEnum = " " + " Possible values are: " + @enumHash[prop[:enumName]]["options"].keys.join('`, `') + "`."
 					finalPDesc = finalPDesc + appendEnum
 				end
 				actionLines.push (PIPE + param[:name] + PIPE + param[:dataType] + PIPE + finalPDesc + PIPE) + NEWLINE	
@@ -384,11 +380,7 @@ module SpecMaker
 		   		finalDesc = prop[:description]
 				appendEnum = ''
 				if (prop[:enumName] != nil) && (@enumHash.has_key? prop[:enumName])
-					if @enumHash[prop[:enumName]].values[0] == "" || @enumHash[prop[:enumName]].values[0] == nil
-						appendEnum = " Possible values are: `" + @enumHash[prop[:enumName]].keys.join('`, `') + "`."
-					else
-						appendEnum = " Possible values are: " + @enumHash[prop[:enumName]].map{|k,v| "`#{k}` #{v}"}.join(',') 
-					end
+					appendEnum = " Possible values are: `" + @enumHash[prop[:enumName]]["options"].keys.join('`, `') + "`."
 					finalDesc = finalDesc + appendEnum
 				end				
 				patchMethodLines.push (PIPE + prop[:name] + PIPE + prop[:dataType]  + PIPE + finalDesc + PIPE ) + NEWLINE

@@ -28,7 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |sectionGroupsUrl|String||
 |sectionsUrl|String||
 |self|String||
-|userRole|String| Possible values are: `isExclusive` true,`options` {"Owner"=>{"value"=>"0", "description"=>""}, "Contributor"=>{"value"=>"1", "description"=>""}, "Reader"=>{"value"=>"2", "description"=>""}, "None"=>{"value"=>"-1", "description"=>""}}|
+|userRole|String| Possible values are: `Owner`, `Contributor`, `Reader`, `None`.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Notebook](../resources/notebook.md) object in the response body.

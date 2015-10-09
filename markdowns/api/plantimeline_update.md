@@ -17,7 +17,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displaySettings|String| Possible values are: `isExclusive` false,`options` {"None"=>{"value"=>"0", "description"=>""}, "Today"=>{"value"=>"1", "description"=>""}, "TimeScale"=>{"value"=>"2", "description"=>""}, "TaskDate"=>{"value"=>"4", "description"=>""}, "All"=>{"value"=>"7", "description"=>""}}|
+|displaySettings|String| Possible values are: `None`, `Today`, `TimeScale`, `TaskDate`, `All`.|
 |lockedWidth|Int32||
 |version|String||
 

@@ -17,10 +17,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|anchorPosition|String| Possible values are: `isExclusive` true,`options` {"Top"=>{"value"=>"0", "description"=>""}, "Bottom"=>{"value"=>"1", "description"=>""}}|
+|anchorPosition|String| Possible values are: `Top`, `Bottom`.|
 |calloutHeight|Int32||
 |color|Int32||
-|drawingStyle|String| Possible values are: `isExclusive` true,`options` {"Bar"=>{"value"=>"0", "description"=>""}, "Callout"=>{"value"=>"1", "description"=>""}}|
+|drawingStyle|String| Possible values are: `Bar`, `Callout`.|
 |labelOffsetX|Int32||
 |labelOffsetY|Int32||
 |swimlane|Int32||

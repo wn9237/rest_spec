@@ -16,7 +16,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |IsRegistered|Boolean||
-|Status|String| Possible values are: `isExclusive` true,`options` {"Unknown"=>{"value"=>"0", "description"=>""}, "NotRegisteredYet"=>{"value"=>"1", "description"=>""}, "RegisteredSetupNotStarted"=>{"value"=>"2", "description"=>""}, "RegisteredSetupInProgress"=>{"value"=>"3", "description"=>""}, "RegistrationAndSetupCompleted"=>{"value"=>"4", "description"=>""}}|
+|Status|String| Possible values are: `Unknown`, `NotRegisteredYet`, `RegisteredSetupNotStarted`, `RegisteredSetupInProgress`, `RegistrationAndSetupCompleted`.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) object in the response body.

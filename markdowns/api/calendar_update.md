@@ -18,7 +18,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ChangeKey|String||
-|Color|String| Possible values are: `isExclusive` true,`options` {"LightBlue"=>{"value"=>"0", "description"=>""}, "LightGreen"=>{"value"=>"1", "description"=>""}, "LightOrange"=>{"value"=>"2", "description"=>""}, "LightGray"=>{"value"=>"3", "description"=>""}, "LightYellow"=>{"value"=>"4", "description"=>""}, "LightTeal"=>{"value"=>"5", "description"=>""}, "LightPink"=>{"value"=>"6", "description"=>""}, "LightBrown"=>{"value"=>"7", "description"=>""}, "LightRed"=>{"value"=>"8", "description"=>""}, "MaxColor"=>{"value"=>"9", "description"=>""}, "Auto"=>{"value"=>"-1", "description"=>""}}|
+|Color|String| Possible values are: `LightBlue`, `LightGreen`, `LightOrange`, `LightGray`, `LightYellow`, `LightTeal`, `LightPink`, `LightBrown`, `LightRed`, `MaxColor`, `Auto`.|
 |Name|String||
 
 ### Response
