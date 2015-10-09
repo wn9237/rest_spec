@@ -65,5 +65,5 @@ Here is a JSON representation of the resource
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: f5849683-b447-4a93-9533-6c68ae166409
-2015-10-09 15:58:16 UTC -->
+<!-- uuid: e6a670aa-c55a-489b-bb61-7764a065a923
+2015-10-09 16:05:01 UTC -->

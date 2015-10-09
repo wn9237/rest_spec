@@ -19,5 +19,5 @@ Here is a JSON representation of the resource
 |servicePlanId|Guid||
 |servicePlanName|String||
 
-<!-- uuid: fb932d0e-64be-479c-bd58-3b6711385afc
-2015-10-09 15:58:18 UTC -->
+<!-- uuid: 45ab98d8-05d7-4b25-8698-5053a6b307a7
+2015-10-09 16:05:03 UTC -->

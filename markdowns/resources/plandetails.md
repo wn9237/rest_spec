@@ -47,5 +47,5 @@ None
 |[Update](../api/plandetails_update.md) | [PlanDetails](plandetails.md)	|Update PlanDetails object. |
 |[Delete](../api/plandetails_delete.md) | Void	|Delete PlanDetails object. |
 
-<!-- uuid: b0d2d2f6-4fab-47cd-93ea-489b49cfec70
-2015-10-09 15:58:17 UTC -->
+<!-- uuid: 01ba1213-9ebd-42ca-8491-6a3327013555
+2015-10-09 16:05:02 UTC -->

@@ -168,7 +168,7 @@ module SpecMaker
 		elsif SIMPLETYPES.include? dataType
 			return "#{name}-value"				
 		else
-			return dump_complex_type(dataType)
+			return {}
 		end
 	end
 
@@ -179,8 +179,7 @@ module SpecMaker
 			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
 			object[:properties].each do |item|
 				if object[:isComplexType] 
-					#model[item[:name]] = dump_complex_type(item[:dataType])
-					model[item[:name]] = {}
+					model[item[:name]] = dump_complex_type(item[:dataType])
 				else					
 					model[item[:name]] = assign_value(item[:dataType], item[:name])
 				end

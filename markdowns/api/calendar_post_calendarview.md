@@ -26,14 +26,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1229
+Content-length: 901
 {
   "Subject": "Subject-value",
   "Body": {
-    "ContentType": {
-    },
-    "Content": {
-    }
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
@@ -44,19 +40,9 @@ Content-length: 1229
   "EndTimeZone": "EndTimeZone-value",
   "Reminder": 99,
   "Location": {
-    "altitude": {
-    },
-    "latitude": {
-    },
-    "longitude": {
-    }
   },
   "ShowAs": "ShowAs-value",
   "ResponseStatus": {
-    "Response": {
-    },
-    "Time": {
-    }
   },
   "IsAllDay": true,
   "IsCancelled": true,
@@ -66,23 +52,11 @@ Content-length: 1229
   "SeriesMasterId": "SeriesMasterId-value",
   "Attendees": [
     {
-      "EmailAddress": {
-      },
-      "Status": {
-      },
-      "Type": {
-      }
     }
   ],
   "Recurrence": {
-    "Pattern": {
-    },
-    "Range": {
-    }
   },
   "Organizer": {
-    "EmailAddress": {
-    }
   },
   "iCalUId": "iCalUId-value",
   "WebLink": "WebLink-value",
@@ -97,5 +71,5 @@ Content-length: 1229
 }
 ```
 
-<!-- uuid: 5b13b247-9cfb-4e79-b8c6-e9d814a58439
-2015-10-09 16:04:04 UTC -->
+<!-- uuid: b9816e79-c88b-4959-8365-fea395ff5db1
+2015-10-09 16:05:01 UTC -->

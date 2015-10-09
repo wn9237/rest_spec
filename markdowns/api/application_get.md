@@ -22,23 +22,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1828
+Content-length: 953
 {
   "appId": "appId-value",
   "appRoles": [
     {
-      "allowedMemberTypes": {
-      },
-      "description": {
-      },
-      "displayName": {
-      },
-      "id": {
-      },
-      "isEnabled": {
-      },
-      "value": {
-      }
     }
   ],
   "availableToOtherTenants": true,
@@ -51,20 +39,6 @@ Content-length: 1828
   ],
   "keyCredentials": [
     {
-      "customKeyIdentifier": {
-      },
-      "endDate": {
-      },
-      "keyId": {
-      },
-      "startDate": {
-      },
-      "type": {
-      },
-      "usage": {
-      },
-      "value": {
-      }
     }
   ],
   "knownClientApplications": [
@@ -76,37 +50,11 @@ Content-length: 1828
   "oauth2AllowUrlPathMatching": true,
   "oauth2Permissions": [
     {
-      "adminConsentDescription": {
-      },
-      "adminConsentDisplayName": {
-      },
-      "id": {
-      },
-      "isEnabled": {
-      },
-      "type": {
-      },
-      "userConsentDescription": {
-      },
-      "userConsentDisplayName": {
-      },
-      "value": {
-      }
     }
   ],
   "oauth2RequirePostResponse": true,
   "passwordCredentials": [
     {
-      "customKeyIdentifier": {
-      },
-      "endDate": {
-      },
-      "keyId": {
-      },
-      "startDate": {
-      },
-      "value": {
-      }
     }
   ],
   "publicClient": true,
@@ -115,10 +63,6 @@ Content-length: 1828
   ],
   "requiredResourceAccess": [
     {
-      "resourceAppId": {
-      },
-      "resourceAccess": {
-      }
     }
   ],
   "samlMetadataUrl": "samlMetadataUrl-value",
@@ -128,5 +72,5 @@ Content-length: 1828
 }
 ```
 
-<!-- uuid: df3dc8b7-8e15-40a8-9950-34135ef4d013
-2015-10-09 16:04:04 UTC -->
+<!-- uuid: ec354203-b7c0-4c97-b4be-d9922ae1c25a
+2015-10-09 16:05:01 UTC -->

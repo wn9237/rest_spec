@@ -24,12 +24,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 359
+Content-length: 295
 {
   "ToRecipients": [
     {
-      "EmailAddress": {
-      }
     }
   ],
   "Topic": "Topic-value",
@@ -40,8 +38,6 @@ Content-length: 359
   ],
   "CcRecipients": [
     {
-      "EmailAddress": {
-      }
     }
   ],
   "Preview": "Preview-value",
@@ -50,5 +46,5 @@ Content-length: 359
 }
 ```
 
-<!-- uuid: 19c2d1f8-8559-430d-99c4-da2cb3e62afd
-2015-10-09 16:04:04 UTC -->
+<!-- uuid: dcb34316-8519-4184-a81c-da60a9e0323f
+2015-10-09 16:05:01 UTC -->

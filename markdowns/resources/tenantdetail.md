@@ -105,5 +105,5 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/tenantdetail_getmembergroups.md)|String||
 |[Get MemberObjects](../api/tenantdetail_getmemberobjects.md)|String||
 
-<!-- uuid: 5efb0427-251b-4065-8706-0c255f873e21
-2015-10-09 15:58:18 UTC -->
+<!-- uuid: 9d9e7473-c0cb-4a5a-bd6f-266147604aac
+2015-10-09 16:05:03 UTC -->

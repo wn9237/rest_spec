@@ -43,5 +43,5 @@ None
 |[Update](../api/privilegedrolesettings_update.md) | [PrivilegedRoleSettings](privilegedrolesettings.md)	|Update PrivilegedRoleSettings object. |
 |[Delete](../api/privilegedrolesettings_delete.md) | Void	|Delete PrivilegedRoleSettings object. |
 
-<!-- uuid: f325e1e1-768b-466a-b8c1-8e8a361ac63e
-2015-10-09 15:58:18 UTC -->
+<!-- uuid: ff817eb3-d2b9-4306-878c-59cd182af0dc
+2015-10-09 16:05:03 UTC -->

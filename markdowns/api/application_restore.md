@@ -38,23 +38,11 @@ Content-length: 56
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1828
+Content-length: 953
 {
   "appId": "appId-value",
   "appRoles": [
     {
-      "allowedMemberTypes": {
-      },
-      "description": {
-      },
-      "displayName": {
-      },
-      "id": {
-      },
-      "isEnabled": {
-      },
-      "value": {
-      }
     }
   ],
   "availableToOtherTenants": true,
@@ -67,20 +55,6 @@ Content-length: 1828
   ],
   "keyCredentials": [
     {
-      "customKeyIdentifier": {
-      },
-      "endDate": {
-      },
-      "keyId": {
-      },
-      "startDate": {
-      },
-      "type": {
-      },
-      "usage": {
-      },
-      "value": {
-      }
     }
   ],
   "knownClientApplications": [
@@ -92,37 +66,11 @@ Content-length: 1828
   "oauth2AllowUrlPathMatching": true,
   "oauth2Permissions": [
     {
-      "adminConsentDescription": {
-      },
-      "adminConsentDisplayName": {
-      },
-      "id": {
-      },
-      "isEnabled": {
-      },
-      "type": {
-      },
-      "userConsentDescription": {
-      },
-      "userConsentDisplayName": {
-      },
-      "value": {
-      }
     }
   ],
   "oauth2RequirePostResponse": true,
   "passwordCredentials": [
     {
-      "customKeyIdentifier": {
-      },
-      "endDate": {
-      },
-      "keyId": {
-      },
-      "startDate": {
-      },
-      "value": {
-      }
     }
   ],
   "publicClient": true,
@@ -131,10 +79,6 @@ Content-length: 1828
   ],
   "requiredResourceAccess": [
     {
-      "resourceAppId": {
-      },
-      "resourceAccess": {
-      }
     }
   ],
   "samlMetadataUrl": "samlMetadataUrl-value",
@@ -144,5 +88,5 @@ Content-length: 1828
 }
 ```
 
-<!-- uuid: fb4545c2-9faa-447e-879d-1f327c68befb
-2015-10-09 16:04:04 UTC -->
+<!-- uuid: 1972558a-0d9d-475f-a5b3-0d56ca8379fa
+2015-10-09 16:05:01 UTC -->
