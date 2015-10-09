@@ -12,9 +12,9 @@
   "propertyNotes": "",
   "relationshipNotes": "",
   "methodNotes": "",
-  "createDescription": "",
-  "updateDescription": "",
-  "deleteDescription": "",
+  "createDescription": "This is the overriden create description",
+  "updateDescription": "This is the overriden update description",
+  "deleteDescription": "this is the delete description",
   "restPath": {
     "/groups/<objectId>/Calendar": true,
     "/groups/<objectId>/Events/<Id>/Calendar": true,

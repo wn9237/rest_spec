@@ -25,3 +25,36 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [TaskDetails](../resources/taskdetails.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /tasks/<id>/details
+Content-type: application/json
+Content-length: 171
+{
+  "notes": "String-value",
+  "previewType": "String-value",
+  "completedBy": "String-value",
+  "references": {
+  },
+  "id": "String-value",
+  "version": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 171
+{
+  "notes": "String-value",
+  "previewType": "String-value",
+  "completedBy": "String-value",
+  "references": {
+  },
+  "id": "String-value",
+  "version": "String-value"
+}
+```

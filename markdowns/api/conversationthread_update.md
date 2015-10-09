@@ -28,3 +28,56 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [ConversationThread](../resources/conversationthread.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /groups/<objectId>/Threads/<Id>
+Content-type: application/json
+Content-length: 292
+{
+  "ToRecipients": [
+    {
+    }
+  ],
+  "Topic": "String-value",
+  "HasAttachments": true,
+  "DateTimeLastDelivered": "datetime-value",
+  "UniqueSenders": [
+    "String-value"
+  ],
+  "CcRecipients": [
+    {
+    }
+  ],
+  "Preview": "String-value",
+  "IsLocked": true,
+  "Id": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 292
+{
+  "ToRecipients": [
+    {
+    }
+  ],
+  "Topic": "String-value",
+  "HasAttachments": true,
+  "DateTimeLastDelivered": "datetime-value",
+  "UniqueSenders": [
+    "String-value"
+  ],
+  "CcRecipients": [
+    {
+    }
+  ],
+  "Preview": "String-value",
+  "IsLocked": true,
+  "Id": "String-value"
+}
+```

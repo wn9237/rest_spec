@@ -1,6 +1,6 @@
 # Create Calendar
 
-Use this API to create a new Calendar.
+This is the overriden create description
 ### HTTP request
 ```http
 POST /users/<objectId>/CalendarGroups/<Id>/Calendars

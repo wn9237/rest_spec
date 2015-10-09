@@ -27,3 +27,42 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [DirectoryLinkChange](../resources/directorylinkchange.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+
+Content-type: application/json
+Content-length: 364
+{
+  "associationType": "String-value",
+  "sourceObjectId": "String-value",
+  "sourceObjectType": "String-value",
+  "sourceObjectUri": "String-value",
+  "targetObjectId": "String-value",
+  "targetObjectType": "String-value",
+  "targetObjectUri": "String-value",
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 364
+{
+  "associationType": "String-value",
+  "sourceObjectId": "String-value",
+  "sourceObjectType": "String-value",
+  "sourceObjectUri": "String-value",
+  "targetObjectId": "String-value",
+  "targetObjectType": "String-value",
+  "targetObjectUri": "String-value",
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```

@@ -24,3 +24,44 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [SubscribedSku](../resources/subscribedsku.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /subscribedSkus/<objectId>
+Content-type: application/json
+Content-length: 215
+{
+  "capabilityStatus": "String-value",
+  "consumedUnits": 99,
+  "objectId": "String-value",
+  "prepaidUnits": {
+  },
+  "servicePlans": [
+    {
+    }
+  ],
+  "skuId": "Guid-value",
+  "skuPartNumber": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 215
+{
+  "capabilityStatus": "String-value",
+  "consumedUnits": 99,
+  "objectId": "String-value",
+  "prepaidUnits": {
+  },
+  "servicePlans": [
+    {
+    }
+  ],
+  "skuId": "Guid-value",
+  "skuPartNumber": "String-value"
+}
+```

@@ -1,6 +1,6 @@
 # Update Calendar
 
-Update the properties of calendar object.
+This is the overriden update description
 ### HTTP request
 ```http
 PATCH /users/<objectId>/Calendar
@@ -23,3 +23,30 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Calendar](../resources/calendar.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /users/<objectId>/Calendar
+Content-type: application/json
+Content-length: 110
+{
+  "Name": "String-value",
+  "ChangeKey": "String-value",
+  "Color": "String-value",
+  "Id": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 110
+{
+  "Name": "String-value",
+  "ChangeKey": "String-value",
+  "Color": "String-value",
+  "Id": "String-value"
+}
+```

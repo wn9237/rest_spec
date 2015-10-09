@@ -43,3 +43,88 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Group](../resources/group.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /groups/<objectId>
+Content-type: application/json
+Content-length: 800
+{
+  "description": "String-value",
+  "dirSyncEnabled": true,
+  "displayName": "String-value",
+  "creationOptions": [
+    "String-value"
+  ],
+  "groupTypes": [
+    "String-value"
+  ],
+  "isPublic": true,
+  "lastDirSyncTime": "datetime-value",
+  "mail": "String-value",
+  "mailNickname": "String-value",
+  "mailEnabled": true,
+  "onPremisesSecurityIdentifier": "String-value",
+  "provisioningErrors": [
+    {
+    }
+  ],
+  "proxyAddresses": [
+    "String-value"
+  ],
+  "securityEnabled": true,
+  "AccessType": "String-value",
+  "EmailAddress": "String-value",
+  "AllowExternalSenders": true,
+  "AutoSubscribeNewMembers": true,
+  "IsSubscribedByMail": true,
+  "IsFavorite": true,
+  "UnseenCount": 99,
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 800
+{
+  "description": "String-value",
+  "dirSyncEnabled": true,
+  "displayName": "String-value",
+  "creationOptions": [
+    "String-value"
+  ],
+  "groupTypes": [
+    "String-value"
+  ],
+  "isPublic": true,
+  "lastDirSyncTime": "datetime-value",
+  "mail": "String-value",
+  "mailNickname": "String-value",
+  "mailEnabled": true,
+  "onPremisesSecurityIdentifier": "String-value",
+  "provisioningErrors": [
+    {
+    }
+  ],
+  "proxyAddresses": [
+    "String-value"
+  ],
+  "securityEnabled": true,
+  "AccessType": "String-value",
+  "EmailAddress": "String-value",
+  "AllowExternalSenders": true,
+  "AutoSubscribeNewMembers": true,
+  "IsSubscribedByMail": true,
+  "IsFavorite": true,
+  "UnseenCount": 99,
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```

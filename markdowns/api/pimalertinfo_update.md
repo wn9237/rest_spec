@@ -28,3 +28,44 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [PimAlertInfo](../resources/pimalertinfo.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /AlertInfo/<AlertId>
+Content-type: application/json
+Content-length: 333
+{
+  "AlertId": "String-value",
+  "AlertName": "String-value",
+  "AlertDescription": "String-value",
+  "LowSeverityThreshold": 99,
+  "MediumSeverityThreshold": 99,
+  "HighSeverityThreshold": 99,
+  "Type": 99,
+  "Severity": 99,
+  "SecurityImpact": "String-value",
+  "MitigationSteps": "String-value",
+  "HowToPrevent": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 333
+{
+  "AlertId": "String-value",
+  "AlertName": "String-value",
+  "AlertDescription": "String-value",
+  "LowSeverityThreshold": 99,
+  "MediumSeverityThreshold": 99,
+  "HighSeverityThreshold": 99,
+  "Type": 99,
+  "Severity": 99,
+  "SecurityImpact": "String-value",
+  "MitigationSteps": "String-value",
+  "HowToPrevent": "String-value"
+}
+```

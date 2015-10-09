@@ -45,3 +45,110 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Message](../resources/message.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /users/<objectId>/Messages/<Id>
+Content-type: application/json
+Content-length: 808
+{
+  "Subject": "String-value",
+  "Body": {
+  },
+  "BodyPreview": "String-value",
+  "Importance": "String-value",
+  "HasAttachments": true,
+  "ParentFolderId": "String-value",
+  "From": {
+  },
+  "Sender": {
+  },
+  "ToRecipients": [
+    {
+    }
+  ],
+  "CcRecipients": [
+    {
+    }
+  ],
+  "BccRecipients": [
+    {
+    }
+  ],
+  "ReplyTo": [
+    {
+    }
+  ],
+  "ConversationId": "String-value",
+  "UniqueBody": {
+  },
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
+  "IsDeliveryReceiptRequested": true,
+  "IsReadReceiptRequested": true,
+  "IsDraft": true,
+  "IsRead": true,
+  "WebLink": "String-value",
+  "ChangeKey": "String-value",
+  "Categories": [
+    "String-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 808
+{
+  "Subject": "String-value",
+  "Body": {
+  },
+  "BodyPreview": "String-value",
+  "Importance": "String-value",
+  "HasAttachments": true,
+  "ParentFolderId": "String-value",
+  "From": {
+  },
+  "Sender": {
+  },
+  "ToRecipients": [
+    {
+    }
+  ],
+  "CcRecipients": [
+    {
+    }
+  ],
+  "BccRecipients": [
+    {
+    }
+  ],
+  "ReplyTo": [
+    {
+    }
+  ],
+  "ConversationId": "String-value",
+  "UniqueBody": {
+  },
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
+  "IsDeliveryReceiptRequested": true,
+  "IsReadReceiptRequested": true,
+  "IsDraft": true,
+  "IsRead": true,
+  "WebLink": "String-value",
+  "ChangeKey": "String-value",
+  "Categories": [
+    "String-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "String-value"
+}
+```

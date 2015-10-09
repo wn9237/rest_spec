@@ -40,6 +40,31 @@ module SpecMaker
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE				
 
+
+		when 'auto_put'
+
+			example_lines.push HEADER5 + "Request" + NEWLINE											
+			example_lines.push "Here is an example of the request." + NEWLINE
+
+			example_lines.push '```http' + NEWLINE
+			httpSyntax = get_syntax('auto_put', top_one_restpath)
+			example_lines.push httpSyntax.join("\n") + NEWLINE
+			modeldump = get_json_model_method(@jsonHash[:name])			
+			example_lines.push "Content-type: application/json" + NEWLINE
+			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
+			example_lines.push modeldump + NEWLINE	
+			example_lines.push "```" + NEWLINE	
+
+			example_lines.push HEADER5 + "Response" + NEWLINE											
+			example_lines.push "Here is an example of the response." + NEWLINE
+			modeldump = get_json_model_method(@jsonHash[:name])
+			example_lines.push "```json" + NEWLINE
+			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
+			example_lines.push "Content-type: application/json" + NEWLINE
+			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
+			example_lines.push modeldump + NEWLINE	
+			example_lines.push "```" + NEWLINE	
+
 		when 'auto_delete'
 			# example_lines.push HEADER5 + "Request" + NEWLINE				
 			# example_lines.push '```http' + NEWLINE
@@ -400,20 +425,11 @@ module SpecMaker
 		patchMethodLines.push "If successful, this method returns a `200 OK` response code and updated [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object in the response body."  + NEWLINE
 
 		#Example
-		begin
-
-			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@jsonHash[:name].downcase + '_' + "auto_patch" + ".md")))
-
-
-			if example_lines.length > 1
-				patchMethodLines.push NEWLINE
-				example_lines.each do |line|
-					patchMethodLines.push line
-				end
-			end
-		rescue => err
-			@logger.error("....Patch Example File does not exist for: #{@resource}, ")
+		example_lines = gen_example("auto_put")
+		example_lines.each do |line|
+			patchMethodLines.push line
 		end
+
 
 		# Write the output file. 
 		fileName = "#{@jsonHash[:name].downcase}_update.md"  

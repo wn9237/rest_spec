@@ -28,3 +28,42 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [PlanDetails](../resources/plandetails.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /plans/<id>/details
+Content-type: application/json
+Content-length: 330
+{
+  "sharedWith": {
+  },
+  "category0Description": "String-value",
+  "category1Description": "String-value",
+  "category2Description": "String-value",
+  "category3Description": "String-value",
+  "category4Description": "String-value",
+  "category5Description": "String-value",
+  "id": "String-value",
+  "version": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 330
+{
+  "sharedWith": {
+  },
+  "category0Description": "String-value",
+  "category1Description": "String-value",
+  "category2Description": "String-value",
+  "category3Description": "String-value",
+  "category4Description": "String-value",
+  "category5Description": "String-value",
+  "id": "String-value",
+  "version": "String-value"
+}
+```

@@ -1,6 +1,6 @@
 # Delete
 
-Delete Calendar.
+this is the delete description
 ### HTTP request
 ```http
 DELETE /users/<objectId>/Calendar

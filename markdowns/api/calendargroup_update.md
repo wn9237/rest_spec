@@ -23,3 +23,30 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [CalendarGroup](../resources/calendargroup.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /users/<objectId>/CalendarGroups/<Id>
+Content-type: application/json
+Content-length: 110
+{
+  "Name": "String-value",
+  "ChangeKey": "String-value",
+  "ClassId": "Guid-value",
+  "Id": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 110
+{
+  "Name": "String-value",
+  "ChangeKey": "String-value",
+  "ClassId": "Guid-value",
+  "Id": "String-value"
+}
+```

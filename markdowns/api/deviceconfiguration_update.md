@@ -24,3 +24,44 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /deviceConfiguration/<objectId>
+Content-type: application/json
+Content-length: 294
+{
+  "publicIssuerCertificates": [
+    "Binary-value"
+  ],
+  "cloudPublicIssuerCertificates": [
+    "Binary-value"
+  ],
+  "registrationQuota": 99,
+  "maximumRegistrationInactivityPeriod": 99,
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 294
+{
+  "publicIssuerCertificates": [
+    "Binary-value"
+  ],
+  "cloudPublicIssuerCertificates": [
+    "Binary-value"
+  ],
+  "registrationQuota": 99,
+  "maximumRegistrationInactivityPeriod": 99,
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```

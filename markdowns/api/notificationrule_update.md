@@ -25,3 +25,38 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [NotificationRule](../resources/notificationrule.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /NotificationRules/<Id>
+Content-type: application/json
+Content-length: 241
+{
+  "Id": "String-value",
+  "UserName": "String-value",
+  "UserId": "String-value",
+  "RoleName": "String-value",
+  "RoleId": "Guid-value",
+  "NotificationId": "String-value",
+  "NotificationName": "String-value",
+  "Event": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 241
+{
+  "Id": "String-value",
+  "UserName": "String-value",
+  "UserId": "String-value",
+  "RoleName": "String-value",
+  "RoleId": "Guid-value",
+  "NotificationId": "String-value",
+  "NotificationName": "String-value",
+  "Event": "String-value"
+}
+```

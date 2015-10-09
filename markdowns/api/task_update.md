@@ -39,3 +39,64 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Task](../resources/task.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /tasks/<id>
+Content-type: application/json
+Content-length: 614
+{
+  "createdBy": "String-value",
+  "assignedTo": "String-value",
+  "planId": "String-value",
+  "bucketId": "String-value",
+  "title": "String-value",
+  "orderHint": "String-value",
+  "assigneePriority": "String-value",
+  "percentComplete": 99,
+  "startDate": "datetime-value",
+  "assignedToDate": "datetime-value",
+  "createdDate": "datetime-value",
+  "assignedBy": "String-value",
+  "dueDate": "datetime-value",
+  "hasNotes": true,
+  "previewType": "String-value",
+  "completedDate": "datetime-value",
+  "numberOfReferences": 99,
+  "appliedCategories": {
+  },
+  "id": "String-value",
+  "version": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 614
+{
+  "createdBy": "String-value",
+  "assignedTo": "String-value",
+  "planId": "String-value",
+  "bucketId": "String-value",
+  "title": "String-value",
+  "orderHint": "String-value",
+  "assigneePriority": "String-value",
+  "percentComplete": 99,
+  "startDate": "datetime-value",
+  "assignedToDate": "datetime-value",
+  "createdDate": "datetime-value",
+  "assignedBy": "String-value",
+  "dueDate": "datetime-value",
+  "hasNotes": true,
+  "previewType": "String-value",
+  "completedDate": "datetime-value",
+  "numberOfReferences": 99,
+  "appliedCategories": {
+  },
+  "id": "String-value",
+  "version": "String-value"
+}
+```

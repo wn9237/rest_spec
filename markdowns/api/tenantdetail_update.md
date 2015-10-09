@@ -39,3 +39,106 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [TenantDetail](../resources/tenantdetail.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /tenantDetails/<objectId>
+Content-type: application/json
+Content-length: 881
+{
+  "assignedPlans": [
+    {
+    }
+  ],
+  "city": "String-value",
+  "companyLastDirSyncTime": "datetime-value",
+  "country": "String-value",
+  "countryLetterCode": "String-value",
+  "dirSyncEnabled": true,
+  "displayName": "String-value",
+  "marketingNotificationEmails": [
+    "String-value"
+  ],
+  "postalCode": "String-value",
+  "preferredLanguage": "String-value",
+  "provisionedPlans": [
+    {
+    }
+  ],
+  "provisioningErrors": [
+    {
+    }
+  ],
+  "securityComplianceNotificationMails": [
+    "String-value"
+  ],
+  "securityComplianceNotificationPhones": [
+    "String-value"
+  ],
+  "state": "String-value",
+  "street": "String-value",
+  "technicalNotificationMails": [
+    "String-value"
+  ],
+  "telephoneNumber": "String-value",
+  "verifiedDomains": [
+    {
+    }
+  ],
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 881
+{
+  "assignedPlans": [
+    {
+    }
+  ],
+  "city": "String-value",
+  "companyLastDirSyncTime": "datetime-value",
+  "country": "String-value",
+  "countryLetterCode": "String-value",
+  "dirSyncEnabled": true,
+  "displayName": "String-value",
+  "marketingNotificationEmails": [
+    "String-value"
+  ],
+  "postalCode": "String-value",
+  "preferredLanguage": "String-value",
+  "provisionedPlans": [
+    {
+    }
+  ],
+  "provisioningErrors": [
+    {
+    }
+  ],
+  "securityComplianceNotificationMails": [
+    "String-value"
+  ],
+  "securityComplianceNotificationPhones": [
+    "String-value"
+  ],
+  "state": "String-value",
+  "street": "String-value",
+  "technicalNotificationMails": [
+    "String-value"
+  ],
+  "telephoneNumber": "String-value",
+  "verifiedDomains": [
+    {
+    }
+  ],
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```

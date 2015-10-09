@@ -25,3 +25,38 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Conversation](../resources/conversation.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /groups/<objectId>/Conversations/<Id>
+Content-type: application/json
+Content-length: 198
+{
+  "Topic": "String-value",
+  "HasAttachments": true,
+  "DateTimeLastDelivered": "datetime-value",
+  "UniqueSenders": [
+    "String-value"
+  ],
+  "Preview": "String-value",
+  "Id": "String-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 198
+{
+  "Topic": "String-value",
+  "HasAttachments": true,
+  "DateTimeLastDelivered": "datetime-value",
+  "UniqueSenders": [
+    "String-value"
+  ],
+  "Preview": "String-value",
+  "Id": "String-value"
+}
+```

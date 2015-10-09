@@ -28,3 +28,40 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Section](../resources/section.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+```http
+PUT /users/<objectId>/notes/sections/<id>
+Content-type: application/json
+Content-length: 271
+{
+  "isDefault": true,
+  "pagesUrl": "String-value",
+  "name": "String-value",
+  "createdBy": "String-value",
+  "lastModifiedBy": "String-value",
+  "lastModifiedTime": "datetime-value",
+  "id": "String-value",
+  "self": "String-value",
+  "createdTime": "datetime-value"
+}
+```
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 271
+{
+  "isDefault": true,
+  "pagesUrl": "String-value",
+  "name": "String-value",
+  "createdBy": "String-value",
+  "lastModifiedBy": "String-value",
+  "lastModifiedTime": "datetime-value",
+  "id": "String-value",
+  "self": "String-value",
+  "createdTime": "datetime-value"
+}
+```
