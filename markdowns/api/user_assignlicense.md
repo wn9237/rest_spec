@@ -29,6 +29,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/assignLicense
+Content-type: application/json
+Content-length: 92
 {
   "addLicenses": [
     {
@@ -128,3 +130,4 @@ Content-length: 2047
   "deletionTimestamp": "datetime-value"
 }
 ```
+<!-- uuid: 5af1e359-d5e5-4d5a-b5e7-abaae65bcdfd\n2015-10-09 15:13:51 UTC -->

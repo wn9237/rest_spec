@@ -29,6 +29,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /groups/<objectId>/Threads/<Id>/Posts/<Id>/Forward
+Content-type: application/json
+Content-length: 69
 {
   "Comment": "Comment-value",
   "ToRecipients": [
@@ -45,3 +47,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: db5b5ac7-62aa-498b-87f1-6a36c7e009d7\n2015-10-09 15:13:51 UTC -->

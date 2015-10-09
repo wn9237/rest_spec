@@ -23,6 +23,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/Messages/<Id>/Send
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -32,3 +34,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: ac462d2f-288b-49f7-a5b1-fbff57905252\n2015-10-09 15:13:50 UTC -->

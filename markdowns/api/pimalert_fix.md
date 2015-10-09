@@ -26,6 +26,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /Alerts/<AlertId>/Fix
+Content-type: application/json
+Content-length: 18
 {
   "ItemId": 99
 }
@@ -54,3 +56,4 @@ Content-length: 529
   "IsConfigurable": true
 }
 ```
+<!-- uuid: 825df408-a966-438f-ae33-031627c21943\n2015-10-09 15:13:50 UTC -->

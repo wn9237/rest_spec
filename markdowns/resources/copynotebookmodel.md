@@ -42,4 +42,4 @@ Here is a JSON representation of the resource
 |sectionsUrl|String||
 |self|String||
 |userRole|String| Possible values are: `Owner`, `Contributor`, `Reader`, `None`.|
-<!-- uuid: 784994ff-4d59-40e1-83f0-bb38bc64c3e1\n2015-10-09 15:13:08 UTC -->
+<!-- uuid: 824e41fd-f1e4-4d13-9f36-eb1868c5fd3e\n2015-10-09 15:13:49 UTC -->

@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /drives/<id>/root/createLink
+Content-type: application/json
+Content-length: 26
 {
   "type": "type-value"
 }
@@ -53,3 +55,4 @@ Content-length: 176
   "shareId": "shareId-value"
 }
 ```
+<!-- uuid: 00671f12-09e1-460c-8d14-efc4e09986d1\n2015-10-09 15:13:50 UTC -->

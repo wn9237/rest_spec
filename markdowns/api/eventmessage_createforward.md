@@ -21,6 +21,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -74,3 +76,4 @@ Content-length: 838
   "Id": "Id-value"
 }
 ```
+<!-- uuid: e649685a-87da-45de-8d56-963b1a650001\n2015-10-09 15:13:49 UTC -->

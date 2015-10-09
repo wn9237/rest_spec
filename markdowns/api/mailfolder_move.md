@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/RootFolder/Move
+Content-type: application/json
+Content-length: 44
 {
   "DestinationId": "DestinationId-value"
 }
@@ -44,3 +46,4 @@ Content-length: 130
   "Id": "Id-value"
 }
 ```
+<!-- uuid: 48840be6-0dbe-4dea-bce1-f39cccfa5936\n2015-10-09 15:13:50 UTC -->

@@ -26,6 +26,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /tenantDetails/<objectId>/checkMemberGroups
+Content-type: application/json
+Content-length: 44
 {
   "groupIds": [
     "groupIds-value"
@@ -43,3 +45,4 @@ Content-length: 39
   ]
 }
 ```
+<!-- uuid: 60c3a952-470f-4d9c-bc33-0c4995d2a4eb\n2015-10-09 15:13:51 UTC -->

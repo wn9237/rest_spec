@@ -30,6 +30,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/notes/notebooks/<id>/CopyNotebook
+Content-type: application/json
+Content-length: 110
 {
   "siteCollectionId": "siteCollectionId-value",
   "siteId": "siteId-value",
@@ -58,3 +60,4 @@ Content-length: 400
   "createdTime": "datetime-value"
 }
 ```
+<!-- uuid: 7ee7964a-feb9-4ed2-b66f-e8338763c0aa\n2015-10-09 15:13:50 UTC -->

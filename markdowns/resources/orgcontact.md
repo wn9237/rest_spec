@@ -110,3 +110,4 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/orgcontact_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/orgcontact_getmembergroups.md)|String||
 |[Get MemberObjects](../api/orgcontact_getmemberobjects.md)|String||
+<!-- uuid: b8702274-893c-47f6-8cd0-d2f50fe821f2\n2015-10-09 15:13:50 UTC -->

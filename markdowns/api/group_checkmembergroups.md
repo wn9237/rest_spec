@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /groups/<objectId>/checkMemberGroups
+Content-type: application/json
+Content-length: 44
 {
   "groupIds": [
     "groupIds-value"
@@ -45,3 +47,4 @@ Content-length: 39
   ]
 }
 ```
+<!-- uuid: c08f095a-e5c8-4257-bb88-86d8fde499cd\n2015-10-09 15:13:50 UTC -->

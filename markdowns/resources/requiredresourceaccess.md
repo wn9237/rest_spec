@@ -22,3 +22,4 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |resourceAccess|[ResourceAccess](resourceaccess.md) collection||
 |resourceAppId|String||
+<!-- uuid: 1e55ac17-f410-4e1f-a93c-3b3448edbb1b\n2015-10-09 15:13:51 UTC -->

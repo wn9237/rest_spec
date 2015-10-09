@@ -21,6 +21,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /Alerts/<AlertId>/Reactivate
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -46,3 +48,4 @@ Content-length: 529
   "IsConfigurable": true
 }
 ```
+<!-- uuid: e9623f43-98ad-4687-a388-3ad7a87e79ed\n2015-10-09 15:13:50 UTC -->

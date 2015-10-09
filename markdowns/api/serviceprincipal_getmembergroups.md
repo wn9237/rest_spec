@@ -26,6 +26,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /servicePrincipals/<objectId>/getMemberGroups
+Content-type: application/json
+Content-length: 33
 {
   "securityEnabledOnly": true
 }
@@ -41,3 +43,4 @@ Content-length: 39
   ]
 }
 ```
+<!-- uuid: dc533e67-73a9-4c1e-a23c-2de1eea461e2\n2015-10-09 15:13:51 UTC -->

@@ -64,3 +64,4 @@ Here is a JSON representation of the resource
 |[Update](../api/drive_update.md) | [drive](drive.md)	|Update drive object. |
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
+<!-- uuid: 60729002-a3a2-4c1a-8440-10cc7835126a\n2015-10-09 15:13:49 UTC -->

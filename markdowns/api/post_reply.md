@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /groups/<objectId>/Threads/<Id>/Posts/<Id>/Reply
+Content-type: application/json
+Content-length: 19
 {
   "Post": {
   }
@@ -41,3 +43,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: c3ba8182-4593-4e82-8f3c-31dab490cf9b\n2015-10-09 15:13:51 UTC -->

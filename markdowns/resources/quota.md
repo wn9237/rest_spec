@@ -24,3 +24,4 @@ Here is a JSON representation of the resource
 |state|String||
 |total|Int64||
 |used|Int64||
+<!-- uuid: 1fd43b52-0a7e-4f07-9e6c-ebdaf3976093\n2015-10-09 15:13:51 UTC -->

@@ -23,6 +23,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /drives/<id>/allPhotos
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -75,3 +77,4 @@ Content-length: 665
   }
 }
 ```
+<!-- uuid: 3a43e24c-c764-4c9a-8598-c39940eb2d4d\n2015-10-09 15:13:49 UTC -->

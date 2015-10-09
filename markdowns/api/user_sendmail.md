@@ -29,6 +29,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/SendMail
+Content-type: application/json
+Content-length: 49
 {
   "Message": {
   },
@@ -43,3 +45,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: fc929791-eee2-46a2-8105-ca5c4833699e\n2015-10-09 15:13:51 UTC -->

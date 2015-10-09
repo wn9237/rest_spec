@@ -32,3 +32,4 @@ None
 |[Get PlanTaskBoard](../api/plantaskboard_get.md) | [PlanTaskBoard](plantaskboard.md) |Read properties and relationships of planTaskBoard object.|
 |[Update](../api/plantaskboard_update.md) | [PlanTaskBoard](plantaskboard.md)	|Update PlanTaskBoard object. |
 |[Delete](../api/plantaskboard_delete.md) | Void	|Delete PlanTaskBoard object. |
+<!-- uuid: 62288441-859b-493e-bb9f-fd1a69547274\n2015-10-09 15:13:51 UTC -->

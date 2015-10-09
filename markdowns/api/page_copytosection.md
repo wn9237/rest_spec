@@ -30,6 +30,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/notes/pages/<id>/CopyToSection
+Content-type: application/json
+Content-length: 98
 {
   "id": "id-value",
   "siteCollectionId": "siteCollectionId-value",
@@ -57,3 +59,4 @@ Content-length: 298
   "createdTime": "datetime-value"
 }
 ```
+<!-- uuid: 4fe102b7-7d4e-4730-9462-fd9d34fac976\n2015-10-09 15:13:50 UTC -->

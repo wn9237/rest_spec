@@ -23,6 +23,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/Messages/<Id>/CreateReplyAll
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -76,3 +78,4 @@ Content-length: 838
   "Id": "Id-value"
 }
 ```
+<!-- uuid: c7604303-2eaf-435a-92e3-799d1034eb2d\n2015-10-09 15:13:50 UTC -->

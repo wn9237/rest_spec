@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /drives/<id>/root/delta
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -80,3 +82,4 @@ Content-length: 665
   }
 }
 ```
+<!-- uuid: f1c0cb9c-a39d-46ad-89b7-3914484ae8e2\n2015-10-09 15:13:50 UTC -->

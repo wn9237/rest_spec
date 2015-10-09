@@ -88,7 +88,7 @@ module SpecMaker
 				example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE				
 				example_lines.push modeldump + NEWLINE	
 			else
-				example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE				
+				example_lines.push "Content-length: 0" + NEWLINE				
 			end			
 			example_lines.push '```' + NEWLINE
 			example_lines.push HEADER5 + "Response" + NEWLINE											

@@ -26,6 +26,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /applications/<objectId>/extensionProperties/<objectId>/getMemberGroups
+Content-type: application/json
+Content-length: 33
 {
   "securityEnabledOnly": true
 }
@@ -41,3 +43,4 @@ Content-length: 39
   ]
 }
 ```
+<!-- uuid: 6ff144e7-2898-4bda-9c1b-d258d586e973\n2015-10-09 15:13:50 UTC -->

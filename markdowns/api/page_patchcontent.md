@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/notes/pages/<id>/PatchContent
+Content-type: application/json
+Content-length: 35
 {
   "commands": [
     {
@@ -43,3 +45,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: 4f1269fc-d156-4610-a998-237cecf797f6\n2015-10-09 15:13:50 UTC -->

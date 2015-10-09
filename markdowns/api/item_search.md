@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /drives/<id>/root/search
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -80,3 +82,4 @@ Content-length: 665
   }
 }
 ```
+<!-- uuid: 71637859-13c2-45a4-998a-00a0e36f2f26\n2015-10-09 15:13:50 UTC -->

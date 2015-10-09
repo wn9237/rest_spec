@@ -55,4 +55,4 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/calendar_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
 |[Delete](../api/calendar_delete.md) | Void	|Delete Calendar object. |
-<!-- uuid: a06377a1-fd78-43b2-992e-5a71c62a747a\n2015-10-09 15:13:08 UTC -->
+<!-- uuid: 3132295f-75d4-40e7-a276-9acfa58fb76b\n2015-10-09 15:13:49 UTC -->

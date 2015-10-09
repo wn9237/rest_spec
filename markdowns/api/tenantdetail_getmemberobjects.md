@@ -26,6 +26,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /tenantDetails/<objectId>/getMemberObjects
+Content-type: application/json
+Content-length: 33
 {
   "securityEnabledOnly": true
 }
@@ -41,3 +43,4 @@ Content-length: 39
   ]
 }
 ```
+<!-- uuid: 6d7ecf11-7488-46b8-9341-b92cbe882088\n2015-10-09 15:13:51 UTC -->

@@ -29,6 +29,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /drives/<id>/root/copy
+Content-type: application/json
+Content-length: 54
 {
   "parentReference": {
   },
@@ -86,3 +88,4 @@ Content-length: 665
   }
 }
 ```
+<!-- uuid: 45128f96-6bb9-4d9d-a303-27590556d8ca\n2015-10-09 15:13:50 UTC -->

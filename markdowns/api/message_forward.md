@@ -29,6 +29,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/Messages/<Id>/Forward
+Content-type: application/json
+Content-length: 69
 {
   "Comment": "Comment-value",
   "ToRecipients": [
@@ -45,3 +47,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: 63019701-1961-4a52-9c15-3d47916d6f38\n2015-10-09 15:13:50 UTC -->

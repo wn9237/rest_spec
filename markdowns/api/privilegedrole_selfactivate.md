@@ -30,6 +30,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /PrivilegedRoles/<Id>/SelfActivate
+Content-type: application/json
+Content-length: 142
 {
   "Reason": "Reason-value",
   "Duration": "Duration-value",
@@ -50,3 +52,4 @@ Content-length: 160
   "ResultMessage": "ResultMessage-value"
 }
 ```
+<!-- uuid: 9124731c-b2a7-4120-bc53-c66d101a7556\n2015-10-09 15:13:51 UTC -->

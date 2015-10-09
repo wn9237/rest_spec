@@ -26,6 +26,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /contacts/<objectId>/getMemberObjects
+Content-type: application/json
+Content-length: 33
 {
   "securityEnabledOnly": true
 }
@@ -41,3 +43,4 @@ Content-length: 39
   ]
 }
 ```
+<!-- uuid: 2c724b04-6bcf-4572-a2b7-8a77b288838e\n2015-10-09 15:13:50 UTC -->

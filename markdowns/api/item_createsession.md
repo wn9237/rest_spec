@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /drives/<id>/root/createSession
+Content-type: application/json
+Content-length: 19
 {
   "item": {
   }
@@ -46,3 +48,4 @@ Content-length: 140
   ]
 }
 ```
+<!-- uuid: 84985dda-f293-4773-9e6a-2b6b8281cf6c\n2015-10-09 15:13:50 UTC -->

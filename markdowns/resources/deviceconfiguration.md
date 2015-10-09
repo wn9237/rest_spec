@@ -54,4 +54,4 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/deviceconfiguration_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String||
-<!-- uuid: b25db2de-8d33-4db4-acaf-6627e37b6269\n2015-10-09 15:13:08 UTC -->
+<!-- uuid: 8c13491e-4d80-4533-a339-43f62f0bb2c7\n2015-10-09 15:13:49 UTC -->

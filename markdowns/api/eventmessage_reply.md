@@ -26,6 +26,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 
+Content-type: application/json
+Content-length: 32
 {
   "Comment": "Comment-value"
 }
@@ -38,3 +40,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: 6f6df265-b1ea-4524-b952-f8f324a40295\n2015-10-09 15:13:49 UTC -->

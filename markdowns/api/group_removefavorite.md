@@ -23,6 +23,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /groups/<objectId>/RemoveFavorite
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -32,3 +34,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: 0f752e00-df8d-45a5-8c18-da763c912aef\n2015-10-09 15:13:50 UTC -->

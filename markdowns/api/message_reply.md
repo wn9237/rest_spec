@@ -28,6 +28,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/Messages/<Id>/Reply
+Content-type: application/json
+Content-length: 32
 {
   "Comment": "Comment-value"
 }
@@ -40,3 +42,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: 5df08ea5-bf37-493c-8e7d-72741e723087\n2015-10-09 15:13:50 UTC -->

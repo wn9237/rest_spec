@@ -22,6 +22,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/Deactivate
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -36,3 +38,4 @@ Content-length: 160
   "ResultMessage": "ResultMessage-value"
 }
 ```
+<!-- uuid: 96b41027-b249-4503-a5b8-a19289f48fcc\n2015-10-09 15:13:51 UTC -->

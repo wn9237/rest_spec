@@ -22,6 +22,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /PrivilegedRoles/<Id>/SelfDeactivate
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -36,3 +38,4 @@ Content-length: 160
   "ResultMessage": "ResultMessage-value"
 }
 ```
+<!-- uuid: 65ea8a13-685e-4d2c-815e-87264133fb63\n2015-10-09 15:13:51 UTC -->

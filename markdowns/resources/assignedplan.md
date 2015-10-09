@@ -22,4 +22,4 @@ Here is a JSON representation of the resource
 |capabilityStatus|String||
 |service|String||
 |servicePlanId|Guid||
-<!-- uuid: 86efa073-70f8-493d-929e-419c74be91c2\n2015-10-09 15:13:08 UTC -->
+<!-- uuid: c0452bed-38b0-4f85-939d-9235990bec5f\n2015-10-09 15:13:49 UTC -->

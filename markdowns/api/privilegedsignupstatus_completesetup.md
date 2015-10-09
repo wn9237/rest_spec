@@ -21,6 +21,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /PrivilegedSignupStatus/<TenantId>/CompleteSetup
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -30,3 +32,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: 8fabcb94-7ef7-452c-b042-28c2d29ae11b\n2015-10-09 15:13:51 UTC -->

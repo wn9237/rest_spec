@@ -21,6 +21,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /Alerts/<AlertId>/Dismiss
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -46,3 +48,4 @@ Content-length: 529
   "IsConfigurable": true
 }
 ```
+<!-- uuid: d1dba4c2-797f-4d5f-9247-dcf06c2fa774\n2015-10-09 15:13:50 UTC -->

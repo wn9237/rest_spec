@@ -23,6 +23,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /groups/<objectId>/AddFavorite
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -32,3 +34,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: a9547cae-a926-495a-ac85-ad8d010353d5\n2015-10-09 15:13:50 UTC -->

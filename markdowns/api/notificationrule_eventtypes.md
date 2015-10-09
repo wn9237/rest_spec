@@ -21,6 +21,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /NotificationRules/<Id>/EventTypes
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -33,3 +35,4 @@ Content-length: 39
   ]
 }
 ```
+<!-- uuid: 444608a4-ad50-406c-9130-f775a9c632b3\n2015-10-09 15:13:50 UTC -->

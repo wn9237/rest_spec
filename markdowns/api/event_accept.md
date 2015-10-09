@@ -29,6 +29,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/Events/<Id>/Accept
+Content-type: application/json
+Content-length: 56
 {
   "Comment": "Comment-value",
   "SendResponse": true
@@ -42,3 +44,4 @@ Content-length: 3
 {
 }
 ```
+<!-- uuid: 41b42054-8519-4a4c-b39e-d1d5e257f7ff\n2015-10-09 15:13:49 UTC -->

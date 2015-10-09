@@ -21,6 +21,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /PrivilegedSignupStatus/<TenantId>/IsSignedUp
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -31,3 +33,4 @@ Content-length: 19
   "value": true
 }
 ```
+<!-- uuid: 2bb7bfe6-fa85-4503-a810-0cf8914570df\n2015-10-09 15:13:51 UTC -->

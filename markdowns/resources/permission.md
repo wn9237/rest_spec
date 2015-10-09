@@ -50,3 +50,4 @@ None
 |[Get permission](../api/permission_get.md) | [permission](permission.md) |Read properties and relationships of permission object.|
 |[Update](../api/permission_update.md) | [permission](permission.md)	|Update permission object. |
 |[Delete](../api/permission_delete.md) | Void	|Delete permission object. |
+<!-- uuid: 57bffede-f57f-4ea7-a4c2-799ad3c4d6b1\n2015-10-09 15:13:50 UTC -->

@@ -32,6 +32,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /drives/<id>/root/invite
+Content-type: application/json
+Content-length: 154
 {
   "recipients": [
     {
@@ -66,3 +68,4 @@ Content-length: 176
   "shareId": "shareId-value"
 }
 ```
+<!-- uuid: 342d1ef4-0dc6-45b0-9251-27f8f87cf575\n2015-10-09 15:13:50 UTC -->

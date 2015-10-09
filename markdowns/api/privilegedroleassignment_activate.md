@@ -30,6 +30,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/Activate
+Content-type: application/json
+Content-length: 142
 {
   "Reason": "Reason-value",
   "Duration": "Duration-value",
@@ -50,3 +52,4 @@ Content-length: 160
   "ResultMessage": "ResultMessage-value"
 }
 ```
+<!-- uuid: b123b185-d339-4658-8d26-fa08b0df6537\n2015-10-09 15:13:51 UTC -->

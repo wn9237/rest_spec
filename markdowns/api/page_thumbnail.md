@@ -23,6 +23,8 @@ Here is an example of how to call this API.
 ##### Request
 ```http
 POST /users/<objectId>/notes/pages/<id>/Thumbnail
+Content-type: application/json
+Content-length: 0
 ```
 ##### Response
 ```json
@@ -33,3 +35,4 @@ Content-length: 29
   "value": "Stream-value"
 }
 ```
+<!-- uuid: f6a51273-7268-4b2b-a618-0365bcb6a584\n2015-10-09 15:13:50 UTC -->
