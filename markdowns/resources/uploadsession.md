@@ -23,4 +23,5 @@ Here is a JSON representation of the resource
 |nextExpectedRanges|String collection||
 |uploadUrl|String||
 
-<!-- uuid: 88bc9aab-228b-4084-94f6-a75813b91b74\n2015-10-09 15:15:46 UTC -->
+<!-- uuid: 1cd5ceef-5420-4be4-9887-586d6ce5840b
+2015-10-09 15:58:18 UTC -->

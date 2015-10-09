@@ -142,10 +142,10 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get item](../api/item_get.md) | [item](item.md) |Read properties and relationships of item object.|
-|[Create item](../api/item_post_children.md) |[item](item.md)| Create a new item by posting to the children collection.|
+|[Create children](../api/item_post_children.md) |[item](item.md)| Create a new children by posting to the children collection.|
 |[Create permission](../api/item_post_permissions.md) |[permission](permission.md)| Create a new permission by posting to the permissions collection.|
 |[Create thumbnailSet](../api/item_post_thumbnails.md) |[thumbnailSet](thumbnailset.md)| Create a new thumbnailSet by posting to the thumbnails collection.|
-|[Create item](../api/item_post_versions.md) |[item](item.md)| Create a new item by posting to the versions collection.|
+|[Create version](../api/item_post_versions.md) |[item](item.md)| Create a new version by posting to the versions collection.|
 |[Update](../api/item_update.md) | [item](item.md)	|Update item object. |
 |[Delete](../api/item_delete.md) | Void	|Delete item object. |
 |[Allphotos](../api/item_allphotos.md)|[item](item.md)||
@@ -156,4 +156,5 @@ Here is a JSON representation of the resource
 |[Invite](../api/item_invite.md)|[permission](permission.md)||
 |[Search](../api/item_search.md)|[item](item.md)||
 
-<!-- uuid: 917bcedb-c8cc-4c8b-b5b6-e907851b852b\n2015-10-09 15:15:44 UTC -->
+<!-- uuid: 88a27690-fa4d-422f-9cc9-33f9c1684e57
+2015-10-09 15:58:17 UTC -->

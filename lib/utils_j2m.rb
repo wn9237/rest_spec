@@ -49,7 +49,7 @@ module SpecMaker
 	# Add Owner or Create Owner instead of Add DirectoryObject. Hence, if the 
 		# collection(datatype) happens to be one the below, we'll use the name in the API name.
 	POST_NAME_MAPPING = %w[recipient directoryobject event photo 
-						conversationthread recipient privilegedroleassignment]
+						conversationthread recipient privilegedroleassignment item]
 
 	TIMESTAMP_DESC = %q{The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`}
 
@@ -143,7 +143,7 @@ module SpecMaker
 	end
 
 	def self.uuid_date 
-	  return "<!-- uuid: " + SecureRandom.uuid  + '\n' + Time.now.utc.to_s + " -->"
+	  return "<!-- uuid: " + SecureRandom.uuid  + "\n" + Time.now.utc.to_s + " -->"
 	end
 
 	def self.get_create_description(objectName=nil)

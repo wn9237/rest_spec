@@ -1,6 +1,6 @@
-# Create item
+# Create special
 
-Use this API to create a new item.
+Use this API to create a new special.
 ### HTTP request
 ```http
 POST /drives/<id>/special
@@ -74,4 +74,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: afd87fef-4fbc-43ff-b86b-6d6f96da3cbe\n2015-10-09 15:15:44 UTC -->
+<!-- uuid: 61662e87-c6d9-408b-ab21-f3b3a9b99bb7
+2015-10-09 15:58:16 UTC -->

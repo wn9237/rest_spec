@@ -36,4 +36,5 @@ None
 |[Delete](../api/notification_delete.md) | Void	|Delete Notification object. |
 |[Notificationtypes](../api/notification_notificationtypes.md)|String||
 
-<!-- uuid: 4b4f8f64-6e89-45e7-841a-8451b5360ae8\n2015-10-09 15:15:45 UTC -->
+<!-- uuid: 01111d98-7a01-40c7-9fed-a1d39e9c6e12
+2015-10-09 15:58:17 UTC -->

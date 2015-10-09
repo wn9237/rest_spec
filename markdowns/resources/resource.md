@@ -35,4 +35,5 @@ None
 |[Update](../api/resource_update.md) | [Resource](resource.md)	|Update Resource object. |
 |[Delete](../api/resource_delete.md) | Void	|Delete Resource object. |
 
-<!-- uuid: 47166ec0-e388-4192-9e5e-de51b0122cd6\n2015-10-09 15:15:46 UTC -->
+<!-- uuid: 49dbcaaf-e9aa-4b85-b0f7-69478ab654f6
+2015-10-09 15:58:18 UTC -->

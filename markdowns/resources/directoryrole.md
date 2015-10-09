@@ -81,4 +81,5 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String||
 
-<!-- uuid: 4dc9053b-3817-45cf-b462-9b76607098cc\n2015-10-09 15:15:44 UTC -->
+<!-- uuid: 88f791af-33b5-4351-bd22-a9da6014450b
+2015-10-09 15:58:16 UTC -->

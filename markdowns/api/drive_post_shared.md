@@ -1,6 +1,6 @@
-# Create item
+# Create shared
 
-Use this API to create a new item.
+Use this API to create a new shared.
 ### HTTP request
 ```http
 POST /drives/<id>/shared
@@ -74,4 +74,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: 43ceb712-e447-42a4-8adf-a8d62801b831\n2015-10-09 15:15:44 UTC -->
+<!-- uuid: db9bae54-7f86-4b49-955f-f0b54ec4e33c
+2015-10-09 15:58:16 UTC -->

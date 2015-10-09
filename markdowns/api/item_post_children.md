@@ -1,6 +1,6 @@
-# Create item
+# Create children
 
-Use this API to create a new item.
+Use this API to create a new children.
 ### HTTP request
 ```http
 POST /drives/<id>/root/children
@@ -74,4 +74,5 @@ Content-length: 665
 }
 ```
 
-<!-- uuid: 15a76c69-ef54-472e-be2e-2658fe7a2290\n2015-10-09 15:15:44 UTC -->
+<!-- uuid: 00880661-cb36-4054-aa0e-49a448e11ca5
+2015-10-09 15:58:17 UTC -->

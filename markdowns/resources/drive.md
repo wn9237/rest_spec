@@ -59,10 +59,11 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get drive](../api/drive_get.md) | [drive](drive.md) |Read properties and relationships of drive object.|
 |[Create item](../api/drive_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
-|[Create item](../api/drive_post_shared.md) |[item](item.md)| Create a new item by posting to the shared collection.|
-|[Create item](../api/drive_post_special.md) |[item](item.md)| Create a new item by posting to the special collection.|
+|[Create shared](../api/drive_post_shared.md) |[item](item.md)| Create a new shared by posting to the shared collection.|
+|[Create special](../api/drive_post_special.md) |[item](item.md)| Create a new special by posting to the special collection.|
 |[Update](../api/drive_update.md) | [drive](drive.md)	|Update drive object. |
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: af46244f-b4ed-424a-a301-c16d603b9641\n2015-10-09 15:15:44 UTC -->
+<!-- uuid: f5849683-b447-4a93-9533-6c68ae166409
+2015-10-09 15:58:16 UTC -->
