@@ -32,5 +32,5 @@ Here is a JSON representation of the resource
 |[Get Site](../api/site_get.md) | [Site](site.md) |Read properties and relationships of site object.|
 |[Delete](../api/site_delete.md) | Void	|Delete Site object. |
 
-<!-- uuid: 2744800d-70b9-4f34-8214-51ba779ddd8e
-2015-10-09 17:20:42 UTC -->
+<!-- uuid: 9bebea4b-4daf-4340-8d7b-dca0c536b3aa
+2015-10-09 18:12:09 UTC -->

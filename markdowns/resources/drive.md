@@ -2,24 +2,21 @@
 
 
 
-### JSON representation
+### Properties
+None
 
-Here is a JSON representation of the resource
+### Relationships
+None
 
-```json
-{
-  "driveType": "String",
-  "id": "String (identifier)",
-  "items": [
-    {
-      "@odata.type": "microsoft.graph.item"
-    }
-  ],
-  "owner": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "quota": {
-    "@odata.type": "microsoft.graph.quota"
+
+### Tasks
+
+| Task		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[List](../api/drive_list.md) | [drive](drive.md) [] |Get drive object collection. |
+
+<!-- uuid: 088bb93d-1567-4622-8b41-fb912e43d10a
+2015-10-09 18:12:08 UTC --> "@odata.type": "microsoft.graph.quota"
   },
   "root": {
     "@odata.type": "microsoft.graph.item"
@@ -65,5 +62,5 @@ Here is a JSON representation of the resource
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: 6aabd923-1bad-42fb-811f-1f0cd806c6e4
-2015-10-09 17:20:41 UTC -->
+<!-- uuid: f7fc5388-f8fe-4f04-9497-50aec738ec1f
+2015-10-09 18:12:08 UTC -->

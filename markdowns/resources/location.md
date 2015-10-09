@@ -21,5 +21,5 @@ Here is a JSON representation of the resource
 |latitude|Double||
 |longitude|Double||
 
-<!-- uuid: 4f787c2d-d919-4d13-a174-5c048b5da7e8
-2015-10-09 17:20:41 UTC -->
+<!-- uuid: 90656989-6aed-48ae-8e48-574ed7aae549
+2015-10-09 18:12:08 UTC -->

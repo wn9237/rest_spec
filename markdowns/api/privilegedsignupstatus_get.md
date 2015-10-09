@@ -1,9 +1,9 @@
-# Get PrivilegedSignupStatus
+# List PrivilegedSignupStatus
 
-Retrieve the properties and relationships of privilegedsignupstatus object.
+Retrieve a list of privilegedsignupstatus objects.
 ### HTTP request
 ```http
-GET /PrivilegedSignupStatus/<TenantId>
+
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -30,5 +30,6 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 312f1537-3afc-49d5-bfdf-e16232b4c444
-2015-10-09 17:20:42 UTC -->
+<!-- uuid: d2d3794a-a929-4ae6-a49c-940ea4ae121b
+2015-10-09 18:12:09 UTC -->068d2-aba4-4c0a-943d-e642f8a14290
+2015-10-09 18:12:09 UTC -->

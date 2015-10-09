@@ -21,5 +21,5 @@ Here is a JSON representation of the resource
 |redeemedBy|String||
 |signInRequired|Boolean||
 
-<!-- uuid: 39cc3f3a-fc3e-4ff7-a083-2a5af47ddf51
-2015-10-09 17:20:42 UTC -->
+<!-- uuid: 4ab9be1b-b9ae-4dd9-b676-597dcb0c17c2
+2015-10-09 18:12:09 UTC -->

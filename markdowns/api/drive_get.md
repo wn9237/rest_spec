@@ -1,11 +1,9 @@
-# Get drive
+# List drive
 
-Retrieve the properties and relationships of drive object.
+Retrieve a list of drive objects.
 ### HTTP request
 ```http
-GET /drive
-GET /drives/<id>
-GET /users/<objectId>/drive
+
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -35,5 +33,8 @@ Content-length: 92
 }
 ```
 
-<!-- uuid: d3679577-4df6-4572-9611-43f2addebfa9
-2015-10-09 17:20:41 UTC -->
+<!-- uuid: 92c9307f-62c9-408b-9358-98684bad6910
+2015-10-09 18:12:08 UTC -->`
+
+<!-- uuid: 4ad70725-ab9d-4a2d-a862-3a771136aacc
+2015-10-09 18:12:08 UTC -->

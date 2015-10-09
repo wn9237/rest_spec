@@ -1,9 +1,9 @@
-# Get MyOrganization
+# List MyOrganization
 
-Retrieve the properties and relationships of myorganization object.
+Retrieve a list of myorganization objects.
 ### HTTP request
 ```http
-GET /myOrganization
+
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -15,7 +15,7 @@ You can use the [OData query parameters](odata-optional-query-parameters.md) to 
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [MyOrganization](../resources/myorganization.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [myOrganization](../resources/myorganization.md) object in the response body.
 ### Example
 ##### Response
 Here is an example of the response.
@@ -28,5 +28,6 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 362e962e-a9ea-44c6-b52b-149af61db643
-2015-10-09 17:20:41 UTC -->
+<!-- uuid: 20821e52-4f6d-404e-8255-d595a85d169c
+2015-10-09 18:12:08 UTC -->d-3339f7a6869b
+2015-10-09 18:12:08 UTC -->

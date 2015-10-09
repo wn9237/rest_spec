@@ -359,5 +359,5 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/user_getmembergroups.md)|String||
 |[Get MemberObjects](../api/user_getmemberobjects.md)|String||
 
-<!-- uuid: 2d5be81e-6742-457a-a660-46a6e9537c15
-2015-10-09 17:20:42 UTC -->
+<!-- uuid: 47675e78-8e2a-4303-a637-7fef154632e8
+2015-10-09 18:12:09 UTC -->

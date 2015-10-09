@@ -1,9 +1,9 @@
-# Get DeviceConfiguration
+# List DeviceConfiguration
 
-Retrieve the properties and relationships of deviceconfiguration object.
+Retrieve a list of deviceconfiguration objects.
 ### HTTP request
 ```http
-GET /deviceConfiguration/<objectId>
+
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -15,7 +15,7 @@ You can use the [OData query parameters](odata-optional-query-parameters.md) to 
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [deviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
 ### Example
 ##### Response
 Here is an example of the response.
@@ -38,5 +38,6 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: a0720c9a-3eaa-4e7f-80cd-4f48324a7f17
-2015-10-09 17:20:41 UTC -->
+<!-- uuid: 1720acd2-7386-480a-8e3d-13ab3f5ae069
+2015-10-09 18:12:08 UTC -->d4-783c-41ae-8154-be13bece4c8d
+2015-10-09 18:12:08 UTC -->

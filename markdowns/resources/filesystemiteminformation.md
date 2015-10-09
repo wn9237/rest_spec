@@ -29,5 +29,5 @@ Here is a JSON representation of the resource
 |name|String||
 |parentReference|[itemReference](itemreference.md)||
 
-<!-- uuid: d033f23f-962b-41d6-bce0-6e2fd937a1e5
-2015-10-09 17:20:41 UTC -->
+<!-- uuid: d911d62f-d3a2-4543-9d12-1a9654107866
+2015-10-09 18:12:08 UTC -->

@@ -31,5 +31,5 @@ Here is a JSON representation of the resource
 |Month|Int32||
 |Type|String| Possible values are: `Daily`, `Weekly`, `AbsoluteMonthly`, `RelativeMonthly`, `AbsoluteYearly`, `RelativeYearly`.|
 
-<!-- uuid: 254dd62a-6e83-4304-93d9-53742e1ad31d
-2015-10-09 17:20:42 UTC -->
+<!-- uuid: 449601ea-5d84-4571-bdd9-a9d1f00a1513
+2015-10-09 18:12:09 UTC -->

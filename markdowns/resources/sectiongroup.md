@@ -67,5 +67,5 @@ Here is a JSON representation of the resource
 |[Update](../api/sectiongroup_update.md) | [SectionGroup](sectiongroup.md)	|Update SectionGroup object. |
 |[Delete](../api/sectiongroup_delete.md) | Void	|Delete SectionGroup object. |
 
-<!-- uuid: ef9fd7c6-be05-4ece-b260-08b3a46f69bd
-2015-10-09 17:20:42 UTC -->
+<!-- uuid: 35d11ad8-a652-40a0-b377-b5af04043c03
+2015-10-09 18:12:09 UTC -->

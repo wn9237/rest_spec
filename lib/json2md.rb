@@ -28,19 +28,22 @@ module SpecMaker
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE				
 
-		when 'auto_get'
+		when 'auto_get', 'auto_list'
 			# example_lines.push HEADER5 + "Request" + NEWLINE				
 			# example_lines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../resources/#{method[:returnType].downcase}.md) object." + NEWLINE
 			example_lines.push HEADER5 + "Response" + NEWLINE											
 			example_lines.push "Here is an example of the response." + NEWLINE
-			modeldump = get_json_model_method(@jsonHash[:name])
+			if type == 'auto_list'
+				modeldump = get_json_model_method(@jsonHash[:name], true)
+			else
+				modeldump = get_json_model_method(@jsonHash[:name])
+			end
 			example_lines.push "```json" + NEWLINE
 			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
 			example_lines.push "Content-type: application/json" + NEWLINE
 			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE				
-
 
 		when 'auto_put'
 
@@ -321,10 +324,10 @@ module SpecMaker
 	def self.create_get_method
 		getMethodLines = []
 		# Header and description
-		realHeader = @jsonHash[:isCollection] ? ('List ' + @jsonHash[:collectionOf]) : ('Get ' + @jsonHash[:name])
+		realHeader = @jsonHash[:collectionOf] ? ('List ' + @jsonHash[:collectionOf]) : ('Get ' + @jsonHash[:name])
 		getMethodLines.push HEADER1 + realHeader + TWONEWLINES
 
-		if @jsonHash[:isCollection] 
+		if @jsonHash[:collectionOf] 
 			getMethodLines.push "Retrieve a list of #{@jsonHash[:collectionOf].downcase} objects."  + NEWLINE
 		else
 			getMethodLines.push "Retrieve the properties and relationships of #{@jsonHash[:name].downcase} object."  + NEWLINE
@@ -365,7 +368,11 @@ module SpecMaker
 		end
 
 		#Example
-		example_lines = gen_example("auto_get")
+		if @jsonHash[:isCollection] 
+			example_lines = gen_example("auto_list")
+		else
+			example_lines = gen_example("auto_get")
+		end
 		example_lines.each do |line|
 			getMethodLines.push line
 		end
@@ -457,13 +464,10 @@ module SpecMaker
 		
 		# Obtain the resource name. 
 		@resource = @jsonHash[:name]
-		if @jsonHash[:isEntitySet] 
-			@ientityset = @ientityset + 1
-			return 
-		end
-
-		@logger.debug("")	
-		@logger.debug("...............Report for: #{@resource}...........")	
+		# if @jsonHash[:isEntitySet] 
+		# 	@ientityset = @ientityset + 1
+		# 	return 
+		# end
 		puts "--> #{@resource}"
 
 		propreties = @jsonHash[:properties]
@@ -558,13 +562,17 @@ module SpecMaker
 			if isMethod || isProperty || isPost || @jsonHash[:allowDelete]
 				@mdlines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
 			end
-			if isProperty && !@jsonHash[:isComplexType]
-				if @jsonHash[:isCollection]
-					returnLink = "[" + @jsonHash[:collectionOf] + "](" + @jsonHash[:collectionOf].downcase + ".md)"			
-					@mdlines.push "|[List](../api/#{@jsonHash[:name].downcase}_list.md) | #{returnLink} [] |Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
+			if !@jsonHash[:isComplexType]
+				if @jsonHash[:collectionOf]
+					returnLink = "[" + @jsonHash[:collectionOf] + "](" + @jsonHash[:collectionOf].downcase + ".md)"								
+					@mdlines.push "|[List](../api/#{@jsonHash[:collectionOf].downcase}_list.md) | #{returnLink} [] |Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
 				else
-					returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
-					@mdlines.push "|[Get #{@jsonHash[:name]}](../api/#{@jsonHash[:name].downcase}_get.md) | #{returnLink} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
+					if isProperty 
+						returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
+						@mdlines.push "|[Get #{@jsonHash[:name]}](../api/#{@jsonHash[:name].downcase}_get.md) | #{returnLink} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
+						puts "simple get: #{@jsonHash[:name]}" 					
+					end
+
 				end
 				create_get_method
 			end
@@ -674,8 +682,8 @@ module SpecMaker
 	processed_files = 0
 	Dir.foreach(JSON_SOURCE_FOLDER) do |item|
 		next if item == '.' or item == '..'
-		fullpath = JSON_SOURCE_FOLDER + '/' + item.downcase
-
+		fullpath = JSON_SOURCE_FOLDER + item.downcase
+		
 		if File.file?(fullpath)
 			convert_to_spec File.read(fullpath)
 			processed_files = processed_files + 1

@@ -197,10 +197,15 @@ module SpecMaker
 		# save the collection names & types being created for later checks.
 		@collectionNames[entity[:Name]] = dt
 
+		# These are different for the collection
 		@json_object[:allowPatch] = false
 		@json_object[:allowUpsert] = false
 		@json_object[:allowPatchCreate] = false
 		@json_object[:allowDelete] = false
+		@json_object[:relationshipNotes] = nil
+		@json_object[:createDescription] = nil
+		@json_object[:updateDescription] = nil
+		@json_object[:deleteDescription] = nil
 
 		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
 		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
