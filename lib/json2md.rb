@@ -26,6 +26,20 @@ module SpecMaker
 			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE				
+
+		when 'auto_get'
+			# example_lines.push HEADER5 + "Request" + NEWLINE				
+			# example_lines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../resources/#{method[:returnType].downcase}.md) object." + NEWLINE
+			example_lines.push HEADER5 + "Response" + NEWLINE											
+			example_lines.push "Here is an example of the response." + NEWLINE
+			modeldump = get_json_model_method(@jsonHash[:name])
+			example_lines.push "```json" + NEWLINE
+			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
+			example_lines.push "Content-type: application/json" + NEWLINE
+			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
+			example_lines.push modeldump + NEWLINE	
+			example_lines.push "```" + NEWLINE				
+
 		when 'auto_delete'
 			# example_lines.push HEADER5 + "Request" + NEWLINE				
 			# example_lines.push '```http' + NEWLINE
