@@ -47,11 +47,23 @@ Here is an example of the request.
 ```http
 PUT /applications/<objectId>
 Content-type: application/json
-Content-length: 953
+Content-length: 1883
 {
   "appId": "appId-value",
   "appRoles": [
     {
+      "allowedMemberTypes": {
+      },
+      "description": {
+      },
+      "displayName": {
+      },
+      "id": {
+      },
+      "isEnabled": {
+      },
+      "value": {
+      }
     }
   ],
   "availableToOtherTenants": true,
@@ -64,6 +76,20 @@ Content-length: 953
   ],
   "keyCredentials": [
     {
+      "customKeyIdentifier": {
+      },
+      "endDate": {
+      },
+      "keyId": {
+      },
+      "startDate": {
+      },
+      "type": {
+      },
+      "usage": {
+      },
+      "value": {
+      }
     }
   ],
   "knownClientApplications": [
@@ -75,11 +101,37 @@ Content-length: 953
   "oauth2AllowUrlPathMatching": true,
   "oauth2Permissions": [
     {
+      "adminConsentDescription": {
+      },
+      "adminConsentDisplayName": {
+      },
+      "id": {
+      },
+      "isEnabled": {
+      },
+      "type": {
+      },
+      "userConsentDescription": {
+      },
+      "userConsentDisplayName": {
+      },
+      "value": {
+      }
     }
   ],
   "oauth2RequirePostResponse": true,
   "passwordCredentials": [
     {
+      "customKeyIdentifier": {
+      },
+      "endDate": {
+      },
+      "keyId": {
+      },
+      "startDate": {
+      },
+      "value": {
+      }
     }
   ],
   "publicClient": true,
@@ -88,6 +140,14 @@ Content-length: 953
   ],
   "requiredResourceAccess": [
     {
+      "resourceAppId": {
+      },
+      "resourceAccess": {
+        "id": {
+        },
+        "type": {
+        }
+      }
     }
   ],
   "samlMetadataUrl": "samlMetadataUrl-value",
@@ -101,11 +161,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 953
+Content-length: 1883
 {
   "appId": "appId-value",
   "appRoles": [
     {
+      "allowedMemberTypes": {
+      },
+      "description": {
+      },
+      "displayName": {
+      },
+      "id": {
+      },
+      "isEnabled": {
+      },
+      "value": {
+      }
     }
   ],
   "availableToOtherTenants": true,
@@ -118,6 +190,20 @@ Content-length: 953
   ],
   "keyCredentials": [
     {
+      "customKeyIdentifier": {
+      },
+      "endDate": {
+      },
+      "keyId": {
+      },
+      "startDate": {
+      },
+      "type": {
+      },
+      "usage": {
+      },
+      "value": {
+      }
     }
   ],
   "knownClientApplications": [
@@ -129,11 +215,37 @@ Content-length: 953
   "oauth2AllowUrlPathMatching": true,
   "oauth2Permissions": [
     {
+      "adminConsentDescription": {
+      },
+      "adminConsentDisplayName": {
+      },
+      "id": {
+      },
+      "isEnabled": {
+      },
+      "type": {
+      },
+      "userConsentDescription": {
+      },
+      "userConsentDisplayName": {
+      },
+      "value": {
+      }
     }
   ],
   "oauth2RequirePostResponse": true,
   "passwordCredentials": [
     {
+      "customKeyIdentifier": {
+      },
+      "endDate": {
+      },
+      "keyId": {
+      },
+      "startDate": {
+      },
+      "value": {
+      }
     }
   ],
   "publicClient": true,
@@ -142,6 +254,14 @@ Content-length: 953
   ],
   "requiredResourceAccess": [
     {
+      "resourceAppId": {
+      },
+      "resourceAccess": {
+        "id": {
+        },
+        "type": {
+        }
+      }
     }
   ],
   "samlMetadataUrl": "samlMetadataUrl-value",
@@ -151,5 +271,5 @@ Content-length: 953
 }
 ```
 
-<!-- uuid: 32d1ef77-3b77-4fc2-ac26-7e4c9f9899c1
-2015-10-09 15:58:16 UTC -->
+<!-- uuid: 36dd4e19-83fb-4b2f-a807-943b885e48eb
+2015-10-09 16:03:13 UTC -->

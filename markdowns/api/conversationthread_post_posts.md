@@ -26,20 +26,42 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 444
+Content-length: 747
 {
   "Body": {
+    "ContentType": {
+    },
+    "Content": {
+    }
   },
   "DateTimeReceived": "datetime-value",
   "HasAttachments": true,
   "From": {
+    "EmailAddress": {
+      "Name": {
+      },
+      "Address": {
+      }
+    }
   },
   "Sender": {
+    "EmailAddress": {
+      "Name": {
+      },
+      "Address": {
+      }
+    }
   },
   "ConversationThreadId": "ConversationThreadId-value",
   "ConversationId": "ConversationId-value",
   "NewParticipants": [
     {
+      "EmailAddress": {
+        "Name": {
+        },
+        "Address": {
+        }
+      }
     }
   ],
   "ChangeKey": "ChangeKey-value",
@@ -52,5 +74,5 @@ Content-length: 444
 }
 ```
 
-<!-- uuid: e73b9aca-9965-4a47-8b44-44b74b8900c0
-2015-10-09 15:58:16 UTC -->
+<!-- uuid: 5f2d8c84-f183-436f-be3b-917d7d09cc41
+2015-10-09 16:03:13 UTC -->

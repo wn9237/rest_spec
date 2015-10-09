@@ -126,5 +126,5 @@ Here is a JSON representation of the resource
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | Void	|Delete Contact object. |
 
-<!-- uuid: 911dbb41-9032-4487-a971-79d0a47457c5
-2015-10-09 15:58:16 UTC -->
+<!-- uuid: 1a66af9f-aa07-461b-ad65-14a0751cac87
+2015-10-09 16:03:13 UTC -->

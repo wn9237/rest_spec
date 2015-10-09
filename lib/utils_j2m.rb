@@ -168,7 +168,7 @@ module SpecMaker
 		elsif SIMPLETYPES.include? dataType
 			return "#{name}-value"				
 		else
-			return {}
+			return dump_complex_type(dataType)
 		end
 	end
 

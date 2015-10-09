@@ -26,7 +26,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1289
+Content-length: 1713
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -41,6 +41,10 @@ Content-length: 1289
   "Generation": "Generation-value",
   "EmailAddresses": [
     {
+      "Name": {
+      },
+      "Address": {
+      }
     }
   ],
   "ImAddresses": [
@@ -62,10 +66,40 @@ Content-length: 1289
   ],
   "MobilePhone1": "MobilePhone1-value",
   "HomeAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "BusinessAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "OtherAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "YomiCompanyName": "YomiCompanyName-value",
   "YomiGivenName": "YomiGivenName-value",
@@ -80,5 +114,5 @@ Content-length: 1289
 }
 ```
 
-<!-- uuid: 2890a1fd-cefb-4e37-b10f-20cffb0744f5
-2015-10-09 15:58:16 UTC -->
+<!-- uuid: 75e294c5-7c04-4f2a-a2e0-ffd4ef922a61
+2015-10-09 16:03:13 UTC -->

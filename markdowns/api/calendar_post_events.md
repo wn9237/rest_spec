@@ -26,10 +26,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 901
+Content-length: 1726
 {
   "Subject": "Subject-value",
   "Body": {
+    "ContentType": {
+    },
+    "Content": {
+    }
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
@@ -40,9 +44,19 @@ Content-length: 901
   "EndTimeZone": "EndTimeZone-value",
   "Reminder": 99,
   "Location": {
+    "altitude": {
+    },
+    "latitude": {
+    },
+    "longitude": {
+    }
   },
   "ShowAs": "ShowAs-value",
   "ResponseStatus": {
+    "Response": {
+    },
+    "Time": {
+    }
   },
   "IsAllDay": true,
   "IsCancelled": true,
@@ -52,11 +66,57 @@ Content-length: 901
   "SeriesMasterId": "SeriesMasterId-value",
   "Attendees": [
     {
+      "EmailAddress": {
+        "Name": {
+        },
+        "Address": {
+        }
+      },
+      "Status": {
+        "Response": {
+        },
+        "Time": {
+        }
+      },
+      "Type": {
+      }
     }
   ],
   "Recurrence": {
+    "Pattern": {
+      "Type": {
+      },
+      "Interval": {
+      },
+      "Month": {
+      },
+      "DayOfMonth": {
+      },
+      "DaysOfWeek": {
+      },
+      "FirstDayOfWeek": {
+      },
+      "Index": {
+      }
+    },
+    "Range": {
+      "Type": {
+      },
+      "StartDate": {
+      },
+      "EndDate": {
+      },
+      "NumberOfOccurrences": {
+      }
+    }
   },
   "Organizer": {
+    "EmailAddress": {
+      "Name": {
+      },
+      "Address": {
+      }
+    }
   },
   "iCalUId": "iCalUId-value",
   "WebLink": "WebLink-value",
@@ -71,5 +131,5 @@ Content-length: 901
 }
 ```
 
-<!-- uuid: b485e0a8-6ad5-4b4c-a288-1ff95fa80b43
-2015-10-09 15:58:16 UTC -->
+<!-- uuid: d9db4d7c-e8fd-421b-86a8-e4edf4467987
+2015-10-09 16:03:13 UTC -->

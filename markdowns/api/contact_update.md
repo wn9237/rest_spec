@@ -60,7 +60,7 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/Contacts/<Id>
 Content-type: application/json
-Content-length: 1289
+Content-length: 1713
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -75,6 +75,10 @@ Content-length: 1289
   "Generation": "Generation-value",
   "EmailAddresses": [
     {
+      "Name": {
+      },
+      "Address": {
+      }
     }
   ],
   "ImAddresses": [
@@ -96,10 +100,40 @@ Content-length: 1289
   ],
   "MobilePhone1": "MobilePhone1-value",
   "HomeAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "BusinessAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "OtherAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "YomiCompanyName": "YomiCompanyName-value",
   "YomiGivenName": "YomiGivenName-value",
@@ -118,7 +152,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1289
+Content-length: 1713
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -133,6 +167,10 @@ Content-length: 1289
   "Generation": "Generation-value",
   "EmailAddresses": [
     {
+      "Name": {
+      },
+      "Address": {
+      }
     }
   ],
   "ImAddresses": [
@@ -154,10 +192,40 @@ Content-length: 1289
   ],
   "MobilePhone1": "MobilePhone1-value",
   "HomeAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "BusinessAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "OtherAddress": {
+    "Street": {
+    },
+    "City": {
+    },
+    "State": {
+    },
+    "CountryOrRegion": {
+    },
+    "PostalCode": {
+    }
   },
   "YomiCompanyName": "YomiCompanyName-value",
   "YomiGivenName": "YomiGivenName-value",
@@ -172,5 +240,5 @@ Content-length: 1289
 }
 ```
 
-<!-- uuid: 00994360-aa3e-461c-b649-fc5d444dab94
-2015-10-09 15:58:16 UTC -->
+<!-- uuid: 43a9eba9-cd32-4be8-9cbe-c8a7f7e7324b
+2015-10-09 16:03:13 UTC -->
