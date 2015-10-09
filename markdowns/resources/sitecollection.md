@@ -36,5 +36,5 @@ Here is a JSON representation of the resource
 |[Delete](../api/sitecollection_delete.md) | Void	|Delete SiteCollection object. |
 |[Fromurl](../api/sitecollection_fromurl.md)|[SiteMetadata](sitemetadata.md)||
 
-<!-- uuid: a0aed16d-2127-4fca-89de-d0de28da4f22
-2015-10-09 18:16:07 UTC -->
+<!-- uuid: 6500cb54-a01e-41ba-a8ff-e5952433e6ca
+2015-10-09 18:21:34 UTC -->

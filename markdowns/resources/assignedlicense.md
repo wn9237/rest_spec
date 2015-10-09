@@ -21,5 +21,5 @@ Here is a JSON representation of the resource
 |disabledPlans|Guid collection||
 |skuId|Guid||
 
-<!-- uuid: 3b5ccf99-897a-4acc-8e45-231e8d6c6e64
-2015-10-09 18:16:06 UTC -->
+<!-- uuid: 4aa47946-2b15-4e82-b0c8-8f8462bf60f2
+2015-10-09 18:21:32 UTC -->

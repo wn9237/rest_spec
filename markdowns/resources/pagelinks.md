@@ -23,5 +23,5 @@ Here is a JSON representation of the resource
 |oneNoteClientUrl|[ExternalLink](externallink.md)||
 |oneNoteWebUrl|[ExternalLink](externallink.md)||
 
-<!-- uuid: 7e222152-2f6d-49d8-ab4b-246bedc764e7
-2015-10-09 18:16:07 UTC -->
+<!-- uuid: 72ff158e-89df-4a9a-adc4-894aa33db580
+2015-10-09 18:21:34 UTC -->

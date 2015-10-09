@@ -58,5 +58,5 @@ Here is a JSON representation of the resource
 |[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
 |[Move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||
 
-<!-- uuid: 5bb68539-e309-4420-bfd0-99232ec391a8
-2015-10-09 18:16:07 UTC -->
+<!-- uuid: 8beaa44c-243e-4510-8c8b-1bb62a4d1d5f
+2015-10-09 18:21:33 UTC -->

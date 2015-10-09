@@ -54,5 +54,5 @@ Here is a JSON representation of the resource
 |[Update](../api/contactfolder_update.md) | [ContactFolder](contactfolder.md)	|Update ContactFolder object. |
 |[Delete](../api/contactfolder_delete.md) | Void	|Delete ContactFolder object. |
 
-<!-- uuid: 9d250b18-16d4-4487-a7c6-def6d76eb51d
-2015-10-09 18:16:06 UTC -->
+<!-- uuid: ce17e680-c2fa-493b-834a-c39b36e5864b
+2015-10-09 18:21:33 UTC -->

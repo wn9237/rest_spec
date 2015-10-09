@@ -380,7 +380,7 @@ module SpecMaker
 		# Write the output file. 
 		puts "Setting: #{@jsonHash[:collectionOf]}"
 		fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:collectionOf].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
-		end
+		
 		outfile = MARKDOWN_API_FOLDER + fileName
 		file=File.new(outfile,'w')
 		getMethodLines.each do |line|

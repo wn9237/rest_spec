@@ -17,5 +17,5 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |name|String||
 
-<!-- uuid: 6773d333-5277-419e-991d-1ba776b2be2e
-2015-10-09 18:16:07 UTC -->
+<!-- uuid: 7f414bb3-a303-413d-9514-9ea5ab90d99b
+2015-10-09 18:21:34 UTC -->

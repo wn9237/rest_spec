@@ -15,5 +15,5 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/directoryroletemplate_list.md) | [DirectoryRoleTemplate](directoryroletemplate.md) [] |Get directoryRoleTemplate object collection. |
 
-<!-- uuid: 12296aed-9c93-4184-9449-7af02d88ac2a
-2015-10-09 18:16:06 UTC -->
+<!-- uuid: 8cff487d-1872-415f-8c5a-9646907914bc
+2015-10-09 18:21:33 UTC -->
