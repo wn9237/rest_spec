@@ -15,59 +15,41 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/groups/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/users/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/plans/<id>/buckets/<id>": false
-    },
-    {
-      "/buckets/<id>": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/drive/items/<id>/createdByUser/plans/<id>/buckets/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/plans/<id>/buckets/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/plans/<id>/buckets/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/plans/<id>/buckets/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/groups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/users/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/root/createdByUser/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/plans/<id>/buckets/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/plans/<id>/buckets/<id>": true,
+    "/plans/<id>/buckets/<id>": true,
+    "/buckets/<id>": true
+  },
   "properties": [
     {
       "name": "name",
@@ -78,6 +60,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -91,6 +74,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -104,6 +88,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -117,6 +102,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -130,6 +116,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -143,6 +130,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -156,6 +144,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -169,6 +158,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null

@@ -159,12 +159,12 @@ module SpecMaker
 			@json_object[:methods] = @methods[@json_object[:name].to_sym]
 			if !baseType.nil? && @methods.has_key?(baseType.to_sym)
 				@json_object[:methods].concat @methods[baseType.to_sym]
-				create_basetype_examplefiles(@methods[baseType.to_sym], @json_object[:name])
+				#create_basetype_examplefiles(@methods[baseType.to_sym], @json_object[:name])
 			end
 		else
 			if !baseType.nil? && @methods.has_key?(baseType.to_sym)
 				@json_object[:methods] = @methods[baseType.to_sym]
-				create_basetype_examplefiles(@methods[baseType.to_sym], @json_object[:name])
+				#create_basetype_examplefiles(@methods[baseType.to_sym], @json_object[:name])
 			end
 		end
 
@@ -173,9 +173,9 @@ module SpecMaker
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
 			f.write(JSON.pretty_generate @json_object)
 		end
-		if !@json_object[:isComplexType]
-			create_auto_examplefiles((@json_object[:name]).downcase, false)		 
-		end		
+		# if !@json_object[:isComplexType]
+		# 	create_auto_examplefiles((@json_object[:name]).downcase, false)		 
+		# end		
 		GC.start
 	end
 
@@ -205,10 +205,10 @@ module SpecMaker
 		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
 			f.write(JSON.pretty_generate @json_object)
 		end
-		create_auto_examplefiles((@json_object[:name]).downcase, true)		 
+		#create_auto_examplefiles((@json_object[:name]).downcase, true)		 
 
-		puts "calling with #{(@json_object[:name]).downcase}"
-		fill_rest_path("/#{(@json_object[:name]).downcase}", dt)
+		#puts "calling with #{(@json_object[:name]).downcase}"
+		fill_rest_path("/#{(@json_object[:name])}", dt, true)
 
 		GC.start
 	end
@@ -227,7 +227,7 @@ module SpecMaker
 	puts "Navigation Properties: #{@inprop}"
 	puts "Actions: #{@iaction}"
 	puts "Functions: #{@ifunction}"
-	puts "--> Example files written: #{@iexampleFilesWrittem}"
+	#puts "--> Example files written: #{@iexampleFilesWrittem}"
 	puts "Parameters: #{@iparam}"
 	puts "Enums: #{@ienums}"
 	#puts "Collections: #{@icollection}"	

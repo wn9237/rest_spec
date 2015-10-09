@@ -15,155 +15,102 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/groups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/users/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/users/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/users/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/plans/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/plans/<id>/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    },
-    {
-      "/buckets/<id>/tasks/<id>/timelineformat/<id>": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/drive/items/<id>/createdByUser/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/root/createdByUser/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/root/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/root/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/groups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/users/<objectId>/tasks/<id>/timelineFormat": true,
+    "/users/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/users/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/createdByUser/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/createdByUser/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/createdByUser/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/createdByUser/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/drives/<id>/root/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/createdByUser/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/createdByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/createdByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/plans/<id>/tasks/<id>/timelineFormat": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/plans/<id>/buckets/<id>/tasks/<id>/timelineFormat": true,
+    "/tasks/<id>/timelineFormat": true
+  },
   "properties": [
     {
       "name": "color",
@@ -174,6 +121,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -187,6 +135,7 @@
       "enumName": "DrawingStyle",
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -200,6 +149,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -213,6 +163,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -226,6 +177,7 @@
       "enumName": "AnchorPosition",
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -239,6 +191,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -252,6 +205,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -265,6 +219,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -278,6 +233,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -291,6 +247,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false

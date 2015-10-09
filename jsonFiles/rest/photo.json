@@ -15,152 +15,77 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/groupphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/groupphotos/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/users/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/users/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/users/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/users/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/groupphoto/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/groupphotos/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/groupphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/groupphotos/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/groupphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/groupphotos/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/groupphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/groupphotos/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/contactfolders/<id>/contacts/<id>/contactphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/userphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/userphotos/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/groupphoto/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/groupphotos/<Id>": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/GroupPhoto": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/UserPhoto": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/UserPhoto": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/UserPhoto": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/UserPhoto": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/UserPhoto": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/UserPhoto": true,
+    "/groups/<objectId>/drive/root/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/root/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/root/createdByUser/UserPhoto": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/UserPhoto": true,
+    "/users/<objectId>/Contacts/<Id>/ContactPhoto": true,
+    "/users/<objectId>/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/users/<objectId>/UserPhoto": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/drives/<id>/items/<id>/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/items/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/items/<id>/createdByUser/UserPhoto": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/UserPhoto": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/drives/<id>/shared/<id>/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/shared/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/shared/<id>/createdByUser/UserPhoto": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/UserPhoto": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/drives/<id>/special/<id>/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/special/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/special/<id>/createdByUser/UserPhoto": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/UserPhoto": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/drives/<id>/root/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/root/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/root/createdByUser/UserPhoto": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/drives/<id>/root/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/root/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/drives/<id>/root/lastModifiedByUser/UserPhoto": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/shares/<id>/items/<id>/createdByUser/Contacts/<Id>/ContactPhoto": true,
+    "/shares/<id>/items/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/shares/<id>/items/<id>/createdByUser/UserPhoto": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/GroupPhoto": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Contacts/<Id>/ContactPhoto": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>/ContactPhoto": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/UserPhoto": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/GroupPhoto": true
+  },
   "properties": [
     {
       "name": "Width",
@@ -171,6 +96,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -184,6 +110,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -197,6 +124,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -210,6 +138,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null

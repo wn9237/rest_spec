@@ -2,29 +2,23 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.thumbnail"
-}-->
-
 ```json
 {
+  "content": "String",
   "height": 1024,
   "url": "String",
   "width": 1024
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|content|Stream||
 |height|Int32||
 |url|String||
 |width|Int32||

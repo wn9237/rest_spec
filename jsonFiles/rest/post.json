@@ -15,44 +15,32 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/groups/<objectid>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<Id>": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/groups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>": true
+  },
   "properties": [
     {
       "name": "Body",
@@ -63,6 +51,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -76,6 +65,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -89,6 +79,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -102,6 +93,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -115,6 +107,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -128,6 +121,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -141,6 +135,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -154,6 +149,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -167,6 +163,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -180,6 +177,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -193,6 +191,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -206,6 +205,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -219,6 +219,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -232,6 +233,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
@@ -245,6 +247,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -258,6 +261,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
@@ -285,6 +289,7 @@
           "name": "Comment",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -294,6 +299,7 @@
           "name": "ToRecipients",
           "description": "",
           "dataType": "Recipient",
+          "isCollection": true,
           "isRequired": true,
           "enumName": null,
           "isNullable": false,
@@ -322,6 +328,7 @@
           "name": "Post",
           "description": "",
           "dataType": "Post",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": false,

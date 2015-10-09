@@ -1,5 +1,5 @@
 {
-  "name": "Location",
+  "name": "location",
   "description": "",
   "collectionOf": null,
   "isComplexType": true,
@@ -15,45 +15,47 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-
-  ],
+  "restPath": {
+  },
   "properties": [
     {
-      "name": "DisplayName",
+      "name": "altitude",
       "description": "",
       "isKey": false,
-      "dataType": "String",
+      "dataType": "Double",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "Address",
-      "description": "",
-      "isKey": false,
-      "dataType": "PhysicalAddress",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
     },
     {
-      "name": "Coordinates",
+      "name": "latitude",
       "description": "",
       "isKey": false,
-      "dataType": "GeoCoordinates",
+      "dataType": "Double",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "longitude",
+      "description": "",
+      "isKey": false,
+      "dataType": "Double",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null

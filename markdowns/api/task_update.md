@@ -1,18 +1,18 @@
 # Update Task
 
 Update the properties of task object.
-#### HTTP request
-<!-- { "blockType": "ignored" } -->
+### HTTP request
 ```http
-
+PATCH /tasks/<id>
+PATCH /plans/<id>/tasks/<id>
+PATCH /buckets/<id>/tasks/<id>
 ```
-
-#### Optional request headers
+### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
 
-#### Request body
+### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -37,5 +37,5 @@ In the request body, supply the values for relevant fields that should be update
 |title|String||
 |version|String||
 
-#### Response
+### Response
 If successful, this method returns a `200 OK` response code and updated [Task](../resources/task.md) object in the response body.

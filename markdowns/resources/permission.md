@@ -2,42 +2,48 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.permission"
-}-->
-
 ```json
 {
+  "grantedTo": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "id": "String (identifier)",
+  "inheritedFrom": {
+    "@odata.type": "microsoft.graph.itemReference"
+  },
+  "invitation": {
+    "@odata.type": "microsoft.graph.sharingInvitation"
+  },
   "link": {
     "@odata.type": "microsoft.graph.sharingLink"
   },
   "roles": [
     "String"
-  ]
+  ],
+  "shareId": "String"
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|grantedTo|[identitySet](identityset.md)||
 |id|String| Read-only.|
+|inheritedFrom|[itemReference](itemreference.md)||
+|invitation|[sharingInvitation](sharinginvitation.md)||
 |link|[sharingLink](sharinglink.md)||
 |roles|String collection||
+|shareId|String||
 
-#### Relationships
+### Relationships
 None
 
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

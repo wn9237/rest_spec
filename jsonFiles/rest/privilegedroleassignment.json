@@ -15,14 +15,10 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/privilegedroles/<id>/assignments/<UserId|RoleId>": false
-    },
-    {
-      "/privilegedroleassignments/<UserId|RoleId>": false
-    }
-  ],
+  "restPath": {
+    "/PrivilegedRoles/<Id>/Assignments/<UserId|RoleId>": true,
+    "/PrivilegedRoleAssignments/<UserId|RoleId>": true
+  },
   "properties": [
     {
       "name": "UserId",
@@ -33,6 +29,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -46,6 +43,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -59,6 +57,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -72,6 +71,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -85,6 +85,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -98,6 +99,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -125,6 +127,7 @@
           "name": "Reason",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -134,6 +137,7 @@
           "name": "Duration",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -143,6 +147,7 @@
           "name": "TicketNumber",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -152,6 +157,7 @@
           "name": "TicketSystem",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,

@@ -288,16 +288,20 @@ module SpecMaker
 
 				dtp = get_type(p[:Type])
 				parm[:dataType] = dtp
+				parm[:isCollection] = true if p[:Type].start_with?('Collection(')
 				if p[:Nullable] == 'false'
 					parm[:isNullable] = false
 				end
 				if p[:Unicode] == 'false'
 					parm[:isUnicode] = false
 				end
+				
+
 				mtd[:parameters].push parm
 			end
 		end
 
+		# Get the entity name from the first parameter
 		if item[:Parameter].is_a?(Array)
 			enamef = item[:Parameter][0][:Type]
 		elsif item[:Parameter].is_a?(Hash)
@@ -314,11 +318,12 @@ module SpecMaker
 			@methods[entity_name.to_sym] = []			
 			@methods[entity_name.to_sym].push mtd
 		end
-		create_examplefile(entity_name, mtd[:name])				
+		#create_examplefile(entity_name, mtd[:name])				
 		return 
 	end
 
-	def self.fill_rest_path (parentPath=nil, entity=nil)
+	# todo: avoid file I/O and do this in-memory prior to writing the JSON.
+	def self.fill_rest_path (parentPath=nil, entity=nil, isParentCollection=true)
 
 		fullpath = JSON_SOURCE_FOLDER + '/' + entity.downcase + '.json'
 		path={}
@@ -327,33 +332,37 @@ module SpecMaker
 
 		# append Id at the end.
 		if File.file?(fullpath)
-			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
-			if object[:restPath].length > 0 
-				object[:restPath].each do |h|
-					# Limit the number of paths being genetated. if we want more, we could try - && parentPath.split('/').length > 8
-					if parentPath.downcase.include?(h.keys.join.to_s.downcase) 
-						#puts "exiting #{entity}, #{parentPath}, #{h.keys.join.to_s.downcase}"
-						return 
-					end
+			object = JSON.parse(File.read(fullpath))
+
+			# Check if the path already exists. This logic will eliminate deep redundant paths.
+			# May lose some important ones.. but if this check is removed, some really deep/complex 
+			# logic needs to be inserted to add the 
+			object["restPath"].keys.each do |k|
+				if parentPath.downcase.include?(k.to_s.downcase) 
+					return 
 				end
 			end
-			object[:properties].each do |item|
-				if item[:isKey]
-					ids = ids + item[:name] + '|'
+			
+			# Construct path and remove empty | and <> at the end (account for no key being available on the object.)
+			object["properties"].each do |item|
+				if item["isKey"]
+					ids = ids + item["name"] + '|'
 				end
 			end
-			# construct the path and account for no key being available on the object. 
-			k = "#{parentPath.downcase}/<#{ids.chomp('|')}>".chomp('/<>')
-			path[k.to_sym] = false
-			object[:restPath].push path
+			# construct the path and 
+			if isParentCollection
+				k = "#{parentPath}/<#{ids.chomp('|')}>".chomp('/<>')
+			else
+				k = parentPath				
+			end
+			object["restPath"][k] = true 
 			File.open(fullpath, "w") do |f|
 				f.write(JSON.pretty_generate object)
 			end
-			return if object[:properties].length == 0
-			object[:properties].each do |item|
-				#` "checking for isRelationship: #{item[:name]}, #{item[:dataType].downcase} ==  #{entity.downcase}"
-				if item[:isRelationship] 
-					fill_rest_path("#{k}/#{item[:name]}", item[:dataType])
+			return if object["properties"].length == 0
+			object["properties"].each do |item|
+				if item["isRelationship"] 
+					fill_rest_path("#{k}/#{item["name"]}", item["dataType"], item["isCollection"])
 				end				
 			end
 			return

@@ -15,413 +15,251 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<id>/messages/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/conversations/<id>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/threads/<id>/posts/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/calendarview/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendar/<id>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/events/<id>/attachments/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/joinedgroups/<objectid>/calendarview/<id>/attachments/<Id>": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/Messages/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Folders/<Id>/Messages/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Messages/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/RootFolder/Messages/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Calendars/<Id>/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Calendars/<Id>/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/CalendarView/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Calendar/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Events/<Id>/Attachments/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/CalendarView/<Id>/Attachments/<Id>": true
+  },
   "properties": [
     {
       "name": "Name",
@@ -432,6 +270,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -445,6 +284,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -458,6 +298,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -471,6 +312,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -484,6 +326,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -497,6 +340,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -510,6 +354,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null

@@ -1,19 +1,20 @@
 # Delete
 
 Delete PrivilegedOperationEvent.
-#### HTTP request
-<!-- { "blockType": "ignored" } -->
+### HTTP request
 ```http
-to be completed....
+DELETE /PrivilegedOperationEvents/<Id>
+
 ```
-#### Request headers
+### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
 
-#### Request body
+### Request body
 Do not supply a request body for this method.
 
 
-#### Response
+### Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+

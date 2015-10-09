@@ -15,35 +15,27 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/trendingaround": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/trendingaround": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/trendingaround": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/trendingaround": false
-    },
-    {
-      "/users/<objectid>/trendingaround": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/trendingaround": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/trendingaround": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/trendingaround": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/trendingaround": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/drive/items/<id>/createdByUser/TrendingAround": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/TrendingAround": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/TrendingAround": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/TrendingAround": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/TrendingAround": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/TrendingAround": true,
+    "/groups/<objectId>/drive/root/createdByUser/TrendingAround": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/TrendingAround": true,
+    "/users/<objectId>/TrendingAround": true,
+    "/drives/<id>/items/<id>/createdByUser/TrendingAround": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/TrendingAround": true,
+    "/drives/<id>/shared/<id>/createdByUser/TrendingAround": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/TrendingAround": true,
+    "/drives/<id>/special/<id>/createdByUser/TrendingAround": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/TrendingAround": true,
+    "/drives/<id>/root/createdByUser/TrendingAround": true,
+    "/drives/<id>/root/lastModifiedByUser/TrendingAround": true,
+    "/shares/<id>/items/<id>/createdByUser/TrendingAround": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/TrendingAround": true
+  },
   "properties": [
 
   ],

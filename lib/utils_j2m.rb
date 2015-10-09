@@ -142,6 +142,85 @@ module SpecMaker
 		end
 	end
 
+	def self.get_create_description(objectName=nil)
+		createDescription = ''
+		fullpath = JSON_SOURCE_FOLDER + '/' + objectName.downcase + '.json'
+		if File.file?(fullpath)
+			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			createDescription = object[:createDescription]
+		end
+		return createDescription
+	end
+
+	def self.assign_value (dataType=nil)
+		if NUMERICTYPES.include? dataType
+			return 99
+		elsif DATETYPES.include? dataType
+			return "datetime-value"
+		elsif %w[Url url].include? dataType
+			return"url-value"	
+		elsif %w[Boolean boolean Bool bool ].include? dataType
+			return true
+		elsif SIMPLETYPES.include? dataType
+			return "#{dataType}-value"				
+		else
+			return {}
+		end
+	end
+
+	def self.dump_complex_type(ct=nil)
+		model={}
+		fullpath = JSON_SOURCE_FOLDER + '/' + ct.downcase + '.json'
+		if File.file?(fullpath)
+			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			object[:properties].each do |item|
+				if object[:isComplexType] 
+					model[item[:name]] = dump_complex_type(item[:dataType])
+				else					
+					model[item[:name]] = assign_value(item[:dataType])
+				end
+			end
+		end
+		return model
+	end
+
+	def self.get_json_model_method (objectName=nil, collFlag=false)
+		model = {}
+		if SIMPLETYPES.include? objectName
+			model[:value] = assign_value(objectName)
+			if collFlag
+				model[:value] = [assign_value(objectName)]
+			else
+				model[:value] = assign_value(objectName)
+			end
+			return JSON.pretty_generate model
+		end
+
+		fullpath = JSON_SOURCE_FOLDER + '/' + objectName.downcase + '.json'
+		if File.file?(fullpath)
+			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			object[:properties].each do |item|
+				next if item[:isRelationship]
+				model[item[:name]] = assign_value(item[:dataType])
+				if item[:isCollection] 
+					model[item[:name]] = [model[item[:name]]]
+				end
+			end
+		end 
+		return JSON.pretty_generate model
+	end
+
+	def self.get_json_model_params(params=[])
+
+		model={}
+		params.each do |item|
+			model[item[:name]] = assign_value(item[:dataType])
+			if item[:isCollection] 
+				model[item[:name]] = [model[item[:name]]]
+			end
+		end
+		return JSON.pretty_generate model
+	end
 
 	def self.get_json_model (properties=[])
 		model = {}
@@ -181,7 +260,6 @@ module SpecMaker
 				model[:optionalProperties].push item[:name]
 			end
 		end 
-		return "<!-- " + (JSON.pretty_generate model) + "-->"
+		#return "<!-- " + (JSON.pretty_generate model) + "-->"
 	end
-
 end

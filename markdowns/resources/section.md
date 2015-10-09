@@ -2,17 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "pages"
-  ],
-  "@odata.type": "microsoft.graph.Section"
-}-->
 
 ```json
 {
@@ -39,7 +31,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|String||
@@ -52,14 +44,14 @@ Here is a JSON representation of the resource
 |pagesUrl|String||
 |self|String||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |pages|[Page](page.md) collection| Read-only. Nullable.|
 |parentNotebook|[Notebook](notebook.md)| Read-only.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)| Read-only.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

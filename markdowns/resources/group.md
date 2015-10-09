@@ -2,30 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "AcceptedSenders",
-    "CalendarView",
-    "Conversations",
-    "Events",
-    "Extensions",
-    "GroupPhotos",
-    "RejectedSenders",
-    "Threads",
-    "appRoleAssignments",
-    "memberOf",
-    "members",
-    "owners",
-    "plans",
-    "tasks"
-  ],
-  "@odata.type": "microsoft.graph.Group"
-}-->
 
 ```json
 {
@@ -151,7 +130,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |AccessType|String| Possible values are: `None`, `Private`, `Secret`, `Public`.|
@@ -179,7 +158,7 @@ Here is a JSON representation of the resource
 |proxyAddresses|String collection||
 |securityEnabled|Boolean||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |AcceptedSenders|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
@@ -202,7 +181,7 @@ Here is a JSON representation of the resource
 |plans|[Plan](plan.md) collection| Read-only. Nullable.|
 |tasks|[Task](task.md) collection| Read-only. Nullable.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

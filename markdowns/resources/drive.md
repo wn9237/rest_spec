@@ -2,17 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "items"
-  ],
-  "@odata.type": "microsoft.graph.drive"
-}-->
 
 ```json
 {
@@ -31,11 +23,21 @@ Here is a JSON representation of the resource
   },
   "root": {
     "@odata.type": "microsoft.graph.item"
-  }
+  },
+  "shared": [
+    {
+      "@odata.type": "microsoft.graph.item"
+    }
+  ],
+  "special": [
+    {
+      "@odata.type": "microsoft.graph.item"
+    }
+  ]
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |driveType|String||
@@ -43,17 +45,22 @@ Here is a JSON representation of the resource
 |owner|[identitySet](identityset.md)||
 |quota|[quota](quota.md)||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |items|[item](item.md) collection| Read-only. Nullable.|
 |root|[item](item.md)| Read-only.|
+|shared|[item](item.md) collection| Read-only. Nullable.|
+|special|[item](item.md) collection| Read-only. Nullable.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get drive](../api/drive_get.md) | [drive](drive.md) |Read properties and relationships of drive object.|
 |[Create item](../api/drive_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
+|[Create item](../api/drive_post_shared.md) |[item](item.md)| Create a new item by posting to the shared collection.|
+|[Create item](../api/drive_post_special.md) |[item](item.md)| Create a new item by posting to the special collection.|
 |[Update](../api/drive_update.md) | [drive](drive.md)	|Update drive object. |
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
+|[Allphotos](../api/drive_allphotos.md)|[item](item.md)||

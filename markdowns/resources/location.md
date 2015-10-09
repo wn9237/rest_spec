@@ -1,34 +1,22 @@
-# Location resource type
+# location resource type
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.Location"
-}-->
-
 ```json
 {
-  "Address": {
-    "@odata.type": "microsoft.graph.PhysicalAddress"
-  },
-  "Coordinates": {
-    "@odata.type": "microsoft.graph.GeoCoordinates"
-  },
-  "DisplayName": "String"
+  "altitude": 1024,
+  "latitude": 1024,
+  "longitude": 1024
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Address|[PhysicalAddress](physicaladdress.md)||
-|Coordinates|[GeoCoordinates](geocoordinates.md)||
-|DisplayName|String||
+|altitude|Double||
+|latitude|Double||
+|longitude|Double||

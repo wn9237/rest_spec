@@ -2,19 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "CalendarView",
-    "Events",
-    "Extensions"
-  ],
-  "@odata.type": "microsoft.graph.Calendar"
-}-->
 
 ```json
 {
@@ -40,7 +30,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ChangeKey|String||
@@ -48,14 +38,14 @@ Here is a JSON representation of the resource
 |Id|String| Read-only.|
 |Name|String||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |CalendarView|[Event](event.md) collection| Read-only. Nullable.|
 |Events|[Event](event.md) collection| Read-only. Nullable.|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

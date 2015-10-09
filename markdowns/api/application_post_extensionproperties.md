@@ -1,19 +1,40 @@
 # Create ExtensionProperty
 
 Use this API to create a new ExtensionProperty.
-#### HTTP request
-<!-- { "blockType": "ignored" } -->
+### HTTP request
 ```http
-to be completed....
+POST /applications/<objectId>/extensionProperties
+
 ```
-#### Request headers
+### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
 
-#### Request body
+### Request body
 In the request body, supply a JSON representation of [ExtensionProperty](../resources/extensionproperty.md) object.
 
 
-#### Response
+### Response
 If successful, this method returns `201, Created` response code and [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
+
+### Example
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 276
+{
+  "appDisplayName": "String-value",
+  "name": "String-value",
+  "dataType": "String-value",
+  "isSyncedFromOnPremises": true,
+  "targetObjects": [
+    "String-value"
+  ],
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```

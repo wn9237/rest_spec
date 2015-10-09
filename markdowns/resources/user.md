@@ -2,39 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "CalendarGroups",
-    "CalendarView",
-    "Calendars",
-    "ContactFolders",
-    "Contacts",
-    "Events",
-    "Extensions",
-    "Folders",
-    "JoinedGroups",
-    "Messages",
-    "TrendingAround",
-    "UserPhotos",
-    "WorkingWith",
-    "appRoleAssignments",
-    "createdObjects",
-    "directReports",
-    "memberOf",
-    "oauth2PermissionGrants",
-    "ownedDevices",
-    "ownedObjects",
-    "plans",
-    "registeredDevices",
-    "tasks"
-  ],
-  "@odata.type": "microsoft.graph.User"
-}-->
 
 ```json
 {
@@ -263,7 +233,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |AboutMe|String||
@@ -319,7 +289,7 @@ Here is a JSON representation of the resource
 |userPrincipalName|String||
 |userType|String||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Calendar|[Calendar](calendar.md)| Read-only.|
@@ -353,7 +323,7 @@ Here is a JSON representation of the resource
 |registeredDevices|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |tasks|[Task](task.md) collection| Read-only. Nullable.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

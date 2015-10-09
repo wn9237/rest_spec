@@ -2,23 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "Extensions",
-    "appRoleAssignments",
-    "createdObjects",
-    "memberOf",
-    "oauth2PermissionGrants",
-    "ownedObjects",
-    "owners"
-  ],
-  "@odata.type": "microsoft.graph.ServicePrincipal"
-}-->
 
 ```json
 {
@@ -110,7 +96,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean||
@@ -136,7 +122,7 @@ Here is a JSON representation of the resource
 |servicePrincipalNames|String collection||
 |tags|String collection||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
@@ -149,7 +135,7 @@ Here is a JSON representation of the resource
 |ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

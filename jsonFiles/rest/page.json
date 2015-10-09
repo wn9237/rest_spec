@@ -15,170 +15,122 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/pages/<id>": false
-    },
-    {
-      "/users/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/users/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/users/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/users/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/users/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/users/<objectid>/notes/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/notes/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/notes/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/notebooks/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/notebooks/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sectiongroups/<id>/parentnotebook/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/sectiongroups/<id>/sections/<id>/pages/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/notes/<id>/pages/<id>": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/drive/items/<id>/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/notes/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/notes/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/notes/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/notes/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/notes/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/notes/pages/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/notes/pages/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/notes/pages/<id>": true,
+    "/users/<objectId>/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/users/<objectId>/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/users/<objectId>/notes/sections/<id>/pages/<id>": true,
+    "/users/<objectId>/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/users/<objectId>/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/users/<objectId>/notes/pages/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/notes/pages/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/notes/pages/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/notes/pages/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/notes/pages/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/notes/pages/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/notes/pages/<id>": true,
+    "/drives/<id>/root/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/createdByUser/notes/pages/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/notes/pages/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/notes/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/notes/pages/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/notes/notebooks/<id>/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/notes/notebooks/<id>/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/notes/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/notes/sectionGroups/<id>/parentNotebook/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/notes/sectionGroups/<id>/sections/<id>/pages/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/notes/pages/<id>": true
+  },
   "properties": [
     {
       "name": "title",
@@ -189,6 +141,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -202,6 +155,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -215,6 +169,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -228,6 +183,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -241,6 +197,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -254,6 +211,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -267,6 +225,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -280,6 +239,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -293,6 +253,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -306,6 +267,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -319,6 +281,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -346,6 +309,7 @@
           "name": "commands",
           "description": "",
           "dataType": "PatchContentCommand",
+          "isCollection": true,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -374,6 +338,7 @@
           "name": "id",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -383,6 +348,7 @@
           "name": "siteCollectionId",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -392,6 +358,7 @@
           "name": "siteId",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,

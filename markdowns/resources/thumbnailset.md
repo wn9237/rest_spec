@@ -2,17 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.thumbnailSet"
-}-->
 
 ```json
 {
@@ -25,27 +17,30 @@ Here is a JSON representation of the resource
   },
   "small": {
     "@odata.type": "microsoft.graph.thumbnail"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.thumbnail"
   }
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |large|[thumbnail](thumbnail.md)||
 |medium|[thumbnail](thumbnail.md)||
 |small|[thumbnail](thumbnail.md)||
+|source|[thumbnail](thumbnail.md)||
 
-#### Relationships
+### Relationships
 None
 
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get thumbnailSet](../api/thumbnailset_get.md) | [thumbnailSet](thumbnailset.md) |Read properties and relationships of thumbnailSet object.|
 |[Update](../api/thumbnailset_update.md) | [thumbnailSet](thumbnailset.md)	|Update thumbnailSet object. |
 |[Delete](../api/thumbnailset_delete.md) | Void	|Delete thumbnailSet object. |
-|[Get CustomThumbnail](../api/thumbnailset_getcustomthumbnail.md)|[thumbnail](thumbnail.md)||

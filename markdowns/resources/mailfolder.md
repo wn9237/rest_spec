@@ -2,19 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "ChildFolders",
-    "Extensions",
-    "Messages"
-  ],
-  "@odata.type": "microsoft.graph.MailFolder"
-}-->
 
 ```json
 {
@@ -40,7 +30,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ChildFolderCount|Int32||
@@ -48,14 +38,14 @@ Here is a JSON representation of the resource
 |Id|String| Read-only.|
 |ParentFolderId|String||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |ChildFolders|[MailFolder](mailfolder.md) collection| Read-only. Nullable.|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |Messages|[Message](message.md) collection| Read-only. Nullable.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

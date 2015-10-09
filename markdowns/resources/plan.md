@@ -2,18 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "buckets",
-    "tasks"
-  ],
-  "@odata.type": "microsoft.graph.Plan"
-}-->
 
 ```json
 {
@@ -52,7 +43,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |activeTasks|Int32||
@@ -63,7 +54,7 @@ Here is a JSON representation of the resource
 |totalTasks|Int32||
 |version|String||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedToTaskBoard|[PlanTaskBoard](plantaskboard.md)| Read-only.|
@@ -74,7 +65,7 @@ Here is a JSON representation of the resource
 |tasks|[Task](task.md) collection| Read-only. Nullable.|
 |timeline|[PlanTimeline](plantimeline.md)| Read-only.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

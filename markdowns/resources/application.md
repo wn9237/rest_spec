@@ -2,19 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "Extensions",
-    "extensionProperties",
-    "owners"
-  ],
-  "@odata.type": "microsoft.graph.Application"
-}-->
 
 ```json
 {
@@ -89,7 +79,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |appId|String||
@@ -117,7 +107,7 @@ Here is a JSON representation of the resource
 |requiredResourceAccess|[RequiredResourceAccess](requiredresourceaccess.md) collection||
 |samlMetadataUrl|String||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
@@ -125,7 +115,7 @@ Here is a JSON representation of the resource
 |extensionProperties|[ExtensionProperty](extensionproperty.md) collection| Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

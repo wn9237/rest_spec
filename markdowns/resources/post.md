@@ -2,18 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "Attachments",
-    "Extensions"
-  ],
-  "@odata.type": "microsoft.graph.Post"
-}-->
 
 ```json
 {
@@ -58,7 +49,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |Body|[ItemBody](itembody.md)||
@@ -75,14 +66,14 @@ Here is a JSON representation of the resource
 |NewParticipants|[Recipient](recipient.md) collection||
 |Sender|[Recipient](recipient.md)||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |InReplyTo|[Post](post.md)| Read-only.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|

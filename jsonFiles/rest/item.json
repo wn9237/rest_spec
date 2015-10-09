@@ -15,33 +15,40 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/drive/<id>/items/<id>": false
-    },
-    {
-      "/users/<objectid>/joinedgroups/<objectid>/drive/<id>/root/<id>": false
-    },
-    {
-      "/users/<objectid>/drive/<id>/items/<id>": false
-    },
-    {
-      "/users/<objectid>/drive/<id>/root/<id>": false
-    },
-    {
-      "/drives/<id>/items/<id>": false
-    },
-    {
-      "/drives/<id>/root/<id>": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/drive/items/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>": true,
+    "/groups/<objectId>/drive/special/<id>": true,
+    "/groups/<objectId>/drive/root": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/drive/items/<id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/drive/shared/<id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/drive/special/<id>": true,
+    "/users/<objectId>/JoinedGroups/<objectId>/drive/root": true,
+    "/users/<objectId>/drive/items/<id>": true,
+    "/users/<objectId>/drive/shared/<id>": true,
+    "/users/<objectId>/drive/special/<id>": true,
+    "/users/<objectId>/drive/root": true,
+    "/drives/<id>/items/<id>": true,
+    "/drives/<id>/shared/<id>": true,
+    "/drives/<id>/special/<id>": true,
+    "/drives/<id>/root": true,
+    "/shares/<id>/items/<id>": true
+  },
   "properties": [
+    {
+      "name": "content",
+      "description": "",
+      "isKey": false,
+      "dataType": "Stream",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
     {
       "name": "createdBy",
       "description": "",
@@ -51,6 +58,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -64,22 +72,38 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": null,
       "isUnicode": null
     },
     {
-      "name": "deleted",
+      "name": "cTag",
       "description": "",
       "isKey": false,
-      "dataType": "deleted",
+      "dataType": "String",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": null
+      "isUnicode": false
+    },
+    {
+      "name": "description",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
     },
     {
       "name": "eTag",
@@ -90,35 +114,10 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
-    },
-    {
-      "name": "file",
-      "description": "",
-      "isKey": false,
-      "dataType": "file",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "folder",
-      "description": "",
-      "isKey": false,
-      "dataType": "folder",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     },
     {
       "name": "id",
@@ -129,22 +128,10 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
-    },
-    {
-      "name": "image",
-      "description": "",
-      "isKey": false,
-      "dataType": "image",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     },
     {
       "name": "lastModifiedBy",
@@ -155,6 +142,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -168,8 +156,9 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": null,
       "isUnicode": null
     },
     {
@@ -181,6 +170,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -194,32 +184,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "photo",
-      "description": "",
-      "isKey": false,
-      "dataType": "photo",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "searchResult",
-      "description": "",
-      "isKey": false,
-      "dataType": "searchResult",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -233,22 +198,10 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": null
-    },
-    {
-      "name": "webUrl",
-      "description": "",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "webDavUrl",
@@ -259,9 +212,206 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
+    },
+    {
+      "name": "webUrl",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "audio",
+      "description": "",
+      "isKey": false,
+      "dataType": "audio",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "deleted",
+      "description": "",
+      "isKey": false,
+      "dataType": "deleted",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "file",
+      "description": "",
+      "isKey": false,
+      "dataType": "file",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "fileSystemInfo",
+      "description": "",
+      "isKey": false,
+      "dataType": "fileSystemInfo",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "folder",
+      "description": "",
+      "isKey": false,
+      "dataType": "folder",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "image",
+      "description": "",
+      "isKey": false,
+      "dataType": "image",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "location",
+      "description": "",
+      "isKey": false,
+      "dataType": "location",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "openWith",
+      "description": "",
+      "isKey": false,
+      "dataType": "openWithSet",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "photo",
+      "description": "",
+      "isKey": false,
+      "dataType": "photo",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "searchResult",
+      "description": "",
+      "isKey": false,
+      "dataType": "searchResult",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "shared",
+      "description": "",
+      "isKey": false,
+      "dataType": "shared",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "specialFolder",
+      "description": "",
+      "isKey": false,
+      "dataType": "specialFolder",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "video",
+      "description": "",
+      "isKey": false,
+      "dataType": "video",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "createdByUser",
@@ -272,6 +422,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -285,8 +436,37 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "permissions",
+      "description": "",
+      "isKey": false,
+      "dataType": "permission",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "versions",
+      "description": "",
+      "isKey": false,
+      "dataType": "item",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -298,6 +478,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
@@ -311,6 +492,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
@@ -318,12 +500,81 @@
   ],
   "methods": [
     {
+      "name": "invite",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "permission",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "recipients",
+          "description": "",
+          "dataType": "recipients",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        },
+        {
+          "name": "message",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "requireSignIn",
+          "description": "",
+          "dataType": "Boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "sendInvitation",
+          "description": "",
+          "dataType": "Boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "roles",
+          "description": "",
+          "dataType": "String",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
       "name": "copy",
       "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "item",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -338,6 +589,7 @@
           "name": "parentReference",
           "description": "",
           "dataType": "itemReference",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -347,6 +599,7 @@
           "name": "name",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -360,7 +613,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "permission",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -375,9 +628,10 @@
           "name": "type",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
-          "isNullable": null,
+          "isNullable": false,
           "isUnicode": false
         }
       ]
@@ -388,7 +642,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "uploadSession",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -399,19 +653,11 @@
 
       ],
       "parameters": [
-        {
-          "name": "path",
-          "description": "",
-          "dataType": "String",
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
         {
           "name": "item",
           "description": "",
-          "dataType": "FileSystemItemInformation",
+          "dataType": "chunkedUploadSessionDescriptor",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -420,41 +666,13 @@
       ]
     },
     {
-      "name": "uploadContent",
+      "name": "allPhotos",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "contentStream",
-          "description": "",
-          "dataType": "Stream",
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "content",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Stream",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
+      "returnType": "item",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
@@ -473,7 +691,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "item",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": true,
@@ -484,7 +702,16 @@
 
       ],
       "parameters": [
-
+        {
+          "name": "token",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
       ]
     },
     {
@@ -493,7 +720,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "item",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": true,
@@ -508,6 +735,7 @@
           "name": "q",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,

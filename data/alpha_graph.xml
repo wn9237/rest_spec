@@ -157,14 +157,14 @@
         <Property Name="deletionTimestamp" Type="Edm.DateTimeOffset" />
         <NavigationProperty Name="Extensions" Type="Collection(Microsoft.Graph.Extension)" ContainsTarget="true" />
       </EntityType>
-      <EntityType Name="Entity">
+      <EntityType Name="Entity" Abstract="true">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.String" Nullable="false" Unicode="false" />
         <NavigationProperty Name="Extensions" Type="Collection(Microsoft.Graph.Extension)" ContainsTarget="true" />
       </EntityType>
-      <EntityType Name="Extension" BaseType="Microsoft.Graph.Entity" />
+      <EntityType Name="Extension" BaseType="Microsoft.Graph.Entity" Abstract="true" />
       <EntityType Name="Application" BaseType="Microsoft.Graph.DirectoryObject">
         <Property Name="appId" Type="Edm.String" Unicode="false" />
         <Property Name="appRoles" Type="Collection(Microsoft.Graph.AppRole)" Nullable="false" />
@@ -374,7 +374,7 @@
         <NavigationProperty Name="ChildFolders" Type="Collection(Microsoft.Graph.MailFolder)" ContainsTarget="true" />
         <NavigationProperty Name="Messages" Type="Collection(Microsoft.Graph.Message)" ContainsTarget="true" />
       </EntityType>
-      <EntityType Name="OutlookItem" BaseType="Microsoft.Graph.Entity">
+      <EntityType Name="OutlookItem" BaseType="Microsoft.Graph.Entity" Abstract="true">
         <Property Name="ChangeKey" Type="Edm.String" Unicode="false" />
         <Property Name="Categories" Type="Collection(Edm.String)" Unicode="false" />
         <Property Name="DateTimeCreated" Type="Edm.DateTimeOffset" />
@@ -536,11 +536,13 @@
         <Key>
           <PropertyRef Name="id" />
         </Key>
-        <Property Name="driveType" Type="Edm.String" Unicode="false" />
         <Property Name="id" Type="Edm.String" Nullable="false" Unicode="false" />
+        <Property Name="driveType" Type="Edm.String" Unicode="false" />
         <Property Name="owner" Type="Microsoft.Graph.identitySet" />
         <Property Name="quota" Type="Microsoft.Graph.quota" />
         <NavigationProperty Name="items" Type="Collection(Microsoft.Graph.item)" ContainsTarget="true" />
+        <NavigationProperty Name="shared" Type="Collection(Microsoft.Graph.item)" ContainsTarget="true" />
+        <NavigationProperty Name="special" Type="Collection(Microsoft.Graph.item)" ContainsTarget="true" />
         <NavigationProperty Name="root" Type="Microsoft.Graph.item" Nullable="false" ContainsTarget="true" />
       </EntityType>
       <EntityType Name="UserDetails">
@@ -788,7 +790,7 @@
         <Property Name="servicePlanId" Type="Edm.Guid" />
         <Property Name="servicePlanName" Type="Edm.String" Unicode="false" />
       </ComplexType>
-      <EntityType Name="Attachment" BaseType="Microsoft.Graph.Entity">
+      <EntityType Name="Attachment" BaseType="Microsoft.Graph.Entity" Abstract="true">
         <Property Name="Name" Type="Edm.String" Unicode="false" />
         <Property Name="ContentType" Type="Edm.String" Unicode="false" />
         <Property Name="Size" Type="Edm.Int32" Nullable="false" />
@@ -879,88 +881,172 @@
         <NavigationProperty Name="Attachments" Type="Collection(Microsoft.Graph.Attachment)" ContainsTarget="true" />
         <NavigationProperty Name="InReplyTo" Type="Microsoft.Graph.Post" Nullable="false" ContainsTarget="true" />
       </EntityType>
-      <EntityType Name="OpenTypeExtension" BaseType="Microsoft.Graph.Extension">
+      <EntityType Name="OpenTypeExtension" BaseType="Microsoft.Graph.Extension" OpenType="true">
         <Property Name="ExtensionName" Type="Edm.String" Nullable="false" Unicode="false" />
       </EntityType>
-      <ComplexType Name="deleted">
-        <Property Name="state" Type="Edm.String" Unicode="false" />
+      <ComplexType Name="identitySet">
+        <Property Name="application" Type="Microsoft.Graph.identity" />
+        <Property Name="device" Type="Microsoft.Graph.identity" />
+        <Property Name="user" Type="Microsoft.Graph.identity" />
       </ComplexType>
-      <ComplexType Name="FileSystemItemInformation">
-        <Property Name="file" Type="Microsoft.Graph.file" />
-        <Property Name="folder" Type="Microsoft.Graph.folder" />
+      <ComplexType Name="identity">
+        <Property Name="displayName" Type="Edm.String" Unicode="false" />
+        <Property Name="id" Type="Edm.String" Unicode="false" />
+      </ComplexType>
+      <ComplexType Name="quota">
+        <Property Name="deleted" Type="Edm.Int64" />
+        <Property Name="remaining" Type="Edm.Int64" />
+        <Property Name="state" Type="Edm.String" Unicode="false" />
+        <Property Name="total" Type="Edm.Int64" />
+        <Property Name="used" Type="Edm.Int64" />
+      </ComplexType>
+      <EntityType Name="item" OpenType="true">
+        <Key>
+          <PropertyRef Name="id" />
+        </Key>
+        <Property Name="content" Type="Edm.Stream" />
+        <Property Name="createdBy" Type="Microsoft.Graph.identitySet" />
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset" />
+        <Property Name="cTag" Type="Edm.String" Unicode="false" />
+        <Property Name="description" Type="Edm.String" Unicode="false" />
+        <Property Name="eTag" Type="Edm.String" Unicode="false" />
+        <Property Name="id" Type="Edm.String" Nullable="false" Unicode="false" />
+        <Property Name="lastModifiedBy" Type="Microsoft.Graph.identitySet" />
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset" />
         <Property Name="name" Type="Edm.String" Unicode="false" />
         <Property Name="parentReference" Type="Microsoft.Graph.itemReference" />
-      </ComplexType>
-      <ComplexType Name="file" />
-      <ComplexType Name="folder">
-        <Property Name="childCount" Type="Edm.Int32" Nullable="false" />
-      </ComplexType>
+        <Property Name="size" Type="Edm.Int64" />
+        <Property Name="webDavUrl" Type="Edm.String" Unicode="false" />
+        <Property Name="webUrl" Type="Edm.String" Unicode="false" />
+        <Property Name="audio" Type="Microsoft.Graph.audio" />
+        <Property Name="deleted" Type="Microsoft.Graph.deleted" />
+        <Property Name="file" Type="Microsoft.Graph.file" />
+        <Property Name="fileSystemInfo" Type="Microsoft.Graph.fileSystemInfo" />
+        <Property Name="folder" Type="Microsoft.Graph.folder" />
+        <Property Name="image" Type="Microsoft.Graph.image" />
+        <Property Name="location" Type="Microsoft.Graph.location" />
+        <Property Name="openWith" Type="Microsoft.Graph.openWithSet" />
+        <Property Name="photo" Type="Microsoft.Graph.photo" />
+        <Property Name="searchResult" Type="Microsoft.Graph.searchResult" />
+        <Property Name="shared" Type="Microsoft.Graph.shared" />
+        <Property Name="specialFolder" Type="Microsoft.Graph.specialFolder" />
+        <Property Name="video" Type="Microsoft.Graph.video" />
+        <NavigationProperty Name="createdByUser" Type="Microsoft.Graph.User" Nullable="false" />
+        <NavigationProperty Name="lastModifiedByUser" Type="Microsoft.Graph.User" Nullable="false" />
+        <NavigationProperty Name="permissions" Type="Collection(Microsoft.Graph.permission)" ContainsTarget="true" />
+        <NavigationProperty Name="versions" Type="Collection(Microsoft.Graph.item)" ContainsTarget="true" />
+        <NavigationProperty Name="children" Type="Collection(Microsoft.Graph.item)" ContainsTarget="true" />
+        <NavigationProperty Name="thumbnails" Type="Collection(Microsoft.Graph.thumbnailSet)" ContainsTarget="true" />
+      </EntityType>
+      <EntityType Name="share">
+        <Key>
+          <PropertyRef Name="id" />
+        </Key>
+        <Property Name="id" Type="Edm.String" Nullable="false" Unicode="false" />
+        <Property Name="name" Type="Edm.String" Unicode="false" />
+        <Property Name="owner" Type="Microsoft.Graph.identitySet" />
+        <NavigationProperty Name="items" Type="Collection(Microsoft.Graph.item)" ContainsTarget="true" />
+      </EntityType>
       <ComplexType Name="itemReference">
         <Property Name="driveId" Type="Edm.String" Unicode="false" />
         <Property Name="id" Type="Edm.String" Unicode="false" />
         <Property Name="path" Type="Edm.String" Unicode="false" />
       </ComplexType>
-      <ComplexType Name="quota">
-        <Property Name="deleted" Type="Edm.Int64" Nullable="false" />
-        <Property Name="remaining" Type="Edm.Int64" Nullable="false" />
+      <ComplexType Name="audio">
+        <Property Name="album" Type="Edm.String" Unicode="false" />
+        <Property Name="albumArtist" Type="Edm.String" Unicode="false" />
+        <Property Name="artist" Type="Edm.String" Unicode="false" />
+        <Property Name="bitrate" Type="Edm.Int64" />
+        <Property Name="composers" Type="Edm.String" Unicode="false" />
+        <Property Name="copyright" Type="Edm.String" Unicode="false" />
+        <Property Name="disc" Type="Edm.Int16" />
+        <Property Name="discCount" Type="Edm.Int16" />
+        <Property Name="duration" Type="Edm.Int64" />
+        <Property Name="genre" Type="Edm.String" Unicode="false" />
+        <Property Name="hasDrm" Type="Edm.Boolean" />
+        <Property Name="isVariableBitrate" Type="Edm.Boolean" />
+        <Property Name="title" Type="Edm.String" Unicode="false" />
+        <Property Name="track" Type="Edm.Int32" />
+        <Property Name="trackCount" Type="Edm.Int32" />
+        <Property Name="year" Type="Edm.Int32" />
+      </ComplexType>
+      <ComplexType Name="deleted">
         <Property Name="state" Type="Edm.String" Unicode="false" />
-        <Property Name="total" Type="Edm.Int64" Nullable="false" />
       </ComplexType>
-      <ComplexType Name="identitySet">
-        <Property Name="application" Type="Microsoft.Graph.identity" />
-        <Property Name="user" Type="Microsoft.Graph.identity" />
+      <ComplexType Name="file">
+        <Property Name="hashes" Type="Microsoft.Graph.hashes" />
+        <Property Name="mimeType" Type="Edm.String" Unicode="false" />
       </ComplexType>
-      <ComplexType Name="identity">
-        <Property Name="id" Type="Edm.String" Unicode="false" />
-        <Property Name="displayName" Type="Edm.String" Unicode="false" />
+      <ComplexType Name="hashes">
+        <Property Name="crc32Hash" Type="Edm.String" Unicode="false" />
+        <Property Name="sha1Hash" Type="Edm.String" Unicode="false" />
       </ComplexType>
-      <ComplexType Name="image" />
+      <ComplexType Name="fileSystemInfo">
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset" />
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset" />
+      </ComplexType>
+      <ComplexType Name="folder">
+        <Property Name="childCount" Type="Edm.Int32" />
+      </ComplexType>
+      <ComplexType Name="image">
+        <Property Name="height" Type="Edm.Int32" />
+        <Property Name="width" Type="Edm.Int32" />
+      </ComplexType>
+      <ComplexType Name="location">
+        <Property Name="altitude" Type="Edm.Double" />
+        <Property Name="latitude" Type="Edm.Double" />
+        <Property Name="longitude" Type="Edm.Double" />
+      </ComplexType>
+      <ComplexType Name="openWithSet">
+        <Property Name="web" Type="Microsoft.Graph.openWithApp" />
+        <Property Name="webEmbedded" Type="Microsoft.Graph.openWithApp" />
+      </ComplexType>
+      <ComplexType Name="openWithApp">
+        <Property Name="app" Type="Microsoft.Graph.identity" />
+        <Property Name="viewUrl" Type="Edm.String" Unicode="false" />
+        <Property Name="editUrl" Type="Edm.String" Unicode="false" />
+        <Property Name="viewPostParameters" Type="Edm.String" Unicode="false" />
+        <Property Name="editPostParameters" Type="Edm.String" Unicode="false" />
+      </ComplexType>
       <ComplexType Name="photo">
-        <Property Name="takenDateTime" Type="Edm.DateTimeOffset" Nullable="false" />
+        <Property Name="cameraMake" Type="Edm.String" Unicode="false" />
+        <Property Name="cameraModel" Type="Edm.String" Unicode="false" />
+        <Property Name="exposureDenominator" Type="Edm.Double" />
+        <Property Name="exposureNumerator" Type="Edm.Double" />
+        <Property Name="focalLength" Type="Edm.Double" />
+        <Property Name="fNumber" Type="Edm.Double" />
+        <Property Name="takenDateTime" Type="Edm.DateTimeOffset" />
+        <Property Name="iso" Type="Edm.Int32" />
       </ComplexType>
-      <ComplexType Name="searchResult" />
-      <ComplexType Name="sharingLink">
-        <Property Name="application" Type="Microsoft.Graph.identity" />
-        <Property Name="type" Type="Edm.String" Unicode="false" />
-        <Property Name="webUrl" Type="Edm.String" Unicode="false" />
+      <ComplexType Name="searchResult">
+        <Property Name="onClickTelemetryUrl" Type="Edm.String" Unicode="false" />
       </ComplexType>
-      <ComplexType Name="thumbnail">
-        <Property Name="height" Type="Edm.Int32" Nullable="false" />
-        <Property Name="url" Type="Edm.String" Unicode="false" />
-        <Property Name="width" Type="Edm.Int32" Nullable="false" />
+      <ComplexType Name="shared">
+        <Property Name="owner" Type="Microsoft.Graph.identitySet" />
+        <Property Name="scope" Type="Edm.String" Unicode="false" />
       </ComplexType>
-      <ComplexType Name="uploadSession">
-        <Property Name="expirationDateTime" Type="Edm.DateTimeOffset" Nullable="false" />
-        <Property Name="nextExpectedRanges" Type="Collection(Edm.String)" Unicode="false" />
-        <Property Name="uploadUrl" Type="Edm.String" Unicode="false" />
+      <ComplexType Name="specialFolder">
+        <Property Name="name" Type="Edm.String" Unicode="false" />
       </ComplexType>
-      <EntityType Name="item" HasStream="true">
+      <ComplexType Name="video">
+        <Property Name="bitrate" Type="Edm.Int32" />
+        <Property Name="duration" Type="Edm.Int64" />
+        <Property Name="height" Type="Edm.Int32" />
+        <Property Name="width" Type="Edm.Int32" />
+      </ComplexType>
+      <EntityType Name="permission">
         <Key>
           <PropertyRef Name="id" />
         </Key>
-        <Property Name="createdBy" Type="Microsoft.Graph.identitySet" />
-        <Property Name="createdDateTime" Type="Edm.DateTimeOffset" Nullable="false" />
-        <Property Name="deleted" Type="Microsoft.Graph.deleted" />
-        <Property Name="eTag" Type="Edm.String" Unicode="false" />
-        <Property Name="file" Type="Microsoft.Graph.file" />
-        <Property Name="folder" Type="Microsoft.Graph.folder" />
+        <Property Name="grantedTo" Type="Microsoft.Graph.identitySet" />
         <Property Name="id" Type="Edm.String" Nullable="false" Unicode="false" />
-        <Property Name="image" Type="Microsoft.Graph.image" />
-        <Property Name="lastModifiedBy" Type="Microsoft.Graph.identitySet" />
-        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset" Nullable="false" />
-        <Property Name="name" Type="Edm.String" Unicode="false" />
-        <Property Name="parentReference" Type="Microsoft.Graph.itemReference" />
-        <Property Name="photo" Type="Microsoft.Graph.photo" />
-        <Property Name="searchResult" Type="Microsoft.Graph.searchResult" />
-        <Property Name="size" Type="Edm.Int64" Nullable="false" />
-        <Property Name="webUrl" Type="Edm.String" Unicode="false" />
-        <Property Name="webDavUrl" Type="Edm.String" Unicode="false" />
-        <NavigationProperty Name="createdByUser" Type="Microsoft.Graph.User" Nullable="false" />
-        <NavigationProperty Name="lastModifiedByUser" Type="Microsoft.Graph.User" Nullable="false" />
-        <NavigationProperty Name="children" Type="Collection(Microsoft.Graph.item)" ContainsTarget="true" />
-        <NavigationProperty Name="thumbnails" Type="Collection(Microsoft.Graph.thumbnailSet)" ContainsTarget="true" />
+        <Property Name="invitation" Type="Microsoft.Graph.sharingInvitation" />
+        <Property Name="inheritedFrom" Type="Microsoft.Graph.itemReference" />
+        <Property Name="link" Type="Microsoft.Graph.sharingLink" />
+        <Property Name="roles" Type="Collection(Edm.String)" Unicode="false" />
+        <Property Name="shareId" Type="Edm.String" Unicode="false" />
       </EntityType>
-      <EntityType Name="thumbnailSet">
+      <EntityType Name="thumbnailSet" OpenType="true">
         <Key>
           <PropertyRef Name="id" />
         </Key>
@@ -968,15 +1054,38 @@
         <Property Name="large" Type="Microsoft.Graph.thumbnail" />
         <Property Name="medium" Type="Microsoft.Graph.thumbnail" />
         <Property Name="small" Type="Microsoft.Graph.thumbnail" />
+        <Property Name="source" Type="Microsoft.Graph.thumbnail" />
       </EntityType>
-      <EntityType Name="permission">
-        <Key>
-          <PropertyRef Name="id" />
-        </Key>
-        <Property Name="id" Type="Edm.String" Nullable="false" Unicode="false" />
-        <Property Name="roles" Type="Collection(Edm.String)" Unicode="false" />
-        <Property Name="link" Type="Microsoft.Graph.sharingLink" />
-      </EntityType>
+      <ComplexType Name="sharingInvitation">
+        <Property Name="email" Type="Edm.String" Unicode="false" />
+        <Property Name="redeemedBy" Type="Edm.String" Unicode="false" />
+        <Property Name="signInRequired" Type="Edm.Boolean" />
+      </ComplexType>
+      <ComplexType Name="sharingLink">
+        <Property Name="application" Type="Microsoft.Graph.identity" />
+        <Property Name="type" Type="Edm.String" Unicode="false" />
+        <Property Name="webUrl" Type="Edm.String" Unicode="false" />
+      </ComplexType>
+      <ComplexType Name="chunkedUploadSessionDescriptor">
+        <Property Name="name" Type="Edm.String" Unicode="false" />
+      </ComplexType>
+      <ComplexType Name="recipients">
+        <Property Name="email" Type="Edm.String" Unicode="false" />
+        <Property Name="alias" Type="Edm.String" Unicode="false" />
+        <Property Name="objectId" Type="Edm.String" Unicode="false" />
+        <Property Name="permissionIdentityType" Type="Edm.String" Unicode="false" />
+      </ComplexType>
+      <ComplexType Name="uploadSession">
+        <Property Name="uploadUrl" Type="Edm.String" Unicode="false" />
+        <Property Name="expirationDateTime" Type="Edm.DateTimeOffset" />
+        <Property Name="nextExpectedRanges" Type="Collection(Edm.String)" Unicode="false" />
+      </ComplexType>
+      <ComplexType Name="thumbnail">
+        <Property Name="content" Type="Edm.Stream" />
+        <Property Name="height" Type="Edm.Int32" />
+        <Property Name="url" Type="Edm.String" Unicode="false" />
+        <Property Name="width" Type="Edm.Int32" />
+      </ComplexType>
       <ComplexType Name="AppliedCategoriesCollection" />
       <EntityType Name="TaskDetails">
         <Key>
@@ -1493,45 +1602,49 @@
         <Parameter Name="bindingParameter" Type="Microsoft.Graph.Post" />
         <Parameter Name="Post" Type="Microsoft.Graph.Post" Nullable="false" />
       </Action>
-      <Function Name="content" IsBound="true" IsComposable="true">
-        <Parameter Name="this" Type="Microsoft.Graph.item" />
-        <ReturnType Type="Edm.Stream" />
+      <Function Name="allPhotos" IsBound="true">
+        <Parameter Name="bindingParameter" Type="Microsoft.Graph.item" Nullable="false" />
+        <ReturnType Type="Collection(Microsoft.Graph.item)" Nullable="false" />
       </Function>
+      <Function Name="allPhotos" IsBound="true">
+        <Parameter Name="bindingParameter" Type="Microsoft.Graph.drive" Nullable="false" />
+        <ReturnType Type="Collection(Microsoft.Graph.item)" Nullable="false" />
+      </Function>
+      <Function Name="delta" IsBound="true">
+        <Parameter Name="bindingParameter" Type="Microsoft.Graph.item" Nullable="false" />
+        <Parameter Name="token" Type="Edm.String" Unicode="false" />
+        <ReturnType Type="Collection(Microsoft.Graph.item)" Nullable="false" />
+      </Function>
+      <Function Name="search" IsBound="true">
+        <Parameter Name="bindingParameter" Type="Microsoft.Graph.item" Nullable="false" />
+        <Parameter Name="q" Type="Edm.String" Unicode="false" />
+        <ReturnType Type="Collection(Microsoft.Graph.item)" Nullable="false" />
+      </Function>
+      <Action Name="invite" IsBound="true">
+        <Parameter Name="bindingParameter" Type="Microsoft.Graph.item" Nullable="false" />
+        <Parameter Name="recipients" Type="Collection(Microsoft.Graph.recipients)" Nullable="false" />
+        <Parameter Name="message" Type="Edm.String" Unicode="false" />
+        <Parameter Name="requireSignIn" Type="Edm.Boolean" />
+        <Parameter Name="sendInvitation" Type="Edm.Boolean" />
+        <Parameter Name="roles" Type="Collection(Edm.String)" Unicode="false" />
+        <ReturnType Type="Collection(Microsoft.Graph.permission)" Nullable="false" />
+      </Action>
       <Action Name="copy" IsBound="true">
-        <Parameter Name="this" Type="Microsoft.Graph.item" />
+        <Parameter Name="bindingParameter" Type="Microsoft.Graph.item" Nullable="false" />
         <Parameter Name="parentReference" Type="Microsoft.Graph.itemReference" />
         <Parameter Name="name" Type="Edm.String" Unicode="false" />
-        <ReturnType Type="Microsoft.Graph.item" />
+        <ReturnType Type="Microsoft.Graph.item" Nullable="false" />
       </Action>
       <Action Name="createLink" IsBound="true">
-        <Parameter Name="this" Type="Microsoft.Graph.item" />
-        <Parameter Name="type" Type="Edm.String" Unicode="false" />
-        <ReturnType Type="Microsoft.Graph.permission" />
+        <Parameter Name="bindingParameter" Type="Microsoft.Graph.item" Nullable="false" />
+        <Parameter Name="type" Type="Edm.String" Nullable="false" Unicode="false" />
+        <ReturnType Type="Microsoft.Graph.permission" Nullable="false" />
       </Action>
       <Action Name="createSession" IsBound="true">
-        <Parameter Name="this" Type="Microsoft.Graph.item" />
-        <Parameter Name="path" Type="Edm.String" Unicode="false" />
-        <Parameter Name="item" Type="Microsoft.Graph.FileSystemItemInformation" />
-        <ReturnType Type="Microsoft.Graph.uploadSession" />
+        <Parameter Name="bindingParameter" Type="Microsoft.Graph.item" Nullable="false" />
+        <Parameter Name="item" Type="Microsoft.Graph.chunkedUploadSessionDescriptor" />
+        <ReturnType Type="Microsoft.Graph.uploadSession" Nullable="false" />
       </Action>
-      <Function Name="delta" IsBound="true" IsComposable="true">
-        <Parameter Name="this" Type="Microsoft.Graph.item" />
-        <ReturnType Type="Collection(Microsoft.Graph.item)" />
-      </Function>
-      <Function Name="search" IsBound="true" IsComposable="true">
-        <Parameter Name="this" Type="Microsoft.Graph.item" />
-        <Parameter Name="q" Type="Edm.String" Unicode="false" />
-        <ReturnType Type="Collection(Microsoft.Graph.item)" />
-      </Function>
-      <Action Name="uploadContent" IsBound="true">
-        <Parameter Name="this" Type="Microsoft.Graph.item" />
-        <Parameter Name="contentStream" Type="Edm.Stream" />
-      </Action>
-      <Function Name="getCustomThumbnail" IsBound="true" IsComposable="true">
-        <Parameter Name="this" Type="Microsoft.Graph.thumbnailSet" />
-        <Parameter Name="size" Type="Edm.String" Unicode="false" />
-        <ReturnType Type="Microsoft.Graph.thumbnail" />
-      </Function>
       <Action Name="PatchContent" IsBound="true">
         <Parameter Name="bindingParameter" Type="Microsoft.Graph.Page" />
         <Parameter Name="commands" Type="Collection(Microsoft.Graph.PatchContentCommand)" />
@@ -1714,6 +1827,7 @@
           <NavigationPropertyBinding Path="Microsoft.Graph.item/lastModifiedByUser" Target="users" />
           <NavigationPropertyBinding Path="Microsoft.Graph.item/createdByUser" Target="users" />
         </EntitySet>
+        <EntitySet Name="shares" EntityType="Microsoft.Graph.share" />
         <EntitySet Name="tasks" EntityType="Microsoft.Graph.Task" />
         <EntitySet Name="plans" EntityType="Microsoft.Graph.Plan">
           <NavigationPropertyBinding Path="tasks" Target="tasks" />

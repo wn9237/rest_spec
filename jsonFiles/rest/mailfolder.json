@@ -15,62 +15,46 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/folders/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/folders/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<Id>": false
-    },
-    {
-      "/groups/<objectid>/drive/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<Id>": false
-    },
-    {
-      "/users/<objectid>/folders/<Id>": false
-    },
-    {
-      "/users/<objectid>/rootfolder/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/folders/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/createdbyuser/<objectid>/rootfolder/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/folders/<Id>": false
-    },
-    {
-      "/drives/<id>/items/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/folders/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/createdbyuser/<objectid>/rootfolder/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/folders/<Id>": false
-    },
-    {
-      "/drives/<id>/root/<id>/lastmodifiedbyuser/<objectid>/rootfolder/<Id>": false
-    }
-  ],
+  "restPath": {
+    "/groups/<objectId>/drive/items/<id>/createdByUser/Folders/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/RootFolder": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Folders/<Id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/RootFolder": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/Folders/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/RootFolder": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Folders/<Id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/RootFolder": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/Folders/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/RootFolder": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Folders/<Id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/RootFolder": true,
+    "/groups/<objectId>/drive/root/createdByUser/Folders/<Id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/RootFolder": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/Folders/<Id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/RootFolder": true,
+    "/users/<objectId>/Folders/<Id>": true,
+    "/users/<objectId>/RootFolder": true,
+    "/drives/<id>/items/<id>/createdByUser/Folders/<Id>": true,
+    "/drives/<id>/items/<id>/createdByUser/RootFolder": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/Folders/<Id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/RootFolder": true,
+    "/drives/<id>/shared/<id>/createdByUser/Folders/<Id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/RootFolder": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/Folders/<Id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/RootFolder": true,
+    "/drives/<id>/special/<id>/createdByUser/Folders/<Id>": true,
+    "/drives/<id>/special/<id>/createdByUser/RootFolder": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/Folders/<Id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/RootFolder": true,
+    "/drives/<id>/root/createdByUser/Folders/<Id>": true,
+    "/drives/<id>/root/createdByUser/RootFolder": true,
+    "/drives/<id>/root/lastModifiedByUser/Folders/<Id>": true,
+    "/drives/<id>/root/lastModifiedByUser/RootFolder": true,
+    "/shares/<id>/items/<id>/createdByUser/Folders/<Id>": true,
+    "/shares/<id>/items/<id>/createdByUser/RootFolder": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/Folders/<Id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/RootFolder": true
+  },
   "properties": [
     {
       "name": "ParentFolderId",
@@ -81,6 +65,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -94,6 +79,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -107,6 +93,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -120,6 +107,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -133,6 +121,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
@@ -146,6 +135,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
@@ -159,6 +149,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
@@ -186,6 +177,7 @@
           "name": "DestinationId",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -214,6 +206,7 @@
           "name": "DestinationId",
           "description": "",
           "dataType": "String",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,

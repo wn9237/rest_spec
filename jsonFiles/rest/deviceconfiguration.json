@@ -15,11 +15,9 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": [
-    {
-      "/deviceconfiguration/<objectId>": false
-    }
-  ],
+  "restPath": {
+    "/deviceConfiguration/<objectId>": true
+  },
   "properties": [
     {
       "name": "publicIssuerCertificates",
@@ -30,6 +28,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -43,6 +42,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": null
@@ -56,6 +56,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -69,6 +70,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -82,6 +84,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
@@ -95,6 +98,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
@@ -108,6 +112,7 @@
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
@@ -121,6 +126,7 @@
       "enumName": null,
       "isCollection": true,
       "isRelationship": true,
+      "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
@@ -148,6 +154,7 @@
           "name": "groupIds",
           "description": "",
           "dataType": "String",
+          "isCollection": true,
           "isRequired": true,
           "enumName": null,
           "isNullable": false,
@@ -176,6 +183,7 @@
           "name": "securityEnabledOnly",
           "description": "",
           "dataType": "Boolean",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
@@ -204,6 +212,7 @@
           "name": "securityEnabledOnly",
           "description": "",
           "dataType": "Boolean",
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,

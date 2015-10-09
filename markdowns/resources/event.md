@@ -2,19 +2,9 @@
 
 
 
-#### JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "Attachments",
-    "Extensions",
-    "Instances"
-  ],
-  "@odata.type": "microsoft.graph.Event"
-}-->
 
 ```json
 {
@@ -85,7 +75,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-#### Properties
+### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |Attendees|[Attendee](attendee.md) collection||
@@ -119,7 +109,7 @@ Here is a JSON representation of the resource
 |WebLink|String||
 |iCalUId|String||
 
-#### Relationships
+### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
@@ -127,7 +117,7 @@ Here is a JSON representation of the resource
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |Instances|[Event](event.md) collection| Read-only. Nullable.|
 
-#### Tasks
+### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
