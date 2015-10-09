@@ -26,4 +26,4 @@ Here is a JSON representation of the resource
 |application|[identity](identity.md)||
 |device|[identity](identity.md)||
 |user|[identity](identity.md)||
-<!-- uuid: 52c767a0-4ae2-4121-93ea-37bcad7d1e64\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: 286fc8e0-2b36-4896-af02-f0d18ccf295a\n2015-10-09 15:14:08 UTC -->

@@ -130,4 +130,4 @@ Here is a JSON representation of the resource
 |[Accept](../api/event_accept.md)|[None](none.md)||
 |[Decline](../api/event_decline.md)|[None](none.md)||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|[None](none.md)||
-<!-- uuid: 113988b1-62d6-4689-b88f-81fd8a08eed7\n2015-10-09 15:13:49 UTC -->
+<!-- uuid: b27103f1-877f-4d1e-8924-4560e3a01ff0\n2015-10-09 15:14:08 UTC -->

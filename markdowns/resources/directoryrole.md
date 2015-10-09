@@ -80,4 +80,4 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/directoryrole_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String||
-<!-- uuid: bbafb208-cd18-4788-b8de-7a7a829345df\n2015-10-09 15:13:49 UTC -->
+<!-- uuid: d38ab1e1-dddf-45d1-a68a-0b4503f2690f\n2015-10-09 15:14:07 UTC -->

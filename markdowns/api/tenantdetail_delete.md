@@ -18,4 +18,4 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-<!-- uuid: f3d805de-8afc-443b-943f-07f6007b367a\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: ef07da42-fa06-4b86-be92-a004ab46d773\n2015-10-09 15:14:09 UTC -->

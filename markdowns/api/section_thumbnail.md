@@ -35,4 +35,4 @@ Content-length: 29
   "value": "Stream-value"
 }
 ```
-<!-- uuid: 0e040bf6-f415-4b53-9e15-29a1821195dc\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 112d08e2-50a5-47de-911c-82bdae25a612\n2015-10-09 15:14:09 UTC -->

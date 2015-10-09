@@ -57,4 +57,4 @@ Here is a JSON representation of the resource
 |[Delete](../api/mailfolder_delete.md) | Void	|Delete MailFolder object. |
 |[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
 |[Move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||
-<!-- uuid: fc7189bc-a6ca-47ae-93d8-80376516fc43\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: 865ecaae-5068-47e7-b21e-e4dce17d56c0\n2015-10-09 15:14:08 UTC -->

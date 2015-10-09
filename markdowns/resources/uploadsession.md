@@ -22,4 +22,4 @@ Here is a JSON representation of the resource
 |expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |nextExpectedRanges|String collection||
 |uploadUrl|String||
-<!-- uuid: 2eae4744-f283-4472-9957-d42ac084b8ec\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: adbf3f98-10c6-46f6-80bf-c96ff8a4f823\n2015-10-09 15:14:09 UTC -->

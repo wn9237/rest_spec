@@ -44,4 +44,4 @@ None
 |[Get thumbnailSet](../api/thumbnailset_get.md) | [thumbnailSet](thumbnailset.md) |Read properties and relationships of thumbnailSet object.|
 |[Update](../api/thumbnailset_update.md) | [thumbnailSet](thumbnailset.md)	|Update thumbnailSet object. |
 |[Delete](../api/thumbnailset_delete.md) | Void	|Delete thumbnailSet object. |
-<!-- uuid: 4c011d33-781a-4be7-a712-af26411760f7\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 8afc4488-0f26-46c9-82bc-101864a88447\n2015-10-09 15:14:09 UTC -->

@@ -84,4 +84,4 @@ Here is a JSON representation of the resource
 |[Delete](../api/post_delete.md) | Void	|Delete Post object. |
 |[Forward](../api/post_forward.md)|[None](none.md)||
 |[Reply](../api/post_reply.md)|[None](none.md)||
-<!-- uuid: f0b87885-0dd3-4838-9819-ede6d310ace5\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 40c7f64f-019f-43e2-8f38-ea355a728927\n2015-10-09 15:14:09 UTC -->

@@ -20,4 +20,4 @@ Here is a JSON representation of the resource
 |altitude|Double||
 |latitude|Double||
 |longitude|Double||
-<!-- uuid: be238f9b-c755-45f5-a46c-3e8b2775a858\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: 0157d87f-03d9-4793-b9b9-772ee131c50a\n2015-10-09 15:14:08 UTC -->

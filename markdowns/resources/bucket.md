@@ -47,4 +47,4 @@ Here is a JSON representation of the resource
 |[Create Task](../api/bucket_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
 |[Update](../api/bucket_update.md) | [Bucket](bucket.md)	|Update Bucket object. |
 |[Delete](../api/bucket_delete.md) | Void	|Delete Bucket object. |
-<!-- uuid: 5b6cb780-6f3a-421d-9177-723bbdfa4bc5\n2015-10-09 15:13:49 UTC -->
+<!-- uuid: 5f030da7-6163-4a6d-8ba0-1581c5fe5436\n2015-10-09 15:14:07 UTC -->

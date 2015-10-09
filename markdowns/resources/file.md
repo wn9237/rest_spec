@@ -14,4 +14,4 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Delete](../api/file_delete.md) | Void	|Delete File object. |
-<!-- uuid: 05f4b160-67a1-468c-ab88-7fcec78e0757\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: d2192ba2-0561-4cb0-8f68-16a12089889b\n2015-10-09 15:14:08 UTC -->

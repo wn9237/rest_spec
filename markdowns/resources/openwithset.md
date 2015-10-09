@@ -22,4 +22,4 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |web|[openWithApp](openwithapp.md)||
 |webEmbedded|[openWithApp](openwithapp.md)||
-<!-- uuid: 62a5a26d-a065-46ab-a720-a1a8da6bcefe\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: f6ca8931-a254-4d76-9656-50877e893873\n2015-10-09 15:14:08 UTC -->

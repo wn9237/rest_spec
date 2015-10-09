@@ -40,4 +40,4 @@ Here is a JSON representation of the resource
 |parentSection|[CopySectionModel](copysectionmodel.md)||
 |self|String||
 |title|String||
-<!-- uuid: db0a0abd-84f5-408b-b0da-70ffdbaa3343\n2015-10-09 15:13:49 UTC -->
+<!-- uuid: ceced6b2-3107-4493-a50d-1676d4478198\n2015-10-09 15:14:07 UTC -->

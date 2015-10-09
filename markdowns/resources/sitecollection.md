@@ -35,4 +35,4 @@ Here is a JSON representation of the resource
 |[Create Site](../api/sitecollection_post_sites.md) |[Site](site.md)| Create a new Site by posting to the sites collection.|
 |[Delete](../api/sitecollection_delete.md) | Void	|Delete SiteCollection object. |
 |[Fromurl](../api/sitecollection_fromurl.md)|[SiteMetadata](sitemetadata.md)||
-<!-- uuid: 0d88edda-e409-4648-a1fe-ca711a56d19e\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 3a6d31ef-9b1d-43ff-9ed7-c7f2929c61fa\n2015-10-09 15:14:09 UTC -->

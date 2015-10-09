@@ -30,4 +30,4 @@ Here is a JSON representation of the resource
 |Interval|Int32||
 |Month|Int32||
 |Type|String| Possible values are: `Daily`, `Weekly`, `AbsoluteMonthly`, `RelativeMonthly`, `AbsoluteYearly`, `RelativeYearly`.|
-<!-- uuid: 63737a2e-ed28-4fae-b71b-16b9db553b7e\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 6d07b23b-520c-473c-811f-eb1651eff2b8\n2015-10-09 15:14:09 UTC -->

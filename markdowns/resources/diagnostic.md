@@ -18,4 +18,4 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |message|String||
 |url|String||
-<!-- uuid: a8153130-090d-40e2-90e8-a3eb9386b2bb\n2015-10-09 15:13:49 UTC -->
+<!-- uuid: 7c86c493-8e58-42c7-8500-2378c7876c49\n2015-10-09 15:14:07 UTC -->

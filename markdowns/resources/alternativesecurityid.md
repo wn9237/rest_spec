@@ -20,4 +20,4 @@ Here is a JSON representation of the resource
 |identityProvider|String||
 |key|Binary||
 |type|Int32||
-<!-- uuid: 858f412c-52bf-477d-9629-4cdd7cbba12d\n2015-10-09 15:13:49 UTC -->
+<!-- uuid: 2fb799e9-234a-4a3f-a2ce-05596a9f71b8\n2015-10-09 15:14:07 UTC -->

@@ -45,4 +45,4 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/referenceattachment_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/referenceattachment_update.md) | [ReferenceAttachment](referenceattachment.md)	|Update ReferenceAttachment object. |
 |[Delete](../api/referenceattachment_delete.md) | Void	|Delete ReferenceAttachment object. |
-<!-- uuid: 02445c95-d314-4ce1-a9c1-eeae1060c773\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 9c7bfaef-23c9-4423-acfd-77392cf5384c\n2015-10-09 15:14:09 UTC -->

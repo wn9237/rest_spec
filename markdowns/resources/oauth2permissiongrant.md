@@ -42,4 +42,4 @@ None
 |[Get OAuth2PermissionGrant](../api/oauth2permissiongrant_get.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md) |Read properties and relationships of oAuth2PermissionGrant object.|
 |[Update](../api/oauth2permissiongrant_update.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md)	|Update OAuth2PermissionGrant object. |
 |[Delete](../api/oauth2permissiongrant_delete.md) | Void	|Delete OAuth2PermissionGrant object. |
-<!-- uuid: 100b446a-bcc1-4bc9-9a35-f48e93b0eb29\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: 16ea8f4a-2131-4fb2-b8f7-34edd33a13dd\n2015-10-09 15:14:08 UTC -->

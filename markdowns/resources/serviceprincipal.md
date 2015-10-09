@@ -152,4 +152,4 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/serviceprincipal_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String||
 |[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String||
-<!-- uuid: 55e8b3cf-a9cb-4935-8ecf-7b37c55f800d\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 4da4f361-e8b8-4937-817a-e699019a8e03\n2015-10-09 15:14:09 UTC -->

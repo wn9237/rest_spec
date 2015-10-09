@@ -104,4 +104,4 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/tenantdetail_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/tenantdetail_getmembergroups.md)|String||
 |[Get MemberObjects](../api/tenantdetail_getmemberobjects.md)|String||
-<!-- uuid: da2833a1-4ce4-46c2-8ee4-e058122ced18\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 6292710f-c261-4d46-a261-2193eb54548a\n2015-10-09 15:14:09 UTC -->

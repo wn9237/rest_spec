@@ -20,4 +20,4 @@ Here is a JSON representation of the resource
 |email|String||
 |redeemedBy|String||
 |signInRequired|Boolean||
-<!-- uuid: 55f20062-c489-43fb-910e-f37075f4786b\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 17bedf5f-1f3f-49fc-8cfa-79668d031b34\n2015-10-09 15:14:09 UTC -->

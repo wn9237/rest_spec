@@ -30,4 +30,4 @@ None
 |[Get PimAlertSettings](../api/pimalertsettings_get.md) | [PimAlertSettings](pimalertsettings.md) |Read properties and relationships of pimAlertSettings object.|
 |[Update](../api/pimalertsettings_update.md) | [PimAlertSettings](pimalertsettings.md)	|Update PimAlertSettings object. |
 |[Delete](../api/pimalertsettings_delete.md) | Void	|Delete PimAlertSettings object. |
-<!-- uuid: f3b2067b-f97e-47ef-8f51-5d86f787cb8f\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: ac120cf9-bd00-431d-825b-f2dfc0208b39\n2015-10-09 15:14:08 UTC -->

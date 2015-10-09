@@ -26,4 +26,4 @@ Here is a JSON representation of the resource
 |initial|Boolean||
 |name|String||
 |type|String||
-<!-- uuid: 6f7f8545-beb5-429a-9246-83512af34c4d\n2015-10-09 15:13:52 UTC -->
+<!-- uuid: 7d161c98-9b27-43fc-b14c-9622c128527d\n2015-10-09 15:14:09 UTC -->

@@ -28,4 +28,4 @@ Here is a JSON representation of the resource
 |id|Guid||
 |isEnabled|Boolean||
 |value|String||
-<!-- uuid: fff2d49e-a600-4f74-8df2-15d3f09cc73e\n2015-10-09 15:13:49 UTC -->
+<!-- uuid: 240a40f9-b171-47d7-bcdc-174f484de66b\n2015-10-09 15:14:07 UTC -->

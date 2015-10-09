@@ -45,4 +45,4 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/outlookitem_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/outlookitem_update.md) | [OutlookItem](outlookitem.md)	|Update OutlookItem object. |
 |[Delete](../api/outlookitem_delete.md) | Void	|Delete OutlookItem object. |
-<!-- uuid: 1f27ca94-d868-4330-8ef5-f411d169ac48\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: c4888a7b-c1ae-4100-829d-62c0f0454113\n2015-10-09 15:14:08 UTC -->

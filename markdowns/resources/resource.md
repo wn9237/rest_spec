@@ -34,4 +34,4 @@ None
 |[Get Resource](../api/resource_get.md) | [Resource](resource.md) |Read properties and relationships of resource object.|
 |[Update](../api/resource_update.md) | [Resource](resource.md)	|Update Resource object. |
 |[Delete](../api/resource_delete.md) | Void	|Delete Resource object. |
-<!-- uuid: 76e48aef-3d73-482f-a83d-60090939e825\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 7032eed8-cf8e-4ad4-bc18-d274db398631\n2015-10-09 15:14:09 UTC -->

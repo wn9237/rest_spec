@@ -20,4 +20,4 @@ Here is a JSON representation of the resource
 |capabilityStatus|String||
 |provisioningStatus|String||
 |service|String||
-<!-- uuid: 4781c015-f4bd-4fe4-a757-c173b50fe309\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: dbf8e077-b4bf-41a0-8df1-bd01966ec3ec\n2015-10-09 15:14:09 UTC -->

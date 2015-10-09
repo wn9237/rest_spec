@@ -38,4 +38,4 @@ None
 |[Get PrivilegedRoleSummary](../api/privilegedrolesummary_get.md) | [PrivilegedRoleSummary](privilegedrolesummary.md) |Read properties and relationships of privilegedRoleSummary object.|
 |[Update](../api/privilegedrolesummary_update.md) | [PrivilegedRoleSummary](privilegedrolesummary.md)	|Update PrivilegedRoleSummary object. |
 |[Delete](../api/privilegedrolesummary_delete.md) | Void	|Delete PrivilegedRoleSummary object. |
-<!-- uuid: 45d49513-8b5c-454a-937c-ffe8d7e44166\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 9946be89-9699-4c8f-b731-c5db18876700\n2015-10-09 15:14:09 UTC -->

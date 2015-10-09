@@ -40,4 +40,4 @@ None
 |[Get TaskDetails](../api/taskdetails_get.md) | [TaskDetails](taskdetails.md) |Read properties and relationships of taskDetails object.|
 |[Update](../api/taskdetails_update.md) | [TaskDetails](taskdetails.md)	|Update TaskDetails object. |
 |[Delete](../api/taskdetails_delete.md) | Void	|Delete TaskDetails object. |
-<!-- uuid: 5fadfab3-ddc1-4dda-b9f4-0a8fe9ac784b\n2015-10-09 15:13:51 UTC -->
+<!-- uuid: 3d7e9543-08dc-4e3d-9d9c-15c6e5a21b97\n2015-10-09 15:14:09 UTC -->

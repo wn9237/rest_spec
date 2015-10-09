@@ -62,4 +62,4 @@ Here is a JSON representation of the resource
 |[Create SectionGroup](../api/notes_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a new SectionGroup by posting to the sectionGroups collection.|
 |[Create Section](../api/notes_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
 |[Delete](../api/notes_delete.md) | Void	|Delete Notes object. |
-<!-- uuid: 91127615-473f-4ab0-9d38-3833695b3c4d\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: b214c2c3-6e26-42c2-9869-7b71de939ba4\n2015-10-09 15:14:08 UTC -->

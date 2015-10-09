@@ -28,4 +28,4 @@ Here is a JSON representation of the resource
 |folder|[folder](folder.md)||
 |name|String||
 |parentReference|[itemReference](itemreference.md)||
-<!-- uuid: bf482b83-404b-4341-b4ec-9de5c9d8f621\n2015-10-09 15:13:50 UTC -->
+<!-- uuid: f324843e-f6ce-4a14-9a37-80e2026dd0a5\n2015-10-09 15:14:08 UTC -->
