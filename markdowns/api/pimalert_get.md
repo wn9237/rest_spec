@@ -22,20 +22,20 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 482
+Content-length: 529
 {
-  "AlertId": "Guid-value",
+  "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
-  "AdditionalData": "String-value",
-  "AlertName": "String-value",
-  "AlertDescription": "String-value",
+  "AdditionalData": "AdditionalData-value",
+  "AlertName": "AlertName-value",
+  "AlertDescription": "AlertDescription-value",
   "LastModifiedTime": "datetime-value",
   "LastScannedTime": "datetime-value",
   "SeverityLevel": 99,
   "AlertType": 99,
-  "SecurityImpact": "String-value",
-  "MitigationSteps": "String-value",
-  "HowToPrevent": "String-value",
+  "SecurityImpact": "SecurityImpact-value",
+  "MitigationSteps": "MitigationSteps-value",
+  "HowToPrevent": "HowToPrevent-value",
   "WasDismissed": true,
   "IsActive": true,
   "IsResolvable": true,

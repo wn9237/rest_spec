@@ -26,11 +26,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 180
+Content-length: 176
 {
   "grantedTo": {
   },
-  "id": "String-value",
+  "id": "id-value",
   "invitation": {
   },
   "inheritedFrom": {
@@ -38,8 +38,8 @@ Content-length: 180
   "link": {
   },
   "roles": [
-    "String-value"
+    "roles-value"
   ],
-  "shareId": "String-value"
+  "shareId": "shareId-value"
 }
 ```

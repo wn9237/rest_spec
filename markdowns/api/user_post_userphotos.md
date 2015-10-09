@@ -26,10 +26,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 57
+Content-length: 53
 {
   "Width": 99,
   "Height": 99,
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

@@ -22,11 +22,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 137
+Content-length: 160
 {
-  "Id": "String-value",
-  "DisplayName": "String-value",
-  "NotificationType": "String-value",
-  "NotificationTarget": "String-value"
+  "Id": "Id-value",
+  "DisplayName": "DisplayName-value",
+  "NotificationType": "NotificationType-value",
+  "NotificationTarget": "NotificationTarget-value"
 }
 ```

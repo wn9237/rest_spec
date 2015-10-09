@@ -152,7 +152,7 @@ module SpecMaker
 		return createDescription
 	end
 
-	def self.assign_value (dataType=nil)
+	def self.assign_value (dataType=nil, name='')
 		if NUMERICTYPES.include? dataType
 			return 99
 		elsif DATETYPES.include? dataType
@@ -162,7 +162,7 @@ module SpecMaker
 		elsif %w[Boolean boolean Bool bool ].include? dataType
 			return true
 		elsif SIMPLETYPES.include? dataType
-			return "#{dataType}-value"				
+			return "#{name}-value"				
 		else
 			return {}
 		end
@@ -177,7 +177,7 @@ module SpecMaker
 				if object[:isComplexType] 
 					model[item[:name]] = dump_complex_type(item[:dataType])
 				else					
-					model[item[:name]] = assign_value(item[:dataType])
+					model[item[:name]] = assign_value(item[:dataType], item[:name])
 				end
 			end
 		end
@@ -201,7 +201,7 @@ module SpecMaker
 			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
 			object[:properties].each do |item|
 				next if item[:isRelationship]
-				model[item[:name]] = assign_value(item[:dataType])
+				model[item[:name]] = assign_value(item[:dataType], item[:name])
 				if item[:isCollection] 
 					model[item[:name]] = [model[item[:name]]]
 				end
@@ -214,7 +214,7 @@ module SpecMaker
 
 		model={}
 		params.each do |item|
-			model[item[:name]] = assign_value(item[:dataType])
+			model[item[:name]] = assign_value(item[:dataType], item[:name])
 			if item[:isCollection] 
 				model[item[:name]] = [model[item[:name]]]
 			end

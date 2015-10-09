@@ -24,14 +24,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 181
+Content-length: 179
 {
-  "name": "String-value",
-  "planId": "String-value",
-  "orderHint": "String-value",
+  "name": "name-value",
+  "planId": "planId-value",
+  "orderHint": "orderHint-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```

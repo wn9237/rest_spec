@@ -29,18 +29,18 @@ Here is an example of how to call this API.
 ```http
 POST /users/<objectId>/RootFolder/Move
 {
-  "DestinationId": "String-value"
+  "DestinationId": "DestinationId-value"
 }
 ```
 ##### Response
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 121
+Content-length: 130
 {
-  "ParentFolderId": "String-value",
-  "DisplayName": "String-value",
+  "ParentFolderId": "ParentFolderId-value",
+  "DisplayName": "DisplayName-value",
   "ChildFolderCount": 99,
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

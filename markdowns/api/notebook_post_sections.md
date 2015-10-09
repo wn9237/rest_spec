@@ -26,16 +26,16 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 271
+Content-length: 276
 {
   "isDefault": true,
-  "pagesUrl": "String-value",
-  "name": "String-value",
-  "createdBy": "String-value",
-  "lastModifiedBy": "String-value",
+  "pagesUrl": "pagesUrl-value",
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
   "lastModifiedTime": "datetime-value",
-  "id": "String-value",
-  "self": "String-value",
+  "id": "id-value",
+  "self": "self-value",
   "createdTime": "datetime-value"
 }
 ```

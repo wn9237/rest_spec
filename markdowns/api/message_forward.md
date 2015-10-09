@@ -30,7 +30,7 @@ Here is an example of how to call this API.
 ```http
 POST /users/<objectId>/Messages/<Id>/Forward
 {
-  "Comment": "String-value",
+  "Comment": "Comment-value",
   "ToRecipients": [
     {
     }

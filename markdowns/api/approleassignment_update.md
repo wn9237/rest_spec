@@ -35,17 +35,17 @@ Here is an example of the request.
 ```http
 PUT /servicePrincipals/<objectId>/appRoleAssignedTo
 Content-type: application/json
-Content-length: 347
+Content-length: 398
 {
   "creationTimestamp": "datetime-value",
-  "id": "Guid-value",
-  "principalDisplayName": "String-value",
-  "principalId": "Guid-value",
-  "principalType": "String-value",
-  "resourceDisplayName": "String-value",
-  "resourceId": "Guid-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "id": "id-value",
+  "principalDisplayName": "principalDisplayName-value",
+  "principalId": "principalId-value",
+  "principalType": "principalType-value",
+  "resourceDisplayName": "resourceDisplayName-value",
+  "resourceId": "resourceId-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```
@@ -54,17 +54,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 347
+Content-length: 398
 {
   "creationTimestamp": "datetime-value",
-  "id": "Guid-value",
-  "principalDisplayName": "String-value",
-  "principalId": "Guid-value",
-  "principalType": "String-value",
-  "resourceDisplayName": "String-value",
-  "resourceId": "Guid-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "id": "id-value",
+  "principalDisplayName": "principalDisplayName-value",
+  "principalId": "principalId-value",
+  "principalType": "principalType-value",
+  "resourceDisplayName": "resourceDisplayName-value",
+  "resourceId": "resourceId-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

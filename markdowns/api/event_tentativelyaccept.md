@@ -30,7 +30,7 @@ Here is an example of how to call this API.
 ```http
 POST /users/<objectId>/Events/<Id>/TentativelyAccept
 {
-  "Comment": "String-value",
+  "Comment": "Comment-value",
   "SendResponse": true
 }
 ```

@@ -28,25 +28,25 @@ POST /drives/<id>/root/allPhotos
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 666
+Content-length: 665
 {
-  "content": "Stream-value",
+  "content": "content-value",
   "createdBy": {
   },
   "createdDateTime": "datetime-value",
-  "cTag": "String-value",
-  "description": "String-value",
-  "eTag": "String-value",
-  "id": "String-value",
+  "cTag": "cTag-value",
+  "description": "description-value",
+  "eTag": "eTag-value",
+  "id": "id-value",
   "lastModifiedBy": {
   },
   "lastModifiedDateTime": "datetime-value",
-  "name": "String-value",
+  "name": "name-value",
   "parentReference": {
   },
   "size": 99,
-  "webDavUrl": "String-value",
-  "webUrl": "String-value",
+  "webDavUrl": "webDavUrl-value",
+  "webUrl": "webUrl-value",
   "audio": {
   },
   "deleted": {

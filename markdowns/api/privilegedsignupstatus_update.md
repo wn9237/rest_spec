@@ -26,11 +26,11 @@ Here is an example of the request.
 ```http
 PUT /PrivilegedSignupStatus/<TenantId>
 Content-type: application/json
-Content-length: 84
+Content-length: 86
 {
-  "TenantId": "String-value",
+  "TenantId": "TenantId-value",
   "IsRegistered": true,
-  "Status": "String-value"
+  "Status": "Status-value"
 }
 ```
 ##### Response
@@ -38,10 +38,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 84
+Content-length: 86
 {
-  "TenantId": "String-value",
+  "TenantId": "TenantId-value",
   "IsRegistered": true,
-  "Status": "String-value"
+  "Status": "Status-value"
 }
 ```

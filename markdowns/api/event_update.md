@@ -55,30 +55,30 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/Events/<Id>
 Content-type: application/json
-Content-length: 868
+Content-length: 901
 {
-  "Subject": "String-value",
+  "Subject": "Subject-value",
   "Body": {
   },
-  "BodyPreview": "String-value",
-  "Importance": "String-value",
+  "BodyPreview": "BodyPreview-value",
+  "Importance": "Importance-value",
   "HasAttachments": true,
   "Start": "datetime-value",
-  "StartTimeZone": "String-value",
+  "StartTimeZone": "StartTimeZone-value",
   "End": "datetime-value",
-  "EndTimeZone": "String-value",
+  "EndTimeZone": "EndTimeZone-value",
   "Reminder": 99,
   "Location": {
   },
-  "ShowAs": "String-value",
+  "ShowAs": "ShowAs-value",
   "ResponseStatus": {
   },
   "IsAllDay": true,
   "IsCancelled": true,
   "IsOrganizer": true,
   "ResponseRequested": true,
-  "Type": "String-value",
-  "SeriesMasterId": "String-value",
+  "Type": "Type-value",
+  "SeriesMasterId": "SeriesMasterId-value",
   "Attendees": [
     {
     }
@@ -87,16 +87,16 @@ Content-length: 868
   },
   "Organizer": {
   },
-  "iCalUId": "String-value",
-  "WebLink": "String-value",
+  "iCalUId": "iCalUId-value",
+  "WebLink": "WebLink-value",
   "OriginalStart": "datetime-value",
-  "ChangeKey": "String-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -104,30 +104,30 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 868
+Content-length: 901
 {
-  "Subject": "String-value",
+  "Subject": "Subject-value",
   "Body": {
   },
-  "BodyPreview": "String-value",
-  "Importance": "String-value",
+  "BodyPreview": "BodyPreview-value",
+  "Importance": "Importance-value",
   "HasAttachments": true,
   "Start": "datetime-value",
-  "StartTimeZone": "String-value",
+  "StartTimeZone": "StartTimeZone-value",
   "End": "datetime-value",
-  "EndTimeZone": "String-value",
+  "EndTimeZone": "EndTimeZone-value",
   "Reminder": 99,
   "Location": {
   },
-  "ShowAs": "String-value",
+  "ShowAs": "ShowAs-value",
   "ResponseStatus": {
   },
   "IsAllDay": true,
   "IsCancelled": true,
   "IsOrganizer": true,
   "ResponseRequested": true,
-  "Type": "String-value",
-  "SeriesMasterId": "String-value",
+  "Type": "Type-value",
+  "SeriesMasterId": "SeriesMasterId-value",
   "Attendees": [
     {
     }
@@ -136,15 +136,15 @@ Content-length: 868
   },
   "Organizer": {
   },
-  "iCalUId": "String-value",
-  "WebLink": "String-value",
+  "iCalUId": "iCalUId-value",
+  "WebLink": "WebLink-value",
   "OriginalStart": "datetime-value",
-  "ChangeKey": "String-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

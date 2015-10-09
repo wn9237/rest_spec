@@ -28,7 +28,7 @@ Here is an example of how to call this API.
 POST /applications/<objectId>/restore
 {
   "identifierUris": [
-    "String-value"
+    "identifierUris-value"
   ]
 }
 ```
@@ -36,30 +36,30 @@ POST /applications/<objectId>/restore
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 880
+Content-length: 953
 {
-  "appId": "String-value",
+  "appId": "appId-value",
   "appRoles": [
     {
     }
   ],
   "availableToOtherTenants": true,
-  "displayName": "String-value",
-  "errorUrl": "String-value",
-  "groupMembershipClaims": "String-value",
-  "homepage": "String-value",
+  "displayName": "displayName-value",
+  "errorUrl": "errorUrl-value",
+  "groupMembershipClaims": "groupMembershipClaims-value",
+  "homepage": "homepage-value",
   "identifierUris": [
-    "String-value"
+    "identifierUris-value"
   ],
   "keyCredentials": [
     {
     }
   ],
   "knownClientApplications": [
-    "Guid-value"
+    "knownClientApplications-value"
   ],
-  "mainLogo": "Stream-value",
-  "logoutUrl": "String-value",
+  "mainLogo": "mainLogo-value",
+  "logoutUrl": "logoutUrl-value",
   "oauth2AllowImplicitFlow": true,
   "oauth2AllowUrlPathMatching": true,
   "oauth2Permissions": [
@@ -73,15 +73,15 @@ Content-length: 880
   ],
   "publicClient": true,
   "replyUrls": [
-    "String-value"
+    "replyUrls-value"
   ],
   "requiredResourceAccess": [
     {
     }
   ],
-  "samlMetadataUrl": "String-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "samlMetadataUrl": "samlMetadataUrl-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

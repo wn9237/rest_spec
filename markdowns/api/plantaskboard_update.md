@@ -27,11 +27,11 @@ Here is an example of the request.
 ```http
 PUT /plans/<id>/bucketTaskBoard
 Content-type: application/json
-Content-length: 81
+Content-length: 76
 {
-  "type": "String-value",
-  "id": "String-value",
-  "version": "String-value"
+  "type": "type-value",
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 ##### Response
@@ -39,10 +39,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 81
+Content-length: 76
 {
-  "type": "String-value",
-  "id": "String-value",
-  "version": "String-value"
+  "type": "type-value",
+  "id": "id-value",
+  "version": "version-value"
 }
 ```

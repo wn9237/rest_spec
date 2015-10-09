@@ -34,17 +34,17 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/notes/pages/<id>
 Content-type: application/json
-Content-length: 269
+Content-length: 275
 {
-  "title": "String-value",
-  "createdByAppId": "String-value",
+  "title": "title-value",
+  "createdByAppId": "createdByAppId-value",
   "links": {
   },
-  "contentUrl": "String-value",
-  "content": "Stream-value",
+  "contentUrl": "contentUrl-value",
+  "content": "content-value",
   "lastModifiedTime": "datetime-value",
-  "id": "String-value",
-  "self": "String-value",
+  "id": "id-value",
+  "self": "self-value",
   "createdTime": "datetime-value"
 }
 ```
@@ -53,17 +53,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
+Content-length: 275
 {
-  "title": "String-value",
-  "createdByAppId": "String-value",
+  "title": "title-value",
+  "createdByAppId": "createdByAppId-value",
   "links": {
   },
-  "contentUrl": "String-value",
-  "content": "Stream-value",
+  "contentUrl": "contentUrl-value",
+  "content": "content-value",
   "lastModifiedTime": "datetime-value",
-  "id": "String-value",
-  "self": "String-value",
+  "id": "id-value",
+  "self": "self-value",
   "createdTime": "datetime-value"
 }
 ```

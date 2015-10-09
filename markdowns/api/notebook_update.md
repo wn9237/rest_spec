@@ -38,21 +38,21 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/notes/notebooks/<id>
 Content-type: application/json
-Content-length: 380
+Content-length: 400
 {
   "isDefault": true,
-  "userRole": "String-value",
+  "userRole": "userRole-value",
   "isShared": true,
-  "sectionsUrl": "String-value",
-  "sectionGroupsUrl": "String-value",
+  "sectionsUrl": "sectionsUrl-value",
+  "sectionGroupsUrl": "sectionGroupsUrl-value",
   "links": {
   },
-  "name": "String-value",
-  "createdBy": "String-value",
-  "lastModifiedBy": "String-value",
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
   "lastModifiedTime": "datetime-value",
-  "id": "String-value",
-  "self": "String-value",
+  "id": "id-value",
+  "self": "self-value",
   "createdTime": "datetime-value"
 }
 ```
@@ -61,21 +61,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 380
+Content-length: 400
 {
   "isDefault": true,
-  "userRole": "String-value",
+  "userRole": "userRole-value",
   "isShared": true,
-  "sectionsUrl": "String-value",
-  "sectionGroupsUrl": "String-value",
+  "sectionsUrl": "sectionsUrl-value",
+  "sectionGroupsUrl": "sectionGroupsUrl-value",
   "links": {
   },
-  "name": "String-value",
-  "createdBy": "String-value",
-  "lastModifiedBy": "String-value",
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
   "lastModifiedTime": "datetime-value",
-  "id": "String-value",
-  "self": "String-value",
+  "id": "id-value",
+  "self": "self-value",
   "createdTime": "datetime-value"
 }
 ```

@@ -32,15 +32,15 @@ Here is an example of the request.
 ```http
 PUT /plans/<id>
 Content-type: application/json
-Content-length: 181
+Content-length: 179
 {
-  "createdBy": "String-value",
-  "owner": "String-value",
-  "title": "String-value",
+  "createdBy": "createdBy-value",
+  "owner": "owner-value",
+  "title": "title-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 ##### Response
@@ -48,14 +48,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 181
+Content-length: 179
 {
-  "createdBy": "String-value",
-  "owner": "String-value",
-  "title": "String-value",
+  "createdBy": "createdBy-value",
+  "owner": "owner-value",
+  "title": "title-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```

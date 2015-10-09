@@ -25,10 +25,10 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 61
+Content-length: 64
 {
-  "Id": "String-value",
-  "ExtensionName": "String-value"
+  "Id": "Id-value",
+  "ExtensionName": "ExtensionName-value"
 }
 ```
 ##### Response
@@ -36,9 +36,9 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 61
+Content-length: 64
 {
-  "Id": "String-value",
-  "ExtensionName": "String-value"
+  "Id": "Id-value",
+  "ExtensionName": "ExtensionName-value"
 }
 ```

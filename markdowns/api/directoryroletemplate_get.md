@@ -22,12 +22,12 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 171
+Content-length: 187
 {
-  "description": "String-value",
-  "displayName": "String-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

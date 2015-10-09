@@ -31,22 +31,22 @@ Here is an example of how to call this API.
 ```http
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/Activate
 {
-  "Reason": "String-value",
-  "Duration": "String-value",
-  "TicketNumber": "String-value",
-  "TicketSystem": "String-value"
+  "Reason": "Reason-value",
+  "Duration": "Duration-value",
+  "TicketNumber": "TicketNumber-value",
+  "TicketSystem": "TicketSystem-value"
 }
 ```
 ##### Response
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 149
+Content-length: 160
 {
-  "UserId": "Guid-value",
-  "RoleId": "Guid-value",
+  "UserId": "UserId-value",
+  "RoleId": "RoleId-value",
   "IsElevated": true,
   "ExpirationTime": "datetime-value",
-  "ResultMessage": "String-value"
+  "ResultMessage": "ResultMessage-value"
 }
 ```

@@ -26,56 +26,56 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1173
+Content-length: 1289
 {
-  "ParentFolderId": "String-value",
+  "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
-  "FileAs": "String-value",
-  "DisplayName": "String-value",
-  "GivenName": "String-value",
-  "Initials": "String-value",
-  "MiddleName": "String-value",
-  "NickName": "String-value",
-  "Surname": "String-value",
-  "Title": "String-value",
-  "Generation": "String-value",
+  "FileAs": "FileAs-value",
+  "DisplayName": "DisplayName-value",
+  "GivenName": "GivenName-value",
+  "Initials": "Initials-value",
+  "MiddleName": "MiddleName-value",
+  "NickName": "NickName-value",
+  "Surname": "Surname-value",
+  "Title": "Title-value",
+  "Generation": "Generation-value",
   "EmailAddresses": [
     {
     }
   ],
   "ImAddresses": [
-    "String-value"
+    "ImAddresses-value"
   ],
-  "JobTitle": "String-value",
-  "CompanyName": "String-value",
-  "Department": "String-value",
-  "OfficeLocation": "String-value",
-  "Profession": "String-value",
-  "BusinessHomePage": "String-value",
-  "AssistantName": "String-value",
-  "Manager": "String-value",
+  "JobTitle": "JobTitle-value",
+  "CompanyName": "CompanyName-value",
+  "Department": "Department-value",
+  "OfficeLocation": "OfficeLocation-value",
+  "Profession": "Profession-value",
+  "BusinessHomePage": "BusinessHomePage-value",
+  "AssistantName": "AssistantName-value",
+  "Manager": "Manager-value",
   "HomePhones": [
-    "String-value"
+    "HomePhones-value"
   ],
   "BusinessPhones": [
-    "String-value"
+    "BusinessPhones-value"
   ],
-  "MobilePhone1": "String-value",
+  "MobilePhone1": "MobilePhone1-value",
   "HomeAddress": {
   },
   "BusinessAddress": {
   },
   "OtherAddress": {
   },
-  "YomiCompanyName": "String-value",
-  "YomiGivenName": "String-value",
-  "YomiSurname": "String-value",
-  "ChangeKey": "String-value",
+  "YomiCompanyName": "YomiCompanyName-value",
+  "YomiGivenName": "YomiGivenName-value",
+  "YomiSurname": "YomiSurname-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

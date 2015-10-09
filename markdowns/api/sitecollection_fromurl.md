@@ -31,9 +31,9 @@ Here is an example of how to call this API.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 68
+Content-length: 78
 {
-  "siteCollectionId": "String-value",
-  "siteId": "String-value"
+  "siteCollectionId": "siteCollectionId-value",
+  "siteId": "siteId-value"
 }
 ```

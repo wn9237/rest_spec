@@ -24,15 +24,15 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 254
+Content-length: 271
 {
-  "clientId": "String-value",
-  "consentType": "String-value",
+  "clientId": "clientId-value",
+  "consentType": "consentType-value",
   "expiryTime": "datetime-value",
-  "objectId": "String-value",
-  "principalId": "String-value",
-  "resourceId": "String-value",
-  "scope": "String-value",
+  "objectId": "objectId-value",
+  "principalId": "principalId-value",
+  "resourceId": "resourceId-value",
+  "scope": "scope-value",
   "startTime": "datetime-value"
 }
 ```

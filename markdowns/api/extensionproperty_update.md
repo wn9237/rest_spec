@@ -31,17 +31,17 @@ Here is an example of the request.
 ```http
 PUT /applications/<objectId>/extensionProperties/<objectId>
 Content-type: application/json
-Content-length: 276
+Content-length: 297
 {
-  "appDisplayName": "String-value",
-  "name": "String-value",
-  "dataType": "String-value",
+  "appDisplayName": "appDisplayName-value",
+  "name": "name-value",
+  "dataType": "dataType-value",
   "isSyncedFromOnPremises": true,
   "targetObjects": [
-    "String-value"
+    "targetObjects-value"
   ],
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```
@@ -50,17 +50,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 276
+Content-length: 297
 {
-  "appDisplayName": "String-value",
-  "name": "String-value",
-  "dataType": "String-value",
+  "appDisplayName": "appDisplayName-value",
+  "name": "name-value",
+  "dataType": "dataType-value",
   "isSyncedFromOnPremises": true,
   "targetObjects": [
-    "String-value"
+    "targetObjects-value"
   ],
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

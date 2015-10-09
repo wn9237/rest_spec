@@ -22,15 +22,15 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
+Content-length: 275
 {
-  "description": "String-value",
-  "displayName": "String-value",
+  "description": "description-value",
+  "displayName": "displayName-value",
   "isSystem": true,
   "roleDisabled": true,
-  "roleTemplateId": "String-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "roleTemplateId": "roleTemplateId-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

@@ -31,16 +31,16 @@ Here is an example of the request.
 ```http
 PUT /NotificationRules/<Id>
 Content-type: application/json
-Content-length: 241
+Content-length: 260
 {
-  "Id": "String-value",
-  "UserName": "String-value",
-  "UserId": "String-value",
-  "RoleName": "String-value",
-  "RoleId": "Guid-value",
-  "NotificationId": "String-value",
-  "NotificationName": "String-value",
-  "Event": "String-value"
+  "Id": "Id-value",
+  "UserName": "UserName-value",
+  "UserId": "UserId-value",
+  "RoleName": "RoleName-value",
+  "RoleId": "RoleId-value",
+  "NotificationId": "NotificationId-value",
+  "NotificationName": "NotificationName-value",
+  "Event": "Event-value"
 }
 ```
 ##### Response
@@ -48,15 +48,15 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 241
+Content-length: 260
 {
-  "Id": "String-value",
-  "UserName": "String-value",
-  "UserId": "String-value",
-  "RoleName": "String-value",
-  "RoleId": "Guid-value",
-  "NotificationId": "String-value",
-  "NotificationName": "String-value",
-  "Event": "String-value"
+  "Id": "Id-value",
+  "UserName": "UserName-value",
+  "UserId": "UserId-value",
+  "RoleName": "RoleName-value",
+  "RoleId": "RoleId-value",
+  "NotificationId": "NotificationId-value",
+  "NotificationName": "NotificationName-value",
+  "Event": "Event-value"
 }
 ```

@@ -29,12 +29,12 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/Calendar
 Content-type: application/json
-Content-length: 110
+Content-length: 106
 {
-  "Name": "String-value",
-  "ChangeKey": "String-value",
-  "Color": "String-value",
-  "Id": "String-value"
+  "Name": "Name-value",
+  "ChangeKey": "ChangeKey-value",
+  "Color": "Color-value",
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -42,11 +42,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
+Content-length: 106
 {
-  "Name": "String-value",
-  "ChangeKey": "String-value",
-  "Color": "String-value",
-  "Id": "String-value"
+  "Name": "Name-value",
+  "ChangeKey": "ChangeKey-value",
+  "Color": "Color-value",
+  "Id": "Id-value"
 }
 ```

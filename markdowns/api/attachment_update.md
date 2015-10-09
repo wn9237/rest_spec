@@ -31,14 +31,14 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/Events/<Id>/Attachments/<Id>
 Content-type: application/json
-Content-length: 163
+Content-length: 162
 {
-  "Name": "String-value",
-  "ContentType": "String-value",
+  "Name": "Name-value",
+  "ContentType": "ContentType-value",
   "Size": 99,
   "IsInline": true,
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -46,13 +46,13 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 163
+Content-length: 162
 {
-  "Name": "String-value",
-  "ContentType": "String-value",
+  "Name": "Name-value",
+  "ContentType": "ContentType-value",
   "Size": 99,
   "IsInline": true,
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

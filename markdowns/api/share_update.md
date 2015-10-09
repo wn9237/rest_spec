@@ -26,10 +26,10 @@ Here is an example of the request.
 ```http
 PUT /shares/<id>
 Content-type: application/json
-Content-length: 70
+Content-length: 64
 {
-  "id": "String-value",
-  "name": "String-value",
+  "id": "id-value",
+  "name": "name-value",
   "owner": {
   }
 }
@@ -39,10 +39,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 70
+Content-length: 64
 {
-  "id": "String-value",
-  "name": "String-value",
+  "id": "id-value",
+  "name": "name-value",
   "owner": {
   }
 }

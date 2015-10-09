@@ -45,23 +45,23 @@ Here is an example of the request.
 ```http
 PUT /tenantDetails/<objectId>
 Content-type: application/json
-Content-length: 881
+Content-length: 1025
 {
   "assignedPlans": [
     {
     }
   ],
-  "city": "String-value",
+  "city": "city-value",
   "companyLastDirSyncTime": "datetime-value",
-  "country": "String-value",
-  "countryLetterCode": "String-value",
+  "country": "country-value",
+  "countryLetterCode": "countryLetterCode-value",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
+  "displayName": "displayName-value",
   "marketingNotificationEmails": [
-    "String-value"
+    "marketingNotificationEmails-value"
   ],
-  "postalCode": "String-value",
-  "preferredLanguage": "String-value",
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
   "provisionedPlans": [
     {
     }
@@ -71,23 +71,23 @@ Content-length: 881
     }
   ],
   "securityComplianceNotificationMails": [
-    "String-value"
+    "securityComplianceNotificationMails-value"
   ],
   "securityComplianceNotificationPhones": [
-    "String-value"
+    "securityComplianceNotificationPhones-value"
   ],
-  "state": "String-value",
-  "street": "String-value",
+  "state": "state-value",
+  "street": "street-value",
   "technicalNotificationMails": [
-    "String-value"
+    "technicalNotificationMails-value"
   ],
-  "telephoneNumber": "String-value",
+  "telephoneNumber": "telephoneNumber-value",
   "verifiedDomains": [
     {
     }
   ],
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```
@@ -96,23 +96,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 881
+Content-length: 1025
 {
   "assignedPlans": [
     {
     }
   ],
-  "city": "String-value",
+  "city": "city-value",
   "companyLastDirSyncTime": "datetime-value",
-  "country": "String-value",
-  "countryLetterCode": "String-value",
+  "country": "country-value",
+  "countryLetterCode": "countryLetterCode-value",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
+  "displayName": "displayName-value",
   "marketingNotificationEmails": [
-    "String-value"
+    "marketingNotificationEmails-value"
   ],
-  "postalCode": "String-value",
-  "preferredLanguage": "String-value",
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
   "provisionedPlans": [
     {
     }
@@ -122,23 +122,23 @@ Content-length: 881
     }
   ],
   "securityComplianceNotificationMails": [
-    "String-value"
+    "securityComplianceNotificationMails-value"
   ],
   "securityComplianceNotificationPhones": [
-    "String-value"
+    "securityComplianceNotificationPhones-value"
   ],
-  "state": "String-value",
-  "street": "String-value",
+  "state": "state-value",
+  "street": "street-value",
   "technicalNotificationMails": [
-    "String-value"
+    "technicalNotificationMails-value"
   ],
-  "telephoneNumber": "String-value",
+  "telephoneNumber": "telephoneNumber-value",
   "verifiedDomains": [
     {
     }
   ],
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

@@ -22,7 +22,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 579
+Content-length: 637
 {
   "accountEnabled": true,
   "alternativeSecurityIds": [
@@ -30,20 +30,20 @@ Content-length: 579
     }
   ],
   "approximateLastLogonTimestamp": "datetime-value",
-  "deviceId": "Guid-value",
-  "deviceMetadata": "String-value",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
   "deviceObjectVersion": 99,
-  "deviceOSType": "String-value",
-  "deviceOSVersion": "String-value",
+  "deviceOSType": "deviceOSType-value",
+  "deviceOSVersion": "deviceOSVersion-value",
   "devicePhysicalIds": [
-    "String-value"
+    "devicePhysicalIds-value"
   ],
-  "deviceTrustType": "String-value",
+  "deviceTrustType": "deviceTrustType-value",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
+  "displayName": "displayName-value",
   "lastDirSyncTime": "datetime-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

@@ -26,28 +26,28 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 614
+Content-length: 641
 {
-  "createdBy": "String-value",
-  "assignedTo": "String-value",
-  "planId": "String-value",
-  "bucketId": "String-value",
-  "title": "String-value",
-  "orderHint": "String-value",
-  "assigneePriority": "String-value",
+  "createdBy": "createdBy-value",
+  "assignedTo": "assignedTo-value",
+  "planId": "planId-value",
+  "bucketId": "bucketId-value",
+  "title": "title-value",
+  "orderHint": "orderHint-value",
+  "assigneePriority": "assigneePriority-value",
   "percentComplete": 99,
   "startDate": "datetime-value",
   "assignedToDate": "datetime-value",
   "createdDate": "datetime-value",
-  "assignedBy": "String-value",
+  "assignedBy": "assignedBy-value",
   "dueDate": "datetime-value",
   "hasNotes": true,
-  "previewType": "String-value",
+  "previewType": "previewType-value",
   "completedDate": "datetime-value",
   "numberOfReferences": 99,
   "appliedCategories": {
   },
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```

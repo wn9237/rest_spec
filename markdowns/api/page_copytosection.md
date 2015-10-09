@@ -31,29 +31,29 @@ Here is an example of how to call this API.
 ```http
 POST /users/<objectId>/notes/pages/<id>/CopyToSection
 {
-  "id": "String-value",
-  "siteCollectionId": "String-value",
-  "siteId": "String-value"
+  "id": "id-value",
+  "siteCollectionId": "siteCollectionId-value",
+  "siteId": "siteId-value"
 }
 ```
 ##### Response
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 293
+Content-length: 298
 {
   "parentSection": {
   },
   "parentNotebook": {
   },
-  "title": "String-value",
-  "createdByAppId": "String-value",
+  "title": "title-value",
+  "createdByAppId": "createdByAppId-value",
   "links": {
   },
-  "contentUrl": "String-value",
+  "contentUrl": "contentUrl-value",
   "lastModifiedTime": "datetime-value",
-  "id": "String-value",
-  "self": "String-value",
+  "id": "id-value",
+  "self": "self-value",
   "createdTime": "datetime-value"
 }
 ```

@@ -26,7 +26,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 419
+Content-length: 444
 {
   "Body": {
   },
@@ -36,18 +36,18 @@ Content-length: 419
   },
   "Sender": {
   },
-  "ConversationThreadId": "String-value",
-  "ConversationId": "String-value",
+  "ConversationThreadId": "ConversationThreadId-value",
+  "ConversationId": "ConversationId-value",
   "NewParticipants": [
     {
     }
   ],
-  "ChangeKey": "String-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

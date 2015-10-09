@@ -28,15 +28,15 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 182
+Content-length: 185
 {
-  "ChangeKey": "String-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -44,14 +44,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 182
+Content-length: 185
 {
-  "ChangeKey": "String-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

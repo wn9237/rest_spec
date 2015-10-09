@@ -31,15 +31,15 @@ Here is an example of the request.
 ```http
 PUT /tasks/<id>/details
 Content-type: application/json
-Content-length: 171
+Content-length: 177
 {
-  "notes": "String-value",
-  "previewType": "String-value",
-  "completedBy": "String-value",
+  "notes": "notes-value",
+  "previewType": "previewType-value",
+  "completedBy": "completedBy-value",
   "references": {
   },
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 ##### Response
@@ -47,14 +47,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 171
+Content-length: 177
 {
-  "notes": "String-value",
-  "previewType": "String-value",
-  "completedBy": "String-value",
+  "notes": "notes-value",
+  "previewType": "previewType-value",
+  "completedBy": "completedBy-value",
   "references": {
   },
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```

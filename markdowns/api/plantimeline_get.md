@@ -24,11 +24,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 113
+Content-length: 119
 {
-  "displaySettings": "String-value",
+  "displaySettings": "displaySettings-value",
   "lockedWidth": 99,
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```

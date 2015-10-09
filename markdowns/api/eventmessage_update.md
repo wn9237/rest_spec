@@ -50,15 +50,15 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 848
+Content-length: 890
 {
-  "Subject": "String-value",
+  "Subject": "Subject-value",
   "Body": {
   },
-  "BodyPreview": "String-value",
-  "Importance": "String-value",
+  "BodyPreview": "BodyPreview-value",
+  "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "String-value",
+  "ParentFolderId": "ParentFolderId-value",
   "From": {
   },
   "Sender": {
@@ -79,7 +79,7 @@ Content-length: 848
     {
     }
   ],
-  "ConversationId": "String-value",
+  "ConversationId": "ConversationId-value",
   "UniqueBody": {
   },
   "DateTimeReceived": "datetime-value",
@@ -88,15 +88,15 @@ Content-length: 848
   "IsReadReceiptRequested": true,
   "IsDraft": true,
   "IsRead": true,
-  "WebLink": "String-value",
-  "ChangeKey": "String-value",
+  "WebLink": "WebLink-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value",
-  "MeetingMessageType": "String-value"
+  "Id": "Id-value",
+  "MeetingMessageType": "MeetingMessageType-value"
 }
 ```
 ##### Response
@@ -104,15 +104,15 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 848
+Content-length: 890
 {
-  "Subject": "String-value",
+  "Subject": "Subject-value",
   "Body": {
   },
-  "BodyPreview": "String-value",
-  "Importance": "String-value",
+  "BodyPreview": "BodyPreview-value",
+  "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "String-value",
+  "ParentFolderId": "ParentFolderId-value",
   "From": {
   },
   "Sender": {
@@ -133,7 +133,7 @@ Content-length: 848
     {
     }
   ],
-  "ConversationId": "String-value",
+  "ConversationId": "ConversationId-value",
   "UniqueBody": {
   },
   "DateTimeReceived": "datetime-value",
@@ -142,14 +142,14 @@ Content-length: 848
   "IsReadReceiptRequested": true,
   "IsDraft": true,
   "IsRead": true,
-  "WebLink": "String-value",
-  "ChangeKey": "String-value",
+  "WebLink": "WebLink-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value",
-  "MeetingMessageType": "String-value"
+  "Id": "Id-value",
+  "MeetingMessageType": "MeetingMessageType-value"
 }
 ```

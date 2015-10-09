@@ -31,16 +31,16 @@ Here is an example of the request.
 ```http
 PUT /groups/<objectId>/Conversations/<Id>
 Content-type: application/json
-Content-length: 198
+Content-length: 201
 {
-  "Topic": "String-value",
+  "Topic": "Topic-value",
   "HasAttachments": true,
   "DateTimeLastDelivered": "datetime-value",
   "UniqueSenders": [
-    "String-value"
+    "UniqueSenders-value"
   ],
-  "Preview": "String-value",
-  "Id": "String-value"
+  "Preview": "Preview-value",
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -48,15 +48,15 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 198
+Content-length: 201
 {
-  "Topic": "String-value",
+  "Topic": "Topic-value",
   "HasAttachments": true,
   "DateTimeLastDelivered": "datetime-value",
   "UniqueSenders": [
-    "String-value"
+    "UniqueSenders-value"
   ],
-  "Preview": "String-value",
-  "Id": "String-value"
+  "Preview": "Preview-value",
+  "Id": "Id-value"
 }
 ```

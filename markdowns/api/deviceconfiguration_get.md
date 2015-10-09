@@ -22,18 +22,18 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 294
+Content-length: 341
 {
   "publicIssuerCertificates": [
-    "Binary-value"
+    "publicIssuerCertificates-value"
   ],
   "cloudPublicIssuerCertificates": [
-    "Binary-value"
+    "cloudPublicIssuerCertificates-value"
   ],
   "registrationQuota": 99,
   "maximumRegistrationInactivityPeriod": 99,
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

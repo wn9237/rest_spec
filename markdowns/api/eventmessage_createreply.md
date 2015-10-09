@@ -26,15 +26,15 @@ Here is an example of how to call this API.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 808
+Content-length: 838
 {
-  "Subject": "String-value",
+  "Subject": "Subject-value",
   "Body": {
   },
-  "BodyPreview": "String-value",
-  "Importance": "String-value",
+  "BodyPreview": "BodyPreview-value",
+  "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "String-value",
+  "ParentFolderId": "ParentFolderId-value",
   "From": {
   },
   "Sender": {
@@ -55,7 +55,7 @@ Content-length: 808
     {
     }
   ],
-  "ConversationId": "String-value",
+  "ConversationId": "ConversationId-value",
   "UniqueBody": {
   },
   "DateTimeReceived": "datetime-value",
@@ -64,13 +64,13 @@ Content-length: 808
   "IsReadReceiptRequested": true,
   "IsDraft": true,
   "IsRead": true,
-  "WebLink": "String-value",
-  "ChangeKey": "String-value",
+  "WebLink": "WebLink-value",
+  "ChangeKey": "ChangeKey-value",
   "Categories": [
-    "String-value"
+    "Categories-value"
   ],
   "DateTimeCreated": "datetime-value",
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

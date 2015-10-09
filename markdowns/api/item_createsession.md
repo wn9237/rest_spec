@@ -37,12 +37,12 @@ POST /drives/<id>/root/createSession
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 125
+Content-length: 140
 {
-  "uploadUrl": "String-value",
+  "uploadUrl": "uploadUrl-value",
   "expirationDateTime": "datetime-value",
   "nextExpectedRanges": [
-    "String-value"
+    "nextExpectedRanges-value"
   ]
 }
 ```

@@ -28,10 +28,10 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/manager
 Content-type: application/json
-Content-length: 105
+Content-length: 111
 {
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```
@@ -40,10 +40,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 105
+Content-length: 111
 {
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

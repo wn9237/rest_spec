@@ -28,9 +28,9 @@ HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 110
 {
-  "Name": "String-value",
-  "ChangeKey": "String-value",
-  "ClassId": "Guid-value",
-  "Id": "String-value"
+  "Name": "Name-value",
+  "ChangeKey": "ChangeKey-value",
+  "ClassId": "ClassId-value",
+  "Id": "Id-value"
 }
 ```

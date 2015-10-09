@@ -26,11 +26,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 113
+Content-length: 112
 {
-  "id": "String-value",
-  "self": "String-value",
-  "content": "Stream-value",
-  "contentUrl": "String-value"
+  "id": "id-value",
+  "self": "self-value",
+  "content": "content-value",
+  "contentUrl": "contentUrl-value"
 }
 ```

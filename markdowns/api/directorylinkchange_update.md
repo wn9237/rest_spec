@@ -33,17 +33,17 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 364
+Content-length: 433
 {
-  "associationType": "String-value",
-  "sourceObjectId": "String-value",
-  "sourceObjectType": "String-value",
-  "sourceObjectUri": "String-value",
-  "targetObjectId": "String-value",
-  "targetObjectType": "String-value",
-  "targetObjectUri": "String-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "associationType": "associationType-value",
+  "sourceObjectId": "sourceObjectId-value",
+  "sourceObjectType": "sourceObjectType-value",
+  "sourceObjectUri": "sourceObjectUri-value",
+  "targetObjectId": "targetObjectId-value",
+  "targetObjectType": "targetObjectType-value",
+  "targetObjectUri": "targetObjectUri-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```
@@ -52,17 +52,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 364
+Content-length: 433
 {
-  "associationType": "String-value",
-  "sourceObjectId": "String-value",
-  "sourceObjectType": "String-value",
-  "sourceObjectUri": "String-value",
-  "targetObjectId": "String-value",
-  "targetObjectType": "String-value",
-  "targetObjectUri": "String-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "associationType": "associationType-value",
+  "sourceObjectId": "sourceObjectId-value",
+  "sourceObjectType": "sourceObjectType-value",
+  "sourceObjectUri": "sourceObjectUri-value",
+  "targetObjectId": "targetObjectId-value",
+  "targetObjectType": "targetObjectType-value",
+  "targetObjectUri": "targetObjectUri-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

@@ -28,7 +28,7 @@ Here is an example of how to call this API.
 ```http
 
 {
-  "Comment": "String-value",
+  "Comment": "Comment-value",
   "ToRecipients": [
     {
     }

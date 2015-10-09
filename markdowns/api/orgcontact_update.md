@@ -48,37 +48,37 @@ Here is an example of the request.
 ```http
 PUT /contacts/<objectId>
 Content-type: application/json
-Content-length: 855
+Content-length: 961
 {
-  "city": "String-value",
-  "country": "String-value",
-  "department": "String-value",
+  "city": "city-value",
+  "country": "country-value",
+  "department": "department-value",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "facsimileTelephoneNumber": "String-value",
-  "givenName": "String-value",
-  "jobTitle": "String-value",
+  "displayName": "displayName-value",
+  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+  "givenName": "givenName-value",
+  "jobTitle": "jobTitle-value",
   "lastDirSyncTime": "datetime-value",
-  "mail": "String-value",
-  "mailNickname": "String-value",
-  "mobile": "String-value",
-  "physicalDeliveryOfficeName": "String-value",
-  "postalCode": "String-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mobile": "mobile-value",
+  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+  "postalCode": "postalCode-value",
   "provisioningErrors": [
     {
     }
   ],
   "proxyAddresses": [
-    "String-value"
+    "proxyAddresses-value"
   ],
-  "sipProxyAddress": "String-value",
-  "state": "String-value",
-  "streetAddress": "String-value",
-  "surname": "String-value",
-  "telephoneNumber": "String-value",
-  "thumbnailPhoto": "Stream-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "sipProxyAddress": "sipProxyAddress-value",
+  "state": "state-value",
+  "streetAddress": "streetAddress-value",
+  "surname": "surname-value",
+  "telephoneNumber": "telephoneNumber-value",
+  "thumbnailPhoto": "thumbnailPhoto-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```
@@ -87,37 +87,37 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 855
+Content-length: 961
 {
-  "city": "String-value",
-  "country": "String-value",
-  "department": "String-value",
+  "city": "city-value",
+  "country": "country-value",
+  "department": "department-value",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "facsimileTelephoneNumber": "String-value",
-  "givenName": "String-value",
-  "jobTitle": "String-value",
+  "displayName": "displayName-value",
+  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+  "givenName": "givenName-value",
+  "jobTitle": "jobTitle-value",
   "lastDirSyncTime": "datetime-value",
-  "mail": "String-value",
-  "mailNickname": "String-value",
-  "mobile": "String-value",
-  "physicalDeliveryOfficeName": "String-value",
-  "postalCode": "String-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mobile": "mobile-value",
+  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+  "postalCode": "postalCode-value",
   "provisioningErrors": [
     {
     }
   ],
   "proxyAddresses": [
-    "String-value"
+    "proxyAddresses-value"
   ],
-  "sipProxyAddress": "String-value",
-  "state": "String-value",
-  "streetAddress": "String-value",
-  "surname": "String-value",
-  "telephoneNumber": "String-value",
-  "thumbnailPhoto": "Stream-value",
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "sipProxyAddress": "sipProxyAddress-value",
+  "state": "state-value",
+  "streetAddress": "streetAddress-value",
+  "surname": "surname-value",
+  "telephoneNumber": "telephoneNumber-value",
+  "thumbnailPhoto": "thumbnailPhoto-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

@@ -29,18 +29,18 @@ Here is an example of how to call this API.
 ```http
 POST /drives/<id>/root/createLink
 {
-  "type": "String-value"
+  "type": "type-value"
 }
 ```
 ##### Response
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 180
+Content-length: 176
 {
   "grantedTo": {
   },
-  "id": "String-value",
+  "id": "id-value",
   "invitation": {
   },
   "inheritedFrom": {
@@ -48,8 +48,8 @@ Content-length: 180
   "link": {
   },
   "roles": [
-    "String-value"
+    "roles-value"
   ],
-  "shareId": "String-value"
+  "shareId": "shareId-value"
 }
 ```

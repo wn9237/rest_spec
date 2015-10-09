@@ -22,18 +22,18 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
+Content-length: 235
 {
-  "capabilityStatus": "String-value",
+  "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
-  "objectId": "String-value",
+  "objectId": "objectId-value",
   "prepaidUnits": {
   },
   "servicePlans": [
     {
     }
   ],
-  "skuId": "Guid-value",
-  "skuPartNumber": "String-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```

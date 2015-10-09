@@ -77,7 +77,7 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>
 Content-type: application/json
-Content-length: 1830
+Content-length: 2047
 {
   "accountEnabled": true,
   "assignedLicenses": [
@@ -88,29 +88,29 @@ Content-length: 1830
     {
     }
   ],
-  "city": "String-value",
-  "country": "String-value",
-  "department": "String-value",
+  "city": "city-value",
+  "country": "country-value",
+  "department": "department-value",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "facsimileTelephoneNumber": "String-value",
-  "givenName": "String-value",
-  "immutableId": "String-value",
-  "jobTitle": "String-value",
+  "displayName": "displayName-value",
+  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+  "givenName": "givenName-value",
+  "immutableId": "immutableId-value",
+  "jobTitle": "jobTitle-value",
   "lastDirSyncTime": "datetime-value",
-  "mail": "String-value",
-  "mailNickname": "String-value",
-  "mobile": "String-value",
-  "onPremisesSecurityIdentifier": "String-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mobile": "mobile-value",
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
   "otherMails": [
-    "String-value"
+    "otherMails-value"
   ],
-  "passwordPolicies": "String-value",
+  "passwordPolicies": "passwordPolicies-value",
   "passwordProfile": {
   },
-  "physicalDeliveryOfficeName": "String-value",
-  "postalCode": "String-value",
-  "preferredLanguage": "String-value",
+  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
   "provisionedPlans": [
     {
     }
@@ -120,45 +120,45 @@ Content-length: 1830
     }
   ],
   "proxyAddresses": [
-    "String-value"
+    "proxyAddresses-value"
   ],
-  "sipProxyAddress": "String-value",
-  "state": "String-value",
-  "streetAddress": "String-value",
-  "surname": "String-value",
-  "telephoneNumber": "String-value",
-  "thumbnailPhoto": "Stream-value",
-  "usageLocation": "String-value",
-  "userPrincipalName": "String-value",
-  "userType": "String-value",
-  "MailboxGuid": "Guid-value",
-  "AboutMe": "String-value",
-  "Alias": "String-value",
+  "sipProxyAddress": "sipProxyAddress-value",
+  "state": "state-value",
+  "streetAddress": "streetAddress-value",
+  "surname": "surname-value",
+  "telephoneNumber": "telephoneNumber-value",
+  "thumbnailPhoto": "thumbnailPhoto-value",
+  "usageLocation": "usageLocation-value",
+  "userPrincipalName": "userPrincipalName-value",
+  "userType": "userType-value",
+  "MailboxGuid": "MailboxGuid-value",
+  "AboutMe": "AboutMe-value",
+  "Alias": "Alias-value",
   "Birthday": "datetime-value",
   "HireDate": "datetime-value",
   "Interests": [
-    "String-value"
+    "Interests-value"
   ],
-  "MySite": "String-value",
+  "MySite": "MySite-value",
   "PastProjects": [
-    "String-value"
+    "PastProjects-value"
   ],
-  "PreferredName": "String-value",
-  "PrincipalName": "String-value",
+  "PreferredName": "PreferredName-value",
+  "PrincipalName": "PrincipalName-value",
   "Responsibilities": [
-    "String-value"
+    "Responsibilities-value"
   ],
   "Schools": [
-    "String-value"
+    "Schools-value"
   ],
   "Skills": [
-    "String-value"
+    "Skills-value"
   ],
   "Tags": [
-    "String-value"
+    "Tags-value"
   ],
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```
@@ -167,7 +167,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1830
+Content-length: 2047
 {
   "accountEnabled": true,
   "assignedLicenses": [
@@ -178,29 +178,29 @@ Content-length: 1830
     {
     }
   ],
-  "city": "String-value",
-  "country": "String-value",
-  "department": "String-value",
+  "city": "city-value",
+  "country": "country-value",
+  "department": "department-value",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "facsimileTelephoneNumber": "String-value",
-  "givenName": "String-value",
-  "immutableId": "String-value",
-  "jobTitle": "String-value",
+  "displayName": "displayName-value",
+  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+  "givenName": "givenName-value",
+  "immutableId": "immutableId-value",
+  "jobTitle": "jobTitle-value",
   "lastDirSyncTime": "datetime-value",
-  "mail": "String-value",
-  "mailNickname": "String-value",
-  "mobile": "String-value",
-  "onPremisesSecurityIdentifier": "String-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mobile": "mobile-value",
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
   "otherMails": [
-    "String-value"
+    "otherMails-value"
   ],
-  "passwordPolicies": "String-value",
+  "passwordPolicies": "passwordPolicies-value",
   "passwordProfile": {
   },
-  "physicalDeliveryOfficeName": "String-value",
-  "postalCode": "String-value",
-  "preferredLanguage": "String-value",
+  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
   "provisionedPlans": [
     {
     }
@@ -210,45 +210,45 @@ Content-length: 1830
     }
   ],
   "proxyAddresses": [
-    "String-value"
+    "proxyAddresses-value"
   ],
-  "sipProxyAddress": "String-value",
-  "state": "String-value",
-  "streetAddress": "String-value",
-  "surname": "String-value",
-  "telephoneNumber": "String-value",
-  "thumbnailPhoto": "Stream-value",
-  "usageLocation": "String-value",
-  "userPrincipalName": "String-value",
-  "userType": "String-value",
-  "MailboxGuid": "Guid-value",
-  "AboutMe": "String-value",
-  "Alias": "String-value",
+  "sipProxyAddress": "sipProxyAddress-value",
+  "state": "state-value",
+  "streetAddress": "streetAddress-value",
+  "surname": "surname-value",
+  "telephoneNumber": "telephoneNumber-value",
+  "thumbnailPhoto": "thumbnailPhoto-value",
+  "usageLocation": "usageLocation-value",
+  "userPrincipalName": "userPrincipalName-value",
+  "userType": "userType-value",
+  "MailboxGuid": "MailboxGuid-value",
+  "AboutMe": "AboutMe-value",
+  "Alias": "Alias-value",
   "Birthday": "datetime-value",
   "HireDate": "datetime-value",
   "Interests": [
-    "String-value"
+    "Interests-value"
   ],
-  "MySite": "String-value",
+  "MySite": "MySite-value",
   "PastProjects": [
-    "String-value"
+    "PastProjects-value"
   ],
-  "PreferredName": "String-value",
-  "PrincipalName": "String-value",
+  "PreferredName": "PreferredName-value",
+  "PrincipalName": "PrincipalName-value",
   "Responsibilities": [
-    "String-value"
+    "Responsibilities-value"
   ],
   "Schools": [
-    "String-value"
+    "Schools-value"
   ],
   "Skills": [
-    "String-value"
+    "Skills-value"
   ],
   "Tags": [
-    "String-value"
+    "Tags-value"
   ],
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

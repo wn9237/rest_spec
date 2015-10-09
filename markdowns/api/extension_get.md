@@ -24,8 +24,8 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 26
+Content-length: 22
 {
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

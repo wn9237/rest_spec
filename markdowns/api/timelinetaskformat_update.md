@@ -35,18 +35,18 @@ Here is an example of the request.
 ```http
 PUT /tasks/<id>/timelineFormat
 Content-type: application/json
-Content-length: 244
+Content-length: 255
 {
   "color": 99,
-  "drawingStyle": "String-value",
+  "drawingStyle": "drawingStyle-value",
   "labelOffsetX": 99,
   "labelOffsetY": 99,
-  "anchorPosition": "String-value",
+  "anchorPosition": "anchorPosition-value",
   "swimlane": 99,
   "calloutHeight": 99,
   "visible": true,
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 ##### Response
@@ -54,17 +54,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 244
+Content-length: 255
 {
   "color": 99,
-  "drawingStyle": "String-value",
+  "drawingStyle": "drawingStyle-value",
   "labelOffsetX": 99,
   "labelOffsetY": 99,
-  "anchorPosition": "String-value",
+  "anchorPosition": "anchorPosition-value",
   "swimlane": 99,
   "calloutHeight": 99,
   "visible": true,
-  "id": "String-value",
-  "version": "String-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```

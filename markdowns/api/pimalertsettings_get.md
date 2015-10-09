@@ -22,9 +22,9 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
+Content-length: 74
 {
-  "AlertId": "Guid-value",
-  "AlertSettings": "String-value"
+  "AlertId": "AlertId-value",
+  "AlertSettings": "AlertSettings-value"
 }
 ```

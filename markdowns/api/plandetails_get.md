@@ -24,17 +24,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 330
+Content-length: 411
 {
   "sharedWith": {
   },
-  "category0Description": "String-value",
-  "category1Description": "String-value",
-  "category2Description": "String-value",
-  "category3Description": "String-value",
-  "category4Description": "String-value",
-  "category5Description": "String-value",
-  "id": "String-value",
-  "version": "String-value"
+  "category0Description": "category0Description-value",
+  "category1Description": "category1Description-value",
+  "category2Description": "category2Description-value",
+  "category3Description": "category3Description-value",
+  "category4Description": "category4Description-value",
+  "category5Description": "category5Description-value",
+  "id": "id-value",
+  "version": "version-value"
 }
 ```

@@ -22,17 +22,17 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 291
+Content-length: 308
 {
-  "ContentId": "String-value",
-  "ContentLocation": "String-value",
+  "ContentId": "ContentId-value",
+  "ContentLocation": "ContentLocation-value",
   "IsContactPhoto": true,
-  "ContentBytes": "Binary-value",
-  "Name": "String-value",
-  "ContentType": "String-value",
+  "ContentBytes": "ContentBytes-value",
+  "Name": "Name-value",
+  "ContentType": "ContentType-value",
   "Size": 99,
   "IsInline": true,
   "DateTimeLastModified": "datetime-value",
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

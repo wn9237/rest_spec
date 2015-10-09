@@ -28,7 +28,7 @@ Here is an example of how to call this API.
 
 {
   "groupIds": [
-    "String-value"
+    "groupIds-value"
   ]
 }
 ```
@@ -36,10 +36,10 @@ Here is an example of how to call this API.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
+Content-length: 33
 {
   "value": [
-    "String-value"
+    "-value"
   ]
 }
 ```

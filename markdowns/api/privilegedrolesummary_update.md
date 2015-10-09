@@ -30,10 +30,10 @@ Here is an example of the request.
 ```http
 PUT /PrivilegedRoles/<Id>/Summary
 Content-type: application/json
-Content-length: 143
+Content-length: 145
 {
-  "RoleId": "Guid-value",
-  "Status": "String-value",
+  "RoleId": "RoleId-value",
+  "Status": "Status-value",
   "UsersCount": 99,
   "ManagedCount": 99,
   "ElevatedCount": 99,
@@ -45,10 +45,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 143
+Content-length: 145
 {
-  "RoleId": "Guid-value",
-  "Status": "String-value",
+  "RoleId": "RoleId-value",
+  "Status": "Status-value",
   "UsersCount": 99,
   "ManagedCount": 99,
   "ElevatedCount": 99,

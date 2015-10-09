@@ -29,12 +29,12 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/RootFolder
 Content-type: application/json
-Content-length: 121
+Content-length: 130
 {
-  "ParentFolderId": "String-value",
-  "DisplayName": "String-value",
+  "ParentFolderId": "ParentFolderId-value",
+  "DisplayName": "DisplayName-value",
   "ChildFolderCount": 99,
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -42,11 +42,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 121
+Content-length: 130
 {
-  "ParentFolderId": "String-value",
-  "DisplayName": "String-value",
+  "ParentFolderId": "ParentFolderId-value",
+  "DisplayName": "DisplayName-value",
   "ChildFolderCount": 99,
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

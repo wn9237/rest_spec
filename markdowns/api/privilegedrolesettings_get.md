@@ -23,12 +23,12 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 287
+Content-length: 289
 {
   "MinElevationDuration": "datetime-value",
   "MaxElavationDuration": "datetime-value",
   "ElevationDuration": "datetime-value",
-  "RoleId": "Guid-value",
+  "RoleId": "RoleId-value",
   "NotificationToUserOnElevation": true,
   "TicketingInfoOnElevation": true,
   "MfaOnElevation": true,

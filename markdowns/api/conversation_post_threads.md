@@ -26,24 +26,24 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 292
+Content-length: 295
 {
   "ToRecipients": [
     {
     }
   ],
-  "Topic": "String-value",
+  "Topic": "Topic-value",
   "HasAttachments": true,
   "DateTimeLastDelivered": "datetime-value",
   "UniqueSenders": [
-    "String-value"
+    "UniqueSenders-value"
   ],
   "CcRecipients": [
     {
     }
   ],
-  "Preview": "String-value",
+  "Preview": "Preview-value",
   "IsLocked": true,
-  "Id": "String-value"
+  "Id": "Id-value"
 }
 ```

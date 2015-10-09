@@ -26,40 +26,40 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 800
+Content-length: 873
 {
-  "description": "String-value",
+  "description": "description-value",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
+  "displayName": "displayName-value",
   "creationOptions": [
-    "String-value"
+    "creationOptions-value"
   ],
   "groupTypes": [
-    "String-value"
+    "groupTypes-value"
   ],
   "isPublic": true,
   "lastDirSyncTime": "datetime-value",
-  "mail": "String-value",
-  "mailNickname": "String-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
   "mailEnabled": true,
-  "onPremisesSecurityIdentifier": "String-value",
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
   "provisioningErrors": [
     {
     }
   ],
   "proxyAddresses": [
-    "String-value"
+    "proxyAddresses-value"
   ],
   "securityEnabled": true,
-  "AccessType": "String-value",
-  "EmailAddress": "String-value",
+  "AccessType": "AccessType-value",
+  "EmailAddress": "EmailAddress-value",
   "AllowExternalSenders": true,
   "AutoSubscribeNewMembers": true,
   "IsSubscribedByMail": true,
   "IsFavorite": true,
   "UnseenCount": 99,
-  "objectType": "String-value",
-  "objectId": "String-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

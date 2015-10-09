@@ -22,20 +22,20 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 416
+Content-length: 456
 {
-  "Id": "Guid-value",
-  "UserId": "String-value",
-  "UserName": "String-value",
-  "UserMail": "String-value",
-  "RoleId": "Guid-value",
-  "RoleName": "String-value",
+  "Id": "Id-value",
+  "UserId": "UserId-value",
+  "UserName": "UserName-value",
+  "UserMail": "UserMail-value",
+  "RoleId": "RoleId-value",
+  "RoleName": "RoleName-value",
   "ExpirationTime": "datetime-value",
   "CreationTime": "datetime-value",
-  "RequestorId": "String-value",
-  "RequestorName": "String-value",
-  "TenantId": "String-value",
-  "RequestType": "String-value",
-  "AdditionalInformation": "String-value"
+  "RequestorId": "RequestorId-value",
+  "RequestorName": "RequestorName-value",
+  "TenantId": "TenantId-value",
+  "RequestType": "RequestType-value",
+  "AdditionalInformation": "AdditionalInformation-value"
 }
 ```
