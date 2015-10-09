@@ -3,7 +3,7 @@
 Retrieve a list of user objects.
 ### HTTP request
 ```http
-
+GET /users
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: f8dba2bb-27a7-4d60-bbec-3ce4fd0cafe1
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: e7a4a776-643d-43ce-8992-1c47a6bfc08a
+2015-10-09 18:28:48 UTC -->

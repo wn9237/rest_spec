@@ -207,6 +207,8 @@ module SpecMaker
 		@json_object[:updateDescription] = nil
 		@json_object[:deleteDescription] = nil
 
+		@json_object[:restPath] = {"/#{@json_object[:name]}" => true }
+
 		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
 		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
 			f.write(JSON.pretty_generate @json_object)
@@ -239,6 +241,7 @@ module SpecMaker
 		@json_object[:allowUpsert] = false
 		@json_object[:allowPatchCreate] = false
 		@json_object[:allowDelete] = false
+		@json_object[:restPath] = {"/#{@json_object[:name]}" => true }		
 
 		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
 		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|

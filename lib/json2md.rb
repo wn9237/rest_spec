@@ -338,9 +338,11 @@ module SpecMaker
 		#getMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 
 		getMethodLines.push '```http' + NEWLINE
-		# httpGetArray = @jsonHash[:restPath].keys.map {|a| "GET " + a.to_s}
-		# getMethodLines.push httpGetArray.join("\n") + NEWLINE
-		httpSyntax = get_syntax('auto_get', top_restpath)
+		if @jsonHash[:collectionOf]
+			httpSyntax = get_syntax('auto_get', top_restpath)
+		else
+			httpSyntax = get_syntax('auto_list', top_restpath)			
+		end
 		getMethodLines.push httpSyntax.join("\n") + NEWLINE
 		getMethodLines.push  '```' + NEWLINE
 
@@ -378,7 +380,7 @@ module SpecMaker
 		end
 		getMethodLines.push NEWLINE + uuid_date
 		# Write the output file. 
-		puts "Setting: #{@jsonHash[:collectionOf]}"
+
 		fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:collectionOf].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
 		
 		outfile = MARKDOWN_API_FOLDER + fileName

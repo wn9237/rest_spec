@@ -3,7 +3,7 @@
 Retrieve a list of device objects.
 ### HTTP request
 ```http
-
+GET /devices
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: d5d4e9ea-3526-443d-a4ac-8ee68f2e1bac
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: 0a9598d0-2737-40a4-b774-ee3dc91deb48
+2015-10-09 18:28:46 UTC -->

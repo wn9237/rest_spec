@@ -44,5 +44,5 @@ Here is a JSON representation of the resource
 |[Deactivate](../api/privilegedroleassignment_deactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[My](../api/privilegedroleassignment_my.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 
-<!-- uuid: 91bbc1b6-b157-4d0e-bc4b-da6cae5ad37e
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 2aaca40b-1068-4d14-b6ee-8dafab840fa0
+2015-10-09 18:28:47 UTC -->

@@ -128,5 +128,5 @@ Here is a JSON representation of the resource
 |[Replyall](../api/message_replyall.md)|[None](none.md)||
 |[Send](../api/message_send.md)|[None](none.md)||
 
-<!-- uuid: 5fc108b0-6af5-4f1a-beef-206d38933d60
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: d0f95b30-bf38-4270-8c40-b75e253f44d7
+2015-10-09 18:28:47 UTC -->

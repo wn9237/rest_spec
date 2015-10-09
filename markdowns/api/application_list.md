@@ -3,7 +3,7 @@
 Retrieve a list of application objects.
 ### HTTP request
 ```http
-
+GET /applications
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 63485376-9849-4ee8-a834-95189220ad79
-2015-10-09 18:21:32 UTC -->
+<!-- uuid: b7616331-3c74-4b05-ae59-3d502b62b8aa
+2015-10-09 18:28:46 UTC -->

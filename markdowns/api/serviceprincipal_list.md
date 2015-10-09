@@ -3,7 +3,7 @@
 Retrieve a list of serviceprincipal objects.
 ### HTTP request
 ```http
-
+GET /servicePrincipals
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 81a7ca1f-789f-4a8e-ad32-5ba26393978e
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 72625e6f-319f-4504-8f97-bc315f472e25
+2015-10-09 18:28:48 UTC -->

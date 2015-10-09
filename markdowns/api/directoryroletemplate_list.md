@@ -3,7 +3,7 @@
 Retrieve a list of directoryroletemplate objects.
 ### HTTP request
 ```http
-
+GET /directoryRoleTemplates
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 8b372025-1648-4477-8846-c6f41e9b17f8
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: 6f352799-8987-4521-a1d3-4e2872d62873
+2015-10-09 18:28:46 UTC -->

@@ -3,7 +3,7 @@
 Retrieve a list of privilegedsignupstatus objects.
 ### HTTP request
 ```http
-
+GET /PrivilegedSignupStatus
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -30,5 +30,5 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 8286fa1f-02ea-4519-9de1-faa6538b9995
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 8681283e-18d2-4750-b866-7cba5850c544
+2015-10-09 18:28:47 UTC -->

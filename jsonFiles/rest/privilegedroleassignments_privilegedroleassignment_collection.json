@@ -17,6 +17,7 @@
   "updateDescription": null,
   "deleteDescription": null,
   "restPath": {
+    "/PrivilegedRoleAssignments": true
   },
   "properties": [
 

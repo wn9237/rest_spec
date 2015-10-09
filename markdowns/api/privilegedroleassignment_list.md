@@ -3,7 +3,7 @@
 Retrieve a list of privilegedroleassignment objects.
 ### HTTP request
 ```http
-
+GET /PrivilegedRoleAssignments
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 5a592494-f806-4387-81fc-3e2e56af2cb2
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 0e27d864-73f6-4504-a3a7-947a665b7472
+2015-10-09 18:28:47 UTC -->

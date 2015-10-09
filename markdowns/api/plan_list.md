@@ -3,7 +3,7 @@
 Retrieve a list of plan objects.
 ### HTTP request
 ```http
-
+GET /plans
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: edd9153b-846c-44f5-bab8-1c85c8ee2631
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 36814b20-81da-4e20-aea3-66abf0a9d613
+2015-10-09 18:28:47 UTC -->

@@ -17,6 +17,7 @@
   "updateDescription": null,
   "deleteDescription": null,
   "restPath": {
+    "/PrivilegedSignupStatus": true
   },
   "properties": [
 

@@ -3,7 +3,7 @@
 Retrieve a list of bucket objects.
 ### HTTP request
 ```http
-
+GET /buckets
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 11efdacb-dacb-450e-a6f6-fb25edcc0ab0
-2015-10-09 18:21:32 UTC -->
+<!-- uuid: 7c9c1da6-b16d-44bc-b89e-72bd6bf9fd9c
+2015-10-09 18:28:46 UTC -->

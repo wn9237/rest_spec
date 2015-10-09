@@ -3,7 +3,7 @@
 Retrieve a list of group objects.
 ### HTTP request
 ```http
-
+GET /groups
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: ed53ea80-8acf-4a00-821e-fe1be65fcfec
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: 62fe807f-638c-48c0-a3ad-2193960fb08d
+2015-10-09 18:28:47 UTC -->

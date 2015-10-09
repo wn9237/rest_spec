@@ -43,5 +43,5 @@ None
 |[Update](../api/oauth2permissiongrant_update.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md)	|Update OAuth2PermissionGrant object. |
 |[Delete](../api/oauth2permissiongrant_delete.md) | Void	|Delete OAuth2PermissionGrant object. |
 
-<!-- uuid: 92c2d2ae-afa7-4526-8662-652f881778dd
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: b5db8b43-7532-473a-b0cf-c25c5b34ff6e
+2015-10-09 18:28:47 UTC -->

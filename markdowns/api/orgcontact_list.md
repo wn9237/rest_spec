@@ -3,7 +3,7 @@
 Retrieve a list of orgcontact objects.
 ### HTTP request
 ```http
-
+GET /contacts
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 6895bbda-f7a8-4318-8928-714b8ca2977b
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: 5061b239-d13a-4d18-b82f-380a26be07e3
+2015-10-09 18:28:46 UTC -->

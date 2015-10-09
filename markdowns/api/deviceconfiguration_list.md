@@ -3,7 +3,7 @@
 Retrieve a list of deviceconfiguration objects.
 ### HTTP request
 ```http
-
+GET /deviceConfiguration
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -38,5 +38,5 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: fce96a66-1298-4aa4-8592-a5c1e66f62d7
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: 980ab23e-61f8-4811-9d0d-b4d3328ef3f0
+2015-10-09 18:28:46 UTC -->

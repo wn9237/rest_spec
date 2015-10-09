@@ -3,7 +3,7 @@
 Retrieve a list of task objects.
 ### HTTP request
 ```http
-
+GET /tasks
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 47043ddb-805d-42ba-83ec-11eb9a674ec4
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 745d24fb-d8a4-44a5-b26e-d717131256bc
+2015-10-09 18:28:48 UTC -->

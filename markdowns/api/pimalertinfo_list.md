@@ -3,7 +3,7 @@
 Retrieve a list of pimalertinfo objects.
 ### HTTP request
 ```http
-
+GET /AlertInfo
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 8c0e5cb7-9365-4fad-b616-a8c73db91e33
-2015-10-09 18:21:32 UTC -->
+<!-- uuid: 43a4de46-499b-410f-a163-8f0426d87c10
+2015-10-09 18:28:46 UTC -->

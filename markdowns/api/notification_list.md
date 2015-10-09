@@ -3,7 +3,7 @@
 Retrieve a list of notification objects.
 ### HTTP request
 ```http
-
+GET /Notifications
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 84504531-cd75-41de-bca2-63dec80bf919
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: e3a37086-bae8-45e6-a6dc-38e089476171
+2015-10-09 18:28:47 UTC -->

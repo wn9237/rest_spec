@@ -3,7 +3,7 @@
 Retrieve a list of privilegedoperationevent objects.
 ### HTTP request
 ```http
-
+GET /PrivilegedOperationEvents
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: cebb2c92-5e94-4dc1-9348-94fc5aa9d12f
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 4751aee3-7485-413f-bc57-c5a5cc191fa4
+2015-10-09 18:28:47 UTC -->

@@ -3,7 +3,7 @@
 Retrieve a list of directoryobject objects.
 ### HTTP request
 ```http
-
+GET /directoryObjects
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 67b86ca3-2ce6-4be4-94c4-b7276ef04991
-2015-10-09 18:21:33 UTC -->
+<!-- uuid: 152e2211-eb16-4aa5-8646-8511dc8ec063
+2015-10-09 18:28:46 UTC -->

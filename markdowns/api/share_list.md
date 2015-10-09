@@ -3,7 +3,7 @@
 Retrieve a list of share objects.
 ### HTTP request
 ```http
-
+GET /shares
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: ddc16ee2-09a9-4b07-9728-6caa09bbf4de
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 5e75537d-6c23-4a8d-9df5-232c5057fb74
+2015-10-09 18:28:48 UTC -->

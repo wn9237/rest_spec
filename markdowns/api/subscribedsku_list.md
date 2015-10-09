@@ -3,7 +3,7 @@
 Retrieve a list of subscribedsku objects.
 ### HTTP request
 ```http
-
+GET /subscribedSkus
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: a1149164-786e-43ec-b58e-a1a1416bbbec
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 0075735d-1e90-445a-b690-8fa66992feda
+2015-10-09 18:28:48 UTC -->

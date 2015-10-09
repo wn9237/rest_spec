@@ -3,7 +3,7 @@
 Retrieve a list of tenantdetail objects.
 ### HTTP request
 ```http
-
+GET /tenantDetails
 ```
 ### Optional query parameters
 You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call.
@@ -27,5 +27,5 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: eb994105-3521-442c-bddf-f33864adbad8
-2015-10-09 18:21:34 UTC -->
+<!-- uuid: 7f8c535d-4954-449a-9312-021e83da7250
+2015-10-09 18:28:48 UTC -->
