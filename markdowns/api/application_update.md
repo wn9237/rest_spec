@@ -47,7 +47,7 @@ Here is an example of the request.
 ```http
 PUT /applications/<objectId>
 Content-type: application/json
-Content-length: 1883
+Content-length: 1828
 {
   "appId": "appId-value",
   "appRoles": [
@@ -143,10 +143,6 @@ Content-length: 1883
       "resourceAppId": {
       },
       "resourceAccess": {
-        "id": {
-        },
-        "type": {
-        }
       }
     }
   ],
@@ -161,7 +157,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1883
+Content-length: 1828
 {
   "appId": "appId-value",
   "appRoles": [
@@ -257,10 +253,6 @@ Content-length: 1883
       "resourceAppId": {
       },
       "resourceAccess": {
-        "id": {
-        },
-        "type": {
-        }
       }
     }
   ],
@@ -271,5 +263,5 @@ Content-length: 1883
 }
 ```
 
-<!-- uuid: 36dd4e19-83fb-4b2f-a807-943b885e48eb
-2015-10-09 16:03:13 UTC -->
+<!-- uuid: cb4c100c-3185-481c-a60a-814e27c97d51
+2015-10-09 16:04:04 UTC -->

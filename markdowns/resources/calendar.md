@@ -56,5 +56,5 @@ Here is a JSON representation of the resource
 |[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
 |[Delete](../api/calendar_delete.md) | Void	|Delete Calendar object. |
 
-<!-- uuid: a19fd54c-1b0f-4ebb-a5b7-8334bb3c73ac
-2015-10-09 16:03:13 UTC -->
+<!-- uuid: 2fe636de-d59b-4e4a-8e44-975a081024d2
+2015-10-09 16:04:04 UTC -->

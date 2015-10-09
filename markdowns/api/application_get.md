@@ -22,7 +22,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1883
+Content-length: 1828
 {
   "appId": "appId-value",
   "appRoles": [
@@ -118,10 +118,6 @@ Content-length: 1883
       "resourceAppId": {
       },
       "resourceAccess": {
-        "id": {
-        },
-        "type": {
-        }
       }
     }
   ],
@@ -132,5 +128,5 @@ Content-length: 1883
 }
 ```
 
-<!-- uuid: 3cdfb267-5d48-4fb6-854b-2234f95b513f
-2015-10-09 16:03:13 UTC -->
+<!-- uuid: df3dc8b7-8e15-40a8-9950-34135ef4d013
+2015-10-09 16:04:04 UTC -->

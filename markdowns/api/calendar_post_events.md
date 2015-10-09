@@ -26,7 +26,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1726
+Content-length: 1229
 {
   "Subject": "Subject-value",
   "Body": {
@@ -67,16 +67,8 @@ Content-length: 1726
   "Attendees": [
     {
       "EmailAddress": {
-        "Name": {
-        },
-        "Address": {
-        }
       },
       "Status": {
-        "Response": {
-        },
-        "Time": {
-        }
       },
       "Type": {
       }
@@ -84,38 +76,12 @@ Content-length: 1726
   ],
   "Recurrence": {
     "Pattern": {
-      "Type": {
-      },
-      "Interval": {
-      },
-      "Month": {
-      },
-      "DayOfMonth": {
-      },
-      "DaysOfWeek": {
-      },
-      "FirstDayOfWeek": {
-      },
-      "Index": {
-      }
     },
     "Range": {
-      "Type": {
-      },
-      "StartDate": {
-      },
-      "EndDate": {
-      },
-      "NumberOfOccurrences": {
-      }
     }
   },
   "Organizer": {
     "EmailAddress": {
-      "Name": {
-      },
-      "Address": {
-      }
     }
   },
   "iCalUId": "iCalUId-value",
@@ -131,5 +97,5 @@ Content-length: 1726
 }
 ```
 
-<!-- uuid: d9db4d7c-e8fd-421b-86a8-e4edf4467987
-2015-10-09 16:03:13 UTC -->
+<!-- uuid: e9361db7-4b39-44fc-862f-72a9a7a8ecf5
+2015-10-09 16:04:04 UTC -->

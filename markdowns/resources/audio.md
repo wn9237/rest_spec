@@ -47,5 +47,5 @@ Here is a JSON representation of the resource
 |trackCount|Int32||
 |year|Int32||
 
-<!-- uuid: 6910c5b2-3236-4b41-b7f2-5c02ab0e09b3
-2015-10-09 16:03:13 UTC -->
+<!-- uuid: 5d926a40-29b3-4d03-b36a-07e9dd009cef
+2015-10-09 16:04:04 UTC -->

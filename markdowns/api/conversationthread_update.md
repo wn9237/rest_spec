@@ -34,15 +34,11 @@ Here is an example of the request.
 ```http
 PUT /groups/<objectId>/Threads/<Id>
 Content-type: application/json
-Content-length: 479
+Content-length: 359
 {
   "ToRecipients": [
     {
       "EmailAddress": {
-        "Name": {
-        },
-        "Address": {
-        }
       }
     }
   ],
@@ -55,10 +51,6 @@ Content-length: 479
   "CcRecipients": [
     {
       "EmailAddress": {
-        "Name": {
-        },
-        "Address": {
-        }
       }
     }
   ],
@@ -72,15 +64,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 479
+Content-length: 359
 {
   "ToRecipients": [
     {
       "EmailAddress": {
-        "Name": {
-        },
-        "Address": {
-        }
       }
     }
   ],
@@ -93,10 +81,6 @@ Content-length: 479
   "CcRecipients": [
     {
       "EmailAddress": {
-        "Name": {
-        },
-        "Address": {
-        }
       }
     }
   ],
@@ -106,5 +90,5 @@ Content-length: 479
 }
 ```
 
-<!-- uuid: 4f5d285b-203f-4946-a95f-32d4ab1891a8
-2015-10-09 16:03:13 UTC -->
+<!-- uuid: d7a6e58e-7ae1-4b32-ade4-81d1527aaead
+2015-10-09 16:04:04 UTC -->

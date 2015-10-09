@@ -38,7 +38,7 @@ Content-length: 56
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1883
+Content-length: 1828
 {
   "appId": "appId-value",
   "appRoles": [
@@ -134,10 +134,6 @@ Content-length: 1883
       "resourceAppId": {
       },
       "resourceAccess": {
-        "id": {
-        },
-        "type": {
-        }
       }
     }
   ],
@@ -148,5 +144,5 @@ Content-length: 1883
 }
 ```
 
-<!-- uuid: 4992b40a-d137-4f2b-871c-afab0b20613e
-2015-10-09 16:03:13 UTC -->
+<!-- uuid: fb4545c2-9faa-447e-879d-1f327c68befb
+2015-10-09 16:04:04 UTC -->

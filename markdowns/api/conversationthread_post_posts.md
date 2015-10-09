@@ -26,7 +26,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 747
+Content-length: 583
 {
   "Body": {
     "ContentType": {
@@ -38,18 +38,10 @@ Content-length: 747
   "HasAttachments": true,
   "From": {
     "EmailAddress": {
-      "Name": {
-      },
-      "Address": {
-      }
     }
   },
   "Sender": {
     "EmailAddress": {
-      "Name": {
-      },
-      "Address": {
-      }
     }
   },
   "ConversationThreadId": "ConversationThreadId-value",
@@ -57,10 +49,6 @@ Content-length: 747
   "NewParticipants": [
     {
       "EmailAddress": {
-        "Name": {
-        },
-        "Address": {
-        }
       }
     }
   ],
@@ -74,5 +62,5 @@ Content-length: 747
 }
 ```
 
-<!-- uuid: 5f2d8c84-f183-436f-be3b-917d7d09cc41
-2015-10-09 16:03:13 UTC -->
+<!-- uuid: 5ad0e441-9b12-4d2c-a988-8ea535cfc7b2
+2015-10-09 16:04:04 UTC -->
