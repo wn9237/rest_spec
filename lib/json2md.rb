@@ -338,7 +338,6 @@ module SpecMaker
 			getMethodLines.push line
 		end
 
-
 		# Write the output file. 
 		fileName = @jsonHash[:isCollection] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"
 		outfile = MARKDOWN_API_FOLDER + fileName
