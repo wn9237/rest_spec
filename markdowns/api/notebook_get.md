@@ -18,3 +18,27 @@ You can use the [OData query parameters](odata-optional-query-parameters.md) to 
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Notebook](../resources/notebook.md) object in the response body.
+### Example
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 380
+{
+  "isDefault": true,
+  "userRole": "String-value",
+  "isShared": true,
+  "sectionsUrl": "String-value",
+  "sectionGroupsUrl": "String-value",
+  "links": {
+  },
+  "name": "String-value",
+  "createdBy": "String-value",
+  "lastModifiedBy": "String-value",
+  "lastModifiedTime": "datetime-value",
+  "id": "String-value",
+  "self": "String-value",
+  "createdTime": "datetime-value"
+}
+```

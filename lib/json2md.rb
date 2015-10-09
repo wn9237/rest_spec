@@ -333,7 +333,7 @@ module SpecMaker
 		end
 
 		#Example
-		example_lines = gen_example("auto_get", method)
+		example_lines = gen_example("auto_get")
 		example_lines.each do |line|
 			getMethodLines.push line
 		end

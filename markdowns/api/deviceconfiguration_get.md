@@ -16,3 +16,24 @@ You can use the [OData query parameters](odata-optional-query-parameters.md) to 
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
+### Example
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 294
+{
+  "publicIssuerCertificates": [
+    "Binary-value"
+  ],
+  "cloudPublicIssuerCertificates": [
+    "Binary-value"
+  ],
+  "registrationQuota": 99,
+  "maximumRegistrationInactivityPeriod": 99,
+  "objectType": "String-value",
+  "objectId": "String-value",
+  "deletionTimestamp": "datetime-value"
+}
+```

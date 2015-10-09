@@ -18,3 +18,53 @@ You can use the [OData query parameters](odata-optional-query-parameters.md) to 
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
+### Example
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 868
+{
+  "Subject": "String-value",
+  "Body": {
+  },
+  "BodyPreview": "String-value",
+  "Importance": "String-value",
+  "HasAttachments": true,
+  "Start": "datetime-value",
+  "StartTimeZone": "String-value",
+  "End": "datetime-value",
+  "EndTimeZone": "String-value",
+  "Reminder": 99,
+  "Location": {
+  },
+  "ShowAs": "String-value",
+  "ResponseStatus": {
+  },
+  "IsAllDay": true,
+  "IsCancelled": true,
+  "IsOrganizer": true,
+  "ResponseRequested": true,
+  "Type": "String-value",
+  "SeriesMasterId": "String-value",
+  "Attendees": [
+    {
+    }
+  ],
+  "Recurrence": {
+  },
+  "Organizer": {
+  },
+  "iCalUId": "String-value",
+  "WebLink": "String-value",
+  "OriginalStart": "datetime-value",
+  "ChangeKey": "String-value",
+  "Categories": [
+    "String-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "String-value"
+}
+```

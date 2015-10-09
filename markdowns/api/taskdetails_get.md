@@ -18,3 +18,20 @@ You can use the [OData query parameters](odata-optional-query-parameters.md) to 
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
+### Example
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 171
+{
+  "notes": "String-value",
+  "previewType": "String-value",
+  "completedBy": "String-value",
+  "references": {
+  },
+  "id": "String-value",
+  "version": "String-value"
+}
+```

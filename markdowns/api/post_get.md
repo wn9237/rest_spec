@@ -18,3 +18,34 @@ You can use the [OData query parameters](odata-optional-query-parameters.md) to 
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
+### Example
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 419
+{
+  "Body": {
+  },
+  "DateTimeReceived": "datetime-value",
+  "HasAttachments": true,
+  "From": {
+  },
+  "Sender": {
+  },
+  "ConversationThreadId": "String-value",
+  "ConversationId": "String-value",
+  "NewParticipants": [
+    {
+    }
+  ],
+  "ChangeKey": "String-value",
+  "Categories": [
+    "String-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "String-value"
+}
+```

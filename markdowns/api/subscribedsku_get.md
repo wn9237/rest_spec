@@ -16,3 +16,24 @@ You can use the [OData query parameters](odata-optional-query-parameters.md) to 
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [SubscribedSku](../resources/subscribedsku.md) object in the response body.
+### Example
+##### Response
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 215
+{
+  "capabilityStatus": "String-value",
+  "consumedUnits": 99,
+  "objectId": "String-value",
+  "prepaidUnits": {
+  },
+  "servicePlans": [
+    {
+    }
+  ],
+  "skuId": "Guid-value",
+  "skuPartNumber": "String-value"
+}
+```
