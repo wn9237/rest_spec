@@ -163,17 +163,17 @@ module SpecMaker
 
 	def self.merge_members(current=nil, base=nil, objectName=nil)
 
-		if objectName != nil 
-			if base.is_a?(Hash)
-				dt = get_type(base[:Type])
-				return current if dt.downcase == objectName.downcase
-			elsif base.is_a?(Array)
-				base.each_with_index do |item, i|	
-					dt = get_type(item[:Type])	
- 					base.delete_at(i) if dt == objectName
-				end
-			end
-		end
+		# if objectName != nil 
+		# 	if base.is_a?(Hash)
+		# 		dt = get_type(base[:Type])
+		# 		return current if dt.downcase == objectName.downcase
+		# 	elsif base.is_a?(Array)
+		# 		base.each_with_index do |item, i|	
+		# 			dt = get_type(item[:Type])	
+ 	# 				base.delete_at(i) if dt == objectName
+		# 		end
+		# 	end
+		# end
 
 		arr = []
 		if current.nil? 
