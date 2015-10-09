@@ -333,17 +333,11 @@ module SpecMaker
 		end
 
 		#Example
-		begin
-			example_lines = File.readlines(File.join(JSON_EXAMPLE_FOLDER + (@jsonHash[:name].downcase + '_' + "auto_get" + ".md")))
-			if example_lines.length > 1
-				getMethodLines.push NEWLINE
-				example_lines.each do |line|
-					getMethodLines.push line
-				end
-			end
-		rescue => err
-			@logger.error("....Get Example File does not exist for: #{@resource}, ")
+		example_lines = gen_example("auto_get", method)
+		example_lines.each do |line|
+			getMethodLines.push line
 		end
+
 
 		# Write the output file. 
 		fileName = @jsonHash[:isCollection] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"
