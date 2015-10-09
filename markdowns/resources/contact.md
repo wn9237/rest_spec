@@ -125,3 +125,4 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | Void	|Delete Contact object. |
+<!-- uuid: a20fd8b8-349d-4b4e-8b49-5e5b9f59acdb\n2015-10-09 15:13:08 UTC -->

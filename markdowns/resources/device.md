@@ -88,3 +88,4 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/device_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/device_getmembergroups.md)|String||
 |[Get MemberObjects](../api/device_getmemberobjects.md)|String||
+<!-- uuid: 525cfa2e-6c9f-4377-aaa9-90e266388227\n2015-10-09 15:13:08 UTC -->
