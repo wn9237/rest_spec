@@ -378,10 +378,8 @@ module SpecMaker
 		end
 		getMethodLines.push NEWLINE + uuid_date
 		# Write the output file. 
-		if @jsonHash[:collectionOf] 
-			fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_list.md"
-		else
-			fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:name].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
+		puts "Setting: #{@jsonHash[:collectionOf]}"
+		fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:collectionOf].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
 		end
 		outfile = MARKDOWN_API_FOLDER + fileName
 		file=File.new(outfile,'w')
