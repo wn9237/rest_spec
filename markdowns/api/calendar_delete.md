@@ -1,7 +1,9 @@
 # Delete
 
 Delete Calendar.
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/Calendar
 DELETE /groups/<objectId>/Calendar
@@ -11,7 +13,7 @@ DELETE /users/<objectId>/Calendars/<Id>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 Do not supply a request body for this method.
@@ -21,5 +23,12 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 1967d969-22a5-4fa9-885c-774e2f5d4b29
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: c7f6adb5-2280-4e71-b7d9-b55037f69996
+2015-10-14 23:39:28 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Delete",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

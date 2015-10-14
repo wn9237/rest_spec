@@ -8,6 +8,7 @@ module SpecMaker
 	JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
 	JSON_PREV_SOURCE_FOLDER = "../jsonFiles/rest_previous/"
 	ENUMS = JSON_BASE_FOLDER + 'settings/restenums.json'
+	ANNOTATIONS = JSON_BASE_FOLDER + 'settings/annotations.json'
 	CSDL_LOCATION = "../data/"
 	
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"
@@ -55,12 +56,16 @@ module SpecMaker
 	@ientityset = 0
 	@icollection = 0	
 	@ibasetypemerges = 0
+	@iann = 0
+
 
 	@methods = {}
 	@enum_objects = {}
 	@json_object = nil 
 	@base_types = {}
 	@iexampleFilesWrittem = 0
+	@annotations = {}
+
 
 	###
 	# Create object_method-name.md file in lowercase.

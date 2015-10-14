@@ -6,6 +6,16 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Attachments",
+    "Extensions",
+    "Instances"
+  ],
+  "@odata.type": "microsoft.graph.Event"
+}-->
+
 ```json
 {
   "Attachments": [
@@ -124,12 +134,19 @@ Here is a JSON representation of the resource
 |[Get Event](../api/event_get.md) | [Event](event.md) |Read properties and relationships of event object.|
 |[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension](../api/event_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[Create Instance](../api/event_post_instances.md) |[Event](event.md)| Create a new Instance by posting to the Instances collection.|
+|[Create Event](../api/event_post_instances.md) |[Event](event.md)| Create a new Event by posting to the Instances collection.|
 |[Update](../api/event_update.md) | [Event](event.md)	|Update Event object. |
 |[Delete](../api/event_delete.md) | Void	|Delete Event object. |
 |[Accept](../api/event_accept.md)|[None](none.md)||
 |[Decline](../api/event_decline.md)|[None](none.md)||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|[None](none.md)||
 
-<!-- uuid: a10b13dd-4930-4855-8204-bc1e9fea0d82
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: 465233b9-0c43-4fdb-846b-50b107939a76
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Event resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

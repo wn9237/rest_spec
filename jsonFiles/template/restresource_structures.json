@@ -19,6 +19,13 @@
 	  "allowUpsert": true,    
 	  "allowPatchCreate": true,
 	  "allowDelete": true,  
+	  "isReferenceable": true,
+	  "isExpandable": true,
+	  "isFilterable": true,
+	  "isCountable": true,
+	  "isSelectable": true,
+	  "isSkipSupported": true,
+	  "isTopSupported": true,	  
 	  "info": null,
 	  "propertyNotes" : "",
 	  "relationshipNotes" : "",  
@@ -87,8 +94,7 @@
 
   "mdresponse" : 
 	{ "blockType": "response", 
-   	  "@odata.type": "", 
-	  "truncated": true 
+	  "truncated": false 
 	},
 	
   "mdignore" :

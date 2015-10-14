@@ -6,6 +6,15 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Attachments",
+    "Extensions"
+  ],
+  "@odata.type": "microsoft.graph.EventMessage"
+}-->
+
 ```json
 {
   "Attachments": [
@@ -134,5 +143,12 @@ Here is a JSON representation of the resource
 |[Replyall](../api/eventmessage_replyall.md)|[None](none.md)||
 |[Send](../api/eventmessage_send.md)|[None](none.md)||
 
-<!-- uuid: af31b50d-d0f8-47b4-ac90-103c8f532fd8
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: 0a74835b-cd0e-4427-b469-e9e744142a35
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "EventMessage resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,0 +1,82 @@
+# Update the properties of sectiongroup object.
+
+Update the properties of sectiongroup object.
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /users/<objectId>/notes/sectionGroups/<id>
+PATCH /drive/root/createdByUser/notes/sectionGroups/<id>
+PATCH /drive/root/lastModifiedByUser/notes/sectionGroups/<id>
+```
+### Optional request headers
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+
+### Request body
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|createdBy|String||
+|createdTime|DateTimeOffset||
+|lastModifiedBy|String||
+|lastModifiedTime|DateTimeOffset||
+|name|String||
+|sectionGroupsUrl|String||
+|sectionsUrl|String||
+|self|String||
+
+### Response
+If successful, this method returns a `200 OK` response code and updated [SectionGroup](../resources/sectiongroup.md) object in the response body.
+### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "update_sectiongroup"
+}-->
+```http
+PUT /users/<objectId>/notes/sectionGroups/<id>
+Content-type: application/json
+Content-length: 230
+{
+  "sectionsUrl": "sectionsUrl-value",
+  "sectionGroupsUrl": "sectionGroupsUrl-value",
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
+  "lastModifiedTime": "datetime-value"
+}
+```
+##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "sectiongroup"
+} -->
+Here is an example of the response.
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 230
+{
+  "sectionsUrl": "sectionsUrl-value",
+  "sectionGroupsUrl": "sectionGroupsUrl-value",
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
+  "lastModifiedTime": "datetime-value"
+}
+```
+
+<!-- uuid: d1d96041-5f1b-4e54-84b8-cc6c9454f469
+2015-10-14 23:39:41 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update the properties of sectiongroup object.",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

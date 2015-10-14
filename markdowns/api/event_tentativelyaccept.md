@@ -1,7 +1,9 @@
 # Event: TentativelyAccept
 
 
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Events/<Id>/TentativelyAccept
 POST /groups/<objectId>/Events/<Id>/TentativelyAccept
@@ -11,7 +13,7 @@ POST /users/<objectId>/CalendarView/<Id>/TentativelyAccept
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -27,6 +29,10 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "event_tentativelyaccept"
+}-->
 ```http
 POST /users/<objectId>/Events/<Id>/TentativelyAccept
 Content-type: application/json
@@ -35,6 +41,11 @@ Content-length: 56
   "Comment": "Comment-value",
   "SendResponse": true
 }
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "none"
+} -->
 ```
 ##### Response
 ```json
@@ -45,5 +56,12 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 6a84c763-6cf2-4e8f-9f9f-1b3334b8afb3
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: 30227442-1d34-4bbb-837d-638c4c6c4aa1
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Event: TentativelyAccept",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,7 +1,9 @@
 # Delete
 
 Delete EventMessage.
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 
@@ -9,7 +11,7 @@ Delete EventMessage.
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 Do not supply a request body for this method.
@@ -19,5 +21,12 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: c43ae720-0895-4997-85f6-1decc79d830d
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: 5ad14740-704e-4804-9591-920dd6158b13
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Delete",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

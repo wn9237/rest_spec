@@ -1,0 +1,139 @@
+{
+  "directoryobject": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "application": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "extensionproperty": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "user": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "approleassignment": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "oauth2permissiongrant": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "group": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "orgcontact": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "device": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "deviceconfiguration": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "directorylinkchange": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "directoryrole": {
+    "topsupported": false,
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "directoryroletemplate": {
+    "topsupported": false,
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "serviceprincipal": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "tenantdetail": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "skipsupported": false
+  },
+  "subscribedsku": {
+    "expandable": false,
+    "referenceable": false,
+    "selectable": false,
+    "countable": false,
+    "filterable": false,
+    "topsupported": false,
+    "skipsupported": false
+  },
+  "privilegedrole": {
+    "referenceable": false
+  },
+  "privilegedroleassignment": {
+    "referenceable": false
+  }
+}

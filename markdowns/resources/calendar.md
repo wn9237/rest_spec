@@ -6,6 +6,16 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "CalendarView",
+    "Events",
+    "Extensions"
+  ],
+  "@odata.type": "microsoft.graph.Calendar"
+}-->
+
 ```json
 {
   "CalendarView": [
@@ -50,11 +60,18 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Calendar](../api/calendar_get.md) | [Calendar](calendar.md) |Read properties and relationships of calendar object.|
-|[Create CalendarView](../api/calendar_post_calendarview.md) |[Event](event.md)| Create a new CalendarView by posting to the CalendarView collection.|
+|[Create Event](../api/calendar_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
 |[Create Event](../api/calendar_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
 |[Create Extension](../api/calendar_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
 |[Delete](../api/calendar_delete.md) | Void	|Delete Calendar object. |
 
-<!-- uuid: e1451a0f-096d-4a2f-aa74-9d540dd5d619
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: 930be1e3-8cf0-4d69-8f4c-bbd2b55e2005
+2015-10-14 23:39:28 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Calendar resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

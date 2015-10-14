@@ -1,14 +1,16 @@
-# Update EventMessage
+# Update the properties of eventmessage object.
 
 Update the properties of eventmessage object.
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 ```
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -47,10 +49,14 @@ If successful, this method returns a `200 OK` response code and updated [EventMe
 ### Example
 ##### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "update_eventmessage"
+}-->
 ```http
 
 Content-type: application/json
-Content-length: 890
+Content-length: 193
 {
   "Subject": "Subject-value",
   "Body": {
@@ -58,53 +64,20 @@ Content-length: 890
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value",
-  "From": {
-  },
-  "Sender": {
-  },
-  "ToRecipients": [
-    {
-    }
-  ],
-  "CcRecipients": [
-    {
-    }
-  ],
-  "BccRecipients": [
-    {
-    }
-  ],
-  "ReplyTo": [
-    {
-    }
-  ],
-  "ConversationId": "ConversationId-value",
-  "UniqueBody": {
-  },
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
-  "IsDeliveryReceiptRequested": true,
-  "IsReadReceiptRequested": true,
-  "IsDraft": true,
-  "IsRead": true,
-  "WebLink": "WebLink-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
-  ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
-  "Id": "Id-value",
-  "MeetingMessageType": "MeetingMessageType-value"
+  "ParentFolderId": "ParentFolderId-value"
 }
 ```
 ##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "eventmessage"
+} -->
 Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 890
+Content-length: 193
 {
   "Subject": "Subject-value",
   "Body": {
@@ -112,47 +85,16 @@ Content-length: 890
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value",
-  "From": {
-  },
-  "Sender": {
-  },
-  "ToRecipients": [
-    {
-    }
-  ],
-  "CcRecipients": [
-    {
-    }
-  ],
-  "BccRecipients": [
-    {
-    }
-  ],
-  "ReplyTo": [
-    {
-    }
-  ],
-  "ConversationId": "ConversationId-value",
-  "UniqueBody": {
-  },
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
-  "IsDeliveryReceiptRequested": true,
-  "IsReadReceiptRequested": true,
-  "IsDraft": true,
-  "IsRead": true,
-  "WebLink": "WebLink-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
-  ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
-  "Id": "Id-value",
-  "MeetingMessageType": "MeetingMessageType-value"
+  "ParentFolderId": "ParentFolderId-value"
 }
 ```
 
-<!-- uuid: 1f9d1a81-8b56-4ae7-8633-87c09695f6ad
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: 5eb26386-1d29-4785-8a9a-827ab21a579c
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update the properties of eventmessage object.",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

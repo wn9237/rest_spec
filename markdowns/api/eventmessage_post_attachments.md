@@ -1,7 +1,9 @@
 # Create Attachment
 
 Use this API to create a new Attachment.
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 
@@ -9,7 +11,7 @@ Use this API to create a new Attachment.
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
@@ -19,15 +21,44 @@ In the request body, supply a JSON representation of [Attachment](../resources/a
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "create_attachment_from_eventmessage"
+}-->
+```http
+
+Content-type: application/json
+```
+In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 ##### Response
 Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "attachment"
+} -->
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3
+Content-length: 162
 {
+  "Name": "Name-value",
+  "ContentType": "ContentType-value",
+  "Size": 99,
+  "IsInline": true,
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 4551ca85-f441-4cfd-8dd2-1b64f650a930
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: e7b24a55-7ecc-4267-9204-eafc858c7dce
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create Attachment",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

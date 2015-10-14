@@ -16,10 +16,20 @@ module SpecMaker
 		example_lines.push HEADER3 + "Example" + NEWLINE		
 		case type 
 		when 'auto_post'
-			# example_lines.push HEADER5 + "Request" + NEWLINE				
-			# example_lines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../resources/#{method[:returnType].downcase}.md) object." + NEWLINE
+			example_lines.push HEADER5 + "Request" + NEWLINE											
+			example_lines.push "Here is an example of the request." + NEWLINE
+			example_lines.push get_json_request_pretext("create_#{method[:returnType]}_from_#{@jsonHash[:name]}".downcase) + NEWLINE
+			example_lines.push '```http' + NEWLINE
+			httpSyntax = get_syntax('auto_post', top_one_restpath)
+			example_lines.push httpSyntax.join("\n") + NEWLINE
+			modeldump = get_json_model_method(@jsonHash[:name])			
+			example_lines.push "Content-type: application/json" + NEWLINE
+			example_lines.push "```" + NEWLINE	
+			example_lines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../resources/#{method[:returnType].downcase}.md) object." + NEWLINE
+
 			example_lines.push HEADER5 + "Response" + NEWLINE											
 			example_lines.push "Here is an example of the response." + NEWLINE
+			example_lines.push get_json_response_pretext(method[:returnType]) + NEWLINE
 			modeldump = get_json_model_method(method[:returnType])
 			example_lines.push "```json" + NEWLINE
 			example_lines.push "HTTP/1.1 201 Created" + NEWLINE
@@ -38,6 +48,8 @@ module SpecMaker
 			else
 				modeldump = get_json_model_method(@jsonHash[:name])
 			end
+			# todo : how do i handle the collections?
+			example_lines.push get_json_response_pretext(@jsonHash[:name]) + NEWLINE
 			example_lines.push "```json" + NEWLINE
 			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
 			example_lines.push "Content-type: application/json" + NEWLINE
@@ -45,10 +57,11 @@ module SpecMaker
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE				
 
-		when 'auto_put'
+		when 'auto_patch'
 
 			example_lines.push HEADER5 + "Request" + NEWLINE											
 			example_lines.push "Here is an example of the request." + NEWLINE
+			example_lines.push get_json_request_pretext("update_#{@jsonHash[:name]}".downcase) + NEWLINE						
 
 			example_lines.push '```http' + NEWLINE
 			httpSyntax = get_syntax('auto_put', top_one_restpath)
@@ -58,8 +71,9 @@ module SpecMaker
 			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE	
+			example_lines.push HEADER5 + "Response" + NEWLINE	
 
-			example_lines.push HEADER5 + "Response" + NEWLINE											
+			example_lines.push get_json_response_pretext(@jsonHash[:name]) + NEWLINE
 			example_lines.push "Here is an example of the response." + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])
 			example_lines.push "```json" + NEWLINE
@@ -70,18 +84,21 @@ module SpecMaker
 			example_lines.push "```" + NEWLINE	
 
 		when 'auto_delete'
-			# example_lines.push HEADER5 + "Request" + NEWLINE				
-			# example_lines.push '```http' + NEWLINE
-			# httpSyntax = get_syntax(method[:name], top_one_restpath)
-			# example_lines.push httpSyntax.join("\n") + NEWLINE
-			# example_lines.push '```' + NEWLINE
-			# example_lines.push HEADER5 + "Response" + NEWLINE											
-			# example_lines.push "```json" + NEWLINE
-			# example_lines.push "HTTP/1.1 204 No Content" + NEWLINE
-			# example_lines.push "```" + NEWLINE	
+			example_lines.push HEADER5 + "Request" + NEWLINE
+			example_lines.push get_json_request_pretext("delete_#{jsonHash[:name]}".downcase) + NEWLINE						
+			example_lines.push '```http' + NEWLINE
+			httpSyntax = get_syntax(method[:name], top_one_restpath)
+			example_lines.push httpSyntax.join("\n") + NEWLINE
+			example_lines.push '```' + NEWLINE
+			example_lines.push get_json_response_pretext(nil) + NEWLINE						
+			example_lines.push HEADER5 + "Response" + NEWLINE											
+			example_lines.push "```json" + NEWLINE
+			example_lines.push "HTTP/1.1 204 No Content" + NEWLINE
+			example_lines.push "```" + NEWLINE	
 		else
-			example_lines.push "Here is an example of how to call this API." + NEWLINE		
-			example_lines.push HEADER5 + "Request" + NEWLINE				
+			example_lines.push "Here is an example of how to call this API." + NEWLINE					
+			example_lines.push HEADER5 + "Request" + NEWLINE		
+			example_lines.push get_json_request_pretext("#{@jsonHash[:name].downcase}_#{method[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
 			httpSyntax = get_syntax(method[:name], top_one_restpath)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
@@ -93,8 +110,10 @@ module SpecMaker
 			else
 				example_lines.push "Content-length: 0" + NEWLINE				
 			end			
+			example_lines.push get_json_response_pretext(method[:returnType]) + NEWLINE								
+
 			example_lines.push '```' + NEWLINE
-			example_lines.push HEADER5 + "Response" + NEWLINE											
+			example_lines.push HEADER5 + "Response" + NEWLINE						
 			example_lines.push "```json" + NEWLINE
 			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
 			example_lines.push "Content-type: application/json" + NEWLINE
@@ -121,7 +140,7 @@ module SpecMaker
 		return arr[0..0]
 	end
 
-	def self.get_syntax(methodName=nil, restpath=[], pathAppend='')
+	def self.get_syntax(methodName=nil, restpath=[], pathAppend='', method=nil)
 		restpath = restpath.sort_by {|x| x.length}
 		case methodName
 		when 'auto_get', 'auto_list' 
@@ -136,7 +155,18 @@ module SpecMaker
 		when 'auto_patch'
 			arr = restpath.map {|a| "PATCH " + a.to_s}				
 		else
-			arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}"}				
+			# identify the functional path
+			if method && method[:isFunction] && method[:parameters].length > 0
+				q = ''
+				method[:parameters].each do |item|
+					q= q + item[:name] + "=#{item[:name]}-value, " 
+				end
+				q = "(" + q.chomp(', ') + ")"
+				arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}#{q}" }				
+				puts "#{arr}"
+			else
+				arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}"}				
+			end	
 		end
 		return arr
 	end
@@ -188,34 +218,33 @@ module SpecMaker
 		restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name][3..-1]) : method[:name].capitalize
 		methodPlusLink = "[" + restfulTask.strip + "](../api/" + @jsonHash[:name].downcase + "_" + method[:name].downcase + ".md)"
 		@mdlines.push (PIPE + methodPlusLink + PIPE + dataTypePlusLink + PIPE + method[:description] + PIPE) + NEWLINE
-		crate_method_mdfile method
+		create_method_mdfile method
 	end
 
 	# Create separate actions and functions file 
-	def self.crate_method_mdfile (method = {}, autoFilename=nil, pathAppend='')
+	def self.create_method_mdfile (method = {}, autoFilename=nil, pathAppend='')
 		actionLines = []		
 		# Header and description	
+
 		if method[:displayName].empty?
-			actionLines.push HEADER1 + "#{@jsonHash[:name]}: #{method[:name]}"  + TWONEWLINES
+			h1name = "#{@jsonHash[:name]}: #{method[:name]}"
 		else
-			actionLines.push HEADER1 + "#{method[:displayName]}"  + TWONEWLINES			
+			h1name = "#{method[:displayName]}" 
 		end
+		actionLines.push HEADER1 + h1name + TWONEWLINES
 
 		actionLines.push "#{method[:description]}"  + NEWLINE
 
-		if !method[:prerequisites].empty?
-			actionLines.push HEADER3 + "Prerequisites" + NEWLINE
-			actionLines.push method[:prerequisites] + NEWLINE	
-		end 
+		actionLines.push PREREQ
 
 		### HTTP request
 		# Select only the keys (that contains the REST path) for which the value (display or not flag)
 		# is set to true. 
 		#
 		actionLines.push HEADER3 + "HTTP request" + NEWLINE		
-		#actionLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
+		actionLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 		actionLines.push '```http' + NEWLINE
-		httpSyntax = get_syntax(method[:name], top_restpath, pathAppend)
+		httpSyntax = get_syntax(method[:name], top_restpath, pathAppend, method)
 		actionLines.push httpSyntax.join("\n") + NEWLINE
 		actionLines.push NEWLINE + '```' + NEWLINE
 
@@ -305,7 +334,9 @@ module SpecMaker
 			actionLines.push line
 		end
 
-		actionLines.push NEWLINE + uuid_date
+		actionLines.push NEWLINE + uuid_date + NEWLINE
+ 		actionLines.push get_json_page_annotation(h1name)
+
 		# Write the output file. 
 		if autoFilename
 			fileName = autoFilename
@@ -333,9 +364,10 @@ module SpecMaker
 			getMethodLines.push "Retrieve the properties and relationships of #{@jsonHash[:name].downcase} object."  + NEWLINE
 		end
 
+		getMethodLines.push PREREQ
 		# HTTP request
 		getMethodLines.push HEADER3 + "HTTP request" + NEWLINE
-		#getMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
+		getMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 
 		getMethodLines.push '```http' + NEWLINE
 		if @jsonHash[:collectionOf]
@@ -348,10 +380,70 @@ module SpecMaker
 
 		#Query parameters 
 		getMethodLines.push HEADER3 + "Optional query parameters" + NEWLINE
-		getMethodLines.push "You can use the [OData query parameters](odata-optional-query-parameters.md) to restrict the shape of the objects returned from this call." + NEWLINE
+
+		if @jsonHash[:collectionOf]
+			getMethodLines.push QRY_HEADER + NEWLINE 
+			getMethodLines.push QRY_2nd_LINE + NEWLINE
+			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["countable"]
+				puts "Foundc count -- #{@jsonHash[:collectionOf]}"
+			else
+				getMethodLines.push QRY_COUNT +  NEWLINE
+			end
+
+			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["expandable"]
+				puts "Found expand  -- #{@jsonHash[:collectionOf]}"
+
+			else
+				getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) for supported names. |" + NEWLINE
+			end
+			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["filterable"]
+				puts "Found filter -- #{@jsonHash[:collectionOf]}"
+			else
+				getMethodLines.push QRY_FILTER + NEWLINE
+			end		
+			getMethodLines.push QRY_ORDERBY + NEWLINE
+			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["selectable"]
+				puts "Foundc select -- #{@jsonHash[:collectionOf]}"				
+			else
+				getMethodLines.push QRY_SELECT + NEWLINE
+			end			
+			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["skipsupported"]
+				puts "Foundc skip -- #{@jsonHash[:collectionOf]}"
+			else
+				getMethodLines.push QRY_SKIP + NEWLINE		
+				getMethodLines.push QRY_SKIPTOKEN + NEWLINE
+			end		
+
+			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["topsupported"]
+				puts "Foundc top -- #{@jsonHash[:collectionOf]}"
+			else
+				getMethodLines.push QRY_TOP + NEWLINE
+			end		
+
+
+		else
+			if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["countable"] && !@annotations[@jsonHash[:name].downcase]["expandable"] && !@annotations[@jsonHash[:name].downcase]["selectable"]
+				puts "^^^^^^^ #{@jsonHash[:name]}"
+			else				
+				getMethodLines.push QRY_HEADER + NEWLINE 
+				getMethodLines.push QRY_2nd_LINE + NEWLINE
+				if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["countable"]
+				else
+					getMethodLines.push QRY_COUNT + NEWLINE 
+				end
+				if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["expandable"]
+				else
+					getMethodLines.push QRY_EXPAND + NEWLINE + "See relationships table of [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object for supported names. |" + NEWLINE
+				end			
+				if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["selectable"]
+				else
+					getMethodLines.push QRY_SELECT + NEWLINE	
+				end
+			end
+		end
 
 		#Request headers  
-		getMethodLines.push HEADER3 + "Request headers" + NEWLINE
+		getMethodLines.push NEWLINE + HEADER3 + "Request headers" + NEWLINE
 		getMethodLines.push "| Name       | Type | Description|" + NEWLINE
 		getMethodLines.push "|:-----------|:------|:----------|" + NEWLINE
 		getMethodLines.push HTTP_HEADER_SAMPLE + NEWLINE
@@ -378,8 +470,15 @@ module SpecMaker
 		example_lines.each do |line|
 			getMethodLines.push line
 		end
-		getMethodLines.push NEWLINE + uuid_date
+		getMethodLines.push NEWLINE + uuid_date + NEWLINE
 		# Write the output file. 
+		getMethodLines.push get_json_page_annotation(realHeader)
+
+		if @jsonHash[:collectionOf] 
+			getMethodLines.push "If successful, this method returns a `200 OK` response code and collection of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) objects in the response body."  + NEWLINE
+		else
+			getMethodLines.push "If successful, this method returns a `200 OK` response code and [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object in the response body."  + NEWLINE
+		end
 
 		fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:collectionOf].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
 		
@@ -395,15 +494,25 @@ module SpecMaker
 		patchMethodLines = []
 
 		# Header and description	
-		patchMethodLines.push HEADER1 + "Update #{@jsonHash[:name]}"  + TWONEWLINES
+		
+		if @jsonHash[:updateDescription].empty?
+			h1name = "Update the properties of #{@jsonHash[:name].downcase} object."
+		else
+			h1name = "#{@jsonHash[:updateDescription]}"
+		end
+
+		patchMethodLines.push HEADER1 + h1name + TWONEWLINES
+
 		if @jsonHash[:updateDescription].empty?
 			patchMethodLines.push "Update the properties of #{@jsonHash[:name].downcase} object."  + NEWLINE
 		else
 			patchMethodLines.push "#{@jsonHash[:updateDescription]}"  + NEWLINE			
 		end
+
+		patchMethodLines.push PREREQ
 		# HTTP request
 		patchMethodLines.push HEADER3 + "HTTP request" + NEWLINE
-		#patchMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
+		patchMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 		patchMethodLines.push '```http' + NEWLINE
 		# httpPatchArray = @jsonHash[:restPath].map {|a| "PATCH " + a.to_s}
 		# patchMethodLines.push httpPatchArray.join("\n") + NEWLINE
@@ -443,11 +552,12 @@ module SpecMaker
 		patchMethodLines.push "If successful, this method returns a `200 OK` response code and updated [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object in the response body."  + NEWLINE
 
 		#Example
-		example_lines = gen_example("auto_put")
+		example_lines = gen_example("auto_patch")
 		example_lines.each do |line|
 			patchMethodLines.push line
 		end
-		patchMethodLines.push NEWLINE + uuid_date
+		patchMethodLines.push NEWLINE + uuid_date + NEWLINE 
+		patchMethodLines.push get_json_page_annotation(h1name)
 
 		# Write the output file. 
 		fileName = "#{@jsonHash[:name].downcase}_update.md"  
@@ -488,6 +598,7 @@ module SpecMaker
 		@mdlines.push HEADER1 + @jsonHash[:name] + ' resource type' + TWONEWLINES
 		@mdlines.push @jsonHash[:description] + TWONEWLINES
 
+
 		# Determine if there is/are: relations, properties and methods. 
 		isRelation, isProperty, isMethod, patchable = false, false, false, false 
 
@@ -506,7 +617,6 @@ module SpecMaker
 			end
 		end
 
-
 		if methods 
 			isMethod = true
 		end
@@ -515,7 +625,8 @@ module SpecMaker
 		if isProperty || isRelation 
 			@mdlines.push HEADER3 + 'JSON representation' + TWONEWLINES
 			@mdlines.push 'Here is a JSON representation of the resource' + TWONEWLINES
-			#@mdlines.push get_json_model_pretext(@jsonHash[:name],propreties) + TWONEWLINES
+
+			@mdlines.push get_json_model_pretext(@jsonHash[:name],propreties) + TWONEWLINES
 			@mdlines.push "```json" + NEWLINE
 			@mdlines.push get_json_model(propreties) + TWONEWLINES
 			@mdlines.push "```" + NEWLINE			
@@ -616,7 +727,7 @@ module SpecMaker
 
 						mtd[:parameters] = nil					
 						mtd[:httpSuccessCode] = '201'
-					    crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md", prop[:name])
+					    create_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md", prop[:name])
 					end
 				end			
 			end
@@ -632,7 +743,7 @@ module SpecMaker
 				# mtd[:description] = "Update @jsonHash[:name]."
 				# mtd[:parameters] = nil
 				# mtd[:httpSuccessCode] = '200'			
-				# crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_update.md")
+				# create_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_update.md")
 			end
 
 			if @jsonHash[:allowDelete]
@@ -648,7 +759,7 @@ module SpecMaker
 				end				
 				mtd[:httpSuccessCode] = '204'			
 				mtd[:parameters] = nil			
-				crate_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_delete.md")
+				create_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_delete.md")
 			end
 
 			if isMethod
@@ -665,7 +776,10 @@ module SpecMaker
 				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
 			end
 		end
-		@mdlines.push NEWLINE + uuid_date
+		@mdlines.push NEWLINE + uuid_date + NEWLINE
+
+		# do we need this for tool check?
+		@mdlines.push get_json_page_annotation(@jsonHash[:name] + " resource")
 
 		# Write the output file. 
 		outfile = MARKDOWN_RESOURCE_FOLDER + @resource.downcase + '.md'
@@ -673,7 +787,6 @@ module SpecMaker
 		@mdlines.each do |line|
 			file.write line
 		end
-
 		@resources_files_created = @resources_files_created + 1
 
 	end

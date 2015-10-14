@@ -1,7 +1,9 @@
-# Create Instance
+# Create Event
 
-Use this API to create a new Instance.
-### HTTP request
+Use this API to create a new Event.
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Events/<Id>/Instances
 POST /groups/<objectId>/Events/<Id>/Instances
@@ -11,7 +13,7 @@ POST /users/<objectId>/CalendarView/<Id>/Instances
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -21,12 +23,28 @@ In the request body, supply a JSON representation of [Event](../resources/event.
 If successful, this method returns `201, Created` response code and [Event](../resources/event.md) object in the response body.
 
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "create_event_from_event"
+}-->
+```http
+POST /users/<objectId>/Events/<Id>/
+Content-type: application/json
+```
+In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 ##### Response
 Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "event"
+} -->
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 901
+Content-length: 178
 {
   "Subject": "Subject-value",
   "Body": {
@@ -34,42 +52,16 @@ Content-length: 901
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "Start": "datetime-value",
-  "StartTimeZone": "StartTimeZone-value",
-  "End": "datetime-value",
-  "EndTimeZone": "EndTimeZone-value",
-  "Reminder": 99,
-  "Location": {
-  },
-  "ShowAs": "ShowAs-value",
-  "ResponseStatus": {
-  },
-  "IsAllDay": true,
-  "IsCancelled": true,
-  "IsOrganizer": true,
-  "ResponseRequested": true,
-  "Type": "Type-value",
-  "SeriesMasterId": "SeriesMasterId-value",
-  "Attendees": [
-    {
-    }
-  ],
-  "Recurrence": {
-  },
-  "Organizer": {
-  },
-  "iCalUId": "iCalUId-value",
-  "WebLink": "WebLink-value",
-  "OriginalStart": "datetime-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
-  ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
-  "Id": "Id-value"
+  "Start": "datetime-value"
 }
 ```
 
-<!-- uuid: 2e1ecb0a-0f4b-471d-8f89-c0fc0bb61ba2
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: b8717d17-ca91-41f9-a7df-970b928a9578
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create Event",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

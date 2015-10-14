@@ -1,7 +1,9 @@
-# Update Calendar
+# Update the properties of calendar object.
 
 Update the properties of calendar object.
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/Calendar
 PATCH /groups/<objectId>/Calendar
@@ -10,7 +12,7 @@ PATCH /users/<objectId>/Calendars/<Id>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -26,6 +28,10 @@ If successful, this method returns a `200 OK` response code and updated [Calenda
 ### Example
 ##### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "update_calendar"
+}-->
 ```http
 PUT /users/<objectId>/Calendar
 Content-type: application/json
@@ -38,6 +44,11 @@ Content-length: 106
 }
 ```
 ##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "calendar"
+} -->
 Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
@@ -51,5 +62,12 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: a0a11d11-de6b-4f26-bf52-bca7624595f0
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: cdaa1a1b-d56b-4fc5-be4c-43449bee3966
+2015-10-14 23:39:28 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update the properties of calendar object.",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

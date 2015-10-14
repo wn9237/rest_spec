@@ -6,6 +6,14 @@
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "Extensions"
+  ],
+  "@odata.type": "microsoft.graph.Extension"
+}-->
+
 ```json
 {
   "Extensions": [
@@ -35,5 +43,12 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/extension_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Delete](../api/extension_delete.md) | Void	|Delete Extension object. |
 
-<!-- uuid: 544cd4e5-38eb-4e78-97bb-1c8bb086b1d7
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: 7f77f8ac-1d7a-4969-8e56-e0c114d53868
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Extension resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,0 +1,67 @@
+# Create Page
+
+Use this API to create a new Page.
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/<objectId>/notes/sections/<id>/pages
+POST /drive/root/createdByUser/notes/sections/<id>/pages
+POST /users/<objectId>/notes/pages/<id>/parentSection/pages
+
+```
+### Request headers
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+
+### Request body
+In the request body, supply a JSON representation of [Page](../resources/page.md) object.
+
+
+### Response
+If successful, this method returns `201, Created` response code and [Page](../resources/page.md) object in the response body.
+
+### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "create_page_from_section"
+}-->
+```http
+POST /users/<objectId>/notes/sections/<id>/
+Content-type: application/json
+```
+In the request body, supply a JSON representation of [Page](../resources/page.md) object.
+##### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "page"
+} -->
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 196
+{
+  "title": "title-value",
+  "createdByAppId": "createdByAppId-value",
+  "links": {
+  },
+  "contentUrl": "contentUrl-value",
+  "content": "content-value",
+  "lastModifiedTime": "datetime-value"
+}
+```
+
+<!-- uuid: 718b599a-94b8-45c1-86f8-46475c530fdb
+2015-10-14 23:39:40 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create Page",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,7 +1,9 @@
 # Delete
 
 Delete Extension.
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/Extensions/<Id>
 DELETE /groups/<objectId>/Extensions/<Id>
@@ -11,7 +13,7 @@ DELETE /devices/<objectId>/Extensions/<Id>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 Do not supply a request body for this method.
@@ -21,5 +23,12 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 7cd9a6c8-521e-4f6e-bbae-f92357bb8262
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: c83c9601-3d6a-4b1a-8c7f-7b102d6b332f
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Delete",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

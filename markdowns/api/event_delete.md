@@ -1,7 +1,9 @@
 # Delete
 
 Delete Event.
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/Events/<Id>
 DELETE /groups/<objectId>/Events/<Id>
@@ -11,7 +13,7 @@ DELETE /users/<objectId>/CalendarView/<Id>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 Do not supply a request body for this method.
@@ -21,5 +23,12 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: d0b8e3a6-85c1-4958-a328-ca7638864873
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: cb56358e-152e-4abf-a48e-f5a367671b36
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Delete",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

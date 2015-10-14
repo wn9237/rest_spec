@@ -1,7 +1,9 @@
-# Update Event
+# Update the properties of event object.
 
 Update the properties of event object.
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/Events/<Id>
 PATCH /groups/<objectId>/Events/<Id>
@@ -10,7 +12,7 @@ PATCH /users/<objectId>/CalendarView/<Id>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -52,10 +54,14 @@ If successful, this method returns a `200 OK` response code and updated [Event](
 ### Example
 ##### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "update_event"
+}-->
 ```http
 PUT /users/<objectId>/Events/<Id>
 Content-type: application/json
-Content-length: 901
+Content-length: 178
 {
   "Subject": "Subject-value",
   "Body": {
@@ -63,48 +69,20 @@ Content-length: 901
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "Start": "datetime-value",
-  "StartTimeZone": "StartTimeZone-value",
-  "End": "datetime-value",
-  "EndTimeZone": "EndTimeZone-value",
-  "Reminder": 99,
-  "Location": {
-  },
-  "ShowAs": "ShowAs-value",
-  "ResponseStatus": {
-  },
-  "IsAllDay": true,
-  "IsCancelled": true,
-  "IsOrganizer": true,
-  "ResponseRequested": true,
-  "Type": "Type-value",
-  "SeriesMasterId": "SeriesMasterId-value",
-  "Attendees": [
-    {
-    }
-  ],
-  "Recurrence": {
-  },
-  "Organizer": {
-  },
-  "iCalUId": "iCalUId-value",
-  "WebLink": "WebLink-value",
-  "OriginalStart": "datetime-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
-  ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
-  "Id": "Id-value"
+  "Start": "datetime-value"
 }
 ```
 ##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "event"
+} -->
 Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 901
+Content-length: 178
 {
   "Subject": "Subject-value",
   "Body": {
@@ -112,42 +90,16 @@ Content-length: 901
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "Start": "datetime-value",
-  "StartTimeZone": "StartTimeZone-value",
-  "End": "datetime-value",
-  "EndTimeZone": "EndTimeZone-value",
-  "Reminder": 99,
-  "Location": {
-  },
-  "ShowAs": "ShowAs-value",
-  "ResponseStatus": {
-  },
-  "IsAllDay": true,
-  "IsCancelled": true,
-  "IsOrganizer": true,
-  "ResponseRequested": true,
-  "Type": "Type-value",
-  "SeriesMasterId": "SeriesMasterId-value",
-  "Attendees": [
-    {
-    }
-  ],
-  "Recurrence": {
-  },
-  "Organizer": {
-  },
-  "iCalUId": "iCalUId-value",
-  "WebLink": "WebLink-value",
-  "OriginalStart": "datetime-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
-  ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
-  "Id": "Id-value"
+  "Start": "datetime-value"
 }
 ```
 
-<!-- uuid: 1306a147-e650-4c7c-98b7-c724cac8a002
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: eda9a760-8fb9-4233-a672-699acd1a8e2f
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update the properties of event object.",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,7 +1,9 @@
 # EventMessage: ReplyAll
 
 
-### HTTP request
+### Prerequisites
+The following **scopes** are required to execute this API: ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 
 
@@ -9,7 +11,7 @@
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|
+| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -24,6 +26,10 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "eventmessage_replyall"
+}-->
 ```http
 
 Content-type: application/json
@@ -31,6 +37,11 @@ Content-length: 32
 {
   "Comment": "Comment-value"
 }
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "none"
+} -->
 ```
 ##### Response
 ```json
@@ -41,5 +52,12 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: e3b64484-c443-4b02-a013-1ccb3dc39be4
-2015-10-09 18:53:45 UTC -->
+<!-- uuid: 8f99c06e-3981-415d-ae74-42186b4b166d
+2015-10-14 23:39:33 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "EventMessage: ReplyAll",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

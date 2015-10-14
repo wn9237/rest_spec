@@ -7,6 +7,7 @@ module SpecMaker
 	MARKDOWN_API_FOLDER = "../markdowns/api/"
 	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"	
+	ANNOTATIONS = JSON_BASE_FOLDER + 'settings/annotations.json'
 
 	HEADER1 = '# '
 	HEADER2 = '## '
@@ -26,7 +27,20 @@ module SpecMaker
 	RELATIONSHIP_HEADER = "| Relationship | Type	|Description|" + NEWLINE
 	TASKS_HEADER = "| Task		   | Return Type	|Description|" + NEWLINE
 
-	HTTP_HEADER_SAMPLE = "| X-Sample-Header  | string  | Sample of how the HTTP headers used by the API could be displayed.|"
+	PREREQ = HEADER3 + "Prerequisites" + NEWLINE + "The following **scopes** are required to execute this API: "
+
+	QRY_HEADER = "|Name|Value|Description|"
+	QRY_2nd_LINE = "|:---------------|:--------|:-------|"
+	QRY_EXPAND = "|$expand|string|Comma-separated list of relationships to expand and include in the response. " 
+	QRY_FILTER  = "|$filter|string|Filter string that lets you filter the response based on a set of criteria.|"
+	QRY_ORDERBY = "|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|"
+	QRY_SELECT = "|$select|string|Comma-separated list of properties to include in the response.|"
+	QRY_SKIPTOKEN = "|$skipToken|string|Paging token that is used to get the next set of results.|"
+	QRY_TOP = "|$top|int|The number of items to return in a result set.|"
+	QRY_SKIP = "|$skip|int|The number of items to skip in a result set.|"
+	QRY_COUNT = "|$count|none|The count of related entities can be requested by specifying the $count query option.|"
+
+	HTTP_HEADER_SAMPLE = "| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|"
 	
 	odata_types = %w[Binary Boolean Byte Date DateTimeOffset Decimal Double Duration 
 				Guid Int Int16 Int32 Int64 SByte Single Stream String TimeOfDay 
@@ -48,7 +62,7 @@ module SpecMaker
 	# For POST /Collection, we want to use a name that's sensible such as 
 	# Add Owner or Create Owner instead of Add DirectoryObject. Hence, if the 
 		# collection(datatype) happens to be one the below, we'll use the name in the API name.
-	POST_NAME_MAPPING = %w[recipient directoryobject event photo 
+	POST_NAME_MAPPING = %w[recipient directoryobject photo 
 						conversationthread recipient privilegedroleassignment item]
 
 	TIMESTAMP_DESC = %q{The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`}
@@ -119,6 +133,17 @@ module SpecMaker
 	if !File.exists?(EXAMPLES_FOLDER)
 		@logger.warn("API examples folder does not exist")
 	end		
+
+	## 
+	# Load up all the known existing annotations.
+	###
+	@annotations = {}
+
+	begin
+		@annotations = JSON.parse File.read(ANNOTATIONS)
+	rescue => err
+		@logger.warn("JSON Annotations input file doesn't exist: #{@current_object}")
+	end
 
 	## 
 	# Load up all the known existing enums.
@@ -203,8 +228,8 @@ module SpecMaker
 		fullpath = JSON_SOURCE_FOLDER + '/' + objectName.downcase + '.json'
 		if File.file?(fullpath)
 			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
-			object[:properties].each do |item|
-				next if item[:isRelationship]
+			object[:properties].each_with_index do |item, i|
+				next if item[:isRelationship] || i > 5
 				model[item[:name]] = assign_value(item[:dataType], item[:name])
 				if item[:isCollection] 
 					model[item[:name]] = [model[item[:name]]]
@@ -267,6 +292,31 @@ module SpecMaker
 				model[:optionalProperties].push item[:name]
 			end
 		end 
-		#return "<!-- " + (JSON.pretty_generate model) + "-->"
+		return "<!-- " + (JSON.pretty_generate model) + "-->"
 	end
+
+	def self.get_json_page_annotation (description=nil)
+		model = deep_copy(@mdpageannotate)
+		model[:description] = description
+		return "<!-- " + (JSON.pretty_generate model) + "-->"	
+	end
+
+	def self.get_json_request_pretext (name=nil)
+		model = deep_copy(@mdrequest)
+		model[:name] = name
+		return "<!-- " + (JSON.pretty_generate model) + "-->"
+
+	end
+
+	def self.get_json_response_pretext (type=nil)
+		model = deep_copy(@mdresponse)
+		if type == nil
+			model["@odata.type"] = nil
+		else
+			model["@odata.type"] = type.downcase
+		end
+		return "<!-- " + (JSON.pretty_generate model) + " -->"		
+	end
+
+# module end
 end

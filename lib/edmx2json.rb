@@ -18,6 +18,60 @@ module SpecMaker
 
 	puts "Staring..."
 
+	# Process all annotationa. Load in memory.
+	
+	schema[:Annotations].each do |item|
+		dt = get_type(item[:Target]).downcase
+
+		@annotations[dt] = {}
+		puts "-> Processing Annotation #{dt}"
+		# puts item[:Annotation].length
+		# puts item[:Annotation]
+
+		if item[:Annotation].is_a?(Array)
+			item[:Annotation].each do |ann|
+				if ann[:Bool]
+					term = get_type(ann[:Term]).downcase
+					if ann[:Bool].downcase == 'true'
+						@annotations[dt][term] = true
+					else
+						@annotations[dt][term] = false
+					end
+				elsif ann[:Record][:PropertyValue]
+					term = ann[:Record][:PropertyValue][:Property].downcase
+					if ann[:Record][:PropertyValue][:Bool].downcase == 'true'
+						@annotations[dt][term] = true
+					else
+						@annotations[dt][term] = false
+					end
+				end
+			end
+		else
+			ann = item[:Annotation]
+			if ann[:Bool]
+				term = get_type(ann[:Term]).downcase
+				if ann[:Bool].downcase == 'true'
+					@annotations[dt][term] = true
+				else
+					@annotations[dt][term] = false
+				end
+			elsif ann[:Record][:PropertyValue]
+				term = ann[:Record][:PropertyValue][:Property].downcase
+				if ann[:Record][:PropertyValue][:Bool].downcase == 'true'
+					@annotations[dt][term] = true
+				else
+					@annotations[dt][term] = false
+				end
+			end
+		end
+		@iann = @iann + 1
+	end
+	File.open(ANNOTATIONS, "w") do |f|
+		f.write(JSON.pretty_generate @annotations)
+	end
+
+	gets
+
 	# Process all Enums. Load in memory.
 	schema[:EnumType].each do |item|
 		puts "-> Processing Enum #{item[:Name]}"
