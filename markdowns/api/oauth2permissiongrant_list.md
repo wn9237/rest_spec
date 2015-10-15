@@ -32,7 +32,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 266
+Content-length: 333
 {
   "values": [
     {
@@ -41,14 +41,16 @@ Content-length: 266
       "expiryTime": "datetime-value",
       "objectId": "objectId-value",
       "principalId": "principalId-value",
-      "resourceId": "resourceId-value"
+      "resourceId": "resourceId-value",
+      "scope": "scope-value",
+      "startTime": "datetime-value"
     }
   ]
 }
 ```
 
-<!-- uuid: a1dd7acb-9afc-4b38-ba28-c0e7333e2129
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: 06e1f2de-3caf-4024-bebf-50bc3bf9f610
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List OAuth2PermissionGrant",

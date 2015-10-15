@@ -44,7 +44,7 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/notes/notebooks/<id>
 Content-type: application/json
-Content-length: 179
+Content-length: 516
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -52,7 +52,20 @@ Content-length: 179
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "links": {
-  }
+    "oneNoteClientUrl": {
+      "href": "href-value"
+    },
+    "oneNoteWebUrl": {
+      "href": "href-value"
+    }
+  },
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 ##### Response
@@ -65,7 +78,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
+Content-length: 516
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -73,12 +86,25 @@ Content-length: 179
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "links": {
-  }
+    "oneNoteClientUrl": {
+      "href": "href-value"
+    },
+    "oneNoteWebUrl": {
+      "href": "href-value"
+    }
+  },
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 
-<!-- uuid: 790fa3e9-8a6c-4560-96cf-fee0fab092c5
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: 7c8faa0b-2582-4ff1-8bd3-d0ad5250316b
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notebook object.",

@@ -44,22 +44,38 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 96
+Content-length: 456
 {
   "id": "id-value",
   "large": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "medium": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "small": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "source": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   }
 }
 ```
 
-<!-- uuid: 735fa00c-a368-4f0e-ae0f-257dd818b25a
-2015-10-14 23:39:35 UTC -->
+<!-- uuid: 5f9f7799-131a-4514-9724-b64b2f8b4f75
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create thumbnailSet",

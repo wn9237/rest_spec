@@ -61,8 +61,8 @@ Content-length: 73
 }
 ```
 
-<!-- uuid: 1bf2a77f-7915-406a-aeb8-06ef108102e4
-2015-10-14 23:39:43 UTC -->
+<!-- uuid: c573a6dc-63dc-4726-a816-940f753fffe4
+2015-10-15 03:41:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of userdetails object.",

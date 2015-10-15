@@ -42,19 +42,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 253
+Content-length: 398
 {
   "creationTimestamp": "datetime-value",
   "id": "id-value",
   "principalDisplayName": "principalDisplayName-value",
   "principalId": "principalId-value",
   "principalType": "principalType-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "resourceDisplayName": "resourceDisplayName-value",
+  "resourceId": "resourceId-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 503bcbfa-1311-4e0a-8d9a-49bdb30cf3b0
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 6fdc68be-669d-4142-a545-222ecd4b2c7b
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AppRoleAssignment",

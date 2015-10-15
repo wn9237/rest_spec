@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/deviceconfiguration_list.md) | [DeviceConfiguration](deviceconfiguration.md) [] |Get deviceConfiguration object collection. |
 
-<!-- uuid: a3455245-9877-419f-ba35-51f1af3e39c5
-2015-10-14 23:39:30 UTC -->
+<!-- uuid: 7ebe43f3-728f-4e6a-af17-c083d6e00af1
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "deviceConfiguration resource",
@@ -59,8 +59,8 @@ None
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String||
 
-<!-- uuid: fff695bb-d10f-446f-967b-b08d840e18d8
-2015-10-14 23:39:30 UTC -->
+<!-- uuid: b38c3665-36df-400e-b3d9-961727c56aa1
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration resource",

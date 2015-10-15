@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/directoryobject_list.md) | [DirectoryObject](directoryobject.md) [] |Get directoryObject object collection. |
 
-<!-- uuid: 654922eb-3943-4a51-b980-0ec4c13cc22a
-2015-10-14 23:39:31 UTC -->
+<!-- uuid: 11db64a4-6f75-4f11-96da-fbe7459cd5bc
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "directoryObjects resource",

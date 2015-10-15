@@ -29,22 +29,37 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 233
+Content-length: 732
 {
   "accountEnabled": true,
   "alternativeSecurityIds": [
     {
+      "type": 99,
+      "identityProvider": "identityProvider-value",
+      "key": "key-value"
     }
   ],
   "approximateLastLogonTimestamp": "datetime-value",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceObjectVersion": 99
+  "deviceObjectVersion": 99,
+  "deviceOSType": "deviceOSType-value",
+  "deviceOSVersion": "deviceOSVersion-value",
+  "devicePhysicalIds": [
+    "devicePhysicalIds-value"
+  ],
+  "deviceTrustType": "deviceTrustType-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "lastDirSyncTime": "datetime-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: e625f7d0-4b8f-41dd-b0a2-aa6d4e6aa902
-2015-10-14 23:39:29 UTC -->
+<!-- uuid: 1cde12e6-0011-4488-8166-cd1a33656efc
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Device",

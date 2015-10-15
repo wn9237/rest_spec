@@ -32,7 +32,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 370
+Content-length: 415
 {
   "values": [
     {
@@ -45,14 +45,15 @@ Content-length: 370
       "registrationQuota": 99,
       "maximumRegistrationInactivityPeriod": 99,
       "objectType": "objectType-value",
-      "objectId": "objectId-value"
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
   ]
 }
 ```
 
-<!-- uuid: 49962947-f6b6-44da-867a-c72ff319017d
-2015-10-14 23:39:30 UTC -->
+<!-- uuid: 0d0111e2-1324-4199-8af8-c2a5bf40dfe8
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DeviceConfiguration",

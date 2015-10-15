@@ -35,19 +35,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 186
+Content-length: 260
 {
   "Id": "Id-value",
   "UserName": "UserName-value",
   "UserId": "UserId-value",
   "RoleName": "RoleName-value",
   "RoleId": "RoleId-value",
-  "NotificationId": "NotificationId-value"
+  "NotificationId": "NotificationId-value",
+  "NotificationName": "NotificationName-value",
+  "Event": "Event-value"
 }
 ```
 
-<!-- uuid: 2ee38d2b-0299-4d6b-883f-411b9e1b630d
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: 698844e8-0d90-4f43-bafd-bd0a420999f8
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get NotificationRule",

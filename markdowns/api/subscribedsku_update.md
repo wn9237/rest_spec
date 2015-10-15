@@ -36,18 +36,24 @@ Here is an example of the request.
 ```http
 PUT /subscribedSkus/<objectId>
 Content-type: application/json
-Content-length: 193
+Content-length: 388
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
   "objectId": "objectId-value",
   "prepaidUnits": {
+    "enabled": 99,
+    "suspended": 99,
+    "warning": 99
   },
   "servicePlans": [
     {
+      "servicePlanId": "servicePlanId-value",
+      "servicePlanName": "servicePlanName-value"
     }
   ],
-  "skuId": "skuId-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 ##### Response
@@ -60,23 +66,29 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 193
+Content-length: 388
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
   "objectId": "objectId-value",
   "prepaidUnits": {
+    "enabled": 99,
+    "suspended": 99,
+    "warning": 99
   },
   "servicePlans": [
     {
+      "servicePlanId": "servicePlanId-value",
+      "servicePlanName": "servicePlanName-value"
     }
   ],
-  "skuId": "skuId-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 
-<!-- uuid: 4753d616-8654-420a-8eca-bc578ff70d88
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: c4524334-f28a-4b78-8169-b52fe833bb8e
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of subscribedsku object.",

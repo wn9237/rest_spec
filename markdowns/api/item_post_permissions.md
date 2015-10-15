@@ -44,25 +44,50 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 146
+Content-length: 762
 {
   "grantedTo": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   },
   "id": "id-value",
   "invitation": {
+    "email": "email-value",
+    "redeemedBy": "redeemedBy-value",
+    "signInRequired": true
   },
   "inheritedFrom": {
+    "driveId": "driveId-value",
+    "id": "id-value",
+    "path": "path-value"
   },
   "link": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "type": "type-value",
+    "webUrl": "webUrl-value"
   },
   "roles": [
     "roles-value"
-  ]
+  ],
+  "shareId": "shareId-value"
 }
 ```
 
-<!-- uuid: e0939d0d-c02d-40e3-84df-600dc7230f9b
-2015-10-14 23:39:34 UTC -->
+<!-- uuid: 67285803-e5f0-4da3-8734-d08ffed4d8a2
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create permission",

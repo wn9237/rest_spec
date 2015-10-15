@@ -163,7 +163,7 @@ module SpecMaker
 				end
 				q = "(" + q.chomp(', ') + ")"
 				arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}#{q}" }				
-				puts "#{arr}"
+
 			else
 				arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}"}				
 			end	
@@ -385,37 +385,30 @@ module SpecMaker
 			getMethodLines.push QRY_HEADER + NEWLINE 
 			getMethodLines.push QRY_2nd_LINE + NEWLINE
 			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["countable"]
-				puts "Foundc count -- #{@jsonHash[:collectionOf]}"
 			else
 				getMethodLines.push QRY_COUNT +  NEWLINE
 			end
 
 			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["expandable"]
-				puts "Found expand  -- #{@jsonHash[:collectionOf]}"
-
 			else
 				getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) for supported names. |" + NEWLINE
 			end
 			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["filterable"]
-				puts "Found filter -- #{@jsonHash[:collectionOf]}"
 			else
 				getMethodLines.push QRY_FILTER + NEWLINE
 			end		
 			getMethodLines.push QRY_ORDERBY + NEWLINE
 			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["selectable"]
-				puts "Foundc select -- #{@jsonHash[:collectionOf]}"				
 			else
 				getMethodLines.push QRY_SELECT + NEWLINE
 			end			
 			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["skipsupported"]
-				puts "Foundc skip -- #{@jsonHash[:collectionOf]}"
 			else
 				getMethodLines.push QRY_SKIP + NEWLINE		
 				getMethodLines.push QRY_SKIPTOKEN + NEWLINE
 			end		
 
 			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["topsupported"]
-				puts "Foundc top -- #{@jsonHash[:collectionOf]}"
 			else
 				getMethodLines.push QRY_TOP + NEWLINE
 			end		
@@ -423,7 +416,6 @@ module SpecMaker
 
 		else
 			if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["countable"] && !@annotations[@jsonHash[:name].downcase]["expandable"] && !@annotations[@jsonHash[:name].downcase]["selectable"]
-				puts "^^^^^^^ #{@jsonHash[:name]}"
 			else				
 				getMethodLines.push QRY_HEADER + NEWLINE 
 				getMethodLines.push QRY_2nd_LINE + NEWLINE

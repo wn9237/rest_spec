@@ -35,19 +35,24 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 208
+Content-length: 370
 {
   "AlertId": "AlertId-value",
   "AlertName": "AlertName-value",
   "AlertDescription": "AlertDescription-value",
   "LowSeverityThreshold": 99,
   "MediumSeverityThreshold": 99,
-  "HighSeverityThreshold": 99
+  "HighSeverityThreshold": 99,
+  "Type": 99,
+  "Severity": 99,
+  "SecurityImpact": "SecurityImpact-value",
+  "MitigationSteps": "MitigationSteps-value",
+  "HowToPrevent": "HowToPrevent-value"
 }
 ```
 
-<!-- uuid: f65f2750-059a-4256-b782-c7e9867f43c1
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: 7fc9c13a-6a5f-423c-8152-1d6de711d432
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlertInfo",

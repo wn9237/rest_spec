@@ -41,14 +41,18 @@ Here is an example of the request.
 ```http
 PUT /tasks/<id>/timelineFormat
 Content-type: application/json
-Content-length: 163
+Content-length: 255
 {
   "color": 99,
   "drawingStyle": "drawingStyle-value",
   "labelOffsetX": 99,
   "labelOffsetY": 99,
   "anchorPosition": "anchorPosition-value",
-  "swimlane": 99
+  "swimlane": 99,
+  "calloutHeight": 99,
+  "visible": true,
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 ##### Response
@@ -61,19 +65,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 163
+Content-length: 255
 {
   "color": 99,
   "drawingStyle": "drawingStyle-value",
   "labelOffsetX": 99,
   "labelOffsetY": 99,
   "anchorPosition": "anchorPosition-value",
-  "swimlane": 99
+  "swimlane": 99,
+  "calloutHeight": 99,
+  "visible": true,
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: 83e388dc-b4d4-47af-86d2-a7c0e934bb1c
-2015-10-14 23:39:42 UTC -->
+<!-- uuid: a6bdcff1-b59e-4c55-9cfe-452f5b27d6a6
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of timelinetaskformat object.",

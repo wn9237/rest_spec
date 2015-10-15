@@ -29,7 +29,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
+Content-length: 297
 {
   "appDisplayName": "appDisplayName-value",
   "name": "name-value",
@@ -38,12 +38,14 @@ Content-length: 224
   "targetObjects": [
     "targetObjects-value"
   ],
-  "objectType": "objectType-value"
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: bb333d89-ff7b-40a3-9eab-985561bf32b3
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: 2d4a9b94-6ea4-4dd2-826d-8aa4e8d93717
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ExtensionProperty",

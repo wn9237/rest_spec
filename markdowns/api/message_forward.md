@@ -36,11 +36,15 @@ Here is an example of how to call this API.
 ```http
 POST /users/<objectId>/Messages/<Id>/Forward
 Content-type: application/json
-Content-length: 69
+Content-length: 166
 {
   "Comment": "Comment-value",
   "ToRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
   ]
 }
@@ -59,8 +63,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 339afc95-adff-4f58-910e-de97c1a0c626
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: f376489a-df54-42a1-ad73-4fd5ef437271
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Forward",

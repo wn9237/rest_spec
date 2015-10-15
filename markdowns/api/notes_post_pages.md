@@ -44,20 +44,29 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 196
+Content-length: 391
 {
   "title": "title-value",
   "createdByAppId": "createdByAppId-value",
   "links": {
+    "oneNoteClientUrl": {
+      "href": "href-value"
+    },
+    "oneNoteWebUrl": {
+      "href": "href-value"
+    }
   },
   "contentUrl": "contentUrl-value",
   "content": "content-value",
-  "lastModifiedTime": "datetime-value"
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 
-<!-- uuid: 85c5d315-9adc-42e4-bd9b-d7302feeaf5a
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: fee95962-633e-4057-8169-8ccac1b376b8
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Page",

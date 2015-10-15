@@ -38,14 +38,15 @@ Here is an example of the request.
 ```http
 PUT /plans/<id>
 Content-type: application/json
-Content-length: 149
+Content-length: 179
 {
   "createdBy": "createdBy-value",
   "owner": "owner-value",
   "title": "title-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 ##### Response
@@ -58,19 +59,20 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 149
+Content-length: 179
 {
   "createdBy": "createdBy-value",
   "owner": "owner-value",
   "title": "title-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: 4caeb9bb-8d7d-40e9-8ef7-f6a39db2384d
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 050fd552-21eb-4aab-82e3-32af944f3165
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plan object.",

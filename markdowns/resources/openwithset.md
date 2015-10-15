@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |web|[openWithApp](openwithapp.md)||
 |webEmbedded|[openWithApp](openwithapp.md)||
 
-<!-- uuid: 13dc7cba-825b-441f-b2fc-33e6d241e301
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: 1bdeea45-af43-452a-84d3-6f869cd8c9ba
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "openWithSet resource",

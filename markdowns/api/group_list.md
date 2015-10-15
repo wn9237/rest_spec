@@ -32,7 +32,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 296
+Content-length: 1187
 {
   "values": [
     {
@@ -45,14 +45,41 @@ Content-length: 296
       "groupTypes": [
         "groupTypes-value"
       ],
-      "isPublic": true
+      "isPublic": true,
+      "lastDirSyncTime": "datetime-value",
+      "mail": "mail-value",
+      "mailNickname": "mailNickname-value",
+      "mailEnabled": true,
+      "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+      "provisioningErrors": [
+        {
+          "errorDetail": "errorDetail-value",
+          "resolved": true,
+          "service": "service-value",
+          "timestamp": "datetime-value"
+        }
+      ],
+      "proxyAddresses": [
+        "proxyAddresses-value"
+      ],
+      "securityEnabled": true,
+      "AccessType": "AccessType-value",
+      "EmailAddress": "EmailAddress-value",
+      "AllowExternalSenders": true,
+      "AutoSubscribeNewMembers": true,
+      "IsSubscribedByMail": true,
+      "IsFavorite": true,
+      "UnseenCount": 99,
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
   ]
 }
 ```
 
-<!-- uuid: bf230868-f8f5-4e45-a92e-a517e3d45c07
-2015-10-14 23:39:34 UTC -->
+<!-- uuid: fbd26d74-a225-4003-a420-8cfe4aa6a607
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Group",

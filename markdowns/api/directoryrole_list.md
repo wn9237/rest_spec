@@ -32,7 +32,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 256
+Content-length: 337
 {
   "values": [
     {
@@ -41,14 +41,16 @@ Content-length: 256
       "isSystem": true,
       "roleDisabled": true,
       "roleTemplateId": "roleTemplateId-value",
-      "objectType": "objectType-value"
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
   ]
 }
 ```
 
-<!-- uuid: b010a7ec-01c8-4f4d-a790-05653a8a6ee8
-2015-10-14 23:39:31 UTC -->
+<!-- uuid: 5236eb9c-fc63-43e2-ad09-056426c38c5d
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryRole",

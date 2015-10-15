@@ -29,19 +29,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 278
+Content-length: 433
 {
   "associationType": "associationType-value",
   "sourceObjectId": "sourceObjectId-value",
   "sourceObjectType": "sourceObjectType-value",
   "sourceObjectUri": "sourceObjectUri-value",
   "targetObjectId": "targetObjectId-value",
-  "targetObjectType": "targetObjectType-value"
+  "targetObjectType": "targetObjectType-value",
+  "targetObjectUri": "targetObjectUri-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 88361b1b-e062-4beb-bb29-eec72c2678fb
-2015-10-14 23:39:30 UTC -->
+<!-- uuid: 0e1eb7d9-fde4-4c5b-af2d-31a0ccb7b542
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryLinkChange",

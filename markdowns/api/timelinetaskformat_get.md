@@ -37,19 +37,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 163
+Content-length: 255
 {
   "color": 99,
   "drawingStyle": "drawingStyle-value",
   "labelOffsetX": 99,
   "labelOffsetY": 99,
   "anchorPosition": "anchorPosition-value",
-  "swimlane": 99
+  "swimlane": 99,
+  "calloutHeight": 99,
+  "visible": true,
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: ba4cd8a8-1577-4bfa-8e18-4fb4e74474c9
-2015-10-14 23:39:42 UTC -->
+<!-- uuid: fca4a8cd-3a54-4098-b258-a878713f469a
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TimelineTaskFormat",

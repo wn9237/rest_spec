@@ -44,7 +44,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
+Content-length: 516
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -52,12 +52,25 @@ Content-length: 179
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "links": {
-  }
+    "oneNoteClientUrl": {
+      "href": "href-value"
+    },
+    "oneNoteWebUrl": {
+      "href": "href-value"
+    }
+  },
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 
-<!-- uuid: 50d3521a-313b-44da-b2de-9fbf8bf76993
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: 58de5008-f995-47d9-8ef6-581653250db6
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Notebook",

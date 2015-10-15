@@ -37,19 +37,36 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 92
+Content-length: 458
 {
   "id": "id-value",
   "driveType": "driveType-value",
   "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   },
   "quota": {
+    "deleted": 99,
+    "remaining": 99,
+    "state": "state-value",
+    "total": 99,
+    "used": 99
   }
 }
 ```
 
-<!-- uuid: 16288534-f05f-47b9-8be0-95e00d89ff91
-2015-10-14 23:39:32 UTC -->
+<!-- uuid: d31862b6-2755-4e5b-a125-64e1b8e81404
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get drive",

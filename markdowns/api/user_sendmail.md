@@ -36,9 +36,79 @@ Here is an example of how to call this API.
 ```http
 POST /users/<objectId>/SendMail
 Content-type: application/json
-Content-length: 49
+Content-length: 1837
 {
   "Message": {
+    "Subject": "Subject-value",
+    "Body": {
+      "ContentType": "ContentType-value",
+      "Content": "Content-value"
+    },
+    "BodyPreview": "BodyPreview-value",
+    "Importance": "Importance-value",
+    "HasAttachments": true,
+    "ParentFolderId": "ParentFolderId-value",
+    "From": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "Sender": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "ToRecipients": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "CcRecipients": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "BccRecipients": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "ReplyTo": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "ConversationId": "ConversationId-value",
+    "UniqueBody": {
+      "ContentType": "ContentType-value",
+      "Content": "Content-value"
+    },
+    "DateTimeReceived": "datetime-value",
+    "DateTimeSent": "datetime-value",
+    "IsDeliveryReceiptRequested": true,
+    "IsReadReceiptRequested": true,
+    "IsDraft": true,
+    "IsRead": true,
+    "WebLink": "WebLink-value",
+    "ChangeKey": "ChangeKey-value",
+    "Categories": "Categories-value",
+    "DateTimeCreated": "datetime-value",
+    "DateTimeLastModified": "datetime-value",
+    "Id": "Id-value",
+    "Attachments": {
+      "Name": "Name-value",
+      "ContentType": "ContentType-value",
+      "Size": 99,
+      "IsInline": true,
+      "DateTimeLastModified": "datetime-value",
+      "Id": "Id-value"
+    }
   },
   "SaveToSentItems": true
 }
@@ -57,8 +127,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: e00517f2-cb6c-4d56-8c81-acd99b2f46dd
-2015-10-14 23:39:43 UTC -->
+<!-- uuid: d63b6b9e-f879-43aa-9889-bb3d7ab6d39c
+2015-10-15 03:41:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: SendMail",

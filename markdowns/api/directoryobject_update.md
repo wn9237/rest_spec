@@ -59,8 +59,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 2c1225d9-cb00-47db-940e-efab765fa3ac
-2015-10-14 23:39:31 UTC -->
+<!-- uuid: 0c68bdc8-7211-467a-a71e-9fa0a4f487ca
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryobject object.",

@@ -37,7 +37,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
+Content-length: 516
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -45,12 +45,25 @@ Content-length: 179
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "links": {
-  }
+    "oneNoteClientUrl": {
+      "href": "href-value"
+    },
+    "oneNoteWebUrl": {
+      "href": "href-value"
+    }
+  },
+  "name": "name-value",
+  "createdBy": "createdBy-value",
+  "lastModifiedBy": "lastModifiedBy-value",
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 
-<!-- uuid: bcef4ca1-409c-40c0-bccd-fbe3a885d9ea
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: 690774a3-2695-4bf4-95e7-be5e9809bed7
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notebook",

@@ -40,10 +40,14 @@ Here is an example of the request.
 ```http
 PUT /groups/<objectId>/Threads/<Id>
 Content-type: application/json
-Content-length: 225
+Content-length: 489
 {
   "ToRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
   ],
   "Topic": "Topic-value",
@@ -54,8 +58,15 @@ Content-length: 225
   ],
   "CcRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
-  ]
+  ],
+  "Preview": "Preview-value",
+  "IsLocked": true,
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -68,10 +79,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
+Content-length: 489
 {
   "ToRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
   ],
   "Topic": "Topic-value",
@@ -82,13 +97,20 @@ Content-length: 225
   ],
   "CcRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
-  ]
+  ],
+  "Preview": "Preview-value",
+  "IsLocked": true,
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 3befd2b5-6a86-48ad-ab64-c6b18a64dfe6
-2015-10-14 23:39:29 UTC -->
+<!-- uuid: 9557e262-d34f-499f-bcc5-b458d0306867
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversationthread object.",

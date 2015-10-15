@@ -39,7 +39,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 240
+Content-length: 322
 {
   "values": [
     {
@@ -48,14 +48,16 @@ Content-length: 240
       "UserId": "UserId-value",
       "RoleName": "RoleName-value",
       "RoleId": "RoleId-value",
-      "NotificationId": "NotificationId-value"
+      "NotificationId": "NotificationId-value",
+      "NotificationName": "NotificationName-value",
+      "Event": "Event-value"
     }
   ]
 }
 ```
 
-<!-- uuid: ab64b682-f186-46d9-99b4-2b3f78845b11
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: db90091c-adbc-4d83-9190-57099c98d911
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List NotificationRule",

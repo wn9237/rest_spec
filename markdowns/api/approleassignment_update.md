@@ -41,14 +41,18 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/appRoleAssignments/<objectId>
 Content-type: application/json
-Content-length: 253
+Content-length: 398
 {
   "creationTimestamp": "datetime-value",
   "id": "id-value",
   "principalDisplayName": "principalDisplayName-value",
   "principalId": "principalId-value",
   "principalType": "principalType-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "resourceDisplayName": "resourceDisplayName-value",
+  "resourceId": "resourceId-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -61,19 +65,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
+Content-length: 398
 {
   "creationTimestamp": "datetime-value",
   "id": "id-value",
   "principalDisplayName": "principalDisplayName-value",
   "principalId": "principalId-value",
   "principalType": "principalType-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "resourceDisplayName": "resourceDisplayName-value",
+  "resourceId": "resourceId-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: d37db682-d3e7-4614-aa14-95c2d37d3f5b
-2015-10-14 23:39:27 UTC -->
+<!-- uuid: 850040d5-5bca-4926-ac74-75b7eb13c5ae
+2015-10-15 03:41:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of approleassignment object.",

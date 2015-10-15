@@ -39,10 +39,14 @@ Here is an example of how to call this API.
 ```http
 POST /drive/root/invite
 Content-type: application/json
-Content-length: 154
+Content-length: 313
 {
   "recipients": [
     {
+      "email": "email-value",
+      "alias": "alias-value",
+      "objectId": "objectId-value",
+      "permissionIdentityType": "permissionIdentityType-value"
     }
   ],
   "message": "message-value",
@@ -62,29 +66,54 @@ Content-length: 154
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
+Content-length: 940
 {
   "values": [
     {
       "grantedTo": {
+        "application": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "device": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "user": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        }
       },
       "id": "id-value",
       "invitation": {
+        "email": "email-value",
+        "redeemedBy": "redeemedBy-value",
+        "signInRequired": true
       },
       "inheritedFrom": {
+        "driveId": "driveId-value",
+        "id": "id-value",
+        "path": "path-value"
       },
       "link": {
+        "application": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "type": "type-value",
+        "webUrl": "webUrl-value"
       },
       "roles": [
         "roles-value"
-      ]
+      ],
+      "shareId": "shareId-value"
     }
   ]
 }
 ```
 
-<!-- uuid: 1b08f9c2-b856-4b11-a735-f69db4e0c79e
-2015-10-14 23:39:35 UTC -->
+<!-- uuid: c59331ba-48ab-4cee-9864-d0d08d22d746
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: invite",

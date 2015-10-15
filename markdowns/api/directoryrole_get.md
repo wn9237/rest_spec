@@ -29,19 +29,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 202
+Content-length: 275
 {
   "description": "description-value",
   "displayName": "displayName-value",
   "isSystem": true,
   "roleDisabled": true,
   "roleTemplateId": "roleTemplateId-value",
-  "objectType": "objectType-value"
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 83910224-ecf8-43ad-9365-ac3cba8401c0
-2015-10-14 23:39:31 UTC -->
+<!-- uuid: b3a03465-69d3-40ea-8060-359cc7c8344e
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryRole",

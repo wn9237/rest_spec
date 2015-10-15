@@ -36,7 +36,7 @@ Here is an example of the request.
 ```http
 PUT /deviceConfiguration/<objectId>
 Content-type: application/json
-Content-length: 300
+Content-length: 341
 {
   "publicIssuerCertificates": [
     "publicIssuerCertificates-value"
@@ -47,7 +47,8 @@ Content-length: 300
   "registrationQuota": 99,
   "maximumRegistrationInactivityPeriod": 99,
   "objectType": "objectType-value",
-  "objectId": "objectId-value"
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -60,7 +61,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 300
+Content-length: 341
 {
   "publicIssuerCertificates": [
     "publicIssuerCertificates-value"
@@ -71,12 +72,13 @@ Content-length: 300
   "registrationQuota": 99,
   "maximumRegistrationInactivityPeriod": 99,
   "objectType": "objectType-value",
-  "objectId": "objectId-value"
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 19ab246c-b40e-42ad-977a-b11858113d55
-2015-10-14 23:39:30 UTC -->
+<!-- uuid: dd78ef8e-33dc-4533-a432-2852db717223
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of deviceconfiguration object.",

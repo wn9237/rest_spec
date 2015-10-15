@@ -41,8 +41,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 95c5bbf9-eff5-4aae-8897-3872e03029cc
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 6eaf0c29-d008-4a41-998b-c9c534f4c28a
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Site",

@@ -45,14 +45,24 @@ Here is an example of the request.
 ```http
 PUT /Alerts/<AlertId>
 Content-type: application/json
-Content-length: 224
+Content-length: 529
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
   "AdditionalData": "AdditionalData-value",
   "AlertName": "AlertName-value",
   "AlertDescription": "AlertDescription-value",
-  "LastModifiedTime": "datetime-value"
+  "LastModifiedTime": "datetime-value",
+  "LastScannedTime": "datetime-value",
+  "SeverityLevel": 99,
+  "AlertType": 99,
+  "SecurityImpact": "SecurityImpact-value",
+  "MitigationSteps": "MitigationSteps-value",
+  "HowToPrevent": "HowToPrevent-value",
+  "WasDismissed": true,
+  "IsActive": true,
+  "IsResolvable": true,
+  "IsConfigurable": true
 }
 ```
 ##### Response
@@ -65,19 +75,29 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
+Content-length: 529
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
   "AdditionalData": "AdditionalData-value",
   "AlertName": "AlertName-value",
   "AlertDescription": "AlertDescription-value",
-  "LastModifiedTime": "datetime-value"
+  "LastModifiedTime": "datetime-value",
+  "LastScannedTime": "datetime-value",
+  "SeverityLevel": 99,
+  "AlertType": 99,
+  "SecurityImpact": "SecurityImpact-value",
+  "MitigationSteps": "MitigationSteps-value",
+  "HowToPrevent": "HowToPrevent-value",
+  "WasDismissed": true,
+  "IsActive": true,
+  "IsResolvable": true,
+  "IsConfigurable": true
 }
 ```
 
-<!-- uuid: 3edf4900-560f-4ba0-aa3c-d1df0a380455
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: 5416b0d5-33c1-454a-bb1b-f12279693d64
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of pimalert object.",

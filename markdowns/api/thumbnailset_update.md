@@ -36,16 +36,32 @@ Here is an example of the request.
 ```http
 PUT /drive/root/thumbnails/<id>
 Content-type: application/json
-Content-length: 96
+Content-length: 456
 {
   "id": "id-value",
   "large": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "medium": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "small": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "source": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   }
 }
 ```
@@ -59,22 +75,38 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 96
+Content-length: 456
 {
   "id": "id-value",
   "large": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "medium": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "small": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "source": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   }
 }
 ```
 
-<!-- uuid: 08cd1adf-0ad6-4385-bc22-07732f6b6873
-2015-10-14 23:39:42 UTC -->
+<!-- uuid: 6b994581-9088-41eb-acba-e0a54c05c958
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of thumbnailset object.",

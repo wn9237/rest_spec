@@ -40,7 +40,7 @@ Here is an example of the request.
 ```http
 PUT /plans/<id>/details
 Content-type: application/json
-Content-length: 305
+Content-length: 411
 {
   "sharedWith": {
   },
@@ -48,7 +48,10 @@ Content-length: 305
   "category1Description": "category1Description-value",
   "category2Description": "category2Description-value",
   "category3Description": "category3Description-value",
-  "category4Description": "category4Description-value"
+  "category4Description": "category4Description-value",
+  "category5Description": "category5Description-value",
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 ##### Response
@@ -61,7 +64,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
+Content-length: 411
 {
   "sharedWith": {
   },
@@ -69,12 +72,15 @@ Content-length: 305
   "category1Description": "category1Description-value",
   "category2Description": "category2Description-value",
   "category3Description": "category3Description-value",
-  "category4Description": "category4Description-value"
+  "category4Description": "category4Description-value",
+  "category5Description": "category5Description-value",
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: 47a2bc25-724a-4ac1-9f21-53c6fd912c7e
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 767363fc-17ea-4fa3-b0ab-4dd73ee46469
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plandetails object.",

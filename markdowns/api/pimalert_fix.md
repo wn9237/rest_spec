@@ -47,19 +47,29 @@ Content-length: 18
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
+Content-length: 529
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
   "AdditionalData": "AdditionalData-value",
   "AlertName": "AlertName-value",
   "AlertDescription": "AlertDescription-value",
-  "LastModifiedTime": "datetime-value"
+  "LastModifiedTime": "datetime-value",
+  "LastScannedTime": "datetime-value",
+  "SeverityLevel": 99,
+  "AlertType": 99,
+  "SecurityImpact": "SecurityImpact-value",
+  "MitigationSteps": "MitigationSteps-value",
+  "HowToPrevent": "HowToPrevent-value",
+  "WasDismissed": true,
+  "IsActive": true,
+  "IsResolvable": true,
+  "IsConfigurable": true
 }
 ```
 
-<!-- uuid: 78032484-077b-471b-9ddf-56767073ec4f
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: c189e3d0-cb97-4a39-94cf-4c5692bb51a2
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Fix",

@@ -40,14 +40,17 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/notes/sectionGroups/<id>
 Content-type: application/json
-Content-length: 230
+Content-length: 309
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
   "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 ##### Response
@@ -60,19 +63,22 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 230
+Content-length: 309
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
   "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 
-<!-- uuid: d1d96041-5f1b-4e54-84b8-cc6c9454f469
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: d2bb0c99-a521-45f6-8fe5-c753e50b3059
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of sectiongroup object.",

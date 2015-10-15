@@ -35,9 +35,10 @@ Here is an example of how to call this API.
 ```http
 POST /drive/root/createSession
 Content-type: application/json
-Content-length: 19
+Content-length: 44
 {
   "item": {
+    "name": "name-value"
   }
 }
 <!-- {
@@ -60,8 +61,8 @@ Content-length: 140
 }
 ```
 
-<!-- uuid: 3bbc24a7-349b-4e56-a101-77d687053d07
-2015-10-14 23:39:35 UTC -->
+<!-- uuid: f313d622-5a1c-45b1-a045-c7ced36f3ae5
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createSession",

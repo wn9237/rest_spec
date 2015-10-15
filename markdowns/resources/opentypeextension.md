@@ -46,8 +46,8 @@ Here is a JSON representation of the resource
 |[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
 |[Delete](../api/opentypeextension_delete.md) | Void	|Delete OpenTypeExtension object. |
 
-<!-- uuid: 7f580e6b-0f9b-42aa-a218-e9ffdf53a259
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: b852451d-940e-437d-9520-5743c1cfcb0d
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OpenTypeExtension resource",

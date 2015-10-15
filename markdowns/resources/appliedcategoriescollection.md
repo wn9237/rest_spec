@@ -5,8 +5,8 @@
 ### Properties
 None
 
-<!-- uuid: fc0f1804-e584-423d-9788-b919bafb8642
-2015-10-14 23:39:27 UTC -->
+<!-- uuid: 7d68790b-8527-4f99-9ef1-0773c81e9500
+2015-10-15 03:41:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppliedCategoriesCollection resource",

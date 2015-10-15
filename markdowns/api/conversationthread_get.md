@@ -37,10 +37,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
+Content-length: 489
 {
   "ToRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
   ],
   "Topic": "Topic-value",
@@ -51,13 +55,20 @@ Content-length: 225
   ],
   "CcRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
-  ]
+  ],
+  "Preview": "Preview-value",
+  "IsLocked": true,
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: c36010e8-9178-4019-b86c-3a7cabbf9fcf
-2015-10-14 23:39:29 UTC -->
+<!-- uuid: 682abfa2-1829-442c-9ec6-1715801e00cd
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ConversationThread",

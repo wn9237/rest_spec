@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/pimalertsettings_list.md) | [PimAlertSettings](pimalertsettings.md) [] |Get pimAlertSettings object collection. |
 
-<!-- uuid: f24041e2-5543-4ea8-9680-059b3240de10
-2015-10-14 23:39:27 UTC -->
+<!-- uuid: a39ce7f1-cda0-4013-975c-575aa62644ec
+2015-10-15 03:41:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AlertSettings resource",

@@ -44,20 +44,88 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 178
+Content-length: 1794
 {
   "Subject": "Subject-value",
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "Start": "datetime-value"
+  "Start": "datetime-value",
+  "StartTimeZone": "StartTimeZone-value",
+  "End": "datetime-value",
+  "EndTimeZone": "EndTimeZone-value",
+  "Reminder": 99,
+  "Location": {
+    "altitude": 99,
+    "latitude": 99,
+    "longitude": 99
+  },
+  "ShowAs": "ShowAs-value",
+  "ResponseStatus": {
+    "Response": "Response-value",
+    "Time": "datetime-value"
+  },
+  "IsAllDay": true,
+  "IsCancelled": true,
+  "IsOrganizer": true,
+  "ResponseRequested": true,
+  "Type": "Type-value",
+  "SeriesMasterId": "SeriesMasterId-value",
+  "Attendees": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      },
+      "Status": {
+        "Response": "Response-value",
+        "Time": "datetime-value"
+      },
+      "Type": "Type-value"
+    }
+  ],
+  "Recurrence": {
+    "Pattern": {
+      "Type": "Type-value",
+      "Interval": 99,
+      "Month": 99,
+      "DayOfMonth": 99,
+      "DaysOfWeek": "DaysOfWeek-value",
+      "FirstDayOfWeek": "FirstDayOfWeek-value",
+      "Index": "Index-value"
+    },
+    "Range": {
+      "Type": "Type-value",
+      "StartDate": "datetime-value",
+      "EndDate": "datetime-value",
+      "NumberOfOccurrences": 99
+    }
+  },
+  "Organizer": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "iCalUId": "iCalUId-value",
+  "WebLink": "WebLink-value",
+  "OriginalStart": "datetime-value",
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: efa887b3-7c87-4ecb-bebe-06fd4e038b9c
-2015-10-14 23:39:34 UTC -->
+<!-- uuid: 89f5f9af-8aff-4d05-9aa8-26925e6545c4
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

@@ -42,8 +42,8 @@ Content-length: 74
 }
 ```
 
-<!-- uuid: 258e48a6-f394-41ce-843e-3a1fc5ba145a
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: 1c0a2eec-3b2d-46bc-abd0-076d23e68b45
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlertSettings",

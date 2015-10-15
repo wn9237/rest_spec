@@ -40,8 +40,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 3de8ee62-9952-40a1-805a-e3dc07698213
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: df1d12b1-d6a9-4d02-9c51-1c7e3ffc01d2
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleAssignment",

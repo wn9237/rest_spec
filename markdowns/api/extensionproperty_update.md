@@ -37,7 +37,7 @@ Here is an example of the request.
 ```http
 PUT /applications/<objectId>/extensionProperties/<objectId>
 Content-type: application/json
-Content-length: 224
+Content-length: 297
 {
   "appDisplayName": "appDisplayName-value",
   "name": "name-value",
@@ -46,7 +46,9 @@ Content-length: 224
   "targetObjects": [
     "targetObjects-value"
   ],
-  "objectType": "objectType-value"
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -59,7 +61,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
+Content-length: 297
 {
   "appDisplayName": "appDisplayName-value",
   "name": "name-value",
@@ -68,12 +70,14 @@ Content-length: 224
   "targetObjects": [
     "targetObjects-value"
   ],
-  "objectType": "objectType-value"
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 8ecf2338-fb56-4526-be6f-437c8190e9a3
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: 766880bc-acf8-4f6d-890e-d328ed7b940a
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of extensionproperty object.",

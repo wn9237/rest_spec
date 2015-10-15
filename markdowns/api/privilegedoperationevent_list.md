@@ -39,7 +39,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 228
+Content-length: 538
 {
   "values": [
     {
@@ -48,14 +48,21 @@ Content-length: 228
       "UserName": "UserName-value",
       "UserMail": "UserMail-value",
       "RoleId": "RoleId-value",
-      "RoleName": "RoleName-value"
+      "RoleName": "RoleName-value",
+      "ExpirationTime": "datetime-value",
+      "CreationTime": "datetime-value",
+      "RequestorId": "RequestorId-value",
+      "RequestorName": "RequestorName-value",
+      "TenantId": "TenantId-value",
+      "RequestType": "RequestType-value",
+      "AdditionalInformation": "AdditionalInformation-value"
     }
   ]
 }
 ```
 
-<!-- uuid: 3130151e-79e0-49a5-a959-77732717534e
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: da372a1d-210e-485e-bab2-9ef90d9007ef
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedOperationEvent",

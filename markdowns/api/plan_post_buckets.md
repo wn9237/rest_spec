@@ -44,19 +44,20 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 149
+Content-length: 179
 {
   "name": "name-value",
   "planId": "planId-value",
   "orderHint": "orderHint-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: 69c9ad94-9b8a-45a5-aecf-087e4d0e35a8
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 4d0d761f-f5fd-4071-b2b1-c7279e74b50f
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Bucket",

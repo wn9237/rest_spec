@@ -29,7 +29,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 216
+Content-length: 1924
 {
   "accountEnabled": true,
   "appDisplayName": "appDisplayName-value",
@@ -38,13 +38,70 @@ Content-length: 216
   "appRoleAssignmentRequired": true,
   "appRoles": [
     {
+      "allowedMemberTypes": "allowedMemberTypes-value",
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "value": "value-value"
     }
-  ]
+  ],
+  "displayName": "displayName-value",
+  "errorUrl": "errorUrl-value",
+  "homepage": "homepage-value",
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "type": "type-value",
+      "usage": "usage-value",
+      "value": "value-value"
+    }
+  ],
+  "logoutUrl": "logoutUrl-value",
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "adminConsentDescription-value",
+      "adminConsentDisplayName": "adminConsentDisplayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "type": "type-value",
+      "userConsentDescription": "userConsentDescription-value",
+      "userConsentDisplayName": "userConsentDisplayName-value",
+      "value": "value-value"
+    }
+  ],
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "value": "value-value"
+    }
+  ],
+  "preferredTokenSigningKeyThumbprint": "preferredTokenSigningKeyThumbprint-value",
+  "publisherName": "publisherName-value",
+  "replyUrls": [
+    "replyUrls-value"
+  ],
+  "samlMetadataUrl": "samlMetadataUrl-value",
+  "servicePrincipalNames": [
+    "servicePrincipalNames-value"
+  ],
+  "tags": [
+    "tags-value"
+  ],
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: e76387ae-aca9-4889-9968-0cea8bc2e1a0
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 1d43ba2b-89e6-4e4e-ae6f-953ab3ba6810
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ServicePrincipal",

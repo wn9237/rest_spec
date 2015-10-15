@@ -46,8 +46,8 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: 406aa905-1659-4cd7-b192-01bb0307b801
-2015-10-14 23:39:40 UTC -->
+<!-- uuid: 6e9d03d9-f99f-461f-8685-55a9e8d6f7ce
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Resource",

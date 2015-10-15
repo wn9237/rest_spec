@@ -52,8 +52,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 2496f827-a55e-4c3c-a0fa-d393fc99e7ec
-2015-10-14 23:39:34 UTC -->
+<!-- uuid: dfd2063b-ac79-44be-bd7f-f287d621745a
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create GroupPhoto",

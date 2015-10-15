@@ -55,7 +55,7 @@ Here is an example of the request.
 ```http
 PUT /groups/<objectId>
 Content-type: application/json
-Content-length: 226
+Content-length: 1009
 {
   "description": "description-value",
   "dirSyncEnabled": true,
@@ -66,7 +66,34 @@ Content-length: 226
   "groupTypes": [
     "groupTypes-value"
   ],
-  "isPublic": true
+  "isPublic": true,
+  "lastDirSyncTime": "datetime-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mailEnabled": true,
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "provisioningErrors": [
+    {
+      "errorDetail": "errorDetail-value",
+      "resolved": true,
+      "service": "service-value",
+      "timestamp": "datetime-value"
+    }
+  ],
+  "proxyAddresses": [
+    "proxyAddresses-value"
+  ],
+  "securityEnabled": true,
+  "AccessType": "AccessType-value",
+  "EmailAddress": "EmailAddress-value",
+  "AllowExternalSenders": true,
+  "AutoSubscribeNewMembers": true,
+  "IsSubscribedByMail": true,
+  "IsFavorite": true,
+  "UnseenCount": 99,
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -79,7 +106,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 226
+Content-length: 1009
 {
   "description": "description-value",
   "dirSyncEnabled": true,
@@ -90,12 +117,39 @@ Content-length: 226
   "groupTypes": [
     "groupTypes-value"
   ],
-  "isPublic": true
+  "isPublic": true,
+  "lastDirSyncTime": "datetime-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mailEnabled": true,
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "provisioningErrors": [
+    {
+      "errorDetail": "errorDetail-value",
+      "resolved": true,
+      "service": "service-value",
+      "timestamp": "datetime-value"
+    }
+  ],
+  "proxyAddresses": [
+    "proxyAddresses-value"
+  ],
+  "securityEnabled": true,
+  "AccessType": "AccessType-value",
+  "EmailAddress": "EmailAddress-value",
+  "AllowExternalSenders": true,
+  "AutoSubscribeNewMembers": true,
+  "IsSubscribedByMail": true,
+  "IsFavorite": true,
+  "UnseenCount": 99,
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 27b1c769-57b2-4ac1-87b1-5655ff6b732d
-2015-10-14 23:39:34 UTC -->
+<!-- uuid: 6d958eb8-44e7-4c2d-955d-7a2bd11258bd
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of group object.",

@@ -35,10 +35,14 @@ Here is an example of how to call this API.
 ```http
 POST /users/<objectId>/notes/pages/<id>/PatchContent
 Content-type: application/json
-Content-length: 35
+Content-length: 168
 {
   "commands": [
     {
+      "action": "action-value",
+      "target": "target-value",
+      "content": "content-value",
+      "position": "position-value"
     }
   ]
 }
@@ -57,8 +61,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 24359bb0-49a3-44d5-8cc3-8140ccfa92a5
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: f52e3697-5cc8-40f1-b88e-b5f7bdabb5c1
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: PatchContent",

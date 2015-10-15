@@ -50,8 +50,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 69fe57b1-2e1e-495e-a959-4866a0495739
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 4f4f498d-46d1-4c2a-b028-4d3c17b5baaf
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: Deactivate",

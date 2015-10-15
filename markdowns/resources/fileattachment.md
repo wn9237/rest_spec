@@ -62,8 +62,8 @@ Here is a JSON representation of the resource
 |[Update](../api/fileattachment_update.md) | [FileAttachment](fileattachment.md)	|Update FileAttachment object. |
 |[Delete](../api/fileattachment_delete.md) | Void	|Delete FileAttachment object. |
 
-<!-- uuid: 8118e48d-1d06-4198-ac40-5bdb534bb9f5
-2015-10-14 23:39:34 UTC -->
+<!-- uuid: 67ad68fa-0c2f-4c7e-a4f9-6c0554ce68f2
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "FileAttachment resource",

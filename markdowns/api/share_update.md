@@ -32,11 +32,23 @@ Here is an example of the request.
 ```http
 PUT /shares/<id>
 Content-type: application/json
-Content-length: 64
+Content-length: 330
 {
   "id": "id-value",
   "name": "name-value",
   "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   }
 }
 ```
@@ -50,17 +62,29 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
+Content-length: 330
 {
   "id": "id-value",
   "name": "name-value",
   "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   }
 }
 ```
 
-<!-- uuid: a4eeb7bb-399e-40d9-a1e2-95c9852c645f
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 8920a101-8884-4b06-8700-b251f8aa1c1f
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of share object.",

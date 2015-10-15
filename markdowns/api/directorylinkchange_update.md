@@ -39,14 +39,18 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 278
+Content-length: 433
 {
   "associationType": "associationType-value",
   "sourceObjectId": "sourceObjectId-value",
   "sourceObjectType": "sourceObjectType-value",
   "sourceObjectUri": "sourceObjectUri-value",
   "targetObjectId": "targetObjectId-value",
-  "targetObjectType": "targetObjectType-value"
+  "targetObjectType": "targetObjectType-value",
+  "targetObjectUri": "targetObjectUri-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -59,19 +63,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 278
+Content-length: 433
 {
   "associationType": "associationType-value",
   "sourceObjectId": "sourceObjectId-value",
   "sourceObjectType": "sourceObjectType-value",
   "sourceObjectUri": "sourceObjectUri-value",
   "targetObjectId": "targetObjectId-value",
-  "targetObjectType": "targetObjectType-value"
+  "targetObjectType": "targetObjectType-value",
+  "targetObjectUri": "targetObjectUri-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 56480582-9714-40ca-8cf9-05609891bcc7
-2015-10-14 23:39:30 UTC -->
+<!-- uuid: 18b87864-5e5c-4c09-b2ef-ebeb9e41410f
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directorylinkchange object.",

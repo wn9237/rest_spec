@@ -55,8 +55,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directoryroletemplate_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryroletemplate_getmemberobjects.md)|String||
 
-<!-- uuid: eb75688a-d777-4b85-8dfa-fe85c50dff26
-2015-10-14 23:39:32 UTC -->
+<!-- uuid: ede16d3e-5896-4fa5-97d2-02167f5f63a8
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRoleTemplate resource",

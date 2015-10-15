@@ -57,8 +57,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: e75e95ab-59aa-43a0-92a4-d3abdda7addf
-2015-10-14 23:39:31 UTC -->
+<!-- uuid: 438761ca-9cc5-44df-a14e-003015afee62
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject: getMemberGroups",

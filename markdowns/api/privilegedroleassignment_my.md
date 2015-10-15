@@ -50,8 +50,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: b18e19f0-0c71-44b0-8548-62659eb959d7
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: d17d4d3d-4094-491c-96c4-66c411094e80
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: My",

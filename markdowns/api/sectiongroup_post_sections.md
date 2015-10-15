@@ -44,19 +44,22 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 197
+Content-length: 276
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
   "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 
-<!-- uuid: 41473116-70be-4cdb-8d8d-0d6e1684d983
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 216a7d96-de76-441e-aa5f-9f172e497a20
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Section",

@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/drive_list.md) | [drive](drive.md) [] |Get drive object collection. |
 
-<!-- uuid: 3e6954c2-81ce-4f62-a02e-baba66f7703e
-2015-10-14 23:39:32 UTC -->
+<!-- uuid: bee28184-2725-414d-8962-ec9c3eaa2a9b
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive resource",
@@ -70,8 +70,8 @@ None
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: 9e9fb64d-f21c-4892-9e19-fac4d1dc2e4a
-2015-10-14 23:39:32 UTC -->
+<!-- uuid: b485cfb6-f278-4003-83fd-5e42274ddacf
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive resource",

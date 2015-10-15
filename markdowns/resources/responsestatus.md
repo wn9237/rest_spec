@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |Response|String| Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.|
 |Time|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
-<!-- uuid: b6df66b8-995b-4fa8-9c62-fb1edbd41dc8
-2015-10-14 23:39:40 UTC -->
+<!-- uuid: b4eb858f-7c7b-416e-9ad3-09e7f973d50d
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ResponseStatus resource",

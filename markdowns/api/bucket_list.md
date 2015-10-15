@@ -39,7 +39,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 203
+Content-length: 237
 {
   "values": [
     {
@@ -48,14 +48,15 @@ Content-length: 203
       "orderHint": "orderHint-value",
       "totalTasks": 99,
       "activeTasks": 99,
-      "id": "id-value"
+      "id": "id-value",
+      "version": "version-value"
     }
   ]
 }
 ```
 
-<!-- uuid: bd35a9bc-3c06-4c3c-a2ea-5b8344e76451
-2015-10-14 23:39:28 UTC -->
+<!-- uuid: 0494ff0a-8536-4318-a57e-503546d0f032
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Bucket",

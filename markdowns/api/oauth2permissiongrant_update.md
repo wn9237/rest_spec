@@ -39,14 +39,16 @@ Here is an example of the request.
 ```http
 PUT /oauth2PermissionGrants/<objectId>
 Content-type: application/json
-Content-length: 212
+Content-length: 271
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
   "expiryTime": "datetime-value",
   "objectId": "objectId-value",
   "principalId": "principalId-value",
-  "resourceId": "resourceId-value"
+  "resourceId": "resourceId-value",
+  "scope": "scope-value",
+  "startTime": "datetime-value"
 }
 ```
 ##### Response
@@ -59,19 +61,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 212
+Content-length: 271
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
   "expiryTime": "datetime-value",
   "objectId": "objectId-value",
   "principalId": "principalId-value",
-  "resourceId": "resourceId-value"
+  "resourceId": "resourceId-value",
+  "scope": "scope-value",
+  "startTime": "datetime-value"
 }
 ```
 
-<!-- uuid: 9950add1-6872-403a-a53a-92bf6432a677
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: 96af6667-c3dc-4393-a6c8-db133195f6b4
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of oauth2permissiongrant object.",

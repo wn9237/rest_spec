@@ -42,14 +42,21 @@ Here is an example of the request.
 ```http
 PUT /PrivilegedOperationEvents/<Id>
 Content-type: application/json
-Content-length: 174
+Content-length: 456
 {
   "Id": "Id-value",
   "UserId": "UserId-value",
   "UserName": "UserName-value",
   "UserMail": "UserMail-value",
   "RoleId": "RoleId-value",
-  "RoleName": "RoleName-value"
+  "RoleName": "RoleName-value",
+  "ExpirationTime": "datetime-value",
+  "CreationTime": "datetime-value",
+  "RequestorId": "RequestorId-value",
+  "RequestorName": "RequestorName-value",
+  "TenantId": "TenantId-value",
+  "RequestType": "RequestType-value",
+  "AdditionalInformation": "AdditionalInformation-value"
 }
 ```
 ##### Response
@@ -62,19 +69,26 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 174
+Content-length: 456
 {
   "Id": "Id-value",
   "UserId": "UserId-value",
   "UserName": "UserName-value",
   "UserMail": "UserMail-value",
   "RoleId": "RoleId-value",
-  "RoleName": "RoleName-value"
+  "RoleName": "RoleName-value",
+  "ExpirationTime": "datetime-value",
+  "CreationTime": "datetime-value",
+  "RequestorId": "RequestorId-value",
+  "RequestorName": "RequestorName-value",
+  "TenantId": "TenantId-value",
+  "RequestType": "RequestType-value",
+  "AdditionalInformation": "AdditionalInformation-value"
 }
 ```
 
-<!-- uuid: f8c6ba0a-b316-415c-aaca-87bd6375aed1
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: a22034b8-85ca-4d85-b063-d3ceb0631ca1
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedoperationevent object.",

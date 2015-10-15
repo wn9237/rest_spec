@@ -60,8 +60,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 02c5681e-41ee-4270-9bfe-9c31f8c18b1b
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: 8889f94d-ee76-469b-901f-7e95c64e4201
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notification object.",

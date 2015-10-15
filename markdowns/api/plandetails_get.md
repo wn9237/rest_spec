@@ -37,7 +37,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
+Content-length: 411
 {
   "sharedWith": {
   },
@@ -45,12 +45,15 @@ Content-length: 305
   "category1Description": "category1Description-value",
   "category2Description": "category2Description-value",
   "category3Description": "category3Description-value",
-  "category4Description": "category4Description-value"
+  "category4Description": "category4Description-value",
+  "category5Description": "category5Description-value",
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: f567c830-fefc-44c0-b9fa-5894265601ee
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 5803cc8f-22c7-4a5d-a5cf-81188d61067c
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanDetails",

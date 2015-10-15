@@ -37,22 +37,48 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 177
+Content-length: 790
 {
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "DateTimeReceived": "datetime-value",
   "HasAttachments": true,
   "From": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
   },
   "Sender": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
   },
-  "ConversationThreadId": "ConversationThreadId-value"
+  "ConversationThreadId": "ConversationThreadId-value",
+  "ConversationId": "ConversationId-value",
+  "NewParticipants": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: ee783667-c118-4954-8828-689ba6f358ad
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 22dbeccc-a24e-4123-9d95-14202cefe3aa
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",

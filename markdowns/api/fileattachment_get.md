@@ -35,19 +35,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 210
+Content-length: 308
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
   "IsContactPhoto": true,
   "ContentBytes": "ContentBytes-value",
   "Name": "Name-value",
-  "ContentType": "ContentType-value"
+  "ContentType": "ContentType-value",
+  "Size": 99,
+  "IsInline": true,
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 6e08d3c9-d567-4d9e-8390-6d10dc9fe75c
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: 35e6ddc6-8fda-4e74-987e-6fa7ff1e2eef
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get FileAttachment",

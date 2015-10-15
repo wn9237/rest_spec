@@ -39,21 +39,33 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
+Content-length: 424
 {
   "values": [
     {
       "id": "id-value",
       "name": "name-value",
       "owner": {
+        "application": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "device": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "user": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        }
       }
     }
   ]
 }
 ```
 
-<!-- uuid: b28ed030-eb7e-408b-ba9c-1a714b1e1ecf
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: f6862d84-3e8a-4b4f-8624-f68f6b0a5d7f
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List share",

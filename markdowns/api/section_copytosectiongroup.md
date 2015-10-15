@@ -55,19 +55,22 @@ Content-length: 130
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 197
+Content-length: 276
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
   "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 
-<!-- uuid: 3e08aad1-d92d-4b02-b76e-6bc19e2e40b8
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 95a9be22-8219-4128-8bef-3a7d80c70c8c
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section: CopyToSectionGroup",

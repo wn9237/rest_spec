@@ -37,14 +37,16 @@ Here is an example of the request.
 ```http
 PUT /directoryRoles/<objectId>
 Content-type: application/json
-Content-length: 202
+Content-length: 275
 {
   "description": "description-value",
   "displayName": "displayName-value",
   "isSystem": true,
   "roleDisabled": true,
   "roleTemplateId": "roleTemplateId-value",
-  "objectType": "objectType-value"
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -57,19 +59,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 202
+Content-length: 275
 {
   "description": "description-value",
   "displayName": "displayName-value",
   "isSystem": true,
   "roleDisabled": true,
   "roleTemplateId": "roleTemplateId-value",
-  "objectType": "objectType-value"
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: c04d9b61-9518-4b9f-be2e-ed97d2dfd86b
-2015-10-14 23:39:31 UTC -->
+<!-- uuid: 7876d970-2dde-4960-98c7-1a144b0b7ce4
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryrole object.",

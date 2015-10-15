@@ -32,26 +32,76 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 282
+Content-length: 1913
 {
   "values": [
     {
       "assignedPlans": [
         {
+          "assignedTimestamp": "datetime-value",
+          "capabilityStatus": "capabilityStatus-value",
+          "service": "service-value",
+          "servicePlanId": "servicePlanId-value"
         }
       ],
       "city": "city-value",
       "companyLastDirSyncTime": "datetime-value",
       "country": "country-value",
       "countryLetterCode": "countryLetterCode-value",
-      "dirSyncEnabled": true
+      "dirSyncEnabled": true,
+      "displayName": "displayName-value",
+      "marketingNotificationEmails": [
+        "marketingNotificationEmails-value"
+      ],
+      "postalCode": "postalCode-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "provisionedPlans": [
+        {
+          "capabilityStatus": "capabilityStatus-value",
+          "provisioningStatus": "provisioningStatus-value",
+          "service": "service-value"
+        }
+      ],
+      "provisioningErrors": [
+        {
+          "errorDetail": "errorDetail-value",
+          "resolved": true,
+          "service": "service-value",
+          "timestamp": "datetime-value"
+        }
+      ],
+      "securityComplianceNotificationMails": [
+        "securityComplianceNotificationMails-value"
+      ],
+      "securityComplianceNotificationPhones": [
+        "securityComplianceNotificationPhones-value"
+      ],
+      "state": "state-value",
+      "street": "street-value",
+      "technicalNotificationMails": [
+        "technicalNotificationMails-value"
+      ],
+      "telephoneNumber": "telephoneNumber-value",
+      "verifiedDomains": [
+        {
+          "capabilities": "capabilities-value",
+          "default": true,
+          "id": "id-value",
+          "initial": true,
+          "name": "name-value",
+          "type": "type-value"
+        }
+      ],
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
   ]
 }
 ```
 
-<!-- uuid: 09281b78-df25-4fe5-b8e9-437b3f41c1b7
-2015-10-14 23:39:42 UTC -->
+<!-- uuid: bcf57941-9cdf-4c2d-93a8-c6b2fbcc67f4
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List TenantDetail",

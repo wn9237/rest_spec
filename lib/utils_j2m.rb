@@ -182,6 +182,11 @@ module SpecMaker
 	end
 
 	def self.assign_value (dataType=nil, name='')
+
+		if dataType.downcase.start_with?('extension')
+			return {}
+		end
+
 		if NUMERICTYPES.include? dataType
 			return 99
 		elsif DATETYPES.include? dataType
@@ -193,7 +198,7 @@ module SpecMaker
 		elsif SIMPLETYPES.include? dataType
 			return "#{name}-value"				
 		else
-			return {}
+			return dump_complex_type (dataType)
 		end
 	end
 
@@ -203,14 +208,42 @@ module SpecMaker
 		if File.file?(fullpath)
 			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
 			object[:properties].each do |item|
-				if object[:isComplexType] 
-					model[item[:name]] = dump_complex_type(item[:dataType])
-				else					
-					model[item[:name]] = assign_value(item[:dataType], item[:name])
+				if item[:name].downcase.start_with?('extension')
+					next
+					#model[item[:name]] = {}
+				else
+					model[item[:name]] = assign_value2(item[:dataType], item[:name], item[:isRelationship])
 				end
+				# end
 			end
 		end
 		return model
+	end
+
+
+	def self.assign_value2 (dataType=nil, name='', isRel=false)
+		
+		if dataType.downcase.start_with?('extension')
+			return {}
+		end
+
+		if dataType.downcase.start_with?('post')
+			return {}
+		end
+
+		if NUMERICTYPES.include? dataType
+			return 99
+		elsif DATETYPES.include? dataType
+			return "datetime-value"
+		elsif %w[Url url].include? dataType
+			return"url-value"	
+		elsif %w[Boolean boolean Bool bool ].include? dataType
+			return true
+		elsif SIMPLETYPES.include? dataType
+			return "#{name}-value"				
+		else
+			return dump_complex_type (dataType)			
+		end
 	end
 
 	def self.get_json_model_method (objectName=nil, collFlag=false)
@@ -229,8 +262,12 @@ module SpecMaker
 		if File.file?(fullpath)
 			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
 			object[:properties].each_with_index do |item, i|
-				next if item[:isRelationship] || i > 5
-				model[item[:name]] = assign_value(item[:dataType], item[:name])
+				next if item[:isRelationship]  
+				if item[:name].downcase.start_with?('extension')	
+					model[item[:name]] = {}
+				else
+					model[item[:name]] = assign_value(item[:dataType], item[:name])
+				end
 				if item[:isCollection] 
 					model[item[:name]] = [model[item[:name]]]
 				end

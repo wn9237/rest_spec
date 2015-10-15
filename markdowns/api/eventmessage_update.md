@@ -56,15 +56,81 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 193
+Content-length: 1598
 {
   "Subject": "Subject-value",
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value"
+  "ParentFolderId": "ParentFolderId-value",
+  "From": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "Sender": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "ToRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "CcRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "BccRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ReplyTo": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ConversationId": "ConversationId-value",
+  "UniqueBody": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
+  },
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
+  "IsDeliveryReceiptRequested": true,
+  "IsReadReceiptRequested": true,
+  "IsDraft": true,
+  "IsRead": true,
+  "WebLink": "WebLink-value",
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value",
+  "MeetingMessageType": "MeetingMessageType-value"
 }
 ```
 ##### Response
@@ -77,20 +143,86 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 193
+Content-length: 1598
 {
   "Subject": "Subject-value",
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value"
+  "ParentFolderId": "ParentFolderId-value",
+  "From": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "Sender": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "ToRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "CcRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "BccRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ReplyTo": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ConversationId": "ConversationId-value",
+  "UniqueBody": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
+  },
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
+  "IsDeliveryReceiptRequested": true,
+  "IsReadReceiptRequested": true,
+  "IsDraft": true,
+  "IsRead": true,
+  "WebLink": "WebLink-value",
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value",
+  "MeetingMessageType": "MeetingMessageType-value"
 }
 ```
 
-<!-- uuid: 5eb26386-1d29-4785-8a9a-827ab21a579c
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: 2a2f2210-ec46-4e74-bcf9-3b73d4a67b55
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of eventmessage object.",

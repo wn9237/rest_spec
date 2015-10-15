@@ -70,8 +70,8 @@ None
 |[Fix](../api/pimalert_fix.md)|[PimAlert](pimalert.md)||
 |[Reactivate](../api/pimalert_reactivate.md)|[PimAlert](pimalert.md)||
 
-<!-- uuid: f198fca6-0819-4b29-b10d-6b23f9ce4a26
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: b9b0cfbe-f1af-4f39-a37f-44bf5f3196f2
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert resource",

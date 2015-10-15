@@ -44,19 +44,20 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 149
+Content-length: 179
 {
   "createdBy": "createdBy-value",
   "owner": "owner-value",
   "title": "title-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: 1eb63c2b-c826-4a9f-b624-24f6831fd3a5
-2015-10-14 23:39:34 UTC -->
+<!-- uuid: 25d943f1-cd92-4789-92cb-3e6c4f45beb2
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Plan",

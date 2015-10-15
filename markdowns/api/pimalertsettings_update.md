@@ -54,8 +54,8 @@ Content-length: 74
 }
 ```
 
-<!-- uuid: 1fd919ea-2648-47f0-ae5a-254508643298
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: 32088bb2-9431-4473-b930-e9f3279167dc
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of pimalertsettings object.",

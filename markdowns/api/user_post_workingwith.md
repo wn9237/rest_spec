@@ -44,25 +44,109 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 197
+Content-length: 2650
 {
   "accountEnabled": true,
   "assignedLicenses": [
     {
+      "disabledPlans": "disabledPlans-value",
+      "skuId": "skuId-value"
     }
   ],
   "assignedPlans": [
     {
+      "assignedTimestamp": "datetime-value",
+      "capabilityStatus": "capabilityStatus-value",
+      "service": "service-value",
+      "servicePlanId": "servicePlanId-value"
     }
   ],
   "city": "city-value",
   "country": "country-value",
-  "department": "department-value"
+  "department": "department-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+  "givenName": "givenName-value",
+  "immutableId": "immutableId-value",
+  "jobTitle": "jobTitle-value",
+  "lastDirSyncTime": "datetime-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mobile": "mobile-value",
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "otherMails": [
+    "otherMails-value"
+  ],
+  "passwordPolicies": "passwordPolicies-value",
+  "passwordProfile": {
+    "password": "password-value",
+    "forceChangePasswordNextLogin": true
+  },
+  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
+  "provisionedPlans": [
+    {
+      "capabilityStatus": "capabilityStatus-value",
+      "provisioningStatus": "provisioningStatus-value",
+      "service": "service-value"
+    }
+  ],
+  "provisioningErrors": [
+    {
+      "errorDetail": "errorDetail-value",
+      "resolved": true,
+      "service": "service-value",
+      "timestamp": "datetime-value"
+    }
+  ],
+  "proxyAddresses": [
+    "proxyAddresses-value"
+  ],
+  "sipProxyAddress": "sipProxyAddress-value",
+  "state": "state-value",
+  "streetAddress": "streetAddress-value",
+  "surname": "surname-value",
+  "telephoneNumber": "telephoneNumber-value",
+  "thumbnailPhoto": "thumbnailPhoto-value",
+  "usageLocation": "usageLocation-value",
+  "userPrincipalName": "userPrincipalName-value",
+  "userType": "userType-value",
+  "MailboxGuid": "MailboxGuid-value",
+  "AboutMe": "AboutMe-value",
+  "Alias": "Alias-value",
+  "Birthday": "datetime-value",
+  "HireDate": "datetime-value",
+  "Interests": [
+    "Interests-value"
+  ],
+  "MySite": "MySite-value",
+  "PastProjects": [
+    "PastProjects-value"
+  ],
+  "PreferredName": "PreferredName-value",
+  "PrincipalName": "PrincipalName-value",
+  "Responsibilities": [
+    "Responsibilities-value"
+  ],
+  "Schools": [
+    "Schools-value"
+  ],
+  "Skills": [
+    "Skills-value"
+  ],
+  "Tags": [
+    "Tags-value"
+  ],
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 793059a9-b0b5-4742-a8fc-c074b3b65ce0
-2015-10-14 23:39:43 UTC -->
+<!-- uuid: 831be918-5d71-4a88-b91a-a9e3585e23a1
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create User",

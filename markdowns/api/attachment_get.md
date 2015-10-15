@@ -48,8 +48,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 2204e206-b823-4e31-ae4d-83309e04e72c
-2015-10-14 23:39:27 UTC -->
+<!-- uuid: 8d9162fb-a84e-44cf-a9bf-1f0822c3bad1
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Attachment",

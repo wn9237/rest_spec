@@ -38,14 +38,16 @@ Here is an example of the request.
 ```http
 PUT /PrivilegedRoles/<Id>/Settings
 Content-type: application/json
-Content-length: 236
+Content-length: 289
 {
   "MinElevationDuration": "datetime-value",
   "MaxElavationDuration": "datetime-value",
   "ElevationDuration": "datetime-value",
   "RoleId": "RoleId-value",
   "NotificationToUserOnElevation": true,
-  "TicketingInfoOnElevation": true
+  "TicketingInfoOnElevation": true,
+  "MfaOnElevation": true,
+  "LastGlobalAdmin": true
 }
 ```
 ##### Response
@@ -58,19 +60,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 236
+Content-length: 289
 {
   "MinElevationDuration": "datetime-value",
   "MaxElavationDuration": "datetime-value",
   "ElevationDuration": "datetime-value",
   "RoleId": "RoleId-value",
   "NotificationToUserOnElevation": true,
-  "TicketingInfoOnElevation": true
+  "TicketingInfoOnElevation": true,
+  "MfaOnElevation": true,
+  "LastGlobalAdmin": true
 }
 ```
 
-<!-- uuid: 105ec52e-cbac-4c3b-97c1-75ccaf336907
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: b0d7a183-57fb-46ba-9f3c-17429590e5ce
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrolesettings object.",

@@ -35,13 +35,30 @@ Here is an example of the request.
 ```http
 PUT /drive
 Content-type: application/json
-Content-length: 92
+Content-length: 458
 {
   "id": "id-value",
   "driveType": "driveType-value",
   "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   },
   "quota": {
+    "deleted": 99,
+    "remaining": 99,
+    "state": "state-value",
+    "total": 99,
+    "used": 99
   }
 }
 ```
@@ -55,19 +72,36 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 92
+Content-length: 458
 {
   "id": "id-value",
   "driveType": "driveType-value",
   "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   },
   "quota": {
+    "deleted": 99,
+    "remaining": 99,
+    "state": "state-value",
+    "total": 99,
+    "used": 99
   }
 }
 ```
 
-<!-- uuid: 60188273-5311-488b-b53e-bfb035e3f709
-2015-10-14 23:39:32 UTC -->
+<!-- uuid: b6b58280-9e3f-4e6e-bf37-8359296fc7d6
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of drive object.",

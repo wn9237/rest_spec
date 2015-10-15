@@ -35,19 +35,26 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 174
+Content-length: 456
 {
   "Id": "Id-value",
   "UserId": "UserId-value",
   "UserName": "UserName-value",
   "UserMail": "UserMail-value",
   "RoleId": "RoleId-value",
-  "RoleName": "RoleName-value"
+  "RoleName": "RoleName-value",
+  "ExpirationTime": "datetime-value",
+  "CreationTime": "datetime-value",
+  "RequestorId": "RequestorId-value",
+  "RequestorName": "RequestorName-value",
+  "TenantId": "TenantId-value",
+  "RequestType": "RequestType-value",
+  "AdditionalInformation": "AdditionalInformation-value"
 }
 ```
 
-<!-- uuid: a147c3d3-001f-4145-8b15-3d2fff959e1f
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 2dede407-27a4-43f4-a878-3e68bdfb50f2
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedOperationEvent",

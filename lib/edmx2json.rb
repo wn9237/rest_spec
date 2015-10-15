@@ -70,8 +70,6 @@ module SpecMaker
 		f.write(JSON.pretty_generate @annotations)
 	end
 
-	gets
-
 	# Process all Enums. Load in memory.
 	schema[:EnumType].each do |item|
 		puts "-> Processing Enum #{item[:Name]}"

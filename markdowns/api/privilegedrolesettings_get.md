@@ -36,19 +36,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 236
+Content-length: 289
 {
   "MinElevationDuration": "datetime-value",
   "MaxElavationDuration": "datetime-value",
   "ElevationDuration": "datetime-value",
   "RoleId": "RoleId-value",
   "NotificationToUserOnElevation": true,
-  "TicketingInfoOnElevation": true
+  "TicketingInfoOnElevation": true,
+  "MfaOnElevation": true,
+  "LastGlobalAdmin": true
 }
 ```
 
-<!-- uuid: dca30141-6bc1-44bb-8cfc-2605168e77d9
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 5d361115-5ef8-43df-8d83-49507d514402
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSettings",

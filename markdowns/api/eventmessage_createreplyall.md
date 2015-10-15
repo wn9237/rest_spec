@@ -39,20 +39,85 @@ Content-length: 0
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 193
+Content-length: 1546
 {
   "Subject": "Subject-value",
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value"
+  "ParentFolderId": "ParentFolderId-value",
+  "From": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "Sender": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "ToRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "CcRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "BccRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ReplyTo": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ConversationId": "ConversationId-value",
+  "UniqueBody": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
+  },
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
+  "IsDeliveryReceiptRequested": true,
+  "IsReadReceiptRequested": true,
+  "IsDraft": true,
+  "IsRead": true,
+  "WebLink": "WebLink-value",
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 2581cee3-5467-4eec-a94b-d37c0c24a55f
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: 4c599646-cea0-4499-8fde-42306acf141d
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: CreateReplyAll",

@@ -37,25 +37,50 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
+Content-length: 762
 {
   "grantedTo": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   },
   "id": "id-value",
   "invitation": {
+    "email": "email-value",
+    "redeemedBy": "redeemedBy-value",
+    "signInRequired": true
   },
   "inheritedFrom": {
+    "driveId": "driveId-value",
+    "id": "id-value",
+    "path": "path-value"
   },
   "link": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "type": "type-value",
+    "webUrl": "webUrl-value"
   },
   "roles": [
     "roles-value"
-  ]
+  ],
+  "shareId": "shareId-value"
 }
 ```
 
-<!-- uuid: f36f9715-8861-4b24-bfdc-dad1300bb19e
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: c125e494-f1fb-4dc6-9991-3721ca8836fa
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get permission",

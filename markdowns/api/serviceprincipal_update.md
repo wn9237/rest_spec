@@ -51,7 +51,7 @@ Here is an example of the request.
 ```http
 PUT /servicePrincipals/<objectId>
 Content-type: application/json
-Content-length: 216
+Content-length: 1924
 {
   "accountEnabled": true,
   "appDisplayName": "appDisplayName-value",
@@ -60,8 +60,65 @@ Content-length: 216
   "appRoleAssignmentRequired": true,
   "appRoles": [
     {
+      "allowedMemberTypes": "allowedMemberTypes-value",
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "value": "value-value"
     }
-  ]
+  ],
+  "displayName": "displayName-value",
+  "errorUrl": "errorUrl-value",
+  "homepage": "homepage-value",
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "type": "type-value",
+      "usage": "usage-value",
+      "value": "value-value"
+    }
+  ],
+  "logoutUrl": "logoutUrl-value",
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "adminConsentDescription-value",
+      "adminConsentDisplayName": "adminConsentDisplayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "type": "type-value",
+      "userConsentDescription": "userConsentDescription-value",
+      "userConsentDisplayName": "userConsentDisplayName-value",
+      "value": "value-value"
+    }
+  ],
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "value": "value-value"
+    }
+  ],
+  "preferredTokenSigningKeyThumbprint": "preferredTokenSigningKeyThumbprint-value",
+  "publisherName": "publisherName-value",
+  "replyUrls": [
+    "replyUrls-value"
+  ],
+  "samlMetadataUrl": "samlMetadataUrl-value",
+  "servicePrincipalNames": [
+    "servicePrincipalNames-value"
+  ],
+  "tags": [
+    "tags-value"
+  ],
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -74,7 +131,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 216
+Content-length: 1924
 {
   "accountEnabled": true,
   "appDisplayName": "appDisplayName-value",
@@ -83,13 +140,70 @@ Content-length: 216
   "appRoleAssignmentRequired": true,
   "appRoles": [
     {
+      "allowedMemberTypes": "allowedMemberTypes-value",
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "value": "value-value"
     }
-  ]
+  ],
+  "displayName": "displayName-value",
+  "errorUrl": "errorUrl-value",
+  "homepage": "homepage-value",
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "type": "type-value",
+      "usage": "usage-value",
+      "value": "value-value"
+    }
+  ],
+  "logoutUrl": "logoutUrl-value",
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "adminConsentDescription-value",
+      "adminConsentDisplayName": "adminConsentDisplayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "type": "type-value",
+      "userConsentDescription": "userConsentDescription-value",
+      "userConsentDisplayName": "userConsentDisplayName-value",
+      "value": "value-value"
+    }
+  ],
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "value": "value-value"
+    }
+  ],
+  "preferredTokenSigningKeyThumbprint": "preferredTokenSigningKeyThumbprint-value",
+  "publisherName": "publisherName-value",
+  "replyUrls": [
+    "replyUrls-value"
+  ],
+  "samlMetadataUrl": "samlMetadataUrl-value",
+  "servicePrincipalNames": [
+    "servicePrincipalNames-value"
+  ],
+  "tags": [
+    "tags-value"
+  ],
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 2a9c7d62-44d5-47e1-952f-3cd5b1c21c7e
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 69794804-3bcc-460a-b24b-84aef81bc19d
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of serviceprincipal object.",

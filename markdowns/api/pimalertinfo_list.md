@@ -39,7 +39,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
+Content-length: 444
 {
   "values": [
     {
@@ -48,14 +48,19 @@ Content-length: 262
       "AlertDescription": "AlertDescription-value",
       "LowSeverityThreshold": 99,
       "MediumSeverityThreshold": 99,
-      "HighSeverityThreshold": 99
+      "HighSeverityThreshold": 99,
+      "Type": 99,
+      "Severity": 99,
+      "SecurityImpact": "SecurityImpact-value",
+      "MitigationSteps": "MitigationSteps-value",
+      "HowToPrevent": "HowToPrevent-value"
     }
   ]
 }
 ```
 
-<!-- uuid: ee337dbd-c6d1-4aa5-a2c9-4677a87f7e57
-2015-10-14 23:39:27 UTC -->
+<!-- uuid: 6f6e9b6c-b2c7-4e50-8c31-bb291ac50f63
+2015-10-15 03:41:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PimAlertInfo",

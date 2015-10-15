@@ -29,22 +29,89 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
+Content-length: 2108
 {
   "appId": "appId-value",
   "appRoles": [
     {
+      "allowedMemberTypes": "allowedMemberTypes-value",
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "value": "value-value"
     }
   ],
   "availableToOtherTenants": true,
   "displayName": "displayName-value",
   "errorUrl": "errorUrl-value",
-  "groupMembershipClaims": "groupMembershipClaims-value"
+  "groupMembershipClaims": "groupMembershipClaims-value",
+  "homepage": "homepage-value",
+  "identifierUris": [
+    "identifierUris-value"
+  ],
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "type": "type-value",
+      "usage": "usage-value",
+      "value": "value-value"
+    }
+  ],
+  "knownClientApplications": [
+    "knownClientApplications-value"
+  ],
+  "mainLogo": "mainLogo-value",
+  "logoutUrl": "logoutUrl-value",
+  "oauth2AllowImplicitFlow": true,
+  "oauth2AllowUrlPathMatching": true,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "adminConsentDescription-value",
+      "adminConsentDisplayName": "adminConsentDisplayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "type": "type-value",
+      "userConsentDescription": "userConsentDescription-value",
+      "userConsentDisplayName": "userConsentDisplayName-value",
+      "value": "value-value"
+    }
+  ],
+  "oauth2RequirePostResponse": true,
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "value": "value-value"
+    }
+  ],
+  "publicClient": true,
+  "replyUrls": [
+    "replyUrls-value"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "resourceAppId-value",
+      "resourceAccess": {
+        "id": "id-value",
+        "type": "type-value"
+      }
+    }
+  ],
+  "samlMetadataUrl": "samlMetadataUrl-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 2454861e-6a6d-46eb-814f-e56f5624425b
-2015-10-14 23:39:27 UTC -->
+<!-- uuid: ca78fc40-acbf-447d-9c45-3d86cd8dfe3a
+2015-10-15 03:41:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Application",

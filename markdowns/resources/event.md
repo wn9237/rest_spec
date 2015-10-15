@@ -141,8 +141,8 @@ Here is a JSON representation of the resource
 |[Decline](../api/event_decline.md)|[None](none.md)||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|[None](none.md)||
 
-<!-- uuid: 465233b9-0c43-4fdb-846b-50b107939a76
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: b800c3df-6715-4d9f-b1f9-abb7fe5b53d0
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event resource",

@@ -25,8 +25,8 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |state|String||
 
-<!-- uuid: 962160ae-b59e-4f9a-a320-2efc27c67592
-2015-10-14 23:39:29 UTC -->
+<!-- uuid: 99846e72-a3d1-4f03-b2dd-e7387b74f034
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "deleted resource",

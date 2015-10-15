@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/pimalertinfo_list.md) | [PimAlertInfo](pimalertinfo.md) [] |Get pimAlertInfo object collection. |
 
-<!-- uuid: 68de8eb1-74de-4287-8173-a4a915e0659e
-2015-10-14 23:39:27 UTC -->
+<!-- uuid: 39e6ea49-f643-4219-83ef-fb5b4241e60d
+2015-10-15 03:41:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AlertInfo resource",

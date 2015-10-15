@@ -44,7 +44,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 226
+Content-length: 1009
 {
   "description": "description-value",
   "dirSyncEnabled": true,
@@ -55,12 +55,39 @@ Content-length: 226
   "groupTypes": [
     "groupTypes-value"
   ],
-  "isPublic": true
+  "isPublic": true,
+  "lastDirSyncTime": "datetime-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mailEnabled": true,
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "provisioningErrors": [
+    {
+      "errorDetail": "errorDetail-value",
+      "resolved": true,
+      "service": "service-value",
+      "timestamp": "datetime-value"
+    }
+  ],
+  "proxyAddresses": [
+    "proxyAddresses-value"
+  ],
+  "securityEnabled": true,
+  "AccessType": "AccessType-value",
+  "EmailAddress": "EmailAddress-value",
+  "AllowExternalSenders": true,
+  "AutoSubscribeNewMembers": true,
+  "IsSubscribedByMail": true,
+  "IsFavorite": true,
+  "UnseenCount": 99,
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 9ea560f1-28ca-485f-8118-c49225601754
-2015-10-14 23:39:43 UTC -->
+<!-- uuid: 1c86f864-a2a0-443b-b71a-686667ec426b
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Group",

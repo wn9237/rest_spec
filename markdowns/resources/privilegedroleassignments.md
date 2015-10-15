@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/privilegedroleassignment_list.md) | [PrivilegedRoleAssignment](privilegedroleassignment.md) [] |Get privilegedRoleAssignment object collection. |
 
-<!-- uuid: 6613309a-8808-411a-ae6d-a4426e1da373
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 95a6007d-5bcf-401b-9f30-5d5764581979
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignments resource",

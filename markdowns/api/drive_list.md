@@ -39,23 +39,40 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
+Content-length: 580
 {
   "values": [
     {
       "id": "id-value",
       "driveType": "driveType-value",
       "owner": {
+        "application": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "device": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "user": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        }
       },
       "quota": {
+        "deleted": 99,
+        "remaining": 99,
+        "state": "state-value",
+        "total": 99,
+        "used": 99
       }
     }
   ]
 }
 ```
 
-<!-- uuid: 500fa0e6-d4fe-4bbc-a934-80c3c0a0f81f
-2015-10-14 23:39:32 UTC -->
+<!-- uuid: 8feeb38f-47c1-465d-88ab-2006dae65fbc
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List drive",

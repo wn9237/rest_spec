@@ -63,8 +63,8 @@ Content-length: 187
 }
 ```
 
-<!-- uuid: 4df3d15e-5a99-419e-a53f-1e3f14c600d4
-2015-10-14 23:39:32 UTC -->
+<!-- uuid: 4ef8563b-42e4-420a-9f6d-1ceffdee7f4c
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryroletemplate object.",

@@ -45,17 +45,32 @@ Here is an example of the request.
 ```http
 PUT /devices/<objectId>
 Content-type: application/json
-Content-length: 233
+Content-length: 732
 {
   "accountEnabled": true,
   "alternativeSecurityIds": [
     {
+      "type": 99,
+      "identityProvider": "identityProvider-value",
+      "key": "key-value"
     }
   ],
   "approximateLastLogonTimestamp": "datetime-value",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceObjectVersion": 99
+  "deviceObjectVersion": 99,
+  "deviceOSType": "deviceOSType-value",
+  "deviceOSVersion": "deviceOSVersion-value",
+  "devicePhysicalIds": [
+    "devicePhysicalIds-value"
+  ],
+  "deviceTrustType": "deviceTrustType-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "lastDirSyncTime": "datetime-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -68,22 +83,37 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 233
+Content-length: 732
 {
   "accountEnabled": true,
   "alternativeSecurityIds": [
     {
+      "type": 99,
+      "identityProvider": "identityProvider-value",
+      "key": "key-value"
     }
   ],
   "approximateLastLogonTimestamp": "datetime-value",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceObjectVersion": 99
+  "deviceObjectVersion": 99,
+  "deviceOSType": "deviceOSType-value",
+  "deviceOSVersion": "deviceOSVersion-value",
+  "devicePhysicalIds": [
+    "devicePhysicalIds-value"
+  ],
+  "deviceTrustType": "deviceTrustType-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "lastDirSyncTime": "datetime-value",
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: 8d3a52c7-8115-4595-80f4-9a00557938e7
-2015-10-14 23:39:30 UTC -->
+<!-- uuid: 35cdda45-a72e-4a50-98f8-61c4524f53ea
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of device object.",

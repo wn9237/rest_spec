@@ -44,19 +44,79 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 210
+Content-length: 1857
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
   "FileAs": "FileAs-value",
   "DisplayName": "DisplayName-value",
   "GivenName": "GivenName-value",
-  "Initials": "Initials-value"
+  "Initials": "Initials-value",
+  "MiddleName": "MiddleName-value",
+  "NickName": "NickName-value",
+  "Surname": "Surname-value",
+  "Title": "Title-value",
+  "Generation": "Generation-value",
+  "EmailAddresses": [
+    {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  ],
+  "ImAddresses": [
+    "ImAddresses-value"
+  ],
+  "JobTitle": "JobTitle-value",
+  "CompanyName": "CompanyName-value",
+  "Department": "Department-value",
+  "OfficeLocation": "OfficeLocation-value",
+  "Profession": "Profession-value",
+  "BusinessHomePage": "BusinessHomePage-value",
+  "AssistantName": "AssistantName-value",
+  "Manager": "Manager-value",
+  "HomePhones": [
+    "HomePhones-value"
+  ],
+  "BusinessPhones": [
+    "BusinessPhones-value"
+  ],
+  "MobilePhone1": "MobilePhone1-value",
+  "HomeAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "BusinessAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "OtherAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "YomiCompanyName": "YomiCompanyName-value",
+  "YomiGivenName": "YomiGivenName-value",
+  "YomiSurname": "YomiSurname-value",
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 47972227-e5b8-4352-b691-c7459ea601d6
-2015-10-14 23:39:29 UTC -->
+<!-- uuid: 66f0b143-bfd3-427f-b17f-dc2f8531fd20
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Contact",

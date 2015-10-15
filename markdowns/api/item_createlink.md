@@ -49,25 +49,50 @@ Content-length: 26
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
+Content-length: 762
 {
   "grantedTo": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   },
   "id": "id-value",
   "invitation": {
+    "email": "email-value",
+    "redeemedBy": "redeemedBy-value",
+    "signInRequired": true
   },
   "inheritedFrom": {
+    "driveId": "driveId-value",
+    "id": "id-value",
+    "path": "path-value"
   },
   "link": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "type": "type-value",
+    "webUrl": "webUrl-value"
   },
   "roles": [
     "roles-value"
-  ]
+  ],
+  "shareId": "shareId-value"
 }
 ```
 
-<!-- uuid: dffa85ef-5518-446c-9ddf-44e51a346279
-2015-10-14 23:39:35 UTC -->
+<!-- uuid: 6f1b1871-8cb2-4047-845b-96c774afb91e
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createLink",

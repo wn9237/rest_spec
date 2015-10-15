@@ -35,9 +35,50 @@ Here is an example of how to call this API.
 ```http
 POST /groups/<objectId>/Threads/<Id>/Posts/<Id>/Reply
 Content-type: application/json
-Content-length: 19
+Content-length: 1075
 {
   "Post": {
+    "Body": {
+      "ContentType": "ContentType-value",
+      "Content": "Content-value"
+    },
+    "DateTimeReceived": "datetime-value",
+    "HasAttachments": true,
+    "From": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "Sender": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "ConversationThreadId": "ConversationThreadId-value",
+    "ConversationId": "ConversationId-value",
+    "NewParticipants": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "ChangeKey": "ChangeKey-value",
+    "Categories": "Categories-value",
+    "DateTimeCreated": "datetime-value",
+    "DateTimeLastModified": "datetime-value",
+    "Id": "Id-value",
+    "Attachments": {
+      "Name": "Name-value",
+      "ContentType": "ContentType-value",
+      "Size": 99,
+      "IsInline": true,
+      "DateTimeLastModified": "datetime-value",
+      "Id": "Id-value"
+    },
+    "InReplyTo": {
+    }
   }
 }
 <!-- {
@@ -55,8 +96,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: c6eee7fd-5f81-447e-9e1d-531bc44ab9ac
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: de575536-ab29-41d2-a8ca-a64417c440d0
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post: Reply",

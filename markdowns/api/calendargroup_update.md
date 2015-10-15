@@ -62,8 +62,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: 1db0779e-776a-462f-84d5-ba36ec8f6c7d
-2015-10-14 23:39:28 UTC -->
+<!-- uuid: 149655c4-b141-4f8d-8d8f-0efe65060f62
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of calendargroup object.",

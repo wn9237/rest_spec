@@ -53,22 +53,61 @@ Content-length: 98
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
+Content-length: 1258
 {
   "parentSection": {
+    "isDefault": true,
+    "pagesUrl": "pagesUrl-value",
+    "name": "name-value",
+    "createdBy": "createdBy-value",
+    "lastModifiedBy": "lastModifiedBy-value",
+    "lastModifiedTime": "datetime-value",
+    "id": "id-value",
+    "self": "self-value",
+    "createdTime": "datetime-value"
   },
   "parentNotebook": {
+    "isDefault": true,
+    "userRole": "userRole-value",
+    "isShared": true,
+    "sectionsUrl": "sectionsUrl-value",
+    "sectionGroupsUrl": "sectionGroupsUrl-value",
+    "links": {
+      "oneNoteClientUrl": {
+        "href": "href-value"
+      },
+      "oneNoteWebUrl": {
+        "href": "href-value"
+      }
+    },
+    "name": "name-value",
+    "createdBy": "createdBy-value",
+    "lastModifiedBy": "lastModifiedBy-value",
+    "lastModifiedTime": "datetime-value",
+    "id": "id-value",
+    "self": "self-value",
+    "createdTime": "datetime-value"
   },
   "title": "title-value",
   "createdByAppId": "createdByAppId-value",
   "links": {
+    "oneNoteClientUrl": {
+      "href": "href-value"
+    },
+    "oneNoteWebUrl": {
+      "href": "href-value"
+    }
   },
-  "contentUrl": "contentUrl-value"
+  "contentUrl": "contentUrl-value",
+  "lastModifiedTime": "datetime-value",
+  "id": "id-value",
+  "self": "self-value",
+  "createdTime": "datetime-value"
 }
 ```
 
-<!-- uuid: 6f7f6644-1a20-4c19-b93f-e01e1a529d3a
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: 6dcb6136-a063-489b-ba3f-ba8349e36594
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: CopyToSection",

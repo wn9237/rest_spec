@@ -51,17 +51,67 @@ Here is an example of the request.
 ```http
 PUT /tenantDetails/<objectId>
 Content-type: application/json
-Content-length: 216
+Content-length: 1647
 {
   "assignedPlans": [
     {
+      "assignedTimestamp": "datetime-value",
+      "capabilityStatus": "capabilityStatus-value",
+      "service": "service-value",
+      "servicePlanId": "servicePlanId-value"
     }
   ],
   "city": "city-value",
   "companyLastDirSyncTime": "datetime-value",
   "country": "country-value",
   "countryLetterCode": "countryLetterCode-value",
-  "dirSyncEnabled": true
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "marketingNotificationEmails": [
+    "marketingNotificationEmails-value"
+  ],
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
+  "provisionedPlans": [
+    {
+      "capabilityStatus": "capabilityStatus-value",
+      "provisioningStatus": "provisioningStatus-value",
+      "service": "service-value"
+    }
+  ],
+  "provisioningErrors": [
+    {
+      "errorDetail": "errorDetail-value",
+      "resolved": true,
+      "service": "service-value",
+      "timestamp": "datetime-value"
+    }
+  ],
+  "securityComplianceNotificationMails": [
+    "securityComplianceNotificationMails-value"
+  ],
+  "securityComplianceNotificationPhones": [
+    "securityComplianceNotificationPhones-value"
+  ],
+  "state": "state-value",
+  "street": "street-value",
+  "technicalNotificationMails": [
+    "technicalNotificationMails-value"
+  ],
+  "telephoneNumber": "telephoneNumber-value",
+  "verifiedDomains": [
+    {
+      "capabilities": "capabilities-value",
+      "default": true,
+      "id": "id-value",
+      "initial": true,
+      "name": "name-value",
+      "type": "type-value"
+    }
+  ],
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 ##### Response
@@ -74,22 +124,72 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 216
+Content-length: 1647
 {
   "assignedPlans": [
     {
+      "assignedTimestamp": "datetime-value",
+      "capabilityStatus": "capabilityStatus-value",
+      "service": "service-value",
+      "servicePlanId": "servicePlanId-value"
     }
   ],
   "city": "city-value",
   "companyLastDirSyncTime": "datetime-value",
   "country": "country-value",
   "countryLetterCode": "countryLetterCode-value",
-  "dirSyncEnabled": true
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "marketingNotificationEmails": [
+    "marketingNotificationEmails-value"
+  ],
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
+  "provisionedPlans": [
+    {
+      "capabilityStatus": "capabilityStatus-value",
+      "provisioningStatus": "provisioningStatus-value",
+      "service": "service-value"
+    }
+  ],
+  "provisioningErrors": [
+    {
+      "errorDetail": "errorDetail-value",
+      "resolved": true,
+      "service": "service-value",
+      "timestamp": "datetime-value"
+    }
+  ],
+  "securityComplianceNotificationMails": [
+    "securityComplianceNotificationMails-value"
+  ],
+  "securityComplianceNotificationPhones": [
+    "securityComplianceNotificationPhones-value"
+  ],
+  "state": "state-value",
+  "street": "street-value",
+  "technicalNotificationMails": [
+    "technicalNotificationMails-value"
+  ],
+  "telephoneNumber": "telephoneNumber-value",
+  "verifiedDomains": [
+    {
+      "capabilities": "capabilities-value",
+      "default": true,
+      "id": "id-value",
+      "initial": true,
+      "name": "name-value",
+      "type": "type-value"
+    }
+  ],
+  "objectType": "objectType-value",
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: fdc29cde-ed22-42af-a4fb-1385ab5de40b
-2015-10-14 23:39:42 UTC -->
+<!-- uuid: 895afd0c-4002-4767-8f79-f0a6b29d4d24
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of tenantdetail object.",

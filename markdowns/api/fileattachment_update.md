@@ -39,14 +39,18 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 210
+Content-length: 308
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
   "IsContactPhoto": true,
   "ContentBytes": "ContentBytes-value",
   "Name": "Name-value",
-  "ContentType": "ContentType-value"
+  "ContentType": "ContentType-value",
+  "Size": 99,
+  "IsInline": true,
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -59,19 +63,23 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 210
+Content-length: 308
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
   "IsContactPhoto": true,
   "ContentBytes": "ContentBytes-value",
   "Name": "Name-value",
-  "ContentType": "ContentType-value"
+  "ContentType": "ContentType-value",
+  "Size": 99,
+  "IsInline": true,
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 5b7d576f-36ce-4a65-bd55-3057298af307
-2015-10-14 23:39:34 UTC -->
+<!-- uuid: abd42ed2-0001-4f85-832f-7bc055493954
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of fileattachment object.",

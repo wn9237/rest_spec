@@ -44,17 +44,43 @@ Here is an example of the request.
 ```http
 PUT /groups/<objectId>/Threads/<Id>/Posts/<Id>
 Content-type: application/json
-Content-length: 177
+Content-length: 790
 {
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "DateTimeReceived": "datetime-value",
   "HasAttachments": true,
   "From": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
   },
   "Sender": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
   },
-  "ConversationThreadId": "ConversationThreadId-value"
+  "ConversationThreadId": "ConversationThreadId-value",
+  "ConversationId": "ConversationId-value",
+  "NewParticipants": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -67,22 +93,48 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 177
+Content-length: 790
 {
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "DateTimeReceived": "datetime-value",
   "HasAttachments": true,
   "From": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
   },
   "Sender": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
   },
-  "ConversationThreadId": "ConversationThreadId-value"
+  "ConversationThreadId": "ConversationThreadId-value",
+  "ConversationId": "ConversationId-value",
+  "NewParticipants": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: ad015da3-3fb5-4fdf-b34a-c79f2d31b294
-2015-10-14 23:39:39 UTC -->
+<!-- uuid: 17320d07-a90a-4271-80cb-61e9c5a9d2ed
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of post object.",

@@ -29,23 +29,29 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 193
+Content-length: 388
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
   "objectId": "objectId-value",
   "prepaidUnits": {
+    "enabled": 99,
+    "suspended": 99,
+    "warning": 99
   },
   "servicePlans": [
     {
+      "servicePlanId": "servicePlanId-value",
+      "servicePlanName": "servicePlanName-value"
     }
   ],
-  "skuId": "skuId-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 
-<!-- uuid: 9adf8709-13c7-4660-860a-f7e12cb86c85
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 29b84346-6a6e-42ad-8cfb-2928696e9570
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SubscribedSku",

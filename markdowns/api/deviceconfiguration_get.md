@@ -29,7 +29,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 300
+Content-length: 341
 {
   "publicIssuerCertificates": [
     "publicIssuerCertificates-value"
@@ -40,12 +40,13 @@ Content-length: 300
   "registrationQuota": 99,
   "maximumRegistrationInactivityPeriod": 99,
   "objectType": "objectType-value",
-  "objectId": "objectId-value"
+  "objectId": "objectId-value",
+  "deletionTimestamp": "datetime-value"
 }
 ```
 
-<!-- uuid: aaece434-a0b2-4e1a-bbd3-64adc222f82c
-2015-10-14 23:39:30 UTC -->
+<!-- uuid: ba9b0e72-7196-4a44-b0db-de78ef13a9f0
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DeviceConfiguration",

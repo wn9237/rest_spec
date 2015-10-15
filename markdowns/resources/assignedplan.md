@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |service|String||
 |servicePlanId|Guid||
 
-<!-- uuid: 5b8b4d62-2642-41fb-b131-64130ff48ddb
-2015-10-14 23:39:27 UTC -->
+<!-- uuid: db7eb869-c053-4740-ad70-a5f7fb0d6ae8
+2015-10-15 03:41:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AssignedPlan resource",

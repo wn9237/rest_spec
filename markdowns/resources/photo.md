@@ -48,8 +48,8 @@ Here is a JSON representation of the resource
 |[Update](../api/photo_update.md) | [Photo](photo.md)	|Update Photo object. |
 |[Delete](../api/photo_delete.md) | Void	|Delete Photo object. |
 
-<!-- uuid: 76a77cc8-d09d-43cc-bae4-6f4afc9c0e20
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: 1ef2cc54-3549-465d-8eeb-3c5d8d8224d6
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Photo resource",

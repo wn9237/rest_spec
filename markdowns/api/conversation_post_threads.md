@@ -44,10 +44,14 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 225
+Content-length: 489
 {
   "ToRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
   ],
   "Topic": "Topic-value",
@@ -58,13 +62,20 @@ Content-length: 225
   ],
   "CcRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
-  ]
+  ],
+  "Preview": "Preview-value",
+  "IsLocked": true,
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 5e0e53ba-3538-472e-ab86-02f2695dbfb8
-2015-10-14 23:39:29 UTC -->
+<!-- uuid: 0516c254-4994-44e3-ac0c-54aa7d7dc0a0
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Thread",

@@ -32,7 +32,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 274
+Content-length: 1263
 {
   "values": [
     {
@@ -41,14 +41,42 @@ Content-length: 274
       "department": "department-value",
       "dirSyncEnabled": true,
       "displayName": "displayName-value",
-      "facsimileTelephoneNumber": "facsimileTelephoneNumber-value"
+      "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "lastDirSyncTime": "datetime-value",
+      "mail": "mail-value",
+      "mailNickname": "mailNickname-value",
+      "mobile": "mobile-value",
+      "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+      "postalCode": "postalCode-value",
+      "provisioningErrors": [
+        {
+          "errorDetail": "errorDetail-value",
+          "resolved": true,
+          "service": "service-value",
+          "timestamp": "datetime-value"
+        }
+      ],
+      "proxyAddresses": [
+        "proxyAddresses-value"
+      ],
+      "sipProxyAddress": "sipProxyAddress-value",
+      "state": "state-value",
+      "streetAddress": "streetAddress-value",
+      "surname": "surname-value",
+      "telephoneNumber": "telephoneNumber-value",
+      "thumbnailPhoto": "thumbnailPhoto-value",
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
   ]
 }
 ```
 
-<!-- uuid: 086d6bc6-1285-4bc1-adce-b591fdcaa8c7
-2015-10-14 23:39:29 UTC -->
+<!-- uuid: 3c3e2160-9cb9-44a5-8b5c-b59706fe822a
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List OrgContact",

@@ -35,15 +35,16 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
+Content-length: 48
 {
   "Id": "Id-value",
-  "ExtensionName": "ExtensionName-value"
+  "ExtensionName": {
+  }
 }
 ```
 
-<!-- uuid: 467bb00e-ab66-4f4b-9d01-2159f5b1a7a8
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: d54e4344-5d18-4598-9ecd-ce7bffdf4881
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OpenTypeExtension",

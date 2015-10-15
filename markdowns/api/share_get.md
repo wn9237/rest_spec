@@ -35,17 +35,29 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
+Content-length: 330
 {
   "id": "id-value",
   "name": "name-value",
   "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
   }
 }
 ```
 
-<!-- uuid: 1722f00e-8967-4daf-8d43-ba68d2f181df
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: 32f8fbd1-e91c-4370-97fe-a215442f5352
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get share",

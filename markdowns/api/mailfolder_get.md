@@ -46,8 +46,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: c216ff17-b730-4b9a-9da6-2f75a9b761df
-2015-10-14 23:39:35 UTC -->
+<!-- uuid: 642ca263-02b6-4168-bda4-92382b6b1436
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get MailFolder",

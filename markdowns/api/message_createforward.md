@@ -41,20 +41,85 @@ Content-length: 0
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 193
+Content-length: 1546
 {
   "Subject": "Subject-value",
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
   "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value"
+  "ParentFolderId": "ParentFolderId-value",
+  "From": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "Sender": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  },
+  "ToRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "CcRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "BccRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ReplyTo": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ConversationId": "ConversationId-value",
+  "UniqueBody": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
+  },
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
+  "IsDeliveryReceiptRequested": true,
+  "IsReadReceiptRequested": true,
+  "IsDraft": true,
+  "IsRead": true,
+  "WebLink": "WebLink-value",
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 668813e8-2bf6-4c70-9d2b-f46312f0ebe7
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: d1e0ebc0-72dd-44fc-9f08-c9befba1f9f8
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateForward",

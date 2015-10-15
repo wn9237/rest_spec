@@ -56,8 +56,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 30227442-1d34-4bbb-837d-638c4c6c4aa1
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: a2b3fc5d-cc6d-4d57-9b5c-ba4fed329611
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: TentativelyAccept",

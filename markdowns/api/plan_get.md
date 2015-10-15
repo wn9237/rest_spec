@@ -37,19 +37,20 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 149
+Content-length: 179
 {
   "createdBy": "createdBy-value",
   "owner": "owner-value",
   "title": "title-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: f3ed914b-eff3-4046-8e13-4b818b977626
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: e01c5585-cbe5-4bf7-893f-13416530d6de
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Plan",

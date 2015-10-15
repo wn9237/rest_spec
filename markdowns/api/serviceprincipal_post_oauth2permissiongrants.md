@@ -42,19 +42,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 212
+Content-length: 271
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
   "expiryTime": "datetime-value",
   "objectId": "objectId-value",
   "principalId": "principalId-value",
-  "resourceId": "resourceId-value"
+  "resourceId": "resourceId-value",
+  "scope": "scope-value",
+  "startTime": "datetime-value"
 }
 ```
 
-<!-- uuid: 05364ed7-5a71-4e60-87d3-8bad76e3700f
-2015-10-14 23:39:41 UTC -->
+<!-- uuid: ab02ee39-5be7-4bb8-a649-cc8015cec5f8
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

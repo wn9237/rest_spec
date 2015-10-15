@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[Delete](../api/file_delete.md) | Void	|Delete File object. |
 
-<!-- uuid: 41f65fb4-d0c6-4e60-8b0d-2cd1031a59f3
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: 8a463df3-fea8-4291-998b-418180301f15
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "File resource",

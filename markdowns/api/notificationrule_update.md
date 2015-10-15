@@ -37,14 +37,16 @@ Here is an example of the request.
 ```http
 PUT /NotificationRules/<Id>
 Content-type: application/json
-Content-length: 186
+Content-length: 260
 {
   "Id": "Id-value",
   "UserName": "UserName-value",
   "UserId": "UserId-value",
   "RoleName": "RoleName-value",
   "RoleId": "RoleId-value",
-  "NotificationId": "NotificationId-value"
+  "NotificationId": "NotificationId-value",
+  "NotificationName": "NotificationName-value",
+  "Event": "Event-value"
 }
 ```
 ##### Response
@@ -57,19 +59,21 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 186
+Content-length: 260
 {
   "Id": "Id-value",
   "UserName": "UserName-value",
   "UserId": "UserId-value",
   "RoleName": "RoleName-value",
   "RoleId": "RoleId-value",
-  "NotificationId": "NotificationId-value"
+  "NotificationId": "NotificationId-value",
+  "NotificationName": "NotificationName-value",
+  "Event": "Event-value"
 }
 ```
 
-<!-- uuid: b884587d-2b88-4e8d-9b00-f67d55e95ed4
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: 90a1fd23-5f17-46f2-ac5e-44ce307f89a8
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notificationrule object.",

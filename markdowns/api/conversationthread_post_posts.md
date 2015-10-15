@@ -44,22 +44,48 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 177
+Content-length: 790
 {
   "Body": {
+    "ContentType": "ContentType-value",
+    "Content": "Content-value"
   },
   "DateTimeReceived": "datetime-value",
   "HasAttachments": true,
   "From": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
   },
   "Sender": {
+    "EmailAddress": {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
   },
-  "ConversationThreadId": "ConversationThreadId-value"
+  "ConversationThreadId": "ConversationThreadId-value",
+  "ConversationId": "ConversationId-value",
+  "NewParticipants": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ],
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 0014aca4-518b-47de-bcb7-ed24daf85ed9
-2015-10-14 23:39:29 UTC -->
+<!-- uuid: 9b277bfd-fe6b-4e18-ae7d-52401f65cfb6
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Post",

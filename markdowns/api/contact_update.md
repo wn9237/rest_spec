@@ -66,14 +66,74 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/Contacts/<Id>
 Content-type: application/json
-Content-length: 210
+Content-length: 1857
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
   "FileAs": "FileAs-value",
   "DisplayName": "DisplayName-value",
   "GivenName": "GivenName-value",
-  "Initials": "Initials-value"
+  "Initials": "Initials-value",
+  "MiddleName": "MiddleName-value",
+  "NickName": "NickName-value",
+  "Surname": "Surname-value",
+  "Title": "Title-value",
+  "Generation": "Generation-value",
+  "EmailAddresses": [
+    {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  ],
+  "ImAddresses": [
+    "ImAddresses-value"
+  ],
+  "JobTitle": "JobTitle-value",
+  "CompanyName": "CompanyName-value",
+  "Department": "Department-value",
+  "OfficeLocation": "OfficeLocation-value",
+  "Profession": "Profession-value",
+  "BusinessHomePage": "BusinessHomePage-value",
+  "AssistantName": "AssistantName-value",
+  "Manager": "Manager-value",
+  "HomePhones": [
+    "HomePhones-value"
+  ],
+  "BusinessPhones": [
+    "BusinessPhones-value"
+  ],
+  "MobilePhone1": "MobilePhone1-value",
+  "HomeAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "BusinessAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "OtherAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "YomiCompanyName": "YomiCompanyName-value",
+  "YomiGivenName": "YomiGivenName-value",
+  "YomiSurname": "YomiSurname-value",
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 ##### Response
@@ -86,19 +146,79 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 210
+Content-length: 1857
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
   "FileAs": "FileAs-value",
   "DisplayName": "DisplayName-value",
   "GivenName": "GivenName-value",
-  "Initials": "Initials-value"
+  "Initials": "Initials-value",
+  "MiddleName": "MiddleName-value",
+  "NickName": "NickName-value",
+  "Surname": "Surname-value",
+  "Title": "Title-value",
+  "Generation": "Generation-value",
+  "EmailAddresses": [
+    {
+      "Name": "Name-value",
+      "Address": "Address-value"
+    }
+  ],
+  "ImAddresses": [
+    "ImAddresses-value"
+  ],
+  "JobTitle": "JobTitle-value",
+  "CompanyName": "CompanyName-value",
+  "Department": "Department-value",
+  "OfficeLocation": "OfficeLocation-value",
+  "Profession": "Profession-value",
+  "BusinessHomePage": "BusinessHomePage-value",
+  "AssistantName": "AssistantName-value",
+  "Manager": "Manager-value",
+  "HomePhones": [
+    "HomePhones-value"
+  ],
+  "BusinessPhones": [
+    "BusinessPhones-value"
+  ],
+  "MobilePhone1": "MobilePhone1-value",
+  "HomeAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "BusinessAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "OtherAddress": {
+    "Street": "Street-value",
+    "City": "City-value",
+    "State": "State-value",
+    "CountryOrRegion": "CountryOrRegion-value",
+    "PostalCode": "PostalCode-value"
+  },
+  "YomiCompanyName": "YomiCompanyName-value",
+  "YomiGivenName": "YomiGivenName-value",
+  "YomiSurname": "YomiSurname-value",
+  "ChangeKey": "ChangeKey-value",
+  "Categories": [
+    "Categories-value"
+  ],
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
+  "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 0365a663-5bff-4381-84c9-832d9289fa2c
-2015-10-14 23:39:28 UTC -->
+<!-- uuid: db69b54f-7aa7-4631-9f90-3433311e8d92
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contact object.",

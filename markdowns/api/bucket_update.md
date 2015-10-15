@@ -38,14 +38,15 @@ Here is an example of the request.
 ```http
 PUT /buckets/<id>
 Content-type: application/json
-Content-length: 149
+Content-length: 179
 {
   "name": "name-value",
   "planId": "planId-value",
   "orderHint": "orderHint-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 ##### Response
@@ -58,19 +59,20 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 149
+Content-length: 179
 {
   "name": "name-value",
   "planId": "planId-value",
   "orderHint": "orderHint-value",
   "totalTasks": 99,
   "activeTasks": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "version": "version-value"
 }
 ```
 
-<!-- uuid: a19daa73-1f21-4933-93ee-5c668aa012be
-2015-10-14 23:39:28 UTC -->
+<!-- uuid: 98d141fe-1454-4328-81ce-0a516b5b7bf7
+2015-10-15 03:41:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of bucket object.",

@@ -32,7 +32,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
+Content-length: 482
 {
   "values": [
     {
@@ -40,19 +40,25 @@ Content-length: 263
       "consumedUnits": 99,
       "objectId": "objectId-value",
       "prepaidUnits": {
+        "enabled": 99,
+        "suspended": 99,
+        "warning": 99
       },
       "servicePlans": [
         {
+          "servicePlanId": "servicePlanId-value",
+          "servicePlanName": "servicePlanName-value"
         }
       ],
-      "skuId": "skuId-value"
+      "skuId": "skuId-value",
+      "skuPartNumber": "skuPartNumber-value"
     }
   ]
 }
 ```
 
-<!-- uuid: 2e6206c2-5ee0-42d6-90cb-d9ee84c414e1
-2015-10-14 23:39:42 UTC -->
+<!-- uuid: 23f4f9b7-ef14-411b-b4e8-614c31d88c9b
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List SubscribedSku",

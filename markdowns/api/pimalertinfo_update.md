@@ -40,14 +40,19 @@ Here is an example of the request.
 ```http
 PUT /AlertInfo/<AlertId>
 Content-type: application/json
-Content-length: 208
+Content-length: 370
 {
   "AlertId": "AlertId-value",
   "AlertName": "AlertName-value",
   "AlertDescription": "AlertDescription-value",
   "LowSeverityThreshold": 99,
   "MediumSeverityThreshold": 99,
-  "HighSeverityThreshold": 99
+  "HighSeverityThreshold": 99,
+  "Type": 99,
+  "Severity": 99,
+  "SecurityImpact": "SecurityImpact-value",
+  "MitigationSteps": "MitigationSteps-value",
+  "HowToPrevent": "HowToPrevent-value"
 }
 ```
 ##### Response
@@ -60,19 +65,24 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 208
+Content-length: 370
 {
   "AlertId": "AlertId-value",
   "AlertName": "AlertName-value",
   "AlertDescription": "AlertDescription-value",
   "LowSeverityThreshold": 99,
   "MediumSeverityThreshold": 99,
-  "HighSeverityThreshold": 99
+  "HighSeverityThreshold": 99,
+  "Type": 99,
+  "Severity": 99,
+  "SecurityImpact": "SecurityImpact-value",
+  "MitigationSteps": "MitigationSteps-value",
+  "HowToPrevent": "HowToPrevent-value"
 }
 ```
 
-<!-- uuid: 1f75d523-465e-4512-87e2-8f6b8799e391
-2015-10-14 23:39:38 UTC -->
+<!-- uuid: 2dafd7cf-cb31-4f88-a591-223b9e5fd605
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of pimalertinfo object.",

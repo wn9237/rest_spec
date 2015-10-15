@@ -39,7 +39,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 246
+Content-length: 755
 {
   "values": [
     {
@@ -48,14 +48,29 @@ Content-length: 246
       "planId": "planId-value",
       "bucketId": "bucketId-value",
       "title": "title-value",
-      "orderHint": "orderHint-value"
+      "orderHint": "orderHint-value",
+      "assigneePriority": "assigneePriority-value",
+      "percentComplete": 99,
+      "startDate": "datetime-value",
+      "assignedToDate": "datetime-value",
+      "createdDate": "datetime-value",
+      "assignedBy": "assignedBy-value",
+      "dueDate": "datetime-value",
+      "hasNotes": true,
+      "previewType": "previewType-value",
+      "completedDate": "datetime-value",
+      "numberOfReferences": 99,
+      "appliedCategories": {
+      },
+      "id": "id-value",
+      "version": "version-value"
     }
   ]
 }
 ```
 
-<!-- uuid: fe545b8b-3ad0-4fbf-abf1-a4b15cc8ff6e
-2015-10-14 23:39:42 UTC -->
+<!-- uuid: b3811691-8781-4423-ab1b-e158b5f3f389
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Task",

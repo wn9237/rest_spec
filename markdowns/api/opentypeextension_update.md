@@ -31,10 +31,11 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 64
+Content-length: 48
 {
   "Id": "Id-value",
-  "ExtensionName": "ExtensionName-value"
+  "ExtensionName": {
+  }
 }
 ```
 ##### Response
@@ -47,15 +48,16 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
+Content-length: 48
 {
   "Id": "Id-value",
-  "ExtensionName": "ExtensionName-value"
+  "ExtensionName": {
+  }
 }
 ```
 
-<!-- uuid: 058ae549-5f73-4ca8-8f95-70915912bae2
-2015-10-14 23:39:37 UTC -->
+<!-- uuid: 15db6577-8a5e-4354-a5b9-97609ae0b87e
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of opentypeextension object.",

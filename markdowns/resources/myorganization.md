@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/myorganization_list.md) | [MyOrganization](myorganization.md) [] |Get myOrganization object collection. |
 
-<!-- uuid: 9f3b2fae-cc80-45c5-a993-3355a2fe1253
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: bce5616b-7e5a-4571-9585-935409220ac4
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "myOrganization resource",
@@ -36,8 +36,8 @@ None
 |[Create SiteCollection](../api/myorganization_post_sitecollections.md) |[SiteCollection](sitecollection.md)| Create a new SiteCollection by posting to the siteCollections collection.|
 |[Delete](../api/myorganization_delete.md) | Void	|Delete MyOrganization object. |
 
-<!-- uuid: 6b7e9aed-d1af-4186-8da6-475b6b755136
-2015-10-14 23:39:36 UTC -->
+<!-- uuid: 6e3335fb-d79c-4955-8e2a-72d64b24f51c
+2015-10-15 03:41:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MyOrganization resource",

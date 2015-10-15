@@ -37,22 +37,38 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 96
+Content-length: 456
 {
   "id": "id-value",
   "large": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "medium": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "small": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   },
   "source": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
   }
 }
 ```
 
-<!-- uuid: 2c6f2748-0bb3-46f5-84d5-a36661c01af6
-2015-10-14 23:39:42 UTC -->
+<!-- uuid: 243b2c6a-8a42-448e-a8b0-37dc579ee04c
+2015-10-15 03:41:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get thumbnailSet",

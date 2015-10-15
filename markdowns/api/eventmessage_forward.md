@@ -34,11 +34,15 @@ Here is an example of how to call this API.
 ```http
 
 Content-type: application/json
-Content-length: 69
+Content-length: 166
 {
   "Comment": "Comment-value",
   "ToRecipients": [
     {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
     }
   ]
 }
@@ -57,8 +61,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 63fe2810-064f-41fb-bb03-7c9386328a79
-2015-10-14 23:39:33 UTC -->
+<!-- uuid: 9f556d42-ad9d-4612-b65d-8b0af60fff29
+2015-10-15 03:41:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Forward",
