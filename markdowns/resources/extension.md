@@ -43,8 +43,8 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/extension_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Delete](../api/extension_delete.md) | Void	|Delete Extension object. |
 
-<!-- uuid: 45204d9c-4b6e-44cb-8268-6ec0e261409b
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: f4a43b20-e0e5-4ba2-8ede-031d58003e20
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Extension resource",

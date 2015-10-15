@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/SubscribeByMail
@@ -46,8 +47,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: d0006234-1dad-458c-a649-4f997c3c56c1
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: afdd376a-004c-450e-ab6c-24afcae8ed5d
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: SubscribeByMail",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of userdetails object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/details
@@ -47,8 +48,8 @@ Content-length: 73
 ```
 If successful, this method returns a `200 OK` response code and [UserDetails](../resources/userdetails.md) object in the response body.
 
-<!-- uuid: 429a7036-cce5-4271-ae92-6489bcabf36d
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 812a8b7b-c1cc-49e6-8be9-dbd6dbf28c38
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get UserDetails",

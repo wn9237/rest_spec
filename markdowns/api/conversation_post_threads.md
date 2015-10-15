@@ -2,7 +2,8 @@
 
 Use this API to create a new Thread.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/Conversations/<Id>/Threads
@@ -74,8 +75,8 @@ Content-length: 489
 }
 ```
 
-<!-- uuid: 827ae407-089d-4609-b565-aa68dd148d3d
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 29d9fce3-8d5a-4769-8c02-98e020bdc614
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Thread",

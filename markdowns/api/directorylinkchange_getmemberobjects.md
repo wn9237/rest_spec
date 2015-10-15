@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -55,8 +56,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 7f6ff89e-a19e-4f5a-aa54-df7ac89591dd
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 262bb27c-4d1c-4c60-bbf6-72e8dc954d05
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryLinkChange: getMemberObjects",

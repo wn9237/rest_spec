@@ -2,7 +2,8 @@
 
 Delete ReferenceAttachment.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: ba0a82c7-4f47-4101-867f-634f6f722c37
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 9d3875b3-1491-47fc-b1b4-747575c0c3a1
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

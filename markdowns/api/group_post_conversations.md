@@ -2,7 +2,8 @@
 
 Use this API to create a new Conversation.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/Conversations
@@ -57,8 +58,8 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: f3a23e95-2b47-4f1d-8f7f-fe8a70b73a14
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: cebaf6c8-4607-44b2-af43-97725b2a5b46
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Conversation",

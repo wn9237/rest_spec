@@ -2,7 +2,8 @@
 
 Update the properties of userdetails object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/details
@@ -61,8 +62,8 @@ Content-length: 73
 }
 ```
 
-<!-- uuid: 7ce008c0-7bbf-448d-9a68-db4e63144f82
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: f5bccea6-b1df-42c1-a96b-3db97b7a31d9
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of userdetails object.",

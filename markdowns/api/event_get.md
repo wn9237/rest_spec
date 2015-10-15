@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of event object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/Events/<Id>
@@ -118,8 +119,8 @@ Content-length: 1794
 ```
 If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
 
-<!-- uuid: 1892bf44-7dbd-47fd-a087-adee25c8e6d8
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: d0488d3e-2fba-4097-89f3-487f0f5accd5
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Event",

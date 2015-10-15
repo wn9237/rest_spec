@@ -2,7 +2,8 @@
 
 Use this API to create a new Extension.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Events/<Id>/Extensions
@@ -50,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: bdca5fd7-f918-4219-84a0-87af6c137c25
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 2cb569dc-9eb8-4fac-bb08-36aaabd48c06
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

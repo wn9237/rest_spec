@@ -2,7 +2,8 @@
 
 Update the properties of notebook object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/notes/notebooks/<id>
@@ -103,8 +104,8 @@ Content-length: 516
 }
 ```
 
-<!-- uuid: d4cf136b-11ab-40fa-8a30-32b8aff6bd72
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 3c15f498-7928-482c-983c-5566b5f53e15
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notebook object.",

@@ -2,7 +2,8 @@
 
 Update the properties of thumbnailset object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /drive/root/thumbnails/<id>
@@ -105,8 +106,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: e9982530-7136-43a2-a454-f887a69f53ac
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 52daa91f-1668-4897-88e8-5930cfab4f23
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of thumbnailset object.",

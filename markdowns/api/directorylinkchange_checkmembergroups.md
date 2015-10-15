@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -57,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: ea18ee05-5fea-49ec-b5a9-71c09aca3b4b
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 9ae6db48-b949-4020-b828-53e94152da98
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryLinkChange: checkMemberGroups",

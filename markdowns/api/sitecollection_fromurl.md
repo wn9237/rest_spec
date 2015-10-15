@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /myOrganization/siteCollections/<id>/FromUrl(url=url-value)
@@ -51,8 +52,8 @@ Content-length: 78
 }
 ```
 
-<!-- uuid: 4d0faced-6a36-4ab0-8388-5b3797391a69
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 14b7dbf3-0b90-4f50-82a8-637fd7dd993d
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "SiteCollection: FromUrl",

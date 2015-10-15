@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of device object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/<objectId>
@@ -59,8 +60,8 @@ Content-length: 732
 ```
 If successful, this method returns a `200 OK` response code and [Device](../resources/device.md) object in the response body.
 
-<!-- uuid: cb77d67f-35f0-4b62-9899-a9bd8c6e434b
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: a280b4fb-191e-4b2f-bd8b-76fbc68c473b
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Device",

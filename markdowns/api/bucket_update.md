@@ -2,7 +2,8 @@
 
 Update the properties of bucket object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /buckets/<id>
@@ -71,8 +72,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: c7344dde-8218-4632-b1cb-1da92591943a
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 92cc5954-0ee9-4fae-a838-05143360423c
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of bucket object.",

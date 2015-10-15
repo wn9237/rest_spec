@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of itemattachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -47,8 +48,8 @@ Content-length: 162
 ```
 If successful, this method returns a `200 OK` response code and [ItemAttachment](../resources/itemattachment.md) object in the response body.
 
-<!-- uuid: 6a7403ff-7873-49fe-a0d5-3e6e940c8833
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: c4e23369-db8f-4d40-848c-4c74836100df
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ItemAttachment",

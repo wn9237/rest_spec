@@ -2,7 +2,8 @@
 
 Delete Extension.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/Extensions/<Id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 6ce7e8ae-8e15-4616-91e2-1dabc941930c
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 7f2d9419-6354-4ef0-9795-7a52eb64d025
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

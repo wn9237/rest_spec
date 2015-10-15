@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/RootFolder/Copy
@@ -58,8 +59,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: f1b6eb61-f437-4b9d-b574-11689934520e
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 751d64af-62d1-4481-83ab-554c311f9689
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Copy",

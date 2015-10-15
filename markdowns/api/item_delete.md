@@ -2,7 +2,8 @@
 
 Delete item.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /drive/root
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 48607c7c-cfc2-47f6-b459-5e2b072f7324
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: e136eada-ca3b-4476-aa7c-8da1d252529b
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

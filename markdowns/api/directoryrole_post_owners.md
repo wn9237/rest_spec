@@ -2,7 +2,8 @@
 
 Use this API to create a new owner.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/<objectId>/owners
@@ -50,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 2201bb02-e654-4d2c-bbe7-07a59c84826b
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 7d2ed841-9f6a-49df-8805-9b10f594549b
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create owner",

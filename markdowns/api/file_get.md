@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of file object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/TrendingAround
@@ -43,8 +44,8 @@ Content-length: 3
 ```
 If successful, this method returns a `200 OK` response code and [File](../resources/file.md) object in the response body.
 
-<!-- uuid: 571f7e5b-b2e9-4a03-9718-b2f5521010db
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: fb778ff8-fdc1-4c85-abd7-99e3d2be4442
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get File",

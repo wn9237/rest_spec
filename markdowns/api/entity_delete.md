@@ -2,7 +2,8 @@
 
 Delete Entity.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 823b67cf-ca5e-4d60-99f3-076d5442654f
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: d89375bd-b2ce-4f0e-a89c-b222f04f9ade
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

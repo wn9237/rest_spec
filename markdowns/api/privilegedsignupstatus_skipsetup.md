@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /PrivilegedSignupStatus/<TenantId>/SkipSetup
@@ -44,8 +45,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 26222cfb-6ba1-4f33-b157-727df347bc70
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: d3aafa9a-faec-4a54-a2b2-ff638738cbee
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SkipSetup",

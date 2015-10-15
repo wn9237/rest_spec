@@ -2,7 +2,8 @@
 
 Delete SiteCollection.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /myOrganization/siteCollections/<id>
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 132a37a1-f737-442f-a16f-7a752a4aeaef
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: e5ad150f-6f09-49a6-98e0-3e2eab8d62bb
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

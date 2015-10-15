@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of contact object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/Contacts/<Id>
@@ -109,8 +110,8 @@ Content-length: 1857
 ```
 If successful, this method returns a `200 OK` response code and [Contact](../resources/contact.md) object in the response body.
 
-<!-- uuid: efa45056-72da-4871-ae57-e66aff83bfd0
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 656a6674-db36-421f-acde-e483a3a1a4b8
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Contact",

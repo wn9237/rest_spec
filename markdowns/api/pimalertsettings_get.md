@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of pimalertsettings object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /AlertSettings/<AlertId>
@@ -43,8 +44,8 @@ Content-length: 74
 ```
 If successful, this method returns a `200 OK` response code and [PimAlertSettings](../resources/pimalertsettings.md) object in the response body.
 
-<!-- uuid: 8c073831-91c0-4faf-9bd7-a60b7b8b2814
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: ff4659e5-42b5-498b-97cd-5b1a7e90fff0
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlertSettings",

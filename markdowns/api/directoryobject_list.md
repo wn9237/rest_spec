@@ -2,7 +2,8 @@
 
 Retrieve a list of directoryobject objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryObjects
@@ -45,8 +46,8 @@ Content-length: 153
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 
-<!-- uuid: 70a5a105-cf20-4b90-a9b9-c6e5ef46c7c4
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: c1d995cf-bcf1-4d82-a87e-180855c0b1a3
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryObject",

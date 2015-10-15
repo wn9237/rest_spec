@@ -2,7 +2,8 @@
 
 Update the properties of taskdetails object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /tasks/<id>/details
@@ -70,8 +71,8 @@ Content-length: 177
 }
 ```
 
-<!-- uuid: a71e7cc5-cd9e-4514-a9c1-d90184169351
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 81fe7dbb-9983-43a7-8dbf-5519cf3c36ec
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of taskdetails object.",

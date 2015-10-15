@@ -2,7 +2,8 @@
 
 Use this API to create a new Calendar.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/CalendarGroups/<Id>/Calendars
@@ -53,8 +54,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: ac2db28e-772e-40a8-a95c-8c01c38d8313
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 252f2f3a-8c75-436f-8da1-a2740337bc04
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Calendar",

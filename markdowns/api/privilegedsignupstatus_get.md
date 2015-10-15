@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of privilegedsignupstatus object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedSignupStatus/<TenantId>
@@ -44,8 +45,8 @@ Content-length: 86
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) object in the response body.
 
-<!-- uuid: e9a58bf7-ad92-4c44-81df-aaa0e026b10b
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: ba8bbd58-08b6-416e-9691-472ee4caecae
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedSignupStatus",

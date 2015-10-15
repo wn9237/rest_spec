@@ -2,7 +2,8 @@
 
 Delete FileAttachment.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: dc3087ae-855b-414d-9337-1e31e47983b8
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: b446ea63-48c2-42a3-8ddf-09bb03314ed5
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

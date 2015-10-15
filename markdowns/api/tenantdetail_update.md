@@ -2,7 +2,8 @@
 
 Update the properties of tenantdetail object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /tenantDetails/<objectId>
@@ -188,8 +189,8 @@ Content-length: 1647
 }
 ```
 
-<!-- uuid: 0202b0da-e94b-43ed-a128-d264a51203b4
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 0a63be9b-58a6-43ea-aed9-9f91fddd8219
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of tenantdetail object.",

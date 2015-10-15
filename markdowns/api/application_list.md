@@ -2,7 +2,8 @@
 
 Retrieve a list of application objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications
@@ -118,8 +119,8 @@ Content-length: 2442
 ```
 If successful, this method returns a `200 OK` response code and collection of [Application](../resources/application.md) objects in the response body.
 
-<!-- uuid: 4e82ee2f-9ea3-41c0-befc-bf1db7cf84a2
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 1a7f6084-a22f-4e1a-ba3f-32f1ef6d8db4
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Application",

@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoleTemplates/<objectId>/checkMemberGroups
@@ -57,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: cb8f16e6-92c2-4a2e-b1e1-54d9b899dbc7
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: c21453a3-66ef-45b5-9fa2-6f287df179af
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRoleTemplate: checkMemberGroups",

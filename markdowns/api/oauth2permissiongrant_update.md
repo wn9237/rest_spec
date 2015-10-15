@@ -2,7 +2,8 @@
 
 Update the properties of oauth2permissiongrant object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /oauth2PermissionGrants/<objectId>
@@ -74,8 +75,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 6cb97117-524f-4e72-bf10-20a586132bd6
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 9c9734ee-7ada-45be-8c59-47dad0690855
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of oauth2permissiongrant object.",

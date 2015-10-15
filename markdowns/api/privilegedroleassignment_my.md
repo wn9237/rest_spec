@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/My
@@ -50,8 +51,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 741413fc-6bfa-4055-9fb4-3a8efea5e0d0
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 4b67fe4f-a957-482e-81d0-73133f2024d3
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: My",

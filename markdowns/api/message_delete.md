@@ -2,7 +2,8 @@
 
 Delete Message.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/Messages/<Id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 92ec91a5-163d-4808-91d3-5cae84804b35
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 387e943f-85f5-4105-a163-3d75239f2d09
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

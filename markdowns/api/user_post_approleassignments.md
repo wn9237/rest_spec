@@ -2,7 +2,8 @@
 
 Use this API to create a new AppRoleAssignment.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/appRoleAssignments
@@ -59,8 +60,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: 59e2c037-fa19-4d4d-95fa-ff8f4f4463df
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: f23419b0-fbd6-4a00-b666-7e426997cc9d
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AppRoleAssignment",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of privilegedrole object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedRoles/<Id>
@@ -38,8 +39,8 @@ Content-length: 46
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedRole](../resources/privilegedrole.md) object in the response body.
 
-<!-- uuid: 4d868303-67d9-4423-b40a-0c3c96c6786f
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 018dffb1-700f-4d83-af80-5a1cb067e7a3
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRole",

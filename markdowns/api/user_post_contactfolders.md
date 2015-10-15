@@ -2,7 +2,8 @@
 
 Use this API to create a new ContactFolder.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/ContactFolders
@@ -52,8 +53,8 @@ Content-length: 104
 }
 ```
 
-<!-- uuid: 50a6c89b-acfe-4b9c-ba8d-e8e8439e31e1
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: e4f1a37d-0d84-44b7-951e-64cc88b598eb
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ContactFolder",

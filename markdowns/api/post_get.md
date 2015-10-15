@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of post object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<objectId>/Threads/<Id>/Posts/<Id>
@@ -78,8 +79,8 @@ Content-length: 790
 ```
 If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
 
-<!-- uuid: c87fd201-44a2-4f33-9420-b054c210bc06
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: f554a17a-a11f-4ed7-be8f-46bec87bd009
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",

@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/device_list.md) | [Device](device.md) [] |Get device object collection. |
 
-<!-- uuid: 33873f28-8938-4740-b8fb-a27fee692e40
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 92a8d4b9-a758-4563-ad18-2e53ffd765cd
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "devices resource",

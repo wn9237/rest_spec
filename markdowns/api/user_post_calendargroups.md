@@ -2,7 +2,8 @@
 
 Use this API to create a new CalendarGroup.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/CalendarGroups
@@ -53,8 +54,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: de0b9497-879a-4ac7-9443-01b5c071af9c
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 25f2668a-96d5-4214-9e57-8c2ccc98cced
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create CalendarGroup",

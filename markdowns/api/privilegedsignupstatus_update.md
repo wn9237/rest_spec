@@ -2,7 +2,8 @@
 
 Update the properties of privilegedsignupstatus object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /PrivilegedSignupStatus/<TenantId>
@@ -57,8 +58,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 9df28407-f55c-4876-b4f0-30673be6a6c7
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 256e1813-16ea-4716-88e3-6781d4c72fd9
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedsignupstatus object.",

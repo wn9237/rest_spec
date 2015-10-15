@@ -2,7 +2,8 @@
 
 Use this API to create a new Page.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/sections/<id>/pages
@@ -65,8 +66,8 @@ Content-length: 391
 }
 ```
 
-<!-- uuid: 0036adc5-14a9-4f5e-8f62-20ea83e38e4a
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: f351cf31-ecf6-41b0-a147-098be22828ca
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Page",

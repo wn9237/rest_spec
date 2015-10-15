@@ -2,7 +2,8 @@
 
 Delete DirectoryLinkChange.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 43f04e3a-1fad-421a-ab52-0e4a780d31b1
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: af020a1f-1c84-43af-9c49-afa2605fee4b
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

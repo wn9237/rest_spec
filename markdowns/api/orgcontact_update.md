@@ -2,7 +2,8 @@
 
 Update the properties of orgcontact object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /contacts/<objectId>
@@ -141,8 +142,8 @@ Content-length: 1097
 }
 ```
 
-<!-- uuid: a2aa1469-8ce9-4527-83ce-d007c61cee97
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 430cdda4-0d5d-4a1c-a7a6-068fea7e8fb7
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of orgcontact object.",

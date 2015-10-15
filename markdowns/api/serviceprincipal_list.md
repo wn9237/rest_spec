@@ -2,7 +2,8 @@
 
 Retrieve a list of serviceprincipal objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals
@@ -108,8 +109,8 @@ Content-length: 2218
 ```
 If successful, this method returns a `200 OK` response code and collection of [ServicePrincipal](../resources/serviceprincipal.md) objects in the response body.
 
-<!-- uuid: b506c172-7ae9-4aeb-b72c-8857be06b8fc
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: c121acb5-50b2-42ba-8ec4-98ded1dd9b05
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List ServicePrincipal",

@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /PrivilegedRoles/<Id>/SelfActivate
@@ -64,8 +65,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 36f4ff1f-1771-45f4-925c-f0c433b2d37f
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: bf98cc06-2b52-447c-9dd6-0365da8a3d69
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRole: SelfActivate",

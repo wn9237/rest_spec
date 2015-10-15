@@ -2,7 +2,8 @@
 
 Retrieve a list of privilegedoperationevent objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedOperationEvents
@@ -62,8 +63,8 @@ Content-length: 538
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) objects in the response body.
 
-<!-- uuid: 65b6655e-ccd4-4c0f-9456-12c98b836908
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 91bb6ac4-dd30-4680-8733-bbb5ddbbf0ea
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedOperationEvent",

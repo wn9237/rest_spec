@@ -2,7 +2,8 @@
 
 Delete share.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /shares/<id>
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: bc081664-d9e7-46e1-9353-64227c2eb493
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 718e6be5-fc7f-4055-b40d-2b4a04ea5fec
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

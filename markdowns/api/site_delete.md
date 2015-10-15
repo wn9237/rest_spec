@@ -2,7 +2,8 @@
 
 Delete Site.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /myOrganization/siteCollections/<id>/sites/<id>
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: aca5bfe8-2e57-4a18-a049-23923abd52fa
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 1194e8dd-74f8-43ac-9e7d-de2016bb33fd
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

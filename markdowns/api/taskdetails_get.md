@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of taskdetails object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /tasks/<id>/details
@@ -50,8 +51,8 @@ Content-length: 177
 ```
 If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
 
-<!-- uuid: 674329a0-9937-401b-b473-d1bb01cbf4d4
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 420fbb57-63b8-4c12-8146-9bf937d25146
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskDetails",

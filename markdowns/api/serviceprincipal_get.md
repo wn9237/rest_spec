@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of serviceprincipal object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/<objectId>
@@ -101,8 +102,8 @@ Content-length: 1924
 ```
 If successful, this method returns a `200 OK` response code and [ServicePrincipal](../resources/serviceprincipal.md) object in the response body.
 
-<!-- uuid: 554c8f1d-8f52-437f-958a-4f4d1930422a
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: a97b0b6f-57b4-46fe-a01d-8b535bed0729
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ServicePrincipal",

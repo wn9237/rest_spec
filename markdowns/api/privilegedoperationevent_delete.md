@@ -2,7 +2,8 @@
 
 Delete PrivilegedOperationEvent.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /PrivilegedOperationEvents/<Id>
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: cf5aabe3-79eb-46f2-9a50-3f117eaa8068
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: ae3d44c5-2fbf-4e22-9a81-a8b8b3d90d2a
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

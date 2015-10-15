@@ -2,7 +2,8 @@
 
 Use this API to create a new Extension.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/ContactFolders/<Id>/Extensions
@@ -50,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 71f8f9b7-7ede-4875-b363-4e51584bd3ed
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 8915d75b-4a4c-48fa-bd7a-dd9832a449b2
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/<objectId>/restore
@@ -130,8 +131,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: 887f0904-4e6c-404a-9709-fb8e0ac4c172
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 23501207-4a0e-4655-86e5-b66e96c2dde7
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application: restore",

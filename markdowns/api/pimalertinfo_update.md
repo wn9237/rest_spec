@@ -2,7 +2,8 @@
 
 Update the properties of pimalertinfo object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /AlertInfo/<AlertId>
@@ -81,8 +82,8 @@ Content-length: 370
 }
 ```
 
-<!-- uuid: a6de7b55-91b9-4af3-a6e6-a971d254eb68
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 2935c601-54be-4a52-b3ea-d4ee0fd60759
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of pimalertinfo object.",

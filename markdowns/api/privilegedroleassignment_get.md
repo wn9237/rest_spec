@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of privilegedroleassignment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedRoleAssignments/<UserId|RoleId>
@@ -41,8 +42,8 @@ Content-length: 160
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
-<!-- uuid: a2de996d-ebd9-4cbe-a3b3-c74262db93e2
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 4b342e4f-645b-453a-8aba-c16313e02025
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleAssignment",

@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /Alerts/<AlertId>/Reactivate
@@ -60,8 +61,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: a04bfd62-554a-4a7c-b3c5-71208922915f
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: f75f6f61-ac92-43d2-ba52-86cc35eb1848
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Reactivate",

@@ -2,7 +2,8 @@
 
 Retrieve a list of notification objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /Notifications
@@ -53,8 +54,8 @@ Content-length: 206
 ```
 If successful, this method returns a `200 OK` response code and collection of [Notification](../resources/notification.md) objects in the response body.
 
-<!-- uuid: 90a8e9e6-331b-4d7b-80a8-75cac1808f70
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: deddc7c7-eeff-428b-bc58-7c25a396c2a6
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Notification",

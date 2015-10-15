@@ -2,7 +2,8 @@
 
 Use this API to create a new registeredDevice.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/registeredDevices
@@ -52,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: b095967e-2c78-4c54-8a15-860b34f12a7f
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: d7ef044b-ca1d-493e-a1de-289700e5c90a
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create registeredDevice",

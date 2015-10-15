@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of contactfolder object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/ContactFolders/<Id>
@@ -46,8 +47,8 @@ Content-length: 104
 ```
 If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
-<!-- uuid: 7e43b0f7-14ba-4be6-90a4-3efeb6e520e8
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: b67679fc-247b-4890-a9a4-72fc27b7db16
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ContactFolder",

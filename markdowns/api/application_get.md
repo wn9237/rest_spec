@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of application object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/<objectId>
@@ -111,8 +112,8 @@ Content-length: 2108
 ```
 If successful, this method returns a `200 OK` response code and [Application](../resources/application.md) object in the response body.
 
-<!-- uuid: 0e9df182-2154-47ed-9327-2b5dac7a171b
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 3b656f1e-8686-45e9-b17d-41f2058eb478
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Application",

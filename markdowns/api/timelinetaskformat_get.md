@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of timelinetaskformat object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /tasks/<id>/timelineFormat
@@ -53,8 +54,8 @@ Content-length: 255
 ```
 If successful, this method returns a `200 OK` response code and [TimelineTaskFormat](../resources/timelinetaskformat.md) object in the response body.
 
-<!-- uuid: 0059bf21-6876-4124-8c52-d3c82ac2b6e3
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 836f6682-1289-423c-9796-191bad59b9b6
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TimelineTaskFormat",

@@ -2,7 +2,8 @@
 
 Update the properties of approleassignment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/appRoleAssignments/<objectId>
@@ -80,8 +81,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: b49fe44d-2029-4df9-bc91-132392364d49
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 6a6187e9-aafd-4cef-b576-343db0ded91f
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of approleassignment object.",

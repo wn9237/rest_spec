@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/AddFavorite
@@ -46,8 +47,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 5c742534-9624-4dd9-aee6-1fd6df142198
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: b75ea0bf-c047-4fa6-a215-11320457e244
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: AddFavorite",

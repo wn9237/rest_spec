@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of calendar object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/Calendar
@@ -47,8 +48,8 @@ Content-length: 106
 ```
 If successful, this method returns a `200 OK` response code and [Calendar](../resources/calendar.md) object in the response body.
 
-<!-- uuid: 50f22b2c-3da8-481f-ab74-a69dd62ab835
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: cbd0d2ff-a665-4d42-9e55-e12768b91846
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Calendar",

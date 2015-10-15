@@ -2,7 +2,8 @@
 
 Update the properties of plantaskboard object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /plans/<id>/bucketTaskBoard
@@ -58,8 +59,8 @@ Content-length: 76
 }
 ```
 
-<!-- uuid: f29a5f21-5285-4176-a702-71019aa0a7e3
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 0447efa1-7adc-4a0f-b4e6-6bb100dd155c
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plantaskboard object.",

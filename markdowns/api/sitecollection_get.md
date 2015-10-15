@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of sitecollection object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /myOrganization/siteCollections/<id>
@@ -42,8 +43,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [SiteCollection](../resources/sitecollection.md) object in the response body.
 
-<!-- uuid: 0ce426bd-89ae-42a6-93c4-bdcdeddc506b
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: e8bcdf25-be55-4b8f-a5ad-a4d9d5920c71
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SiteCollection",

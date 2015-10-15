@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of conversationthread object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<objectId>/Threads/<Id>
@@ -68,8 +69,8 @@ Content-length: 489
 ```
 If successful, this method returns a `200 OK` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
-<!-- uuid: 44f73cc5-f7db-468a-b3af-6539214ac06c
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: a9e1bf48-5d50-4578-8caf-6697d3e838cb
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ConversationThread",

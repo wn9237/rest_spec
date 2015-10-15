@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of notes object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/notes
@@ -44,8 +45,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [Notes](../resources/notes.md) object in the response body.
 
-<!-- uuid: 6799217c-0e27-4c67-9041-a97e9387efd1
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: d9867ac2-962c-4219-a911-a8cb47e96d40
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notes",

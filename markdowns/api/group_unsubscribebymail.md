@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/UnsubscribeByMail
@@ -46,8 +47,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: d996131e-9323-479b-8d57-e1135bbb2f64
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: c7179b28-6b1d-4e14-89d2-9755dd51f371
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: UnsubscribeByMail",

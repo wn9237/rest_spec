@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /Notifications/<Id>/NotificationTypes
@@ -47,8 +48,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: ffcdad4d-19ce-481d-a33b-13989b2da039
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 49c21513-6378-4981-b51a-092e27a6b866
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notification: NotificationTypes",

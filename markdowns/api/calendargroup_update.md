@@ -2,7 +2,8 @@
 
 Update the properties of calendargroup object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/CalendarGroups/<Id>
@@ -62,8 +63,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: 083079ec-6382-422c-8e4d-121cfd2beb77
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 4b8f75df-61ae-4628-a9d7-bb1617cb4d21
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of calendargroup object.",

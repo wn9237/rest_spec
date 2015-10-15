@@ -2,7 +2,8 @@
 
 Delete Photo.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/UserPhoto
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 2155f277-3965-4d69-baa1-51257d265db8
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: ad609f13-4924-4704-a6c6-4878d7b39b1b
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

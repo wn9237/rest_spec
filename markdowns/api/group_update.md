@@ -2,7 +2,8 @@
 
 Update the properties of group object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/<objectId>
@@ -148,8 +149,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: 6a40b228-4772-4321-bd9f-324c5c0e2689
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 6314f5dc-2f9b-4db5-953d-f6e306f26489
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of group object.",

@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/share_list.md) | [share](share.md) [] |Get share object collection. |
 
-<!-- uuid: 77056094-5186-4aa7-ae85-2b48994bf499
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 93269071-533a-4254-85a9-7fd2a77be3da
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "shares resource",

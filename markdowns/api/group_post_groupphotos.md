@@ -2,7 +2,8 @@
 
 Use this API to create a new GroupPhoto.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/GroupPhotos
@@ -52,8 +53,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: b62afc4a-3dd3-4542-9d74-c84072ca3141
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 995bad67-e58d-4b1a-bf51-4f756aa780af
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create GroupPhoto",

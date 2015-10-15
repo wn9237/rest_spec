@@ -2,7 +2,8 @@
 
 Use this API to create a new ownedDevice.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/ownedDevices
@@ -52,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: f108aea4-693c-4021-b61b-a096a33cfc5d
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: ff0e36b4-9d1d-4e6c-948c-d5d0ec42521b
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ownedDevice",

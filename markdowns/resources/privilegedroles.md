@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/privilegedrole_list.md) | [PrivilegedRole](privilegedrole.md) [] |Get privilegedRole object collection. |
 
-<!-- uuid: 4593f31d-b50b-4096-bb33-c766220c1cdb
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: a7129d8f-f0df-4377-bd0e-003b6a3574ed
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoles resource",

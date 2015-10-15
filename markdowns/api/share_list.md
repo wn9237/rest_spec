@@ -2,7 +2,8 @@
 
 Retrieve a list of share objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /shares
@@ -65,8 +66,8 @@ Content-length: 424
 ```
 If successful, this method returns a `200 OK` response code and collection of [share](../resources/share.md) objects in the response body.
 
-<!-- uuid: ed73a312-127b-42a3-92ce-832a677a4b60
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 3746efe7-5fc7-4679-8988-40afa10c0674
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List share",

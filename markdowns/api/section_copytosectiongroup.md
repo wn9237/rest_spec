@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/sections/<id>/CopyToSectionGroup
@@ -69,8 +70,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: 6f01263c-ee07-4f2b-be19-51a6bd7f32dd
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 3c9f48e3-a6d3-4dd5-aa28-80b3a3be4bad
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section: CopyToSectionGroup",

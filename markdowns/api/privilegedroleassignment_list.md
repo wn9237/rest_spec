@@ -2,7 +2,8 @@
 
 Retrieve a list of privilegedroleassignment objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedRoleAssignments
@@ -47,8 +48,8 @@ Content-length: 210
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.
 
-<!-- uuid: 473de19a-c742-4d75-bdee-6374d0f8213d
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 7757af0c-8f69-4c6f-b0ba-f3fb5ab03439
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedRoleAssignment",

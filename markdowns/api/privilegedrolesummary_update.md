@@ -2,7 +2,8 @@
 
 Update the properties of privilegedrolesummary object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /PrivilegedRoles/<Id>/Summary
@@ -67,8 +68,8 @@ Content-length: 145
 }
 ```
 
-<!-- uuid: 77627fc8-9a0d-49a2-8d02-b18c890f691a
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: a4f6ad5e-b5f7-4a36-927f-e677d3464d08
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrolesummary object.",

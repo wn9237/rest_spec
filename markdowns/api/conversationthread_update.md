@@ -2,7 +2,8 @@
 
 Update the properties of conversationthread object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/<objectId>/Threads/<Id>
@@ -109,8 +110,8 @@ Content-length: 489
 }
 ```
 
-<!-- uuid: 9796bf3f-4af9-44a1-946e-e81094854bd4
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: eb3b8a54-9864-4dc3-8b89-24d4d4afc024
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversationthread object.",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of fileattachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -51,8 +52,8 @@ Content-length: 308
 ```
 If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
 
-<!-- uuid: 5f75e866-2163-41c8-b57f-192b201bd8d9
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 12ccb019-80d9-4de8-9514-a69d27908776
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get FileAttachment",

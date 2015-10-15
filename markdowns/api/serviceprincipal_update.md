@@ -2,7 +2,8 @@
 
 Update the properties of serviceprincipal object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /servicePrincipals/<objectId>
@@ -202,8 +203,8 @@ Content-length: 1924
 }
 ```
 
-<!-- uuid: ed0811e8-09ff-490a-8af1-b6c8a1980b1c
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: b0ce2f9e-8878-444b-b370-a538bcaef067
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of serviceprincipal object.",

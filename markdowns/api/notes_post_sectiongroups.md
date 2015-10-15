@@ -2,7 +2,8 @@
 
 Use this API to create a new SectionGroup.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/sectionGroups
@@ -58,8 +59,8 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 4af9557e-f6ae-4d4a-9d60-84db9c5115b5
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 825ecd5c-49fe-4eef-a586-d5d6b05b37e4
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SectionGroup",

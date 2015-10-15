@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Messages/<Id>/CreateForward
@@ -118,8 +119,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: f541e62b-d147-4e84-91a1-4c88c94c50be
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 5e867113-0631-4e7e-910f-52c0861c30fc
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateForward",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of opentypeextension object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -44,8 +45,8 @@ Content-length: 48
 ```
 If successful, this method returns a `200 OK` response code and [OpenTypeExtension](../resources/opentypeextension.md) object in the response body.
 
-<!-- uuid: bdd143d6-50a8-463b-be06-13861ca9da1e
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 281a3914-28f0-48d2-b40e-beb3f1341161
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OpenTypeExtension",

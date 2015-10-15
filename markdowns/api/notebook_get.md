@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of notebook object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/notes/notebooks/<id>
@@ -63,8 +64,8 @@ Content-length: 516
 ```
 If successful, this method returns a `200 OK` response code and [Notebook](../resources/notebook.md) object in the response body.
 
-<!-- uuid: 05e07e8e-9b50-4009-b2c3-8126e9a40381
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 6eb71953-db21-40fe-8565-02c306e7df47
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notebook",

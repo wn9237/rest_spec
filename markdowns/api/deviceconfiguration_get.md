@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of deviceconfiguration object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /deviceConfiguration/<objectId>
@@ -46,8 +47,8 @@ Content-length: 341
 ```
 If successful, this method returns a `200 OK` response code and [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
 
-<!-- uuid: b1e9aad5-bbd1-4287-b55b-5aecdbb3b263
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 3fc874d1-9feb-4ec6-8bbd-0442d8760487
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DeviceConfiguration",

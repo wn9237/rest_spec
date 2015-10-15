@@ -2,7 +2,8 @@
 
 Delete Application.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/<objectId>
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 72fb5cdd-3d1a-4041-a74c-ae189fa493ba
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 70226e72-f2fe-45f9-85e7-e54006448b28
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

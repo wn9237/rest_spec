@@ -2,7 +2,8 @@
 
 Update the properties of subscribedsku object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /subscribedSkus/<objectId>
@@ -87,8 +88,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: 3a589710-d16a-417e-bfb9-9344441d23f3
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: b2e1e34f-a0d0-411e-a5c1-41d7da07a953
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of subscribedsku object.",

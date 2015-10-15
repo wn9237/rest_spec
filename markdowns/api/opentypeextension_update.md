@@ -2,7 +2,8 @@
 
 Update the properties of opentypeextension object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -56,8 +57,8 @@ Content-length: 48
 }
 ```
 
-<!-- uuid: 506750c3-9189-4612-af0d-e2e05cbadb51
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 07ed9142-6316-42fb-81a1-fb8475d478cc
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of opentypeextension object.",

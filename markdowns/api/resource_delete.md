@@ -2,7 +2,8 @@
 
 Delete Resource.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/notes/resources/<id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: c3535852-5ea4-49a6-aab4-6589f38bef22
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 93eb1c57-ce76-47c2-a0b8-1a89b46146a3
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

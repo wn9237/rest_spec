@@ -2,7 +2,8 @@
 
 Use this API to create a new Event.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/Events
@@ -124,8 +125,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: 5100cc5d-8e04-46cd-96f6-a0378a202855
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: b5659bfa-4f3c-469e-b813-1fafc856fea2
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

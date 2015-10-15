@@ -2,7 +2,8 @@
 
 Retrieve a list of orgcontact objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contacts
@@ -76,8 +77,8 @@ Content-length: 1263
 ```
 If successful, this method returns a `200 OK` response code and collection of [OrgContact](../resources/orgcontact.md) objects in the response body.
 
-<!-- uuid: 41fcec8e-d492-437c-a38b-aded2c80444b
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 068a82f7-7e6d-4d15-9ddc-cdfa0b307100
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List OrgContact",

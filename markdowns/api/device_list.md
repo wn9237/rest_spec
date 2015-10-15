@@ -2,7 +2,8 @@
 
 Retrieve a list of device objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices
@@ -66,8 +67,8 @@ Content-length: 858
 ```
 If successful, this method returns a `200 OK` response code and collection of [Device](../resources/device.md) objects in the response body.
 
-<!-- uuid: 6d5cc6b1-f374-4411-b563-3c5399b15e6f
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 32213415-f06a-4af1-b088-e59cdc611ea1
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Device",

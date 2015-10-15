@@ -2,7 +2,8 @@
 
 Update the properties of message object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/Messages/<Id>
@@ -220,8 +221,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: a0a84f81-679f-45c8-9618-518517d43232
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: b416028f-f89d-4e78-929f-5e76316ac4ed
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of message object.",

@@ -2,7 +2,8 @@
 
 Delete Post.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/<objectId>/Threads/<Id>/Posts/<Id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 68d590ae-7d83-4f6e-8511-37a50da936bc
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: bb22f765-9dbd-424d-9190-44ac5a14e11c
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

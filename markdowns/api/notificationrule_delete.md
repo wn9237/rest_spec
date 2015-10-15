@@ -2,7 +2,8 @@
 
 Delete NotificationRule.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /NotificationRules/<Id>
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 7fa768c9-0df8-41ef-9c8d-f5343edacbc6
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 651c5050-f1d8-44be-8400-249554720fcb
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

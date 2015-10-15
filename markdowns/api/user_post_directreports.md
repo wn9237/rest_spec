@@ -2,7 +2,8 @@
 
 Use this API to create a new directReport.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/directReports
@@ -52,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: ffdaf544-18e1-4716-99e2-6ea3e5094cfd
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: b2ff05c6-7d4b-444c-9be3-fc1acf054bbe
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create directReport",

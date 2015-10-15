@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of photo object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/UserPhoto
@@ -46,8 +47,8 @@ Content-length: 53
 ```
 If successful, this method returns a `200 OK` response code and [Photo](../resources/photo.md) object in the response body.
 
-<!-- uuid: e0257cc9-bca6-4e93-a96b-1dad1f7b5dad
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: ccc470c2-71d2-4b80-86f2-5b9805ee5c7b
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Photo",

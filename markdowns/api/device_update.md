@@ -2,7 +2,8 @@
 
 Update the properties of device object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/<objectId>
@@ -112,8 +113,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: fbafa8d1-1911-44df-84d8-f632c2aa4260
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: d46a4ab2-9ede-4093-9b77-93a07d2aa6e0
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of device object.",

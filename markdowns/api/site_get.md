@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of site object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /myOrganization/siteCollections/<id>/sites/<id>
@@ -42,8 +43,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [Site](../resources/site.md) object in the response body.
 
-<!-- uuid: 7b5e26dd-dee8-4dea-8298-eba99e8b19da
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: bfd66afe-c46c-4884-a3cc-bf42f1228580
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Site",

@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/SendMail
@@ -127,8 +128,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 4d1cf031-981d-4a30-8116-96280e818e43
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 0f47d59e-3c2f-4fbf-9e5f-a4c2a3ada4de
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: SendMail",

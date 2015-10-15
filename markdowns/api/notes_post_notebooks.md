@@ -2,7 +2,8 @@
 
 Use this API to create a new Notebook.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/notebooks
@@ -69,8 +70,8 @@ Content-length: 516
 }
 ```
 
-<!-- uuid: 6ed74e65-cd3c-4c73-9ada-f8d7a1c2e672
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: adb0f662-6cd4-411b-9737-a530036dcfcb
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Notebook",

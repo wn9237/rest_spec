@@ -2,7 +2,8 @@
 
 Update the properties of drive object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /drive
@@ -100,8 +101,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: dea7700d-e8a2-483a-aef5-5c883894c534
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: e7e656b4-e602-460b-8bc1-77f0313cbf0a
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of drive object.",

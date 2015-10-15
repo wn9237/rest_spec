@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /Alerts/<AlertId>/Fix
@@ -68,8 +69,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: 1738d556-a0d1-4f0c-9167-52fc860e66d9
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: c9366a60-6c41-49b9-a10a-876252e52b06
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Fix",

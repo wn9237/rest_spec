@@ -2,7 +2,8 @@
 
 Update the properties of resource object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/notes/resources/<id>
@@ -62,8 +63,8 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: 10818fbb-c3c2-4768-ad94-d965a274a770
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 353e955e-950b-4079-a671-aca8cf482365
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of resource object.",

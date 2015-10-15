@@ -2,7 +2,8 @@
 
 Update the properties of page object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/notes/pages/<id>
@@ -91,8 +92,8 @@ Content-length: 391
 }
 ```
 
-<!-- uuid: 083af178-cbe3-4a81-aace-1191e96d8377
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 45530df8-30e1-4c94-bb1f-d08861ad7758
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of page object.",

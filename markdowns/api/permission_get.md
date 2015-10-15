@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of permission object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drive/root/permissions/<id>
@@ -80,8 +81,8 @@ Content-length: 762
 ```
 If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
 
-<!-- uuid: 8bdaaf7f-6f2e-4198-bee8-94a8b44be89a
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 804b257f-7671-4071-8506-c0b2ec802537
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get permission",

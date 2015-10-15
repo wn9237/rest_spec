@@ -2,7 +2,8 @@
 
 Update the properties of mailfolder object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/RootFolder
@@ -62,8 +63,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: a0480ccc-1a51-4592-9efe-e10a40350055
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: fda671c1-83d5-48ca-ab27-c2ac96de707a
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of mailfolder object.",

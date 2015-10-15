@@ -2,7 +2,8 @@
 
 Retrieve a list of subscribedsku objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /subscribedSkus
@@ -58,8 +59,8 @@ Content-length: 482
 ```
 If successful, this method returns a `200 OK` response code and collection of [SubscribedSku](../resources/subscribedsku.md) objects in the response body.
 
-<!-- uuid: ece54c3f-b3d1-4cdd-89c2-0f89963f90c5
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 153e0274-3746-4fc6-aa11-d1c22883e371
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List SubscribedSku",

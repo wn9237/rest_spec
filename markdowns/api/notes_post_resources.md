@@ -2,7 +2,8 @@
 
 Use this API to create a new Resource.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/resources
@@ -53,8 +54,8 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: dcebcb02-c63c-41f1-88ae-5c76ad75bbaa
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 4f1a360d-a01c-4b30-8825-1c8c69353dec
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Resource",

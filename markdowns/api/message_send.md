@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Messages/<Id>/Send
@@ -46,8 +47,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 5b9d178d-3a42-4a57-ad99-6de2a7bc431c
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: d11ba919-4e36-473c-b04d-222a15810989
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Send",

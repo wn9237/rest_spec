@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /tenantDetails/<objectId>/getMemberObjects
@@ -55,8 +56,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 654dc095-555f-47c2-b91d-506e85f0c97a
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: fb7598fc-b550-43f9-afaf-a452f3d1eb51
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TenantDetail: getMemberObjects",

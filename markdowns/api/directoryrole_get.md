@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of directoryrole object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/<objectId>
@@ -43,8 +44,8 @@ Content-length: 275
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryRole](../resources/directoryrole.md) object in the response body.
 
-<!-- uuid: c103efdf-1878-4b33-a021-1ca01ef11670
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 0ea82483-9abc-4a9b-bbc7-081ef0365c43
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryRole",

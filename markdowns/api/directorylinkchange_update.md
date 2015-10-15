@@ -2,7 +2,8 @@
 
 Update the properties of directorylinkchange object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -78,8 +79,8 @@ Content-length: 433
 }
 ```
 
-<!-- uuid: 4b11fa67-382a-42ff-9f71-61a69806d37c
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: c9ad511d-07fc-47ed-ab21-320b60d885de
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directorylinkchange object.",

@@ -2,7 +2,8 @@
 
 Retrieve a list of directoryroletemplate objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoleTemplates
@@ -47,8 +48,8 @@ Content-length: 237
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryRoleTemplate](../resources/directoryroletemplate.md) objects in the response body.
 
-<!-- uuid: 6847fcfd-d733-48e6-be41-cb7be94045b5
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 3d1031f2-fd25-4352-abce-7a2b6acce49e
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryRoleTemplate",

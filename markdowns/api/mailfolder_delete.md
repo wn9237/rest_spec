@@ -2,7 +2,8 @@
 
 Delete MailFolder.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/RootFolder
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 923ec425-7872-4fe8-8082-d963e796fcd8
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 79e087e7-a114-42f0-98e3-230c0a7d23f2
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

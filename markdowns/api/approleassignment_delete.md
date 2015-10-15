@@ -2,7 +2,8 @@
 
 Delete AppRoleAssignment.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/appRoleAssignments/<objectId>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 40bcb620-585a-4dbf-82ad-e63084650fe3
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 7530662a-f71c-4192-afa7-0e534a537074
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

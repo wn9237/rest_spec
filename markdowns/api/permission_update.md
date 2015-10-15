@@ -2,7 +2,8 @@
 
 Update the properties of permission object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /drive/root/permissions/<id>
@@ -131,8 +132,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: 56233de9-a08c-45c6-b7a8-1f48ae28fe18
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 7fcaf195-c10f-416f-b1a9-b52968ba2f99
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of permission object.",

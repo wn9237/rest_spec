@@ -2,7 +2,8 @@
 
 Update the properties of calendar object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/Calendar
@@ -62,8 +63,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: e660f3b6-9928-4d7e-8323-944e9db4387f
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 71e04982-e2e7-4b3d-94e4-23ec884d83d6
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of calendar object.",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of extension object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/Extensions/<Id>
@@ -44,8 +45,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [Extension](../resources/extension.md) object in the response body.
 
-<!-- uuid: ffeb45bf-6991-4eab-a375-0740abb6a5a1
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 34ee68a6-fddf-463c-8b80-295f5957e00f
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Extension",

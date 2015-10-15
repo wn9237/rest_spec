@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of sectiongroup object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/notes/sectionGroups/<id>
@@ -52,8 +53,8 @@ Content-length: 309
 ```
 If successful, this method returns a `200 OK` response code and [SectionGroup](../resources/sectiongroup.md) object in the response body.
 
-<!-- uuid: 2239422d-6853-4830-905b-01ce934ca21d
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: e1151d83-96e7-4b2f-a027-354a71ec1695
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SectionGroup",

@@ -2,7 +2,8 @@
 
 Update the properties of conversation object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/<objectId>/Conversations/<Id>
@@ -72,8 +73,8 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: c50ac5b5-51c1-4d06-8f50-48333d518b5f
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 90b0a257-eee6-492f-8223-52ca766aacac
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversation object.",

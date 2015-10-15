@@ -2,7 +2,8 @@
 
 Delete thumbnailSet.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /drive/root/thumbnails/<id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: bf5eff49-6015-4c5a-ad7e-cc9c3a821920
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: d7317cab-e655-4f99-b036-72f185894237
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

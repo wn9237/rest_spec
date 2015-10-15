@@ -2,7 +2,8 @@
 
 Use this API to create a new memberOf.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/memberOf
@@ -52,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 8c0b76ea-b7de-4875-86ba-7770bf11f6f2
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: aa05a070-e2e4-4a9e-b759-c71a3a5b90c3
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create memberOf",

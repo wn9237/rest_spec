@@ -2,7 +2,8 @@
 
 Update the properties of fileattachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -78,8 +79,8 @@ Content-length: 308
 }
 ```
 
-<!-- uuid: fb2c95da-02fa-4a86-bd57-ae390cc1cc50
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 0dae09fc-7105-4383-b6ab-3f0cc5bc820d
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of fileattachment object.",

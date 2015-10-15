@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Events/<Id>/Decline
@@ -56,8 +57,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: a70a6244-d7d2-4032-b807-46958f0556e9
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 1e483e9f-44d2-43bc-a730-7cb97b6eb58f
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: Decline",

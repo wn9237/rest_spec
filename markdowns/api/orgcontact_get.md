@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of orgcontact object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contacts/<objectId>
@@ -69,8 +70,8 @@ Content-length: 1097
 ```
 If successful, this method returns a `200 OK` response code and [OrgContact](../resources/orgcontact.md) object in the response body.
 
-<!-- uuid: 1a6dd941-9231-4204-9bc2-f5ac0a3b6669
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 8b99c509-4bbb-4d14-b5a4-64d00966ab65
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OrgContact",

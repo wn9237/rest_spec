@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of section object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/notes/sections/<id>
@@ -52,8 +53,8 @@ Content-length: 276
 ```
 If successful, this method returns a `200 OK` response code and [Section](../resources/section.md) object in the response body.
 
-<!-- uuid: 41b4447a-f4d4-4702-aab7-61fc2175aed8
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: d993ce52-d85a-436d-9896-cdbd5ef3f578
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Section",

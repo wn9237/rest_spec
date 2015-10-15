@@ -2,7 +2,8 @@
 
 Use this API to create a new thumbnailSet.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/root/thumbnails
@@ -74,8 +75,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 42f0ef2d-ce79-4e82-a124-5d763af7af6d
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 7496f9d0-f774-4519-962e-0e25065fe54b
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create thumbnailSet",

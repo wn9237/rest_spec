@@ -2,7 +2,8 @@
 
 Update the properties of referenceattachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -66,8 +67,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 77a5bb3d-f390-4e62-af6b-0f00532d2c8b
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 2ac10983-9568-4388-bdcf-8f99d76ecc64
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of referenceattachment object.",

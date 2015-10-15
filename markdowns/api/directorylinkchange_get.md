@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of directorylinkchange object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -45,8 +46,8 @@ Content-length: 433
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryLinkChange](../resources/directorylinkchange.md) object in the response body.
 
-<!-- uuid: 2dc25bd8-25f0-4379-a53d-df010b446888
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 2baff940-911f-4011-87a7-63938b44ca2d
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryLinkChange",

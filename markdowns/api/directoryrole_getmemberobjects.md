@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/<objectId>/getMemberObjects
@@ -55,8 +56,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 5b2e4b9d-ad43-4188-bf08-0ba6a0024255
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: d88fb5f9-2b56-45ab-b840-72915c5d77b8
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole: getMemberObjects",

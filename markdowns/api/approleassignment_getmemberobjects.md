@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/appRoleAssignments/<objectId>/getMemberObjects
@@ -57,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 33e7c558-f0eb-474b-af24-a3d039592c12
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 2465d35d-ee5b-4b51-8768-db67394991a7
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRoleAssignment: getMemberObjects",

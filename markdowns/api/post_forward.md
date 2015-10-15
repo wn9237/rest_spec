@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/Threads/<Id>/Posts/<Id>/Forward
@@ -63,8 +64,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 6a0d96d7-2d6d-48f4-927d-d8bc73d3e9b5
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: d638f75f-0f03-4dc4-b563-fa37a4cd9bdc
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post: Forward",

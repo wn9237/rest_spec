@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of myorganization object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /myOrganization
@@ -42,8 +43,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [MyOrganization](../resources/myorganization.md) object in the response body.
 
-<!-- uuid: 06fc0265-293e-4bfb-96c8-3cc214d95cc0
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: c6684f97-2d2d-4050-928f-97da3e366db4
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get MyOrganization",

@@ -2,7 +2,8 @@
 
 Retrieve a list of plan objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /plans
@@ -56,8 +57,8 @@ Content-length: 237
 ```
 If successful, this method returns a `200 OK` response code and collection of [Plan](../resources/plan.md) objects in the response body.
 
-<!-- uuid: 368b354b-5b01-4d7a-b180-e09d4c389da9
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: d161a526-6018-47d0-86d4-8fec88a3a32b
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Plan",

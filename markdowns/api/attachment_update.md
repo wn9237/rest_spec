@@ -2,7 +2,8 @@
 
 Update the properties of attachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/Events/<Id>/Attachments/<Id>
@@ -68,8 +69,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 36e073d9-a2e5-4af4-974e-79216b6f4533
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: c0217577-d533-49ab-aea3-2cd858eb1fc6
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of attachment object.",

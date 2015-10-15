@@ -2,7 +2,8 @@
 
 Use this API to create a new Message.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Messages
@@ -121,8 +122,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 3b701850-687f-45b5-8c2d-d010f3e7b9ae
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 568e37da-86d7-418b-a2d5-b813cb833b17
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Message",

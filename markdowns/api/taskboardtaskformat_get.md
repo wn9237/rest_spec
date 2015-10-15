@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of taskboardtaskformat object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /tasks/<id>/bucketTaskBoardFormat
@@ -47,8 +48,8 @@ Content-length: 110
 ```
 If successful, this method returns a `200 OK` response code and [TaskBoardTaskFormat](../resources/taskboardtaskformat.md) object in the response body.
 
-<!-- uuid: f3ed28c1-b1d3-4a2e-88eb-2e8931e128f9
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 466a5a6e-5717-4147-a3e2-c3ce216da180
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskBoardTaskFormat",

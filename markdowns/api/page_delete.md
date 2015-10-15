@@ -2,7 +2,8 @@
 
 Delete Page.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/notes/pages/<id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 76d75580-58dd-4ab7-9f7f-f6b94718ea6f
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 486ffee3-3fd7-4846-98ce-5da7305a7dc4
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

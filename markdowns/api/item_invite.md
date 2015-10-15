@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/root/invite
@@ -112,8 +113,8 @@ Content-length: 940
 }
 ```
 
-<!-- uuid: ceca1968-f872-4602-8188-4dda8f4bef7b
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 7937df59-84bb-4e97-a143-72c1c49edc8c
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: invite",

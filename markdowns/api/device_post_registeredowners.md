@@ -2,7 +2,8 @@
 
 Use this API to create a new registeredOwner.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/<objectId>/registeredOwners
@@ -50,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: ce8ea760-9bcb-4a00-8301-3487b3745573
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 2dcc9300-f004-44f1-b8f3-055f381f69e4
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create registeredOwner",

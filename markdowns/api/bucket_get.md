@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of bucket object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /buckets/<id>
@@ -50,8 +51,8 @@ Content-length: 179
 ```
 If successful, this method returns a `200 OK` response code and [Bucket](../resources/bucket.md) object in the response body.
 
-<!-- uuid: 15e7469f-bec4-431a-81f4-f1e2a5b8e0a0
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 20632f6f-b4cf-4541-ad79-f9b39ae36e23
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Bucket",

@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/root/delta(token=token-value)
@@ -194,8 +195,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: 39f6cced-667b-4dd1-b39c-7b7324a6f841
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 084e5326-55a7-480f-a820-f38aaac8077a
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: delta",

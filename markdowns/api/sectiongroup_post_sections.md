@@ -2,7 +2,8 @@
 
 Use this API to create a new Section.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/sectionGroups/<id>/sections
@@ -58,8 +59,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: a84c5ead-1bc0-4cdf-94e0-46b1dff9bdac
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 9820b930-9200-4556-9685-53be13485b56
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Section",

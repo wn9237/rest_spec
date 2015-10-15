@@ -2,7 +2,8 @@
 
 Update the properties of section object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/notes/sections/<id>
@@ -77,8 +78,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: e054d6b2-aad9-4d7b-b2d9-bf227bacc7b1
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 284f918c-0dc0-414f-b0e0-72f54a121334
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of section object.",

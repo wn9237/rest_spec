@@ -2,7 +2,8 @@
 
 Use this API to create a new createdObject.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/<objectId>/createdObjects
@@ -50,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: d7bfd6c0-821f-4169-8c2e-8cd153b5300d
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: d3bfc896-5347-4074-9212-0955e36b7427
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create createdObject",

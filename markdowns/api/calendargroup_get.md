@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of calendargroup object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/CalendarGroups/<Id>
@@ -47,8 +48,8 @@ Content-length: 110
 ```
 If successful, this method returns a `200 OK` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
 
-<!-- uuid: 54194226-1717-402f-9888-763b6d90157a
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 4d182622-0943-4c80-b536-89cbce2c5978
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get CalendarGroup",

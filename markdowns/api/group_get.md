@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of group object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<objectId>
@@ -74,8 +75,8 @@ Content-length: 1009
 ```
 If successful, this method returns a `200 OK` response code and [Group](../resources/group.md) object in the response body.
 
-<!-- uuid: f93b79b8-dd0b-48ab-9283-c09fca7fd57f
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: d856a3cc-b9c6-4312-86ae-d21a42180d90
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Group",

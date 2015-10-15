@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/Deactivate
@@ -50,8 +51,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 3377d60e-ebe2-47a6-883b-a736d617025b
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 13f7a374-4032-4fb8-8d1a-b61e0efde9a7
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: Deactivate",

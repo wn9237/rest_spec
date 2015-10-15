@@ -2,7 +2,8 @@
 
 Use this API to create a new RejectedSender.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/RejectedSenders
@@ -52,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 04a0d52e-b682-45d7-8e84-95d3f6551ad3
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: d1d3c790-e8ae-4109-890c-c77ecf037d8c
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create RejectedSender",

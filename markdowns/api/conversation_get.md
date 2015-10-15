@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of conversation object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<objectId>/Conversations/<Id>
@@ -51,8 +52,8 @@ Content-length: 201
 ```
 If successful, this method returns a `200 OK` response code and [Conversation](../resources/conversation.md) object in the response body.
 
-<!-- uuid: 4bf80229-e0af-4934-8f70-cb6ef7a132f9
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 68a4dfba-08d9-4d61-9081-a1ccc1cacf64
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Conversation",

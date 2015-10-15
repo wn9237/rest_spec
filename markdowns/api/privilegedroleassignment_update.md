@@ -2,7 +2,8 @@
 
 Update the properties of privilegedroleassignment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /PrivilegedRoleAssignments/<UserId|RoleId>
@@ -63,8 +64,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 3f54740e-08cd-4157-83d0-258323b27f36
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 9b547b58-a78b-4872-bd33-0ddc320ca026
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedroleassignment object.",

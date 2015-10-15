@@ -2,7 +2,8 @@
 
 Use this API to create a new registeredUser.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/<objectId>/registeredUsers
@@ -50,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: a552a2af-aeee-48b7-9f65-b5bc4fd62057
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 3dca92c9-8ee1-456b-b7e0-6fecce606392
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create registeredUser",

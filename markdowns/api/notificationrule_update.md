@@ -2,7 +2,8 @@
 
 Update the properties of notificationrule object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /NotificationRules/<Id>
@@ -72,8 +73,8 @@ Content-length: 260
 }
 ```
 
-<!-- uuid: ed42552a-5cb8-4146-b3c6-ace8bb415621
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 4cb4280e-88bc-48ff-b83b-a0595b2ae43a
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notificationrule object.",

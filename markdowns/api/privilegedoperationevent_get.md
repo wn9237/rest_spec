@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of privilegedoperationevent object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedOperationEvents/<Id>
@@ -54,8 +55,8 @@ Content-length: 456
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) object in the response body.
 
-<!-- uuid: b47db90d-3c10-402d-9429-f5816e52db49
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 8c832254-2f89-4e44-9171-5fb3406f203d
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedOperationEvent",

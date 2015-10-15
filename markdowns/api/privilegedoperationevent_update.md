@@ -2,7 +2,8 @@
 
 Update the properties of privilegedoperationevent object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /PrivilegedOperationEvents/<Id>
@@ -87,8 +88,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: dd5e8c04-90da-4cdf-8945-cbd22dfcda8d
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 28977e4b-1aee-47d7-ac05-9cd350f99921
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedoperationevent object.",

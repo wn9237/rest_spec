@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Events/<Id>/Accept
@@ -56,8 +57,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 32d106f1-a5d4-438b-bc32-dbae11f936a4
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: a151a476-867c-43bd-a8f8-a7f2e02b28a7
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: Accept",

@@ -2,7 +2,8 @@
 
 Retrieve a list of deviceconfiguration objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /deviceConfiguration
@@ -53,8 +54,8 @@ Content-length: 415
 ```
 If successful, this method returns a `200 OK` response code and collection of [DeviceConfiguration](../resources/deviceconfiguration.md) objects in the response body.
 
-<!-- uuid: e23c39aa-01e6-4008-a70f-d84712d6c6a7
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: becd443c-4461-4b84-9a5c-c4a0a6db2e8c
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DeviceConfiguration",

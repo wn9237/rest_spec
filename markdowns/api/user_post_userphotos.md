@@ -2,7 +2,8 @@
 
 Use this API to create a new UserPhoto.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/UserPhotos
@@ -52,8 +53,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: fe829b03-cc5c-411f-8b9b-7ad00db15443
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 9f9aec4d-6343-43b7-860e-de006225c45d
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create UserPhoto",

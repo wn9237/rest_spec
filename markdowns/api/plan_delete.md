@@ -2,7 +2,8 @@
 
 Delete Plan.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /plans/<id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 2e5443cb-d750-4c87-9f86-812d886c1bd0
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: e9d9e989-6bb3-439e-afe2-1702e2d075bc
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

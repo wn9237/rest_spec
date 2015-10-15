@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/<objectId>/getMemberGroups
@@ -55,8 +56,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: da09c599-0776-45e9-a674-e11b7c0737e6
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 3408f3c8-12c4-47bd-9a7d-40ffa8b9d245
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device: getMemberGroups",

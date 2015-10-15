@@ -2,7 +2,8 @@
 
 Update the properties of event object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/Events/<Id>
@@ -230,8 +231,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: fa868b63-90fb-418f-b01a-bc714d2d4556
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: a81d4e2d-eac3-49e9-8cc6-f5013c3d185d
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of event object.",

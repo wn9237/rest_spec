@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of plandetails object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /plans/<id>/details
@@ -53,8 +54,8 @@ Content-length: 411
 ```
 If successful, this method returns a `200 OK` response code and [PlanDetails](../resources/plandetails.md) object in the response body.
 
-<!-- uuid: 23497396-13b4-4559-b9ce-e2de340afb4b
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: ba5b98c3-e9a8-4dd2-bf4a-402c91d73a3d
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanDetails",

@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/notebooks/<id>/CopyNotebook
@@ -78,8 +79,8 @@ Content-length: 516
 }
 ```
 
-<!-- uuid: c40b2aa7-9a16-44f3-bb79-4dfdfdb87e34
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 0a838f1f-6221-4524-a5a5-b8a9e39fdafb
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notebook: CopyNotebook",

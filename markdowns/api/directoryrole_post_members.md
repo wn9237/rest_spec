@@ -2,7 +2,8 @@
 
 Use this API to create a new member.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/<objectId>/members
@@ -50,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 0a301a59-57f0-4d1c-8a69-d734dbddadf7
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: e1eb4fc3-5558-42da-a6a6-02a5d8f733d1
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create member",

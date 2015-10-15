@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/RemoveFavorite
@@ -46,8 +47,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 62032a53-998a-4f32-a5aa-146a1fbeb164
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 0f5d3575-5f40-40cc-aaca-f734d49bd7d8
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: RemoveFavorite",

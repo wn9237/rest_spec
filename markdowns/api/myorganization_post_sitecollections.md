@@ -2,7 +2,8 @@
 
 Use this API to create a new SiteCollection.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /myOrganization/siteCollections
@@ -48,8 +49,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: e6996feb-4e8a-4fc7-9dcc-66d806602ecf
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 0afe43d5-453e-403f-837e-84a9bd422545
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SiteCollection",

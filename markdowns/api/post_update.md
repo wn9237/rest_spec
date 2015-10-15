@@ -2,7 +2,8 @@
 
 Update the properties of post object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/<objectId>/Threads/<Id>/Posts/<Id>
@@ -133,8 +134,8 @@ Content-length: 790
 }
 ```
 
-<!-- uuid: fab5afd4-1292-4695-bc8b-d168be4b901d
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: c7e35234-3f7a-4391-81c4-e6f6fd0648ce
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of post object.",

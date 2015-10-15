@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/root/createLink
@@ -91,8 +92,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: d0198df1-3ffd-42c2-8715-6db1385f99ee
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 0e748966-19b5-440f-91a2-5572950ea2f4
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createLink",

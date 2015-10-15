@@ -2,7 +2,8 @@
 
 Update the properties of timelinetaskformat object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /tasks/<id>/timelineFormat
@@ -80,8 +81,8 @@ Content-length: 255
 }
 ```
 
-<!-- uuid: e54b943b-9d70-4952-8970-45bec01351ea
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 1f106983-e459-4bbc-b8d1-fe2366aee134
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of timelinetaskformat object.",

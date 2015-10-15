@@ -2,7 +2,8 @@
 
 Update the properties of privilegedrole object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /PrivilegedRoles/<Id>
@@ -55,8 +56,8 @@ Content-length: 46
 }
 ```
 
-<!-- uuid: 328e6917-4f0a-49a7-89b6-31587fc98efc
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 8968a75c-8c9d-4e86-a8d7-005c20239b8e
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrole object.",

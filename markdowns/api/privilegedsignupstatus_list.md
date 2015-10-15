@@ -2,7 +2,8 @@
 
 Retrieve a list of privilegedsignupstatus objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedSignupStatus
@@ -52,8 +53,8 @@ Content-length: 128
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) objects in the response body.
 
-<!-- uuid: dc540368-bc6b-428d-9d38-328dfe90041e
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: bb47916d-60c3-4493-998a-d2dc3e3d67a4
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedSignupStatus",

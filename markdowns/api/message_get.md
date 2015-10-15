@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of message object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/Messages/<Id>
@@ -115,8 +116,8 @@ Content-length: 1546
 ```
 If successful, this method returns a `200 OK` response code and [Message](../resources/message.md) object in the response body.
 
-<!-- uuid: 7582e498-3599-486b-a3b6-d213ce24b919
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 2f537698-643b-4bcd-b982-f89b9bcac363
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Message",

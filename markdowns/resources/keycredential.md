@@ -37,8 +37,8 @@ Here is a JSON representation of the resource
 |usage|String||
 |value|Binary||
 
-<!-- uuid: 5f4d7912-d266-4732-9906-34cc94ed33a5
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: ff27df75-06ca-4770-942e-87fbdc9ed130
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "KeyCredential resource",

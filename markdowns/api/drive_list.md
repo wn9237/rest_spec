@@ -2,7 +2,8 @@
 
 Retrieve a list of drive objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drives
@@ -72,8 +73,8 @@ Content-length: 580
 ```
 If successful, this method returns a `200 OK` response code and collection of [drive](../resources/drive.md) objects in the response body.
 
-<!-- uuid: 924b9b31-d276-42b1-8003-6464519fe67a
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 789c7901-ccdf-4316-8424-b54c027fed4d
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List drive",

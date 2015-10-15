@@ -2,7 +2,8 @@
 
 Delete PrivilegedRoleSettings.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /PrivilegedRoles/<Id>/Settings
@@ -22,8 +23,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: eb9bb8f0-d7d4-41ef-9f3c-0007c0bd997d
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 57fb3956-b851-4411-b7c6-b2a3e39b3793
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

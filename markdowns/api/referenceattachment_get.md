@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of referenceattachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -47,8 +48,8 @@ Content-length: 162
 ```
 If successful, this method returns a `200 OK` response code and [ReferenceAttachment](../resources/referenceattachment.md) object in the response body.
 
-<!-- uuid: 9d90f96a-3fd3-4fe7-8080-907d47d954a8
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: a33a44ff-9460-4f54-ad3e-6861ddbb9358
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ReferenceAttachment",

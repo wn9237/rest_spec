@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Events/<Id>/TentativelyAccept
@@ -56,8 +57,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 08c3e6b8-52a8-4ce7-9936-49e02400b66b
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: ef8dc95d-9689-41b7-b8d3-7f65cbed3be0
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: TentativelyAccept",

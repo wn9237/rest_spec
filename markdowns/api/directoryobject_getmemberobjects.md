@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/manager/getMemberObjects
@@ -57,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 78671fcb-2fba-4c78-b00e-f5d9125b8795
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: f1ac3d42-3837-46aa-90dd-0eeac9b2a60e
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject: getMemberObjects",

@@ -2,7 +2,8 @@
 
 Retrieve a list of group objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups
@@ -79,8 +80,8 @@ Content-length: 1187
 ```
 If successful, this method returns a `200 OK` response code and collection of [Group](../resources/group.md) objects in the response body.
 
-<!-- uuid: 10321742-69af-4460-9360-dee26432aa21
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 12bfb9ac-a475-46b1-9151-2ae4551156e1
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Group",

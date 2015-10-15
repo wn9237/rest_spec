@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/subscribedsku_list.md) | [SubscribedSku](subscribedsku.md) [] |Get subscribedSku object collection. |
 
-<!-- uuid: 6cff6145-4500-42c1-97cf-635241de82bd
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: a27570fa-cc3f-45d8-b717-1620fc03aa3a
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "subscribedSkus resource",

@@ -2,7 +2,8 @@
 
 Use this API to create a new Bucket.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /plans/<id>/buckets
@@ -56,8 +57,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 1b7cfba3-ae9b-4165-8a4a-3476df0eaccc
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 3eee386e-241c-4e5c-a2b4-b7a21dc5c87a
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Bucket",

@@ -2,7 +2,8 @@
 
 Update the properties of contactfolder object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/ContactFolders/<Id>
@@ -59,8 +60,8 @@ Content-length: 104
 }
 ```
 
-<!-- uuid: 8b02f9e3-992c-44e0-85b8-5ef653b88a4d
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 9a930281-c9d6-4eb8-8b1f-59615188c72a
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contactfolder object.",

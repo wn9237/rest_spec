@@ -2,7 +2,8 @@
 
 Delete SectionGroup.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/notes/sectionGroups/<id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 8b1bb8c0-0f0d-4388-b2a2-cef774f5d8de
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 922d856b-e89e-4c82-90c3-91547d8f70cb
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

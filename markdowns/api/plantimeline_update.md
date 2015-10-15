@@ -2,7 +2,8 @@
 
 Update the properties of plantimeline object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /plans/<id>/timeline
@@ -62,8 +63,8 @@ Content-length: 119
 }
 ```
 
-<!-- uuid: 1ad3a024-8eee-4b4e-b6a2-2bed75abb967
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 22566bee-36c2-4827-b5f0-84ce6b5450af
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plantimeline object.",

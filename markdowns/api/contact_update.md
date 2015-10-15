@@ -2,7 +2,8 @@
 
 Update the properties of contact object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/Contacts/<Id>
@@ -217,8 +218,8 @@ Content-length: 1857
 }
 ```
 
-<!-- uuid: 7d338dd2-c733-4855-89ba-a7c0f02a4c30
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 11c19bd3-4aa8-441e-b382-484a0f1aba4e
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contact object.",

@@ -71,8 +71,8 @@ Here is a JSON representation of the resource
 |[Copytosectiongroup](../api/section_copytosectiongroup.md)|[CopySectionModel](copysectionmodel.md)||
 |[Thumbnail](../api/section_thumbnail.md)|Stream||
 
-<!-- uuid: 4dcfd4ed-8075-4158-81fa-aa62679ad3b8
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: f09b52d0-aa0f-416a-9f81-dd2393c8a0ad
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section resource",

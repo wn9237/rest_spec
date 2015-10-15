@@ -2,7 +2,8 @@
 
 Use this API to create a new member.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/members
@@ -52,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: e0b63246-4320-40ff-8c1d-2c517f7b2c5e
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: cdad3273-f271-4f5e-9867-9048c2fe35e7
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create member",

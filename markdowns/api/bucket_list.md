@@ -2,7 +2,8 @@
 
 Retrieve a list of bucket objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /buckets
@@ -56,8 +57,8 @@ Content-length: 237
 ```
 If successful, this method returns a `200 OK` response code and collection of [Bucket](../resources/bucket.md) objects in the response body.
 
-<!-- uuid: ea5720de-1cc5-4d91-963d-2c9471973362
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 295ce685-f057-4124-9bc8-82345cb57a4a
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Bucket",

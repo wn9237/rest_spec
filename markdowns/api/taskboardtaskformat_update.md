@@ -2,7 +2,8 @@
 
 Update the properties of taskboardtaskformat object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /tasks/<id>/bucketTaskBoardFormat
@@ -61,8 +62,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: 38f14dff-cf52-466f-bfd9-4f8826b8100f
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 9575d78e-d73f-491b-8f5c-8abb3929b40d
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of taskboardtaskformat object.",

@@ -2,7 +2,8 @@
 
 Update the properties of application object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/<objectId>
@@ -224,8 +225,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: a5677137-ef85-433b-81ea-c1165acc13b6
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 376a0be8-a8d3-43b1-bd8f-9eec17414c21
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of application object.",

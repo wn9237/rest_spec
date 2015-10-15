@@ -2,7 +2,8 @@
 
 Update the properties of plandetails object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /plans/<id>/details
@@ -79,8 +80,8 @@ Content-length: 411
 }
 ```
 
-<!-- uuid: 2bd125ec-afb8-4228-a4f6-5cc5e842aed5
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 50385f37-f4b5-4560-a13e-02cfaafb0b74
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plandetails object.",

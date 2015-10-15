@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of subscribedsku object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /subscribedSkus/<objectId>
@@ -51,8 +52,8 @@ Content-length: 388
 ```
 If successful, this method returns a `200 OK` response code and [SubscribedSku](../resources/subscribedsku.md) object in the response body.
 
-<!-- uuid: be27eac6-b106-4f26-b6f1-a142bfc5be54
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: c7551a59-6e78-4bd5-a046-bf1ad321541f
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SubscribedSku",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of share object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /shares/<id>
@@ -57,8 +58,8 @@ Content-length: 330
 ```
 If successful, this method returns a `200 OK` response code and [share](../resources/share.md) object in the response body.
 
-<!-- uuid: f77c87ef-8cc1-4d75-9342-bf7786f3b668
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 89dbea26-3fe8-4b47-bf54-c0d8a402ca5b
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get share",

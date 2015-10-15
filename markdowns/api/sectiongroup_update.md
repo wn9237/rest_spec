@@ -2,7 +2,8 @@
 
 Update the properties of sectiongroup object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/notes/sectionGroups/<id>
@@ -77,8 +78,8 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 9fa10758-82fa-4e40-aeab-5157de2c81e9
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 952503b4-0e2f-431d-92c7-61022673b6c6
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of sectiongroup object.",

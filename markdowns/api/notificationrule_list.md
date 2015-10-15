@@ -2,7 +2,8 @@
 
 Retrieve a list of notificationrule objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /NotificationRules
@@ -57,8 +58,8 @@ Content-length: 322
 ```
 If successful, this method returns a `200 OK` response code and collection of [NotificationRule](../resources/notificationrule.md) objects in the response body.
 
-<!-- uuid: c6a5a7f7-5bc0-49f1-bc4e-211c688ac6bf
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 3c714031-22a5-421e-ae20-650cb487e5b6
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List NotificationRule",

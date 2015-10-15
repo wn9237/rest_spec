@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of pimalert object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /Alerts/<AlertId>
@@ -57,8 +58,8 @@ Content-length: 529
 ```
 If successful, this method returns a `200 OK` response code and [PimAlert](../resources/pimalert.md) object in the response body.
 
-<!-- uuid: ccfada8b-dc89-47d2-9074-2c1a3453e347
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: be94dd56-2ccf-4367-a826-f55c8cc7e3af
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlert",

@@ -2,7 +2,8 @@
 
 Retrieve a list of privilegedrole objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedRoles
@@ -44,8 +45,8 @@ Content-length: 84
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedRole](../resources/privilegedrole.md) objects in the response body.
 
-<!-- uuid: 4530853f-327d-4d97-ae7f-651ee3671245
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 8d86889d-d7fd-4b31-967f-ec63e26be79d
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedRole",

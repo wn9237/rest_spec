@@ -2,7 +2,8 @@
 
 Update the properties of user object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>
@@ -294,8 +295,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: 9d19105d-f6a4-4e83-ae8d-2ee587049c5c
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: b8a486f0-5130-4dbf-9492-cd6196f0fa29
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of user object.",

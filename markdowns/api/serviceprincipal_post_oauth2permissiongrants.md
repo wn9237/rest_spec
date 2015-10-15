@@ -2,7 +2,8 @@
 
 Use this API to create a new OAuth2PermissionGrant.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/<objectId>/oauth2PermissionGrants
@@ -55,8 +56,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: b714f4a1-3b3e-43a2-9cbe-f5740c9889a9
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 2a70f6ab-ec0e-429a-b6ed-e20b73a250a4
+2015-10-15 04:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

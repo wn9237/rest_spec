@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/Threads/<Id>/Posts/<Id>/Reply
@@ -96,8 +97,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: a5fa7ab1-8ef6-4921-a51f-5045cffc3358
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 8dd32bdc-07fc-4fc0-8fc2-8bde3c110124
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post: Reply",

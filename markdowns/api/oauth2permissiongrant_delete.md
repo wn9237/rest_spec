@@ -2,7 +2,8 @@
 
 Delete OAuth2PermissionGrant.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /oauth2PermissionGrants/<objectId>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: ded11a6c-8d92-4203-9205-82f33b8647f7
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 508e2b93-10b8-442f-88e0-dcd83f7f0c89
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

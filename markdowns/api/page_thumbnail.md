@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/pages/<id>/Thumbnail
@@ -47,8 +48,8 @@ Content-length: 29
 }
 ```
 
-<!-- uuid: 1af081d0-587d-43d0-8c9d-d40a4367db0d
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 4ae3d7c1-16a6-4bb3-9c37-c28be615768e
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: Thumbnail",

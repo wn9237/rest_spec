@@ -2,7 +2,8 @@
 
 Update the properties of directoryrole object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /directoryRoles/<objectId>
@@ -72,8 +73,8 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: 38f3a6b3-c21e-4e2c-a838-f6d7661a5269
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 1caa93c5-c7d4-4a82-a166-3ab430064b88
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryrole object.",

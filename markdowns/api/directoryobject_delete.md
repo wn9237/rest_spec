@@ -2,7 +2,8 @@
 
 Delete DirectoryObject.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/manager
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: d743e6ed-ab6a-40f7-87a2-ebd62e1663ad
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: d4a45b68-f48a-4c35-9fda-b6cb88675da4
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

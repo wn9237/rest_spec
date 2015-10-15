@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Messages/<Id>/Copy
@@ -126,8 +127,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 6211092f-e80e-4ec0-8810-edf829481f3c
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 8c6ea033-3a18-4cc2-8a2e-251b953f610d
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Copy",

@@ -2,7 +2,8 @@
 
 Delete PlanTaskBoard.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /plans/<id>/bucketTaskBoard
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 4966ceef-6997-420f-8279-ef0c1501a06c
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: fdf5ac08-0bdb-49b8-9213-85dc545458b3
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

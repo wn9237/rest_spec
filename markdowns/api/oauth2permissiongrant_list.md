@@ -2,7 +2,8 @@
 
 Retrieve a list of oauth2permissiongrant objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /oauth2PermissionGrants
@@ -50,8 +51,8 @@ Content-length: 333
 ```
 If successful, this method returns a `200 OK` response code and collection of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.
 
-<!-- uuid: 62f04339-f2bc-4b67-a2ba-c51990b6119e
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 779d4439-8c64-4c4c-852e-3ec96bd0e3bd
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List OAuth2PermissionGrant",

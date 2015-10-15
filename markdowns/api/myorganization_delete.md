@@ -2,7 +2,8 @@
 
 Delete MyOrganization.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /myOrganization
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: ba71c2fe-7951-45b8-9114-69fce234a1d4
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 560f4b06-b2b8-4493-b443-be05a3c60cbb
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

@@ -2,7 +2,8 @@
 
 Delete Attachment.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/Events/<Id>/Attachments/<Id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: daf5237e-0d5d-4b9a-9cf3-cc1734f6f5d1
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 3e6b5c55-97e2-470a-93a0-d1f286df0f36
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

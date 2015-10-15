@@ -2,7 +2,8 @@
 
 Use this API to create a new Group.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/JoinedGroups
@@ -86,8 +87,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: b2158255-b3eb-4beb-85cb-4f0776329d3b
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 21b89380-fe1a-4636-8a72-f0cb060e06de
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Group",

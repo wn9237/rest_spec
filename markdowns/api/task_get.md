@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of task object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /tasks/<id>
@@ -64,8 +65,8 @@ Content-length: 641
 ```
 If successful, this method returns a `200 OK` response code and [Task](../resources/task.md) object in the response body.
 
-<!-- uuid: bcb77046-d50f-4621-943d-947a20e89d91
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 53ad9786-b56c-4b33-a13f-ba7722234c8a
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Task",

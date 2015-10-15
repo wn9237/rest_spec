@@ -2,7 +2,8 @@
 
 Delete TaskDetails.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /tasks/<id>/details
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: abfa10be-dfce-4751-bab6-7895ca679b59
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 51f0dbbf-2773-4af8-b468-1a98419eb5e3
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

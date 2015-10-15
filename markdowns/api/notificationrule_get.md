@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of notificationrule object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /NotificationRules/<Id>
@@ -49,8 +50,8 @@ Content-length: 260
 ```
 If successful, this method returns a `200 OK` response code and [NotificationRule](../resources/notificationrule.md) object in the response body.
 
-<!-- uuid: e519269a-3b9f-4c78-8274-3ed93199e9da
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 8e1a0297-1c6f-4a6e-95fc-eeb2bbafaf49
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get NotificationRule",

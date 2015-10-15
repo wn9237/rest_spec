@@ -2,7 +2,8 @@
 
 Update the properties of directoryroletemplate object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /directoryRoleTemplates/<objectId>
@@ -63,8 +64,8 @@ Content-length: 187
 }
 ```
 
-<!-- uuid: f94a0864-e02e-4afc-916b-4eea36aa9dcd
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 630279de-f44c-436e-a943-4439f91d7355
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryroletemplate object.",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of directoryroletemplate object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoleTemplates/<objectId>
@@ -40,8 +41,8 @@ Content-length: 187
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.
 
-<!-- uuid: 94122992-3b2c-4986-94cc-cabe5e34f729
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 9c14d431-af5a-4cc2-8077-57a05f8ea82c
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryRoleTemplate",

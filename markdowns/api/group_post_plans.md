@@ -2,7 +2,8 @@
 
 Use this API to create a new Plan.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/plans
@@ -56,8 +57,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: fb3b8962-c2ff-4d93-bd88-69ce866dd749
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: d6a55ddc-4883-4a78-8dde-23fb4cbd484a
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Plan",

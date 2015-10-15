@@ -2,7 +2,8 @@
 
 Delete Group.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/<objectId>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: e60e4550-203f-42af-843f-6150d720d8e5
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 168f54f0-74e7-4f9b-84d5-687ba1c43b38
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

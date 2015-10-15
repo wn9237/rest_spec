@@ -2,7 +2,8 @@
 
 Use this API to create a new Site.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /myOrganization/siteCollections/<id>/sites
@@ -48,8 +49,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 76e1553d-5bc9-4f43-be32-8bb66b72f6ef
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 6397c604-b38a-4370-a4e6-d7878f0993c0
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Site",

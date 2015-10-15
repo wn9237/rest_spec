@@ -2,7 +2,8 @@
 
 Delete DirectoryRoleTemplate.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directoryRoleTemplates/<objectId>
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 21af1c05-a012-4879-ab18-47e7476d6538
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 4cf9dc91-ea2a-44d2-91d4-7fddd230e9ca
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

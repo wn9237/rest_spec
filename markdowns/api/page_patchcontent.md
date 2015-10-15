@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/pages/<id>/PatchContent
@@ -61,8 +62,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: f40354a0-52d8-4216-89f1-b8cfec3834d1
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 85c6828e-a2fd-4243-bded-feb9d1fecf1a
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: PatchContent",

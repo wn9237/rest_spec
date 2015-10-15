@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of approleassignment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/appRoleAssignments/<objectId>
@@ -47,8 +48,8 @@ Content-length: 398
 ```
 If successful, this method returns a `200 OK` response code and [AppRoleAssignment](../resources/approleassignment.md) object in the response body.
 
-<!-- uuid: 397876d5-ca0f-43c6-8ed0-4e44d5c16f80
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 1e900e4d-5060-4804-b339-a3c4a080ab64
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get AppRoleAssignment",

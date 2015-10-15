@@ -2,7 +2,8 @@
 
 Use this API to create a new permission.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/root/permissions
@@ -86,8 +87,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: 6b06cb8c-b95a-4793-b59e-52e04982d87e
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 246816dc-913e-41bf-9e66-e48aa8f0043d
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create permission",

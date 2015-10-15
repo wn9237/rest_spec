@@ -2,7 +2,8 @@
 
 Delete TimelineTaskFormat.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /tasks/<id>/timelineFormat
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 657f3f35-3630-455f-8d33-f7842c8594e3
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: f9164244-e014-4e45-8315-bf33274b069b
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

@@ -2,7 +2,8 @@
 
 Update the properties of eventmessage object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -221,8 +222,8 @@ Content-length: 1598
 }
 ```
 
-<!-- uuid: 91b8b9c2-a2af-49d5-919d-780c3a38d2af
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 607f60f4-7c97-46cf-b31c-09f89cd82d07
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of eventmessage object.",

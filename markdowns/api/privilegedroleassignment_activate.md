@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/Activate
@@ -64,8 +65,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 081c5843-70bd-412c-b01f-00a889443e02
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: a3a7717e-53fd-49de-8975-bd5f6f14714d
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: Activate",

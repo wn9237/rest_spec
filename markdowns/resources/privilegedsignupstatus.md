@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/privilegedsignupstatus_list.md) | [PrivilegedSignupStatus](privilegedsignupstatus.md) [] |Get privilegedSignupStatus object collection. |
 
-<!-- uuid: 20e26b69-f64b-4655-ab85-143ab0fa3858
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 500deaad-2f7f-428d-88b6-092f6c3c6836
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus resource",
@@ -43,8 +43,8 @@ None
 |[Signup](../api/privilegedsignupstatus_signup.md)|[PrivilegedSignupStatus](privilegedsignupstatus.md)||
 |[Skipsetup](../api/privilegedsignupstatus_skipsetup.md)|[None](none.md)||
 
-<!-- uuid: 13015ce6-5d19-4616-87c4-8d45a3bdf6e6
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: ded8174f-8daa-4c3f-9403-322e53c4dd45
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus resource",

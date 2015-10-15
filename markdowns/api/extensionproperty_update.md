@@ -2,7 +2,8 @@
 
 Update the properties of extensionproperty object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/<objectId>/extensionProperties/<objectId>
@@ -76,8 +77,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: c702f5a5-e928-42ca-b32f-bd33eff8c08a
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: acd2984e-7ccd-4e4e-9507-f2196bac42c7
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of extensionproperty object.",

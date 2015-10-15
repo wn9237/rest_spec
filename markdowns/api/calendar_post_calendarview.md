@@ -2,7 +2,8 @@
 
 Use this API to create a new Event.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Calendar/CalendarView
@@ -124,8 +125,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: d5663fe4-2602-4fa5-a20d-4d4577f6fbdb
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 87435bec-d60c-415c-b6be-fbf9611333cb
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

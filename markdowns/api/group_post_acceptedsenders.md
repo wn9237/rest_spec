@@ -2,7 +2,8 @@
 
 Use this API to create a new AcceptedSender.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/AcceptedSenders
@@ -52,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 5caadb40-1ef1-491b-98d2-4276690bb227
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 8af3a603-3015-4d8a-be52-1b39c15206a6
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AcceptedSender",

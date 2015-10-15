@@ -2,7 +2,8 @@
 
 Update the properties of item object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /drive/root
@@ -355,8 +356,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: d1911ff4-f9fe-42c9-ab9e-00156037c9a2
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 339e4c6d-fac9-4d81-9e1f-4d58adbb7afd
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of item object.",

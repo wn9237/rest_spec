@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of user object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>
@@ -133,8 +134,8 @@ Content-length: 2650
 ```
 If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
 
-<!-- uuid: 6639339f-73a3-474a-b8d1-a333a0fb6308
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: e5d2c415-d291-4f48-bcbc-9c0494574c02
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get User",

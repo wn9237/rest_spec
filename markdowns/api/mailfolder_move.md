@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/RootFolder/Move
@@ -58,8 +59,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 0e9dada5-4d3a-47af-a9fa-d8d2c61d8ecc
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 9872b484-e66b-41e8-9c15-86079ec8c2b6
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Move",

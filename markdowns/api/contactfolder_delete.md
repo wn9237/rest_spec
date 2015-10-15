@@ -2,7 +2,8 @@
 
 Delete ContactFolder.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/ContactFolders/<Id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 5ef29964-2cc2-4732-85e6-8456c849957a
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 779642f2-3776-4788-945a-a102429c7eee
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

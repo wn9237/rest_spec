@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of privilegedrolesummary object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedRoles/<Id>/Summary
@@ -48,8 +49,8 @@ Content-length: 145
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedRoleSummary](../resources/privilegedrolesummary.md) object in the response body.
 
-<!-- uuid: 715096da-8065-4949-b2b9-7c5281eb0129
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 16c57170-166a-43e5-b7b3-b702686504ba
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSummary",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of plantimeline object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /plans/<id>/timeline
@@ -47,8 +48,8 @@ Content-length: 119
 ```
 If successful, this method returns a `200 OK` response code and [PlanTimeline](../resources/plantimeline.md) object in the response body.
 
-<!-- uuid: 0f2e0074-00a5-4226-9619-27136846a77a
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: a843b43e-010d-447a-b520-a4655354542e
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanTimeline",

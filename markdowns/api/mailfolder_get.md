@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of mailfolder object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/RootFolder
@@ -47,8 +48,8 @@ Content-length: 130
 ```
 If successful, this method returns a `200 OK` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
-<!-- uuid: da05d380-3d41-4cd4-a41b-997e9918a711
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 5622e87e-1fda-4339-be86-619692540c5c
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get MailFolder",

@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/plan_list.md) | [Plan](plan.md) [] |Get plan object collection. |
 
-<!-- uuid: 97fe757d-e499-4f11-922b-159978c29b86
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 23b373ff-a1ce-4840-8829-f020dbdd4ede
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "plans resource",

@@ -2,7 +2,8 @@
 
 Use this API to create a new ownedObject.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/ownedObjects
@@ -52,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 80086b79-e985-4d8d-9580-933e612ee659
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 385862f7-18ad-42d2-8c3c-d25e5ee72099
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ownedObject",

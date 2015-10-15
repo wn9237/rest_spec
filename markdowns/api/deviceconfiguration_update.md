@@ -2,7 +2,8 @@
 
 Update the properties of deviceconfiguration object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /deviceConfiguration/<objectId>
@@ -77,8 +78,8 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: 63a9aefa-c642-4362-94b3-e868efe65b98
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: a9959bcb-856b-4cab-b2cb-b7b2dbdb44ee
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of deviceconfiguration object.",

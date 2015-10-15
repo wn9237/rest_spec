@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of directoryobject object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/manager
@@ -40,8 +41,8 @@ Content-length: 111
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryObject](../resources/directoryobject.md) object in the response body.
 
-<!-- uuid: e75fd8bb-3fd8-4d57-94f2-db1b44a8c54b
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: ac295865-43e6-424c-9d5e-52128b0d911a
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryObject",

@@ -2,7 +2,8 @@
 
 Use this API to create a new Attachment.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Messages/<Id>/Attachments
@@ -55,8 +56,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 7482055d-6ce5-4247-9b71-d45fa9678991
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 0a5db840-39af-4801-94f8-fcfdd15df51c
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",

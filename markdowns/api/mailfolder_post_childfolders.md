@@ -2,7 +2,8 @@
 
 Use this API to create a new MailFolder.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/RootFolder/ChildFolders
@@ -53,8 +54,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: fa8062b4-d438-4945-91c9-8395147e14a4
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 4bcc6236-e169-4642-9ef3-9231765bb889
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create MailFolder",

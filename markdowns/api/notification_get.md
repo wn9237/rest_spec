@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of notification object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /Notifications/<Id>
@@ -45,8 +46,8 @@ Content-length: 160
 ```
 If successful, this method returns a `200 OK` response code and [Notification](../resources/notification.md) object in the response body.
 
-<!-- uuid: 2e712ec9-8797-49ee-b448-e099f1f97a02
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: d0d3dd38-c34f-4143-bdc7-a2ad6682fa1b
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notification",

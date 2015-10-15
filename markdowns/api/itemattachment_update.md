@@ -2,7 +2,8 @@
 
 Update the properties of itemattachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -66,8 +67,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 84122c56-8f6f-4a26-8d45-6572dcb130be
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: d583a418-4464-4c52-994c-5a45cb97f34c
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of itemattachment object.",

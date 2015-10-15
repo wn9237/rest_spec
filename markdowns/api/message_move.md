@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/Messages/<Id>/Move
@@ -126,8 +127,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 42d96f32-a6f0-4fdb-a4df-d09c87f13c18
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 0be136ac-cd6b-40cb-8f86-81777578cbbd
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Move",

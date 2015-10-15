@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of plantaskboard object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /plans/<id>/bucketTaskBoard
@@ -46,8 +47,8 @@ Content-length: 76
 ```
 If successful, this method returns a `200 OK` response code and [PlanTaskBoard](../resources/plantaskboard.md) object in the response body.
 
-<!-- uuid: 8ca2f066-74e7-464a-a11e-d67edd3ae99e
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 146314fb-2845-4801-9545-4df7ce893c23
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanTaskBoard",

@@ -2,7 +2,8 @@
 
 Retrieve a list of user objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
@@ -138,8 +139,8 @@ Content-length: 3064
 ```
 If successful, this method returns a `200 OK` response code and collection of [User](../resources/user.md) objects in the response body.
 
-<!-- uuid: e0b105c4-6c54-4e59-a1f9-95c7dbf89f63
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 9ea233aa-42e4-4744-b0a4-0288bd9726d0
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List User",

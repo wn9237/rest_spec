@@ -2,7 +2,8 @@
 
 Delete Section.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/notes/sections/<id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: b94849cd-1b1a-43b4-8a3f-2c0d8523e244
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 64cd7c52-63ca-4268-b832-522fda699a66
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

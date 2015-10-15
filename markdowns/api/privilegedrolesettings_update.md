@@ -2,7 +2,8 @@
 
 Update the properties of privilegedrolesettings object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /PrivilegedRoles/<Id>/Settings
@@ -73,8 +74,8 @@ Content-length: 289
 }
 ```
 
-<!-- uuid: 363ccd71-7164-4d4b-a64f-8cd3159ea2cd
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 409c2ba6-5116-4e3b-a8a6-d0e9af5edf26
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrolesettings object.",

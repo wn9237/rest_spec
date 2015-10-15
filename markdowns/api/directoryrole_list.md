@@ -2,7 +2,8 @@
 
 Retrieve a list of directoryrole objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles
@@ -50,8 +51,8 @@ Content-length: 337
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryRole](../resources/directoryrole.md) objects in the response body.
 
-<!-- uuid: a0cd3390-25d5-4a06-9089-49f44583862f
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 457fa819-7ddd-405f-b407-8e3c4f51bc61
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryRole",

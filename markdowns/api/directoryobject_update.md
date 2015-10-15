@@ -2,7 +2,8 @@
 
 Update the properties of directoryobject object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/manager
@@ -59,8 +60,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 5d065d96-8f6d-4d50-889d-42dce456c643
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 6cb3988d-dabe-461e-9b0a-560a03d958f6
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryobject object.",

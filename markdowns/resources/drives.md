@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/drive_list.md) | [drive](drive.md) [] |Get drive object collection. |
 
-<!-- uuid: 720adee2-6649-464d-bce4-fc5944cd7032
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: dd99b540-9475-4b0f-adeb-22c7b3936009
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drives resource",

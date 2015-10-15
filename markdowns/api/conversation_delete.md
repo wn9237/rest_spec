@@ -2,7 +2,8 @@
 
 Delete Conversation.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/<objectId>/Conversations/<Id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: d46554f6-0f90-47df-a060-6e31d689c06a
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 097128d0-3a14-46bf-a352-d84331c29b79
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

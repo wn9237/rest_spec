@@ -2,7 +2,8 @@
 
 Retrieve a list of task objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /tasks
@@ -70,8 +71,8 @@ Content-length: 755
 ```
 If successful, this method returns a `200 OK` response code and collection of [Task](../resources/task.md) objects in the response body.
 
-<!-- uuid: 89335685-3d45-4f86-a785-2f1742f194fe
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 1e32c2c7-0179-4f84-a319-42beecbbd661
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Task",

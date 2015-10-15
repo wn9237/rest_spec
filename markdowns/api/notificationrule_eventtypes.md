@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /NotificationRules/<Id>/EventTypes
@@ -47,8 +48,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 73921497-af23-4a72-8625-68e7979b5870
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: a2a9115c-04b2-4c73-b494-95d122843a93
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "NotificationRule: EventTypes",

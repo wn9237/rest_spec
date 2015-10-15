@@ -2,7 +2,8 @@
 
 Delete UserDetails.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/details
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 0b08b7d6-bf52-4fbf-92d9-90c655acb44c
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: f41acf31-644e-437a-9af8-9fa56423cd0d
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

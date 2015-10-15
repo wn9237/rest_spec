@@ -2,7 +2,8 @@
 
 Use this API to create a new Contact.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/ContactFolders/<Id>/Contacts
@@ -115,8 +116,8 @@ Content-length: 1857
 }
 ```
 
-<!-- uuid: 02953f47-c808-4aa1-9a3f-4df8623802ef
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 25eae2b7-6ceb-4e95-b178-0be07c638990
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Contact",

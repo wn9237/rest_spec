@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/allPhotos
@@ -189,8 +190,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: 52adc5b2-e4c3-47e9-a4e9-269bc84d2fa5
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: bbe870d2-e971-4caf-9491-ccfdfbc768d6
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive: allPhotos",

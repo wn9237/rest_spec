@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of outlookitem object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -48,8 +49,8 @@ Content-length: 185
 ```
 If successful, this method returns a `200 OK` response code and [OutlookItem](../resources/outlookitem.md) object in the response body.
 
-<!-- uuid: 8d2341aa-3864-450a-ab43-228e52212873
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: d83e2898-cf21-409b-9b7b-1a7fa01fad91
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OutlookItem",

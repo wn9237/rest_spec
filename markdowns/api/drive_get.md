@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of drive object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drive
@@ -66,8 +67,8 @@ Content-length: 458
 ```
 If successful, this method returns a `200 OK` response code and [drive](../resources/drive.md) object in the response body.
 
-<!-- uuid: c27b3f72-d575-4239-8478-616b244cdff3
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 6ae03df2-1178-4ab7-9117-ffa32c274bf4
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get drive",

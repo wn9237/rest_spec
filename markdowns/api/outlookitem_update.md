@@ -2,7 +2,8 @@
 
 Update the properties of outlookitem object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -67,8 +68,8 @@ Content-length: 185
 }
 ```
 
-<!-- uuid: 17bd6b1f-2c52-499e-94c8-5b21ff76b7d8
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 7e5e3852-8d00-42f9-99ce-6d097b584c51
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of outlookitem object.",

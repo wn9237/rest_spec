@@ -2,7 +2,8 @@
 
 Delete Calendar.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/Calendar
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 7c44bdb9-e713-4bf8-bce5-7d423b36c019
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 901329ac-39c4-4733-8f85-61504777ad4f
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of thumbnailset object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drive/root/thumbnails/<id>
@@ -68,8 +69,8 @@ Content-length: 456
 ```
 If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.
 
-<!-- uuid: 681629fa-990c-4ab6-9a9a-d4b892317a3c
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: f99f66e2-6a76-4248-830a-4657ecf5a456
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get thumbnailSet",

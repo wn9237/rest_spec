@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of page object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/notes/pages/<id>
@@ -59,8 +60,8 @@ Content-length: 391
 ```
 If successful, this method returns a `200 OK` response code and [Page](../resources/page.md) object in the response body.
 
-<!-- uuid: ef506af6-54b3-41f8-a738-7c5c7761ebc6
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 57df9403-e25e-4fc2-acf6-2dc4a649e205
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Page",

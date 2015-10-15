@@ -2,7 +2,8 @@
 
 Use this API to create a new Task.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/tasks
@@ -70,8 +71,8 @@ Content-length: 641
 }
 ```
 
-<!-- uuid: 5a8c8385-8fe0-49e7-b496-110cb7efdba1
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: c244ff93-5258-4efd-8907-66b0056a62cb
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

@@ -2,7 +2,8 @@
 
 Update the properties of share object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /shares/<id>
@@ -83,8 +84,8 @@ Content-length: 330
 }
 ```
 
-<!-- uuid: 41f547da-4b70-4733-b2de-9f36415c9a83
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 41a44198-31ef-4a06-a0f9-965a475126ae
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of share object.",

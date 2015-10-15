@@ -2,7 +2,8 @@
 
 Delete OpenTypeExtension.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 
@@ -21,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 0051fe2c-cb70-4e08-b8a7-24874d32439a
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 2540e328-639a-44e7-9463-1cefa0217908
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

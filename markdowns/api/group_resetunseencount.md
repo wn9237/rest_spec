@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/ResetUnseenCount
@@ -46,8 +47,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 38d15561-f8cc-4911-bae7-d7eda98ab62e
-2015-10-15 04:04:56 UTC -->
+<!-- uuid: 3d4876a9-f30e-4310-bdf9-cd61526da5f5
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: ResetUnseenCount",

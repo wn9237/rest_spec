@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of oauth2permissiongrant object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /oauth2PermissionGrants/<objectId>
@@ -45,8 +46,8 @@ Content-length: 271
 ```
 If successful, this method returns a `200 OK` response code and [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
 
-<!-- uuid: 18d625b7-ebdc-440a-97e9-d5e8c1c140b4
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 7455b663-bccc-4725-ba99-c12ad0bf35e2
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OAuth2PermissionGrant",

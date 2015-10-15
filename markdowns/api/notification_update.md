@@ -2,7 +2,8 @@
 
 Update the properties of notification object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /Notifications/<Id>
@@ -60,8 +61,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: a5b55506-bf9c-4adc-aedd-05a3cbf04cef
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 358a7637-087c-42b2-a767-aa626faca4ba
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notification object.",

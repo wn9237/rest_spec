@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of privilegedrolesettings object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /PrivilegedRoles/<Id>/Settings
@@ -50,8 +51,8 @@ Content-length: 289
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) object in the response body.
 
-<!-- uuid: cb6eeb70-1ae7-49c6-a569-66b0af9ed2b4
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 9b2fd8e7-6909-4d93-bf12-1ebbf30af88a
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSettings",

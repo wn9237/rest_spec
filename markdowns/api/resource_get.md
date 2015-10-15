@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of resource object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/notes/resources/<id>
@@ -47,8 +48,8 @@ Content-length: 112
 ```
 If successful, this method returns a `200 OK` response code and [Resource](../resources/resource.md) object in the response body.
 
-<!-- uuid: 3985282c-f0ac-4d0f-a473-58cdcaec70c6
-2015-10-15 04:04:59 UTC -->
+<!-- uuid: 4b43f16b-8e38-4881-9d77-eca9c6fe04ee
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Resource",

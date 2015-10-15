@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /PrivilegedSignupStatus/<TenantId>/IsSignedUp
@@ -45,8 +46,8 @@ Content-length: 19
 }
 ```
 
-<!-- uuid: 81d62290-d0ca-46f8-8c44-2b31e992780c
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 5a30b710-6b50-4ff6-8b53-469c7a5ec83d
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: IsSignedUp",

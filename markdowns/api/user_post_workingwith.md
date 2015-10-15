@@ -2,7 +2,8 @@
 
 Use this API to create a new User.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/WorkingWith
@@ -145,8 +146,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: 6a3bef51-6e8e-4bf1-9b3e-4bec5c7b4c61
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 27f40611-8215-4538-9aa4-f63900f5fb2d
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create User",

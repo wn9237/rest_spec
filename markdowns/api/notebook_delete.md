@@ -2,7 +2,8 @@
 
 Delete Notebook.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/notes/notebooks/<id>
@@ -23,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 9df5274e-cac5-4a9e-8350-08b7eca02e83
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 154ac11b-1ae8-404b-a90c-0932d58defd7
+2015-10-15 04:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

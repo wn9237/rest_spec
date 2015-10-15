@@ -2,7 +2,8 @@
 
 Retrieve a list of pimalert objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /Alerts
@@ -65,8 +66,8 @@ Content-length: 623
 ```
 If successful, this method returns a `200 OK` response code and collection of [PimAlert](../resources/pimalert.md) objects in the response body.
 
-<!-- uuid: 04522e0c-582f-4566-b951-8dc2baa3cf10
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 19eefe9d-5e4d-4aca-baf1-729075ef5ff6
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PimAlert",

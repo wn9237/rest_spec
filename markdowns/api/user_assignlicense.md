@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/assignLicense
@@ -159,8 +160,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: 66d649fd-5ad5-4f78-bd0c-b634bcbf2e69
-2015-10-15 04:05:00 UTC -->
+<!-- uuid: 909a96ff-e181-41e4-981b-0286d8085205
+2015-10-15 04:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: assignLicense",

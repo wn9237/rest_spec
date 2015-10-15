@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/<objectId>/checkMemberGroups
@@ -57,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: edfb5cb1-bc32-421d-9737-adc1c1f460af
-2015-10-15 04:04:57 UTC -->
+<!-- uuid: 64aa6f89-543b-4657-944c-39f56778ede0
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OrgContact: checkMemberGroups",

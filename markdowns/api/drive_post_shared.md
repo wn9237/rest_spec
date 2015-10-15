@@ -2,7 +2,8 @@
 
 Use this API to create a new shared.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/shared
@@ -188,8 +189,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: a0a8dc0d-f3dc-4467-9c7d-1cc5e3b10630
-2015-10-15 04:04:55 UTC -->
+<!-- uuid: 0f24c8be-d388-4146-a3ca-6cf584044a0a
+2015-10-15 04:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create shared",

@@ -2,7 +2,8 @@
 
 Update the properties of photo object.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/UserPhoto
@@ -59,8 +60,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 781978a4-fd57-4d9b-bfd0-91ccd53c096f
-2015-10-15 04:04:58 UTC -->
+<!-- uuid: 8313cd55-286e-4f5a-b38a-34e436afe8ab
+2015-10-15 04:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of photo object.",

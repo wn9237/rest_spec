@@ -2,7 +2,8 @@
 
 Use this API to create a new ExtensionProperty.
 ### Prerequisites
-The following **scopes** are required to execute this API: ### HTTP request
+The following **scopes** are required to execute this API: 
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/<objectId>/extensionProperties
@@ -57,8 +58,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: 9ff6bd50-d620-409b-85d7-994b92c7b6a8
-2015-10-15 04:04:54 UTC -->
+<!-- uuid: 4f97f58d-a7a6-4c4c-bc06-5f48271354cb
+2015-10-15 04:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ExtensionProperty",
