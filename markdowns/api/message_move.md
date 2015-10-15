@@ -126,8 +126,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 17089c25-8377-4217-b166-86b418d09614
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 42d96f32-a6f0-4fdb-a4df-d09c87f13c18
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Move",

@@ -45,13 +45,14 @@ Content-length: 119
   "version": "version-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [PlanTimeline](../resources/plantimeline.md) object in the response body.
 
-<!-- uuid: 9ddbf459-7af7-4b1a-9c3e-c542dbfeb589
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 0f2e0074-00a5-4226-9619-27136846a77a
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanTimeline",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PlanTimeline](../resources/plantimeline.md) object in the response body.
+}-->

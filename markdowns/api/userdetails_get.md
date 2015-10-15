@@ -45,13 +45,14 @@ Content-length: 73
   "version": "version-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [UserDetails](../resources/userdetails.md) object in the response body.
 
-<!-- uuid: 4a5d6dcf-b337-4240-b75a-a2d624ed519f
-2015-10-15 03:41:22 UTC -->
+<!-- uuid: 429a7036-cce5-4271-ae92-6489bcabf36d
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get UserDetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [UserDetails](../resources/userdetails.md) object in the response body.
+}-->

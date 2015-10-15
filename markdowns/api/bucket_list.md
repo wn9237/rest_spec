@@ -54,13 +54,14 @@ Content-length: 237
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [Bucket](../resources/bucket.md) objects in the response body.
 
-<!-- uuid: 0494ff0a-8536-4318-a57e-503546d0f032
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: ea5720de-1cc5-4d91-963d-2c9471973362
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Bucket",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [Bucket](../resources/bucket.md) objects in the response body.
+}-->

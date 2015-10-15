@@ -113,13 +113,14 @@ Content-length: 1546
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Message](../resources/message.md) object in the response body.
 
-<!-- uuid: 74a62269-4e0d-4e61-9270-b2c32c287a52
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 7582e498-3599-486b-a3b6-d213ce24b919
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Message",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Message](../resources/message.md) object in the response body.
+}-->

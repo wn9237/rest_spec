@@ -33,8 +33,8 @@ Here is a JSON representation of the resource
 |Status|[ResponseStatus](responsestatus.md)||
 |Type|String| Possible values are: `Required`, `Optional`, `Resource`.|
 
-<!-- uuid: f62e9be2-611b-46c5-af27-255c1c6cfcc0
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: ee4784c7-38c3-4f93-ab4b-6b3f24f7410f
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Attendee resource",

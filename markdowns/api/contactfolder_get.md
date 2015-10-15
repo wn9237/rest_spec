@@ -44,13 +44,14 @@ Content-length: 104
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
-<!-- uuid: ea18acaa-9c38-4dc8-b60b-39dc4933080c
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 7e43b0f7-14ba-4be6-90a4-3efeb6e520e8
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ContactFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
+}-->

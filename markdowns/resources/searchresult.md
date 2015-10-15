@@ -25,8 +25,8 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |onClickTelemetryUrl|String||
 
-<!-- uuid: dbc29d8d-4bce-4c81-9172-1c3abb699885
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: cdd8d729-28f0-465a-906e-d3d2a980ebee
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "searchResult resource",

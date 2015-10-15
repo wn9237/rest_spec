@@ -51,13 +51,14 @@ Content-length: 411
   "version": "version-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [PlanDetails](../resources/plandetails.md) object in the response body.
 
-<!-- uuid: 5803cc8f-22c7-4a5d-a5cf-81188d61067c
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 23497396-13b4-4559-b9ce-e2de340afb4b
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanDetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PlanDetails](../resources/plandetails.md) object in the response body.
+}-->

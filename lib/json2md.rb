@@ -462,15 +462,16 @@ module SpecMaker
 		example_lines.each do |line|
 			getMethodLines.push line
 		end
-		getMethodLines.push NEWLINE + uuid_date + NEWLINE
-		# Write the output file. 
-		getMethodLines.push get_json_page_annotation(realHeader)
 
 		if @jsonHash[:collectionOf] 
 			getMethodLines.push "If successful, this method returns a `200 OK` response code and collection of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) objects in the response body."  + NEWLINE
 		else
 			getMethodLines.push "If successful, this method returns a `200 OK` response code and [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object in the response body."  + NEWLINE
 		end
+
+		getMethodLines.push NEWLINE + uuid_date + NEWLINE
+		# Write the output file. 
+		getMethodLines.push get_json_page_annotation(realHeader)
 
 		fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:collectionOf].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
 		
@@ -768,6 +769,7 @@ module SpecMaker
 				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
 			end
 		end
+		
 		@mdlines.push NEWLINE + uuid_date + NEWLINE
 
 		# do we need this for tool check?

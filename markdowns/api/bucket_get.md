@@ -48,13 +48,14 @@ Content-length: 179
   "version": "version-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Bucket](../resources/bucket.md) object in the response body.
 
-<!-- uuid: e14b8942-e8d3-4b50-a689-6528a0b3a429
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 15e7469f-bec4-431a-81f4-f1e2a5b8e0a0
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Bucket",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Bucket](../resources/bucket.md) object in the response body.
+}-->

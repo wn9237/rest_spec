@@ -64,13 +64,14 @@ Content-length: 858
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [Device](../resources/device.md) objects in the response body.
 
-<!-- uuid: 7974e16c-c661-4c09-a773-76c78d627208
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 6d5cc6b1-f374-4411-b563-3c5399b15e6f
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Device",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [Device](../resources/device.md) objects in the response body.
+}-->

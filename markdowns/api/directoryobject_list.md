@@ -43,13 +43,14 @@ Content-length: 153
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 
-<!-- uuid: 0baee83c-c725-4008-9c43-30705a31d7ca
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 70a5a105-cf20-4b90-a9b9-c6e5ef46c7c4
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
+}-->

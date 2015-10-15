@@ -131,13 +131,14 @@ Content-length: 2650
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
 
-<!-- uuid: ddfc48a4-91ae-4425-b017-ef10526cf2b9
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: 6639339f-73a3-474a-b8d1-a333a0fb6308
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get User",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
+}-->

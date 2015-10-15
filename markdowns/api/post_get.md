@@ -76,13 +76,14 @@ Content-length: 790
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
 
-<!-- uuid: 22dbeccc-a24e-4123-9d95-14202cefe3aa
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: c87fd201-44a2-4f33-9420-b054c210bc06
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
+}-->

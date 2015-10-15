@@ -48,13 +48,14 @@ Content-length: 177
   "version": "version-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
 
-<!-- uuid: fc461406-3c9f-4fb1-af79-4e62d35575a5
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: 674329a0-9937-401b-b473-d1bb01cbf4d4
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskDetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
+}-->

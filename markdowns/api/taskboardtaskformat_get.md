@@ -45,13 +45,14 @@ Content-length: 110
   "version": "version-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [TaskBoardTaskFormat](../resources/taskboardtaskformat.md) object in the response body.
 
-<!-- uuid: 1d41f2b0-3f31-4606-8339-2b78df16172d
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: f3ed28c1-b1d3-4a2e-88eb-2e8931e128f9
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskBoardTaskFormat",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [TaskBoardTaskFormat](../resources/taskboardtaskformat.md) object in the response body.
+}-->

@@ -39,13 +39,14 @@ Content-length: 160
   "ResultMessage": "ResultMessage-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
-<!-- uuid: df1d12b1-d6a9-4d02-9c51-1c7e3ffc01d2
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: a2de996d-ebd9-4cbe-a3b3-c74262db93e2
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleAssignment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
+}-->

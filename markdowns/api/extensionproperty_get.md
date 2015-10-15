@@ -43,13 +43,14 @@ Content-length: 297
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
 
-<!-- uuid: 2d4a9b94-6ea4-4dd2-826d-8aa4e8d93717
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: bed6a7b8-1d24-4fc2-9e30-7a72846ebfa7
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ExtensionProperty",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
+}-->

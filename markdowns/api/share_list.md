@@ -63,13 +63,14 @@ Content-length: 424
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [share](../resources/share.md) objects in the response body.
 
-<!-- uuid: f6862d84-3e8a-4b4f-8624-f68f6b0a5d7f
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: ed73a312-127b-42a3-92ce-832a677a4b60
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List share",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [share](../resources/share.md) objects in the response body.
+}-->

@@ -42,13 +42,14 @@ Content-length: 22
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Extension](../resources/extension.md) object in the response body.
 
-<!-- uuid: 7eec4249-16da-4bff-98c0-220a65308a2c
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: ffeb45bf-6991-4eab-a375-0740abb6a5a1
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Extension",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Extension](../resources/extension.md) object in the response body.
+}-->

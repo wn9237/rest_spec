@@ -78,13 +78,14 @@ Content-length: 762
   "shareId": "shareId-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
 
-<!-- uuid: c125e494-f1fb-4dc6-9991-3721ca8836fa
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 8bdaaf7f-6f2e-4198-bee8-94a8b44be89a
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get permission",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
+}-->

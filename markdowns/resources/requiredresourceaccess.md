@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |resourceAccess|[ResourceAccess](resourceaccess.md) collection||
 |resourceAppId|String||
 
-<!-- uuid: f1cacc84-f7fa-4eea-b0a2-6c0366754a73
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: f52af749-e470-4faf-825b-1f306741253b
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "RequiredResourceAccess resource",

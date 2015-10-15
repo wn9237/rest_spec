@@ -49,13 +49,14 @@ Content-length: 308
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
 
-<!-- uuid: 35e6ddc6-8fda-4e74-987e-6fa7ff1e2eef
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 5f75e866-2163-41c8-b57f-192b201bd8d9
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get FileAttachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
+}-->

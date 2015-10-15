@@ -116,13 +116,14 @@ Content-length: 1794
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
 
-<!-- uuid: c2d59d7c-1f00-4d47-8d61-07369610dc3d
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 1892bf44-7dbd-47fd-a087-adee25c8e6d8
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
+}-->

@@ -50,13 +50,14 @@ Content-length: 276
   "createdTime": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Section](../resources/section.md) object in the response body.
 
-<!-- uuid: 1d8624d4-2545-4bff-abe9-e81fdfdc91da
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 41b4447a-f4d4-4702-aab7-61fc2175aed8
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Section",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Section](../resources/section.md) object in the response body.
+}-->

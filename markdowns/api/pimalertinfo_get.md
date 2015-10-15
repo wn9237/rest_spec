@@ -50,13 +50,14 @@ Content-length: 370
   "HowToPrevent": "HowToPrevent-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [PimAlertInfo](../resources/pimalertinfo.md) object in the response body.
 
-<!-- uuid: 7fc9c13a-6a5f-423c-8152-1d6de711d432
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: d4d02d86-e73a-4d7f-bcc1-980b8d040b6a
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlertInfo",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PimAlertInfo](../resources/pimalertinfo.md) object in the response body.
+}-->

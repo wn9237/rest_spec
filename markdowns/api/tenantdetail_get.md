@@ -92,13 +92,14 @@ Content-length: 1647
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [TenantDetail](../resources/tenantdetail.md) object in the response body.
 
-<!-- uuid: 7403bb59-64a3-4c1e-b3de-a80a268f1bd6
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: fb59d716-0dca-44fa-a987-79276ffe54a6
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TenantDetail",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [TenantDetail](../resources/tenantdetail.md) object in the response body.
+}-->

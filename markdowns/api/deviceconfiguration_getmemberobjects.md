@@ -55,8 +55,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 1c4c8d1c-0218-426c-a386-67a8c63a2413
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 0096b966-86a3-400e-9bbb-c3ac3bade36c
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration: getMemberObjects",

@@ -42,13 +42,14 @@ Content-length: 22
   "id": "id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Notes](../resources/notes.md) object in the response body.
 
-<!-- uuid: b0290b4d-10e7-4a19-ad3d-7d8f1ca141bd
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 6799217c-0e27-4c67-9041-a97e9387efd1
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notes",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Notes](../resources/notes.md) object in the response body.
+}-->

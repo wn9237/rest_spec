@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
 |name|String||
 |type|String||
 
-<!-- uuid: 89326193-8601-499b-b593-e0856d8cccad
-2015-10-15 03:41:22 UTC -->
+<!-- uuid: 859a17c2-c2d2-451d-a763-272cf8dfb978
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "VerifiedDomain resource",

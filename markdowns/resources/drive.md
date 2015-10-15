@@ -2,28 +2,33 @@
 
 
 
-### Properties
-None
+### JSON representation
 
-### Relationships
-None
+Here is a JSON representation of the resource
 
-
-### Tasks
-
-| Task		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List](../api/drive_list.md) | [drive](drive.md) [] |Get drive object collection. |
-
-<!-- uuid: bee28184-2725-414d-8962-ec9c3eaa2a9b
-2015-10-15 03:41:19 UTC -->
 <!-- {
-  "type": "#page.annotation",
-  "description": "drive resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->"quota": {
+  "blockType": "resource",
+  "optionalProperties": [
+    "items",
+    "shared",
+    "special"
+  ],
+  "@odata.type": "microsoft.graph.drive"
+}-->
+
+```json
+{
+  "driveType": "String",
+  "id": "String (identifier)",
+  "items": [
+    {
+      "@odata.type": "microsoft.graph.item"
+    }
+  ],
+  "owner": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "quota": {
     "@odata.type": "microsoft.graph.quota"
   },
   "root": {
@@ -70,8 +75,8 @@ None
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: b485cfb6-f278-4003-83fd-5e42274ddacf
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 5e580f9d-847e-46b8-b75a-2c3ac5676a9a
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive resource",

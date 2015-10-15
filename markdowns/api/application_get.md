@@ -109,13 +109,14 @@ Content-length: 2108
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Application](../resources/application.md) object in the response body.
 
-<!-- uuid: ca78fc40-acbf-447d-9c45-3d86cd8dfe3a
-2015-10-15 03:41:17 UTC -->
+<!-- uuid: 0e9df182-2154-47ed-9327-2b5dac7a171b
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Application",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Application](../resources/application.md) object in the response body.
+}-->

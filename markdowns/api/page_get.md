@@ -57,13 +57,14 @@ Content-length: 391
   "createdTime": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Page](../resources/page.md) object in the response body.
 
-<!-- uuid: e4f63ad9-d8d1-41fb-8cca-090aff06c3c2
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: ef506af6-54b3-41f8-a738-7c5c7761ebc6
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Page",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Page](../resources/page.md) object in the response body.
+}-->

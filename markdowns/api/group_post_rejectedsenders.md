@@ -52,8 +52,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: ba44f038-8ac5-4564-8660-1df21f41dc1c
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 04a0d52e-b682-45d7-8e84-95d3f6551ad3
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create RejectedSender",

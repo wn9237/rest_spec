@@ -107,13 +107,14 @@ Content-length: 1857
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Contact](../resources/contact.md) object in the response body.
 
-<!-- uuid: b5ae94ef-760e-423b-a87f-8fc47bb0fd57
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: efa45056-72da-4871-ae57-e66aff83bfd0
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Contact",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Contact](../resources/contact.md) object in the response body.
+}-->

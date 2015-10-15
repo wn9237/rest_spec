@@ -44,13 +44,14 @@ Content-length: 76
   "version": "version-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [PlanTaskBoard](../resources/plantaskboard.md) object in the response body.
 
-<!-- uuid: 3cd41899-dccd-4098-be9a-b3c25c8f07a2
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 8ca2f066-74e7-464a-a11e-d67edd3ae99e
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanTaskBoard",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PlanTaskBoard](../resources/plantaskboard.md) object in the response body.
+}-->

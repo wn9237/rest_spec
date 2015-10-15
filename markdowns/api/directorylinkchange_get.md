@@ -43,13 +43,14 @@ Content-length: 433
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [DirectoryLinkChange](../resources/directorylinkchange.md) object in the response body.
 
-<!-- uuid: 0e1eb7d9-fde4-4c5b-af2d-31a0ccb7b542
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 2dc25bd8-25f0-4379-a53d-df010b446888
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryLinkChange",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [DirectoryLinkChange](../resources/directorylinkchange.md) object in the response body.
+}-->

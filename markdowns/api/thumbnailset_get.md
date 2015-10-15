@@ -66,13 +66,14 @@ Content-length: 456
   }
 }
 ```
+If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.
 
-<!-- uuid: 243b2c6a-8a42-448e-a8b0-37dc579ee04c
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: 681629fa-990c-4ab6-9a9a-d4b892317a3c
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get thumbnailSet",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.
+}-->

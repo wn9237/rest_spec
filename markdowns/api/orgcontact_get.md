@@ -67,13 +67,14 @@ Content-length: 1097
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [OrgContact](../resources/orgcontact.md) object in the response body.
 
-<!-- uuid: b573e97e-55e6-4fba-84e0-fbf6d866f0e1
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 1a6dd941-9231-4204-9bc2-f5ac0a3b6669
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OrgContact",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [OrgContact](../resources/orgcontact.md) object in the response body.
+}-->

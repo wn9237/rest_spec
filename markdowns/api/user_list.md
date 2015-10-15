@@ -136,13 +136,14 @@ Content-length: 3064
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [User](../resources/user.md) objects in the response body.
 
-<!-- uuid: 140be20c-1614-45e4-927c-261ee77ab708
-2015-10-15 03:41:22 UTC -->
+<!-- uuid: e0b105c4-6c54-4e59-a1f9-95c7dbf89f63
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List User",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [User](../resources/user.md) objects in the response body.
+}-->

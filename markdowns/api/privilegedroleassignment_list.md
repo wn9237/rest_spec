@@ -45,13 +45,14 @@ Content-length: 210
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.
 
-<!-- uuid: cc68d303-6049-4a36-aea0-0345c22465de
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 473de19a-c742-4d75-bdee-6374d0f8213d
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedRoleAssignment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.
+}-->

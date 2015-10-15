@@ -48,8 +48,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: a476ec17-875b-4ee8-8813-7e035aae08d4
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 4d0f48ab-355e-4475-aebb-1ff75a10a4db
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

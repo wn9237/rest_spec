@@ -296,9 +296,12 @@ module SpecMaker
 		@json_object[:restPath] = {"/#{@json_object[:name]}" => true }		
 
 		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
-		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
-			f.write(JSON.pretty_generate @json_object)
-		end
+
+		# No need to write singletons. 
+		
+		# File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
+		# 	f.write(JSON.pretty_generate @json_object)
+		# end
 		#create_auto_examplefiles((@json_object[:name]).downcase, true)		 
 
 		fill_rest_path("/#{(@json_object[:name])}", dt, false)

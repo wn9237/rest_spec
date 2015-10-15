@@ -55,13 +55,14 @@ Content-length: 529
   "IsConfigurable": true
 }
 ```
+If successful, this method returns a `200 OK` response code and [PimAlert](../resources/pimalert.md) object in the response body.
 
-<!-- uuid: 8761a046-51e5-4ab9-b95c-4b340b51309e
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: ccfada8b-dc89-47d2-9074-2c1a3453e347
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlert",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PimAlert](../resources/pimalert.md) object in the response body.
+}-->

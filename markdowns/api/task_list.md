@@ -68,13 +68,14 @@ Content-length: 755
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [Task](../resources/task.md) objects in the response body.
 
-<!-- uuid: b3811691-8781-4423-ab1b-e158b5f3f389
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: 89335685-3d45-4f86-a785-2f1742f194fe
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Task",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [Task](../resources/task.md) objects in the response body.
+}-->

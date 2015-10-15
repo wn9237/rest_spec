@@ -54,8 +54,8 @@ Here is a JSON representation of the resource
 |[Update](../api/referenceattachment_update.md) | [ReferenceAttachment](referenceattachment.md)	|Update ReferenceAttachment object. |
 |[Delete](../api/referenceattachment_delete.md) | Void	|Delete ReferenceAttachment object. |
 
-<!-- uuid: 821b4c3a-dfe7-409f-bff9-65e3287c0ed7
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 2ecd44c6-79ff-4657-9dce-67dc5278721c
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ReferenceAttachment resource",

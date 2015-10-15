@@ -39,8 +39,8 @@ Here is a JSON representation of the resource
 |userConsentDisplayName|String||
 |value|String||
 
-<!-- uuid: d32a0a0f-a8ea-4062-a1ad-3d4405e9ea40
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 4b9fb2cf-5a51-4ff7-803a-cfdf7afa6953
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OAuth2Permission resource",

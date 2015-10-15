@@ -41,13 +41,14 @@ Content-length: 3
 {
 }
 ```
+If successful, this method returns a `200 OK` response code and [File](../resources/file.md) object in the response body.
 
-<!-- uuid: a7c9ed4b-7840-41f0-9f42-5fe931342539
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 571f7e5b-b2e9-4a03-9718-b2f5521010db
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get File",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [File](../resources/file.md) object in the response body.
+}-->

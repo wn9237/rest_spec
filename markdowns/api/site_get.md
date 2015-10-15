@@ -40,13 +40,14 @@ Content-length: 22
   "id": "id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Site](../resources/site.md) object in the response body.
 
-<!-- uuid: 6eaf0c29-d008-4a41-998b-c9c534f4c28a
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: 7b5e26dd-dee8-4dea-8298-eba99e8b19da
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Site",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Site](../resources/site.md) object in the response body.
+}-->

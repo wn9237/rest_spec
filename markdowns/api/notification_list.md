@@ -51,13 +51,14 @@ Content-length: 206
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [Notification](../resources/notification.md) objects in the response body.
 
-<!-- uuid: 5be2e4ca-5318-49ef-b963-efb2037f8a70
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 90a8e9e6-331b-4d7b-80a8-75cac1808f70
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Notification",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [Notification](../resources/notification.md) objects in the response body.
+}-->

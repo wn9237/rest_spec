@@ -49,13 +49,14 @@ Content-length: 201
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Conversation](../resources/conversation.md) object in the response body.
 
-<!-- uuid: dc921681-131e-4437-9b23-4d783ceec5c6
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 4bf80229-e0af-4934-8f70-cb6ef7a132f9
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Conversation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Conversation](../resources/conversation.md) object in the response body.
+}-->

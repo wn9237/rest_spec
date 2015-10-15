@@ -41,8 +41,8 @@ Here is a JSON representation of the resource
 |pagesUrl|String||
 |self|String||
 
-<!-- uuid: 3ba8578d-3ceb-454c-a999-37f0513ca9f7
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 3a0140f8-f303-4f74-a140-58da1b9b72c7
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "CopySectionModel resource",

@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |position|String| Possible values are: `After`, `Before`.|
 |target|String||
 
-<!-- uuid: dc07b4de-bc7e-4748-afe9-31718da1f120
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: bc616f40-fa56-4e11-b472-b022b6df3eab
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PatchContentCommand resource",

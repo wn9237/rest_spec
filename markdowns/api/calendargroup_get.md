@@ -45,13 +45,14 @@ Content-length: 110
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
 
-<!-- uuid: 9c41b667-aea1-4e2a-b01a-7c3796ace59c
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 54194226-1717-402f-9888-763b6d90157a
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get CalendarGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
+}-->

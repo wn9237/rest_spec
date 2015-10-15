@@ -69,8 +69,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: 5acef917-93f2-4215-8958-e0ee151a9e6a
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: a4c19278-982c-44dd-8e46-297c892cfb23
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section: CopyToNotebook",

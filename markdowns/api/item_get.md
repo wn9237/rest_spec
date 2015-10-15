@@ -180,13 +180,14 @@ Content-length: 3050
   }
 }
 ```
+If successful, this method returns a `200 OK` response code and [item](../resources/item.md) object in the response body.
 
-<!-- uuid: 0cab2f79-9cc7-42f5-bce4-c3df624b88b4
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 96c4e4e1-2018-4500-8bd3-bf15f03be457
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get item",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [item](../resources/item.md) object in the response body.
+}-->

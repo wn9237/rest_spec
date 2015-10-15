@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/privilegedoperationevent_list.md) | [PrivilegedOperationEvent](privilegedoperationevent.md) [] |Get privilegedOperationEvent object collection. |
 
-<!-- uuid: 2dead8c2-2be1-427e-889f-0e4d40f3fdcf
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 86496c8c-8b90-44b6-9388-81d0d0316640
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedOperationEvents resource",

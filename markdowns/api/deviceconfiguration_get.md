@@ -44,13 +44,14 @@ Content-length: 341
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
 
-<!-- uuid: ba9b0e72-7196-4a44-b0db-de78ef13a9f0
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: b1e9aad5-bbd1-4287-b55b-5aecdbb3b263
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DeviceConfiguration",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
+}-->

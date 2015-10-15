@@ -50,8 +50,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: dd54fb98-c2af-4939-b09e-b7653b482bef
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 0276e250-7d65-4422-a01c-906754265754
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRole: SelfDeactivate",

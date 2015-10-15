@@ -42,13 +42,14 @@ Content-length: 48
   }
 }
 ```
+If successful, this method returns a `200 OK` response code and [OpenTypeExtension](../resources/opentypeextension.md) object in the response body.
 
-<!-- uuid: d54e4344-5d18-4598-9ecd-ce7bffdf4881
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: bdd143d6-50a8-463b-be06-13861ca9da1e
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OpenTypeExtension",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [OpenTypeExtension](../resources/opentypeextension.md) object in the response body.
+}-->

@@ -45,8 +45,8 @@ Content-length: 19
 }
 ```
 
-<!-- uuid: 122a7eaa-cb5f-42ff-bb00-9ff641598b5b
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 15a14db5-b25d-4a05-be67-cb9776e5117f
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: CanSignUp",

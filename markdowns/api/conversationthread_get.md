@@ -66,13 +66,14 @@ Content-length: 489
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
-<!-- uuid: 682abfa2-1829-442c-9ec6-1715801e00cd
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: 44f73cc5-f7db-468a-b3af-6539214ac06c
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ConversationThread",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+}-->

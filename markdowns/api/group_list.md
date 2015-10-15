@@ -77,13 +77,14 @@ Content-length: 1187
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [Group](../resources/group.md) objects in the response body.
 
-<!-- uuid: fbd26d74-a225-4003-a420-8cfe4aa6a607
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 10321742-69af-4460-9360-dee26432aa21
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Group",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [Group](../resources/group.md) objects in the response body.
+}-->

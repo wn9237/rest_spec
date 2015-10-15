@@ -1,7 +1,7 @@
 {
-  "name": "myOrganization",
+  "name": "drives",
   "description": "",
-  "collectionOf": "MyOrganization",
+  "collectionOf": "drive",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
@@ -17,14 +17,14 @@
   "isTopSupported": true,
   "info": null,
   "propertyNotes": "",
-  "relationshipNotes": "",
+  "relationshipNotes": null,
   "methodNotes": "",
   "listDescription": "",
-  "createDescription": "",
-  "updateDescription": "",
-  "deleteDescription": "",
+  "createDescription": null,
+  "updateDescription": null,
+  "deleteDescription": null,
   "restPath": {
-    "/myOrganization": true
+    "/drives": true
   },
   "properties": [
 

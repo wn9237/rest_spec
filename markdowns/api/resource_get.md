@@ -45,13 +45,14 @@ Content-length: 112
   "contentUrl": "contentUrl-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Resource](../resources/resource.md) object in the response body.
 
-<!-- uuid: 6e9d03d9-f99f-461f-8685-55a9e8d6f7ce
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 3985282c-f0ac-4d0f-a473-58cdcaec70c6
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Resource](../resources/resource.md) object in the response body.
+}-->

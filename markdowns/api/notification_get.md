@@ -43,13 +43,14 @@ Content-length: 160
   "NotificationTarget": "NotificationTarget-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Notification](../resources/notification.md) object in the response body.
 
-<!-- uuid: 471bf06d-ebd4-43f0-bab7-e1497ccbdc47
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 2e712ec9-8797-49ee-b448-e099f1f97a02
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notification",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Notification](../resources/notification.md) object in the response body.
+}-->

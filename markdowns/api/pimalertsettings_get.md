@@ -41,13 +41,14 @@ Content-length: 74
   "AlertSettings": "AlertSettings-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [PimAlertSettings](../resources/pimalertsettings.md) object in the response body.
 
-<!-- uuid: 1c0a2eec-3b2d-46bc-abd0-076d23e68b45
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 8c073831-91c0-4faf-9bd7-a60b7b8b2814
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlertSettings",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PimAlertSettings](../resources/pimalertsettings.md) object in the response body.
+}-->

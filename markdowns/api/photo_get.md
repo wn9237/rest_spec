@@ -44,13 +44,14 @@ Content-length: 53
   "Id": "Id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Photo](../resources/photo.md) object in the response body.
 
-<!-- uuid: 2b5027f5-728d-47a6-91cd-c32681d5ba25
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: e0257cc9-bca6-4e93-a96b-1dad1f7b5dad
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Photo",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Photo](../resources/photo.md) object in the response body.
+}-->

@@ -116,13 +116,14 @@ Content-length: 2442
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [Application](../resources/application.md) objects in the response body.
 
-<!-- uuid: b183f6be-4270-4d6e-936d-748fdb673ea4
-2015-10-15 03:41:17 UTC -->
+<!-- uuid: 4e82ee2f-9ea3-41c0-befc-bf1db7cf84a2
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Application",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [Application](../resources/application.md) objects in the response body.
+}-->

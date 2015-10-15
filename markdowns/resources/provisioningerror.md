@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |service|String||
 |timestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
-<!-- uuid: 02125d68-0b9e-4472-a1cc-cb6bafee269f
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 04343e55-3d9c-4c5a-94fa-541f23225f3e
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ProvisioningError resource",

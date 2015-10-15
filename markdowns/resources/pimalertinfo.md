@@ -57,8 +57,8 @@ None
 |[Update](../api/pimalertinfo_update.md) | [PimAlertInfo](pimalertinfo.md)	|Update PimAlertInfo object. |
 |[Delete](../api/pimalertinfo_delete.md) | Void	|Delete PimAlertInfo object. |
 
-<!-- uuid: 6504c8d7-4be9-4fe2-b222-8e0e53f34b7b
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 97311fb1-f8ee-432b-a360-acf15e8a50a8
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlertInfo resource",

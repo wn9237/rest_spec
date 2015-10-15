@@ -47,13 +47,14 @@ Content-length: 260
   "Event": "Event-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [NotificationRule](../resources/notificationrule.md) object in the response body.
 
-<!-- uuid: 698844e8-0d90-4f43-bafd-bd0a420999f8
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: e519269a-3b9f-4c78-8274-3ed93199e9da
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get NotificationRule",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [NotificationRule](../resources/notificationrule.md) object in the response body.
+}-->

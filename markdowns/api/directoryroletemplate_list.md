@@ -45,13 +45,14 @@ Content-length: 237
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [DirectoryRoleTemplate](../resources/directoryroletemplate.md) objects in the response body.
 
-<!-- uuid: be229e44-cc99-4abd-8a73-88dfba623d5b
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 6847fcfd-d733-48e6-be41-cb7be94045b5
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [DirectoryRoleTemplate](../resources/directoryroletemplate.md) objects in the response body.
+}-->

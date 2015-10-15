@@ -106,13 +106,14 @@ Content-length: 2218
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [ServicePrincipal](../resources/serviceprincipal.md) objects in the response body.
 
-<!-- uuid: 79a425fa-9d19-4ad8-a066-bad33b360b98
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: b506c172-7ae9-4aeb-b72c-8857be06b8fc
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List ServicePrincipal",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [ServicePrincipal](../resources/serviceprincipal.md) objects in the response body.
+}-->

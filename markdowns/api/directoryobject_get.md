@@ -38,13 +38,14 @@ Content-length: 111
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [DirectoryObject](../resources/directoryobject.md) object in the response body.
 
-<!-- uuid: 0405a616-e7d8-4341-b275-021570186ca5
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: e75fd8bb-3fd8-4d57-94f2-db1b44a8c54b
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [DirectoryObject](../resources/directoryobject.md) object in the response body.
+}-->

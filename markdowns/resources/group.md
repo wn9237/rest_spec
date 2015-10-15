@@ -232,8 +232,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/group_getmembergroups.md)|String||
 |[Get MemberObjects](../api/group_getmemberobjects.md)|String||
 
-<!-- uuid: 85c38dcb-83ad-4279-b0d0-814b9270211c
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 6bd420cc-3fa1-4cba-a312-1ed25ed2ed35
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group resource",

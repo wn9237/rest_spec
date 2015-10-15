@@ -64,13 +64,14 @@ Content-length: 458
   }
 }
 ```
+If successful, this method returns a `200 OK` response code and [drive](../resources/drive.md) object in the response body.
 
-<!-- uuid: d31862b6-2755-4e5b-a125-64e1b8e81404
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: c27b3f72-d575-4239-8478-616b244cdff3
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get drive",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [drive](../resources/drive.md) object in the response body.
+}-->

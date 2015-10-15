@@ -61,13 +61,14 @@ Content-length: 516
   "createdTime": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Notebook](../resources/notebook.md) object in the response body.
 
-<!-- uuid: 690774a3-2695-4bf4-95e7-be5e9809bed7
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 05e07e8e-9b50-4009-b2c3-8126e9a40381
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notebook",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Notebook](../resources/notebook.md) object in the response body.
+}-->

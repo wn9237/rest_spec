@@ -48,13 +48,14 @@ Content-length: 289
   "LastGlobalAdmin": true
 }
 ```
+If successful, this method returns a `200 OK` response code and [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) object in the response body.
 
-<!-- uuid: 5d361115-5ef8-43df-8d83-49507d514402
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: cb6eeb70-1ae7-49c6-a569-66b0af9ed2b4
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSettings",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) object in the response body.
+}-->

@@ -5,7 +5,7 @@ Retrieve a list of drive objects.
 The following **scopes** are required to execute this API: ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /drive
+GET /drives
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -34,7 +34,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "drive"
+  "@odata.type": "drives"
 } -->
 ```json
 HTTP/1.1 200 OK
@@ -70,14 +70,14 @@ Content-length: 580
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [drive](../resources/drive.md) objects in the response body.
 
-<!-- uuid: 8feeb38f-47c1-465d-88ab-2006dae65fbc
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 924b9b31-d276-42b1-8003-6464519fe67a
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List drive",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [drive](../resources/drive.md) objects in the response body.
-
+}-->

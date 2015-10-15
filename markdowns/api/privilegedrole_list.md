@@ -42,13 +42,14 @@ Content-length: 84
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [PrivilegedRole](../resources/privilegedrole.md) objects in the response body.
 
-<!-- uuid: 64f67311-59a9-4b76-9256-67dcee9657b1
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 4530853f-327d-4d97-ae7f-651ee3671245
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedRole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [PrivilegedRole](../resources/privilegedrole.md) objects in the response body.
+}-->

@@ -40,13 +40,14 @@ Content-length: 22
   "id": "id-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [SiteCollection](../resources/sitecollection.md) object in the response body.
 
-<!-- uuid: 1b341877-d3dc-4040-a31e-a91e1a953010
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: 0ce426bd-89ae-42a6-93c4-bdcdeddc506b
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SiteCollection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [SiteCollection](../resources/sitecollection.md) object in the response body.
+}-->

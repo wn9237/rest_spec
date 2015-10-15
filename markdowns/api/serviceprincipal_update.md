@@ -202,8 +202,8 @@ Content-length: 1924
 }
 ```
 
-<!-- uuid: 69794804-3bcc-460a-b24b-84aef81bc19d
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: ed0811e8-09ff-490a-8af1-b6c8a1980b1c
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of serviceprincipal object.",

@@ -99,13 +99,14 @@ Content-length: 1913
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [TenantDetail](../resources/tenantdetail.md) objects in the response body.
 
-<!-- uuid: bcf57941-9cdf-4c2d-93a8-c6b2fbcc67f4
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: 75bb40fb-ee95-4104-be6b-701f0c45f1b9
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List TenantDetail",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [TenantDetail](../resources/tenantdetail.md) objects in the response body.
+}-->

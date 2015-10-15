@@ -189,8 +189,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: bb094328-f8a2-4a1e-8f76-646e6dd7f156
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: 8966dd37-4d32-4f4a-b28a-9095fac8ec94
+2015-10-15 04:04:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: allPhotos",

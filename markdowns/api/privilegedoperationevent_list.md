@@ -60,13 +60,14 @@ Content-length: 538
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) objects in the response body.
 
-<!-- uuid: da372a1d-210e-485e-bab2-9ef90d9007ef
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 65b6655e-ccd4-4c0f-9456-12c98b836908
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedOperationEvent",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) objects in the response body.
+}-->

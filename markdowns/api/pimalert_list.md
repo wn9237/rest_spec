@@ -63,13 +63,14 @@ Content-length: 623
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [PimAlert](../resources/pimalert.md) objects in the response body.
 
-<!-- uuid: 71164e6c-7f13-4105-9dbc-d719ce95e0f8
-2015-10-15 03:41:17 UTC -->
+<!-- uuid: 04522e0c-582f-4566-b951-8dc2baa3cf10
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PimAlert",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [PimAlert](../resources/pimalert.md) objects in the response body.
+}-->

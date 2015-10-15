@@ -51,13 +51,14 @@ Content-length: 255
   "version": "version-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [TimelineTaskFormat](../resources/timelinetaskformat.md) object in the response body.
 
-<!-- uuid: fca4a8cd-3a54-4098-b258-a878713f469a
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: 0059bf21-6876-4124-8c52-d3c82ac2b6e3
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TimelineTaskFormat",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [TimelineTaskFormat](../resources/timelinetaskformat.md) object in the response body.
+}-->

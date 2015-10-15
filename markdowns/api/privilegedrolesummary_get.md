@@ -46,13 +46,14 @@ Content-length: 145
   "MfaEnabled": true
 }
 ```
+If successful, this method returns a `200 OK` response code and [PrivilegedRoleSummary](../resources/privilegedrolesummary.md) object in the response body.
 
-<!-- uuid: b24315a8-fef3-4466-ab9b-be6e79d49f53
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 715096da-8065-4949-b2b9-7c5281eb0129
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSummary",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PrivilegedRoleSummary](../resources/privilegedrolesummary.md) object in the response body.
+}-->

@@ -56,13 +56,14 @@ Content-length: 482
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [SubscribedSku](../resources/subscribedsku.md) objects in the response body.
 
-<!-- uuid: 23f4f9b7-ef14-411b-b4e8-614c31d88c9b
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: ece54c3f-b3d1-4cdd-89c2-0f89963f90c5
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List SubscribedSku",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [SubscribedSku](../resources/subscribedsku.md) objects in the response body.
+}-->

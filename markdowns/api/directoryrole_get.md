@@ -41,13 +41,14 @@ Content-length: 275
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [DirectoryRole](../resources/directoryrole.md) object in the response body.
 
-<!-- uuid: b3a03465-69d3-40ea-8060-359cc7c8344e
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: c103efdf-1878-4b33-a021-1ca01ef11670
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryRole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [DirectoryRole](../resources/directoryrole.md) object in the response body.
+}-->

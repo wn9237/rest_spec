@@ -112,13 +112,14 @@ Content-length: 1598
   "MeetingMessageType": "MeetingMessageType-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [EventMessage](../resources/eventmessage.md) object in the response body.
 
-<!-- uuid: b00d2746-7760-4697-8f0a-0627da84147a
-2015-10-15 03:41:19 UTC -->
+<!-- uuid: b4f0b6e7-3263-4d82-a184-7f47aea6e9e2
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get EventMessage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [EventMessage](../resources/eventmessage.md) object in the response body.
+}-->

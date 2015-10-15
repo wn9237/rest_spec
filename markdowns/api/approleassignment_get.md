@@ -45,13 +45,14 @@ Content-length: 398
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [AppRoleAssignment](../resources/approleassignment.md) object in the response body.
 
-<!-- uuid: 143b3d4d-b9cd-45bb-9109-eb62c127b8a6
-2015-10-15 03:41:17 UTC -->
+<!-- uuid: 397876d5-ca0f-43c6-8ed0-4e44d5c16f80
+2015-10-15 04:04:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get AppRoleAssignment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [AppRoleAssignment](../resources/approleassignment.md) object in the response body.
+}-->

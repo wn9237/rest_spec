@@ -55,13 +55,14 @@ Content-length: 322
   ]
 }
 ```
+If successful, this method returns a `200 OK` response code and collection of [NotificationRule](../resources/notificationrule.md) objects in the response body.
 
-<!-- uuid: db90091c-adbc-4d83-9190-57099c98d911
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: c6a5a7f7-5bc0-49f1-bc4e-211c688ac6bf
+2015-10-15 04:04:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List NotificationRule",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and collection of [NotificationRule](../resources/notificationrule.md) objects in the response body.
+}-->

@@ -50,13 +50,14 @@ Content-length: 309
   "createdTime": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [SectionGroup](../resources/sectiongroup.md) object in the response body.
 
-<!-- uuid: 0d939860-9283-4f56-b8b2-842e487a13bb
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: 2239422d-6853-4830-905b-01ce934ca21d
+2015-10-15 04:04:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SectionGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [SectionGroup](../resources/sectiongroup.md) object in the response body.
+}-->

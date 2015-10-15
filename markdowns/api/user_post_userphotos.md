@@ -52,8 +52,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: ef2ac0be-c0a0-4f00-aae5-55b3c17a4f73
-2015-10-15 03:41:21 UTC -->
+<!-- uuid: fe829b03-cc5c-411f-8b9b-7ad00db15443
+2015-10-15 04:05:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create UserPhoto",

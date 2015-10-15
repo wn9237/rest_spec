@@ -42,13 +42,14 @@ Content-length: 86
   "Status": "Status-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) object in the response body.
 
-<!-- uuid: df6ed90a-b5ba-4a3b-8a51-e8780735f56d
-2015-10-15 03:41:20 UTC -->
+<!-- uuid: e9a58bf7-ad92-4c44-81df-aaa0e026b10b
+2015-10-15 04:04:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedSignupStatus",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) object in the response body.
+}-->

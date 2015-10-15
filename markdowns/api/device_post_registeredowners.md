@@ -50,8 +50,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: d9af7c45-0fac-49b9-bf22-0d6fe1927cfd
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: ce8ea760-9bcb-4a00-8301-3487b3745573
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create registeredOwner",

@@ -57,13 +57,14 @@ Content-length: 732
   "deletionTimestamp": "datetime-value"
 }
 ```
+If successful, this method returns a `200 OK` response code and [Device](../resources/device.md) object in the response body.
 
-<!-- uuid: 1cde12e6-0011-4488-8166-cd1a33656efc
-2015-10-15 03:41:18 UTC -->
+<!-- uuid: cb77d67f-35f0-4b62-9899-a9bd8c6e434b
+2015-10-15 04:04:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Device",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->If successful, this method returns a `200 OK` response code and [Device](../resources/device.md) object in the response body.
+}-->
