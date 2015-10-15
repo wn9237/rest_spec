@@ -27,7 +27,7 @@ module SpecMaker
 	RELATIONSHIP_HEADER = "| Relationship | Type	|Description|" + NEWLINE
 	TASKS_HEADER = "| Task		   | Return Type	|Description|" + NEWLINE
 
-	PREREQ = HEADER3 + "Prerequisites" + NEWLINE + "The following **scopes** are required to execute this API: "
+	PREREQ = HEADER3 + "Prerequisites" + NEWLINE + "The following **scopes** are required to execute this API: " + NEWLINE
 
 	QRY_HEADER = "|Name|Value|Description|"
 	QRY_2nd_LINE = "|:---------------|:--------|:-------|"
