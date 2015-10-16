@@ -38,24 +38,18 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 411
+Content-length: 75
 {
   "sharedWith": {
   },
-  "category0Description": "category0Description-value",
-  "category1Description": "category1Description-value",
-  "category2Description": "category2Description-value",
-  "category3Description": "category3Description-value",
-  "category4Description": "category4Description-value",
-  "category5Description": "category5Description-value",
   "id": "id-value",
   "version": "version-value"
 }
 ```
 If successful, this method returns a `200 OK` response code and [PlanDetails](../resources/plandetails.md) object in the response body.
 
-<!-- uuid: d06852f0-714a-46dc-a87b-10667d89631e
-2015-10-16 10:08:00 UTC -->
+<!-- uuid: 82d73ec6-edf1-4f10-857e-fd5a40c6e603
+2015-10-16 21:10:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanDetails",

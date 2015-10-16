@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/RootFolder/Messages
 POST /users/<objectId>/Folders/<Id>/Messages
-POST /drive/root/createdByUser/RootFolder/Messages
+POST /drive/root/createdByUser/Folders/<Id>/Messages
+POST /drive/root/lastModifiedByUser/Folders/<Id>/Messages
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_message_from_mailfolder"
 }-->
 ```http
-POST /users/<objectId>/RootFolder
+POST /users/<objectId>/Folders/<Id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
@@ -122,8 +122,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 74bdc59d-1bc4-4f02-96d5-e5a9019676b0
-2015-10-16 10:07:56 UTC -->
+<!-- uuid: 9da686f2-eca8-4a81-84fc-8ecb4b584883
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Message",

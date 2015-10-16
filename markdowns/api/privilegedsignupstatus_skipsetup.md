@@ -45,8 +45,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: fe22ed1a-788a-4164-8fbd-ec2570375b16
-2015-10-16 10:08:03 UTC -->
+<!-- uuid: a224e8d9-1944-4bb5-a2dc-8158fccec4e1
+2015-10-16 21:11:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SkipSetup",

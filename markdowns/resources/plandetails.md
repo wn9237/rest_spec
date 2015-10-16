@@ -16,12 +16,6 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "category0Description": "String",
-  "category1Description": "String",
-  "category2Description": "String",
-  "category3Description": "String",
-  "category4Description": "String",
-  "category5Description": "String",
   "id": "String (identifier)",
   "sharedWith": {
     "@odata.type": "microsoft.graph.UserIdCollection"
@@ -33,12 +27,6 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|category0Description|String||
-|category1Description|String||
-|category2Description|String||
-|category3Description|String||
-|category4Description|String||
-|category5Description|String||
 |id|String| Read-only.|
 |sharedWith|[UserIdCollection](useridcollection.md)||
 |version|String||
@@ -55,8 +43,8 @@ None
 |[Update](../api/plandetails_update.md) | [PlanDetails](plandetails.md)	|Update PlanDetails object. |
 |[Delete](../api/plandetails_delete.md) | Void	|Delete PlanDetails object. |
 
-<!-- uuid: f3b9515d-01a6-406b-a848-14f94799a0ef
-2015-10-16 10:08:01 UTC -->
+<!-- uuid: 4c3749a6-c9c4-47e9-8ed8-82a59e1ad936
+2015-10-16 21:10:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PlanDetails resource",

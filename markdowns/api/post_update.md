@@ -134,8 +134,8 @@ Content-length: 790
 }
 ```
 
-<!-- uuid: 8a1f3ea0-23b4-4a39-a705-bb79344994eb
-2015-10-16 10:08:02 UTC -->
+<!-- uuid: 09ba0fbf-61d1-49a5-90e5-6493a2d29ed7
+2015-10-16 21:10:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of post object.",

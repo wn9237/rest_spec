@@ -45,7 +45,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1857
+Content-length: 1977
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -106,6 +106,11 @@ Content-length: 1857
   "YomiCompanyName": "YomiCompanyName-value",
   "YomiGivenName": "YomiGivenName-value",
   "YomiSurname": "YomiSurname-value",
+  "SpouseName": "SpouseName-value",
+  "PersonalNotes": "PersonalNotes-value",
+  "Children": [
+    "Children-value"
+  ],
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
@@ -116,8 +121,8 @@ Content-length: 1857
 }
 ```
 
-<!-- uuid: dfc2a260-404a-427c-8d40-410381b8ae8b
-2015-10-16 10:07:47 UTC -->
+<!-- uuid: 8ee07efe-91b7-418b-9d06-057b91866878
+2015-10-16 21:10:42 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Contact",

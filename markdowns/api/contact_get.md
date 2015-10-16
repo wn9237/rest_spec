@@ -38,7 +38,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1857
+Content-length: 1977
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -99,6 +99,11 @@ Content-length: 1857
   "YomiCompanyName": "YomiCompanyName-value",
   "YomiGivenName": "YomiGivenName-value",
   "YomiSurname": "YomiSurname-value",
+  "SpouseName": "SpouseName-value",
+  "PersonalNotes": "PersonalNotes-value",
+  "Children": [
+    "Children-value"
+  ],
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
@@ -110,8 +115,8 @@ Content-length: 1857
 ```
 If successful, this method returns a `200 OK` response code and [Contact](../resources/contact.md) object in the response body.
 
-<!-- uuid: 14ae2569-4e17-4bee-8748-3d22ee2fef9e
-2015-10-16 10:07:46 UTC -->
+<!-- uuid: 58d60b7a-21c3-4765-ad7f-bdc9e77382f8
+2015-10-16 21:10:41 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Contact",

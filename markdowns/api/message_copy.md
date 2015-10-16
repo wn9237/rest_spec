@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /users/<objectId>/Messages/<Id>/Copy
 POST /drive/root/createdByUser/Messages/<Id>/Copy
-POST /users/<objectId>/RootFolder/Messages/<Id>/Copy
+POST /users/<objectId>/Folders/<Id>/Messages/<Id>/Copy
 
 ```
 ### Request headers
@@ -127,8 +127,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 794c3040-5d1f-4cc9-9e6f-c920e6c1f45e
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: 3007c4a2-572e-4076-9a84-511e8f996464
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Copy",

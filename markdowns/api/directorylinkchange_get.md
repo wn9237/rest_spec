@@ -46,8 +46,8 @@ Content-length: 433
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryLinkChange](../resources/directorylinkchange.md) object in the response body.
 
-<!-- uuid: c9d1b04b-de37-4a33-ad18-8467c2cfab94
-2015-10-16 10:07:48 UTC -->
+<!-- uuid: a94fafe4-7f32-42a7-8f44-3a0f39d54c1c
+2015-10-16 21:10:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryLinkChange",

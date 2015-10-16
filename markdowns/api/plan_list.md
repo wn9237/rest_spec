@@ -57,8 +57,8 @@ Content-length: 237
 ```
 If successful, this method returns a `200 OK` response code and collection of [Plan](../resources/plan.md) objects in the response body.
 
-<!-- uuid: 5865ec08-828a-4ca8-af25-191a8d262db6
-2015-10-16 10:08:01 UTC -->
+<!-- uuid: 385b6521-417b-48a6-97a0-6765e175f6d7
+2015-10-16 21:10:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Plan",

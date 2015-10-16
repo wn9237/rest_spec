@@ -1,11 +1,11 @@
 {
   "Edmx": {
-    "Version": "4.0",
     "xmlns:edmx": "http://docs.oasis-open.org/odata/ns/edmx",
+    "Version": "4.0",
     "DataServices": {
       "Schema": {
-        "Namespace": "Microsoft.Graph",
         "xmlns": "http://docs.oasis-open.org/odata/ns/edm",
+        "Namespace": "Microsoft.Graph",
         "EnumType": [
           {
             "Name": "MeetingMessageType",
@@ -337,159 +337,6 @@
             ]
           },
           {
-            "Name": "DisplaySettings",
-            "IsFlags": "true",
-            "Member": [
-              {
-                "Name": "None",
-                "Value": "0"
-              },
-              {
-                "Name": "Today",
-                "Value": "1"
-              },
-              {
-                "Name": "TimeScale",
-                "Value": "2"
-              },
-              {
-                "Name": "TaskDate",
-                "Value": "4"
-              },
-              {
-                "Name": "All",
-                "Value": "7"
-              }
-            ]
-          },
-          {
-            "Name": "DrawingStyle",
-            "Member": [
-              {
-                "Name": "Bar",
-                "Value": "0"
-              },
-              {
-                "Name": "Callout",
-                "Value": "1"
-              }
-            ]
-          },
-          {
-            "Name": "AnchorPosition",
-            "Member": [
-              {
-                "Name": "Top",
-                "Value": "0"
-              },
-              {
-                "Name": "Bottom",
-                "Value": "1"
-              }
-            ]
-          },
-          {
-            "Name": "TaskBoardType",
-            "Member": [
-              {
-                "Name": "Status",
-                "Value": "0"
-              },
-              {
-                "Name": "AssignedTo",
-                "Value": "1"
-              },
-              {
-                "Name": "Bucket",
-                "Value": "2"
-              }
-            ]
-          },
-          {
-            "Name": "PreviewType",
-            "Member": [
-              {
-                "Name": "Automatic",
-                "Value": "0"
-              },
-              {
-                "Name": "NoPreview",
-                "Value": "1"
-              },
-              {
-                "Name": "CheckList",
-                "Value": "2"
-              },
-              {
-                "Name": "Notes",
-                "Value": "3"
-              },
-              {
-                "Name": "Reference",
-                "Value": "4"
-              }
-            ]
-          },
-          {
-            "Name": "PatchInsertPosition",
-            "Member": [
-              {
-                "Name": "After",
-                "Value": "0"
-              },
-              {
-                "Name": "Before",
-                "Value": "1"
-              }
-            ]
-          },
-          {
-            "Name": "PatchActionType",
-            "Member": [
-              {
-                "Name": "Replace",
-                "Value": "0"
-              },
-              {
-                "Name": "Append",
-                "Value": "1"
-              },
-              {
-                "Name": "Delete",
-                "Value": "2"
-              },
-              {
-                "Name": "Insert",
-                "Value": "3"
-              },
-              {
-                "Name": "Prepend",
-                "Value": "4"
-              }
-            ]
-          },
-          {
-            "Name": "UserRole",
-            "Member": [
-              {
-                "Name": "Owner",
-                "Value": "0"
-              },
-              {
-                "Name": "Contributor",
-                "Value": "1"
-              },
-              {
-                "Name": "Reader",
-                "Value": "2"
-              },
-              {
-                "Name": "None",
-                "Value": "-1"
-              }
-            ]
-          },
-          {
             "Name": "RoleSummaryStatus",
             "Member": [
               {
@@ -499,6 +346,53 @@
               {
                 "Name": "Bad",
                 "Value": "1"
+              }
+            ]
+          },
+          {
+            "Name": "AlertSeverity",
+            "Member": [
+              {
+                "Name": "Vulnerability",
+                "Value": "1"
+              },
+              {
+                "Name": "AttackSuspect",
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "Name": "AlertType",
+            "Member": [
+              {
+                "Name": "High",
+                "Value": "1"
+              },
+              {
+                "Name": "Medium",
+                "Value": "2"
+              },
+              {
+                "Name": "Low",
+                "Value": "3"
+              }
+            ]
+          },
+          {
+            "Name": "AlertStatus",
+            "Member": [
+              {
+                "Name": "Active",
+                "Value": "0"
+              },
+              {
+                "Name": "Dismissed",
+                "Value": "1"
+              },
+              {
+                "Name": "Inactive",
+                "Value": "2"
               }
             ]
           },
@@ -552,37 +446,7 @@
                 "Name": "deletionTimestamp",
                 "Type": "Edm.DateTimeOffset"
               }
-            ],
-            "NavigationProperty": {
-              "Name": "Extensions",
-              "Type": "Collection(Microsoft.Graph.Extension)",
-              "ContainsTarget": "true"
-            }
-          },
-          {
-            "Name": "Entity",
-            "Abstract": "true",
-            "Key": {
-              "PropertyRef": {
-                "Name": "Id"
-              }
-            },
-            "Property": {
-              "Name": "Id",
-              "Type": "Edm.String",
-              "Nullable": "false",
-              "Unicode": "false"
-            },
-            "NavigationProperty": {
-              "Name": "Extensions",
-              "Type": "Collection(Microsoft.Graph.Extension)",
-              "ContainsTarget": "true"
-            }
-          },
-          {
-            "Name": "Extension",
-            "BaseType": "Microsoft.Graph.Entity",
-            "Abstract": "true"
+            ]
           },
           {
             "Name": "Application",
@@ -924,67 +788,67 @@
                 "Type": "Edm.Guid"
               },
               {
-                "Name": "AboutMe",
+                "Name": "aboutMe",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
               {
-                "Name": "Alias",
+                "Name": "alias",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
               {
-                "Name": "Birthday",
+                "Name": "birthday",
                 "Type": "Edm.DateTimeOffset",
                 "Nullable": "false"
               },
               {
-                "Name": "HireDate",
+                "Name": "hireDate",
                 "Type": "Edm.DateTimeOffset",
                 "Nullable": "false"
               },
               {
-                "Name": "Interests",
+                "Name": "interests",
                 "Type": "Collection(Edm.String)",
                 "Unicode": "false"
               },
               {
-                "Name": "MySite",
+                "Name": "mySite",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
               {
-                "Name": "PastProjects",
+                "Name": "pastProjects",
                 "Type": "Collection(Edm.String)",
                 "Unicode": "false"
               },
               {
-                "Name": "PreferredName",
+                "Name": "preferredName",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
               {
-                "Name": "PrincipalName",
+                "Name": "principalName",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
               {
-                "Name": "Responsibilities",
+                "Name": "responsibilities",
                 "Type": "Collection(Edm.String)",
                 "Unicode": "false"
               },
               {
-                "Name": "Schools",
+                "Name": "schools",
                 "Type": "Collection(Edm.String)",
                 "Unicode": "false"
               },
               {
-                "Name": "Skills",
+                "Name": "skills",
                 "Type": "Collection(Edm.String)",
                 "Unicode": "false"
               },
               {
-                "Name": "Tags",
+                "Name": "tags",
                 "Type": "Collection(Edm.String)",
                 "Unicode": "false"
               }
@@ -1038,12 +902,6 @@
                 "ContainsTarget": "true"
               },
               {
-                "Name": "RootFolder",
-                "Type": "Microsoft.Graph.MailFolder",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
                 "Name": "Calendars",
                 "Type": "Collection(Microsoft.Graph.Calendar)",
                 "ContainsTarget": "true"
@@ -1086,11 +944,6 @@
                 "ContainsTarget": "true"
               },
               {
-                "Name": "UserPhotos",
-                "Type": "Collection(Microsoft.Graph.Photo)",
-                "ContainsTarget": "true"
-              },
-              {
                 "Name": "TrendingAround",
                 "Type": "Collection(Microsoft.Graph.File)",
                 "ContainsTarget": "true"
@@ -1112,24 +965,12 @@
                 "ContainsTarget": "true"
               },
               {
-                "Name": "details",
-                "Type": "Microsoft.Graph.UserDetails",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
                 "Name": "tasks",
                 "Type": "Collection(Microsoft.Graph.Task)"
               },
               {
                 "Name": "plans",
                 "Type": "Collection(Microsoft.Graph.Plan)"
-              },
-              {
-                "Name": "notes",
-                "Type": "Microsoft.Graph.Notes",
-                "Nullable": "false",
-                "ContainsTarget": "true"
               }
             ]
           },
@@ -1219,6 +1060,21 @@
                 "Type": "Edm.DateTimeOffset"
               }
             ]
+          },
+          {
+            "Name": "Entity",
+            "Abstract": "true",
+            "Key": {
+              "PropertyRef": {
+                "Name": "Id"
+              }
+            },
+            "Property": {
+              "Name": "Id",
+              "Type": "Edm.String",
+              "Nullable": "false",
+              "Unicode": "false"
+            }
           },
           {
             "Name": "MailFolder",
@@ -1371,11 +1227,18 @@
                 "Unicode": "false"
               }
             ],
-            "NavigationProperty": {
-              "Name": "Attachments",
-              "Type": "Collection(Microsoft.Graph.Attachment)",
-              "ContainsTarget": "true"
-            }
+            "NavigationProperty": [
+              {
+                "Name": "Attachments",
+                "Type": "Collection(Microsoft.Graph.Attachment)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "Extensions",
+                "Type": "Collection(Microsoft.Graph.Extension)",
+                "ContainsTarget": "true"
+              }
+            ]
           },
           {
             "Name": "Calendar",
@@ -1559,6 +1422,11 @@
                 "ContainsTarget": "true"
               },
               {
+                "Name": "Extensions",
+                "Type": "Collection(Microsoft.Graph.Extension)",
+                "ContainsTarget": "true"
+              },
+              {
                 "Name": "Instances",
                 "Type": "Collection(Microsoft.Graph.Event)",
                 "ContainsTarget": "true"
@@ -1713,14 +1581,36 @@
                 "Name": "YomiSurname",
                 "Type": "Edm.String",
                 "Unicode": "false"
+              },
+              {
+                "Name": "SpouseName",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "PersonalNotes",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "Children",
+                "Type": "Collection(Edm.String)",
+                "Unicode": "false"
               }
             ],
-            "NavigationProperty": {
-              "Name": "ContactPhoto",
-              "Type": "Microsoft.Graph.Photo",
-              "Nullable": "false",
-              "ContainsTarget": "true"
-            }
+            "NavigationProperty": [
+              {
+                "Name": "ContactPhoto",
+                "Type": "Microsoft.Graph.Photo",
+                "Nullable": "false",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "Extensions",
+                "Type": "Collection(Microsoft.Graph.Extension)",
+                "ContainsTarget": "true"
+              }
+            ]
           },
           {
             "Name": "ContactFolder",
@@ -1897,11 +1787,6 @@
                 "ContainsTarget": "true"
               },
               {
-                "Name": "GroupPhotos",
-                "Type": "Collection(Microsoft.Graph.Photo)",
-                "ContainsTarget": "true"
-              },
-              {
                 "Name": "Conversations",
                 "Type": "Collection(Microsoft.Graph.Conversation)",
                 "ContainsTarget": "true"
@@ -1944,18 +1829,14 @@
                 "ContainsTarget": "true"
               },
               {
-                "Name": "details",
-                "Type": "Microsoft.Graph.UserDetails",
-                "Nullable": "false",
+                "Name": "tasks",
+                "Type": "Collection(Microsoft.Graph.Task)",
                 "ContainsTarget": "true"
               },
               {
-                "Name": "tasks",
-                "Type": "Collection(Microsoft.Graph.Task)"
-              },
-              {
                 "Name": "plans",
-                "Type": "Collection(Microsoft.Graph.Plan)"
+                "Type": "Collection(Microsoft.Graph.Plan)",
+                "ContainsTarget": "true"
               }
             ]
           },
@@ -2012,31 +1893,6 @@
             ]
           },
           {
-            "Name": "UserDetails",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "userData",
-                "Type": "Microsoft.Graph.UserDataCollection"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "version",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
             "Name": "Task",
             "Key": {
               "PropertyRef": {
@@ -2056,11 +1912,6 @@
               },
               {
                 "Name": "planId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "bucketId",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
@@ -2110,20 +1961,12 @@
                 "Type": "Edm.Boolean"
               },
               {
-                "Name": "previewType",
-                "Type": "Microsoft.Graph.PreviewType"
-              },
-              {
                 "Name": "completedDate",
                 "Type": "Edm.DateTimeOffset"
               },
               {
                 "Name": "numberOfReferences",
                 "Type": "Edm.Int32"
-              },
-              {
-                "Name": "appliedCategories",
-                "Type": "Microsoft.Graph.AppliedCategoriesCollection"
               },
               {
                 "Name": "id",
@@ -2137,38 +1980,12 @@
                 "Unicode": "false"
               }
             ],
-            "NavigationProperty": [
-              {
-                "Name": "details",
-                "Type": "Microsoft.Graph.TaskDetails",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "timelineFormat",
-                "Type": "Microsoft.Graph.TimelineTaskFormat",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "assignedToTaskBoardFormat",
-                "Type": "Microsoft.Graph.TaskBoardTaskFormat",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "statusTaskBoardFormat",
-                "Type": "Microsoft.Graph.TaskBoardTaskFormat",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "bucketTaskBoardFormat",
-                "Type": "Microsoft.Graph.TaskBoardTaskFormat",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              }
-            ]
+            "NavigationProperty": {
+              "Name": "details",
+              "Type": "Microsoft.Graph.TaskDetails",
+              "Nullable": "false",
+              "ContainsTarget": "true"
+            }
           },
           {
             "Name": "Plan",
@@ -2220,78 +2037,9 @@
                 "Type": "Collection(Microsoft.Graph.Task)"
               },
               {
-                "Name": "buckets",
-                "Type": "Collection(Microsoft.Graph.Bucket)"
-              },
-              {
                 "Name": "details",
                 "Type": "Microsoft.Graph.PlanDetails",
                 "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "timeline",
-                "Type": "Microsoft.Graph.PlanTimeline",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "assignedToTaskBoard",
-                "Type": "Microsoft.Graph.PlanTaskBoard",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "statusTaskBoard",
-                "Type": "Microsoft.Graph.PlanTaskBoard",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "bucketTaskBoard",
-                "Type": "Microsoft.Graph.PlanTaskBoard",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              }
-            ]
-          },
-          {
-            "Name": "Notes",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": {
-              "Name": "id",
-              "Type": "Edm.String",
-              "Nullable": "false",
-              "Unicode": "false"
-            },
-            "NavigationProperty": [
-              {
-                "Name": "notebooks",
-                "Type": "Collection(Microsoft.Graph.Notebook)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "sections",
-                "Type": "Collection(Microsoft.Graph.Section)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "sectionGroups",
-                "Type": "Collection(Microsoft.Graph.SectionGroup)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "pages",
-                "Type": "Collection(Microsoft.Graph.Page)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "resources",
-                "Type": "Collection(Microsoft.Graph.Resource)",
                 "ContainsTarget": "true"
               }
             ]
@@ -3039,6 +2787,11 @@
             ]
           },
           {
+            "Name": "Extension",
+            "BaseType": "Microsoft.Graph.Entity",
+            "Abstract": "true"
+          },
+          {
             "Name": "FileAttachment",
             "BaseType": "Microsoft.Graph.Attachment",
             "Property": [
@@ -3051,11 +2804,6 @@
                 "Name": "ContentLocation",
                 "Type": "Edm.String",
                 "Unicode": "false"
-              },
-              {
-                "Name": "IsContactPhoto",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
               },
               {
                 "Name": "ContentBytes",
@@ -3139,6 +2887,11 @@
               {
                 "Name": "Attachments",
                 "Type": "Collection(Microsoft.Graph.Attachment)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "Extensions",
+                "Type": "Collection(Microsoft.Graph.Extension)",
                 "ContainsTarget": "true"
               },
               {
@@ -3438,10 +3191,6 @@
                 "Unicode": "false"
               },
               {
-                "Name": "previewType",
-                "Type": "Microsoft.Graph.PreviewType"
-              },
-              {
                 "Name": "completedBy",
                 "Type": "Edm.String",
                 "Unicode": "false"
@@ -3464,144 +3213,6 @@
             ]
           },
           {
-            "Name": "TimelineTaskFormat",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "color",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "drawingStyle",
-                "Type": "Microsoft.Graph.DrawingStyle"
-              },
-              {
-                "Name": "labelOffsetX",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "labelOffsetY",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "anchorPosition",
-                "Type": "Microsoft.Graph.AnchorPosition"
-              },
-              {
-                "Name": "swimlane",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "calloutHeight",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "visible",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "version",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "TaskBoardTaskFormat",
-            "Key": {
-              "PropertyRef": [
-                {
-                  "Name": "type"
-                },
-                {
-                  "Name": "id"
-                }
-              ]
-            },
-            "Property": [
-              {
-                "Name": "type",
-                "Type": "Microsoft.Graph.TaskBoardType",
-                "Nullable": "false"
-              },
-              {
-                "Name": "orderHint",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "version",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "Bucket",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "name",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "planId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "orderHint",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "totalTasks",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "activeTasks",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "version",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ],
-            "NavigationProperty": {
-              "Name": "tasks",
-              "Type": "Collection(Microsoft.Graph.Task)"
-            }
-          },
-          {
             "Name": "PlanDetails",
             "Key": {
               "PropertyRef": {
@@ -3614,36 +3225,6 @@
                 "Type": "Microsoft.Graph.UserIdCollection"
               },
               {
-                "Name": "category0Description",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "category1Description",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "category2Description",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "category3Description",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "category4Description",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "category5Description",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
                 "Name": "id",
                 "Type": "Edm.String",
                 "Nullable": "false",
@@ -3655,454 +3236,6 @@
                 "Unicode": "false"
               }
             ]
-          },
-          {
-            "Name": "PlanTimeline",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "displaySettings",
-                "Type": "Microsoft.Graph.DisplaySettings"
-              },
-              {
-                "Name": "lockedWidth",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "version",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "PlanTaskBoard",
-            "Key": {
-              "PropertyRef": [
-                {
-                  "Name": "type"
-                },
-                {
-                  "Name": "id"
-                }
-              ]
-            },
-            "Property": [
-              {
-                "Name": "type",
-                "Type": "Microsoft.Graph.TaskBoardType",
-                "Nullable": "false"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "version",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "MyOrganization",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": {
-              "Name": "id",
-              "Type": "Edm.String",
-              "Nullable": "false",
-              "Unicode": "false"
-            },
-            "NavigationProperty": {
-              "Name": "siteCollections",
-              "Type": "Collection(Microsoft.Graph.SiteCollection)",
-              "ContainsTarget": "true"
-            }
-          },
-          {
-            "Name": "SiteCollection",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": {
-              "Name": "id",
-              "Type": "Edm.String",
-              "Nullable": "false",
-              "Unicode": "false"
-            },
-            "NavigationProperty": {
-              "Name": "sites",
-              "Type": "Collection(Microsoft.Graph.Site)",
-              "ContainsTarget": "true"
-            }
-          },
-          {
-            "Name": "Notebook",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "isDefault",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "userRole",
-                "Type": "Microsoft.Graph.UserRole"
-              },
-              {
-                "Name": "isShared",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "sectionsUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "sectionGroupsUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "links",
-                "Type": "Microsoft.Graph.NotebookLinks"
-              },
-              {
-                "Name": "name",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "self",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdTime",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ],
-            "NavigationProperty": [
-              {
-                "Name": "sections",
-                "Type": "Collection(Microsoft.Graph.Section)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "sectionGroups",
-                "Type": "Collection(Microsoft.Graph.SectionGroup)",
-                "ContainsTarget": "true"
-              }
-            ]
-          },
-          {
-            "Name": "Section",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "isDefault",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "pagesUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "name",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "self",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdTime",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ],
-            "NavigationProperty": [
-              {
-                "Name": "parentNotebook",
-                "Type": "Microsoft.Graph.Notebook",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "parentSectionGroup",
-                "Type": "Microsoft.Graph.SectionGroup",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "pages",
-                "Type": "Collection(Microsoft.Graph.Page)",
-                "ContainsTarget": "true"
-              }
-            ]
-          },
-          {
-            "Name": "SectionGroup",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "sectionsUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "sectionGroupsUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "name",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "self",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdTime",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ],
-            "NavigationProperty": [
-              {
-                "Name": "parentNotebook",
-                "Type": "Microsoft.Graph.Notebook",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "parentSectionGroup",
-                "Type": "Microsoft.Graph.SectionGroup",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "sections",
-                "Type": "Collection(Microsoft.Graph.Section)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "sectionGroups",
-                "Type": "Collection(Microsoft.Graph.SectionGroup)",
-                "ContainsTarget": "true"
-              }
-            ]
-          },
-          {
-            "Name": "Page",
-            "HasStream": "true",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "title",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdByAppId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "links",
-                "Type": "Microsoft.Graph.PageLinks"
-              },
-              {
-                "Name": "contentUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "content",
-                "Type": "Edm.Stream"
-              },
-              {
-                "Name": "lastModifiedTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "self",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdTime",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ],
-            "NavigationProperty": [
-              {
-                "Name": "parentSection",
-                "Type": "Microsoft.Graph.Section",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "parentNotebook",
-                "Type": "Microsoft.Graph.Notebook",
-                "Nullable": "false",
-                "ContainsTarget": "true"
-              }
-            ]
-          },
-          {
-            "Name": "Resource",
-            "HasStream": "true",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "self",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "content",
-                "Type": "Edm.Stream"
-              },
-              {
-                "Name": "contentUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "Site",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": {
-              "Name": "id",
-              "Type": "Edm.String",
-              "Nullable": "false",
-              "Unicode": "false"
-            },
-            "NavigationProperty": {
-              "Name": "notes",
-              "Type": "Microsoft.Graph.Notes",
-              "Nullable": "false",
-              "ContainsTarget": "true"
-            }
           },
           {
             "Name": "PrivilegedRole",
@@ -4263,6 +3396,92 @@
               "Nullable": "false",
               "ContainsTarget": "true"
             }
+          },
+          {
+            "Name": "PrivilegedSecurityAlert",
+            "OpenType": "true",
+            "Key": {
+              "PropertyRef": {
+                "Name": "AlertId"
+              }
+            },
+            "Property": [
+              {
+                "Name": "AlertId",
+                "Type": "Edm.Guid",
+                "Nullable": "false"
+              },
+              {
+                "Name": "NumberOfAffectedItems",
+                "Type": "Edm.Int32"
+              },
+              {
+                "Name": "AdditionalData",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "AlertName",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "AlertDescription",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "LastModifiedTime",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "LastScannedTime",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "SeverityLevel",
+                "Type": "Microsoft.Graph.AlertSeverity"
+              },
+              {
+                "Name": "AlertType",
+                "Type": "Microsoft.Graph.AlertType"
+              },
+              {
+                "Name": "SecurityImpact",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "MitigationSteps",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "HowToPrevent",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "WasDismissed",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "IsActive",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "IsResolvable",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "IsConfigurable",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "Status",
+                "Type": "Microsoft.Graph.AlertStatus"
+              }
+            ]
           },
           {
             "Name": "PrivilegedOperationEvent",
@@ -4439,182 +3658,6 @@
               },
               {
                 "Name": "Event",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "PimAlert",
-            "Key": {
-              "PropertyRef": {
-                "Name": "AlertId"
-              }
-            },
-            "Property": [
-              {
-                "Name": "AlertId",
-                "Type": "Edm.Guid",
-                "Nullable": "false"
-              },
-              {
-                "Name": "NumberOfAffected",
-                "Type": "Edm.Int32",
-                "Nullable": "false"
-              },
-              {
-                "Name": "AdditionalData",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "AlertName",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "AlertDescription",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "LastModifiedTime",
-                "Type": "Edm.DateTimeOffset",
-                "Nullable": "false"
-              },
-              {
-                "Name": "LastScannedTime",
-                "Type": "Edm.DateTimeOffset",
-                "Nullable": "false"
-              },
-              {
-                "Name": "SeverityLevel",
-                "Type": "Edm.Int32",
-                "Nullable": "false"
-              },
-              {
-                "Name": "AlertType",
-                "Type": "Edm.Int32",
-                "Nullable": "false"
-              },
-              {
-                "Name": "SecurityImpact",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "MitigationSteps",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "HowToPrevent",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "WasDismissed",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
-              },
-              {
-                "Name": "IsActive",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
-              },
-              {
-                "Name": "IsResolvable",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
-              },
-              {
-                "Name": "IsConfigurable",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
-              }
-            ]
-          },
-          {
-            "Name": "PimAlertSettings",
-            "Key": {
-              "PropertyRef": {
-                "Name": "AlertId"
-              }
-            },
-            "Property": [
-              {
-                "Name": "AlertId",
-                "Type": "Edm.Guid",
-                "Nullable": "false"
-              },
-              {
-                "Name": "AlertSettings",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "PimAlertInfo",
-            "Key": {
-              "PropertyRef": {
-                "Name": "AlertId"
-              }
-            },
-            "Property": [
-              {
-                "Name": "AlertId",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "AlertName",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "AlertDescription",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "LowSeverityThreshold",
-                "Type": "Edm.Int32",
-                "Nullable": "false"
-              },
-              {
-                "Name": "MediumSeverityThreshold",
-                "Type": "Edm.Int32",
-                "Nullable": "false"
-              },
-              {
-                "Name": "HighSeverityThreshold",
-                "Type": "Edm.Int32",
-                "Nullable": "false"
-              },
-              {
-                "Name": "Type",
-                "Type": "Edm.Int32",
-                "Nullable": "false"
-              },
-              {
-                "Name": "Severity",
-                "Type": "Edm.Int32",
-                "Nullable": "false"
-              },
-              {
-                "Name": "SecurityImpact",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "MitigationSteps",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "HowToPrevent",
                 "Type": "Edm.String",
                 "Unicode": "false"
               }
@@ -5666,295 +4709,10 @@
             ]
           },
           {
-            "Name": "AppliedCategoriesCollection"
-          },
-          {
-            "Name": "ExternalReference",
-            "Property": [
-              {
-                "Name": "alias",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "type",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "previewPriority",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "modifiedBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "modifiedDate",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ]
-          },
-          {
-            "Name": "UserDataCollection"
-          },
-          {
             "Name": "ExternalReferenceCollection"
           },
           {
             "Name": "UserIdCollection"
-          },
-          {
-            "Name": "NotebookLinks",
-            "Property": [
-              {
-                "Name": "oneNoteClientUrl",
-                "Type": "Microsoft.Graph.ExternalLink"
-              },
-              {
-                "Name": "oneNoteWebUrl",
-                "Type": "Microsoft.Graph.ExternalLink"
-              }
-            ]
-          },
-          {
-            "Name": "ExternalLink",
-            "Property": {
-              "Name": "href",
-              "Type": "Edm.String",
-              "Unicode": "false"
-            }
-          },
-          {
-            "Name": "PageLinks",
-            "Property": [
-              {
-                "Name": "oneNoteClientUrl",
-                "Type": "Microsoft.Graph.ExternalLink"
-              },
-              {
-                "Name": "oneNoteWebUrl",
-                "Type": "Microsoft.Graph.ExternalLink"
-              }
-            ]
-          },
-          {
-            "Name": "Diagnostic",
-            "Property": [
-              {
-                "Name": "message",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "url",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "SiteMetadata",
-            "Property": [
-              {
-                "Name": "siteCollectionId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "siteId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "PatchContentCommand",
-            "Property": [
-              {
-                "Name": "action",
-                "Type": "Microsoft.Graph.PatchActionType",
-                "Nullable": "false"
-              },
-              {
-                "Name": "target",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "content",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "position",
-                "Type": "Microsoft.Graph.PatchInsertPosition"
-              }
-            ]
-          },
-          {
-            "Name": "CopyNotebookModel",
-            "Property": [
-              {
-                "Name": "isDefault",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "userRole",
-                "Type": "Microsoft.Graph.UserRole"
-              },
-              {
-                "Name": "isShared",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "sectionsUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "sectionGroupsUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "links",
-                "Type": "Microsoft.Graph.NotebookLinks"
-              },
-              {
-                "Name": "name",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "self",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdTime",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ]
-          },
-          {
-            "Name": "CopySectionModel",
-            "Property": [
-              {
-                "Name": "isDefault",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "pagesUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "name",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedBy",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "self",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdTime",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ]
-          },
-          {
-            "Name": "CopyPageModel",
-            "Property": [
-              {
-                "Name": "parentSection",
-                "Type": "Microsoft.Graph.CopySectionModel"
-              },
-              {
-                "Name": "parentNotebook",
-                "Type": "Microsoft.Graph.CopyNotebookModel"
-              },
-              {
-                "Name": "title",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdByAppId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "links",
-                "Type": "Microsoft.Graph.PageLinks"
-              },
-              {
-                "Name": "contentUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "lastModifiedTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "self",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "createdTime",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ]
           }
         ],
         "Action": [
@@ -6510,142 +5268,6 @@
             }
           },
           {
-            "Name": "PatchContent",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.Graph.Page"
-              },
-              {
-                "Name": "commands",
-                "Type": "Collection(Microsoft.Graph.PatchContentCommand)"
-              }
-            ]
-          },
-          {
-            "Name": "CopyNotebook",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.Graph.Notebook"
-              },
-              {
-                "Name": "siteCollectionId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "siteId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "renameAs",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ],
-            "ReturnType": {
-              "Type": "Microsoft.Graph.CopyNotebookModel"
-            }
-          },
-          {
-            "Name": "CopyToNotebook",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.Graph.Section"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "siteCollectionId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "siteId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "renameAs",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ],
-            "ReturnType": {
-              "Type": "Microsoft.Graph.CopySectionModel"
-            }
-          },
-          {
-            "Name": "CopyToSectionGroup",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.Graph.Section"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "siteCollectionId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "siteId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "renameAs",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ],
-            "ReturnType": {
-              "Type": "Microsoft.Graph.CopySectionModel"
-            }
-          },
-          {
-            "Name": "CopyToSection",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.Graph.Page"
-              },
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "siteCollectionId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "siteId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ],
-            "ReturnType": {
-              "Type": "Microsoft.Graph.CopyPageModel"
-            }
-          },
-          {
             "Name": "Activate",
             "IsBound": "true",
             "Parameter": [
@@ -6738,10 +5360,10 @@
             "IsBound": "true",
             "Parameter": {
               "Name": "bindingParameter",
-              "Type": "Microsoft.Graph.PimAlert"
+              "Type": "Microsoft.Graph.PrivilegedSecurityAlert"
             },
             "ReturnType": {
-              "Type": "Microsoft.Graph.PimAlert"
+              "Type": "Microsoft.Graph.PrivilegedSecurityAlert"
             }
           },
           {
@@ -6749,10 +5371,10 @@
             "IsBound": "true",
             "Parameter": {
               "Name": "bindingParameter",
-              "Type": "Microsoft.Graph.PimAlert"
+              "Type": "Microsoft.Graph.PrivilegedSecurityAlert"
             },
             "ReturnType": {
-              "Type": "Microsoft.Graph.PimAlert"
+              "Type": "Microsoft.Graph.PrivilegedSecurityAlert"
             }
           },
           {
@@ -6761,7 +5383,7 @@
             "Parameter": [
               {
                 "Name": "bindingParameter",
-                "Type": "Microsoft.Graph.PimAlert"
+                "Type": "Microsoft.Graph.PrivilegedSecurityAlert"
               },
               {
                 "Name": "ItemId",
@@ -6769,7 +5391,7 @@
               }
             ],
             "ReturnType": {
-              "Type": "Microsoft.Graph.PimAlert"
+              "Type": "Microsoft.Graph.PrivilegedSecurityAlert"
             }
           },
           {
@@ -6865,46 +5487,6 @@
             "ReturnType": {
               "Type": "Collection(Microsoft.Graph.item)",
               "Nullable": "false"
-            }
-          },
-          {
-            "Name": "FromUrl",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Collection(Microsoft.Graph.SiteCollection)"
-              },
-              {
-                "Name": "url",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ],
-            "ReturnType": {
-              "Type": "Microsoft.Graph.SiteMetadata"
-            }
-          },
-          {
-            "Name": "Thumbnail",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "Microsoft.Graph.Section"
-            },
-            "ReturnType": {
-              "Type": "Edm.Stream"
-            }
-          },
-          {
-            "Name": "Thumbnail",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "Microsoft.Graph.Page"
-            },
-            "ReturnType": {
-              "Type": "Edm.Stream"
             }
           },
           {
@@ -7067,14 +5649,6 @@
                 {
                   "Path": "Microsoft.Graph.item/createdByUser",
                   "Target": "users"
-                },
-                {
-                  "Path": "tasks",
-                  "Target": "tasks"
-                },
-                {
-                  "Path": "plans",
-                  "Target": "plans"
                 }
               ]
             },
@@ -7233,20 +5807,6 @@
             {
               "Name": "plans",
               "EntityType": "Microsoft.Graph.Plan",
-              "NavigationPropertyBinding": [
-                {
-                  "Path": "tasks",
-                  "Target": "tasks"
-                },
-                {
-                  "Path": "buckets",
-                  "Target": "buckets"
-                }
-              ]
-            },
-            {
-              "Name": "buckets",
-              "EntityType": "Microsoft.Graph.Bucket",
               "NavigationPropertyBinding": {
                 "Path": "tasks",
                 "Target": "tasks"
@@ -7259,6 +5819,10 @@
                 "Path": "Assignments",
                 "Target": "PrivilegedRoleAssignments"
               }
+            },
+            {
+              "Name": "PrivilegedSecurityAlerts",
+              "EntityType": "Microsoft.Graph.PrivilegedSecurityAlert"
             },
             {
               "Name": "PrivilegedRoleAssignments",
@@ -7279,40 +5843,22 @@
             {
               "Name": "NotificationRules",
               "EntityType": "Microsoft.Graph.NotificationRule"
-            },
-            {
-              "Name": "Alerts",
-              "EntityType": "Microsoft.Graph.PimAlert"
-            },
-            {
-              "Name": "AlertSettings",
-              "EntityType": "Microsoft.Graph.PimAlertSettings"
-            },
-            {
-              "Name": "AlertInfo",
-              "EntityType": "Microsoft.Graph.PimAlertInfo"
             }
           ],
-          "Singleton": [
-            {
-              "Name": "drive",
-              "Type": "Microsoft.Graph.drive",
-              "NavigationPropertyBinding": [
-                {
-                  "Path": "Microsoft.Graph.item/lastModifiedByUser",
-                  "Target": "users"
-                },
-                {
-                  "Path": "Microsoft.Graph.item/createdByUser",
-                  "Target": "users"
-                }
-              ]
-            },
-            {
-              "Name": "myOrganization",
-              "Type": "Microsoft.Graph.MyOrganization"
-            }
-          ]
+          "Singleton": {
+            "Name": "drive",
+            "Type": "Microsoft.Graph.drive",
+            "NavigationPropertyBinding": [
+              {
+                "Path": "Microsoft.Graph.item/lastModifiedByUser",
+                "Target": "users"
+              },
+              {
+                "Path": "Microsoft.Graph.item/createdByUser",
+                "Target": "users"
+              }
+            ]
+          }
         },
         "Annotations": [
           {

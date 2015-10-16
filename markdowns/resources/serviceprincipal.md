@@ -9,7 +9,6 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions",
     "appRoleAssignments",
     "createdObjects",
     "memberOf",
@@ -22,11 +21,6 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "accountEnabled": true,
   "appDisplayName": "String",
   "appId": "String",
@@ -139,7 +133,6 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |appRoleAssignedTo|[AppRoleAssignment](approleassignment.md)| Read-only.|
 |appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only. Nullable.|
 |createdObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
@@ -154,7 +147,6 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ServicePrincipal](../api/serviceprincipal_get.md) | [ServicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
-|[Create Extension](../api/serviceprincipal_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create AppRoleAssignment](../api/serviceprincipal_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
 |[Create createdObject](../api/serviceprincipal_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
 |[Create memberOf](../api/serviceprincipal_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
@@ -167,8 +159,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String||
 |[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String||
 
-<!-- uuid: ba5f5c2f-fda4-4197-9e2d-f89b3173853d
-2015-10-16 10:08:04 UTC -->
+<!-- uuid: 7ea11e2b-ea18-4593-9264-9ba2b3ed4421
+2015-10-16 21:11:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal resource",

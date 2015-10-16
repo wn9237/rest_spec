@@ -9,7 +9,6 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions",
     "registeredOwners",
     "registeredUsers"
   ],
@@ -18,11 +17,6 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "accountEnabled": true,
   "alternativeSecurityIds": [
     {
@@ -81,7 +75,6 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |registeredOwners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |registeredUsers|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
@@ -90,7 +83,6 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Device](../api/device_get.md) | [Device](device.md) |Read properties and relationships of device object.|
-|[Create Extension](../api/device_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Create a new registeredOwner by posting to the registeredOwners collection.|
 |[Create registeredUser](../api/device_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
 |[Update](../api/device_update.md) | [Device](device.md)	|Update Device object. |
@@ -99,8 +91,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/device_getmembergroups.md)|String||
 |[Get MemberObjects](../api/device_getmemberobjects.md)|String||
 
-<!-- uuid: 488b643d-9e25-4255-94f7-6bcc56db8d17
-2015-10-16 10:07:48 UTC -->
+<!-- uuid: a21a6ff0-353e-4f67-8afb-8d640f0a5580
+2015-10-16 21:10:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device resource",

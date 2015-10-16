@@ -273,44 +273,21 @@ module SpecMaker
 	end
 
 	# Process Singleton
-	schema[:EntityContainer][:Singleton].each do |entity|
-		@ientityset = @ientityset + 1
-		@icollection = @icollection + 1
-		@json_object = nil 
-		@json_object = deep_copy(@template) 
-
-		puts "-> Processing Singleton Type #{entity[:Name]}"
-		@json_object[:name] = entity[:Name]
-		@json_object[:isEntitySet] = true
-		#dt = entity[:Type][(entity[:Type].rindex('.') + 1)..-1].chomp(')')		
-		dt = get_type(entity[:Type])
-		@json_object[:collectionOf] = dt
-
-		# save the collection names & types being created for later checks.
-		@collectionNames[entity[:Name]] = dt
-
-		@json_object[:allowPatch] = false
-		@json_object[:allowUpsert] = false
-		@json_object[:allowPatchCreate] = false
-		@json_object[:allowDelete] = false
-		@json_object[:restPath] = {"/#{@json_object[:name]}" => true }		
-
-		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
-
+	if schema[:EntityContainer][:Singleton].is_a?(Array)
+		schema[:EntityContainer][:Singleton].each do |entity|
+			@isingleton = @isingleton + 1	
+			dt = get_type(entity[:Type])
+			# No need to write singletons. 
+			fill_rest_path("/#{entity[:Name]}", dt, false)
+		end
+	elsif schema[:EntityContainer][:Singleton].is_a?(Hash)
+		puts "Processing Singleton #{schema[:EntityContainer][:Singleton][:Name]}"
+		@isingleton = @isingleton + 1	
+		dt = get_type(schema[:EntityContainer][:Singleton][:Type])
 		# No need to write singletons. 
-		
-		# File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
-		# 	f.write(JSON.pretty_generate @json_object)
-		# end
-		#create_auto_examplefiles((@json_object[:name]).downcase, true)		 
-
-		fill_rest_path("/#{(@json_object[:name])}", dt, false)
-
-		GC.start
+		puts "calling fill rest path with: /#{schema[:EntityContainer][:Singleton][:Name].downcase}, #{dt} " 
+		fill_rest_path("/#{schema[:EntityContainer][:Singleton][:Name].downcase}", dt, false)
 	end
-
-
-
 
 	puts "....Completed."
 	puts "Entities: #{@ient}"

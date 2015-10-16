@@ -10,8 +10,7 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "ChildFolders",
-    "Contacts",
-    "Extensions"
+    "Contacts"
   ],
   "@odata.type": "microsoft.graph.ContactFolder"
 }-->
@@ -29,11 +28,6 @@ Here is a JSON representation of the resource
     }
   ],
   "DisplayName": "String",
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "Id": "String (identifier)",
   "ParentFolderId": "String"
 }
@@ -51,7 +45,6 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |ChildFolders|[ContactFolder](contactfolder.md) collection| Read-only. Nullable.|
 |Contacts|[Contact](contact.md) collection| Read-only. Nullable.|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
 ### Tasks
 
@@ -60,12 +53,11 @@ Here is a JSON representation of the resource
 |[Get ContactFolder](../api/contactfolder_get.md) | [ContactFolder](contactfolder.md) |Read properties and relationships of contactFolder object.|
 |[Create ContactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the ChildFolders collection.|
 |[Create Contact](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
-|[Create Extension](../api/contactfolder_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/contactfolder_update.md) | [ContactFolder](contactfolder.md)	|Update ContactFolder object. |
 |[Delete](../api/contactfolder_delete.md) | Void	|Delete ContactFolder object. |
 
-<!-- uuid: 8e57a702-3ed0-4b33-b172-10864ace5863
-2015-10-16 10:07:47 UTC -->
+<!-- uuid: e5bf1162-42d3-4f5c-bc18-989618f83837
+2015-10-16 21:10:43 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ContactFolder resource",

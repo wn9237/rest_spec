@@ -15,12 +15,10 @@ Here is a JSON representation of the resource
     "ContactFolders",
     "Contacts",
     "Events",
-    "Extensions",
     "Folders",
     "JoinedGroups",
     "Messages",
     "TrendingAround",
-    "UserPhotos",
     "WorkingWith",
     "appRoleAssignments",
     "createdObjects",
@@ -38,9 +36,6 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "AboutMe": "String",
-  "Alias": "String",
-  "Birthday": "String (timestamp)",
   "Calendar": {
     "@odata.type": "microsoft.graph.Calendar"
   },
@@ -74,19 +69,10 @@ Here is a JSON representation of the resource
       "@odata.type": "microsoft.graph.Event"
     }
   ],
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "Folders": [
     {
       "@odata.type": "microsoft.graph.MailFolder"
     }
-  ],
-  "HireDate": "String (timestamp)",
-  "Interests": [
-    "String"
   ],
   "JoinedGroups": [
     {
@@ -99,27 +85,6 @@ Here is a JSON representation of the resource
       "@odata.type": "microsoft.graph.Message"
     }
   ],
-  "MySite": "String",
-  "PastProjects": [
-    "String"
-  ],
-  "PreferredName": "String",
-  "PrincipalName": "String",
-  "Responsibilities": [
-    "String"
-  ],
-  "RootFolder": {
-    "@odata.type": "microsoft.graph.MailFolder"
-  },
-  "Schools": [
-    "String"
-  ],
-  "Skills": [
-    "String"
-  ],
-  "Tags": [
-    "String"
-  ],
   "TrendingAround": [
     {
       "@odata.type": "microsoft.graph.File"
@@ -128,17 +93,14 @@ Here is a JSON representation of the resource
   "UserPhoto": {
     "@odata.type": "microsoft.graph.Photo"
   },
-  "UserPhotos": [
-    {
-      "@odata.type": "microsoft.graph.Photo"
-    }
-  ],
   "WorkingWith": [
     {
       "@odata.type": "microsoft.graph.User"
     }
   ],
+  "aboutMe": "String",
   "accountEnabled": true,
+  "alias": "String",
   "appRoleAssignments": [
     {
       "@odata.type": "microsoft.graph.AppRoleAssignment"
@@ -154,6 +116,7 @@ Here is a JSON representation of the resource
       "@odata.type": "microsoft.graph.AssignedPlan"
     }
   ],
+  "birthday": "String (timestamp)",
   "city": "String",
   "country": "String",
   "createdObjects": [
@@ -163,9 +126,6 @@ Here is a JSON representation of the resource
   ],
   "deletionTimestamp": "String (timestamp)",
   "department": "String",
-  "details": {
-    "@odata.type": "microsoft.graph.UserDetails"
-  },
   "dirSyncEnabled": true,
   "directReports": [
     {
@@ -178,7 +138,11 @@ Here is a JSON representation of the resource
   },
   "facsimileTelephoneNumber": "String",
   "givenName": "String",
+  "hireDate": "String (timestamp)",
   "immutableId": "String",
+  "interests": [
+    "String"
+  ],
   "jobTitle": "String",
   "lastDirSyncTime": "String (timestamp)",
   "mail": "String",
@@ -192,9 +156,7 @@ Here is a JSON representation of the resource
     }
   ],
   "mobile": "String",
-  "notes": {
-    "@odata.type": "microsoft.graph.Notes"
-  },
+  "mySite": "String",
   "oauth2PermissionGrants": [
     {
       "@odata.type": "microsoft.graph.OAuth2PermissionGrant"
@@ -220,6 +182,9 @@ Here is a JSON representation of the resource
   "passwordProfile": {
     "@odata.type": "microsoft.graph.PasswordProfile"
   },
+  "pastProjects": [
+    "String"
+  ],
   "physicalDeliveryOfficeName": "String",
   "plans": [
     {
@@ -228,6 +193,8 @@ Here is a JSON representation of the resource
   ],
   "postalCode": "String",
   "preferredLanguage": "String",
+  "preferredName": "String",
+  "principalName": "String",
   "provisionedPlans": [
     {
       "@odata.type": "microsoft.graph.ProvisionedPlan"
@@ -246,10 +213,22 @@ Here is a JSON representation of the resource
       "@odata.type": "microsoft.graph.DirectoryObject"
     }
   ],
+  "responsibilities": [
+    "String"
+  ],
+  "schools": [
+    "String"
+  ],
   "sipProxyAddress": "String",
+  "skills": [
+    "String"
+  ],
   "state": "String",
   "streetAddress": "String",
   "surname": "String",
+  "tags": [
+    "String"
+  ],
   "tasks": [
     {
       "@odata.type": "microsoft.graph.Task"
@@ -266,23 +245,13 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|AboutMe|String||
-|Alias|String||
-|Birthday|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|HireDate|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|Interests|String collection||
 |MailboxGuid|Guid||
-|MySite|String||
-|PastProjects|String collection||
-|PreferredName|String||
-|PrincipalName|String||
-|Responsibilities|String collection||
-|Schools|String collection||
-|Skills|String collection||
-|Tags|String collection||
+|aboutMe|String||
 |accountEnabled|Boolean||
+|alias|String||
 |assignedLicenses|[AssignedLicense](assignedlicense.md) collection||
 |assignedPlans|[AssignedPlan](assignedplan.md) collection||
+|birthday|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String||
 |country|String||
 |deletionTimestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -291,28 +260,38 @@ Here is a JSON representation of the resource
 |displayName|String||
 |facsimileTelephoneNumber|String||
 |givenName|String||
+|hireDate|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |immutableId|String||
+|interests|String collection||
 |jobTitle|String||
 |lastDirSyncTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |mail|String||
 |mailNickname|String||
 |mobile|String||
+|mySite|String||
 |objectId|String| Read-only.|
 |objectType|String||
 |onPremisesSecurityIdentifier|String||
 |otherMails|String collection||
 |passwordPolicies|String||
 |passwordProfile|[PasswordProfile](passwordprofile.md)||
+|pastProjects|String collection||
 |physicalDeliveryOfficeName|String||
 |postalCode|String||
 |preferredLanguage|String||
+|preferredName|String||
+|principalName|String||
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection||
 |provisioningErrors|[ProvisioningError](provisioningerror.md) collection||
 |proxyAddresses|String collection||
+|responsibilities|String collection||
+|schools|String collection||
 |sipProxyAddress|String||
+|skills|String collection||
 |state|String||
 |streetAddress|String||
 |surname|String||
+|tags|String collection||
 |telephoneNumber|String||
 |thumbnailPhoto|Stream||
 |usageLocation|String||
@@ -329,23 +308,18 @@ Here is a JSON representation of the resource
 |ContactFolders|[ContactFolder](contactfolder.md) collection| Read-only. Nullable.|
 |Contacts|[Contact](contact.md) collection| Read-only. Nullable.|
 |Events|[Event](event.md) collection| Read-only. Nullable.|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |Folders|[MailFolder](mailfolder.md) collection| Read-only. Nullable.|
 |JoinedGroups|[Group](group.md) collection| Read-only. Nullable.|
 |Messages|[Message](message.md) collection| Read-only. Nullable.|
-|RootFolder|[MailFolder](mailfolder.md)| Read-only.|
 |TrendingAround|[File](file.md) collection| Read-only. Nullable.|
 |UserPhoto|[Photo](photo.md)| Read-only.|
-|UserPhotos|[Photo](photo.md) collection| Read-only. Nullable.|
 |WorkingWith|[User](user.md) collection| Read-only. Nullable.|
 |appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection| Read-only. Nullable.|
 |createdObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
-|details|[UserDetails](userdetails.md)| Read-only.|
 |directReports|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |drive|[drive](drive.md)| Read-only.|
 |manager|[DirectoryObject](directoryobject.md)| Read-only.|
 |memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
-|notes|[Notes](notes.md)| Read-only.|
 |oauth2PermissionGrants|[OAuth2PermissionGrant](oauth2permissiongrant.md) collection| Read-only. Nullable.|
 |ownedDevices|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
@@ -364,12 +338,10 @@ Here is a JSON representation of the resource
 |[Create ContactFolder](../api/user_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the ContactFolders collection.|
 |[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
 |[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[Create Extension](../api/user_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create MailFolder](../api/user_post_folders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the Folders collection.|
 |[Create Group](../api/user_post_joinedgroups.md) |[Group](group.md)| Create a new Group by posting to the JoinedGroups collection.|
 |[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
 |[Create File](../api/user_post_trendingaround.md) |[File](file.md)| Create a new File by posting to the TrendingAround collection.|
-|[Create UserPhoto](../api/user_post_userphotos.md) |[Photo](photo.md)| Create a new UserPhoto by posting to the UserPhotos collection.|
 |[Create User](../api/user_post_workingwith.md) |[User](user.md)| Create a new User by posting to the WorkingWith collection.|
 |[Create AppRoleAssignment](../api/user_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
 |[Create createdObject](../api/user_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
@@ -389,8 +361,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/user_getmembergroups.md)|String||
 |[Get MemberObjects](../api/user_getmemberobjects.md)|String||
 
-<!-- uuid: 8aa1ef4a-7f1d-4c15-a27e-bbca88a4d37a
-2015-10-16 10:08:08 UTC -->
+<!-- uuid: 3cfc8715-2924-4e27-afb2-e6984ba1153e
+2015-10-16 21:11:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User resource",

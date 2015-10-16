@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/RootFolder/Move
 POST /users/<objectId>/Folders/<Id>/Move
-POST /drive/root/createdByUser/RootFolder/Move
+POST /drive/root/createdByUser/Folders/<Id>/Move
+POST /drive/root/lastModifiedByUser/Folders/<Id>/Move
 
 ```
 ### Request headers
@@ -34,7 +34,7 @@ Here is an example of how to call this API.
   "name": "mailfolder_move"
 }-->
 ```http
-POST /users/<objectId>/RootFolder/Move
+POST /users/<objectId>/Folders/<Id>/Move
 Content-type: application/json
 Content-length: 44
 {
@@ -59,8 +59,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 32ac67c3-ebdd-4bcf-ae4a-7b9f29c9e04e
-2015-10-16 10:07:56 UTC -->
+<!-- uuid: 52cad59b-6f14-4326-b29d-8cb449c45bae
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Move",

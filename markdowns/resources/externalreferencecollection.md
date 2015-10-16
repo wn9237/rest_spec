@@ -5,8 +5,8 @@
 ### Properties
 None
 
-<!-- uuid: ebcc6d9f-30f2-43c3-b933-df208236f53c
-2015-10-16 10:07:53 UTC -->
+<!-- uuid: a0e5f851-4087-438c-8efa-2a15b78cf9f6
+2015-10-16 21:10:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExternalReferenceCollection resource",

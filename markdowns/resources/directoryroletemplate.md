@@ -9,18 +9,13 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions"
+
   ],
   "@odata.type": "microsoft.graph.DirectoryRoleTemplate"
 }-->
 
 ```json
 {
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "deletionTimestamp": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -39,24 +34,22 @@ Here is a JSON representation of the resource
 |objectType|String||
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+None
+
 
 ### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get DirectoryRoleTemplate](../api/directoryroletemplate_get.md) | [DirectoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
-|[Create Extension](../api/directoryroletemplate_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/directoryroletemplate_update.md) | [DirectoryRoleTemplate](directoryroletemplate.md)	|Update DirectoryRoleTemplate object. |
 |[Delete](../api/directoryroletemplate_delete.md) | Void	|Delete DirectoryRoleTemplate object. |
 |[Checkmembergroups](../api/directoryroletemplate_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/directoryroletemplate_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryroletemplate_getmemberobjects.md)|String||
 
-<!-- uuid: 193d9774-c6bf-4b23-8722-9b2790f4e07e
-2015-10-16 10:07:50 UTC -->
+<!-- uuid: e2abcf17-0cc7-4e0c-a1a3-3df2fef6d4c0
+2015-10-16 21:10:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRoleTemplate resource",

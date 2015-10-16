@@ -9,7 +9,6 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions",
     "Posts"
   ],
   "@odata.type": "microsoft.graph.ConversationThread"
@@ -23,11 +22,6 @@ Here is a JSON representation of the resource
     }
   ],
   "DateTimeLastDelivered": "String (timestamp)",
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "HasAttachments": true,
   "Id": "String (identifier)",
   "IsLocked": true,
@@ -65,7 +59,6 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |Posts|[Post](post.md) collection| Read-only. Nullable.|
 
 ### Tasks
@@ -73,14 +66,13 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ConversationThread](../api/conversationthread_get.md) | [ConversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
-|[Create Extension](../api/conversationthread_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
 |[Update](../api/conversationthread_update.md) | [ConversationThread](conversationthread.md)	|Update ConversationThread object. |
 |[Delete](../api/conversationthread_delete.md) | Void	|Delete ConversationThread object. |
 |[Reply](../api/conversationthread_reply.md)|[None](none.md)||
 
-<!-- uuid: 7fa8cb89-afa7-4831-a4cc-ff399e53d102
-2015-10-16 10:07:48 UTC -->
+<!-- uuid: 2a1d29c5-3fdc-4837-becc-c5bb01e2ceec
+2015-10-16 21:10:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread resource",

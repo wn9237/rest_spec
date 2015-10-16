@@ -31,7 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 |sectionGroupsUrl|String||
 |sectionsUrl|String||
 |self|String||
-|userRole|String| Possible values are: `Owner`, `Contributor`, `Reader`, `None`.|
+|userRole|String||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Notebook](../resources/notebook.md) object in the response body.
@@ -104,8 +104,8 @@ Content-length: 516
 }
 ```
 
-<!-- uuid: fb418fbd-82fe-4573-be8c-872124f9a498
-2015-10-16 10:07:58 UTC -->
+<!-- uuid: 22f7bf81-6a3b-4ed1-b1e6-d0e269027cde
+2015-10-16 21:10:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notebook object.",

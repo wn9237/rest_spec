@@ -43,8 +43,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [Site](../resources/site.md) object in the response body.
 
-<!-- uuid: 0e0ae9d0-3516-45d2-8100-cda525d48c03
-2015-10-16 10:08:05 UTC -->
+<!-- uuid: 788168f9-90b4-45c6-a766-43d7651106f0
+2015-10-16 21:11:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Site",

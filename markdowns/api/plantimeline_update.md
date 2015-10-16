@@ -20,7 +20,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displaySettings|String| Possible values are: `None`, `Today`, `TimeScale`, `TaskDate`, `All`.|
+|displaySettings|String||
 |lockedWidth|Int32||
 |version|String||
 
@@ -63,8 +63,8 @@ Content-length: 119
 }
 ```
 
-<!-- uuid: 90a3aeb9-60bd-4431-8257-3f1dda903f87
-2015-10-16 10:08:01 UTC -->
+<!-- uuid: ba79fedb-d066-4fcb-b3cb-d8b251ddff65
+2015-10-16 21:10:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plantimeline object.",

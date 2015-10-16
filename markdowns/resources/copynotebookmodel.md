@@ -49,10 +49,10 @@ Here is a JSON representation of the resource
 |sectionGroupsUrl|String||
 |sectionsUrl|String||
 |self|String||
-|userRole|String| Possible values are: `Owner`, `Contributor`, `Reader`, `None`.|
+|userRole|String||
 
-<!-- uuid: 4ecbb44e-52cb-4440-8554-aa21824c5591
-2015-10-16 10:07:48 UTC -->
+<!-- uuid: efac2f9a-9e70-47f5-9685-e90b72ae4c3a
+2015-10-16 21:10:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "CopyNotebookModel resource",

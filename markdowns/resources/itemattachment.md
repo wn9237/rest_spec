@@ -9,7 +9,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions"
+
   ],
   "@odata.type": "microsoft.graph.ItemAttachment"
 }-->
@@ -18,11 +18,6 @@ Here is a JSON representation of the resource
 {
   "ContentType": "String",
   "DateTimeLastModified": "String (timestamp)",
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "Id": "String (identifier)",
   "IsInline": true,
   "Item": {
@@ -46,7 +41,6 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |Item|[OutlookItem](outlookitem.md)| Read-only.|
 
 ### Tasks
@@ -54,12 +48,11 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ItemAttachment](../api/itemattachment_get.md) | [ItemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
-|[Create Extension](../api/itemattachment_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/itemattachment_update.md) | [ItemAttachment](itemattachment.md)	|Update ItemAttachment object. |
 |[Delete](../api/itemattachment_delete.md) | Void	|Delete ItemAttachment object. |
 
-<!-- uuid: 02639790-8eeb-42e0-a608-070548487e09
-2015-10-16 10:07:56 UTC -->
+<!-- uuid: 2775e37e-5120-4f09-b3e6-9e032b7dd5c7
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ItemAttachment resource",

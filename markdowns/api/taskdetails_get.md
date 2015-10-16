@@ -38,10 +38,9 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 177
+Content-length: 139
 {
   "notes": "notes-value",
-  "previewType": "previewType-value",
   "completedBy": "completedBy-value",
   "references": {
   },
@@ -51,8 +50,8 @@ Content-length: 177
 ```
 If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
 
-<!-- uuid: d0c485f3-eac3-43e2-954b-ec1dfc6a7387
-2015-10-16 10:08:05 UTC -->
+<!-- uuid: 08b517ca-78dc-4374-8e01-ed9fcf286bb5
+2015-10-16 21:11:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskDetails",

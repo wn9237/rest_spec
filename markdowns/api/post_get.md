@@ -79,8 +79,8 @@ Content-length: 790
 ```
 If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
 
-<!-- uuid: 99dbb28c-e820-40e8-92c3-d5734c441696
-2015-10-16 10:08:01 UTC -->
+<!-- uuid: 0832faf2-5ad4-4a26-bfd4-a73eb37bd899
+2015-10-16 21:10:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",

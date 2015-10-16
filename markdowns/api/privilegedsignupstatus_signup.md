@@ -48,8 +48,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 8fab7d47-893e-4886-beb9-9f60fa63f773
-2015-10-16 10:08:02 UTC -->
+<!-- uuid: 485ae9d6-e07e-4a48-a013-0a05b9d92405
+2015-10-16 21:11:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SignUp",

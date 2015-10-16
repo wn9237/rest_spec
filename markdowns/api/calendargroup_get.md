@@ -48,8 +48,8 @@ Content-length: 110
 ```
 If successful, this method returns a `200 OK` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
 
-<!-- uuid: 3a1d4a52-23c3-4245-a50b-6b83d081161b
-2015-10-16 10:07:45 UTC -->
+<!-- uuid: 56140bd7-6098-44de-8335-3e7de42090be
+2015-10-16 21:10:41 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get CalendarGroup",

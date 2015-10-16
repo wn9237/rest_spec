@@ -26,7 +26,7 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displaySettings|String| Possible values are: `None`, `Today`, `TimeScale`, `TaskDate`, `All`.|
+|displaySettings|String||
 |id|String| Read-only.|
 |lockedWidth|Int32||
 |version|String||
@@ -43,8 +43,8 @@ None
 |[Update](../api/plantimeline_update.md) | [PlanTimeline](plantimeline.md)	|Update PlanTimeline object. |
 |[Delete](../api/plantimeline_delete.md) | Void	|Delete PlanTimeline object. |
 
-<!-- uuid: 7a7945cd-1590-42e8-b24f-903b84023a8f
-2015-10-16 10:08:01 UTC -->
+<!-- uuid: 481385a1-2127-47e8-b927-ac3db1c2b384
+2015-10-16 21:10:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PlanTimeline resource",

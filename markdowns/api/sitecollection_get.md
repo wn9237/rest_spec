@@ -43,8 +43,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [SiteCollection](../resources/sitecollection.md) object in the response body.
 
-<!-- uuid: bf50d5f1-995e-486a-a512-39a3f0c520d9
-2015-10-16 10:08:05 UTC -->
+<!-- uuid: 209e56ab-16d8-47ab-a116-0381ed9caa37
+2015-10-16 21:11:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SiteCollection",

@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /users/<objectId>/Messages/<Id>/Attachments
 POST /drive/root/createdByUser/Messages/<Id>/Attachments
-POST /users/<objectId>/RootFolder/Messages/<Id>/Attachments
+POST /users/<objectId>/Folders/<Id>/Messages/<Id>/Attachments
 
 ```
 ### Request headers
@@ -56,8 +56,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: a18ed5a6-bfd0-48f0-9c78-d64d695a0d51
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: 761b091b-05b1-445b-9042-be16f5b4340a
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",

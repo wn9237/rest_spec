@@ -29,6 +29,9 @@ Here is a JSON representation of the resource
     "String"
   ],
   "ChangeKey": "String",
+  "Children": [
+    "String"
+  ],
   "CompanyName": "String",
   "ContactPhoto": {
     "@odata.type": "microsoft.graph.Photo"
@@ -71,7 +74,9 @@ Here is a JSON representation of the resource
     "@odata.type": "microsoft.graph.PhysicalAddress"
   },
   "ParentFolderId": "String",
+  "PersonalNotes": "String",
   "Profession": "String",
+  "SpouseName": "String",
   "Surname": "String",
   "Title": "String",
   "YomiCompanyName": "String",
@@ -90,6 +95,7 @@ Here is a JSON representation of the resource
 |BusinessPhones|String collection||
 |Categories|String collection||
 |ChangeKey|String||
+|Children|String collection||
 |CompanyName|String||
 |DateTimeCreated|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -112,7 +118,9 @@ Here is a JSON representation of the resource
 |OfficeLocation|String||
 |OtherAddress|[PhysicalAddress](physicaladdress.md)||
 |ParentFolderId|String||
+|PersonalNotes|String||
 |Profession|String||
+|SpouseName|String||
 |Surname|String||
 |Title|String||
 |YomiCompanyName|String||
@@ -134,8 +142,8 @@ Here is a JSON representation of the resource
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | Void	|Delete Contact object. |
 
-<!-- uuid: 503ff0dc-85c5-438a-b253-27866ebe7e66
-2015-10-16 10:07:47 UTC -->
+<!-- uuid: 9d6224ef-5b16-46de-90df-8fcb3e743cb7
+2015-10-16 21:10:42 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Contact resource",

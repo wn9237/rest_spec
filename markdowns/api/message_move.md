@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /users/<objectId>/Messages/<Id>/Move
 POST /drive/root/createdByUser/Messages/<Id>/Move
-POST /users/<objectId>/RootFolder/Messages/<Id>/Move
+POST /users/<objectId>/Folders/<Id>/Messages/<Id>/Move
 
 ```
 ### Request headers
@@ -127,8 +127,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: e6c5b171-0e41-4e1a-b249-50cc1598deb2
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: b2d1de58-618d-450a-9e92-3a141c21e233
+2015-10-16 21:10:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Move",

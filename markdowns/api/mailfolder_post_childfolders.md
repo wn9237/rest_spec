@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/RootFolder/ChildFolders
 POST /users/<objectId>/Folders/<Id>/ChildFolders
-POST /drive/root/createdByUser/RootFolder/ChildFolders
+POST /drive/root/createdByUser/Folders/<Id>/ChildFolders
+POST /drive/root/lastModifiedByUser/Folders/<Id>/ChildFolders
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_mailfolder_from_mailfolder"
 }-->
 ```http
-POST /users/<objectId>/RootFolder
+POST /users/<objectId>/Folders/<Id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [MailFolder](../resources/mailfolder.md) object.
@@ -54,8 +54,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 1b9f9b12-92b8-44e3-a99e-24bfcc51b91a
-2015-10-16 10:07:56 UTC -->
+<!-- uuid: 130f3da6-a8a8-4e60-8e9f-b427565b6b24
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create MailFolder",

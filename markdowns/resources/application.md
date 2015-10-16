@@ -9,7 +9,6 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions",
     "extensionProperties",
     "owners"
   ],
@@ -18,11 +17,6 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "appId": "String",
   "appRoles": [
     {
@@ -120,7 +114,6 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |createdOnBehalfOf|[DirectoryObject](directoryobject.md)| Read-only.|
 |extensionProperties|[ExtensionProperty](extensionproperty.md) collection| Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
@@ -130,7 +123,6 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Application](../api/application_get.md) | [Application](application.md) |Read properties and relationships of application object.|
-|[Create Extension](../api/application_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create ExtensionProperty](../api/application_post_extensionproperties.md) |[ExtensionProperty](extensionproperty.md)| Create a new ExtensionProperty by posting to the extensionProperties collection.|
 |[Create owner](../api/application_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[Update](../api/application_update.md) | [Application](application.md)	|Update Application object. |
@@ -140,8 +132,8 @@ Here is a JSON representation of the resource
 |[Get MemberObjects](../api/application_getmemberobjects.md)|String||
 |[Restore](../api/application_restore.md)|[Application](application.md)||
 
-<!-- uuid: 8767ef24-a0e5-4b1b-b51e-e7e9fd2dc8b9
-2015-10-16 10:07:45 UTC -->
+<!-- uuid: 32769875-d0be-4bd9-8b19-4f04e0d0b5a8
+2015-10-16 21:10:40 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application resource",

@@ -28,7 +28,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |orderHint|String||
-|type|String| Possible values are: `Status`, `AssignedTo`, `Bucket`. Read-only.|
+|type|String| Read-only.|
 |version|String||
 
 ### Relationships
@@ -43,8 +43,8 @@ None
 |[Update](../api/taskboardtaskformat_update.md) | [TaskBoardTaskFormat](taskboardtaskformat.md)	|Update TaskBoardTaskFormat object. |
 |[Delete](../api/taskboardtaskformat_delete.md) | Void	|Delete TaskBoardTaskFormat object. |
 
-<!-- uuid: 913d0c4b-dc96-4b73-bdf9-1d86b395cfd6
-2015-10-16 10:08:05 UTC -->
+<!-- uuid: 49fa4b1a-3a9e-4531-9bb8-3331b93a9691
+2015-10-16 21:11:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TaskBoardTaskFormat resource",

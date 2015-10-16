@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /tasks/<id>
 GET /plans/<id>/tasks/<id>
-GET /buckets/<id>/tasks/<id>
+GET /users/<objectId>/tasks/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -38,12 +38,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 641
+Content-length: 541
 {
   "createdBy": "createdBy-value",
   "assignedTo": "assignedTo-value",
   "planId": "planId-value",
-  "bucketId": "bucketId-value",
   "title": "title-value",
   "orderHint": "orderHint-value",
   "assigneePriority": "assigneePriority-value",
@@ -54,19 +53,16 @@ Content-length: 641
   "assignedBy": "assignedBy-value",
   "dueDate": "datetime-value",
   "hasNotes": true,
-  "previewType": "previewType-value",
   "completedDate": "datetime-value",
   "numberOfReferences": 99,
-  "appliedCategories": {
-  },
   "id": "id-value",
   "version": "version-value"
 }
 ```
 If successful, this method returns a `200 OK` response code and [Task](../resources/task.md) object in the response body.
 
-<!-- uuid: 89f8c2fa-34f8-419d-9dc1-5e1b8ce68178
-2015-10-16 10:08:05 UTC -->
+<!-- uuid: 36d813c5-6d14-4da7-a634-ec04f350eb0b
+2015-10-16 21:11:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Task",

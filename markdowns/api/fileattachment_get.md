@@ -36,11 +36,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 308
+Content-length: 282
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
-  "IsContactPhoto": true,
   "ContentBytes": "ContentBytes-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
@@ -52,8 +51,8 @@ Content-length: 308
 ```
 If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
 
-<!-- uuid: 0b96aef6-c453-4a56-a954-08e1b1029a67
-2015-10-16 10:07:53 UTC -->
+<!-- uuid: fea59c43-f894-4698-b42b-bc6b04095deb
+2015-10-16 21:10:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get FileAttachment",

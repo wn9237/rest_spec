@@ -50,8 +50,8 @@ Content-length: 260
 ```
 If successful, this method returns a `200 OK` response code and [NotificationRule](../resources/notificationrule.md) object in the response body.
 
-<!-- uuid: ffa3cbfe-5a3a-4f2b-b3f6-0cc45b45cc43
-2015-10-16 10:07:58 UTC -->
+<!-- uuid: 7f0dcf85-cd5c-4bed-bb0e-2f15358cdd5b
+2015-10-16 21:10:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get NotificationRule",

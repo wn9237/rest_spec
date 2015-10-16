@@ -60,8 +60,8 @@ Content-length: 391
 ```
 If successful, this method returns a `200 OK` response code and [Page](../resources/page.md) object in the response body.
 
-<!-- uuid: 27ee3038-2bcc-433f-9161-3dfa5fe9b52d
-2015-10-16 10:08:00 UTC -->
+<!-- uuid: 298c62a3-08f3-4da4-87c3-cfc700a7b07a
+2015-10-16 21:10:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Page",

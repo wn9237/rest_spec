@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /users/<objectId>/Messages/<Id>/CreateForward
 POST /drive/root/createdByUser/Messages/<Id>/CreateForward
-POST /users/<objectId>/RootFolder/Messages/<Id>/CreateForward
+POST /users/<objectId>/Folders/<Id>/Messages/<Id>/CreateForward
 
 ```
 ### Request headers
@@ -119,8 +119,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: d2a122d0-3567-4531-80b8-8c81523fa255
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: 3d5b9ee0-d2f0-4ba7-8764-e921c52aecf6
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateForward",

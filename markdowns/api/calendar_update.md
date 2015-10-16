@@ -63,8 +63,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: d020c8fc-79c3-4fb3-9f24-5808bb4aae18
-2015-10-16 10:07:45 UTC -->
+<!-- uuid: 6e474c86-3cbc-4652-8bf4-0a4ca1c59539
+2015-10-16 21:10:41 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of calendar object.",

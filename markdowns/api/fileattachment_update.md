@@ -23,7 +23,6 @@ In the request body, supply the values for relevant fields that should be update
 |ContentLocation|String||
 |ContentType|String||
 |DateTimeLastModified|DateTimeOffset||
-|IsContactPhoto|Boolean||
 |IsInline|Boolean||
 |Name|String||
 |Size|Int32||
@@ -40,11 +39,10 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 308
+Content-length: 282
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
-  "IsContactPhoto": true,
   "ContentBytes": "ContentBytes-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
@@ -64,11 +62,10 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 308
+Content-length: 282
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
-  "IsContactPhoto": true,
   "ContentBytes": "ContentBytes-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
@@ -79,8 +76,8 @@ Content-length: 308
 }
 ```
 
-<!-- uuid: bc18281f-3dea-4686-9c4b-ef824eba7433
-2015-10-16 10:07:53 UTC -->
+<!-- uuid: 27255901-f234-4d55-9c4d-7945100a003d
+2015-10-16 21:10:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of fileattachment object.",

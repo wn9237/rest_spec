@@ -9,7 +9,6 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions",
     "memberOf",
     "members",
     "ownedObjects",
@@ -20,11 +19,6 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "deletionTimestamp": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -71,7 +65,6 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |members|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
@@ -82,7 +75,6 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get DirectoryRole](../api/directoryrole_get.md) | [DirectoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
-|[Create Extension](../api/directoryrole_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create memberOf](../api/directoryrole_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
 |[Create member](../api/directoryrole_post_members.md) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
 |[Create ownedObject](../api/directoryrole_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
@@ -93,8 +85,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String||
 
-<!-- uuid: 0895aca7-4fb4-43e9-9938-008141f38fe1
-2015-10-16 10:07:50 UTC -->
+<!-- uuid: 5d4ad6a3-ded8-445e-995f-8026c799c9f9
+2015-10-16 21:10:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole resource",

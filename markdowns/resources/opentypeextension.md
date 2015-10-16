@@ -9,7 +9,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions"
+
   ],
   "@odata.type": "microsoft.graph.OpenTypeExtension"
 }-->
@@ -17,11 +17,6 @@ Here is a JSON representation of the resource
 ```json
 {
   "ExtensionName": "String",
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "Id": "String (identifier)"
 }
 
@@ -33,21 +28,19 @@ Here is a JSON representation of the resource
 |Id|String| Read-only.|
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+None
+
 
 ### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get OpenTypeExtension](../api/opentypeextension_get.md) | [OpenTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Create Extension](../api/opentypeextension_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
 |[Delete](../api/opentypeextension_delete.md) | Void	|Delete OpenTypeExtension object. |
 
-<!-- uuid: 242532c3-003e-4330-b831-adeebf1a9076
-2015-10-16 10:07:59 UTC -->
+<!-- uuid: 24427c55-59fb-4dea-80bc-5155579fb3dc
+2015-10-16 21:10:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OpenTypeExtension resource",

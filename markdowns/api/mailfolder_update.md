@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/RootFolder
 PATCH /users/<objectId>/Folders/<Id>
-PATCH /drive/root/createdByUser/RootFolder
+PATCH /drive/root/createdByUser/Folders/<Id>
+PATCH /drive/root/lastModifiedByUser/Folders/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_mailfolder"
 }-->
 ```http
-PUT /users/<objectId>/RootFolder
+PUT /users/<objectId>/Folders/<Id>
 Content-type: application/json
 Content-length: 130
 {
@@ -63,8 +63,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 9624f22f-edef-4546-b03b-9979f5d7b572
-2015-10-16 10:07:56 UTC -->
+<!-- uuid: 0f8b8099-7a72-4a5f-b37c-25b9a9aa022f
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of mailfolder object.",

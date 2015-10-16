@@ -40,14 +40,13 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 755
+Content-length: 639
 {
   "values": [
     {
       "createdBy": "createdBy-value",
       "assignedTo": "assignedTo-value",
       "planId": "planId-value",
-      "bucketId": "bucketId-value",
       "title": "title-value",
       "orderHint": "orderHint-value",
       "assigneePriority": "assigneePriority-value",
@@ -58,11 +57,8 @@ Content-length: 755
       "assignedBy": "assignedBy-value",
       "dueDate": "datetime-value",
       "hasNotes": true,
-      "previewType": "previewType-value",
       "completedDate": "datetime-value",
       "numberOfReferences": 99,
-      "appliedCategories": {
-      },
       "id": "id-value",
       "version": "version-value"
     }
@@ -71,8 +67,8 @@ Content-length: 755
 ```
 If successful, this method returns a `200 OK` response code and collection of [Task](../resources/task.md) objects in the response body.
 
-<!-- uuid: e527183f-5e30-49ec-8ff1-0b1779707cf6
-2015-10-16 10:08:06 UTC -->
+<!-- uuid: 43f6c56a-7ab2-450f-85ad-b57176985a19
+2015-10-16 21:11:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Task",

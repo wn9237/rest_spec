@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 PATCH /tasks/<id>
 PATCH /plans/<id>/tasks/<id>
-PATCH /buckets/<id>/tasks/<id>
+PATCH /users/<objectId>/tasks/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,12 +20,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appliedCategories|AppliedCategoriesCollection||
 |assignedBy|String||
 |assignedTo|String||
 |assignedToDate|DateTimeOffset||
 |assigneePriority|String||
-|bucketId|String||
 |completedDate|DateTimeOffset||
 |createdBy|String||
 |createdDate|DateTimeOffset||
@@ -35,7 +33,6 @@ In the request body, supply the values for relevant fields that should be update
 |orderHint|String||
 |percentComplete|Int32||
 |planId|String||
-|previewType|String| Possible values are: `Automatic`, `NoPreview`, `CheckList`, `Notes`, `Reference`.|
 |startDate|DateTimeOffset||
 |title|String||
 |version|String||
@@ -52,12 +49,11 @@ Here is an example of the request.
 ```http
 PUT /tasks/<id>
 Content-type: application/json
-Content-length: 641
+Content-length: 541
 {
   "createdBy": "createdBy-value",
   "assignedTo": "assignedTo-value",
   "planId": "planId-value",
-  "bucketId": "bucketId-value",
   "title": "title-value",
   "orderHint": "orderHint-value",
   "assigneePriority": "assigneePriority-value",
@@ -68,11 +64,8 @@ Content-length: 641
   "assignedBy": "assignedBy-value",
   "dueDate": "datetime-value",
   "hasNotes": true,
-  "previewType": "previewType-value",
   "completedDate": "datetime-value",
   "numberOfReferences": 99,
-  "appliedCategories": {
-  },
   "id": "id-value",
   "version": "version-value"
 }
@@ -87,12 +80,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 641
+Content-length: 541
 {
   "createdBy": "createdBy-value",
   "assignedTo": "assignedTo-value",
   "planId": "planId-value",
-  "bucketId": "bucketId-value",
   "title": "title-value",
   "orderHint": "orderHint-value",
   "assigneePriority": "assigneePriority-value",
@@ -103,18 +95,15 @@ Content-length: 641
   "assignedBy": "assignedBy-value",
   "dueDate": "datetime-value",
   "hasNotes": true,
-  "previewType": "previewType-value",
   "completedDate": "datetime-value",
   "numberOfReferences": 99,
-  "appliedCategories": {
-  },
   "id": "id-value",
   "version": "version-value"
 }
 ```
 
-<!-- uuid: 91542260-dddd-438c-b5d3-350ae27c2c31
-2015-10-16 10:08:05 UTC -->
+<!-- uuid: 8c7553ae-96cc-421b-aaab-91452df381ed
+2015-10-16 21:11:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of task object.",

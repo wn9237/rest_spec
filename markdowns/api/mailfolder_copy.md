@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/RootFolder/Copy
 POST /users/<objectId>/Folders/<Id>/Copy
-POST /drive/root/createdByUser/RootFolder/Copy
+POST /drive/root/createdByUser/Folders/<Id>/Copy
+POST /drive/root/lastModifiedByUser/Folders/<Id>/Copy
 
 ```
 ### Request headers
@@ -34,7 +34,7 @@ Here is an example of how to call this API.
   "name": "mailfolder_copy"
 }-->
 ```http
-POST /users/<objectId>/RootFolder/Copy
+POST /users/<objectId>/Folders/<Id>/Copy
 Content-type: application/json
 Content-length: 44
 {
@@ -59,8 +59,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 2873f7d0-197c-4328-89ba-3e65dee7065c
-2015-10-16 10:07:56 UTC -->
+<!-- uuid: 7b1adbb6-1c7b-449e-a1a6-6ad999fbbfbd
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Copy",

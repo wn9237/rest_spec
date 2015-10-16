@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /users/<objectId>/Messages/<Id>
 GET /drive/root/createdByUser/Messages/<Id>
-GET /users/<objectId>/RootFolder/Messages/<Id>
+GET /users/<objectId>/Folders/<Id>/Messages/<Id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -116,8 +116,8 @@ Content-length: 1546
 ```
 If successful, this method returns a `200 OK` response code and [Message](../resources/message.md) object in the response body.
 
-<!-- uuid: dc63f591-6800-41fc-b811-710a57ea0906
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: 14bd41a5-ee01-47e7-ba79-8ef0fc1b1b4e
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Message",

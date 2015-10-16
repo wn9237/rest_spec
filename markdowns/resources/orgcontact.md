@@ -9,7 +9,6 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions",
     "directReports",
     "memberOf"
   ],
@@ -18,11 +17,6 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "city": "String",
   "country": "String",
   "deletionTimestamp": "String (timestamp)",
@@ -102,7 +96,6 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |directReports|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |manager|[DirectoryObject](directoryobject.md)| Read-only.|
 |memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
@@ -112,7 +105,6 @@ Here is a JSON representation of the resource
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get OrgContact](../api/orgcontact_get.md) | [OrgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
-|[Create Extension](../api/orgcontact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
 |[Create memberOf](../api/orgcontact_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
 |[Update](../api/orgcontact_update.md) | [OrgContact](orgcontact.md)	|Update OrgContact object. |
@@ -121,8 +113,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/orgcontact_getmembergroups.md)|String||
 |[Get MemberObjects](../api/orgcontact_getmemberobjects.md)|String||
 
-<!-- uuid: f3b6f5a1-7183-4327-b972-0ca5fe98f576
-2015-10-16 10:08:00 UTC -->
+<!-- uuid: 4c2d5c7e-2114-449e-8d6c-b7968bd9ccd6
+2015-10-16 21:10:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OrgContact resource",

@@ -48,8 +48,8 @@ Content-length: 162
 ```
 If successful, this method returns a `200 OK` response code and [ItemAttachment](../resources/itemattachment.md) object in the response body.
 
-<!-- uuid: 9037b627-6645-4121-bce2-812abd7739a9
-2015-10-16 10:07:56 UTC -->
+<!-- uuid: 856163fc-b520-432c-b0b3-0ac763730f7c
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ItemAttachment",

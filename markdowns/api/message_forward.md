@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /users/<objectId>/Messages/<Id>/Forward
 POST /drive/root/createdByUser/Messages/<Id>/Forward
-POST /users/<objectId>/RootFolder/Messages/<Id>/Forward
+POST /users/<objectId>/Folders/<Id>/Messages/<Id>/Forward
 
 ```
 ### Request headers
@@ -64,8 +64,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 05f54057-9360-430f-a107-95afdc156cc5
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: 3e195259-e79e-4401-9dd8-bf9f32362150
+2015-10-16 21:10:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Forward",

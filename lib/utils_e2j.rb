@@ -57,7 +57,7 @@ module SpecMaker
 	@icollection = 0	
 	@ibasetypemerges = 0
 	@iann = 0
-
+	@isingleton = 0
 
 	@methods = {}
 	@enum_objects = {}

@@ -46,8 +46,8 @@ Content-length: 297
 ```
 If successful, this method returns a `200 OK` response code and [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
 
-<!-- uuid: 10d322f5-eb05-4e3d-a0ef-1559d2f3102c
-2015-10-16 10:07:53 UTC -->
+<!-- uuid: d1dbaccf-1848-42cf-a7e6-d87c617f828a
+2015-10-16 21:10:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ExtensionProperty",

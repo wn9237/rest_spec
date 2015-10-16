@@ -20,10 +20,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|anchorPosition|String| Possible values are: `Top`, `Bottom`.|
+|anchorPosition|String||
 |calloutHeight|Int32||
 |color|Int32||
-|drawingStyle|String| Possible values are: `Bar`, `Callout`.|
+|drawingStyle|String||
 |labelOffsetX|Int32||
 |labelOffsetY|Int32||
 |swimlane|Int32||
@@ -81,8 +81,8 @@ Content-length: 255
 }
 ```
 
-<!-- uuid: 752ba9cc-06b0-420a-83ed-c9497efd6ec4
-2015-10-16 10:08:06 UTC -->
+<!-- uuid: aa5285b2-e86f-4294-a4c5-d6a64ae43063
+2015-10-16 21:11:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of timelinetaskformat object.",

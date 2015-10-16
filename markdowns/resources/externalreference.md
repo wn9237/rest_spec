@@ -33,8 +33,8 @@ Here is a JSON representation of the resource
 |previewPriority|String||
 |type|String||
 
-<!-- uuid: 0f909e76-f622-4c68-99fb-4e63952f09d3
-2015-10-16 10:07:53 UTC -->
+<!-- uuid: 84f8faa6-ec67-406f-9f7e-294422459653
+2015-10-16 21:10:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExternalReference resource",

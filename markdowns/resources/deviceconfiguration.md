@@ -9,18 +9,13 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions"
+
   ],
   "@odata.type": "microsoft.graph.DeviceConfiguration"
 }-->
 
 ```json
 {
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "cloudPublicIssuerCertificates": [
     "String"
   ],
@@ -47,24 +42,22 @@ Here is a JSON representation of the resource
 |registrationQuota|Int32||
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+None
+
 
 ### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get DeviceConfiguration](../api/deviceconfiguration_get.md) | [DeviceConfiguration](deviceconfiguration.md) |Read properties and relationships of deviceConfiguration object.|
-|[Create Extension](../api/deviceconfiguration_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/deviceconfiguration_update.md) | [DeviceConfiguration](deviceconfiguration.md)	|Update DeviceConfiguration object. |
 |[Delete](../api/deviceconfiguration_delete.md) | Void	|Delete DeviceConfiguration object. |
 |[Checkmembergroups](../api/deviceconfiguration_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String||
 
-<!-- uuid: b5aaff83-305a-4876-b446-ac369a75c4f8
-2015-10-16 10:07:48 UTC -->
+<!-- uuid: 942f98fc-d5a8-4581-88fe-bf9be5569e55
+2015-10-16 21:10:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration resource",

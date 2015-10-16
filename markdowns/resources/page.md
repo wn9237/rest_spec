@@ -66,8 +66,8 @@ Here is a JSON representation of the resource
 |[Patchcontent](../api/page_patchcontent.md)|[None](none.md)||
 |[Thumbnail](../api/page_thumbnail.md)|Stream||
 
-<!-- uuid: 8886d7c9-25bf-4a6c-bce3-d6e1efaea8e4
-2015-10-16 10:08:00 UTC -->
+<!-- uuid: 0622257d-2e9a-42ff-bfd8-d8e5b1391658
+2015-10-16 21:10:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page resource",

@@ -27,6 +27,7 @@ In the request body, supply the values for relevant fields that should be update
 |BusinessPhones|String||
 |Categories|String||
 |ChangeKey|String||
+|Children|String||
 |CompanyName|String||
 |DateTimeCreated|DateTimeOffset||
 |DateTimeLastModified|DateTimeOffset||
@@ -48,7 +49,9 @@ In the request body, supply the values for relevant fields that should be update
 |OfficeLocation|String||
 |OtherAddress|PhysicalAddress||
 |ParentFolderId|String||
+|PersonalNotes|String||
 |Profession|String||
+|SpouseName|String||
 |Surname|String||
 |Title|String||
 |YomiCompanyName|String||
@@ -67,7 +70,7 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>/Contacts/<Id>
 Content-type: application/json
-Content-length: 1857
+Content-length: 1977
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -128,6 +131,11 @@ Content-length: 1857
   "YomiCompanyName": "YomiCompanyName-value",
   "YomiGivenName": "YomiGivenName-value",
   "YomiSurname": "YomiSurname-value",
+  "SpouseName": "SpouseName-value",
+  "PersonalNotes": "PersonalNotes-value",
+  "Children": [
+    "Children-value"
+  ],
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
@@ -147,7 +155,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1857
+Content-length: 1977
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -208,6 +216,11 @@ Content-length: 1857
   "YomiCompanyName": "YomiCompanyName-value",
   "YomiGivenName": "YomiGivenName-value",
   "YomiSurname": "YomiSurname-value",
+  "SpouseName": "SpouseName-value",
+  "PersonalNotes": "PersonalNotes-value",
+  "Children": [
+    "Children-value"
+  ],
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
@@ -218,8 +231,8 @@ Content-length: 1857
 }
 ```
 
-<!-- uuid: 8c1517b0-0d3f-4be4-a629-80bbb7f72731
-2015-10-16 10:07:47 UTC -->
+<!-- uuid: 37c053e5-6630-4d05-8c12-a3cbe12d2ffd
+2015-10-16 21:10:42 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contact object.",

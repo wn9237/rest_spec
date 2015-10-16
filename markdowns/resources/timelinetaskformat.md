@@ -32,10 +32,10 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|anchorPosition|String| Possible values are: `Top`, `Bottom`.|
+|anchorPosition|String||
 |calloutHeight|Int32||
 |color|Int32||
-|drawingStyle|String| Possible values are: `Bar`, `Callout`.|
+|drawingStyle|String||
 |id|String| Read-only.|
 |labelOffsetX|Int32||
 |labelOffsetY|Int32||
@@ -55,8 +55,8 @@ None
 |[Update](../api/timelinetaskformat_update.md) | [TimelineTaskFormat](timelinetaskformat.md)	|Update TimelineTaskFormat object. |
 |[Delete](../api/timelinetaskformat_delete.md) | Void	|Delete TimelineTaskFormat object. |
 
-<!-- uuid: c8d45508-1d15-470c-9b5f-2577a3e3e74f
-2015-10-16 10:08:06 UTC -->
+<!-- uuid: 8c299fad-4244-4bc9-8ed4-2e67e89b1dc9
+2015-10-16 21:11:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TimelineTaskFormat resource",

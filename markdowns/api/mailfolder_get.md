@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/RootFolder
 GET /users/<objectId>/Folders/<Id>
-GET /drive/root/createdByUser/RootFolder
+GET /drive/root/createdByUser/Folders/<Id>
+GET /drive/root/lastModifiedByUser/Folders/<Id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -48,8 +48,8 @@ Content-length: 130
 ```
 If successful, this method returns a `200 OK` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
-<!-- uuid: 2c3f6467-aa86-432c-ac64-420f13279abd
-2015-10-16 10:07:56 UTC -->
+<!-- uuid: 3349a869-82af-4403-b753-05b645081ecc
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get MailFolder",

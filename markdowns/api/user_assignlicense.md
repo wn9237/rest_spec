@@ -129,30 +129,30 @@ Content-length: 2650
   "userPrincipalName": "userPrincipalName-value",
   "userType": "userType-value",
   "MailboxGuid": "MailboxGuid-value",
-  "AboutMe": "AboutMe-value",
-  "Alias": "Alias-value",
-  "Birthday": "datetime-value",
-  "HireDate": "datetime-value",
-  "Interests": [
-    "Interests-value"
+  "aboutMe": "aboutMe-value",
+  "alias": "alias-value",
+  "birthday": "datetime-value",
+  "hireDate": "datetime-value",
+  "interests": [
+    "interests-value"
   ],
-  "MySite": "MySite-value",
-  "PastProjects": [
-    "PastProjects-value"
+  "mySite": "mySite-value",
+  "pastProjects": [
+    "pastProjects-value"
   ],
-  "PreferredName": "PreferredName-value",
-  "PrincipalName": "PrincipalName-value",
-  "Responsibilities": [
-    "Responsibilities-value"
+  "preferredName": "preferredName-value",
+  "principalName": "principalName-value",
+  "responsibilities": [
+    "responsibilities-value"
   ],
-  "Schools": [
-    "Schools-value"
+  "schools": [
+    "schools-value"
   ],
-  "Skills": [
-    "Skills-value"
+  "skills": [
+    "skills-value"
   ],
-  "Tags": [
-    "Tags-value"
+  "tags": [
+    "tags-value"
   ],
   "objectType": "objectType-value",
   "objectId": "objectId-value",
@@ -160,8 +160,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: d792b0d2-0e10-4932-a198-a8803e527751
-2015-10-16 10:08:08 UTC -->
+<!-- uuid: 41155ac1-daf6-4fe1-8e88-569e732f0d62
+2015-10-16 21:11:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: assignLicense",

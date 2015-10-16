@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 DELETE /users/<objectId>/Messages/<Id>
 DELETE /drive/root/createdByUser/Messages/<Id>
-DELETE /users/<objectId>/RootFolder/Messages/<Id>
+DELETE /users/<objectId>/Folders/<Id>/Messages/<Id>
 
 ```
 ### Request headers
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 4a871775-80be-4891-8b85-c5ba73e141aa
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: 7bfc5acc-1acc-4dfa-a488-436f0791501a
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

@@ -59,8 +59,8 @@ Content-length: 76
 }
 ```
 
-<!-- uuid: 12bf5878-3a4c-40ce-b3b6-d946fd289e3e
-2015-10-16 10:08:01 UTC -->
+<!-- uuid: a0321c2c-2441-4f85-b252-5e6da6e91540
+2015-10-16 21:10:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plantaskboard object.",

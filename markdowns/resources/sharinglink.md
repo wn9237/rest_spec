@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |type|String||
 |webUrl|String||
 
-<!-- uuid: 77d703b7-cd3c-4bed-a4fd-272100fa817f
-2015-10-16 10:08:05 UTC -->
+<!-- uuid: 454fa255-de0b-459e-8006-2df74a0d562a
+2015-10-16 21:11:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "sharingLink resource",

@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /users/<objectId>/Messages/<Id>/Reply
 POST /drive/root/createdByUser/Messages/<Id>/Reply
-POST /users/<objectId>/RootFolder/Messages/<Id>/Reply
+POST /users/<objectId>/Folders/<Id>/Messages/<Id>/Reply
 
 ```
 ### Request headers
@@ -55,8 +55,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: bffb7305-2173-4cc7-ba73-077752823f4e
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: dcc4e8ed-95e0-4af2-8d74-9041367d0809
+2015-10-16 21:10:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Reply",

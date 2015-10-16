@@ -20,23 +20,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|AboutMe|String||
-|Alias|String||
-|Birthday|DateTimeOffset||
-|HireDate|DateTimeOffset||
-|Interests|String||
 |MailboxGuid|Guid||
-|MySite|String||
-|PastProjects|String||
-|PreferredName|String||
-|PrincipalName|String||
-|Responsibilities|String||
-|Schools|String||
-|Skills|String||
-|Tags|String||
+|aboutMe|String||
 |accountEnabled|Boolean||
+|alias|String||
 |assignedLicenses|AssignedLicense||
 |assignedPlans|AssignedPlan||
+|birthday|DateTimeOffset||
 |city|String||
 |country|String||
 |deletionTimestamp|DateTimeOffset||
@@ -45,27 +35,37 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String||
 |facsimileTelephoneNumber|String||
 |givenName|String||
+|hireDate|DateTimeOffset||
 |immutableId|String||
+|interests|String||
 |jobTitle|String||
 |lastDirSyncTime|DateTimeOffset||
 |mail|String||
 |mailNickname|String||
 |mobile|String||
+|mySite|String||
 |objectType|String||
 |onPremisesSecurityIdentifier|String||
 |otherMails|String||
 |passwordPolicies|String||
 |passwordProfile|PasswordProfile||
+|pastProjects|String||
 |physicalDeliveryOfficeName|String||
 |postalCode|String||
 |preferredLanguage|String||
+|preferredName|String||
+|principalName|String||
 |provisionedPlans|ProvisionedPlan||
 |provisioningErrors|ProvisioningError||
 |proxyAddresses|String||
+|responsibilities|String||
+|schools|String||
 |sipProxyAddress|String||
+|skills|String||
 |state|String||
 |streetAddress|String||
 |surname|String||
+|tags|String||
 |telephoneNumber|String||
 |thumbnailPhoto|Stream||
 |usageLocation|String||
@@ -154,30 +154,30 @@ Content-length: 2650
   "userPrincipalName": "userPrincipalName-value",
   "userType": "userType-value",
   "MailboxGuid": "MailboxGuid-value",
-  "AboutMe": "AboutMe-value",
-  "Alias": "Alias-value",
-  "Birthday": "datetime-value",
-  "HireDate": "datetime-value",
-  "Interests": [
-    "Interests-value"
+  "aboutMe": "aboutMe-value",
+  "alias": "alias-value",
+  "birthday": "datetime-value",
+  "hireDate": "datetime-value",
+  "interests": [
+    "interests-value"
   ],
-  "MySite": "MySite-value",
-  "PastProjects": [
-    "PastProjects-value"
+  "mySite": "mySite-value",
+  "pastProjects": [
+    "pastProjects-value"
   ],
-  "PreferredName": "PreferredName-value",
-  "PrincipalName": "PrincipalName-value",
-  "Responsibilities": [
-    "Responsibilities-value"
+  "preferredName": "preferredName-value",
+  "principalName": "principalName-value",
+  "responsibilities": [
+    "responsibilities-value"
   ],
-  "Schools": [
-    "Schools-value"
+  "schools": [
+    "schools-value"
   ],
-  "Skills": [
-    "Skills-value"
+  "skills": [
+    "skills-value"
   ],
-  "Tags": [
-    "Tags-value"
+  "tags": [
+    "tags-value"
   ],
   "objectType": "objectType-value",
   "objectId": "objectId-value",
@@ -264,30 +264,30 @@ Content-length: 2650
   "userPrincipalName": "userPrincipalName-value",
   "userType": "userType-value",
   "MailboxGuid": "MailboxGuid-value",
-  "AboutMe": "AboutMe-value",
-  "Alias": "Alias-value",
-  "Birthday": "datetime-value",
-  "HireDate": "datetime-value",
-  "Interests": [
-    "Interests-value"
+  "aboutMe": "aboutMe-value",
+  "alias": "alias-value",
+  "birthday": "datetime-value",
+  "hireDate": "datetime-value",
+  "interests": [
+    "interests-value"
   ],
-  "MySite": "MySite-value",
-  "PastProjects": [
-    "PastProjects-value"
+  "mySite": "mySite-value",
+  "pastProjects": [
+    "pastProjects-value"
   ],
-  "PreferredName": "PreferredName-value",
-  "PrincipalName": "PrincipalName-value",
-  "Responsibilities": [
-    "Responsibilities-value"
+  "preferredName": "preferredName-value",
+  "principalName": "principalName-value",
+  "responsibilities": [
+    "responsibilities-value"
   ],
-  "Schools": [
-    "Schools-value"
+  "schools": [
+    "schools-value"
   ],
-  "Skills": [
-    "Skills-value"
+  "skills": [
+    "skills-value"
   ],
-  "Tags": [
-    "Tags-value"
+  "tags": [
+    "tags-value"
   ],
   "objectType": "objectType-value",
   "objectId": "objectId-value",
@@ -295,8 +295,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: d3d30ffb-6dde-47d0-9379-0a1783d52f65
-2015-10-16 10:08:08 UTC -->
+<!-- uuid: 1176f188-46f3-4cf3-a339-ba284efa6937
+2015-10-16 21:11:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of user object.",

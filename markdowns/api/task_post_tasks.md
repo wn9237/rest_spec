@@ -43,12 +43,11 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 641
+Content-length: 541
 {
   "createdBy": "createdBy-value",
   "assignedTo": "assignedTo-value",
   "planId": "planId-value",
-  "bucketId": "bucketId-value",
   "title": "title-value",
   "orderHint": "orderHint-value",
   "assigneePriority": "assigneePriority-value",
@@ -59,18 +58,15 @@ Content-length: 641
   "assignedBy": "assignedBy-value",
   "dueDate": "datetime-value",
   "hasNotes": true,
-  "previewType": "previewType-value",
   "completedDate": "datetime-value",
   "numberOfReferences": 99,
-  "appliedCategories": {
-  },
   "id": "id-value",
   "version": "version-value"
 }
 ```
 
-<!-- uuid: 24759ce3-0e83-4850-9f41-35ea6db8b959
-2015-10-16 10:08:06 UTC -->
+<!-- uuid: fc84fa50-55de-45b9-bf86-2ebe3a3857f4
+2015-10-16 21:11:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

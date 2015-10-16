@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 PATCH /users/<objectId>/Messages/<Id>
 PATCH /drive/root/createdByUser/Messages/<Id>
-PATCH /users/<objectId>/RootFolder/Messages/<Id>
+PATCH /users/<objectId>/Folders/<Id>/Messages/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -221,8 +221,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 1f5b5567-05c0-4582-a950-74ca4485cade
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: 366c7d2e-92aa-4a33-8731-85784c953391
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of message object.",

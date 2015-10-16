@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /users/<objectId>/Messages/<Id>/CreateReply
 POST /drive/root/createdByUser/Messages/<Id>/CreateReply
-POST /users/<objectId>/RootFolder/Messages/<Id>/CreateReply
+POST /users/<objectId>/Folders/<Id>/Messages/<Id>/CreateReply
 
 ```
 ### Request headers
@@ -119,8 +119,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: c3cdf2a0-81a1-4bd8-b948-4b46ae7db38d
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: 0d772de7-71f0-4717-91fd-835dc12a5b93
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateReply",

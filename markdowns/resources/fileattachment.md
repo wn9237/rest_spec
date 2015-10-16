@@ -9,7 +9,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Extensions"
+
   ],
   "@odata.type": "microsoft.graph.FileAttachment"
 }-->
@@ -21,13 +21,7 @@ Here is a JSON representation of the resource
   "ContentLocation": "String",
   "ContentType": "String",
   "DateTimeLastModified": "String (timestamp)",
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.Extension"
-    }
-  ],
   "Id": "String (identifier)",
-  "IsContactPhoto": true,
   "IsInline": true,
   "Name": "String",
   "Size": 1024
@@ -43,27 +37,24 @@ Here is a JSON representation of the resource
 |ContentType|String||
 |DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Id|String| Read-only.|
-|IsContactPhoto|Boolean||
 |IsInline|Boolean||
 |Name|String||
 |Size|Int32||
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+None
+
 
 ### Tasks
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get FileAttachment](../api/fileattachment_get.md) | [FileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
-|[Create Extension](../api/fileattachment_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/fileattachment_update.md) | [FileAttachment](fileattachment.md)	|Update FileAttachment object. |
 |[Delete](../api/fileattachment_delete.md) | Void	|Delete FileAttachment object. |
 
-<!-- uuid: 9796effc-e62c-48e1-8514-ca79f96c3056
-2015-10-16 10:07:53 UTC -->
+<!-- uuid: 551008cb-bbdb-4607-9250-97f756829e4e
+2015-10-16 21:10:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "FileAttachment resource",

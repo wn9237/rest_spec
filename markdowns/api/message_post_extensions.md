@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /users/<objectId>/Messages/<Id>/Extensions
 POST /drive/root/createdByUser/Messages/<Id>/Extensions
-POST /users/<objectId>/RootFolder/Messages/<Id>/Extensions
+POST /users/<objectId>/Folders/<Id>/Messages/<Id>/Extensions
 
 ```
 ### Request headers
@@ -51,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 89af90b1-e00c-4579-b2dc-9bee8c801119
-2015-10-16 10:07:57 UTC -->
+<!-- uuid: ef1e92a3-6e2a-4220-84fe-21069cd88ca7
+2015-10-16 21:10:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",
