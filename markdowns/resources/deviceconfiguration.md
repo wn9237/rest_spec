@@ -63,8 +63,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String||
 
-<!-- uuid: 17cc2358-99f9-4ef0-a494-ba7bee602887
-2015-10-16 09:51:00 UTC -->
+<!-- uuid: b5aaff83-305a-4876-b446-ac369a75c4f8
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration resource",

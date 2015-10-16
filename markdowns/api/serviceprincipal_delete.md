@@ -12,7 +12,7 @@ DELETE /servicePrincipals/<objectId>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -22,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: d5435e62-ef2b-46ef-815c-26ce010c8c13
-2015-10-16 09:51:18 UTC -->
+<!-- uuid: ffce9f7f-7dee-49ff-9c91-b3d5c8c003a3
+2015-10-16 10:08:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

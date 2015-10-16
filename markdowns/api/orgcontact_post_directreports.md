@@ -12,7 +12,7 @@ POST /contacts/<objectId>/directReports
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 3be5f706-7ca4-4681-9c96-eb876d70c2fd
-2015-10-16 09:51:12 UTC -->
+<!-- uuid: 69db5d26-fcee-4f0b-b4ff-f54356aba44c
+2015-10-16 10:07:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create directReport",

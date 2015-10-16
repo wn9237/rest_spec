@@ -21,7 +21,7 @@ See relationships table of [Contact](../resources/contact.md) object for support
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -110,8 +110,8 @@ Content-length: 1857
 ```
 If successful, this method returns a `200 OK` response code and [Contact](../resources/contact.md) object in the response body.
 
-<!-- uuid: afdfc72e-093e-44bb-af8e-296e20674682
-2015-10-16 09:50:58 UTC -->
+<!-- uuid: 14ae2569-4e17-4bee-8748-3d22ee2fef9e
+2015-10-16 10:07:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Contact",

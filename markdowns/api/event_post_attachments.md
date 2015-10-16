@@ -14,7 +14,7 @@ POST /users/<objectId>/CalendarView/<Id>/Attachments
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
@@ -56,8 +56,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 94ca2241-371a-46f9-bfd5-10539a902caf
-2015-10-16 09:51:04 UTC -->
+<!-- uuid: c96025c9-8192-4396-a0a8-be8e215c7d8b
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",

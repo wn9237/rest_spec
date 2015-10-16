@@ -14,7 +14,7 @@ POST /drives/<id>/root/delta(token=token-value)
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request URL, provide following query parameters with values.
@@ -195,8 +195,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: b72c9836-7057-4cb8-9ee4-391151b66020
-2015-10-16 09:51:09 UTC -->
+<!-- uuid: 6846a33f-f3a7-4bf7-896c-b283d43d3d24
+2015-10-16 10:07:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: delta",

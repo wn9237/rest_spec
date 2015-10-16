@@ -13,7 +13,7 @@ PATCH /groups/<objectId>/appRoleAssignments/<objectId>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -81,8 +81,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: 5029e991-ba10-4374-9e33-6359b3d56898
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: 232e1485-6b88-40b6-a3d5-c440a2769fa6
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of approleassignment object.",

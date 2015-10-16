@@ -21,7 +21,7 @@ See relationships table of [permission](../resources/permission.md) object for s
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -81,8 +81,8 @@ Content-length: 762
 ```
 If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
 
-<!-- uuid: a367d2a4-eda3-42fb-b391-9065fc6d0f1b
-2015-10-16 09:51:13 UTC -->
+<!-- uuid: a168925a-9118-4f56-84dc-7b6c0f07e9b0
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get permission",

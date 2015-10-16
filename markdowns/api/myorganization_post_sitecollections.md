@@ -12,7 +12,7 @@ POST /myOrganization/siteCollections
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [SiteCollection](../resources/sitecollection.md) object.
@@ -49,8 +49,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 4d518118-2e8a-45d1-81ab-008041df01c7
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: c9d669c1-7807-4544-9e28-5a91dc423658
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SiteCollection",

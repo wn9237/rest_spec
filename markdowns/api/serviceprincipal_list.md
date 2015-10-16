@@ -16,7 +16,7 @@ GET /servicePrincipals
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -109,8 +109,8 @@ Content-length: 2218
 ```
 If successful, this method returns a `200 OK` response code and collection of [ServicePrincipal](../resources/serviceprincipal.md) objects in the response body.
 
-<!-- uuid: 724f97f0-999c-4dd2-b59e-662ea24d4f63
-2015-10-16 09:51:18 UTC -->
+<!-- uuid: 199a9623-fa52-4007-a2ef-533102c00b1b
+2015-10-16 10:08:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List ServicePrincipal",

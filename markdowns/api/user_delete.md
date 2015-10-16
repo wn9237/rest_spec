@@ -14,7 +14,7 @@ DELETE /drive/root/lastModifiedByUser
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 0fd30bd6-3ed0-40ed-b55f-1bcec3765f68
-2015-10-16 09:51:21 UTC -->
+<!-- uuid: c093f886-b08f-487d-9cc5-89785bec8eb7
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

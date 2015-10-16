@@ -12,7 +12,7 @@ POST /devices/<objectId>/registeredOwners
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: a1f66761-6b10-4e3d-a451-994d81767657
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: 7efc3944-3b6c-4f87-9563-8332a5f81300
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create registeredOwner",

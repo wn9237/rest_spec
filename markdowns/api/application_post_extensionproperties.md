@@ -12,7 +12,7 @@ POST /applications/<objectId>/extensionProperties
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [ExtensionProperty](../resources/extensionproperty.md) object.
@@ -58,8 +58,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: ea7973c6-a046-45de-a80c-d740fb362d3f
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: 0c4f5e8e-c546-4102-b596-cd8b6e22f8aa
+2015-10-16 10:07:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ExtensionProperty",

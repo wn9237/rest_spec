@@ -12,7 +12,7 @@ POST /PrivilegedOperationEvents
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) object.
@@ -61,8 +61,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 711dc1e6-07cd-4610-bc52-63e3c0eccd83
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: 4b2733b1-4c00-4c97-96bc-07ae40d1a2d5
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedOperationEvent",

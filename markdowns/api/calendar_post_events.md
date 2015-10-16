@@ -14,7 +14,7 @@ POST /users/<objectId>/Calendars/<Id>/Events
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -125,8 +125,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: 1ff80b54-a6ac-4c48-a1d8-0102cc4527e2
-2015-10-16 09:50:57 UTC -->
+<!-- uuid: 710dd37a-9d72-43a6-8484-c296d7d5f282
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

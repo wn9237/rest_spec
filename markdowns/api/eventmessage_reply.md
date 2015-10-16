@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -53,8 +53,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 9728a699-e053-4daa-a64c-f292b90dbd08
-2015-10-16 09:51:05 UTC -->
+<!-- uuid: bf4232a8-449c-467f-8647-224414cd70c3
+2015-10-16 10:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Reply",

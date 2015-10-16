@@ -753,7 +753,6 @@ module SpecMaker
 					end
 					mtd[:parameters] = nil					
 					mtd[:httpSuccessCode] = '201'
-					puts "Creating new! #{filename}"
 				    create_method_mdfile(mtd, filename)
 				end
 			end

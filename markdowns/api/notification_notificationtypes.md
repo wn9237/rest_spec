@@ -12,7 +12,7 @@ POST /Notifications/<Id>/NotificationTypes
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -48,8 +48,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 08501545-b6ab-4277-91b7-a6f0d19a4966
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: fac31ae2-0ed0-4332-9b05-5537cb9b44e4
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notification: NotificationTypes",

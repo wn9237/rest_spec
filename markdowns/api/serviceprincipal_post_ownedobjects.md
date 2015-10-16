@@ -12,7 +12,7 @@ POST /servicePrincipals/<objectId>/ownedObjects
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: b962e7a4-1c38-45a3-a54d-b7e6a55aa057
-2015-10-16 09:51:18 UTC -->
+<!-- uuid: ce1b0a7b-71fa-445d-8155-7a78e677b432
+2015-10-16 10:08:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ownedObject",

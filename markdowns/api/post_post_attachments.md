@@ -14,7 +14,7 @@ POST /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachmen
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
@@ -56,8 +56,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 42f355cd-7eb5-439e-812f-81d8da3092d4
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: c9aa82e2-d4ed-44ed-a81b-084e4db8406a
+2015-10-16 10:08:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",

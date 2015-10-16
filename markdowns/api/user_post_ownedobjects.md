@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/ownedObjects
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -53,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: f59b07bf-b1b6-4a28-9c13-5ceb3270ed79
-2015-10-16 09:51:21 UTC -->
+<!-- uuid: e980347d-d4af-4a8c-bf74-8d7a14293553
+2015-10-16 10:08:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ownedObject",

@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/notes/resources
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Resource](../resources/resource.md) object.
@@ -54,8 +54,8 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: 271bffc6-2067-4b03-9e19-30e6a252d3ba
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 84b64fd1-9179-4371-ab99-fb0b583c2106
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Resource",

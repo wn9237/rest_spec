@@ -13,7 +13,7 @@ PATCH /drive/root/createdByUser/details
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -62,8 +62,8 @@ Content-length: 73
 }
 ```
 
-<!-- uuid: ac99f9c8-029b-489d-a274-ff19a495da4f
-2015-10-16 09:51:22 UTC -->
+<!-- uuid: 6af34041-05c4-44d9-8d80-e6568f323738
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of userdetails object.",

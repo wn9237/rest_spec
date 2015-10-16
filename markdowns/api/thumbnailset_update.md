@@ -13,7 +13,7 @@ PATCH /drives/<id>/root/thumbnails/<id>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -106,8 +106,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 47711ce6-8f3e-4b4a-9512-80c6c8beb46c
-2015-10-16 09:51:20 UTC -->
+<!-- uuid: 1ab883f6-a3fe-40dc-8cad-254134f7521b
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of thumbnailset object.",

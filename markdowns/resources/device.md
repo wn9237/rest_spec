@@ -99,8 +99,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/device_getmembergroups.md)|String||
 |[Get MemberObjects](../api/device_getmemberobjects.md)|String||
 
-<!-- uuid: bf466766-07b6-45d1-a902-55bb003a7fd9
-2015-10-16 09:51:00 UTC -->
+<!-- uuid: 488b643d-9e25-4255-94f7-6bcc56db8d17
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device resource",

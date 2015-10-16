@@ -21,7 +21,7 @@ See relationships table of [Attachment](../resources/attachment.md) object for s
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -50,8 +50,8 @@ Content-length: 162
 ```
 If successful, this method returns a `200 OK` response code and [Attachment](../resources/attachment.md) object in the response body.
 
-<!-- uuid: 1ee67efe-6334-4f50-8422-713f32462dc9
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: b53389b8-a825-4402-b6ca-ecd01ae9c67f
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Attachment",

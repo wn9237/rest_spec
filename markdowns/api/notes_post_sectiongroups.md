@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/notes/sectionGroups
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [SectionGroup](../resources/sectiongroup.md) object.
@@ -59,8 +59,8 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: d389b061-0ce6-434c-b021-ed293c777259
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: d637286b-7830-47a8-911d-764dce09cce9
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SectionGroup",

@@ -14,7 +14,7 @@ POST /users/<objectId>/notes/pages/<id>/parentSection/CopyToSectionGroup
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -70,8 +70,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: 73703580-dd7b-4d89-ae5e-63fbf79c35d7
-2015-10-16 09:51:17 UTC -->
+<!-- uuid: 3b9abf39-f5e2-47f9-aebb-7b9e735a7301
+2015-10-16 10:08:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section: CopyToSectionGroup",

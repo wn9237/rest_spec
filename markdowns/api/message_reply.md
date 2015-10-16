@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/Reply
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -55,8 +55,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 7722b83b-bac1-4816-bb27-cefddc02c945
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: bffb7305-2173-4cc7-ba73-077752823f4e
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Reply",

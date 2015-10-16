@@ -13,7 +13,7 @@ GET /directoryRoleTemplates/<objectId>
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -41,8 +41,8 @@ Content-length: 187
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.
 
-<!-- uuid: f0370140-6656-4c44-bb9d-93b69a106dff
-2015-10-16 09:51:02 UTC -->
+<!-- uuid: 2037f083-3310-47fc-90b8-8efe8d29c8c0
+2015-10-16 10:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryRoleTemplate",

@@ -21,7 +21,7 @@ See relationships table of [Conversation](../resources/conversation.md) object f
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -52,8 +52,8 @@ Content-length: 201
 ```
 If successful, this method returns a `200 OK` response code and [Conversation](../resources/conversation.md) object in the response body.
 
-<!-- uuid: d0e8bb38-6ef5-4c4a-8b58-9bbcd2d1ece3
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: 13d25cca-4b27-4869-9f7d-4ed00f702b6b
+2015-10-16 10:07:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Conversation",

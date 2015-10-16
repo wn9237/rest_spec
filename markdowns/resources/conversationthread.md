@@ -79,8 +79,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/conversationthread_delete.md) | Void	|Delete ConversationThread object. |
 |[Reply](../api/conversationthread_reply.md)|[None](none.md)||
 
-<!-- uuid: 499b7920-5293-41ac-95dd-fc73de10ae02
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: 7fa8cb89-afa7-4831-a4cc-ff399e53d102
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread resource",

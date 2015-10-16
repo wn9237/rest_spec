@@ -14,7 +14,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/appRoleAssignments
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [AppRoleAssignment](../resources/approleassignment.md) object.
@@ -60,8 +60,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: acf71824-f239-4ba0-830e-7cc16d29ed9b
-2015-10-16 09:51:07 UTC -->
+<!-- uuid: 3b160fe4-0e57-4b53-93a0-492224efa85e
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AppRoleAssignment",

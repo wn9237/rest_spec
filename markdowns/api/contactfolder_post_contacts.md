@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/ContactFolders/<Id>/Contacts
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
@@ -116,8 +116,8 @@ Content-length: 1857
 }
 ```
 
-<!-- uuid: 4e4eb42f-3a30-4f99-b0d4-805d8c533435
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: dfc2a260-404a-427c-8d40-410381b8ae8b
+2015-10-16 10:07:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Contact",

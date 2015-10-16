@@ -21,7 +21,7 @@ See relationships table of [Bucket](../resources/bucket.md) object for supported
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -51,8 +51,8 @@ Content-length: 179
 ```
 If successful, this method returns a `200 OK` response code and [Bucket](../resources/bucket.md) object in the response body.
 
-<!-- uuid: 149d95a1-a2e4-4137-b4d9-12820b5ba667
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: f53d6a72-522f-4ea4-9882-7add792492a8
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Bucket",

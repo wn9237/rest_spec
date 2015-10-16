@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/ContactFolders/<Id>/Extensions
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
@@ -51,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 9579bb56-1b8d-4f52-8193-5c7511aa1b2a
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: 32d34e40-646b-4e87-9c25-40cb31e49b88
+2015-10-16 10:07:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

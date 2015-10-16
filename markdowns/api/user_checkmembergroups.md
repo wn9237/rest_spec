@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/checkMemberGroups
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -60,8 +60,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: fbbb36a3-5ca7-40ae-99f9-c09561e4d5bf
-2015-10-16 09:51:22 UTC -->
+<!-- uuid: d7e1f5d3-dafc-4b2c-b630-4636b58284b2
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: checkMemberGroups",

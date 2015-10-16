@@ -23,7 +23,7 @@ GET /drives
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -73,8 +73,8 @@ Content-length: 580
 ```
 If successful, this method returns a `200 OK` response code and collection of [drive](../resources/drive.md) objects in the response body.
 
-<!-- uuid: f6515a3d-b74c-47df-98e9-76f1646de676
-2015-10-16 09:51:03 UTC -->
+<!-- uuid: 663ae4bd-a0e2-443a-a58b-610cefc185a9
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List drive",

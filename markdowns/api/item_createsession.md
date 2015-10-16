@@ -14,7 +14,7 @@ POST /drives/<id>/root/createSession
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -62,8 +62,8 @@ Content-length: 140
 }
 ```
 
-<!-- uuid: 6b866623-0564-4245-ab70-0aafc2d33ce8
-2015-10-16 09:51:09 UTC -->
+<!-- uuid: d542612c-ba58-45c7-b753-b249a2eaffc9
+2015-10-16 10:07:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createSession",

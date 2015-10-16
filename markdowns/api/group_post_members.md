@@ -14,7 +14,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/members
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -53,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: bfc9bc15-03d2-4126-8f56-f0cf6c9a9c0c
-2015-10-16 09:51:07 UTC -->
+<!-- uuid: dfd62162-50f4-4135-999c-a8d7c19f679a
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create member",

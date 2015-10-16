@@ -16,7 +16,7 @@ GET /groups
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -80,8 +80,8 @@ Content-length: 1187
 ```
 If successful, this method returns a `200 OK` response code and collection of [Group](../resources/group.md) objects in the response body.
 
-<!-- uuid: e4570444-73b0-4c3c-a857-e3a209258402
-2015-10-16 09:51:08 UTC -->
+<!-- uuid: dc1f08f8-1937-496c-a40d-d4d952dfd499
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Group",

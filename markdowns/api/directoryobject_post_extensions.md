@@ -14,7 +14,7 @@ POST /contacts/<objectId>/manager/Extensions
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
@@ -51,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: d756178f-e72c-4045-8ab6-1213f14e17de
-2015-10-16 09:51:01 UTC -->
+<!-- uuid: bf219283-14b9-41cc-ad48-f139549229fa
+2015-10-16 10:07:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

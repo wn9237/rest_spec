@@ -21,7 +21,7 @@ See relationships table of [Page](../resources/page.md) object for supported nam
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -60,8 +60,8 @@ Content-length: 391
 ```
 If successful, this method returns a `200 OK` response code and [Page](../resources/page.md) object in the response body.
 
-<!-- uuid: e6fef54e-b2a0-48ea-b87d-4ab0383a3b4e
-2015-10-16 09:51:13 UTC -->
+<!-- uuid: 27ee3038-2bcc-433f-9161-3dfa5fe9b52d
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Page",

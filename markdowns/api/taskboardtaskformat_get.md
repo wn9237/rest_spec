@@ -21,7 +21,7 @@ See relationships table of [TaskBoardTaskFormat](../resources/taskboardtaskforma
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -48,8 +48,8 @@ Content-length: 110
 ```
 If successful, this method returns a `200 OK` response code and [TaskBoardTaskFormat](../resources/taskboardtaskformat.md) object in the response body.
 
-<!-- uuid: f8b87709-1062-4234-9305-38647a7a495f
-2015-10-16 09:51:19 UTC -->
+<!-- uuid: b5ee665c-761c-47dc-9b3a-efd797191626
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskBoardTaskFormat",

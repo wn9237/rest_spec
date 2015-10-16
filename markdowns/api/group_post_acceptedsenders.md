@@ -14,7 +14,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/AcceptedSenders
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -53,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 48f75b46-7a97-4480-aebe-5c913f14f256
-2015-10-16 09:51:07 UTC -->
+<!-- uuid: f01e7877-6bf3-40c8-8bb2-cedb2017bb8d
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AcceptedSender",

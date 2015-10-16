@@ -14,7 +14,7 @@ POST /users/<objectId>/notes/pages/<id>/parentNotebook/sectionGroups
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [SectionGroup](../resources/sectiongroup.md) object.
@@ -59,8 +59,8 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 72afcf86-b925-4dbd-997e-f5f476f5f9c4
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 4ac9babd-9533-43e5-8900-a087116646e9
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SectionGroup",

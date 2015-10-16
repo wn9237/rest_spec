@@ -11,7 +11,7 @@ PATCH /applications/<objectId>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -225,8 +225,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: 5c3c7757-975b-4c0f-8b13-e4e7641c57ea
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: 8baf0a19-765d-4485-9cfe-0b3933924687
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of application object.",

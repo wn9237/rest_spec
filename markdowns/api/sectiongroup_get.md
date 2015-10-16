@@ -21,7 +21,7 @@ See relationships table of [SectionGroup](../resources/sectiongroup.md) object f
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -53,8 +53,8 @@ Content-length: 309
 ```
 If successful, this method returns a `200 OK` response code and [SectionGroup](../resources/sectiongroup.md) object in the response body.
 
-<!-- uuid: 567fee40-307b-4a0d-afdb-153c12f411d6
-2015-10-16 09:51:17 UTC -->
+<!-- uuid: 89a7558f-0f6c-4d88-9498-118c00f98432
+2015-10-16 10:08:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SectionGroup",

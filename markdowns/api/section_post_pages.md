@@ -14,7 +14,7 @@ POST /users/<objectId>/notes/pages/<id>/parentSection/pages
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Page](../resources/page.md) object.
@@ -66,8 +66,8 @@ Content-length: 391
 }
 ```
 
-<!-- uuid: 91604290-5c41-40fa-8f8f-68efa3c73c57
-2015-10-16 09:51:17 UTC -->
+<!-- uuid: 8a5daea1-6cb4-431e-802c-f093fa94bd61
+2015-10-16 10:08:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Page",

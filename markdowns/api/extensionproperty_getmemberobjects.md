@@ -12,7 +12,7 @@ POST /applications/<objectId>/extensionProperties/<objectId>/getMemberObjects
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -56,8 +56,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: ef44355d-7066-4b98-9c79-2ab0339ae902
-2015-10-16 09:51:05 UTC -->
+<!-- uuid: 22912717-5ddc-4549-ac0c-9fffd2081ed7
+2015-10-16 10:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExtensionProperty: getMemberObjects",

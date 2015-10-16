@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API:
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -57,8 +57,8 @@ Content-length: 48
 }
 ```
 
-<!-- uuid: 6e9e54cb-12d3-4f0a-b5a4-13518fe5a7af
-2015-10-16 09:51:12 UTC -->
+<!-- uuid: 6b9b3cfd-4162-4dee-bdc7-9c272f32cebe
+2015-10-16 10:07:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of opentypeextension object.",

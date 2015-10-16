@@ -12,7 +12,7 @@ POST /Alerts/<AlertId>/Reactivate
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -61,8 +61,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: c840c30f-5259-49bd-8e1b-f1f62d7055da
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: 2a8f0b65-9e90-42b8-8056-9365825a936a
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Reactivate",

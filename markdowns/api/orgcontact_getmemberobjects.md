@@ -12,7 +12,7 @@ POST /contacts/<objectId>/getMemberObjects
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -56,8 +56,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 85dd5af2-3f43-4713-bfc8-0cf5809a73b6
-2015-10-16 09:51:13 UTC -->
+<!-- uuid: 33c6396d-ad6e-4dea-b8bc-3a7ba96222b1
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OrgContact: getMemberObjects",

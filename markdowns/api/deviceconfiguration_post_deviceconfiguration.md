@@ -12,7 +12,7 @@ POST /deviceConfiguration
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DeviceConfiguration](../resources/deviceconfiguration.md) object.
@@ -59,8 +59,8 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: da1d2a29-3621-4ae9-8aed-8a5b62e983dd
-2015-10-16 09:51:00 UTC -->
+<!-- uuid: 6205d761-6dd7-4605-b5f3-3f2cc1d4bb8b
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DeviceConfiguration",

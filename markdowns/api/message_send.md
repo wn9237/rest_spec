@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/Send
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -47,8 +47,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: d6612838-d695-4ff7-8311-093e8fc49e82
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 2984167b-c182-4a2d-87fa-0694f1d0d0d3
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Send",

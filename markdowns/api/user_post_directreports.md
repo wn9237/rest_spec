@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/directReports
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -53,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 3d419bf8-6550-4b3a-aca7-6f81ee5f5db7
-2015-10-16 09:51:21 UTC -->
+<!-- uuid: 6de11033-45b7-4f60-9d96-88d36523635d
+2015-10-16 10:08:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create directReport",

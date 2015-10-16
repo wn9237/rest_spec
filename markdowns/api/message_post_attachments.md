@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/Attachments
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
@@ -56,8 +56,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 86ece6c0-f248-4e3e-ac4f-b0e05562e251
-2015-10-16 09:51:10 UTC -->
+<!-- uuid: a18ed5a6-bfd0-48f0-9c78-d64d695a0d51
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",

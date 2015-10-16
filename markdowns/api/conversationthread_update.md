@@ -13,7 +13,7 @@ PATCH /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -110,8 +110,8 @@ Content-length: 489
 }
 ```
 
-<!-- uuid: 6cff4c9c-c68f-489e-91a3-ed307cdcf2be
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: 6bc695fb-df1c-44bf-a72f-b462ac575217
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversationthread object.",

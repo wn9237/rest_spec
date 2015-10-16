@@ -14,7 +14,7 @@ DELETE /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 86fb7ce0-432d-412c-93af-ec5287daf653
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: 4c90906e-c97f-4197-ae3a-be7a7ffdd321
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

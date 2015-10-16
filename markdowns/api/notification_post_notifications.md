@@ -12,7 +12,7 @@ POST /Notifications
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Notification](../resources/notification.md) object.
@@ -52,8 +52,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: ca98229b-2751-44be-b41b-91aee580bbf4
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 1eca3a1a-02c5-43a3-98a9-48a38ddf0258
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Notification",

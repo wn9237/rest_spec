@@ -12,7 +12,7 @@ DELETE /PrivilegedSignupStatus/<TenantId>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -22,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 174886c8-0ad5-48b3-916a-71f6268088c1
-2015-10-16 09:51:16 UTC -->
+<!-- uuid: a2764c97-c6e4-479f-b63a-f185069018a7
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

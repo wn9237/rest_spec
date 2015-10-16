@@ -12,7 +12,7 @@ POST /shares/<id>/items
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [item](../resources/item.md) object.
@@ -187,8 +187,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: 60c0bca2-2aa7-4cec-a209-c03c9693bb07
-2015-10-16 09:51:18 UTC -->
+<!-- uuid: b3024155-c02f-4a50-9477-7887a9a97b17
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create item",

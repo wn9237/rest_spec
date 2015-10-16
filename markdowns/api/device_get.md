@@ -13,7 +13,7 @@ GET /devices/<objectId>
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -60,8 +60,8 @@ Content-length: 732
 ```
 If successful, this method returns a `200 OK` response code and [Device](../resources/device.md) object in the response body.
 
-<!-- uuid: a85acb8c-d0e6-47d0-96e1-9f0abf1fe0dc
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: c6236295-3c4e-4fa6-b14f-786ee47ba9f4
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Device",

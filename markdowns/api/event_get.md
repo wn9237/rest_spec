@@ -21,7 +21,7 @@ See relationships table of [Event](../resources/event.md) object for supported n
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -119,8 +119,8 @@ Content-length: 1794
 ```
 If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
 
-<!-- uuid: a86e2ed0-5ccd-4826-b62f-b357e7429864
-2015-10-16 09:51:04 UTC -->
+<!-- uuid: 7be1ac6d-61bc-4100-a813-49fcc72f42b9
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Event",

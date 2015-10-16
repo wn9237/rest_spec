@@ -12,7 +12,7 @@ POST /users
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [User](../resources/user.md) object.
@@ -144,8 +144,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: 5e15c512-342f-499d-a985-abbcd054613c
-2015-10-16 09:51:22 UTC -->
+<!-- uuid: 75e9762c-dd3f-4ada-a68b-4e1ecf3ef93b
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create User",

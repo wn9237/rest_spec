@@ -12,7 +12,7 @@ POST /directoryObjects
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 585cff42-a628-4353-a398-bc4f1cd1c2b4
-2015-10-16 09:51:01 UTC -->
+<!-- uuid: a580fa46-6c7f-4dda-b8f6-2e2e7f598bc0
+2015-10-16 10:07:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DirectoryObject",

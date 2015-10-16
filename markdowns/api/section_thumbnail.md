@@ -14,7 +14,7 @@ POST /users/<objectId>/notes/pages/<id>/parentSection/Thumbnail
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -48,8 +48,8 @@ Content-length: 29
 }
 ```
 
-<!-- uuid: 6338f59d-3050-4d42-b322-d1a7d87cec4b
-2015-10-16 09:51:17 UTC -->
+<!-- uuid: 711d5cc5-ed7a-4ca3-a8e2-ab41c1a77e19
+2015-10-16 10:08:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section: Thumbnail",

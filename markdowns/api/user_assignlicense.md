@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/assignLicense
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -160,8 +160,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: 4d58db26-bcbf-4381-8226-47c2827e9d05
-2015-10-16 09:51:22 UTC -->
+<!-- uuid: d792b0d2-0e10-4932-a198-a8803e527751
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: assignLicense",

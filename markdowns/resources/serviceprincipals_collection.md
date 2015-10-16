@@ -16,8 +16,8 @@ None
 |[List](../api/serviceprincipal_list.md) | [ServicePrincipal](serviceprincipal.md) [] |Get servicePrincipal object collection. |
 |[Create ServicePrincipal](../api/serviceprincipal_post_serviceprincipals.md) |[ServicePrincipal](serviceprincipal.md)| Create a new ServicePrincipal by posting to the servicePrincipals collection.|
 
-<!-- uuid: edaf82db-45ed-4048-ba2a-a49a8ddba8db
-2015-10-16 09:51:18 UTC -->
+<!-- uuid: 8724250d-6524-4a05-b3ad-ba13f2a86099
+2015-10-16 10:08:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "servicePrincipals resource",

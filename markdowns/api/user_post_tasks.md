@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/tasks
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Task](../resources/task.md) object.
@@ -71,8 +71,8 @@ Content-length: 641
 }
 ```
 
-<!-- uuid: a8847e15-38e2-4f27-842e-367dd16b0069
-2015-10-16 09:51:21 UTC -->
+<!-- uuid: 30ec07d0-4613-45c0-8abe-87cbf5b6d3de
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

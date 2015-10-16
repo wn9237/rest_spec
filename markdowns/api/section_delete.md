@@ -14,7 +14,7 @@ DELETE /users/<objectId>/notes/pages/<id>/parentSection
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 5fdcbc16-6a19-41e5-bba2-6160ae8b8c8f
-2015-10-16 09:51:17 UTC -->
+<!-- uuid: 06e7dee2-afa4-4efb-b5bc-117d3a7f643f
+2015-10-16 10:08:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

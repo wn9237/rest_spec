@@ -14,7 +14,7 @@ POST /drives/<id>/root/thumbnails
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [thumbnailSet](../resources/thumbnailset.md) object.
@@ -75,8 +75,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: f94eb9cf-8169-4441-be6f-57ff4f9e775f
-2015-10-16 09:51:08 UTC -->
+<!-- uuid: 4e524dde-52e6-4fd2-a4c2-4d6556417d03
+2015-10-16 10:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create thumbnailSet",

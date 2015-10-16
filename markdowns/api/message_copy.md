@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/Copy
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -127,8 +127,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: baf44a46-00e5-441b-8c18-3e2cdad47164
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 794c3040-5d1f-4cc9-9e6f-c920e6c1f45e
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Copy",

@@ -21,7 +21,7 @@ See relationships table of [File](../resources/file.md) object for supported nam
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -44,8 +44,8 @@ Content-length: 3
 ```
 If successful, this method returns a `200 OK` response code and [File](../resources/file.md) object in the response body.
 
-<!-- uuid: 22afd0a2-563d-459b-b944-580cf5128b32
-2015-10-16 09:51:05 UTC -->
+<!-- uuid: 2e24d6ae-1480-43cf-96ed-001241951aa7
+2015-10-16 10:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get File",

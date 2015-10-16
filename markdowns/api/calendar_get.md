@@ -21,7 +21,7 @@ See relationships table of [Calendar](../resources/calendar.md) object for suppo
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -48,8 +48,8 @@ Content-length: 106
 ```
 If successful, this method returns a `200 OK` response code and [Calendar](../resources/calendar.md) object in the response body.
 
-<!-- uuid: a47eb619-9297-4fec-8572-b51eee8c7bb9
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: d87c6e62-3559-4b3d-9706-8555c092a11c
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Calendar",

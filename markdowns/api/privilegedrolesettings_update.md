@@ -12,7 +12,7 @@ PATCH /PrivilegedRoleAssignments/<UserId|RoleId>/RoleInfo/Settings
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -74,8 +74,8 @@ Content-length: 289
 }
 ```
 
-<!-- uuid: ba3328c9-9ce0-4c7d-847c-5fefcd1bf525
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: 2dcde24b-1e1a-4466-8364-4448fae93a83
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrolesettings object.",

@@ -12,7 +12,7 @@ POST /devices/<objectId>/registeredUsers
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 9f422b25-c008-4fc6-937b-18eaa0244341
-2015-10-16 09:51:00 UTC -->
+<!-- uuid: e8dbe79b-0398-49c4-ae27-49b969c649fd
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create registeredUser",

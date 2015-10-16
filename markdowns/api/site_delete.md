@@ -12,7 +12,7 @@ DELETE /myOrganization/siteCollections/<id>/sites/<id>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -22,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 3dd84876-b3d2-415e-825d-60d7e3627b17
-2015-10-16 09:51:18 UTC -->
+<!-- uuid: 7d43ab27-136f-489c-a7b9-74ecd4ab7c91
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

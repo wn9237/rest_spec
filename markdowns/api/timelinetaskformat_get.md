@@ -21,7 +21,7 @@ See relationships table of [TimelineTaskFormat](../resources/timelinetaskformat.
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -54,8 +54,8 @@ Content-length: 255
 ```
 If successful, this method returns a `200 OK` response code and [TimelineTaskFormat](../resources/timelinetaskformat.md) object in the response body.
 
-<!-- uuid: af45c6d3-5223-42bc-83f4-ca4c302ba3a0
-2015-10-16 09:51:20 UTC -->
+<!-- uuid: a234f287-8a93-4e5c-bff2-99fd8f3ab3b1
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TimelineTaskFormat",

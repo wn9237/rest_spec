@@ -14,7 +14,7 @@ DELETE /groups/<objectId>/tasks/<id>/timelineFormat
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: f6e65429-2565-4baf-ab87-55f6a51e5662
-2015-10-16 09:51:20 UTC -->
+<!-- uuid: 33810a0b-6885-48e3-ae1c-86a8defe2493
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

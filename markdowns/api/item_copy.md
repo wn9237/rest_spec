@@ -14,7 +14,7 @@ POST /drives/<id>/root/copy
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -200,8 +200,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: bd3a6c2d-00dd-4e47-b664-80914f1ddc1d
-2015-10-16 09:51:09 UTC -->
+<!-- uuid: fa782f2e-565f-44e1-a74c-f4e89be2e5e5
+2015-10-16 10:07:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: copy",

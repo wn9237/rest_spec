@@ -12,7 +12,7 @@ POST /PrivilegedSignupStatus/<TenantId>/SkipSetup
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -45,8 +45,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 91728ca6-017a-4bb9-b334-4c23172ade08
-2015-10-16 09:51:16 UTC -->
+<!-- uuid: fe22ed1a-788a-4164-8fbd-ec2570375b16
+2015-10-16 10:08:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SkipSetup",

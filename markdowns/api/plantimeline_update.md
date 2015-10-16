@@ -13,7 +13,7 @@ PATCH /groups/<objectId>/plans/<id>/timeline
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -63,8 +63,8 @@ Content-length: 119
 }
 ```
 
-<!-- uuid: ff0c1ae5-cc04-46ad-b9de-6b7168985184
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: 90a3aeb9-60bd-4431-8257-3f1dda903f87
+2015-10-16 10:08:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plantimeline object.",

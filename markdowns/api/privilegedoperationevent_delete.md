@@ -12,7 +12,7 @@ DELETE /PrivilegedOperationEvents/<Id>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -22,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 43b031e4-c7a2-4c4f-8a56-3eaf1b0e0684
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: a5d79cec-52c2-4d63-a3cc-a95c0f226366
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

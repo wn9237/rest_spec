@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/notes/pages
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Page](../resources/page.md) object.
@@ -66,8 +66,8 @@ Content-length: 391
 }
 ```
 
-<!-- uuid: f0e524e8-1dec-4187-9f93-11f584ec9f39
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 0334fb32-7ee9-41e9-b450-7463f02b4d3b
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Page",

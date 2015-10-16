@@ -14,7 +14,7 @@ POST /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Forward
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -64,8 +64,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 7d7d52b1-f59c-4a3f-ba33-03e8282d1817
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: 99ac6ce5-14bd-4332-9a7d-f1c62c4ef4a7
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post: Forward",

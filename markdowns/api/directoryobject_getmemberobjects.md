@@ -14,7 +14,7 @@ POST /contacts/<objectId>/manager/getMemberObjects
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -58,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 80c45a17-0717-4b45-ad97-e74487cc567a
-2015-10-16 09:51:01 UTC -->
+<!-- uuid: a3f6907e-ea27-4af6-ab3a-0d57a6b80c7e
+2015-10-16 10:07:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject: getMemberObjects",

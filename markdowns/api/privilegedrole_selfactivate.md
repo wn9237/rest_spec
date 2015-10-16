@@ -13,7 +13,7 @@ POST /PrivilegedRoleAssignments/<UserId|RoleId>/RoleInfo/SelfActivate
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -65,8 +65,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 9dc2c883-c78e-4837-a21d-7c6e9f9d2810
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: bc1b4b04-ffc5-44c2-b83a-b439dc65a35e
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRole: SelfActivate",

@@ -11,7 +11,7 @@ PATCH /applications/<objectId>/extensionProperties/<objectId>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -77,8 +77,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: dbd78d4f-1852-49fb-93b6-19a872fd0393
-2015-10-16 09:51:05 UTC -->
+<!-- uuid: dcda6ffa-8d36-4b6e-9e83-c2494c98370a
+2015-10-16 10:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of extensionproperty object.",

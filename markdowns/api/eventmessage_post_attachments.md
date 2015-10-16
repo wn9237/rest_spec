@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
@@ -54,8 +54,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 9fc6fbec-2a7d-40eb-8f72-bc7f9b8e547c
-2015-10-16 09:51:05 UTC -->
+<!-- uuid: 8719d07d-ee4e-47f5-8b55-32d270bc43a9
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",

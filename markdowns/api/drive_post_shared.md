@@ -14,7 +14,7 @@ POST /users/<objectId>/drive/shared
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [item](../resources/item.md) object.
@@ -189,8 +189,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: c57a7f14-29bd-44f0-ae6e-e273d719ca78
-2015-10-16 09:51:03 UTC -->
+<!-- uuid: d8aafeb8-96e2-47fb-8e56-cc7cc3af9f33
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create shared",

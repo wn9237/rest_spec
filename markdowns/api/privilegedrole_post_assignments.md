@@ -13,7 +13,7 @@ POST /PrivilegedRoleAssignments/<UserId|RoleId>/RoleInfo/Assignments
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object.
@@ -54,8 +54,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: e84ff5a8-de20-495b-80d1-8c71857015b2
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: 12e7dbd8-234c-457a-8e23-0d3370cbb9bd
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Assignment",

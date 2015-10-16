@@ -12,7 +12,7 @@ POST /myOrganization/siteCollections/<id>/FromUrl(url=url-value)
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request URL, provide following query parameters with values.
@@ -52,8 +52,8 @@ Content-length: 78
 }
 ```
 
-<!-- uuid: b2e5f7cf-ca76-479c-8194-f8c086a2a70b
-2015-10-16 09:51:19 UTC -->
+<!-- uuid: 21e3fe7f-8778-4127-8fb3-99218326b9dd
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "SiteCollection: FromUrl",

@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/Messages
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
@@ -122,8 +122,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: d2dcf5fd-2453-40ab-bd0c-8e048fce5332
-2015-10-16 09:51:20 UTC -->
+<!-- uuid: 76f75aca-9e67-4530-ab2f-fbbd8f4dc0e9
+2015-10-16 10:08:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Message",

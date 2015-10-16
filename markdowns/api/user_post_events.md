@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/Events
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -125,8 +125,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: 40d46a12-5c00-4787-98f8-e0825437bef2
-2015-10-16 09:51:20 UTC -->
+<!-- uuid: 971f5334-85b4-4bf2-a207-b66281fd2b4d
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

@@ -14,7 +14,7 @@ POST /drives/<id>/root/createLink
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -92,8 +92,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: 4329aa4c-60d2-4efe-ae51-21657963c91a
-2015-10-16 09:51:09 UTC -->
+<!-- uuid: ce956f80-80a8-4b9e-b75f-aa556b04a7d3
+2015-10-16 10:07:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createLink",

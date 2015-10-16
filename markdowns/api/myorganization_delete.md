@@ -12,7 +12,7 @@ DELETE /myOrganization
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -22,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 2156f3cb-5690-45a4-a423-07f19e91b1c5
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: c6c0e8c4-0ac0-4534-8914-75f140124e15
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

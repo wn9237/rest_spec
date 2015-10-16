@@ -21,7 +21,7 @@ See relationships table of [Task](../resources/task.md) object for supported nam
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -65,8 +65,8 @@ Content-length: 641
 ```
 If successful, this method returns a `200 OK` response code and [Task](../resources/task.md) object in the response body.
 
-<!-- uuid: ee07ff06-f1d7-4c63-b8ad-b73943f497b1
-2015-10-16 09:51:19 UTC -->
+<!-- uuid: 89f8c2fa-34f8-419d-9dc1-5e1b8ce68178
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Task",

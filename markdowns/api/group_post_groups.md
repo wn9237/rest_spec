@@ -12,7 +12,7 @@ POST /groups
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Group](../resources/group.md) object.
@@ -85,8 +85,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: 70040451-c83d-46c9-a1a8-bfa158e2463a
-2015-10-16 09:51:08 UTC -->
+<!-- uuid: d0a9bd4f-5fec-4e37-9422-b3db1316fb09
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Group",

@@ -12,7 +12,7 @@ POST /Alerts/<AlertId>/Fix
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -69,8 +69,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: 83242098-2217-41c6-accd-ab2a6e964295
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: bbee17a4-9510-4a80-9d9e-9127ce6183ee
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Fix",

@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/Calendars
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
@@ -54,8 +54,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: 91856c48-3a09-4971-bc08-2f7300fe8559
-2015-10-16 09:51:20 UTC -->
+<!-- uuid: 0d08bce7-a085-45ef-9dd7-e95a992aecb9
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Calendar",

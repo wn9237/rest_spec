@@ -14,7 +14,7 @@ DELETE /drive/root/createdByUser/JoinedGroups/<objectId>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: bd528d73-5d03-4148-adbf-aef6e42e6076
-2015-10-16 09:51:08 UTC -->
+<!-- uuid: daf03f4b-9ff2-497c-abb0-3dbcd0725c7e
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

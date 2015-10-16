@@ -21,7 +21,7 @@ See relationships table of [PlanDetails](../resources/plandetails.md) object for
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -54,8 +54,8 @@ Content-length: 411
 ```
 If successful, this method returns a `200 OK` response code and [PlanDetails](../resources/plandetails.md) object in the response body.
 
-<!-- uuid: 8ee585de-bbcb-4bcb-8951-f648e462edf5
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: d06852f0-714a-46dc-a87b-10667d89631e
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanDetails",

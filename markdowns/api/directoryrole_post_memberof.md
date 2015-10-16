@@ -12,7 +12,7 @@ POST /directoryRoles/<objectId>/memberOf
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 7f675f67-64b8-432e-8c68-4639181097c5
-2015-10-16 09:51:02 UTC -->
+<!-- uuid: be13d9a4-4d08-4a0a-b9ac-3508fcf7e1fa
+2015-10-16 10:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create memberOf",

@@ -12,7 +12,7 @@ POST /devices
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Device](../resources/device.md) object.
@@ -72,8 +72,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: 974e6c55-25d3-4c51-a2fb-0ce4e653734e
-2015-10-16 09:51:01 UTC -->
+<!-- uuid: 5f872d4b-5671-49f1-9581-7b8b85860c3b
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Device",

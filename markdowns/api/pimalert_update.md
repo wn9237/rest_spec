@@ -11,7 +11,7 @@ PATCH /Alerts/<AlertId>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -97,8 +97,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: ea97671e-840d-4d7b-aa1c-0d034d28e5f7
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: 664bf4d5-6b0a-4847-8927-dd241538c2b8
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of pimalert object.",

@@ -40,7 +40,7 @@ module SpecMaker
 	QRY_SKIP = "|$skip|int|The number of items to skip in a result set.|"
 	QRY_COUNT = "|$count|none|The count of related entities can be requested by specifying the $count query option.|"
 
-	HTTP_HEADER_SAMPLE = "| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|"
+	HTTP_HEADER_SAMPLE = "| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|"
 	
 	odata_types = %w[Binary Boolean Byte Date DateTimeOffset Decimal Double Duration 
 				Guid Int Int16 Int32 Int64 SByte Single Stream String TimeOfDay 

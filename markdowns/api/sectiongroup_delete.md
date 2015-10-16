@@ -14,7 +14,7 @@ DELETE /drive/root/lastModifiedByUser/notes/sectionGroups/<id>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 402ed2ad-b06c-416b-b3fb-e9671d242a78
-2015-10-16 09:51:17 UTC -->
+<!-- uuid: 7cb5cf80-c85f-4988-918e-3f61b0e6255e
+2015-10-16 10:08:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

@@ -14,7 +14,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Thread
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
@@ -75,8 +75,8 @@ Content-length: 489
 }
 ```
 
-<!-- uuid: 8da9f294-664e-4285-a9dc-16bd0713b619
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: b4a0d8dc-4c20-45f3-88ea-371d585f6fce
+2015-10-16 10:07:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Thread",

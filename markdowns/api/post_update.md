@@ -13,7 +13,7 @@ PATCH /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -134,8 +134,8 @@ Content-length: 790
 }
 ```
 
-<!-- uuid: ba936205-1df0-4e15-a01c-26800943e826
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: 8a1f3ea0-23b4-4a39-a705-bb79344994eb
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of post object.",

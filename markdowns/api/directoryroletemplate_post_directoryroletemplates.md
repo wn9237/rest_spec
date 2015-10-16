@@ -12,7 +12,7 @@ POST /directoryRoleTemplates
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object.
@@ -53,8 +53,8 @@ Content-length: 187
 }
 ```
 
-<!-- uuid: cbf124bb-1108-4ee0-8196-47ca9926ef42
-2015-10-16 09:51:02 UTC -->
+<!-- uuid: fb10693d-dfc6-4843-99bf-1b8ff9c35658
+2015-10-16 10:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DirectoryRoleTemplate",

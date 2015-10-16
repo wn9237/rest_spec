@@ -23,7 +23,7 @@ GET /tasks
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -71,8 +71,8 @@ Content-length: 755
 ```
 If successful, this method returns a `200 OK` response code and collection of [Task](../resources/task.md) objects in the response body.
 
-<!-- uuid: 603fe71c-d5af-430b-bde7-2a7fae785314
-2015-10-16 09:51:19 UTC -->
+<!-- uuid: e527183f-5e30-49ec-8ff1-0b1779707cf6
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Task",

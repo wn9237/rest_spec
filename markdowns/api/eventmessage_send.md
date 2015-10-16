@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -45,8 +45,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 4d7498cf-94e1-4c38-ad2b-4a29c6efb5aa
-2015-10-16 09:51:05 UTC -->
+<!-- uuid: afae5294-0857-496d-82e4-6195cf26dc3c
+2015-10-16 10:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Send",

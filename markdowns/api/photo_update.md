@@ -13,7 +13,7 @@ PATCH /drive/root/createdByUser/UserPhoto
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -60,8 +60,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: d398ea74-3b1e-4c44-b59e-7341ef89387a
-2015-10-16 09:51:13 UTC -->
+<!-- uuid: c0ecf101-5d1c-43a8-9ca0-6c2c8d8b7bdd
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of photo object.",

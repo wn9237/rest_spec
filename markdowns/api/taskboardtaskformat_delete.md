@@ -14,7 +14,7 @@ DELETE /tasks/<id>/assignedToTaskBoardFormat
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: c090869c-e39b-4a78-8d46-63886d4b7379
-2015-10-16 09:51:19 UTC -->
+<!-- uuid: 86fe8bd1-9e65-4545-b5d4-a67408d8c02f
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

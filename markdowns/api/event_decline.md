@@ -14,7 +14,7 @@ POST /users/<objectId>/CalendarView/<Id>/Decline
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -57,8 +57,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: c569d625-c122-4b45-bb68-223e6b7205e9
-2015-10-16 09:51:04 UTC -->
+<!-- uuid: 604894a3-922c-40c7-9b75-6a17368a1bb0
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: Decline",

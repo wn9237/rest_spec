@@ -11,7 +11,7 @@ PATCH /devices/<objectId>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -113,8 +113,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: 17fcf104-e693-4d26-b2e8-c3cdb68d783f
-2015-10-16 09:51:00 UTC -->
+<!-- uuid: 2ed7b2cf-df10-4c39-87d4-9347ed90db94
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of device object.",

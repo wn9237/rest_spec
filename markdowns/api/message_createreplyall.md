@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/CreateReplyAll
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -119,8 +119,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: dbaa99ff-5deb-4814-a14a-d3f695f1ffb2
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 9dcd8176-c748-492f-81b7-e8a957536004
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateReplyAll",

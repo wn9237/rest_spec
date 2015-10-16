@@ -12,7 +12,7 @@ POST /contacts
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [OrgContact](../resources/orgcontact.md) object.
@@ -82,8 +82,8 @@ Content-length: 1097
 }
 ```
 
-<!-- uuid: 0f026272-2ba5-43f9-aa47-5dbdb4a4af8c
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: e1881e4f-8123-4263-a3a6-23d2ae38c872
+2015-10-16 10:07:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OrgContact",

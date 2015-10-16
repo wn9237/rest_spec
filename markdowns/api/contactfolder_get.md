@@ -21,7 +21,7 @@ See relationships table of [ContactFolder](../resources/contactfolder.md) object
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -47,8 +47,8 @@ Content-length: 104
 ```
 If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
-<!-- uuid: b823bc6e-0c56-4c1b-bee7-5095e34e871b
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: c6111589-67cb-4b76-ab7c-b8de7a01c61a
+2015-10-16 10:07:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ContactFolder",

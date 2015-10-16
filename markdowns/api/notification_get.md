@@ -19,7 +19,7 @@ See relationships table of [Notification](../resources/notification.md) object f
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -46,8 +46,8 @@ Content-length: 160
 ```
 If successful, this method returns a `200 OK` response code and [Notification](../resources/notification.md) object in the response body.
 
-<!-- uuid: 7f155ba6-331b-4a61-a817-0fd660a316f5
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 778495ee-3c2d-469f-a8eb-0802fe09d604
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notification",

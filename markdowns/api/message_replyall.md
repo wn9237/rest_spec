@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/ReplyAll
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -55,8 +55,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: e1801320-a5f0-45d8-a7a9-b7777298d99e
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: faf8ec68-466e-49d7-9cfd-c132dc0dc4e7
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: ReplyAll",

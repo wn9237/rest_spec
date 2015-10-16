@@ -19,7 +19,7 @@ See relationships table of [PrivilegedOperationEvent](../resources/privilegedope
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -55,8 +55,8 @@ Content-length: 456
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) object in the response body.
 
-<!-- uuid: e58763c4-7799-4dc8-b463-becdae6c70c8
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: 5946719e-7473-43a1-bb09-0c1f178e1eaa
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedOperationEvent",

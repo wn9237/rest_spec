@@ -19,7 +19,7 @@ See relationships table of [SiteCollection](../resources/sitecollection.md) obje
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -43,8 +43,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [SiteCollection](../resources/sitecollection.md) object in the response body.
 
-<!-- uuid: 04eea58e-76ec-4703-b562-f4eec5f4df34
-2015-10-16 09:51:18 UTC -->
+<!-- uuid: bf50d5f1-995e-486a-a512-39a3f0c520d9
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SiteCollection",

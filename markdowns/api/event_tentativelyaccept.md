@@ -14,7 +14,7 @@ POST /users/<objectId>/CalendarView/<Id>/TentativelyAccept
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -57,8 +57,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: e2eb0b81-2fb5-4111-a4a0-d54b0cf1805e
-2015-10-16 09:51:04 UTC -->
+<!-- uuid: 010a0f32-5038-48e2-83a9-7dbfd933894b
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: TentativelyAccept",

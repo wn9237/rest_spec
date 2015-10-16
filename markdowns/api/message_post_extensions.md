@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/Extensions
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
@@ -51,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 70f6d3b1-b272-4b87-b087-a241f0c33721
-2015-10-16 09:51:10 UTC -->
+<!-- uuid: 89af90b1-e00c-4579-b2dc-9bee8c801119
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

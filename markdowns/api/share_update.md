@@ -11,7 +11,7 @@ PATCH /shares/<id>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -84,8 +84,8 @@ Content-length: 330
 }
 ```
 
-<!-- uuid: e60a4ba3-9831-4c91-91da-52cc0a1b2d09
-2015-10-16 09:51:18 UTC -->
+<!-- uuid: 1e481e20-e0d9-4b19-9b3e-ad132b7cc39f
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of share object.",

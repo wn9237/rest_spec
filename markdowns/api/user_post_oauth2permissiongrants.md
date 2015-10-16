@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/oauth2PermissionGrants
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
@@ -58,8 +58,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 23a165ec-b5a5-4d66-9b14-d337624b8feb
-2015-10-16 09:51:21 UTC -->
+<!-- uuid: d88c67d6-4377-46f8-b940-093eda1ac09a
+2015-10-16 10:08:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

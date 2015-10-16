@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |forceChangePasswordNextLogin|Boolean||
 |password|String||
 
-<!-- uuid: fa95a324-1300-499a-ad12-d14a4be48407
-2015-10-16 09:51:13 UTC -->
+<!-- uuid: 17c3d5d2-605f-4d60-98d9-bd84fa4e2c13
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PasswordProfile resource",

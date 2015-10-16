@@ -19,7 +19,7 @@ See relationships table of [OutlookItem](../resources/outlookitem.md) object for
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -49,8 +49,8 @@ Content-length: 185
 ```
 If successful, this method returns a `200 OK` response code and [OutlookItem](../resources/outlookitem.md) object in the response body.
 
-<!-- uuid: 4197b625-75d3-4c91-b943-127fd8d6581a
-2015-10-16 09:51:13 UTC -->
+<!-- uuid: deab5204-a237-48d7-8249-d5762cdee218
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OutlookItem",

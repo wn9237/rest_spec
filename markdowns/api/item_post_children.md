@@ -14,7 +14,7 @@ POST /drives/<id>/root/children
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [item](../resources/item.md) object.
@@ -189,8 +189,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: 58b8c35f-0778-478f-ad60-12f2e4b3f8c9
-2015-10-16 09:51:08 UTC -->
+<!-- uuid: 68f7e8eb-3600-4719-b9ce-faa7ac15130f
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create children",

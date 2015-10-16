@@ -14,7 +14,7 @@ POST /drive/root/createdByUser/RootFolder/ChildFolders
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [MailFolder](../resources/mailfolder.md) object.
@@ -54,8 +54,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 68076ae7-86e8-4773-9648-a1c940df881c
-2015-10-16 09:51:09 UTC -->
+<!-- uuid: 1b9f9b12-92b8-44e3-a99e-24bfcc51b91a
+2015-10-16 10:07:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create MailFolder",

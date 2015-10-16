@@ -13,7 +13,7 @@ PATCH /users/<objectId>/drive
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -101,8 +101,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: b0c9771a-ed4b-4aae-bdc5-2f853a46a3e0
-2015-10-16 09:51:03 UTC -->
+<!-- uuid: abb603fb-d37d-4b67-a719-1ea3874f0a52
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of drive object.",

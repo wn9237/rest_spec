@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/Move
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -127,8 +127,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: a18bcec5-38bb-43d9-83ba-3bdc91bbee51
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: e6c5b171-0e41-4e1a-b249-50cc1598deb2
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Move",

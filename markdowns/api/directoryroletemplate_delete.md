@@ -12,7 +12,7 @@ DELETE /directoryRoleTemplates/<objectId>
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -22,8 +22,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: f7fb0665-18ae-49e0-a707-cd4f373e660c
-2015-10-16 09:51:02 UTC -->
+<!-- uuid: e3887d18-8255-4aaa-b01d-0d9bbf46b0b1
+2015-10-16 10:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

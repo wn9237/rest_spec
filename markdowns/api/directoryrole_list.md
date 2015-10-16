@@ -16,7 +16,7 @@ GET /directoryRoles
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -51,8 +51,8 @@ Content-length: 337
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryRole](../resources/directoryrole.md) objects in the response body.
 
-<!-- uuid: e76c89b0-a634-45cf-b174-83eee5a7a8c4
-2015-10-16 09:51:02 UTC -->
+<!-- uuid: 68914921-82ef-46fb-9210-b3de86dbd1ea
+2015-10-16 10:07:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryRole",

@@ -12,7 +12,7 @@ POST /applications/<objectId>/owners
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 79134ac5-e6c1-42f2-b935-e02e9dfc1b9b
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: 9bcb03b0-89df-423a-b317-3cfec82ba659
+2015-10-16 10:07:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create owner",

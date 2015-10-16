@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/notes/pages/<id>/Thumbnail
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -48,8 +48,8 @@ Content-length: 29
 }
 ```
 
-<!-- uuid: ea17f278-b5f0-42ac-be8b-9375995328a2
-2015-10-16 09:51:13 UTC -->
+<!-- uuid: d3e1727f-dc13-4915-80e9-1ef366fb30e3
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: Thumbnail",

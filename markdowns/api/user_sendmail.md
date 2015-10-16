@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/SendMail
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -128,8 +128,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 50ec4bff-b8a7-48ac-85d8-b626d73667c2
-2015-10-16 09:51:22 UTC -->
+<!-- uuid: 04578f30-4a40-4426-8e4d-2fbd944b466d
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: SendMail",

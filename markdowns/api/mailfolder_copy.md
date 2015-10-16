@@ -14,7 +14,7 @@ POST /drive/root/createdByUser/RootFolder/Copy
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -59,8 +59,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: d660f6de-1b2d-491c-89b0-857a23d66dcc
-2015-10-16 09:51:10 UTC -->
+<!-- uuid: 2873f7d0-197c-4328-89ba-3e65dee7065c
+2015-10-16 10:07:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Copy",

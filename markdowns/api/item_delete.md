@@ -14,7 +14,7 @@ DELETE /drives/<id>/root
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 161f196a-b21b-4260-8932-2988659d44d1
-2015-10-16 09:51:08 UTC -->
+<!-- uuid: 12e211c6-b4e3-4b73-9a63-0b07de2d5af2
+2015-10-16 10:07:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

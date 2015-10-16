@@ -12,7 +12,7 @@ POST /subscribedSkus
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [SubscribedSku](../resources/subscribedsku.md) object.
@@ -64,8 +64,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: 463c495b-3826-41e1-834d-379139324f83
-2015-10-16 09:51:19 UTC -->
+<!-- uuid: 994a243f-8e03-47c0-ba01-46d04e8104c2
+2015-10-16 10:08:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SubscribedSku",

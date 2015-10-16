@@ -12,7 +12,7 @@ POST /drives
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [drive](../resources/drive.md) object.
@@ -71,8 +71,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: 77be46fc-dcd9-4f1f-8482-961b2eef69c6
-2015-10-16 09:51:03 UTC -->
+<!-- uuid: 6c74e1e0-828a-4191-9ba4-702cea76999c
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create drive",

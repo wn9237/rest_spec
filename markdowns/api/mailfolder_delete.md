@@ -14,7 +14,7 @@ DELETE /drive/root/createdByUser/RootFolder
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -24,8 +24,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 
-<!-- uuid: 0cb459f2-df0b-4f33-a6a2-5c1500aa505c
-2015-10-16 09:51:10 UTC -->
+<!-- uuid: 6d19c6ee-9ad2-4a89-8975-26af2f139f3f
+2015-10-16 10:07:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Delete",

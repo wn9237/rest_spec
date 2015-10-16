@@ -19,7 +19,7 @@ See relationships table of [OpenTypeExtension](../resources/opentypeextension.md
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -45,8 +45,8 @@ Content-length: 48
 ```
 If successful, this method returns a `200 OK` response code and [OpenTypeExtension](../resources/opentypeextension.md) object in the response body.
 
-<!-- uuid: 13f5422b-87ed-4e34-8cc9-50a7898898cc
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 1b5b2e79-5218-43ec-859e-0fbe21fe6bcc
+2015-10-16 10:07:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OpenTypeExtension",

@@ -12,7 +12,7 @@ POST /tasks
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Task](../resources/task.md) object.
@@ -69,8 +69,8 @@ Content-length: 641
 }
 ```
 
-<!-- uuid: efc7299b-96e2-4f3a-b732-0b86e68a779b
-2015-10-16 09:51:19 UTC -->
+<!-- uuid: 24759ce3-0e83-4850-9f41-35ea6db8b959
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

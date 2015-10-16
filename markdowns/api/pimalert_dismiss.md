@@ -12,7 +12,7 @@ POST /Alerts/<AlertId>/Dismiss
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -61,8 +61,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: cd28dbb8-40b8-47a0-8b6a-801d3e4e3294
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: e58cbc72-a4b8-452a-8bf5-0cf823b4f7b5
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Dismiss",

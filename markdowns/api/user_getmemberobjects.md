@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/getMemberObjects
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -58,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: a7dcb056-2d63-4b0c-a66a-ddfb91a6c674
-2015-10-16 09:51:22 UTC -->
+<!-- uuid: 3f51a4f0-1e44-4bbe-ba81-75349994dcc3
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: getMemberObjects",

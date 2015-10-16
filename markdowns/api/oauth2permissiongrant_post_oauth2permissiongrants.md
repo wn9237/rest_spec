@@ -12,7 +12,7 @@ POST /oauth2PermissionGrants
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
@@ -56,8 +56,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 2c7a716c-536e-4e34-b959-00380dd45365
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 8ce5af2e-01fa-4fa3-9e30-abcc0689375c
+2015-10-16 10:07:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/CreateForward
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -119,8 +119,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 6fd92712-01f6-40b1-a202-6ec25407cf46
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: d2a122d0-3567-4531-80b8-8c81523fa255
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateForward",

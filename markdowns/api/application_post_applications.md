@@ -12,7 +12,7 @@ POST /applications
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Application](../resources/application.md) object.
@@ -124,8 +124,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: 2ca374e9-6d09-49e8-8cc3-3f26aedea00b
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: 5082787c-b922-4e73-940c-313d86d4d22e
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Application",

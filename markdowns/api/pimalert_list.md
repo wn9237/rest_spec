@@ -23,7 +23,7 @@ GET /Alerts
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -66,8 +66,8 @@ Content-length: 623
 ```
 If successful, this method returns a `200 OK` response code and collection of [PimAlert](../resources/pimalert.md) objects in the response body.
 
-<!-- uuid: e7b4962d-5828-473f-9149-ed04477c0242
-2015-10-16 09:50:55 UTC -->
+<!-- uuid: d69ca1bc-3554-4c6b-8948-31b052150f21
+2015-10-16 10:07:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PimAlert",

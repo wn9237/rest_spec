@@ -16,7 +16,7 @@ GET /applications
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -119,8 +119,8 @@ Content-length: 2442
 ```
 If successful, this method returns a `200 OK` response code and collection of [Application](../resources/application.md) objects in the response body.
 
-<!-- uuid: c4aca1de-89fd-4c27-bbdd-552e9fe0ff11
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: 3e6ef51b-f521-42ec-8da4-8bda7ab384d1
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Application",

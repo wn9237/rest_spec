@@ -12,7 +12,7 @@ POST /applications/<objectId>/extensionProperties/<objectId>/checkMemberGroups
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -58,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: fe6097c5-1f24-4707-aeb4-b77e8487b145
-2015-10-16 09:51:05 UTC -->
+<!-- uuid: cc5c78c0-4933-451c-b95b-c32b1d28b224
+2015-10-16 10:07:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExtensionProperty: checkMemberGroups",

@@ -12,7 +12,7 @@ POST /applications/<objectId>/getMemberGroups
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -56,8 +56,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: b022585b-875c-4618-930a-525d75cbf997
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: 6a2667ad-aac1-404b-afc5-c4340e155b82
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application: getMemberGroups",

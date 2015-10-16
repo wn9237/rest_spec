@@ -11,7 +11,7 @@ PATCH /PrivilegedSignupStatus/<TenantId>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -58,8 +58,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: acc1176c-18bc-4339-8b0e-21b79e675525
-2015-10-16 09:51:16 UTC -->
+<!-- uuid: a06ca94b-7e7f-455e-a4b0-34f31774c4d0
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedsignupstatus object.",

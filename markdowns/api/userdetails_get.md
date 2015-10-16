@@ -21,7 +21,7 @@ See relationships table of [UserDetails](../resources/userdetails.md) object for
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -48,8 +48,8 @@ Content-length: 73
 ```
 If successful, this method returns a `200 OK` response code and [UserDetails](../resources/userdetails.md) object in the response body.
 
-<!-- uuid: 712562f0-8b66-4ecc-8e42-f47659dad00c
-2015-10-16 09:51:22 UTC -->
+<!-- uuid: b9007da2-9807-4b97-85d2-c3e68035722b
+2015-10-16 10:08:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get UserDetails",

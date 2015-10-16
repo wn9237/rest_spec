@@ -14,7 +14,7 @@ POST /users/<objectId>/drive/special
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [item](../resources/item.md) object.
@@ -189,8 +189,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: 73417139-4c15-46dd-aa36-d87793b9ca02
-2015-10-16 09:51:03 UTC -->
+<!-- uuid: c3f8f904-912e-4aca-bd0c-51502821d26c
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create special",

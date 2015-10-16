@@ -14,7 +14,7 @@ POST /users/<objectId>/CalendarView/<Id>/Extensions
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
@@ -51,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 7220004a-3946-4bb4-8e1e-70b6cc608b73
-2015-10-16 09:51:04 UTC -->
+<!-- uuid: d6317a64-5983-452e-82ef-49066a0d9c98
+2015-10-16 10:07:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

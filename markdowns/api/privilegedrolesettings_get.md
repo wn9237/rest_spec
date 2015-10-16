@@ -20,7 +20,7 @@ See relationships table of [PrivilegedRoleSettings](../resources/privilegedroles
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -51,8 +51,8 @@ Content-length: 289
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) object in the response body.
 
-<!-- uuid: fa56cdb2-9cf0-4bbe-bbd3-2d301948925c
-2015-10-16 09:51:15 UTC -->
+<!-- uuid: 87f34301-69ff-4f50-8dc3-fb3acbc39af3
+2015-10-16 10:08:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSettings",

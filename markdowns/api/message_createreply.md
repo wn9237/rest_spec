@@ -14,7 +14,7 @@ POST /users/<objectId>/RootFolder/Messages/<Id>/CreateReply
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -119,8 +119,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 38e68dfa-0133-4124-9f58-6ab580ed465c
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: c3cdf2a0-81a1-4bd8-b948-4b46ae7db38d
+2015-10-16 10:07:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateReply",

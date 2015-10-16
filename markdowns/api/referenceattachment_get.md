@@ -19,7 +19,7 @@ See relationships table of [ReferenceAttachment](../resources/referenceattachmen
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -48,8 +48,8 @@ Content-length: 162
 ```
 If successful, this method returns a `200 OK` response code and [ReferenceAttachment](../resources/referenceattachment.md) object in the response body.
 
-<!-- uuid: aa736482-3c7d-4883-b31b-1947011e2aaa
-2015-10-16 09:51:16 UTC -->
+<!-- uuid: f1b7a240-ef9c-4a4e-a64b-34bf562e7c27
+2015-10-16 10:08:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ReferenceAttachment",

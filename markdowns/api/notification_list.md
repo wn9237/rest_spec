@@ -23,7 +23,7 @@ GET /Notifications
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -54,8 +54,8 @@ Content-length: 206
 ```
 If successful, this method returns a `200 OK` response code and collection of [Notification](../resources/notification.md) objects in the response body.
 
-<!-- uuid: b14f4ceb-57fa-4794-84f9-ff761e7d9eca
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 010c6df5-de3c-4b79-afcc-021f07f6e4e2
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Notification",

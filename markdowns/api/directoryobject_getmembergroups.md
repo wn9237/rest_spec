@@ -14,7 +14,7 @@ POST /contacts/<objectId>/manager/getMemberGroups
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -58,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 39b5d4fe-8e43-401c-bd5d-f18160a1664b
-2015-10-16 09:51:01 UTC -->
+<!-- uuid: fcb157d9-7091-45ca-98d4-91930e08d198
+2015-10-16 10:07:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject: getMemberGroups",

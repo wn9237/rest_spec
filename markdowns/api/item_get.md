@@ -21,7 +21,7 @@ See relationships table of [item](../resources/item.md) object for supported nam
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -183,8 +183,8 @@ Content-length: 3050
 ```
 If successful, this method returns a `200 OK` response code and [item](../resources/item.md) object in the response body.
 
-<!-- uuid: db64d59f-5d95-4841-9f6f-9bbcfcc6eb7c
-2015-10-16 09:51:08 UTC -->
+<!-- uuid: 03275d17-3b1e-49b4-a599-1e6a0640b256
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get item",

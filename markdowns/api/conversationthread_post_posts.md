@@ -14,7 +14,7 @@ POST /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Post](../resources/post.md) object.
@@ -85,8 +85,8 @@ Content-length: 790
 }
 ```
 
-<!-- uuid: 02f33906-bae2-4680-ab71-d15db8d06cf4
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: 732ac3be-8afc-45f0-a262-7779777f703d
+2015-10-16 10:07:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Post",

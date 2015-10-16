@@ -13,7 +13,7 @@ PATCH /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
 ### Optional request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -73,8 +73,8 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: 0b1efd60-4ee3-4f9f-a2a7-a5834cb14179
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: 51ea67b9-318a-44cf-bde4-ed71b08de3ec
+2015-10-16 10:07:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversation object.",

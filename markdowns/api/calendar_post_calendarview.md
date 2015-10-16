@@ -14,7 +14,7 @@ POST /users/<objectId>/Calendars/<Id>/CalendarView
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -125,8 +125,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: badbc35c-4219-4274-8bbd-08b9e657284b
-2015-10-16 09:50:57 UTC -->
+<!-- uuid: 45d10c25-8f73-4631-bf06-a75ce501f596
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

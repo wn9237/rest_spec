@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |displayName|String||
 |id|String||
 
-<!-- uuid: 95a3a246-6c8e-4f39-8dd4-3299a7065246
-2015-10-16 09:51:08 UTC -->
+<!-- uuid: eeb34b8f-f92a-43e3-9a09-5b03b6e321a8
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "identity resource",

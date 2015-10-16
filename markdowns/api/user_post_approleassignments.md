@@ -14,7 +14,7 @@ POST /drive/root/lastModifiedByUser/appRoleAssignments
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [AppRoleAssignment](../resources/approleassignment.md) object.
@@ -60,8 +60,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: 51cbd2d5-76ea-4bb4-9ec8-e26d3bd20956
-2015-10-16 09:51:21 UTC -->
+<!-- uuid: 616a4a3e-c1ee-4788-8e07-248feec7e9f5
+2015-10-16 10:08:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AppRoleAssignment",

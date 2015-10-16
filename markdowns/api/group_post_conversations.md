@@ -14,7 +14,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Conversation](../resources/conversation.md) object.
@@ -58,8 +58,8 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: 000c3791-c84b-4e30-86f6-249336c72d74
-2015-10-16 09:51:07 UTC -->
+<!-- uuid: d6aea8b6-c87a-4c53-9042-fe91c091f6d5
+2015-10-16 10:07:54 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Conversation",

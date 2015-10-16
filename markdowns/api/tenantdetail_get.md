@@ -13,7 +13,7 @@ GET /tenantDetails/<objectId>
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -95,8 +95,8 @@ Content-length: 1647
 ```
 If successful, this method returns a `200 OK` response code and [TenantDetail](../resources/tenantdetail.md) object in the response body.
 
-<!-- uuid: 17c26372-56a4-4b47-a785-c3c3ace3a1b6
-2015-10-16 09:51:20 UTC -->
+<!-- uuid: 2dbe0130-d49c-413a-9e26-6a16902ef0f1
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TenantDetail",

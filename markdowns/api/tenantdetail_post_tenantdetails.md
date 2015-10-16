@@ -12,7 +12,7 @@ POST /tenantDetails
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [TenantDetail](../resources/tenantdetail.md) object.
@@ -107,8 +107,8 @@ Content-length: 1647
 }
 ```
 
-<!-- uuid: a384aab4-738c-4fce-b300-42f30eae0b64
-2015-10-16 09:51:20 UTC -->
+<!-- uuid: 60b915bf-3eb8-49ad-8c2c-727102186cc4
+2015-10-16 10:08:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create TenantDetail",

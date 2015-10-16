@@ -19,7 +19,7 @@ See relationships table of [NotificationRule](../resources/notificationrule.md) 
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -50,8 +50,8 @@ Content-length: 260
 ```
 If successful, this method returns a `200 OK` response code and [NotificationRule](../resources/notificationrule.md) object in the response body.
 
-<!-- uuid: f5c9a122-97b2-4028-8f33-e74f856d7ef2
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: ffa3cbfe-5a3a-4f2b-b3f6-0cc45b45cc43
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get NotificationRule",

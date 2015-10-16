@@ -12,7 +12,7 @@ POST /plans
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Plan](../resources/plan.md) object.
@@ -55,8 +55,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: e2f95b9f-81be-40f3-8895-a65f15f9187c
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: ff5bda0b-b5ba-485f-baab-4b5c3dd74db7
+2015-10-16 10:08:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Plan",

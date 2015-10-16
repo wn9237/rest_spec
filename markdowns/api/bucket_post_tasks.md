@@ -14,7 +14,7 @@ POST /users/<objectId>/plans/<id>/buckets/<id>/tasks
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Task](../resources/task.md) object.
@@ -71,8 +71,8 @@ Content-length: 641
 }
 ```
 
-<!-- uuid: afc272de-16de-4f80-8e31-c9708c3a4f4b
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: 1cdf94fe-162d-4813-aab5-20c7b3bb1d2e
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

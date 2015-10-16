@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -62,8 +62,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: d4bc6553-c528-48a0-9cce-7a1636fe9bef
-2015-10-16 09:51:05 UTC -->
+<!-- uuid: 22cfac15-5f49-45ae-855c-0fef333035d0
+2015-10-16 10:07:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Forward",

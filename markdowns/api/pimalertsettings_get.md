@@ -19,7 +19,7 @@ See relationships table of [PimAlertSettings](../resources/pimalertsettings.md) 
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -44,8 +44,8 @@ Content-length: 74
 ```
 If successful, this method returns a `200 OK` response code and [PimAlertSettings](../resources/pimalertsettings.md) object in the response body.
 
-<!-- uuid: 047691a1-b8e9-4222-bc55-d8b554f6f30c
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: 51e12618-6d9d-418c-b8d0-0cf18308bde7
+2015-10-16 10:08:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlertSettings",

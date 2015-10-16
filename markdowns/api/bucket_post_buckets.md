@@ -12,7 +12,7 @@ POST /buckets
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [Bucket](../resources/bucket.md) object.
@@ -55,8 +55,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 8d0aa18b-2f82-4021-99c9-a0317ebd106a
-2015-10-16 09:50:56 UTC -->
+<!-- uuid: c2af08c9-e189-49ac-ad8e-4c168d39524a
+2015-10-16 10:07:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Bucket",

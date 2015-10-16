@@ -21,7 +21,7 @@ See relationships table of [ConversationThread](../resources/conversationthread.
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -69,8 +69,8 @@ Content-length: 489
 ```
 If successful, this method returns a `200 OK` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
-<!-- uuid: a8d810af-d455-4f41-b3f8-77fc17fb5975
-2015-10-16 09:50:59 UTC -->
+<!-- uuid: b65dc3b3-3b96-4464-ae06-65acf57a3d99
+2015-10-16 10:07:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ConversationThread",

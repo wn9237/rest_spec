@@ -51,8 +51,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directoryobject_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryobject_getmemberobjects.md)|String||
 
-<!-- uuid: 2cfbfb54-fac5-4e40-baeb-5046a0254403
-2015-10-16 09:51:01 UTC -->
+<!-- uuid: 98c8a99e-cbd4-4707-aa90-f18143411443
+2015-10-16 10:07:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject resource",

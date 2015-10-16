@@ -12,7 +12,7 @@ POST /NotificationRules
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [NotificationRule](../resources/notificationrule.md) object.
@@ -56,8 +56,8 @@ Content-length: 260
 }
 ```
 
-<!-- uuid: f2147c74-1097-4d0d-911e-c36ba72d22d6
-2015-10-16 09:51:11 UTC -->
+<!-- uuid: 9150ae4b-3470-4c1f-b83c-c772c3944c20
+2015-10-16 10:07:58 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create NotificationRule",

@@ -21,7 +21,7 @@ See relationships table of [Post](../resources/post.md) object for supported nam
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 Do not supply a request body for this method.
@@ -79,8 +79,8 @@ Content-length: 790
 ```
 If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
 
-<!-- uuid: 3d90251f-ee6c-475f-b846-691a7f59663d
-2015-10-16 09:51:14 UTC -->
+<!-- uuid: 99dbb28c-e820-40e8-92c3-d5734c441696
+2015-10-16 10:08:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",

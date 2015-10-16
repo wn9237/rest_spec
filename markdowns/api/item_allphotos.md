@@ -14,7 +14,7 @@ POST /drives/<id>/root/allPhotos
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample of how the HTTP header. Update accordingly...|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 
@@ -190,8 +190,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: 0471dee3-390d-4a53-9cb2-b3ab255b8869
-2015-10-16 09:51:09 UTC -->
+<!-- uuid: 065bf22b-28c8-48f2-a263-ac2e4e255825
+2015-10-16 10:07:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: allPhotos",
