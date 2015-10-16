@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_serviceprincipal"
 }-->
 ```http
-POST /servicePrincipals/<objectId>/
+POST /servicePrincipals/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 1fdb67c0-51d4-458a-ada8-a871553324bd
-2015-10-16 09:35:02 UTC -->
+<!-- uuid: b962e7a4-1c38-45a3-a54d-b7e6a55aa057
+2015-10-16 09:51:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ownedObject",

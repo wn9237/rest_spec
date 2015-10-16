@@ -47,8 +47,8 @@ Content-length: 76
 ```
 If successful, this method returns a `200 OK` response code and [PlanTaskBoard](../resources/plantaskboard.md) object in the response body.
 
-<!-- uuid: a9bd1f91-6a4c-4907-932c-f91156450a62
-2015-10-16 09:34:58 UTC -->
+<!-- uuid: a36d3fbb-f3d3-4b6a-95a1-53484314154a
+2015-10-16 09:51:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanTaskBoard",

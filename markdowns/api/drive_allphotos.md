@@ -190,8 +190,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: 3dc361dc-b7aa-4fc0-9f80-6965dc6a4373
-2015-10-16 09:34:46 UTC -->
+<!-- uuid: 0a1fc7d1-05d0-49f0-808f-31b2d9898864
+2015-10-16 09:51:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive: allPhotos",

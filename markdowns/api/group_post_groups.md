@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/
+POST /groups
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_group_from_groups"
 }-->
 ```http
-POST /groups/
+POST /groups
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Group](../resources/group.md) object.
@@ -85,8 +85,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: c6aba163-4ccd-4800-9fe4-4278d8d3b878
-2015-10-16 09:34:50 UTC -->
+<!-- uuid: 70040451-c83d-46c9-a1a8-bfa158e2463a
+2015-10-16 09:51:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Group",

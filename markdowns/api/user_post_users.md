@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/
+POST /users
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_user_from_users"
 }-->
 ```http
-POST /users/
+POST /users
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [User](../resources/user.md) object.
@@ -144,8 +144,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: 586deb2b-a028-4662-acbd-b5f07d6b8889
-2015-10-16 09:35:08 UTC -->
+<!-- uuid: 5e15c512-342f-499d-a985-abbcd054613c
+2015-10-16 09:51:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create User",

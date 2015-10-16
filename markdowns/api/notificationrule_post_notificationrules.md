@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /NotificationRules/
+POST /NotificationRules
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_notificationrule_from_notificationrules"
 }-->
 ```http
-POST /NotificationRules/
+POST /NotificationRules
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [NotificationRule](../resources/notificationrule.md) object.
@@ -56,8 +56,8 @@ Content-length: 260
 }
 ```
 
-<!-- uuid: d99d1f4d-8e3c-4700-a629-b189be74d636
-2015-10-16 09:34:55 UTC -->
+<!-- uuid: f2147c74-1097-4d0d-911e-c36ba72d22d6
+2015-10-16 09:51:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create NotificationRule",

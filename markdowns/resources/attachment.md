@@ -54,8 +54,8 @@ Here is a JSON representation of the resource
 |[Update](../api/attachment_update.md) | [Attachment](attachment.md)	|Update Attachment object. |
 |[Delete](../api/attachment_delete.md) | Void	|Delete Attachment object. |
 
-<!-- uuid: 370e61ac-df2c-423b-ac90-78c89f86b222
-2015-10-16 09:34:38 UTC -->
+<!-- uuid: 17e8ecc3-5ab5-43a5-944a-ed064ea1b73c
+2015-10-16 09:50:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Attachment resource",

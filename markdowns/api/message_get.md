@@ -116,8 +116,8 @@ Content-length: 1546
 ```
 If successful, this method returns a `200 OK` response code and [Message](../resources/message.md) object in the response body.
 
-<!-- uuid: 06189820-93f3-44ed-a179-eca08908b4fb
-2015-10-16 09:34:53 UTC -->
+<!-- uuid: 367fe1f1-8c05-4885-bb8d-ead903bf88e7
+2015-10-16 09:51:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Message",

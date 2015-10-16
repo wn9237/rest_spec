@@ -16,8 +16,8 @@ None
 |[List](../api/pimalertsettings_list.md) | [PimAlertSettings](pimalertsettings.md) [] |Get pimAlertSettings object collection. |
 |[Create PimAlertSettings](../api/pimalertsettings_post_alertsettings.md) |[PimAlertSettings](pimalertsettings.md)| Create a new PimAlertSettings by posting to the AlertSettings collection.|
 
-<!-- uuid: 5383a099-e4d0-4332-9b8d-71eb564c276a
-2015-10-16 09:34:37 UTC -->
+<!-- uuid: e84379fc-0edb-415f-91dd-298f4a24993c
+2015-10-16 09:50:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AlertSettings resource",

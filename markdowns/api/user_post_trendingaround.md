@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_file_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [File](../resources/file.md) object.
@@ -50,8 +50,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: b626fd35-2bca-46ca-a18e-59d4a14f0459
-2015-10-16 09:35:05 UTC -->
+<!-- uuid: 65235dc0-b100-475a-a702-4dab4e3efeef
+2015-10-16 09:51:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create File",

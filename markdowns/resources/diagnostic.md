@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |message|String||
 |url|String||
 
-<!-- uuid: 5e8f4be7-076a-40bf-afc9-61a9bbaa71da
-2015-10-16 09:34:43 UTC -->
+<!-- uuid: 695e2ec6-1165-43d1-ab6e-3c1810fb234d
+2015-10-16 09:51:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Diagnostic resource",

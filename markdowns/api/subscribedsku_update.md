@@ -88,8 +88,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: bd4347ae-4d41-4d4c-b51f-03e35fd97235
-2015-10-16 09:35:03 UTC -->
+<!-- uuid: 368a9ea0-7d1b-4376-8b48-fc714869d6c7
+2015-10-16 09:51:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of subscribedsku object.",

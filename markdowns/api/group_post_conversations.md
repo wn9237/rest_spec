@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST /groups/<objectId>/
+POST /groups/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Conversation](../resources/conversation.md) object.
@@ -58,8 +58,8 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: abca622e-9b69-480f-b000-f7c83a27ffba
-2015-10-16 09:34:50 UTC -->
+<!-- uuid: 000c3791-c84b-4e30-86f6-249336c72d74
+2015-10-16 09:51:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Conversation",

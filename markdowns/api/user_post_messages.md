@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_message_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
@@ -122,8 +122,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 2088231b-e49d-4c5b-96da-56e12bfab4bf
-2015-10-16 09:35:05 UTC -->
+<!-- uuid: d2dcf5fd-2453-40ab-bd0c-8e048fce5332
+2015-10-16 09:51:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Message",

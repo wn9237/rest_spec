@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST /groups/<objectId>/
+POST /groups/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -53,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: d34bc75d-b44e-4cef-b966-33ad11e28db7
-2015-10-16 09:34:50 UTC -->
+<!-- uuid: bfc9bc15-03d2-4126-8f56-f0cf6c9a9c0c
+2015-10-16 09:51:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create member",

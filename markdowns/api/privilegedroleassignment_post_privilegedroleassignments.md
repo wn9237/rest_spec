@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /PrivilegedRoleAssignments/
+POST /PrivilegedRoleAssignments
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_privilegedroleassignment_from_privilegedroleassignments"
 }-->
 ```http
-POST /PrivilegedRoleAssignments/
+POST /PrivilegedRoleAssignments
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object.
@@ -53,8 +53,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 0044fb5d-6b9f-444c-871e-75fceb66d14b
-2015-10-16 09:34:59 UTC -->
+<!-- uuid: f40bab8b-ec0d-411b-9cd8-578d0f9ead8e
+2015-10-16 09:51:15 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedRoleAssignment",

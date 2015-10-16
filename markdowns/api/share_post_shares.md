@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /shares/
+POST /shares
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_share_from_shares"
 }-->
 ```http
-POST /shares/
+POST /shares
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [share](../resources/share.md) object.
@@ -64,8 +64,8 @@ Content-length: 330
 }
 ```
 
-<!-- uuid: 4ccd10cb-8048-4835-ae8a-2bad224e43e9
-2015-10-16 09:35:03 UTC -->
+<!-- uuid: d68182b9-866c-4afc-a632-ba66a2986d9b
+2015-10-16 09:51:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create share",

@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_item_from_item"
 }-->
 ```http
-POST /drive/root/
+POST /drive/root
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [item](../resources/item.md) object.
@@ -189,8 +189,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: 6d6bb9a6-33d7-47e0-aaaa-1d9ccf262cbb
-2015-10-16 09:34:51 UTC -->
+<!-- uuid: 58b8c35f-0778-478f-ad60-12f2e4b3f8c9
+2015-10-16 09:51:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create children",

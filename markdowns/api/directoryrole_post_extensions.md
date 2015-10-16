@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_extension_from_directoryrole"
 }-->
 ```http
-POST /directoryRoles/<objectId>/
+POST /directoryRoles/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
@@ -49,8 +49,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: b3ff672a-85d5-4249-b250-8abd290d8a67
-2015-10-16 09:34:44 UTC -->
+<!-- uuid: 39dc193e-e407-4bf7-bc46-23e3f1ec757c
+2015-10-16 09:51:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

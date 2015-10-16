@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/
+POST /directoryRoles
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryrole_from_directoryroles"
 }-->
 ```http
-POST /directoryRoles/
+POST /directoryRoles
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [DirectoryRole](../resources/directoryrole.md) object.
@@ -56,8 +56,8 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: d4767ba5-0394-41a8-8df9-21e26735de3f
-2015-10-16 09:34:44 UTC -->
+<!-- uuid: e4d8eccf-98db-417b-b3b0-44e53a512569
+2015-10-16 09:51:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DirectoryRole",

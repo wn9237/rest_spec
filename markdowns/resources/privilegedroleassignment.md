@@ -52,8 +52,8 @@ Here is a JSON representation of the resource
 |[Deactivate](../api/privilegedroleassignment_deactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[My](../api/privilegedroleassignment_my.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 
-<!-- uuid: 8123fc94-91f2-4be1-ba50-144198d15cd3
-2015-10-16 09:34:59 UTC -->
+<!-- uuid: b61a5914-b2af-4060-9c0d-496f21ab7a59
+2015-10-16 09:51:15 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment resource",

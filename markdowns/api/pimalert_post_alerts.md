@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /Alerts/
+POST /Alerts
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_pimalert_from_alerts"
 }-->
 ```http
-POST /Alerts/
+POST /Alerts
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [PimAlert](../resources/pimalert.md) object.
@@ -64,8 +64,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: 44cfb1d4-8d4e-4b9c-85ec-6edeb867ac95
-2015-10-16 09:34:37 UTC -->
+<!-- uuid: 74d27e3c-670d-4a0d-a651-c0c38986fb04
+2015-10-16 09:50:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PimAlert",

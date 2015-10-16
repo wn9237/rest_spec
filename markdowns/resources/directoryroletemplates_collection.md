@@ -16,8 +16,8 @@ None
 |[List](../api/directoryroletemplate_list.md) | [DirectoryRoleTemplate](directoryroletemplate.md) [] |Get directoryRoleTemplate object collection. |
 |[Create DirectoryRoleTemplate](../api/directoryroletemplate_post_directoryroletemplates.md) |[DirectoryRoleTemplate](directoryroletemplate.md)| Create a new DirectoryRoleTemplate by posting to the directoryRoleTemplates collection.|
 
-<!-- uuid: c53d9b45-22d9-4544-b86a-5016ca8e03dc
-2015-10-16 09:34:45 UTC -->
+<!-- uuid: f4c711e7-0b6a-477d-a809-dea86f2da6f9
+2015-10-16 09:51:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "directoryRoleTemplates resource",

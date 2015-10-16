@@ -55,8 +55,8 @@ Here is a JSON representation of the resource
 |trackCount|Int32||
 |year|Int32||
 
-<!-- uuid: b1a3475e-814d-4162-a9a4-bbba8eaef3ae
-2015-10-16 09:34:38 UTC -->
+<!-- uuid: 84af6b39-65e8-414e-b31c-c016395dd38a
+2015-10-16 09:50:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "audio resource",

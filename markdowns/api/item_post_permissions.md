@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_permission_from_item"
 }-->
 ```http
-POST /drive/root/
+POST /drive/root
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [permission](../resources/permission.md) object.
@@ -87,8 +87,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: 597da861-b0a8-456e-9ede-27074349007a
-2015-10-16 09:34:51 UTC -->
+<!-- uuid: 02b3c01a-705c-4e89-b955-9c1239d219ef
+2015-10-16 09:51:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create permission",

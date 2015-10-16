@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_event_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -125,8 +125,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: 061e0492-4dec-48b8-92ad-3162d6f819e0
-2015-10-16 09:35:05 UTC -->
+<!-- uuid: 40d46a12-5c00-4787-98f8-e0825437bef2
+2015-10-16 09:51:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

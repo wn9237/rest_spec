@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_photo_from_group"
 }-->
 ```http
-POST /groups/<objectId>/
+POST /groups/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Photo](../resources/photo.md) object.
@@ -53,8 +53,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 10a4d11c-4f6d-4f9f-97f5-a9b780ba1842
-2015-10-16 09:34:50 UTC -->
+<!-- uuid: cbff549b-de55-492f-9557-32939804e65a
+2015-10-16 09:51:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create GroupPhoto",

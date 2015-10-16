@@ -54,8 +54,8 @@ Content-length: 411
 ```
 If successful, this method returns a `200 OK` response code and [PlanDetails](../resources/plandetails.md) object in the response body.
 
-<!-- uuid: 494ff474-84c2-464d-ac1d-28508e63e26a
-2015-10-16 09:34:58 UTC -->
+<!-- uuid: 8ee585de-bbcb-4bcb-8951-f648e462edf5
+2015-10-16 09:51:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanDetails",

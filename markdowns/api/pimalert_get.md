@@ -58,8 +58,8 @@ Content-length: 529
 ```
 If successful, this method returns a `200 OK` response code and [PimAlert](../resources/pimalert.md) object in the response body.
 
-<!-- uuid: 0b96ed4d-990a-453f-b6d8-18140ce15927
-2015-10-16 09:34:57 UTC -->
+<!-- uuid: 3ec279fc-ebfe-45e4-af11-6aaa956b2fb5
+2015-10-16 09:51:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PimAlert",

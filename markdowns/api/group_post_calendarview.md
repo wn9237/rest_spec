@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_event_from_group"
 }-->
 ```http
-POST /groups/<objectId>/
+POST /groups/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -125,8 +125,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: c4b552cc-c1e1-4b20-9d6a-b1ca1922726b
-2015-10-16 09:34:50 UTC -->
+<!-- uuid: cd65230e-2c9a-44d3-9b8d-dd1323658f7a
+2015-10-16 09:51:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

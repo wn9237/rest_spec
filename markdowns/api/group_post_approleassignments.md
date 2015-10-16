@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_approleassignment_from_group"
 }-->
 ```http
-POST /groups/<objectId>/
+POST /groups/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [AppRoleAssignment](../resources/approleassignment.md) object.
@@ -60,8 +60,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: b89618e1-e9b9-46c2-93b0-e9accbb8b594
-2015-10-16 09:34:50 UTC -->
+<!-- uuid: acf71824-f239-4ba0-830e-7cc16d29ed9b
+2015-10-16 09:51:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AppRoleAssignment",

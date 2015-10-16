@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /tenantDetails/
+POST /tenantDetails
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_tenantdetail_from_tenantdetails"
 }-->
 ```http
-POST /tenantDetails/
+POST /tenantDetails
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [TenantDetail](../resources/tenantdetail.md) object.
@@ -107,8 +107,8 @@ Content-length: 1647
 }
 ```
 
-<!-- uuid: f1a943a2-a488-4c93-9537-6de007a52412
-2015-10-16 09:35:04 UTC -->
+<!-- uuid: a384aab4-738c-4fce-b300-42f30eae0b64
+2015-10-16 09:51:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create TenantDetail",

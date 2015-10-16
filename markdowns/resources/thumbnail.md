@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |url|String||
 |width|Int32||
 
-<!-- uuid: 5c31b9b3-6f5d-429b-851c-63aa0794ce33
-2015-10-16 09:35:04 UTC -->
+<!-- uuid: 4ff2db4a-05ee-4fa0-9403-6ec39af0c1fa
+2015-10-16 09:51:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "thumbnail resource",

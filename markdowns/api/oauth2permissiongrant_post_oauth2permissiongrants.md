@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /oauth2PermissionGrants/
+POST /oauth2PermissionGrants
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_oauth2permissiongrant_from_oauth2permissiongrants"
 }-->
 ```http
-POST /oauth2PermissionGrants/
+POST /oauth2PermissionGrants
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
@@ -56,8 +56,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: c76d8626-21b5-43bc-b5de-491cb7eecd30
-2015-10-16 09:34:55 UTC -->
+<!-- uuid: 2c7a716c-536e-4e34-b959-00380dd45365
+2015-10-16 09:51:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

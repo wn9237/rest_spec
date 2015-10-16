@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST /groups/<objectId>/Conversations/<Id>/
+POST /groups/<objectId>/Conversations/<Id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
@@ -75,8 +75,8 @@ Content-length: 489
 }
 ```
 
-<!-- uuid: b2881e62-7f9a-40c8-acb9-9b21446e14ca
-2015-10-16 09:34:41 UTC -->
+<!-- uuid: 8da9f294-664e-4285-a9dc-16bd0713b619
+2015-10-16 09:50:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Thread",

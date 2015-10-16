@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_approleassignment_from_serviceprincipal"
 }-->
 ```http
-POST /servicePrincipals/<objectId>/
+POST /servicePrincipals/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [AppRoleAssignment](../resources/approleassignment.md) object.
@@ -58,8 +58,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: 240c7eb3-d833-42bd-8ac7-435c57cc99b5
-2015-10-16 09:35:02 UTC -->
+<!-- uuid: 7e5f1e66-105b-4e50-9389-0c1dc08295e4
+2015-10-16 09:51:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AppRoleAssignment",

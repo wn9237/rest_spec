@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_item_from_share"
 }-->
 ```http
-POST /shares/<id>/
+POST /shares/<id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [item](../resources/item.md) object.
@@ -187,8 +187,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: f92ffea0-ac71-4136-b255-0194b177b45c
-2015-10-16 09:35:02 UTC -->
+<!-- uuid: 60c0bca2-2aa7-4cec-a209-c03c9693bb07
+2015-10-16 09:51:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create item",

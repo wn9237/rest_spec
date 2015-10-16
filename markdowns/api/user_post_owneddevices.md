@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -53,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 480957d3-534f-46fd-95a5-dce9281b7374
-2015-10-16 09:35:06 UTC -->
+<!-- uuid: 386e4a9f-72d1-4475-91ee-18c9874457b6
+2015-10-16 09:51:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ownedDevice",

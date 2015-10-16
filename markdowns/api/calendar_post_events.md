@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_event_from_calendar"
 }-->
 ```http
-POST /users/<objectId>/Calendar/
+POST /users/<objectId>/Calendar
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -125,8 +125,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: fde4c469-0bfc-41de-9c4f-b2debc6e65c0
-2015-10-16 09:34:39 UTC -->
+<!-- uuid: 1ff80b54-a6ac-4c48-a1d8-0102cc4527e2
+2015-10-16 09:50:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

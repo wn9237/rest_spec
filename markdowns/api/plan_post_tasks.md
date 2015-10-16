@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_task_from_plan"
 }-->
 ```http
-POST /plans/<id>/
+POST /plans/<id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Task](../resources/task.md) object.
@@ -71,8 +71,8 @@ Content-length: 641
 }
 ```
 
-<!-- uuid: e7bdc5c2-2295-463b-a745-5720d12613fe
-2015-10-16 09:34:58 UTC -->
+<!-- uuid: 399be834-6746-4eda-83bb-b585f11b53d1
+2015-10-16 09:51:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

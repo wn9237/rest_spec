@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_section_from_notes"
 }-->
 ```http
-POST /users/<objectId>/notes/
+POST /users/<objectId>/notes
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Section](../resources/section.md) object.
@@ -59,8 +59,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: b263c343-997f-467e-bf48-05541ffb9b44
-2015-10-16 09:34:54 UTC -->
+<!-- uuid: 33982032-6c7a-452c-913f-2c75f67443be
+2015-10-16 09:51:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Section",

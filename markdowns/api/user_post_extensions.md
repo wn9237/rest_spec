@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_extension_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
@@ -51,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 20cbda44-7528-4a56-a5f6-a34b8b17714c
-2015-10-16 09:35:05 UTC -->
+<!-- uuid: 3077cd15-cfd7-43d4-8590-266d5c88817b
+2015-10-16 09:51:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

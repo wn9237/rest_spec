@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_oauth2permissiongrant_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
@@ -58,8 +58,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 482aec6c-d989-4d25-bfcc-c37efe7ffba0
-2015-10-16 09:35:06 UTC -->
+<!-- uuid: 23a165ec-b5a5-4d66-9b14-d337624b8feb
+2015-10-16 09:51:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

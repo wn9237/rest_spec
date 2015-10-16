@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |key|Binary||
 |type|Int32||
 
-<!-- uuid: eeb51ead-d8b6-4a70-b9fc-3174f3cf8126
-2015-10-16 09:34:37 UTC -->
+<!-- uuid: 3bb97fc0-4690-4e47-aa00-a1ebd61bacc5
+2015-10-16 09:50:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AlternativeSecurityId resource",

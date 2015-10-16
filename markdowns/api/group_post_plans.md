@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_plan_from_group"
 }-->
 ```http
-POST /groups/<objectId>/
+POST /groups/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Plan](../resources/plan.md) object.
@@ -57,8 +57,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: a786a0e3-414b-41fc-8279-3d36477d35cd
-2015-10-16 09:34:50 UTC -->
+<!-- uuid: 9e8580be-7001-4e21-a77b-9d5d1a362016
+2015-10-16 09:51:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Plan",

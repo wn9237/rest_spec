@@ -76,8 +76,8 @@ Here is a JSON representation of the resource
 |[Update](../api/sectiongroup_update.md) | [SectionGroup](sectiongroup.md)	|Update SectionGroup object. |
 |[Delete](../api/sectiongroup_delete.md) | Void	|Delete SectionGroup object. |
 
-<!-- uuid: b4e0d3b7-8a70-473b-8434-f58a4762b42b
-2015-10-16 09:35:02 UTC -->
+<!-- uuid: d9b12dbf-6c06-425a-b36d-5c1b2ad8509f
+2015-10-16 09:51:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "SectionGroup resource",

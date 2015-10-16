@@ -65,8 +65,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directorylinkchange_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directorylinkchange_getmemberobjects.md)|String||
 
-<!-- uuid: 65d8f3bd-fc25-4e86-a700-ef7717c00392
-2015-10-16 09:34:44 UTC -->
+<!-- uuid: 18d49ac7-5613-4614-bba1-926a35d56864
+2015-10-16 09:51:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryLinkChange resource",

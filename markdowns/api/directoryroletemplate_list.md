@@ -48,8 +48,8 @@ Content-length: 237
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryRoleTemplate](../resources/directoryroletemplate.md) objects in the response body.
 
-<!-- uuid: eb79c172-7483-4d20-9fee-e5f7b436ee63
-2015-10-16 09:34:45 UTC -->
+<!-- uuid: dce6d26d-f275-4c1e-b32d-6f42b4b0f040
+2015-10-16 09:51:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryRoleTemplate",

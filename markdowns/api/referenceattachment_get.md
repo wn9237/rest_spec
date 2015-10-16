@@ -48,8 +48,8 @@ Content-length: 162
 ```
 If successful, this method returns a `200 OK` response code and [ReferenceAttachment](../resources/referenceattachment.md) object in the response body.
 
-<!-- uuid: 0a0b2dd3-8604-42c6-bcf2-334ae3b88e7a
-2015-10-16 09:35:00 UTC -->
+<!-- uuid: aa736482-3c7d-4883-b31b-1947011e2aaa
+2015-10-16 09:51:16 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ReferenceAttachment",

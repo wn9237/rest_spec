@@ -44,8 +44,8 @@ Content-length: 3
 ```
 If successful, this method returns a `200 OK` response code and [File](../resources/file.md) object in the response body.
 
-<!-- uuid: 2b8983e0-d1b3-4984-93e2-f0f7c708ad27
-2015-10-16 09:34:49 UTC -->
+<!-- uuid: 22afd0a2-563d-459b-b944-580cf5128b32
+2015-10-16 09:51:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get File",

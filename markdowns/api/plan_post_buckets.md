@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_bucket_from_plan"
 }-->
 ```http
-POST /plans/<id>/
+POST /plans/<id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Bucket](../resources/bucket.md) object.
@@ -57,8 +57,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 237c3548-b1ec-41e3-94ab-6ffd61cf3864
-2015-10-16 09:34:58 UTC -->
+<!-- uuid: 8c7cbccc-ac71-482d-af1b-bb81cfd345e3
+2015-10-16 09:51:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Bucket",

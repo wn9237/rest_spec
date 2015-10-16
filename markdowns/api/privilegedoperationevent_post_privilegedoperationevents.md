@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /PrivilegedOperationEvents/
+POST /PrivilegedOperationEvents
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_privilegedoperationevent_from_privilegedoperationevents"
 }-->
 ```http
-POST /PrivilegedOperationEvents/
+POST /PrivilegedOperationEvents
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) object.
@@ -61,8 +61,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 800001c5-5faf-4295-9d63-b3ad4a3f54d3
-2015-10-16 09:34:59 UTC -->
+<!-- uuid: 711dc1e6-07cd-4610-bc52-63e3c0eccd83
+2015-10-16 09:51:15 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedOperationEvent",

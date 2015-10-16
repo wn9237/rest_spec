@@ -52,8 +52,8 @@ Content-length: 112
 ```
 If successful, this method returns a `200 OK` response code and collection of [PimAlertSettings](../resources/pimalertsettings.md) objects in the response body.
 
-<!-- uuid: e9693a04-c95e-4350-9755-1a3b8863d97f
-2015-10-16 09:34:37 UTC -->
+<!-- uuid: 23c56afe-fd64-4099-9823-c14d7f674301
+2015-10-16 09:50:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PimAlertSettings",

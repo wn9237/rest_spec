@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_orgcontact"
 }-->
 ```http
-POST /contacts/<objectId>/
+POST /contacts/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 559e9e0d-9bdf-4a9b-800a-c28ead5c779e
-2015-10-16 09:34:56 UTC -->
+<!-- uuid: 803e69d1-418b-4883-ad08-50740abe4559
+2015-10-16 09:51:13 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create memberOf",

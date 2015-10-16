@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "create_privilegedroleassignment_from_privilegedrole"
 }-->
 ```http
-POST /PrivilegedRoles/<Id>/
+POST /PrivilegedRoles/<Id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object.
@@ -54,8 +54,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: a3079288-db5b-4234-9303-42c0483c8ce0
-2015-10-16 09:34:59 UTC -->
+<!-- uuid: e84ff5a8-de20-495b-80d1-8c71857015b2
+2015-10-16 09:51:15 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Assignment",

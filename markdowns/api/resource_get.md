@@ -48,8 +48,8 @@ Content-length: 112
 ```
 If successful, this method returns a `200 OK` response code and [Resource](../resources/resource.md) object in the response body.
 
-<!-- uuid: 20a760bf-d720-4d1a-89a1-f7019432e453
-2015-10-16 09:35:00 UTC -->
+<!-- uuid: da8a3701-2c05-4bdb-88d2-5ddea3abd02f
+2015-10-16 09:51:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Resource",

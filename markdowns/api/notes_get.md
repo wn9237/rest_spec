@@ -45,8 +45,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [Notes](../resources/notes.md) object in the response body.
 
-<!-- uuid: db638f3b-ab6f-47f0-a03e-38ac0d1a37d8
-2015-10-16 09:34:54 UTC -->
+<!-- uuid: 6a3acdde-ebe2-48ca-9f21-bce84465b8d1
+2015-10-16 09:51:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notes",

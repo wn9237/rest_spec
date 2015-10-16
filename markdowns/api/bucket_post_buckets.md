@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /buckets/
+POST /buckets
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_bucket_from_buckets"
 }-->
 ```http
-POST /buckets/
+POST /buckets
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Bucket](../resources/bucket.md) object.
@@ -55,8 +55,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 69486dd6-8082-40cd-bd9a-26f1c46ec5c8
-2015-10-16 09:34:38 UTC -->
+<!-- uuid: 8d0aa18b-2f82-4021-99c9-a0317ebd106a
+2015-10-16 09:50:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Bucket",

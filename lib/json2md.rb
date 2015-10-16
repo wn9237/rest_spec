@@ -147,7 +147,7 @@ module SpecMaker
 			arr = restpath.map {|a| "GET " + a.to_s}
 		when 'auto_post'
 			# have to append the collection name for post
-			arr = restpath.map {|a| "POST " + a.to_s + "/#{pathAppend}"}				
+			arr = restpath.map {|a| "POST " + a.to_s + "/#{pathAppend}".chomp('/')}				
 		when 'auto_delete'
 			arr = restpath.map {|a| "DELETE " + a.to_s}
 		when 'auto_put'

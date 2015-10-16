@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_attachment_from_event"
 }-->
 ```http
-POST /users/<objectId>/Events/<Id>/
+POST /users/<objectId>/Events/<Id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
@@ -56,8 +56,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 7ce957f5-fa51-4d10-8ef2-184b8b32013a
-2015-10-16 09:34:47 UTC -->
+<!-- uuid: 94ca2241-371a-46f9-bfd5-10539a902caf
+2015-10-16 09:51:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",

@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_extension_from_deviceconfiguration"
 }-->
 ```http
-POST /deviceConfiguration/<objectId>/
+POST /deviceConfiguration/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
@@ -49,8 +49,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 0d8873ca-8be2-4bbe-a29e-c07cd9a1ab87
-2015-10-16 09:34:43 UTC -->
+<!-- uuid: 21a6bbce-68be-4a68-8ee1-e78f1b5f42bc
+2015-10-16 09:51:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

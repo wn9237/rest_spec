@@ -64,8 +64,8 @@ Content-length: 516
 ```
 If successful, this method returns a `200 OK` response code and [Notebook](../resources/notebook.md) object in the response body.
 
-<!-- uuid: dc92dc29-56ed-4b34-a9af-03d43a11c4bb
-2015-10-16 09:34:53 UTC -->
+<!-- uuid: 1e326f96-05d0-40e2-978b-a183ede266de
+2015-10-16 09:51:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notebook",

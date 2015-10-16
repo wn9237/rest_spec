@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_contactfolder_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
@@ -53,8 +53,8 @@ Content-length: 104
 }
 ```
 
-<!-- uuid: cc4f8f36-da2d-40e4-8679-b6ead9f8e8e6
-2015-10-16 09:35:05 UTC -->
+<!-- uuid: b2a04a2e-b4ea-47ba-8d45-e483088e2e5d
+2015-10-16 09:51:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ContactFolder",

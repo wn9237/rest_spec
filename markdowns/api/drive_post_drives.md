@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drives/
+POST /drives
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_drive_from_drives"
 }-->
 ```http
-POST /drives/
+POST /drives
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [drive](../resources/drive.md) object.
@@ -71,8 +71,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: 35a93a87-4cdc-4376-85f1-89f0dc6c176d
-2015-10-16 09:34:46 UTC -->
+<!-- uuid: 77be46fc-dcd9-4f1f-8482-961b2eef69c6
+2015-10-16 09:51:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create drive",

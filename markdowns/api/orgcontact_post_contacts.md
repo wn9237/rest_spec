@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /contacts/
+POST /contacts
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_orgcontact_from_contacts"
 }-->
 ```http
-POST /contacts/
+POST /contacts
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [OrgContact](../resources/orgcontact.md) object.
@@ -82,8 +82,8 @@ Content-length: 1097
 }
 ```
 
-<!-- uuid: 15969558-380f-406e-8f84-00e26a08b705
-2015-10-16 09:34:41 UTC -->
+<!-- uuid: 0f026272-2ba5-43f9-aa47-5dbdb4a4af8c
+2015-10-16 09:50:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OrgContact",

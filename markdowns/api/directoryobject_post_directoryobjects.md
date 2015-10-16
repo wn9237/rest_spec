@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryObjects/
+POST /directoryObjects
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_directoryobjects"
 }-->
 ```http
-POST /directoryObjects/
+POST /directoryObjects
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 243f7649-063b-4346-a9ea-d94fd9625574
-2015-10-16 09:34:44 UTC -->
+<!-- uuid: 585cff42-a628-4353-a398-bc4f1cd1c2b4
+2015-10-16 09:51:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DirectoryObject",

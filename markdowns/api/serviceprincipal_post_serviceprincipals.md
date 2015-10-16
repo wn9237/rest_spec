@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/
+POST /servicePrincipals
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST /servicePrincipals/
+POST /servicePrincipals
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [ServicePrincipal](../resources/serviceprincipal.md) object.
@@ -114,8 +114,8 @@ Content-length: 1924
 }
 ```
 
-<!-- uuid: 6fa2f7a8-6567-46b0-990d-4fc39fa3dbef
-2015-10-16 09:35:02 UTC -->
+<!-- uuid: 649e0c64-bf20-4f3d-b127-edb5a8ac9630
+2015-10-16 09:51:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ServicePrincipal",

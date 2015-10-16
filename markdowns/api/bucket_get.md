@@ -51,8 +51,8 @@ Content-length: 179
 ```
 If successful, this method returns a `200 OK` response code and [Bucket](../resources/bucket.md) object in the response body.
 
-<!-- uuid: 143371da-b88c-4712-ac39-cd8aa17a9a8e
-2015-10-16 09:34:38 UTC -->
+<!-- uuid: 149d95a1-a2e4-4137-b4d9-12820b5ba667
+2015-10-16 09:50:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Bucket",

@@ -33,8 +33,8 @@ Here is a JSON representation of the resource
 |startDate|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |value|String||
 
-<!-- uuid: 68416b06-cc7e-4c72-a08f-301d785166c6
-2015-10-16 09:34:56 UTC -->
+<!-- uuid: 1e56b58f-7ba4-41e9-9329-7f0419a9e71a
+2015-10-16 09:51:13 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PasswordCredential resource",

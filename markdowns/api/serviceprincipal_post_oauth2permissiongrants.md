@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_oauth2permissiongrant_from_serviceprincipal"
 }-->
 ```http
-POST /servicePrincipals/<objectId>/
+POST /servicePrincipals/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
@@ -56,8 +56,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 408bbdc9-4cfa-4985-bba1-bb0769fe98c7
-2015-10-16 09:35:02 UTC -->
+<!-- uuid: 02dcbc29-1036-4247-9df4-09de1e2dd1c9
+2015-10-16 09:51:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

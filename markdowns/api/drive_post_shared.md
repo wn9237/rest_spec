@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_item_from_drive"
 }-->
 ```http
-POST /drive/
+POST /drive
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [item](../resources/item.md) object.
@@ -189,8 +189,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: 564c2d40-c0cd-41b0-9ef4-fc16a2057dcf
-2015-10-16 09:34:46 UTC -->
+<!-- uuid: c57a7f14-29bd-44f0-ae6e-e273d719ca78
+2015-10-16 09:51:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create shared",

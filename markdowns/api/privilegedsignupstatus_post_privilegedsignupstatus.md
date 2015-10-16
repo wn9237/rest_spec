@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /PrivilegedSignupStatus/
+POST /PrivilegedSignupStatus
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_privilegedsignupstatus_from_privilegedsignupstatus"
 }-->
 ```http
-POST /PrivilegedSignupStatus/
+POST /PrivilegedSignupStatus
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) object.
@@ -51,8 +51,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 4e63dafa-e417-4ccd-afaf-85ea02e8f886
-2015-10-16 09:34:59 UTC -->
+<!-- uuid: 0f9b8ae6-ff3b-4a28-9b62-2c14702a4560
+2015-10-16 09:51:16 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedSignupStatus",

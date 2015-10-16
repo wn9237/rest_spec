@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /devices/
+POST /devices
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_device_from_devices"
 }-->
 ```http
-POST /devices/
+POST /devices
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Device](../resources/device.md) object.
@@ -72,8 +72,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: cf534c1e-3428-496e-b446-67a2f3ee7db9
-2015-10-16 09:34:43 UTC -->
+<!-- uuid: 974e6c55-25d3-4c51-a2fb-0ce4e653734e
+2015-10-16 09:51:01 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Device",

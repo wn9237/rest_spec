@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_photo_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Photo](../resources/photo.md) object.
@@ -53,8 +53,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 77bde6d3-74b8-4114-bd47-c009f71bfc39
-2015-10-16 09:35:05 UTC -->
+<!-- uuid: de1c40f8-4f82-4ad8-b9d5-7c0959b903e9
+2015-10-16 09:51:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create UserPhoto",

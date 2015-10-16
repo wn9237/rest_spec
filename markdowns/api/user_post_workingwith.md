@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_user_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [User](../resources/user.md) object.
@@ -146,8 +146,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: c01e28d8-958e-4e6b-8094-c5fd70937c32
-2015-10-16 09:35:06 UTC -->
+<!-- uuid: fb4dd6b4-c5fb-4311-86c0-9a621383913b
+2015-10-16 09:51:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create User",

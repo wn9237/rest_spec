@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_extension_from_extensionproperty"
 }-->
 ```http
-POST /applications/<objectId>/extensionProperties/<objectId>/
+POST /applications/<objectId>/extensionProperties/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
@@ -49,8 +49,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 42b75c24-b8e3-4716-b07d-fa917b487c80
-2015-10-16 09:34:49 UTC -->
+<!-- uuid: 0293cd24-4e42-4aa9-98e9-f3d8ad8da58b
+2015-10-16 09:51:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

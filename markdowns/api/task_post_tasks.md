@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /tasks/
+POST /tasks
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_task_from_tasks"
 }-->
 ```http
-POST /tasks/
+POST /tasks
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Task](../resources/task.md) object.
@@ -69,8 +69,8 @@ Content-length: 641
 }
 ```
 
-<!-- uuid: fd1c726c-7256-47cd-8c39-33e22a960a52
-2015-10-16 09:35:04 UTC -->
+<!-- uuid: efc7299b-96e2-4f3a-b732-0b86e68a779b
+2015-10-16 09:51:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

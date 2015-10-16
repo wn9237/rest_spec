@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_group_from_user"
 }-->
 ```http
-POST /users/<objectId>/
+POST /users/<objectId>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Group](../resources/group.md) object.
@@ -87,8 +87,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: d4e313fd-8977-40f7-a28a-d0fc4b10f2e3
-2015-10-16 09:35:05 UTC -->
+<!-- uuid: ce9f259c-c746-42d6-964c-0cf90fa911a2
+2015-10-16 09:51:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Group",

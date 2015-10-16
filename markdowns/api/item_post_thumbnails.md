@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_thumbnailset_from_item"
 }-->
 ```http
-POST /drive/root/
+POST /drive/root
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [thumbnailSet](../resources/thumbnailset.md) object.
@@ -75,8 +75,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: f02d7dc0-2a03-4f62-ad99-782b2321ac04
-2015-10-16 09:34:52 UTC -->
+<!-- uuid: f94eb9cf-8169-4441-be6f-57ff4f9e775f
+2015-10-16 09:51:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create thumbnailSet",

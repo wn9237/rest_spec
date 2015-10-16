@@ -45,8 +45,8 @@ Content-length: 48
 ```
 If successful, this method returns a `200 OK` response code and [OpenTypeExtension](../resources/opentypeextension.md) object in the response body.
 
-<!-- uuid: 7ab2b389-cc2c-4991-9e36-06b826ec0298
-2015-10-16 09:34:55 UTC -->
+<!-- uuid: 13f5422b-87ed-4e34-8cc9-50a7898898cc
+2015-10-16 09:51:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OpenTypeExtension",

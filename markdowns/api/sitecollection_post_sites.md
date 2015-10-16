@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_site_from_sitecollection"
 }-->
 ```http
-POST /myOrganization/siteCollections/<id>/
+POST /myOrganization/siteCollections/<id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Site](../resources/site.md) object.
@@ -49,8 +49,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: b23e4e3a-131e-4b20-b068-4f5166523665
-2015-10-16 09:35:03 UTC -->
+<!-- uuid: 9c2bdd29-e65e-4fcc-983e-7fc9301026ae
+2015-10-16 09:51:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Site",

@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_sectiongroup_from_notebook"
 }-->
 ```http
-POST /users/<objectId>/notes/notebooks/<id>/
+POST /users/<objectId>/notes/notebooks/<id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [SectionGroup](../resources/sectiongroup.md) object.
@@ -59,8 +59,8 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 92f7f4ab-cde3-4cb8-8ac0-22d359a1af19
-2015-10-16 09:34:53 UTC -->
+<!-- uuid: 72afcf86-b925-4dbd-997e-f5f476f5f9c4
+2015-10-16 09:51:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SectionGroup",

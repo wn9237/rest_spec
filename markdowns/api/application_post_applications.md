@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/
+POST /applications
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_application_from_applications"
 }-->
 ```http
-POST /applications/
+POST /applications
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Application](../resources/application.md) object.
@@ -124,8 +124,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: ce0df74e-467b-47d3-9fb5-6a7087e2eae2
-2015-10-16 09:34:38 UTC -->
+<!-- uuid: 2ca374e9-6d09-49e8-8cc3-3f26aedea00b
+2015-10-16 09:50:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Application",

@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_calendar_from_calendargroup"
 }-->
 ```http
-POST /users/<objectId>/CalendarGroups/<Id>/
+POST /users/<objectId>/CalendarGroups/<Id>
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
@@ -54,8 +54,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: 7227506a-1071-482b-b1b4-9e29c18d4af9
-2015-10-16 09:34:40 UTC -->
+<!-- uuid: d5f853e9-0464-4867-81d5-c40cfb63b2a8
+2015-10-16 09:50:57 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Calendar",

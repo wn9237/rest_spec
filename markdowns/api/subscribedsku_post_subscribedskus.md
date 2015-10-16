@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /subscribedSkus/
+POST /subscribedSkus
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_subscribedsku_from_subscribedskus"
 }-->
 ```http
-POST /subscribedSkus/
+POST /subscribedSkus
 Content-type: application/json
 ```
 In the request body, supply a JSON representation of [SubscribedSku](../resources/subscribedsku.md) object.
@@ -64,8 +64,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: 1382b534-b268-4d03-a11b-d043da1725c9
-2015-10-16 09:35:03 UTC -->
+<!-- uuid: 463c495b-3826-41e1-834d-379139324f83
+2015-10-16 09:51:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SubscribedSku",
