@@ -36,6 +36,7 @@ Here is an example of the request.
 PUT /tasks/<id>/bucketTaskBoardFormat
 Content-type: application/json
 Content-length: 110
+
 {
   "type": "type-value",
   "orderHint": "orderHint-value",
@@ -44,16 +45,17 @@ Content-length: 110
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "taskboardtaskformat"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 110
+
 {
   "type": "type-value",
   "orderHint": "orderHint-value",
@@ -62,8 +64,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: a002ec1c-bf62-40bf-a05e-70702644751e
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: ee5abdfb-3738-469e-a325-9c030a866b3d
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of taskboardtaskformat object.",

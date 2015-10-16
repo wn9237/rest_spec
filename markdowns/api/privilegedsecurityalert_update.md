@@ -48,6 +48,7 @@ Here is an example of the request.
 PUT /PrivilegedSecurityAlerts/<AlertId>
 Content-type: application/json
 Content-length: 596
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffectedItems": 99,
@@ -69,16 +70,17 @@ Content-length: 596
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedsecurityalert"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 596
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffectedItems": 99,
@@ -100,8 +102,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: 64c4defe-49d6-4aa6-b7a7-f7ba3fda3a6d
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 09ff5350-db20-465f-bdc2-369d03ce6b0c
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedsecurityalert object.",

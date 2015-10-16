@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "sectiongroup"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 309
+
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -53,8 +54,8 @@ Content-length: 309
 ```
 If successful, this method returns a `200 OK` response code and [SectionGroup](../resources/sectiongroup.md) object in the response body.
 
-<!-- uuid: 0ac7f022-7a35-4956-bf1c-ecd535e63439
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: 429a32c5-de6b-4626-b423-7a7096442f05
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SectionGroup",

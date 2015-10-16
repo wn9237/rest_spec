@@ -42,6 +42,7 @@ Here is an example of the request.
 PUT /users/<objectId>/notes/pages/<id>
 Content-type: application/json
 Content-length: 391
+
 {
   "title": "title-value",
   "createdByAppId": "createdByAppId-value",
@@ -62,16 +63,17 @@ Content-length: 391
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "page"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 391
+
 {
   "title": "title-value",
   "createdByAppId": "createdByAppId-value",
@@ -92,8 +94,8 @@ Content-length: 391
 }
 ```
 
-<!-- uuid: e20b5998-67b1-4a33-94b6-de5ae43387f2
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 5d7cc724-5b1d-4606-b5ed-6f82fadac370
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of page object.",

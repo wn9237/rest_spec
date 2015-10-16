@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "group"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 1009
+
 {
   "description": "description-value",
   "dirSyncEnabled": true,
@@ -85,8 +86,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: 1892374c-ed42-49ea-8129-fc0ccc01703f
-2015-10-16 21:10:53 UTC -->
+<!-- uuid: c7d43028-846d-4726-95b2-9919539f9213
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Group",

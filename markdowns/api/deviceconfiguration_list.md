@@ -30,10 +30,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "deviceconfiguration"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 415
+
 {
   "values": [
     {
@@ -54,8 +55,8 @@ Content-length: 415
 ```
 If successful, this method returns a `200 OK` response code and collection of [DeviceConfiguration](../resources/deviceconfiguration.md) objects in the response body.
 
-<!-- uuid: c950f4dc-c3bc-4788-86bb-a87f1c490bc9
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 44184cc5-3105-4e49-8cb3-755d0d88f0bb
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DeviceConfiguration",

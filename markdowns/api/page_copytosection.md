@@ -39,22 +39,25 @@ Here is an example of how to call this API.
 POST /users/<objectId>/notes/pages/<id>/CopyToSection
 Content-type: application/json
 Content-length: 98
+
 {
   "id": "id-value",
   "siteCollectionId": "siteCollectionId-value",
   "siteId": "siteId-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "copypagemodel"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1258
+
 {
   "parentSection": {
     "isDefault": true,
@@ -107,8 +110,8 @@ Content-length: 1258
 }
 ```
 
-<!-- uuid: 5694a661-5811-499d-9870-7873c1d2c843
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 964e16cd-afbf-4892-8bf7-40fa2837f629
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: CopyToSection",

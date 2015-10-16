@@ -37,6 +37,7 @@ Here is an example of the request.
 PUT /users/<objectId>/Calendar
 Content-type: application/json
 Content-length: 106
+
 {
   "Name": "Name-value",
   "ChangeKey": "ChangeKey-value",
@@ -45,16 +46,17 @@ Content-length: 106
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "calendar"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 106
+
 {
   "Name": "Name-value",
   "ChangeKey": "ChangeKey-value",
@@ -63,8 +65,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: 6e474c86-3cbc-4652-8bf4-0a4ca1c59539
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: 2ad0e191-602d-4260-8032-66bc3f4ca915
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of calendar object.",

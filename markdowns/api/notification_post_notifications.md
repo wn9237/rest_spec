@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "notification"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 160
+
 {
   "Id": "Id-value",
   "DisplayName": "DisplayName-value",
@@ -52,8 +53,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: f5c4076e-7f26-4000-b6b4-900c04c6172a
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 499b5ee8-96fa-4288-b984-21c545bf8342
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Notification",

@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "permission"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 762
+
 {
   "grantedTo": {
     "application": {
@@ -87,8 +88,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: 911052a8-ea49-4fe3-a7a2-b6d0e9519b92
-2015-10-16 21:10:53 UTC -->
+<!-- uuid: af9a2e0a-134b-4998-897f-7d7e8a278be2
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create permission",

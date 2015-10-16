@@ -40,6 +40,7 @@ Here is an example of the request.
 PUT /plans/<id>
 Content-type: application/json
 Content-length: 179
+
 {
   "createdBy": "createdBy-value",
   "owner": "owner-value",
@@ -51,16 +52,17 @@ Content-length: 179
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "plan"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 179
+
 {
   "createdBy": "createdBy-value",
   "owner": "owner-value",
@@ -72,8 +74,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 2de84d35-723b-40ea-9b48-ef4309263c9b
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: c16d4211-95af-49fe-9643-68f127c7d708
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plan object.",

@@ -37,6 +37,7 @@ Here is an example of the request.
 PUT /users/<objectId>/notes/resources/<id>
 Content-type: application/json
 Content-length: 112
+
 {
   "id": "id-value",
   "self": "self-value",
@@ -45,16 +46,17 @@ Content-length: 112
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "resource"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 112
+
 {
   "id": "id-value",
   "self": "self-value",
@@ -63,8 +65,8 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: bd4c1fd0-18c7-4724-93f3-edcbcfc73625
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: 977029a8-c929-484f-a65c-c5a162203cf9
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of resource object.",

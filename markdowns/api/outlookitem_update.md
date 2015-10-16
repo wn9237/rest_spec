@@ -36,6 +36,7 @@ Here is an example of the request.
 
 Content-type: application/json
 Content-length: 185
+
 {
   "ChangeKey": "ChangeKey-value",
   "Categories": [
@@ -47,16 +48,17 @@ Content-length: 185
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "outlookitem"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 185
+
 {
   "ChangeKey": "ChangeKey-value",
   "Categories": [
@@ -68,8 +70,8 @@ Content-length: 185
 }
 ```
 
-<!-- uuid: a8ed2dba-b75c-4653-b4d8-e522bf6d14b5
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 92ae7e31-7d19-474d-b362-201c2e4e9087
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of outlookitem object.",

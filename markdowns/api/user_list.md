@@ -30,10 +30,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "users"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3064
+
 {
   "values": [
     {
@@ -139,8 +140,8 @@ Content-length: 3064
 ```
 If successful, this method returns a `200 OK` response code and collection of [User](../resources/user.md) objects in the response body.
 
-<!-- uuid: d873a7ac-180f-4521-b67a-c8faa9956683
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 5b41a578-b62b-4c58-84f6-f57f5f4445ee
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List User",

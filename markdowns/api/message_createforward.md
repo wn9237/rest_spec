@@ -32,17 +32,19 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Messages/<Id>/CreateForward
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "message"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -119,8 +121,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 3d5b9ee0-d2f0-4ba7-8764-e921c52aecf6
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: e9afde2d-0ae3-4f2a-9940-aa0e78e90743
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateForward",

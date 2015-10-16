@@ -38,6 +38,7 @@ Here is an example of how to call this API.
 POST /users/<objectId>/SendMail
 Content-type: application/json
 Content-length: 1837
+
 {
   "Message": {
     "Subject": "Subject-value",
@@ -113,23 +114,25 @@ Content-length: 1837
   },
   "SaveToSentItems": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: ba0f6db3-2577-4eb0-9c15-95f498e90761
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 491246e0-6919-41ec-a596-4fa05e22bd1e
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: SendMail",

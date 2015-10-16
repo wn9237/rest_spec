@@ -31,17 +31,19 @@ Here is an example of how to call this API.
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/Deactivate
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedroleassignment"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -51,8 +53,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 000388ee-cf5f-4f3f-9a18-1986ce4acf26
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: ba83b298-0d31-46cf-944a-3dc47b6503c9
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: Deactivate",

@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "section"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 276
+
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
@@ -53,8 +54,8 @@ Content-length: 276
 ```
 If successful, this method returns a `200 OK` response code and [Section](../resources/section.md) object in the response body.
 
-<!-- uuid: 20e27302-c3c5-4ea3-a941-343bb06e9064
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: 1bd48b8f-f949-46b0-a722-a3922d25376a
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Section",

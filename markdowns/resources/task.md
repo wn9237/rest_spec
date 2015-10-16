@@ -73,8 +73,8 @@ Here is a JSON representation of the resource
 |[Update](../api/task_update.md) | [Task](task.md)	|Update Task object. |
 |[Delete](../api/task_delete.md) | Void	|Delete Task object. |
 
-<!-- uuid: 8d8c66bb-de3f-46f7-b396-8889f8ec48cc
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: 3fec275c-7cc3-4232-b61d-c39db4083763
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Task resource",

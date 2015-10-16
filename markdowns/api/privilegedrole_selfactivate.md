@@ -39,23 +39,26 @@ Here is an example of how to call this API.
 POST /PrivilegedRoles/<Id>/SelfActivate
 Content-type: application/json
 Content-length: 142
+
 {
   "Reason": "Reason-value",
   "Duration": "Duration-value",
   "TicketNumber": "TicketNumber-value",
   "TicketSystem": "TicketSystem-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedroleassignment"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -65,8 +68,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 17e65128-a112-4c32-8842-153be7b1dee2
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: 46854ac7-7f08-40d6-ac2f-358bc29ec4d0
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRole: SelfActivate",

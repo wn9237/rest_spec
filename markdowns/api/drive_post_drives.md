@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "drive"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 458
+
 {
   "id": "id-value",
   "driveType": "driveType-value",
@@ -71,8 +72,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: 8a44b818-3a11-49ef-956a-bb43635da936
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 957166bb-5d6c-4c82-9f4d-62756c457b1b
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create drive",

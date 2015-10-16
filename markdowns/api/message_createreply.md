@@ -32,17 +32,19 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Messages/<Id>/CreateReply
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "message"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -119,8 +121,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 0d772de7-71f0-4717-91fd-835dc12a5b93
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: 30eb17a7-459d-4d0c-a3aa-a9131438eda8
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateReply",

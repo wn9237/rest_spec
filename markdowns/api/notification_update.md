@@ -35,6 +35,7 @@ Here is an example of the request.
 PUT /Notifications/<Id>
 Content-type: application/json
 Content-length: 160
+
 {
   "Id": "Id-value",
   "DisplayName": "DisplayName-value",
@@ -43,16 +44,17 @@ Content-length: 160
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "notification"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 160
+
 {
   "Id": "Id-value",
   "DisplayName": "DisplayName-value",
@@ -61,8 +63,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: de742de8-e337-415f-b0fe-6a5c31229e61
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: fdd8bae6-71c9-47b4-bba6-74a42ce5a095
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notification object.",

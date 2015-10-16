@@ -39,6 +39,7 @@ Here is an example of the request.
 PUT /groups/<objectId>/Conversations/<Id>
 Content-type: application/json
 Content-length: 201
+
 {
   "Topic": "Topic-value",
   "HasAttachments": true,
@@ -51,16 +52,17 @@ Content-length: 201
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "conversation"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
+
 {
   "Topic": "Topic-value",
   "HasAttachments": true,
@@ -73,8 +75,8 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: 91025e29-470c-48ff-bea9-ade5fa402716
-2015-10-16 21:10:43 UTC -->
+<!-- uuid: 2526315e-3634-44b5-8bbf-8bfbe15c145d
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversation object.",

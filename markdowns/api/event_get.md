@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "event"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1794
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -119,8 +120,8 @@ Content-length: 1794
 ```
 If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
 
-<!-- uuid: 11f0794d-15d2-42c2-b255-8c63aec422d3
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 1339d79e-dde7-4d7e-a406-65bd3e351b9d
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Event",

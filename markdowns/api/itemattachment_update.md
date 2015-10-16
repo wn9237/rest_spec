@@ -37,6 +37,7 @@ Here is an example of the request.
 
 Content-type: application/json
 Content-length: 162
+
 {
   "Name": "Name-value",
   "ContentType": "ContentType-value",
@@ -47,16 +48,17 @@ Content-length: 162
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "itemattachment"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 162
+
 {
   "Name": "Name-value",
   "ContentType": "ContentType-value",
@@ -67,8 +69,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: bae260be-29fd-49a0-a4b2-de9566192cb6
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: d55735ae-a248-4a27-b5e5-151d59130ecd
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of itemattachment object.",

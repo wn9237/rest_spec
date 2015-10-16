@@ -36,8 +36,8 @@ None
 |[Get Entity](../api/entity_get.md) | [Entity](entity.md) |Read properties and relationships of entity object.|
 |[Delete](../api/entity_delete.md) | Void	|Delete Entity object. |
 
-<!-- uuid: 5666a655-378d-4c87-87d2-f1a1a1d99ff4
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 5dd4cd3d-436a-4e7f-8739-b729bbb87dac
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Entity resource",

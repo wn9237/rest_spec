@@ -39,22 +39,25 @@ Here is an example of how to call this API.
 POST /users/<objectId>/notes/notebooks/<id>/CopyNotebook
 Content-type: application/json
 Content-length: 110
+
 {
   "siteCollectionId": "siteCollectionId-value",
   "siteId": "siteId-value",
   "renameAs": "renameAs-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "copynotebookmodel"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 516
+
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -79,8 +82,8 @@ Content-length: 516
 }
 ```
 
-<!-- uuid: 5d24cd84-0713-49b6-94de-1ca57a7f2c6f
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 028fbb5f-33a1-4cb0-a746-63b4d3f40b19
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notebook: CopyNotebook",

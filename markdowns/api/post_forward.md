@@ -38,6 +38,7 @@ Here is an example of how to call this API.
 POST /groups/<objectId>/Threads/<Id>/Posts/<Id>/Forward
 Content-type: application/json
 Content-length: 166
+
 {
   "Comment": "Comment-value",
   "ToRecipients": [
@@ -49,23 +50,25 @@ Content-length: 166
     }
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: dfb014c9-775b-4c26-a6b1-1cee2d61f730
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: 2350acd0-2bf1-48c7-9900-4676c13201f0
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post: Forward",

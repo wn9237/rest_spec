@@ -58,6 +58,7 @@ Here is an example of the request.
 
 Content-type: application/json
 Content-length: 1598
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -135,16 +136,17 @@ Content-length: 1598
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "eventmessage"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1598
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -222,8 +224,8 @@ Content-length: 1598
 }
 ```
 
-<!-- uuid: 78d0126d-4a03-45df-904d-7b9f83791b55
-2015-10-16 21:10:48 UTC -->
+<!-- uuid: 498a57aa-eee2-4161-9ab2-b9f8a999e221
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of eventmessage object.",

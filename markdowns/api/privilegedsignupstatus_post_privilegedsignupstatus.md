@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedsignupstatus"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 86
+
 {
   "TenantId": "TenantId-value",
   "IsRegistered": true,
@@ -51,8 +52,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 5500c30e-64f8-48c6-8501-470c3b225a53
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: d65af136-112a-4e98-880c-d0e9f8480c87
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedSignupStatus",

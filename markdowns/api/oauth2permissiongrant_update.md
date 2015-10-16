@@ -41,6 +41,7 @@ Here is an example of the request.
 PUT /oauth2PermissionGrants/<objectId>
 Content-type: application/json
 Content-length: 271
+
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
@@ -53,16 +54,17 @@ Content-length: 271
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "oauth2permissiongrant"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
+
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
@@ -75,8 +77,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 5887136a-5245-45a9-b103-0eb236fe1ce8
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 003e7f30-d5a1-46a6-9b3a-dcc823c72f57
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of oauth2permissiongrant object.",

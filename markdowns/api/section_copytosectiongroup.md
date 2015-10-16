@@ -40,23 +40,26 @@ Here is an example of how to call this API.
 POST /users/<objectId>/notes/sections/<id>/CopyToSectionGroup
 Content-type: application/json
 Content-length: 130
+
 {
   "id": "id-value",
   "siteCollectionId": "siteCollectionId-value",
   "siteId": "siteId-value",
   "renameAs": "renameAs-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "copysectionmodel"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 276
+
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
@@ -70,8 +73,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: 6626e7ff-a223-48e1-aef9-b4a73c310754
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: 7b88b6d8-aa27-4679-a025-3b42c07d78d8
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section: CopyToSectionGroup",

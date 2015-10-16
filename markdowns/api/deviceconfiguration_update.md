@@ -38,6 +38,7 @@ Here is an example of the request.
 PUT /deviceConfiguration/<objectId>
 Content-type: application/json
 Content-length: 341
+
 {
   "publicIssuerCertificates": [
     "publicIssuerCertificates-value"
@@ -53,16 +54,17 @@ Content-length: 341
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "deviceconfiguration"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 341
+
 {
   "publicIssuerCertificates": [
     "publicIssuerCertificates-value"
@@ -78,8 +80,8 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: 401fce83-4664-4ec0-87d3-dbf8efb51108
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 476700f6-edf0-4401-8670-7e3ed697d6f4
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of deviceconfiguration object.",

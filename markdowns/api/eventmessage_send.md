@@ -30,23 +30,25 @@ Here is an example of how to call this API.
 
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: da683f81-0d15-4021-802c-1b26c77a0f4c
-2015-10-16 21:10:48 UTC -->
+<!-- uuid: d472ad01-ec8e-4ce2-a3d5-ad989cd3bd64
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Send",

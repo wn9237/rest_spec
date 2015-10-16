@@ -36,6 +36,7 @@ Here is an example of the request.
 PUT /plans/<id>/details
 Content-type: application/json
 Content-length: 75
+
 {
   "sharedWith": {
   },
@@ -44,16 +45,17 @@ Content-length: 75
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "plandetails"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 75
+
 {
   "sharedWith": {
   },
@@ -62,8 +64,8 @@ Content-length: 75
 }
 ```
 
-<!-- uuid: 98e872e9-6378-49e5-90a5-40ff9bdd4ada
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 0b9d67f8-11cf-4a5d-a15f-5da2e1783c85
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plandetails object.",

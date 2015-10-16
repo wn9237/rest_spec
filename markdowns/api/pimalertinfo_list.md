@@ -37,10 +37,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "alertinfo"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 444
+
 {
   "values": [
     {
@@ -61,8 +62,8 @@ Content-length: 444
 ```
 If successful, this method returns a `200 OK` response code and collection of [PimAlertInfo](../resources/pimalertinfo.md) objects in the response body.
 
-<!-- uuid: 2d39e4d3-bc39-442c-a3ce-2dd7fe22d7ea
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 79696673-210c-4893-b159-7e3a019f88ec
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PimAlertInfo",

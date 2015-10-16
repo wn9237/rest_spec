@@ -27,10 +27,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "orgcontact"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1097
+
 {
   "city": "city-value",
   "country": "country-value",
@@ -70,8 +71,8 @@ Content-length: 1097
 ```
 If successful, this method returns a `200 OK` response code and [OrgContact](../resources/orgcontact.md) object in the response body.
 
-<!-- uuid: bd54df66-666c-42eb-bd4e-bc67b10df2f3
-2015-10-16 21:10:57 UTC -->
+<!-- uuid: dddec7b6-55b8-4560-9dda-03c08c6673f4
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OrgContact",

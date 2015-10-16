@@ -32,23 +32,25 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Messages/<Id>/Send
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: eaee3a84-3674-4df0-a1e6-4196dd7d7957
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 14a743c2-c2ac-4794-81e4-e27b1d7d4c29
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Send",

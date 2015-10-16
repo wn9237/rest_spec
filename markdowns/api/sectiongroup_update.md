@@ -42,6 +42,7 @@ Here is an example of the request.
 PUT /users/<objectId>/notes/sectionGroups/<id>
 Content-type: application/json
 Content-length: 309
+
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -55,16 +56,17 @@ Content-length: 309
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "sectiongroup"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 309
+
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -78,8 +80,8 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 5b2bbefb-2f20-4ac4-b480-1b21b10f1c3f
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: f06589f8-bf3c-4cce-9d36-44f37fa4b2bd
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of sectiongroup object.",

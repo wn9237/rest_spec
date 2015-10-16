@@ -30,17 +30,19 @@ Here is an example of how to call this API.
 POST /PrivilegedSignupStatus/<TenantId>/SignUp
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedsignupstatus"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 86
+
 {
   "TenantId": "TenantId-value",
   "IsRegistered": true,
@@ -48,8 +50,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 485ae9d6-e07e-4a48-a013-0a05b9d92405
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: d59b9957-26dd-4969-9a5b-cfb7ab957023
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SignUp",

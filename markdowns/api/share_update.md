@@ -34,6 +34,7 @@ Here is an example of the request.
 PUT /shares/<id>
 Content-type: application/json
 Content-length: 330
+
 {
   "id": "id-value",
   "name": "name-value",
@@ -54,16 +55,17 @@ Content-length: 330
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "share"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 330
+
 {
   "id": "id-value",
   "name": "name-value",
@@ -84,8 +86,8 @@ Content-length: 330
 }
 ```
 
-<!-- uuid: 28a3dd64-0b39-42fd-9a30-ae4c2caab37c
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: 8297a75a-f2df-4b10-9955-980c17909e8d
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of share object.",

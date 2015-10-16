@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "mailfolder"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 130
+
 {
   "ParentFolderId": "ParentFolderId-value",
   "DisplayName": "DisplayName-value",
@@ -48,8 +49,8 @@ Content-length: 130
 ```
 If successful, this method returns a `200 OK` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
-<!-- uuid: 3349a869-82af-4403-b753-05b645081ecc
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: 48bb36b1-b5b6-416b-ae74-8db2db9d90c9
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get MailFolder",

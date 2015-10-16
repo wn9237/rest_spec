@@ -34,6 +34,7 @@ Here is an example of the request.
 PUT /PrivilegedSignupStatus/<TenantId>
 Content-type: application/json
 Content-length: 86
+
 {
   "TenantId": "TenantId-value",
   "IsRegistered": true,
@@ -41,16 +42,17 @@ Content-length: 86
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedsignupstatus"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 86
+
 {
   "TenantId": "TenantId-value",
   "IsRegistered": true,
@@ -58,8 +60,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: f81c4566-8f91-4d60-a4c9-e0176d84c4c0
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 63a1d298-9ff2-44f2-b0bf-0f883fe6c549
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedsignupstatus object.",

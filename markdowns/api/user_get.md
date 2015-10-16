@@ -29,10 +29,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "user"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 2650
+
 {
   "accountEnabled": true,
   "assignedLicenses": [
@@ -134,8 +135,8 @@ Content-length: 2650
 ```
 If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
 
-<!-- uuid: 52cd2167-644c-48d3-b93d-951f35d26e51
-2015-10-16 21:11:06 UTC -->
+<!-- uuid: b37e5930-87d5-47fa-b614-216eb5a4e5ab
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get User",

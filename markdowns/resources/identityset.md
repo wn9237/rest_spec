@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
 |device|[identity](identity.md)||
 |user|[identity](identity.md)||
 
-<!-- uuid: b12de019-f29f-446a-91f6-97d93f18d610
-2015-10-16 21:10:53 UTC -->
+<!-- uuid: 55d3a9a5-28f0-49c3-ba89-d4f313640ca1
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "identitySet resource",

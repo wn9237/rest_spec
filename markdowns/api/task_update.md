@@ -50,6 +50,7 @@ Here is an example of the request.
 PUT /tasks/<id>
 Content-type: application/json
 Content-length: 541
+
 {
   "createdBy": "createdBy-value",
   "assignedTo": "assignedTo-value",
@@ -71,16 +72,17 @@ Content-length: 541
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "task"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 541
+
 {
   "createdBy": "createdBy-value",
   "assignedTo": "assignedTo-value",
@@ -102,8 +104,8 @@ Content-length: 541
 }
 ```
 
-<!-- uuid: 8c7553ae-96cc-421b-aaab-91452df381ed
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: 95037615-3f65-4d5f-ab1d-adeb98c507c7
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of task object.",

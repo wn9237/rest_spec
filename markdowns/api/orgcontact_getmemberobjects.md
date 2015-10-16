@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 POST /contacts/<objectId>/getMemberObjects
 Content-type: application/json
 Content-length: 33
+
 {
   "securityEnabledOnly": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -56,8 +59,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: a0a64ee2-01c3-44cc-9b5f-a80537713cbd
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: eb591ab6-35c5-4be0-9341-7e7f5bb44433
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OrgContact: getMemberObjects",

@@ -40,18 +40,19 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedrole"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 46
+
 {
   "Id": "Id-value",
   "Name": "Name-value"
 }
 ```
 
-<!-- uuid: 7bf498df-fef2-4ff6-b8df-f2dd8a4f16a8
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 9b2da825-3a95-402a-95e0-92deaadfb1e2
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedRole",

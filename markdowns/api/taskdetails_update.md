@@ -38,6 +38,7 @@ Here is an example of the request.
 PUT /tasks/<id>/details
 Content-type: application/json
 Content-length: 139
+
 {
   "notes": "notes-value",
   "completedBy": "completedBy-value",
@@ -48,16 +49,17 @@ Content-length: 139
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "taskdetails"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 139
+
 {
   "notes": "notes-value",
   "completedBy": "completedBy-value",
@@ -68,8 +70,8 @@ Content-length: 139
 }
 ```
 
-<!-- uuid: 2ae08c55-fef4-4dd4-95ba-d71d3b6b87da
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: cf76bb05-6568-41f0-9a54-9cb32933d81a
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of taskdetails object.",

@@ -43,6 +43,7 @@ Here is an example of the request.
 PUT /users/<objectId>/appRoleAssignments/<objectId>
 Content-type: application/json
 Content-length: 398
+
 {
   "creationTimestamp": "datetime-value",
   "id": "id-value",
@@ -57,16 +58,17 @@ Content-length: 398
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "approleassignment"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 398
+
 {
   "creationTimestamp": "datetime-value",
   "id": "id-value",
@@ -81,8 +83,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: 956f3127-4d76-46ac-b4ac-e3e5b30a0c7a
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 42747780-047a-4b67-b69a-0710c5e26700
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of approleassignment object.",

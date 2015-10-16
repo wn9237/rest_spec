@@ -30,10 +30,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "directoryroles"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 337
+
 {
   "values": [
     {
@@ -51,8 +52,8 @@ Content-length: 337
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryRole](../resources/directoryrole.md) objects in the response body.
 
-<!-- uuid: 1f923846-3eba-4954-b8c6-81d72a9de95c
-2015-10-16 21:10:46 UTC -->
+<!-- uuid: 853055df-4100-4580-8b3c-1bc714869fdd
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryRole",

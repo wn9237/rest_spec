@@ -30,17 +30,19 @@ Here is an example of how to call this API.
 POST /Alerts/<AlertId>/Dismiss
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "pimalert"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 529
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
@@ -61,8 +63,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: 6b177e2f-c811-45cf-b713-f4167568493d
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 5b5312c5-1ca6-4a7d-9616-eadfbf8a2336
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Dismiss",

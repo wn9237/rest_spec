@@ -30,17 +30,19 @@ Here is an example of how to call this API.
 POST /Notifications/<Id>/NotificationTypes
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -48,8 +50,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 8636c649-1928-4a4c-a9de-9fb125f79171
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 842086f6-2cc7-4626-a91e-f0f0e4591edc
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notification: NotificationTypes",

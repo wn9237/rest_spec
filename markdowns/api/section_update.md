@@ -42,6 +42,7 @@ Here is an example of the request.
 PUT /users/<objectId>/notes/sections/<id>
 Content-type: application/json
 Content-length: 276
+
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
@@ -55,16 +56,17 @@ Content-length: 276
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "section"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 276
+
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
@@ -78,8 +80,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: a32dddf4-e2d2-4218-8db9-8f609186ddff
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: ff74bb74-e526-44c3-a17a-78af821dfde7
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of section object.",

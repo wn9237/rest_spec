@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "calendar"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 106
+
 {
   "Name": "Name-value",
   "ChangeKey": "ChangeKey-value",
@@ -48,8 +49,8 @@ Content-length: 106
 ```
 If successful, this method returns a `200 OK` response code and [Calendar](../resources/calendar.md) object in the response body.
 
-<!-- uuid: 22e34bc3-f889-4e29-a1bf-ea6d7fc40f97
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: b3efef80-d3a5-4657-976f-34e34d4a9382
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Calendar",

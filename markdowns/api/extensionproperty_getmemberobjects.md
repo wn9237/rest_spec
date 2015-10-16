@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 POST /applications/<objectId>/extensionProperties/<objectId>/getMemberObjects
 Content-type: application/json
 Content-length: 33
+
 {
   "securityEnabledOnly": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -56,8 +59,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 9d92f125-d2b7-4389-a68a-8aa1f9d75ebe
-2015-10-16 21:10:49 UTC -->
+<!-- uuid: 3c113a5d-926e-44c8-a7d4-fb769acbde87
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExtensionProperty: getMemberObjects",

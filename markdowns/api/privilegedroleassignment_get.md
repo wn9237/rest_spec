@@ -28,10 +28,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedroleassignment"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -42,8 +43,8 @@ Content-length: 160
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
-<!-- uuid: fa4b6c16-623a-4a5c-b5ec-857d45017f41
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: 9276a1e7-5008-45ca-ad2e-f1a04f6bbd7d
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleAssignment",

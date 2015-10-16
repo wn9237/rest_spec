@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "item"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 3050
+
 {
   "content": "content-value",
   "createdBy": {
@@ -187,8 +188,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: cbb7af5f-afe1-4fa3-a392-dc95cabf98c4
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: 8220d8f0-c414-4bea-939e-f930dc92a291
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create item",

@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "attachment"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 162
+
 {
   "Name": "Name-value",
   "ContentType": "ContentType-value",
@@ -56,8 +57,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: b8256e4a-b576-4ead-bdfe-86354cb384f0
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: a847d1e0-79e8-47a3-bf04-041c0e5ede71
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",

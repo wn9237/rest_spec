@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "plantimeline"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 119
+
 {
   "displaySettings": "displaySettings-value",
   "lockedWidth": 99,
@@ -48,8 +49,8 @@ Content-length: 119
 ```
 If successful, this method returns a `200 OK` response code and [PlanTimeline](../resources/plantimeline.md) object in the response body.
 
-<!-- uuid: 8b866fad-7a86-42c2-8630-0d25aac27835
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 01481f0b-06e2-44ee-83c2-4a5343829f56
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanTimeline",

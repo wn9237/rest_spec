@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "page"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 391
+
 {
   "title": "title-value",
   "createdByAppId": "createdByAppId-value",
@@ -60,8 +61,8 @@ Content-length: 391
 ```
 If successful, this method returns a `200 OK` response code and [Page](../resources/page.md) object in the response body.
 
-<!-- uuid: 298c62a3-08f3-4da4-87c3-cfc700a7b07a
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 59fed63a-7bee-4710-bdac-f03faa54e34c
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Page",

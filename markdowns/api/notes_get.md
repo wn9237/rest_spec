@@ -35,18 +35,19 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "notes"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 22
+
 {
   "id": "id-value"
 }
 ```
 If successful, this method returns a `200 OK` response code and [Notes](../resources/notes.md) object in the response body.
 
-<!-- uuid: 844b9633-99c5-47e4-b1d5-ec1d48288b0c
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 61b10a2c-7ed9-4773-81ea-d00e22061132
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notes",

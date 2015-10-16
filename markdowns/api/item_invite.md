@@ -41,6 +41,7 @@ Here is an example of how to call this API.
 POST /drive/root/invite
 Content-type: application/json
 Content-length: 313
+
 {
   "recipients": [
     {
@@ -57,17 +58,19 @@ Content-length: 313
     "roles-value"
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "permission"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 940
+
 {
   "values": [
     {
@@ -113,8 +116,8 @@ Content-length: 940
 }
 ```
 
-<!-- uuid: d7cecad8-58ef-4acf-a01e-b6aea4223284
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: 34361ef1-6830-4f63-9683-951e35009386
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: invite",

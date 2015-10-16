@@ -33,6 +33,7 @@ Here is an example of the request.
 
 Content-type: application/json
 Content-length: 48
+
 {
   "Id": "Id-value",
   "ExtensionName": {
@@ -40,16 +41,17 @@ Content-length: 48
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "opentypeextension"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 48
+
 {
   "Id": "Id-value",
   "ExtensionName": {
@@ -57,8 +59,8 @@ Content-length: 48
 }
 ```
 
-<!-- uuid: dda6e2cc-955b-4fad-81c6-85f807cda0ac
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 7fc4df0b-f36a-432a-9f23-1f3973477816
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of opentypeextension object.",

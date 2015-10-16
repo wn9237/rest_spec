@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "serviceprincipal"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 1924
+
 {
   "accountEnabled": true,
   "appDisplayName": "appDisplayName-value",
@@ -114,8 +115,8 @@ Content-length: 1924
 }
 ```
 
-<!-- uuid: e27a945f-ea3b-49e4-8885-3efb882ff27a
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: b300739a-a302-42bf-ab8b-d0ba01c23959
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ServicePrincipal",

@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "conversationthread"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 489
+
 {
   "ToRecipients": [
     {
@@ -75,8 +76,8 @@ Content-length: 489
 }
 ```
 
-<!-- uuid: b0fb86d0-e8bc-4e3a-ac35-88b5fe8a4c93
-2015-10-16 21:10:43 UTC -->
+<!-- uuid: 5e925ba2-69f2-46c4-9906-8dcaa9585041
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Thread",

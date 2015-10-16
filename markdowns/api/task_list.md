@@ -37,10 +37,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "tasks"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 639
+
 {
   "values": [
     {
@@ -67,8 +68,8 @@ Content-length: 639
 ```
 If successful, this method returns a `200 OK` response code and collection of [Task](../resources/task.md) objects in the response body.
 
-<!-- uuid: 43f6c56a-7ab2-450f-85ad-b57176985a19
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: c16c6825-e4d2-49f9-bab6-6ee8cd8b1588
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Task",

@@ -35,17 +35,18 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "file"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 If successful, this method returns a `200 OK` response code and [File](../resources/file.md) object in the response body.
 
-<!-- uuid: 3a95b2db-c0df-4c99-a245-08297e33936a
-2015-10-16 21:10:49 UTC -->
+<!-- uuid: df313675-95db-4fa7-8b79-f3fcca0f412a
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get File",

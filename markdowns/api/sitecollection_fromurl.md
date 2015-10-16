@@ -35,25 +35,27 @@ Here is an example of how to call this API.
 POST /myOrganization/siteCollections/<id>/FromUrl
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "sitemetadata"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 78
+
 {
   "siteCollectionId": "siteCollectionId-value",
   "siteId": "siteId-value"
 }
 ```
 
-<!-- uuid: 5d1ef124-91c6-4afc-a0d9-8fbbba52bec9
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: e7340f51-2947-4caf-8fe8-3c6959ad3e25
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "SiteCollection: FromUrl",

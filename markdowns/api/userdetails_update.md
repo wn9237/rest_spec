@@ -36,6 +36,7 @@ Here is an example of the request.
 PUT /users/<objectId>/details
 Content-type: application/json
 Content-length: 73
+
 {
   "userData": {
   },
@@ -44,16 +45,17 @@ Content-length: 73
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "userdetails"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 73
+
 {
   "userData": {
   },
@@ -62,8 +64,8 @@ Content-length: 73
 }
 ```
 
-<!-- uuid: 0019d821-5320-45cd-94b0-0415007c11b7
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 30af088c-afc3-4afb-a7d7-a7d2ec944b95
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of userdetails object.",

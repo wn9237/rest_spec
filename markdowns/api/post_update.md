@@ -46,6 +46,7 @@ Here is an example of the request.
 PUT /groups/<objectId>/Threads/<Id>/Posts/<Id>
 Content-type: application/json
 Content-length: 790
+
 {
   "Body": {
     "ContentType": "ContentType-value",
@@ -85,16 +86,17 @@ Content-length: 790
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "post"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 790
+
 {
   "Body": {
     "ContentType": "ContentType-value",
@@ -134,8 +136,8 @@ Content-length: 790
 }
 ```
 
-<!-- uuid: 09ba0fbf-61d1-49a5-90e5-6493a2d29ed7
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 8781e519-519b-4301-b773-e66fd85bd79b
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of post object.",

@@ -41,10 +41,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedroleassignment"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -54,8 +55,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 3b0d024f-784e-4906-ada5-c2fe3e3fcebe
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: 33c0d089-09dc-41ba-bbdc-dde3cebcbb47
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Assignment",

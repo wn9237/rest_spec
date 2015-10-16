@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 POST /devices/<objectId>/getMemberGroups
 Content-type: application/json
 Content-length: 33
+
 {
   "securityEnabledOnly": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -56,8 +59,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 75f81111-2d2c-4884-b905-2d0c1cc20855
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 626aadcc-4239-4eed-990a-2aa72a38ebab
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device: getMemberGroups",

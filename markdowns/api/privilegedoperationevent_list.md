@@ -37,10 +37,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedoperationevents"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 538
+
 {
   "values": [
     {
@@ -63,8 +64,8 @@ Content-length: 538
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) objects in the response body.
 
-<!-- uuid: 8e17ce38-159c-411d-8e71-1763e08ba71c
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: 9c3c0e9f-c34f-40f9-859a-db9ef598520c
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedOperationEvent",

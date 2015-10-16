@@ -38,6 +38,7 @@ Here is an example of how to call this API.
 POST /users/<objectId>/assignLicense
 Content-type: application/json
 Content-length: 167
+
 {
   "addLicenses": [
     {
@@ -49,17 +50,19 @@ Content-length: 167
     "removeLicenses-value"
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "user"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 2650
+
 {
   "accountEnabled": true,
   "assignedLicenses": [
@@ -160,8 +163,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: 41155ac1-daf6-4fe1-8e88-569e732f0d62
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: b6f94a44-d516-4198-b487-5b3e0bf34d81
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: assignLicense",

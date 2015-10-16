@@ -42,6 +42,7 @@ Here is an example of the request.
 PUT /groups/<objectId>/Threads/<Id>
 Content-type: application/json
 Content-length: 489
+
 {
   "ToRecipients": [
     {
@@ -71,16 +72,17 @@ Content-length: 489
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "conversationthread"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 489
+
 {
   "ToRecipients": [
     {
@@ -110,8 +112,8 @@ Content-length: 489
 }
 ```
 
-<!-- uuid: 5c38e001-08dc-487a-bfbe-1193678b85e9
-2015-10-16 21:10:43 UTC -->
+<!-- uuid: a48bf572-bc33-43dd-bed5-91d8ad6403f9
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversationthread object.",

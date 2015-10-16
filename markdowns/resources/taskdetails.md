@@ -47,8 +47,8 @@ None
 |[Update](../api/taskdetails_update.md) | [TaskDetails](taskdetails.md)	|Update TaskDetails object. |
 |[Delete](../api/taskdetails_delete.md) | Void	|Delete TaskDetails object. |
 
-<!-- uuid: b57e0f52-ea7f-42af-84a1-6685a394f1b9
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: 59be7274-7f17-4dfc-827d-42186bb782ad
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TaskDetails resource",

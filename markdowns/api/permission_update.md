@@ -40,6 +40,7 @@ Here is an example of the request.
 PUT /drive/root/permissions/<id>
 Content-type: application/json
 Content-length: 762
+
 {
   "grantedTo": {
     "application": {
@@ -81,16 +82,17 @@ Content-length: 762
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "permission"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 762
+
 {
   "grantedTo": {
     "application": {
@@ -132,8 +134,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: aa0a14ba-2b08-4bf1-aabc-676dc2740d33
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: bd7e9363-daf1-470c-9094-ceef9ebc2be6
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of permission object.",

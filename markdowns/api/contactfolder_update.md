@@ -36,6 +36,7 @@ Here is an example of the request.
 PUT /users/<objectId>/ContactFolders/<Id>
 Content-type: application/json
 Content-length: 104
+
 {
   "ParentFolderId": "ParentFolderId-value",
   "DisplayName": "DisplayName-value",
@@ -43,16 +44,17 @@ Content-length: 104
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "contactfolder"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 104
+
 {
   "ParentFolderId": "ParentFolderId-value",
   "DisplayName": "DisplayName-value",
@@ -60,8 +62,8 @@ Content-length: 104
 }
 ```
 
-<!-- uuid: 46e2c308-c922-46d3-bf75-7fe328cd6791
-2015-10-16 21:10:42 UTC -->
+<!-- uuid: 763c6c94-0321-4558-ba91-4fa067ae5f4b
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contactfolder object.",

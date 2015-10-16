@@ -37,17 +37,19 @@ Here is an example of how to call this API.
 POST /drive/root/search
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "item"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3636
+
 {
   "values": [
     {
@@ -195,8 +197,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: dab14ee1-3271-450b-b90e-20d3abbf1694
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: 0936b6b8-16d3-4d5e-907a-96987cfc2501
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: search",

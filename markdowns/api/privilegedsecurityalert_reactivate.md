@@ -30,17 +30,19 @@ Here is an example of how to call this API.
 POST /PrivilegedSecurityAlerts/<AlertId>/Reactivate
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedsecurityalert"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 596
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffectedItems": 99,
@@ -62,8 +64,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: 30a1d169-b21f-4922-a746-3be0493cafeb
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: d2ed186c-5565-47a7-a608-aa54d6f715f5
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSecurityAlert: Reactivate",

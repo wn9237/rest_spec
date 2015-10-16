@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "bucket"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 179
+
 {
   "name": "name-value",
   "planId": "planId-value",
@@ -55,8 +56,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 7ce6e477-b94c-4d46-9683-83fdfc475ff2
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: 81a407bb-cfd8-4d66-8834-77f10945856a
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Bucket",

@@ -35,26 +35,29 @@ Here is an example of how to call this API.
 
 Content-type: application/json
 Content-length: 32
+
 {
   "Comment": "Comment-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: fdfc6eca-d75c-4d9f-8958-762f170a5e60
-2015-10-16 21:10:48 UTC -->
+<!-- uuid: ab51cf83-6208-4b6c-8432-84eacc79a3b7
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Reply",

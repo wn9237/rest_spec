@@ -32,23 +32,25 @@ Here is an example of how to call this API.
 POST /groups/<objectId>/SubscribeByMail
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: 0be40803-f99f-43b0-a4a4-b14492d2c539
-2015-10-16 21:10:52 UTC -->
+<!-- uuid: 0314054d-9ac3-4fa5-92cc-9aa0c7ffedd1
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: SubscribeByMail",

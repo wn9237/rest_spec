@@ -37,22 +37,25 @@ Here is an example of how to call this API.
 POST /drive/root/createSession
 Content-type: application/json
 Content-length: 44
+
 {
   "item": {
     "name": "name-value"
   }
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "uploadsession"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 140
+
 {
   "uploadUrl": "uploadUrl-value",
   "expirationDateTime": "datetime-value",
@@ -62,8 +65,8 @@ Content-length: 140
 }
 ```
 
-<!-- uuid: 5f83afde-33fd-454c-ba45-a562c32a044d
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: 6dbfc0aa-ba1d-4d0a-882a-2afe4e5668f4
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createSession",

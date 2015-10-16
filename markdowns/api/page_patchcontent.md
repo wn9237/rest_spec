@@ -37,6 +37,7 @@ Here is an example of how to call this API.
 POST /users/<objectId>/notes/pages/<id>/PatchContent
 Content-type: application/json
 Content-length: 168
+
 {
   "commands": [
     {
@@ -47,23 +48,25 @@ Content-length: 168
     }
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: 21313e5b-0f72-4b55-848e-c1b8f824fc3d
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: dadffe48-99e9-4bf6-b79b-33c0201e9381
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: PatchContent",

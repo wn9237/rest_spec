@@ -37,26 +37,29 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Messages/<Id>/Reply
 Content-type: application/json
 Content-length: 32
+
 {
   "Comment": "Comment-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: dcc4e8ed-95e0-4af2-8d74-9041367d0809
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 3e53211a-2344-455b-ace9-3b7c45829839
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Reply",

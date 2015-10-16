@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedoperationevent"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 456
+
 {
   "Id": "Id-value",
   "UserId": "UserId-value",
@@ -61,8 +62,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: aa627776-c737-4594-9bdd-fe48b095a91e
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: 77411cf1-7edd-4ab9-bb0b-9b0c68d1336f
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedOperationEvent",

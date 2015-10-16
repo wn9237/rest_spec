@@ -29,10 +29,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "oauth2permissiongrant"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
+
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
@@ -46,8 +47,8 @@ Content-length: 271
 ```
 If successful, this method returns a `200 OK` response code and [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
 
-<!-- uuid: 833c66b8-25d1-45a9-8588-0f34f494124c
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 7932a681-4d41-4f59-a80d-97f8ba1d0253
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OAuth2PermissionGrant",

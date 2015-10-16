@@ -32,24 +32,26 @@ Here is an example of how to call this API.
 POST /users/<objectId>/notes/pages/<id>/Thumbnail
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "stream"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 29
+
 {
   "value": "Stream-value"
 }
 ```
 
-<!-- uuid: 3ee1517b-cb67-4907-9f70-06406fb528c0
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 3d97cc99-8852-4b78-a4b1-c23fabeb99ba
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: Thumbnail",

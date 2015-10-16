@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "subscribedsku"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 388
+
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
@@ -64,8 +65,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: 75e4c6ad-3788-48d3-8884-9d4de32342cc
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: acc63ef2-98e1-4945-bf56-92a993ad00dd
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SubscribedSku",

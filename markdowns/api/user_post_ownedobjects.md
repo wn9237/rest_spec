@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "directoryobject"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 111
+
 {
   "objectType": "objectType-value",
   "objectId": "objectId-value",
@@ -53,8 +54,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 27d16075-5ee1-468f-9422-fca4c2738fc2
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 8213f063-9f46-4cc1-99d2-dfb1b8b6077b
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ownedObject",

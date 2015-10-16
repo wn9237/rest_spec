@@ -27,10 +27,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "device"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 732
+
 {
   "accountEnabled": true,
   "alternativeSecurityIds": [
@@ -60,8 +61,8 @@ Content-length: 732
 ```
 If successful, this method returns a `200 OK` response code and [Device](../resources/device.md) object in the response body.
 
-<!-- uuid: fa434846-ce0c-4967-93e5-d880d186733e
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: b45abefc-dba1-4a12-a9de-8c137bb24f9f
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Device",

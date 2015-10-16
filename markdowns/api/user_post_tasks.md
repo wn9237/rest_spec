@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "task"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 541
+
 {
   "createdBy": "createdBy-value",
   "assignedTo": "assignedTo-value",
@@ -67,8 +68,8 @@ Content-length: 541
 }
 ```
 
-<!-- uuid: 27bfc970-aaa4-468e-ad31-f7da091eab94
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 6668a1b7-eb21-437f-8e3d-5b43e1808e8e
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

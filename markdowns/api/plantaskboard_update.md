@@ -35,6 +35,7 @@ Here is an example of the request.
 PUT /plans/<id>/bucketTaskBoard
 Content-type: application/json
 Content-length: 76
+
 {
   "type": "type-value",
   "id": "id-value",
@@ -42,16 +43,17 @@ Content-length: 76
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "plantaskboard"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 76
+
 {
   "type": "type-value",
   "id": "id-value",
@@ -59,8 +61,8 @@ Content-length: 76
 }
 ```
 
-<!-- uuid: a0321c2c-2441-4f85-b252-5e6da6e91540
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 9dfdc6ee-1504-4639-9614-8ab25fa3aeda
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plantaskboard object.",

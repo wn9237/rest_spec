@@ -40,23 +40,26 @@ Here is an example of how to call this API.
 POST /users/<objectId>/notes/sections/<id>/CopyToNotebook
 Content-type: application/json
 Content-length: 130
+
 {
   "id": "id-value",
   "siteCollectionId": "siteCollectionId-value",
   "siteId": "siteId-value",
   "renameAs": "renameAs-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "copysectionmodel"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 276
+
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
@@ -70,8 +73,8 @@ Content-length: 276
 }
 ```
 
-<!-- uuid: aa11fdd5-2bf7-470e-a474-5b456c603d08
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: 54d041d6-8c61-43a6-88d5-d7cb78aeff9e
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section: CopyToNotebook",

@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 
 Content-type: application/json
 Content-length: 44
+
 {
   "DestinationId": "DestinationId-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "message"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -125,8 +128,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 318590ed-3403-4142-87bb-760fdb76fba0
-2015-10-16 21:10:48 UTC -->
+<!-- uuid: 5bf374a6-4e7d-4e77-96c7-f5d617d6839d
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Move",

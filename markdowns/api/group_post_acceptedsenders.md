@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "directoryobject"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 111
+
 {
   "objectType": "objectType-value",
   "objectId": "objectId-value",
@@ -53,8 +54,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 712ea944-9814-44dc-9148-d8a72493d36d
-2015-10-16 21:10:50 UTC -->
+<!-- uuid: 00f305c7-aa13-44d8-865c-86c86df355d8
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AcceptedSender",

@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |servicePlanId|Guid||
 |servicePlanName|String||
 
-<!-- uuid: 27af97d0-7f6c-4d2f-a229-7f9eef096492
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: 504f78b9-1a85-48ef-ab2f-41cdb3ef2207
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePlanInfo resource",

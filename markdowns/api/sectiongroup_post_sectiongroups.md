@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "sectiongroup"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 309
+
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -59,8 +60,8 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 52942038-3f3f-4aae-89d1-6126131bc132
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: 75c2560b-2bd8-4162-8588-ac4cda4f6373
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SectionGroup",

@@ -30,10 +30,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "subscribedskus"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 482
+
 {
   "values": [
     {
@@ -59,8 +60,8 @@ Content-length: 482
 ```
 If successful, this method returns a `200 OK` response code and collection of [SubscribedSku](../resources/subscribedsku.md) objects in the response body.
 
-<!-- uuid: ad965f5d-8357-457b-9e51-ec80431e5517
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: ce77c5a9-6077-4c1e-838f-b00ddc7f1aaf
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List SubscribedSku",

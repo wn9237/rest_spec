@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "event"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 1794
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -125,8 +126,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: 4f399609-b98f-4349-8ac0-87e5bf057bbc
-2015-10-16 21:10:50 UTC -->
+<!-- uuid: 6cc30f6c-a4b6-4344-9c95-a405affbf13f
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Event",

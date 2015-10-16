@@ -35,22 +35,25 @@ Here is an example of how to call this API.
 POST /applications/<objectId>/extensionProperties/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
+
 {
   "groupIds": [
     "groupIds-value"
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -58,8 +61,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 8df50aa4-cc8d-465d-9d04-58dac04a55f9
-2015-10-16 21:10:49 UTC -->
+<!-- uuid: 1df3bd7a-4f6a-46cb-a19c-1b904d7dc0e9
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExtensionProperty: checkMemberGroups",

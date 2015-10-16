@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "plan"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 179
+
 {
   "createdBy": "createdBy-value",
   "owner": "owner-value",
@@ -57,8 +58,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 9356e129-1488-4fbf-9c14-a014cd00b227
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 0a2f1ae1-803f-490e-a739-cb46e2eeb341
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Plan",

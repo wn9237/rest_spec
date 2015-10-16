@@ -36,6 +36,7 @@ Here is an example of the request.
 PUT /PrivilegedRoleAssignments/<UserId|RoleId>
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -45,16 +46,17 @@ Content-length: 160
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedroleassignment"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -64,8 +66,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: f2e62b5d-6f7b-43da-99d8-84ec53db84e8
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: c64ef94a-6baa-46af-8e35-3f616d846e20
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedroleassignment object.",

@@ -37,20 +37,23 @@ Here is an example of how to call this API.
 POST /drive/root/createLink
 Content-type: application/json
 Content-length: 26
+
 {
   "type": "type-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "permission"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 762
+
 {
   "grantedTo": {
     "application": {
@@ -92,8 +95,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: dce4660a-5d0d-470e-95a8-5d817611ff52
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: ca24076e-f1de-4fc3-a404-ecb9b60fedad
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createLink",

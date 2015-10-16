@@ -37,20 +37,23 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Folders/<Id>/Move
 Content-type: application/json
 Content-length: 44
+
 {
   "DestinationId": "DestinationId-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "mailfolder"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 130
+
 {
   "ParentFolderId": "ParentFolderId-value",
   "DisplayName": "DisplayName-value",
@@ -59,8 +62,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 52cad59b-6f14-4326-b29d-8cb449c45bae
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: ddb28ffe-3c8e-4adc-a943-7f350c63ffe1
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Move",

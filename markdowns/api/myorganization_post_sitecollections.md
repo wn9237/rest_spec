@@ -40,17 +40,18 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "sitecollection"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 22
+
 {
   "id": "id-value"
 }
 ```
 
-<!-- uuid: 3b71802a-6871-4c10-b41b-7385c7707414
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: e95654ff-631a-40c2-9f9b-e8c40e131f69
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SiteCollection",

@@ -49,8 +49,8 @@ Here is a JSON representation of the resource
 |self|String||
 |title|String||
 
-<!-- uuid: 0db8f045-4c66-424c-ba13-9fa926cd5387
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 55a1ec73-8c7d-4135-8a98-c1911153b4fe
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "CopyPageModel resource",

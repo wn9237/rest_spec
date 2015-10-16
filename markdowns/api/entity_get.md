@@ -33,18 +33,19 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "entity"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 22
+
 {
   "Id": "Id-value"
 }
 ```
 If successful, this method returns a `200 OK` response code and [Entity](../resources/entity.md) object in the response body.
 
-<!-- uuid: 60c1ecf1-05db-4084-bfc4-e098319a108e
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 0e4e319c-fa9a-4560-8d1a-d2f6d56c71c0
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Entity",

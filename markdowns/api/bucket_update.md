@@ -40,6 +40,7 @@ Here is an example of the request.
 PUT /buckets/<id>
 Content-type: application/json
 Content-length: 179
+
 {
   "name": "name-value",
   "planId": "planId-value",
@@ -51,16 +52,17 @@ Content-length: 179
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "bucket"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 179
+
 {
   "name": "name-value",
   "planId": "planId-value",
@@ -72,8 +74,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 1ba2ab7a-a86f-4295-8d6c-1f186e529201
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: f2f8f913-7a25-4278-abe9-5db08e5b8420
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of bucket object.",

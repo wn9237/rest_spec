@@ -38,27 +38,30 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Events/<Id>/Decline
 Content-type: application/json
 Content-length: 56
+
 {
   "Comment": "Comment-value",
   "SendResponse": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: 821b4aa6-edc4-4e9f-b791-bee25723f239
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: e3436ecf-9989-4986-a4be-47a897f909fa
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: Decline",

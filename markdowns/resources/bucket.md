@@ -56,8 +56,8 @@ Here is a JSON representation of the resource
 |[Update](../api/bucket_update.md) | [Bucket](bucket.md)	|Update Bucket object. |
 |[Delete](../api/bucket_delete.md) | Void	|Delete Bucket object. |
 
-<!-- uuid: 1d4e6025-c8a7-4703-a65c-fe3c56558309
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: 7a6656b5-e512-41d6-b177-214661137c34
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Bucket resource",

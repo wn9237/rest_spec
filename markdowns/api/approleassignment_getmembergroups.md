@@ -37,20 +37,23 @@ Here is an example of how to call this API.
 POST /users/<objectId>/appRoleAssignments/<objectId>/getMemberGroups
 Content-type: application/json
 Content-length: 33
+
 {
   "securityEnabledOnly": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -58,8 +61,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 0dd8d211-907c-4953-894f-50d1334d0104
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 75a25d5e-3836-4600-b0e9-6e68dee2499a
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRoleAssignment: getMemberGroups",

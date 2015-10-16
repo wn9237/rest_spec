@@ -29,10 +29,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "approleassignment"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 398
+
 {
   "creationTimestamp": "datetime-value",
   "id": "id-value",
@@ -48,8 +49,8 @@ Content-length: 398
 ```
 If successful, this method returns a `200 OK` response code and [AppRoleAssignment](../resources/approleassignment.md) object in the response body.
 
-<!-- uuid: dc4ae83b-474a-4df8-9ba1-b2ddd9ada104
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: ca0ef288-d557-4550-bc8b-2f83efc5ebd8
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get AppRoleAssignment",

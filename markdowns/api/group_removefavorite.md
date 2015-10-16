@@ -32,23 +32,25 @@ Here is an example of how to call this API.
 POST /groups/<objectId>/RemoveFavorite
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: 71703001-efef-4bfd-b261-f5ae2c958ac4
-2015-10-16 21:10:52 UTC -->
+<!-- uuid: 2617dd59-fe9f-492a-8096-5ad3c7e46849
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: RemoveFavorite",

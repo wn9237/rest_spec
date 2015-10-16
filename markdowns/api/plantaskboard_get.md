@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "plantaskboard"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 76
+
 {
   "type": "type-value",
   "id": "id-value",
@@ -47,8 +48,8 @@ Content-length: 76
 ```
 If successful, this method returns a `200 OK` response code and [PlanTaskBoard](../resources/plantaskboard.md) object in the response body.
 
-<!-- uuid: c472032a-6324-484a-988b-bb9bbbf16a84
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 9aab9af4-aa98-44c9-ba5d-467554c40530
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanTaskBoard",

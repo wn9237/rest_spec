@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedroleassignment"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -53,8 +54,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: fd5d08b4-f81f-4884-8a92-1e36096073d1
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 841a5a8b-bdcb-44f5-9db8-93e24dc1c579
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedRoleAssignment",

@@ -41,6 +41,7 @@ Here is an example of the request.
 
 Content-type: application/json
 Content-length: 433
+
 {
   "associationType": "associationType-value",
   "sourceObjectId": "sourceObjectId-value",
@@ -55,16 +56,17 @@ Content-length: 433
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "directorylinkchange"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 433
+
 {
   "associationType": "associationType-value",
   "sourceObjectId": "sourceObjectId-value",
@@ -79,8 +81,8 @@ Content-length: 433
 }
 ```
 
-<!-- uuid: 0964e431-d19f-4099-b1b1-083a1cfd3510
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 42a9f056-efcc-4f50-885f-0b8b98454933
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directorylinkchange object.",

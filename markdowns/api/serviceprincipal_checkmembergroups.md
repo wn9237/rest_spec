@@ -35,22 +35,25 @@ Here is an example of how to call this API.
 POST /servicePrincipals/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
+
 {
   "groupIds": [
     "groupIds-value"
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -58,8 +61,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: c7e0e946-862b-44e2-8e8e-632eaaa3b71a
-2015-10-16 21:11:03 UTC -->
+<!-- uuid: 6947a46b-de4d-4f96-bb0d-fdaad12646b2
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal: checkMemberGroups",

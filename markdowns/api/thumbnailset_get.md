@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "thumbnailset"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 456
+
 {
   "id": "id-value",
   "large": {
@@ -69,8 +70,8 @@ Content-length: 456
 ```
 If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.
 
-<!-- uuid: 311e20d8-2589-4e43-a87b-820543846742
-2015-10-16 21:11:06 UTC -->
+<!-- uuid: 3baf1ac9-812d-4e33-b684-372a4b2d1f5d
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get thumbnailSet",

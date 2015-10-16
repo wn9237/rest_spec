@@ -16,8 +16,8 @@ None
 |[List](../api/share_list.md) | [share](share.md) [] |Get share object collection. |
 |[Create share](../api/share_post_shares.md) |[share](share.md)| Create a new share by posting to the shares collection.|
 
-<!-- uuid: 54d9184d-d4f3-4feb-b2f5-177533a458c3
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: b9034a01-df8e-43f8-b97f-b51b944201d9
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "shares resource",

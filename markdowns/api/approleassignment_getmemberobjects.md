@@ -37,20 +37,23 @@ Here is an example of how to call this API.
 POST /users/<objectId>/appRoleAssignments/<objectId>/getMemberObjects
 Content-type: application/json
 Content-length: 33
+
 {
   "securityEnabledOnly": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -58,8 +61,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 88bfcc43-66e7-496d-b2e9-3088cb023955
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 8172f682-fe98-4bf3-b11e-a9051b5b0d12
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRoleAssignment: getMemberObjects",

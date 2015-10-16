@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "extensionproperty"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 297
+
 {
   "appDisplayName": "appDisplayName-value",
   "name": "name-value",
@@ -58,8 +59,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: 89ad4b78-eb75-4ca9-9591-08318c14fb54
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 7975472d-8de1-4a20-b949-dc072502d613
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ExtensionProperty",

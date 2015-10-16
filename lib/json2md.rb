@@ -31,10 +31,10 @@ module SpecMaker
 			example_lines.push "Here is an example of the response." + NEWLINE
 			example_lines.push get_json_response_pretext(method[:returnType]) + NEWLINE
 			modeldump = get_json_model_method(method[:returnType])
-			example_lines.push "```json" + NEWLINE
+			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 201 Created" + NEWLINE
 			example_lines.push "Content-type: application/json" + NEWLINE
-			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
+			example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE				
 
@@ -50,10 +50,10 @@ module SpecMaker
 			end
 			# todo : how do i handle the collections?
 			example_lines.push get_json_response_pretext(@jsonHash[:name]) + NEWLINE
-			example_lines.push "```json" + NEWLINE
+			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
 			example_lines.push "Content-type: application/json" + NEWLINE
-			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
+			example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE				
 
@@ -68,18 +68,17 @@ module SpecMaker
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])			
 			example_lines.push "Content-type: application/json" + NEWLINE
-			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
+			example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE	
 			example_lines.push HEADER5 + "Response" + NEWLINE	
-
-			example_lines.push get_json_response_pretext(@jsonHash[:name]) + NEWLINE
 			example_lines.push "Here is an example of the response." + NEWLINE
+			example_lines.push get_json_response_pretext(@jsonHash[:name]) + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])
-			example_lines.push "```json" + NEWLINE
+			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
 			example_lines.push "Content-type: application/json" + NEWLINE
-			example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
+			example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE	
 
@@ -90,9 +89,10 @@ module SpecMaker
 			httpSyntax = get_syntax(method[:name], top_one_restpath)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			example_lines.push '```' + NEWLINE
-			example_lines.push get_json_response_pretext(nil) + NEWLINE						
+
 			example_lines.push HEADER5 + "Response" + NEWLINE											
-			example_lines.push "```json" + NEWLINE
+			example_lines.push get_json_response_pretext(nil) + NEWLINE						
+			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 204 No Content" + NEWLINE
 			example_lines.push "```" + NEWLINE	
 		else
@@ -105,21 +105,21 @@ module SpecMaker
 			example_lines.push "Content-type: application/json" + NEWLINE			
 			if !method[:isFunction] && method[:parameters].length > 0
 				modeldump = get_json_model_params(method[:parameters])
-				example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE				
+				example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES				
 				example_lines.push modeldump + NEWLINE	
 			else
 				example_lines.push "Content-length: 0" + NEWLINE				
 			end			
-			example_lines.push get_json_response_pretext(method[:returnType]) + NEWLINE								
+			example_lines.push '```' + TWONEWLINES
 
-			example_lines.push '```' + NEWLINE
 			example_lines.push HEADER5 + "Response" + NEWLINE						
-			example_lines.push "```json" + NEWLINE
+			example_lines.push get_json_response_pretext(method[:returnType]) + NEWLINE								
+			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
 			example_lines.push "Content-type: application/json" + NEWLINE
 			if method[:returnType]
 				modeldump = get_json_model_method(method[:returnType], method[:isReturnTypeCollection])
-				example_lines.push "Content-length: #{modeldump.length.to_s}" + NEWLINE
+				example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES
 				example_lines.push modeldump + NEWLINE	
 			else
 				example_lines.push "Content-length: 0" + NEWLINE				

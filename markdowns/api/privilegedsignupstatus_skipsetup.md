@@ -30,23 +30,25 @@ Here is an example of how to call this API.
 POST /PrivilegedSignupStatus/<TenantId>/SkipSetup
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: a224e8d9-1944-4bb5-a2dc-8158fccec4e1
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 250cba9a-e573-4141-b38b-3f82344ff67c
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SkipSetup",

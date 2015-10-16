@@ -55,6 +55,7 @@ Here is an example of the request.
 PUT /applications/<objectId>
 Content-type: application/json
 Content-length: 2108
+
 {
   "appId": "appId-value",
   "appRoles": [
@@ -135,16 +136,17 @@ Content-length: 2108
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "application"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 2108
+
 {
   "appId": "appId-value",
   "appRoles": [
@@ -225,8 +227,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: 619db8c0-c460-48f3-86bc-cb1d340ba0be
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 3e419696-476f-4afa-bf2a-f51edb836899
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of application object.",

@@ -38,6 +38,7 @@ Here is an example of the request.
 PUT /subscribedSkus/<objectId>
 Content-type: application/json
 Content-length: 388
+
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
@@ -58,16 +59,17 @@ Content-length: 388
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "subscribedsku"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 388
+
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
@@ -88,8 +90,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: ca5d3b39-d6e5-48a9-a0e8-65c60bd10f66
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: 1cabf0f7-7798-4a4e-b957-2c9e6782f1f4
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of subscribedsku object.",

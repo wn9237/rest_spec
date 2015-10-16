@@ -37,6 +37,7 @@ Here is an example of the request.
 PUT /users/<objectId>/CalendarGroups/<Id>
 Content-type: application/json
 Content-length: 110
+
 {
   "Name": "Name-value",
   "ChangeKey": "ChangeKey-value",
@@ -45,16 +46,17 @@ Content-length: 110
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "calendargroup"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 110
+
 {
   "Name": "Name-value",
   "ChangeKey": "ChangeKey-value",
@@ -63,8 +65,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: 606f654e-493f-4dbf-8a8b-40d6c166228e
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: 55cb4e34-e802-4de2-8818-0f2ceb5e24c2
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of calendargroup object.",

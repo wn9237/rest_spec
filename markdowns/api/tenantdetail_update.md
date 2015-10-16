@@ -53,6 +53,7 @@ Here is an example of the request.
 PUT /tenantDetails/<objectId>
 Content-type: application/json
 Content-length: 1647
+
 {
   "assignedPlans": [
     {
@@ -116,16 +117,17 @@ Content-length: 1647
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "tenantdetail"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1647
+
 {
   "assignedPlans": [
     {
@@ -189,8 +191,8 @@ Content-length: 1647
 }
 ```
 
-<!-- uuid: a24b7469-730a-45db-a121-1c0e528fd826
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: 98b27ed5-3020-46a1-a956-97d2a574e364
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of tenantdetail object.",

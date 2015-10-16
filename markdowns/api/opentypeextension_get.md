@@ -33,10 +33,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "opentypeextension"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 48
+
 {
   "Id": "Id-value",
   "ExtensionName": {
@@ -45,8 +46,8 @@ Content-length: 48
 ```
 If successful, this method returns a `200 OK` response code and [OpenTypeExtension](../resources/opentypeextension.md) object in the response body.
 
-<!-- uuid: cb66ec7b-4336-4248-a46f-a8d1429b8e62
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 2aa6a2d2-d995-437d-a416-890a97315970
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OpenTypeExtension",

@@ -35,22 +35,25 @@ Here is an example of how to call this API.
 POST /applications/<objectId>/restore
 Content-type: application/json
 Content-length: 56
+
 {
   "identifierUris": [
     "identifierUris-value"
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "application"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 2108
+
 {
   "appId": "appId-value",
   "appRoles": [
@@ -131,8 +134,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: 76e15a3e-99cb-460b-ab7e-ba3a84307074
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 9a5fd978-ce5f-486f-9fc0-3170e5a09fdf
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application: restore",

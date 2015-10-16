@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "tenantdetail"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 1647
+
 {
   "assignedPlans": [
     {
@@ -107,8 +108,8 @@ Content-length: 1647
 }
 ```
 
-<!-- uuid: 86ae0d27-2a71-4a13-84d7-4c878b7d1de6
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: eccb6c96-ca46-4f04-b57b-4b9cd07d83a7
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create TenantDetail",

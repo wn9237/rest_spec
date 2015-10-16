@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "contact"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 1977
+
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -121,8 +122,8 @@ Content-length: 1977
 }
 ```
 
-<!-- uuid: 48eb14de-8831-421c-8290-0e5426b2ba1d
-2015-10-16 21:11:07 UTC -->
+<!-- uuid: 17cd80c5-5a42-400b-b84d-fa8e13f9a9ae
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Contact",

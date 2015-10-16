@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "resource"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 112
+
 {
   "id": "id-value",
   "self": "self-value",
@@ -48,8 +49,8 @@ Content-length: 112
 ```
 If successful, this method returns a `200 OK` response code and [Resource](../resources/resource.md) object in the response body.
 
-<!-- uuid: 72eb8a0a-02d9-4066-aae4-a93d4c5985df
-2015-10-16 21:11:02 UTC -->
+<!-- uuid: 4472bfce-4756-4930-aa98-d4c1ba634f70
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Resource",

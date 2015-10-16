@@ -30,10 +30,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "directoryobjects"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 153
+
 {
   "values": [
     {
@@ -46,8 +47,8 @@ Content-length: 153
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 
-<!-- uuid: afae9afd-8e6f-49ae-88ad-84df15a284bd
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 1f78f7c1-a823-415b-9539-fd0c04dee184
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryObject",

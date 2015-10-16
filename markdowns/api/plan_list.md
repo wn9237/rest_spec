@@ -37,10 +37,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "plans"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 237
+
 {
   "values": [
     {
@@ -57,8 +58,8 @@ Content-length: 237
 ```
 If successful, this method returns a `200 OK` response code and collection of [Plan](../resources/plan.md) objects in the response body.
 
-<!-- uuid: 385b6521-417b-48a6-97a0-6765e175f6d7
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: f1945d63-b5b2-4b87-a9f9-7824bd6bcbc9
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Plan",

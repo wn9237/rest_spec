@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "notebook"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 516
+
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -70,8 +71,8 @@ Content-length: 516
 }
 ```
 
-<!-- uuid: 49924a09-368f-4980-993d-d14d18a76bb8
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 84b14830-6d6c-4af2-b0f6-931636271540
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Notebook",

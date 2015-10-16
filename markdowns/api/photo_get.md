@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "photo"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 53
+
 {
   "Width": 99,
   "Height": 99,
@@ -47,8 +48,8 @@ Content-length: 53
 ```
 If successful, this method returns a `200 OK` response code and [Photo](../resources/photo.md) object in the response body.
 
-<!-- uuid: 00bc22bb-0ff1-4b32-bcc1-366ed4abaa4a
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: f240cf80-7620-4cac-b22e-b14c40678955
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Photo",

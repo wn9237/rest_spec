@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "calendar"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 106
+
 {
   "Name": "Name-value",
   "ChangeKey": "ChangeKey-value",
@@ -54,8 +55,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: 28f1a727-6228-41b1-91a3-f722a334c4aa
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: 8571389f-183d-4408-8e70-45d6b00ad9a3
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Calendar",

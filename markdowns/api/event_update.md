@@ -63,6 +63,7 @@ Here is an example of the request.
 PUT /users/<objectId>/Events/<Id>
 Content-type: application/json
 Content-length: 1794
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -142,16 +143,17 @@ Content-length: 1794
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "event"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1794
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -231,8 +233,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: 765379ad-ca73-42e7-9b2d-09bd0ea2f9c7
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 2988427e-1eff-44c3-bc5f-4ee4fa078e98
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of event object.",

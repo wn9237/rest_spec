@@ -33,10 +33,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "share"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 330
+
 {
   "id": "id-value",
   "name": "name-value",
@@ -58,8 +59,8 @@ Content-length: 330
 ```
 If successful, this method returns a `200 OK` response code and [share](../resources/share.md) object in the response body.
 
-<!-- uuid: 5b77e848-133e-40f5-a06e-5ea88c92be28
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: 97f9dabd-764a-43a4-b46b-1b08b81ede5a
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get share",

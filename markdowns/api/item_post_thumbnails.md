@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "thumbnailset"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 456
+
 {
   "id": "id-value",
   "large": {
@@ -75,8 +76,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 1ac9abaa-a9da-49ed-a532-efd6f1f01aaa
-2015-10-16 21:10:53 UTC -->
+<!-- uuid: eaeaf86c-64c3-4625-9dd8-33cf76b09f90
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create thumbnailSet",

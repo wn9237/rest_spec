@@ -85,6 +85,7 @@ Here is an example of the request.
 PUT /users/<objectId>
 Content-type: application/json
 Content-length: 2650
+
 {
   "accountEnabled": true,
   "assignedLicenses": [
@@ -185,16 +186,17 @@ Content-length: 2650
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "user"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 2650
+
 {
   "accountEnabled": true,
   "assignedLicenses": [
@@ -295,8 +297,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: 1176f188-46f3-4cf3-a339-ba284efa6937
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 7cec1bef-d400-4b5e-a713-9faea8279467
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of user object.",

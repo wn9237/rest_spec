@@ -39,6 +39,7 @@ Here is an example of the request.
 PUT /users/<objectId>/Events/<Id>/Attachments/<Id>
 Content-type: application/json
 Content-length: 162
+
 {
   "Name": "Name-value",
   "ContentType": "ContentType-value",
@@ -49,16 +50,17 @@ Content-length: 162
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "attachment"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 162
+
 {
   "Name": "Name-value",
   "ContentType": "ContentType-value",
@@ -69,8 +71,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: f2e699ef-ed9b-4313-b6d7-91a7c97ca302
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: dec6bdad-5baf-4ae3-9a75-2b0b613df1fc
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of attachment object.",

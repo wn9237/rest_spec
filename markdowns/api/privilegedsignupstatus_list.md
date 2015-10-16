@@ -37,10 +37,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedsignupstatus"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 128
+
 {
   "values": [
     {
@@ -53,8 +54,8 @@ Content-length: 128
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) objects in the response body.
 
-<!-- uuid: 475906a2-7429-4bcf-8027-ae60bec90ffb
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: b5ce9494-d2a8-4537-b7ba-14662034c687
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedSignupStatus",

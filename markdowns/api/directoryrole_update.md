@@ -39,6 +39,7 @@ Here is an example of the request.
 PUT /directoryRoles/<objectId>
 Content-type: application/json
 Content-length: 275
+
 {
   "description": "description-value",
   "displayName": "displayName-value",
@@ -51,16 +52,17 @@ Content-length: 275
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "directoryrole"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 275
+
 {
   "description": "description-value",
   "displayName": "displayName-value",
@@ -73,8 +75,8 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: 316ce4a8-457f-4e00-a4f2-973ca9ac79e3
-2015-10-16 21:10:45 UTC -->
+<!-- uuid: 08b9b911-e3c6-4af4-a0b5-f2abdfada481
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryrole object.",

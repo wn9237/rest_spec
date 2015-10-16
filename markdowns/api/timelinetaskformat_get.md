@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "timelinetaskformat"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 255
+
 {
   "color": 99,
   "drawingStyle": "drawingStyle-value",
@@ -54,8 +55,8 @@ Content-length: 255
 ```
 If successful, this method returns a `200 OK` response code and [TimelineTaskFormat](../resources/timelinetaskformat.md) object in the response body.
 
-<!-- uuid: 706da9e0-a6ff-4ae4-b4a1-2c7b22a6638e
-2015-10-16 21:11:06 UTC -->
+<!-- uuid: f4e0c99b-e0da-4c89-b37f-763ad4dd4686
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TimelineTaskFormat",

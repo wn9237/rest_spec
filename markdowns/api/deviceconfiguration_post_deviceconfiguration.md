@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "deviceconfiguration"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 341
+
 {
   "publicIssuerCertificates": [
     "publicIssuerCertificates-value"
@@ -59,8 +60,8 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: b319e753-74e3-4e69-a8bc-d36704a21a7d
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: e3b3d36e-16fe-436f-af4e-d3a5f73e199a
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DeviceConfiguration",

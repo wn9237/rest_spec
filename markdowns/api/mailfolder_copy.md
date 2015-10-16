@@ -37,20 +37,23 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Folders/<Id>/Copy
 Content-type: application/json
 Content-length: 44
+
 {
   "DestinationId": "DestinationId-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "mailfolder"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 130
+
 {
   "ParentFolderId": "ParentFolderId-value",
   "DisplayName": "DisplayName-value",
@@ -59,8 +62,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 7b1adbb6-1c7b-449e-a1a6-6ad999fbbfbd
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: 5ef8b924-212e-4c47-88f2-78aeacd4ce0d
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Copy",

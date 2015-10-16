@@ -29,10 +29,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "group"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1009
+
 {
   "description": "description-value",
   "dirSyncEnabled": true,
@@ -75,8 +76,8 @@ Content-length: 1009
 ```
 If successful, this method returns a `200 OK` response code and [Group](../resources/group.md) object in the response body.
 
-<!-- uuid: 5ee7c78d-50e2-425e-a380-31b470de7f7c
-2015-10-16 21:10:50 UTC -->
+<!-- uuid: 1ac8f66c-f7f3-428e-b2d6-472db3ced938
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Group",

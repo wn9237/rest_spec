@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "resource"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 112
+
 {
   "id": "id-value",
   "self": "self-value",
@@ -54,8 +55,8 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: e7cf37de-5857-4121-bac8-1bdca3305825
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 6a75b15e-35ca-4241-ae10-19e060a55a08
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Resource",

@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "message"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -116,8 +117,8 @@ Content-length: 1546
 ```
 If successful, this method returns a `200 OK` response code and [Message](../resources/message.md) object in the response body.
 
-<!-- uuid: 14bd41a5-ee01-47e7-ba79-8ef0fc1b1b4e
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: cfb1a729-af9e-4132-8146-40672df77db6
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Message",

@@ -27,10 +27,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "directorylinkchange"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 433
+
 {
   "associationType": "associationType-value",
   "sourceObjectId": "sourceObjectId-value",
@@ -46,8 +47,8 @@ Content-length: 433
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryLinkChange](../resources/directorylinkchange.md) object in the response body.
 
-<!-- uuid: a94fafe4-7f32-42a7-8f44-3a0f39d54c1c
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: c064f400-06b4-4e5d-9d35-09f9f15c9610
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryLinkChange",

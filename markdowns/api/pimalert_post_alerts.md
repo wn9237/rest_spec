@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "pimalert"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 529
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
@@ -64,8 +65,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: e2fc4420-f304-4f5d-9ba6-02ee30ca9794
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 9db9251a-9e0e-4866-bfab-d615ba5797af
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PimAlert",

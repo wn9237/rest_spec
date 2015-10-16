@@ -30,10 +30,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "groups"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1187
+
 {
   "values": [
     {
@@ -80,8 +81,8 @@ Content-length: 1187
 ```
 If successful, this method returns a `200 OK` response code and collection of [Group](../resources/group.md) objects in the response body.
 
-<!-- uuid: 44957b35-9705-4287-94dd-8e68cfb12ecd
-2015-10-16 21:10:53 UTC -->
+<!-- uuid: 07d3bfc6-fe98-4065-9954-ccc3646846e2
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Group",

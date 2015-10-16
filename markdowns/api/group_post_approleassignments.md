@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "approleassignment"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 398
+
 {
   "creationTimestamp": "datetime-value",
   "id": "id-value",
@@ -60,8 +61,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: de292234-59c0-4b2a-915a-cccc8a8ac3fd
-2015-10-16 21:10:51 UTC -->
+<!-- uuid: 7dd1fa5c-b1c4-44b8-b3ba-423bc9f5fae1
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AppRoleAssignment",

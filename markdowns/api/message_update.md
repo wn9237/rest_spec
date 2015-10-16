@@ -59,6 +59,7 @@ Here is an example of the request.
 PUT /users/<objectId>/Messages/<Id>
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -135,16 +136,17 @@ Content-length: 1546
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "message"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -221,8 +223,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 366c7d2e-92aa-4a33-8731-85784c953391
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: d5e1430c-458e-4e57-ae3c-dc9157636f46
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of message object.",

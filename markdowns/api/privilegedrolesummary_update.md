@@ -38,6 +38,7 @@ Here is an example of the request.
 PUT /PrivilegedRoles/<Id>/Summary
 Content-type: application/json
 Content-length: 145
+
 {
   "RoleId": "RoleId-value",
   "Status": "Status-value",
@@ -48,16 +49,17 @@ Content-length: 145
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedrolesummary"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 145
+
 {
   "RoleId": "RoleId-value",
   "Status": "Status-value",
@@ -68,8 +70,8 @@ Content-length: 145
 }
 ```
 
-<!-- uuid: 93d2e0c5-0e81-414f-9b2f-d54340ed2a51
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 97c8e930-8091-411c-8052-63365be06bbd
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrolesummary object.",

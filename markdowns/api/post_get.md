@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "post"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 790
+
 {
   "Body": {
     "ContentType": "ContentType-value",
@@ -79,8 +80,8 @@ Content-length: 790
 ```
 If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
 
-<!-- uuid: 0832faf2-5ad4-4a26-bfd4-a73eb37bd899
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 1325c641-5f5c-485a-b63c-bdba3ce0e84e
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",

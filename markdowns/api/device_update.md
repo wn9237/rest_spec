@@ -47,6 +47,7 @@ Here is an example of the request.
 PUT /devices/<objectId>
 Content-type: application/json
 Content-length: 732
+
 {
   "accountEnabled": true,
   "alternativeSecurityIds": [
@@ -75,16 +76,17 @@ Content-length: 732
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "device"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 732
+
 {
   "accountEnabled": true,
   "alternativeSecurityIds": [
@@ -113,8 +115,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: 8e8bd83b-f5de-4e61-ae42-bba011742395
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 41bbbb94-6278-4a21-a549-25669ba1b68d
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of device object.",

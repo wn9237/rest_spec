@@ -36,6 +36,7 @@ Here is an example of the request.
 PUT /users/<objectId>/manager
 Content-type: application/json
 Content-length: 111
+
 {
   "objectType": "objectType-value",
   "objectId": "objectId-value",
@@ -43,16 +44,17 @@ Content-length: 111
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "directoryobject"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 111
+
 {
   "objectType": "objectType-value",
   "objectId": "objectId-value",
@@ -60,8 +62,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 93b3592a-d982-4f0b-8ed2-00704f0b7b9a
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 9e4c2168-88a7-494d-bc8a-bcf71dec94b5
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryobject object.",

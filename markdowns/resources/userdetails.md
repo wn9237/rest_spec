@@ -43,8 +43,8 @@ None
 |[Update](../api/userdetails_update.md) | [UserDetails](userdetails.md)	|Update UserDetails object. |
 |[Delete](../api/userdetails_delete.md) | Void	|Delete UserDetails object. |
 
-<!-- uuid: c9be4909-bc50-4129-b4d3-d2fc16acc5f6
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 4ee58fed-f8f2-4f17-9ca1-561865a12b3e
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "UserDetails resource",

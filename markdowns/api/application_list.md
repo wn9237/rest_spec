@@ -30,10 +30,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "applications"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 2442
+
 {
   "values": [
     {
@@ -119,8 +120,8 @@ Content-length: 2442
 ```
 If successful, this method returns a `200 OK` response code and collection of [Application](../resources/application.md) objects in the response body.
 
-<!-- uuid: d593fc65-0951-4b6b-9b21-4e92b4ef1878
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 6b04378a-e5a6-4d41-b981-8f589cba3c4b
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Application",

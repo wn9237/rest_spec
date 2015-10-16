@@ -42,16 +42,17 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "file"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: c57b51bf-13ed-48a5-859e-5758cc4bd3cb
-2015-10-16 21:11:07 UTC -->
+<!-- uuid: da8e6e20-fa03-4101-9067-ee3df65f490c
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create File",

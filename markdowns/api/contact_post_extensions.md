@@ -42,17 +42,18 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "extension"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 22
+
 {
   "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 94ae98af-f4f7-40f4-b551-8d430a815a47
-2015-10-16 21:10:42 UTC -->
+<!-- uuid: f2e3e711-1280-45ea-aab6-ef66880489e4
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

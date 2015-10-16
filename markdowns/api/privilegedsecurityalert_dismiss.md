@@ -30,17 +30,19 @@ Here is an example of how to call this API.
 POST /PrivilegedSecurityAlerts/<AlertId>/Dismiss
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedsecurityalert"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 596
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffectedItems": 99,
@@ -62,8 +64,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: bbab970f-de2e-4039-946d-84ee824be68e
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: ac121971-402f-47e6-b97a-79097713925f
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSecurityAlert: Dismiss",

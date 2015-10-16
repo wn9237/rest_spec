@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "user"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 2650
+
 {
   "accountEnabled": true,
   "assignedLicenses": [
@@ -144,8 +145,8 @@ Content-length: 2650
 }
 ```
 
-<!-- uuid: aa277f07-6c36-4bc8-afed-140dd0916799
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 88c6c742-922c-4dcc-b51d-b53615cf2a54
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create User",

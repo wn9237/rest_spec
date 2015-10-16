@@ -32,17 +32,19 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Messages/<Id>/CreateReplyAll
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "message"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -119,8 +121,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 07aad6ae-5632-4d4e-b648-ee4493b6e1a6
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: c7398fa8-8b95-445b-b232-e51fa336da6a
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateReplyAll",

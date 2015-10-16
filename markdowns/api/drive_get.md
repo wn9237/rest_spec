@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "drive"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 458
+
 {
   "id": "id-value",
   "driveType": "driveType-value",
@@ -67,8 +68,8 @@ Content-length: 458
 ```
 If successful, this method returns a `200 OK` response code and [drive](../resources/drive.md) object in the response body.
 
-<!-- uuid: a1a391ee-396e-44d1-b00b-35bfcaeda027
-2015-10-16 21:10:46 UTC -->
+<!-- uuid: e85c1610-c5fb-42e6-8813-26749befa51c
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get drive",

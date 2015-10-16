@@ -34,10 +34,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedrolesettings"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 289
+
 {
   "MinElevationDuration": "datetime-value",
   "MaxElavationDuration": "datetime-value",
@@ -51,8 +52,8 @@ Content-length: 289
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) object in the response body.
 
-<!-- uuid: e01e16b4-ccef-49fa-bbca-034dba1a7596
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 806d58c4-2cd6-42e3-9523-a3332c9ec21b
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSettings",

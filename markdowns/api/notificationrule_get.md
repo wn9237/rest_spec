@@ -33,10 +33,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "notificationrule"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 260
+
 {
   "Id": "Id-value",
   "UserName": "UserName-value",
@@ -50,8 +51,8 @@ Content-length: 260
 ```
 If successful, this method returns a `200 OK` response code and [NotificationRule](../resources/notificationrule.md) object in the response body.
 
-<!-- uuid: 7f0dcf85-cd5c-4bed-bb0e-2f15358cdd5b
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: d8de3a56-3301-4e8f-98ce-c04e3a127cb7
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get NotificationRule",

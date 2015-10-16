@@ -33,18 +33,19 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "sitecollection"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 22
+
 {
   "id": "id-value"
 }
 ```
 If successful, this method returns a `200 OK` response code and [SiteCollection](../resources/sitecollection.md) object in the response body.
 
-<!-- uuid: 209e56ab-16d8-47ab-a116-0381ed9caa37
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: d1c8abaa-cb4b-4192-8e8f-baaf11dbae15
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SiteCollection",

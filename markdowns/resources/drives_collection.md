@@ -16,8 +16,8 @@ None
 |[List](../api/drive_list.md) | [drive](drive.md) [] |Get drive object collection. |
 |[Create drive](../api/drive_post_drives.md) |[drive](drive.md)| Create a new drive by posting to the drives collection.|
 
-<!-- uuid: 8a684980-3cf8-4244-9c1e-1ef9b2924345
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: a51204a2-73e0-4087-ae79-d6fb55cbf4fa
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drives resource",

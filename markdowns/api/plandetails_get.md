@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "plandetails"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 75
+
 {
   "sharedWith": {
   },
@@ -48,8 +49,8 @@ Content-length: 75
 ```
 If successful, this method returns a `200 OK` response code and [PlanDetails](../resources/plandetails.md) object in the response body.
 
-<!-- uuid: 82d73ec6-edf1-4f10-857e-fd5a40c6e603
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 44b1a10d-887b-4882-8918-f5d05e0deb45
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanDetails",

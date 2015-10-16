@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "device"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 732
+
 {
   "accountEnabled": true,
   "alternativeSecurityIds": [
@@ -72,8 +73,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: 746fbb9b-cd0a-4a51-b52c-f3cfe438a723
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 19d3e8be-6220-4718-bcd1-02c7b92bedc7
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Device",

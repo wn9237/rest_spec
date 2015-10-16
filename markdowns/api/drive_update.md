@@ -37,6 +37,7 @@ Here is an example of the request.
 PUT /drive
 Content-type: application/json
 Content-length: 458
+
 {
   "id": "id-value",
   "driveType": "driveType-value",
@@ -64,16 +65,17 @@ Content-length: 458
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "drive"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 458
+
 {
   "id": "id-value",
   "driveType": "driveType-value",
@@ -101,8 +103,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: 03b43c78-ec9e-45b2-9702-8f88611e025a
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 2c68db36-609e-4cf0-9a1b-d9353b87f4cb
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of drive object.",

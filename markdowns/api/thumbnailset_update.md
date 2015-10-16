@@ -38,6 +38,7 @@ Here is an example of the request.
 PUT /drive/root/thumbnails/<id>
 Content-type: application/json
 Content-length: 456
+
 {
   "id": "id-value",
   "large": {
@@ -67,16 +68,17 @@ Content-length: 456
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "thumbnailset"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 456
+
 {
   "id": "id-value",
   "large": {
@@ -106,8 +108,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 148e0d60-8997-451f-b740-ced8c6a659fd
-2015-10-16 21:11:06 UTC -->
+<!-- uuid: 37a38e90-619c-4eec-8fb0-17dbd85639fe
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of thumbnailset object.",

@@ -40,6 +40,7 @@ Here is an example of the request.
 PUT /PrivilegedRoles/<Id>/Settings
 Content-type: application/json
 Content-length: 289
+
 {
   "MinElevationDuration": "datetime-value",
   "MaxElavationDuration": "datetime-value",
@@ -52,16 +53,17 @@ Content-length: 289
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedrolesettings"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 289
+
 {
   "MinElevationDuration": "datetime-value",
   "MaxElavationDuration": "datetime-value",
@@ -74,8 +76,8 @@ Content-length: 289
 }
 ```
 
-<!-- uuid: 66bbb94a-9c69-4709-881e-eb82666765a2
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: b2916be3-6894-4d52-9cbc-22c7709a427d
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrolesettings object.",

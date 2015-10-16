@@ -35,22 +35,25 @@ Here is an example of how to call this API.
 POST /directoryRoles/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
+
 {
   "groupIds": [
     "groupIds-value"
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -58,8 +61,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 19a36de2-240d-4cf1-970f-bdd769435acf
-2015-10-16 21:10:45 UTC -->
+<!-- uuid: f2e86bd7-089e-4d58-bd37-d3a3fb7fa250
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole: checkMemberGroups",

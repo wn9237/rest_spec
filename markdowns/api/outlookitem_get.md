@@ -33,10 +33,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "outlookitem"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 185
+
 {
   "ChangeKey": "ChangeKey-value",
   "Categories": [
@@ -49,8 +50,8 @@ Content-length: 185
 ```
 If successful, this method returns a `200 OK` response code and [OutlookItem](../resources/outlookitem.md) object in the response body.
 
-<!-- uuid: 1975c8d7-a6dc-4cb4-ba96-18a230aa225a
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 215cc41b-4497-44ed-9068-4ba48d7cf890
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OutlookItem",

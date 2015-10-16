@@ -41,8 +41,8 @@ None
 |[Update](../api/plantaskboard_update.md) | [PlanTaskBoard](plantaskboard.md)	|Update PlanTaskBoard object. |
 |[Delete](../api/plantaskboard_delete.md) | Void	|Delete PlanTaskBoard object. |
 
-<!-- uuid: 18e7ef57-8636-4fd6-a20f-fe3d32f80ae2
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 6e7210ed-76ed-438f-acd0-aa435ab67b8f
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PlanTaskBoard resource",

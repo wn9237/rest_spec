@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "permission"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 762
+
 {
   "grantedTo": {
     "application": {
@@ -81,8 +82,8 @@ Content-length: 762
 ```
 If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
 
-<!-- uuid: 5afee5ce-addb-4d5e-b410-3760af9ced0c
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 0ddcdc34-83cd-4d02-8eee-8eae1f98655e
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get permission",

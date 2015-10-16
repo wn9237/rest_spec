@@ -42,10 +42,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "mailfolder"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 130
+
 {
   "ParentFolderId": "ParentFolderId-value",
   "DisplayName": "DisplayName-value",
@@ -54,8 +55,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: f7d4df4c-7640-428b-88f7-70ac94bf75e4
-2015-10-16 21:11:07 UTC -->
+<!-- uuid: ae1c6530-4850-4d15-abd5-d1cc96df0321
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create MailFolder",

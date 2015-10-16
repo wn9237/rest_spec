@@ -47,6 +47,7 @@ Here is an example of the request.
 PUT /Alerts/<AlertId>
 Content-type: application/json
 Content-length: 529
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
@@ -67,16 +68,17 @@ Content-length: 529
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "pimalert"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 529
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
@@ -97,8 +99,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: 66bddd33-9ebd-4374-bf9b-d1fb831c4d25
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 18f73c15-9bb7-4589-bfb2-0472f08ad155
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of pimalert object.",

@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "directoryroletemplate"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 187
+
 {
   "description": "description-value",
   "displayName": "displayName-value",
@@ -53,8 +54,8 @@ Content-length: 187
 }
 ```
 
-<!-- uuid: a92768d7-30b3-45d0-94ed-7abff6c53404
-2015-10-16 21:10:46 UTC -->
+<!-- uuid: db944a47-d67c-4067-8bc0-150effbf0c74
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DirectoryRoleTemplate",

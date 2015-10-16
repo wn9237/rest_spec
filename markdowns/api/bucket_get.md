@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "bucket"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 179
+
 {
   "name": "name-value",
   "planId": "planId-value",
@@ -51,8 +52,8 @@ Content-length: 179
 ```
 If successful, this method returns a `200 OK` response code and [Bucket](../resources/bucket.md) object in the response body.
 
-<!-- uuid: cb2068b0-cd45-44cd-ba8b-b2e55dc7f4e1
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: e836df60-88ae-47d0-b887-7489c4a155f5
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Bucket",

@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "share"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 330
+
 {
   "id": "id-value",
   "name": "name-value",
@@ -64,8 +65,8 @@ Content-length: 330
 }
 ```
 
-<!-- uuid: 11f70911-ab08-431a-90d2-0bd70b337fc7
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: e284b261-1f4f-4c1f-96a4-53589715ed42
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create share",

@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "userdetails"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 73
+
 {
   "userData": {
   },
@@ -48,8 +49,8 @@ Content-length: 73
 ```
 If successful, this method returns a `200 OK` response code and [UserDetails](../resources/userdetails.md) object in the response body.
 
-<!-- uuid: cf207d46-92bd-4521-ab35-2e2db2f8eecc
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: 39e51e3a-c42d-49d3-a17a-2b8b7c318ef4
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get UserDetails",

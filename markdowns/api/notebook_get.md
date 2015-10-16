@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "notebook"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 516
+
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -64,8 +65,8 @@ Content-length: 516
 ```
 If successful, this method returns a `200 OK` response code and [Notebook](../resources/notebook.md) object in the response body.
 
-<!-- uuid: 2ec52ec5-5709-4e12-9436-56477b4707d2
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 4b974c34-8b3f-4a7e-9f4d-02aec82c2395
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notebook",

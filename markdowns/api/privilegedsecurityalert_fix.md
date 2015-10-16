@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 POST /PrivilegedSecurityAlerts/<AlertId>/Fix
 Content-type: application/json
 Content-length: 18
+
 {
   "ItemId": 99
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedsecurityalert"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 596
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffectedItems": 99,
@@ -70,8 +73,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: 85b385d6-e506-4e0f-999f-4e132702a45d
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 4a970b15-8c05-4401-b6c2-aa67e5bb01e2
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSecurityAlert: Fix",

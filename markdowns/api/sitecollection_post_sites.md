@@ -40,17 +40,18 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "site"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 22
+
 {
   "id": "id-value"
 }
 ```
 
-<!-- uuid: 84cdd8cb-3268-4bdd-9951-2cc8f2f16e8b
-2015-10-16 21:11:04 UTC -->
+<!-- uuid: 3f9237a4-8393-443b-99c0-2fd35aef67fe
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Site",

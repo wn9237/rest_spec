@@ -79,8 +79,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/notebook_delete.md) | Void	|Delete Notebook object. |
 |[Copynotebook](../api/notebook_copynotebook.md)|[CopyNotebookModel](copynotebookmodel.md)||
 
-<!-- uuid: a2c88d1e-90a2-4f29-9d58-8cefc2159d0c
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 2af6735b-9317-4cbc-a919-e38ff4fe4d6b
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notebook resource",

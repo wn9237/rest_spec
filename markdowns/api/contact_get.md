@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "contact"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1977
+
 {
   "ParentFolderId": "ParentFolderId-value",
   "Birthday": "datetime-value",
@@ -115,8 +116,8 @@ Content-length: 1977
 ```
 If successful, this method returns a `200 OK` response code and [Contact](../resources/contact.md) object in the response body.
 
-<!-- uuid: 58d60b7a-21c3-4765-ad7f-bdc9e77382f8
-2015-10-16 21:10:41 UTC -->
+<!-- uuid: b5879121-8a1d-4c9e-8e3c-dc2dc956a4c9
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Contact",

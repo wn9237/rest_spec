@@ -43,6 +43,7 @@ Here is an example of the request.
 PUT /tasks/<id>/timelineFormat
 Content-type: application/json
 Content-length: 255
+
 {
   "color": 99,
   "drawingStyle": "drawingStyle-value",
@@ -57,16 +58,17 @@ Content-length: 255
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "timelinetaskformat"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 255
+
 {
   "color": 99,
   "drawingStyle": "drawingStyle-value",
@@ -81,8 +83,8 @@ Content-length: 255
 }
 ```
 
-<!-- uuid: aa5285b2-e86f-4294-a4c5-d6a64ae43063
-2015-10-16 21:11:06 UTC -->
+<!-- uuid: 0a6d7ede-8687-49ed-be21-4ac865d05ec6
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of timelinetaskformat object.",

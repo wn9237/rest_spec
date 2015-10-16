@@ -38,27 +38,30 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Events/<Id>/TentativelyAccept
 Content-type: application/json
 Content-length: 56
+
 {
   "Comment": "Comment-value",
   "SendResponse": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: acdcfb82-2cc9-430d-8b78-14fabe4681b2
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 420e9769-0035-4bc7-8c4f-e460cbf79f72
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: TentativelyAccept",

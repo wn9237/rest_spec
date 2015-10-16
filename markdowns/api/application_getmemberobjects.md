@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 POST /applications/<objectId>/getMemberObjects
 Content-type: application/json
 Content-length: 33
+
 {
   "securityEnabledOnly": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -56,8 +59,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: b06a7e78-2860-47dd-bf2d-ae3d2a56de8f
-2015-10-16 21:10:40 UTC -->
+<!-- uuid: 6a6e5f8e-a45f-4d9b-85b7-c397ccd1cb3b
+2015-10-16 23:06:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application: getMemberObjects",

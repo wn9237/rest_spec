@@ -32,23 +32,25 @@ Here is an example of how to call this API.
 POST /groups/<objectId>/AddFavorite
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: 021433c6-5867-4394-8f56-b188bf017848
-2015-10-16 21:10:51 UTC -->
+<!-- uuid: 87e3524f-1657-4f8c-ace3-ffd5c2eeef45
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: AddFavorite",

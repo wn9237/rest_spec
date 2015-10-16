@@ -33,10 +33,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "fileattachment"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 282
+
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
@@ -51,8 +52,8 @@ Content-length: 282
 ```
 If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
 
-<!-- uuid: fea59c43-f894-4698-b42b-bc6b04095deb
-2015-10-16 21:10:49 UTC -->
+<!-- uuid: 41ce415b-29bf-4385-8d50-2e94e13d4d0e
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get FileAttachment",

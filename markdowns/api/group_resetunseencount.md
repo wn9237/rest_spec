@@ -32,23 +32,25 @@ Here is an example of how to call this API.
 POST /groups/<objectId>/ResetUnseenCount
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: 3544f3f2-501b-4692-a3ff-d3f1b36b136f
-2015-10-16 21:10:52 UTC -->
+<!-- uuid: 447dddb4-50d5-46d9-ba0a-fd5363cef58e
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: ResetUnseenCount",

@@ -37,20 +37,23 @@ Here is an example of how to call this API.
 POST /users/<objectId>/Messages/<Id>/Copy
 Content-type: application/json
 Content-length: 44
+
 {
   "DestinationId": "DestinationId-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "message"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -127,8 +130,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 3007c4a2-572e-4076-9a84-511e8f996464
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: 104a5cd4-0fde-4048-b1da-0f8ce938a377
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Copy",

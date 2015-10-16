@@ -35,18 +35,19 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "extension"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 22
+
 {
   "Id": "Id-value"
 }
 ```
 If successful, this method returns a `200 OK` response code and [Extension](../resources/extension.md) object in the response body.
 
-<!-- uuid: 2acf31b1-9c24-4d9d-ac37-471672867117
-2015-10-16 21:10:49 UTC -->
+<!-- uuid: 78d28dc1-1121-44d0-a4ad-f3b9baba31b8
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Extension",

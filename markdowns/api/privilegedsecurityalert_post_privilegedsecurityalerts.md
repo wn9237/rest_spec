@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedsecurityalert"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 596
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffectedItems": 99,
@@ -65,8 +66,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: c3001d58-4c80-450f-85bf-53369dd4324a
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: c9eea172-0cbb-4e5a-978a-dcb590d15af4
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedSecurityAlert",

@@ -31,17 +31,19 @@ Here is an example of how to call this API.
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/My
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedroleassignment"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -51,8 +53,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: b3d9adad-51dd-4bb1-9b4e-663b61932aa7
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: e0a47b40-6853-4b33-af1f-1ee901e8a054
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: My",

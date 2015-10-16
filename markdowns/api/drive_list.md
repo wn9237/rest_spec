@@ -37,10 +37,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "drives"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 580
+
 {
   "values": [
     {
@@ -73,8 +74,8 @@ Content-length: 580
 ```
 If successful, this method returns a `200 OK` response code and collection of [drive](../resources/drive.md) objects in the response body.
 
-<!-- uuid: 579dd728-f718-442e-ac01-898a1487a0ad
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 90337363-de95-4ab6-a6c0-aa5f5a1492a0
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List drive",

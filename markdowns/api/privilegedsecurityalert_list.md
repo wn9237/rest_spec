@@ -37,10 +37,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "privilegedsecurityalerts"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 694
+
 {
   "values": [
     {
@@ -67,8 +68,8 @@ Content-length: 694
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedSecurityAlert](../resources/privilegedsecurityalert.md) objects in the response body.
 
-<!-- uuid: a2e56d0b-4e8c-4f37-b8da-2fce939a82f5
-2015-10-16 21:11:01 UTC -->
+<!-- uuid: 00e5a643-bbb7-4c53-8da9-ff65ec6f05f6
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedSecurityAlert",

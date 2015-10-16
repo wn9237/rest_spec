@@ -30,17 +30,19 @@ Here is an example of how to call this API.
 POST /Alerts/<AlertId>/Reactivate
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "pimalert"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 529
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
@@ -61,8 +63,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: bd465aa6-f961-44d8-9ad6-7364b18905f5
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: f8b8f18e-47e4-4e34-a44b-222c007c013c
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Reactivate",

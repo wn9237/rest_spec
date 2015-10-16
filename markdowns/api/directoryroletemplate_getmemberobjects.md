@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 POST /directoryRoleTemplates/<objectId>/getMemberObjects
 Content-type: application/json
 Content-length: 33
+
 {
   "securityEnabledOnly": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -56,8 +59,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: efcf8032-fd02-42c1-82e6-a652e9ad6b6d
-2015-10-16 21:10:46 UTC -->
+<!-- uuid: 6cdbbae3-aaef-4310-b515-0930180fb954
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRoleTemplate: getMemberObjects",

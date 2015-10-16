@@ -75,8 +75,8 @@ Here is a JSON representation of the resource
 |[Create Section](../api/notes_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
 |[Delete](../api/notes_delete.md) | Void	|Delete Notes object. |
 
-<!-- uuid: eb746b47-5aff-4fed-a281-73cf5b562995
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 1eda4d20-4191-4853-a930-858abe0be02a
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notes resource",

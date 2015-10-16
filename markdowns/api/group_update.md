@@ -57,6 +57,7 @@ Here is an example of the request.
 PUT /groups/<objectId>
 Content-type: application/json
 Content-length: 1009
+
 {
   "description": "description-value",
   "dirSyncEnabled": true,
@@ -98,16 +99,17 @@ Content-length: 1009
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "group"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1009
+
 {
   "description": "description-value",
   "dirSyncEnabled": true,
@@ -149,8 +151,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: 51ddd442-7cf4-42d1-b1fa-8a410219523c
-2015-10-16 21:10:51 UTC -->
+<!-- uuid: f02461a8-86d4-49fa-b2ef-40eb6aed2de6
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of group object.",

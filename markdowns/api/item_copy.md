@@ -38,6 +38,7 @@ Here is an example of how to call this API.
 POST /drive/root/copy
 Content-type: application/json
 Content-length: 133
+
 {
   "parentReference": {
     "driveId": "driveId-value",
@@ -46,17 +47,19 @@ Content-length: 133
   },
   "name": "name-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "item"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3050
+
 {
   "content": "content-value",
   "createdBy": {
@@ -200,8 +203,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: 3206289d-4852-4d18-8119-18d2ed5fbd82
-2015-10-16 21:10:54 UTC -->
+<!-- uuid: 21add996-3902-4b10-b0ae-41b9d14169cd
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: copy",

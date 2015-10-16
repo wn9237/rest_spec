@@ -39,6 +39,7 @@ Here is an example of the request.
 PUT /applications/<objectId>/extensionProperties/<objectId>
 Content-type: application/json
 Content-length: 297
+
 {
   "appDisplayName": "appDisplayName-value",
   "name": "name-value",
@@ -53,16 +54,17 @@ Content-length: 297
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "extensionproperty"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 297
+
 {
   "appDisplayName": "appDisplayName-value",
   "name": "name-value",
@@ -77,8 +79,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: 96b657bb-d69a-49e1-8266-46aff0a568cd
-2015-10-16 21:10:49 UTC -->
+<!-- uuid: bd0bbc9c-fb60-4ac0-8eb0-12821ed6b3ff
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of extensionproperty object.",

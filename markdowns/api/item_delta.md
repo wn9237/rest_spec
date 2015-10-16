@@ -37,17 +37,19 @@ Here is an example of how to call this API.
 POST /drive/root/delta
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "item"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3636
+
 {
   "values": [
     {
@@ -195,8 +197,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: d4619d4f-c87b-45c8-adef-af5d42d8f4d7
-2015-10-16 21:10:55 UTC -->
+<!-- uuid: 2e498b4c-7a06-4c5b-8ffa-1e4ed9f32324
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: delta",

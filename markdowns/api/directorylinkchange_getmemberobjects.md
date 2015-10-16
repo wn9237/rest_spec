@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 
 Content-type: application/json
 Content-length: 33
+
 {
   "securityEnabledOnly": true
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -56,8 +59,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: c5dc8358-ee8a-4ed7-9ff3-7e7a986c5623
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 94a5fcee-da2e-4845-a356-92a12a79acdb
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryLinkChange: getMemberObjects",

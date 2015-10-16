@@ -37,6 +37,7 @@ Here is an example of how to call this API.
 POST /groups/<objectId>/Threads/<Id>/Reply
 Content-type: application/json
 Content-length: 1075
+
 {
   "Post": {
     "Body": {
@@ -82,23 +83,25 @@ Content-length: 1075
     }
   }
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "none"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3
+
 {
 }
 ```
 
-<!-- uuid: 4e67dae8-89b9-4874-88c7-0ecab01f8b65
-2015-10-16 21:10:44 UTC -->
+<!-- uuid: 0d34258a-4338-40e6-9a00-c95ad12a69bb
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread: Reply",

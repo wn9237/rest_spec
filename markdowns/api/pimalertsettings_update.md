@@ -33,30 +33,32 @@ Here is an example of the request.
 PUT /AlertSettings/<AlertId>
 Content-type: application/json
 Content-length: 74
+
 {
   "AlertId": "AlertId-value",
   "AlertSettings": "AlertSettings-value"
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "pimalertsettings"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 74
+
 {
   "AlertId": "AlertId-value",
   "AlertSettings": "AlertSettings-value"
 }
 ```
 
-<!-- uuid: 9f8ad977-4170-480f-8ed7-a2d2c4c3fca9
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: 30e7c076-de7b-4de5-b88e-80a47becb1fc
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of pimalertsettings object.",

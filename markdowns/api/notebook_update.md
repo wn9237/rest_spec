@@ -46,6 +46,7 @@ Here is an example of the request.
 PUT /users/<objectId>/notes/notebooks/<id>
 Content-type: application/json
 Content-length: 516
+
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -70,16 +71,17 @@ Content-length: 516
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "notebook"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 516
+
 {
   "isDefault": true,
   "userRole": "userRole-value",
@@ -104,8 +106,8 @@ Content-length: 516
 }
 ```
 
-<!-- uuid: 22f7bf81-6a3b-4ed1-b1e6-d0e269027cde
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: 17bc8728-2030-4121-ae86-dc4c7ea7889f
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notebook object.",

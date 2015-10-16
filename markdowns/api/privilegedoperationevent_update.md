@@ -44,6 +44,7 @@ Here is an example of the request.
 PUT /PrivilegedOperationEvents/<Id>
 Content-type: application/json
 Content-length: 456
+
 {
   "Id": "Id-value",
   "UserId": "UserId-value",
@@ -61,16 +62,17 @@ Content-length: 456
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedoperationevent"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 456
+
 {
   "Id": "Id-value",
   "UserId": "UserId-value",
@@ -88,8 +90,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: dcfcb8e7-fbc0-48f0-a2a0-396ab146674f
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: a794912a-cadf-4ec3-9fa9-5d3a84d61f9c
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedoperationevent object.",

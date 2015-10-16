@@ -37,10 +37,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "notifications"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 206
+
 {
   "values": [
     {
@@ -54,8 +55,8 @@ Content-length: 206
 ```
 If successful, this method returns a `200 OK` response code and collection of [Notification](../resources/notification.md) objects in the response body.
 
-<!-- uuid: 78f1ce3a-073a-4cd5-85fc-d9863dd0ba07
-2015-10-16 21:10:56 UTC -->
+<!-- uuid: b178bd24-05c9-481e-a345-a7c985823bf5
+2015-10-16 23:06:06 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Notification",

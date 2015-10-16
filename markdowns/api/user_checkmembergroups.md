@@ -37,22 +37,25 @@ Here is an example of how to call this API.
 POST /users/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
+
 {
   "groupIds": [
     "groupIds-value"
   ]
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "string"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
+
 {
   "value": [
     "String-value"
@@ -60,8 +63,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 8c106e2f-2787-4d9f-8129-6f6695aae6fe
-2015-10-16 21:11:08 UTC -->
+<!-- uuid: e8f9111b-f790-4ce8-ad51-0c67cfa95209
+2015-10-16 23:06:10 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: checkMemberGroups",

@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "taskboardtaskformat"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 110
+
 {
   "type": "type-value",
   "orderHint": "orderHint-value",
@@ -48,8 +49,8 @@ Content-length: 110
 ```
 If successful, this method returns a `200 OK` response code and [TaskBoardTaskFormat](../resources/taskboardtaskformat.md) object in the response body.
 
-<!-- uuid: 8d88b9a1-a9db-495b-8ee9-675b187ddea6
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: 459d06f3-23ab-44e4-bfce-97f923368e4d
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskBoardTaskFormat",

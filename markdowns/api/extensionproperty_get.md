@@ -27,10 +27,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "extensionproperty"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 297
+
 {
   "appDisplayName": "appDisplayName-value",
   "name": "name-value",
@@ -46,8 +47,8 @@ Content-length: 297
 ```
 If successful, this method returns a `200 OK` response code and [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
 
-<!-- uuid: d1dbaccf-1848-42cf-a7e6-d87c617f828a
-2015-10-16 21:10:49 UTC -->
+<!-- uuid: 76f13545-de91-4464-b53b-ab6adc80dbeb
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ExtensionProperty",

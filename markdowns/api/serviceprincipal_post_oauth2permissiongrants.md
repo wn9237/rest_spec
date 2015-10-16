@@ -40,10 +40,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "oauth2permissiongrant"
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 271
+
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
@@ -56,8 +57,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 6abf614f-c01a-4902-a259-e9f199ec24a3
-2015-10-16 21:11:03 UTC -->
+<!-- uuid: cefe70f3-2357-49ad-903c-e230e0fdd0a0
+2015-10-16 23:06:08 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

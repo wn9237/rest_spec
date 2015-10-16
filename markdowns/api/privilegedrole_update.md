@@ -34,30 +34,32 @@ Here is an example of the request.
 PUT /PrivilegedRoles/<Id>
 Content-type: application/json
 Content-length: 46
+
 {
   "Id": "Id-value",
   "Name": "Name-value"
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedrole"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 46
+
 {
   "Id": "Id-value",
   "Name": "Name-value"
 }
 ```
 
-<!-- uuid: 0f753358-2473-4c86-b818-fb74dadadf2b
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: fbb19a54-a354-4947-b49f-4f275f88beeb
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrole object.",

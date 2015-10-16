@@ -39,23 +39,26 @@ Here is an example of how to call this API.
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/Activate
 Content-type: application/json
 Content-length: 142
+
 {
   "Reason": "Reason-value",
   "Duration": "Duration-value",
   "TicketNumber": "TicketNumber-value",
   "TicketSystem": "TicketSystem-value"
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "privilegedroleassignment"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 160
+
 {
   "UserId": "UserId-value",
   "RoleId": "RoleId-value",
@@ -65,8 +68,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 60bbe99b-7002-4162-a12e-921b39e6a8a5
-2015-10-16 21:11:00 UTC -->
+<!-- uuid: f544c977-341a-431b-bb05-e5b2755432c7
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: Activate",

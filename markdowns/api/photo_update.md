@@ -36,6 +36,7 @@ Here is an example of the request.
 PUT /users/<objectId>/UserPhoto
 Content-type: application/json
 Content-length: 53
+
 {
   "Width": 99,
   "Height": 99,
@@ -43,16 +44,17 @@ Content-length: 53
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "photo"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 53
+
 {
   "Width": 99,
   "Height": 99,
@@ -60,8 +62,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 543d6df0-2a9a-4001-ab92-66fa2b0ddc5c
-2015-10-16 21:10:58 UTC -->
+<!-- uuid: 2f04f751-2ae6-4cdd-a325-ab914190323d
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of photo object.",

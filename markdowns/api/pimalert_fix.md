@@ -35,20 +35,23 @@ Here is an example of how to call this API.
 POST /Alerts/<AlertId>/Fix
 Content-type: application/json
 Content-length: 18
+
 {
   "ItemId": 99
 }
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "pimalert"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 529
+
 {
   "AlertId": "AlertId-value",
   "NumberOfAffected": 99,
@@ -69,8 +72,8 @@ Content-length: 529
 }
 ```
 
-<!-- uuid: d2990b71-b977-48f4-84a2-452d72d2e5ac
-2015-10-16 21:10:59 UTC -->
+<!-- uuid: e70180c6-9d07-4bca-bfe2-ae94e80acb51
+2015-10-16 23:06:07 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PimAlert: Fix",

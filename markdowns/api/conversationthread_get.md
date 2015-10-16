@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "conversationthread"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 489
+
 {
   "ToRecipients": [
     {
@@ -69,8 +70,8 @@ Content-length: 489
 ```
 If successful, this method returns a `200 OK` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
-<!-- uuid: 4b649b04-c5fb-47e4-a858-aba0a04892aa
-2015-10-16 21:10:43 UTC -->
+<!-- uuid: 135e3bc6-bd58-4112-861d-b4ea580d7526
+2015-10-16 23:06:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ConversationThread",

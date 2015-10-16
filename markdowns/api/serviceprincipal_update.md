@@ -53,6 +53,7 @@ Here is an example of the request.
 PUT /servicePrincipals/<objectId>
 Content-type: application/json
 Content-length: 1924
+
 {
   "accountEnabled": true,
   "appDisplayName": "appDisplayName-value",
@@ -123,16 +124,17 @@ Content-length: 1924
 }
 ```
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "serviceprincipal"
 } -->
-Here is an example of the response.
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1924
+
 {
   "accountEnabled": true,
   "appDisplayName": "appDisplayName-value",
@@ -203,8 +205,8 @@ Content-length: 1924
 }
 ```
 
-<!-- uuid: 28b1a0ba-c175-4de7-8aae-9a1663fb4c04
-2015-10-16 21:11:03 UTC -->
+<!-- uuid: 132f98b3-4a22-4526-a643-270d251f4e48
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of serviceprincipal object.",

@@ -30,17 +30,19 @@ Here is an example of how to call this API.
 
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "message"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1546
+
 {
   "Subject": "Subject-value",
   "Body": {
@@ -117,8 +119,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 6c012bfa-72bb-462a-b48b-efb1c59f51d2
-2015-10-16 21:10:48 UTC -->
+<!-- uuid: 358e8880-4bb1-41e7-bb27-06b6fd112b24
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: CreateReply",

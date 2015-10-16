@@ -32,17 +32,19 @@ Here is an example of how to call this API.
 POST /drive/allPhotos
 Content-type: application/json
 Content-length: 0
+```
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "item"
 } -->
-```
-##### Response
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 3636
+
 {
   "values": [
     {
@@ -190,8 +192,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: a71de1af-bce4-4d89-887f-d3c0a16d5ccc
-2015-10-16 21:10:47 UTC -->
+<!-- uuid: 5ad3281e-7a0e-4b61-96d1-e568dbf80134
+2015-10-16 23:06:05 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive: allPhotos",

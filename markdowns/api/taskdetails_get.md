@@ -35,10 +35,11 @@ Here is an example of the response.
   "truncated": false,
   "@odata.type": "taskdetails"
 } -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 139
+
 {
   "notes": "notes-value",
   "completedBy": "completedBy-value",
@@ -50,8 +51,8 @@ Content-length: 139
 ```
 If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
 
-<!-- uuid: 08b517ca-78dc-4374-8e01-ed9fcf286bb5
-2015-10-16 21:11:05 UTC -->
+<!-- uuid: c837ed30-eb62-4db9-a65e-d56957fb2888
+2015-10-16 23:06:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskDetails",
