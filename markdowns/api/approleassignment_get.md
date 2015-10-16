@@ -48,8 +48,8 @@ Content-length: 398
 ```
 If successful, this method returns a `200 OK` response code and [AppRoleAssignment](../resources/approleassignment.md) object in the response body.
 
-<!-- uuid: af4c0ce0-288a-4277-8460-cd724b5c4a8e
-2015-10-16 01:35:14 UTC -->
+<!-- uuid: 3402686b-2666-4727-a2da-59cd1acc21cc
+2015-10-16 09:34:38 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get AppRoleAssignment",

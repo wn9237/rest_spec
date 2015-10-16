@@ -14,9 +14,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/pimalertinfo_list.md) | [PimAlertInfo](pimalertinfo.md) [] |Get pimAlertInfo object collection. |
+|[Create PimAlertInfo](../api/pimalertinfo_post_alertinfo.md) |[PimAlertInfo](pimalertinfo.md)| Create a new PimAlertInfo by posting to the AlertInfo collection.|
 
-<!-- uuid: d2667cdb-fa18-4c85-87bf-3cd707801862
-2015-10-16 01:35:14 UTC -->
+<!-- uuid: 8bda0b4b-8bf5-42c7-9957-bf8f09bbf345
+2015-10-16 09:34:37 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AlertInfo resource",

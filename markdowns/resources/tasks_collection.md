@@ -14,9 +14,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/task_list.md) | [Task](task.md) [] |Get task object collection. |
+|[Create Task](../api/task_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
 
-<!-- uuid: 79832591-acaa-4f02-92ca-290a09f1f0bd
-2015-10-16 01:35:21 UTC -->
+<!-- uuid: c79871f2-9deb-492e-81eb-981ae25f4b44
+2015-10-16 09:35:04 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "tasks resource",

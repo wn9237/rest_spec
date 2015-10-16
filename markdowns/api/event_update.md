@@ -231,8 +231,8 @@ Content-length: 1794
 }
 ```
 
-<!-- uuid: c0b1a9c5-b5fd-4f53-bcb9-978e48f69990
-2015-10-16 01:35:16 UTC -->
+<!-- uuid: 0a58cc09-7389-4269-8e80-f26b654f14ba
+2015-10-16 09:34:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of event object.",

@@ -52,8 +52,8 @@ Content-length: 388
 ```
 If successful, this method returns a `200 OK` response code and [SubscribedSku](../resources/subscribedsku.md) object in the response body.
 
-<!-- uuid: f1537f87-0140-46b2-b09e-b9c46f39507e
-2015-10-16 01:35:21 UTC -->
+<!-- uuid: cbebcbdf-aafb-4303-aca1-64bbcd756e34
+2015-10-16 09:35:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SubscribedSku",

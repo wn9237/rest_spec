@@ -167,8 +167,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String||
 |[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String||
 
-<!-- uuid: fe46e642-9076-4cd7-b748-369c13c66fac
-2015-10-16 01:35:20 UTC -->
+<!-- uuid: f186a872-7be1-4587-9e9b-99f0c3155f56
+2015-10-16 09:35:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal resource",

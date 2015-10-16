@@ -54,8 +54,8 @@ Here is a JSON representation of the resource
 |[Update](../api/outlookitem_update.md) | [OutlookItem](outlookitem.md)	|Update OutlookItem object. |
 |[Delete](../api/outlookitem_delete.md) | Void	|Delete OutlookItem object. |
 
-<!-- uuid: d3aa79cb-83f8-462d-b132-0d3ffd0b25bb
-2015-10-16 01:35:18 UTC -->
+<!-- uuid: a379d941-dd90-4496-aef2-54a102a5a20c
+2015-10-16 09:34:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OutlookItem resource",

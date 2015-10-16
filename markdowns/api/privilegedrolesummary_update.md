@@ -68,8 +68,8 @@ Content-length: 145
 }
 ```
 
-<!-- uuid: 168def55-5d80-41c1-986c-5fa4f287a83e
-2015-10-16 01:35:19 UTC -->
+<!-- uuid: 32c08465-ed08-4562-8822-4dac380ad021
+2015-10-16 09:34:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrolesummary object.",

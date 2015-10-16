@@ -679,7 +679,6 @@ module SpecMaker
 						returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
 						@mdlines.push "|[Get #{@jsonHash[:name]}](../api/#{@jsonHash[:name].downcase}_get.md) | #{returnLink} |Read properties and relationships of #{uncapitalize @jsonHash[:name]} object.|" + NEWLINE
 					end
-
 				end
 				create_get_method
 			end
@@ -698,7 +697,7 @@ module SpecMaker
 							useName = prop[:dataType]					
 							postName = "Create " + useName
 						end
-
+						filename = "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md"
 						postLink = "../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md"					
 						if SIMPLETYPES.include? prop[:dataType]
 							returnLink = prop[:dataType]
@@ -706,24 +705,59 @@ module SpecMaker
 							returnLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
 						end					
 						@mdlines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{prop[:name]} collection.|" + NEWLINE				
-						mtd = deep_copy(@struct[:method]) 
-
-						mtd[:name] = 'auto_post'
-						mtd[:displayName] = postName
-						mtd[:returnType] = prop[:dataType]
-						createDescription = get_create_description(mtd[:returnType])
-						if createDescription.empty?
-							mtd[:description] = "Use this API to create a new #{useName}."
+						if File.exists?("#{MARKDOWN_API_FOLDER}/filename")
+							puts "POST create file already exists!"
 						else
-							mtd[:description] = createDescription
-						end
+							mtd = deep_copy(@struct[:method]) 
 
-						mtd[:parameters] = nil					
-						mtd[:httpSuccessCode] = '201'
-					    create_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md", prop[:name])
+							mtd[:name] = 'auto_post'
+							mtd[:displayName] = postName
+							mtd[:returnType] = prop[:dataType]
+							createDescription = get_create_description(mtd[:returnType])
+							if createDescription.empty?
+								mtd[:description] = "Use this API to create a new #{useName}."
+							else
+								mtd[:description] = createDescription
+							end
+
+							mtd[:parameters] = nil					
+							mtd[:httpSuccessCode] = '201'
+						    create_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md", prop[:name])
+						end
 					end
 				end			
 			end
+
+			# Add create method for collections
+			if @jsonHash[:isEntitySet] && @jsonHash[:collectionOf]
+				useName = @jsonHash[:collectionOf]					
+				postName = "Create " + useName
+				filename = "#{@jsonHash[:collectionOf].downcase}_post_#{@jsonHash[:name].downcase}.md"
+				postLink = "../api/#{@jsonHash[:collectionOf].downcase}_post_#{@jsonHash[:name].downcase}.md"					
+				returnLink = "[" + @jsonHash[:collectionOf]	 + "](" + @jsonHash[:collectionOf].downcase + ".md)"
+
+				@mdlines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{@jsonHash[:name] } collection.|" + NEWLINE				
+
+				if File.exists?("#{MARKDOWN_API_FOLDER}/filename")
+					puts "EntitySet POST create file already exists!"
+				else
+					mtd = deep_copy(@struct[:method]) 
+					mtd[:name] = 'auto_post'
+					mtd[:displayName] = postName
+					mtd[:returnType] = @jsonHash[:collectionOf]
+					createDescription = get_create_description(@jsonHash[:collectionOf])
+					if createDescription.empty?
+						mtd[:description] = "Use this API to create a new #{useName}."
+					else
+						mtd[:description] = createDescription
+					end
+					mtd[:parameters] = nil					
+					mtd[:httpSuccessCode] = '201'
+					puts "Creating new! #{filename}"
+				    create_method_mdfile(mtd, filename)
+				end
+			end
+			# end			
 
 			if patchable
 				returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
@@ -761,6 +795,10 @@ module SpecMaker
 					push_method mtd
 				end
 			end
+
+
+
+
 			if !isProperty && !isMethod && !isPost
 				@mdlines.push "None"  + TWONEWLINES
 			end	

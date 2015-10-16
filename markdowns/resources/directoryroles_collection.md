@@ -14,9 +14,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/directoryrole_list.md) | [DirectoryRole](directoryrole.md) [] |Get directoryRole object collection. |
+|[Create DirectoryRole](../api/directoryrole_post_directoryroles.md) |[DirectoryRole](directoryrole.md)| Create a new DirectoryRole by posting to the directoryRoles collection.|
 
-<!-- uuid: b5284674-0440-4188-b916-660b12dd3a3f
-2015-10-16 01:35:16 UTC -->
+<!-- uuid: 0784f1b9-c53b-4135-8502-6c07c047b1b0
+2015-10-16 09:34:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "directoryRoles resource",

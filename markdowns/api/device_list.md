@@ -67,8 +67,8 @@ Content-length: 858
 ```
 If successful, this method returns a `200 OK` response code and collection of [Device](../resources/device.md) objects in the response body.
 
-<!-- uuid: 53dfdef5-f03e-4415-ad4e-140ef8b046e5
-2015-10-16 01:35:16 UTC -->
+<!-- uuid: 011071a0-13cb-49b0-a35d-e1c430861694
+2015-10-16 09:34:43 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Device",

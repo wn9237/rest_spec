@@ -25,8 +25,8 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |href|String||
 
-<!-- uuid: 2a525627-a6ba-4c68-8da2-b27dc9f24e29
-2015-10-16 01:35:17 UTC -->
+<!-- uuid: 8dfa895f-67cc-42bb-b6ef-b6274274e340
+2015-10-16 09:34:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExternalLink resource",

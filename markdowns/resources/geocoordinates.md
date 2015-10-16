@@ -33,8 +33,8 @@ Here is a JSON representation of the resource
 |Latitude|Double||
 |Longitude|Double||
 
-<!-- uuid: 08cde148-5b23-4068-90a2-f15dc7457641
-2015-10-16 01:35:17 UTC -->
+<!-- uuid: 9b0b956b-57d7-499b-b15a-edf4934099a5
+2015-10-16 09:34:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "GeoCoordinates resource",

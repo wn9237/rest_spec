@@ -14,9 +14,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/serviceprincipal_list.md) | [ServicePrincipal](serviceprincipal.md) [] |Get servicePrincipal object collection. |
+|[Create ServicePrincipal](../api/serviceprincipal_post_serviceprincipals.md) |[ServicePrincipal](serviceprincipal.md)| Create a new ServicePrincipal by posting to the servicePrincipals collection.|
 
-<!-- uuid: eb7f1447-cef2-42d7-a047-bec50ccec2d0
-2015-10-16 01:35:20 UTC -->
+<!-- uuid: 1b042d27-d49c-4f06-820b-367270c73d27
+2015-10-16 09:35:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "servicePrincipals resource",

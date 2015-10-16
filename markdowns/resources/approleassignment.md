@@ -65,8 +65,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/approleassignment_getmembergroups.md)|String||
 |[Get MemberObjects](../api/approleassignment_getmemberobjects.md)|String||
 
-<!-- uuid: 8e9de60f-16d8-4680-8012-04d48ee48dea
-2015-10-16 01:35:14 UTC -->
+<!-- uuid: b46a6aff-bc4b-4809-906c-23d718d08275
+2015-10-16 09:34:38 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRoleAssignment resource",

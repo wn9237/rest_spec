@@ -14,9 +14,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/privilegedroleassignment_list.md) | [PrivilegedRoleAssignment](privilegedroleassignment.md) [] |Get privilegedRoleAssignment object collection. |
+|[Create PrivilegedRoleAssignment](../api/privilegedroleassignment_post_privilegedroleassignments.md) |[PrivilegedRoleAssignment](privilegedroleassignment.md)| Create a new PrivilegedRoleAssignment by posting to the PrivilegedRoleAssignments collection.|
 
-<!-- uuid: f344b8bf-2e0c-4867-bd4e-7122516caf48
-2015-10-16 01:35:19 UTC -->
+<!-- uuid: a14349a6-2670-422d-a846-8e4a82023633
+2015-10-16 09:34:59 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignments resource",

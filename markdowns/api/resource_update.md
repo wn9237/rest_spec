@@ -63,8 +63,8 @@ Content-length: 112
 }
 ```
 
-<!-- uuid: 016b1c6d-eab6-4101-bc40-7ac4ccd80e75
-2015-10-16 01:35:20 UTC -->
+<!-- uuid: b1d6112c-85a7-4409-b714-93954819417e
+2015-10-16 09:35:00 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of resource object.",

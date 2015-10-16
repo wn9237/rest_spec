@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |id|String||
 |path|String||
 
-<!-- uuid: 10298f17-771c-44b3-8644-6b02d2d63953
-2015-10-16 01:35:18 UTC -->
+<!-- uuid: 87ccd6f0-7c5e-4742-ad15-d7f3851220f1
+2015-10-16 09:34:52 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "itemReference resource",

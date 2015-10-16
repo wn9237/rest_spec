@@ -14,9 +14,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/bucket_list.md) | [Bucket](bucket.md) [] |Get bucket object collection. |
+|[Create Bucket](../api/bucket_post_buckets.md) |[Bucket](bucket.md)| Create a new Bucket by posting to the buckets collection.|
 
-<!-- uuid: 0078e0ae-f35a-4238-a124-3238f7b4f651
-2015-10-16 01:35:15 UTC -->
+<!-- uuid: 74262726-279f-43d3-8b8e-d1fe6edac4d1
+2015-10-16 09:34:38 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "buckets resource",

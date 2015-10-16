@@ -14,9 +14,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/pimalert_list.md) | [PimAlert](pimalert.md) [] |Get pimAlert object collection. |
+|[Create PimAlert](../api/pimalert_post_alerts.md) |[PimAlert](pimalert.md)| Create a new PimAlert by posting to the Alerts collection.|
 
-<!-- uuid: 2d67b70f-d2ce-4805-95b9-c27b8d0bd8cd
-2015-10-16 01:35:14 UTC -->
+<!-- uuid: deb04e7b-f10d-4085-9021-fcbf53d4653d
+2015-10-16 09:34:37 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Alerts resource",

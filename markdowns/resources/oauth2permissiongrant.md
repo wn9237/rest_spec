@@ -51,8 +51,8 @@ None
 |[Update](../api/oauth2permissiongrant_update.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md)	|Update OAuth2PermissionGrant object. |
 |[Delete](../api/oauth2permissiongrant_delete.md) | Void	|Delete OAuth2PermissionGrant object. |
 
-<!-- uuid: 48241bc4-fdd0-4387-80e6-55c54205d984
-2015-10-16 01:35:18 UTC -->
+<!-- uuid: 986c51b7-4458-46f6-aa67-0dd9d279c677
+2015-10-16 09:34:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OAuth2PermissionGrant resource",

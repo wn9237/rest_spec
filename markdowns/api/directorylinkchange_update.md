@@ -79,8 +79,8 @@ Content-length: 433
 }
 ```
 
-<!-- uuid: 1c4d022a-c688-4181-b657-2f7da6f14558
-2015-10-16 01:35:16 UTC -->
+<!-- uuid: c06b60ae-7d7a-4d39-983d-90d8876e1d65
+2015-10-16 09:34:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directorylinkchange object.",

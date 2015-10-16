@@ -53,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 3cf2336c-e4af-459c-a9a1-6e9759eae2af
-2015-10-16 01:35:17 UTC -->
+<!-- uuid: fb2d56b7-8631-4ce7-9a79-ecb7fa8f6e2c
+2015-10-16 09:34:49 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AcceptedSender",

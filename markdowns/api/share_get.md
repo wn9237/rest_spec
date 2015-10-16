@@ -58,8 +58,8 @@ Content-length: 330
 ```
 If successful, this method returns a `200 OK` response code and [share](../resources/share.md) object in the response body.
 
-<!-- uuid: e857ecee-860c-4148-91bb-c46c5e56ca84
-2015-10-16 01:35:20 UTC -->
+<!-- uuid: 2cc1a090-fc89-41e5-ac3a-a084a06a19d8
+2015-10-16 09:35:02 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get share",

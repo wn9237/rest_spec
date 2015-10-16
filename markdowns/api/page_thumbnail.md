@@ -48,8 +48,8 @@ Content-length: 29
 }
 ```
 
-<!-- uuid: ae7d2a0e-42dd-480b-b5a0-7e87bd16e7ca
-2015-10-16 01:35:18 UTC -->
+<!-- uuid: 71655487-888c-4b71-805b-e5d61220c036
+2015-10-16 09:34:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page: Thumbnail",

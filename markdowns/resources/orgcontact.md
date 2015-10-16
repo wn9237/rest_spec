@@ -121,8 +121,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/orgcontact_getmembergroups.md)|String||
 |[Get MemberObjects](../api/orgcontact_getmemberobjects.md)|String||
 
-<!-- uuid: b66fab3a-bf45-48f0-a956-b4cfe32f2432
-2015-10-16 01:35:18 UTC -->
+<!-- uuid: 35ec1af4-2169-44d1-b8b1-74a9e91b11f2
+2015-10-16 09:34:56 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OrgContact resource",

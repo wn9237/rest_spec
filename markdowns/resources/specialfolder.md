@@ -25,8 +25,8 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |name|String||
 
-<!-- uuid: 708d5d19-d3b0-42e2-ab7d-74a694565371
-2015-10-16 01:35:21 UTC -->
+<!-- uuid: a32d6a45-c688-47a0-ba24-c98a15e766cd
+2015-10-16 09:35:03 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "specialFolder resource",

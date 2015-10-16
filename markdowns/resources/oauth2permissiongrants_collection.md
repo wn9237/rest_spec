@@ -14,9 +14,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/oauth2permissiongrant_list.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md) [] |Get oAuth2PermissionGrant object collection. |
+|[Create OAuth2PermissionGrant](../api/oauth2permissiongrant_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
 
-<!-- uuid: 632a68b7-602f-4d3a-b8e2-5ecbc1a42009
-2015-10-16 01:35:18 UTC -->
+<!-- uuid: d326ff40-80d1-40dd-85da-17905c43d0f0
+2015-10-16 09:34:55 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "oauth2PermissionGrants resource",
