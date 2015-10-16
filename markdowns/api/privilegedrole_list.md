@@ -45,8 +45,8 @@ Content-length: 84
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedRole](../resources/privilegedrole.md) objects in the response body.
 
-<!-- uuid: 8d86889d-d7fd-4b31-967f-ec63e26be79d
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: 990ae160-1100-4fc2-a9f7-239600dd959b
+2015-10-16 01:35:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedRole",

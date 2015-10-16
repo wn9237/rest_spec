@@ -1,4 +1,4 @@
-# tasks resource type
+# groups resource type
 
 
 
@@ -13,13 +13,13 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/task_list.md) | [Task](task.md) [] |Get task object collection. |
+|[List](../api/group_list.md) | [Group](group.md) [] |Get group object collection. |
 
-<!-- uuid: b543febe-e82e-42be-bc84-4ea0f7af193c
-2015-10-15 04:07:55 UTC -->
+<!-- uuid: fd9f211c-39c6-4e3e-86d6-cf2c9db1c1fe
+2015-10-16 01:35:17 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "tasks resource",
+  "description": "groups resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

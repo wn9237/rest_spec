@@ -78,8 +78,8 @@ Content-length: 309
 }
 ```
 
-<!-- uuid: 952503b4-0e2f-431d-92c7-61022673b6c6
-2015-10-15 04:07:54 UTC -->
+<!-- uuid: e96663fe-271f-427d-90e3-9b2b8e078e62
+2015-10-16 01:35:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of sectiongroup object.",

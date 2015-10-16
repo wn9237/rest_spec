@@ -54,8 +54,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: 25f2668a-96d5-4214-9e57-8c2ccc98cced
-2015-10-15 04:07:55 UTC -->
+<!-- uuid: 9463797d-9f95-4f5e-8f3f-cfdd3b3e5058
+2015-10-16 01:35:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create CalendarGroup",

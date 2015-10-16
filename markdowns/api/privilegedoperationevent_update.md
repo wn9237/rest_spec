@@ -88,8 +88,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 28977e4b-1aee-47d7-ac05-9cd350f99921
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: 94d28fec-cc8f-4023-88ee-5208ef8cacf9
+2015-10-16 01:35:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedoperationevent object.",

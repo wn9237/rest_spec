@@ -113,8 +113,8 @@ Content-length: 940
 }
 ```
 
-<!-- uuid: 7937df59-84bb-4e97-a143-72c1c49edc8c
-2015-10-15 04:07:52 UTC -->
+<!-- uuid: 76c26d87-230f-4750-9e62-c493474f2f0d
+2015-10-16 01:35:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: invite",

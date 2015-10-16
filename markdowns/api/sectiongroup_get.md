@@ -53,8 +53,8 @@ Content-length: 309
 ```
 If successful, this method returns a `200 OK` response code and [SectionGroup](../resources/sectiongroup.md) object in the response body.
 
-<!-- uuid: e1151d83-96e7-4b2f-a027-354a71ec1695
-2015-10-15 04:07:54 UTC -->
+<!-- uuid: 80152c0d-fa7a-4acb-aae7-72696ad1f0f8
+2015-10-16 01:35:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SectionGroup",

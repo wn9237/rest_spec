@@ -75,8 +75,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: af02c676-aa6c-4ef9-b7c3-811af6184c1b
-2015-10-15 04:07:51 UTC -->
+<!-- uuid: 28e37267-15e0-4048-830e-9e0a3e88d06c
+2015-10-16 01:35:16 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive resource",

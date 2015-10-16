@@ -15,8 +15,8 @@ None
 |:---------------|:--------|:----------|
 |[List](../api/application_list.md) | [Application](application.md) [] |Get application object collection. |
 
-<!-- uuid: d1e779a7-8579-4108-9c4b-4f34ca2d241f
-2015-10-15 04:07:50 UTC -->
+<!-- uuid: dae5e263-6b41-4db1-89f9-94f720ae8248
+2015-10-16 01:35:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "applications resource",

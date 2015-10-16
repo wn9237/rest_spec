@@ -1,4 +1,4 @@
-# shares resource type
+# contacts resource type
 
 
 
@@ -13,13 +13,13 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/share_list.md) | [share](share.md) [] |Get share object collection. |
+|[List](../api/orgcontact_list.md) | [OrgContact](orgcontact.md) [] |Get orgContact object collection. |
 
-<!-- uuid: 93269071-533a-4254-85a9-7fd2a77be3da
-2015-10-15 04:07:55 UTC -->
+<!-- uuid: 8e2e80e7-109a-46f6-9089-bf0b2827717e
+2015-10-16 01:35:15 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "shares resource",
+  "description": "contacts resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

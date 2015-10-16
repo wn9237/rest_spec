@@ -1,4 +1,4 @@
-# contacts resource type
+# Alerts resource type
 
 
 
@@ -13,13 +13,13 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/orgcontact_list.md) | [OrgContact](orgcontact.md) [] |Get orgContact object collection. |
+|[List](../api/pimalert_list.md) | [PimAlert](pimalert.md) [] |Get pimAlert object collection. |
 
-<!-- uuid: 76aeb610-5de0-4e75-a6c1-c090ea9837ed
-2015-10-15 04:07:50 UTC -->
+<!-- uuid: 2d67b70f-d2ce-4805-95b9-c27b8d0bd8cd
+2015-10-16 01:35:14 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "contacts resource",
+  "description": "Alerts resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

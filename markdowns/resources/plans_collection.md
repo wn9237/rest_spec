@@ -1,4 +1,4 @@
-# groups resource type
+# plans resource type
 
 
 
@@ -13,13 +13,13 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/group_list.md) | [Group](group.md) [] |Get group object collection. |
+|[List](../api/plan_list.md) | [Plan](plan.md) [] |Get plan object collection. |
 
-<!-- uuid: 82e76680-d30a-41a3-9f4b-e218d3000900
-2015-10-15 04:07:52 UTC -->
+<!-- uuid: 0d96653c-4bf7-4b62-b099-237d34d837a2
+2015-10-16 01:35:19 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "groups resource",
+  "description": "plans resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

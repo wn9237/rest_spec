@@ -776,7 +776,11 @@ module SpecMaker
 		@mdlines.push get_json_page_annotation(@jsonHash[:name] + " resource")
 
 		# Write the output file. 
-		outfile = MARKDOWN_RESOURCE_FOLDER + @resource.downcase + '.md'
+		if @jsonHash[:isEntitySet] 
+			outfile = MARKDOWN_RESOURCE_FOLDER + @resource.downcase + '_collection.md'
+		else
+			outfile = MARKDOWN_RESOURCE_FOLDER + @resource.downcase + '.md'			
+		end		
 		file=File.new(outfile,'w')
 		@mdlines.each do |line|
 			file.write line

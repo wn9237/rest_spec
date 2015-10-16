@@ -40,8 +40,8 @@ Here is a JSON representation of the resource
 |[Get Site](../api/site_get.md) | [Site](site.md) |Read properties and relationships of site object.|
 |[Delete](../api/site_delete.md) | Void	|Delete Site object. |
 
-<!-- uuid: c152eac7-e38a-412d-8563-1158fd4eba3e
-2015-10-15 04:07:55 UTC -->
+<!-- uuid: f6f54114-5c8c-4990-ba40-8c58bea43a8e
+2015-10-16 01:35:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Site resource",

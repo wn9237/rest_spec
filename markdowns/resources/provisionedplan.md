@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |provisioningStatus|String||
 |service|String||
 
-<!-- uuid: 15c209e0-a881-4bdc-b5d1-192bb0fd4047
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: 9f934d8b-de80-4c08-afac-157c3f620541
+2015-10-16 01:35:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ProvisionedPlan resource",

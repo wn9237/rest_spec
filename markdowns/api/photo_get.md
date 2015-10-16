@@ -47,8 +47,8 @@ Content-length: 53
 ```
 If successful, this method returns a `200 OK` response code and [Photo](../resources/photo.md) object in the response body.
 
-<!-- uuid: ccc470c2-71d2-4b80-86f2-5b9805ee5c7b
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: 527157aa-ea77-43b6-9480-a518b85105ce
+2015-10-16 01:35:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Photo",

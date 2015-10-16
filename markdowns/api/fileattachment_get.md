@@ -52,8 +52,8 @@ Content-length: 308
 ```
 If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
 
-<!-- uuid: 12ccb019-80d9-4de8-9514-a69d27908776
-2015-10-15 04:07:52 UTC -->
+<!-- uuid: 326cbab1-e2ea-4eb0-a58d-37152348da7c
+2015-10-16 01:35:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get FileAttachment",

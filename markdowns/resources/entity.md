@@ -43,8 +43,8 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/entity_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Delete](../api/entity_delete.md) | Void	|Delete Entity object. |
 
-<!-- uuid: df89418e-b330-4e47-9cf5-216155ebbe9b
-2015-10-15 04:07:51 UTC -->
+<!-- uuid: 4556f770-f298-4b93-87e2-c8ff93508c2d
+2015-10-16 01:35:16 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Entity resource",

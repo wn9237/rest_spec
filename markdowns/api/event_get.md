@@ -119,8 +119,8 @@ Content-length: 1794
 ```
 If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
 
-<!-- uuid: d0488d3e-2fba-4097-89f3-487f0f5accd5
-2015-10-15 04:07:51 UTC -->
+<!-- uuid: 3061aed7-c2ee-4ebc-beb0-f7fd49078068
+2015-10-16 01:35:16 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Event",

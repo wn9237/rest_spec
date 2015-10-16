@@ -53,8 +53,8 @@ Content-length: 276
 ```
 If successful, this method returns a `200 OK` response code and [Section](../resources/section.md) object in the response body.
 
-<!-- uuid: d993ce52-d85a-436d-9896-cdbd5ef3f578
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: baa38d46-52b0-4929-afbc-dbd79ecccf61
+2015-10-16 01:35:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Section",

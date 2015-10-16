@@ -58,8 +58,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: dd0a7cc6-1eda-4ab9-8eb9-407f15cb7d4a
-2015-10-15 04:07:50 UTC -->
+<!-- uuid: f5692061-e065-4f06-a904-2bcbfa03e1e3
+2015-10-16 01:35:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRoleAssignment: getMemberGroups",

@@ -84,8 +84,8 @@ Here is a JSON representation of the resource
 |[Update](../api/plan_update.md) | [Plan](plan.md)	|Update Plan object. |
 |[Delete](../api/plan_delete.md) | Void	|Delete Plan object. |
 
-<!-- uuid: 2a6aac5f-f872-4e73-a5ee-003f3fd02554
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: 9e9f4069-792d-4410-93dd-aeb55583b909
+2015-10-16 01:35:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Plan resource",

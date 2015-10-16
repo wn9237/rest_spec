@@ -1,4 +1,4 @@
-# Alerts resource type
+# tasks resource type
 
 
 
@@ -13,13 +13,13 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/pimalert_list.md) | [PimAlert](pimalert.md) [] |Get pimAlert object collection. |
+|[List](../api/task_list.md) | [Task](task.md) [] |Get task object collection. |
 
-<!-- uuid: 5d864c80-1467-4fa1-92a3-2301c539ace0
-2015-10-15 04:07:50 UTC -->
+<!-- uuid: 79832591-acaa-4f02-92ca-290a09f1f0bd
+2015-10-16 01:35:21 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Alerts resource",
+  "description": "tasks resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -109,8 +109,8 @@ Content-length: 2218
 ```
 If successful, this method returns a `200 OK` response code and collection of [ServicePrincipal](../resources/serviceprincipal.md) objects in the response body.
 
-<!-- uuid: c121acb5-50b2-42ba-8ec4-98ded1dd9b05
-2015-10-15 04:07:54 UTC -->
+<!-- uuid: a8beadae-b394-4ea8-9be9-e97a144fe1e5
+2015-10-16 01:35:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List ServicePrincipal",

@@ -132,8 +132,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: 7fcaf195-c10f-416f-b1a9-b52968ba2f99
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: 5f3b3dc9-8ef6-4bb5-9f69-edd407ff6152
+2015-10-16 01:35:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of permission object.",

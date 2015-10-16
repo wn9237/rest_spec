@@ -48,8 +48,8 @@ Content-length: 110
 ```
 If successful, this method returns a `200 OK` response code and [TaskBoardTaskFormat](../resources/taskboardtaskformat.md) object in the response body.
 
-<!-- uuid: 466a5a6e-5717-4147-a3e2-c3ce216da180
-2015-10-15 04:07:55 UTC -->
+<!-- uuid: 003c42da-ab29-45f4-a870-3ac038f2b600
+2015-10-16 01:35:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskBoardTaskFormat",

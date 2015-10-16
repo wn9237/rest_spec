@@ -66,8 +66,8 @@ Here is a JSON representation of the resource
 |[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
 |[Delete](../api/calendar_delete.md) | Void	|Delete Calendar object. |
 
-<!-- uuid: 97cd1c87-a66f-43ab-a7e2-c715de56102c
-2015-10-15 04:07:50 UTC -->
+<!-- uuid: 7ca9b2ec-03bb-4aca-a474-b82c1b86c05f
+2015-10-16 01:35:15 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Calendar resource",

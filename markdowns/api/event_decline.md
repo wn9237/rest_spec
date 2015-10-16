@@ -57,8 +57,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: 1e483e9f-44d2-43bc-a730-7cb97b6eb58f
-2015-10-15 04:07:51 UTC -->
+<!-- uuid: c5dc69a1-41d5-4c82-b95d-d96e91ad63ce
+2015-10-16 01:35:16 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: Decline",

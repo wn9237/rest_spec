@@ -1,4 +1,4 @@
-# drives resource type
+# users resource type
 
 
 
@@ -13,13 +13,13 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/drive_list.md) | [drive](drive.md) [] |Get drive object collection. |
+|[List](../api/user_list.md) | [User](user.md) [] |Get user object collection. |
 
-<!-- uuid: dd99b540-9475-4b0f-adeb-22c7b3936009
-2015-10-15 04:07:51 UTC -->
+<!-- uuid: bd79d550-876b-421f-ae6e-891eb9828b61
+2015-10-16 01:35:22 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "drives resource",
+  "description": "users resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

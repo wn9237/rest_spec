@@ -47,8 +47,8 @@ Content-length: 104
 ```
 If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
-<!-- uuid: b67679fc-247b-4890-a9a4-72fc27b7db16
-2015-10-15 04:07:50 UTC -->
+<!-- uuid: 365d3c55-476e-4682-b04b-d07fc08d078c
+2015-10-16 01:35:15 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ContactFolder",

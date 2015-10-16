@@ -92,8 +92,8 @@ Content-length: 391
 }
 ```
 
-<!-- uuid: 45530df8-30e1-4c94-bb1f-d08861ad7758
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: 7d6e9ab2-d39a-4c30-981d-c1ec2b4f8545
+2015-10-16 01:35:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of page object.",

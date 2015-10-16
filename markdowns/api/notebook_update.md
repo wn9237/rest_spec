@@ -104,8 +104,8 @@ Content-length: 516
 }
 ```
 
-<!-- uuid: 3c15f498-7928-482c-983c-5566b5f53e15
-2015-10-15 04:07:52 UTC -->
+<!-- uuid: fede30b5-ef45-4ad4-be0d-1e15ddeba94f
+2015-10-16 01:35:18 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notebook object.",

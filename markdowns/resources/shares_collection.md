@@ -1,4 +1,4 @@
-# plans resource type
+# shares resource type
 
 
 
@@ -13,13 +13,13 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/plan_list.md) | [Plan](plan.md) [] |Get plan object collection. |
+|[List](../api/share_list.md) | [share](share.md) [] |Get share object collection. |
 
-<!-- uuid: 23b373ff-a1ce-4840-8829-f020dbdd4ede
-2015-10-15 04:07:53 UTC -->
+<!-- uuid: 4010abcb-67f0-4da8-a640-5a8941a22dab
+2015-10-16 01:35:21 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "plans resource",
+  "description": "shares resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
