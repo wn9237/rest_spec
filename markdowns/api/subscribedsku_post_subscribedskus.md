@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /subscribedSkus
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [SubscribedSku](../resources/subscribedsku.md) object.
 ##### Response
@@ -38,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "subscribedsku"
+  "@odata.type": "microsoft.graph.subscribedsku"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -65,8 +64,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: acc63ef2-98e1-4945-bf56-92a993ad00dd
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 23ff2431-925d-4d10-9d07-ee8573956f6f
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SubscribedSku",

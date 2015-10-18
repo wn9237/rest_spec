@@ -26,12 +26,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [ReferenceAttachment](../resources/referenceattachment.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_referenceattachment"
+}-->
+```http
+
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "referenceattachment"
+  "@odata.type": "microsoft.graph.referenceattachment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -49,8 +58,8 @@ Content-length: 162
 ```
 If successful, this method returns a `200 OK` response code and [ReferenceAttachment](../resources/referenceattachment.md) object in the response body.
 
-<!-- uuid: 5a22aaf2-11f8-453f-be33-129281244c3b
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 7b0ab738-4fe5-47c5-b358-862ef14c0476
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ReferenceAttachment",

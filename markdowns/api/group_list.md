@@ -23,20 +23,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [Group](../resources/group.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_groups"
+}-->
+```http
+GET /groups
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "groups"
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1187
+Content-length: 1186
 
 {
-  "values": [
+  "value": [
     {
       "description": "description-value",
       "dirSyncEnabled": true,
@@ -81,8 +91,8 @@ Content-length: 1187
 ```
 If successful, this method returns a `200 OK` response code and collection of [Group](../resources/group.md) objects in the response body.
 
-<!-- uuid: 07d3bfc6-fe98-4065-9954-ccc3646846e2
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: a9cebc21-7341-4027-b7e9-8108c33fd979
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Group",

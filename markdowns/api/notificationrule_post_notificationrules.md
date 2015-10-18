@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /NotificationRules
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [NotificationRule](../resources/notificationrule.md) object.
 ##### Response
@@ -38,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "notificationrule"
+  "@odata.type": "microsoft.graph.notificationrule"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -57,8 +56,8 @@ Content-length: 260
 }
 ```
 
-<!-- uuid: cb272b04-2579-4341-a9db-9c9e6ac9744d
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 220c7fcd-df3f-4745-b82e-bcf84f405581
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create NotificationRule",

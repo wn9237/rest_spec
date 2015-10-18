@@ -66,7 +66,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedoperationevent"
+  "@odata.type": "microsoft.graph.privilegedoperationevent"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -90,8 +90,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: a794912a-cadf-4ec3-9fa9-5d3a84d61f9c
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 4dfc042e-982a-4cfa-bc03-dac056243e87
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedoperationevent object.",

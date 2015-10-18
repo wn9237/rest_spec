@@ -16,19 +16,19 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "album": "String",
-  "albumArtist": "String",
-  "artist": "String",
+  "album": "String-value",
+  "albumArtist": "String-value",
+  "artist": "String-value",
   "bitrate": 1024,
-  "composers": "String",
-  "copyright": "String",
+  "composers": "String-value",
+  "copyright": "String-value",
   "disc": 1024,
   "discCount": 1024,
   "duration": 1024,
-  "genre": "String",
+  "genre": "String-value",
   "hasDrm": true,
   "isVariableBitrate": true,
-  "title": "String",
+  "title": "String-value",
   "track": 1024,
   "trackCount": 1024,
   "year": 1024
@@ -55,8 +55,8 @@ Here is a JSON representation of the resource
 |trackCount|Int32||
 |year|Int32||
 
-<!-- uuid: ee4784b6-bc9c-4b05-952c-269a3a09fd4d
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 7e6a5a9c-de56-4d85-b494-3b918935c9cf
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "audio resource",

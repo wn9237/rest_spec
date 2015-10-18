@@ -11,27 +11,27 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.PrivilegedSecurityAlert"
+  "@odata.type": "microsoft.graph.privilegedsecurityalert"
 }-->
 
 ```json
 {
-  "AdditionalData": "String",
-  "AlertDescription": "String",
-  "AlertId": "String (identifier)",
-  "AlertName": "String",
-  "AlertType": "String",
-  "HowToPrevent": "String",
+  "AdditionalData": "String-value",
+  "AlertDescription": "String-value",
+  "AlertId": "Guid-value (identifier)",
+  "AlertName": "String-value",
+  "AlertType": "String-value",
+  "HowToPrevent": "String-value",
   "IsActive": true,
   "IsConfigurable": true,
   "IsResolvable": true,
   "LastModifiedTime": "String (timestamp)",
   "LastScannedTime": "String (timestamp)",
-  "MitigationSteps": "String",
+  "MitigationSteps": "String-value",
   "NumberOfAffectedItems": 1024,
-  "SecurityImpact": "String",
-  "SeverityLevel": "String",
-  "Status": "String",
+  "SecurityImpact": "String-value",
+  "SeverityLevel": "String-value",
+  "Status": "String-value",
   "WasDismissed": true
 }
 
@@ -72,8 +72,8 @@ None
 |[Fix](../api/privilegedsecurityalert_fix.md)|[PrivilegedSecurityAlert](privilegedsecurityalert.md)||
 |[Reactivate](../api/privilegedsecurityalert_reactivate.md)|[PrivilegedSecurityAlert](privilegedsecurityalert.md)||
 
-<!-- uuid: aee84192-12a4-48a5-b25e-648a7f26e486
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 3c87f077-643e-4c52-91ba-eef42a0cbd85
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSecurityAlert resource",

@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and [Message](../reso
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "message_move"
@@ -44,10 +45,11 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "message"
+  "@odata.type": "microsoft.graph.message"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -130,8 +132,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 1f758ad4-79c7-4acd-b701-36eaa0d08b53
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 9e4c8e90-cb75-41aa-812b-3e48cae9b6aa
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Move",

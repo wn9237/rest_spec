@@ -27,6 +27,7 @@ If successful, this method returns `200, OK` response code and String collection
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_getmemberobjects"
@@ -42,10 +43,12 @@ Content-length: 33
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "string"
+  "@odata.type": "string",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -59,8 +62,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 2723dd96-d1a4-437f-b6fe-f110963878b0
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: b66f9582-4ba6-4207-9d43-d3377a0b2f1d
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal: getMemberObjects",

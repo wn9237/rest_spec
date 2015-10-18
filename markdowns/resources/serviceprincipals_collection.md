@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.serviceprincipals"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/serviceprincipal_list.md) | [ServicePrincipal](serviceprincipal.md) [] |Get servicePrincipal object collection. |
 |[Create ServicePrincipal](../api/serviceprincipal_post_serviceprincipals.md) |[ServicePrincipal](serviceprincipal.md)| Create a new ServicePrincipal by posting to the servicePrincipals collection.|
 
-<!-- uuid: 654dde14-15f1-4e29-8864-e4492bec234e
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 940fb461-0363-447d-a6fb-ad4bb54367ae
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "servicePrincipals resource",

@@ -28,17 +28,26 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_event"
+}-->
+```http
+GET /users/<objectId>/Events/<Id>
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "event"
+  "@odata.type": "microsoft.graph.event"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1794
+Content-length: 1812
 
 {
   "Subject": "Subject-value",
@@ -89,7 +98,9 @@ Content-length: 1794
       "Interval": 99,
       "Month": 99,
       "DayOfMonth": 99,
-      "DaysOfWeek": "DaysOfWeek-value",
+      "DaysOfWeek": [
+        "DaysOfWeek-value"
+      ],
       "FirstDayOfWeek": "FirstDayOfWeek-value",
       "Index": "Index-value"
     },
@@ -120,8 +131,8 @@ Content-length: 1794
 ```
 If successful, this method returns a `200 OK` response code and [Event](../resources/event.md) object in the response body.
 
-<!-- uuid: 1339d79e-dde7-4d7e-a406-65bd3e351b9d
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: a938cca0-17b8-4611-ba3d-9ca57c751395
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Event",

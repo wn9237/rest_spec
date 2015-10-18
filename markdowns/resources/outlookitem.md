@@ -11,18 +11,18 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.OutlookItem"
+  "@odata.type": "microsoft.graph.outlookitem"
 }-->
 
 ```json
 {
   "Categories": [
-    "String"
+    "String-value"
   ],
-  "ChangeKey": "String",
+  "ChangeKey": "String-value",
   "DateTimeCreated": "String (timestamp)",
   "DateTimeLastModified": "String (timestamp)",
-  "Id": "String (identifier)"
+  "Id": "String-value (identifier)"
 }
 
 ```
@@ -47,8 +47,8 @@ None
 |[Update](../api/outlookitem_update.md) | [OutlookItem](outlookitem.md)	|Update OutlookItem object. |
 |[Delete](../api/outlookitem_delete.md) | Void	|Delete OutlookItem object. |
 
-<!-- uuid: afa3cb4e-ff05-449a-95e4-c9de5fd582ab
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: a9510bb2-31c0-4495-ad03-72d50cf0dc45
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OutlookItem resource",

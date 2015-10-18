@@ -27,6 +27,7 @@ If successful, this method returns `200, OK` response code and String collection
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "tenantdetail_getmemberobjects"
@@ -42,10 +43,12 @@ Content-length: 33
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "string"
+  "@odata.type": "string",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -59,8 +62,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 913ba6f6-ec3d-4ab3-b018-49c184f6ddb4
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 7db30e98-821f-4bfb-a720-947db6b93d0c
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TenantDetail: getMemberObjects",

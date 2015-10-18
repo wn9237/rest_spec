@@ -28,12 +28,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Calendar](../resources/calendar.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_calendar"
+}-->
+```http
+GET /users/<objectId>/Calendar
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "calendar"
+  "@odata.type": "microsoft.graph.calendar"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -49,8 +58,8 @@ Content-length: 106
 ```
 If successful, this method returns a `200 OK` response code and [Calendar](../resources/calendar.md) object in the response body.
 
-<!-- uuid: b3efef80-d3a5-4657-976f-34e34d4a9382
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 1875d70e-a2da-45a6-bc6b-2e602c7ddbb7
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Calendar",

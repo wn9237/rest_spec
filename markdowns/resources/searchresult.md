@@ -11,12 +11,12 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchResult"
+  "@odata.type": "microsoft.graph.searchresult"
 }-->
 
 ```json
 {
-  "onClickTelemetryUrl": "String"
+  "onClickTelemetryUrl": "String-value"
 }
 
 ```
@@ -25,8 +25,8 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |onClickTelemetryUrl|String||
 
-<!-- uuid: e8acbdaf-777e-413b-8c05-ec6ca8af01ec
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: c6d9ad32-e185-4e90-a0c5-5134a416c3af
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "searchResult resource",

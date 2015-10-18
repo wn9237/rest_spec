@@ -10,6 +10,7 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "items",
+    "root",
     "shared",
     "special"
   ],
@@ -18,15 +19,15 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "driveType": "String",
-  "id": "String (identifier)",
+  "driveType": "String-value",
+  "id": "String-value (identifier)",
   "items": [
     {
       "@odata.type": "microsoft.graph.item"
     }
   ],
   "owner": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "@odata.type": "microsoft.graph.identityset"
   },
   "quota": {
     "@odata.type": "microsoft.graph.quota"
@@ -75,8 +76,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: a74ec989-bc47-4da5-b9d9-7e176178fdb5
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: ba789a22-cdf5-4a66-a420-41a3e36e02ce
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive resource",

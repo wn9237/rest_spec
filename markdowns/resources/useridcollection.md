@@ -2,11 +2,28 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.useridcollection"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
-<!-- uuid: 158fb368-c00c-4a9b-9b87-e587bc2f723d
-2015-10-16 23:06:10 UTC -->
+<!-- uuid: e8f8b155-6bd3-4968-91cc-fc115729e8da
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "UserIdCollection resource",

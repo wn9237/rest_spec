@@ -26,12 +26,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Entity](../resources/entity.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_entity"
+}-->
+```http
+
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "entity"
+  "@odata.type": "microsoft.graph.entity"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -44,8 +53,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [Entity](../resources/entity.md) object in the response body.
 
-<!-- uuid: 0e4e319c-fa9a-4560-8d1a-d2f6d56c71c0
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 2fedafdb-edc5-4686-b569-fca5f2842938
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Entity",

@@ -32,7 +32,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /users/<objectId>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
 ##### Response
@@ -40,7 +39,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "contact"
+  "@odata.type": "microsoft.graph.contact"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -122,8 +121,8 @@ Content-length: 1977
 }
 ```
 
-<!-- uuid: 17cd80c5-5a42-400b-b84d-fa8e13f9a9ae
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 15fa746a-7e1a-44cb-9202-dc79fc6850a3
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Contact",

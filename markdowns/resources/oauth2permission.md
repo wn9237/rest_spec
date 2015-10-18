@@ -11,19 +11,19 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.OAuth2Permission"
+  "@odata.type": "microsoft.graph.oauth2permission"
 }-->
 
 ```json
 {
-  "adminConsentDescription": "String",
-  "adminConsentDisplayName": "String",
-  "id": "String",
+  "adminConsentDescription": "String-value",
+  "adminConsentDisplayName": "String-value",
+  "id": "Guid-value",
   "isEnabled": true,
-  "type": "String",
-  "userConsentDescription": "String",
-  "userConsentDisplayName": "String",
-  "value": "String"
+  "type": "String-value",
+  "userConsentDescription": "String-value",
+  "userConsentDisplayName": "String-value",
+  "value": "String-value"
 }
 
 ```
@@ -39,8 +39,8 @@ Here is a JSON representation of the resource
 |userConsentDisplayName|String||
 |value|String||
 
-<!-- uuid: 4ebf1a02-d06d-43c1-8260-629079613ae5
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 2601b6a7-4dcb-41cc-9090-46ae30c841f3
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OAuth2Permission resource",

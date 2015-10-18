@@ -27,6 +27,7 @@ If successful, this method returns `200, OK` response code and [Message](../reso
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "eventmessage_copy"
@@ -42,10 +43,11 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "message"
+  "@odata.type": "microsoft.graph.message"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -128,8 +130,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: c6fe7985-7eb1-4151-aaba-f7d3484ad5bc
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 9cfc3ef6-a91e-4428-b721-67672071f09c
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Copy",

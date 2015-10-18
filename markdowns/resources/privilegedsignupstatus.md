@@ -11,14 +11,14 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.PrivilegedSignupStatus"
+  "@odata.type": "microsoft.graph.privilegedsignupstatus"
 }-->
 
 ```json
 {
   "IsRegistered": true,
-  "Status": "String",
-  "TenantId": "String (identifier)"
+  "Status": "String-value",
+  "TenantId": "String-value (identifier)"
 }
 
 ```
@@ -46,8 +46,8 @@ None
 |[Signup](../api/privilegedsignupstatus_signup.md)|[PrivilegedSignupStatus](privilegedsignupstatus.md)||
 |[Skipsetup](../api/privilegedsignupstatus_skipsetup.md)|[None](none.md)||
 
-<!-- uuid: 614b9b99-e333-4a44-bae8-f8f33a48c7d3
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 965b3dff-0c75-438b-ad70-6f9b5865b3cb
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus resource",

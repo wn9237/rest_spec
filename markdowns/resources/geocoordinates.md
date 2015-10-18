@@ -11,7 +11,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.GeoCoordinates"
+  "@odata.type": "microsoft.graph.geocoordinates"
 }-->
 
 ```json
@@ -33,8 +33,8 @@ Here is a JSON representation of the resource
 |Latitude|Double||
 |Longitude|Double||
 
-<!-- uuid: a0736400-27f5-4ee7-8363-81ca0c843ae2
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 47919f81-eb88-4e31-8d0c-7c52ce1eff67
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "GeoCoordinates resource",

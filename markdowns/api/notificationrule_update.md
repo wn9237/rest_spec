@@ -56,7 +56,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "notificationrule"
+  "@odata.type": "microsoft.graph.notificationrule"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -75,8 +75,8 @@ Content-length: 260
 }
 ```
 
-<!-- uuid: d6685269-c77b-4781-bc6b-21da781456eb
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 7a79c824-83b6-40b5-834c-365fa24958f9
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notificationrule object.",

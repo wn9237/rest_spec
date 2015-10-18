@@ -62,7 +62,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "approleassignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -83,8 +83,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: 42747780-047a-4b67-b69a-0710c5e26700
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 0b6ef576-d871-46e8-a9fa-20c82867122a
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of approleassignment object.",

@@ -11,34 +11,34 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "Posts"
   ],
-  "@odata.type": "microsoft.graph.ConversationThread"
+  "@odata.type": "microsoft.graph.conversationthread"
 }-->
 
 ```json
 {
   "CcRecipients": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
   "DateTimeLastDelivered": "String (timestamp)",
   "HasAttachments": true,
-  "Id": "String (identifier)",
+  "Id": "String-value (identifier)",
   "IsLocked": true,
   "Posts": [
     {
-      "@odata.type": "microsoft.graph.Post"
+      "@odata.type": "microsoft.graph.post"
     }
   ],
-  "Preview": "String",
+  "Preview": "String-value",
   "ToRecipients": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "Topic": "String",
+  "Topic": "String-value",
   "UniqueSenders": [
-    "String"
+    "String-value"
   ]
 }
 
@@ -71,8 +71,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/conversationthread_delete.md) | Void	|Delete ConversationThread object. |
 |[Reply](../api/conversationthread_reply.md)|[None](none.md)||
 
-<!-- uuid: e3cd763d-50aa-406b-90ff-f5ec1e7cfb46
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 48166867-7375-4f68-81e9-c1aa530f565d
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread resource",

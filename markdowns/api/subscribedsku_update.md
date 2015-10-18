@@ -63,7 +63,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "subscribedsku"
+  "@odata.type": "microsoft.graph.subscribedsku"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -90,8 +90,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: 1cabf0f7-7798-4a4e-b957-2c9e6782f1f4
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 0641c509-9d0e-414d-a925-b25c7b8f6dbb
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of subscribedsku object.",

@@ -11,16 +11,16 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ReferenceAttachment"
+  "@odata.type": "microsoft.graph.referenceattachment"
 }-->
 
 ```json
 {
-  "ContentType": "String",
+  "ContentType": "String-value",
   "DateTimeLastModified": "String (timestamp)",
-  "Id": "String (identifier)",
+  "Id": "String-value (identifier)",
   "IsInline": true,
-  "Name": "String",
+  "Name": "String-value",
   "Size": 1024
 }
 
@@ -47,8 +47,8 @@ None
 |[Update](../api/referenceattachment_update.md) | [ReferenceAttachment](referenceattachment.md)	|Update ReferenceAttachment object. |
 |[Delete](../api/referenceattachment_delete.md) | Void	|Delete ReferenceAttachment object. |
 
-<!-- uuid: 93a44385-43a8-4c7e-b046-3823f1817c97
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: de26ec46-338f-45f5-9ade-c9cf061f9d0d
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ReferenceAttachment resource",

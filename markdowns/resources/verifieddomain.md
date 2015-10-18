@@ -11,17 +11,17 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.VerifiedDomain"
+  "@odata.type": "microsoft.graph.verifieddomain"
 }-->
 
 ```json
 {
-  "capabilities": "String",
+  "capabilities": "String-value",
   "default": true,
-  "id": "String",
+  "id": "String-value",
   "initial": true,
-  "name": "String",
-  "type": "String"
+  "name": "String-value",
+  "type": "String-value"
 }
 
 ```
@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
 |name|String||
 |type|String||
 
-<!-- uuid: 924f0cbe-f5b1-49b8-9bd8-7f3fb31b20d7
-2015-10-16 23:06:10 UTC -->
+<!-- uuid: fc112fe2-d7e0-489a-b69f-9637812ae811
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "VerifiedDomain resource",

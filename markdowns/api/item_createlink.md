@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and [permission](../r
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "item_createlink"
@@ -44,10 +45,11 @@ Content-length: 26
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "permission"
+  "@odata.type": "microsoft.graph.permission"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -95,8 +97,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: ca24076e-f1de-4fc3-a404-ecb9b60fedad
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 3cc48cdf-bf79-42d4-a2b3-36a1991f73e6
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createLink",

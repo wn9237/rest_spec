@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /PrivilegedOperationEvents
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) object.
 ##### Response
@@ -38,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedoperationevent"
+  "@odata.type": "microsoft.graph.privilegedoperationevent"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -62,8 +61,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 77411cf1-7edd-4ab9-bb0b-9b0c68d1336f
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 045016c6-fcb2-4b3b-bc9a-f15aeaf6a6dc
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedOperationEvent",

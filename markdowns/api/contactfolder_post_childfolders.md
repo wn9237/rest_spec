@@ -32,7 +32,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /users/<objectId>/ContactFolders/<Id>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
 ##### Response
@@ -40,7 +39,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "contactfolder"
+  "@odata.type": "microsoft.graph.contactfolder"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -54,8 +53,8 @@ Content-length: 104
 }
 ```
 
-<!-- uuid: 94ffe3e5-cbe1-4393-b00c-97c515cb44ff
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: e9217fe4-3d32-464f-bc63-f0740c347c0d
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ContactFolder",

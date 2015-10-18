@@ -23,7 +23,7 @@ module SpecMaker
 			httpSyntax = get_syntax('auto_post', top_one_restpath)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])			
-			example_lines.push "Content-type: application/json" + NEWLINE
+			#example_lines.push "Content-type: application/json" + NEWLINE
 			example_lines.push "```" + NEWLINE	
 			example_lines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../resources/#{method[:returnType].downcase}.md) object." + NEWLINE
 
@@ -39,17 +39,25 @@ module SpecMaker
 			example_lines.push "```" + NEWLINE				
 
 		when 'auto_get', 'auto_list'
-			# example_lines.push HEADER5 + "Request" + NEWLINE				
-			# example_lines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../resources/#{method[:returnType].downcase}.md) object." + NEWLINE
+			example_lines.push HEADER5 + "Request" + NEWLINE				
+			example_lines.push "Here is an example of the request." + NEWLINE			
+			example_lines.push get_json_request_pretext("get_#{@jsonHash[:name]}".downcase) + NEWLINE
+			example_lines.push '```http' + NEWLINE
+			httpSyntax = get_syntax('auto_get', top_one_restpath)
+			example_lines.push httpSyntax.join("\n") + NEWLINE
+			example_lines.push "```" + NEWLINE	
+
 			example_lines.push HEADER5 + "Response" + NEWLINE											
 			example_lines.push "Here is an example of the response." + NEWLINE
 			if type == 'auto_list'
 				modeldump = get_json_model_method(@jsonHash[:collectionOf], true)
+				example_lines.push get_json_response_pretext(@jsonHash[:collectionOf], true) + NEWLINE
 			else
 				modeldump = get_json_model_method(@jsonHash[:name])
+				example_lines.push get_json_response_pretext(@jsonHash[:name]) + NEWLINE
 			end
 			# todo : how do i handle the collections?
-			example_lines.push get_json_response_pretext(@jsonHash[:name]) + NEWLINE
+			
 			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
 			example_lines.push "Content-type: application/json" + NEWLINE
@@ -84,13 +92,15 @@ module SpecMaker
 
 		when 'auto_delete'
 			example_lines.push HEADER5 + "Request" + NEWLINE
+			example_lines.push "Here is an example of the request." + NEWLINE			
 			example_lines.push get_json_request_pretext("delete_#{jsonHash[:name]}".downcase) + NEWLINE						
 			example_lines.push '```http' + NEWLINE
 			httpSyntax = get_syntax(method[:name], top_one_restpath)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			example_lines.push '```' + NEWLINE
 
-			example_lines.push HEADER5 + "Response" + NEWLINE											
+			example_lines.push HEADER5 + "Response" + NEWLINE	
+			example_lines.push "Here is an example of the response." + NEWLINE													
 			example_lines.push get_json_response_pretext(nil) + NEWLINE						
 			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 204 No Content" + NEWLINE
@@ -98,31 +108,38 @@ module SpecMaker
 		else
 			example_lines.push "Here is an example of how to call this API." + NEWLINE					
 			example_lines.push HEADER5 + "Request" + NEWLINE		
+			example_lines.push "Here is an example of the request." + NEWLINE			
 			example_lines.push get_json_request_pretext("#{@jsonHash[:name].downcase}_#{method[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
 			httpSyntax = get_syntax(method[:name], top_one_restpath)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
-			example_lines.push "Content-type: application/json" + NEWLINE			
+
 			if !method[:isFunction] && method[:parameters].length > 0
 				modeldump = get_json_model_params(method[:parameters])
+				example_lines.push "Content-type: application/json" + NEWLINE			
 				example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES				
 				example_lines.push modeldump + NEWLINE	
-			else
-				example_lines.push "Content-length: 0" + NEWLINE				
+			# else
+			# 	example_lines.push "Content-length: 0" + NEWLINE				
 			end			
 			example_lines.push '```' + TWONEWLINES
 
-			example_lines.push HEADER5 + "Response" + NEWLINE						
-			example_lines.push get_json_response_pretext(method[:returnType]) + NEWLINE								
+			example_lines.push HEADER5 + "Response" + NEWLINE	
+			example_lines.push "Here is an example of the response." + NEWLINE								
+			if method[:isReturnTypeCollection]
+				example_lines.push get_json_response_pretext(method[:returnType], true) + NEWLINE								
+			else
+				example_lines.push get_json_response_pretext(method[:returnType]) + NEWLINE											
+			end
 			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 200 OK" + NEWLINE
-			example_lines.push "Content-type: application/json" + NEWLINE
-			if method[:returnType]
+			if method[:returnType] != nil && method[:returnType] != 'None'
 				modeldump = get_json_model_method(method[:returnType], method[:isReturnTypeCollection])
+				example_lines.push "Content-type: application/json" + NEWLINE
 				example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES
 				example_lines.push modeldump + NEWLINE	
-			else
-				example_lines.push "Content-length: 0" + NEWLINE				
+			# else
+			# 	example_lines.push "Content-length: 0" + NEWLINE				
 			end
 			example_lines.push "```" + NEWLINE				
 		end
@@ -615,7 +632,7 @@ module SpecMaker
 		end
 
 		# Header and description		
-		if isProperty || isRelation 
+		# if isProperty || isRelation 
 			@mdlines.push HEADER3 + 'JSON representation' + TWONEWLINES
 			@mdlines.push 'Here is a JSON representation of the resource' + TWONEWLINES
 
@@ -623,7 +640,7 @@ module SpecMaker
 			@mdlines.push "```json" + NEWLINE
 			@mdlines.push get_json_model(propreties) + TWONEWLINES
 			@mdlines.push "```" + NEWLINE			
-		end
+		# end
 
 		@logger.debug("....Is there: property?: #{isProperty}, relationship?: #{isRelation}, method?: #{isMethod} ..........")	
 

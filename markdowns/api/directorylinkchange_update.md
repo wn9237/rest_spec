@@ -60,7 +60,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "directorylinkchange"
+  "@odata.type": "microsoft.graph.directorylinkchange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -81,8 +81,8 @@ Content-length: 433
 }
 ```
 
-<!-- uuid: 42a9f056-efcc-4f50-885f-0b8b98454933
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 2bfa312c-224f-4ac8-972c-262d63489916
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directorylinkchange object.",

@@ -10,50 +10,51 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "Attachments",
-    "Extensions"
+    "Extensions",
+    "InReplyTo"
   ],
-  "@odata.type": "microsoft.graph.Post"
+  "@odata.type": "microsoft.graph.post"
 }-->
 
 ```json
 {
   "Attachments": [
     {
-      "@odata.type": "microsoft.graph.Attachment"
+      "@odata.type": "microsoft.graph.attachment"
     }
   ],
   "Body": {
-    "@odata.type": "microsoft.graph.ItemBody"
+    "@odata.type": "microsoft.graph.itembody"
   },
   "Categories": [
-    "String"
+    "String-value"
   ],
-  "ChangeKey": "String",
-  "ConversationId": "String",
-  "ConversationThreadId": "String",
+  "ChangeKey": "String-value",
+  "ConversationId": "String-value",
+  "ConversationThreadId": "String-value",
   "DateTimeCreated": "String (timestamp)",
   "DateTimeLastModified": "String (timestamp)",
   "DateTimeReceived": "String (timestamp)",
   "Extensions": [
     {
-      "@odata.type": "microsoft.graph.Extension"
+      "@odata.type": "microsoft.graph.extension"
     }
   ],
   "From": {
-    "@odata.type": "microsoft.graph.Recipient"
+    "@odata.type": "microsoft.graph.recipient"
   },
   "HasAttachments": true,
-  "Id": "String (identifier)",
+  "Id": "String-value (identifier)",
   "InReplyTo": {
-    "@odata.type": "microsoft.graph.Post"
+    "@odata.type": "microsoft.graph.post"
   },
   "NewParticipants": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
   "Sender": {
-    "@odata.type": "microsoft.graph.Recipient"
+    "@odata.type": "microsoft.graph.recipient"
   }
 }
 
@@ -94,8 +95,8 @@ Here is a JSON representation of the resource
 |[Forward](../api/post_forward.md)|[None](none.md)||
 |[Reply](../api/post_reply.md)|[None](none.md)||
 
-<!-- uuid: 06d22e9b-79f8-4d25-9b2e-e85667b5a995
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 62b88810-923b-4101-b803-6f8886e30591
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post resource",

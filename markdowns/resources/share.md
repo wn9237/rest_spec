@@ -16,15 +16,15 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "String (identifier)",
+  "id": "String-value (identifier)",
   "items": [
     {
       "@odata.type": "microsoft.graph.item"
     }
   ],
-  "name": "String",
+  "name": "String-value",
   "owner": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "@odata.type": "microsoft.graph.identityset"
   }
 }
 
@@ -50,8 +50,8 @@ Here is a JSON representation of the resource
 |[Update](../api/share_update.md) | [share](share.md)	|Update share object. |
 |[Delete](../api/share_delete.md) | Void	|Delete share object. |
 
-<!-- uuid: 1510d4b4-1612-47ef-b6ef-2158ce60bce7
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 9c923a5a-b566-414d-91f6-bd17f00f1c84
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "share resource",

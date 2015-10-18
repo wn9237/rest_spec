@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.directoryroles"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/directoryrole_list.md) | [DirectoryRole](directoryrole.md) [] |Get directoryRole object collection. |
 |[Create DirectoryRole](../api/directoryrole_post_directoryroles.md) |[DirectoryRole](directoryrole.md)| Create a new DirectoryRole by posting to the directoryRoles collection.|
 
-<!-- uuid: 0339fe19-3432-44e6-91c4-8394574f9740
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 1294fdee-95a1-4d86-8aeb-b400c3db8439
+2015-10-18 19:39:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "directoryRoles resource",

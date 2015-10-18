@@ -11,12 +11,12 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chunkedUploadSessionDescriptor"
+  "@odata.type": "microsoft.graph.chunkeduploadsessiondescriptor"
 }-->
 
 ```json
 {
-  "name": "String"
+  "name": "String-value"
 }
 
 ```
@@ -25,8 +25,8 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |name|String||
 
-<!-- uuid: 2a41d804-905f-4163-b6a7-7c4de6a0cbb6
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 22735a80-08fa-41ae-8106-e0ccfcda4154
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "chunkedUploadSessionDescriptor resource",

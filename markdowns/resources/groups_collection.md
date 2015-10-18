@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.groups"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/group_list.md) | [Group](group.md) [] |Get group object collection. |
 |[Create Group](../api/group_post_groups.md) |[Group](group.md)| Create a new Group by posting to the groups collection.|
 
-<!-- uuid: 07bb02fb-b9fb-42ce-bbb5-dd37800d885b
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 943bbebe-fd59-453b-b5dd-2e88cce15658
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "groups resource",

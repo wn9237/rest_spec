@@ -28,12 +28,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Conversation](../resources/conversation.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_conversation"
+}-->
+```http
+GET /groups/<objectId>/Conversations/<Id>
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "conversation"
+  "@odata.type": "microsoft.graph.conversation"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -53,8 +62,8 @@ Content-length: 201
 ```
 If successful, this method returns a `200 OK` response code and [Conversation](../resources/conversation.md) object in the response body.
 
-<!-- uuid: 4ba93498-47a6-4f9b-a5f8-4b5ef8e18781
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: fcd6e7e8-5f5e-4b89-80b9-8409c8451af6
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Conversation",

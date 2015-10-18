@@ -58,7 +58,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "oauth2permissiongrant"
+  "@odata.type": "microsoft.graph.oauth2permissiongrant"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -77,8 +77,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: 003e7f30-d5a1-46a6-9b3a-dcc823c72f57
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: bf940682-cf3f-4964-8067-9211557174cf
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of oauth2permissiongrant object.",

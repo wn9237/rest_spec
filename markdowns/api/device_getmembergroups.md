@@ -27,6 +27,7 @@ If successful, this method returns `200, OK` response code and String collection
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "device_getmembergroups"
@@ -42,10 +43,12 @@ Content-length: 33
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "string"
+  "@odata.type": "string",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -59,8 +62,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 626aadcc-4239-4eed-990a-2aa72a38ebab
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: e394451f-1159-4ea0-b4fb-afa854cb8220
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device: getMemberGroups",

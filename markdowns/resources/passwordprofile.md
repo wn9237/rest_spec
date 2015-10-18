@@ -11,13 +11,13 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.PasswordProfile"
+  "@odata.type": "microsoft.graph.passwordprofile"
 }-->
 
 ```json
 {
   "forceChangePasswordNextLogin": true,
-  "password": "String"
+  "password": "String-value"
 }
 
 ```
@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |forceChangePasswordNextLogin|Boolean||
 |password|String||
 
-<!-- uuid: 56c00db6-4db3-4d67-97be-42db73a17d37
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 3cd19273-54e6-48a8-aad0-37acc2631610
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PasswordProfile resource",

@@ -11,14 +11,14 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.itemReference"
+  "@odata.type": "microsoft.graph.itemreference"
 }-->
 
 ```json
 {
-  "driveId": "String",
-  "id": "String",
-  "path": "String"
+  "driveId": "String-value",
+  "id": "String-value",
+  "path": "String-value"
 }
 
 ```
@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |id|String||
 |path|String||
 
-<!-- uuid: a0b37c3a-7c50-4372-962c-d5b438d33136
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: d249aacf-d3e5-42e7-8432-ca2c93edd519
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "itemReference resource",

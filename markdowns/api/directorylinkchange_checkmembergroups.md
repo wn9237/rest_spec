@@ -27,6 +27,7 @@ If successful, this method returns `200, OK` response code and String collection
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "directorylinkchange_checkmembergroups"
@@ -44,10 +45,12 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "string"
+  "@odata.type": "string",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -61,8 +64,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: e8d77d37-aca2-4d46-a7a6-14b376b14b7d
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 1e4112ba-62c6-4912-b4dc-6bc94d8273b9
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryLinkChange: checkMemberGroups",

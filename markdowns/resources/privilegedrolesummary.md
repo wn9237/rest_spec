@@ -11,7 +11,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.PrivilegedRoleSummary"
+  "@odata.type": "microsoft.graph.privilegedrolesummary"
 }-->
 
 ```json
@@ -19,8 +19,8 @@ Here is a JSON representation of the resource
   "ElevatedCount": 1024,
   "ManagedCount": 1024,
   "MfaEnabled": true,
-  "RoleId": "String (identifier)",
-  "Status": "String",
+  "RoleId": "Guid-value (identifier)",
+  "Status": "String-value",
   "UsersCount": 1024
 }
 
@@ -47,8 +47,8 @@ None
 |[Update](../api/privilegedrolesummary_update.md) | [PrivilegedRoleSummary](privilegedrolesummary.md)	|Update PrivilegedRoleSummary object. |
 |[Delete](../api/privilegedrolesummary_delete.md) | Void	|Delete PrivilegedRoleSummary object. |
 
-<!-- uuid: ae34aa1a-7d4f-4350-a7df-8be8ceb7ba1d
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 8c1cd729-152d-4cf9-83be-2e52f822dba5
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleSummary resource",

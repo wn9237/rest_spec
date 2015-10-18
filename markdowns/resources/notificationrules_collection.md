@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.notificationrules"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/notificationrule_list.md) | [NotificationRule](notificationrule.md) [] |Get notificationRule object collection. |
 |[Create NotificationRule](../api/notificationrule_post_notificationrules.md) |[NotificationRule](notificationrule.md)| Create a new NotificationRule by posting to the NotificationRules collection.|
 
-<!-- uuid: 6da16e2e-bfd5-428a-a8ff-4e967107901f
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 4a46ff5b-0469-4a87-853c-1ddc9127aad6
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "NotificationRules resource",

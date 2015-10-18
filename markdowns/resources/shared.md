@@ -17,9 +17,9 @@ Here is a JSON representation of the resource
 ```json
 {
   "owner": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "@odata.type": "microsoft.graph.identityset"
   },
-  "scope": "String"
+  "scope": "String-value"
 }
 
 ```
@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |owner|[identitySet](identityset.md)||
 |scope|String||
 
-<!-- uuid: 98777a5e-852b-4daa-841c-9470bae04a93
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: da023fc9-ccff-420a-a3b3-c9d880815667
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "shared resource",

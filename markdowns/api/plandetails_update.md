@@ -49,7 +49,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "plandetails"
+  "@odata.type": "microsoft.graph.plandetails"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -64,8 +64,8 @@ Content-length: 75
 }
 ```
 
-<!-- uuid: 0b9d67f8-11cf-4a5d-a15f-5da2e1783c85
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 0905d762-2ae6-4396-be6f-8f8cf1e9c28b
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plandetails object.",

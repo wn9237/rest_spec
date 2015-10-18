@@ -9,77 +9,78 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "createdOnBehalfOf",
     "extensionProperties",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.Application"
+  "@odata.type": "microsoft.graph.application"
 }-->
 
 ```json
 {
-  "appId": "String",
+  "appId": "String-value",
   "appRoles": [
     {
-      "@odata.type": "microsoft.graph.AppRole"
+      "@odata.type": "microsoft.graph.approle"
     }
   ],
   "availableToOtherTenants": true,
   "createdOnBehalfOf": {
-    "@odata.type": "microsoft.graph.DirectoryObject"
+    "@odata.type": "microsoft.graph.directoryobject"
   },
   "deletionTimestamp": "String (timestamp)",
-  "displayName": "String",
-  "errorUrl": "String",
+  "displayName": "String-value",
+  "errorUrl": "String-value",
   "extensionProperties": [
     {
-      "@odata.type": "microsoft.graph.ExtensionProperty"
+      "@odata.type": "microsoft.graph.extensionproperty"
     }
   ],
-  "groupMembershipClaims": "String",
-  "homepage": "String",
+  "groupMembershipClaims": "String-value",
+  "homepage": "String-value",
   "identifierUris": [
-    "String"
+    "String-value"
   ],
   "keyCredentials": [
     {
-      "@odata.type": "microsoft.graph.KeyCredential"
+      "@odata.type": "microsoft.graph.keycredential"
     }
   ],
   "knownClientApplications": [
-    "String"
+    "Guid-value"
   ],
-  "logoutUrl": "String",
-  "mainLogo": "String",
+  "logoutUrl": "String-value",
+  "mainLogo": "Stream-value",
   "oauth2AllowImplicitFlow": true,
   "oauth2AllowUrlPathMatching": true,
   "oauth2Permissions": [
     {
-      "@odata.type": "microsoft.graph.OAuth2Permission"
+      "@odata.type": "microsoft.graph.oauth2permission"
     }
   ],
   "oauth2RequirePostResponse": true,
-  "objectId": "String (identifier)",
-  "objectType": "String",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
   "owners": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "passwordCredentials": [
     {
-      "@odata.type": "microsoft.graph.PasswordCredential"
+      "@odata.type": "microsoft.graph.passwordcredential"
     }
   ],
   "publicClient": true,
   "replyUrls": [
-    "String"
+    "String-value"
   ],
   "requiredResourceAccess": [
     {
-      "@odata.type": "microsoft.graph.RequiredResourceAccess"
+      "@odata.type": "microsoft.graph.requiredresourceaccess"
     }
   ],
-  "samlMetadataUrl": "String"
+  "samlMetadataUrl": "String-value"
 }
 
 ```
@@ -132,8 +133,8 @@ Here is a JSON representation of the resource
 |[Get MemberObjects](../api/application_getmemberobjects.md)|String||
 |[Restore](../api/application_restore.md)|[Application](application.md)||
 
-<!-- uuid: c9e54945-83ab-4237-89d0-a2de829dd3c3
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 99835a9a-805f-4261-9c24-6e1850e228b8
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application resource",

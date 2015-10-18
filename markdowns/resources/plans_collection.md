@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.plans"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/plan_list.md) | [Plan](plan.md) [] |Get plan object collection. |
 |[Create Plan](../api/plan_post_plans.md) |[Plan](plan.md)| Create a new Plan by posting to the plans collection.|
 
-<!-- uuid: 593ecdc1-fb06-4255-b842-04a855654506
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 7c938cd1-e8fe-46ac-babd-a930cf60c6b3
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "plans resource",

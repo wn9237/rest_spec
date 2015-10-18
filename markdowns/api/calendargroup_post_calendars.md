@@ -32,7 +32,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /users/<objectId>/CalendarGroups/<Id>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
 ##### Response
@@ -40,7 +39,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "calendar"
+  "@odata.type": "microsoft.graph.calendar"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -55,8 +54,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: 8571389f-183d-4408-8e70-45d6b00ad9a3
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 2c43b695-5048-4607-8d42-29cc0708a225
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Calendar",

@@ -22,12 +22,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Group](../resources/group.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}-->
+```http
+GET /groups/<objectId>
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "group"
+  "@odata.type": "microsoft.graph.group"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -76,8 +85,8 @@ Content-length: 1009
 ```
 If successful, this method returns a `200 OK` response code and [Group](../resources/group.md) object in the response body.
 
-<!-- uuid: 1ac8f66c-f7f3-428e-b2d6-472db3ced938
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: d37e05f2-bc5e-48cb-923d-a79844e5f1bf
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Group",

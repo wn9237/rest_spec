@@ -23,20 +23,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [OrgContact](../resources/orgcontact.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_contacts"
+}-->
+```http
+GET /contacts
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "contacts"
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1263
+Content-length: 1262
 
 {
-  "values": [
+  "value": [
     {
       "city": "city-value",
       "country": "country-value",
@@ -78,8 +88,8 @@ Content-length: 1263
 ```
 If successful, this method returns a `200 OK` response code and collection of [OrgContact](../resources/orgcontact.md) objects in the response body.
 
-<!-- uuid: 63a558ef-7758-4dd6-9e5c-63546d622013
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 56563e0b-4bcb-43b7-8082-bbe131b8fd59
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List OrgContact",

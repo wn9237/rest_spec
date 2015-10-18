@@ -45,7 +45,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "opentypeextension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -59,8 +59,8 @@ Content-length: 48
 }
 ```
 
-<!-- uuid: 7fc4df0b-f36a-432a-9f23-1f3973477816
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 50c7c897-c960-4836-8d2f-1151de40cc06
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of opentypeextension object.",

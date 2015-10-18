@@ -12,73 +12,73 @@ Here is a JSON representation of the resource
     "Attachments",
     "Extensions"
   ],
-  "@odata.type": "microsoft.graph.Message"
+  "@odata.type": "microsoft.graph.message"
 }-->
 
 ```json
 {
   "Attachments": [
     {
-      "@odata.type": "microsoft.graph.Attachment"
+      "@odata.type": "microsoft.graph.attachment"
     }
   ],
   "BccRecipients": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
   "Body": {
-    "@odata.type": "microsoft.graph.ItemBody"
+    "@odata.type": "microsoft.graph.itembody"
   },
-  "BodyPreview": "String",
+  "BodyPreview": "String-value",
   "Categories": [
-    "String"
+    "String-value"
   ],
   "CcRecipients": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "ChangeKey": "String",
-  "ConversationId": "String",
+  "ChangeKey": "String-value",
+  "ConversationId": "String-value",
   "DateTimeCreated": "String (timestamp)",
   "DateTimeLastModified": "String (timestamp)",
   "DateTimeReceived": "String (timestamp)",
   "DateTimeSent": "String (timestamp)",
   "Extensions": [
     {
-      "@odata.type": "microsoft.graph.Extension"
+      "@odata.type": "microsoft.graph.extension"
     }
   ],
   "From": {
-    "@odata.type": "microsoft.graph.Recipient"
+    "@odata.type": "microsoft.graph.recipient"
   },
   "HasAttachments": true,
-  "Id": "String (identifier)",
-  "Importance": "String",
+  "Id": "String-value (identifier)",
+  "Importance": "String-value",
   "IsDeliveryReceiptRequested": true,
   "IsDraft": true,
   "IsRead": true,
   "IsReadReceiptRequested": true,
-  "ParentFolderId": "String",
+  "ParentFolderId": "String-value",
   "ReplyTo": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
   "Sender": {
-    "@odata.type": "microsoft.graph.Recipient"
+    "@odata.type": "microsoft.graph.recipient"
   },
-  "Subject": "String",
+  "Subject": "String-value",
   "ToRecipients": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
   "UniqueBody": {
-    "@odata.type": "microsoft.graph.ItemBody"
+    "@odata.type": "microsoft.graph.itembody"
   },
-  "WebLink": "String"
+  "WebLink": "String-value"
 }
 
 ```
@@ -137,8 +137,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/message_replyall.md)|[None](none.md)||
 |[Send](../api/message_send.md)|[None](none.md)||
 
-<!-- uuid: f293aa0c-2b46-4d85-b4b6-6ffc82e94436
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: be3dddfe-edeb-4ada-89cb-e2f310159b24
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message resource",

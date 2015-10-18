@@ -26,12 +26,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_fileattachment"
+}-->
+```http
+
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "fileattachment"
+  "@odata.type": "microsoft.graph.fileattachment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -52,8 +61,8 @@ Content-length: 282
 ```
 If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
 
-<!-- uuid: 41ce415b-29bf-4385-8d50-2e94e13d4d0e
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 3d5ee000-c948-46cb-a025-046773e5efd9
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get FileAttachment",

@@ -28,12 +28,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_post"
+}-->
+```http
+GET /groups/<objectId>/Threads/<Id>/Posts/<Id>
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "post"
+  "@odata.type": "microsoft.graph.post"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -80,8 +89,8 @@ Content-length: 790
 ```
 If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
 
-<!-- uuid: 1325c641-5f5c-485a-b63c-bdba3ce0e84e
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: ae63ccf7-96d1-4b45-9345-8caa281b8263
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",

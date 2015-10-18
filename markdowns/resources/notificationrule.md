@@ -11,19 +11,19 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.NotificationRule"
+  "@odata.type": "microsoft.graph.notificationrule"
 }-->
 
 ```json
 {
-  "Event": "String",
-  "Id": "String (identifier)",
-  "NotificationId": "String",
-  "NotificationName": "String",
-  "RoleId": "String",
-  "RoleName": "String",
-  "UserId": "String",
-  "UserName": "String"
+  "Event": "String-value",
+  "Id": "String-value (identifier)",
+  "NotificationId": "String-value",
+  "NotificationName": "String-value",
+  "RoleId": "Guid-value",
+  "RoleName": "String-value",
+  "UserId": "String-value",
+  "UserName": "String-value"
 }
 
 ```
@@ -52,8 +52,8 @@ None
 |[Delete](../api/notificationrule_delete.md) | Void	|Delete NotificationRule object. |
 |[Eventtypes](../api/notificationrule_eventtypes.md)|String||
 
-<!-- uuid: c1f19aef-2f47-4934-9094-9319b973b2a8
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 6b942bab-9093-47b4-9433-c61d3c6863fe
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "NotificationRule resource",

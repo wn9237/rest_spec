@@ -52,7 +52,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "outlookitem"
+  "@odata.type": "microsoft.graph.outlookitem"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -70,8 +70,8 @@ Content-length: 185
 }
 ```
 
-<!-- uuid: 92ae7e31-7d19-474d-b362-201c2e4e9087
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 7afe0c63-3be3-4b2b-bcf4-5b572fc86397
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of outlookitem object.",

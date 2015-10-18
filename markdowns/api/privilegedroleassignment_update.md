@@ -50,7 +50,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedroleassignment"
+  "@odata.type": "microsoft.graph.privilegedroleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -66,8 +66,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: c64ef94a-6baa-46af-8e35-3f616d846e20
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: c157b43f-e92d-4be6-b0a4-2cedbd07a6d8
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedroleassignment object.",

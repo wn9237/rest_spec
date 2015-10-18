@@ -11,16 +11,16 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.PlanDetails"
+  "@odata.type": "microsoft.graph.plandetails"
 }-->
 
 ```json
 {
-  "id": "String (identifier)",
+  "id": "String-value (identifier)",
   "sharedWith": {
-    "@odata.type": "microsoft.graph.UserIdCollection"
+    "@odata.type": "microsoft.graph.useridcollection"
   },
-  "version": "String"
+  "version": "String-value"
 }
 
 ```
@@ -43,8 +43,8 @@ None
 |[Update](../api/plandetails_update.md) | [PlanDetails](plandetails.md)	|Update PlanDetails object. |
 |[Delete](../api/plandetails_delete.md) | Void	|Delete PlanDetails object. |
 
-<!-- uuid: 64305434-dc4f-4da4-beb1-8f942771021d
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: fd03c262-e5cb-4942-8730-6af65b85601b
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PlanDetails resource",

@@ -28,12 +28,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_thumbnailset"
+}-->
+```http
+GET /drive/root/thumbnails/<id>
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "thumbnailset"
+  "@odata.type": "microsoft.graph.thumbnailset"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -70,8 +79,8 @@ Content-length: 456
 ```
 If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.
 
-<!-- uuid: 3baf1ac9-812d-4e33-b684-372a4b2d1f5d
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: d3c4e9c2-5a15-4974-a89c-75f70bff8c28
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get thumbnailSet",

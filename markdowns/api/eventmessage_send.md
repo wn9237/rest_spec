@@ -22,33 +22,28 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "eventmessage_send"
 }-->
 ```http
 
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "none"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
-
-{
-}
 ```
 
-<!-- uuid: d472ad01-ec8e-4ce2-a3d5-ad989cd3bd64
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 72e2a544-0cdd-42c4-8bf4-e3beeb9d3dd8
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Send",

@@ -58,7 +58,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "extensionproperty"
+  "@odata.type": "microsoft.graph.extensionproperty"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -79,8 +79,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: bd0bbc9c-fb60-4ac0-8eb0-12821ed6b3ff
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 635c9480-2062-482f-8217-43963a0c736c
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of extensionproperty object.",

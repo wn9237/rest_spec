@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and String collection
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_checkmembergroups"
@@ -46,10 +47,12 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "string"
+  "@odata.type": "string",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -63,8 +66,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: e1bd8ef9-9875-41b2-a3ef-9f274b087257
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 7c9e0e35-a983-47dd-af15-681ffdb9c508
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: checkMemberGroups",

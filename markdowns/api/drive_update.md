@@ -69,7 +69,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "drive"
+  "@odata.type": "microsoft.graph.drive"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -103,8 +103,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: 2c68db36-609e-4cf0-9a1b-d9353b87f4cb
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 0936c8b2-8106-47e0-8aa9-905db9df6e29
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of drive object.",

@@ -22,33 +22,28 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "privilegedsignupstatus_skipsetup"
 }-->
 ```http
 POST /PrivilegedSignupStatus/<TenantId>/SkipSetup
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "none"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
-
-{
-}
 ```
 
-<!-- uuid: 250cba9a-e573-4141-b38b-3f82344ff67c
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: d536f93b-d8c5-47f2-ae98-c06d6cf837e3
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SkipSetup",

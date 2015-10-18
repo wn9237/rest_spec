@@ -14,39 +14,39 @@ Here is a JSON representation of the resource
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.DirectoryRole"
+  "@odata.type": "microsoft.graph.directoryrole"
 }-->
 
 ```json
 {
   "deletionTimestamp": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
+  "description": "String-value",
+  "displayName": "String-value",
   "isSystem": true,
   "memberOf": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "members": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
-  "objectId": "String (identifier)",
-  "objectType": "String",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
   "ownedObjects": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "owners": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "roleDisabled": true,
-  "roleTemplateId": "String"
+  "roleTemplateId": "String-value"
 }
 
 ```
@@ -85,8 +85,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String||
 
-<!-- uuid: b0fb971a-f659-47e7-8dcc-d0c19da64cfb
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: a841127e-5156-49fe-8ab0-e6e09f4d9a53
+2015-10-18 19:39:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole resource",

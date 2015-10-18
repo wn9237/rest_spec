@@ -140,7 +140,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "eventmessage"
+  "@odata.type": "microsoft.graph.eventmessage"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -224,8 +224,8 @@ Content-length: 1598
 }
 ```
 
-<!-- uuid: 498a57aa-eee2-4161-9ab2-b9f8a999e221
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 18aa80fc-357b-447d-97c8-91e405e250d2
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of eventmessage object.",

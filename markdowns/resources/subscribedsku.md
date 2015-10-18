@@ -11,24 +11,24 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.SubscribedSku"
+  "@odata.type": "microsoft.graph.subscribedsku"
 }-->
 
 ```json
 {
-  "capabilityStatus": "String",
+  "capabilityStatus": "String-value",
   "consumedUnits": 1024,
-  "objectId": "String (identifier)",
+  "objectId": "String-value (identifier)",
   "prepaidUnits": {
-    "@odata.type": "microsoft.graph.LicenseUnitsDetail"
+    "@odata.type": "microsoft.graph.licenseunitsdetail"
   },
   "servicePlans": [
     {
-      "@odata.type": "microsoft.graph.ServicePlanInfo"
+      "@odata.type": "microsoft.graph.serviceplaninfo"
     }
   ],
-  "skuId": "String",
-  "skuPartNumber": "String"
+  "skuId": "Guid-value",
+  "skuPartNumber": "String-value"
 }
 
 ```
@@ -55,8 +55,8 @@ None
 |[Update](../api/subscribedsku_update.md) | [SubscribedSku](subscribedsku.md)	|Update SubscribedSku object. |
 |[Delete](../api/subscribedsku_delete.md) | Void	|Delete SubscribedSku object. |
 
-<!-- uuid: 6cae105d-4ffc-47a7-903c-53fa9b1476d2
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 36184014-d765-48cb-8700-22e795c0e6cf
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "SubscribedSku resource",

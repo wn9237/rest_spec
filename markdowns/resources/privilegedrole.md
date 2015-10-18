@@ -9,25 +9,27 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Assignments"
+    "Assignments",
+    "Settings",
+    "Summary"
   ],
-  "@odata.type": "microsoft.graph.PrivilegedRole"
+  "@odata.type": "microsoft.graph.privilegedrole"
 }-->
 
 ```json
 {
   "Assignments": [
     {
-      "@odata.type": "microsoft.graph.PrivilegedRoleAssignment"
+      "@odata.type": "microsoft.graph.privilegedroleassignment"
     }
   ],
-  "Id": "String (identifier)",
-  "Name": "String",
+  "Id": "Guid-value (identifier)",
+  "Name": "String-value",
   "Settings": {
-    "@odata.type": "microsoft.graph.PrivilegedRoleSettings"
+    "@odata.type": "microsoft.graph.privilegedrolesettings"
   },
   "Summary": {
-    "@odata.type": "microsoft.graph.PrivilegedRoleSummary"
+    "@odata.type": "microsoft.graph.privilegedrolesummary"
   }
 }
 
@@ -56,8 +58,8 @@ Here is a JSON representation of the resource
 |[Selfactivate](../api/privilegedrole_selfactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[Selfdeactivate](../api/privilegedrole_selfdeactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 
-<!-- uuid: 81df69bd-0d0d-4b7c-803d-02a6fb67bb23
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 0d6991a8-e1b8-4724-8231-584970410606
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRole resource",

@@ -11,18 +11,18 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.TaskDetails"
+  "@odata.type": "microsoft.graph.taskdetails"
 }-->
 
 ```json
 {
-  "completedBy": "String",
-  "id": "String (identifier)",
-  "notes": "String",
+  "completedBy": "String-value",
+  "id": "String-value (identifier)",
+  "notes": "String-value",
   "references": {
-    "@odata.type": "microsoft.graph.ExternalReferenceCollection"
+    "@odata.type": "microsoft.graph.externalreferencecollection"
   },
-  "version": "String"
+  "version": "String-value"
 }
 
 ```
@@ -47,8 +47,8 @@ None
 |[Update](../api/taskdetails_update.md) | [TaskDetails](taskdetails.md)	|Update TaskDetails object. |
 |[Delete](../api/taskdetails_delete.md) | Void	|Delete TaskDetails object. |
 
-<!-- uuid: 59be7274-7f17-4dfc-827d-42186bb782ad
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 9280a814-280b-4fb2-a862-8fcc7937bc6d
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TaskDetails resource",

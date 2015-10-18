@@ -24,33 +24,28 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_subscribebymail"
 }-->
 ```http
 POST /groups/<objectId>/SubscribeByMail
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "none"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
-
-{
-}
 ```
 
-<!-- uuid: 0314054d-9ac3-4fa5-92cc-9aa0c7ffedd1
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 437e8e33-3158-48f7-9600-781a1714f4d9
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: SubscribeByMail",

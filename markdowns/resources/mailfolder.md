@@ -12,7 +12,7 @@ Here is a JSON representation of the resource
     "ChildFolders",
     "Messages"
   ],
-  "@odata.type": "microsoft.graph.MailFolder"
+  "@odata.type": "microsoft.graph.mailfolder"
 }-->
 
 ```json
@@ -20,17 +20,17 @@ Here is a JSON representation of the resource
   "ChildFolderCount": 1024,
   "ChildFolders": [
     {
-      "@odata.type": "microsoft.graph.MailFolder"
+      "@odata.type": "microsoft.graph.mailfolder"
     }
   ],
-  "DisplayName": "String",
-  "Id": "String (identifier)",
+  "DisplayName": "String-value",
+  "Id": "String-value (identifier)",
   "Messages": [
     {
-      "@odata.type": "microsoft.graph.Message"
+      "@odata.type": "microsoft.graph.message"
     }
   ],
-  "ParentFolderId": "String"
+  "ParentFolderId": "String-value"
 }
 
 ```
@@ -60,8 +60,8 @@ Here is a JSON representation of the resource
 |[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
 |[Move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||
 
-<!-- uuid: 325b8ccc-966a-4f0d-89cf-5dea74daa36b
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 24f00705-1c64-4335-af11-d148be9818c3
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder resource",

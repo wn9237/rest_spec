@@ -30,20 +30,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [drive](../resources/drive.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_drives"
+}-->
+```http
+GET /drives
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "drives"
+  "@odata.type": "microsoft.graph.drive",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 580
+Content-length: 579
 
 {
-  "values": [
+  "value": [
     {
       "id": "id-value",
       "driveType": "driveType-value",
@@ -74,8 +84,8 @@ Content-length: 580
 ```
 If successful, this method returns a `200 OK` response code and collection of [drive](../resources/drive.md) objects in the response body.
 
-<!-- uuid: 90337363-de95-4ab6-a6c0-aa5f5a1492a0
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 836ee6fc-2f40-4853-a4fd-05a2e68c3ce5
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List drive",

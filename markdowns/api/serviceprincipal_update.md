@@ -52,7 +52,7 @@ Here is an example of the request.
 ```http
 PUT /servicePrincipals/<objectId>
 Content-type: application/json
-Content-length: 1924
+Content-length: 1942
 
 {
   "accountEnabled": true,
@@ -62,7 +62,9 @@ Content-length: 1924
   "appRoleAssignmentRequired": true,
   "appRoles": [
     {
-      "allowedMemberTypes": "allowedMemberTypes-value",
+      "allowedMemberTypes": [
+        "allowedMemberTypes-value"
+      ],
       "description": "description-value",
       "displayName": "displayName-value",
       "id": "id-value",
@@ -128,12 +130,12 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "serviceprincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1924
+Content-length: 1942
 
 {
   "accountEnabled": true,
@@ -143,7 +145,9 @@ Content-length: 1924
   "appRoleAssignmentRequired": true,
   "appRoles": [
     {
-      "allowedMemberTypes": "allowedMemberTypes-value",
+      "allowedMemberTypes": [
+        "allowedMemberTypes-value"
+      ],
       "description": "description-value",
       "displayName": "displayName-value",
       "id": "id-value",
@@ -205,8 +209,8 @@ Content-length: 1924
 }
 ```
 
-<!-- uuid: 132f98b3-4a22-4526-a643-270d251f4e48
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 5fe97353-f84f-4984-9387-432c4e7609ec
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of serviceprincipal object.",

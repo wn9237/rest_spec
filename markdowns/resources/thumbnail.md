@@ -16,9 +16,9 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "content": "String",
+  "content": "Stream-value",
   "height": 1024,
-  "url": "String",
+  "url": "String-value",
   "width": 1024
 }
 
@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |url|String||
 |width|Int32||
 
-<!-- uuid: 38390ff6-06d3-4e3d-98bf-2784276e5c79
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: bbb8f43d-0586-4486-8ace-1366b03a4972
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "thumbnail resource",

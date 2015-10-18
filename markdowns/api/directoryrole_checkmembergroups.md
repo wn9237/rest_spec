@@ -27,6 +27,7 @@ If successful, this method returns `200, OK` response code and String collection
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "directoryrole_checkmembergroups"
@@ -44,10 +45,12 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "string"
+  "@odata.type": "string",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -61,8 +64,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: f2e86bd7-089e-4d58-bd37-d3a3fb7fa250
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: a408babb-1f35-4328-ae61-375939003c15
+2015-10-18 19:39:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole: checkMemberGroups",

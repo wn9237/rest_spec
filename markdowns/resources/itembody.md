@@ -11,13 +11,13 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ItemBody"
+  "@odata.type": "microsoft.graph.itembody"
 }-->
 
 ```json
 {
-  "Content": "String",
-  "ContentType": "String"
+  "Content": "String-value",
+  "ContentType": "String-value"
 }
 
 ```
@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |Content|String||
 |ContentType|String| Possible values are: `Text`, `HTML`.|
 
-<!-- uuid: 02d10e01-57b7-44be-844b-d8a12a05b1fd
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 9ec2eb2b-713c-40c2-8ba1-58d5b9e73d2e
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ItemBody resource",

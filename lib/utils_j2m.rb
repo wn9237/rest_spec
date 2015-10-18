@@ -213,6 +213,9 @@ module SpecMaker
 					#model[item[:name]] = {}
 				else
 					model[item[:name]] = assign_value2(item[:dataType], item[:name], item[:isRelationship])
+					if item[:isCollection]
+						model[item[:name]] = [model[item[:name]]]
+					end
 				end
 				# end
 			end
@@ -274,7 +277,7 @@ module SpecMaker
 			end
 		end 
 		if collFlag 
-			model = {"values" => [model]}
+			model = {"value" => [model]}
 		end
 		return JSON.pretty_generate model
 	end
@@ -303,9 +306,9 @@ module SpecMaker
 			elsif %w[Boolean boolean Bool bool ].include? item[:dataType]
 				model[item[:name]] = true
 			elsif SIMPLETYPES.include? item[:dataType]
-				model[item[:name]] = "String"
+				model[item[:name]] = "#{item[:dataType]}-value"
 			else
-				model[item[:name]] = { "@odata.type" => "#{@service[:namespace]}.#{item[:dataType]}"}
+				model[item[:name]] = { "@odata.type" => "#{@service[:namespace]}.#{item[:dataType]}".downcase}
 			end
 			
 			if item[:isKey]
@@ -323,9 +326,9 @@ module SpecMaker
 
 	def self.get_json_model_pretext (objectName="", properties=[])
 		model = deep_copy(@mdresource)
-		model["@odata.type"] = "#{@service[:namespace]}.#{objectName}"
+		model["@odata.type"] = "#{@service[:namespace]}.#{objectName}".downcase
 		properties.each do |item|
-			if item[:isNullable] 
+			if item[:isNullable] || item[:isRelationship]
 				model[:optionalProperties].push item[:name]
 			end
 		end 
@@ -345,12 +348,16 @@ module SpecMaker
 
 	end
 
-	def self.get_json_response_pretext (type=nil)
+	def self.get_json_response_pretext (type=nil, isArray=false)
 		model = deep_copy(@mdresponse)
-		if type == nil
-			model["@odata.type"] = nil
+		if type == nil || type == 'none'			
 		else
-			model["@odata.type"] = type.downcase
+			if SIMPLETYPES.include? type  
+				model["@odata.type"] = type.downcase
+			else
+				model["@odata.type"] = "#{@service[:namespace]}.#{type}".downcase
+			end
+			model[:isCollection] = true if isArray
 		end
 		return "<!-- " + (JSON.pretty_generate model) + " -->"		
 	end

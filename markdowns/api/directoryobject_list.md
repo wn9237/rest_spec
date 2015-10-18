@@ -23,20 +23,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryobjects"
+}-->
+```http
+GET /directoryObjects
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "directoryobjects"
+  "@odata.type": "microsoft.graph.directoryobject",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 153
+Content-length: 152
 
 {
-  "values": [
+  "value": [
     {
       "objectType": "objectType-value",
       "objectId": "objectId-value",
@@ -47,8 +57,8 @@ Content-length: 153
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 
-<!-- uuid: 1f78f7c1-a823-415b-9539-fd0c04dee184
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: d86fe41a-efb9-421b-918c-312b825800c9
+2015-10-18 19:39:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryObject",

@@ -10,79 +10,80 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "Attachments",
+    "Event",
     "Extensions"
   ],
-  "@odata.type": "microsoft.graph.EventMessage"
+  "@odata.type": "microsoft.graph.eventmessage"
 }-->
 
 ```json
 {
   "Attachments": [
     {
-      "@odata.type": "microsoft.graph.Attachment"
+      "@odata.type": "microsoft.graph.attachment"
     }
   ],
   "BccRecipients": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
   "Body": {
-    "@odata.type": "microsoft.graph.ItemBody"
+    "@odata.type": "microsoft.graph.itembody"
   },
-  "BodyPreview": "String",
+  "BodyPreview": "String-value",
   "Categories": [
-    "String"
+    "String-value"
   ],
   "CcRecipients": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "ChangeKey": "String",
-  "ConversationId": "String",
+  "ChangeKey": "String-value",
+  "ConversationId": "String-value",
   "DateTimeCreated": "String (timestamp)",
   "DateTimeLastModified": "String (timestamp)",
   "DateTimeReceived": "String (timestamp)",
   "DateTimeSent": "String (timestamp)",
   "Event": {
-    "@odata.type": "microsoft.graph.Event"
+    "@odata.type": "microsoft.graph.event"
   },
   "Extensions": [
     {
-      "@odata.type": "microsoft.graph.Extension"
+      "@odata.type": "microsoft.graph.extension"
     }
   ],
   "From": {
-    "@odata.type": "microsoft.graph.Recipient"
+    "@odata.type": "microsoft.graph.recipient"
   },
   "HasAttachments": true,
-  "Id": "String (identifier)",
-  "Importance": "String",
+  "Id": "String-value (identifier)",
+  "Importance": "String-value",
   "IsDeliveryReceiptRequested": true,
   "IsDraft": true,
   "IsRead": true,
   "IsReadReceiptRequested": true,
-  "MeetingMessageType": "String",
-  "ParentFolderId": "String",
+  "MeetingMessageType": "String-value",
+  "ParentFolderId": "String-value",
   "ReplyTo": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
   "Sender": {
-    "@odata.type": "microsoft.graph.Recipient"
+    "@odata.type": "microsoft.graph.recipient"
   },
-  "Subject": "String",
+  "Subject": "String-value",
   "ToRecipients": [
     {
-      "@odata.type": "microsoft.graph.Recipient"
+      "@odata.type": "microsoft.graph.recipient"
     }
   ],
   "UniqueBody": {
-    "@odata.type": "microsoft.graph.ItemBody"
+    "@odata.type": "microsoft.graph.itembody"
   },
-  "WebLink": "String"
+  "WebLink": "String-value"
 }
 
 ```
@@ -143,8 +144,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/eventmessage_replyall.md)|[None](none.md)||
 |[Send](../api/eventmessage_send.md)|[None](none.md)||
 
-<!-- uuid: fb8a5bc2-1fcf-4d87-9f6f-23e64d6da850
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 361791f4-98f2-4e6f-a718-319f611068ec
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage resource",

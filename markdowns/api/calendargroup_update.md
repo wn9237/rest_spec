@@ -50,7 +50,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "calendargroup"
+  "@odata.type": "microsoft.graph.calendargroup"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -65,8 +65,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: 55cb4e34-e802-4de2-8818-0f2ceb5e24c2
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 4fa6e94e-71a3-4e1e-9c3c-6e8a0f291049
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of calendargroup object.",

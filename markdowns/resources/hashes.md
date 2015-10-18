@@ -16,8 +16,8 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "crc32Hash": "String",
-  "sha1Hash": "String"
+  "crc32Hash": "String-value",
+  "sha1Hash": "String-value"
 }
 
 ```
@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |crc32Hash|String||
 |sha1Hash|String||
 
-<!-- uuid: 070b819a-d15e-4e02-bd50-0570117eef28
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 581567c0-9f47-4cb2-b865-ddecfcd4b893
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "hashes resource",

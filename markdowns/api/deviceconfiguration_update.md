@@ -58,7 +58,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "deviceconfiguration"
+  "@odata.type": "microsoft.graph.deviceconfiguration"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -80,8 +80,8 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: 476700f6-edf0-4401-8670-7e3ed697d6f4
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: c2ecb0f6-01cc-4ef1-94de-5f5222d6fed8
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of deviceconfiguration object.",

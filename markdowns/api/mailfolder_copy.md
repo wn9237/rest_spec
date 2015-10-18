@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and [MailFolder](../r
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "mailfolder_copy"
@@ -44,10 +45,11 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "mailfolder"
+  "@odata.type": "microsoft.graph.mailfolder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -62,8 +64,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 5ef8b924-212e-4c47-88f2-78aeacd4ce0d
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 2255d35c-e00f-4eb0-8050-07439e26a517
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Copy",

@@ -23,20 +23,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [TenantDetail](../resources/tenantdetail.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_tenantdetails"
+}-->
+```http
+GET /tenantDetails
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "tenantdetails"
+  "@odata.type": "microsoft.graph.tenantdetail",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1913
+Content-length: 1912
 
 {
-  "values": [
+  "value": [
     {
       "assignedPlans": [
         {
@@ -103,8 +113,8 @@ Content-length: 1913
 ```
 If successful, this method returns a `200 OK` response code and collection of [TenantDetail](../resources/tenantdetail.md) objects in the response body.
 
-<!-- uuid: 6d01b3ae-d1a5-480a-9147-8da1ed7313b9
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: d7dcbe53-b1e1-4850-b137-f5f2d2c85e87
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List TenantDetail",

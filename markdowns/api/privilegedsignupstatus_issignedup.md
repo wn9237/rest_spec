@@ -22,17 +22,17 @@ If successful, this method returns `200, OK` response code and Boolean object in
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "privilegedsignupstatus_issignedup"
 }-->
 ```http
 POST /PrivilegedSignupStatus/<TenantId>/IsSignedUp
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -48,8 +48,8 @@ Content-length: 19
 }
 ```
 
-<!-- uuid: e2b587fc-0436-431b-9cc8-e67845d169d3
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 37a977ab-b007-46a1-8085-f7c7fe2beb1d
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: IsSignedUp",

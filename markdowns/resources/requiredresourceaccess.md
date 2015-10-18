@@ -11,17 +11,17 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.RequiredResourceAccess"
+  "@odata.type": "microsoft.graph.requiredresourceaccess"
 }-->
 
 ```json
 {
   "resourceAccess": [
     {
-      "@odata.type": "microsoft.graph.ResourceAccess"
+      "@odata.type": "microsoft.graph.resourceaccess"
     }
   ],
-  "resourceAppId": "String"
+  "resourceAppId": "String-value"
 }
 
 ```
@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |resourceAccess|[ResourceAccess](resourceaccess.md) collection||
 |resourceAppId|String||
 
-<!-- uuid: f2e92817-4e35-4741-a7bb-44bffb96667a
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: b7b4776a-e2bb-43d8-88e6-504e3cff2f70
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "RequiredResourceAccess resource",

@@ -50,7 +50,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "mailfolder"
+  "@odata.type": "microsoft.graph.mailfolder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -65,8 +65,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 9cb0b327-2d81-4f1d-b38a-9674111f813e
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: ca528af9-f6cd-4e79-9851-c240108a30cd
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of mailfolder object.",

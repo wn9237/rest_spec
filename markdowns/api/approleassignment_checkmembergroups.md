@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and String collection
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "approleassignment_checkmembergroups"
@@ -46,10 +47,12 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "string"
+  "@odata.type": "string",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -63,8 +66,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 9a566bbe-ff12-4a56-8a8e-5ccf30e82a52
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: a53f1dc8-e722-4c37-808e-0ef802109bf4
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRoleAssignment: checkMemberGroups",

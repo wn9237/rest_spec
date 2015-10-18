@@ -11,21 +11,21 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.DirectoryLinkChange"
+  "@odata.type": "microsoft.graph.directorylinkchange"
 }-->
 
 ```json
 {
-  "associationType": "String",
+  "associationType": "String-value",
   "deletionTimestamp": "String (timestamp)",
-  "objectId": "String (identifier)",
-  "objectType": "String",
-  "sourceObjectId": "String",
-  "sourceObjectType": "String",
-  "sourceObjectUri": "String",
-  "targetObjectId": "String",
-  "targetObjectType": "String",
-  "targetObjectUri": "String"
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
+  "sourceObjectId": "String-value",
+  "sourceObjectType": "String-value",
+  "sourceObjectUri": "String-value",
+  "targetObjectId": "String-value",
+  "targetObjectType": "String-value",
+  "targetObjectUri": "String-value"
 }
 
 ```
@@ -58,8 +58,8 @@ None
 |[Get MemberGroups](../api/directorylinkchange_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directorylinkchange_getmemberobjects.md)|String||
 
-<!-- uuid: 27749ca2-7a3b-45d2-9761-c060bca1c1f8
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 1a195afb-5e26-4e2e-ad15-2a2401eb7c71
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryLinkChange resource",

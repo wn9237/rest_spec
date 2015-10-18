@@ -10,78 +10,79 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "Attachments",
+    "Calendar",
     "Extensions",
     "Instances"
   ],
-  "@odata.type": "microsoft.graph.Event"
+  "@odata.type": "microsoft.graph.event"
 }-->
 
 ```json
 {
   "Attachments": [
     {
-      "@odata.type": "microsoft.graph.Attachment"
+      "@odata.type": "microsoft.graph.attachment"
     }
   ],
   "Attendees": [
     {
-      "@odata.type": "microsoft.graph.Attendee"
+      "@odata.type": "microsoft.graph.attendee"
     }
   ],
   "Body": {
-    "@odata.type": "microsoft.graph.ItemBody"
+    "@odata.type": "microsoft.graph.itembody"
   },
-  "BodyPreview": "String",
+  "BodyPreview": "String-value",
   "Calendar": {
-    "@odata.type": "microsoft.graph.Calendar"
+    "@odata.type": "microsoft.graph.calendar"
   },
   "Categories": [
-    "String"
+    "String-value"
   ],
-  "ChangeKey": "String",
+  "ChangeKey": "String-value",
   "DateTimeCreated": "String (timestamp)",
   "DateTimeLastModified": "String (timestamp)",
   "End": "String (timestamp)",
-  "EndTimeZone": "String",
+  "EndTimeZone": "String-value",
   "Extensions": [
     {
-      "@odata.type": "microsoft.graph.Extension"
+      "@odata.type": "microsoft.graph.extension"
     }
   ],
   "HasAttachments": true,
-  "Id": "String (identifier)",
-  "Importance": "String",
+  "Id": "String-value (identifier)",
+  "Importance": "String-value",
   "Instances": [
     {
-      "@odata.type": "microsoft.graph.Event"
+      "@odata.type": "microsoft.graph.event"
     }
   ],
   "IsAllDay": true,
   "IsCancelled": true,
   "IsOrganizer": true,
   "Location": {
-    "@odata.type": "microsoft.graph.Location"
+    "@odata.type": "microsoft.graph.location"
   },
   "Organizer": {
-    "@odata.type": "microsoft.graph.Recipient"
+    "@odata.type": "microsoft.graph.recipient"
   },
   "OriginalStart": "String (timestamp)",
   "Recurrence": {
-    "@odata.type": "microsoft.graph.PatternedRecurrence"
+    "@odata.type": "microsoft.graph.patternedrecurrence"
   },
   "Reminder": 1024,
   "ResponseRequested": true,
   "ResponseStatus": {
-    "@odata.type": "microsoft.graph.ResponseStatus"
+    "@odata.type": "microsoft.graph.responsestatus"
   },
-  "SeriesMasterId": "String",
-  "ShowAs": "String",
+  "SeriesMasterId": "String-value",
+  "ShowAs": "String-value",
   "Start": "String (timestamp)",
-  "StartTimeZone": "String",
-  "Subject": "String",
-  "Type": "String",
-  "WebLink": "String",
-  "iCalUId": "String"
+  "StartTimeZone": "String-value",
+  "Subject": "String-value",
+  "Type": "String-value",
+  "WebLink": "String-value",
+  "iCalUId": "String-value"
 }
 
 ```
@@ -141,8 +142,8 @@ Here is a JSON representation of the resource
 |[Decline](../api/event_decline.md)|[None](none.md)||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|[None](none.md)||
 
-<!-- uuid: f8490f25-218c-415c-92cc-8ffeeae42530
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: c18a84ee-bcce-46c2-b9a9-f572d312d46d
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event resource",

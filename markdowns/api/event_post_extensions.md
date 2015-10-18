@@ -32,7 +32,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /users/<objectId>/Events/<Id>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
 ##### Response
@@ -40,7 +39,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "extension"
+  "@odata.type": "microsoft.graph.extension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -52,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: a3f65c7c-cd7d-4d8d-9d4e-839d1bf2c5f3
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: aa28cf54-6ac6-4d38-bec2-46d8f5272e7b
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Extension",

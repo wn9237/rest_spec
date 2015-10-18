@@ -32,7 +32,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /users/<objectId>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [AppRoleAssignment](../resources/approleassignment.md) object.
 ##### Response
@@ -40,7 +39,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "approleassignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -61,8 +60,8 @@ Content-length: 398
 }
 ```
 
-<!-- uuid: 074e66fa-c18a-4b33-9ecd-ea0d8df149f1
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: b5a6f0be-b8e2-47a9-9ded-16f99c626f5b
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create AppRoleAssignment",

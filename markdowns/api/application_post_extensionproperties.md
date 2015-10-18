@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /applications/<objectId>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [ExtensionProperty](../resources/extensionproperty.md) object.
 ##### Response
@@ -38,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "extensionproperty"
+  "@odata.type": "microsoft.graph.extensionproperty"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -59,8 +58,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: 7975472d-8de1-4a20-b949-dc072502d613
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 52ef18a7-c190-421c-a67a-1631869baf14
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ExtensionProperty",

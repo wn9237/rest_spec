@@ -10,127 +10,131 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "AcceptedSenders",
+    "Calendar",
     "CalendarView",
     "Conversations",
     "Events",
+    "GroupPhoto",
     "RejectedSenders",
     "Threads",
     "appRoleAssignments",
+    "createdOnBehalfOf",
+    "drive",
     "memberOf",
     "members",
     "owners",
     "plans",
     "tasks"
   ],
-  "@odata.type": "microsoft.graph.Group"
+  "@odata.type": "microsoft.graph.group"
 }-->
 
 ```json
 {
   "AcceptedSenders": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
-  "AccessType": "String",
+  "AccessType": "String-value",
   "AllowExternalSenders": true,
   "AutoSubscribeNewMembers": true,
   "Calendar": {
-    "@odata.type": "microsoft.graph.Calendar"
+    "@odata.type": "microsoft.graph.calendar"
   },
   "CalendarView": [
     {
-      "@odata.type": "microsoft.graph.Event"
+      "@odata.type": "microsoft.graph.event"
     }
   ],
   "Conversations": [
     {
-      "@odata.type": "microsoft.graph.Conversation"
+      "@odata.type": "microsoft.graph.conversation"
     }
   ],
-  "EmailAddress": "String",
+  "EmailAddress": "String-value",
   "Events": [
     {
-      "@odata.type": "microsoft.graph.Event"
+      "@odata.type": "microsoft.graph.event"
     }
   ],
   "GroupPhoto": {
-    "@odata.type": "microsoft.graph.Photo"
+    "@odata.type": "microsoft.graph.photo"
   },
   "IsFavorite": true,
   "IsSubscribedByMail": true,
   "RejectedSenders": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "Threads": [
     {
-      "@odata.type": "microsoft.graph.ConversationThread"
+      "@odata.type": "microsoft.graph.conversationthread"
     }
   ],
   "UnseenCount": 1024,
   "appRoleAssignments": [
     {
-      "@odata.type": "microsoft.graph.AppRoleAssignment"
+      "@odata.type": "microsoft.graph.approleassignment"
     }
   ],
   "createdOnBehalfOf": {
-    "@odata.type": "microsoft.graph.DirectoryObject"
+    "@odata.type": "microsoft.graph.directoryobject"
   },
   "creationOptions": [
-    "String"
+    "String-value"
   ],
   "deletionTimestamp": "String (timestamp)",
-  "description": "String",
+  "description": "String-value",
   "dirSyncEnabled": true,
-  "displayName": "String",
+  "displayName": "String-value",
   "drive": {
     "@odata.type": "microsoft.graph.drive"
   },
   "groupTypes": [
-    "String"
+    "String-value"
   ],
   "isPublic": true,
   "lastDirSyncTime": "String (timestamp)",
-  "mail": "String",
+  "mail": "String-value",
   "mailEnabled": true,
-  "mailNickname": "String",
+  "mailNickname": "String-value",
   "memberOf": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "members": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
-  "objectId": "String (identifier)",
-  "objectType": "String",
-  "onPremisesSecurityIdentifier": "String",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
+  "onPremisesSecurityIdentifier": "String-value",
   "owners": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "plans": [
     {
-      "@odata.type": "microsoft.graph.Plan"
+      "@odata.type": "microsoft.graph.plan"
     }
   ],
   "provisioningErrors": [
     {
-      "@odata.type": "microsoft.graph.ProvisioningError"
+      "@odata.type": "microsoft.graph.provisioningerror"
     }
   ],
   "proxyAddresses": [
-    "String"
+    "String-value"
   ],
   "securityEnabled": true,
   "tasks": [
     {
-      "@odata.type": "microsoft.graph.Task"
+      "@odata.type": "microsoft.graph.task"
     }
   ]
 }
@@ -212,8 +216,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/group_getmembergroups.md)|String||
 |[Get MemberObjects](../api/group_getmemberobjects.md)|String||
 
-<!-- uuid: 2bbb6643-339b-4390-802c-95d139af8cd6
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 94d53438-1220-489c-94d2-98280674e0df
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group resource",

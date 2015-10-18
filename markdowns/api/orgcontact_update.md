@@ -99,7 +99,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "orgcontact"
+  "@odata.type": "microsoft.graph.orgcontact"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -144,8 +144,8 @@ Content-length: 1097
 }
 ```
 
-<!-- uuid: 9daac8b9-5e7a-4139-8832-9fc0f933c018
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 1fcd56ab-39b9-4481-96f5-354a611043fd
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of orgcontact object.",

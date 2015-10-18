@@ -9,21 +9,21 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "Item"
   ],
-  "@odata.type": "microsoft.graph.ItemAttachment"
+  "@odata.type": "microsoft.graph.itemattachment"
 }-->
 
 ```json
 {
-  "ContentType": "String",
+  "ContentType": "String-value",
   "DateTimeLastModified": "String (timestamp)",
-  "Id": "String (identifier)",
+  "Id": "String-value (identifier)",
   "IsInline": true,
   "Item": {
-    "@odata.type": "microsoft.graph.OutlookItem"
+    "@odata.type": "microsoft.graph.outlookitem"
   },
-  "Name": "String",
+  "Name": "String-value",
   "Size": 1024
 }
 
@@ -51,8 +51,8 @@ Here is a JSON representation of the resource
 |[Update](../api/itemattachment_update.md) | [ItemAttachment](itemattachment.md)	|Update ItemAttachment object. |
 |[Delete](../api/itemattachment_delete.md) | Void	|Delete ItemAttachment object. |
 
-<!-- uuid: d2fa5b9c-8ac5-4cb5-97fd-047e4c5f4124
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 4ef8a191-16bc-474e-9348-595b09663820
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ItemAttachment resource",

@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /servicePrincipals/<objectId>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 ##### Response
@@ -38,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "oauth2permissiongrant"
+  "@odata.type": "microsoft.graph.oauth2permissiongrant"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -57,8 +56,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: cefe70f3-2357-49ad-903c-e230e0fdd0a0
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 5591465e-a91d-4508-b576-5257e3da447d
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

@@ -11,16 +11,16 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.DirectoryRoleTemplate"
+  "@odata.type": "microsoft.graph.directoryroletemplate"
 }-->
 
 ```json
 {
   "deletionTimestamp": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
-  "objectId": "String (identifier)",
-  "objectType": "String"
+  "description": "String-value",
+  "displayName": "String-value",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value"
 }
 
 ```
@@ -48,8 +48,8 @@ None
 |[Get MemberGroups](../api/directoryroletemplate_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryroletemplate_getmemberobjects.md)|String||
 
-<!-- uuid: 93b455a8-a274-4308-9bdc-5b263d0b1ce4
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 1029dd2d-3165-482b-9f61-c40f4e191c2e
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRoleTemplate resource",

@@ -23,25 +23,37 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [Application](../resources/application.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_applications"
+}-->
+```http
+GET /applications
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "applications"
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2442
+Content-length: 2499
 
 {
-  "values": [
+  "value": [
     {
       "appId": "appId-value",
       "appRoles": [
         {
-          "allowedMemberTypes": "allowedMemberTypes-value",
+          "allowedMemberTypes": [
+            "allowedMemberTypes-value"
+          ],
           "description": "description-value",
           "displayName": "displayName-value",
           "id": "id-value",
@@ -104,10 +116,12 @@ Content-length: 2442
       "requiredResourceAccess": [
         {
           "resourceAppId": "resourceAppId-value",
-          "resourceAccess": {
-            "id": "id-value",
-            "type": "type-value"
-          }
+          "resourceAccess": [
+            {
+              "id": "id-value",
+              "type": "type-value"
+            }
+          ]
         }
       ],
       "samlMetadataUrl": "samlMetadataUrl-value",
@@ -120,8 +134,8 @@ Content-length: 2442
 ```
 If successful, this method returns a `200 OK` response code and collection of [Application](../resources/application.md) objects in the response body.
 
-<!-- uuid: 6b04378a-e5a6-4d41-b981-8f589cba3c4b
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 9dbf6053-9441-42c5-94be-b78c6845f87f
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Application",

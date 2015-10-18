@@ -59,7 +59,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "share"
+  "@odata.type": "microsoft.graph.share"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -86,8 +86,8 @@ Content-length: 330
 }
 ```
 
-<!-- uuid: 8297a75a-f2df-4b10-9955-980c17909e8d
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 81a418ac-c310-4a9e-925f-c272aee73515
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of share object.",

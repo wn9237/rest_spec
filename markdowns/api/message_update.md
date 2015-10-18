@@ -140,7 +140,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "message"
+  "@odata.type": "microsoft.graph.message"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -223,8 +223,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: d5e1430c-458e-4e57-ae3c-dc9157636f46
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: ab5d8355-abcb-48dd-b58c-28645608c2b7
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of message object.",

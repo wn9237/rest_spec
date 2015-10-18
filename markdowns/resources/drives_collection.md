@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.drives"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/drive_list.md) | [drive](drive.md) [] |Get drive object collection. |
 |[Create drive](../api/drive_post_drives.md) |[drive](drive.md)| Create a new drive by posting to the drives collection.|
 
-<!-- uuid: a51204a2-73e0-4087-ae79-d6fb55cbf4fa
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: b402829d-987f-4fc8-99ce-45c921206b35
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drives resource",

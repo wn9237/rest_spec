@@ -20,12 +20,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_extensionproperty"
+}-->
+```http
+GET /applications/<objectId>/extensionProperties/<objectId>
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "extensionproperty"
+  "@odata.type": "microsoft.graph.extensionproperty"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -47,8 +56,8 @@ Content-length: 297
 ```
 If successful, this method returns a `200 OK` response code and [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
 
-<!-- uuid: 76f13545-de91-4464-b53b-ab6adc80dbeb
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 4b802ee0-4bdf-4707-94cb-639cb406ea73
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ExtensionProperty",

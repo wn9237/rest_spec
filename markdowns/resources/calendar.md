@@ -12,25 +12,25 @@ Here is a JSON representation of the resource
     "CalendarView",
     "Events"
   ],
-  "@odata.type": "microsoft.graph.Calendar"
+  "@odata.type": "microsoft.graph.calendar"
 }-->
 
 ```json
 {
   "CalendarView": [
     {
-      "@odata.type": "microsoft.graph.Event"
+      "@odata.type": "microsoft.graph.event"
     }
   ],
-  "ChangeKey": "String",
-  "Color": "String",
+  "ChangeKey": "String-value",
+  "Color": "String-value",
   "Events": [
     {
-      "@odata.type": "microsoft.graph.Event"
+      "@odata.type": "microsoft.graph.event"
     }
   ],
-  "Id": "String (identifier)",
-  "Name": "String"
+  "Id": "String-value (identifier)",
+  "Name": "String-value"
 }
 
 ```
@@ -58,8 +58,8 @@ Here is a JSON representation of the resource
 |[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
 |[Delete](../api/calendar_delete.md) | Void	|Delete Calendar object. |
 
-<!-- uuid: f4950025-1a7c-4dc8-a3de-84fa83f6f8cd
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 0d8df0e9-767f-4b8d-be4c-599e744118c7
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Calendar resource",

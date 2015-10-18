@@ -27,6 +27,7 @@ If successful, this method returns `200, OK` response code and String collection
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "deviceconfiguration_getmemberobjects"
@@ -42,10 +43,12 @@ Content-length: 33
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "string"
+  "@odata.type": "string",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -59,8 +62,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: de2f9fea-e52d-41fa-99e2-f8e4639a3f48
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: bbd6062c-2dbf-4c62-b4f7-1059f3d42cee
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration: getMemberObjects",

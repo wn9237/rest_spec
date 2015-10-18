@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.shares"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/share_list.md) | [share](share.md) [] |Get share object collection. |
 |[Create share](../api/share_post_shares.md) |[share](share.md)| Create a new share by posting to the shares collection.|
 
-<!-- uuid: b9034a01-df8e-43f8-b97f-b51b944201d9
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 9e086c47-04d4-42f2-a488-f3df91286d8a
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "shares resource",

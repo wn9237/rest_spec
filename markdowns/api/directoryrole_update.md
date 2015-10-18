@@ -56,7 +56,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "directoryrole"
+  "@odata.type": "microsoft.graph.directoryrole"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -75,8 +75,8 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: 08b9b911-e3c6-4af4-a0b5-f2abdfada481
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: ea418bce-a5b2-45d6-8afa-aad513113ee8
+2015-10-18 19:39:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryrole object.",

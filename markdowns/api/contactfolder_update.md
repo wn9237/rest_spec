@@ -48,7 +48,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "contactfolder"
+  "@odata.type": "microsoft.graph.contactfolder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -62,8 +62,8 @@ Content-length: 104
 }
 ```
 
-<!-- uuid: 763c6c94-0321-4558-ba91-4fa067ae5f4b
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: d6aae7a7-6183-4391-8348-fd956892eae4
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contactfolder object.",

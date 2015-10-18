@@ -32,7 +32,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /groups/<objectId>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Plan](../resources/plan.md) object.
 ##### Response
@@ -40,7 +39,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "plan"
+  "@odata.type": "microsoft.graph.plan"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -58,8 +57,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: 8c8cefa0-b8b2-48b2-8162-f95bc92bc6d8
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: b4d21f1f-764f-47d4-b1f2-2f45850a035d
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Plan",

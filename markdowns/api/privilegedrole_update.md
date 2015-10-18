@@ -45,7 +45,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedrole"
+  "@odata.type": "microsoft.graph.privilegedrole"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -58,8 +58,8 @@ Content-length: 46
 }
 ```
 
-<!-- uuid: fbb19a54-a354-4947-b49f-4f275f88beeb
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 51969c5c-b489-4049-808b-03304d4ec245
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedrole object.",

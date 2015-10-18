@@ -11,13 +11,13 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.Photo"
+  "@odata.type": "microsoft.graph.photo"
 }-->
 
 ```json
 {
   "Height": 1024,
-  "Id": "String (identifier)",
+  "Id": "String-value (identifier)",
   "Width": 1024
 }
 
@@ -41,8 +41,8 @@ None
 |[Update](../api/photo_update.md) | [Photo](photo.md)	|Update Photo object. |
 |[Delete](../api/photo_delete.md) | Void	|Delete Photo object. |
 
-<!-- uuid: 5075ab65-d160-4c69-9c8d-25c50b4efe2f
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 5e59e4da-a8c0-43e1-a011-e885930eb711
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Photo resource",

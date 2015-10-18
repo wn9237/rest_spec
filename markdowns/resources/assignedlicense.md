@@ -11,15 +11,15 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.AssignedLicense"
+  "@odata.type": "microsoft.graph.assignedlicense"
 }-->
 
 ```json
 {
   "disabledPlans": [
-    "String"
+    "Guid-value"
   ],
-  "skuId": "String"
+  "skuId": "Guid-value"
 }
 
 ```
@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |disabledPlans|Guid collection||
 |skuId|Guid||
 
-<!-- uuid: 9b1ac3e8-d11c-4ce4-8075-c5714074c434
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 3c30ab32-593a-4638-8a7f-ee727027eb99
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AssignedLicense resource",

@@ -72,7 +72,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "thumbnailset"
+  "@odata.type": "microsoft.graph.thumbnailset"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -108,8 +108,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 37a38e90-619c-4eec-8fb0-17dbd85639fe
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 9352c9dd-2f49-4bd4-9ee0-d0a6e285051d
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of thumbnailset object.",

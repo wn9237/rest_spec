@@ -90,7 +90,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "post"
+  "@odata.type": "microsoft.graph.post"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -136,8 +136,8 @@ Content-length: 790
 }
 ```
 
-<!-- uuid: 8781e519-519b-4301-b773-e66fd85bd79b
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: e1edd2f0-6eef-4f85-ad4f-15a2a07f49bf
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of post object.",

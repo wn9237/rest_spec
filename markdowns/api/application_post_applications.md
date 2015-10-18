@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /applications
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Application](../resources/application.md) object.
 ##### Response
@@ -38,18 +37,20 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "application"
+  "@odata.type": "microsoft.graph.application"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2108
+Content-length: 2150
 
 {
   "appId": "appId-value",
   "appRoles": [
     {
-      "allowedMemberTypes": "allowedMemberTypes-value",
+      "allowedMemberTypes": [
+        "allowedMemberTypes-value"
+      ],
       "description": "description-value",
       "displayName": "displayName-value",
       "id": "id-value",
@@ -112,10 +113,12 @@ Content-length: 2108
   "requiredResourceAccess": [
     {
       "resourceAppId": "resourceAppId-value",
-      "resourceAccess": {
-        "id": "id-value",
-        "type": "type-value"
-      }
+      "resourceAccess": [
+        {
+          "id": "id-value",
+          "type": "type-value"
+        }
+      ]
     }
   ],
   "samlMetadataUrl": "samlMetadataUrl-value",
@@ -125,8 +128,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: 8a988f06-120f-40ea-81f7-665f409d858c
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 790207ae-8b3e-477c-86f6-f4f69d9a6cee
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Application",

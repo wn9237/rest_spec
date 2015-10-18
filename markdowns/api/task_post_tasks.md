@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /tasks
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [Task](../resources/task.md) object.
 ##### Response
@@ -38,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "task"
+  "@odata.type": "microsoft.graph.task"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -66,8 +65,8 @@ Content-length: 541
 }
 ```
 
-<!-- uuid: b44f6901-e85b-4c64-8936-473f21b5c71d
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 1ab6b052-aef4-4239-a3e3-8d18b168d6d4
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

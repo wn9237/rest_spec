@@ -30,6 +30,7 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "event_accept"
@@ -46,22 +47,18 @@ Content-length: 56
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "none"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
-
-{
-}
 ```
 
-<!-- uuid: 3b9cafed-5e1c-4e4a-ab2b-4d58d2527dbc
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 98350bb2-1d91-4b01-8ece-2302febb8650
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: Accept",

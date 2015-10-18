@@ -11,18 +11,18 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.OAuth2PermissionGrant"
+  "@odata.type": "microsoft.graph.oauth2permissiongrant"
 }-->
 
 ```json
 {
-  "clientId": "String",
-  "consentType": "String",
+  "clientId": "String-value",
+  "consentType": "String-value",
   "expiryTime": "String (timestamp)",
-  "objectId": "String (identifier)",
-  "principalId": "String",
-  "resourceId": "String",
-  "scope": "String",
+  "objectId": "String-value (identifier)",
+  "principalId": "String-value",
+  "resourceId": "String-value",
+  "scope": "String-value",
   "startTime": "String (timestamp)"
 }
 
@@ -51,8 +51,8 @@ None
 |[Update](../api/oauth2permissiongrant_update.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md)	|Update OAuth2PermissionGrant object. |
 |[Delete](../api/oauth2permissiongrant_delete.md) | Void	|Delete OAuth2PermissionGrant object. |
 
-<!-- uuid: 9108a197-cd24-48ed-82bc-9ff51cbdcc06
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: ff0ce250-622e-4bbf-8fa8-70a49b107b6e
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OAuth2PermissionGrant resource",

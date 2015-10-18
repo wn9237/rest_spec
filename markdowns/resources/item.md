@@ -10,6 +10,8 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "children",
+    "createdByUser",
+    "lastModifiedByUser",
     "permissions",
     "thumbnails",
     "versions"
@@ -22,54 +24,54 @@ Here is a JSON representation of the resource
   "audio": {
     "@odata.type": "microsoft.graph.audio"
   },
-  "cTag": "String",
+  "cTag": "String-value",
   "children": [
     {
       "@odata.type": "microsoft.graph.item"
     }
   ],
-  "content": "String",
+  "content": "Stream-value",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "@odata.type": "microsoft.graph.identityset"
   },
   "createdByUser": {
-    "@odata.type": "microsoft.graph.User"
+    "@odata.type": "microsoft.graph.user"
   },
   "createdDateTime": "String (timestamp)",
   "deleted": {
     "@odata.type": "microsoft.graph.deleted"
   },
-  "description": "String",
-  "eTag": "String",
+  "description": "String-value",
+  "eTag": "String-value",
   "file": {
     "@odata.type": "microsoft.graph.file"
   },
   "fileSystemInfo": {
-    "@odata.type": "microsoft.graph.fileSystemInfo"
+    "@odata.type": "microsoft.graph.filesysteminfo"
   },
   "folder": {
     "@odata.type": "microsoft.graph.folder"
   },
-  "id": "String (identifier)",
+  "id": "String-value (identifier)",
   "image": {
     "@odata.type": "microsoft.graph.image"
   },
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "@odata.type": "microsoft.graph.identityset"
   },
   "lastModifiedByUser": {
-    "@odata.type": "microsoft.graph.User"
+    "@odata.type": "microsoft.graph.user"
   },
   "lastModifiedDateTime": "String (timestamp)",
   "location": {
     "@odata.type": "microsoft.graph.location"
   },
-  "name": "String",
+  "name": "String-value",
   "openWith": {
-    "@odata.type": "microsoft.graph.openWithSet"
+    "@odata.type": "microsoft.graph.openwithset"
   },
   "parentReference": {
-    "@odata.type": "microsoft.graph.itemReference"
+    "@odata.type": "microsoft.graph.itemreference"
   },
   "permissions": [
     {
@@ -80,18 +82,18 @@ Here is a JSON representation of the resource
     "@odata.type": "microsoft.graph.photo"
   },
   "searchResult": {
-    "@odata.type": "microsoft.graph.searchResult"
+    "@odata.type": "microsoft.graph.searchresult"
   },
   "shared": {
     "@odata.type": "microsoft.graph.shared"
   },
   "size": 1024,
   "specialFolder": {
-    "@odata.type": "microsoft.graph.specialFolder"
+    "@odata.type": "microsoft.graph.specialfolder"
   },
   "thumbnails": [
     {
-      "@odata.type": "microsoft.graph.thumbnailSet"
+      "@odata.type": "microsoft.graph.thumbnailset"
     }
   ],
   "versions": [
@@ -102,8 +104,8 @@ Here is a JSON representation of the resource
   "video": {
     "@odata.type": "microsoft.graph.video"
   },
-  "webDavUrl": "String",
-  "webUrl": "String"
+  "webDavUrl": "String-value",
+  "webUrl": "String-value"
 }
 
 ```
@@ -167,8 +169,8 @@ Here is a JSON representation of the resource
 |[Invite](../api/item_invite.md)|[permission](permission.md)||
 |[Search](../api/item_search.md)|[item](item.md)||
 
-<!-- uuid: 934ff6d0-1e66-40f1-a193-31151f4365d7
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: b83f7a22-6c1f-4344-8592-b36f07a15a8b
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item resource",

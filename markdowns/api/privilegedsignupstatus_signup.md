@@ -22,21 +22,21 @@ If successful, this method returns `200, OK` response code and [PrivilegedSignup
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "privilegedsignupstatus_signup"
 }-->
 ```http
 POST /PrivilegedSignupStatus/<TenantId>/SignUp
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedsignupstatus"
+  "@odata.type": "microsoft.graph.privilegedsignupstatus"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -50,8 +50,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: d59b9957-26dd-4969-9a5b-cfb7ab957023
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 7d3357c7-875a-4994-8eac-065eb04add91
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SignUp",

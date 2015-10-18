@@ -30,20 +30,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [NotificationRule](../resources/notificationrule.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_notificationrules"
+}-->
+```http
+GET /NotificationRules
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "notificationrules"
+  "@odata.type": "microsoft.graph.notificationrule",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
+Content-length: 321
 
 {
-  "values": [
+  "value": [
     {
       "Id": "Id-value",
       "UserName": "UserName-value",
@@ -59,8 +69,8 @@ Content-length: 322
 ```
 If successful, this method returns a `200 OK` response code and collection of [NotificationRule](../resources/notificationrule.md) objects in the response body.
 
-<!-- uuid: 4e99dfb4-ae58-41ae-a4cf-dbf950947458
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 264fdc2a-d946-45fe-87aa-6744920ce49b
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List NotificationRule",

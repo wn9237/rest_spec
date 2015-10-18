@@ -48,7 +48,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "directoryobject"
+  "@odata.type": "microsoft.graph.directoryobject"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -62,8 +62,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 9e4c2168-88a7-494d-bc8a-bcf71dec94b5
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: f80c5568-6e20-44e5-b62c-de70b01f8731
+2015-10-18 19:39:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryobject object.",

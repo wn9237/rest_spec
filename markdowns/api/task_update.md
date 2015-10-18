@@ -76,7 +76,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "task"
+  "@odata.type": "microsoft.graph.task"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -104,8 +104,8 @@ Content-length: 541
 }
 ```
 
-<!-- uuid: 95037615-3f65-4d5f-ab1d-adeb98c507c7
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 3bb57260-4636-447a-8b0a-280bac4acd46
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of task object.",

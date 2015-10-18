@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /contacts
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [OrgContact](../resources/orgcontact.md) object.
 ##### Response
@@ -38,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "orgcontact"
+  "@odata.type": "microsoft.graph.orgcontact"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -83,8 +82,8 @@ Content-length: 1097
 }
 ```
 
-<!-- uuid: 78b9cdd7-6956-4a40-8f99-edb53c8b29b9
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: c685a51e-58a9-4ca4-97bb-719bb8a6061e
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OrgContact",

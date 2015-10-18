@@ -11,16 +11,16 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openWithSet"
+  "@odata.type": "microsoft.graph.openwithset"
 }-->
 
 ```json
 {
   "web": {
-    "@odata.type": "microsoft.graph.openWithApp"
+    "@odata.type": "microsoft.graph.openwithapp"
   },
   "webEmbedded": {
-    "@odata.type": "microsoft.graph.openWithApp"
+    "@odata.type": "microsoft.graph.openwithapp"
   }
 }
 
@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |web|[openWithApp](openwithapp.md)||
 |webEmbedded|[openWithApp](openwithapp.md)||
 
-<!-- uuid: e143ee21-4f72-4ca9-96ef-95b2332d3eb7
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 72aaada9-d46f-4e66-a802-6814f3cad1c6
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "openWithSet resource",

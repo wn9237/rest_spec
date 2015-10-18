@@ -32,7 +32,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /drive/root
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [permission](../resources/permission.md) object.
 ##### Response
@@ -40,7 +39,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "permission"
+  "@odata.type": "microsoft.graph.permission"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -88,8 +87,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: af9a2e0a-134b-4998-897f-7d7e8a278be2
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 3b8b2eb8-e8ce-45ea-b9fb-65426f2afa97
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create permission",

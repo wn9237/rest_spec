@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.subscribedskus"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/subscribedsku_list.md) | [SubscribedSku](subscribedsku.md) [] |Get subscribedSku object collection. |
 |[Create SubscribedSku](../api/subscribedsku_post_subscribedskus.md) |[SubscribedSku](subscribedsku.md)| Create a new SubscribedSku by posting to the subscribedSkus collection.|
 
-<!-- uuid: aa33ef2d-3d28-440b-8fc8-be4ec2ebd305
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 35e11200-d850-4c1c-82f1-e2596c823fe0
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "subscribedSkus resource",

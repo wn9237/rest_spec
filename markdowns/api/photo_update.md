@@ -48,7 +48,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "photo"
+  "@odata.type": "microsoft.graph.photo"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -62,8 +62,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 2f04f751-2ae6-4cdd-a325-ab914190323d
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 92f50a9e-87b5-40c5-af80-ab98b1b2499f
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of photo object.",

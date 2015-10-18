@@ -11,16 +11,16 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.PatternedRecurrence"
+  "@odata.type": "microsoft.graph.patternedrecurrence"
 }-->
 
 ```json
 {
   "Pattern": {
-    "@odata.type": "microsoft.graph.RecurrencePattern"
+    "@odata.type": "microsoft.graph.recurrencepattern"
   },
   "Range": {
-    "@odata.type": "microsoft.graph.RecurrenceRange"
+    "@odata.type": "microsoft.graph.recurrencerange"
   }
 }
 
@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |Pattern|[RecurrencePattern](recurrencepattern.md)||
 |Range|[RecurrenceRange](recurrencerange.md)||
 
-<!-- uuid: 2eaf5ad0-457f-4a0f-83b7-4b8358a08933
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 34e70078-132d-44d2-9757-d5d3345b7883
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PatternedRecurrence resource",

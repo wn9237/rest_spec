@@ -11,23 +11,23 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "Threads"
   ],
-  "@odata.type": "microsoft.graph.Conversation"
+  "@odata.type": "microsoft.graph.conversation"
 }-->
 
 ```json
 {
   "DateTimeLastDelivered": "String (timestamp)",
   "HasAttachments": true,
-  "Id": "String (identifier)",
-  "Preview": "String",
+  "Id": "String-value (identifier)",
+  "Preview": "String-value",
   "Threads": [
     {
-      "@odata.type": "microsoft.graph.ConversationThread"
+      "@odata.type": "microsoft.graph.conversationthread"
     }
   ],
-  "Topic": "String",
+  "Topic": "String-value",
   "UniqueSenders": [
-    "String"
+    "String-value"
   ]
 }
 
@@ -56,8 +56,8 @@ Here is a JSON representation of the resource
 |[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
 |[Delete](../api/conversation_delete.md) | Void	|Delete Conversation object. |
 
-<!-- uuid: 50edb0b9-97ab-45c5-990e-ffbc14e660a1
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 2c7804f0-308a-44a5-a63c-66405a0f599d
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Conversation resource",

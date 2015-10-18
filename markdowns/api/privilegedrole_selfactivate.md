@@ -31,6 +31,7 @@ If successful, this method returns `200, OK` response code and [PrivilegedRoleAs
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "privilegedrole_selfactivate"
@@ -49,10 +50,11 @@ Content-length: 142
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedroleassignment"
+  "@odata.type": "microsoft.graph.privilegedroleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -68,8 +70,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 46854ac7-7f08-40d6-ac2f-358bc29ec4d0
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: d9c943ac-001c-4c48-8a30-84652af1a92a
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRole: SelfActivate",

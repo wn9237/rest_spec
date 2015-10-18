@@ -11,18 +11,18 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.Attendee"
+  "@odata.type": "microsoft.graph.attendee"
 }-->
 
 ```json
 {
   "EmailAddress": {
-    "@odata.type": "microsoft.graph.EmailAddress"
+    "@odata.type": "microsoft.graph.emailaddress"
   },
   "Status": {
-    "@odata.type": "microsoft.graph.ResponseStatus"
+    "@odata.type": "microsoft.graph.responsestatus"
   },
-  "Type": "String"
+  "Type": "String-value"
 }
 
 ```
@@ -33,8 +33,8 @@ Here is a JSON representation of the resource
 |Status|[ResponseStatus](responsestatus.md)||
 |Type|String| Possible values are: `Required`, `Optional`, `Resource`.|
 
-<!-- uuid: 8194363c-62ef-4949-bfc9-d638bb1d303a
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 097c35b5-38bd-4328-905a-f5194bdd5415
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Attendee resource",

@@ -28,12 +28,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_contactfolder"
+}-->
+```http
+GET /users/<objectId>/ContactFolders/<Id>
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "contactfolder"
+  "@odata.type": "microsoft.graph.contactfolder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -48,8 +57,8 @@ Content-length: 104
 ```
 If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
-<!-- uuid: 28a3eaf4-cd9d-4d4a-9849-ab909a2ee1ce
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 6ec3dd1d-edb6-407e-9c69-3829b49fa2b8
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ContactFolder",

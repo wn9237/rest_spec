@@ -103,7 +103,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "group"
+  "@odata.type": "microsoft.graph.group"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -151,8 +151,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: f02461a8-86d4-49fa-b2ef-40eb6aed2de6
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: f65f0c69-4c1d-4448-baf0-08544655b057
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of group object.",

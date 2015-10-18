@@ -17,22 +17,22 @@ Here is a JSON representation of the resource
 ```json
 {
   "grantedTo": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "@odata.type": "microsoft.graph.identityset"
   },
-  "id": "String (identifier)",
+  "id": "String-value (identifier)",
   "inheritedFrom": {
-    "@odata.type": "microsoft.graph.itemReference"
+    "@odata.type": "microsoft.graph.itemreference"
   },
   "invitation": {
-    "@odata.type": "microsoft.graph.sharingInvitation"
+    "@odata.type": "microsoft.graph.sharinginvitation"
   },
   "link": {
-    "@odata.type": "microsoft.graph.sharingLink"
+    "@odata.type": "microsoft.graph.sharinglink"
   },
   "roles": [
-    "String"
+    "String-value"
   ],
-  "shareId": "String"
+  "shareId": "String-value"
 }
 
 ```
@@ -59,8 +59,8 @@ None
 |[Update](../api/permission_update.md) | [permission](permission.md)	|Update permission object. |
 |[Delete](../api/permission_delete.md) | Void	|Delete permission object. |
 
-<!-- uuid: 6cfd6096-e921-4a0f-8c89-4016a6f8f5d1
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: eb68435d-9cb2-4eb9-8dd3-bf27be809f9a
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "permission resource",

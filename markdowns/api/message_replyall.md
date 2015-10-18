@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "message_replyall"
@@ -44,22 +45,18 @@ Content-length: 32
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "none"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
-
-{
-}
 ```
 
-<!-- uuid: f1787cf6-ff5b-4dd9-bdbf-396ffef14ad3
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 7d229534-be7d-45d5-9d73-718f22bb4b0c
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: ReplyAll",

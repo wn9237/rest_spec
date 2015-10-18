@@ -11,16 +11,16 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.uploadSession"
+  "@odata.type": "microsoft.graph.uploadsession"
 }-->
 
 ```json
 {
   "expirationDateTime": "String (timestamp)",
   "nextExpectedRanges": [
-    "String"
+    "String-value"
   ],
-  "uploadUrl": "String"
+  "uploadUrl": "String-value"
 }
 
 ```
@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |nextExpectedRanges|String collection||
 |uploadUrl|String||
 
-<!-- uuid: d09b4c38-4fbc-43a4-a713-26180c0a0d00
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 02bce9ed-e367-4d2c-956f-b3e87a2237f2
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "uploadSession resource",

@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and [Message](../reso
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "message_copy"
@@ -44,10 +45,11 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "message"
+  "@odata.type": "microsoft.graph.message"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -130,8 +132,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 104a5cd4-0fde-4048-b1da-0f8ce938a377
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: fde19496-485c-4e16-824a-0b87ee6b3add
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Copy",

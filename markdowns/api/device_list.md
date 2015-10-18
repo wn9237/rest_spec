@@ -23,20 +23,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [Device](../resources/device.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_devices"
+}-->
+```http
+GET /devices
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "devices"
+  "@odata.type": "microsoft.graph.device",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 858
+Content-length: 857
 
 {
-  "values": [
+  "value": [
     {
       "accountEnabled": true,
       "alternativeSecurityIds": [
@@ -68,8 +78,8 @@ Content-length: 858
 ```
 If successful, this method returns a `200 OK` response code and collection of [Device](../resources/device.md) objects in the response body.
 
-<!-- uuid: 461b373d-d23c-4c6b-a29d-7cfe2e218b50
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 61e22d6f-1180-4bb8-8f7d-7d2a8f1767c1
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Device",

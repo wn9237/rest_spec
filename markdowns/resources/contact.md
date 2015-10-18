@@ -9,79 +9,80 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "ContactPhoto",
     "Extensions"
   ],
-  "@odata.type": "microsoft.graph.Contact"
+  "@odata.type": "microsoft.graph.contact"
 }-->
 
 ```json
 {
-  "AssistantName": "String",
+  "AssistantName": "String-value",
   "Birthday": "String (timestamp)",
   "BusinessAddress": {
-    "@odata.type": "microsoft.graph.PhysicalAddress"
+    "@odata.type": "microsoft.graph.physicaladdress"
   },
-  "BusinessHomePage": "String",
+  "BusinessHomePage": "String-value",
   "BusinessPhones": [
-    "String"
+    "String-value"
   ],
   "Categories": [
-    "String"
+    "String-value"
   ],
-  "ChangeKey": "String",
+  "ChangeKey": "String-value",
   "Children": [
-    "String"
+    "String-value"
   ],
-  "CompanyName": "String",
+  "CompanyName": "String-value",
   "ContactPhoto": {
-    "@odata.type": "microsoft.graph.Photo"
+    "@odata.type": "microsoft.graph.photo"
   },
   "DateTimeCreated": "String (timestamp)",
   "DateTimeLastModified": "String (timestamp)",
-  "Department": "String",
-  "DisplayName": "String",
+  "Department": "String-value",
+  "DisplayName": "String-value",
   "EmailAddresses": [
     {
-      "@odata.type": "microsoft.graph.EmailAddress"
+      "@odata.type": "microsoft.graph.emailaddress"
     }
   ],
   "Extensions": [
     {
-      "@odata.type": "microsoft.graph.Extension"
+      "@odata.type": "microsoft.graph.extension"
     }
   ],
-  "FileAs": "String",
-  "Generation": "String",
-  "GivenName": "String",
+  "FileAs": "String-value",
+  "Generation": "String-value",
+  "GivenName": "String-value",
   "HomeAddress": {
-    "@odata.type": "microsoft.graph.PhysicalAddress"
+    "@odata.type": "microsoft.graph.physicaladdress"
   },
   "HomePhones": [
-    "String"
+    "String-value"
   ],
-  "Id": "String (identifier)",
+  "Id": "String-value (identifier)",
   "ImAddresses": [
-    "String"
+    "String-value"
   ],
-  "Initials": "String",
-  "JobTitle": "String",
-  "Manager": "String",
-  "MiddleName": "String",
-  "MobilePhone1": "String",
-  "NickName": "String",
-  "OfficeLocation": "String",
+  "Initials": "String-value",
+  "JobTitle": "String-value",
+  "Manager": "String-value",
+  "MiddleName": "String-value",
+  "MobilePhone1": "String-value",
+  "NickName": "String-value",
+  "OfficeLocation": "String-value",
   "OtherAddress": {
-    "@odata.type": "microsoft.graph.PhysicalAddress"
+    "@odata.type": "microsoft.graph.physicaladdress"
   },
-  "ParentFolderId": "String",
-  "PersonalNotes": "String",
-  "Profession": "String",
-  "SpouseName": "String",
-  "Surname": "String",
-  "Title": "String",
-  "YomiCompanyName": "String",
-  "YomiGivenName": "String",
-  "YomiSurname": "String"
+  "ParentFolderId": "String-value",
+  "PersonalNotes": "String-value",
+  "Profession": "String-value",
+  "SpouseName": "String-value",
+  "Surname": "String-value",
+  "Title": "String-value",
+  "YomiCompanyName": "String-value",
+  "YomiGivenName": "String-value",
+  "YomiSurname": "String-value"
 }
 
 ```
@@ -142,8 +143,8 @@ Here is a JSON representation of the resource
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | Void	|Delete Contact object. |
 
-<!-- uuid: 917a187b-e948-471e-9ffe-1e12d4956797
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 002be300-8a70-410e-9099-3ebfee181a2c
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Contact resource",

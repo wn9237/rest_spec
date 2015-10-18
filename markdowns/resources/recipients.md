@@ -16,10 +16,10 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "alias": "String",
-  "email": "String",
-  "objectId": "String",
-  "permissionIdentityType": "String"
+  "alias": "String-value",
+  "email": "String-value",
+  "objectId": "String-value",
+  "permissionIdentityType": "String-value"
 }
 
 ```
@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |objectId|String||
 |permissionIdentityType|String||
 
-<!-- uuid: 67b5f154-3884-4d77-b3e9-c450cd0bd9b6
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: fc5f0a11-d8b5-4b75-88f9-2a13c2259a17
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "recipients resource",

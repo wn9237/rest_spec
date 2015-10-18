@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and [MailFolder](../r
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "mailfolder_move"
@@ -44,10 +45,11 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "mailfolder"
+  "@odata.type": "microsoft.graph.mailfolder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -62,8 +64,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: ddb28ffe-3c8e-4adc-a943-7f350c63ffe1
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: f9b6ff7d-1926-43f4-88c0-eec166df1b21
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Move",

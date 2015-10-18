@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.deviceconfiguration"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/deviceconfiguration_list.md) | [DeviceConfiguration](deviceconfiguration.md) [] |Get deviceConfiguration object collection. |
 |[Create DeviceConfiguration](../api/deviceconfiguration_post_deviceconfiguration.md) |[DeviceConfiguration](deviceconfiguration.md)| Create a new DeviceConfiguration by posting to the deviceConfiguration collection.|
 
-<!-- uuid: 2b3f3a7a-e6bc-4f32-b2f7-b398ea362a61
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: e5ece233-f652-4276-9994-49f4f0876d23
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "deviceConfiguration resource",

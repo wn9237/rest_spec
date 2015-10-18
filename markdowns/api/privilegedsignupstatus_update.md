@@ -46,7 +46,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedsignupstatus"
+  "@odata.type": "microsoft.graph.privilegedsignupstatus"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -60,8 +60,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 63a1d298-9ff2-44f2-b0bf-0f883fe6c549
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: ced9795c-1f7c-4935-a24e-2b4958b1b483
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedsignupstatus object.",

@@ -11,20 +11,20 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.RecurrencePattern"
+  "@odata.type": "microsoft.graph.recurrencepattern"
 }-->
 
 ```json
 {
   "DayOfMonth": 1024,
   "DaysOfWeek": [
-    "String"
+    "String-value"
   ],
-  "FirstDayOfWeek": "String",
-  "Index": "String",
+  "FirstDayOfWeek": "String-value",
+  "Index": "String-value",
   "Interval": 1024,
   "Month": 1024,
-  "Type": "String"
+  "Type": "String-value"
 }
 
 ```
@@ -39,8 +39,8 @@ Here is a JSON representation of the resource
 |Month|Int32||
 |Type|String| Possible values are: `Daily`, `Weekly`, `AbsoluteMonthly`, `RelativeMonthly`, `AbsoluteYearly`, `RelativeYearly`.|
 
-<!-- uuid: 9c8cb776-382f-40c6-a5b8-d65a9b94877b
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: d146207d-c8f4-448b-b468-f7205796e091
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "RecurrencePattern resource",

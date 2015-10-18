@@ -30,20 +30,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_privilegedoperationevents"
+}-->
+```http
+GET /PrivilegedOperationEvents
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedoperationevents"
+  "@odata.type": "microsoft.graph.privilegedoperationevent",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 538
+Content-length: 537
 
 {
-  "values": [
+  "value": [
     {
       "Id": "Id-value",
       "UserId": "UserId-value",
@@ -64,8 +74,8 @@ Content-length: 538
 ```
 If successful, this method returns a `200 OK` response code and collection of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) objects in the response body.
 
-<!-- uuid: 9c3c0e9f-c34f-40f9-859a-db9ef598520c
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 9dc4bf75-2433-4ff7-8956-056c151418e5
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List PrivilegedOperationEvent",

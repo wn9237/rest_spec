@@ -50,7 +50,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "directoryroletemplate"
+  "@odata.type": "microsoft.graph.directoryroletemplate"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -66,8 +66,8 @@ Content-length: 187
 }
 ```
 
-<!-- uuid: a45e2cf9-9769-413e-8815-2889b63878e4
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 77e22968-fd14-4c56-9cb1-b57923a6f05e
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryroletemplate object.",

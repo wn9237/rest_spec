@@ -11,14 +11,14 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.DirectoryObject"
+  "@odata.type": "microsoft.graph.directoryobject"
 }-->
 
 ```json
 {
   "deletionTimestamp": "String (timestamp)",
-  "objectId": "String (identifier)",
-  "objectType": "String"
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value"
 }
 
 ```
@@ -44,8 +44,8 @@ None
 |[Get MemberGroups](../api/directoryobject_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryobject_getmemberobjects.md)|String||
 
-<!-- uuid: 2ff90b61-1c12-4fd4-a4b1-5d657b33ba4f
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 48e7ee03-c467-4f77-ac43-f66cc90c080c
+2015-10-18 19:39:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject resource",

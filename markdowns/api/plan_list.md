@@ -30,20 +30,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [Plan](../resources/plan.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_plans"
+}-->
+```http
+GET /plans
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "plans"
+  "@odata.type": "microsoft.graph.plan",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
+Content-length: 236
 
 {
-  "values": [
+  "value": [
     {
       "createdBy": "createdBy-value",
       "owner": "owner-value",
@@ -58,8 +68,8 @@ Content-length: 237
 ```
 If successful, this method returns a `200 OK` response code and collection of [Plan](../resources/plan.md) objects in the response body.
 
-<!-- uuid: f1945d63-b5b2-4b87-a9f9-7824bd6bcbc9
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 7f028ded-8d10-4b24-a1dc-5e3e39a16239
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Plan",

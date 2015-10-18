@@ -27,6 +27,7 @@ If successful, this method returns `200, OK` response code and [Application](../
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "application_restore"
@@ -44,21 +45,24 @@ Content-length: 56
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "application"
+  "@odata.type": "microsoft.graph.application"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2108
+Content-length: 2150
 
 {
   "appId": "appId-value",
   "appRoles": [
     {
-      "allowedMemberTypes": "allowedMemberTypes-value",
+      "allowedMemberTypes": [
+        "allowedMemberTypes-value"
+      ],
       "description": "description-value",
       "displayName": "displayName-value",
       "id": "id-value",
@@ -121,10 +125,12 @@ Content-length: 2108
   "requiredResourceAccess": [
     {
       "resourceAppId": "resourceAppId-value",
-      "resourceAccess": {
-        "id": "id-value",
-        "type": "type-value"
-      }
+      "resourceAccess": [
+        {
+          "id": "id-value",
+          "type": "type-value"
+        }
+      ]
     }
   ],
   "samlMetadataUrl": "samlMetadataUrl-value",
@@ -134,8 +140,8 @@ Content-length: 2108
 }
 ```
 
-<!-- uuid: 9a5fd978-ce5f-486f-9fc0-3170e5a09fdf
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 05490f75-e90d-4abc-8484-05a6728d3ba2
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application: restore",

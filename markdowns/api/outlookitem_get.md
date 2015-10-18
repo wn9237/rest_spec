@@ -26,12 +26,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [OutlookItem](../resources/outlookitem.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_outlookitem"
+}-->
+```http
+
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "outlookitem"
+  "@odata.type": "microsoft.graph.outlookitem"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -50,8 +59,8 @@ Content-length: 185
 ```
 If successful, this method returns a `200 OK` response code and [OutlookItem](../resources/outlookitem.md) object in the response body.
 
-<!-- uuid: 215cc41b-4497-44ed-9068-4ba48d7cf890
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 792fa0c2-a144-4d4b-a9ad-45c7f6a85c9a
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OutlookItem",

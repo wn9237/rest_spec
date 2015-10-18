@@ -23,21 +23,21 @@ If successful, this method returns `200, OK` response code and [PrivilegedRoleAs
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "privilegedroleassignment_my"
 }-->
 ```http
 POST /PrivilegedRoleAssignments/<UserId|RoleId>/My
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedroleassignment"
+  "@odata.type": "microsoft.graph.privilegedroleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -53,8 +53,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: e0a47b40-6853-4b33-af1f-1ee901e8a054
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: f817ef94-d7f9-49cb-9658-7875d0096ca9
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: My",

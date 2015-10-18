@@ -86,7 +86,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "permission"
+  "@odata.type": "microsoft.graph.permission"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -134,8 +134,8 @@ Content-length: 762
 }
 ```
 
-<!-- uuid: bd7e9363-daf1-470c-9094-ceef9ebc2be6
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 46a6a932-3c2a-4cf6-9d8f-f563bc91c89b
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of permission object.",

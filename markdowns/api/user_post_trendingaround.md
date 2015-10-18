@@ -32,7 +32,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /users/<objectId>
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [File](../resources/file.md) object.
 ##### Response
@@ -40,7 +39,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "file"
+  "@odata.type": "microsoft.graph.file"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -51,8 +50,8 @@ Content-length: 3
 }
 ```
 
-<!-- uuid: da8e6e20-fa03-4101-9067-ee3df65f490c
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: b97966f6-f364-4370-8b24-918da5e7817c
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create File",

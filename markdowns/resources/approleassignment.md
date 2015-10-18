@@ -11,21 +11,21 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.AppRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 }-->
 
 ```json
 {
   "creationTimestamp": "String (timestamp)",
   "deletionTimestamp": "String (timestamp)",
-  "id": "String",
-  "objectId": "String (identifier)",
-  "objectType": "String",
-  "principalDisplayName": "String",
-  "principalId": "String",
-  "principalType": "String",
-  "resourceDisplayName": "String",
-  "resourceId": "String"
+  "id": "Guid-value",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
+  "principalDisplayName": "String-value",
+  "principalId": "Guid-value",
+  "principalType": "String-value",
+  "resourceDisplayName": "String-value",
+  "resourceId": "Guid-value"
 }
 
 ```
@@ -58,8 +58,8 @@ None
 |[Get MemberGroups](../api/approleassignment_getmembergroups.md)|String||
 |[Get MemberObjects](../api/approleassignment_getmemberobjects.md)|String||
 
-<!-- uuid: 2930efdb-b06e-4d9d-be7b-60c460535f70
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 791895f6-9400-41b2-8ec6-1f10e4930711
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRoleAssignment resource",

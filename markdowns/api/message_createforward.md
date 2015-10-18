@@ -24,21 +24,21 @@ If successful, this method returns `200, OK` response code and [Message](../reso
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "message_createforward"
 }-->
 ```http
 POST /users/<objectId>/Messages/<Id>/CreateForward
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "message"
+  "@odata.type": "microsoft.graph.message"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -121,8 +121,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: e9afde2d-0ae3-4f2a-9940-aa0e78e90743
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: 3ddb1d16-9454-4754-827d-da4fa5647c6a
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: CreateForward",

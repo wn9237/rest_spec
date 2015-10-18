@@ -27,12 +27,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [PrivilegedRoleSummary](../resources/privilegedrolesummary.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_privilegedrolesummary"
+}-->
+```http
+GET /PrivilegedRoles/<Id>/Summary
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedrolesummary"
+  "@odata.type": "microsoft.graph.privilegedrolesummary"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -50,8 +59,8 @@ Content-length: 145
 ```
 If successful, this method returns a `200 OK` response code and [PrivilegedRoleSummary](../resources/privilegedrolesummary.md) object in the response body.
 
-<!-- uuid: 3705910d-6a95-4891-8936-a87775528877
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: b645f547-8f69-4def-a771-6995e03d875b
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSummary",

@@ -11,14 +11,14 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ProvisioningError"
+  "@odata.type": "microsoft.graph.provisioningerror"
 }-->
 
 ```json
 {
-  "errorDetail": "String",
+  "errorDetail": "String-value",
   "resolved": true,
-  "service": "String",
+  "service": "String-value",
   "timestamp": "String (timestamp)"
 }
 
@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |service|String||
 |timestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
-<!-- uuid: 476293ab-0c9a-49f8-90fe-efc9adcd4ac3
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 295950ea-ec77-4875-8a33-9a7acc530011
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ProvisioningError resource",

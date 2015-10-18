@@ -22,21 +22,21 @@ If successful, this method returns `200, OK` response code and [PrivilegedSecuri
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "privilegedsecurityalert_dismiss"
 }-->
 ```http
 POST /PrivilegedSecurityAlerts/<AlertId>/Dismiss
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedsecurityalert"
+  "@odata.type": "microsoft.graph.privilegedsecurityalert"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -64,8 +64,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: ac121971-402f-47e6-b97a-79097713925f
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 68ca74cd-17cf-4162-919a-760eaae53351
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSecurityAlert: Dismiss",

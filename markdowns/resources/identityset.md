@@ -11,7 +11,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.identitySet"
+  "@odata.type": "microsoft.graph.identityset"
 }-->
 
 ```json
@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
 |device|[identity](identity.md)||
 |user|[identity](identity.md)||
 
-<!-- uuid: 55d3a9a5-28f0-49c3-ba89-d4f313640ca1
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: becd5227-cd4e-4ce6-b408-1edca55af8f5
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "identitySet resource",

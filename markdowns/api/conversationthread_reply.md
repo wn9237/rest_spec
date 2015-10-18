@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "conversationthread_reply"
@@ -36,7 +37,7 @@ Here is an example of how to call this API.
 ```http
 POST /groups/<objectId>/Threads/<Id>/Reply
 Content-type: application/json
-Content-length: 1075
+Content-length: 1141
 
 {
   "Post": {
@@ -60,25 +61,31 @@ Content-length: 1075
     },
     "ConversationThreadId": "ConversationThreadId-value",
     "ConversationId": "ConversationId-value",
-    "NewParticipants": {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+    "NewParticipants": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
       }
-    },
+    ],
     "ChangeKey": "ChangeKey-value",
-    "Categories": "Categories-value",
+    "Categories": [
+      "Categories-value"
+    ],
     "DateTimeCreated": "datetime-value",
     "DateTimeLastModified": "datetime-value",
     "Id": "Id-value",
-    "Attachments": {
-      "Name": "Name-value",
-      "ContentType": "ContentType-value",
-      "Size": 99,
-      "IsInline": true,
-      "DateTimeLastModified": "datetime-value",
-      "Id": "Id-value"
-    },
+    "Attachments": [
+      {
+        "Name": "Name-value",
+        "ContentType": "ContentType-value",
+        "Size": 99,
+        "IsInline": true,
+        "DateTimeLastModified": "datetime-value",
+        "Id": "Id-value"
+      }
+    ],
     "InReplyTo": {
     }
   }
@@ -86,22 +93,18 @@ Content-length: 1075
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "none"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
-
-{
-}
 ```
 
-<!-- uuid: 0d34258a-4338-40e6-9a00-c95ad12a69bb
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 625d86d7-a578-4b21-8069-16a1afb41714
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread: Reply",

@@ -9,97 +9,99 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "appRoleAssignedTo",
     "appRoleAssignments",
     "createdObjects",
+    "createdOnBehalfOf",
     "memberOf",
     "oauth2PermissionGrants",
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.ServicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 }-->
 
 ```json
 {
   "accountEnabled": true,
-  "appDisplayName": "String",
-  "appId": "String",
-  "appOwnerTenantId": "String",
+  "appDisplayName": "String-value",
+  "appId": "String-value",
+  "appOwnerTenantId": "Guid-value",
   "appRoleAssignedTo": {
-    "@odata.type": "microsoft.graph.AppRoleAssignment"
+    "@odata.type": "microsoft.graph.approleassignment"
   },
   "appRoleAssignmentRequired": true,
   "appRoleAssignments": [
     {
-      "@odata.type": "microsoft.graph.AppRoleAssignment"
+      "@odata.type": "microsoft.graph.approleassignment"
     }
   ],
   "appRoles": [
     {
-      "@odata.type": "microsoft.graph.AppRole"
+      "@odata.type": "microsoft.graph.approle"
     }
   ],
   "createdObjects": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "createdOnBehalfOf": {
-    "@odata.type": "microsoft.graph.DirectoryObject"
+    "@odata.type": "microsoft.graph.directoryobject"
   },
   "deletionTimestamp": "String (timestamp)",
-  "displayName": "String",
-  "errorUrl": "String",
-  "homepage": "String",
+  "displayName": "String-value",
+  "errorUrl": "String-value",
+  "homepage": "String-value",
   "keyCredentials": [
     {
-      "@odata.type": "microsoft.graph.KeyCredential"
+      "@odata.type": "microsoft.graph.keycredential"
     }
   ],
-  "logoutUrl": "String",
+  "logoutUrl": "String-value",
   "memberOf": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "oauth2PermissionGrants": [
     {
-      "@odata.type": "microsoft.graph.OAuth2PermissionGrant"
+      "@odata.type": "microsoft.graph.oauth2permissiongrant"
     }
   ],
   "oauth2Permissions": [
     {
-      "@odata.type": "microsoft.graph.OAuth2Permission"
+      "@odata.type": "microsoft.graph.oauth2permission"
     }
   ],
-  "objectId": "String (identifier)",
-  "objectType": "String",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
   "ownedObjects": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "owners": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "passwordCredentials": [
     {
-      "@odata.type": "microsoft.graph.PasswordCredential"
+      "@odata.type": "microsoft.graph.passwordcredential"
     }
   ],
-  "preferredTokenSigningKeyThumbprint": "String",
-  "publisherName": "String",
+  "preferredTokenSigningKeyThumbprint": "String-value",
+  "publisherName": "String-value",
   "replyUrls": [
-    "String"
+    "String-value"
   ],
-  "samlMetadataUrl": "String",
+  "samlMetadataUrl": "String-value",
   "servicePrincipalNames": [
-    "String"
+    "String-value"
   ],
   "tags": [
-    "String"
+    "String-value"
   ]
 }
 
@@ -159,8 +161,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String||
 |[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String||
 
-<!-- uuid: f385ce18-b41e-4625-8506-738a9620dff1
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 35f29620-6f3e-48ba-b4ac-826c42dca055
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal resource",

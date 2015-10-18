@@ -11,14 +11,14 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ProvisionedPlan"
+  "@odata.type": "microsoft.graph.provisionedplan"
 }-->
 
 ```json
 {
-  "capabilityStatus": "String",
-  "provisioningStatus": "String",
-  "service": "String"
+  "capabilityStatus": "String-value",
+  "provisioningStatus": "String-value",
+  "service": "String-value"
 }
 
 ```
@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |provisioningStatus|String||
 |service|String||
 
-<!-- uuid: 9a3d6104-e64e-44e6-858f-de7f4193e810
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 32b3640c-d07d-4a4f-9edd-44d8f594f54e
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ProvisionedPlan resource",

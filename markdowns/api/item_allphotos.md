@@ -24,29 +24,30 @@ If successful, this method returns `200, OK` response code and [item](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "item_allphotos"
 }-->
 ```http
 POST /drive/root/allPhotos
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "item"
+  "@odata.type": "microsoft.graph.item",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3636
+Content-length: 3635
 
 {
-  "values": [
+  "value": [
     {
       "content": "content-value",
       "createdBy": {
@@ -192,8 +193,8 @@ Content-length: 3636
 }
 ```
 
-<!-- uuid: 8f6dce18-e4df-4884-a0e4-94a6a5a944f7
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: f8636ec6-b41f-4090-878b-eae3f23e4b89
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: allPhotos",

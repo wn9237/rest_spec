@@ -11,20 +11,20 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.DeviceConfiguration"
+  "@odata.type": "microsoft.graph.deviceconfiguration"
 }-->
 
 ```json
 {
   "cloudPublicIssuerCertificates": [
-    "String"
+    "Binary-value"
   ],
   "deletionTimestamp": "String (timestamp)",
   "maximumRegistrationInactivityPeriod": 1024,
-  "objectId": "String (identifier)",
-  "objectType": "String",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
   "publicIssuerCertificates": [
-    "String"
+    "Binary-value"
   ],
   "registrationQuota": 1024
 }
@@ -56,8 +56,8 @@ None
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String||
 
-<!-- uuid: 50b2c58c-d0da-4912-826b-dc26a1e4370b
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 02cb6a3e-d67e-42fa-87ed-bde9455eff11
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration resource",

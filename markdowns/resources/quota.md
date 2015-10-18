@@ -18,7 +18,7 @@ Here is a JSON representation of the resource
 {
   "deleted": 1024,
   "remaining": 1024,
-  "state": "String",
+  "state": "String-value",
   "total": 1024,
   "used": 1024
 }
@@ -33,8 +33,8 @@ Here is a JSON representation of the resource
 |total|Int64||
 |used|Int64||
 
-<!-- uuid: 483d6668-3f0e-46f8-94e0-f9761c485672
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 2aabaaf6-de43-41e4-a197-14eabf90f62b
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "quota resource",

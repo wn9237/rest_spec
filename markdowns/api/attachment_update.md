@@ -54,7 +54,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "attachment"
+  "@odata.type": "microsoft.graph.attachment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -71,8 +71,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: dec6bdad-5baf-4ae3-9a75-2b0b613df1fc
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 8b2799d5-f31f-48f5-ba42-e286952be3b2
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of attachment object.",

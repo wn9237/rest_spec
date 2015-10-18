@@ -16,8 +16,8 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "displayName": "String",
-  "id": "String"
+  "displayName": "String-value",
+  "id": "String-value"
 }
 
 ```
@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |displayName|String||
 |id|String||
 
-<!-- uuid: 1b085149-561e-47a8-a467-2963d269110f
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 0eadafd1-4b39-4c60-8162-f4205acca5a7
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "identity resource",

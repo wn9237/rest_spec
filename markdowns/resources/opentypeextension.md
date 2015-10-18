@@ -11,13 +11,13 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.OpenTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 }-->
 
 ```json
 {
-  "ExtensionName": "String",
-  "Id": "String (identifier)"
+  "ExtensionName": "String-value",
+  "Id": "String-value (identifier)"
 }
 
 ```
@@ -39,8 +39,8 @@ None
 |[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
 |[Delete](../api/opentypeextension_delete.md) | Void	|Delete OpenTypeExtension object. |
 
-<!-- uuid: f3947814-870b-47a1-9809-b23c66461f4c
-2015-10-16 23:06:06 UTC -->
+<!-- uuid: d8a35e01-04c7-4a6a-92a7-f6a9e5c34e24
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OpenTypeExtension resource",

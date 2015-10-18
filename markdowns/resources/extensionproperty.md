@@ -11,20 +11,20 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ExtensionProperty"
+  "@odata.type": "microsoft.graph.extensionproperty"
 }-->
 
 ```json
 {
-  "appDisplayName": "String",
-  "dataType": "String",
+  "appDisplayName": "String-value",
+  "dataType": "String-value",
   "deletionTimestamp": "String (timestamp)",
   "isSyncedFromOnPremises": true,
-  "name": "String",
-  "objectId": "String (identifier)",
-  "objectType": "String",
+  "name": "String-value",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
   "targetObjects": [
-    "String"
+    "String-value"
   ]
 }
 
@@ -56,8 +56,8 @@ None
 |[Get MemberGroups](../api/extensionproperty_getmembergroups.md)|String||
 |[Get MemberObjects](../api/extensionproperty_getmemberobjects.md)|String||
 
-<!-- uuid: 4e78ed7f-1b31-4a85-96f3-3c6492f1dbbf
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: ea76d8d1-a300-464b-9fc7-80b85f57d1b4
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExtensionProperty resource",

@@ -33,6 +33,7 @@ If successful, this method returns `200, OK` response code and [permission](../r
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "item_invite"
@@ -61,18 +62,20 @@ Content-length: 313
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "permission"
+  "@odata.type": "microsoft.graph.permission",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 940
+Content-length: 939
 
 {
-  "values": [
+  "value": [
     {
       "grantedTo": {
         "application": {
@@ -116,8 +119,8 @@ Content-length: 940
 }
 ```
 
-<!-- uuid: 34361ef1-6830-4f63-9683-951e35009386
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: db216373-1f31-4768-8769-21e945fb1804
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: invite",

@@ -12,24 +12,24 @@ Here is a JSON representation of the resource
     "ChildFolders",
     "Contacts"
   ],
-  "@odata.type": "microsoft.graph.ContactFolder"
+  "@odata.type": "microsoft.graph.contactfolder"
 }-->
 
 ```json
 {
   "ChildFolders": [
     {
-      "@odata.type": "microsoft.graph.ContactFolder"
+      "@odata.type": "microsoft.graph.contactfolder"
     }
   ],
   "Contacts": [
     {
-      "@odata.type": "microsoft.graph.Contact"
+      "@odata.type": "microsoft.graph.contact"
     }
   ],
-  "DisplayName": "String",
-  "Id": "String (identifier)",
-  "ParentFolderId": "String"
+  "DisplayName": "String-value",
+  "Id": "String-value (identifier)",
+  "ParentFolderId": "String-value"
 }
 
 ```
@@ -56,8 +56,8 @@ Here is a JSON representation of the resource
 |[Update](../api/contactfolder_update.md) | [ContactFolder](contactfolder.md)	|Update ContactFolder object. |
 |[Delete](../api/contactfolder_delete.md) | Void	|Delete ContactFolder object. |
 
-<!-- uuid: 414b1797-510d-45ab-a65d-511c9e4446df
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 989e800f-2984-4b23-a64d-702bbf2fffa7
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ContactFolder resource",

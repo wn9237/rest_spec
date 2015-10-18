@@ -11,24 +11,24 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.PrivilegedOperationEvent"
+  "@odata.type": "microsoft.graph.privilegedoperationevent"
 }-->
 
 ```json
 {
-  "AdditionalInformation": "String",
+  "AdditionalInformation": "String-value",
   "CreationTime": "String (timestamp)",
   "ExpirationTime": "String (timestamp)",
-  "Id": "String (identifier)",
-  "RequestType": "String",
-  "RequestorId": "String",
-  "RequestorName": "String",
-  "RoleId": "String",
-  "RoleName": "String",
-  "TenantId": "String",
-  "UserId": "String",
-  "UserMail": "String",
-  "UserName": "String"
+  "Id": "Guid-value (identifier)",
+  "RequestType": "String-value",
+  "RequestorId": "String-value",
+  "RequestorName": "String-value",
+  "RoleId": "Guid-value",
+  "RoleName": "String-value",
+  "TenantId": "String-value",
+  "UserId": "String-value",
+  "UserMail": "String-value",
+  "UserName": "String-value"
 }
 
 ```
@@ -61,8 +61,8 @@ None
 |[Update](../api/privilegedoperationevent_update.md) | [PrivilegedOperationEvent](privilegedoperationevent.md)	|Update PrivilegedOperationEvent object. |
 |[Delete](../api/privilegedoperationevent_delete.md) | Void	|Delete PrivilegedOperationEvent object. |
 
-<!-- uuid: 3872bfc2-6cd7-4ccc-8390-ac0e9351841d
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: 02f51e0e-df0f-4e2d-9725-054c467f9f2b
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedOperationEvent resource",

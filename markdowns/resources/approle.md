@@ -11,19 +11,19 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.AppRole"
+  "@odata.type": "microsoft.graph.approle"
 }-->
 
 ```json
 {
   "allowedMemberTypes": [
-    "String"
+    "String-value"
   ],
-  "description": "String",
-  "displayName": "String",
-  "id": "String",
+  "description": "String-value",
+  "displayName": "String-value",
+  "id": "Guid-value",
   "isEnabled": true,
-  "value": "String"
+  "value": "String-value"
 }
 
 ```
@@ -37,8 +37,8 @@ Here is a JSON representation of the resource
 |isEnabled|Boolean||
 |value|String||
 
-<!-- uuid: 702e836e-c81a-423f-aec7-991b281c3a1d
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 2a26dfda-386f-44fa-9314-43c84179970b
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRole resource",

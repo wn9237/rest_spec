@@ -29,6 +29,7 @@ If successful, this method returns `200, OK` response code and [uploadSession](.
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "item_createsession"
@@ -46,10 +47,11 @@ Content-length: 44
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "uploadsession"
+  "@odata.type": "microsoft.graph.uploadsession"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -65,8 +67,8 @@ Content-length: 140
 }
 ```
 
-<!-- uuid: 6dbfc0aa-ba1d-4d0a-882a-2afe4e5668f4
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 2fb962e2-a2db-47e7-a411-e3910fda7f56
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createSession",

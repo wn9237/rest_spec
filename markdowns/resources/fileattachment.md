@@ -11,19 +11,19 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.FileAttachment"
+  "@odata.type": "microsoft.graph.fileattachment"
 }-->
 
 ```json
 {
-  "ContentBytes": "String",
-  "ContentId": "String",
-  "ContentLocation": "String",
-  "ContentType": "String",
+  "ContentBytes": "Binary-value",
+  "ContentId": "String-value",
+  "ContentLocation": "String-value",
+  "ContentType": "String-value",
   "DateTimeLastModified": "String (timestamp)",
-  "Id": "String (identifier)",
+  "Id": "String-value (identifier)",
   "IsInline": true,
-  "Name": "String",
+  "Name": "String-value",
   "Size": 1024
 }
 
@@ -53,8 +53,8 @@ None
 |[Update](../api/fileattachment_update.md) | [FileAttachment](fileattachment.md)	|Update FileAttachment object. |
 |[Delete](../api/fileattachment_delete.md) | Void	|Delete FileAttachment object. |
 
-<!-- uuid: 6e407858-be1e-4781-90fc-c7cde56c2844
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: 02748fbd-f927-4436-be52-f58ea503f74e
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "FileAttachment resource",

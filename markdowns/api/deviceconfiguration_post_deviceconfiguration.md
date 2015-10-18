@@ -30,7 +30,6 @@ Here is an example of the request.
 }-->
 ```http
 POST /deviceConfiguration
-Content-type: application/json
 ```
 In the request body, supply a JSON representation of [DeviceConfiguration](../resources/deviceconfiguration.md) object.
 ##### Response
@@ -38,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "deviceconfiguration"
+  "@odata.type": "microsoft.graph.deviceconfiguration"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -60,8 +59,8 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: e3b3d36e-16fe-436f-af4e-d3a5f73e199a
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: e4b5120d-3d93-4b76-a5f8-d5c01e0bef76
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DeviceConfiguration",

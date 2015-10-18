@@ -76,7 +76,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "conversationthread"
+  "@odata.type": "microsoft.graph.conversationthread"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -112,8 +112,8 @@ Content-length: 489
 }
 ```
 
-<!-- uuid: a48bf572-bc33-43dd-bed5-91d8ad6403f9
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 004afc4c-d041-41a7-8cc0-1e9dc5e26c5b
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversationthread object.",

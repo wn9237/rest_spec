@@ -11,55 +11,55 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.TenantDetail"
+  "@odata.type": "microsoft.graph.tenantdetail"
 }-->
 
 ```json
 {
   "assignedPlans": [
     {
-      "@odata.type": "microsoft.graph.AssignedPlan"
+      "@odata.type": "microsoft.graph.assignedplan"
     }
   ],
-  "city": "String",
+  "city": "String-value",
   "companyLastDirSyncTime": "String (timestamp)",
-  "country": "String",
-  "countryLetterCode": "String",
+  "country": "String-value",
+  "countryLetterCode": "String-value",
   "deletionTimestamp": "String (timestamp)",
   "dirSyncEnabled": true,
-  "displayName": "String",
+  "displayName": "String-value",
   "marketingNotificationEmails": [
-    "String"
+    "String-value"
   ],
-  "objectId": "String (identifier)",
-  "objectType": "String",
-  "postalCode": "String",
-  "preferredLanguage": "String",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
+  "postalCode": "String-value",
+  "preferredLanguage": "String-value",
   "provisionedPlans": [
     {
-      "@odata.type": "microsoft.graph.ProvisionedPlan"
+      "@odata.type": "microsoft.graph.provisionedplan"
     }
   ],
   "provisioningErrors": [
     {
-      "@odata.type": "microsoft.graph.ProvisioningError"
+      "@odata.type": "microsoft.graph.provisioningerror"
     }
   ],
   "securityComplianceNotificationMails": [
-    "String"
+    "String-value"
   ],
   "securityComplianceNotificationPhones": [
-    "String"
+    "String-value"
   ],
-  "state": "String",
-  "street": "String",
+  "state": "String-value",
+  "street": "String-value",
   "technicalNotificationMails": [
-    "String"
+    "String-value"
   ],
-  "telephoneNumber": "String",
+  "telephoneNumber": "String-value",
   "verifiedDomains": [
     {
-      "@odata.type": "microsoft.graph.VerifiedDomain"
+      "@odata.type": "microsoft.graph.verifieddomain"
     }
   ]
 }
@@ -106,8 +106,8 @@ None
 |[Get MemberGroups](../api/tenantdetail_getmembergroups.md)|String||
 |[Get MemberObjects](../api/tenantdetail_getmemberobjects.md)|String||
 
-<!-- uuid: a63967ad-c30c-4657-a2d6-91282fb4d7f7
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 3999c701-35a7-48b1-b561-f28bb1c97c89
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TenantDetail resource",

@@ -23,20 +23,30 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [DirectoryRole](../resources/directoryrole.md) objects in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryroles"
+}-->
+```http
+GET /directoryRoles
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "directoryroles"
+  "@odata.type": "microsoft.graph.directoryrole",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 337
+Content-length: 336
 
 {
-  "values": [
+  "value": [
     {
       "description": "description-value",
       "displayName": "displayName-value",
@@ -52,8 +62,8 @@ Content-length: 337
 ```
 If successful, this method returns a `200 OK` response code and collection of [DirectoryRole](../resources/directoryrole.md) objects in the response body.
 
-<!-- uuid: 853055df-4100-4580-8b3c-1bc714869fdd
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: 4b96ff42-d365-4d73-ad06-f68e120bc205
+2015-10-18 19:39:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List DirectoryRole",

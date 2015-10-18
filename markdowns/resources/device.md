@@ -12,7 +12,7 @@ Here is a JSON representation of the resource
     "registeredOwners",
     "registeredUsers"
   ],
-  "@odata.type": "microsoft.graph.Device"
+  "@odata.type": "microsoft.graph.device"
 }-->
 
 ```json
@@ -20,33 +20,33 @@ Here is a JSON representation of the resource
   "accountEnabled": true,
   "alternativeSecurityIds": [
     {
-      "@odata.type": "microsoft.graph.AlternativeSecurityId"
+      "@odata.type": "microsoft.graph.alternativesecurityid"
     }
   ],
   "approximateLastLogonTimestamp": "String (timestamp)",
   "deletionTimestamp": "String (timestamp)",
-  "deviceId": "String",
-  "deviceMetadata": "String",
-  "deviceOSType": "String",
-  "deviceOSVersion": "String",
+  "deviceId": "Guid-value",
+  "deviceMetadata": "String-value",
+  "deviceOSType": "String-value",
+  "deviceOSVersion": "String-value",
   "deviceObjectVersion": 1024,
   "devicePhysicalIds": [
-    "String"
+    "String-value"
   ],
-  "deviceTrustType": "String",
+  "deviceTrustType": "String-value",
   "dirSyncEnabled": true,
-  "displayName": "String",
+  "displayName": "String-value",
   "lastDirSyncTime": "String (timestamp)",
-  "objectId": "String (identifier)",
-  "objectType": "String",
+  "objectId": "String-value (identifier)",
+  "objectType": "String-value",
   "registeredOwners": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ],
   "registeredUsers": [
     {
-      "@odata.type": "microsoft.graph.DirectoryObject"
+      "@odata.type": "microsoft.graph.directoryobject"
     }
   ]
 }
@@ -91,8 +91,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/device_getmembergroups.md)|String||
 |[Get MemberObjects](../api/device_getmemberobjects.md)|String||
 
-<!-- uuid: eced5fa0-3f9e-4628-b4a4-f65435acbe38
-2015-10-16 23:06:04 UTC -->
+<!-- uuid: f8598143-245b-430a-af81-986ce91d4641
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device resource",

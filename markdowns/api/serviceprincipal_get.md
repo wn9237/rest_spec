@@ -20,17 +20,26 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [ServicePrincipal](../resources/serviceprincipal.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_serviceprincipal"
+}-->
+```http
+GET /servicePrincipals/<objectId>
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "serviceprincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1924
+Content-length: 1942
 
 {
   "accountEnabled": true,
@@ -40,7 +49,9 @@ Content-length: 1924
   "appRoleAssignmentRequired": true,
   "appRoles": [
     {
-      "allowedMemberTypes": "allowedMemberTypes-value",
+      "allowedMemberTypes": [
+        "allowedMemberTypes-value"
+      ],
       "description": "description-value",
       "displayName": "displayName-value",
       "id": "id-value",
@@ -103,8 +114,8 @@ Content-length: 1924
 ```
 If successful, this method returns a `200 OK` response code and [ServicePrincipal](../resources/serviceprincipal.md) object in the response body.
 
-<!-- uuid: b38e0ddb-4490-471e-88f2-5c6d7effa031
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: 686a5476-e731-465d-94c3-448d9790abea
+2015-10-18 19:39:28 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ServicePrincipal",

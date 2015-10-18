@@ -11,20 +11,20 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "Calendars"
   ],
-  "@odata.type": "microsoft.graph.CalendarGroup"
+  "@odata.type": "microsoft.graph.calendargroup"
 }-->
 
 ```json
 {
   "Calendars": [
     {
-      "@odata.type": "microsoft.graph.Calendar"
+      "@odata.type": "microsoft.graph.calendar"
     }
   ],
-  "ChangeKey": "String",
-  "ClassId": "String",
-  "Id": "String (identifier)",
-  "Name": "String"
+  "ChangeKey": "String-value",
+  "ClassId": "Guid-value",
+  "Id": "String-value (identifier)",
+  "Name": "String-value"
 }
 
 ```
@@ -50,8 +50,8 @@ Here is a JSON representation of the resource
 |[Update](../api/calendargroup_update.md) | [CalendarGroup](calendargroup.md)	|Update CalendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | Void	|Delete CalendarGroup object. |
 
-<!-- uuid: 0fdd09cc-95b9-4f9a-8d5f-35b05521422d
-2015-10-16 23:06:03 UTC -->
+<!-- uuid: 47c45a14-ba91-496d-a8d4-75567f6197a8
+2015-10-18 19:39:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "CalendarGroup resource",

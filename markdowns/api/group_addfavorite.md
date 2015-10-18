@@ -24,33 +24,28 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_addfavorite"
 }-->
 ```http
 POST /groups/<objectId>/AddFavorite
-Content-type: application/json
-Content-length: 0
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "none"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
-
-{
-}
 ```
 
-<!-- uuid: 87e3524f-1657-4f8c-ace3-ffd5c2eeef45
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: b157d5b5-4aa5-4fe3-aeab-21ca954a4bc5
+2015-10-18 19:39:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: AddFavorite",

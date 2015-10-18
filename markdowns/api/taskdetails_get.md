@@ -28,12 +28,21 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
 ### Example
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_taskdetails"
+}-->
+```http
+GET /tasks/<id>/details
+```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "taskdetails"
+  "@odata.type": "microsoft.graph.taskdetails"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -51,8 +60,8 @@ Content-length: 139
 ```
 If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
 
-<!-- uuid: c837ed30-eb62-4db9-a65e-d56957fb2888
-2015-10-16 23:06:09 UTC -->
+<!-- uuid: 3952198c-613d-4a2e-a2ad-afc66314a972
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskDetails",

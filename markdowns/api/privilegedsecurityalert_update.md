@@ -74,7 +74,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "privilegedsecurityalert"
+  "@odata.type": "microsoft.graph.privilegedsecurityalert"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -102,8 +102,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: 09ff5350-db20-465f-bdc2-369d03ce6b0c
-2015-10-16 23:06:08 UTC -->
+<!-- uuid: b0e970b4-17e3-469c-a127-75a55328de87
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedsecurityalert object.",

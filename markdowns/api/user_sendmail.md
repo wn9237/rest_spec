@@ -30,6 +30,7 @@ If successful, this method returns `200, OK` response code and [None](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -37,7 +38,7 @@ Here is an example of how to call this API.
 ```http
 POST /users/<objectId>/SendMail
 Content-type: application/json
-Content-length: 1837
+Content-length: 1975
 
 {
   "Message": {
@@ -62,30 +63,38 @@ Content-length: 1837
         "Address": "Address-value"
       }
     },
-    "ToRecipients": {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+    "ToRecipients": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
       }
-    },
-    "CcRecipients": {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+    ],
+    "CcRecipients": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
       }
-    },
-    "BccRecipients": {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+    ],
+    "BccRecipients": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
       }
-    },
-    "ReplyTo": {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+    ],
+    "ReplyTo": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
       }
-    },
+    ],
     "ConversationId": "ConversationId-value",
     "UniqueBody": {
       "ContentType": "ContentType-value",
@@ -99,40 +108,40 @@ Content-length: 1837
     "IsRead": true,
     "WebLink": "WebLink-value",
     "ChangeKey": "ChangeKey-value",
-    "Categories": "Categories-value",
+    "Categories": [
+      "Categories-value"
+    ],
     "DateTimeCreated": "datetime-value",
     "DateTimeLastModified": "datetime-value",
     "Id": "Id-value",
-    "Attachments": {
-      "Name": "Name-value",
-      "ContentType": "ContentType-value",
-      "Size": 99,
-      "IsInline": true,
-      "DateTimeLastModified": "datetime-value",
-      "Id": "Id-value"
-    }
+    "Attachments": [
+      {
+        "Name": "Name-value",
+        "ContentType": "ContentType-value",
+        "Size": 99,
+        "IsInline": true,
+        "DateTimeLastModified": "datetime-value",
+        "Id": "Id-value"
+      }
+    ]
   },
   "SaveToSentItems": true
 }
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "none"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
-
-{
-}
 ```
 
-<!-- uuid: 491246e0-6919-41ec-a596-4fa05e22bd1e
-2015-10-16 23:06:10 UTC -->
+<!-- uuid: dc5b2cb3-ce89-4933-aad4-3bde770bccf5
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: SendMail",

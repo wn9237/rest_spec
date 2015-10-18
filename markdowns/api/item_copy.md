@@ -30,6 +30,7 @@ If successful, this method returns `200, OK` response code and [item](../resourc
 ### Example
 Here is an example of how to call this API.
 ##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "item_copy"
@@ -50,10 +51,11 @@ Content-length: 133
 ```
 
 ##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "item"
+  "@odata.type": "microsoft.graph.item"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -203,8 +205,8 @@ Content-length: 3050
 }
 ```
 
-<!-- uuid: 21add996-3902-4b10-b0ae-41b9d14169cd
-2015-10-16 23:06:05 UTC -->
+<!-- uuid: f1ed2e72-4f5d-4962-87e9-384ed1b80e9e
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: copy",

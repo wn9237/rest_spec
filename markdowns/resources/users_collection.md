@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.users"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/user_list.md) | [User](user.md) [] |Get user object collection. |
 |[Create User](../api/user_post_users.md) |[User](user.md)| Create a new User by posting to the users collection.|
 
-<!-- uuid: 51f4c29a-2bdd-42a1-8aaf-6e65b74ba143
-2015-10-16 23:06:10 UTC -->
+<!-- uuid: 4d7fea71-33ee-429c-bb46-a8831209dfed
+2015-10-18 19:39:29 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "users resource",

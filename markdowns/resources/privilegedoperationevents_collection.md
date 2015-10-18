@@ -2,6 +2,23 @@
 
 
 
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.privilegedoperationevents"
+}-->
+
+```json
+{
+}
+
+```
 ### Properties
 None
 
@@ -16,8 +33,8 @@ None
 |[List](../api/privilegedoperationevent_list.md) | [PrivilegedOperationEvent](privilegedoperationevent.md) [] |Get privilegedOperationEvent object collection. |
 |[Create PrivilegedOperationEvent](../api/privilegedoperationevent_post_privilegedoperationevents.md) |[PrivilegedOperationEvent](privilegedoperationevent.md)| Create a new PrivilegedOperationEvent by posting to the PrivilegedOperationEvents collection.|
 
-<!-- uuid: c97d24c7-93f0-405b-99f3-d0e37519bf8e
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: b591e53f-8311-4eae-8122-16c2eee0e4d0
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedOperationEvents resource",

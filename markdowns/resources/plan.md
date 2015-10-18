@@ -9,28 +9,29 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "details",
     "tasks"
   ],
-  "@odata.type": "microsoft.graph.Plan"
+  "@odata.type": "microsoft.graph.plan"
 }-->
 
 ```json
 {
   "activeTasks": 1024,
-  "createdBy": "String",
+  "createdBy": "String-value",
   "details": {
-    "@odata.type": "microsoft.graph.PlanDetails"
+    "@odata.type": "microsoft.graph.plandetails"
   },
-  "id": "String (identifier)",
-  "owner": "String",
+  "id": "String-value (identifier)",
+  "owner": "String-value",
   "tasks": [
     {
-      "@odata.type": "microsoft.graph.Task"
+      "@odata.type": "microsoft.graph.task"
     }
   ],
-  "title": "String",
+  "title": "String-value",
   "totalTasks": 1024,
-  "version": "String"
+  "version": "String-value"
 }
 
 ```
@@ -60,8 +61,8 @@ Here is a JSON representation of the resource
 |[Update](../api/plan_update.md) | [Plan](plan.md)	|Update Plan object. |
 |[Delete](../api/plan_delete.md) | Void	|Delete Plan object. |
 
-<!-- uuid: 5351edd2-5ca1-4d8a-aa3f-8aa5d3a5aa4b
-2015-10-16 23:06:07 UTC -->
+<!-- uuid: dad5a26c-3b1c-4c67-aee3-a0b9e84144a8
+2015-10-18 19:39:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Plan resource",
