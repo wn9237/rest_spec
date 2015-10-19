@@ -633,7 +633,7 @@ module SpecMaker
 		end
 
 		# Header and description		
-		# if isProperty || isRelation 
+		if !@jsonHash[:isEntitySet] 
 			@mdlines.push HEADER3 + 'JSON representation' + TWONEWLINES
 			@mdlines.push 'Here is a JSON representation of the resource' + TWONEWLINES
 
@@ -641,7 +641,7 @@ module SpecMaker
 			@mdlines.push "```json" + NEWLINE
 			@mdlines.push get_json_model(propreties) + TWONEWLINES
 			@mdlines.push "```" + NEWLINE			
-		# end
+		end
 
 		@logger.debug("....Is there: property?: #{isProperty}, relationship?: #{isRelation}, method?: #{isMethod} ..........")	
 
@@ -691,7 +691,7 @@ module SpecMaker
 			if !@jsonHash[:isComplexType]
 				if @jsonHash[:collectionOf]
 					returnLink = "[" + @jsonHash[:collectionOf] + "](" + @jsonHash[:collectionOf].downcase + ".md)"								
-					@mdlines.push "|[List](../api/#{@jsonHash[:collectionOf].downcase}_list.md) | #{returnLink} [] |Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
+					@mdlines.push "|[List](../api/#{@jsonHash[:collectionOf].downcase}_list.md) | #{returnLink} collection |Get #{uncapitalize @jsonHash[:collectionOf]} object collection. |" + NEWLINE
 				else
 					if isProperty 
 						returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
