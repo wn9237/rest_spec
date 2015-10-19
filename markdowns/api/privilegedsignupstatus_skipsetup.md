@@ -42,8 +42,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: ad71cbb2-868d-434e-8ddb-e2092b7cada8
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 076f60d9-3068-46b7-8c37-6c9262293e1d
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SkipSetup",

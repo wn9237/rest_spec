@@ -65,8 +65,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: c921c3e3-9eed-46ea-9068-04c3c8ef1bfc
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 506657c2-6776-4cc0-8e2e-af42391c7727
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of mailfolder object.",

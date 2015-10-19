@@ -36,7 +36,7 @@ In the request body, supply the values for relevant fields that should be update
 |IsDraft|Boolean||
 |IsRead|Boolean||
 |IsReadReceiptRequested|Boolean||
-|MeetingMessageType|String| Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
+|MeetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
 |ParentFolderId|String||
 |ReplyTo|Recipient||
 |Sender|Recipient||
@@ -224,8 +224,8 @@ Content-length: 1598
 }
 ```
 
-<!-- uuid: ba008a53-d3fa-4e57-b231-5f983c7ddd7d
-2015-10-19 09:07:23 UTC -->
+<!-- uuid: 18c46d3c-4ba7-4891-8850-700870993999
+2015-10-19 09:46:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of eventmessage object.",

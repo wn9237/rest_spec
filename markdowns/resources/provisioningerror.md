@@ -1,6 +1,6 @@
 # ProvisioningError resource type
 
-
+The **provisioningErrors** property of the [Contact], [User], and [Group] entities is a collection of **ProvisioningError**.
 
 ### JSON representation
 
@@ -26,13 +26,13 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|errorDetail|String||
-|resolved|Boolean||
+|errorDetail|String|A description of the error.|
+|resolved|Boolean|                **true** if the error was resolved; otherwise, **false**.            |
 |service|String||
-|timestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|timestamp|DateTimeOffset|The date and time at which the error occurred.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
-<!-- uuid: 6a4cb3ca-801a-4820-9ca5-67fe30412773
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 95b3cb3e-3d11-4fb8-ae7b-f57b22bb2b7d
+2015-10-19 09:46:36 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ProvisioningError resource",

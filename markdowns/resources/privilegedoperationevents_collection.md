@@ -33,8 +33,8 @@ None
 |[List](../api/privilegedoperationevent_list.md) | [PrivilegedOperationEvent](privilegedoperationevent.md) [] |Get privilegedOperationEvent object collection. |
 |[Create PrivilegedOperationEvent](../api/privilegedoperationevent_post_privilegedoperationevents.md) |[PrivilegedOperationEvent](privilegedoperationevent.md)| Create a new PrivilegedOperationEvent by posting to the PrivilegedOperationEvents collection.|
 
-<!-- uuid: 71572882-8b0f-457a-9693-17450e7bf3bc
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 48e8cfd1-d751-450a-9243-25befe0ebd60
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedOperationEvents resource",

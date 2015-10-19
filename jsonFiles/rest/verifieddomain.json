@@ -1,6 +1,6 @@
 {
   "name": "VerifiedDomain",
-  "description": "",
+  "description": "Specifies a domain for a tenant. The **verifiedDomains** property of the [TenantDetail] entity is a collection of **VerifiedDomain**.\r",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "capabilities",
-      "description": "",
+      "description": "For example, “Email”, “OfficeCommunicationsOnline”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "default",
-      "description": "",
+      "description": "                **true** if this is the default domain associated with the tenant; otherwise, **false**.            ",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -56,7 +55,7 @@
     },
     {
       "name": "id",
-      "description": "",
+      "description": "For example, “00057FFE80187238”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -70,7 +69,7 @@
     },
     {
       "name": "initial",
-      "description": "",
+      "description": "            ",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -84,7 +83,7 @@
     },
     {
       "name": "name",
-      "description": "",
+      "description": "The domain name; for example, “contoso.onmicrosoft.com”",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -98,7 +97,7 @@
     },
     {
       "name": "type",
-      "description": "",
+      "description": "For example, “Managed”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -111,7 +110,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

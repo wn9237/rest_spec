@@ -1,6 +1,6 @@
 # Recipient resource type
 
-
+A sender or receiver for a message.
 
 ### JSON representation
 
@@ -25,10 +25,10 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|EmailAddress|[EmailAddress](emailaddress.md)||
+|EmailAddress|[EmailAddress](emailaddress.md)|The recipient's email address.|
 
-<!-- uuid: 423b2a97-5720-46e3-8a6c-82ed565460b5
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 6ca59aaa-5df4-4e96-8a40-72fb8ca8572e
+2015-10-19 09:46:36 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Recipient resource",

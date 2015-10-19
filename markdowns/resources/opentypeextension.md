@@ -39,8 +39,8 @@ None
 |[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
 |[Delete](../api/opentypeextension_delete.md) | None |Delete OpenTypeExtension object. |
 
-<!-- uuid: 200ab506-f7d6-4bad-8280-990abc80c05f
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: bc8d8781-b817-4d0b-b18b-808f2c3fa81c
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OpenTypeExtension resource",

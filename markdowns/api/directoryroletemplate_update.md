@@ -19,9 +19,9 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |deletionTimestamp|DateTimeOffset||
-|description|String||
-|displayName|String||
-|objectType|String||
+|description|String|The description to set for the directory role.|
+|displayName|String|The display name to set for the directory role.|
+|objectType|String|A string that identifies the object type. For role templates the value is always ΓÇ£RoleTemplateΓÇ¥. Inherited from [DirectoryObject].|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.
@@ -66,8 +66,8 @@ Content-length: 187
 }
 ```
 
-<!-- uuid: e60fdac9-3baf-4f68-ab07-f11e2a1f911c
-2015-10-19 09:07:22 UTC -->
+<!-- uuid: 930bba34-9093-41e1-89af-f5b5a9b8b4e0
+2015-10-19 09:46:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryroletemplate object.",

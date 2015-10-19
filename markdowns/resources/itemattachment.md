@@ -1,6 +1,6 @@
 # ItemAttachment resource type
 
-
+A message or event that's attached to another message or event.
 
 ### JSON representation
 
@@ -51,8 +51,8 @@ Here is a JSON representation of the resource
 |[Update](../api/itemattachment_update.md) | [ItemAttachment](itemattachment.md)	|Update ItemAttachment object. |
 |[Delete](../api/itemattachment_delete.md) | None |Delete ItemAttachment object. |
 
-<!-- uuid: e30a49ea-f8bf-45eb-9460-207f8733c5bb
-2015-10-19 09:07:24 UTC -->
+<!-- uuid: c2ff412e-f573-4740-8130-a3f5935bc069
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ItemAttachment resource",

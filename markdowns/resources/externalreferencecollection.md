@@ -22,8 +22,8 @@ Here is a JSON representation of the resource
 ### Properties
 None
 
-<!-- uuid: ad4b2c00-ff81-49c3-ba9d-1be4ab141326
-2015-10-19 09:07:24 UTC -->
+<!-- uuid: 34e47730-ec53-48ff-85ed-153b142898cf
+2015-10-19 09:46:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExternalReferenceCollection resource",

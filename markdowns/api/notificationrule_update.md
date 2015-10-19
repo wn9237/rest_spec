@@ -75,8 +75,8 @@ Content-length: 260
 }
 ```
 
-<!-- uuid: 67cfe6b8-9087-4ba5-be53-dc1203b4cb97
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 3714bf1f-9335-493d-8043-88bf037b978d
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of notificationrule object.",

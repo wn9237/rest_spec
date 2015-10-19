@@ -33,8 +33,8 @@ None
 |[List](../api/privilegedsignupstatus_list.md) | [PrivilegedSignupStatus](privilegedsignupstatus.md) [] |Get privilegedSignupStatus object collection. |
 |[Create PrivilegedSignupStatus](../api/privilegedsignupstatus_post_privilegedsignupstatus.md) |[PrivilegedSignupStatus](privilegedsignupstatus.md)| Create a new PrivilegedSignupStatus by posting to the PrivilegedSignupStatus collection.|
 
-<!-- uuid: 7b35f955-2d13-4d26-b466-caeca0831dc2
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: de36b15b-bf33-4e14-8b5b-084f3049b275
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus resource",

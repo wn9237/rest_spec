@@ -113,8 +113,8 @@ Content-length: 1942
 }
 ```
 
-<!-- uuid: ebd5870c-b9e0-45bd-b44a-78eb7de7de81
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 32bea92a-6127-4fa1-af39-564667e569f7
+2015-10-19 09:46:36 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ServicePrincipal",

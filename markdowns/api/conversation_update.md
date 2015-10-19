@@ -21,10 +21,10 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |DateTimeLastDelivered|DateTimeOffset||
-|HasAttachments|Boolean||
+|HasAttachments|Boolean|Indicates whether the Conversation has at least one attachment.|
 |Preview|String||
-|Topic|String||
-|UniqueSenders|String||
+|Topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
+|UniqueSenders|String|All the users that sent a message to this Conversation.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Conversation](../resources/conversation.md) object in the response body.
@@ -75,8 +75,8 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: d987ccd2-3235-4184-9934-9deb6f613a29
-2015-10-19 09:07:21 UTC -->
+<!-- uuid: 0f3c1ce1-d6e0-4e57-8003-f3d83a1a0da2
+2015-10-19 09:46:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of conversation object.",

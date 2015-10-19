@@ -33,8 +33,8 @@ None
 |[List](../api/oauth2permissiongrant_list.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md) [] |Get oAuth2PermissionGrant object collection. |
 |[Create OAuth2PermissionGrant](../api/oauth2permissiongrant_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
 
-<!-- uuid: 2dfd7b8a-cd28-47de-9778-d56d11aeef72
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: b917c3c1-414f-430b-b797-4d89a474db4a
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "oauth2PermissionGrants resource",

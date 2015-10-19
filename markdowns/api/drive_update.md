@@ -20,9 +20,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|driveType|String||
-|owner|identitySet||
-|quota|quota||
+|driveType|String|Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`.|
+|owner|identitySet|The user account that owns the drive.|
+|quota|quota|Information about the drive's storage space quota.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [drive](../resources/drive.md) object in the response body.
@@ -103,8 +103,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: 0fb44c9f-37ae-4264-874e-0177f3dc825f
-2015-10-19 09:07:22 UTC -->
+<!-- uuid: cbaf9900-0884-43bd-bf0a-7fbbcd828d62
+2015-10-19 09:46:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of drive object.",

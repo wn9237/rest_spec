@@ -20,10 +20,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|large|thumbnail||
-|medium|thumbnail||
-|small|thumbnail||
-|source|thumbnail||
+|large|thumbnail|A 1920x1920 scaled thumbnail.|
+|medium|thumbnail|A 176x176 scaled thumbnail.|
+|small|thumbnail|A 48x48 cropped thumbnail.|
+|source|thumbnail|A custom thumbnail image or the original image used to generate other thumbnails.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [thumbnailSet](../resources/thumbnailset.md) object in the response body.
@@ -108,8 +108,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 67f373dd-71dc-46d5-a8ef-4cc99e48993a
-2015-10-19 09:07:26 UTC -->
+<!-- uuid: 31138417-2f3d-490b-84ae-242e0e3f782d
+2015-10-19 09:46:37 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of thumbnailset object.",

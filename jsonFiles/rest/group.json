@@ -1,6 +1,6 @@
 {
   "name": "Group",
-  "description": "",
+  "description": "Represents an Azure Active Directory Group. Inherited from **DirectoryObject**.\r",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -48,7 +48,7 @@
   "properties": [
     {
       "name": "description",
-      "description": "",
+      "description": "An optional description for the group.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -62,7 +62,7 @@
     },
     {
       "name": "dirSyncEnabled",
-      "description": "",
+      "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -76,7 +76,7 @@
     },
     {
       "name": "displayName",
-      "description": "",
+      "description": "The display name for the group. This property is required when a group is created and it cannot be cleared during updates. ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -132,7 +132,7 @@
     },
     {
       "name": "lastDirSyncTime",
-      "description": "",
+      "description": "Indicates the last time at which the object was synced with the on-premises directory.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -146,7 +146,7 @@
     },
     {
       "name": "mail",
-      "description": "",
+      "description": "The SMTP address for the group, for example, \"serviceadmins@contoso.onmicrosoft.com\".",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -160,7 +160,7 @@
     },
     {
       "name": "mailNickname",
-      "description": "",
+      "description": "The mail alias for the group. This property must be specified when a group is created.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -174,7 +174,7 @@
     },
     {
       "name": "mailEnabled",
-      "description": "",
+      "description": "Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Azure AD Graph.",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -188,7 +188,7 @@
     },
     {
       "name": "onPremisesSecurityIdentifier",
-      "description": "",
+      "description": "Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud.                            **Notes**: Requires version 1.5 or newer.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -202,7 +202,7 @@
     },
     {
       "name": "provisioningErrors",
-      "description": "",
+      "description": "A collection of error details that are preventing this group from being provisioned successfully.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "ProvisioningError",
       "isReadOnly": false,
@@ -216,7 +216,7 @@
     },
     {
       "name": "proxyAddresses",
-      "description": "",
+      "description": "                                        **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -230,7 +230,7 @@
     },
     {
       "name": "securityEnabled",
-      "description": "",
+      "description": "Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **true** when creating a group.",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -342,7 +342,7 @@
     },
     {
       "name": "objectType",
-      "description": "",
+      "description": "A string that identifies the object type. For groups the value is always “Group”. Inherited from [DirectoryObject].",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -356,7 +356,7 @@
     },
     {
       "name": "objectId",
-      "description": "",
+      "description": "The unique identifier for the group. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -384,7 +384,7 @@
     },
     {
       "name": "appRoleAssignments",
-      "description": "",
+      "description": "Contains the set of applications that a group is assigned to.                            **Notes**: Requires version 1.5 or newer.            ",
       "isKey": false,
       "dataType": "AppRoleAssignment",
       "isReadOnly": true,
@@ -398,7 +398,7 @@
     },
     {
       "name": "members",
-      "description": "",
+      "description": "Users, contacts, and groups that are members of this group. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups)",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -412,7 +412,7 @@
     },
     {
       "name": "memberOf",
-      "description": "",
+      "description": "Groups that this group is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups) ",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -440,7 +440,7 @@
     },
     {
       "name": "owners",
-      "description": "",
+      "description": "The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups)",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -618,15 +618,9 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
       "name": "UnsubscribeByMail",
@@ -638,15 +632,9 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
       "name": "AddFavorite",
@@ -658,15 +646,9 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
       "name": "RemoveFavorite",
@@ -678,15 +660,9 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
       "name": "ResetUnseenCount",
@@ -698,15 +674,9 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
       "name": "checkMemberGroups",
@@ -718,12 +688,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "groupIds",
@@ -747,12 +713,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -776,12 +738,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",

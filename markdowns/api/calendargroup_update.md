@@ -20,9 +20,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ChangeKey|String||
-|ClassId|Guid||
-|Name|String||
+|ChangeKey|String|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|ClassId|Guid|The class identifier.|
+|Name|String|The group name.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [CalendarGroup](../resources/calendargroup.md) object in the response body.
@@ -65,8 +65,8 @@ Content-length: 110
 }
 ```
 
-<!-- uuid: 72c32cee-f3e0-4200-83cb-b3968db654ed
-2015-10-19 09:07:21 UTC -->
+<!-- uuid: b4b9c86f-9d6d-4b0d-bb93-e929de3bc983
+2015-10-19 09:46:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of calendargroup object.",

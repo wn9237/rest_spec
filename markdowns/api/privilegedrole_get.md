@@ -48,8 +48,8 @@ Content-length: 46
 }
 ```
 
-<!-- uuid: 30f28a98-485c-4323-bf67-68b477f55c90
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 0f606dbb-a337-41bc-b401-ba9f3a2224bc
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRole",

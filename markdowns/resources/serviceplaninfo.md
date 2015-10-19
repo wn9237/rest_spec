@@ -1,6 +1,6 @@
 # ServicePlanInfo resource type
 
-
+Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [SubscribedSku] entity is a collection of **ServicePlanInfo**.
 
 ### JSON representation
 
@@ -24,11 +24,11 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|servicePlanId|Guid||
-|servicePlanName|String||
+|servicePlanId|Guid|The unique identifier of the service plan.|
+|servicePlanName|String|The name of the service plan.|
 
-<!-- uuid: 03aec200-1c60-41e1-94c7-0754b7009371
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: b8915fab-6c0a-4d0a-8b80-b506a40d0817
+2015-10-19 09:46:36 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePlanInfo resource",

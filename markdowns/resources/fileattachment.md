@@ -1,6 +1,6 @@
 # FileAttachment resource type
 
-
+A file (such as a text file or Word document) attached to a message or event. The  **ContentBytes** property contains the base64-encoded contents of the file.
 
 ### JSON representation
 
@@ -53,8 +53,8 @@ None
 |[Update](../api/fileattachment_update.md) | [FileAttachment](fileattachment.md)	|Update FileAttachment object. |
 |[Delete](../api/fileattachment_delete.md) | None |Delete FileAttachment object. |
 
-<!-- uuid: 079d3184-30fe-4992-8a47-2c1f2f14b642
-2015-10-19 09:07:24 UTC -->
+<!-- uuid: 05efb2e3-0ec2-4905-a5f4-81b972392afd
+2015-10-19 09:46:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "FileAttachment resource",

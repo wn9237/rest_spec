@@ -18,13 +18,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appDisplayName|String||
-|dataType|String||
+|appDisplayName|String|            |
+|dataType|String|Specifies the type of the directory extension property being added.   Supported types are: Integer, LargeInteger, DateTime (must be specified in ISO 8601 - DateTime is stored in UTC), Binary, Boolean, and String.|
 |deletionTimestamp|DateTimeOffset||
-|isSyncedFromOnPremises|Boolean||
-|name|String||
-|objectType|String||
-|targetObjects|String||
+|isSyncedFromOnPremises|Boolean|Indicates whether the extension property is synced from the on premises directory.                            **Notes**: not nullable.            |
+|name|String|Specifies the display name for the directory extension property.                            **Notes**: not nullable.            |
+|objectType|String|A string that identifies the object type. For extension properties the value is always ΓÇ£ExtensionPropertyΓÇ¥. Inherited from [DirectoryObject].|
+|targetObjects|String|The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: ΓÇ£UserΓÇ¥, ΓÇ£GroupΓÇ¥, ΓÇ£TenantDetailΓÇ¥, ΓÇ£DeviceΓÇ¥, ΓÇ£ApplicationΓÇ¥ and ΓÇ£ServicePrincipalΓÇ¥                            **Notes**: not nullable.            |
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
@@ -79,8 +79,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: 2334715f-f048-4afb-8ce7-c2964aeda9ef
-2015-10-19 09:07:24 UTC -->
+<!-- uuid: d3a5be7a-c44d-4a12-8a10-eefd2143df59
+2015-10-19 09:46:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of extensionproperty object.",

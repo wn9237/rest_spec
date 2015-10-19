@@ -1,6 +1,6 @@
 # itemReference resource type
 
-
+ The itemReference type groups data needed to reference a OneDrive item across the service into a single structure.   
 
 ### JSON representation
 
@@ -25,12 +25,12 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|driveId|String||
-|id|String||
-|path|String||
+|driveId|String|Unique identifier for the Drive that contains the item.|
+|id|String|Unique identifier for the item.|
+|path|String|Path that used to navigate to the item.|
 
-<!-- uuid: f1eafd34-096d-4eb0-83f9-3315c8bc7096
-2015-10-19 09:07:24 UTC -->
+<!-- uuid: b107cc00-bd12-4c83-b44c-b5a97f042f65
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "itemReference resource",

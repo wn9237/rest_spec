@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |height|Int32||
 |width|Int32||
 
-<!-- uuid: 31555f8e-e1d4-49b6-b2f4-82b548053699
-2015-10-19 09:07:27 UTC -->
+<!-- uuid: 01e93e5c-7371-4b2e-9397-5c0f22694efc
+2015-10-19 09:46:37 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "video resource",

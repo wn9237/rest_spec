@@ -1,6 +1,6 @@
 # EventMessage resource type
 
-
+A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.
 
 ### JSON representation
 
@@ -109,7 +109,7 @@ Here is a JSON representation of the resource
 |IsDraft|Boolean||
 |IsRead|Boolean||
 |IsReadReceiptRequested|Boolean||
-|MeetingMessageType|String| Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
+|MeetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
 |ParentFolderId|String||
 |ReplyTo|[Recipient](recipient.md) collection||
 |Sender|[Recipient](recipient.md)||
@@ -122,7 +122,7 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|Event|[Event](event.md)| Read-only.|
+|Event|[Event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
 ### Tasks
@@ -144,8 +144,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/eventmessage_replyall.md)|None||
 |[Send](../api/eventmessage_send.md)|None||
 
-<!-- uuid: 9c504897-b3f0-4a97-a994-566a3e59b699
-2015-10-19 09:07:24 UTC -->
+<!-- uuid: 00602db0-28cb-4ccd-82f7-9e29b085f135
+2015-10-19 09:46:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage resource",

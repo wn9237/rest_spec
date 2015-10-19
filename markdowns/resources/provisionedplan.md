@@ -1,6 +1,6 @@
 # ProvisionedPlan resource type
 
-
+The **provisionedPlans** property of the [User] entity and the [TenantDetail] entity is a collection of **ProvisionedPlan**.
 
 ### JSON representation
 
@@ -25,12 +25,12 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|capabilityStatus|String||
-|provisioningStatus|String||
-|service|String||
+|capabilityStatus|String|For example, ΓÇ£EnabledΓÇ¥.|
+|provisioningStatus|String|For example, ΓÇ£SuccessΓÇ¥.|
+|service|String|The name of the service; for example, ΓÇ£AccessControlS2SΓÇ¥|
 
-<!-- uuid: 66c98de9-7fe2-4a93-b8f9-bf86b09829fd
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 5dbe4c8b-09d3-499e-af9e-487aaf569346
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ProvisionedPlan resource",

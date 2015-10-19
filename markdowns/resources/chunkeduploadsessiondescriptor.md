@@ -25,8 +25,8 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |name|String||
 
-<!-- uuid: 1e7e7e3c-d495-4ed8-89eb-7f64dea5c398
-2015-10-19 09:07:21 UTC -->
+<!-- uuid: 4d63445a-b882-4f91-b417-08a53c209725
+2015-10-19 09:46:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "chunkedUploadSessionDescriptor resource",

@@ -1,6 +1,6 @@
 {
   "name": "AssignedLicense",
-  "description": "",
+  "description": "Represents a license assigned to a user. The **assignedLicenses** property of the [User] entity is a collection of **AssignedLicense**.\r",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "disabledPlans",
-      "description": "",
+      "description": "A collection of the unique identifiers for plans that have been disabled.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "skuId",
-      "description": "",
+      "description": "The unique identifier for the SKU.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -55,7 +54,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

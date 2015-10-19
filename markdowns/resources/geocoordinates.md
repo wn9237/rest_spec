@@ -1,6 +1,6 @@
 # GeoCoordinates resource type
 
-
+The geographic coordinates and elevation of the location.
 
 ### JSON representation
 
@@ -27,14 +27,14 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Accuracy|Double||
-|Altitude|Double||
-|AltitudeAccuracy|Double||
-|Latitude|Double||
-|Longitude|Double||
+|Accuracy|Double|The accuracy of the sensor providing the latitude and longitude.|
+|Altitude|Double|The altitude of the location.|
+|AltitudeAccuracy|Double|The accuracy of the sensor providing the altitude.|
+|Latitude|Double|The latitude of the location.|
+|Longitude|Double|The longitude of the location.|
 
-<!-- uuid: 314b6b21-3cba-46bc-8f73-6809f2ea7150
-2015-10-19 09:07:24 UTC -->
+<!-- uuid: 6e8ab9fd-007f-400a-94ee-8b10f2891560
+2015-10-19 09:46:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "GeoCoordinates resource",

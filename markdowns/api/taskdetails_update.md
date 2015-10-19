@@ -70,8 +70,8 @@ Content-length: 139
 }
 ```
 
-<!-- uuid: 86d070d5-c4fa-4c50-8dc8-4f4f16855522
-2015-10-19 09:07:26 UTC -->
+<!-- uuid: c8d25277-9699-4c3a-9d36-3f47d91d01e1
+2015-10-19 09:46:37 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of taskdetails object.",

@@ -18,21 +18,21 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean||
-|alternativeSecurityIds|AlternativeSecurityId||
-|approximateLastLogonTimestamp|DateTimeOffset||
+|accountEnabled|Boolean|            |
+|alternativeSecurityIds|AlternativeSecurityId|                **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|approximateLastLogonTimestamp|DateTimeOffset|            |
 |deletionTimestamp|DateTimeOffset||
-|deviceId|Guid||
+|deviceId|Guid|            |
 |deviceMetadata|String||
-|deviceOSType|String||
-|deviceOSVersion|String||
-|deviceObjectVersion|Int32||
-|devicePhysicalIds|String||
+|deviceOSType|String|The type of operating system on the device.|
+|deviceOSVersion|String|The version of the operating system on the device|
+|deviceObjectVersion|Int32|            |
+|devicePhysicalIds|String|                **Notes:** not nullable            |
 |deviceTrustType|String||
-|dirSyncEnabled|Boolean||
-|displayName|String||
-|lastDirSyncTime|DateTimeOffset||
-|objectType|String||
+|dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
+|displayName|String|The display name for the device.|
+|lastDirSyncTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.|
+|objectType|String|A string that identifies the object type. For devices the value is always ΓÇ£DeviceΓÇ¥. Inherited from [DirectoryObject]|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Device](../resources/device.md) object in the response body.
@@ -115,8 +115,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: 78b956e1-12f8-416d-a9a6-60bc37ad5d58
-2015-10-19 09:07:21 UTC -->
+<!-- uuid: f9f53654-7981-41a2-bc80-8d6b399f9a4a
+2015-10-19 09:46:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of device object.",

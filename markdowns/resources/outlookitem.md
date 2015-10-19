@@ -47,8 +47,8 @@ None
 |[Update](../api/outlookitem_update.md) | [OutlookItem](outlookitem.md)	|Update OutlookItem object. |
 |[Delete](../api/outlookitem_delete.md) | None |Delete OutlookItem object. |
 
-<!-- uuid: 89cb66be-bd18-4eb6-812d-3e7e3d171887
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 6add3eba-22d8-4b7c-8fd0-3a545ec7544f
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OutlookItem resource",

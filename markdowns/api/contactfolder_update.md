@@ -20,8 +20,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DisplayName|String||
-|ParentFolderId|String||
+|DisplayName|String|The folder's display name.|
+|ParentFolderId|String|The ID of the folder's parent folder.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [ContactFolder](../resources/contactfolder.md) object in the response body.
@@ -62,8 +62,8 @@ Content-length: 104
 }
 ```
 
-<!-- uuid: d121c0fa-457d-440f-b223-36c5ec97a9cd
-2015-10-19 09:07:21 UTC -->
+<!-- uuid: 3930a001-ac21-4992-b779-f1a9876cd257
+2015-10-19 09:46:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contactfolder object.",

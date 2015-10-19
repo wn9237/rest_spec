@@ -1,6 +1,6 @@
 # Message resource type
 
-
+A message in a mailbox folder.
 
 ### JSON representation
 
@@ -137,8 +137,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/message_replyall.md)|None||
 |[Send](../api/message_send.md)|None||
 
-<!-- uuid: eb93a6ed-70dc-4d18-9182-3d5dd72235cd
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 8ca7ffd5-22b8-4962-81fe-49847ca6f828
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message resource",

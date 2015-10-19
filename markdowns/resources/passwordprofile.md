@@ -1,6 +1,6 @@
 # PasswordProfile resource type
 
-
+Contains the password profile associated with a user. The **passwordProfile** property of the [User] entity is a **PasswordProfile** object.
 
 ### JSON representation
 
@@ -24,11 +24,11 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextLogin|Boolean||
-|password|String||
+|forceChangePasswordNextLogin|Boolean|                **true** if the user must change her password on the next login; otherwise **false**.            |
+|password|String|The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login.             The password must satisfy minimum requirements as specified by the userΓÇÖs **PasswordPolicies** property. By default, a strong password is required.|
 
-<!-- uuid: 8e89d6fc-83ac-4430-ae22-7f77b54e3026
-2015-10-19 09:07:25 UTC -->
+<!-- uuid: 19529a2a-f278-4af4-b144-77aff063548d
+2015-10-19 09:46:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PasswordProfile resource",
