@@ -19,7 +19,7 @@ The process is simple and should be familiar to everyone at this point. Simply f
 Key things to consider: 
 
 * Add object, property, method, and parameter descriptions. 
-* NOTE: Same descriptions can appear in many places. For example, the method descriptions appear in object Tasks table and also in the API file itself. Same object can appear as Relationships= can appear in many places. The descriptions that we add should be consistent across these locations.
+* NOTE: Same descriptions can appear in many places. For example, the method descriptions appear in object Tasks table and also in the API file itself. Same object can appear as a relationship in many places. The descriptions that we add should be consistent across these locations.
 * For APIs, add the **scopes** needed under the prerequisites section.
 * For APIs, verify/edit HTTP request. There are hundreds of ways to reach the resource/methods through various resource paths. We have selected only a few for brevity. Add the ones that you wish to highlight. 
 * For APIs, add the HTTP header details (optional or required). The template has a placeholder. If no HTTP headers are used, remove the sub-section. 
