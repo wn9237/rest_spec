@@ -325,7 +325,7 @@ module SpecMaker
 			dataTypePlusLink = 'none'
 		end
 
-		if method[:returnType].nil?
+		if method[:returnType].nil? || method[:returnType] ==  'None'
 			actionLines.push "If successful, this method returns `#{method[:httpSuccessCode]}, #{HTTP_CODES[method[:httpSuccessCode]]}` response code. It does not return anything in the response body."  + NEWLINE
 		else
 			trueReturn = dataTypePlusLink
