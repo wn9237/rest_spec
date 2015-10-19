@@ -131,14 +131,14 @@ Here is a JSON representation of the resource
 |[Createforward](../api/message_createforward.md)|[Message](message.md)||
 |[Createreply](../api/message_createreply.md)|[Message](message.md)||
 |[Createreplyall](../api/message_createreplyall.md)|[Message](message.md)||
-|[Forward](../api/message_forward.md)|[None](none.md)||
+|[Forward](../api/message_forward.md)|None||
 |[Move](../api/message_move.md)|[Message](message.md)||
-|[Reply](../api/message_reply.md)|[None](none.md)||
-|[Replyall](../api/message_replyall.md)|[None](none.md)||
-|[Send](../api/message_send.md)|[None](none.md)||
+|[Reply](../api/message_reply.md)|None||
+|[Replyall](../api/message_replyall.md)|None||
+|[Send](../api/message_send.md)|None||
 
-<!-- uuid: f1861a94-5539-4df1-8ce9-e5a491510246
-2015-10-19 08:46:46 UTC -->
+<!-- uuid: e1d4817b-529a-40c8-b140-f4f6c0fb8215
+2015-10-19 08:55:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message resource",

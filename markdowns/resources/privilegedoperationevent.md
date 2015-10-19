@@ -61,8 +61,8 @@ None
 |[Update](../api/privilegedoperationevent_update.md) | [PrivilegedOperationEvent](privilegedoperationevent.md)	|Update PrivilegedOperationEvent object. |
 |[Delete](../api/privilegedoperationevent_delete.md) | Void	|Delete PrivilegedOperationEvent object. |
 
-<!-- uuid: 70e2522f-8bbc-4e75-acab-69d4491cab08
-2015-10-19 08:46:48 UTC -->
+<!-- uuid: 6e5b6f13-a133-414e-a40a-1ecf1f579e8d
+2015-10-19 08:55:36 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedOperationEvent resource",

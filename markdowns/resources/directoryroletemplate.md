@@ -48,8 +48,8 @@ None
 |[Get MemberGroups](../api/directoryroletemplate_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryroletemplate_getmemberobjects.md)|String||
 
-<!-- uuid: eca77dac-8ce2-4b35-b257-79b2eba63129
-2015-10-19 08:46:45 UTC -->
+<!-- uuid: 12572e85-ec03-4317-b45a-94361093538a
+2015-10-19 08:55:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRoleTemplate resource",

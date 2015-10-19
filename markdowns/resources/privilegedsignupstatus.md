@@ -41,13 +41,13 @@ None
 |[Update](../api/privilegedsignupstatus_update.md) | [PrivilegedSignupStatus](privilegedsignupstatus.md)	|Update PrivilegedSignupStatus object. |
 |[Delete](../api/privilegedsignupstatus_delete.md) | Void	|Delete PrivilegedSignupStatus object. |
 |[Cansignup](../api/privilegedsignupstatus_cansignup.md)|Boolean||
-|[Completesetup](../api/privilegedsignupstatus_completesetup.md)|[None](none.md)||
+|[Completesetup](../api/privilegedsignupstatus_completesetup.md)|None||
 |[Issignedup](../api/privilegedsignupstatus_issignedup.md)|Boolean||
 |[Signup](../api/privilegedsignupstatus_signup.md)|[PrivilegedSignupStatus](privilegedsignupstatus.md)||
-|[Skipsetup](../api/privilegedsignupstatus_skipsetup.md)|[None](none.md)||
+|[Skipsetup](../api/privilegedsignupstatus_skipsetup.md)|None||
 
-<!-- uuid: 7b4bb379-a701-4ec0-b6bd-cabd0818de35
-2015-10-19 08:46:48 UTC -->
+<!-- uuid: d48a4981-5531-4e9d-a3a3-da7bb1a9e35f
+2015-10-19 08:55:37 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus resource",

@@ -67,8 +67,8 @@ Content-length: 140
 }
 ```
 
-<!-- uuid: 98df1f63-5e1c-46d3-a718-dc6faa41465f
-2015-10-19 08:46:46 UTC -->
+<!-- uuid: 88b1b0a8-ad1f-47df-882f-5f3a7ffddba2
+2015-10-19 08:55:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: createSession",

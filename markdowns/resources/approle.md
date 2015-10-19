@@ -37,8 +37,8 @@ Here is a JSON representation of the resource
 |isEnabled|Boolean||
 |value|String||
 
-<!-- uuid: 10087fb3-21b7-4042-947f-cf46c6df03a3
-2015-10-19 08:46:43 UTC -->
+<!-- uuid: ac222b58-ddde-47a6-86dc-8b9fabb967ff
+2015-10-19 08:55:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRole resource",

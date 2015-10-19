@@ -47,8 +47,8 @@ None
 |[Update](../api/attachment_update.md) | [Attachment](attachment.md)	|Update Attachment object. |
 |[Delete](../api/attachment_delete.md) | Void	|Delete Attachment object. |
 
-<!-- uuid: 420283d5-c69f-4ade-9519-71b18f263b34
-2015-10-19 08:46:43 UTC -->
+<!-- uuid: 2ebd70b0-ed88-4a93-bf15-e371ada2375c
+2015-10-19 08:55:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Attachment resource",

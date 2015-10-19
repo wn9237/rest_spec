@@ -55,8 +55,8 @@ Content-length: 22
 ```
 If successful, this method returns a `200 OK` response code and [Extension](../resources/extension.md) object in the response body.
 
-<!-- uuid: e4a2c637-8813-44ee-84a3-de82d9df3be1
-2015-10-19 08:46:45 UTC -->
+<!-- uuid: 94d2efad-ddd5-48ac-a9a1-73ad326635e7
+2015-10-19 08:55:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Extension",

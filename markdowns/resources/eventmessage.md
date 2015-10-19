@@ -138,14 +138,14 @@ Here is a JSON representation of the resource
 |[Createforward](../api/eventmessage_createforward.md)|[Message](message.md)||
 |[Createreply](../api/eventmessage_createreply.md)|[Message](message.md)||
 |[Createreplyall](../api/eventmessage_createreplyall.md)|[Message](message.md)||
-|[Forward](../api/eventmessage_forward.md)|[None](none.md)||
+|[Forward](../api/eventmessage_forward.md)|None||
 |[Move](../api/eventmessage_move.md)|[Message](message.md)||
-|[Reply](../api/eventmessage_reply.md)|[None](none.md)||
-|[Replyall](../api/eventmessage_replyall.md)|[None](none.md)||
-|[Send](../api/eventmessage_send.md)|[None](none.md)||
+|[Reply](../api/eventmessage_reply.md)|None||
+|[Replyall](../api/eventmessage_replyall.md)|None||
+|[Send](../api/eventmessage_send.md)|None||
 
-<!-- uuid: 5a84a523-53a2-4c00-b320-18df707716ef
-2015-10-19 08:46:45 UTC -->
+<!-- uuid: 5b3422ee-a439-44ad-8861-f0d76c3f31e7
+2015-10-19 08:55:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage resource",

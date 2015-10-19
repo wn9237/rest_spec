@@ -70,8 +70,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: a77bf69c-01c1-4450-8ca3-61c1323c33d2
-2015-10-19 08:46:48 UTC -->
+<!-- uuid: 144d82e7-180a-4769-ad87-ae7ae2f032e2
+2015-10-19 08:55:36 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRole: SelfActivate",

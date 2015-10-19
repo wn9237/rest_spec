@@ -62,8 +62,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 9379bc12-de5d-40c5-8567-d7e4a3d60d08
-2015-10-19 08:46:45 UTC -->
+<!-- uuid: 87a9786b-ad01-493f-8094-1048e93a3f4d
+2015-10-19 08:55:33 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole: getMemberGroups",

@@ -80,8 +80,8 @@ Content-length: 1097
 ```
 If successful, this method returns a `200 OK` response code and [OrgContact](../resources/orgcontact.md) object in the response body.
 
-<!-- uuid: 832e46a0-94fb-40c3-bb4b-aa5cf679969d
-2015-10-19 08:46:47 UTC -->
+<!-- uuid: 74220602-b561-4025-9702-b87dbd5fe297
+2015-10-19 08:55:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OrgContact",

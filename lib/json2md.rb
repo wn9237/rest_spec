@@ -226,11 +226,14 @@ module SpecMaker
 		if method[:returnType].to_s.empty?
 			method[:returnType] = 'None'
 		end 
-		if SIMPLETYPES.include? method[:returnType] || method[:returnType] == 'None'
+
+		if (SIMPLETYPES.include? method[:returnType]) || (method[:returnType] == 'None')
 			dataTypePlusLink = method[:returnType]
 		else	
 			dataTypePlusLink = "[" + method[:returnType] + "](" + method[:returnType].downcase + ".md)"
 		end
+
+
 		# Add links to method. 
 		restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name][3..-1]) : method[:name].capitalize
 		methodPlusLink = "[" + restfulTask.strip + "](../api/" + @jsonHash[:name].downcase + "_" + method[:name].downcase + ".md)"

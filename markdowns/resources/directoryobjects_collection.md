@@ -33,8 +33,8 @@ None
 |[List](../api/directoryobject_list.md) | [DirectoryObject](directoryobject.md) [] |Get directoryObject object collection. |
 |[Create DirectoryObject](../api/directoryobject_post_directoryobjects.md) |[DirectoryObject](directoryobject.md)| Create a new DirectoryObject by posting to the directoryObjects collection.|
 
-<!-- uuid: 512dddf4-fbcd-4b13-b13d-243777a3146d
-2015-10-19 08:46:45 UTC -->
+<!-- uuid: 38a44c62-9105-412b-a37d-bc12d78aa6c7
+2015-10-19 08:55:33 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "directoryObjects resource",

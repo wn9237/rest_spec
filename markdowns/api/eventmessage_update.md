@@ -224,8 +224,8 @@ Content-length: 1598
 }
 ```
 
-<!-- uuid: a54eeda5-5bcb-415b-8f40-bae49f1ca181
-2015-10-19 08:46:45 UTC -->
+<!-- uuid: 50aa56e8-c100-41fe-ad1b-45f6e8715867
+2015-10-19 08:55:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of eventmessage object.",

@@ -80,8 +80,8 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: 2ef008af-9094-4d94-885e-9cdf1e5879e2
-2015-10-19 08:46:45 UTC -->
+<!-- uuid: 0660047e-cf18-4c8d-8358-888963aa9dda
+2015-10-19 08:55:33 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of deviceconfiguration object.",

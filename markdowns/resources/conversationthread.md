@@ -69,10 +69,10 @@ Here is a JSON representation of the resource
 |[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
 |[Update](../api/conversationthread_update.md) | [ConversationThread](conversationthread.md)	|Update ConversationThread object. |
 |[Delete](../api/conversationthread_delete.md) | Void	|Delete ConversationThread object. |
-|[Reply](../api/conversationthread_reply.md)|[None](none.md)||
+|[Reply](../api/conversationthread_reply.md)|None||
 
-<!-- uuid: ed45c00c-7894-40b1-b320-ff311ead2959
-2015-10-19 08:46:44 UTC -->
+<!-- uuid: 409a5210-a68e-4db5-bfc7-b6e8f6f14bea
+2015-10-19 08:55:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread resource",

@@ -79,8 +79,8 @@ Content-length: 489
 ```
 If successful, this method returns a `200 OK` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
-<!-- uuid: 8268796e-9e74-48c8-bbe7-b90bec084a39
-2015-10-19 08:46:44 UTC -->
+<!-- uuid: f1bd78de-e8af-452b-9dd0-419b5587c7c7
+2015-10-19 08:55:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ConversationThread",

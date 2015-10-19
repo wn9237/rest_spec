@@ -359,14 +359,14 @@ Here is a JSON representation of the resource
 |[Create Task](../api/user_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
 |[Update](../api/user_update.md) | [User](user.md)	|Update User object. |
 |[Delete](../api/user_delete.md) | Void	|Delete User object. |
-|[Sendmail](../api/user_sendmail.md)|[None](none.md)||
+|[Sendmail](../api/user_sendmail.md)|None||
 |[Assignlicense](../api/user_assignlicense.md)|[User](user.md)||
 |[Checkmembergroups](../api/user_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/user_getmembergroups.md)|String||
 |[Get MemberObjects](../api/user_getmemberobjects.md)|String||
 
-<!-- uuid: 79265155-1158-4c87-9457-49fa2cb1753d
-2015-10-19 08:46:51 UTC -->
+<!-- uuid: b6050145-49ba-4218-9d61-7b206c05f5a1
+2015-10-19 08:55:38 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User resource",

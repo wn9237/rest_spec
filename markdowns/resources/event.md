@@ -138,12 +138,12 @@ Here is a JSON representation of the resource
 |[Create Event](../api/event_post_instances.md) |[Event](event.md)| Create a new Event by posting to the Instances collection.|
 |[Update](../api/event_update.md) | [Event](event.md)	|Update Event object. |
 |[Delete](../api/event_delete.md) | Void	|Delete Event object. |
-|[Accept](../api/event_accept.md)|[None](none.md)||
-|[Decline](../api/event_decline.md)|[None](none.md)||
-|[Tentativelyaccept](../api/event_tentativelyaccept.md)|[None](none.md)||
+|[Accept](../api/event_accept.md)|None||
+|[Decline](../api/event_decline.md)|None||
+|[Tentativelyaccept](../api/event_tentativelyaccept.md)|None||
 
-<!-- uuid: f9692a50-a55b-4b15-8f6e-301280476ce9
-2015-10-19 08:46:45 UTC -->
+<!-- uuid: a189764b-d456-499e-aa46-85c4ea44e388
+2015-10-19 08:55:34 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event resource",

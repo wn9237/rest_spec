@@ -56,8 +56,8 @@ Content-length: 160
 ```
 If successful, this method returns a `200 OK` response code and [Notification](../resources/notification.md) object in the response body.
 
-<!-- uuid: 1688abfa-e81e-4bbc-a444-bec622eb83c5
-2015-10-19 08:46:46 UTC -->
+<!-- uuid: b4cc9996-da1f-43a2-ac86-4e5ac1cdd4a7
+2015-10-19 08:55:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notification",

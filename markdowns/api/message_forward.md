@@ -64,8 +64,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: ce73d427-3b95-4ca8-8087-05f5c8be8cca
-2015-10-19 08:46:46 UTC -->
+<!-- uuid: d280a223-55e9-4823-b740-0e2ed80e7ba0
+2015-10-19 08:55:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Forward",

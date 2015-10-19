@@ -59,8 +59,8 @@ Content-length: 185
 ```
 If successful, this method returns a `200 OK` response code and [OutlookItem](../resources/outlookitem.md) object in the response body.
 
-<!-- uuid: cf8cfe2b-3a6d-4d34-82f4-2aebc451e06c
-2015-10-19 08:46:48 UTC -->
+<!-- uuid: 6fe57878-e75e-4124-ae10-8846d4308632
+2015-10-19 08:55:36 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OutlookItem",

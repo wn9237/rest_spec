@@ -53,8 +53,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: ba7505c3-553b-43e1-bc5b-5ef0a6475296
-2015-10-19 08:46:51 UTC -->
+<!-- uuid: bd564d9b-17dc-4b1f-8335-c1a91f0f6c36
+2015-10-19 08:55:38 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create registeredDevice",

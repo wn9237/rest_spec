@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 15de7c0d-89ac-4fc0-a59d-12274f81f6a5
-2015-10-19 08:46:44 UTC -->
+<!-- uuid: a4cddbba-075a-476c-9c60-3ea28456e29a
+2015-10-19 08:55:33 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create registeredUser",

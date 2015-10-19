@@ -207,17 +207,17 @@ Here is a JSON representation of the resource
 |[Create Task](../api/group_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
 |[Update](../api/group_update.md) | [Group](group.md)	|Update Group object. |
 |[Delete](../api/group_delete.md) | Void	|Delete Group object. |
-|[Addfavorite](../api/group_addfavorite.md)|[None](none.md)||
-|[Removefavorite](../api/group_removefavorite.md)|[None](none.md)||
-|[Resetunseencount](../api/group_resetunseencount.md)|[None](none.md)||
-|[Subscribebymail](../api/group_subscribebymail.md)|[None](none.md)||
-|[Unsubscribebymail](../api/group_unsubscribebymail.md)|[None](none.md)||
+|[Addfavorite](../api/group_addfavorite.md)|None||
+|[Removefavorite](../api/group_removefavorite.md)|None||
+|[Resetunseencount](../api/group_resetunseencount.md)|None||
+|[Subscribebymail](../api/group_subscribebymail.md)|None||
+|[Unsubscribebymail](../api/group_unsubscribebymail.md)|None||
 |[Checkmembergroups](../api/group_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/group_getmembergroups.md)|String||
 |[Get MemberObjects](../api/group_getmemberobjects.md)|String||
 
-<!-- uuid: 3704b0c0-8bb2-4cb3-a313-9f7f33dec7a4
-2015-10-19 08:46:46 UTC -->
+<!-- uuid: 9eb43fc4-4ec1-473d-82a7-5be7eb5d8763
+2015-10-19 08:55:35 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group resource",

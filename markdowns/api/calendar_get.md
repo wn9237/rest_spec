@@ -58,8 +58,8 @@ Content-length: 106
 ```
 If successful, this method returns a `200 OK` response code and [Calendar](../resources/calendar.md) object in the response body.
 
-<!-- uuid: 6a0720b7-36bd-4b05-baf7-253e27e949b8
-2015-10-19 08:46:43 UTC -->
+<!-- uuid: deccab0c-01e5-472f-be21-9988be011a4a
+2015-10-19 08:55:32 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Calendar",

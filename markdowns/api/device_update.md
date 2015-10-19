@@ -115,8 +115,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: b335a8c6-eb1f-46ff-b36e-d2fd1da22ddd
-2015-10-19 08:46:44 UTC -->
+<!-- uuid: a9eb58da-4295-43a7-965c-a0c5004546a1
+2015-10-19 08:55:33 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of device object.",

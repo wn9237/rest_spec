@@ -92,11 +92,11 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/post_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/post_update.md) | [Post](post.md)	|Update Post object. |
 |[Delete](../api/post_delete.md) | Void	|Delete Post object. |
-|[Forward](../api/post_forward.md)|[None](none.md)||
-|[Reply](../api/post_reply.md)|[None](none.md)||
+|[Forward](../api/post_forward.md)|None||
+|[Reply](../api/post_reply.md)|None||
 
-<!-- uuid: c18a4682-b687-43de-8a9b-bcb53a9b8bcb
-2015-10-19 08:46:48 UTC -->
+<!-- uuid: 615422ae-214c-483e-a07b-4f6717ddfc5a
+2015-10-19 08:55:36 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post resource",

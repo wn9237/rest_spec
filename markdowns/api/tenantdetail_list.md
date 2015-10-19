@@ -113,8 +113,8 @@ Content-length: 1912
 ```
 If successful, this method returns a `200 OK` response code and collection of [TenantDetail](../resources/tenantdetail.md) objects in the response body.
 
-<!-- uuid: 78c546d7-5e0c-44e8-aafb-0648222fae0b
-2015-10-19 08:46:50 UTC -->
+<!-- uuid: 0f53fddf-d64b-4e74-8a3a-fde6f493a137
+2015-10-19 08:55:38 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List TenantDetail",
