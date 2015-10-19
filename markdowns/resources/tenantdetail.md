@@ -106,8 +106,8 @@ None
 |[Get MemberGroups](../api/tenantdetail_getmembergroups.md)|String||
 |[Get MemberObjects](../api/tenantdetail_getmemberobjects.md)|String||
 
-<!-- uuid: da5e3bbc-c5d5-42af-af89-88b3d84be9f2
-2015-10-19 08:55:38 UTC -->
+<!-- uuid: 7ae2f589-e49d-4fc4-9003-c0781564a4d3
+2015-10-19 09:02:23 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TenantDetail resource",

@@ -56,8 +56,8 @@ None
 |[Get MemberGroups](../api/extensionproperty_getmembergroups.md)|String||
 |[Get MemberObjects](../api/extensionproperty_getmemberobjects.md)|String||
 
-<!-- uuid: 6c87e310-d972-409c-9bb7-4562f4aaf420
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: 61a2304e-39bc-4840-be9e-d54c747f0c01
+2015-10-19 09:02:16 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExtensionProperty resource",

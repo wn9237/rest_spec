@@ -124,10 +124,9 @@ Content-length: 1546
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [Message](../resources/message.md) object in the response body.
 
-<!-- uuid: f0d97b02-bf71-411a-8d37-a44e3d1fa08d
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: 2c2376c5-56d8-4d61-bc42-c7a2b6ac3cc5
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Message",

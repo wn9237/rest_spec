@@ -112,10 +112,9 @@ Content-length: 1942
   "deletionTimestamp": "datetime-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [ServicePrincipal](../resources/serviceprincipal.md) object in the response body.
 
-<!-- uuid: 3a4dc4a2-ab05-4868-a467-f4e3e03934ee
-2015-10-19 08:55:37 UTC -->
+<!-- uuid: 64f4ab32-efbf-4608-8314-374e3155bc8c
+2015-10-19 09:02:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ServicePrincipal",

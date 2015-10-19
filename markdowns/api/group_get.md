@@ -83,10 +83,9 @@ Content-length: 1009
   "deletionTimestamp": "datetime-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [Group](../resources/group.md) object in the response body.
 
-<!-- uuid: f7b841a9-e89a-4a17-b4c1-298436a65cf5
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: 436e87e0-ca6a-4fcd-8d35-baa2e23af77b
+2015-10-19 09:02:17 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Group",

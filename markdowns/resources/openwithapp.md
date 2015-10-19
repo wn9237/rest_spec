@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
 |viewPostParameters|String||
 |viewUrl|String||
 
-<!-- uuid: 5d947944-eee9-430d-9c20-b69149ad3fb8
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: 8f756dcc-e590-4e89-8442-9cc5b14f867f
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "openWithApp resource",

@@ -103,10 +103,9 @@ Content-length: 1647
   "deletionTimestamp": "datetime-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [TenantDetail](../resources/tenantdetail.md) object in the response body.
 
-<!-- uuid: 91c64c8a-5e4f-483f-80d1-8c057c36484f
-2015-10-19 08:55:38 UTC -->
+<!-- uuid: 7d7dc081-6b51-4c46-9ae0-c4e8e5584a1e
+2015-10-19 09:02:23 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TenantDetail",

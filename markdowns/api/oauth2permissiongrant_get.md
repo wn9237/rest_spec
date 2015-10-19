@@ -54,10 +54,9 @@ Content-length: 271
   "startTime": "datetime-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
 
-<!-- uuid: 4fff0b5c-9818-4dcc-bcb6-7aa093ef339a
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: b4bc7dcc-8fe7-4cc0-916d-c6ee3f03a45b
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OAuth2PermissionGrant",

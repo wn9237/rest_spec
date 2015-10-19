@@ -51,8 +51,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 348d91cb-705c-4849-829e-99558f3cde8a
-2015-10-19 08:55:37 UTC -->
+<!-- uuid: ec683dda-5ae5-430d-b1d2-617816aaeb54
+2015-10-19 09:02:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedSignupStatus",

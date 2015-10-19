@@ -89,10 +89,9 @@ Content-length: 762
   "shareId": "shareId-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
 
-<!-- uuid: 8b3eae1d-38bb-4506-9e86-ebd2d9efcea3
-2015-10-19 08:55:36 UTC -->
+<!-- uuid: 5fdd3780-9391-4e50-8901-2c742aa78710
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get permission",

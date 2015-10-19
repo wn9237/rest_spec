@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |EmailAddress|[EmailAddress](emailaddress.md)||
 
-<!-- uuid: 9e352026-9dfe-4f1c-b10e-674c8eb2e1b4
-2015-10-19 08:55:37 UTC -->
+<!-- uuid: 1983ed23-350d-4eb7-9fa7-c0e3e68fa964
+2015-10-19 09:02:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Recipient resource",

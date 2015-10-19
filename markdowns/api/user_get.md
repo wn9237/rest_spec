@@ -144,10 +144,9 @@ Content-length: 2668
   "deletionTimestamp": "datetime-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
 
-<!-- uuid: 22663a6f-7059-48b5-83b2-d11aaf54fa91
-2015-10-19 08:55:38 UTC -->
+<!-- uuid: 34bef64c-3cd1-40f7-81f3-da7faf075922
+2015-10-19 09:02:23 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get User",

@@ -56,8 +56,8 @@ None
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String||
 
-<!-- uuid: 43c20cb1-5342-4b74-8c63-18ce2d429c87
-2015-10-19 08:55:33 UTC -->
+<!-- uuid: 2380c9b6-7797-41b4-8102-3b7bab512e14
+2015-10-19 09:02:12 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration resource",

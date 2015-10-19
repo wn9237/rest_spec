@@ -137,8 +137,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/message_replyall.md)|None||
 |[Send](../api/message_send.md)|None||
 
-<!-- uuid: e1d4817b-529a-40c8-b140-f4f6c0fb8215
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: bedf33ed-1d5d-436b-b670-f4a68ad901b0
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message resource",

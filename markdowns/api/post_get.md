@@ -87,10 +87,9 @@ Content-length: 790
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
 
-<!-- uuid: 962ad2e1-62b0-41a3-927b-aaa7d171cb4e
-2015-10-19 08:55:36 UTC -->
+<!-- uuid: 65de5b9f-44c6-42f1-b945-6ebdba9798a7
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",

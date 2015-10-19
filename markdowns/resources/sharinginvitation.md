@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |redeemedBy|String||
 |signInRequired|Boolean||
 
-<!-- uuid: 84e5b84a-e9a0-46ca-9789-dfa6170021f8
-2015-10-19 08:55:38 UTC -->
+<!-- uuid: 97b383f8-482b-48f2-9e51-24e0174c5bf4
+2015-10-19 09:02:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "sharingInvitation resource",

@@ -33,8 +33,8 @@ None
 |[List](../api/application_list.md) | [Application](application.md) [] |Get application object collection. |
 |[Create Application](../api/application_post_applications.md) |[Application](application.md)| Create a new Application by posting to the applications collection.|
 
-<!-- uuid: 5362f62a-0851-4a78-a828-c17f0e21709f
-2015-10-19 08:55:32 UTC -->
+<!-- uuid: e375733a-fe95-46f4-9a33-678325ba2cde
+2015-10-19 09:02:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "applications resource",

@@ -56,10 +56,9 @@ Content-length: 110
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
 
-<!-- uuid: b22068d9-c46c-4e3f-aef7-3853003f0674
-2015-10-19 08:55:32 UTC -->
+<!-- uuid: c42bf12c-6985-4070-8a7e-10e0fbfa8eb2
+2015-10-19 09:02:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get CalendarGroup",

@@ -103,8 +103,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: b4679317-f18c-44d1-9631-6c4a95cdfc87
-2015-10-19 08:55:34 UTC -->
+<!-- uuid: 5f9f7aff-3636-4a0f-a334-674f3567354d
+2015-10-19 09:02:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of drive object.",

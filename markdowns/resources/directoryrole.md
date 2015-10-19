@@ -85,8 +85,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String||
 
-<!-- uuid: 0173f65f-c592-4150-9d17-2f3d54951b9b
-2015-10-19 08:55:33 UTC -->
+<!-- uuid: d1b3b14b-02ea-46c3-af28-fc76d4380b4c
+2015-10-19 09:02:12 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole resource",

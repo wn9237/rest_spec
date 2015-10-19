@@ -59,8 +59,8 @@ None
 |[Update](../api/permission_update.md) | [permission](permission.md)	|Update permission object. |
 |[Delete](../api/permission_delete.md) | Void	|Delete permission object. |
 
-<!-- uuid: b07abbfd-f23b-4ce8-a7c7-4abae3481f4c
-2015-10-19 08:55:36 UTC -->
+<!-- uuid: 1c6b66c6-69b8-479e-91d1-32fc98dd022a
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "permission resource",

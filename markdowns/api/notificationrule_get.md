@@ -58,10 +58,9 @@ Content-length: 260
   "Event": "Event-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [NotificationRule](../resources/notificationrule.md) object in the response body.
 
-<!-- uuid: b7b222fa-d8ff-4b11-aace-a28671a3d9e8
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: 4dc50807-369b-4651-8eb1-3d66758b4788
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get NotificationRule",

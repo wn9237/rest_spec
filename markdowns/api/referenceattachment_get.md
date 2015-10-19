@@ -56,10 +56,9 @@ Content-length: 162
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [ReferenceAttachment](../resources/referenceattachment.md) object in the response body.
 
-<!-- uuid: ab877cbf-83a0-4306-961f-cad53b531f5b
-2015-10-19 08:55:37 UTC -->
+<!-- uuid: 9e8ddd0c-e036-4f18-9760-883976e23649
+2015-10-19 09:02:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ReferenceAttachment",

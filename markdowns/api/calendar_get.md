@@ -56,10 +56,9 @@ Content-length: 106
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [Calendar](../resources/calendar.md) object in the response body.
 
-<!-- uuid: deccab0c-01e5-472f-be21-9988be011a4a
-2015-10-19 08:55:32 UTC -->
+<!-- uuid: c63bde64-d87a-4b6b-847e-5b5642463ed5
+2015-10-19 09:02:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Calendar",

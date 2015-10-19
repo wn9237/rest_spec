@@ -77,10 +77,9 @@ Content-length: 489
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
-<!-- uuid: f1bd78de-e8af-452b-9dd0-419b5587c7c7
-2015-10-19 08:55:32 UTC -->
+<!-- uuid: 71946fa4-a6ea-475a-87b6-b3c7598797d1
+2015-10-19 09:02:11 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ConversationThread",

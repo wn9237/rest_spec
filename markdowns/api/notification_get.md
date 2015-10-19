@@ -54,10 +54,9 @@ Content-length: 160
   "NotificationTarget": "NotificationTarget-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [Notification](../resources/notification.md) object in the response body.
 
-<!-- uuid: b4cc9996-da1f-43a2-ac86-4e5ac1cdd4a7
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: 7f09a4de-d82d-457a-ba17-3d4085c28f87
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notification",

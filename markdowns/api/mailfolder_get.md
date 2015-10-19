@@ -56,10 +56,9 @@ Content-length: 130
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
-<!-- uuid: 316b2512-4608-4ec1-ae57-e30742868f84
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: a15c71db-90be-48df-baed-c86bc44e358e
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get MailFolder",

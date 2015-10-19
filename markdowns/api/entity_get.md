@@ -51,10 +51,9 @@ Content-length: 22
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [Entity](../resources/entity.md) object in the response body.
 
-<!-- uuid: 54942137-538a-4f1c-94af-2752abfc8be6
-2015-10-19 08:55:34 UTC -->
+<!-- uuid: 9212d15b-5ed9-4543-9e7b-0bcb8d27afd7
+2015-10-19 09:02:14 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Entity",

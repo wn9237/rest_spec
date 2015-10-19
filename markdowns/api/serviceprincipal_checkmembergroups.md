@@ -64,8 +64,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 67818566-7633-4034-9bfb-e122d8b5f105
-2015-10-19 08:55:38 UTC -->
+<!-- uuid: 52be2fd7-6ce2-45e5-9b66-f5d9338dad56
+2015-10-19 09:02:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal: checkMemberGroups",

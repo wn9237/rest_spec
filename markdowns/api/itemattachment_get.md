@@ -56,10 +56,9 @@ Content-length: 162
   "Id": "Id-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [ItemAttachment](../resources/itemattachment.md) object in the response body.
 
-<!-- uuid: 9467a006-2a0b-419b-97ab-0bccf4650130
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: 700cf833-bb82-4eef-a803-2f6155e39d33
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ItemAttachment",

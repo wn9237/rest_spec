@@ -44,8 +44,8 @@ None
 |[Delete](../api/notification_delete.md) | Void	|Delete Notification object. |
 |[Notificationtypes](../api/notification_notificationtypes.md)|String||
 
-<!-- uuid: 9d8350b5-ccd2-4263-93a2-c13d951b6589
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: a345a7d6-4647-4f98-9c46-90f5e3e62e14
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notification resource",

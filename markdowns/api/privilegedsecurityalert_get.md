@@ -67,10 +67,9 @@ Content-length: 596
   "Status": "Status-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [PrivilegedSecurityAlert](../resources/privilegedsecurityalert.md) object in the response body.
 
-<!-- uuid: 2afd5a96-b8ab-4edf-ab53-551c7708b88e
-2015-10-19 08:55:36 UTC -->
+<!-- uuid: 069d03fb-2e23-47de-b173-db75d2355726
+2015-10-19 09:02:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedSecurityAlert",

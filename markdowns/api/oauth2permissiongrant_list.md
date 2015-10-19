@@ -60,10 +60,9 @@ Content-length: 332
   ]
 }
 ```
-If successful, this method returns a `200 OK` response code and collection of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.
 
-<!-- uuid: 4ed451db-f922-4dc6-b9d8-abb05d3689fe
-2015-10-19 08:55:35 UTC -->
+<!-- uuid: cceb2413-9ea6-42f7-b679-cf1485b20df0
+2015-10-19 09:02:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List OAuth2PermissionGrant",

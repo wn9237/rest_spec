@@ -60,10 +60,9 @@ Content-length: 388
   "skuPartNumber": "skuPartNumber-value"
 }
 ```
-If successful, this method returns a `200 OK` response code and [SubscribedSku](../resources/subscribedsku.md) object in the response body.
 
-<!-- uuid: e2b479d5-4c78-4406-851c-f9d0ce4823b2
-2015-10-19 08:55:38 UTC -->
+<!-- uuid: 0dc8249d-b3ae-458a-befd-2a253aeeb9c3
+2015-10-19 09:02:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get SubscribedSku",

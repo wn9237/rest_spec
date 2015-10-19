@@ -75,10 +75,9 @@ Content-length: 458
   }
 }
 ```
-If successful, this method returns a `200 OK` response code and [drive](../resources/drive.md) object in the response body.
 
-<!-- uuid: 2ddc5e90-de16-4c62-9666-cc7a5633ba4d
-2015-10-19 08:55:34 UTC -->
+<!-- uuid: 429ff4d2-0f28-41b1-8d6a-527481cba4d9
+2015-10-19 09:02:13 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get drive",
