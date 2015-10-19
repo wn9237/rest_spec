@@ -233,6 +233,10 @@ module SpecMaker
 			dataTypePlusLink = "[" + method[:returnType] + "](" + method[:returnType].downcase + ".md)"
 		end
 
+		if method[:isReturnTypeCollection]
+			dataTypePlusLink = dataTypePlusLink + " collection"
+		end
+
 
 		# Add links to method. 
 		restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name][3..-1]) : method[:name].capitalize

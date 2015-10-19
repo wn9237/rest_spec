@@ -361,12 +361,12 @@ Here is a JSON representation of the resource
 |[Delete](../api/user_delete.md) | None |Delete User object. |
 |[Sendmail](../api/user_sendmail.md)|None||
 |[Assignlicense](../api/user_assignlicense.md)|[User](user.md)||
-|[Checkmembergroups](../api/user_checkmembergroups.md)|String||
-|[Get MemberGroups](../api/user_getmembergroups.md)|String||
-|[Get MemberObjects](../api/user_getmemberobjects.md)|String||
+|[Checkmembergroups](../api/user_checkmembergroups.md)|String collection||
+|[Get MemberGroups](../api/user_getmembergroups.md)|String collection||
+|[Get MemberObjects](../api/user_getmemberobjects.md)|String collection||
 
-<!-- uuid: 3624492b-3c02-497e-a51f-dd961d8cec5c
-2015-10-19 09:46:37 UTC -->
+<!-- uuid: 257eff33-b9f1-454b-963c-5243fa9b6f65
+2015-10-19 10:04:39 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User resource",
