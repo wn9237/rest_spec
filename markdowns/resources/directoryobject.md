@@ -39,13 +39,13 @@ None
 |:---------------|:--------|:----------|
 |[Get DirectoryObject](../api/directoryobject_get.md) | [DirectoryObject](directoryobject.md) |Read properties and relationships of directoryObject object.|
 |[Update](../api/directoryobject_update.md) | [DirectoryObject](directoryobject.md)	|Update DirectoryObject object. |
-|[Delete](../api/directoryobject_delete.md) | Void	|Delete DirectoryObject object. |
+|[Delete](../api/directoryobject_delete.md) | None |Delete DirectoryObject object. |
 |[Checkmembergroups](../api/directoryobject_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/directoryobject_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryobject_getmemberobjects.md)|String||
 
-<!-- uuid: c92ae0d0-4143-4879-b3fd-eb191288c59a
-2015-10-19 09:02:12 UTC -->
+<!-- uuid: 9be66e53-98a9-4e40-9a57-7869aa63f984
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject resource",

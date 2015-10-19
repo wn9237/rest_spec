@@ -43,13 +43,13 @@ None
 |:---------------|:--------|:----------|
 |[Get DirectoryRoleTemplate](../api/directoryroletemplate_get.md) | [DirectoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
 |[Update](../api/directoryroletemplate_update.md) | [DirectoryRoleTemplate](directoryroletemplate.md)	|Update DirectoryRoleTemplate object. |
-|[Delete](../api/directoryroletemplate_delete.md) | Void	|Delete DirectoryRoleTemplate object. |
+|[Delete](../api/directoryroletemplate_delete.md) | None |Delete DirectoryRoleTemplate object. |
 |[Checkmembergroups](../api/directoryroletemplate_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/directoryroletemplate_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryroletemplate_getmemberobjects.md)|String||
 
-<!-- uuid: df3383ef-c7cc-4802-9530-e8ba41c63c86
-2015-10-19 09:02:13 UTC -->
+<!-- uuid: da58f610-374d-421d-bf47-9f4c077f24db
+2015-10-19 09:07:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRoleTemplate resource",

@@ -56,10 +56,10 @@ Here is a JSON representation of the resource
 |[Create Event](../api/calendar_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
 |[Create Event](../api/calendar_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
 |[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
-|[Delete](../api/calendar_delete.md) | Void	|Delete Calendar object. |
+|[Delete](../api/calendar_delete.md) | None |Delete Calendar object. |
 
-<!-- uuid: 343f38e2-65f0-4040-b764-db0198488fac
-2015-10-19 09:02:11 UTC -->
+<!-- uuid: 9cbaeb2f-2d76-459e-b72e-25128e7dfff3
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Calendar resource",

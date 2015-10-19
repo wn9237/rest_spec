@@ -71,10 +71,10 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Task](../api/task_get.md) | [Task](task.md) |Read properties and relationships of task object.|
 |[Update](../api/task_update.md) | [Task](task.md)	|Update Task object. |
-|[Delete](../api/task_delete.md) | Void	|Delete Task object. |
+|[Delete](../api/task_delete.md) | None |Delete Task object. |
 
-<!-- uuid: ff2338b6-dd24-4f27-a2ec-88207826e3e5
-2015-10-19 09:02:23 UTC -->
+<!-- uuid: ab5459ec-9468-42f3-8eeb-6989bf6f845e
+2015-10-19 09:07:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Task resource",

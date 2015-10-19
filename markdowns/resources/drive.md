@@ -73,11 +73,11 @@ Here is a JSON representation of the resource
 |[Create shared](../api/drive_post_shared.md) |[item](item.md)| Create a new shared by posting to the shared collection.|
 |[Create special](../api/drive_post_special.md) |[item](item.md)| Create a new special by posting to the special collection.|
 |[Update](../api/drive_update.md) | [drive](drive.md)	|Update drive object. |
-|[Delete](../api/drive_delete.md) | Void	|Delete drive object. |
+|[Delete](../api/drive_delete.md) | None |Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md)||
 
-<!-- uuid: 17740094-886a-4fc3-b28e-896408bbe208
-2015-10-19 09:02:14 UTC -->
+<!-- uuid: 4bf7dacf-f410-4d12-98ce-a7d0d1f30d33
+2015-10-19 09:07:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive resource",

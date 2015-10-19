@@ -51,13 +51,13 @@ None
 |:---------------|:--------|:----------|
 |[Get DeviceConfiguration](../api/deviceconfiguration_get.md) | [DeviceConfiguration](deviceconfiguration.md) |Read properties and relationships of deviceConfiguration object.|
 |[Update](../api/deviceconfiguration_update.md) | [DeviceConfiguration](deviceconfiguration.md)	|Update DeviceConfiguration object. |
-|[Delete](../api/deviceconfiguration_delete.md) | Void	|Delete DeviceConfiguration object. |
+|[Delete](../api/deviceconfiguration_delete.md) | None |Delete DeviceConfiguration object. |
 |[Checkmembergroups](../api/deviceconfiguration_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String||
 
-<!-- uuid: 2380c9b6-7797-41b4-8102-3b7bab512e14
-2015-10-19 09:02:12 UTC -->
+<!-- uuid: 8621d489-e706-4efb-a339-63f6ff7313e3
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration resource",

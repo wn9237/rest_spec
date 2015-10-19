@@ -191,8 +191,8 @@ Content-length: 1647
 }
 ```
 
-<!-- uuid: 29d2f644-892c-49f1-b3af-13197a26f76b
-2015-10-19 09:02:23 UTC -->
+<!-- uuid: cf2ce772-5924-4aed-a62e-e46432b8c3e8
+2015-10-19 09:07:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of tenantdetail object.",

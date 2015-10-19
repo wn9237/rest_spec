@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |disabledPlans|Guid collection||
 |skuId|Guid||
 
-<!-- uuid: 3599d064-691a-44eb-9c6b-60dbf69fd5a5
-2015-10-19 09:02:11 UTC -->
+<!-- uuid: 448e50b5-197b-476e-8978-048969646d1b
+2015-10-19 09:07:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AssignedLicense resource",

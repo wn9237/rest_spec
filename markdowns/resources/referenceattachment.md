@@ -45,10 +45,10 @@ None
 |:---------------|:--------|:----------|
 |[Get ReferenceAttachment](../api/referenceattachment_get.md) | [ReferenceAttachment](referenceattachment.md) |Read properties and relationships of referenceAttachment object.|
 |[Update](../api/referenceattachment_update.md) | [ReferenceAttachment](referenceattachment.md)	|Update ReferenceAttachment object. |
-|[Delete](../api/referenceattachment_delete.md) | Void	|Delete ReferenceAttachment object. |
+|[Delete](../api/referenceattachment_delete.md) | None |Delete ReferenceAttachment object. |
 
-<!-- uuid: 6afaae33-4f12-4548-a9e5-bb3d5fdff0b0
-2015-10-19 09:02:22 UTC -->
+<!-- uuid: 91cd9db1-59cf-43a7-9b71-964d31f2ae32
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ReferenceAttachment resource",

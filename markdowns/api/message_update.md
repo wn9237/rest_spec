@@ -223,8 +223,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: 8992410c-73c4-4497-afdc-c20c3e2ad225
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 97ce60f8-f5a8-4092-b3a4-425fadcdbaff
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of message object.",

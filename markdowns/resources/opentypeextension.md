@@ -37,10 +37,10 @@ None
 |:---------------|:--------|:----------|
 |[Get OpenTypeExtension](../api/opentypeextension_get.md) | [OpenTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
-|[Delete](../api/opentypeextension_delete.md) | Void	|Delete OpenTypeExtension object. |
+|[Delete](../api/opentypeextension_delete.md) | None |Delete OpenTypeExtension object. |
 
-<!-- uuid: b444a579-64f3-48a9-be7d-a0972db69baf
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 200ab506-f7d6-4bad-8280-990abc80c05f
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OpenTypeExtension resource",

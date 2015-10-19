@@ -54,12 +54,12 @@ Here is a JSON representation of the resource
 |[Get PrivilegedRole](../api/privilegedrole_get.md) | [PrivilegedRole](privilegedrole.md) |Read properties and relationships of privilegedRole object.|
 |[Create Assignment](../api/privilegedrole_post_assignments.md) |[PrivilegedRoleAssignment](privilegedroleassignment.md)| Create a new Assignment by posting to the Assignments collection.|
 |[Update](../api/privilegedrole_update.md) | [PrivilegedRole](privilegedrole.md)	|Update PrivilegedRole object. |
-|[Delete](../api/privilegedrole_delete.md) | Void	|Delete PrivilegedRole object. |
+|[Delete](../api/privilegedrole_delete.md) | None |Delete PrivilegedRole object. |
 |[Selfactivate](../api/privilegedrole_selfactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[Selfdeactivate](../api/privilegedrole_selfdeactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 
-<!-- uuid: 438c3bac-7ffb-4020-b18f-880d22137565
-2015-10-19 09:02:21 UTC -->
+<!-- uuid: 0246b1e9-7b12-4471-8287-0c97275acaec
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRole resource",

@@ -48,10 +48,10 @@ Here is a JSON representation of the resource
 |[Get CalendarGroup](../api/calendargroup_get.md) | [CalendarGroup](calendargroup.md) |Read properties and relationships of calendarGroup object.|
 |[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the Calendars collection.|
 |[Update](../api/calendargroup_update.md) | [CalendarGroup](calendargroup.md)	|Update CalendarGroup object. |
-|[Delete](../api/calendargroup_delete.md) | Void	|Delete CalendarGroup object. |
+|[Delete](../api/calendargroup_delete.md) | None |Delete CalendarGroup object. |
 
-<!-- uuid: c670d11a-52fe-47cd-bb6e-db1f011250cf
-2015-10-19 09:02:11 UTC -->
+<!-- uuid: ed236301-a309-436b-8838-684b5f87b232
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "CalendarGroup resource",

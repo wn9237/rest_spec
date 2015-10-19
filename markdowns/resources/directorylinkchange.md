@@ -53,13 +53,13 @@ None
 |:---------------|:--------|:----------|
 |[Get DirectoryLinkChange](../api/directorylinkchange_get.md) | [DirectoryLinkChange](directorylinkchange.md) |Read properties and relationships of directoryLinkChange object.|
 |[Update](../api/directorylinkchange_update.md) | [DirectoryLinkChange](directorylinkchange.md)	|Update DirectoryLinkChange object. |
-|[Delete](../api/directorylinkchange_delete.md) | Void	|Delete DirectoryLinkChange object. |
+|[Delete](../api/directorylinkchange_delete.md) | None |Delete DirectoryLinkChange object. |
 |[Checkmembergroups](../api/directorylinkchange_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/directorylinkchange_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directorylinkchange_getmemberobjects.md)|String||
 
-<!-- uuid: 487ed34f-f0a1-425e-a690-1ac971bddfa7
-2015-10-19 09:02:12 UTC -->
+<!-- uuid: 2c3433f6-1545-40fe-85cc-d3ff430c15c3
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryLinkChange resource",

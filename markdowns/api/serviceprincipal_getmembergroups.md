@@ -62,8 +62,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: 531b1387-47d5-4bb6-b307-9b9b40793a90
-2015-10-19 09:02:22 UTC -->
+<!-- uuid: e9b5b171-dc51-4f82-ba88-4abd435a5cbc
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal: getMemberGroups",

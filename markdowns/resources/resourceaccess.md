@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |id|Guid||
 |type|String||
 
-<!-- uuid: f637eaf9-17de-489a-829a-76f162976cb1
-2015-10-19 09:02:22 UTC -->
+<!-- uuid: b96d2e24-ee57-4f14-873d-97686696bc01
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ResourceAccess resource",

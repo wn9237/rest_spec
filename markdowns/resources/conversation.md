@@ -54,10 +54,10 @@ Here is a JSON representation of the resource
 |[Get Conversation](../api/conversation_get.md) | [Conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[Create Thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
 |[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
-|[Delete](../api/conversation_delete.md) | Void	|Delete Conversation object. |
+|[Delete](../api/conversation_delete.md) | None |Delete Conversation object. |
 
-<!-- uuid: 5edc9720-383d-42b0-a820-fa0de73a6d99
-2015-10-19 09:02:11 UTC -->
+<!-- uuid: 16102a57-6cde-4902-9959-50520049158b
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Conversation resource",

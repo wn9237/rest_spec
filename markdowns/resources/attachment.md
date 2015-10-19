@@ -45,10 +45,10 @@ None
 |:---------------|:--------|:----------|
 |[Get Attachment](../api/attachment_get.md) | [Attachment](attachment.md) |Read properties and relationships of attachment object.|
 |[Update](../api/attachment_update.md) | [Attachment](attachment.md)	|Update Attachment object. |
-|[Delete](../api/attachment_delete.md) | Void	|Delete Attachment object. |
+|[Delete](../api/attachment_delete.md) | None |Delete Attachment object. |
 
-<!-- uuid: 6881cf1d-ba92-4713-bf35-480ca8e82e22
-2015-10-19 09:02:11 UTC -->
+<!-- uuid: c21dc241-5f2a-475b-87eb-314301fb26bb
+2015-10-19 09:07:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Attachment resource",

@@ -67,13 +67,13 @@ None
 |:---------------|:--------|:----------|
 |[Get PrivilegedSecurityAlert](../api/privilegedsecurityalert_get.md) | [PrivilegedSecurityAlert](privilegedsecurityalert.md) |Read properties and relationships of privilegedSecurityAlert object.|
 |[Update](../api/privilegedsecurityalert_update.md) | [PrivilegedSecurityAlert](privilegedsecurityalert.md)	|Update PrivilegedSecurityAlert object. |
-|[Delete](../api/privilegedsecurityalert_delete.md) | Void	|Delete PrivilegedSecurityAlert object. |
+|[Delete](../api/privilegedsecurityalert_delete.md) | None |Delete PrivilegedSecurityAlert object. |
 |[Dismiss](../api/privilegedsecurityalert_dismiss.md)|[PrivilegedSecurityAlert](privilegedsecurityalert.md)||
 |[Fix](../api/privilegedsecurityalert_fix.md)|[PrivilegedSecurityAlert](privilegedsecurityalert.md)||
 |[Reactivate](../api/privilegedsecurityalert_reactivate.md)|[PrivilegedSecurityAlert](privilegedsecurityalert.md)||
 
-<!-- uuid: f5ab12e4-18e4-428e-9cfa-251beec025eb
-2015-10-19 09:02:22 UTC -->
+<!-- uuid: 9e074e80-f542-468f-a991-2360b72b5330
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSecurityAlert resource",

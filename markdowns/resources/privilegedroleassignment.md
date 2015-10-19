@@ -47,13 +47,13 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get PrivilegedRoleAssignment](../api/privilegedroleassignment_get.md) | [PrivilegedRoleAssignment](privilegedroleassignment.md) |Read properties and relationships of privilegedRoleAssignment object.|
 |[Update](../api/privilegedroleassignment_update.md) | [PrivilegedRoleAssignment](privilegedroleassignment.md)	|Update PrivilegedRoleAssignment object. |
-|[Delete](../api/privilegedroleassignment_delete.md) | Void	|Delete PrivilegedRoleAssignment object. |
+|[Delete](../api/privilegedroleassignment_delete.md) | None |Delete PrivilegedRoleAssignment object. |
 |[Activate](../api/privilegedroleassignment_activate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[Deactivate](../api/privilegedroleassignment_deactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[My](../api/privilegedroleassignment_my.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 
-<!-- uuid: 9e5a901c-3242-4502-a510-8fe6d0d944f9
-2015-10-19 09:02:21 UTC -->
+<!-- uuid: c60b4b0b-f2b1-4efd-8b5a-99f15e28b325
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment resource",

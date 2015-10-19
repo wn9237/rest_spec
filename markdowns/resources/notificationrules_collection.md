@@ -33,8 +33,8 @@ None
 |[List](../api/notificationrule_list.md) | [NotificationRule](notificationrule.md) [] |Get notificationRule object collection. |
 |[Create NotificationRule](../api/notificationrule_post_notificationrules.md) |[NotificationRule](notificationrule.md)| Create a new NotificationRule by posting to the NotificationRules collection.|
 
-<!-- uuid: 5a8bf1fd-1bd2-4137-a93d-41990c1ecc82
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: e6f7fdc9-fcd4-4b3b-8907-02a29b95ecb8
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "NotificationRules resource",

@@ -109,13 +109,13 @@ Here is a JSON representation of the resource
 |[Create directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
 |[Create memberOf](../api/orgcontact_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
 |[Update](../api/orgcontact_update.md) | [OrgContact](orgcontact.md)	|Update OrgContact object. |
-|[Delete](../api/orgcontact_delete.md) | Void	|Delete OrgContact object. |
+|[Delete](../api/orgcontact_delete.md) | None |Delete OrgContact object. |
 |[Checkmembergroups](../api/orgcontact_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/orgcontact_getmembergroups.md)|String||
 |[Get MemberObjects](../api/orgcontact_getmemberobjects.md)|String||
 
-<!-- uuid: 745a865a-595a-4b6c-a470-342df573466a
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 22590bbd-706f-4604-bdbf-3b99807292ae
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OrgContact resource",

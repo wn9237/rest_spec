@@ -49,10 +49,10 @@ None
 |:---------------|:--------|:----------|
 |[Get OAuth2PermissionGrant](../api/oauth2permissiongrant_get.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md) |Read properties and relationships of oAuth2PermissionGrant object.|
 |[Update](../api/oauth2permissiongrant_update.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md)	|Update OAuth2PermissionGrant object. |
-|[Delete](../api/oauth2permissiongrant_delete.md) | Void	|Delete OAuth2PermissionGrant object. |
+|[Delete](../api/oauth2permissiongrant_delete.md) | None |Delete OAuth2PermissionGrant object. |
 
-<!-- uuid: c966949d-d93a-4883-ace6-9ad6e1e2a8b3
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 5b00d50c-e552-4562-a51b-32da3ae4d2eb
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OAuth2PermissionGrant resource",

@@ -45,10 +45,10 @@ None
 |:---------------|:--------|:----------|
 |[Get OutlookItem](../api/outlookitem_get.md) | [OutlookItem](outlookitem.md) |Read properties and relationships of outlookItem object.|
 |[Update](../api/outlookitem_update.md) | [OutlookItem](outlookitem.md)	|Update OutlookItem object. |
-|[Delete](../api/outlookitem_delete.md) | Void	|Delete OutlookItem object. |
+|[Delete](../api/outlookitem_delete.md) | None |Delete OutlookItem object. |
 
-<!-- uuid: 97857c94-a6b0-472e-8194-f90805296ee1
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 89cb66be-bd18-4eb6-812d-3e7e3d171887
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OutlookItem resource",

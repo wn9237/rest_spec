@@ -33,8 +33,8 @@ None
 |[List](../api/tenantdetail_list.md) | [TenantDetail](tenantdetail.md) [] |Get tenantDetail object collection. |
 |[Create TenantDetail](../api/tenantdetail_post_tenantdetails.md) |[TenantDetail](tenantdetail.md)| Create a new TenantDetail by posting to the tenantDetails collection.|
 
-<!-- uuid: 9790fa6f-fb54-4477-8667-00dcea7c03e1
-2015-10-19 09:02:23 UTC -->
+<!-- uuid: df4cd08a-02a6-4bfe-b631-822d73aedc3a
+2015-10-19 09:07:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "tenantDetails resource",

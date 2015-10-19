@@ -30,10 +30,10 @@ None
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Delete](../api/file_delete.md) | Void	|Delete File object. |
+|[Delete](../api/file_delete.md) | None |Delete File object. |
 
-<!-- uuid: 385df5ab-09e0-4b35-85b4-4d82aa7f3bdf
-2015-10-19 09:02:16 UTC -->
+<!-- uuid: d389d4ca-4997-4263-a5a3-5bf7edd39bad
+2015-10-19 09:07:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "File resource",

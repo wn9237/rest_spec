@@ -57,10 +57,10 @@ None
 |:---------------|:--------|:----------|
 |[Get permission](../api/permission_get.md) | [permission](permission.md) |Read properties and relationships of permission object.|
 |[Update](../api/permission_update.md) | [permission](permission.md)	|Update permission object. |
-|[Delete](../api/permission_delete.md) | Void	|Delete permission object. |
+|[Delete](../api/permission_delete.md) | None |Delete permission object. |
 
-<!-- uuid: 1c6b66c6-69b8-479e-91d1-32fc98dd022a
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: bbff2df6-779c-48f4-bd59-45eecd20b521
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "permission resource",

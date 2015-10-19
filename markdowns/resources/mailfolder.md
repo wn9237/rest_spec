@@ -56,12 +56,12 @@ Here is a JSON representation of the resource
 |[Create MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the ChildFolders collection.|
 |[Create Message](../api/mailfolder_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
 |[Update](../api/mailfolder_update.md) | [MailFolder](mailfolder.md)	|Update MailFolder object. |
-|[Delete](../api/mailfolder_delete.md) | Void	|Delete MailFolder object. |
+|[Delete](../api/mailfolder_delete.md) | None |Delete MailFolder object. |
 |[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
 |[Move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||
 
-<!-- uuid: 1bc884f9-7d0b-402a-9db5-e840aa3220f9
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 095c34d0-e727-4e6f-91e8-f96ee7fb0798
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder resource",

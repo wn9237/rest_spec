@@ -34,10 +34,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Entity](../api/entity_get.md) | [Entity](entity.md) |Read properties and relationships of entity object.|
-|[Delete](../api/entity_delete.md) | Void	|Delete Entity object. |
+|[Delete](../api/entity_delete.md) | None |Delete Entity object. |
 
-<!-- uuid: 93d08a34-b3c5-400f-a106-3ed23e2d331f
-2015-10-19 09:02:14 UTC -->
+<!-- uuid: d9cc9751-3304-4a2a-b3f2-d1cfd85d87ef
+2015-10-19 09:07:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Entity resource",

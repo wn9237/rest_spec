@@ -206,7 +206,7 @@ Here is a JSON representation of the resource
 |[Create Plan](../api/group_post_plans.md) |[Plan](plan.md)| Create a new Plan by posting to the plans collection.|
 |[Create Task](../api/group_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
 |[Update](../api/group_update.md) | [Group](group.md)	|Update Group object. |
-|[Delete](../api/group_delete.md) | Void	|Delete Group object. |
+|[Delete](../api/group_delete.md) | None |Delete Group object. |
 |[Addfavorite](../api/group_addfavorite.md)|None||
 |[Removefavorite](../api/group_removefavorite.md)|None||
 |[Resetunseencount](../api/group_resetunseencount.md)|None||
@@ -216,8 +216,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/group_getmembergroups.md)|String||
 |[Get MemberObjects](../api/group_getmemberobjects.md)|String||
 
-<!-- uuid: bf654085-f376-4d56-be3b-e1a61a8c30b0
-2015-10-19 09:02:17 UTC -->
+<!-- uuid: 6339d81a-c92b-4752-b3ac-499edd89be06
+2015-10-19 09:07:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group resource",

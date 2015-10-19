@@ -59,10 +59,10 @@ Here is a JSON representation of the resource
 |[Get Plan](../api/plan_get.md) | [Plan](plan.md) |Read properties and relationships of plan object.|
 |[Create Task](../api/plan_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
 |[Update](../api/plan_update.md) | [Plan](plan.md)	|Update Plan object. |
-|[Delete](../api/plan_delete.md) | Void	|Delete Plan object. |
+|[Delete](../api/plan_delete.md) | None |Delete Plan object. |
 
-<!-- uuid: b956462a-c4fc-44be-bd71-ad951062219e
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: e602f7f9-275e-4aef-abb8-cea3ffea56c4
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Plan resource",

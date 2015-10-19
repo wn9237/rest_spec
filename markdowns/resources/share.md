@@ -48,10 +48,10 @@ Here is a JSON representation of the resource
 |[Get share](../api/share_get.md) | [share](share.md) |Read properties and relationships of share object.|
 |[Create item](../api/share_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
 |[Update](../api/share_update.md) | [share](share.md)	|Update share object. |
-|[Delete](../api/share_delete.md) | Void	|Delete share object. |
+|[Delete](../api/share_delete.md) | None |Delete share object. |
 
-<!-- uuid: 74a3ff7f-ee38-410e-b2fd-7a938c0ba8ca
-2015-10-19 09:02:22 UTC -->
+<!-- uuid: 133eb71e-ea99-4511-ac11-ef52d1bb1ac6
+2015-10-19 09:07:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "share resource",

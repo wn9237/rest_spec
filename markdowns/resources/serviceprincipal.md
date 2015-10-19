@@ -156,13 +156,13 @@ Here is a JSON representation of the resource
 |[Create ownedObject](../api/serviceprincipal_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
 |[Create owner](../api/serviceprincipal_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[Update](../api/serviceprincipal_update.md) | [ServicePrincipal](serviceprincipal.md)	|Update ServicePrincipal object. |
-|[Delete](../api/serviceprincipal_delete.md) | Void	|Delete ServicePrincipal object. |
+|[Delete](../api/serviceprincipal_delete.md) | None |Delete ServicePrincipal object. |
 |[Checkmembergroups](../api/serviceprincipal_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String||
 |[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String||
 
-<!-- uuid: adf58d86-369d-4811-8e30-a5d911046714
-2015-10-19 09:02:22 UTC -->
+<!-- uuid: c1aff8f6-b9a9-47a5-85cd-64998c3cac40
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal resource",

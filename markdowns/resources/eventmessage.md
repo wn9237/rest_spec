@@ -133,7 +133,7 @@ Here is a JSON representation of the resource
 |[Create Attachment](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension](../api/eventmessage_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/eventmessage_update.md) | [EventMessage](eventmessage.md)	|Update EventMessage object. |
-|[Delete](../api/eventmessage_delete.md) | Void	|Delete EventMessage object. |
+|[Delete](../api/eventmessage_delete.md) | None |Delete EventMessage object. |
 |[Copy](../api/eventmessage_copy.md)|[Message](message.md)||
 |[Createforward](../api/eventmessage_createforward.md)|[Message](message.md)||
 |[Createreply](../api/eventmessage_createreply.md)|[Message](message.md)||
@@ -144,8 +144,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/eventmessage_replyall.md)|None||
 |[Send](../api/eventmessage_send.md)|None||
 
-<!-- uuid: 42d0453e-2b3a-448f-a34b-cd7f3aca7dd1
-2015-10-19 09:02:16 UTC -->
+<!-- uuid: 9c504897-b3f0-4a97-a994-566a3e59b699
+2015-10-19 09:07:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage resource",

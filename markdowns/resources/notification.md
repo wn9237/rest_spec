@@ -41,11 +41,11 @@ None
 |:---------------|:--------|:----------|
 |[Get Notification](../api/notification_get.md) | [Notification](notification.md) |Read properties and relationships of notification object.|
 |[Update](../api/notification_update.md) | [Notification](notification.md)	|Update Notification object. |
-|[Delete](../api/notification_delete.md) | Void	|Delete Notification object. |
+|[Delete](../api/notification_delete.md) | None |Delete Notification object. |
 |[Notificationtypes](../api/notification_notificationtypes.md)|String||
 
-<!-- uuid: a345a7d6-4647-4f98-9c46-90f5e3e62e14
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 076a325a-bc51-4991-b4bd-1f9890769e27
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notification resource",

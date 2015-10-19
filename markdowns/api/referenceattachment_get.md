@@ -57,8 +57,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 9e8ddd0c-e036-4f18-9760-883976e23649
-2015-10-19 09:02:22 UTC -->
+<!-- uuid: c99f4a3e-a93c-450c-bf7c-8588e207af94
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ReferenceAttachment",

@@ -45,10 +45,10 @@ None
 |:---------------|:--------|:----------|
 |[Get TaskDetails](../api/taskdetails_get.md) | [TaskDetails](taskdetails.md) |Read properties and relationships of taskDetails object.|
 |[Update](../api/taskdetails_update.md) | [TaskDetails](taskdetails.md)	|Update TaskDetails object. |
-|[Delete](../api/taskdetails_delete.md) | Void	|Delete TaskDetails object. |
+|[Delete](../api/taskdetails_delete.md) | None |Delete TaskDetails object. |
 
-<!-- uuid: 8d676191-c25f-49dc-b630-346b1eff37f5
-2015-10-19 09:02:23 UTC -->
+<!-- uuid: 6eac6942-7225-4f36-ba12-ac255460af43
+2015-10-19 09:07:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TaskDetails resource",

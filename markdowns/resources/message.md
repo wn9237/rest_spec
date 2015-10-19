@@ -126,7 +126,7 @@ Here is a JSON representation of the resource
 |[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension](../api/message_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/message_update.md) | [Message](message.md)	|Update Message object. |
-|[Delete](../api/message_delete.md) | Void	|Delete Message object. |
+|[Delete](../api/message_delete.md) | None |Delete Message object. |
 |[Copy](../api/message_copy.md)|[Message](message.md)||
 |[Createforward](../api/message_createforward.md)|[Message](message.md)||
 |[Createreply](../api/message_createreply.md)|[Message](message.md)||
@@ -137,8 +137,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/message_replyall.md)|None||
 |[Send](../api/message_send.md)|None||
 
-<!-- uuid: bedf33ed-1d5d-436b-b670-f4a68ad901b0
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: eb93a6ed-70dc-4d18-9182-3d5dd72235cd
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message resource",

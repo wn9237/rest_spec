@@ -141,10 +141,10 @@ Here is a JSON representation of the resource
 |[Get Contact](../api/contact_get.md) | [Contact](contact.md) |Read properties and relationships of contact object.|
 |[Create Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
-|[Delete](../api/contact_delete.md) | Void	|Delete Contact object. |
+|[Delete](../api/contact_delete.md) | None |Delete Contact object. |
 
-<!-- uuid: 83a7f2ed-da1e-43d0-ba20-8855e9d716a5
-2015-10-19 09:02:11 UTC -->
+<!-- uuid: f35c01d5-d69e-4103-a688-b3ff794f489b
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Contact resource",

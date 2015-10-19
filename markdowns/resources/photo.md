@@ -39,10 +39,10 @@ None
 |:---------------|:--------|:----------|
 |[Get Photo](../api/photo_get.md) | [Photo](photo.md) |Read properties and relationships of photo object.|
 |[Update](../api/photo_update.md) | [Photo](photo.md)	|Update Photo object. |
-|[Delete](../api/photo_delete.md) | Void	|Delete Photo object. |
+|[Delete](../api/photo_delete.md) | None |Delete Photo object. |
 
-<!-- uuid: e3adf629-70dc-4740-ab8c-c479039d04c0
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 6be13999-2da0-4a5f-a5d9-367cda79604e
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Photo resource",

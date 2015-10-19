@@ -137,13 +137,13 @@ Here is a JSON representation of the resource
 |[Create Extension](../api/event_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Create Event](../api/event_post_instances.md) |[Event](event.md)| Create a new Event by posting to the Instances collection.|
 |[Update](../api/event_update.md) | [Event](event.md)	|Update Event object. |
-|[Delete](../api/event_delete.md) | Void	|Delete Event object. |
+|[Delete](../api/event_delete.md) | None |Delete Event object. |
 |[Accept](../api/event_accept.md)|None||
 |[Decline](../api/event_decline.md)|None||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|None||
 
-<!-- uuid: 06a4fdb9-cc02-4237-9192-6734404317a5
-2015-10-19 09:02:15 UTC -->
+<!-- uuid: b06717eb-8796-4cc0-a05d-7b45da5b2bf2
+2015-10-19 09:07:23 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event resource",

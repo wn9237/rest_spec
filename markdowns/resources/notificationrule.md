@@ -49,11 +49,11 @@ None
 |:---------------|:--------|:----------|
 |[Get NotificationRule](../api/notificationrule_get.md) | [NotificationRule](notificationrule.md) |Read properties and relationships of notificationRule object.|
 |[Update](../api/notificationrule_update.md) | [NotificationRule](notificationrule.md)	|Update NotificationRule object. |
-|[Delete](../api/notificationrule_delete.md) | Void	|Delete NotificationRule object. |
+|[Delete](../api/notificationrule_delete.md) | None |Delete NotificationRule object. |
 |[Eventtypes](../api/notificationrule_eventtypes.md)|String||
 
-<!-- uuid: ae56c8fe-408d-456c-919d-afa51028e0d7
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 16b5432b-9f63-489a-95ce-02d66842c167
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "NotificationRule resource",

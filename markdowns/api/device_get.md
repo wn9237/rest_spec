@@ -69,8 +69,8 @@ Content-length: 732
 }
 ```
 
-<!-- uuid: 18a007a8-02bd-4e4d-8334-2d44834b1c56
-2015-10-19 09:02:12 UTC -->
+<!-- uuid: 14938a92-3312-420c-a46f-82162075fda5
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Device",

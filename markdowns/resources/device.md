@@ -86,13 +86,13 @@ Here is a JSON representation of the resource
 |[Create registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Create a new registeredOwner by posting to the registeredOwners collection.|
 |[Create registeredUser](../api/device_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
 |[Update](../api/device_update.md) | [Device](device.md)	|Update Device object. |
-|[Delete](../api/device_delete.md) | Void	|Delete Device object. |
+|[Delete](../api/device_delete.md) | None |Delete Device object. |
 |[Checkmembergroups](../api/device_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/device_getmembergroups.md)|String||
 |[Get MemberObjects](../api/device_getmemberobjects.md)|String||
 
-<!-- uuid: 672b6621-3a80-41cb-894b-90cd4eec1e37
-2015-10-19 09:02:12 UTC -->
+<!-- uuid: c6a7bfe0-1dcf-40fc-9c16-0bc1de21051e
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device resource",

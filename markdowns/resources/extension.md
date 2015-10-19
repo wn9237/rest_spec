@@ -34,10 +34,10 @@ None
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Extension](../api/extension_get.md) | [Extension](extension.md) |Read properties and relationships of extension object.|
-|[Delete](../api/extension_delete.md) | Void	|Delete Extension object. |
+|[Delete](../api/extension_delete.md) | None |Delete Extension object. |
 
-<!-- uuid: 82ee729a-5eaf-42bd-ba1d-921385bea9c2
-2015-10-19 09:02:16 UTC -->
+<!-- uuid: 37ef7215-9b2b-46df-bb9e-c110132679ed
+2015-10-19 09:07:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Extension resource",

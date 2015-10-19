@@ -127,14 +127,14 @@ Here is a JSON representation of the resource
 |[Create ExtensionProperty](../api/application_post_extensionproperties.md) |[ExtensionProperty](extensionproperty.md)| Create a new ExtensionProperty by posting to the extensionProperties collection.|
 |[Create owner](../api/application_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[Update](../api/application_update.md) | [Application](application.md)	|Update Application object. |
-|[Delete](../api/application_delete.md) | Void	|Delete Application object. |
+|[Delete](../api/application_delete.md) | None |Delete Application object. |
 |[Checkmembergroups](../api/application_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/application_getmembergroups.md)|String||
 |[Get MemberObjects](../api/application_getmemberobjects.md)|String||
 |[Restore](../api/application_restore.md)|[Application](application.md)||
 
-<!-- uuid: e821cb7a-1161-49ec-ac6a-fcefea978bf2
-2015-10-19 09:02:11 UTC -->
+<!-- uuid: 0ba244ab-02f0-4dc8-bd18-011e52066267
+2015-10-19 09:07:20 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application resource",

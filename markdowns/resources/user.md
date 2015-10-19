@@ -358,15 +358,15 @@ Here is a JSON representation of the resource
 |[Create registeredDevice](../api/user_post_registereddevices.md) |[DirectoryObject](directoryobject.md)| Create a new registeredDevice by posting to the registeredDevices collection.|
 |[Create Task](../api/user_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
 |[Update](../api/user_update.md) | [User](user.md)	|Update User object. |
-|[Delete](../api/user_delete.md) | Void	|Delete User object. |
+|[Delete](../api/user_delete.md) | None |Delete User object. |
 |[Sendmail](../api/user_sendmail.md)|None||
 |[Assignlicense](../api/user_assignlicense.md)|[User](user.md)||
 |[Checkmembergroups](../api/user_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/user_getmembergroups.md)|String||
 |[Get MemberObjects](../api/user_getmemberobjects.md)|String||
 
-<!-- uuid: 964037fe-2745-4346-90fb-f813bfe84f7d
-2015-10-19 09:02:23 UTC -->
+<!-- uuid: 197daeaf-5210-48a0-94a0-56880889e2af
+2015-10-19 09:07:27 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User resource",

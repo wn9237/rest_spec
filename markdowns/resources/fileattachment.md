@@ -51,10 +51,10 @@ None
 |:---------------|:--------|:----------|
 |[Get FileAttachment](../api/fileattachment_get.md) | [FileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
 |[Update](../api/fileattachment_update.md) | [FileAttachment](fileattachment.md)	|Update FileAttachment object. |
-|[Delete](../api/fileattachment_delete.md) | Void	|Delete FileAttachment object. |
+|[Delete](../api/fileattachment_delete.md) | None |Delete FileAttachment object. |
 
-<!-- uuid: 2e74ecf6-8eaa-4902-bddb-da9289af2fb7
-2015-10-19 09:02:16 UTC -->
+<!-- uuid: 079d3184-30fe-4992-8a47-2c1f2f14b642
+2015-10-19 09:07:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "FileAttachment resource",

@@ -68,11 +68,11 @@ Here is a JSON representation of the resource
 |[Get ConversationThread](../api/conversationthread_get.md) | [ConversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
 |[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
 |[Update](../api/conversationthread_update.md) | [ConversationThread](conversationthread.md)	|Update ConversationThread object. |
-|[Delete](../api/conversationthread_delete.md) | Void	|Delete ConversationThread object. |
+|[Delete](../api/conversationthread_delete.md) | None |Delete ConversationThread object. |
 |[Reply](../api/conversationthread_reply.md)|None||
 
-<!-- uuid: 2c482044-f2c4-4a82-8208-a06cafd0e375
-2015-10-19 09:02:12 UTC -->
+<!-- uuid: 9c95a6d4-97cf-48c9-8280-a3ebc2d9b97b
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread resource",

@@ -64,8 +64,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 878ad5fa-cae8-4ec5-9638-c885fc7a9e5f
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: f3b7b74b-8b94-4f43-abe5-b6759155e71d
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Move",

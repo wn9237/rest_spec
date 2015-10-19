@@ -39,8 +39,8 @@ Here is a JSON representation of the resource
 |Month|Int32||
 |Type|String| Possible values are: `Daily`, `Weekly`, `AbsoluteMonthly`, `RelativeMonthly`, `AbsoluteYearly`, `RelativeYearly`.|
 
-<!-- uuid: 917f1a60-c7a1-4341-a77d-be8c259bd00e
-2015-10-19 09:02:22 UTC -->
+<!-- uuid: af2f911a-a62f-4bb4-85e5-83ad02358aab
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "RecurrencePattern resource",

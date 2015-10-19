@@ -49,10 +49,10 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ItemAttachment](../api/itemattachment_get.md) | [ItemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
 |[Update](../api/itemattachment_update.md) | [ItemAttachment](itemattachment.md)	|Update ItemAttachment object. |
-|[Delete](../api/itemattachment_delete.md) | Void	|Delete ItemAttachment object. |
+|[Delete](../api/itemattachment_delete.md) | None |Delete ItemAttachment object. |
 
-<!-- uuid: ea1b5ca2-df24-4861-92b1-2ca5b1a74b8f
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: e30a49ea-f8bf-45eb-9460-207f8733c5bb
+2015-10-19 09:07:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ItemAttachment resource",

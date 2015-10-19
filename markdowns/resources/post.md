@@ -91,12 +91,12 @@ Here is a JSON representation of the resource
 |[Create Attachment](../api/post_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
 |[Create Extension](../api/post_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
 |[Update](../api/post_update.md) | [Post](post.md)	|Update Post object. |
-|[Delete](../api/post_delete.md) | Void	|Delete Post object. |
+|[Delete](../api/post_delete.md) | None |Delete Post object. |
 |[Forward](../api/post_forward.md)|None||
 |[Reply](../api/post_reply.md)|None||
 
-<!-- uuid: e279e108-614a-488d-a9c8-a890096bc38b
-2015-10-19 09:02:21 UTC -->
+<!-- uuid: 316761b8-d127-4f1c-b4d2-49a7dff5d9a4
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post resource",

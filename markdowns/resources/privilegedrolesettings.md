@@ -49,10 +49,10 @@ None
 |:---------------|:--------|:----------|
 |[Get PrivilegedRoleSettings](../api/privilegedrolesettings_get.md) | [PrivilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
 |[Update](../api/privilegedrolesettings_update.md) | [PrivilegedRoleSettings](privilegedrolesettings.md)	|Update PrivilegedRoleSettings object. |
-|[Delete](../api/privilegedrolesettings_delete.md) | Void	|Delete PrivilegedRoleSettings object. |
+|[Delete](../api/privilegedrolesettings_delete.md) | None |Delete PrivilegedRoleSettings object. |
 
-<!-- uuid: f9a118bd-d525-4280-9250-a7ce8f295dee
-2015-10-19 09:02:21 UTC -->
+<!-- uuid: 9203bf53-01a8-4358-8676-41b001b4ae60
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleSettings resource",

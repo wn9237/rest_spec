@@ -160,7 +160,7 @@ Here is a JSON representation of the resource
 |[Create thumbnailSet](../api/item_post_thumbnails.md) |[thumbnailSet](thumbnailset.md)| Create a new thumbnailSet by posting to the thumbnails collection.|
 |[Create version](../api/item_post_versions.md) |[item](item.md)| Create a new version by posting to the versions collection.|
 |[Update](../api/item_update.md) | [item](item.md)	|Update item object. |
-|[Delete](../api/item_delete.md) | Void	|Delete item object. |
+|[Delete](../api/item_delete.md) | None |Delete item object. |
 |[Allphotos](../api/item_allphotos.md)|[item](item.md)||
 |[Copy](../api/item_copy.md)|[item](item.md)||
 |[Createlink](../api/item_createlink.md)|[permission](permission.md)||
@@ -169,8 +169,8 @@ Here is a JSON representation of the resource
 |[Invite](../api/item_invite.md)|[permission](permission.md)||
 |[Search](../api/item_search.md)|[item](item.md)||
 
-<!-- uuid: 7c47496e-be2d-4d67-89ea-4ae6eef718ac
-2015-10-19 09:02:20 UTC -->
+<!-- uuid: 9117c0bc-e4d5-468c-b6e8-90e350e0de80
+2015-10-19 09:07:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item resource",

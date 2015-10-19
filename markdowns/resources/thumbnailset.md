@@ -51,10 +51,10 @@ None
 |:---------------|:--------|:----------|
 |[Get thumbnailSet](../api/thumbnailset_get.md) | [thumbnailSet](thumbnailset.md) |Read properties and relationships of thumbnailSet object.|
 |[Update](../api/thumbnailset_update.md) | [thumbnailSet](thumbnailset.md)	|Update thumbnailSet object. |
-|[Delete](../api/thumbnailset_delete.md) | Void	|Delete thumbnailSet object. |
+|[Delete](../api/thumbnailset_delete.md) | None |Delete thumbnailSet object. |
 
-<!-- uuid: 0e503914-9e47-48a8-80db-2e3fd3c21785
-2015-10-19 09:02:23 UTC -->
+<!-- uuid: b13cb5c0-8ce7-433d-948a-1ed6d26cb6f9
+2015-10-19 09:07:26 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "thumbnailSet resource",

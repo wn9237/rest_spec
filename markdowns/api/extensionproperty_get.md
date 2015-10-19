@@ -55,8 +55,8 @@ Content-length: 297
 }
 ```
 
-<!-- uuid: 4d396395-0455-467b-b6c6-ea2e039e01f8
-2015-10-19 09:02:16 UTC -->
+<!-- uuid: e41009e5-0660-46d0-bfee-f32e7a419b2e
+2015-10-19 09:07:24 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ExtensionProperty",

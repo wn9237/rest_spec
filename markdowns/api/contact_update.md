@@ -233,8 +233,8 @@ Content-length: 1977
 }
 ```
 
-<!-- uuid: d806a31d-80ab-4581-80e1-234e73ed21f8
-2015-10-19 09:02:11 UTC -->
+<!-- uuid: 260d5b76-de8c-40c8-b264-e88d6dfc07c1
+2015-10-19 09:07:21 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contact object.",

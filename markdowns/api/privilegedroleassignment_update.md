@@ -66,8 +66,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 86d46694-9420-4a99-b036-6be8e927af0d
-2015-10-19 09:02:21 UTC -->
+<!-- uuid: 0035390f-5224-4a7a-9d02-211c1fa82726
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of privilegedroleassignment object.",

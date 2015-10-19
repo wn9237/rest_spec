@@ -33,8 +33,8 @@ None
 |[List](../api/privilegedroleassignment_list.md) | [PrivilegedRoleAssignment](privilegedroleassignment.md) [] |Get privilegedRoleAssignment object collection. |
 |[Create PrivilegedRoleAssignment](../api/privilegedroleassignment_post_privilegedroleassignments.md) |[PrivilegedRoleAssignment](privilegedroleassignment.md)| Create a new PrivilegedRoleAssignment by posting to the PrivilegedRoleAssignments collection.|
 
-<!-- uuid: f45fb1b5-45c8-496c-b555-37ef33ad50ff
-2015-10-19 09:02:21 UTC -->
+<!-- uuid: 0970f20b-05b7-43e1-bda5-20f571ada2b3
+2015-10-19 09:07:25 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignments resource",

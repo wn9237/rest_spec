@@ -80,13 +80,13 @@ Here is a JSON representation of the resource
 |[Create ownedObject](../api/directoryrole_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
 |[Create owner](../api/directoryrole_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[Update](../api/directoryrole_update.md) | [DirectoryRole](directoryrole.md)	|Update DirectoryRole object. |
-|[Delete](../api/directoryrole_delete.md) | Void	|Delete DirectoryRole object. |
+|[Delete](../api/directoryrole_delete.md) | None |Delete DirectoryRole object. |
 |[Checkmembergroups](../api/directoryrole_checkmembergroups.md)|String||
 |[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String||
 
-<!-- uuid: d1b3b14b-02ea-46c3-af28-fc76d4380b4c
-2015-10-19 09:02:12 UTC -->
+<!-- uuid: 7546d85b-2d2f-4197-a7c5-4e3a7d4d7fc2
+2015-10-19 09:07:22 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole resource",
