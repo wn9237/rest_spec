@@ -47,8 +47,8 @@ None
 |[Update](../api/referenceattachment_update.md) | [ReferenceAttachment](referenceattachment.md)	|Update ReferenceAttachment object. |
 |[Delete](../api/referenceattachment_delete.md) | Void	|Delete ReferenceAttachment object. |
 
-<!-- uuid: de26ec46-338f-45f5-9ade-c9cf061f9d0d
-2015-10-18 19:39:28 UTC -->
+<!-- uuid: f7ba2ce0-9f3e-4aa5-a717-89857f7a84a6
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ReferenceAttachment resource",

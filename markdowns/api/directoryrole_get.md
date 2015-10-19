@@ -54,8 +54,8 @@ Content-length: 275
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryRole](../resources/directoryrole.md) object in the response body.
 
-<!-- uuid: 7f53c001-c5c5-4933-a68c-154c137c4d3e
-2015-10-18 19:39:25 UTC -->
+<!-- uuid: 8099f5f6-0440-4dbe-b258-6b33aae72758
+2015-10-19 08:46:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryRole",

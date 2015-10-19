@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |Pattern|[RecurrencePattern](recurrencepattern.md)||
 |Range|[RecurrenceRange](recurrencerange.md)||
 
-<!-- uuid: 34e70078-132d-44d2-9757-d5d3345b7883
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 5453b385-46fc-4204-b9c0-a4fee8e5605c
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PatternedRecurrence resource",

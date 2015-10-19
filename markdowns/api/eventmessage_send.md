@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -42,8 +42,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: 72e2a544-0cdd-42c4-8bf4-e3beeb9d3dd8
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: 5d4c262c-4b3b-4d98-8e16-b64ade63ef6a
+2015-10-19 08:46:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: Send",

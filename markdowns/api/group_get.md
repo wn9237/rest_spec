@@ -85,8 +85,8 @@ Content-length: 1009
 ```
 If successful, this method returns a `200 OK` response code and [Group](../resources/group.md) object in the response body.
 
-<!-- uuid: d37e05f2-bc5e-48cb-923d-a79844e5f1bf
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: c971729b-9f12-4660-b793-381c6572d8ad
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Group",

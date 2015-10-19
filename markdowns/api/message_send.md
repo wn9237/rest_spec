@@ -19,7 +19,7 @@ POST /users/<objectId>/Folders/<Id>/Messages/<Id>/Send
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -44,8 +44,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: 9a43efaa-fb96-4f57-a1c5-ffa41839ac01
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 467d425d-f5f0-42d3-830d-1e256c8d80ad
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message: Send",

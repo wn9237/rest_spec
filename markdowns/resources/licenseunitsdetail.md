@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |suspended|Int32||
 |warning|Int32||
 
-<!-- uuid: 99829684-f12c-490e-b2f6-699046f0029b
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 3298b6bc-3eff-482c-b9f1-1807409ce567
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "LicenseUnitsDetail resource",

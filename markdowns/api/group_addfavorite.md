@@ -19,7 +19,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/AddFavorite
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -44,8 +44,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: b157d5b5-4aa5-4fe3-aeab-21ca954a4bc5
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: cb314d08-5881-4789-bce0-4c444ca75405
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: AddFavorite",

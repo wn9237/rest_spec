@@ -17,7 +17,7 @@ POST /PrivilegedSignupStatus/<TenantId>/SkipSetup
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -42,8 +42,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: d536f93b-d8c5-47f2-ae98-c06d6cf837e3
-2015-10-18 19:39:28 UTC -->
+<!-- uuid: c382971b-a0d8-450b-935c-08d101dc1b13
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: SkipSetup",

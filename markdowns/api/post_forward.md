@@ -25,7 +25,7 @@ In the request body, provide a JSON object with the following parameters.
 |ToRecipients|Recipient||
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -64,8 +64,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: 9f950928-8bc9-4635-862e-08bc2f313f44
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 592be8db-1a71-4844-91e5-28e756f37c13
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post: Forward",

@@ -116,8 +116,8 @@ Content-length: 1942
 }
 ```
 
-<!-- uuid: 78a90752-db7d-44ca-b7c5-21a34ba1d512
-2015-10-18 19:39:29 UTC -->
+<!-- uuid: 7a560e9a-b38b-4ca8-948b-213e3b5c33e5
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ServicePrincipal",

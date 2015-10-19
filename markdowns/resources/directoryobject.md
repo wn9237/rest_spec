@@ -44,8 +44,8 @@ None
 |[Get MemberGroups](../api/directoryobject_getmembergroups.md)|String||
 |[Get MemberObjects](../api/directoryobject_getmemberobjects.md)|String||
 
-<!-- uuid: 48e7ee03-c467-4f77-ac43-f66cc90c080c
-2015-10-18 19:39:25 UTC -->
+<!-- uuid: ab77edef-1409-45e5-8127-777e96a04a33
+2015-10-19 08:46:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject resource",

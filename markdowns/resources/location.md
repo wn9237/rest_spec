@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |latitude|Double||
 |longitude|Double||
 
-<!-- uuid: e675303f-9de0-4903-ae72-d85c6fd3fad9
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: d3e8ce31-264f-49c1-b2b5-a1841af552ec
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "location resource",

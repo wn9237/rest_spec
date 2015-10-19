@@ -60,8 +60,8 @@ Content-length: 139
 ```
 If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
 
-<!-- uuid: 3952198c-613d-4a2e-a2ad-afc66314a972
-2015-10-18 19:39:29 UTC -->
+<!-- uuid: 6b124f3f-440c-4e2a-8191-9e89b0833d5e
+2015-10-19 08:46:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskDetails",

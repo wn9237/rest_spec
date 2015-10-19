@@ -53,8 +53,8 @@ Content-length: 187
 }
 ```
 
-<!-- uuid: ff604f14-3250-4c3c-b977-f8eb5bece1c4
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: 7a2f6c9f-a997-4f94-bd97-a9c8ed78fe90
+2015-10-19 08:46:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DirectoryRoleTemplate",

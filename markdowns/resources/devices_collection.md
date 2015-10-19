@@ -33,8 +33,8 @@ None
 |[List](../api/device_list.md) | [Device](device.md) [] |Get device object collection. |
 |[Create Device](../api/device_post_devices.md) |[Device](device.md)| Create a new Device by posting to the devices collection.|
 
-<!-- uuid: 42afcfd2-e77e-4a61-b135-6fa34a697b4f
-2015-10-18 19:39:24 UTC -->
+<!-- uuid: 8953ffe6-ce5a-4191-98ee-ae8a0a7ed5a1
+2015-10-19 08:46:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "devices resource",

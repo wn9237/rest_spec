@@ -33,8 +33,8 @@ None
 |[List](../api/orgcontact_list.md) | [OrgContact](orgcontact.md) [] |Get orgContact object collection. |
 |[Create OrgContact](../api/orgcontact_post_contacts.md) |[OrgContact](orgcontact.md)| Create a new OrgContact by posting to the contacts collection.|
 
-<!-- uuid: b14f33b0-82a8-437e-9995-42f067918b1a
-2015-10-18 19:39:24 UTC -->
+<!-- uuid: 1d90ad80-1a6a-406e-a407-5edeb5f4935a
+2015-10-19 08:46:43 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "contacts resource",

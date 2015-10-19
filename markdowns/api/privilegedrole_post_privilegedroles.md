@@ -50,8 +50,8 @@ Content-length: 46
 }
 ```
 
-<!-- uuid: 95f8c731-f72d-4f41-82fd-e74f09f02ae3
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 84617f9a-279e-4906-9073-23d1e1c54c0a
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedRole",

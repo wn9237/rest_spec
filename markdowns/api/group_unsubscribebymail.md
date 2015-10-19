@@ -19,7 +19,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/UnsubscribeByMail
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -44,8 +44,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: edab621e-a57d-4200-b086-ed2e76654ed7
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: 89d9e88d-031b-49f3-a2b8-578b6f6e3dd3
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: UnsubscribeByMail",

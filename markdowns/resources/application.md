@@ -133,8 +133,8 @@ Here is a JSON representation of the resource
 |[Get MemberObjects](../api/application_getmemberobjects.md)|String||
 |[Restore](../api/application_restore.md)|[Application](application.md)||
 
-<!-- uuid: 99835a9a-805f-4261-9c24-6e1850e228b8
-2015-10-18 19:39:24 UTC -->
+<!-- uuid: 116a1adb-4ad3-47af-8f82-9be9ffacd27c
+2015-10-19 08:46:43 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application resource",

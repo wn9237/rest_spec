@@ -51,8 +51,8 @@ Content-length: 111
 ```
 If successful, this method returns a `200 OK` response code and [DirectoryObject](../resources/directoryobject.md) object in the response body.
 
-<!-- uuid: bca9fa11-5b7d-4751-b23e-1a7b80431ea5
-2015-10-18 19:39:25 UTC -->
+<!-- uuid: 210af375-77f7-4a98-99d5-3b15fe89cb8f
+2015-10-19 08:46:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryObject",

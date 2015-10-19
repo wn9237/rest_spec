@@ -64,8 +64,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: 2255d35c-e00f-4eb0-8050-07439e26a517
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: e51bd85a-7e7f-4083-8feb-2f69818ba901
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder: Copy",

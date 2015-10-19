@@ -19,7 +19,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/SubscribeByMail
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -44,8 +44,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: 437e8e33-3158-48f7-9600-781a1714f4d9
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: d78ae63d-bd49-4ade-b3ff-2a9cc0072d89
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: SubscribeByMail",

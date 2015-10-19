@@ -25,7 +25,7 @@ In the request body, provide a JSON object with the following parameters.
 |SaveToSentItems|Boolean||
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -140,8 +140,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: dc5b2cb3-ce89-4933-aad4-3bde770bccf5
-2015-10-18 19:39:29 UTC -->
+<!-- uuid: 5aec42aa-811b-4f21-9ada-bcfa30be6ee6
+2015-10-19 08:46:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: SendMail",

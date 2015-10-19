@@ -193,8 +193,8 @@ Content-length: 3050
 ```
 If successful, this method returns a `200 OK` response code and [item](../resources/item.md) object in the response body.
 
-<!-- uuid: a49c7fa6-f82b-4d9a-a651-1e63d75830f3
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: 3a3318aa-839d-461f-a338-ba15c42321ad
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get item",

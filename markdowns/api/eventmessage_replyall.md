@@ -22,7 +22,7 @@ In the request body, provide a JSON object with the following parameters.
 |Comment|String||
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -53,8 +53,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: dcf8c9d2-cbd8-401d-8c13-74fe0c0db64d
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: dbc0c822-3ff3-4db6-aec3-4c9ae2f56c5f
+2015-10-19 08:46:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage: ReplyAll",

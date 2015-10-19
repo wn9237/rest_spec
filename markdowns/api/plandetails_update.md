@@ -64,8 +64,8 @@ Content-length: 75
 }
 ```
 
-<!-- uuid: 0905d762-2ae6-4396-be6f-8f8cf1e9c28b
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 64767053-8d38-4ef6-8b4a-10327cf3dca4
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of plandetails object.",

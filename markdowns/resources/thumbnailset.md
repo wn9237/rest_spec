@@ -53,8 +53,8 @@ None
 |[Update](../api/thumbnailset_update.md) | [thumbnailSet](thumbnailset.md)	|Update thumbnailSet object. |
 |[Delete](../api/thumbnailset_delete.md) | Void	|Delete thumbnailSet object. |
 
-<!-- uuid: cf7a867b-86a3-46c8-8b33-e554f4bce0b4
-2015-10-18 19:39:29 UTC -->
+<!-- uuid: 480c29bd-caf3-4405-80f6-d2c8228dce7d
+2015-10-19 08:46:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "thumbnailSet resource",

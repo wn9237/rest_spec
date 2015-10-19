@@ -64,8 +64,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: 23ff2431-925d-4d10-9d07-ee8573956f6f
-2015-10-18 19:39:29 UTC -->
+<!-- uuid: 9691c99c-4fa6-4edd-b587-810db5ceaef8
+2015-10-19 08:46:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SubscribedSku",

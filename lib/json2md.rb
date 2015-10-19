@@ -226,7 +226,7 @@ module SpecMaker
 		if method[:returnType].to_s.empty?
 			method[:returnType] = 'None'
 		end 
-		if SIMPLETYPES.include? method[:returnType] 
+		if SIMPLETYPES.include? method[:returnType] || method[:returnType] == 'None'
 			dataTypePlusLink = method[:returnType]
 		else	
 			dataTypePlusLink = "[" + method[:returnType] + "](" + method[:returnType].downcase + ".md)"

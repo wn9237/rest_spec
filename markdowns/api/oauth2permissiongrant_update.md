@@ -77,8 +77,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: bf940682-cf3f-4964-8067-9211557174cf
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 1ed89021-3976-4b40-a57d-1b42c51ca6bf
+2015-10-19 08:46:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of oauth2permissiongrant object.",

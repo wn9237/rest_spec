@@ -33,8 +33,8 @@ None
 |[List](../api/privilegedsecurityalert_list.md) | [PrivilegedSecurityAlert](privilegedsecurityalert.md) [] |Get privilegedSecurityAlert object collection. |
 |[Create PrivilegedSecurityAlert](../api/privilegedsecurityalert_post_privilegedsecurityalerts.md) |[PrivilegedSecurityAlert](privilegedsecurityalert.md)| Create a new PrivilegedSecurityAlert by posting to the PrivilegedSecurityAlerts collection.|
 
-<!-- uuid: 2cd83a12-8710-4139-a6ca-356d2fff1fd2
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 32e29bf8-fe07-47cf-961d-cb4ea3f22d55
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSecurityAlerts resource",

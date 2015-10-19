@@ -17,7 +17,7 @@ POST /PrivilegedSignupStatus/<TenantId>/CompleteSetup
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -42,8 +42,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: 37f162a4-f2e3-4e07-8e07-d6ca103a3273
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 177b4081-ce7d-4ff3-ae54-a4b2e0cfd915
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus: CompleteSetup",

@@ -33,8 +33,8 @@ None
 |[List](../api/group_list.md) | [Group](group.md) [] |Get group object collection. |
 |[Create Group](../api/group_post_groups.md) |[Group](group.md)| Create a new Group by posting to the groups collection.|
 
-<!-- uuid: 943bbebe-fd59-453b-b5dd-2e88cce15658
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: 8fd9e2f8-2af9-4c39-9d84-49fa251dfd4f
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "groups resource",

@@ -365,8 +365,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/user_getmembergroups.md)|String||
 |[Get MemberObjects](../api/user_getmemberobjects.md)|String||
 
-<!-- uuid: 6febf42a-afba-418c-a089-30d78fea8228
-2015-10-18 19:39:29 UTC -->
+<!-- uuid: 79265155-1158-4c87-9457-49fa2cb1753d
+2015-10-19 08:46:51 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User resource",

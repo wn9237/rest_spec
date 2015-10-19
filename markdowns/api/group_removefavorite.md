@@ -19,7 +19,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/RemoveFavorite
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -44,8 +44,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: efa3be96-99de-40be-a010-19c39ffb4bba
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: 5139c11f-910c-4055-b45a-05b540e9b281
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: RemoveFavorite",

@@ -24,7 +24,7 @@ In the request body, provide a JSON object with the following parameters.
 |Post|Post||
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -103,8 +103,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: 625d86d7-a578-4b21-8069-16a1afb41714
-2015-10-18 19:39:24 UTC -->
+<!-- uuid: d80163b4-ea0b-46f4-a58c-53f0e187b8d3
+2015-10-19 08:46:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread: Reply",

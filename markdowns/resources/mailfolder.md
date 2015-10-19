@@ -60,8 +60,8 @@ Here is a JSON representation of the resource
 |[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
 |[Move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||
 
-<!-- uuid: 24f00705-1c64-4335-af11-d148be9818c3
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: 476e9a86-bc3c-44d6-b0db-9c8a54713870
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "MailFolder resource",

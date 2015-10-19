@@ -126,8 +126,8 @@ Content-length: 2150
 ```
 If successful, this method returns a `200 OK` response code and [Application](../resources/application.md) object in the response body.
 
-<!-- uuid: c04d1e29-849c-4dc0-8672-8bdd00d6b637
-2015-10-18 19:39:24 UTC -->
+<!-- uuid: b41c88b5-1e5b-4cd1-9be5-8865ad04a92b
+2015-10-19 08:46:43 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Application",

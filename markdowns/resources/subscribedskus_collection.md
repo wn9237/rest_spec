@@ -33,8 +33,8 @@ None
 |[List](../api/subscribedsku_list.md) | [SubscribedSku](subscribedsku.md) [] |Get subscribedSku object collection. |
 |[Create SubscribedSku](../api/subscribedsku_post_subscribedskus.md) |[SubscribedSku](subscribedsku.md)| Create a new SubscribedSku by posting to the subscribedSkus collection.|
 
-<!-- uuid: 35e11200-d850-4c1c-82f1-e2596c823fe0
-2015-10-18 19:39:29 UTC -->
+<!-- uuid: 174e2b11-b96e-4510-a1ec-e2728919e90a
+2015-10-19 08:46:50 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "subscribedSkus resource",

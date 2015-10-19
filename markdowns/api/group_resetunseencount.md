@@ -19,7 +19,7 @@ POST /drive/root/createdByUser/JoinedGroups/<objectId>/ResetUnseenCount
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -44,8 +44,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: 22247665-de21-4554-85a4-7a2378d6f421
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: d5ad48e4-c717-4dbd-bd38-c53b4ca9287f
+2015-10-19 08:46:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group: ResetUnseenCount",

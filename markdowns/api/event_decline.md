@@ -25,7 +25,7 @@ In the request body, provide a JSON object with the following parameters.
 |SendResponse|Boolean||
 
 ### Response
-If successful, this method returns `200, OK` response code and [None](../resources/none.md) object in the response body.
+If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -57,8 +57,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: 6a28e350-0230-4387-9c21-75cedea3eb9d
-2015-10-18 19:39:26 UTC -->
+<!-- uuid: 6493ef19-3ab3-4ac1-9a56-ca96686a99bc
+2015-10-19 08:46:45 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event: Decline",

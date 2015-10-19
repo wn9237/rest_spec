@@ -91,8 +91,8 @@ Content-length: 762
 ```
 If successful, this method returns a `200 OK` response code and [permission](../resources/permission.md) object in the response body.
 
-<!-- uuid: aeb149fd-0b6c-4ccc-a66c-249ea9d18856
-2015-10-18 19:39:27 UTC -->
+<!-- uuid: bd53c9ae-7587-44fc-9ca8-13b5bfd9ac94
+2015-10-19 08:46:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get permission",
