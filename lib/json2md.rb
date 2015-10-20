@@ -449,7 +449,7 @@ module SpecMaker
 				end
 				if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["expandable"]
 				else
-					getMethodLines.push QRY_EXPAND + NEWLINE + "See relationships table of [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object for supported names. |" + NEWLINE
+					getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object for supported names. |" + NEWLINE
 				end			
 				if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["selectable"]
 				else
