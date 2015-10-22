@@ -51,7 +51,7 @@ Content-length: 790
     "ContentType": "ContentType-value",
     "Content": "Content-value"
   },
-  "DateTimeReceived": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
   "HasAttachments": true,
   "From": {
     "EmailAddress": {
@@ -79,14 +79,14 @@ Content-length: 790
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 2c4249d0-bac1-4d61-91ab-0ff94481de6c
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Post",

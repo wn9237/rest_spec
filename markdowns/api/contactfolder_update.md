@@ -62,8 +62,8 @@ Content-length: 104
 }
 ```
 
-<!-- uuid: 8c1f01a5-a774-4264-96a2-5e5d15bd6795
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contactfolder object.",

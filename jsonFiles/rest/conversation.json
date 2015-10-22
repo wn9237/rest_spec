@@ -75,7 +75,7 @@
       "isUnicode": null
     },
     {
-      "name": "DateTimeLastDelivered",
+      "name": "LastDeliveredDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",

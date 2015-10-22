@@ -328,87 +328,154 @@
       }
     }
   },
-  "RoleSummaryStatus": {
-    "isExclusive": true,
+  "DisplaySettings": {
+    "isExclusive": false,
     "options": {
-      "Ok": {
+      "None": {
         "value": "0",
         "description": ""
       },
-      "Bad": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "AlertSeverity": {
-    "isExclusive": true,
-    "options": {
-      "Vulnerability": {
+      "Today": {
         "value": "1",
         "description": ""
       },
-      "AttackSuspect": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "AlertType": {
-    "isExclusive": true,
-    "options": {
-      "High": {
-        "value": "1",
-        "description": ""
-      },
-      "Medium": {
+      "TimeScale": {
         "value": "2",
         "description": ""
       },
-      "Low": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "AlertStatus": {
-    "isExclusive": true,
-    "options": {
-      "Active": {
-        "value": "0",
-        "description": ""
-      },
-      "Dismissed": {
-        "value": "1",
-        "description": ""
-      },
-      "Inactive": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "SetupStatus": {
-    "isExclusive": true,
-    "options": {
-      "Unknown": {
-        "value": "0",
-        "description": ""
-      },
-      "NotRegisteredYet": {
-        "value": "1",
-        "description": ""
-      },
-      "RegisteredSetupNotStarted": {
-        "value": "2",
-        "description": ""
-      },
-      "RegisteredSetupInProgress": {
-        "value": "3",
-        "description": ""
-      },
-      "RegistrationAndSetupCompleted": {
+      "TaskDate": {
         "value": "4",
+        "description": ""
+      },
+      "All": {
+        "value": "7",
+        "description": ""
+      }
+    }
+  },
+  "DrawingStyle": {
+    "isExclusive": true,
+    "options": {
+      "Bar": {
+        "value": "0",
+        "description": ""
+      },
+      "Callout": {
+        "value": "1",
+        "description": ""
+      }
+    }
+  },
+  "AnchorPosition": {
+    "isExclusive": true,
+    "options": {
+      "Top": {
+        "value": "0",
+        "description": ""
+      },
+      "Bottom": {
+        "value": "1",
+        "description": ""
+      }
+    }
+  },
+  "TaskBoardType": {
+    "isExclusive": true,
+    "options": {
+      "Status": {
+        "value": "0",
+        "description": ""
+      },
+      "AssignedTo": {
+        "value": "1",
+        "description": ""
+      },
+      "Bucket": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "PreviewType": {
+    "isExclusive": true,
+    "options": {
+      "Automatic": {
+        "value": "0",
+        "description": ""
+      },
+      "NoPreview": {
+        "value": "1",
+        "description": ""
+      },
+      "CheckList": {
+        "value": "2",
+        "description": ""
+      },
+      "Notes": {
+        "value": "3",
+        "description": ""
+      },
+      "Reference": {
+        "value": "4",
+        "description": ""
+      }
+    }
+  },
+  "PatchInsertPosition": {
+    "isExclusive": true,
+    "options": {
+      "After": {
+        "value": "0",
+        "description": ""
+      },
+      "Before": {
+        "value": "1",
+        "description": ""
+      }
+    }
+  },
+  "PatchActionType": {
+    "isExclusive": true,
+    "options": {
+      "Replace": {
+        "value": "0",
+        "description": ""
+      },
+      "Append": {
+        "value": "1",
+        "description": ""
+      },
+      "Delete": {
+        "value": "2",
+        "description": ""
+      },
+      "Insert": {
+        "value": "3",
+        "description": ""
+      },
+      "Prepend": {
+        "value": "4",
+        "description": ""
+      }
+    }
+  },
+  "UserRole": {
+    "isExclusive": true,
+    "options": {
+      "Owner": {
+        "value": "0",
+        "description": ""
+      },
+      "Contributor": {
+        "value": "1",
+        "description": ""
+      },
+      "Reader": {
+        "value": "2",
+        "description": ""
+      },
+      "None": {
+        "value": "-1",
         "description": ""
       }
     }

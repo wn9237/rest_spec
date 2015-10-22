@@ -25,12 +25,12 @@ In the request body, supply the values for relevant fields that should be update
 |ChangeKey|String||
 |ConversationId|String||
 |ConversationThreadId|String||
-|DateTimeCreated|DateTimeOffset||
-|DateTimeLastModified|DateTimeOffset||
-|DateTimeReceived|DateTimeOffset||
+|CreatedDateTime|DateTimeOffset||
 |From|Recipient||
 |HasAttachments|Boolean||
+|LastModifiedDateTime|DateTimeOffset||
 |NewParticipants|Recipient||
+|ReceivedDateTime|DateTimeOffset||
 |Sender|Recipient||
 
 ### Response
@@ -52,7 +52,7 @@ Content-length: 790
     "ContentType": "ContentType-value",
     "Content": "Content-value"
   },
-  "DateTimeReceived": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
   "HasAttachments": true,
   "From": {
     "EmailAddress": {
@@ -80,8 +80,8 @@ Content-length: 790
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
@@ -102,7 +102,7 @@ Content-length: 790
     "ContentType": "ContentType-value",
     "Content": "Content-value"
   },
-  "DateTimeReceived": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
   "HasAttachments": true,
   "From": {
     "EmailAddress": {
@@ -130,14 +130,14 @@ Content-length: 790
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 3984bd9e-3561-4d09-94d6-a945d9980b43
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of post object.",

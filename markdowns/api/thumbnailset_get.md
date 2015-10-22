@@ -14,8 +14,7 @@ GET /drives/<id>/root/thumbnails/<id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [thumbnailSet](../resources/thumbnailset.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [thumbnailSet](../resources/thumbnailset.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -78,8 +77,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: 07863c2a-bf2a-40d6-add3-cd274f9bf5ef
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get thumbnailSet",

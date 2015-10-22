@@ -20,8 +20,8 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |Categories|String||
 |ChangeKey|String||
-|DateTimeCreated|DateTimeOffset||
-|DateTimeLastModified|DateTimeOffset||
+|CreatedDateTime|DateTimeOffset||
+|LastModifiedDateTime|DateTimeOffset||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [OutlookItem](../resources/outlookitem.md) object in the response body.
@@ -42,8 +42,8 @@ Content-length: 185
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
@@ -64,14 +64,14 @@ Content-length: 185
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 94b67ae1-856c-4dc5-ba37-082c59642a11
-2015-10-19 10:21:30 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of outlookitem object.",

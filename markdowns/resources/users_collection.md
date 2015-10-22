@@ -16,8 +16,8 @@ None
 |[List](../api/user_list.md) | [User](user.md) collection |Get user object collection. |
 |[Create User](../api/user_post_users.md) |[User](user.md)| Create a new User by posting to the users collection.|
 
-<!-- uuid: 55e59dd0-4b1f-408c-b241-f5481a50e26b
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "users resource",

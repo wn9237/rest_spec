@@ -104,8 +104,8 @@ Content-length: 1647
 }
 ```
 
-<!-- uuid: 15b426b2-1120-4566-9af9-5ac47892e6df
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TenantDetail",

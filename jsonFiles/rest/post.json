@@ -81,7 +81,7 @@
       "isUnicode": null
     },
     {
-      "name": "DateTimeReceived",
+      "name": "ReceivedDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -207,7 +207,7 @@
       "isUnicode": false
     },
     {
-      "name": "DateTimeCreated",
+      "name": "CreatedDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -221,7 +221,7 @@
       "isUnicode": null
     },
     {
-      "name": "DateTimeLastModified",
+      "name": "LastModifiedDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",

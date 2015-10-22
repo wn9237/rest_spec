@@ -19,6 +19,7 @@ Here is a JSON representation of the resource
     "Threads",
     "appRoleAssignments",
     "createdOnBehalfOf",
+    "details",
     "drive",
     "memberOf",
     "members",
@@ -87,6 +88,9 @@ Here is a JSON representation of the resource
   ],
   "deletionTimestamp": "String (timestamp)",
   "description": "String-value",
+  "details": {
+    "@odata.type": "microsoft.graph.userdetails"
+  },
   "dirSyncEnabled": true,
   "displayName": "String-value",
   "drive": {
@@ -181,6 +185,7 @@ Here is a JSON representation of the resource
 |Threads|[ConversationThread](conversationthread.md) collection| Read-only. Nullable.|
 |appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection|Contains the set of applications that a group is assigned to.                            **Notes**: Requires version 1.5 or newer.             Read-only. Nullable.|
 |createdOnBehalfOf|[DirectoryObject](directoryobject.md)| Read-only.|
+|details|[UserDetails](userdetails.md)| Read-only.|
 |drive|[drive](drive.md)| Read-only.|
 |memberOf|[DirectoryObject](directoryobject.md) collection|Groups that this group is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups)  Read-only. Nullable.|
 |members|[DirectoryObject](directoryobject.md) collection|Users, contacts, and groups that are members of this group. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
@@ -216,8 +221,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/group_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/group_getmemberobjects.md)|String collection||
 
-<!-- uuid: f0b48672-1aca-4297-aa64-47bafabe3413
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Group resource",
