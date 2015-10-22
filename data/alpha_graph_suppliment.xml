@@ -80,14 +80,14 @@
       <Annotations Target="Microsoft.Graph.Application/samlMetadataUrl">
         <Annotation Term="Core.Description" String="The URL to the SAML metadata for the application." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.DirectoryObject/objectType">
-        <Annotation Term="Core.Description" String="A string that identifies the object type. For users the value is always “User”. Inherited from [DirectoryObject]." />
+      <Annotations Target="Microsoft.Graph.Application/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For applications the value is always &quot;Application&quot;. Inherited from [DirectoryObject]." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.DirectoryObject/objectId">
-        <Annotation Term="Core.Description" String="The unique identifier for the user. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      <Annotations Target="Microsoft.Graph.Application/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the application. Inherited from [DirectoryObject].                              **Notes: **                **key**, immutable, not nullable, unique" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.DirectoryObject/deletionTimestamp">
-        <Annotation Term="Core.Description" String="This property is not valid for users and always returns **null**. Inherited from [DirectoryObject].                            **Notes**: Requires version 1.5 or newer.            " />
+      <Annotations Target="Microsoft.Graph.Application/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Application/extensionProperties">
         <Annotation Term="Core.Description" String="The extension properties associated with the application. Requires 1.5 or newer." />
@@ -143,6 +143,15 @@
       <Annotations Target="Microsoft.Graph.AppRoleAssignment/resourceId">
         <Annotation Term="Core.Description" String="The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made." />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.AppRoleAssignment/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For application role assignments the value is always “AppRoleAssignment”. Inherited from [DirectoryObject]." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.AppRoleAssignment/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the application role assignment. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.AppRoleAssignment/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.AssignedLicense">
         <Annotation Term="Core.Description" String="Represents a license assigned to a user. The **assignedLicenses** property of the [User] entity is a collection of **AssignedLicense**.&#xD;" />
       </Annotations>
@@ -185,7 +194,7 @@
       <Annotations Target="Microsoft.Graph.Attachment/DateTimeLastModified">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Entity/Id">
+      <Annotations Target="Microsoft.Graph.Attachment/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Attendee">
@@ -263,6 +272,9 @@
       <Annotations Target="Microsoft.Graph.Calendar/Color">
         <Annotation Term="Core.Description" String="Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1 " />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.Calendar/Id">
+        <Annotation Term="Core.Description" String="The group's unique identifier." />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.Calendar/CalendarView">
         <Annotation Term="Core.Description" String="The calendar view for the calendar. Navigation property." />
       </Annotations>
@@ -280,6 +292,9 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.CalendarGroup/ClassId">
         <Annotation Term="Core.Description" String="The class identifier." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CalendarGroup/Id">
+        <Annotation Term="Core.Description" String="The group's unique identifier." />
       </Annotations>
       <Annotations Target="Microsoft.Graph.CalendarGroup/Calendars">
         <Annotation Term="Core.Description" String="The calendars in the calendar group. Navigation property." />
@@ -392,17 +407,20 @@
       <Annotations Target="Microsoft.Graph.Contact/Children">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.OutlookItem/ChangeKey">
-        <Annotation Term="Core.Description" String="" />
+      <Annotations Target="Microsoft.Graph.Contact/ChangeKey">
+        <Annotation Term="Core.Description" String="Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.OutlookItem/Categories">
-        <Annotation Term="Core.Description" String="" />
+      <Annotations Target="Microsoft.Graph.Contact/Categories">
+        <Annotation Term="Core.Description" String="The categories associated with the contact." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.OutlookItem/DateTimeCreated">
-        <Annotation Term="Core.Description" String="" />
+      <Annotations Target="Microsoft.Graph.Contact/DateTimeCreated">
+        <Annotation Term="Core.Description" String="The time the contact was created." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.OutlookItem/DateTimeLastModified">
-        <Annotation Term="Core.Description" String="" />
+      <Annotations Target="Microsoft.Graph.Contact/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="The time the contact was modified." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Contact/Id">
+        <Annotation Term="Core.Description" String="The contact's unique identifier." />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Contact/ContactPhoto">
         <Annotation Term="Core.Description" String="" />
@@ -418,6 +436,9 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.ContactFolder/DisplayName">
         <Annotation Term="Core.Description" String="The folder's display name." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ContactFolder/Id">
+        <Annotation Term="Core.Description" String="Unique identifier of the contact folder." />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ContactFolder/Contacts">
         <Annotation Term="Core.Description" String="The contacts in the folder. Navigation property." />
@@ -442,6 +463,9 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.Conversation/Preview">
         <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Conversation/Id">
+        <Annotation Term="Core.Description" String="The group's unique identifier." />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Conversation/Threads">
         <Annotation Term="Core.Description" String="A collection of all the conversation threads in the conversation. A navigation property." />
@@ -471,6 +495,9 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ConversationThread/IsLocked">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ConversationThread/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ConversationThread/Posts">
@@ -524,6 +551,15 @@
       <Annotations Target="Microsoft.Graph.Device/lastDirSyncTime">
         <Annotation Term="Core.Description" String="The last time at which the object was synced with the on-premises directory." />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.Device/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject]" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Device/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the device. Inherited from [DirectoryObject].                            **Notes: key**, immutable, not nullable, unique            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Device/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.Device/registeredOwners">
         <Annotation Term="Core.Description" String="Users that are registered owners of the device." />
       </Annotations>
@@ -543,6 +579,15 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.DeviceConfiguration/maximumRegistrationInactivityPeriod">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DeviceConfiguration/objectType">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DeviceConfiguration/objectId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DeviceConfiguration/deletionTimestamp">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.DirectoryLinkChange">
@@ -569,8 +614,26 @@
       <Annotations Target="Microsoft.Graph.DirectoryLinkChange/targetObjectUri">
         <Annotation Term="Core.Description" String="The URI for the target object; for example, `“https://graph.windows.net/contoso.com/users/dca803ab-bf26-4753-bf20-e1c56a9c34e2”`." />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryLinkChange/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For **DirectoryLinkChange** objects, the value is always “DirectoryLinkChange”. [DirectoryObject]" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryLinkChange/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the directory link change object. For **DirectoryLinkChange** objects, the value is always 00000000-0000-0000-0000-000000000000. Inherited from [DirectoryObject].                            **Note: key** immutable, not nullable, unique            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryLinkChange/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.DirectoryObject">
         <Annotation Term="Core.Description" String="Represents an Azure Active Directory object. The **DirectoryObject** type is the base type for most of the other directory entity types.&#xD;" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryObject/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For example, for groups the value is always “Group”." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryObject/objectId">
+        <Annotation Term="Core.Description" String="A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde.                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryObject/deletionTimestamp">
+        <Annotation Term="Core.Description" String="The time at which the directory object was deleted. It only applies to those directory objects which can be restored. Currently it is only supported for deleted [Application] objects; all other entities return **null** for this property.                            **Notes**: Requires version 1.5 or newer.            " />
       </Annotations>
       <Annotations Target="Microsoft.Graph.DirectoryRole">
         <Annotation Term="Core.Description" String="Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning administrator roles in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).&#xD;" />
@@ -589,6 +652,15 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.DirectoryRole/roleTemplateId">
         <Annotation Term="Core.Description" String="                The **objectId** of the [DirectoryRoleTemplate] that this role is based on.                                        **Notes**: In versions prior to version 1.5, the property is read only. In version 1.5 and later, the property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryRole/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For directory roles the value is always “DirectoryRole”. Inherited from [DirectoryObject].                            **Note**: In versions prior to 1.5, the value will be “Role”.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryRole/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the directory role. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryRole/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.DirectoryRole/members">
         <Annotation Term="Core.Description" String="Users and service principals that are members of this directory role. Inherited from [DirectoryObject].            HTTP Methods: GET, POST, DELETE" />
@@ -610,6 +682,15 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.DirectoryRoleTemplate/displayName">
         <Annotation Term="Core.Description" String="The display name to set for the directory role." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryRoleTemplate/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For role templates the value is always “RoleTemplate”. Inherited from [DirectoryObject]." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryRoleTemplate/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the template. Inherited from [DirectoryObject]. In version 1.5 and later, you specify the **objectId** of the directory role template for the **roleTemplateId** property in the POST request activate a [DirectoryRole] in a tenant.                             **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.DirectoryRoleTemplate/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.drive">
         <Annotation Term="Core.Description" String="The Drive resource represents a drive in OneDrive.&#xD; It provides information about the owner of the drive, total and available&#xD; storage space, and exposes a collection of all the [Items][item-resource] contained&#xD; within the drive.&#xD; &#xD; " />
@@ -648,6 +729,9 @@
         <Annotation Term="Core.Description" String="The email address of the person or entity." />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Entity">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Entity/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Event">
@@ -728,6 +812,21 @@
       <Annotations Target="Microsoft.Graph.Event/OriginalStart">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.Event/ChangeKey">
+        <Annotation Term="Core.Description" String="Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Event/Categories">
+        <Annotation Term="Core.Description" String="The categories associated with the event." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Event/DateTimeCreated">
+        <Annotation Term="Core.Description" String="The date and time that the event was created." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Event/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="The date and time that the event was last modified." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Event/Id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.Event/Attachments">
         <Annotation Term="Core.Description" String="The collection of [FileAttachment](#FileAttachmentResource) and [ItemAttachment](#FileAttachmentResource) attachments for the event. Navigation property." />
       </Annotations>
@@ -743,82 +842,100 @@
       <Annotations Target="Microsoft.Graph.EventMessage">
         <Annotation Term="Core.Description" String="A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/Subject">
+      <Annotations Target="Microsoft.Graph.EventMessage/Subject">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/Body">
+      <Annotations Target="Microsoft.Graph.EventMessage/Body">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/BodyPreview">
+      <Annotations Target="Microsoft.Graph.EventMessage/BodyPreview">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/Importance">
+      <Annotations Target="Microsoft.Graph.EventMessage/Importance">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/HasAttachments">
+      <Annotations Target="Microsoft.Graph.EventMessage/HasAttachments">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/ParentFolderId">
+      <Annotations Target="Microsoft.Graph.EventMessage/ParentFolderId">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/From">
+      <Annotations Target="Microsoft.Graph.EventMessage/From">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/Sender">
+      <Annotations Target="Microsoft.Graph.EventMessage/Sender">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/ToRecipients">
+      <Annotations Target="Microsoft.Graph.EventMessage/ToRecipients">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/CcRecipients">
+      <Annotations Target="Microsoft.Graph.EventMessage/CcRecipients">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/BccRecipients">
+      <Annotations Target="Microsoft.Graph.EventMessage/BccRecipients">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/ReplyTo">
+      <Annotations Target="Microsoft.Graph.EventMessage/ReplyTo">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/ConversationId">
+      <Annotations Target="Microsoft.Graph.EventMessage/ConversationId">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/UniqueBody">
+      <Annotations Target="Microsoft.Graph.EventMessage/UniqueBody">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/DateTimeReceived">
+      <Annotations Target="Microsoft.Graph.EventMessage/DateTimeReceived">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/DateTimeSent">
+      <Annotations Target="Microsoft.Graph.EventMessage/DateTimeSent">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/IsDeliveryReceiptRequested">
+      <Annotations Target="Microsoft.Graph.EventMessage/IsDeliveryReceiptRequested">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/IsReadReceiptRequested">
+      <Annotations Target="Microsoft.Graph.EventMessage/IsReadReceiptRequested">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/IsDraft">
+      <Annotations Target="Microsoft.Graph.EventMessage/IsDraft">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/IsRead">
+      <Annotations Target="Microsoft.Graph.EventMessage/IsRead">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/WebLink">
+      <Annotations Target="Microsoft.Graph.EventMessage/WebLink">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.EventMessage/ChangeKey">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.EventMessage/Categories">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.EventMessage/DateTimeCreated">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.EventMessage/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.EventMessage/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.EventMessage/MeetingMessageType">
         <Annotation Term="Core.Description" String=" The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 " />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/Attachments">
+      <Annotations Target="Microsoft.Graph.EventMessage/Attachments">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/Extensions">
+      <Annotations Target="Microsoft.Graph.EventMessage/Extensions">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.EventMessage/Event">
         <Annotation Term="Core.Description" String=" The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property. " />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Extension">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Extension/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ExtensionProperty">
@@ -839,6 +956,15 @@
       <Annotations Target="Microsoft.Graph.ExtensionProperty/targetObjects">
         <Annotation Term="Core.Description" String="The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “TenantDetail”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.            " />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.ExtensionProperty/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For extension properties the value is always “ExtensionProperty”. Inherited from [DirectoryObject]." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExtensionProperty/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the permission scope. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExtensionProperty/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.ExternalReferenceCollection">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
@@ -855,6 +981,24 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.FileAttachment/ContentBytes">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.FileAttachment/Name">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.FileAttachment/ContentType">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.FileAttachment/Size">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.FileAttachment/IsInline">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.FileAttachment/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.FileAttachment/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.fileSystemInfo">
@@ -954,6 +1098,15 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Group/UnseenCount">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Group/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For groups the value is always “Group”. Inherited from [DirectoryObject]." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Group/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the group. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Group/deletionTimestamp">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Group/appRoleAssignments">
@@ -1148,6 +1301,24 @@
       <Annotations Target="Microsoft.Graph.ItemAttachment">
         <Annotation Term="Core.Description" String="A message or event that's attached to another message or event." />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.ItemAttachment/Name">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ItemAttachment/ContentType">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ItemAttachment/Size">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ItemAttachment/IsInline">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ItemAttachment/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ItemAttachment/Id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.ItemAttachment/Item">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
@@ -1232,6 +1403,9 @@
       <Annotations Target="Microsoft.Graph.MailFolder/ChildFolderCount">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.MailFolder/Id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.MailFolder/ChildFolders">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
@@ -1240,6 +1414,90 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.Message">
         <Annotation Term="Core.Description" String="A message in a mailbox folder." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/Subject">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/Body">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/BodyPreview">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/Importance">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/HasAttachments">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/ParentFolderId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/From">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/Sender">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/ToRecipients">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/CcRecipients">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/BccRecipients">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/ReplyTo">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/ConversationId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/UniqueBody">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/DateTimeReceived">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/DateTimeSent">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/IsDeliveryReceiptRequested">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/IsReadReceiptRequested">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/IsDraft">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/IsRead">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/WebLink">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/ChangeKey">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/Categories">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/DateTimeCreated">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/Id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/Attachments">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Message/Extensions">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Notification">
         <Annotation Term="Core.Description" String="" />
@@ -1338,6 +1596,9 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.OpenTypeExtension">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.OpenTypeExtension/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.OpenTypeExtension/ExtensionName">
@@ -1439,6 +1700,15 @@
       <Annotations Target="Microsoft.Graph.OrgContact/thumbnailPhoto">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.OrgContact/objectType">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.OrgContact/objectId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.OrgContact/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.OrgContact/manager">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
@@ -1449,6 +1719,21 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.OutlookItem">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.OutlookItem/ChangeKey">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.OutlookItem/Categories">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.OutlookItem/DateTimeCreated">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.OutlookItem/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.OutlookItem/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.PasswordCredential">
@@ -1518,6 +1803,9 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Photo/Height">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Photo/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.PhysicalAddress">
@@ -1605,6 +1893,21 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Post/NewParticipants">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Post/ChangeKey">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Post/Categories">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Post/DateTimeCreated">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Post/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Post/Id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Post/Attachments">
@@ -1919,6 +2222,24 @@
       <Annotations Target="Microsoft.Graph.ReferenceAttachment">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.ReferenceAttachment/Name">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ReferenceAttachment/ContentType">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ReferenceAttachment/Size">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ReferenceAttachment/IsInline">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ReferenceAttachment/DateTimeLastModified">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ReferenceAttachment/Id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.RequiredResourceAccess">
         <Annotation Term="Core.Description" String="Specifies the set of OAuth 2.0 permission scopes and app roles under the specified resource that an application requires access to. The specified OAuth 2.0 permission scopes may be requested by client applications (through the **requiredResourceAccess** collection) when calling a resource application. The **requiredResourceAccess** property of the [Application] entity is a collection of **ReqiredResourceAccess**.&#xD;" />
       </Annotations>
@@ -2020,6 +2341,15 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.ServicePrincipal/tags">
         <Annotation Term="Core.Description" String="                                        **Notes**: not nullable.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ServicePrincipal/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For service principals the value is always “ServicePrincipal”. Inherited from [DirectoryObject]." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ServicePrincipal/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the service principal. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ServicePrincipal/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ServicePrincipal/appRoleAssignedTo">
         <Annotation Term="Core.Description" String="Principals (users, groups, and service principals) that are assigned to this service principal. Requires version 1.5 or newer." />
@@ -2258,6 +2588,15 @@
       <Annotations Target="Microsoft.Graph.TenantDetail/verifiedDomains">
         <Annotation Term="Core.Description" String="The collection of domains associated with this tenant.                            **Notes**: not nullable.            " />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.TenantDetail/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For tenants the value is always “Company”. Inherited from [DirectoryObject]." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TenantDetail/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the tenant. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TenantDetail/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.thumbnail">
         <Annotation Term="Core.Description" String="The Thumbnail resource type represents a thumbnail for an image, video, document, or any file or folder on OneDrive that&#xD; has a graphical representation.&#xD; &#xD; " />
       </Annotations>
@@ -2452,6 +2791,15 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.User/tags">
         <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.User/objectType">
+        <Annotation Term="Core.Description" String="A string that identifies the object type. For users the value is always “User”. Inherited from [DirectoryObject]." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.User/objectId">
+        <Annotation Term="Core.Description" String="The unique identifier for the user. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.User/deletionTimestamp">
+        <Annotation Term="Core.Description" String="This property is not valid for users and always returns **null**. Inherited from [DirectoryObject].                            **Notes**: Requires version 1.5 or newer.            " />
       </Annotations>
       <Annotations Target="Microsoft.Graph.User/appRoleAssignments">
         <Annotation Term="Core.Description" String="The set of applications that this user is assigned to. Requires version 1.5 or newer.            HTTP Methods:  GET, POST, DELETE" />
