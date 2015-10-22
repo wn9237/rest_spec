@@ -95,15 +95,9 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     }
   ]
 }

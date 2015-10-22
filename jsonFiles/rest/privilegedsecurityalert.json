@@ -277,15 +277,9 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
       "name": "Reactivate",
@@ -297,15 +291,9 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
       "name": "Fix",
@@ -317,12 +305,8 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "ItemId",
