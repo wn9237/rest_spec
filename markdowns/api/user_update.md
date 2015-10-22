@@ -20,6 +20,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|EmailAddress|String||
 |MailboxGuid|Guid|The GUID assigned to the user's mailbox.|
 |aboutMe|String||
 |accountEnabled|Boolean|                **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.            |
@@ -84,7 +85,7 @@ Here is an example of the request.
 ```http
 PUT /users/<objectId>
 Content-type: application/json
-Content-length: 2668
+Content-length: 2708
 
 {
   "accountEnabled": true,
@@ -157,6 +158,7 @@ Content-length: 2668
   "userPrincipalName": "userPrincipalName-value",
   "userType": "userType-value",
   "MailboxGuid": "MailboxGuid-value",
+  "EmailAddress": "EmailAddress-value",
   "aboutMe": "aboutMe-value",
   "alias": "alias-value",
   "birthday": "datetime-value",
@@ -197,7 +199,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2668
+Content-length: 2708
 
 {
   "accountEnabled": true,
@@ -270,6 +272,7 @@ Content-length: 2668
   "userPrincipalName": "userPrincipalName-value",
   "userType": "userType-value",
   "MailboxGuid": "MailboxGuid-value",
+  "EmailAddress": "EmailAddress-value",
   "aboutMe": "aboutMe-value",
   "alias": "alias-value",
   "birthday": "datetime-value",
@@ -301,8 +304,8 @@ Content-length: 2668
 }
 ```
 
-<!-- uuid: 7a7777b2-12cf-4aa8-8de4-1571e56584b5
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of user object.",

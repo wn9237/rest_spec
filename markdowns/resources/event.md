@@ -40,8 +40,7 @@ Here is a JSON representation of the resource
     "String-value"
   ],
   "ChangeKey": "String-value",
-  "DateTimeCreated": "String (timestamp)",
-  "DateTimeLastModified": "String (timestamp)",
+  "CreatedDateTime": "String (timestamp)",
   "End": "String (timestamp)",
   "EndTimeZone": "String-value",
   "Extensions": [
@@ -60,6 +59,7 @@ Here is a JSON representation of the resource
   "IsAllDay": true,
   "IsCancelled": true,
   "IsOrganizer": true,
+  "LastModifiedDateTime": "String (timestamp)",
   "Location": {
     "@odata.type": "microsoft.graph.location"
   },
@@ -94,8 +94,7 @@ Here is a JSON representation of the resource
 |BodyPreview|String|The preview of the message associated with the event.|
 |Categories|String collection|The categories associated with the event.|
 |ChangeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|DateTimeCreated|DateTimeOffset|The date and time that the event was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|DateTimeLastModified|DateTimeOffset|The date and time that the event was last modified.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |End|DateTimeOffset|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |EndTimeZone|String| Identifies the meeting's time zone for the meeting end time (see the End property). This property is set with the time zone name as it is stored in Windows. You can get the time zone names by calling System.TimeZoneInfo.GetSystemTimeZones().<br/><br/>This property is optional for v1.0. However, this property must be used if the StartTimeZone property is used.<br/><br/>See [TimeZone](https://technet.microsoft.com/en-us/library/cc749073.aspx) for more information. |
 |HasAttachments|Boolean|Set to true if the event has attachments.|
@@ -104,6 +103,7 @@ Here is a JSON representation of the resource
 |IsAllDay|Boolean|Set to true if the event lasts all day.|
 |IsCancelled|Boolean|Set to true if the event has been canceled.|
 |IsOrganizer|Boolean|Set to true if the message sender is also the organizer.|
+|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Location|[Location](location.md)|The location of the event.|
 |Organizer|[Recipient](recipient.md)|The organizer of the event.|
 |OriginalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -142,8 +142,8 @@ Here is a JSON representation of the resource
 |[Decline](../api/event_decline.md)|None||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|None||
 
-<!-- uuid: 6aefa313-5a82-4330-8653-375b014cc9ef
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event resource",

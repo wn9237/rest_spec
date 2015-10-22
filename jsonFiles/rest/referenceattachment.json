@@ -82,7 +82,7 @@
       "isUnicode": null
     },
     {
-      "name": "DateTimeLastModified",
+      "name": "LastModifiedDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",

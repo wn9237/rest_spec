@@ -54,7 +54,7 @@
       "isUnicode": false
     },
     {
-      "name": "DateTimeCreated",
+      "name": "CreatedDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -68,7 +68,7 @@
       "isUnicode": null
     },
     {
-      "name": "DateTimeLastModified",
+      "name": "LastModifiedDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",

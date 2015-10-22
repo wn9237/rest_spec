@@ -14,8 +14,7 @@ GET /drive/root/createdByUser/UserPhoto
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Photo](../resources/photo.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Photo](../resources/photo.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -56,8 +55,8 @@ Content-length: 53
 }
 ```
 
-<!-- uuid: 40eaf4bd-2fd8-4fac-b9db-c5d2e6e28027
-2015-10-19 10:21:30 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Photo",

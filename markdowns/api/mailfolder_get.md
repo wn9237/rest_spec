@@ -6,16 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Folders/<Id>
-GET /drive/root/createdByUser/Folders/<Id>
-GET /drive/root/lastModifiedByUser/Folders/<Id>
+GET /users/<objectId>/MailFolders/<Id>
+GET /drive/root/createdByUser/MailFolders/<Id>
+GET /drive/root/lastModifiedByUser/MailFolders/<Id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [MailFolder](../resources/mailfolder.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [MailFolder](../resources/mailfolder.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -35,7 +34,7 @@ Here is an example of the request.
   "name": "get_mailfolder"
 }-->
 ```http
-GET /users/<objectId>/Folders/<Id>
+GET /users/<objectId>/MailFolders/<Id>
 ```
 ##### Response
 Here is an example of the response.
@@ -57,8 +56,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: e84397fb-7850-4cac-8ae5-50daae370dd6
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get MailFolder",

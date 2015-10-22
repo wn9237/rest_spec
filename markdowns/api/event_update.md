@@ -25,8 +25,7 @@ In the request body, supply the values for relevant fields that should be update
 |BodyPreview|String|The preview of the message associated with the event.|
 |Categories|String|The categories associated with the event.|
 |ChangeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|DateTimeCreated|DateTimeOffset|The date and time that the event was created.|
-|DateTimeLastModified|DateTimeOffset|The date and time that the event was last modified.|
+|CreatedDateTime|DateTimeOffset||
 |End|DateTimeOffset|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". |
 |EndTimeZone|String| Identifies the meeting's time zone for the meeting end time (see the End property). This property is set with the time zone name as it is stored in Windows. You can get the time zone names by calling System.TimeZoneInfo.GetSystemTimeZones().<br/><br/>This property is optional for v1.0. However, this property must be used if the StartTimeZone property is used.<br/><br/>See [TimeZone](https://technet.microsoft.com/en-us/library/cc749073.aspx) for more information. |
 |HasAttachments|Boolean|Set to true if the event has attachments.|
@@ -34,6 +33,7 @@ In the request body, supply the values for relevant fields that should be update
 |IsAllDay|Boolean|Set to true if the event lasts all day.|
 |IsCancelled|Boolean|Set to true if the event has been canceled.|
 |IsOrganizer|Boolean|Set to true if the message sender is also the organizer.|
+|LastModifiedDateTime|DateTimeOffset||
 |Location|Location|The location of the event.|
 |Organizer|Recipient|The organizer of the event.|
 |OriginalStart|DateTimeOffset||
@@ -139,8 +139,8 @@ Content-length: 1812
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
@@ -231,14 +231,14 @@ Content-length: 1812
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
 
-<!-- uuid: a3f43ecb-3675-4b1f-9855-82887cf53ad0
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of event object.",

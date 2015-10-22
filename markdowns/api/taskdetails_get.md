@@ -14,8 +14,7 @@ GET /groups/<objectId>/tasks/<id>/details
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [TaskDetails](../resources/taskdetails.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [TaskDetails](../resources/taskdetails.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -47,10 +46,11 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 139
+Content-length: 177
 
 {
   "notes": "notes-value",
+  "previewType": "previewType-value",
   "completedBy": "completedBy-value",
   "references": {
   },
@@ -59,8 +59,8 @@ Content-length: 139
 }
 ```
 
-<!-- uuid: 64fafb9b-59ff-4dd8-90f0-5a8c933fa136
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskDetails",

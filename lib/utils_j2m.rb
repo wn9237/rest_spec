@@ -96,6 +96,9 @@ module SpecMaker
 					"307" => "Temporary Redirect",
 					"308" => "Resume Incomplete"					
 				}	
+
+	UUID_DATE = "<!-- uuid: " + SecureRandom.uuid  + "\n" + Time.now.utc.to_s + " -->"
+	
 	###
 	# To prevent shallow copy errors, need to get a new object each time.
 	# 
@@ -168,8 +171,10 @@ module SpecMaker
 	end
 
 	def self.uuid_date 
-	  return "<!-- uuid: " + SecureRandom.uuid  + "\n" + Time.now.utc.to_s + " -->"
+	  return UUID_DATE
 	end
+
+	  
 
 	def self.get_create_description(objectName=nil)
 		createDescription = ''

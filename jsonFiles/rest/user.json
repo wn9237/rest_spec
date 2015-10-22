@@ -558,6 +558,20 @@
       "isUnicode": null
     },
     {
+      "name": "EmailAddress",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
       "name": "aboutMe",
       "description": "",
       "isKey": false,
@@ -908,8 +922,8 @@
       "isUnicode": null
     },
     {
-      "name": "Folders",
-      "description": "The folders in a mailbox or folder. Navigation property.",
+      "name": "MailFolders",
+      "description": "",
       "isKey": false,
       "dataType": "MailFolder",
       "isReadOnly": true,
@@ -1104,6 +1118,20 @@
       "isUnicode": null
     },
     {
+      "name": "details",
+      "description": "",
+      "isKey": false,
+      "dataType": "UserDetails",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
       "name": "tasks",
       "description": "",
       "isKey": false,
@@ -1129,6 +1157,20 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "notes",
+      "description": "",
+      "isKey": false,
+      "dataType": "Notes",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
       "isUnicode": null
     }
   ],

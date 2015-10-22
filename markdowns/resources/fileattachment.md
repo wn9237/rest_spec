@@ -20,9 +20,9 @@ Here is a JSON representation of the resource
   "ContentId": "String-value",
   "ContentLocation": "String-value",
   "ContentType": "String-value",
-  "DateTimeLastModified": "String (timestamp)",
   "Id": "String-value (identifier)",
   "IsInline": true,
+  "LastModifiedDateTime": "String (timestamp)",
   "Name": "String-value",
   "Size": 1024
 }
@@ -35,9 +35,9 @@ Here is a JSON representation of the resource
 |ContentId|String||
 |ContentLocation|String||
 |ContentType|String||
-|DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Id|String| Read-only.|
 |IsInline|Boolean||
+|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Name|String||
 |Size|Int32||
 
@@ -53,8 +53,8 @@ None
 |[Update](../api/fileattachment_update.md) | [FileAttachment](fileattachment.md)	|Update FileAttachment object. |
 |[Delete](../api/fileattachment_delete.md) | None |Delete FileAttachment object. |
 
-<!-- uuid: 22551877-7a1c-4a78-bc70-f6d081fc2116
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "FileAttachment resource",

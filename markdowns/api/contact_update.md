@@ -29,8 +29,7 @@ In the request body, supply the values for relevant fields that should be update
 |ChangeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |Children|String||
 |CompanyName|String|The name of the contact's company.|
-|DateTimeCreated|DateTimeOffset|The time the contact was created.|
-|DateTimeLastModified|DateTimeOffset|The time the contact was modified.|
+|CreatedDateTime|DateTimeOffset||
 |Department|String|The name for the department in which the contact works.|
 |DisplayName|String|The display name for the contact.|
 |EmailAddresses|EmailAddress|The contact's email addresses.|
@@ -42,6 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 |ImAddresses|String|The contact's instant messaging (IM) addresses.|
 |Initials|String|The contact's initials.|
 |JobTitle|String|The contactΓÇÖs job title.|
+|LastModifiedDateTime|DateTimeOffset||
 |Manager|String|The user or contact that is this contactΓÇÖs manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
 |MiddleName|String|The contact's middle name.|
 |MobilePhone1|String|The contact's mobile phone number.|
@@ -141,8 +141,8 @@ Content-length: 1977
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
@@ -227,14 +227,14 @@ Content-length: 1977
   "Categories": [
     "Categories-value"
   ],
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "Id": "Id-value"
 }
 ```
 
-<!-- uuid: 43b2f5ae-125b-40c6-8a4e-e518dda377d5
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of contact object.",

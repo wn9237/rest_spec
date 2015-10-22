@@ -22,6 +22,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |completedBy|String||
 |notes|String||
+|previewType|String| Possible values are: `Automatic`, `NoPreview`, `CheckList`, `Notes`, `Reference`.|
 |references|ExternalReferenceCollection||
 |version|String||
 
@@ -37,10 +38,11 @@ Here is an example of the request.
 ```http
 PUT /tasks/<id>/details
 Content-type: application/json
-Content-length: 139
+Content-length: 177
 
 {
   "notes": "notes-value",
+  "previewType": "previewType-value",
   "completedBy": "completedBy-value",
   "references": {
   },
@@ -58,10 +60,11 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 139
+Content-length: 177
 
 {
   "notes": "notes-value",
+  "previewType": "previewType-value",
   "completedBy": "completedBy-value",
   "references": {
   },
@@ -70,8 +73,8 @@ Content-length: 139
 }
 ```
 
-<!-- uuid: 2686e714-30ee-47ea-87e0-95e88908d75f
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of taskdetails object.",

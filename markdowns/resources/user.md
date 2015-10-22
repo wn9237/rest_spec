@@ -16,18 +16,20 @@ Here is a JSON representation of the resource
     "ContactFolders",
     "Contacts",
     "Events",
-    "Folders",
     "JoinedGroups",
+    "MailFolders",
     "Messages",
     "TrendingAround",
     "UserPhoto",
     "WorkingWith",
     "appRoleAssignments",
     "createdObjects",
+    "details",
     "directReports",
     "drive",
     "manager",
     "memberOf",
+    "notes",
     "oauth2PermissionGrants",
     "ownedDevices",
     "ownedObjects",
@@ -68,19 +70,20 @@ Here is a JSON representation of the resource
       "@odata.type": "microsoft.graph.contact"
     }
   ],
+  "EmailAddress": "String-value",
   "Events": [
     {
       "@odata.type": "microsoft.graph.event"
     }
   ],
-  "Folders": [
-    {
-      "@odata.type": "microsoft.graph.mailfolder"
-    }
-  ],
   "JoinedGroups": [
     {
       "@odata.type": "microsoft.graph.group"
+    }
+  ],
+  "MailFolders": [
+    {
+      "@odata.type": "microsoft.graph.mailfolder"
     }
   ],
   "MailboxGuid": "Guid-value",
@@ -130,6 +133,9 @@ Here is a JSON representation of the resource
   ],
   "deletionTimestamp": "String (timestamp)",
   "department": "String-value",
+  "details": {
+    "@odata.type": "microsoft.graph.userdetails"
+  },
   "dirSyncEnabled": true,
   "directReports": [
     {
@@ -161,6 +167,9 @@ Here is a JSON representation of the resource
   ],
   "mobile": "String-value",
   "mySite": "String-value",
+  "notes": {
+    "@odata.type": "microsoft.graph.notes"
+  },
   "oauth2PermissionGrants": [
     {
       "@odata.type": "microsoft.graph.oauth2permissiongrant"
@@ -249,6 +258,7 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|EmailAddress|String||
 |MailboxGuid|Guid|The GUID assigned to the user's mailbox.|
 |aboutMe|String||
 |accountEnabled|Boolean|                **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.            |
@@ -312,18 +322,20 @@ Here is a JSON representation of the resource
 |ContactFolders|[ContactFolder](contactfolder.md) collection|The user's contacts folders. Navigation property. Read-only. Nullable.|
 |Contacts|[Contact](contact.md) collection|The user's contacts. Navigation property. Read-only. Nullable.|
 |Events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Navigation property. Read-only. Nullable.|
-|Folders|[MailFolder](mailfolder.md) collection|The folders in a mailbox or folder. Navigation property. Read-only. Nullable.|
 |JoinedGroups|[Group](group.md) collection| Read-only. Nullable.|
+|MailFolders|[MailFolder](mailfolder.md) collection| Read-only. Nullable.|
 |Messages|[Message](message.md) collection|The messages in a mailbox or folder. Navigation property. Read-only. Nullable.|
 |TrendingAround|[File](file.md) collection| Read-only. Nullable.|
 |UserPhoto|[Photo](photo.md)| Read-only.|
 |WorkingWith|[User](user.md) collection| Read-only. Nullable.|
 |appRoleAssignments|[AppRoleAssignment](approleassignment.md) collection|The set of applications that this user is assigned to. Requires version 1.5 or newer.            HTTP Methods:  GET, POST, DELETE Read-only. Nullable.|
 |createdObjects|[DirectoryObject](directoryobject.md) collection|Directory objects that were created by the user. Requires version 2013-11-08 or newer. Read-only. Nullable.|
+|details|[UserDetails](userdetails.md)| Read-only.|
 |directReports|[DirectoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Inherited from [DirectoryObject].            HTTP Methods: GET Read-only. Nullable.|
 |drive|[drive](drive.md)| Read-only.|
 |manager|[DirectoryObject](directoryobject.md)|The user or contact that is this userΓÇÖs manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE Read-only.|
 |memberOf|[DirectoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET Read-only. Nullable.|
+|notes|[Notes](notes.md)| Read-only.|
 |oauth2PermissionGrants|[OAuth2PermissionGrant](oauth2permissiongrant.md) collection|The set of applications that are granted consent to impersonate this user. Requires version 1.5 or newer.            HTTP Methods:  GET, POST, DELETE Read-only. Nullable.|
 |ownedDevices|[DirectoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[DirectoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Requires version 2013-11-08 or newer. Read-only. Nullable.|
@@ -342,8 +354,8 @@ Here is a JSON representation of the resource
 |[Create ContactFolder](../api/user_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the ContactFolders collection.|
 |[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
 |[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[Create MailFolder](../api/user_post_folders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the Folders collection.|
 |[Create Group](../api/user_post_joinedgroups.md) |[Group](group.md)| Create a new Group by posting to the JoinedGroups collection.|
+|[Create MailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the MailFolders collection.|
 |[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
 |[Create File](../api/user_post_trendingaround.md) |[File](file.md)| Create a new File by posting to the TrendingAround collection.|
 |[Create User](../api/user_post_workingwith.md) |[User](user.md)| Create a new User by posting to the WorkingWith collection.|
@@ -365,8 +377,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/user_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/user_getmemberobjects.md)|String collection||
 
-<!-- uuid: 10601104-8f81-4cfb-acb0-d1842dcf92eb
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User resource",

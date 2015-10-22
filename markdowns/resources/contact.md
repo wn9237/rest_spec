@@ -37,8 +37,7 @@ Here is a JSON representation of the resource
   "ContactPhoto": {
     "@odata.type": "microsoft.graph.photo"
   },
-  "DateTimeCreated": "String (timestamp)",
-  "DateTimeLastModified": "String (timestamp)",
+  "CreatedDateTime": "String (timestamp)",
   "Department": "String-value",
   "DisplayName": "String-value",
   "EmailAddresses": [
@@ -66,6 +65,7 @@ Here is a JSON representation of the resource
   ],
   "Initials": "String-value",
   "JobTitle": "String-value",
+  "LastModifiedDateTime": "String (timestamp)",
   "Manager": "String-value",
   "MiddleName": "String-value",
   "MobilePhone1": "String-value",
@@ -98,8 +98,7 @@ Here is a JSON representation of the resource
 |ChangeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |Children|String collection||
 |CompanyName|String|The name of the contact's company.|
-|DateTimeCreated|DateTimeOffset|The time the contact was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|DateTimeLastModified|DateTimeOffset|The time the contact was modified.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Department|String|The name for the department in which the contact works.|
 |DisplayName|String|The display name for the contact.|
 |EmailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
@@ -112,6 +111,7 @@ Here is a JSON representation of the resource
 |ImAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |Initials|String|The contact's initials.|
 |JobTitle|String|The contactΓÇÖs job title.|
+|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Manager|String|The user or contact that is this contactΓÇÖs manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
 |MiddleName|String|The contact's middle name.|
 |MobilePhone1|String|The contact's mobile phone number.|
@@ -143,8 +143,8 @@ Here is a JSON representation of the resource
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete Contact object. |
 
-<!-- uuid: 5eda1cd2-0019-44a7-b735-1e337b6cd7a7
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Contact resource",

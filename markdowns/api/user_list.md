@@ -43,7 +43,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3089
+Content-length: 3133
 
 {
   "value": [
@@ -118,6 +118,7 @@ Content-length: 3089
       "userPrincipalName": "userPrincipalName-value",
       "userType": "userType-value",
       "MailboxGuid": "MailboxGuid-value",
+      "EmailAddress": "EmailAddress-value",
       "aboutMe": "aboutMe-value",
       "alias": "alias-value",
       "birthday": "datetime-value",
@@ -151,8 +152,8 @@ Content-length: 3089
 }
 ```
 
-<!-- uuid: 552bb821-a4bb-46c1-9906-6547f3cbb64f
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List User",

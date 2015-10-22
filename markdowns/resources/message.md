@@ -41,10 +41,7 @@ Here is a JSON representation of the resource
   ],
   "ChangeKey": "String-value",
   "ConversationId": "String-value",
-  "DateTimeCreated": "String (timestamp)",
-  "DateTimeLastModified": "String (timestamp)",
-  "DateTimeReceived": "String (timestamp)",
-  "DateTimeSent": "String (timestamp)",
+  "CreatedDateTime": "String (timestamp)",
   "Extensions": [
     {
       "@odata.type": "microsoft.graph.extension"
@@ -60,7 +57,9 @@ Here is a JSON representation of the resource
   "IsDraft": true,
   "IsRead": true,
   "IsReadReceiptRequested": true,
+  "LastModifiedDateTime": "String (timestamp)",
   "ParentFolderId": "String-value",
+  "ReceivedDateTime": "String (timestamp)",
   "ReplyTo": [
     {
       "@odata.type": "microsoft.graph.recipient"
@@ -69,6 +68,7 @@ Here is a JSON representation of the resource
   "Sender": {
     "@odata.type": "microsoft.graph.recipient"
   },
+  "SentDateTime": "String (timestamp)",
   "Subject": "String-value",
   "ToRecipients": [
     {
@@ -92,10 +92,7 @@ Here is a JSON representation of the resource
 |CcRecipients|[Recipient](recipient.md) collection||
 |ChangeKey|String||
 |ConversationId|String||
-|DateTimeCreated|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|DateTimeReceived|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|DateTimeSent|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |From|[Recipient](recipient.md)||
 |HasAttachments|Boolean||
 |Id|String| Read-only.|
@@ -104,9 +101,12 @@ Here is a JSON representation of the resource
 |IsDraft|Boolean||
 |IsRead|Boolean||
 |IsReadReceiptRequested|Boolean||
+|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |ParentFolderId|String||
+|ReceivedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |ReplyTo|[Recipient](recipient.md) collection||
 |Sender|[Recipient](recipient.md)||
+|SentDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Subject|String||
 |ToRecipients|[Recipient](recipient.md) collection||
 |UniqueBody|[ItemBody](itembody.md)||
@@ -137,8 +137,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/message_replyall.md)|None||
 |[Send](../api/message_send.md)|None||
 
-<!-- uuid: 49328738-a164-4afe-b82d-a4081e270f75
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
+2015-10-21 09:49:44 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message resource",
