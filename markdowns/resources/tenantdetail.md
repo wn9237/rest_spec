@@ -78,7 +78,7 @@ Here is a JSON representation of the resource
 |displayName|String|The display name for the tenant.|
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
 |objectId|String|The unique identifier for the tenant. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             Read-only.|
-|objectType|String|A string that identifies the object type. For tenants the value is always ΓÇ£CompanyΓÇ¥. Inherited from [DirectoryObject].|
+|objectType|String|A string that identifies the object type. For tenants the value is always “Company”. Inherited from [DirectoryObject].|
 |postalCode|String|            |
 |preferredLanguage|String|            |
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|                                        **Notes**: not nullable.            |

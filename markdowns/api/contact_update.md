@@ -40,9 +40,9 @@ In the request body, supply the values for relevant fields that should be update
 |HomePhones|String|The contact's home phone numbers.|
 |ImAddresses|String|The contact's instant messaging (IM) addresses.|
 |Initials|String|The contact's initials.|
-|JobTitle|String|The contactΓÇÖs job title.|
+|JobTitle|String|The contact’s job title.|
 |LastModifiedDateTime|DateTimeOffset||
-|Manager|String|The user or contact that is this contactΓÇÖs manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
+|Manager|String|The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
 |MiddleName|String|The contact's middle name.|
 |MobilePhone1|String|The contact's mobile phone number.|
 |NickName|String|The contact's nickname.|

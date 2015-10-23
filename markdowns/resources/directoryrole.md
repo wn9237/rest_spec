@@ -58,7 +58,7 @@ Here is a JSON representation of the resource
 |displayName|String|The display name for the directory role. |
 |isSystem|Boolean|                **true** if the role is a system role; otherwise, **false**.            |
 |objectId|String|The unique identifier for the directory role. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             Read-only.|
-|objectType|String|A string that identifies the object type. For directory roles the value is always ΓÇ£DirectoryRoleΓÇ¥. Inherited from [DirectoryObject].                            **Note**: In versions prior to 1.5, the value will be ΓÇ£RoleΓÇ¥.            |
+|objectType|String|A string that identifies the object type. For directory roles the value is always “DirectoryRole”. Inherited from [DirectoryObject].                            **Note**: In versions prior to 1.5, the value will be “Role”.            |
 |roleDisabled|Boolean|                **true** if the directory role is disabled; otherwise, **false**.            |
 |roleTemplateId|String|                The **objectId** of the [DirectoryRoleTemplate] that this role is based on.                                        **Notes**: In versions prior to version 1.5, the property is read only. In version 1.5 and later, the property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only.            |
 

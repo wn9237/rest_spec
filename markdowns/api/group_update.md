@@ -38,7 +38,7 @@ In the request body, supply the values for relevant fields that should be update
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com".|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Azure AD Graph.|
 |mailNickname|String|The mail alias for the group. This property must be specified when a group is created.|
-|objectType|String|A string that identifies the object type. For groups the value is always ΓÇ£GroupΓÇ¥. Inherited from [DirectoryObject].|
+|objectType|String|A string that identifies the object type. For groups the value is always “Group”. Inherited from [DirectoryObject].|
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud.                            **Notes**: Requires version 1.5 or newer.            |
 |provisioningErrors|ProvisioningError|A collection of error details that are preventing this group from being provisioned successfully.                            **Notes**: not nullable.            |
 |proxyAddresses|String|                                        **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |

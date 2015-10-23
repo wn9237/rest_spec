@@ -28,12 +28,12 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|capabilities|String|For example, ΓÇ£EmailΓÇ¥, ΓÇ£OfficeCommunicationsOnlineΓÇ¥.|
+|capabilities|String|For example, “Email”, “OfficeCommunicationsOnline”.|
 |default|Boolean|                **true** if this is the default domain associated with the tenant; otherwise, **false**.            |
-|id|String|For example, ΓÇ£00057FFE80187238ΓÇ¥.|
+|id|String|For example, “00057FFE80187238”.|
 |initial|Boolean|            |
-|name|String|The domain name; for example, ΓÇ£contoso.onmicrosoft.comΓÇ¥|
-|type|String|For example, ΓÇ£ManagedΓÇ¥.|
+|name|String|The domain name; for example, “contoso.onmicrosoft.com”|
+|type|String|For example, “Managed”.|
 
 <!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
 2015-10-21 09:49:44 UTC -->

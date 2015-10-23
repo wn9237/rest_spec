@@ -123,7 +123,7 @@ Here is a JSON representation of the resource
 |logoutUrl|String|            |
 |oauth2Permissions|[OAuth2Permission](oauth2permission.md) collection|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [Application] entity.                            **Notes**: Requires version 1.5 or newer, not nullable.            |
 |objectId|String|The unique identifier for the service principal. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             Read-only.|
-|objectType|String|A string that identifies the object type. For service principals the value is always ΓÇ£ServicePrincipalΓÇ¥. Inherited from [DirectoryObject].|
+|objectType|String|A string that identifies the object type. For service principals the value is always “ServicePrincipal”. Inherited from [DirectoryObject].|
 |passwordCredentials|[PasswordCredential](passwordcredential.md) collection|The collection of password credentials associated with the service principal.                            **Notes**: not nullable.            |
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.                            **Notes**: Requires version 1.5 or newer.            |
 |publisherName|String|The display name of the tenant in which the associated application is specified.|

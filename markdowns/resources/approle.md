@@ -30,7 +30,7 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|Specifies whether this app role definition can be assigned to users and groups by setting to ΓÇ£UserΓÇ¥, or to other applications (that are accessing this application in daemon service scenarios) by setting to ΓÇ£ApplicationΓÇ¥, or to both.|
+|allowedMemberTypes|String collection|Specifies whether this app role definition can be assigned to users and groups by setting to “User”, or to other applications (that are accessing this application in daemon service scenarios) by setting to “Application”, or to both.|
 |description|String|Permission help text that appears in the admin app assignment and consent experiences.|
 |displayName|String|Display name for the permission that appears in the admin consent and app assignment experiences.|
 |id|Guid|Unique role identifier inside the **appRoles** collection.|
