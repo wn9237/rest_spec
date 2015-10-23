@@ -133,10 +133,10 @@ module SpecMaker
 		# PROCESS Properties
 		if entity[:Property].is_a?(Array)
 			entity[:Property].each do |item|		
-				@json_object[:properties].push process_complextype(item)
+				@json_object[:properties].push process_complextype(entity[:Name], item)
 			end
 		elsif entity[:Property].is_a?(Hash)
-			@json_object[:properties].push process_complextype(entity[:Property])
+			@json_object[:properties].push process_complextype(entity[:Name], entity[:Property])
 		end
 		preserve_object_property_descriptions(@json_object[:name])
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
@@ -189,20 +189,20 @@ module SpecMaker
 		# PROCESS Properties
 		if entity[:Property].is_a?(Array)
 			entity[:Property].each do |item|	
-				@json_object[:properties].push process_property(item)
+				@json_object[:properties].push process_property(entity[:Name], item)
 			end
 		elsif entity[:Property].is_a?(Hash)
-			@json_object[:properties].push process_property(entity[:Property])
+			@json_object[:properties].push process_property(entity[:Name], entity[:Property])
 		end
 
 		# PROCESS Navigation Properties
 		if entity[:NavigationProperty].is_a?(Array)
 			entity[:NavigationProperty].each do |item|		
-				@json_object[:properties].push process_navigation(item)
+				@json_object[:properties].push process_navigation(entity[:Name], item)
 			end
 		elsif entity[:NavigationProperty].is_a?(Hash)
 
-			@json_object[:properties].push process_navigation(entity[:NavigationProperty])
+			@json_object[:properties].push process_navigation(entity[:Name], entity[:NavigationProperty])
 		end
 
 		# Add methods and pull in methods from base type.

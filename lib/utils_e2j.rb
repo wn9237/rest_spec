@@ -37,10 +37,11 @@ module SpecMaker
 	LOG_FOLDER = '../../logs'
 	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
 
-	if File.exists?("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
-		File.delete("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
+  LOG_FILE = File.basename($PROGRAM_NAME, ".rb") + ".txt";
+	if File.exists?("#{LOG_FOLDER}/#{LOG_FILE}")
+		File.delete("#{LOG_FOLDER}/#{LOG_FILE}")
 	end
-	@logger = Logger.new("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
+	@logger = Logger.new("#{LOG_FOLDER}/#{LOG_FILE}")
 	@logger.level = Logger::DEBUG
 # End log file
 
@@ -66,6 +67,63 @@ module SpecMaker
 	@iexampleFilesWrittem = 0
 	@annotations = {}
 
+	def self.parse_annotations(target, annotations)
+		if annotations
+			if annotations.is_a?(Array)
+				annotations.each do |annotation|
+					parse_annotation(target, nil, annotation)
+				end
+			else
+				parse_annotation(target, nil, annotations)
+			end
+		end
+	end
+	
+	def self.parse_annotation(target, term, annotation)
+		puts "-> Processing Annotation; Target: #{target}; Term: #{term}; Annotation: #{annotation}"
+		
+		if annotation[:Term]
+			term = get_type(annotation[:Term]).downcase
+		elsif annotation[:Property]
+			term = term + "/" + annotation[:Property].downcase
+		end
+
+		if !@annotations[target]
+			@annotations[target] = {}
+		end
+		
+		if annotation[:Bool]
+			if annotation[:Bool].downcase == 'true'
+				@annotations[target][term] = true
+			else
+				@annotations[target][term] = false
+			end
+		elsif annotation[:String]
+			@annotations[target][term] = annotation[:String]
+		elsif annotation[:Record]
+		if annotation[:Record][:PropertyValue]
+			if annotation[:Record][:PropertyValue].is_a?(Array)
+				annotation[:Record][:PropertyValue].each do |propertyValue|
+					parse_annotation(target, term, propertyValue)
+				end
+			else
+				parse_annotation(target, term, annotation[:Record][:PropertyValue])
+			end
+		end
+		elsif annotation[:Collection]
+			# TODO
+		end
+	end
+	
+	def self.set_description(target, itemToSet)
+	  target = target.downcase
+	  puts "-> Getting Annotation; Target: #{target}"
+	  if @annotations[target]
+	    if @annotations[target]["description"]
+	      itemToSet[:description] = @annotations[target]["description"]
+	    end
+	  end
+	end
 
 	###
 	# Create object_method-name.md file in lowercase.
@@ -205,7 +263,7 @@ module SpecMaker
 		end
 	end
 
-	def self.process_property (item=nil)
+	def self.process_property (className, item=nil)
 		prop = deep_copy(@struct[:property])
 			prop[:name] = item[:Name]
 		dt = get_type(item[:Type])
@@ -225,10 +283,15 @@ module SpecMaker
 			prop[:isUnicode] = false
 		end
 		@iprop = @iprop + 1
+		
+		annotationTarget = className + "/" + item[:Name]
+		#parse_annotations(annotationTarget, item[:Annotation])
+		#set_description(annotationTarget, prop)
+
 		return prop
 	end
 
-	def self.process_navigation (item=nil)
+	def self.process_navigation (className, item=nil)
 		prop = deep_copy(@struct[:property])
 		prop[:name] = item[:Name]
 		prop[:isRelationship] = true
@@ -244,10 +307,15 @@ module SpecMaker
 			prop[:isUnicode] = false
 		end		
 		@inprop = @inprop + 1
+		
+		annotationTarget = className + "/" + item[:Name]
+		#parse_annotations(annotationTarget, item[:Annotation])
+		#set_description(annotationTarget, prop)
+
 		return prop
 	end
 
-	def self.process_complextype (item=nil)
+	def self.process_complextype (className, item=nil)
 		prop = deep_copy(@struct[:property])
 		prop[:name] = item[:Name]
 		dt = get_type(item[:Type])
@@ -263,7 +331,12 @@ module SpecMaker
 		if item[:Unicode] == 'false'
 			prop[:isUnicode] = false
 		end
-		return prop		
+		
+		annotationTarget = className + "/" + item[:Name]
+		#parse_annotations(annotationTarget, item[:Annotation])
+		#set_description(annotationTarget, prop)
+
+    return prop		
 	end
 
 	# Process methods
