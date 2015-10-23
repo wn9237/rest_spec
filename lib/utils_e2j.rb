@@ -25,11 +25,11 @@ module SpecMaker
 	}
 	# Load the template 
 	# JSON_TEMPLATE = "../jsonFiles/template/restresourcetemplate.json"
-	# @template = JSON.parse(File.read(JSON_TEMPLATE), {:symbolize_names => true})
+	# @template = JSON.parse(File.read(JSON_TEMPLATE, :encoding => 'UTF-8'), {:symbolize_names => true})
 
 	# Load the structure
 	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
-	@struct = JSON.parse(File.read(JSON_STRUCTURE), {:symbolize_names => true})
+	@struct = JSON.parse(File.read(JSON_STRUCTURE, :encoding => 'UTF-8'), {:symbolize_names => true})
 	@template = @struct[:object]
 	@service = @struct[:serviceSettings]
 
@@ -131,7 +131,7 @@ module SpecMaker
 	#	
 	def self.create_examplefile(objectName=nil, methodName=nil)
 		File.open(JSON_EXAMPLE_FOLDER + (objectName + '_' + methodName).downcase + ".md", "w") do |f|
-			f.write('##### Example')
+			f.write('##### Example', :encoding => 'UTF-8')
 			@iexampleFilesWrittem = @iexampleFilesWrittem + 1
 		end
 	end
@@ -178,7 +178,7 @@ module SpecMaker
 	def self.preserve_method_descriptions (objectName=nil, method=nil)
 		fullpath = JSON_PREV_SOURCE_FOLDER + objectName.downcase + '.json'
 		if File.file?(fullpath)
-			prevObject = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			prevObject = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			prevMethods = prevObject[:methods]
 			prevMethods.each do |item|
 				if item[:name] == method[:name]
@@ -201,7 +201,7 @@ module SpecMaker
 	def self.preserve_object_property_descriptions(objectName=nil)
 		fullpath = JSON_PREV_SOURCE_FOLDER + objectName.downcase + '.json'
 		if File.file?(fullpath)
-			prevObject = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			prevObject = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			@json_object[:description] = prevObject[:description]			
 			prevProperties = prevObject[:properties]
 			prevProperties.each do |item|
@@ -410,7 +410,7 @@ module SpecMaker
 
 		# append Id at the end.
 		if File.file?(fullpath)
-			object = JSON.parse(File.read(fullpath))
+			object = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'))
 
 			# Check if the path already exists. This logic will eliminate deep redundant paths.
 			# May lose some important ones.. but if this check is removed, some really deep/complex 
@@ -435,7 +435,7 @@ module SpecMaker
 			end
 			object["restPath"][k] = true 
 			File.open(fullpath, "w") do |f|
-				f.write(JSON.pretty_generate object)
+				f.write(JSON.pretty_generate object, :encoding => 'UTF-8')
 			end
 			return if object["properties"].length == 0
 			object["properties"].each do |item|

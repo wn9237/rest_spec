@@ -7,12 +7,12 @@ require 'logger'
 module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
-	f=File.read(CSDL_LOCATION + 'ppe_alpha_graph.xml')
+	f=File.read(CSDL_LOCATION + 'ppe_alpha_graph.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
 	csdl=JSON.parse(Hash.from_xml(f).to_json, {:symbolize_names => true}) 
 	File.open(CSDL_LOCATION + 'ppe_alpha_graph.json', "w") do |f|
-		f.write(JSON.pretty_generate csdl)
+		f.write(JSON.pretty_generate csdl, :encoding => 'UTF-8')
 	end
 	schema = csdl[:Edmx][:DataServices][:Schema]
 
@@ -67,7 +67,7 @@ module SpecMaker
 		@iann = @iann + 1
 	end
 	File.open(ANNOTATIONS, "w") do |f|
-		f.write(JSON.pretty_generate @annotations)
+		f.write(JSON.pretty_generate @annotations, :encoding => 'UTF-8')
 	end
 
 	# Process all Enums. Load in memory.
@@ -91,7 +91,7 @@ module SpecMaker
 	end
 
 	File.open(ENUMS, "w") do |f|
-		f.write(JSON.pretty_generate @enum_objects)
+		f.write(JSON.pretty_generate @enum_objects, :encoding => 'UTF-8')
 	end
 
 	# # Process ACTIONS
@@ -111,7 +111,7 @@ module SpecMaker
 
 	# Write Functions & Actions
 	File.open(JSON_BASE_FOLDER + 'actions.json', "w") do |f|
-		f.write(JSON.pretty_generate @methods)
+		f.write(JSON.pretty_generate @methods, :encoding => 'UTF-8')
 	end
 	#######
 	# Loc0
@@ -140,7 +140,7 @@ module SpecMaker
 		end
 		preserve_object_property_descriptions(@json_object[:name])
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
-			f.write(JSON.pretty_generate @json_object)
+			f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
 		end		
 		GC.start
 	end
@@ -223,7 +223,7 @@ module SpecMaker
 		preserve_object_property_descriptions(@json_object[:name])
 
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
-			f.write(JSON.pretty_generate @json_object)
+			f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
 		end
 		# if !@json_object[:isComplexType]
 		# 	create_auto_examplefiles((@json_object[:name]).downcase, false)		 
@@ -263,7 +263,7 @@ module SpecMaker
 
 		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
 		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
-			f.write(JSON.pretty_generate @json_object)
+			f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
 		end
 		#create_auto_examplefiles((@json_object[:name]).downcase, true)		 
 

@@ -854,7 +854,7 @@ module SpecMaker
 		fullpath = JSON_SOURCE_FOLDER + item.downcase
 		
 		if File.file?(fullpath)
-			convert_to_spec File.read(fullpath)
+			convert_to_spec File.read(fullpath, :encoding => 'UTF-8')
 			processed_files = processed_files + 1
 		end
 	end
