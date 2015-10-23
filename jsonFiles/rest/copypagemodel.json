@@ -23,7 +23,8 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "parentSection",
@@ -166,5 +167,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

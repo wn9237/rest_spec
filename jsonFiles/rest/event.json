@@ -756,8 +756,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "Comment",
@@ -791,8 +795,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "Comment",
@@ -826,8 +834,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "Comment",

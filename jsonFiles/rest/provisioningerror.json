@@ -23,7 +23,8 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "errorDetail",
@@ -82,5 +83,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

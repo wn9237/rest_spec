@@ -23,7 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
-  "properties": [],
-  "methods": []
+  "restPath": {
+  },
+  "properties": [
+
+  ],
+  "methods": [
+
+  ]
 }

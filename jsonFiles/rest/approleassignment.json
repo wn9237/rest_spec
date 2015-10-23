@@ -227,8 +227,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "groupIds",
@@ -252,8 +256,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -277,8 +285,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",

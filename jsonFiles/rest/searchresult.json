@@ -23,7 +23,8 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "onClickTelemetryUrl",
@@ -40,5 +41,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

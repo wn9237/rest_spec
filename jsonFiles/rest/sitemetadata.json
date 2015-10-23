@@ -23,7 +23,8 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "siteCollectionId",
@@ -54,5 +55,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

@@ -67,8 +67,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": true,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "url",

@@ -285,8 +285,8 @@ module SpecMaker
 		@iprop = @iprop + 1
 		
 		annotationTarget = className + "/" + item[:Name]
-		#parse_annotations(annotationTarget, item[:Annotation])
-		#set_description(annotationTarget, prop)
+		parse_annotations(annotationTarget, item[:Annotation])
+		set_description(annotationTarget, prop)
 
 		return prop
 	end
@@ -309,8 +309,8 @@ module SpecMaker
 		@inprop = @inprop + 1
 		
 		annotationTarget = className + "/" + item[:Name]
-		#parse_annotations(annotationTarget, item[:Annotation])
-		#set_description(annotationTarget, prop)
+		parse_annotations(annotationTarget, item[:Annotation])
+		set_description(annotationTarget, prop)
 
 		return prop
 	end
@@ -333,8 +333,8 @@ module SpecMaker
 		end
 		
 		annotationTarget = className + "/" + item[:Name]
-		#parse_annotations(annotationTarget, item[:Annotation])
-		#set_description(annotationTarget, prop)
+		parse_annotations(annotationTarget, item[:Annotation])
+		set_description(annotationTarget, prop)
 
     return prop		
 	end
