@@ -23,8 +23,7 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "alias",
@@ -97,7 +96,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }
