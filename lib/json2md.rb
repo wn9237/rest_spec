@@ -857,6 +857,8 @@ module SpecMaker
 				create_get_method
 			end
 		end
+
+		service_lines.push NEWLINE + uuid_date + NEWLINE
 		outfile = MARKDOWN_RESOURCE_FOLDER + 'service_root.md'
 		file=File.new(outfile,'w')
 		service_lines.each do |line|
