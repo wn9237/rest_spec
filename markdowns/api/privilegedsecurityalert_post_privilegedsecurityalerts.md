@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /PrivilegedSecurityAlerts
+POST /PrivilegedRoles
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [PrivilegedS
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedsecurityalert_from_privilegedsecurityalerts"
+  "name": "create_privilegedsecurityalert_from_privilegedroles"
 }-->
 ```http
-POST /PrivilegedSecurityAlerts
+POST /PrivilegedRoles
 ```
 In the request body, supply a JSON representation of [PrivilegedSecurityAlert](../resources/privilegedsecurityalert.md) object.
 ##### Response
@@ -65,8 +65,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: 8be13a5a-186e-42ba-b21d-76093c20f6be
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: ba55270d-b195-47da-8b91-633db9b82248
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedSecurityAlert",

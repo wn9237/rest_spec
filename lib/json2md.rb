@@ -586,13 +586,15 @@ module SpecMaker
 		@mdlines = []
 		isPost = nil
 		@jsonHash = JSON.parse(item, {:symbolize_names => true})
+
+		if @jsonHash[:isEntitySet] 
+			@ientityset = @ientityset + 1
+			@serviceroot.push @jsonHash 
+			return 
+		end
 		
 		# Obtain the resource name. 
 		@resource = @jsonHash[:name]
-		# if @jsonHash[:isEntitySet] 
-		# 	@ientityset = @ientityset + 1
-		# 	return 
-		# end
 		puts "--> #{@resource}"
 
 		propreties = @jsonHash[:properties]
@@ -683,7 +685,7 @@ module SpecMaker
 		end
 		# Add method table. 
 		if !@jsonHash[:isComplexType]
-			@mdlines.push NEWLINE + HEADER3 + 'Tasks' + NEWLINE
+			@mdlines.push NEWLINE + HEADER3 + 'Methods' + NEWLINE
 
 			if isMethod || isProperty || isPost || @jsonHash[:allowDelete]
 				@mdlines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
@@ -745,36 +747,7 @@ module SpecMaker
 					end
 				end			
 			end
-
-			# Add create method for collections
-			if @jsonHash[:isEntitySet] && @jsonHash[:collectionOf]
-				useName = @jsonHash[:collectionOf]					
-				postName = "Create " + useName
-				filename = "#{@jsonHash[:collectionOf].downcase}_post_#{@jsonHash[:name].downcase}.md"
-				postLink = "../api/#{@jsonHash[:collectionOf].downcase}_post_#{@jsonHash[:name].downcase}.md"					
-				returnLink = "[" + @jsonHash[:collectionOf]	 + "](" + @jsonHash[:collectionOf].downcase + ".md)"
-
-				@mdlines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{@jsonHash[:name] } collection.|" + NEWLINE				
-
-				if File.exists?("#{MARKDOWN_API_FOLDER}/filename")
-					puts "EntitySet POST create file already exists!"
-				else
-					mtd = deep_copy(@struct[:method]) 
-					mtd[:name] = 'auto_post'
-					mtd[:displayName] = postName
-					mtd[:returnType] = @jsonHash[:collectionOf]
-					createDescription = get_create_description(@jsonHash[:collectionOf])
-					if createDescription.empty?
-						mtd[:description] = "Use this API to create a new #{useName}."
-					else
-						mtd[:description] = createDescription
-					end
-					mtd[:parameters] = nil					
-					mtd[:httpSuccessCode] = '201'
-				    create_method_mdfile(mtd, filename)
-				end
-			end
-			# end			
+			
 
 			if patchable
 				returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
@@ -844,6 +817,54 @@ module SpecMaker
 
 	end
 
+	def self.create_service_root
+		service_lines = []
+
+		service_lines.push HEADER1 + 'Service root' + TWONEWLINES
+		service_lines.push NEWLINE + HEADER3 + 'Methods' + NEWLINE
+		service_lines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
+
+		@serviceroot.each do |item|			
+			if item[:collectionOf]
+				useName = item[:collectionOf]					
+				postName = "Create " + useName
+				filename = "#{item[:collectionOf].downcase}_post_#{item[:name].downcase}.md"
+				postLink = "../api/#{item[:collectionOf].downcase}_post_#{item[:name].downcase}.md"					
+				returnLink = "[" + item[:collectionOf]	 + "](" + item[:collectionOf].downcase + ".md)"
+				service_lines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{item[:name] } collection.|" + NEWLINE				
+				if File.exists?("#{MARKDOWN_API_FOLDER}/filename")
+					puts "EntitySet POST create file already exists!"
+				else
+					mtd = deep_copy(@struct[:method]) 
+					mtd[:name] = 'auto_post'
+					mtd[:displayName] = postName
+					mtd[:returnType] = item[:collectionOf]
+					createDescription = get_create_description(item[:collectionOf])
+					if createDescription.empty?
+						mtd[:description] = "Use this API to create a new #{useName}."
+					else
+						mtd[:description] = createDescription
+					end
+					mtd[:parameters] = nil					
+					mtd[:httpSuccessCode] = '201'
+				    create_method_mdfile(mtd, filename)
+				end
+			end
+			if item[:collectionOf]
+				returnLink = "[" + item[:collectionOf] + "](" + item[:collectionOf].downcase + ".md)"								
+				service_lines.push "|[List #{item[:collectionOf]}](../api/#{item[:collectionOf].downcase}_list.md) | #{returnLink} collection |Get #{uncapitalize item[:collectionOf]} object collection. |" + NEWLINE
+				@jsonHash = item			
+				create_get_method
+			end
+		end
+		outfile = MARKDOWN_RESOURCE_FOLDER + 'service_root.md'
+		file=File.new(outfile,'w')
+		service_lines.each do |line|
+			file.write line
+		end
+		
+	end
+
 	##### 
 	# Main loop. Process each JSON files.
 	# 
@@ -858,6 +879,8 @@ module SpecMaker
 			processed_files = processed_files + 1
 		end
 	end
+	create_service_root
+	## 
 
 	puts ""
 	puts "*** OK. Processed #{processed_files} input files. Check #{File.expand_path(LOG_FOLDER)} folder for results. ***"

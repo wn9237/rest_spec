@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /oauth2PermissionGrants
+POST /Notifications
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [OAuth2Permi
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_oauth2permissiongrant_from_oauth2permissiongrants"
+  "name": "create_oauth2permissiongrant_from_notifications"
 }-->
 ```http
-POST /oauth2PermissionGrants
+POST /Notifications
 ```
 In the request body, supply a JSON representation of [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 ##### Response
@@ -56,8 +56,8 @@ Content-length: 271
 }
 ```
 
-<!-- uuid: c793351e-570f-486f-8eed-3644f48db6fa
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 430ba378-1aeb-4ddd-90c7-c7f3d2766c07
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OAuth2PermissionGrant",

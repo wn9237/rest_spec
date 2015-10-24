@@ -14,8 +14,7 @@ GET /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Post](../resources/post.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Post](../resources/post.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -88,8 +87,8 @@ Content-length: 790
 }
 ```
 
-<!-- uuid: 5b45e0ab-66df-4bb0-9304-5b057da8c9f3
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: eb884c52-ad05-487b-9cf8-5de4603e11bd
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Post",

@@ -331,7 +331,7 @@ Here is a JSON representation of the resource
 |registeredDevices|[DirectoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 |tasks|[Task](task.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -365,8 +365,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/user_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/user_getmemberobjects.md)|String collection||
 
-<!-- uuid: 10601104-8f81-4cfb-acb0-d1842dcf92eb
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: c8278309-9357-4cc8-83f7-d5c230f684f8
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User resource",

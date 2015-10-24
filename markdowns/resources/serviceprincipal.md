@@ -144,7 +144,7 @@ Here is a JSON representation of the resource
 |ownedObjects|[DirectoryObject](directoryobject.md) collection|Directory objects that are owned by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer. Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection|Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -161,8 +161,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String collection||
 
-<!-- uuid: a63915ac-da36-4303-a932-b004fecc4e18
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 235a38db-7c1f-4104-89d7-19985d14e42c
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal resource",

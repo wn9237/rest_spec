@@ -12,8 +12,7 @@ GET /PrivilegedOperationEvents/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -64,8 +63,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: d9eaaf5e-5aec-4660-9921-38d347b7c382
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 297cac24-7207-4692-8c7b-40aaeaa4a768
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedOperationEvent",

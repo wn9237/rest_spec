@@ -14,8 +14,7 @@ GET /groups/<objectId>/plans/<id>/details
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [PlanDetails](../resources/plandetails.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [PlanDetails](../resources/plandetails.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -57,8 +56,8 @@ Content-length: 75
 }
 ```
 
-<!-- uuid: f9907e79-4fcb-49bf-bc57-c3271c193457
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: c359d4c7-a638-41b6-8ad0-03defacf7353
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PlanDetails",

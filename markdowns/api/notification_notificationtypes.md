@@ -51,8 +51,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: ee483234-1925-490a-ba35-67acec673d87
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 774d396a-d40d-4853-a6da-cdc93488ece1
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notification: NotificationTypes",

@@ -43,7 +43,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -51,8 +51,8 @@ None
 |[Update](../api/oauth2permissiongrant_update.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md)	|Update OAuth2PermissionGrant object. |
 |[Delete](../api/oauth2permissiongrant_delete.md) | None |Delete OAuth2PermissionGrant object. |
 
-<!-- uuid: 777763ca-4868-4cdd-b561-26ab46985772
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 2d85d707-68dc-4522-8b42-9ffb04435f44
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OAuth2PermissionGrant resource",

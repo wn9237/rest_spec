@@ -62,8 +62,8 @@ Content-length: 39
 }
 ```
 
-<!-- uuid: e4b35bbe-da1c-4239-bc43-2606a8eebd37
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 9e318227-d961-4b30-b940-0de455deab34
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration: getMemberGroups",

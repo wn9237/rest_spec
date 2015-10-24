@@ -75,8 +75,8 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: bd1c33b1-aebe-4aba-af2f-e0312cbe9d30
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 38566b3f-7470-40ff-826e-ebddfff045ca
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of directoryrole object.",

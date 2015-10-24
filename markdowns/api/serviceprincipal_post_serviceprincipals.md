@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals
+POST /PrivilegedSignupStatus
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [ServicePrin
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_serviceprincipal_from_serviceprincipals"
+  "name": "create_serviceprincipal_from_privilegedsignupstatus"
 }-->
 ```http
-POST /servicePrincipals
+POST /PrivilegedSignupStatus
 ```
 In the request body, supply a JSON representation of [ServicePrincipal](../resources/serviceprincipal.md) object.
 ##### Response
@@ -116,8 +116,8 @@ Content-length: 1942
 }
 ```
 
-<!-- uuid: 322dbf74-8e0a-42ab-aeb9-b1358bc8a41a
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 833206cf-163a-4b6f-ba3d-5891958fb735
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create ServicePrincipal",

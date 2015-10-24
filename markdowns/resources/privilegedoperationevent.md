@@ -53,7 +53,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -61,8 +61,8 @@ None
 |[Update](../api/privilegedoperationevent_update.md) | [PrivilegedOperationEvent](privilegedoperationevent.md)	|Update PrivilegedOperationEvent object. |
 |[Delete](../api/privilegedoperationevent_delete.md) | None |Delete PrivilegedOperationEvent object. |
 
-<!-- uuid: 5d47c685-fef9-4682-80b6-a25f6cd51e5d
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 18f85c30-60af-45b4-ab53-54f1b8eed6cf
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedOperationEvent resource",

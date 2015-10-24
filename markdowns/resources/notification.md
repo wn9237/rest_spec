@@ -35,7 +35,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -44,8 +44,8 @@ None
 |[Delete](../api/notification_delete.md) | None |Delete Notification object. |
 |[Notificationtypes](../api/notification_notificationtypes.md)|String collection||
 
-<!-- uuid: 53a92769-880b-4290-86b5-b6d6f426382c
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: d9ff76e9-f91b-432f-ab46-6f2821b33078
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notification resource",

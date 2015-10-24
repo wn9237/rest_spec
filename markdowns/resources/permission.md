@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -59,8 +59,8 @@ None
 |[Update](../api/permission_update.md) | [permission](permission.md)	|Update permission object. |
 |[Delete](../api/permission_delete.md) | None |Delete permission object. |
 
-<!-- uuid: 7f11f48c-25fd-4b0e-863d-bf324d91f2e7
-2015-10-19 10:21:30 UTC -->
+<!-- uuid: 6fd6f0f7-0e50-4946-a286-a21befbd57a2
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "permission resource",

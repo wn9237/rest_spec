@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |Calendars|[Calendar](calendar.md) collection|The calendars in the calendar group. Navigation property. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -50,8 +50,8 @@ Here is a JSON representation of the resource
 |[Update](../api/calendargroup_update.md) | [CalendarGroup](calendargroup.md)	|Update CalendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | None |Delete CalendarGroup object. |
 
-<!-- uuid: 6f3abad4-1684-4c30-9143-35a54a5fe2f1
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: ac1f7bc7-3003-45e6-b438-5faa0a658d95
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "CalendarGroup resource",

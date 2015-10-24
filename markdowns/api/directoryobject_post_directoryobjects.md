@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryObjects
+POST /devices
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [DirectoryOb
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryobjects"
+  "name": "create_directoryobject_from_devices"
 }-->
 ```http
-POST /directoryObjects
+POST /devices
 ```
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
 ##### Response
@@ -51,8 +51,8 @@ Content-length: 111
 }
 ```
 
-<!-- uuid: 84042c3f-8ea8-4601-be69-c3943a42d21b
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 78d05721-a0b4-4ce9-b7ef-313c2f70ad65
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DirectoryObject",

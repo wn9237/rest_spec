@@ -12,8 +12,7 @@ GET /Notifications/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Notification](../resources/notification.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Notification](../resources/notification.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -55,8 +54,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 3a488102-bd15-4a48-b9e7-f237e348e3a8
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 6bde1b5f-991f-454e-bcfe-0b7b8bb3ea34
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Notification",

@@ -39,7 +39,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -47,8 +47,8 @@ None
 |[Update](../api/privilegedrolesummary_update.md) | [PrivilegedRoleSummary](privilegedrolesummary.md)	|Update PrivilegedRoleSummary object. |
 |[Delete](../api/privilegedrolesummary_delete.md) | None |Delete PrivilegedRoleSummary object. |
 
-<!-- uuid: 483a956b-40e2-44d3-ab77-d7ffff0e6f0d
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: dc5df752-b998-47cf-a5ee-acc9b5e81f43
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleSummary resource",

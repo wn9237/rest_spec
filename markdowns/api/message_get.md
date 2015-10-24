@@ -14,8 +14,7 @@ GET /users/<objectId>/Folders/<Id>/Messages/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Message](../resources/message.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Message](../resources/message.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -125,8 +124,8 @@ Content-length: 1546
 }
 ```
 
-<!-- uuid: ce6f806b-942c-4e8d-acb4-b06c5783bd65
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: ce8684d6-8780-4652-9f64-995fa8e9c0c4
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Message",

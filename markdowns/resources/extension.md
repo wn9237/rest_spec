@@ -29,15 +29,15 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Extension](../api/extension_get.md) | [Extension](extension.md) |Read properties and relationships of extension object.|
 |[Delete](../api/extension_delete.md) | None |Delete Extension object. |
 
-<!-- uuid: 3a67ec4b-d4f6-42c4-9157-63fbf293fc70
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 1123f35f-7f58-4ef0-b9b8-0b90818c3561
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Extension resource",

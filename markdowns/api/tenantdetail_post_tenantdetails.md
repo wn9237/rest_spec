@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /tenantDetails
+POST /tasks
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [TenantDetai
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_tenantdetail_from_tenantdetails"
+  "name": "create_tenantdetail_from_tasks"
 }-->
 ```http
-POST /tenantDetails
+POST /tasks
 ```
 In the request body, supply a JSON representation of [TenantDetail](../resources/tenantdetail.md) object.
 ##### Response
@@ -107,8 +107,8 @@ Content-length: 1647
 }
 ```
 
-<!-- uuid: f25b4668-9303-4589-a461-9e2745333ec1
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: c486d48d-92b9-4e2c-9247-454782a8dd7a
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create TenantDetail",

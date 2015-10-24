@@ -128,7 +128,7 @@ Here is a JSON representation of the resource
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |Instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -142,8 +142,8 @@ Here is a JSON representation of the resource
 |[Decline](../api/event_decline.md)|None||
 |[Tentativelyaccept](../api/event_tentativelyaccept.md)|None||
 
-<!-- uuid: 6aefa313-5a82-4330-8653-375b014cc9ef
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 9f09d3d4-e40e-4e10-aab5-e2e85d577861
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Event resource",

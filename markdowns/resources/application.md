@@ -119,7 +119,7 @@ Here is a JSON representation of the resource
 |extensionProperties|[ExtensionProperty](extensionproperty.md) collection|The extension properties associated with the application. Requires 1.5 or newer. Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Inherited from [DirectoryObject]. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -133,8 +133,8 @@ Here is a JSON representation of the resource
 |[Get MemberObjects](../api/application_getmemberobjects.md)|String collection||
 |[Restore](../api/application_restore.md)|[Application](application.md)||
 
-<!-- uuid: 624c63ce-3f08-4579-9a43-fe7dd9fffcdb
-2015-10-19 10:21:25 UTC -->
+<!-- uuid: 4aea1b65-16b7-48dc-bfda-3989e166f3d7
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application resource",

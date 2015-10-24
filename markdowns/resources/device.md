@@ -78,7 +78,7 @@ Here is a JSON representation of the resource
 |registeredOwners|[DirectoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[DirectoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -91,8 +91,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/device_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/device_getmemberobjects.md)|String collection||
 
-<!-- uuid: 180e61c2-fa26-4fe7-bf3a-d87d21bce5f2
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 4ed8c733-ffca-4253-bcda-60e4df1f82e6
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device resource",

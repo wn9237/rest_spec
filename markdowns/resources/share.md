@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |items|[item](item.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -50,8 +50,8 @@ Here is a JSON representation of the resource
 |[Update](../api/share_update.md) | [share](share.md)	|Update share object. |
 |[Delete](../api/share_delete.md) | None |Delete share object. |
 
-<!-- uuid: 6cb9d8c2-cfd7-48f1-973c-46eecb2f1684
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 4029ffd4-f5cc-4cc9-a51b-f7262eb7511d
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "share resource",

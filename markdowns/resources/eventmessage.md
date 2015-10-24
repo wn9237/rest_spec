@@ -125,7 +125,7 @@ Here is a JSON representation of the resource
 |Event|[Event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -144,8 +144,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/eventmessage_replyall.md)|None||
 |[Send](../api/eventmessage_send.md)|None||
 
-<!-- uuid: 264ca2df-0b8c-48f8-8316-a65363f9477e
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 6d7b5c12-a13c-4fd5-81ad-d40b9e7556d8
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "EventMessage resource",

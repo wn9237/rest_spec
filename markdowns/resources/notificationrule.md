@@ -43,7 +43,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -52,8 +52,8 @@ None
 |[Delete](../api/notificationrule_delete.md) | None |Delete NotificationRule object. |
 |[Eventtypes](../api/notificationrule_eventtypes.md)|String collection||
 
-<!-- uuid: 2c11a178-6770-44f6-b420-332740c67cda
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 1799c126-1e22-4cb0-ac18-915a1a0a2d45
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "NotificationRule resource",

@@ -37,7 +37,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -48,8 +48,8 @@ None
 |[Get MemberGroups](../api/directoryroletemplate_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/directoryroletemplate_getmemberobjects.md)|String collection||
 
-<!-- uuid: 8679d437-d0cb-44e1-b4e2-368395aa7503
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 4c48e8f8-27b6-4062-93f2-8594f86b45df
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRoleTemplate resource",

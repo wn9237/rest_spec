@@ -61,7 +61,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |Posts|[Post](post.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -71,8 +71,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/conversationthread_delete.md) | None |Delete ConversationThread object. |
 |[Reply](../api/conversationthread_reply.md)|None||
 
-<!-- uuid: 5db2bd50-5c71-414f-bb2b-113ae2a70502
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 2d6989d3-f458-425e-9f29-ed43bfa0b57d
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ConversationThread resource",

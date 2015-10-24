@@ -47,7 +47,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -58,8 +58,8 @@ None
 |[Get MemberGroups](../api/directorylinkchange_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/directorylinkchange_getmemberobjects.md)|String collection||
 
-<!-- uuid: bd55e2e4-7033-45f4-8a59-5183b829cc5a
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 969de07f-686a-4c78-9b67-6aa29d099fcf
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryLinkChange resource",

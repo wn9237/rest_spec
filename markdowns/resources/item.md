@@ -150,7 +150,7 @@ Here is a JSON representation of the resource
 |thumbnails|[thumbnailSet](thumbnailset.md) collection|Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../items/thumbnails.md). Read-only. Nullable.|
 |versions|[item](item.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -169,8 +169,8 @@ Here is a JSON representation of the resource
 |[Invite](../api/item_invite.md)|[permission](permission.md) collection||
 |[Search](../api/item_search.md)|[item](item.md) collection||
 
-<!-- uuid: c505be9b-afe3-4bae-a408-c30714d21987
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 73b690c0-909f-4b10-a0c9-17a4c6a4f0b9
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item resource",

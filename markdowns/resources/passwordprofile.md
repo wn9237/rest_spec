@@ -27,8 +27,8 @@ Here is a JSON representation of the resource
 |forceChangePasswordNextLogin|Boolean|                **true** if the user must change her password on the next login; otherwise **false**.            |
 |password|String|The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login.             The password must satisfy minimum requirements as specified by the userΓÇÖs **PasswordPolicies** property. By default, a strong password is required.|
 
-<!-- uuid: b02666bb-1370-47be-8f8b-601d706477d5
-2015-10-19 10:21:30 UTC -->
+<!-- uuid: e90e4ec5-fea0-4a26-a2c6-97d1788b1782
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PasswordProfile resource",

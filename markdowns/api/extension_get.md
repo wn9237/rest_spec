@@ -14,8 +14,7 @@ GET /users/<objectId>/Messages/<Id>/Extensions/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Extension](../resources/extension.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Extension](../resources/extension.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -54,8 +53,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 3273847c-d5fb-4e97-940d-3575444872ad
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 8f6d5b60-63ed-4b07-9e1b-845e9fe71491
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Extension",

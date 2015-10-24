@@ -53,8 +53,8 @@ Content-length: 275
 }
 ```
 
-<!-- uuid: 44fe4e05-0add-4c98-9ab6-1d09a4a113d4
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: c278725a-5aef-40ee-be69-558c2d29ad0d
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get DirectoryRole",

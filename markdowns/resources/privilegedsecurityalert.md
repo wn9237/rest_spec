@@ -61,7 +61,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -72,8 +72,8 @@ None
 |[Fix](../api/privilegedsecurityalert_fix.md)|[PrivilegedSecurityAlert](privilegedsecurityalert.md)||
 |[Reactivate](../api/privilegedsecurityalert_reactivate.md)|[PrivilegedSecurityAlert](privilegedsecurityalert.md)||
 
-<!-- uuid: 1cb3ab88-1833-4337-9225-f7a863dd2d3f
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: fc08fd57-41be-43cd-9337-3269f6bdf77f
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSecurityAlert resource",

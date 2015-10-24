@@ -52,7 +52,7 @@ Here is a JSON representation of the resource
 |details|[PlanDetails](plandetails.md)| Read-only.|
 |tasks|[Task](task.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -61,8 +61,8 @@ Here is a JSON representation of the resource
 |[Update](../api/plan_update.md) | [Plan](plan.md)	|Update Plan object. |
 |[Delete](../api/plan_delete.md) | None |Delete Plan object. |
 
-<!-- uuid: 838ab883-92b6-4891-bd7f-bf195df2ef04
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: ead33c4b-21e6-4a08-a079-41c09ba9bd29
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Plan resource",

@@ -39,7 +39,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -47,8 +47,8 @@ None
 |[Update](../api/outlookitem_update.md) | [OutlookItem](outlookitem.md)	|Update OutlookItem object. |
 |[Delete](../api/outlookitem_delete.md) | None |Delete OutlookItem object. |
 
-<!-- uuid: 1796044e-c1d3-43a9-a780-32fac9a33a9e
-2015-10-19 10:21:30 UTC -->
+<!-- uuid: 4a159cd3-337f-429b-91d6-a48e9b30b934
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OutlookItem resource",

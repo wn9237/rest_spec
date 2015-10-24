@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |service|String|The name of the service; for example, ΓÇ£AccessControlServiceS2SΓÇ¥.|
 |servicePlanId|Guid|A GUID that identifies the service plan.|
 
-<!-- uuid: 00747ffa-1d73-403d-a5ec-8cfe72305bb2
-2015-10-19 10:21:25 UTC -->
+<!-- uuid: facaba38-a703-48d4-b97c-404669097534
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AssignedPlan resource",

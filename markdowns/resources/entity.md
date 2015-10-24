@@ -29,15 +29,15 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Entity](../api/entity_get.md) | [Entity](entity.md) |Read properties and relationships of entity object.|
 |[Delete](../api/entity_delete.md) | None |Delete Entity object. |
 
-<!-- uuid: 16fa62af-cb26-4621-b50b-54794ff881be
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 13f7e804-a10e-431f-9997-d89ecd0164fc
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Entity resource",

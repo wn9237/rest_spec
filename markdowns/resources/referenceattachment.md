@@ -39,7 +39,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -47,8 +47,8 @@ None
 |[Update](../api/referenceattachment_update.md) | [ReferenceAttachment](referenceattachment.md)	|Update ReferenceAttachment object. |
 |[Delete](../api/referenceattachment_delete.md) | None |Delete ReferenceAttachment object. |
 
-<!-- uuid: 5918596c-e0c7-44af-8382-5233c54f89a8
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 550da0f8-a0c2-48d8-9b8e-6a273951396a
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ReferenceAttachment resource",

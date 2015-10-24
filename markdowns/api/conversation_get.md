@@ -14,8 +14,7 @@ GET /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Conversation](../resources/conversation.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Conversation](../resources/conversation.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -61,8 +60,8 @@ Content-length: 201
 }
 ```
 
-<!-- uuid: 4e16c533-718f-4ae5-a7c4-2a25bb0fd7d4
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: e672d2d2-b1d6-4bdd-9514-a8f2924398a8
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Conversation",

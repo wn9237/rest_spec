@@ -43,7 +43,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -51,8 +51,8 @@ None
 |[Update](../api/privilegedrolesettings_update.md) | [PrivilegedRoleSettings](privilegedrolesettings.md)	|Update PrivilegedRoleSettings object. |
 |[Delete](../api/privilegedrolesettings_delete.md) | None |Delete PrivilegedRoleSettings object. |
 
-<!-- uuid: bf4096cd-41a6-4ad4-bb33-84a56ee58e47
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: c3a4202f-971e-4216-8891-4e2fcc8d2efe
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleSettings resource",

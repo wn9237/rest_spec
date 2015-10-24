@@ -101,7 +101,7 @@ Here is a JSON representation of the resource
 |manager|[DirectoryObject](directoryobject.md)| Read-only.|
 |memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -114,8 +114,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/orgcontact_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/orgcontact_getmemberobjects.md)|String collection||
 
-<!-- uuid: 8fc42971-cc85-423d-baa4-84a3acd68a80
-2015-10-19 10:21:30 UTC -->
+<!-- uuid: 244f2e9c-ff0e-47ea-ab30-a5ec0fecfd35
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OrgContact resource",

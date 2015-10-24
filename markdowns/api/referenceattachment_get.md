@@ -12,8 +12,7 @@ The following **scopes** are required to execute this API:
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [ReferenceAttachment](../resources/referenceattachment.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [ReferenceAttachment](../resources/referenceattachment.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -57,8 +56,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 018c64a6-d74e-4180-91bf-cb1827d8f58e
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 9d68463f-255a-453b-8ed0-ad53861fcf12
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get ReferenceAttachment",

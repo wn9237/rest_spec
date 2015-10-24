@@ -14,8 +14,7 @@ GET /users/<objectId>/drive
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [drive](../resources/drive.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [drive](../resources/drive.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -76,8 +75,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: 5aa0e1c8-8483-47b3-bea7-b32226b795c9
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 23a662b5-ea4d-431d-b972-2c0f509f89ed
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get drive",

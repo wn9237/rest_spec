@@ -13,8 +13,7 @@ GET /PrivilegedRoleAssignments/<UserId|RoleId>/RoleInfo/Settings
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -60,8 +59,8 @@ Content-length: 289
 }
 ```
 
-<!-- uuid: dadfdcf1-2c88-4a0c-a218-3640705fe68e
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: ddb01060-b6b9-4e5d-a5a1-d32473a79cc2
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSettings",

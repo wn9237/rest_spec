@@ -12,8 +12,7 @@ The following **scopes** are required to execute this API:
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [OutlookItem](../resources/outlookitem.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [OutlookItem](../resources/outlookitem.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -58,8 +57,8 @@ Content-length: 185
 }
 ```
 
-<!-- uuid: 9e9e7b79-ec63-420f-821e-e1e121e64bd0
-2015-10-19 10:21:30 UTC -->
+<!-- uuid: 6586fc06-ea2f-40ff-a1f1-c6f87c89dae3
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OutlookItem",

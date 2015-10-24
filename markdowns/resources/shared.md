@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
 |owner|[identitySet](identityset.md)||
 |scope|String||
 
-<!-- uuid: 495488d7-2151-4b8b-a313-6ca703c492f6
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 31f2fa9b-810a-4fea-9321-f3edafd6d16e
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "shared resource",

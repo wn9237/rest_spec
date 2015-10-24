@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |RoleInfo|[PrivilegedRole](privilegedrole.md)| Read-only.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -52,8 +52,8 @@ Here is a JSON representation of the resource
 |[Deactivate](../api/privilegedroleassignment_deactivate.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 |[My](../api/privilegedroleassignment_my.md)|[PrivilegedRoleAssignment](privilegedroleassignment.md)||
 
-<!-- uuid: 55c2391f-deab-479e-9813-45f48068fecb
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 4321fbaa-542a-440b-8955-154fb726214b
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment resource",

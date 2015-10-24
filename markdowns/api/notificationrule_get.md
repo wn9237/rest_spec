@@ -12,8 +12,7 @@ GET /NotificationRules/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [NotificationRule](../resources/notificationrule.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [NotificationRule](../resources/notificationrule.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -59,8 +58,8 @@ Content-length: 260
 }
 ```
 
-<!-- uuid: ef41e414-898b-441c-a705-943bb538bcb8
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 1c6a46f0-aa7e-49fa-9726-6d6d9313df7f
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get NotificationRule",

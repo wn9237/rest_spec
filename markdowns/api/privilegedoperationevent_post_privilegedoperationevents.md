@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /PrivilegedOperationEvents
+POST /plans
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [PrivilegedO
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedoperationevent_from_privilegedoperationevents"
+  "name": "create_privilegedoperationevent_from_plans"
 }-->
 ```http
-POST /PrivilegedOperationEvents
+POST /plans
 ```
 In the request body, supply a JSON representation of [PrivilegedOperationEvent](../resources/privilegedoperationevent.md) object.
 ##### Response
@@ -61,8 +61,8 @@ Content-length: 456
 }
 ```
 
-<!-- uuid: a7647bb0-ac7c-4175-9aef-a4ff3cccf1e6
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 76009d5a-6f3d-4f0e-b2bf-1f3c431bfb3d
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedOperationEvent",

@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |service|String||
 |timestamp|DateTimeOffset|The date and time at which the error occurred.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
-<!-- uuid: 58728141-97d1-4315-88e7-e9ac27366632
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: c484ddfe-12ec-430f-891e-a89a0361e96f
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ProvisioningError resource",

@@ -12,8 +12,7 @@ GET /PrivilegedSecurityAlerts/<AlertId>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [PrivilegedSecurityAlert](../resources/privilegedsecurityalert.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [PrivilegedSecurityAlert](../resources/privilegedsecurityalert.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -68,8 +67,8 @@ Content-length: 596
 }
 ```
 
-<!-- uuid: 3fd9c334-7bfe-49e3-a402-60ed93d82be6
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: a4434857-42b3-468e-9cf5-8bfe63e859c7
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedSecurityAlert",

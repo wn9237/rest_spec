@@ -47,7 +47,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -58,8 +58,8 @@ None
 |[Get MemberGroups](../api/approleassignment_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/approleassignment_getmemberobjects.md)|String collection||
 
-<!-- uuid: b71f549a-f4fd-42fc-95ac-9a6ba18c9899
-2015-10-19 10:21:25 UTC -->
+<!-- uuid: 915c402b-ba04-4401-b802-e415f48d8439
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "AppRoleAssignment resource",

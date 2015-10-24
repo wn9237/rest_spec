@@ -46,7 +46,7 @@ Here is a JSON representation of the resource
 |ChildFolders|[ContactFolder](contactfolder.md) collection|The collection of child folders in the folder. Navigation property. Read-only. Nullable.|
 |Contacts|[Contact](contact.md) collection|The contacts in the folder. Navigation property. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -56,8 +56,8 @@ Here is a JSON representation of the resource
 |[Update](../api/contactfolder_update.md) | [ContactFolder](contactfolder.md)	|Update ContactFolder object. |
 |[Delete](../api/contactfolder_delete.md) | None |Delete ContactFolder object. |
 
-<!-- uuid: 0b6dad32-41f3-4917-ba63-68a3e7a8c97b
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 1f360c6c-cc8e-44a9-b496-4f7381090bbd
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ContactFolder resource",

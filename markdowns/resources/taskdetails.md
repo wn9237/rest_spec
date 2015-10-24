@@ -39,7 +39,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -47,8 +47,8 @@ None
 |[Update](../api/taskdetails_update.md) | [TaskDetails](taskdetails.md)	|Update TaskDetails object. |
 |[Delete](../api/taskdetails_delete.md) | None |Delete TaskDetails object. |
 
-<!-- uuid: 90b440a3-5f2d-454b-be86-dce49d353a23
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 5c1b49f5-d5cf-49bf-b949-5c2d92785f43
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TaskDetails resource",

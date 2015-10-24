@@ -95,7 +95,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -106,8 +106,8 @@ None
 |[Get MemberGroups](../api/tenantdetail_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/tenantdetail_getmemberobjects.md)|String collection||
 
-<!-- uuid: 8094d26b-fd6e-48d2-a0bc-a107c25e4f2e
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 1bb00eea-7b8b-4044-9299-d121c313a1bf
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "TenantDetail resource",

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /Notifications
+POST /NotificationRules
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [Notificatio
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_notification_from_notifications"
+  "name": "create_notification_from_notificationrules"
 }-->
 ```http
-POST /Notifications
+POST /NotificationRules
 ```
 In the request body, supply a JSON representation of [Notification](../resources/notification.md) object.
 ##### Response
@@ -52,8 +52,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 830b8afd-7063-4f0a-9cfe-b3fbe97abab7
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: da448b59-b236-447b-9fdb-3380a012f2c9
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Notification",

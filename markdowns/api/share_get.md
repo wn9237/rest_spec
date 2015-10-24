@@ -12,8 +12,7 @@ GET /shares/<id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [share](../resources/share.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [share](../resources/share.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -67,8 +66,8 @@ Content-length: 330
 }
 ```
 
-<!-- uuid: 3b65839d-f8f5-4c66-8631-b5dba8bce558
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: d8b5fae4-ab7a-43ff-b163-f30aabaa621b
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get share",

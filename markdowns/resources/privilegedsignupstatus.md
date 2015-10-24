@@ -33,7 +33,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -46,8 +46,8 @@ None
 |[Signup](../api/privilegedsignupstatus_signup.md)|[PrivilegedSignupStatus](privilegedsignupstatus.md)||
 |[Skipsetup](../api/privilegedsignupstatus_skipsetup.md)|None||
 
-<!-- uuid: 3cce5957-67ed-4a45-bcee-1edef0e76c82
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: f1ffd9e7-1a60-4ec7-9e3b-7f1e49683dc5
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedSignupStatus resource",

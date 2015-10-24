@@ -71,8 +71,8 @@ Content-length: 162
 }
 ```
 
-<!-- uuid: 712eb41d-f76f-4a01-b6c2-366649838e75
-2015-10-19 10:21:25 UTC -->
+<!-- uuid: 4a3b59f5-6439-4480-bc5b-c975ba0fc4e6
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update the properties of attachment object.",

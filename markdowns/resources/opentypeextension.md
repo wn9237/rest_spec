@@ -31,7 +31,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -39,8 +39,8 @@ None
 |[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
 |[Delete](../api/opentypeextension_delete.md) | None |Delete OpenTypeExtension object. |
 
-<!-- uuid: 02e536e6-02a3-41d4-afa9-17235035a0b2
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 5a6e7cc7-2293-4dde-9dd2-a09a6c2b63ca
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OpenTypeExtension resource",

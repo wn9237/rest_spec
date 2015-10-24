@@ -12,8 +12,7 @@ The following **scopes** are required to execute this API:
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Entity](../resources/entity.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Entity](../resources/entity.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -52,8 +51,8 @@ Content-length: 22
 }
 ```
 
-<!-- uuid: 04a15814-2aae-407a-9044-47db11454a7a
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 48d3934c-09fc-4947-9b34-6b8e4ff9eed6
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Entity",

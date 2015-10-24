@@ -140,8 +140,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-<!-- uuid: e4d4ab5b-666d-465c-b357-c34f6bad2631
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 37c56f80-2c53-4462-9413-68a88b95659a
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "User: SendMail",

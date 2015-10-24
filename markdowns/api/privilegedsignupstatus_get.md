@@ -12,8 +12,7 @@ GET /PrivilegedSignupStatus/<TenantId>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [PrivilegedSignupStatus](../resources/privilegedsignupstatus.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -54,8 +53,8 @@ Content-length: 86
 }
 ```
 
-<!-- uuid: 2e64cf65-51b8-4b7a-9e43-33797df4356e
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: b0d1009a-b184-4b4d-a7d0-21f80c61241c
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedSignupStatus",

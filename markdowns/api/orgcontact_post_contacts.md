@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /contacts
+POST /applications
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [OrgContact]
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_orgcontact_from_contacts"
+  "name": "create_orgcontact_from_applications"
 }-->
 ```http
-POST /contacts
+POST /applications
 ```
 In the request body, supply a JSON representation of [OrgContact](../resources/orgcontact.md) object.
 ##### Response
@@ -82,8 +82,8 @@ Content-length: 1097
 }
 ```
 
-<!-- uuid: dd074d01-b4b5-4626-a6fd-fe3b4ab33cc2
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 49d1f8cd-1b76-4487-a624-efb02f36eff4
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create OrgContact",

@@ -54,8 +54,8 @@ Content-length: 130
 }
 ```
 
-<!-- uuid: e4d05d79-5813-4204-8066-65a5cf877ca0
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: c5686da5-0a82-4bc1-b954-4339e73bcdaa
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create MailFolder",

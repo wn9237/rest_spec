@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -56,8 +56,8 @@ None
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String collection||
 
-<!-- uuid: 5a8e6f79-5230-4864-a730-1b8b128128f2
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 06932f5c-47fe-4a81-91d3-1a0ea42c1ca0
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DeviceConfiguration resource",

@@ -70,8 +70,8 @@ Content-length: 160
 }
 ```
 
-<!-- uuid: 4903b5ee-6be2-4e3c-b008-43411c854051
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 37be33f8-f42f-4a1a-babb-f745c2dc2d11
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PrivilegedRoleAssignment: Activate",

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /subscribedSkus
+POST /shares
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [SubscribedS
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_subscribedsku_from_subscribedskus"
+  "name": "create_subscribedsku_from_shares"
 }-->
 ```http
-POST /subscribedSkus
+POST /shares
 ```
 In the request body, supply a JSON representation of [SubscribedSku](../resources/subscribedsku.md) object.
 ##### Response
@@ -64,8 +64,8 @@ Content-length: 388
 }
 ```
 
-<!-- uuid: e97b1b84-b7d9-447c-b3ec-14eae994033d
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 2b84e44e-3d76-4122-b946-2ca721a3ae75
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create SubscribedSku",

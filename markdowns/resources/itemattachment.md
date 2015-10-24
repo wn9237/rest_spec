@@ -43,7 +43,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |Item|[OutlookItem](outlookitem.md)| Read-only.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -51,8 +51,8 @@ Here is a JSON representation of the resource
 |[Update](../api/itemattachment_update.md) | [ItemAttachment](itemattachment.md)	|Update ItemAttachment object. |
 |[Delete](../api/itemattachment_delete.md) | None |Delete ItemAttachment object. |
 
-<!-- uuid: 278ad4de-25da-4059-a0f9-941dbc6be812
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: aba05824-6ec2-4690-862b-5a562195ba54
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ItemAttachment resource",

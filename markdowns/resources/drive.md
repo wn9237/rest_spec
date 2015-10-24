@@ -64,7 +64,7 @@ Here is a JSON representation of the resource
 |shared|[item](item.md) collection| Read-only. Nullable.|
 |special|[item](item.md) collection|Collection of common folders available in OneDrive. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -76,8 +76,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/drive_delete.md) | None |Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md) collection||
 
-<!-- uuid: 7bdd5ec1-28b8-43d7-b424-792a2547d94d
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: b894b58e-fa6d-442b-8133-0c86e2e17e3f
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive resource",

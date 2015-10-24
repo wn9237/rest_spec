@@ -134,7 +134,7 @@ Here is a JSON representation of the resource
 |ContactPhoto|[Photo](photo.md)| Read-only.|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -143,8 +143,8 @@ Here is a JSON representation of the resource
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete Contact object. |
 
-<!-- uuid: 5eda1cd2-0019-44a7-b735-1e337b6cd7a7
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 959e2ca6-fabf-4d92-9698-f9fb13b1f206
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Contact resource",

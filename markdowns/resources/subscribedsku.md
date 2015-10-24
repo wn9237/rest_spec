@@ -47,7 +47,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -55,8 +55,8 @@ None
 |[Update](../api/subscribedsku_update.md) | [SubscribedSku](subscribedsku.md)	|Update SubscribedSku object. |
 |[Delete](../api/subscribedsku_delete.md) | None |Delete SubscribedSku object. |
 
-<!-- uuid: c17168df-9662-486c-b685-c45b8a3094ae
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 5f289a06-b6f9-4ec4-bacc-2e553f9fbe23
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "SubscribedSku resource",

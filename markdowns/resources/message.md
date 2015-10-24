@@ -118,7 +118,7 @@ Here is a JSON representation of the resource
 |Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -137,8 +137,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/message_replyall.md)|None||
 |[Send](../api/message_send.md)|None||
 
-<!-- uuid: 49328738-a164-4afe-b82d-a4081e270f75
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 7f1e988d-efbc-4ee8-bfbf-50a8bbd44fa7
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Message resource",

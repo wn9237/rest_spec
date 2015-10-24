@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /tasks
+POST /subscribedSkus
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [Task](../re
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_task_from_tasks"
+  "name": "create_task_from_subscribedskus"
 }-->
 ```http
-POST /tasks
+POST /subscribedSkus
 ```
 In the request body, supply a JSON representation of [Task](../resources/task.md) object.
 ##### Response
@@ -65,8 +65,8 @@ Content-length: 541
 }
 ```
 
-<!-- uuid: 143ea2a1-44c8-4c36-9f53-9a1ee0359caf
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: b0f543cc-3621-4e41-8834-68734f5220a1
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Task",

@@ -33,7 +33,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -44,8 +44,8 @@ None
 |[Get MemberGroups](../api/directoryobject_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/directoryobject_getmemberobjects.md)|String collection||
 
-<!-- uuid: 1a82bafd-6542-4cc9-a2e8-d7956edf997f
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 75539ad2-072c-4472-9d7e-32766a59fe0c
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryObject resource",

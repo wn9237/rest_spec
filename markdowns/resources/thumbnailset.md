@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -53,8 +53,8 @@ None
 |[Update](../api/thumbnailset_update.md) | [thumbnailSet](thumbnailset.md)	|Update thumbnailSet object. |
 |[Delete](../api/thumbnailset_delete.md) | None |Delete thumbnailSet object. |
 
-<!-- uuid: c13d3da9-caf7-401f-8790-da6ca8887268
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: c258a10f-45c0-4067-a5e1-b77cca8aaa30
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "thumbnailSet resource",

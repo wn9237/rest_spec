@@ -14,8 +14,7 @@ GET /groups/<objectId>/tasks/<id>/details
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [TaskDetails](../resources/taskdetails.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [TaskDetails](../resources/taskdetails.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -59,8 +58,8 @@ Content-length: 139
 }
 ```
 
-<!-- uuid: 64fafb9b-59ff-4dd8-90f0-5a8c933fa136
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: dd679bd6-aa3c-4420-9e63-3cb901e0f7dd
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get TaskDetails",

@@ -48,7 +48,7 @@ Here is a JSON representation of the resource
 |CalendarView|[Event](event.md) collection|The calendar view for the calendar. Navigation property. Read-only. Nullable.|
 |Events|[Event](event.md) collection|The events in the calendar. Navigation property. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -58,8 +58,8 @@ Here is a JSON representation of the resource
 |[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
 |[Delete](../api/calendar_delete.md) | None |Delete Calendar object. |
 
-<!-- uuid: 134804eb-0040-4e76-84f2-4165722d4ceb
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 08ac84e6-c752-464e-b79a-b43232cefaa9
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Calendar resource",

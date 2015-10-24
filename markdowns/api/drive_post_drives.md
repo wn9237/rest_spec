@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drives
+POST /directoryRoleTemplates
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [drive](../r
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_drive_from_drives"
+  "name": "create_drive_from_directoryroletemplates"
 }-->
 ```http
-POST /drives
+POST /directoryRoleTemplates
 ```
 In the request body, supply a JSON representation of [drive](../resources/drive.md) object.
 ##### Response
@@ -71,8 +71,8 @@ Content-length: 458
 }
 ```
 
-<!-- uuid: 1b46196b-ec1b-4a01-b65b-ea42958f7ecf
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 0fa66c35-d668-4adc-bef8-2c632df4b2b3
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create drive",

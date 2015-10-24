@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users
+POST /tenantDetails
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [User](../re
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_user_from_users"
+  "name": "create_user_from_tenantdetails"
 }-->
 ```http
-POST /users
+POST /tenantDetails
 ```
 In the request body, supply a JSON representation of [User](../resources/user.md) object.
 ##### Response
@@ -146,8 +146,8 @@ Content-length: 2668
 }
 ```
 
-<!-- uuid: 82b5988b-9d5f-4ec5-bcd0-9632c4f59f9b
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: c3988d5c-2672-4b8c-92ae-b285cd15c11c
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create User",

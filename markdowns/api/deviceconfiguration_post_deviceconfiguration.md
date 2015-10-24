@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /deviceConfiguration
+POST /contacts
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [DeviceConfi
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_deviceconfiguration_from_deviceconfiguration"
+  "name": "create_deviceconfiguration_from_contacts"
 }-->
 ```http
-POST /deviceConfiguration
+POST /contacts
 ```
 In the request body, supply a JSON representation of [DeviceConfiguration](../resources/deviceconfiguration.md) object.
 ##### Response
@@ -59,8 +59,8 @@ Content-length: 341
 }
 ```
 
-<!-- uuid: 7716890e-9ca9-43da-bb39-f590c822d950
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: ca740632-2a48-4186-9ef0-fa2934d7b040
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DeviceConfiguration",

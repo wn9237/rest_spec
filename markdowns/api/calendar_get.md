@@ -14,8 +14,7 @@ GET /users/<objectId>/Calendars/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Calendar](../resources/calendar.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Calendar](../resources/calendar.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -57,8 +56,8 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: e9e1afef-f9d4-44a2-ae17-ed04b7e49adc
-2015-10-19 10:21:25 UTC -->
+<!-- uuid: 0cddd4cf-15e0-4473-a68e-92ba5edc70b0
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Calendar",

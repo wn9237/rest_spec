@@ -26,14 +26,14 @@ None
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Delete](../api/file_delete.md) | None |Delete File object. |
 
-<!-- uuid: a9ef3aee-7181-4fb3-80af-2eba81e7e25d
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: e76d55ae-1eee-4dec-a9aa-dbd50a3239d2
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "File resource",

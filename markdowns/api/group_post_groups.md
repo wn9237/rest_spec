@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups
+POST /drives
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [Group](../r
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_group_from_drives"
 }-->
 ```http
-POST /groups
+POST /drives
 ```
 In the request body, supply a JSON representation of [Group](../resources/group.md) object.
 ##### Response
@@ -85,8 +85,8 @@ Content-length: 1009
 }
 ```
 
-<!-- uuid: e87ebfe8-d1e6-4e37-8182-8d29725d76dc
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: 5aa61f0b-f7e9-485c-a3e5-ecc75cd91233
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Group",

@@ -33,7 +33,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -41,8 +41,8 @@ None
 |[Update](../api/photo_update.md) | [Photo](photo.md)	|Update Photo object. |
 |[Delete](../api/photo_delete.md) | None |Delete Photo object. |
 
-<!-- uuid: bd115954-37fb-48d1-9220-e00247119a97
-2015-10-19 10:21:30 UTC -->
+<!-- uuid: eb2523d1-3407-45b6-aded-1a2fd8db761a
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Photo resource",

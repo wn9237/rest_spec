@@ -14,8 +14,7 @@ GET /drive/root/lastModifiedByUser/Contacts/<Id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [Contact](../resources/contact.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Contact](../resources/contact.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -124,8 +123,8 @@ Content-length: 1977
 }
 ```
 
-<!-- uuid: 2ea0e46a-b1fd-4e0e-b938-0a466514701e
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 5a0e1ec1-1eb9-48cc-87a0-66b3ddc96b0e
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get Contact",

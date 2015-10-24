@@ -83,7 +83,7 @@ Here is a JSON representation of the resource
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |InReplyTo|[Post](post.md)| Read-only.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -95,8 +95,8 @@ Here is a JSON representation of the resource
 |[Forward](../api/post_forward.md)|None||
 |[Reply](../api/post_reply.md)|None||
 
-<!-- uuid: abfdad62-ead2-4cb7-acea-30eb89736ba8
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 69142d76-bee4-4fa5-ac13-5b835100d4e0
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Post resource",

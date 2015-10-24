@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
 |url|String|The URL used to fetch the thumbnail content.|
 |width|Int32|The width of the thumbnail, in pixels.|
 
-<!-- uuid: e6b7c48b-0a00-434f-9406-c1894e7ffa08
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: 963f5a97-a887-406d-92fa-49b7c7a242ca
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "thumbnail resource",

@@ -35,7 +35,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -43,8 +43,8 @@ None
 |[Update](../api/plandetails_update.md) | [PlanDetails](plandetails.md)	|Update PlanDetails object. |
 |[Delete](../api/plandetails_delete.md) | None |Delete PlanDetails object. |
 
-<!-- uuid: b7ae889a-42af-4c19-9531-728bd28d6c40
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: b43c7fbd-d633-487e-8699-2880833e5762
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "PlanDetails resource",

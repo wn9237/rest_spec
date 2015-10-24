@@ -13,8 +13,7 @@ GET /PrivilegedRoleAssignments/<UserId|RoleId>/RoleInfo/Summary
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [PrivilegedRoleSummary](../resources/privilegedrolesummary.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [PrivilegedRoleSummary](../resources/privilegedrolesummary.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -58,8 +57,8 @@ Content-length: 145
 }
 ```
 
-<!-- uuid: 52e24528-6de3-40e8-875d-69a663c3f48d
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 75843cfd-a2ee-4956-8c68-e97bd1cafef2
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get PrivilegedRoleSummary",

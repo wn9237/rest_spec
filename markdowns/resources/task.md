@@ -65,7 +65,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |details|[TaskDetails](taskdetails.md)| Read-only.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -73,8 +73,8 @@ Here is a JSON representation of the resource
 |[Update](../api/task_update.md) | [Task](task.md)	|Update Task object. |
 |[Delete](../api/task_delete.md) | None |Delete Task object. |
 
-<!-- uuid: e15acc18-99ab-471f-97d5-3b779875f428
-2015-10-19 10:21:32 UTC -->
+<!-- uuid: af4f738d-05ce-445a-b32e-6c9d69dc39db
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Task resource",

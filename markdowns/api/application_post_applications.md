@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications
+
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [Application
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_application_from_applications"
+  "name": "create_application_from_video"
 }-->
 ```http
-POST /applications
+
 ```
 In the request body, supply a JSON representation of [Application](../resources/application.md) object.
 ##### Response
@@ -128,8 +128,8 @@ Content-length: 2150
 }
 ```
 
-<!-- uuid: 542c3e6f-a683-4d4d-8780-6822500530f9
-2015-10-19 10:21:25 UTC -->
+<!-- uuid: 06a2afdb-23b0-4d6c-9f70-ad3ca9ca806e
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Application",

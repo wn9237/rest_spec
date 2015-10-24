@@ -12,8 +12,7 @@ The following **scopes** are required to execute this API:
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. 
-See relationships table of [OpenTypeExtension](../resources/opentypeextension.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [OpenTypeExtension](../resources/opentypeextension.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -54,8 +53,8 @@ Content-length: 48
 }
 ```
 
-<!-- uuid: c0bad207-a245-42f7-8753-ccd7f64bb853
-2015-10-19 10:21:29 UTC -->
+<!-- uuid: b31aced1-6955-4f1c-a311-0a2289b44110
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get OpenTypeExtension",

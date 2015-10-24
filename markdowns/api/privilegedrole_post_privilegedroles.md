@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /PrivilegedRoles
+POST /PrivilegedRoleAssignments
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [PrivilegedR
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedrole_from_privilegedroles"
+  "name": "create_privilegedrole_from_privilegedroleassignments"
 }-->
 ```http
-POST /PrivilegedRoles
+POST /PrivilegedRoleAssignments
 ```
 In the request body, supply a JSON representation of [PrivilegedRole](../resources/privilegedrole.md) object.
 ##### Response
@@ -50,8 +50,8 @@ Content-length: 46
 }
 ```
 
-<!-- uuid: 0b747e41-1886-4b23-8b33-97304b2b3a8a
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 759c15c6-55f5-461f-bcfb-e0428c182fa6
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create PrivilegedRole",

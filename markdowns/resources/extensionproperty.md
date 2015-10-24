@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -56,8 +56,8 @@ None
 |[Get MemberGroups](../api/extensionproperty_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/extensionproperty_getmemberobjects.md)|String collection||
 
-<!-- uuid: 6abc9f51-a823-42e9-bb21-8783d1c78839
-2015-10-19 10:21:28 UTC -->
+<!-- uuid: 3acf482e-47c3-4d6e-9ab3-ddf1f754d13b
+2015-10-24 21:49:47 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ExtensionProperty resource",

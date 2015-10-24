@@ -70,7 +70,7 @@ Here is a JSON representation of the resource
 |ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
 | Task		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -85,8 +85,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String collection||
 
-<!-- uuid: 960ae999-0c6f-4e10-bdf3-b53567845760
-2015-10-19 10:21:26 UTC -->
+<!-- uuid: 1c7611e8-7542-4bca-a958-8b5c56514705
+2015-10-24 21:49:46 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole resource",

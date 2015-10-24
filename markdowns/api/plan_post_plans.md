@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /plans
+POST /oauth2PermissionGrants
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [Plan](../re
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_plan_from_plans"
+  "name": "create_plan_from_oauth2permissiongrants"
 }-->
 ```http
-POST /plans
+POST /oauth2PermissionGrants
 ```
 In the request body, supply a JSON representation of [Plan](../resources/plan.md) object.
 ##### Response
@@ -55,8 +55,8 @@ Content-length: 179
 }
 ```
 
-<!-- uuid: dd2fc5a7-b5dc-41a5-b144-cc4c7ca5b6b1
-2015-10-19 10:21:31 UTC -->
+<!-- uuid: 531f0f35-fa72-4477-a566-6bac88fc9d7f
+2015-10-24 21:49:48 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create Plan",
