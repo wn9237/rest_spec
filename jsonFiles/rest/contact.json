@@ -571,8 +571,8 @@
       "isUnicode": false
     },
     {
-      "name": "DateTimeCreated",
-      "description": "The time the contact was created.",
+      "name": "CreatedDateTime",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -585,8 +585,8 @@
       "isUnicode": null
     },
     {
-      "name": "DateTimeLastModified",
-      "description": "The time the contact was modified.",
+      "name": "LastModifiedDateTime",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,

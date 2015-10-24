@@ -647,8 +647,8 @@
       "isUnicode": false
     },
     {
-      "name": "DateTimeCreated",
-      "description": "The date and time that the event was created.",
+      "name": "CreatedDateTime",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -661,8 +661,8 @@
       "isUnicode": null
     },
     {
-      "name": "DateTimeLastModified",
-      "description": "The date and time that the event was last modified.",
+      "name": "LastModifiedDateTime",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,

@@ -7,11 +7,11 @@ require 'logger'
 module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
-	f=File.read(CSDL_LOCATION + 'alpha_graph.xml')
+	f=File.read(CSDL_LOCATION + 'ppe_alpha_graph.xml')
 
 	# Convert to JSON format. 
 	csdl=JSON.parse(Hash.from_xml(f).to_json, {:symbolize_names => true}) 
-	File.open(CSDL_LOCATION + 'alpha_graph.json', "w") do |f|
+	File.open(CSDL_LOCATION + 'ppe_alpha_graph.json', "w") do |f|
 		f.write(JSON.pretty_generate csdl)
 	end
 	schema = csdl[:Edmx][:DataServices][:Schema]
