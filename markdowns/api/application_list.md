@@ -12,6 +12,7 @@ GET /applications
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
+|$top|int|The number of items to return in a result set.|
 
 ### Request headers
 | Name       | Type | Description|

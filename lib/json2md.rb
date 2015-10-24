@@ -408,51 +408,56 @@ module SpecMaker
 		if @jsonHash[:collectionOf]
 			getMethodLines.push QRY_HEADER + NEWLINE 
 			getMethodLines.push QRY_2nd_LINE + NEWLINE
-			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["countable"]
-			else
+			annotationTarget = @annotations[@jsonHash[:collectionOf].downcase]
+			
+			countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
+			expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
+			selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
+			filterable = annotationTarget["filterrestrictions/filterable"].nil? ? true : annotationTarget["filterrestrictions/filterable"]
+			skipSupported = annotationTarget["skipsupported"].nil? ? true : annotationTarget["skipsupported"]
+			topSupported = annotationTarget["topsupported"].nil? ? true : annotationTarget["topsupported"]
+			sortable = annotationTarget["sortrestrictions/sortable"].nil? ? true : annotationTarget["sortrestrictions/sortable"]
+			
+			if countable
 				getMethodLines.push QRY_COUNT +  NEWLINE
 			end
-
-			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["expandable"]
-			else
+			if expandable
 				getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) for supported names. |" + NEWLINE
 			end
-			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["filterable"]
-			else
+			if filterable
 				getMethodLines.push QRY_FILTER + NEWLINE
-			end		
-			getMethodLines.push QRY_ORDERBY + NEWLINE
-			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["selectable"]
-			else
+			end
+			if sortable
+				getMethodLines.push QRY_ORDERBY + NEWLINE
+			end
+			if selectable
 				getMethodLines.push QRY_SELECT + NEWLINE
 			end			
-			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["skipsupported"]
-			else
+			if skipSupported
 				getMethodLines.push QRY_SKIP + NEWLINE		
 				getMethodLines.push QRY_SKIPTOKEN + NEWLINE
 			end		
-
-			if @annotations[@jsonHash[:collectionOf].downcase] && !@annotations[@jsonHash[:collectionOf].downcase]["topsupported"]
-			else
+			if topSupported
 				getMethodLines.push QRY_TOP + NEWLINE
 			end		
-
-
 		else
-			if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["countable"] && !@annotations[@jsonHash[:name].downcase]["expandable"] && !@annotations[@jsonHash[:name].downcase]["selectable"]
-			else				
+			annotationTarget = @annotations[@jsonHash[:name].downcase]
+			
+			countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
+			expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
+			selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
+			
+			if annotationTarget && !countable && !expandable && !selectable
+			else
 				getMethodLines.push QRY_HEADER + NEWLINE 
 				getMethodLines.push QRY_2nd_LINE + NEWLINE
-				if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["countable"]
-				else
+				if countable
 					getMethodLines.push QRY_COUNT + NEWLINE 
 				end
-				if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["expandable"]
-				else
+				if expandable
 					getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object for supported names. |" + NEWLINE
 				end			
-				if @annotations[@jsonHash[:name].downcase] && !@annotations[@jsonHash[:name].downcase]["selectable"]
-				else
+				if selectable
 					getMethodLines.push QRY_SELECT + NEWLINE	
 				end
 			end
