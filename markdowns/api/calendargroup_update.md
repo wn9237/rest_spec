@@ -1,4 +1,4 @@
-# Update the properties of calendargroup object.
+# Update calendargroup
 
 Update the properties of calendargroup object.
 ### Prerequisites
@@ -69,7 +69,7 @@ Content-length: 110
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of calendargroup object.",
+  "description": "Update calendargroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

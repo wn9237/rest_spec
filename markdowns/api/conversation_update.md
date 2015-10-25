@@ -1,4 +1,4 @@
-# Update the properties of conversation object.
+# Update conversation
 
 Update the properties of conversation object.
 ### Prerequisites
@@ -79,7 +79,7 @@ Content-length: 201
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of conversation object.",
+  "description": "Update conversation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

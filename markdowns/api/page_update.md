@@ -1,4 +1,4 @@
-# Update the properties of page object.
+# Update page
 
 Update the properties of page object.
 ### Prerequisites
@@ -98,7 +98,7 @@ Content-length: 391
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of page object.",
+  "description": "Update page",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

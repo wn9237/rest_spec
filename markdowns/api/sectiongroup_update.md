@@ -1,4 +1,4 @@
-# Update the properties of sectiongroup object.
+# Update sectiongroup
 
 Update the properties of sectiongroup object.
 ### Prerequisites
@@ -84,7 +84,7 @@ Content-length: 309
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of sectiongroup object.",
+  "description": "Update sectiongroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

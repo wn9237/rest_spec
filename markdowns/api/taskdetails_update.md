@@ -1,4 +1,4 @@
-# Update the properties of taskdetails object.
+# Update taskdetails
 
 Update the properties of taskdetails object.
 ### Prerequisites
@@ -77,7 +77,7 @@ Content-length: 177
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of taskdetails object.",
+  "description": "Update taskdetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# Update the properties of userdetails object.
+# Update userdetails
 
 Update the properties of userdetails object.
 ### Prerequisites
@@ -68,7 +68,7 @@ Content-length: 73
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of userdetails object.",
+  "description": "Update userdetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

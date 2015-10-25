@@ -1,4 +1,4 @@
-# Update the properties of itemattachment object.
+# Update itemattachment
 
 Update the properties of itemattachment object.
 ### Prerequisites
@@ -73,7 +73,7 @@ Content-length: 162
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of itemattachment object.",
+  "description": "Update itemattachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

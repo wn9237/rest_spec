@@ -1,4 +1,4 @@
-# Update the properties of taskboardtaskformat object.
+# Update taskboardtaskformat
 
 Update the properties of taskboardtaskformat object.
 ### Prerequisites
@@ -68,7 +68,7 @@ Content-length: 110
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of taskboardtaskformat object.",
+  "description": "Update taskboardtaskformat",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

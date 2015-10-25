@@ -1,4 +1,4 @@
-# Update the properties of tenantdetail object.
+# Update tenantdetail
 
 Update the properties of tenantdetail object.
 ### Prerequisites
@@ -195,7 +195,7 @@ Content-length: 1647
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of tenantdetail object.",
+  "description": "Update tenantdetail",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

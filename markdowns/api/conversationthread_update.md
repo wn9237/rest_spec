@@ -1,4 +1,4 @@
-# Update the properties of conversationthread object.
+# Update conversationthread
 
 Update the properties of conversationthread object.
 ### Prerequisites
@@ -116,7 +116,7 @@ Content-length: 489
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of conversationthread object.",
+  "description": "Update conversationthread",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

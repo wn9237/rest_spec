@@ -1,4 +1,4 @@
-# Update the properties of share object.
+# Update share
 
 Update the properties of share object.
 ### Prerequisites
@@ -90,7 +90,7 @@ Content-length: 330
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of share object.",
+  "description": "Update share",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

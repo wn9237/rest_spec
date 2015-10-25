@@ -1,4 +1,4 @@
-# Update the properties of post object.
+# Update post
 
 Update the properties of post object.
 ### Prerequisites
@@ -140,7 +140,7 @@ Content-length: 790
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of post object.",
+  "description": "Update post",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

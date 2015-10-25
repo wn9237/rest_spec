@@ -1,4 +1,4 @@
-# Update the properties of calendar object.
+# Update calendar
 
 Update the properties of calendar object.
 ### Prerequisites
@@ -69,7 +69,7 @@ Content-length: 106
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of calendar object.",
+  "description": "Update calendar",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

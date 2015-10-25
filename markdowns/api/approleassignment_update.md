@@ -1,4 +1,4 @@
-# Update the properties of approleassignment object.
+# Update approleassignment
 
 Update the properties of approleassignment object.
 ### Prerequisites
@@ -87,7 +87,7 @@ Content-length: 398
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of approleassignment object.",
+  "description": "Update approleassignment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

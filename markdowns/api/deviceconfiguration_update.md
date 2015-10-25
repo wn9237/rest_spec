@@ -1,4 +1,4 @@
-# Update the properties of deviceconfiguration object.
+# Update deviceconfiguration
 
 Update the properties of deviceconfiguration object.
 ### Prerequisites
@@ -84,7 +84,7 @@ Content-length: 341
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of deviceconfiguration object.",
+  "description": "Update deviceconfiguration",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

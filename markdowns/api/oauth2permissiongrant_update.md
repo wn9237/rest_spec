@@ -1,4 +1,4 @@
-# Update the properties of oauth2permissiongrant object.
+# Update oauth2permissiongrant
 
 Update the properties of oauth2permissiongrant object.
 ### Prerequisites
@@ -81,7 +81,7 @@ Content-length: 271
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of oauth2permissiongrant object.",
+  "description": "Update oauth2permissiongrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

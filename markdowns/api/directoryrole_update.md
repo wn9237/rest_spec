@@ -1,4 +1,4 @@
-# Update the properties of directoryrole object.
+# Update directoryrole
 
 Update the properties of directoryrole object.
 ### Prerequisites
@@ -79,7 +79,7 @@ Content-length: 275
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of directoryrole object.",
+  "description": "Update directoryrole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

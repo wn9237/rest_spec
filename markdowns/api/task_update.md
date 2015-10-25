@@ -1,4 +1,4 @@
-# Update the properties of task object.
+# Update task
 
 Update the properties of task object.
 ### Prerequisites
@@ -119,7 +119,7 @@ Content-length: 641
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of task object.",
+  "description": "Update task",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

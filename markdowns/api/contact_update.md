@@ -1,4 +1,4 @@
-# Update the properties of contact object.
+# Update contact
 
 Update the properties of contact object.
 ### Prerequisites
@@ -237,7 +237,7 @@ Content-length: 1977
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of contact object.",
+  "description": "Update contact",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

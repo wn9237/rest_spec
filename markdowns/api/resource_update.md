@@ -1,4 +1,4 @@
-# Update the properties of resource object.
+# Update resource
 
 Update the properties of resource object.
 ### Prerequisites
@@ -69,7 +69,7 @@ Content-length: 112
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of resource object.",
+  "description": "Update resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

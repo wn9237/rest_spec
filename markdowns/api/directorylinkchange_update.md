@@ -1,4 +1,4 @@
-# Update the properties of directorylinkchange object.
+# Update directorylinkchange
 
 Update the properties of directorylinkchange object.
 ### Prerequisites
@@ -85,7 +85,7 @@ Content-length: 433
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of directorylinkchange object.",
+  "description": "Update directorylinkchange",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

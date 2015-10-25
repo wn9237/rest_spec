@@ -1,4 +1,4 @@
-# Update the properties of permission object.
+# Update permission
 
 Update the properties of permission object.
 ### Prerequisites
@@ -138,7 +138,7 @@ Content-length: 762
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of permission object.",
+  "description": "Update permission",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

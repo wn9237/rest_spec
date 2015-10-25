@@ -1,4 +1,4 @@
-# Update the properties of mailfolder object.
+# Update mailfolder
 
 Update the properties of mailfolder object.
 ### Prerequisites
@@ -69,7 +69,7 @@ Content-length: 130
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of mailfolder object.",
+  "description": "Update mailfolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

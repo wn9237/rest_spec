@@ -1,4 +1,4 @@
-# Update the properties of item object.
+# Update item
 
 Update the properties of item object.
 ### Prerequisites
@@ -362,7 +362,7 @@ Content-length: 3050
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of item object.",
+  "description": "Update item",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# Update the properties of device object.
+# Update device
 
 Update the properties of device object.
 ### Prerequisites
@@ -119,7 +119,7 @@ Content-length: 732
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of device object.",
+  "description": "Update device",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

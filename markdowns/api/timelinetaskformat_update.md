@@ -1,4 +1,4 @@
-# Update the properties of timelinetaskformat object.
+# Update timelinetaskformat
 
 Update the properties of timelinetaskformat object.
 ### Prerequisites
@@ -87,7 +87,7 @@ Content-length: 255
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of timelinetaskformat object.",
+  "description": "Update timelinetaskformat",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

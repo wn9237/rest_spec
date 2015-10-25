@@ -1,4 +1,4 @@
-# Update the properties of section object.
+# Update section
 
 Update the properties of section object.
 ### Prerequisites
@@ -84,7 +84,7 @@ Content-length: 276
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of section object.",
+  "description": "Update section",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

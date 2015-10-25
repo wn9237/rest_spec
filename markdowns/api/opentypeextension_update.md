@@ -1,4 +1,4 @@
-# Update the properties of opentypeextension object.
+# Update opentypeextension
 
 Update the properties of opentypeextension object.
 ### Prerequisites
@@ -63,7 +63,7 @@ Content-length: 48
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of opentypeextension object.",
+  "description": "Update opentypeextension",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

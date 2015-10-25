@@ -1,4 +1,4 @@
-# Update the properties of orgcontact object.
+# Update orgcontact
 
 Update the properties of orgcontact object.
 ### Prerequisites
@@ -148,7 +148,7 @@ Content-length: 1097
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of orgcontact object.",
+  "description": "Update orgcontact",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

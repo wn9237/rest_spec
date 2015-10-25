@@ -1,4 +1,4 @@
-# Update the properties of photo object.
+# Update photo
 
 Update the properties of photo object.
 ### Prerequisites
@@ -66,7 +66,7 @@ Content-length: 53
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of photo object.",
+  "description": "Update photo",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

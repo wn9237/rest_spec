@@ -1,4 +1,4 @@
-# Update the properties of application object.
+# Update application
 
 Update the properties of application object.
 ### Prerequisites
@@ -239,7 +239,7 @@ Content-length: 2150
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of application object.",
+  "description": "Update application",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

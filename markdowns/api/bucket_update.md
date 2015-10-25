@@ -1,4 +1,4 @@
-# Update the properties of bucket object.
+# Update bucket
 
 Update the properties of bucket object.
 ### Prerequisites
@@ -78,7 +78,7 @@ Content-length: 179
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of bucket object.",
+  "description": "Update bucket",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# Update the properties of notebook object.
+# Update notebook
 
 Update the properties of notebook object.
 ### Prerequisites
@@ -110,7 +110,7 @@ Content-length: 516
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of notebook object.",
+  "description": "Update notebook",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

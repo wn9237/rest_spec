@@ -1,4 +1,4 @@
-# Update the properties of outlookitem object.
+# Update outlookitem
 
 Update the properties of outlookitem object.
 ### Prerequisites
@@ -74,7 +74,7 @@ Content-length: 185
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of outlookitem object.",
+  "description": "Update outlookitem",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

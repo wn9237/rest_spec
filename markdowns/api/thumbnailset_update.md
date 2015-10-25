@@ -1,4 +1,4 @@
-# Update the properties of thumbnailset object.
+# Update thumbnailset
 
 Update the properties of thumbnailset object.
 ### Prerequisites
@@ -112,7 +112,7 @@ Content-length: 456
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of thumbnailset object.",
+  "description": "Update thumbnailset",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

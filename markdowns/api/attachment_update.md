@@ -1,4 +1,4 @@
-# Update the properties of attachment object.
+# Update attachment
 
 Update the properties of attachment object.
 ### Prerequisites
@@ -75,7 +75,7 @@ Content-length: 162
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of attachment object.",
+  "description": "Update attachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# Update the properties of extensionproperty object.
+# Update extensionproperty
 
 Update the properties of extensionproperty object.
 ### Prerequisites
@@ -83,7 +83,7 @@ Content-length: 297
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of extensionproperty object.",
+  "description": "Update extensionproperty",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

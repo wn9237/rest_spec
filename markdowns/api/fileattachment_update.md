@@ -1,4 +1,4 @@
-# Update the properties of fileattachment object.
+# Update fileattachment
 
 Update the properties of fileattachment object.
 ### Prerequisites
@@ -82,7 +82,7 @@ Content-length: 282
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of fileattachment object.",
+  "description": "Update fileattachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# Update the properties of drive object.
+# Update drive
 
 Update the properties of drive object.
 ### Prerequisites
@@ -107,7 +107,7 @@ Content-length: 458
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of drive object.",
+  "description": "Update drive",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

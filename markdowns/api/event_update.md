@@ -1,4 +1,4 @@
-# Update the properties of event object.
+# Update event
 
 Update the properties of event object.
 ### Prerequisites
@@ -241,7 +241,7 @@ Content-length: 1812
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of event object.",
+  "description": "Update event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

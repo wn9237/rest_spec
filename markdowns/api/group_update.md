@@ -1,4 +1,4 @@
-# Update the properties of group object.
+# Update group
 
 Update the properties of group object.
 ### Prerequisites
@@ -155,7 +155,7 @@ Content-length: 1009
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of group object.",
+  "description": "Update group",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

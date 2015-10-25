@@ -1,4 +1,4 @@
-# Update the properties of contactfolder object.
+# Update contactfolder
 
 Update the properties of contactfolder object.
 ### Prerequisites
@@ -66,7 +66,7 @@ Content-length: 104
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of contactfolder object.",
+  "description": "Update contactfolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

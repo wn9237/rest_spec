@@ -1,4 +1,4 @@
-# Update the properties of subscribedsku object.
+# Update subscribedsku
 
 Update the properties of subscribedsku object.
 ### Prerequisites
@@ -94,7 +94,7 @@ Content-length: 388
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of subscribedsku object.",
+  "description": "Update subscribedsku",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

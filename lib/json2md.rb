@@ -516,7 +516,7 @@ module SpecMaker
 		# Header and description	
 		
 		if @jsonHash[:updateDescription].empty?
-			h1name = "Update the properties of #{@jsonHash[:name].downcase} object."
+			h1name = "Update #{@jsonHash[:name].downcase}"
 		else
 			h1name = "#{@jsonHash[:updateDescription]}"
 		end

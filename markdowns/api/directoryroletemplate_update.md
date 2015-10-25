@@ -1,4 +1,4 @@
-# Update the properties of directoryroletemplate object.
+# Update directoryroletemplate
 
 Update the properties of directoryroletemplate object.
 ### Prerequisites
@@ -70,7 +70,7 @@ Content-length: 187
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of directoryroletemplate object.",
+  "description": "Update directoryroletemplate",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

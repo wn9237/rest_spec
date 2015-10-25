@@ -1,4 +1,4 @@
-# Update the properties of user object.
+# Update user
 
 Update the properties of user object.
 ### Prerequisites
@@ -308,7 +308,7 @@ Content-length: 2708
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of user object.",
+  "description": "Update user",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

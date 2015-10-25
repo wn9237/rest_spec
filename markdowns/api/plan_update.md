@@ -1,4 +1,4 @@
-# Update the properties of plan object.
+# Update plan
 
 Update the properties of plan object.
 ### Prerequisites
@@ -78,7 +78,7 @@ Content-length: 179
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of plan object.",
+  "description": "Update plan",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

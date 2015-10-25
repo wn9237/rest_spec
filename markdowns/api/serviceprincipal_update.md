@@ -1,4 +1,4 @@
-# Update the properties of serviceprincipal object.
+# Update serviceprincipal
 
 Update the properties of serviceprincipal object.
 ### Prerequisites
@@ -213,7 +213,7 @@ Content-length: 1942
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of serviceprincipal object.",
+  "description": "Update serviceprincipal",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

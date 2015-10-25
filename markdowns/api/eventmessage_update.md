@@ -1,4 +1,4 @@
-# Update the properties of eventmessage object.
+# Update eventmessage
 
 Update the properties of eventmessage object.
 ### Prerequisites
@@ -228,7 +228,7 @@ Content-length: 1598
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of eventmessage object.",
+  "description": "Update eventmessage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

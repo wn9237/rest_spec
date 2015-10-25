@@ -1,4 +1,4 @@
-# Update the properties of plantaskboard object.
+# Update plantaskboard
 
 Update the properties of plantaskboard object.
 ### Prerequisites
@@ -65,7 +65,7 @@ Content-length: 76
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of plantaskboard object.",
+  "description": "Update plantaskboard",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
