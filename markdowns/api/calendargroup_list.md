@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_calendargroups"
 }-->
 ```http
-GET /users/<objectId>
+GET /users/<objectId>/CalendarGroups
 ```
 ##### Response
 Here is an example of the response.
@@ -66,8 +66,8 @@ Content-length: 155
 }
 ```
 
-<!-- uuid: dc544a84-d0b4-4dfa-b55f-0cdebf625db8
-2015-10-25 13:21:39 UTC -->
+<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
+2015-10-25 14:02:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List CalendarGroup",

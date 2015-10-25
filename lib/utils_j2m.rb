@@ -113,6 +113,7 @@ module SpecMaker
 	@patch_files_created = 0
 	@method_files_created = 0
 	@ientityset = 0
+	@list_from_rel = 0
 
 	# Log file
 	LOG_FOLDER = '../../logs'

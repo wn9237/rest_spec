@@ -45,8 +45,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/sites_delete.md) | None |Delete sites object. |
 |[Fromurl](../api/sites_fromurl.md)|[SiteMetadata](sitemetadata.md)||
 
-<!-- uuid: dc544a84-d0b4-4dfa-b55f-0cdebf625db8
-2015-10-25 13:21:39 UTC -->
+<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
+2015-10-25 14:02:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "sites resource",

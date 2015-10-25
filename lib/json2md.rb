@@ -44,7 +44,8 @@ module SpecMaker
 			example_lines.push get_json_request_pretext("get_#{@jsonHash[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
 			httpSyntax = get_syntax('auto_get', top_one_restpath)
-			example_lines.push httpSyntax.join("/#{pathAppend.to_s}.chomp('/')\n") + NEWLINE
+			
+			example_lines.push httpSyntax.join + "/#{pathAppend.to_s}".chomp('/') + NEWLINE
 			example_lines.push "```" + NEWLINE	
 
 			example_lines.push HEADER5 + "Response" + NEWLINE											
@@ -479,7 +480,8 @@ module SpecMaker
 
 		#Example
 		if @jsonHash[:collectionOf] 
-			example_lines = gen_example("auto_list", pathAppend)
+			
+			example_lines = gen_example("auto_list", nil, pathAppend)
 		else
 			example_lines = gen_example("auto_get")
 		end
@@ -494,6 +496,9 @@ module SpecMaker
 		fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:collectionOf].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
 		
 		outfile = MARKDOWN_API_FOLDER + fileName
+		# if File.exists?(outfile)
+		# 	puts "*-----> List file #{outfile} already exists."
+		# end
 		file=File.new(outfile,'w')
 		getMethodLines.each do |line|
 			file.write line
@@ -749,13 +754,16 @@ module SpecMaker
 						if !SIMPLETYPES.include? prop[:dataType]
 							filename = "#{prop[:dataType].downcase}_list.md"
 							listLink = "../api/#{filename}"
+							# puts "$----> #{filename} #{@jsonHash[:name]},, #{prop[:name]}"
 							@mdlines.push "|[List #{useName}](#{listLink}) |#{returnLink}| Get a #{useName} object collection.|" + NEWLINE
 							saveJsonHash = @jsonHash
 							@jsonHash[:name] = prop[:name]
 							@jsonHash[:collectionOf] = prop[:dataType]
 
 							@jsonHash = saveJsonHash
+
 							create_get_method(prop[:name])
+							@list_from_rel = @list_from_rel + 1
 						end
 
 					end
@@ -905,5 +913,6 @@ module SpecMaker
 	puts "*** @get_list_files_created #{@get_list_files_created} "
 	puts "*** @patch_files_created #{@patch_files_created}"
 	puts "*** @method_files_created #{@method_files_created}"
+	puts "*** @list_from_relationships #{@list_from_rel}"
 	puts "*** @ientityset #{@ientityset}"
 end

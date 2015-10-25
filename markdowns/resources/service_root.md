@@ -42,8 +42,8 @@
 |[Create User](../api/user_post_users.md) |[User](user.md)| Create a new User by posting to the users collection.|
 |[List User](../api/user_list.md) | [User](user.md) collection |Get user object collection. |
 
-<!-- uuid: dc544a84-d0b4-4dfa-b55f-0cdebf625db8
-2015-10-25 13:21:39 UTC -->
+<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
+2015-10-25 14:02:53 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Service root",

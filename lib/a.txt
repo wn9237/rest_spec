@@ -1,0 +1,301 @@
+--> AlternativeSecurityId
+--> Application
+*-----> List file ../markdowns/api/application_get.md already exists.
+$----> extensionproperty_list.md Application,, extensionProperties
+$----> directoryobject_list.md extensionProperties,, owners
+--> AppliedCategoriesCollection
+--> AppRole
+--> AppRoleAssignment
+*-----> List file ../markdowns/api/approleassignment_get.md already exists.
+--> AssignedLicense
+--> AssignedPlan
+--> Attachment
+*-----> List file ../markdowns/api/attachment_get.md already exists.
+--> Attendee
+--> audio
+--> Bucket
+*-----> List file ../markdowns/api/bucket_get.md already exists.
+$----> task_list.md Bucket,, tasks
+--> Calendar
+*-----> List file ../markdowns/api/calendar_get.md already exists.
+$----> event_list.md Calendar,, CalendarView
+$----> event_list.md CalendarView,, Events
+--> CalendarGroup
+*-----> List file ../markdowns/api/calendargroup_get.md already exists.
+$----> calendar_list.md CalendarGroup,, Calendars
+--> chunkedUploadSessionDescriptor
+--> Contact
+*-----> List file ../markdowns/api/contact_get.md already exists.
+$----> extension_list.md Contact,, Extensions
+--> ContactFolder
+*-----> List file ../markdowns/api/contactfolder_get.md already exists.
+$----> contactfolder_list.md ContactFolder,, ChildFolders
+$----> contact_list.md ChildFolders,, Contacts
+--> Conversation
+*-----> List file ../markdowns/api/conversation_get.md already exists.
+$----> conversationthread_list.md Conversation,, Threads
+--> ConversationThread
+*-----> List file ../markdowns/api/conversationthread_get.md already exists.
+$----> post_list.md ConversationThread,, Posts
+--> CopyNotebookModel
+--> CopyPageModel
+--> CopySectionModel
+--> deleted
+--> Device
+*-----> List file ../markdowns/api/device_get.md already exists.
+$----> directoryobject_list.md Device,, registeredOwners
+$----> directoryobject_list.md registeredOwners,, registeredUsers
+--> DeviceConfiguration
+*-----> List file ../markdowns/api/deviceconfiguration_get.md already exists.
+--> Diagnostic
+--> DirectoryLinkChange
+*-----> List file ../markdowns/api/directorylinkchange_get.md already exists.
+--> DirectoryObject
+*-----> List file ../markdowns/api/directoryobject_get.md already exists.
+--> DirectoryRole
+*-----> List file ../markdowns/api/directoryrole_get.md already exists.
+$----> directoryobject_list.md DirectoryRole,, memberOf
+$----> directoryobject_list.md memberOf,, members
+$----> directoryobject_list.md members,, ownedObjects
+$----> directoryobject_list.md ownedObjects,, owners
+--> DirectoryRoleTemplate
+*-----> List file ../markdowns/api/directoryroletemplate_get.md already exists.
+--> drive
+*-----> List file ../markdowns/api/drive_get.md already exists.
+$----> item_list.md drive,, items
+$----> item_list.md items,, shared
+$----> item_list.md shared,, special
+--> EmailAddress
+--> Entity
+*-----> List file ../markdowns/api/entity_get.md already exists.
+--> Event
+*-----> List file ../markdowns/api/event_get.md already exists.
+$----> attachment_list.md Event,, Attachments
+$----> extension_list.md Attachments,, Extensions
+$----> event_list.md Extensions,, Instances
+--> EventMessage
+*-----> List file ../markdowns/api/eventmessage_get.md already exists.
+$----> attachment_list.md EventMessage,, Attachments
+$----> extension_list.md Attachments,, Extensions
+--> Extension
+*-----> List file ../markdowns/api/extension_get.md already exists.
+--> ExtensionProperty
+*-----> List file ../markdowns/api/extensionproperty_get.md already exists.
+--> ExternalLink
+--> ExternalReference
+--> ExternalReferenceCollection
+--> File
+*-----> List file ../markdowns/api/file_get.md already exists.
+--> FileAttachment
+*-----> List file ../markdowns/api/fileattachment_get.md already exists.
+--> fileSystemInfo
+--> folder
+--> GeoCoordinates
+--> Group
+*-----> List file ../markdowns/api/group_get.md already exists.
+$----> directoryobject_list.md Group,, AcceptedSenders
+$----> event_list.md AcceptedSenders,, CalendarView
+$----> conversation_list.md CalendarView,, Conversations
+$----> event_list.md Conversations,, Events
+$----> directoryobject_list.md Events,, RejectedSenders
+$----> conversationthread_list.md RejectedSenders,, Threads
+$----> approleassignment_list.md Threads,, appRoleAssignments
+$----> directoryobject_list.md appRoleAssignments,, memberOf
+$----> directoryobject_list.md memberOf,, members
+$----> directoryobject_list.md members,, owners
+$----> plan_list.md owners,, plans
+$----> task_list.md plans,, tasks
+--> hashes
+--> identity
+--> identitySet
+--> image
+--> item
+*-----> List file ../markdowns/api/item_get.md already exists.
+$----> item_list.md item,, children
+$----> permission_list.md children,, permissions
+$----> thumbnailset_list.md permissions,, thumbnails
+$----> item_list.md thumbnails,, versions
+--> ItemAttachment
+*-----> List file ../markdowns/api/itemattachment_get.md already exists.
+--> ItemBody
+--> itemReference
+--> KeyCredential
+--> LicenseUnitsDetail
+--> location
+--> MailFolder
+*-----> List file ../markdowns/api/mailfolder_get.md already exists.
+$----> mailfolder_list.md MailFolder,, ChildFolders
+$----> message_list.md ChildFolders,, Messages
+--> Message
+*-----> List file ../markdowns/api/message_get.md already exists.
+$----> attachment_list.md Message,, Attachments
+$----> extension_list.md Attachments,, Extensions
+--> MyOrganization
+*-----> List file ../markdowns/api/myorganization_get.md already exists.
+$----> sitecollection_list.md MyOrganization,, siteCollections
+--> Notebook
+*-----> List file ../markdowns/api/notebook_get.md already exists.
+$----> sectiongroup_list.md Notebook,, sectionGroups
+$----> section_list.md sectionGroups,, sections
+--> NotebookLinks
+--> Notes
+*-----> List file ../markdowns/api/notes_get.md already exists.
+$----> notebook_list.md Notes,, notebooks
+$----> page_list.md notebooks,, pages
+$----> resource_list.md pages,, resources
+$----> sectiongroup_list.md resources,, sectionGroups
+$----> section_list.md sectionGroups,, sections
+--> OAuth2Permission
+--> OAuth2PermissionGrant
+*-----> List file ../markdowns/api/oauth2permissiongrant_get.md already exists.
+--> OpenTypeExtension
+*-----> List file ../markdowns/api/opentypeextension_get.md already exists.
+--> openWithApp
+--> openWithSet
+--> OrgContact
+*-----> List file ../markdowns/api/orgcontact_get.md already exists.
+$----> directoryobject_list.md OrgContact,, directReports
+$----> directoryobject_list.md directReports,, memberOf
+--> OutlookItem
+*-----> List file ../markdowns/api/outlookitem_get.md already exists.
+--> Page
+*-----> List file ../markdowns/api/page_get.md already exists.
+--> PageLinks
+--> PasswordCredential
+--> PasswordProfile
+--> PatchContentCommand
+--> PatternedRecurrence
+--> permission
+*-----> List file ../markdowns/api/permission_get.md already exists.
+--> Photo
+*-----> List file ../markdowns/api/photo_get.md already exists.
+--> PhysicalAddress
+--> Plan
+*-----> List file ../markdowns/api/plan_get.md already exists.
+$----> bucket_list.md Plan,, buckets
+$----> task_list.md buckets,, tasks
+--> PlanDetails
+*-----> List file ../markdowns/api/plandetails_get.md already exists.
+--> PlanTaskBoard
+*-----> List file ../markdowns/api/plantaskboard_get.md already exists.
+--> PlanTimeline
+*-----> List file ../markdowns/api/plantimeline_get.md already exists.
+--> Post
+*-----> List file ../markdowns/api/post_get.md already exists.
+$----> attachment_list.md Post,, Attachments
+$----> extension_list.md Attachments,, Extensions
+--> ProvisionedPlan
+--> ProvisioningError
+--> quota
+--> Recipient
+--> recipients
+--> RecurrencePattern
+--> RecurrenceRange
+--> ReferenceAttachment
+*-----> List file ../markdowns/api/referenceattachment_get.md already exists.
+--> RequiredResourceAccess
+--> Resource
+*-----> List file ../markdowns/api/resource_get.md already exists.
+--> ResourceAccess
+--> ResponseStatus
+--> searchResult
+--> Section
+*-----> List file ../markdowns/api/section_get.md already exists.
+$----> page_list.md Section,, pages
+--> SectionGroup
+*-----> List file ../markdowns/api/sectiongroup_get.md already exists.
+$----> sectiongroup_list.md SectionGroup,, sectionGroups
+$----> section_list.md sectionGroups,, sections
+--> ServicePlanInfo
+--> ServicePrincipal
+*-----> List file ../markdowns/api/serviceprincipal_get.md already exists.
+$----> approleassignment_list.md ServicePrincipal,, appRoleAssignments
+$----> directoryobject_list.md appRoleAssignments,, createdObjects
+$----> directoryobject_list.md createdObjects,, memberOf
+$----> oauth2permissiongrant_list.md memberOf,, oauth2PermissionGrants
+$----> directoryobject_list.md oauth2PermissionGrants,, ownedObjects
+$----> directoryobject_list.md ownedObjects,, owners
+--> share
+*-----> List file ../markdowns/api/share_get.md already exists.
+$----> item_list.md share,, items
+--> shared
+--> sharingInvitation
+--> sharingLink
+--> Site
+*-----> List file ../markdowns/api/site_get.md already exists.
+--> SiteCollection
+*-----> List file ../markdowns/api/sitecollection_get.md already exists.
+$----> site_list.md SiteCollection,, sites
+--> SiteMetadata
+--> specialFolder
+--> SubscribedSku
+*-----> List file ../markdowns/api/subscribedsku_get.md already exists.
+--> Task
+*-----> List file ../markdowns/api/task_get.md already exists.
+--> TaskBoardTaskFormat
+*-----> List file ../markdowns/api/taskboardtaskformat_get.md already exists.
+--> TaskDetails
+*-----> List file ../markdowns/api/taskdetails_get.md already exists.
+--> TenantDetail
+*-----> List file ../markdowns/api/tenantdetail_get.md already exists.
+--> thumbnail
+--> thumbnailSet
+*-----> List file ../markdowns/api/thumbnailset_get.md already exists.
+--> TimelineTaskFormat
+*-----> List file ../markdowns/api/timelinetaskformat_get.md already exists.
+--> uploadSession
+--> User
+*-----> List file ../markdowns/api/user_get.md already exists.
+$----> calendargroup_list.md User,, CalendarGroups
+$----> event_list.md CalendarGroups,, CalendarView
+$----> calendar_list.md CalendarView,, Calendars
+$----> contactfolder_list.md Calendars,, ContactFolders
+$----> contact_list.md ContactFolders,, Contacts
+$----> event_list.md Contacts,, Events
+$----> group_list.md Events,, JoinedGroups
+$----> mailfolder_list.md JoinedGroups,, MailFolders
+$----> message_list.md MailFolders,, Messages
+$----> file_list.md Messages,, TrendingAround
+$----> user_list.md TrendingAround,, WorkingWith
+$----> approleassignment_list.md WorkingWith,, appRoleAssignments
+$----> directoryobject_list.md appRoleAssignments,, createdObjects
+$----> directoryobject_list.md createdObjects,, directReports
+$----> directoryobject_list.md directReports,, memberOf
+$----> oauth2permissiongrant_list.md memberOf,, oauth2PermissionGrants
+$----> directoryobject_list.md oauth2PermissionGrants,, ownedDevices
+$----> directoryobject_list.md ownedDevices,, ownedObjects
+$----> plan_list.md ownedObjects,, plans
+$----> directoryobject_list.md plans,, registeredDevices
+$----> task_list.md registeredDevices,, tasks
+--> UserDataCollection
+--> UserDetails
+*-----> List file ../markdowns/api/userdetails_get.md already exists.
+--> UserIdCollection
+--> VerifiedDomain
+--> video
+*-----> List file ../markdowns/api/application_list.md already exists.
+*-----> List file ../markdowns/api/bucket_list.md already exists.
+*-----> List file ../markdowns/api/orgcontact_list.md already exists.
+*-----> List file ../markdowns/api/deviceconfiguration_list.md already exists.
+*-----> List file ../markdowns/api/device_list.md already exists.
+*-----> List file ../markdowns/api/directoryobject_list.md already exists.
+*-----> List file ../markdowns/api/directoryrole_list.md already exists.
+*-----> List file ../markdowns/api/directoryroletemplate_list.md already exists.
+*-----> List file ../markdowns/api/drive_list.md already exists.
+*-----> List file ../markdowns/api/group_list.md already exists.
+*-----> List file ../markdowns/api/oauth2permissiongrant_list.md already exists.
+*-----> List file ../markdowns/api/plan_list.md already exists.
+*-----> List file ../markdowns/api/serviceprincipal_list.md already exists.
+*-----> List file ../markdowns/api/share_list.md already exists.
+*-----> List file ../markdowns/api/subscribedsku_list.md already exists.
+*-----> List file ../markdowns/api/task_list.md already exists.
+*-----> List file ../markdowns/api/tenantdetail_list.md already exists.
+*-----> List file ../markdowns/api/user_list.md already exists.
+
+*** OK. Processed 141 input files. Check C:/Users/suramam/Git/officedev/logs folder for results. ***
+*** @resources_files_created 123
+*** @get_list_files_created 79 
+*** @patch_files_created 54
+*** @method_files_created 262
+*** @list_from_relationships 91
+*** @ientityset 18
