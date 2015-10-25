@@ -1,6 +1,6 @@
 {
   "name": "RecurrencePattern",
-  "description": "The frequency of an event.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "Type",
-      "description": "The recurrence pattern type: Daily = 0, Weekly = 1, AbsoluteMonthly = 2, RelativeMonthly = 3, AbsoluteYearly = 4, RelativeYearly = 5.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "Interval",
-      "description": "The number of units of a given recurrence type between occurrences.",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "Month",
-      "description": "The month that the item occurs on.  This is a number from 1 to 12.",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "DayOfMonth",
-      "description": "The day of month that the item occurs on.",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -83,7 +84,7 @@
     },
     {
       "name": "DaysOfWeek",
-      "description": "A collection of days of the week: Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -97,7 +98,7 @@
     },
     {
       "name": "FirstDayOfWeek",
-      "description": "The day of the week: Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -111,7 +112,7 @@
     },
     {
       "name": "Index",
-      "description": "The week index: First = 0, Second = 1, Third = 2, Fourth = 3, Last = 4.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -124,5 +125,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

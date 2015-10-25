@@ -1,6 +1,6 @@
 {
   "name": "location",
-  "description": "The location of an event.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,7 +23,8 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "altitude",
@@ -68,5 +69,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

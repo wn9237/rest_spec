@@ -1,6 +1,6 @@
 {
   "name": "ProvisioningError",
-  "description": "The **provisioningErrors** property of the [Contact], [User], and [Group] entities is a collection of **ProvisioningError**.\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "errorDetail",
-      "description": "A description of the error.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "resolved",
-      "description": "                **true** if the error was resolved; otherwise, **false**.            ",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "timestamp",
-      "description": "The date and time at which the error occurred.",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -82,5 +83,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

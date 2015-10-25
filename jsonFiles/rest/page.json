@@ -196,7 +196,7 @@
   "properties": [
     {
       "name": "title",
-      "description": "The title of the page ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -210,7 +210,7 @@
     },
     {
       "name": "createdByAppId",
-      "description": "The unique identifier of the application that created the page ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -224,7 +224,7 @@
     },
     {
       "name": "links",
-      "description": "The oneNoteClientURL link to open the page in the OneNote native client if it 's installed, and oneNoteWebUrl to open the page in OneNote Online",
+      "description": "",
       "isKey": false,
       "dataType": "PageLinks",
       "isReadOnly": false,
@@ -238,7 +238,7 @@
     },
     {
       "name": "contentUrl",
-      "description": "The URL for the page's HTML content ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -280,7 +280,7 @@
     },
     {
       "name": "id",
-      "description": "The unique identifier of the page ",
+      "description": "",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -308,7 +308,7 @@
     },
     {
       "name": "createdTime",
-      "description": "The date and time when the page was created in UTC format ",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -336,7 +336,7 @@
     },
     {
       "name": "parentNotebook",
-      "description": "A page in a OneNote section ",
+      "description": "",
       "isKey": false,
       "dataType": "Notebook",
       "isReadOnly": true,
@@ -360,8 +360,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "commands",
@@ -385,8 +389,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "id",
@@ -430,9 +438,15 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": true,
-      "scopes": [],
-      "errorCodes": [],
-      "parameters": []
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     }
   ]
 }

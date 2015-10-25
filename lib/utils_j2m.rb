@@ -25,7 +25,7 @@ module SpecMaker
 	PARAM_HEADER = "| Parameter	   | Type	|Description|" + NEWLINE
 	HTTP_HEADER =  "| Name       | Type | Description|" + NEWLINE
 	RELATIONSHIP_HEADER = "| Relationship | Type	|Description|" + NEWLINE
-	TASKS_HEADER = "| Task		   | Return Type	|Description|" + NEWLINE
+	TASKS_HEADER = "| Method		   | Return Type	|Description|" + NEWLINE
 
 	PREREQ = HEADER3 + "Prerequisites" + NEWLINE + "The following **scopes** are required to execute this API: " + NEWLINE
 

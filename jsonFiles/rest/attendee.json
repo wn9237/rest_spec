@@ -1,6 +1,6 @@
 {
   "name": "Attendee",
-  "description": "An event attendee.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "EmailAddress",
-      "description": "The name and email address of the attendee.",
+      "description": "",
       "isKey": false,
       "dataType": "EmailAddress",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "Status",
-      "description": "The response (none, accepted, declined, etc.) and time.",
+      "description": "",
       "isKey": false,
       "dataType": "ResponseStatus",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "Type",
-      "description": "The attendee type: Required = 0, Optional = 1, Resource = 2.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -68,5 +69,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

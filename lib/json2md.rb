@@ -683,7 +683,7 @@ module SpecMaker
 		end
 		# Add method table. 
 		if !@jsonHash[:isComplexType]
-			@mdlines.push NEWLINE + HEADER3 + 'Tasks' + NEWLINE
+			@mdlines.push NEWLINE + HEADER3 + 'Methods' + NEWLINE
 
 			if isMethod || isProperty || isPost || @jsonHash[:allowDelete]
 				@mdlines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 

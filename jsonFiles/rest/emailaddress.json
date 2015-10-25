@@ -1,6 +1,6 @@
 {
   "name": "EmailAddress",
-  "description": "The name and email address of a contact or message recipient.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "Name",
-      "description": "The display name of the person or entity.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "Address",
-      "description": "The email address of the person or entity.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -54,5 +55,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

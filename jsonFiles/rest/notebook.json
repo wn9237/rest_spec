@@ -308,7 +308,7 @@
   "properties": [
     {
       "name": "isDefault",
-      "description": "Indicates whether this is the user's default notebook.",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -322,7 +322,7 @@
     },
     {
       "name": "userRole",
-      "description": "One of three values: Owner, Contributor, or Reader. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -336,7 +336,7 @@
     },
     {
       "name": "isShared",
-      "description": "Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner.",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -350,7 +350,7 @@
     },
     {
       "name": "sectionsUrl",
-      "description": "The URL for the sections navigation property, which returns all the sections in the notebook.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -364,7 +364,7 @@
     },
     {
       "name": "sectionGroupsUrl",
-      "description": "The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -378,7 +378,7 @@
     },
     {
       "name": "links",
-      "description": "The value of oneNoteClientURL can be used to open the notebook using the OneNote native client app if it's installed. The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client.",
+      "description": "",
       "isKey": false,
       "dataType": "NotebookLinks",
       "isReadOnly": false,
@@ -392,7 +392,7 @@
     },
     {
       "name": "name",
-      "description": "The name of the notebook.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -406,7 +406,7 @@
     },
     {
       "name": "createdBy",
-      "description": "The user who created the notebook.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -420,7 +420,7 @@
     },
     {
       "name": "lastModifiedBy",
-      "description": "The user who last modified the notebook.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -434,7 +434,7 @@
     },
     {
       "name": "lastModifiedTime",
-      "description": "The date and time when the notebook was last modified.",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -448,7 +448,7 @@
     },
     {
       "name": "id",
-      "description": "The unique identifier of the notebook.",
+      "description": "",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -462,7 +462,7 @@
     },
     {
       "name": "self",
-      "description": "The endpoint where you can get details about the notebook.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -476,7 +476,7 @@
     },
     {
       "name": "createdTime",
-      "description": "The date and time when the notebook was created.",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -490,7 +490,7 @@
     },
     {
       "name": "sections",
-      "description": "The sections in the notebook. Can be navigated to using the sectionsUrl property or expanded in a GET request.",
+      "description": "",
       "isKey": false,
       "dataType": "Section",
       "isReadOnly": true,
@@ -504,7 +504,7 @@
     },
     {
       "name": "sectionGroups",
-      "description": "The section groups in the notebook. Can be navigated to using the sectionGroupsUrl property or expanded in a GET request.",
+      "description": "",
       "isKey": false,
       "dataType": "SectionGroup",
       "isReadOnly": true,
@@ -528,8 +528,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "siteCollectionId",

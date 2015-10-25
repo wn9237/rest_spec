@@ -1,6 +1,6 @@
 {
   "name": "GeoCoordinates",
-  "description": "The geographic coordinates and elevation of the location.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "Altitude",
-      "description": "The altitude of the location.",
+      "description": "",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "Latitude",
-      "description": "The latitude of the location.",
+      "description": "",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "Longitude",
-      "description": "The longitude of the location.",
+      "description": "",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "Accuracy",
-      "description": "The accuracy of the sensor providing the latitude and longitude.",
+      "description": "",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -83,7 +84,7 @@
     },
     {
       "name": "AltitudeAccuracy",
-      "description": "The accuracy of the sensor providing the altitude.",
+      "description": "",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -96,5 +97,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

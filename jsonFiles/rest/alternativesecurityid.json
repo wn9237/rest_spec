@@ -1,6 +1,6 @@
 {
   "name": "AlternativeSecurityId",
-  "description": "Contains an alternative security ID associated with a device. The **alternativeSecurityIds** property of the [Device] entity is a collection of **AlternativeSecurityId**.\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "type",
-      "description": "            ",
+      "description": "",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "identityProvider",
-      "description": "            ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "key",
-      "description": "            ",
+      "description": "",
       "isKey": false,
       "dataType": "Binary",
       "isReadOnly": false,
@@ -68,5 +69,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

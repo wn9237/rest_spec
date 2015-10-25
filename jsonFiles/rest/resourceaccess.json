@@ -1,6 +1,6 @@
 {
   "name": "ResourceAccess",
-  "description": "Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the [RequiredResourceAccess] type is a collection of **ResourceAccess**.\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "id",
-      "description": "The unique identifier for one of the [OAuth2Permission] or [AppRole] instances that the resource application exposes.",
+      "description": "",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "type",
-      "description": "Specifies whether the **id** property references an [OAuth2Permission] or an [AppRole]. Possible values are \"scope\" or \"role\".",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -54,5 +55,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

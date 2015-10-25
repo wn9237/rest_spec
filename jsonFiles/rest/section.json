@@ -252,7 +252,7 @@
   "properties": [
     {
       "name": "isDefault",
-      "description": "Indicates whether this is the user's default section.",
+      "description": "",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -266,7 +266,7 @@
     },
     {
       "name": "pagesUrl",
-      "description": "The /pages endpoint where you can get details for all the pages in the section.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -280,7 +280,7 @@
     },
     {
       "name": "name",
-      "description": "The name of the section. ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -294,7 +294,7 @@
     },
     {
       "name": "createdBy",
-      "description": "The user who created the section. ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -308,7 +308,7 @@
     },
     {
       "name": "lastModifiedBy",
-      "description": "The user who last modified the section. ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -322,7 +322,7 @@
     },
     {
       "name": "lastModifiedTime",
-      "description": "The date and time when the section was last modified. ",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -336,7 +336,7 @@
     },
     {
       "name": "id",
-      "description": "The unique identifier of the section. ",
+      "description": "",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -350,7 +350,7 @@
     },
     {
       "name": "self",
-      "description": "The endpoint where you can get details about the section. ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -364,7 +364,7 @@
     },
     {
       "name": "createdTime",
-      "description": "The date and time when the section was created. ",
+      "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -378,7 +378,7 @@
     },
     {
       "name": "parentNotebook",
-      "description": "The notebook that contains the section, expanded by default with the id, name, and self properties selected. ",
+      "description": "",
       "isKey": false,
       "dataType": "Notebook",
       "isReadOnly": true,
@@ -392,7 +392,7 @@
     },
     {
       "name": "parentSectionGroup",
-      "description": "The section group that contains the section, expanded by default with the id, name, and self properties selected. ",
+      "description": "",
       "isKey": false,
       "dataType": "SectionGroup",
       "isReadOnly": true,
@@ -406,7 +406,7 @@
     },
     {
       "name": "pages",
-      "description": "A section in a OneNote notebook ",
+      "description": "",
       "isKey": false,
       "dataType": "Page",
       "isReadOnly": true,
@@ -430,8 +430,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "id",
@@ -485,8 +489,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "id",
@@ -540,9 +548,15 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": true,
-      "scopes": [],
-      "errorCodes": [],
-      "parameters": []
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     }
   ]
 }

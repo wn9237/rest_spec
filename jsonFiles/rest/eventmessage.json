@@ -1,6 +1,6 @@
 {
   "name": "EventMessage",
-  "description": "A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -23,7 +23,8 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "Subject",
@@ -391,7 +392,7 @@
     },
     {
       "name": "MeetingMessageType",
-      "description": " The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 ",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -433,7 +434,7 @@
     },
     {
       "name": "Event",
-      "description": " The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property. ",
+      "description": "",
       "isKey": false,
       "dataType": "Event",
       "isReadOnly": true,
@@ -457,8 +458,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "DestinationId",
@@ -482,8 +487,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "DestinationId",
@@ -507,9 +516,15 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
-      "parameters": []
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     },
     {
       "name": "CreateReplyAll",
@@ -521,9 +536,15 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
-      "parameters": []
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     },
     {
       "name": "CreateForward",
@@ -535,9 +556,15 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
-      "parameters": []
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     },
     {
       "name": "Reply",
@@ -549,8 +576,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "Comment",
@@ -574,8 +605,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "Comment",
@@ -599,8 +634,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "Comment",
@@ -634,9 +673,15 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
-      "parameters": []
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
     }
   ]
 }

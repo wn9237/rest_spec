@@ -1,6 +1,6 @@
 {
   "name": "PhysicalAddress",
-  "description": "The physical address of a contact.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "Street",
-      "description": "The street.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "City",
-      "description": "The city.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "State",
-      "description": "The state.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "CountryOrRegion",
-      "description": "The country or region.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -83,7 +84,7 @@
     },
     {
       "name": "PostalCode",
-      "description": "The postal code.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -96,5 +97,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }
