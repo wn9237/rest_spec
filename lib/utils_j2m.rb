@@ -98,7 +98,9 @@ module SpecMaker
 					"308" => "Resume Incomplete"					
 				}	
 
-	UUID_DATE = "<!-- uuid: " + SecureRandom.uuid  + "\n" + Time.now.utc.to_s + " -->"
+	#UUID_DATE = "<!-- uuid: " + SecureRandom.uuid  + "\n" + Time.now.utc.to_s + " -->"
+	UUID_DATE = "<!-- uuid: " + "8fcb5dbc-d5aa-4681-8e31-b001d5168d79"  + "\n" + "2015-10-25 14:57:30 UTC" + " -->"
+	
 	
 	###
 	# To prevent shallow copy errors, need to get a new object each time.
