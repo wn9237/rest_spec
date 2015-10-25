@@ -77,6 +77,7 @@ module SpecMaker
 	@mdresponse = @struct[:mdresponse]
 	@mdignore = @struct[:mdignore]
 	@mdpageannotate = @struct[:mdpageannotate]
+	@serviceroot = []
 	
 
 	HTTP_CODES = {

@@ -2010,7 +2010,7 @@
 		  <Record>
 			<PropertyValue Property="Selectable" Bool="false" />
 		  </Record>
-		</Annotation>	
+		</Annotation>
 		<Annotation Term="Org.OData.Capabilities.V1.CountRestrictions">
 		  <Record>
 			<PropertyValue Property="Countable" Bool="false" />
