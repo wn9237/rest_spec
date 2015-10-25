@@ -859,6 +859,7 @@ module SpecMaker
 		end
 
 		service_lines.push NEWLINE + uuid_date + NEWLINE
+		service_lines.push get_json_page_annotation("Service root")
 		outfile = MARKDOWN_RESOURCE_FOLDER + 'service_root.md'
 		file=File.new(outfile,'w')
 		service_lines.each do |line|

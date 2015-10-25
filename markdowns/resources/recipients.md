@@ -1,0 +1,42 @@
+# recipients resource type
+
+
+
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.recipients"
+}-->
+
+```json
+{
+  "alias": "String-value",
+  "email": "String-value",
+  "objectId": "String-value",
+  "permissionIdentityType": "String-value"
+}
+
+```
+### Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|alias|String||
+|email|String||
+|objectId|String||
+|permissionIdentityType|String||
+
+<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
+2015-10-25 11:57:35 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "recipients resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
