@@ -85,15 +85,17 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Plan](../api/plan_get.md) | [Plan](plan.md) |Read properties and relationships of plan object.|
 |[Create Bucket](../api/plan_post_buckets.md) |[Bucket](bucket.md)| Create a new Bucket by posting to the buckets collection.|
-|[Create Task](../api/plan_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[Update](../api/plan_update.md) | [Plan](plan.md)	|Update Plan object. |
-|[Delete](../api/plan_delete.md) | None |Delete Plan object. |
+|[List Bucket](../api/plan_post_buckets.md) |[Bucket](bucket.md)| Get a Bucket object collection.|
+|[Create Task](../api/buckets_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
+|[List Task](../api/buckets_post_tasks.md) |[Task](task.md)| Get a Task object collection.|
+|[Update](../api/tasks_update.md) | [tasks](tasks.md)	|Update tasks object. |
+|[Delete](../api/tasks_delete.md) | None |Delete tasks object. |
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Plan resource",
+  "description": "tasks resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

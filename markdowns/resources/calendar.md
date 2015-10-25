@@ -54,15 +54,17 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Calendar](../api/calendar_get.md) | [Calendar](calendar.md) |Read properties and relationships of calendar object.|
 |[Create Event](../api/calendar_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
-|[Create Event](../api/calendar_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
-|[Delete](../api/calendar_delete.md) | None |Delete Calendar object. |
+|[List Event](../api/calendar_post_calendarview.md) |[Event](event.md)| Get a Event object collection.|
+|[Create Event](../api/calendarview_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
+|[List Event](../api/calendarview_post_events.md) |[Event](event.md)| Get a Event object collection.|
+|[Update](../api/events_update.md) | [Events](events.md)	|Update Events object. |
+|[Delete](../api/events_delete.md) | None |Delete Events object. |
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Calendar resource",
+  "description": "Events resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

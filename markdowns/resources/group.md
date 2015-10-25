@@ -199,33 +199,45 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Group](../api/group_get.md) | [Group](group.md) |Read properties and relationships of group object.|
 |[Create AcceptedSender](../api/group_post_acceptedsenders.md) |[DirectoryObject](directoryobject.md)| Create a new AcceptedSender by posting to the AcceptedSenders collection.|
-|[Create Event](../api/group_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
-|[Create Conversation](../api/group_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the Conversations collection.|
-|[Create Event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[Create RejectedSender](../api/group_post_rejectedsenders.md) |[DirectoryObject](directoryobject.md)| Create a new RejectedSender by posting to the RejectedSenders collection.|
-|[Create Thread](../api/group_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
-|[Create AppRoleAssignment](../api/group_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[Create memberOf](../api/group_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[Create member](../api/group_post_members.md) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
-|[Create owner](../api/group_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[Create Plan](../api/group_post_plans.md) |[Plan](plan.md)| Create a new Plan by posting to the plans collection.|
-|[Create Task](../api/group_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[Update](../api/group_update.md) | [Group](group.md)	|Update Group object. |
-|[Delete](../api/group_delete.md) | None |Delete Group object. |
-|[Addfavorite](../api/group_addfavorite.md)|None||
-|[Removefavorite](../api/group_removefavorite.md)|None||
-|[Resetunseencount](../api/group_resetunseencount.md)|None||
-|[Subscribebymail](../api/group_subscribebymail.md)|None||
-|[Unsubscribebymail](../api/group_unsubscribebymail.md)|None||
-|[Checkmembergroups](../api/group_checkmembergroups.md)|String collection||
-|[Get MemberGroups](../api/group_getmembergroups.md)|String collection||
-|[Get MemberObjects](../api/group_getmemberobjects.md)|String collection||
+|[List AcceptedSender](../api/group_post_acceptedsenders.md) |[DirectoryObject](directoryobject.md)| Get a AcceptedSender object collection.|
+|[Create Event](../api/acceptedsenders_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
+|[List Event](../api/acceptedsenders_post_calendarview.md) |[Event](event.md)| Get a Event object collection.|
+|[Create Conversation](../api/calendarview_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the Conversations collection.|
+|[List Conversation](../api/calendarview_post_conversations.md) |[Conversation](conversation.md)| Get a Conversation object collection.|
+|[Create Event](../api/conversations_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
+|[List Event](../api/conversations_post_events.md) |[Event](event.md)| Get a Event object collection.|
+|[Create RejectedSender](../api/events_post_rejectedsenders.md) |[DirectoryObject](directoryobject.md)| Create a new RejectedSender by posting to the RejectedSenders collection.|
+|[List RejectedSender](../api/events_post_rejectedsenders.md) |[DirectoryObject](directoryobject.md)| Get a RejectedSender object collection.|
+|[Create Thread](../api/rejectedsenders_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
+|[List Thread](../api/rejectedsenders_post_threads.md) |[ConversationThread](conversationthread.md)| Get a Thread object collection.|
+|[Create AppRoleAssignment](../api/threads_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
+|[List AppRoleAssignment](../api/threads_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Get a AppRoleAssignment object collection.|
+|[Create memberOf](../api/approleassignments_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[List memberOf](../api/approleassignments_post_memberof.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
+|[Create member](../api/memberof_post_members.md) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
+|[List member](../api/memberof_post_members.md) |[DirectoryObject](directoryobject.md)| Get a member object collection.|
+|[Create owner](../api/members_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owner](../api/members_post_owners.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
+|[Create Plan](../api/owners_post_plans.md) |[Plan](plan.md)| Create a new Plan by posting to the plans collection.|
+|[List Plan](../api/owners_post_plans.md) |[Plan](plan.md)| Get a Plan object collection.|
+|[Create Task](../api/plans_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
+|[List Task](../api/plans_post_tasks.md) |[Task](task.md)| Get a Task object collection.|
+|[Update](../api/tasks_update.md) | [tasks](tasks.md)	|Update tasks object. |
+|[Delete](../api/tasks_delete.md) | None |Delete tasks object. |
+|[Addfavorite](../api/tasks_addfavorite.md)|None||
+|[Removefavorite](../api/tasks_removefavorite.md)|None||
+|[Resetunseencount](../api/tasks_resetunseencount.md)|None||
+|[Subscribebymail](../api/tasks_subscribebymail.md)|None||
+|[Unsubscribebymail](../api/tasks_unsubscribebymail.md)|None||
+|[Checkmembergroups](../api/tasks_checkmembergroups.md)|String collection||
+|[Get MemberGroups](../api/tasks_getmembergroups.md)|String collection||
+|[Get MemberObjects](../api/tasks_getmemberobjects.md)|String collection||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Group resource",
+  "description": "tasks resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

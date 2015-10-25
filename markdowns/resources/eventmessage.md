@@ -131,24 +131,26 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get EventMessage](../api/eventmessage_get.md) | [EventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
 |[Create Attachment](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
-|[Create Extension](../api/eventmessage_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[Update](../api/eventmessage_update.md) | [EventMessage](eventmessage.md)	|Update EventMessage object. |
-|[Delete](../api/eventmessage_delete.md) | None |Delete EventMessage object. |
-|[Copy](../api/eventmessage_copy.md)|[Message](message.md)||
-|[Createforward](../api/eventmessage_createforward.md)|[Message](message.md)||
-|[Createreply](../api/eventmessage_createreply.md)|[Message](message.md)||
-|[Createreplyall](../api/eventmessage_createreplyall.md)|[Message](message.md)||
-|[Forward](../api/eventmessage_forward.md)|None||
-|[Move](../api/eventmessage_move.md)|[Message](message.md)||
-|[Reply](../api/eventmessage_reply.md)|None||
-|[Replyall](../api/eventmessage_replyall.md)|None||
-|[Send](../api/eventmessage_send.md)|None||
+|[List Attachment](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Get a Attachment object collection.|
+|[Create Extension](../api/attachments_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[List Extension](../api/attachments_post_extensions.md) |[Extension](extension.md)| Get a Extension object collection.|
+|[Update](../api/extensions_update.md) | [Extensions](extensions.md)	|Update Extensions object. |
+|[Delete](../api/extensions_delete.md) | None |Delete Extensions object. |
+|[Copy](../api/extensions_copy.md)|[Message](message.md)||
+|[Createforward](../api/extensions_createforward.md)|[Message](message.md)||
+|[Createreply](../api/extensions_createreply.md)|[Message](message.md)||
+|[Createreplyall](../api/extensions_createreplyall.md)|[Message](message.md)||
+|[Forward](../api/extensions_forward.md)|None||
+|[Move](../api/extensions_move.md)|[Message](message.md)||
+|[Reply](../api/extensions_reply.md)|None||
+|[Replyall](../api/extensions_replyall.md)|None||
+|[Send](../api/extensions_send.md)|None||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "EventMessage resource",
+  "description": "Extensions resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

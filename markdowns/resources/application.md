@@ -125,19 +125,21 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Application](../api/application_get.md) | [Application](application.md) |Read properties and relationships of application object.|
 |[Create ExtensionProperty](../api/application_post_extensionproperties.md) |[ExtensionProperty](extensionproperty.md)| Create a new ExtensionProperty by posting to the extensionProperties collection.|
-|[Create owner](../api/application_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[Update](../api/application_update.md) | [Application](application.md)	|Update Application object. |
-|[Delete](../api/application_delete.md) | None |Delete Application object. |
-|[Checkmembergroups](../api/application_checkmembergroups.md)|String collection||
-|[Get MemberGroups](../api/application_getmembergroups.md)|String collection||
-|[Get MemberObjects](../api/application_getmemberobjects.md)|String collection||
-|[Restore](../api/application_restore.md)|[Application](application.md)||
+|[List ExtensionProperty](../api/application_post_extensionproperties.md) |[ExtensionProperty](extensionproperty.md)| Get a ExtensionProperty object collection.|
+|[Create owner](../api/extensionproperties_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owner](../api/extensionproperties_post_owners.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
+|[Update](../api/owners_update.md) | [owners](owners.md)	|Update owners object. |
+|[Delete](../api/owners_delete.md) | None |Delete owners object. |
+|[Checkmembergroups](../api/owners_checkmembergroups.md)|String collection||
+|[Get MemberGroups](../api/owners_getmembergroups.md)|String collection||
+|[Get MemberObjects](../api/owners_getmemberobjects.md)|String collection||
+|[Restore](../api/owners_restore.md)|[Application](application.md)||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Application resource",
+  "description": "owners resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

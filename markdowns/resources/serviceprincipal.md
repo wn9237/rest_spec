@@ -150,22 +150,28 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ServicePrincipal](../api/serviceprincipal_get.md) | [ServicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
 |[Create AppRoleAssignment](../api/serviceprincipal_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[Create createdObject](../api/serviceprincipal_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
-|[Create memberOf](../api/serviceprincipal_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[Create OAuth2PermissionGrant](../api/serviceprincipal_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
-|[Create ownedObject](../api/serviceprincipal_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
-|[Create owner](../api/serviceprincipal_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[Update](../api/serviceprincipal_update.md) | [ServicePrincipal](serviceprincipal.md)	|Update ServicePrincipal object. |
-|[Delete](../api/serviceprincipal_delete.md) | None |Delete ServicePrincipal object. |
-|[Checkmembergroups](../api/serviceprincipal_checkmembergroups.md)|String collection||
-|[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String collection||
-|[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String collection||
+|[List AppRoleAssignment](../api/serviceprincipal_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Get a AppRoleAssignment object collection.|
+|[Create createdObject](../api/approleassignments_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
+|[List createdObject](../api/approleassignments_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Get a createdObject object collection.|
+|[Create memberOf](../api/createdobjects_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[List memberOf](../api/createdobjects_post_memberof.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
+|[Create OAuth2PermissionGrant](../api/memberof_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
+|[List OAuth2PermissionGrant](../api/memberof_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Get a OAuth2PermissionGrant object collection.|
+|[Create ownedObject](../api/oauth2permissiongrants_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
+|[List ownedObject](../api/oauth2permissiongrants_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Get a ownedObject object collection.|
+|[Create owner](../api/ownedobjects_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owner](../api/ownedobjects_post_owners.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
+|[Update](../api/owners_update.md) | [owners](owners.md)	|Update owners object. |
+|[Delete](../api/owners_delete.md) | None |Delete owners object. |
+|[Checkmembergroups](../api/owners_checkmembergroups.md)|String collection||
+|[Get MemberGroups](../api/owners_getmembergroups.md)|String collection||
+|[Get MemberObjects](../api/owners_getmemberobjects.md)|String collection||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ServicePrincipal resource",
+  "description": "owners resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

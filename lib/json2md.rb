@@ -744,6 +744,19 @@ module SpecMaker
 							mtd[:httpSuccessCode] = '201'
 						    create_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md", prop[:name])
 						end
+
+						# Add List method.
+						if !SIMPLETYPES.include? prop[:dataType]
+							filename = "#{prop[:dataType].downcase}_list.downcase}.md"
+							postLink = "../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md"
+							@mdlines.push "|[List #{useName}](#{postLink}) |#{returnLink}| Get a #{useName} object collection.|" + NEWLINE
+							saveJsonHash = @jsonHash
+							@jsonHash[:name] = prop[:name]
+							@jsonHash[:collectionOf] = prop[:dataType]
+							@jsonHash = saveJsonHash
+							create_get_method
+						end
+
 					end
 				end			
 			end

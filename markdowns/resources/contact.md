@@ -140,14 +140,15 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Contact](../api/contact_get.md) | [Contact](contact.md) |Read properties and relationships of contact object.|
 |[Create Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
-|[Delete](../api/contact_delete.md) | None |Delete Contact object. |
+|[List Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Get a Extension object collection.|
+|[Update](../api/extensions_update.md) | [Extensions](extensions.md)	|Update Extensions object. |
+|[Delete](../api/extensions_delete.md) | None |Delete Extensions object. |
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Contact resource",
+  "description": "Extensions resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

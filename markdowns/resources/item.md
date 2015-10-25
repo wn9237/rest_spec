@@ -156,24 +156,28 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get item](../api/item_get.md) | [item](item.md) |Read properties and relationships of item object.|
 |[Create children](../api/item_post_children.md) |[item](item.md)| Create a new children by posting to the children collection.|
-|[Create permission](../api/item_post_permissions.md) |[permission](permission.md)| Create a new permission by posting to the permissions collection.|
-|[Create thumbnailSet](../api/item_post_thumbnails.md) |[thumbnailSet](thumbnailset.md)| Create a new thumbnailSet by posting to the thumbnails collection.|
-|[Create version](../api/item_post_versions.md) |[item](item.md)| Create a new version by posting to the versions collection.|
-|[Update](../api/item_update.md) | [item](item.md)	|Update item object. |
-|[Delete](../api/item_delete.md) | None |Delete item object. |
-|[Allphotos](../api/item_allphotos.md)|[item](item.md) collection||
-|[Copy](../api/item_copy.md)|[item](item.md)||
-|[Createlink](../api/item_createlink.md)|[permission](permission.md)||
-|[Createsession](../api/item_createsession.md)|[uploadSession](uploadsession.md)||
-|[Delta](../api/item_delta.md)|[item](item.md) collection||
-|[Invite](../api/item_invite.md)|[permission](permission.md) collection||
-|[Search](../api/item_search.md)|[item](item.md) collection||
+|[List children](../api/item_post_children.md) |[item](item.md)| Get a children object collection.|
+|[Create permission](../api/children_post_permissions.md) |[permission](permission.md)| Create a new permission by posting to the permissions collection.|
+|[List permission](../api/children_post_permissions.md) |[permission](permission.md)| Get a permission object collection.|
+|[Create thumbnailSet](../api/permissions_post_thumbnails.md) |[thumbnailSet](thumbnailset.md)| Create a new thumbnailSet by posting to the thumbnails collection.|
+|[List thumbnailSet](../api/permissions_post_thumbnails.md) |[thumbnailSet](thumbnailset.md)| Get a thumbnailSet object collection.|
+|[Create version](../api/thumbnails_post_versions.md) |[item](item.md)| Create a new version by posting to the versions collection.|
+|[List version](../api/thumbnails_post_versions.md) |[item](item.md)| Get a version object collection.|
+|[Update](../api/versions_update.md) | [versions](versions.md)	|Update versions object. |
+|[Delete](../api/versions_delete.md) | None |Delete versions object. |
+|[Allphotos](../api/versions_allphotos.md)|[item](item.md) collection||
+|[Copy](../api/versions_copy.md)|[item](item.md)||
+|[Createlink](../api/versions_createlink.md)|[permission](permission.md)||
+|[Createsession](../api/versions_createsession.md)|[uploadSession](uploadsession.md)||
+|[Delta](../api/versions_delta.md)|[item](item.md) collection||
+|[Invite](../api/versions_invite.md)|[permission](permission.md) collection||
+|[Search](../api/versions_search.md)|[item](item.md) collection||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "item resource",
+  "description": "versions resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

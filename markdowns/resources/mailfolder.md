@@ -54,17 +54,19 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get MailFolder](../api/mailfolder_get.md) | [MailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
 |[Create MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the ChildFolders collection.|
-|[Create Message](../api/mailfolder_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
-|[Update](../api/mailfolder_update.md) | [MailFolder](mailfolder.md)	|Update MailFolder object. |
-|[Delete](../api/mailfolder_delete.md) | None |Delete MailFolder object. |
-|[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
-|[Move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||
+|[List MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Get a MailFolder object collection.|
+|[Create Message](../api/childfolders_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
+|[List Message](../api/childfolders_post_messages.md) |[Message](message.md)| Get a Message object collection.|
+|[Update](../api/messages_update.md) | [Messages](messages.md)	|Update Messages object. |
+|[Delete](../api/messages_delete.md) | None |Delete Messages object. |
+|[Copy](../api/messages_copy.md)|[MailFolder](mailfolder.md)||
+|[Move](../api/messages_move.md)|[MailFolder](mailfolder.md)||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "MailFolder resource",
+  "description": "Messages resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -70,17 +70,20 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get drive](../api/drive_get.md) | [drive](drive.md) |Read properties and relationships of drive object.|
 |[Create item](../api/drive_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
-|[Create shared](../api/drive_post_shared.md) |[item](item.md)| Create a new shared by posting to the shared collection.|
-|[Create special](../api/drive_post_special.md) |[item](item.md)| Create a new special by posting to the special collection.|
-|[Update](../api/drive_update.md) | [drive](drive.md)	|Update drive object. |
-|[Delete](../api/drive_delete.md) | None |Delete drive object. |
-|[Allphotos](../api/drive_allphotos.md)|[item](item.md) collection||
+|[List item](../api/drive_post_items.md) |[item](item.md)| Get a item object collection.|
+|[Create shared](../api/items_post_shared.md) |[item](item.md)| Create a new shared by posting to the shared collection.|
+|[List shared](../api/items_post_shared.md) |[item](item.md)| Get a shared object collection.|
+|[Create special](../api/shared_post_special.md) |[item](item.md)| Create a new special by posting to the special collection.|
+|[List special](../api/shared_post_special.md) |[item](item.md)| Get a special object collection.|
+|[Update](../api/special_update.md) | [special](special.md)	|Update special object. |
+|[Delete](../api/special_delete.md) | None |Delete special object. |
+|[Allphotos](../api/special_allphotos.md)|[item](item.md) collection||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "drive resource",
+  "description": "special resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

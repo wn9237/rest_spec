@@ -47,14 +47,15 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get share](../api/share_get.md) | [share](share.md) |Read properties and relationships of share object.|
 |[Create item](../api/share_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
-|[Update](../api/share_update.md) | [share](share.md)	|Update share object. |
-|[Delete](../api/share_delete.md) | None |Delete share object. |
+|[List item](../api/share_post_items.md) |[item](item.md)| Get a item object collection.|
+|[Update](../api/items_update.md) | [items](items.md)	|Update items object. |
+|[Delete](../api/items_delete.md) | None |Delete items object. |
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "share resource",
+  "description": "items resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

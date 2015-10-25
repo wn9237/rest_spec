@@ -107,18 +107,20 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get OrgContact](../api/orgcontact_get.md) | [OrgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
 |[Create directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
-|[Create memberOf](../api/orgcontact_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[Update](../api/orgcontact_update.md) | [OrgContact](orgcontact.md)	|Update OrgContact object. |
-|[Delete](../api/orgcontact_delete.md) | None |Delete OrgContact object. |
-|[Checkmembergroups](../api/orgcontact_checkmembergroups.md)|String collection||
-|[Get MemberGroups](../api/orgcontact_getmembergroups.md)|String collection||
-|[Get MemberObjects](../api/orgcontact_getmemberobjects.md)|String collection||
+|[List directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Get a directReport object collection.|
+|[Create memberOf](../api/directreports_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[List memberOf](../api/directreports_post_memberof.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
+|[Update](../api/memberof_update.md) | [memberOf](memberof.md)	|Update memberOf object. |
+|[Delete](../api/memberof_delete.md) | None |Delete memberOf object. |
+|[Checkmembergroups](../api/memberof_checkmembergroups.md)|String collection||
+|[Get MemberGroups](../api/memberof_getmembergroups.md)|String collection||
+|[Get MemberObjects](../api/memberof_getmemberobjects.md)|String collection||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "OrgContact resource",
+  "description": "memberOf resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -52,15 +52,17 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ContactFolder](../api/contactfolder_get.md) | [ContactFolder](contactfolder.md) |Read properties and relationships of contactFolder object.|
 |[Create ContactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the ChildFolders collection.|
-|[Create Contact](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
-|[Update](../api/contactfolder_update.md) | [ContactFolder](contactfolder.md)	|Update ContactFolder object. |
-|[Delete](../api/contactfolder_delete.md) | None |Delete ContactFolder object. |
+|[List ContactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Get a ContactFolder object collection.|
+|[Create Contact](../api/childfolders_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
+|[List Contact](../api/childfolders_post_contacts.md) |[Contact](contact.md)| Get a Contact object collection.|
+|[Update](../api/contacts_update.md) | [Contacts](contacts.md)	|Update Contacts object. |
+|[Delete](../api/contacts_delete.md) | None |Delete Contacts object. |
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ContactFolder resource",
+  "description": "Contacts resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

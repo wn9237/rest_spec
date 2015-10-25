@@ -67,15 +67,16 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ConversationThread](../api/conversationthread_get.md) | [ConversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
 |[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
-|[Update](../api/conversationthread_update.md) | [ConversationThread](conversationthread.md)	|Update ConversationThread object. |
-|[Delete](../api/conversationthread_delete.md) | None |Delete ConversationThread object. |
-|[Reply](../api/conversationthread_reply.md)|None||
+|[List Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Get a Post object collection.|
+|[Update](../api/posts_update.md) | [Posts](posts.md)	|Update Posts object. |
+|[Delete](../api/posts_delete.md) | None |Delete Posts object. |
+|[Reply](../api/posts_reply.md)|None||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ConversationThread resource",
+  "description": "Posts resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

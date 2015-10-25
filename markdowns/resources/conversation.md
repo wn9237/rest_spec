@@ -53,14 +53,15 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Conversation](../api/conversation_get.md) | [Conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[Create Thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
-|[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
-|[Delete](../api/conversation_delete.md) | None |Delete Conversation object. |
+|[List Thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Get a Thread object collection.|
+|[Update](../api/threads_update.md) | [Threads](threads.md)	|Update Threads object. |
+|[Delete](../api/threads_delete.md) | None |Delete Threads object. |
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Conversation resource",
+  "description": "Threads resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

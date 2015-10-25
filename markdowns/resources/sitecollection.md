@@ -41,14 +41,15 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get SiteCollection](../api/sitecollection_get.md) | [SiteCollection](sitecollection.md) |Read properties and relationships of siteCollection object.|
 |[Create Site](../api/sitecollection_post_sites.md) |[Site](site.md)| Create a new Site by posting to the sites collection.|
-|[Delete](../api/sitecollection_delete.md) | None |Delete SiteCollection object. |
-|[Fromurl](../api/sitecollection_fromurl.md)|[SiteMetadata](sitemetadata.md)||
+|[List Site](../api/sitecollection_post_sites.md) |[Site](site.md)| Get a Site object collection.|
+|[Delete](../api/sites_delete.md) | None |Delete sites object. |
+|[Fromurl](../api/sites_fromurl.md)|[SiteMetadata](sitemetadata.md)||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "SiteCollection resource",
+  "description": "sites resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

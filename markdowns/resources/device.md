@@ -84,18 +84,20 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Device](../api/device_get.md) | [Device](device.md) |Read properties and relationships of device object.|
 |[Create registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Create a new registeredOwner by posting to the registeredOwners collection.|
-|[Create registeredUser](../api/device_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
-|[Update](../api/device_update.md) | [Device](device.md)	|Update Device object. |
-|[Delete](../api/device_delete.md) | None |Delete Device object. |
-|[Checkmembergroups](../api/device_checkmembergroups.md)|String collection||
-|[Get MemberGroups](../api/device_getmembergroups.md)|String collection||
-|[Get MemberObjects](../api/device_getmemberobjects.md)|String collection||
+|[List registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Get a registeredOwner object collection.|
+|[Create registeredUser](../api/registeredowners_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
+|[List registeredUser](../api/registeredowners_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Get a registeredUser object collection.|
+|[Update](../api/registeredusers_update.md) | [registeredUsers](registeredusers.md)	|Update registeredUsers object. |
+|[Delete](../api/registeredusers_delete.md) | None |Delete registeredUsers object. |
+|[Checkmembergroups](../api/registeredusers_checkmembergroups.md)|String collection||
+|[Get MemberGroups](../api/registeredusers_getmembergroups.md)|String collection||
+|[Get MemberObjects](../api/registeredusers_getmemberobjects.md)|String collection||
 
-<!-- uuid: cfe36506-792b-4056-b896-443ba1deaf72
-2015-10-25 11:57:35 UTC -->
+<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
+2015-10-25 12:45:03 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Device resource",
+  "description": "registeredUsers resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
