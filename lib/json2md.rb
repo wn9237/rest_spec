@@ -11,7 +11,7 @@ module SpecMaker
 
 	require_relative 'utils_j2m'
 
-	def self.gen_example (type=nil, method={})
+	def self.gen_example (type=nil, method={}, pathAppend=nil)
 		example_lines = []
 		example_lines.push HEADER3 + "Example" + NEWLINE		
 		case type 
@@ -44,7 +44,7 @@ module SpecMaker
 			example_lines.push get_json_request_pretext("get_#{@jsonHash[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
 			httpSyntax = get_syntax('auto_get', top_one_restpath)
-			example_lines.push httpSyntax.join("\n") + NEWLINE
+			example_lines.push httpSyntax.join("/#{pathAppend.to_s}.chomp('/')\n") + NEWLINE
 			example_lines.push "```" + NEWLINE	
 
 			example_lines.push HEADER5 + "Response" + NEWLINE											
@@ -479,7 +479,7 @@ module SpecMaker
 
 		#Example
 		if @jsonHash[:collectionOf] 
-			example_lines = gen_example("auto_list")
+			example_lines = gen_example("auto_list", pathAppend)
 		else
 			example_lines = gen_example("auto_get")
 		end
