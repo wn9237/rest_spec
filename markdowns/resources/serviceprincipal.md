@@ -150,25 +150,25 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ServicePrincipal](../api/serviceprincipal_get.md) | [ServicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
 |[Create AppRoleAssignment](../api/serviceprincipal_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[List AppRoleAssignment](../api/approleassignment_list.downcase}.md) |[AppRoleAssignment](approleassignment.md)| Get a AppRoleAssignment object collection.|
+|[List AppRoleAssignment](../api/approleassignment_list.md) |[AppRoleAssignment](approleassignment.md)| Get a AppRoleAssignment object collection.|
 |[Create createdObject](../api/approleassignments_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
-|[List createdObject](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a createdObject object collection.|
+|[List createdObject](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a createdObject object collection.|
 |[Create memberOf](../api/createdobjects_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[List memberOf](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
+|[List memberOf](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
 |[Create OAuth2PermissionGrant](../api/memberof_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
-|[List OAuth2PermissionGrant](../api/oauth2permissiongrant_list.downcase}.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Get a OAuth2PermissionGrant object collection.|
+|[List OAuth2PermissionGrant](../api/oauth2permissiongrant_list.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Get a OAuth2PermissionGrant object collection.|
 |[Create ownedObject](../api/oauth2permissiongrants_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
-|[List ownedObject](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a ownedObject object collection.|
+|[List ownedObject](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a ownedObject object collection.|
 |[Create owner](../api/ownedobjects_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[List owner](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
+|[List owner](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
 |[Update](../api/owners_update.md) | [owners](owners.md)	|Update owners object. |
 |[Delete](../api/owners_delete.md) | None |Delete owners object. |
 |[Checkmembergroups](../api/owners_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/owners_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/owners_getmemberobjects.md)|String collection||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "owners resource",

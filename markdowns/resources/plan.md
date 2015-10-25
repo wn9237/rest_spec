@@ -85,14 +85,14 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Plan](../api/plan_get.md) | [Plan](plan.md) |Read properties and relationships of plan object.|
 |[Create Bucket](../api/plan_post_buckets.md) |[Bucket](bucket.md)| Create a new Bucket by posting to the buckets collection.|
-|[List Bucket](../api/bucket_list.downcase}.md) |[Bucket](bucket.md)| Get a Bucket object collection.|
+|[List Bucket](../api/bucket_list.md) |[Bucket](bucket.md)| Get a Bucket object collection.|
 |[Create Task](../api/buckets_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[List Task](../api/task_list.downcase}.md) |[Task](task.md)| Get a Task object collection.|
+|[List Task](../api/task_list.md) |[Task](task.md)| Get a Task object collection.|
 |[Update](../api/tasks_update.md) | [tasks](tasks.md)	|Update tasks object. |
 |[Delete](../api/tasks_delete.md) | None |Delete tasks object. |
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "tasks resource",

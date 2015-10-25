@@ -349,47 +349,47 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get User](../api/user_get.md) | [User](user.md) |Read properties and relationships of user object.|
 |[Create CalendarGroup](../api/user_post_calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the CalendarGroups collection.|
-|[List CalendarGroup](../api/calendargroup_list.downcase}.md) |[CalendarGroup](calendargroup.md)| Get a CalendarGroup object collection.|
+|[List CalendarGroup](../api/calendargroup_list.md) |[CalendarGroup](calendargroup.md)| Get a CalendarGroup object collection.|
 |[Create Event](../api/calendargroups_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
-|[List Event](../api/event_list.downcase}.md) |[Event](event.md)| Get a Event object collection.|
+|[List Event](../api/event_list.md) |[Event](event.md)| Get a Event object collection.|
 |[Create Calendar](../api/calendarview_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the Calendars collection.|
-|[List Calendar](../api/calendar_list.downcase}.md) |[Calendar](calendar.md)| Get a Calendar object collection.|
+|[List Calendar](../api/calendar_list.md) |[Calendar](calendar.md)| Get a Calendar object collection.|
 |[Create ContactFolder](../api/calendars_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the ContactFolders collection.|
-|[List ContactFolder](../api/contactfolder_list.downcase}.md) |[ContactFolder](contactfolder.md)| Get a ContactFolder object collection.|
+|[List ContactFolder](../api/contactfolder_list.md) |[ContactFolder](contactfolder.md)| Get a ContactFolder object collection.|
 |[Create Contact](../api/contactfolders_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
-|[List Contact](../api/contact_list.downcase}.md) |[Contact](contact.md)| Get a Contact object collection.|
+|[List Contact](../api/contact_list.md) |[Contact](contact.md)| Get a Contact object collection.|
 |[Create Event](../api/contacts_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[List Event](../api/event_list.downcase}.md) |[Event](event.md)| Get a Event object collection.|
+|[List Event](../api/event_list.md) |[Event](event.md)| Get a Event object collection.|
 |[Create Group](../api/events_post_joinedgroups.md) |[Group](group.md)| Create a new Group by posting to the JoinedGroups collection.|
-|[List Group](../api/group_list.downcase}.md) |[Group](group.md)| Get a Group object collection.|
+|[List Group](../api/group_list.md) |[Group](group.md)| Get a Group object collection.|
 |[Create MailFolder](../api/joinedgroups_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the MailFolders collection.|
-|[List MailFolder](../api/mailfolder_list.downcase}.md) |[MailFolder](mailfolder.md)| Get a MailFolder object collection.|
+|[List MailFolder](../api/mailfolder_list.md) |[MailFolder](mailfolder.md)| Get a MailFolder object collection.|
 |[Create Message](../api/mailfolders_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
-|[List Message](../api/message_list.downcase}.md) |[Message](message.md)| Get a Message object collection.|
+|[List Message](../api/message_list.md) |[Message](message.md)| Get a Message object collection.|
 |[Create File](../api/messages_post_trendingaround.md) |[File](file.md)| Create a new File by posting to the TrendingAround collection.|
-|[List File](../api/file_list.downcase}.md) |[File](file.md)| Get a File object collection.|
+|[List File](../api/file_list.md) |[File](file.md)| Get a File object collection.|
 |[Create User](../api/trendingaround_post_workingwith.md) |[User](user.md)| Create a new User by posting to the WorkingWith collection.|
-|[List User](../api/user_list.downcase}.md) |[User](user.md)| Get a User object collection.|
+|[List User](../api/user_list.md) |[User](user.md)| Get a User object collection.|
 |[Create AppRoleAssignment](../api/workingwith_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[List AppRoleAssignment](../api/approleassignment_list.downcase}.md) |[AppRoleAssignment](approleassignment.md)| Get a AppRoleAssignment object collection.|
+|[List AppRoleAssignment](../api/approleassignment_list.md) |[AppRoleAssignment](approleassignment.md)| Get a AppRoleAssignment object collection.|
 |[Create createdObject](../api/approleassignments_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
-|[List createdObject](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a createdObject object collection.|
+|[List createdObject](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a createdObject object collection.|
 |[Create directReport](../api/createdobjects_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
-|[List directReport](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a directReport object collection.|
+|[List directReport](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a directReport object collection.|
 |[Create memberOf](../api/directreports_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[List memberOf](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
+|[List memberOf](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
 |[Create OAuth2PermissionGrant](../api/memberof_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
-|[List OAuth2PermissionGrant](../api/oauth2permissiongrant_list.downcase}.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Get a OAuth2PermissionGrant object collection.|
+|[List OAuth2PermissionGrant](../api/oauth2permissiongrant_list.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Get a OAuth2PermissionGrant object collection.|
 |[Create ownedDevice](../api/oauth2permissiongrants_post_owneddevices.md) |[DirectoryObject](directoryobject.md)| Create a new ownedDevice by posting to the ownedDevices collection.|
-|[List ownedDevice](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a ownedDevice object collection.|
+|[List ownedDevice](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a ownedDevice object collection.|
 |[Create ownedObject](../api/owneddevices_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
-|[List ownedObject](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a ownedObject object collection.|
+|[List ownedObject](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a ownedObject object collection.|
 |[Create Plan](../api/ownedobjects_post_plans.md) |[Plan](plan.md)| Create a new Plan by posting to the plans collection.|
-|[List Plan](../api/plan_list.downcase}.md) |[Plan](plan.md)| Get a Plan object collection.|
+|[List Plan](../api/plan_list.md) |[Plan](plan.md)| Get a Plan object collection.|
 |[Create registeredDevice](../api/plans_post_registereddevices.md) |[DirectoryObject](directoryobject.md)| Create a new registeredDevice by posting to the registeredDevices collection.|
-|[List registeredDevice](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a registeredDevice object collection.|
+|[List registeredDevice](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a registeredDevice object collection.|
 |[Create Task](../api/registereddevices_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[List Task](../api/task_list.downcase}.md) |[Task](task.md)| Get a Task object collection.|
+|[List Task](../api/task_list.md) |[Task](task.md)| Get a Task object collection.|
 |[Update](../api/tasks_update.md) | [tasks](tasks.md)	|Update tasks object. |
 |[Delete](../api/tasks_delete.md) | None |Delete tasks object. |
 |[Sendmail](../api/tasks_sendmail.md)|None||
@@ -398,8 +398,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/tasks_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/tasks_getmemberobjects.md)|String collection||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "tasks resource",

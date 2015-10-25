@@ -54,16 +54,16 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get MailFolder](../api/mailfolder_get.md) | [MailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
 |[Create MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the ChildFolders collection.|
-|[List MailFolder](../api/mailfolder_list.downcase}.md) |[MailFolder](mailfolder.md)| Get a MailFolder object collection.|
+|[List MailFolder](../api/mailfolder_list.md) |[MailFolder](mailfolder.md)| Get a MailFolder object collection.|
 |[Create Message](../api/childfolders_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
-|[List Message](../api/message_list.downcase}.md) |[Message](message.md)| Get a Message object collection.|
+|[List Message](../api/message_list.md) |[Message](message.md)| Get a Message object collection.|
 |[Update](../api/messages_update.md) | [Messages](messages.md)	|Update Messages object. |
 |[Delete](../api/messages_delete.md) | None |Delete Messages object. |
 |[Copy](../api/messages_copy.md)|[MailFolder](mailfolder.md)||
 |[Move](../api/messages_move.md)|[MailFolder](mailfolder.md)||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Messages resource",

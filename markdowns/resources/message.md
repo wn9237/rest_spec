@@ -124,9 +124,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Message](../api/message_get.md) | [Message](message.md) |Read properties and relationships of message object.|
 |[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
-|[List Attachment](../api/attachment_list.downcase}.md) |[Attachment](attachment.md)| Get a Attachment object collection.|
+|[List Attachment](../api/attachment_list.md) |[Attachment](attachment.md)| Get a Attachment object collection.|
 |[Create Extension](../api/attachments_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extension](../api/extension_list.downcase}.md) |[Extension](extension.md)| Get a Extension object collection.|
+|[List Extension](../api/extension_list.md) |[Extension](extension.md)| Get a Extension object collection.|
 |[Update](../api/extensions_update.md) | [Extensions](extensions.md)	|Update Extensions object. |
 |[Delete](../api/extensions_delete.md) | None |Delete Extensions object. |
 |[Copy](../api/extensions_copy.md)|[Message](message.md)||
@@ -139,8 +139,8 @@ Here is a JSON representation of the resource
 |[Replyall](../api/extensions_replyall.md)|None||
 |[Send](../api/extensions_send.md)|None||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Extensions resource",

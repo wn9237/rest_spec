@@ -107,17 +107,17 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get OrgContact](../api/orgcontact_get.md) | [OrgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
 |[Create directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
-|[List directReport](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a directReport object collection.|
+|[List directReport](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a directReport object collection.|
 |[Create memberOf](../api/directreports_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[List memberOf](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
+|[List memberOf](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
 |[Update](../api/memberof_update.md) | [memberOf](memberof.md)	|Update memberOf object. |
 |[Delete](../api/memberof_delete.md) | None |Delete memberOf object. |
 |[Checkmembergroups](../api/memberof_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/memberof_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/memberof_getmemberobjects.md)|String collection||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "memberOf resource",

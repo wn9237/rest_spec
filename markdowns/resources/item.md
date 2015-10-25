@@ -156,13 +156,13 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get item](../api/item_get.md) | [item](item.md) |Read properties and relationships of item object.|
 |[Create children](../api/item_post_children.md) |[item](item.md)| Create a new children by posting to the children collection.|
-|[List children](../api/item_list.downcase}.md) |[item](item.md)| Get a children object collection.|
+|[List children](../api/item_list.md) |[item](item.md)| Get a children object collection.|
 |[Create permission](../api/children_post_permissions.md) |[permission](permission.md)| Create a new permission by posting to the permissions collection.|
-|[List permission](../api/permission_list.downcase}.md) |[permission](permission.md)| Get a permission object collection.|
+|[List permission](../api/permission_list.md) |[permission](permission.md)| Get a permission object collection.|
 |[Create thumbnailSet](../api/permissions_post_thumbnails.md) |[thumbnailSet](thumbnailset.md)| Create a new thumbnailSet by posting to the thumbnails collection.|
-|[List thumbnailSet](../api/thumbnailset_list.downcase}.md) |[thumbnailSet](thumbnailset.md)| Get a thumbnailSet object collection.|
+|[List thumbnailSet](../api/thumbnailset_list.md) |[thumbnailSet](thumbnailset.md)| Get a thumbnailSet object collection.|
 |[Create version](../api/thumbnails_post_versions.md) |[item](item.md)| Create a new version by posting to the versions collection.|
-|[List version](../api/item_list.downcase}.md) |[item](item.md)| Get a version object collection.|
+|[List version](../api/item_list.md) |[item](item.md)| Get a version object collection.|
 |[Update](../api/versions_update.md) | [versions](versions.md)	|Update versions object. |
 |[Delete](../api/versions_delete.md) | None |Delete versions object. |
 |[Allphotos](../api/versions_allphotos.md)|[item](item.md) collection||
@@ -173,8 +173,8 @@ Here is a JSON representation of the resource
 |[Invite](../api/versions_invite.md)|[permission](permission.md) collection||
 |[Search](../api/versions_search.md)|[item](item.md) collection||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "versions resource",

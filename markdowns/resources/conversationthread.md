@@ -67,13 +67,13 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ConversationThread](../api/conversationthread_get.md) | [ConversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
 |[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
-|[List Post](../api/post_list.downcase}.md) |[Post](post.md)| Get a Post object collection.|
+|[List Post](../api/post_list.md) |[Post](post.md)| Get a Post object collection.|
 |[Update](../api/posts_update.md) | [Posts](posts.md)	|Update Posts object. |
 |[Delete](../api/posts_delete.md) | None |Delete Posts object. |
 |[Reply](../api/posts_reply.md)|None||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Posts resource",

@@ -199,29 +199,29 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Group](../api/group_get.md) | [Group](group.md) |Read properties and relationships of group object.|
 |[Create AcceptedSender](../api/group_post_acceptedsenders.md) |[DirectoryObject](directoryobject.md)| Create a new AcceptedSender by posting to the AcceptedSenders collection.|
-|[List AcceptedSender](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a AcceptedSender object collection.|
+|[List AcceptedSender](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a AcceptedSender object collection.|
 |[Create Event](../api/acceptedsenders_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
-|[List Event](../api/event_list.downcase}.md) |[Event](event.md)| Get a Event object collection.|
+|[List Event](../api/event_list.md) |[Event](event.md)| Get a Event object collection.|
 |[Create Conversation](../api/calendarview_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the Conversations collection.|
-|[List Conversation](../api/conversation_list.downcase}.md) |[Conversation](conversation.md)| Get a Conversation object collection.|
+|[List Conversation](../api/conversation_list.md) |[Conversation](conversation.md)| Get a Conversation object collection.|
 |[Create Event](../api/conversations_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[List Event](../api/event_list.downcase}.md) |[Event](event.md)| Get a Event object collection.|
+|[List Event](../api/event_list.md) |[Event](event.md)| Get a Event object collection.|
 |[Create RejectedSender](../api/events_post_rejectedsenders.md) |[DirectoryObject](directoryobject.md)| Create a new RejectedSender by posting to the RejectedSenders collection.|
-|[List RejectedSender](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a RejectedSender object collection.|
+|[List RejectedSender](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a RejectedSender object collection.|
 |[Create Thread](../api/rejectedsenders_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
-|[List Thread](../api/conversationthread_list.downcase}.md) |[ConversationThread](conversationthread.md)| Get a Thread object collection.|
+|[List Thread](../api/conversationthread_list.md) |[ConversationThread](conversationthread.md)| Get a Thread object collection.|
 |[Create AppRoleAssignment](../api/threads_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
-|[List AppRoleAssignment](../api/approleassignment_list.downcase}.md) |[AppRoleAssignment](approleassignment.md)| Get a AppRoleAssignment object collection.|
+|[List AppRoleAssignment](../api/approleassignment_list.md) |[AppRoleAssignment](approleassignment.md)| Get a AppRoleAssignment object collection.|
 |[Create memberOf](../api/approleassignments_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[List memberOf](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
+|[List memberOf](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
 |[Create member](../api/memberof_post_members.md) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
-|[List member](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a member object collection.|
+|[List member](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a member object collection.|
 |[Create owner](../api/members_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[List owner](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
+|[List owner](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
 |[Create Plan](../api/owners_post_plans.md) |[Plan](plan.md)| Create a new Plan by posting to the plans collection.|
-|[List Plan](../api/plan_list.downcase}.md) |[Plan](plan.md)| Get a Plan object collection.|
+|[List Plan](../api/plan_list.md) |[Plan](plan.md)| Get a Plan object collection.|
 |[Create Task](../api/plans_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[List Task](../api/task_list.downcase}.md) |[Task](task.md)| Get a Task object collection.|
+|[List Task](../api/task_list.md) |[Task](task.md)| Get a Task object collection.|
 |[Update](../api/tasks_update.md) | [tasks](tasks.md)	|Update tasks object. |
 |[Delete](../api/tasks_delete.md) | None |Delete tasks object. |
 |[Addfavorite](../api/tasks_addfavorite.md)|None||
@@ -233,8 +233,8 @@ Here is a JSON representation of the resource
 |[Get MemberGroups](../api/tasks_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/tasks_getmemberobjects.md)|String collection||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "tasks resource",

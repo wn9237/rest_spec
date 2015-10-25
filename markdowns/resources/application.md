@@ -125,9 +125,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Application](../api/application_get.md) | [Application](application.md) |Read properties and relationships of application object.|
 |[Create ExtensionProperty](../api/application_post_extensionproperties.md) |[ExtensionProperty](extensionproperty.md)| Create a new ExtensionProperty by posting to the extensionProperties collection.|
-|[List ExtensionProperty](../api/extensionproperty_list.downcase}.md) |[ExtensionProperty](extensionproperty.md)| Get a ExtensionProperty object collection.|
+|[List ExtensionProperty](../api/extensionproperty_list.md) |[ExtensionProperty](extensionproperty.md)| Get a ExtensionProperty object collection.|
 |[Create owner](../api/extensionproperties_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[List owner](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
+|[List owner](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
 |[Update](../api/owners_update.md) | [owners](owners.md)	|Update owners object. |
 |[Delete](../api/owners_delete.md) | None |Delete owners object. |
 |[Checkmembergroups](../api/owners_checkmembergroups.md)|String collection||
@@ -135,8 +135,8 @@ Here is a JSON representation of the resource
 |[Get MemberObjects](../api/owners_getmemberobjects.md)|String collection||
 |[Restore](../api/owners_restore.md)|[Application](application.md)||
 
-<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
-2015-10-25 12:52:19 UTC -->
+<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
+2015-10-25 12:56:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "owners resource",
