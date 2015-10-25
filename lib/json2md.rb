@@ -748,7 +748,7 @@ module SpecMaker
 						# Add List method.
 						if !SIMPLETYPES.include? prop[:dataType]
 							filename = "#{prop[:dataType].downcase}_list.downcase}.md"
-							postLink = "../api/#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md"
+							postLink = "../api/#{filename}"
 							@mdlines.push "|[List #{useName}](#{postLink}) |#{returnLink}| Get a #{useName} object collection.|" + NEWLINE
 							saveJsonHash = @jsonHash
 							@jsonHash[:name] = prop[:name]

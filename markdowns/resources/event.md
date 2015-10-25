@@ -134,19 +134,19 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Event](../api/event_get.md) | [Event](event.md) |Read properties and relationships of event object.|
 |[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
-|[List Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Get a Attachment object collection.|
+|[List Attachment](../api/attachment_list.downcase}.md) |[Attachment](attachment.md)| Get a Attachment object collection.|
 |[Create Extension](../api/attachments_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extension](../api/attachments_post_extensions.md) |[Extension](extension.md)| Get a Extension object collection.|
+|[List Extension](../api/extension_list.downcase}.md) |[Extension](extension.md)| Get a Extension object collection.|
 |[Create Event](../api/extensions_post_instances.md) |[Event](event.md)| Create a new Event by posting to the Instances collection.|
-|[List Event](../api/extensions_post_instances.md) |[Event](event.md)| Get a Event object collection.|
+|[List Event](../api/event_list.downcase}.md) |[Event](event.md)| Get a Event object collection.|
 |[Update](../api/instances_update.md) | [Instances](instances.md)	|Update Instances object. |
 |[Delete](../api/instances_delete.md) | None |Delete Instances object. |
 |[Accept](../api/instances_accept.md)|None||
 |[Decline](../api/instances_decline.md)|None||
 |[Tentativelyaccept](../api/instances_tentativelyaccept.md)|None||
 
-<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
-2015-10-25 12:45:03 UTC -->
+<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
+2015-10-25 12:52:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Instances resource",

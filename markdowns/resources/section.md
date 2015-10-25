@@ -67,15 +67,15 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Section](../api/section_get.md) | [Section](section.md) |Read properties and relationships of section object.|
 |[Create Page](../api/section_post_pages.md) |[Page](page.md)| Create a new Page by posting to the pages collection.|
-|[List Page](../api/section_post_pages.md) |[Page](page.md)| Get a Page object collection.|
+|[List Page](../api/page_list.downcase}.md) |[Page](page.md)| Get a Page object collection.|
 |[Update](../api/pages_update.md) | [pages](pages.md)	|Update pages object. |
 |[Delete](../api/pages_delete.md) | None |Delete pages object. |
 |[Copytonotebook](../api/pages_copytonotebook.md)|[CopySectionModel](copysectionmodel.md)||
 |[Copytosectiongroup](../api/pages_copytosectiongroup.md)|[CopySectionModel](copysectionmodel.md)||
 |[Thumbnail](../api/pages_thumbnail.md)|Stream||
 
-<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
-2015-10-25 12:45:03 UTC -->
+<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
+2015-10-25 12:52:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "pages resource",

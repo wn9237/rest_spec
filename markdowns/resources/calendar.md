@@ -54,14 +54,14 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Calendar](../api/calendar_get.md) | [Calendar](calendar.md) |Read properties and relationships of calendar object.|
 |[Create Event](../api/calendar_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
-|[List Event](../api/calendar_post_calendarview.md) |[Event](event.md)| Get a Event object collection.|
+|[List Event](../api/event_list.downcase}.md) |[Event](event.md)| Get a Event object collection.|
 |[Create Event](../api/calendarview_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[List Event](../api/calendarview_post_events.md) |[Event](event.md)| Get a Event object collection.|
+|[List Event](../api/event_list.downcase}.md) |[Event](event.md)| Get a Event object collection.|
 |[Update](../api/events_update.md) | [Events](events.md)	|Update Events object. |
 |[Delete](../api/events_delete.md) | None |Delete Events object. |
 
-<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
-2015-10-25 12:45:03 UTC -->
+<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
+2015-10-25 12:52:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Events resource",

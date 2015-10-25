@@ -84,17 +84,17 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Device](../api/device_get.md) | [Device](device.md) |Read properties and relationships of device object.|
 |[Create registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Create a new registeredOwner by posting to the registeredOwners collection.|
-|[List registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Get a registeredOwner object collection.|
+|[List registeredOwner](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a registeredOwner object collection.|
 |[Create registeredUser](../api/registeredowners_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
-|[List registeredUser](../api/registeredowners_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Get a registeredUser object collection.|
+|[List registeredUser](../api/directoryobject_list.downcase}.md) |[DirectoryObject](directoryobject.md)| Get a registeredUser object collection.|
 |[Update](../api/registeredusers_update.md) | [registeredUsers](registeredusers.md)	|Update registeredUsers object. |
 |[Delete](../api/registeredusers_delete.md) | None |Delete registeredUsers object. |
 |[Checkmembergroups](../api/registeredusers_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/registeredusers_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/registeredusers_getmemberobjects.md)|String collection||
 
-<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
-2015-10-25 12:45:03 UTC -->
+<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
+2015-10-25 12:52:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "registeredUsers resource",

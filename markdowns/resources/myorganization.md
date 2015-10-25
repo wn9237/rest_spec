@@ -41,11 +41,11 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get MyOrganization](../api/myorganization_get.md) | [MyOrganization](myorganization.md) |Read properties and relationships of myOrganization object.|
 |[Create SiteCollection](../api/myorganization_post_sitecollections.md) |[SiteCollection](sitecollection.md)| Create a new SiteCollection by posting to the siteCollections collection.|
-|[List SiteCollection](../api/myorganization_post_sitecollections.md) |[SiteCollection](sitecollection.md)| Get a SiteCollection object collection.|
+|[List SiteCollection](../api/sitecollection_list.downcase}.md) |[SiteCollection](sitecollection.md)| Get a SiteCollection object collection.|
 |[Delete](../api/sitecollections_delete.md) | None |Delete siteCollections object. |
 
-<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
-2015-10-25 12:45:03 UTC -->
+<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
+2015-10-25 12:52:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "siteCollections resource",

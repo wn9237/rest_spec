@@ -47,12 +47,12 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get share](../api/share_get.md) | [share](share.md) |Read properties and relationships of share object.|
 |[Create item](../api/share_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
-|[List item](../api/share_post_items.md) |[item](item.md)| Get a item object collection.|
+|[List item](../api/item_list.downcase}.md) |[item](item.md)| Get a item object collection.|
 |[Update](../api/items_update.md) | [items](items.md)	|Update items object. |
 |[Delete](../api/items_delete.md) | None |Delete items object. |
 
-<!-- uuid: 972508eb-009b-45ab-822e-fdc84c3a8ebf
-2015-10-25 12:45:03 UTC -->
+<!-- uuid: a45eaed3-2ab6-479e-b4cc-a0e56c081e2f
+2015-10-25 12:52:19 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "items resource",
