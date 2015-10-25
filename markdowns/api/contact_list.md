@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>
-GET /drive/root/createdByUser
-GET /drive/root/lastModifiedByUser
+GET /users/<objectId>/Contacts
+GET /drive/root/createdByUser/Contacts
+GET /drive/root/lastModifiedByUser/Contacts
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -133,8 +133,8 @@ Content-length: 2290
 }
 ```
 
-<!-- uuid: 93713206-fa02-48df-97bb-72304b6d766e
-2015-10-25 12:56:09 UTC -->
+<!-- uuid: 1ec6c637-d5ce-4c7c-8510-60a02b97903c
+2015-10-25 13:14:09 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List Contact",

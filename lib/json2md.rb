@@ -161,7 +161,7 @@ module SpecMaker
 		restpath = restpath.sort_by {|x| x.length}
 		case methodName
 		when 'auto_get', 'auto_list' 
-			arr = restpath.map {|a| "GET " + a.to_s}
+			arr = restpath.map {|a| "GET " + a.to_s + "/#{pathAppend.to_s}".chomp('/')}				
 		when 'auto_post'
 			# have to append the collection name for post
 			arr = restpath.map {|a| "POST " + a.to_s + "/#{pathAppend}".chomp('/')}				
@@ -376,7 +376,7 @@ module SpecMaker
 		@method_files_created = @method_files_created + 1
 	end
 
-	def self.create_get_method
+	def self.create_get_method(pathAppend = nil)
 		getMethodLines = []
 		# Header and description
 		realHeader = @jsonHash[:collectionOf] ? ('List ' + @jsonHash[:collectionOf]) : ('Get ' + @jsonHash[:name])
@@ -395,9 +395,9 @@ module SpecMaker
 
 		getMethodLines.push '```http' + NEWLINE
 		if @jsonHash[:collectionOf]
-			httpSyntax = get_syntax('auto_get', top_restpath)
+			httpSyntax = get_syntax('auto_list', top_restpath, pathAppend)
 		else
-			httpSyntax = get_syntax('auto_list', top_restpath)			
+			httpSyntax = get_syntax('auto_get', top_restpath)			
 		end
 		getMethodLines.push httpSyntax.join("\n") + NEWLINE
 		getMethodLines.push  '```' + NEWLINE
@@ -753,8 +753,9 @@ module SpecMaker
 							saveJsonHash = @jsonHash
 							@jsonHash[:name] = prop[:name]
 							@jsonHash[:collectionOf] = prop[:dataType]
+
 							@jsonHash = saveJsonHash
-							create_get_method
+							create_get_method(prop[:name])
 						end
 
 					end
