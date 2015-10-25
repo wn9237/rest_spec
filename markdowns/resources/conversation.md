@@ -53,15 +53,15 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Conversation](../api/conversation_get.md) | [Conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[Create Thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
-|[List Thread](../api/conversationthread_list.md) |[ConversationThread](conversationthread.md)| Get a Thread object collection.|
-|[Update](../api/threads_update.md) | [Threads](threads.md)	|Update Threads object. |
-|[Delete](../api/threads_delete.md) | None |Delete Threads object. |
+|[List Thread](../api/conversation_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a Thread object collection.|
+|[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
+|[Delete](../api/conversation_delete.md) | None |Delete Conversation object. |
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Threads resource",
+  "description": "Conversation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

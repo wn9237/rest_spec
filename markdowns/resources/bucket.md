@@ -53,15 +53,15 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Bucket](../api/bucket_get.md) | [Bucket](bucket.md) |Read properties and relationships of bucket object.|
 |[Create Task](../api/bucket_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[List Task](../api/task_list.md) |[Task](task.md)| Get a Task object collection.|
-|[Update](../api/tasks_update.md) | [tasks](tasks.md)	|Update tasks object. |
-|[Delete](../api/tasks_delete.md) | None |Delete tasks object. |
+|[List Task](../api/bucket_list_tasks.md) |[Task](task.md) collection| Get a Task object collection.|
+|[Update](../api/bucket_update.md) | [Bucket](bucket.md)	|Update Bucket object. |
+|[Delete](../api/bucket_delete.md) | None |Delete Bucket object. |
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "tasks resource",
+  "description": "Bucket resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

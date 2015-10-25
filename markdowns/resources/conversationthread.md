@@ -67,16 +67,16 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ConversationThread](../api/conversationthread_get.md) | [ConversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
 |[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
-|[List Post](../api/post_list.md) |[Post](post.md)| Get a Post object collection.|
-|[Update](../api/posts_update.md) | [Posts](posts.md)	|Update Posts object. |
-|[Delete](../api/posts_delete.md) | None |Delete Posts object. |
-|[Reply](../api/posts_reply.md)|None||
+|[List Post](../api/conversationthread_list_posts.md) |[Post](post.md) collection| Get a Post object collection.|
+|[Update](../api/conversationthread_update.md) | [ConversationThread](conversationthread.md)	|Update ConversationThread object. |
+|[Delete](../api/conversationthread_delete.md) | None |Delete ConversationThread object. |
+|[Reply](../api/conversationthread_reply.md)|None||
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Posts resource",
+  "description": "ConversationThread resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

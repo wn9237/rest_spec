@@ -76,24 +76,24 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get DirectoryRole](../api/directoryrole_get.md) | [DirectoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
 |[Create memberOf](../api/directoryrole_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[List memberOf](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a memberOf object collection.|
-|[Create member](../api/memberof_post_members.md) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
-|[List member](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a member object collection.|
-|[Create ownedObject](../api/members_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
-|[List ownedObject](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a ownedObject object collection.|
-|[Create owner](../api/ownedobjects_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[List owner](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a owner object collection.|
-|[Update](../api/owners_update.md) | [owners](owners.md)	|Update owners object. |
-|[Delete](../api/owners_delete.md) | None |Delete owners object. |
-|[Checkmembergroups](../api/owners_checkmembergroups.md)|String collection||
-|[Get MemberGroups](../api/owners_getmembergroups.md)|String collection||
-|[Get MemberObjects](../api/owners_getmemberobjects.md)|String collection||
+|[List memberOf](../api/directoryrole_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
+|[Create member](../api/directoryrole_post_members.md) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
+|[List member](../api/directoryrole_list_members.md) |[DirectoryObject](directoryobject.md) collection| Get a member object collection.|
+|[Create ownedObject](../api/directoryrole_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
+|[List ownedObject](../api/directoryrole_list_ownedobjects.md) |[DirectoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
+|[Create owner](../api/directoryrole_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owner](../api/directoryrole_list_owners.md) |[DirectoryObject](directoryobject.md) collection| Get a owner object collection.|
+|[Update](../api/directoryrole_update.md) | [DirectoryRole](directoryrole.md)	|Update DirectoryRole object. |
+|[Delete](../api/directoryrole_delete.md) | None |Delete DirectoryRole object. |
+|[Checkmembergroups](../api/directoryrole_checkmembergroups.md)|String collection||
+|[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String collection||
+|[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String collection||
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "owners resource",
+  "description": "DirectoryRole resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

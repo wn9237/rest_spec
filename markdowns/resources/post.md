@@ -89,19 +89,19 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Post](../api/post_get.md) | [Post](post.md) |Read properties and relationships of post object.|
 |[Create Attachment](../api/post_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
-|[List Attachment](../api/attachment_list.md) |[Attachment](attachment.md)| Get a Attachment object collection.|
-|[Create Extension](../api/attachments_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extension](../api/extension_list.md) |[Extension](extension.md)| Get a Extension object collection.|
-|[Update](../api/extensions_update.md) | [Extensions](extensions.md)	|Update Extensions object. |
-|[Delete](../api/extensions_delete.md) | None |Delete Extensions object. |
-|[Forward](../api/extensions_forward.md)|None||
-|[Reply](../api/extensions_reply.md)|None||
+|[List Attachment](../api/post_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Create Extension](../api/post_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[List Extension](../api/post_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
+|[Update](../api/post_update.md) | [Post](post.md)	|Update Post object. |
+|[Delete](../api/post_delete.md) | None |Delete Post object. |
+|[Forward](../api/post_forward.md)|None||
+|[Reply](../api/post_reply.md)|None||
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Extensions resource",
+  "description": "Post resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

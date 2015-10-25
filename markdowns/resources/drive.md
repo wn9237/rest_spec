@@ -70,20 +70,20 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get drive](../api/drive_get.md) | [drive](drive.md) |Read properties and relationships of drive object.|
 |[Create item](../api/drive_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
-|[List item](../api/item_list.md) |[item](item.md)| Get a item object collection.|
-|[Create shared](../api/items_post_shared.md) |[item](item.md)| Create a new shared by posting to the shared collection.|
-|[List shared](../api/item_list.md) |[item](item.md)| Get a shared object collection.|
-|[Create special](../api/shared_post_special.md) |[item](item.md)| Create a new special by posting to the special collection.|
-|[List special](../api/item_list.md) |[item](item.md)| Get a special object collection.|
-|[Update](../api/special_update.md) | [special](special.md)	|Update special object. |
-|[Delete](../api/special_delete.md) | None |Delete special object. |
-|[Allphotos](../api/special_allphotos.md)|[item](item.md) collection||
+|[List item](../api/drive_list_items.md) |[item](item.md) collection| Get a item object collection.|
+|[Create shared](../api/drive_post_shared.md) |[item](item.md)| Create a new shared by posting to the shared collection.|
+|[List shared](../api/drive_list_shared.md) |[item](item.md) collection| Get a shared object collection.|
+|[Create special](../api/drive_post_special.md) |[item](item.md)| Create a new special by posting to the special collection.|
+|[List special](../api/drive_list_special.md) |[item](item.md) collection| Get a special object collection.|
+|[Update](../api/drive_update.md) | [drive](drive.md)	|Update drive object. |
+|[Delete](../api/drive_delete.md) | None |Delete drive object. |
+|[Allphotos](../api/drive_allphotos.md)|[item](item.md) collection||
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "special resource",
+  "description": "drive resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

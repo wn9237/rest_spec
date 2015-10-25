@@ -377,7 +377,7 @@ module SpecMaker
 		@method_files_created = @method_files_created + 1
 	end
 
-	def self.create_get_method(pathAppend = nil)
+	def self.create_get_method(pathAppend = nil, filenameOverride = nil)
 		getMethodLines = []
 		# Header and description
 		realHeader = @jsonHash[:collectionOf] ? ('List ' + @jsonHash[:collectionOf]) : ('Get ' + @jsonHash[:name])
@@ -494,8 +494,11 @@ module SpecMaker
 		getMethodLines.push get_json_page_annotation(realHeader)
 
 		fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:collectionOf].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
-		
-		outfile = MARKDOWN_API_FOLDER + fileName
+		if filenameOverride
+			outfile = MARKDOWN_API_FOLDER + filenameOverride
+		else
+			outfile = MARKDOWN_API_FOLDER + fileName			
+		end
 		# if File.exists?(outfile)
 		# 	puts "*-----> List file #{outfile} already exists."
 		# end
@@ -752,17 +755,18 @@ module SpecMaker
 
 						# Add List method.
 						if !SIMPLETYPES.include? prop[:dataType]
-							filename = "#{prop[:dataType].downcase}_list.md"
+							#filename = "#{prop[:dataType].downcase}_list.md"
+
+							filename = "#{@jsonHash[:name]}_list_#{prop[:name]}.md".downcase
 							listLink = "../api/#{filename}"
+
 							# puts "$----> #{filename} #{@jsonHash[:name]},, #{prop[:name]}"
-							@mdlines.push "|[List #{useName}](#{listLink}) |#{returnLink}| Get a #{useName} object collection.|" + NEWLINE
-							saveJsonHash = @jsonHash
+							@mdlines.push "|[List #{useName}](#{listLink}) |#{returnLink} collection| Get a #{useName} object collection.|" + NEWLINE
+							saveJsonHash = deep_copy @jsonHash
 							@jsonHash[:name] = prop[:name]
 							@jsonHash[:collectionOf] = prop[:dataType]
-
-							@jsonHash = saveJsonHash
-
-							create_get_method(prop[:name])
+							@jsonHash = deep_copy saveJsonHash
+							create_get_method(prop[:name], filename)
 							@list_from_rel = @list_from_rel + 1
 						end
 

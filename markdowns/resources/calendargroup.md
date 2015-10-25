@@ -47,15 +47,15 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get CalendarGroup](../api/calendargroup_get.md) | [CalendarGroup](calendargroup.md) |Read properties and relationships of calendarGroup object.|
 |[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the Calendars collection.|
-|[List Calendar](../api/calendar_list.md) |[Calendar](calendar.md)| Get a Calendar object collection.|
-|[Update](../api/calendars_update.md) | [Calendars](calendars.md)	|Update Calendars object. |
-|[Delete](../api/calendars_delete.md) | None |Delete Calendars object. |
+|[List Calendar](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
+|[Update](../api/calendargroup_update.md) | [CalendarGroup](calendargroup.md)	|Update CalendarGroup object. |
+|[Delete](../api/calendargroup_delete.md) | None |Delete CalendarGroup object. |
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Calendars resource",
+  "description": "CalendarGroup resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

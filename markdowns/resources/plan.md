@@ -85,17 +85,17 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Plan](../api/plan_get.md) | [Plan](plan.md) |Read properties and relationships of plan object.|
 |[Create Bucket](../api/plan_post_buckets.md) |[Bucket](bucket.md)| Create a new Bucket by posting to the buckets collection.|
-|[List Bucket](../api/bucket_list.md) |[Bucket](bucket.md)| Get a Bucket object collection.|
-|[Create Task](../api/buckets_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[List Task](../api/task_list.md) |[Task](task.md)| Get a Task object collection.|
-|[Update](../api/tasks_update.md) | [tasks](tasks.md)	|Update tasks object. |
-|[Delete](../api/tasks_delete.md) | None |Delete tasks object. |
+|[List Bucket](../api/plan_list_buckets.md) |[Bucket](bucket.md) collection| Get a Bucket object collection.|
+|[Create Task](../api/plan_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
+|[List Task](../api/plan_list_tasks.md) |[Task](task.md) collection| Get a Task object collection.|
+|[Update](../api/plan_update.md) | [Plan](plan.md)	|Update Plan object. |
+|[Delete](../api/plan_delete.md) | None |Delete Plan object. |
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "tasks resource",
+  "description": "Plan resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

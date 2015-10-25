@@ -54,19 +54,19 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get MailFolder](../api/mailfolder_get.md) | [MailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
 |[Create MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the ChildFolders collection.|
-|[List MailFolder](../api/mailfolder_list.md) |[MailFolder](mailfolder.md)| Get a MailFolder object collection.|
-|[Create Message](../api/childfolders_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
-|[List Message](../api/message_list.md) |[Message](message.md)| Get a Message object collection.|
-|[Update](../api/messages_update.md) | [Messages](messages.md)	|Update Messages object. |
-|[Delete](../api/messages_delete.md) | None |Delete Messages object. |
-|[Copy](../api/messages_copy.md)|[MailFolder](mailfolder.md)||
-|[Move](../api/messages_move.md)|[MailFolder](mailfolder.md)||
+|[List MailFolder](../api/mailfolder_list_childfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
+|[Create Message](../api/mailfolder_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
+|[List Message](../api/mailfolder_list_messages.md) |[Message](message.md) collection| Get a Message object collection.|
+|[Update](../api/mailfolder_update.md) | [MailFolder](mailfolder.md)	|Update MailFolder object. |
+|[Delete](../api/mailfolder_delete.md) | None |Delete MailFolder object. |
+|[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
+|[Move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Messages resource",
+  "description": "MailFolder resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

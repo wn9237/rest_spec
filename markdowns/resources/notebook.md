@@ -74,18 +74,18 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Notebook](../api/notebook_get.md) | [Notebook](notebook.md) |Read properties and relationships of notebook object.|
 |[Create SectionGroup](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a new SectionGroup by posting to the sectionGroups collection.|
-|[List SectionGroup](../api/sectiongroup_list.md) |[SectionGroup](sectiongroup.md)| Get a SectionGroup object collection.|
-|[Create Section](../api/sectiongroups_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
-|[List Section](../api/section_list.md) |[Section](section.md)| Get a Section object collection.|
-|[Update](../api/sections_update.md) | [sections](sections.md)	|Update sections object. |
-|[Delete](../api/sections_delete.md) | None |Delete sections object. |
-|[Copynotebook](../api/sections_copynotebook.md)|[CopyNotebookModel](copynotebookmodel.md)||
+|[List SectionGroup](../api/notebook_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a SectionGroup object collection.|
+|[Create Section](../api/notebook_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
+|[List Section](../api/notebook_list_sections.md) |[Section](section.md) collection| Get a Section object collection.|
+|[Update](../api/notebook_update.md) | [Notebook](notebook.md)	|Update Notebook object. |
+|[Delete](../api/notebook_delete.md) | None |Delete Notebook object. |
+|[Copynotebook](../api/notebook_copynotebook.md)|[CopyNotebookModel](copynotebookmodel.md)||
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sections resource",
+  "description": "Notebook resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

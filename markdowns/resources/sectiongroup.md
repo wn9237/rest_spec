@@ -74,17 +74,17 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get SectionGroup](../api/sectiongroup_get.md) | [SectionGroup](sectiongroup.md) |Read properties and relationships of sectionGroup object.|
 |[Create SectionGroup](../api/sectiongroup_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a new SectionGroup by posting to the sectionGroups collection.|
-|[List SectionGroup](../api/sectiongroup_list.md) |[SectionGroup](sectiongroup.md)| Get a SectionGroup object collection.|
-|[Create Section](../api/sectiongroups_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
-|[List Section](../api/section_list.md) |[Section](section.md)| Get a Section object collection.|
-|[Update](../api/sections_update.md) | [sections](sections.md)	|Update sections object. |
-|[Delete](../api/sections_delete.md) | None |Delete sections object. |
+|[List SectionGroup](../api/sectiongroup_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a SectionGroup object collection.|
+|[Create Section](../api/sectiongroup_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
+|[List Section](../api/sectiongroup_list_sections.md) |[Section](section.md) collection| Get a Section object collection.|
+|[Update](../api/sectiongroup_update.md) | [SectionGroup](sectiongroup.md)	|Update SectionGroup object. |
+|[Delete](../api/sectiongroup_delete.md) | None |Delete SectionGroup object. |
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sections resource",
+  "description": "SectionGroup resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

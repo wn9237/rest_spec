@@ -67,18 +67,18 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Section](../api/section_get.md) | [Section](section.md) |Read properties and relationships of section object.|
 |[Create Page](../api/section_post_pages.md) |[Page](page.md)| Create a new Page by posting to the pages collection.|
-|[List Page](../api/page_list.md) |[Page](page.md)| Get a Page object collection.|
-|[Update](../api/pages_update.md) | [pages](pages.md)	|Update pages object. |
-|[Delete](../api/pages_delete.md) | None |Delete pages object. |
-|[Copytonotebook](../api/pages_copytonotebook.md)|[CopySectionModel](copysectionmodel.md)||
-|[Copytosectiongroup](../api/pages_copytosectiongroup.md)|[CopySectionModel](copysectionmodel.md)||
-|[Thumbnail](../api/pages_thumbnail.md)|Stream||
+|[List Page](../api/section_list_pages.md) |[Page](page.md) collection| Get a Page object collection.|
+|[Update](../api/section_update.md) | [Section](section.md)	|Update Section object. |
+|[Delete](../api/section_delete.md) | None |Delete Section object. |
+|[Copytonotebook](../api/section_copytonotebook.md)|[CopySectionModel](copysectionmodel.md)||
+|[Copytosectiongroup](../api/section_copytosectiongroup.md)|[CopySectionModel](copysectionmodel.md)||
+|[Thumbnail](../api/section_thumbnail.md)|Stream||
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "pages resource",
+  "description": "Section resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -84,20 +84,20 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Device](../api/device_get.md) | [Device](device.md) |Read properties and relationships of device object.|
 |[Create registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Create a new registeredOwner by posting to the registeredOwners collection.|
-|[List registeredOwner](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a registeredOwner object collection.|
-|[Create registeredUser](../api/registeredowners_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
-|[List registeredUser](../api/directoryobject_list.md) |[DirectoryObject](directoryobject.md)| Get a registeredUser object collection.|
-|[Update](../api/registeredusers_update.md) | [registeredUsers](registeredusers.md)	|Update registeredUsers object. |
-|[Delete](../api/registeredusers_delete.md) | None |Delete registeredUsers object. |
-|[Checkmembergroups](../api/registeredusers_checkmembergroups.md)|String collection||
-|[Get MemberGroups](../api/registeredusers_getmembergroups.md)|String collection||
-|[Get MemberObjects](../api/registeredusers_getmemberobjects.md)|String collection||
+|[List registeredOwner](../api/device_list_registeredowners.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredOwner object collection.|
+|[Create registeredUser](../api/device_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
+|[List registeredUser](../api/device_list_registeredusers.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredUser object collection.|
+|[Update](../api/device_update.md) | [Device](device.md)	|Update Device object. |
+|[Delete](../api/device_delete.md) | None |Delete Device object. |
+|[Checkmembergroups](../api/device_checkmembergroups.md)|String collection||
+|[Get MemberGroups](../api/device_getmembergroups.md)|String collection||
+|[Get MemberObjects](../api/device_getmemberobjects.md)|String collection||
 
-<!-- uuid: 8060035e-062d-44ca-b14d-94eae4b43c22
-2015-10-25 14:02:53 UTC -->
+<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
+2015-10-25 14:25:33 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "registeredUsers resource",
+  "description": "Device resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
