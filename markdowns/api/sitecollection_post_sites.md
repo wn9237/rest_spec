@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /myOrganization/siteCollections/<id>/sites
+POST https://graph.microsoft.com/v1.0/myOrganization/siteCollections/<id>/sites
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_site_from_sitecollection"
 }-->
 ```http
-POST /myOrganization/siteCollections/<id>
+POST https://graph.microsoft.com/v1.0/myOrganization/siteCollections/<id>
 ```
 In the request body, supply a JSON representation of [Site](../resources/site.md) object.
 ##### Response

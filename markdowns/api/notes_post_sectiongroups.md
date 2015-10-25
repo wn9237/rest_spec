@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/notes/sectionGroups
-POST /drive/root/createdByUser/notes/sectionGroups
-POST /drive/root/lastModifiedByUser/notes/sectionGroups
+POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/sectionGroups
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/notes/sectionGroups
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/notes/sectionGroups
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_sectiongroup_from_notes"
 }-->
 ```http
-POST /users/<objectId>/notes
+POST https://graph.microsoft.com/v1.0/users/<objectId>/notes
 ```
 In the request body, supply a JSON representation of [SectionGroup](../resources/sectiongroup.md) object.
 ##### Response

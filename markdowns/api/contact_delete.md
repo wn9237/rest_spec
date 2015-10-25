@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<objectId>/Contacts/<Id>
-DELETE /drive/root/createdByUser/Contacts/<Id>
-DELETE /drive/root/lastModifiedByUser/Contacts/<Id>
+DELETE https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
+DELETE https://graph.microsoft.com/v1.0/drive/root/createdByUser/Contacts/<Id>
+DELETE https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/Contacts/<Id>
 
 ```
 ### Request headers

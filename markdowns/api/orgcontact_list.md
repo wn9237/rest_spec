@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /contacts
+GET https://graph.microsoft.com/v1.0/contacts
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_contacts"
 }-->
 ```http
-GET /contacts
+GET https://graph.microsoft.com/v1.0/contacts
 ```
 ##### Response
 Here is an example of the response.

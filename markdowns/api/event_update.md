@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/Events/<Id>
-PATCH /groups/<objectId>/Events/<Id>
-PATCH /users/<objectId>/CalendarView/<Id>
+PATCH https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>
+PATCH https://graph.microsoft.com/v1.0/groups/<objectId>/Events/<Id>
+PATCH https://graph.microsoft.com/v1.0/users/<objectId>/CalendarView/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -60,7 +60,7 @@ Here is an example of the request.
   "name": "update_event"
 }-->
 ```http
-PUT /users/<objectId>/Events/<Id>
+PUT https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>
 Content-type: application/json
 Content-length: 1812
 

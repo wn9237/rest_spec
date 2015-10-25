@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /shares
+POST https://graph.microsoft.com/v1.0/shares
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_subscribedsku_from_shares"
 }-->
 ```http
-POST /shares
+POST https://graph.microsoft.com/v1.0/shares
 ```
 In the request body, supply a JSON representation of [SubscribedSku](../resources/subscribedsku.md) object.
 ##### Response

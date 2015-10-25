@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/notes/sections/<id>/Thumbnail
-POST /drive/root/createdByUser/notes/sections/<id>/Thumbnail
-POST /users/<objectId>/notes/pages/<id>/parentSection/Thumbnail
+POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>/Thumbnail
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/notes/sections/<id>/Thumbnail
+POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/pages/<id>/parentSection/Thumbnail
 
 ```
 ### Request headers
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "section_thumbnail"
 }-->
 ```http
-POST /users/<objectId>/notes/sections/<id>/Thumbnail
+POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>/Thumbnail
 ```
 
 ##### Response

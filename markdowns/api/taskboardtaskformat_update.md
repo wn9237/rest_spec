@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /tasks/<id>/bucketTaskBoardFormat
-PATCH /tasks/<id>/statusTaskBoardFormat
-PATCH /tasks/<id>/assignedToTaskBoardFormat
+PATCH https://graph.microsoft.com/v1.0/tasks/<id>/bucketTaskBoardFormat
+PATCH https://graph.microsoft.com/v1.0/tasks/<id>/statusTaskBoardFormat
+PATCH https://graph.microsoft.com/v1.0/tasks/<id>/assignedToTaskBoardFormat
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_taskboardtaskformat"
 }-->
 ```http
-PUT /tasks/<id>/bucketTaskBoardFormat
+PUT https://graph.microsoft.com/v1.0/tasks/<id>/bucketTaskBoardFormat
 Content-type: application/json
 Content-length: 110
 

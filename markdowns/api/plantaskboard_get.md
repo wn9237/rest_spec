@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /plans/<id>/bucketTaskBoard
-GET /plans/<id>/statusTaskBoard
-GET /plans/<id>/assignedToTaskBoard
+GET https://graph.microsoft.com/v1.0/plans/<id>/bucketTaskBoard
+GET https://graph.microsoft.com/v1.0/plans/<id>/statusTaskBoard
+GET https://graph.microsoft.com/v1.0/plans/<id>/assignedToTaskBoard
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_plantaskboard"
 }-->
 ```http
-GET /plans/<id>/bucketTaskBoard
+GET https://graph.microsoft.com/v1.0/plans/<id>/bucketTaskBoard
 ```
 ##### Response
 Here is an example of the response.

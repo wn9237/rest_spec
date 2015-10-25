@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /plans
+POST https://graph.microsoft.com/v1.0/plans
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_serviceprincipal_from_plans"
 }-->
 ```http
-POST /plans
+POST https://graph.microsoft.com/v1.0/plans
 ```
 In the request body, supply a JSON representation of [ServicePrincipal](../resources/serviceprincipal.md) object.
 ##### Response

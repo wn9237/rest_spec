@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/Conversations/<Id>
-GET /users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>
-GET /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
+GET https://graph.microsoft.com/v1.0/groups/<objectId>/Conversations/<Id>
+GET https://graph.microsoft.com/v1.0/users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_conversation"
 }-->
 ```http
-GET /groups/<objectId>/Conversations/<Id>
+GET https://graph.microsoft.com/v1.0/groups/<objectId>/Conversations/<Id>
 ```
 ##### Response
 Here is an example of the response.

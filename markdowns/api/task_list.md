@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /tasks
+GET https://graph.microsoft.com/v1.0/tasks
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "get_tasks"
 }-->
 ```http
-GET /tasks
+GET https://graph.microsoft.com/v1.0/tasks
 ```
 ##### Response
 Here is an example of the response.

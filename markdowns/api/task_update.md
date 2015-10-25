@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /tasks/<id>
-PATCH /plans/<id>/tasks/<id>
-PATCH /buckets/<id>/tasks/<id>
+PATCH https://graph.microsoft.com/v1.0/tasks/<id>
+PATCH https://graph.microsoft.com/v1.0/plans/<id>/tasks/<id>
+PATCH https://graph.microsoft.com/v1.0/buckets/<id>/tasks/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "update_task"
 }-->
 ```http
-PUT /tasks/<id>
+PUT https://graph.microsoft.com/v1.0/tasks/<id>
 Content-type: application/json
 Content-length: 641
 

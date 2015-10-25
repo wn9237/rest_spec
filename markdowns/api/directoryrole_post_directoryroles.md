@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryObjects
+POST https://graph.microsoft.com/v1.0/directoryObjects
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryrole_from_directoryobjects"
 }-->
 ```http
-POST /directoryObjects
+POST https://graph.microsoft.com/v1.0/directoryObjects
 ```
 In the request body, supply a JSON representation of [DirectoryRole](../resources/directoryrole.md) object.
 ##### Response

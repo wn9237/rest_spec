@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drives
+POST https://graph.microsoft.com/v1.0/drives
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_group_from_drives"
 }-->
 ```http
-POST /drives
+POST https://graph.microsoft.com/v1.0/drives
 ```
 In the request body, supply a JSON representation of [Group](../resources/group.md) object.
 ##### Response

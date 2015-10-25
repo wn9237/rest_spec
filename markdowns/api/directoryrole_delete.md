@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directoryRoles/<objectId>
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/<objectId>
 
 ```
 ### Request headers

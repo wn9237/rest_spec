@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/<objectId>/memberOf
+GET https://graph.microsoft.com/v1.0/servicePrincipals/<objectId>/memberOf
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_memberof"
 }-->
 ```http
-GET /servicePrincipals/<objectId>/memberOf
+GET https://graph.microsoft.com/v1.0/servicePrincipals/<objectId>/memberOf
 ```
 ##### Response
 Here is an example of the response.

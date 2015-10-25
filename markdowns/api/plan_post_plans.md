@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /oauth2PermissionGrants
+POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_plan_from_oauth2permissiongrants"
 }-->
 ```http
-POST /oauth2PermissionGrants
+POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 ```
 In the request body, supply a JSON representation of [Plan](../resources/plan.md) object.
 ##### Response

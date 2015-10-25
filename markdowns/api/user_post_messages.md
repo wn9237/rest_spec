@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Messages
-POST /drive/root/createdByUser/Messages
-POST /drive/root/lastModifiedByUser/Messages
+POST https://graph.microsoft.com/v1.0/users/<objectId>/Messages
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/Messages
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/Messages
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_message_from_user"
 }-->
 ```http
-POST /users/<objectId>
+POST https://graph.microsoft.com/v1.0/users/<objectId>
 ```
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
 ##### Response

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/directReports
-POST /drive/root/createdByUser/directReports
-POST /drive/root/lastModifiedByUser/directReports
+POST https://graph.microsoft.com/v1.0/users/<objectId>/directReports
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/directReports
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/directReports
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_user"
 }-->
 ```http
-POST /users/<objectId>
+POST https://graph.microsoft.com/v1.0/users/<objectId>
 ```
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
 ##### Response

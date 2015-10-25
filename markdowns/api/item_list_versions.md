@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /drive/root/versions
-GET /drive/items/<id>/versions
-GET /drives/<id>/root/versions
+GET https://graph.microsoft.com/v1.0/drive/root/versions
+GET https://graph.microsoft.com/v1.0/drive/items/<id>/versions
+GET https://graph.microsoft.com/v1.0/drives/<id>/root/versions
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_versions"
 }-->
 ```http
-GET /drive/root/versions
+GET https://graph.microsoft.com/v1.0/drive/root/versions
 ```
 ##### Response
 Here is an example of the response.

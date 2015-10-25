@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /drive/root/thumbnails/<id>
-PATCH /drive/items/<id>/thumbnails/<id>
-PATCH /drives/<id>/root/thumbnails/<id>
+PATCH https://graph.microsoft.com/v1.0/drive/root/thumbnails/<id>
+PATCH https://graph.microsoft.com/v1.0/drive/items/<id>/thumbnails/<id>
+PATCH https://graph.microsoft.com/v1.0/drives/<id>/root/thumbnails/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "update_thumbnailset"
 }-->
 ```http
-PUT /drive/root/thumbnails/<id>
+PUT https://graph.microsoft.com/v1.0/drive/root/thumbnails/<id>
 Content-type: application/json
 Content-length: 456
 

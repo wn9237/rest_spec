@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Messages/<Id>/Attachments
-POST /drive/root/createdByUser/Messages/<Id>/Attachments
-POST /drive/root/lastModifiedByUser/Messages/<Id>/Attachments
+POST https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>/Attachments
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/Messages/<Id>/Attachments
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/Messages/<Id>/Attachments
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_attachment_from_message"
 }-->
 ```http
-POST /users/<objectId>/Messages/<Id>
+POST https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>
 ```
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 ##### Response

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Contacts/<Id>
-GET /drive/root/createdByUser/Contacts/<Id>
-GET /drive/root/lastModifiedByUser/Contacts/<Id>
+GET https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/Contacts/<Id>
+GET https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/Contacts/<Id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_contact"
 }-->
 ```http
-GET /users/<objectId>/Contacts/<Id>
+GET https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
 ```
 ##### Response
 Here is an example of the response.

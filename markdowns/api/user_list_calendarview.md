@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/CalendarView
-GET /drive/root/createdByUser/CalendarView
-GET /drive/root/lastModifiedByUser/CalendarView
+GET https://graph.microsoft.com/v1.0/users/<objectId>/CalendarView
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/CalendarView
+GET https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/CalendarView
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_calendarview"
 }-->
 ```http
-GET /users/<objectId>/CalendarView
+GET https://graph.microsoft.com/v1.0/users/<objectId>/CalendarView
 ```
 ##### Response
 Here is an example of the response.

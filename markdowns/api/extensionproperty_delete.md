@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /applications/<objectId>/extensionProperties/<objectId>
+DELETE https://graph.microsoft.com/v1.0/applications/<objectId>/extensionProperties/<objectId>
 
 ```
 ### Request headers

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/ownedDevices
-GET /drive/root/createdByUser/ownedDevices
-GET /drive/root/lastModifiedByUser/ownedDevices
+GET https://graph.microsoft.com/v1.0/users/<objectId>/ownedDevices
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/ownedDevices
+GET https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/ownedDevices
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "get_owneddevices"
 }-->
 ```http
-GET /users/<objectId>/ownedDevices
+GET https://graph.microsoft.com/v1.0/users/<objectId>/ownedDevices
 ```
 ##### Response
 Here is an example of the response.

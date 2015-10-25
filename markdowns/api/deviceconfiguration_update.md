@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /deviceConfiguration/<objectId>
+PATCH https://graph.microsoft.com/v1.0/deviceConfiguration/<objectId>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "update_deviceconfiguration"
 }-->
 ```http
-PUT /deviceConfiguration/<objectId>
+PUT https://graph.microsoft.com/v1.0/deviceConfiguration/<objectId>
 Content-type: application/json
 Content-length: 341
 

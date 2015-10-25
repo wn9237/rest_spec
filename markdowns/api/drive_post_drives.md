@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoleTemplates
+POST https://graph.microsoft.com/v1.0/directoryRoleTemplates
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_drive_from_directoryroletemplates"
 }-->
 ```http
-POST /directoryRoleTemplates
+POST https://graph.microsoft.com/v1.0/directoryRoleTemplates
 ```
 In the request body, supply a JSON representation of [drive](../resources/drive.md) object.
 ##### Response

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /buckets
+POST https://graph.microsoft.com/v1.0/buckets
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_orgcontact_from_buckets"
 }-->
 ```http
-POST /buckets
+POST https://graph.microsoft.com/v1.0/buckets
 ```
 In the request body, supply a JSON representation of [OrgContact](../resources/orgcontact.md) object.
 ##### Response

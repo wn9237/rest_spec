@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<objectId>/Threads/<Id>/Posts
-POST /groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts
-POST /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/Threads/<Id>/Posts
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts
+POST https://graph.microsoft.com/v1.0/users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_post_from_conversationthread"
 }-->
 ```http
-POST /groups/<objectId>/Threads/<Id>
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/Threads/<Id>
 ```
 In the request body, supply a JSON representation of [Post](../resources/post.md) object.
 ##### Response

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/JoinedGroups
-POST /drive/root/createdByUser/JoinedGroups
-POST /drive/root/lastModifiedByUser/JoinedGroups
+POST https://graph.microsoft.com/v1.0/users/<objectId>/JoinedGroups
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/JoinedGroups
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/JoinedGroups
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_group_from_user"
 }-->
 ```http
-POST /users/<objectId>
+POST https://graph.microsoft.com/v1.0/users/<objectId>
 ```
 In the request body, supply a JSON representation of [Group](../resources/group.md) object.
 ##### Response

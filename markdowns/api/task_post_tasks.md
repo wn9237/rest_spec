@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /subscribedSkus
+POST https://graph.microsoft.com/v1.0/subscribedSkus
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_task_from_subscribedskus"
 }-->
 ```http
-POST /subscribedSkus
+POST https://graph.microsoft.com/v1.0/subscribedSkus
 ```
 In the request body, supply a JSON representation of [Task](../resources/task.md) object.
 ##### Response

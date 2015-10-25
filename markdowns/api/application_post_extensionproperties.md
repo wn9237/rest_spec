@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/<objectId>/extensionProperties
+POST https://graph.microsoft.com/v1.0/applications/<objectId>/extensionProperties
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_extensionproperty_from_application"
 }-->
 ```http
-POST /applications/<objectId>
+POST https://graph.microsoft.com/v1.0/applications/<objectId>
 ```
 In the request body, supply a JSON representation of [ExtensionProperty](../resources/extensionproperty.md) object.
 ##### Response

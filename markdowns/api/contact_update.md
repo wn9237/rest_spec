@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/Contacts/<Id>
-PATCH /drive/root/createdByUser/Contacts/<Id>
-PATCH /drive/root/lastModifiedByUser/Contacts/<Id>
+PATCH https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
+PATCH https://graph.microsoft.com/v1.0/drive/root/createdByUser/Contacts/<Id>
+PATCH https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/Contacts/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -68,7 +68,7 @@ Here is an example of the request.
   "name": "update_contact"
 }-->
 ```http
-PUT /users/<objectId>/Contacts/<Id>
+PUT https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
 Content-type: application/json
 Content-length: 1977
 

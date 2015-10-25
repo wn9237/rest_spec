@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/oauth2PermissionGrants
-GET /drive/root/createdByUser/oauth2PermissionGrants
-GET /drive/root/lastModifiedByUser/oauth2PermissionGrants
+GET https://graph.microsoft.com/v1.0/users/<objectId>/oauth2PermissionGrants
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/oauth2PermissionGrants
+GET https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/oauth2PermissionGrants
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "get_oauth2permissiongrants"
 }-->
 ```http
-GET /users/<objectId>/oauth2PermissionGrants
+GET https://graph.microsoft.com/v1.0/users/<objectId>/oauth2PermissionGrants
 ```
 ##### Response
 Here is an example of the response.

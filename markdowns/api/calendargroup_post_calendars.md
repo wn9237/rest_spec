@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/CalendarGroups/<Id>/Calendars
-POST /drive/root/createdByUser/CalendarGroups/<Id>/Calendars
-POST /drive/root/lastModifiedByUser/CalendarGroups/<Id>/Calendars
+POST https://graph.microsoft.com/v1.0/users/<objectId>/CalendarGroups/<Id>/Calendars
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/CalendarGroups/<Id>/Calendars
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/CalendarGroups/<Id>/Calendars
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_calendar_from_calendargroup"
 }-->
 ```http
-POST /users/<objectId>/CalendarGroups/<Id>
+POST https://graph.microsoft.com/v1.0/users/<objectId>/CalendarGroups/<Id>
 ```
 In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
 ##### Response

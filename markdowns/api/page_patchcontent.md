@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/notes/pages/<id>/PatchContent
-POST /drive/root/createdByUser/notes/pages/<id>/PatchContent
-POST /drive/root/lastModifiedByUser/notes/pages/<id>/PatchContent
+POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/pages/<id>/PatchContent
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/notes/pages/<id>/PatchContent
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/notes/pages/<id>/PatchContent
 
 ```
 ### Request headers
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "page_patchcontent"
 }-->
 ```http
-POST /users/<objectId>/notes/pages/<id>/PatchContent
+POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/pages/<id>/PatchContent
 Content-type: application/json
 Content-length: 168
 

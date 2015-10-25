@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/createSession
-POST /drive/items/<id>/createSession
-POST /drives/<id>/root/createSession
+POST https://graph.microsoft.com/v1.0/drive/root/createSession
+POST https://graph.microsoft.com/v1.0/drive/items/<id>/createSession
+POST https://graph.microsoft.com/v1.0/drives/<id>/root/createSession
 
 ```
 ### Request headers
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "item_createsession"
 }-->
 ```http
-POST /drive/root/createSession
+POST https://graph.microsoft.com/v1.0/drive/root/createSession
 Content-type: application/json
 Content-length: 44
 

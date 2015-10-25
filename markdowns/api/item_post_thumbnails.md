@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/thumbnails
-POST /drive/items/<id>/thumbnails
-POST /drives/<id>/root/thumbnails
+POST https://graph.microsoft.com/v1.0/drive/root/thumbnails
+POST https://graph.microsoft.com/v1.0/drive/items/<id>/thumbnails
+POST https://graph.microsoft.com/v1.0/drives/<id>/root/thumbnails
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_thumbnailset_from_item"
 }-->
 ```http
-POST /drive/root
+POST https://graph.microsoft.com/v1.0/drive/root
 ```
 In the request body, supply a JSON representation of [thumbnailSet](../resources/thumbnailset.md) object.
 ##### Response

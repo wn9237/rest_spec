@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/notes/sections/<id>
-GET /drive/root/createdByUser/notes/sections/<id>
-GET /users/<objectId>/notes/pages/<id>/parentSection
+GET https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/notes/sections/<id>
+GET https://graph.microsoft.com/v1.0/users/<objectId>/notes/pages/<id>/parentSection
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_section"
 }-->
 ```http
-GET /users/<objectId>/notes/sections/<id>
+GET https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>
 ```
 ##### Response
 Here is an example of the response.

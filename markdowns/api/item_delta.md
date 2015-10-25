@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/delta(token=token-value)
-POST /drive/items/<id>/delta(token=token-value)
-POST /drives/<id>/root/delta(token=token-value)
+POST https://graph.microsoft.com/v1.0/drive/root/delta(token=token-value)
+POST https://graph.microsoft.com/v1.0/drive/items/<id>/delta(token=token-value)
+POST https://graph.microsoft.com/v1.0/drives/<id>/root/delta(token=token-value)
 
 ```
 ### Request headers
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "item_delta"
 }-->
 ```http
-POST /drive/root/delta
+POST https://graph.microsoft.com/v1.0/drive/root/delta
 ```
 
 ##### Response

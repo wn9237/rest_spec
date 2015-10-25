@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /tasks/<id>/timelineFormat
-PATCH /users/<objectId>/tasks/<id>/timelineFormat
-PATCH /groups/<objectId>/tasks/<id>/timelineFormat
+PATCH https://graph.microsoft.com/v1.0/tasks/<id>/timelineFormat
+PATCH https://graph.microsoft.com/v1.0/users/<objectId>/tasks/<id>/timelineFormat
+PATCH https://graph.microsoft.com/v1.0/groups/<objectId>/tasks/<id>/timelineFormat
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "update_timelinetaskformat"
 }-->
 ```http
-PUT /tasks/<id>/timelineFormat
+PUT https://graph.microsoft.com/v1.0/tasks/<id>/timelineFormat
 Content-type: application/json
 Content-length: 255
 

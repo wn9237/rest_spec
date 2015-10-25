@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoleTemplates/<objectId>
+GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/<objectId>
 ```
 ### Optional query parameters
 
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_directoryroletemplate"
 }-->
 ```http
-GET /directoryRoleTemplates/<objectId>
+GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/<objectId>
 ```
 ##### Response
 Here is an example of the response.

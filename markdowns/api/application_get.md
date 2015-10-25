@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /applications/<objectId>
+GET https://graph.microsoft.com/v1.0/applications/<objectId>
 ```
 ### Optional query parameters
 
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_application"
 }-->
 ```http
-GET /applications/<objectId>
+GET https://graph.microsoft.com/v1.0/applications/<objectId>
 ```
 ##### Response
 Here is an example of the response.

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Messages/<Id>/Extensions
-GET /drive/root/createdByUser/Messages/<Id>/Extensions
-GET /drive/root/lastModifiedByUser/Messages/<Id>/Extensions
+GET https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>/Extensions
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/Messages/<Id>/Extensions
+GET https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/Messages/<Id>/Extensions
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_extensions"
 }-->
 ```http
-GET /users/<objectId>/Messages/<Id>/Extensions
+GET https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>/Extensions
 ```
 ##### Response
 Here is an example of the response.

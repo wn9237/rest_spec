@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /drive/root/permissions/<id>
-PATCH /drive/items/<id>/permissions/<id>
-PATCH /drives/<id>/root/permissions/<id>
+PATCH https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
+PATCH https://graph.microsoft.com/v1.0/drive/items/<id>/permissions/<id>
+PATCH https://graph.microsoft.com/v1.0/drives/<id>/root/permissions/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "update_permission"
 }-->
 ```http
-PUT /drive/root/permissions/<id>
+PUT https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
 Content-type: application/json
 Content-length: 762
 

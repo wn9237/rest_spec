@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /contacts
+POST https://graph.microsoft.com/v1.0/contacts
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_deviceconfiguration_from_contacts"
 }-->
 ```http
-POST /contacts
+POST https://graph.microsoft.com/v1.0/contacts
 ```
 In the request body, supply a JSON representation of [DeviceConfiguration](../resources/deviceconfiguration.md) object.
 ##### Response

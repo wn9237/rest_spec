@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/<objectId>
-PATCH /users/<objectId>/JoinedGroups/<objectId>
-PATCH /drive/root/createdByUser/JoinedGroups/<objectId>
+PATCH https://graph.microsoft.com/v1.0/groups/<objectId>
+PATCH https://graph.microsoft.com/v1.0/users/<objectId>/JoinedGroups/<objectId>
+PATCH https://graph.microsoft.com/v1.0/drive/root/createdByUser/JoinedGroups/<objectId>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -54,7 +54,7 @@ Here is an example of the request.
   "name": "update_group"
 }-->
 ```http
-PUT /groups/<objectId>
+PUT https://graph.microsoft.com/v1.0/groups/<objectId>
 Content-type: application/json
 Content-length: 1009
 

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/permissions
-POST /drive/items/<id>/permissions
-POST /drives/<id>/root/permissions
+POST https://graph.microsoft.com/v1.0/drive/root/permissions
+POST https://graph.microsoft.com/v1.0/drive/items/<id>/permissions
+POST https://graph.microsoft.com/v1.0/drives/<id>/root/permissions
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_permission_from_item"
 }-->
 ```http
-POST /drive/root
+POST https://graph.microsoft.com/v1.0/drive/root
 ```
 In the request body, supply a JSON representation of [permission](../resources/permission.md) object.
 ##### Response

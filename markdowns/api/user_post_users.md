@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /tenantDetails
+POST https://graph.microsoft.com/v1.0/tenantDetails
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_user_from_tenantdetails"
 }-->
 ```http
-POST /tenantDetails
+POST https://graph.microsoft.com/v1.0/tenantDetails
 ```
 In the request body, supply a JSON representation of [User](../resources/user.md) object.
 ##### Response

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /drive/special
-GET /drives/<id>/special
-GET /users/<objectId>/drive/special
+GET https://graph.microsoft.com/v1.0/drive/special
+GET https://graph.microsoft.com/v1.0/drives/<id>/special
+GET https://graph.microsoft.com/v1.0/users/<objectId>/drive/special
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_special"
 }-->
 ```http
-GET /drive/special
+GET https://graph.microsoft.com/v1.0/drive/special
 ```
 ##### Response
 Here is an example of the response.

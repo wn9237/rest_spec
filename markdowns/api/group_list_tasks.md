@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/tasks
-GET /users/<objectId>/JoinedGroups/<objectId>/tasks
-GET /drive/root/createdByUser/JoinedGroups/<objectId>/tasks
+GET https://graph.microsoft.com/v1.0/groups/<objectId>/tasks
+GET https://graph.microsoft.com/v1.0/users/<objectId>/JoinedGroups/<objectId>/tasks
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/JoinedGroups/<objectId>/tasks
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_tasks"
 }-->
 ```http
-GET /groups/<objectId>/tasks
+GET https://graph.microsoft.com/v1.0/groups/<objectId>/tasks
 ```
 ##### Response
 Here is an example of the response.

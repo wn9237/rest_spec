@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/MailFolders/<Id>/Move
-POST /drive/root/createdByUser/MailFolders/<Id>/Move
-POST /drive/root/lastModifiedByUser/MailFolders/<Id>/Move
+POST https://graph.microsoft.com/v1.0/users/<objectId>/MailFolders/<Id>/Move
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/MailFolders/<Id>/Move
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/MailFolders/<Id>/Move
 
 ```
 ### Request headers
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "mailfolder_move"
 }-->
 ```http
-POST /users/<objectId>/MailFolders/<Id>/Move
+POST https://graph.microsoft.com/v1.0/users/<objectId>/MailFolders/<Id>/Move
 Content-type: application/json
 Content-length: 44
 

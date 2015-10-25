@@ -162,16 +162,16 @@ module SpecMaker
 		restpath = restpath.sort_by {|x| x.length}
 		case methodName
 		when 'auto_get', 'auto_list' 
-			arr = restpath.map {|a| "GET " + a.to_s + "/#{pathAppend.to_s}".chomp('/')}				
+			arr = restpath.map {|a| "GET " + SERVER + a.to_s + "/#{pathAppend.to_s}".chomp('/')}				
 		when 'auto_post'
 			# have to append the collection name for post
-			arr = restpath.map {|a| "POST " + a.to_s + "/#{pathAppend}".chomp('/')}				
+			arr = restpath.map {|a| "POST " + SERVER + a.to_s + "/#{pathAppend}".chomp('/')}				
 		when 'auto_delete'
-			arr = restpath.map {|a| "DELETE " + a.to_s}
+			arr = restpath.map {|a| "DELETE " + SERVER + a.to_s}
 		when 'auto_put'
-			arr = restpath.map {|a| "PUT " + a.to_s}				
+			arr = restpath.map {|a| "PUT " + SERVER + a.to_s}				
 		when 'auto_patch'
-			arr = restpath.map {|a| "PATCH " + a.to_s}				
+			arr = restpath.map {|a| "PATCH " + SERVER + a.to_s}				
 		else
 			# identify the functional path
 			if method && method[:isFunction] && method[:parameters].length > 0
@@ -180,10 +180,10 @@ module SpecMaker
 					q= q + item[:name] + "=#{item[:name]}-value, " 
 				end
 				q = "(" + q.chomp(', ') + ")"
-				arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}#{q}" }				
+				arr = restpath.map {|a| "POST " + SERVER + a.to_s + "/#{methodName}#{q}" }				
 
 			else
-				arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}"}				
+				arr = restpath.map {|a| "POST " + SERVER + a.to_s + "/#{methodName}"}				
 			end	
 		end
 		return arr

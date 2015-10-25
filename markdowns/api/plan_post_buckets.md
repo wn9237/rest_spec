@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /plans/<id>/buckets
-POST /users/<objectId>/plans/<id>/buckets
-POST /groups/<objectId>/plans/<id>/buckets
+POST https://graph.microsoft.com/v1.0/plans/<id>/buckets
+POST https://graph.microsoft.com/v1.0/users/<objectId>/plans/<id>/buckets
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/plans/<id>/buckets
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_bucket_from_plan"
 }-->
 ```http
-POST /plans/<id>
+POST https://graph.microsoft.com/v1.0/plans/<id>
 ```
 In the request body, supply a JSON representation of [Bucket](../resources/bucket.md) object.
 ##### Response

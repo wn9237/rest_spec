@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Messages/<Id>/Extensions
-POST /drive/root/createdByUser/Messages/<Id>/Extensions
-POST /drive/root/lastModifiedByUser/Messages/<Id>/Extensions
+POST https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>/Extensions
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/Messages/<Id>/Extensions
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/Messages/<Id>/Extensions
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_extension_from_message"
 }-->
 ```http
-POST /users/<objectId>/Messages/<Id>
+POST https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>
 ```
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
 ##### Response

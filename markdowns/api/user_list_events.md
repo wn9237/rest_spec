@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Events
-GET /drive/root/createdByUser/Events
-GET /drive/root/lastModifiedByUser/Events
+GET https://graph.microsoft.com/v1.0/users/<objectId>/Events
+GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/Events
+GET https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/Events
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_events"
 }-->
 ```http
-GET /users/<objectId>/Events
+GET https://graph.microsoft.com/v1.0/users/<objectId>/Events
 ```
 ##### Response
 Here is an example of the response.

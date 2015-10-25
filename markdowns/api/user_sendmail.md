@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/SendMail
-POST /drive/root/createdByUser/SendMail
-POST /drive/root/lastModifiedByUser/SendMail
+POST https://graph.microsoft.com/v1.0/users/<objectId>/SendMail
+POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/SendMail
+POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/SendMail
 
 ```
 ### Request headers
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "user_sendmail"
 }-->
 ```http
-POST /users/<objectId>/SendMail
+POST https://graph.microsoft.com/v1.0/users/<objectId>/SendMail
 Content-type: application/json
 Content-length: 1975
 

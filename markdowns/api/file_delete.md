@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<objectId>/TrendingAround
-DELETE /drive/root/createdByUser/TrendingAround
-DELETE /drive/root/lastModifiedByUser/TrendingAround
+DELETE https://graph.microsoft.com/v1.0/users/<objectId>/TrendingAround
+DELETE https://graph.microsoft.com/v1.0/drive/root/createdByUser/TrendingAround
+DELETE https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/TrendingAround
 
 ```
 ### Request headers

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /drive/root/thumbnails
-GET /drive/items/<id>/thumbnails
-GET /drives/<id>/root/thumbnails
+GET https://graph.microsoft.com/v1.0/drive/root/thumbnails
+GET https://graph.microsoft.com/v1.0/drive/items/<id>/thumbnails
+GET https://graph.microsoft.com/v1.0/drives/<id>/root/thumbnails
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_thumbnails"
 }-->
 ```http
-GET /drive/root/thumbnails
+GET https://graph.microsoft.com/v1.0/drive/root/thumbnails
 ```
 ##### Response
 Here is an example of the response.

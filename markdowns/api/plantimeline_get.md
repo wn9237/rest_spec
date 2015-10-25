@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /plans/<id>/timeline
-GET /users/<objectId>/plans/<id>/timeline
-GET /groups/<objectId>/plans/<id>/timeline
+GET https://graph.microsoft.com/v1.0/plans/<id>/timeline
+GET https://graph.microsoft.com/v1.0/users/<objectId>/plans/<id>/timeline
+GET https://graph.microsoft.com/v1.0/groups/<objectId>/plans/<id>/timeline
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_plantimeline"
 }-->
 ```http
-GET /plans/<id>/timeline
+GET https://graph.microsoft.com/v1.0/plans/<id>/timeline
 ```
 ##### Response
 Here is an example of the response.
