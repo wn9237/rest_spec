@@ -1,14 +1,17 @@
-# Get DirectoryRole
+# List DirectoryObject
 
-Retrieve the properties and relationships of directoryrole object.
+Retrieve a list of directoryobject objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/<objectId>
+GET /directoryRoles/<objectId>/members
 ```
 ### Optional query parameters
+|Name|Value|Description|
+|:---------------|:--------|:-------|
+|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 
 ### Request headers
 | Name       | Type | Description|
@@ -18,46 +21,46 @@ GET /directoryRoles/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [DirectoryRole](../resources/directoryrole.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_directoryrole"
+  "name": "get_members"
 }-->
 ```http
-GET /directoryRoles/<objectId>
+GET /directoryRoles/<objectId>/members
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.directoryrole"
+  "@odata.type": "microsoft.graph.directoryobject",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 275
+Content-length: 152
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "isSystem": true,
-  "roleDisabled": true,
-  "roleTemplateId": "roleTemplateId-value",
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  "value": [
+    {
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
-2015-10-25 14:25:33 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get DirectoryRole",
+  "description": "List DirectoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

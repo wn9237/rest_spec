@@ -764,9 +764,9 @@ module SpecMaker
 							@mdlines.push "|[List #{useName}](#{listLink}) |#{returnLink} collection| Get a #{useName} object collection.|" + NEWLINE
 							saveJsonHash = deep_copy @jsonHash
 							@jsonHash[:name] = prop[:name]
-							@jsonHash[:collectionOf] = prop[:dataType]
-							@jsonHash = deep_copy saveJsonHash
+							@jsonHash[:collectionOf] = prop[:dataType]							
 							create_get_method(prop[:name], filename)
+							@jsonHash = deep_copy saveJsonHash
 							@list_from_rel = @list_from_rel + 1
 						end
 

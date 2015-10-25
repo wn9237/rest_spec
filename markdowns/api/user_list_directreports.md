@@ -1,16 +1,19 @@
-# Get User
+# List DirectoryObject
 
-Retrieve the properties and relationships of user object.
+Retrieve a list of directoryobject objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>
-GET /drive/root/createdByUser
-GET /drive/root/lastModifiedByUser
+GET /users/<objectId>/directReports
+GET /drive/root/createdByUser/directReports
+GET /drive/root/lastModifiedByUser/directReports
 ```
 ### Optional query parameters
+|Name|Value|Description|
+|:---------------|:--------|:-------|
+|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 
 ### Request headers
 | Name       | Type | Description|
@@ -20,137 +23,46 @@ GET /drive/root/lastModifiedByUser
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_user"
+  "name": "get_directreports"
 }-->
 ```http
-GET /users/<objectId>
+GET /users/<objectId>/directReports
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.directoryobject",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2708
+Content-length: 152
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
+  "value": [
     {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
-      "skuId": "skuId-value"
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "assignedPlans": [
-    {
-      "assignedTimestamp": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "department": "department-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
-  "givenName": "givenName-value",
-  "immutableId": "immutableId-value",
-  "jobTitle": "jobTitle-value",
-  "lastDirSyncTime": "datetime-value",
-  "mail": "mail-value",
-  "mailNickname": "mailNickname-value",
-  "mobile": "mobile-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "otherMails": [
-    "otherMails-value"
-  ],
-  "passwordPolicies": "passwordPolicies-value",
-  "passwordProfile": {
-    "password": "password-value",
-    "forceChangePasswordNextLogin": true
-  },
-  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
-  "postalCode": "postalCode-value",
-  "preferredLanguage": "preferredLanguage-value",
-  "provisionedPlans": [
-    {
-      "capabilityStatus": "capabilityStatus-value",
-      "provisioningStatus": "provisioningStatus-value",
-      "service": "service-value"
-    }
-  ],
-  "provisioningErrors": [
-    {
-      "errorDetail": "errorDetail-value",
-      "resolved": true,
-      "service": "service-value",
-      "timestamp": "datetime-value"
-    }
-  ],
-  "proxyAddresses": [
-    "proxyAddresses-value"
-  ],
-  "sipProxyAddress": "sipProxyAddress-value",
-  "state": "state-value",
-  "streetAddress": "streetAddress-value",
-  "surname": "surname-value",
-  "telephoneNumber": "telephoneNumber-value",
-  "thumbnailPhoto": "thumbnailPhoto-value",
-  "usageLocation": "usageLocation-value",
-  "userPrincipalName": "userPrincipalName-value",
-  "userType": "userType-value",
-  "MailboxGuid": "MailboxGuid-value",
-  "EmailAddress": "EmailAddress-value",
-  "aboutMe": "aboutMe-value",
-  "alias": "alias-value",
-  "birthday": "datetime-value",
-  "hireDate": "datetime-value",
-  "interests": [
-    "interests-value"
-  ],
-  "mySite": "mySite-value",
-  "pastProjects": [
-    "pastProjects-value"
-  ],
-  "preferredName": "preferredName-value",
-  "principalName": "principalName-value",
-  "responsibilities": [
-    "responsibilities-value"
-  ],
-  "schools": [
-    "schools-value"
-  ],
-  "skills": [
-    "skills-value"
-  ],
-  "tags": [
-    "tags-value"
-  ],
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
-2015-10-25 14:25:33 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get User",
+  "description": "List DirectoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

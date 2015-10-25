@@ -1,16 +1,19 @@
-# Get Group
+# List AppRoleAssignment
 
-Retrieve the properties and relationships of group object.
+Retrieve a list of approleassignment objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>
-GET /users/<objectId>/JoinedGroups/<objectId>
-GET /drive/root/createdByUser/JoinedGroups/<objectId>
+GET /groups/<objectId>/appRoleAssignments
+GET /users/<objectId>/JoinedGroups/<objectId>/appRoleAssignments
+GET /drive/root/createdByUser/JoinedGroups/<objectId>/appRoleAssignments
 ```
 ### Optional query parameters
+|Name|Value|Description|
+|:---------------|:--------|:-------|
+|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 
 ### Request headers
 | Name       | Type | Description|
@@ -20,75 +23,53 @@ GET /drive/root/createdByUser/JoinedGroups/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Group](../resources/group.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [AppRoleAssignment](../resources/approleassignment.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_group"
+  "name": "get_approleassignments"
 }-->
 ```http
-GET /groups/<objectId>
+GET /groups/<objectId>/appRoleAssignments
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.approleassignment",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1009
+Content-length: 467
 
 {
-  "description": "description-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "creationOptions": [
-    "creationOptions-value"
-  ],
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "isPublic": true,
-  "lastDirSyncTime": "datetime-value",
-  "mail": "mail-value",
-  "mailNickname": "mailNickname-value",
-  "mailEnabled": true,
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "provisioningErrors": [
+  "value": [
     {
-      "errorDetail": "errorDetail-value",
-      "resolved": true,
-      "service": "service-value",
-      "timestamp": "datetime-value"
+      "creationTimestamp": "datetime-value",
+      "id": "id-value",
+      "principalDisplayName": "principalDisplayName-value",
+      "principalId": "principalId-value",
+      "principalType": "principalType-value",
+      "resourceDisplayName": "resourceDisplayName-value",
+      "resourceId": "resourceId-value",
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "proxyAddresses": [
-    "proxyAddresses-value"
-  ],
-  "securityEnabled": true,
-  "AccessType": "AccessType-value",
-  "EmailAddress": "EmailAddress-value",
-  "AllowExternalSenders": true,
-  "AutoSubscribeNewMembers": true,
-  "IsSubscribedByMail": true,
-  "IsFavorite": true,
-  "UnseenCount": 99,
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
-2015-10-25 14:25:33 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Group",
+  "description": "List AppRoleAssignment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

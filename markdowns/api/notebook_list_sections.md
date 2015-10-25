@@ -1,21 +1,26 @@
-# Get Notebook
+# List Section
 
-Retrieve the properties and relationships of notebook object.
+Retrieve a list of section objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/notes/notebooks/<id>
-GET /drive/root/createdByUser/notes/notebooks/<id>
-GET /users/<objectId>/notes/pages/<id>/parentNotebook
+GET /users/<objectId>/notes/notebooks/<id>/sections
+GET /drive/root/createdByUser/notes/notebooks/<id>/sections
+GET /users/<objectId>/notes/pages/<id>/parentNotebook/sections
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Notebook](../resources/notebook.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Section](../resources/section.md) for supported names. |
+|$filter|string|Filter string that lets you filter the response based on a set of criteria.|
+|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 |$select|string|Comma-separated list of properties to include in the response.|
+|$skip|int|The number of items to skip in a result set.|
+|$skipToken|string|Paging token that is used to get the next set of results.|
+|$top|int|The number of items to return in a result set.|
 
 ### Request headers
 | Name       | Type | Description|
@@ -25,58 +30,52 @@ GET /users/<objectId>/notes/pages/<id>/parentNotebook
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Notebook](../resources/notebook.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Section](../resources/section.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_notebook"
+  "name": "get_sections"
 }-->
 ```http
-GET /users/<objectId>/notes/notebooks/<id>
+GET /users/<objectId>/notes/notebooks/<id>/sections
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.notebook"
+  "@odata.type": "microsoft.graph.section",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 516
+Content-length: 341
 
 {
-  "isDefault": true,
-  "userRole": "userRole-value",
-  "isShared": true,
-  "sectionsUrl": "sectionsUrl-value",
-  "sectionGroupsUrl": "sectionGroupsUrl-value",
-  "links": {
-    "oneNoteClientUrl": {
-      "href": "href-value"
-    },
-    "oneNoteWebUrl": {
-      "href": "href-value"
+  "value": [
+    {
+      "isDefault": true,
+      "pagesUrl": "pagesUrl-value",
+      "name": "name-value",
+      "createdBy": "createdBy-value",
+      "lastModifiedBy": "lastModifiedBy-value",
+      "lastModifiedTime": "datetime-value",
+      "id": "id-value",
+      "self": "self-value",
+      "createdTime": "datetime-value"
     }
-  },
-  "name": "name-value",
-  "createdBy": "createdBy-value",
-  "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value",
-  "id": "id-value",
-  "self": "self-value",
-  "createdTime": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
-2015-10-25 14:25:33 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Notebook",
+  "description": "List Section",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -80,8 +80,8 @@ Here is a JSON representation of the resource
 |[List Section](../api/notes_list_sections.md) |[Section](section.md) collection| Get a Section object collection.|
 |[Delete](../api/notes_delete.md) | None |Delete Notes object. |
 
-<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
-2015-10-25 14:25:33 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Notes resource",

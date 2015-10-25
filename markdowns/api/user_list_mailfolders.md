@@ -1,16 +1,26 @@
-# Get User
+# List MailFolder
 
-Retrieve the properties and relationships of user object.
+Retrieve a list of mailfolder objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>
-GET /drive/root/createdByUser
-GET /drive/root/lastModifiedByUser
+GET /users/<objectId>/MailFolders
+GET /drive/root/createdByUser/MailFolders
+GET /drive/root/lastModifiedByUser/MailFolders
 ```
 ### Optional query parameters
+|Name|Value|Description|
+|:---------------|:--------|:-------|
+|$count|none|The count of related entities can be requested by specifying the $count query option.|
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [MailFolder](../resources/mailfolder.md) for supported names. |
+|$filter|string|Filter string that lets you filter the response based on a set of criteria.|
+|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
+|$select|string|Comma-separated list of properties to include in the response.|
+|$skip|int|The number of items to skip in a result set.|
+|$skipToken|string|Paging token that is used to get the next set of results.|
+|$top|int|The number of items to return in a result set.|
 
 ### Request headers
 | Name       | Type | Description|
@@ -20,137 +30,47 @@ GET /drive/root/lastModifiedByUser
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [MailFolder](../resources/mailfolder.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_user"
+  "name": "get_mailfolders"
 }-->
 ```http
-GET /users/<objectId>
+GET /users/<objectId>/MailFolders
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.mailfolder",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2708
+Content-length: 175
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
+  "value": [
     {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
-      "skuId": "skuId-value"
+      "ParentFolderId": "ParentFolderId-value",
+      "DisplayName": "DisplayName-value",
+      "ChildFolderCount": 99,
+      "Id": "Id-value"
     }
-  ],
-  "assignedPlans": [
-    {
-      "assignedTimestamp": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "department": "department-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
-  "givenName": "givenName-value",
-  "immutableId": "immutableId-value",
-  "jobTitle": "jobTitle-value",
-  "lastDirSyncTime": "datetime-value",
-  "mail": "mail-value",
-  "mailNickname": "mailNickname-value",
-  "mobile": "mobile-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "otherMails": [
-    "otherMails-value"
-  ],
-  "passwordPolicies": "passwordPolicies-value",
-  "passwordProfile": {
-    "password": "password-value",
-    "forceChangePasswordNextLogin": true
-  },
-  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
-  "postalCode": "postalCode-value",
-  "preferredLanguage": "preferredLanguage-value",
-  "provisionedPlans": [
-    {
-      "capabilityStatus": "capabilityStatus-value",
-      "provisioningStatus": "provisioningStatus-value",
-      "service": "service-value"
-    }
-  ],
-  "provisioningErrors": [
-    {
-      "errorDetail": "errorDetail-value",
-      "resolved": true,
-      "service": "service-value",
-      "timestamp": "datetime-value"
-    }
-  ],
-  "proxyAddresses": [
-    "proxyAddresses-value"
-  ],
-  "sipProxyAddress": "sipProxyAddress-value",
-  "state": "state-value",
-  "streetAddress": "streetAddress-value",
-  "surname": "surname-value",
-  "telephoneNumber": "telephoneNumber-value",
-  "thumbnailPhoto": "thumbnailPhoto-value",
-  "usageLocation": "usageLocation-value",
-  "userPrincipalName": "userPrincipalName-value",
-  "userType": "userType-value",
-  "MailboxGuid": "MailboxGuid-value",
-  "EmailAddress": "EmailAddress-value",
-  "aboutMe": "aboutMe-value",
-  "alias": "alias-value",
-  "birthday": "datetime-value",
-  "hireDate": "datetime-value",
-  "interests": [
-    "interests-value"
-  ],
-  "mySite": "mySite-value",
-  "pastProjects": [
-    "pastProjects-value"
-  ],
-  "preferredName": "preferredName-value",
-  "principalName": "principalName-value",
-  "responsibilities": [
-    "responsibilities-value"
-  ],
-  "schools": [
-    "schools-value"
-  ],
-  "skills": [
-    "skills-value"
-  ],
-  "tags": [
-    "tags-value"
-  ],
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
-2015-10-25 14:25:33 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get User",
+  "description": "List MailFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

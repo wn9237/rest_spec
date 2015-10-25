@@ -1,14 +1,17 @@
-# Get Device
+# List DirectoryObject
 
-Retrieve the properties and relationships of device object.
+Retrieve a list of directoryobject objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/<objectId>
+GET /devices/<objectId>/registeredUsers
 ```
 ### Optional query parameters
+|Name|Value|Description|
+|:---------------|:--------|:-------|
+|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 
 ### Request headers
 | Name       | Type | Description|
@@ -18,62 +21,46 @@ GET /devices/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Device](../resources/device.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_device"
+  "name": "get_registeredusers"
 }-->
 ```http
-GET /devices/<objectId>
+GET /devices/<objectId>/registeredUsers
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.device"
+  "@odata.type": "microsoft.graph.directoryobject",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 732
+Content-length: 152
 
 {
-  "accountEnabled": true,
-  "alternativeSecurityIds": [
+  "value": [
     {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "objectType": "objectType-value",
+      "objectId": "objectId-value",
+      "deletionTimestamp": "datetime-value"
     }
-  ],
-  "approximateLastLogonTimestamp": "datetime-value",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceObjectVersion": 99,
-  "deviceOSType": "deviceOSType-value",
-  "deviceOSVersion": "deviceOSVersion-value",
-  "devicePhysicalIds": [
-    "devicePhysicalIds-value"
-  ],
-  "deviceTrustType": "deviceTrustType-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "lastDirSyncTime": "datetime-value",
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  ]
 }
 ```
 
-<!-- uuid: 7b985f1a-e3d9-4a53-962f-8cb3eb5ec020
-2015-10-25 14:25:33 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Device",
+  "description": "List DirectoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
