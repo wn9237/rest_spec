@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/plans
-POST https://graph.microsoft.com/v1.0/users/<objectId>/JoinedGroups/<objectId>/plans
-POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/JoinedGroups/<objectId>/plans
+POST /groups/<objectId>/plans
+POST /users/<objectId>/JoinedGroups/<objectId>/plans
+POST /drive/root/createdByUser/JoinedGroups/<objectId>/plans
 
 ```
 ### Request headers

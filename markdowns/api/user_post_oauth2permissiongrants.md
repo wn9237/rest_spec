@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/oauth2PermissionGrants
-POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/oauth2PermissionGrants
-POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/oauth2PermissionGrants
+POST /users/<objectId>/oauth2PermissionGrants
+POST /drive/root/createdByUser/oauth2PermissionGrants
+POST /drive/root/lastModifiedByUser/oauth2PermissionGrants
 
 ```
 ### Request headers

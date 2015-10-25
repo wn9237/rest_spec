@@ -20,7 +20,7 @@ module SpecMaker
 			example_lines.push "Here is an example of the request." + NEWLINE
 			example_lines.push get_json_request_pretext("create_#{method[:returnType]}_from_#{@jsonHash[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax('auto_post', top_one_restpath)
+			httpSyntax = get_syntax('auto_post', top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])			
 			#example_lines.push "Content-type: application/json" + NEWLINE
@@ -43,7 +43,7 @@ module SpecMaker
 			example_lines.push "Here is an example of the request." + NEWLINE			
 			example_lines.push get_json_request_pretext("get_#{@jsonHash[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax('auto_get', top_one_restpath)
+			httpSyntax = get_syntax('auto_get', top_one_restpath, nil, nil, SERVER)
 			
 			example_lines.push httpSyntax.join + "/#{pathAppend.to_s}".chomp('/') + NEWLINE
 			example_lines.push "```" + NEWLINE	
@@ -73,7 +73,7 @@ module SpecMaker
 			example_lines.push get_json_request_pretext("update_#{@jsonHash[:name]}".downcase) + NEWLINE						
 
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax('auto_put', top_one_restpath)
+			httpSyntax = get_syntax('auto_put', top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])			
 			example_lines.push "Content-type: application/json" + NEWLINE
@@ -94,9 +94,9 @@ module SpecMaker
 		when 'auto_delete'
 			example_lines.push HEADER5 + "Request" + NEWLINE
 			example_lines.push "Here is an example of the request." + NEWLINE			
-			example_lines.push get_json_request_pretext("delete_#{jsonHash[:name]}".downcase) + NEWLINE						
+			example_lines.push get_json_request_pretext("delete_#{@jsonHash[:name]}".downcase) + NEWLINE						
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax(method[:name], top_one_restpath)
+			httpSyntax = get_syntax(method[:name], top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			example_lines.push '```' + NEWLINE
 
@@ -112,7 +112,7 @@ module SpecMaker
 			example_lines.push "Here is an example of the request." + NEWLINE			
 			example_lines.push get_json_request_pretext("#{@jsonHash[:name].downcase}_#{method[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax(method[:name], top_one_restpath)
+			httpSyntax = get_syntax(method[:name], top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 
 			if !method[:isFunction] && method[:parameters].length > 0
@@ -158,20 +158,20 @@ module SpecMaker
 		return arr[0..0]
 	end
 
-	def self.get_syntax(methodName=nil, restpath=[], pathAppend='', method=nil)
+	def self.get_syntax(methodName=nil, restpath=[], pathAppend='', method=nil, server = '')
 		restpath = restpath.sort_by {|x| x.length}
 		case methodName
 		when 'auto_get', 'auto_list' 
-			arr = restpath.map {|a| "GET " + SERVER + a.to_s + "/#{pathAppend.to_s}".chomp('/')}				
+			arr = restpath.map {|a| "GET " + server + a.to_s + "/#{pathAppend.to_s}".chomp('/')}				
 		when 'auto_post'
 			# have to append the collection name for post
-			arr = restpath.map {|a| "POST " + SERVER + a.to_s + "/#{pathAppend}".chomp('/')}				
+			arr = restpath.map {|a| "POST " + server + a.to_s + "/#{pathAppend}".chomp('/')}				
 		when 'auto_delete'
-			arr = restpath.map {|a| "DELETE " + SERVER + a.to_s}
+			arr = restpath.map {|a| "DELETE " + server + a.to_s}
 		when 'auto_put'
-			arr = restpath.map {|a| "PUT " + SERVER + a.to_s}				
+			arr = restpath.map {|a| "PUT " + server + a.to_s}				
 		when 'auto_patch'
-			arr = restpath.map {|a| "PATCH " + SERVER + a.to_s}				
+			arr = restpath.map {|a| "PATCH " + server + a.to_s}				
 		else
 			# identify the functional path
 			if method && method[:isFunction] && method[:parameters].length > 0
@@ -180,10 +180,10 @@ module SpecMaker
 					q= q + item[:name] + "=#{item[:name]}-value, " 
 				end
 				q = "(" + q.chomp(', ') + ")"
-				arr = restpath.map {|a| "POST " + SERVER + a.to_s + "/#{methodName}#{q}" }				
+				arr = restpath.map {|a| "POST " + server + a.to_s + "/#{methodName}#{q}" }				
 
 			else
-				arr = restpath.map {|a| "POST " + SERVER + a.to_s + "/#{methodName}"}				
+				arr = restpath.map {|a| "POST " + server + a.to_s + "/#{methodName}"}				
 			end	
 		end
 		return arr
@@ -349,6 +349,7 @@ module SpecMaker
 		when 'auto_post'
 			example_lines = gen_example("auto_post", method)
 		when 'auto_delete'
+			example_lines = gen_example("auto_delete", method)
 		else
 			example_lines = gen_example(method[:name], method)
 		end

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/servicePrincipals/<objectId>/memberOf
+GET /servicePrincipals/<objectId>/memberOf
 ```
 ### Optional query parameters
 |Name|Value|Description|

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/subscribedSkus/<objectId>
+PATCH /subscribedSkus/<objectId>
 ```
 ### Optional request headers
 | Name       | Type | Description|

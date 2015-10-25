@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/<objectId>/CalendarGroups/<Id>
-PATCH https://graph.microsoft.com/v1.0/drive/root/createdByUser/CalendarGroups/<Id>
-PATCH https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/CalendarGroups/<Id>
+PATCH /users/<objectId>/CalendarGroups/<Id>
+PATCH /drive/root/createdByUser/CalendarGroups/<Id>
+PATCH /drive/root/lastModifiedByUser/CalendarGroups/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|

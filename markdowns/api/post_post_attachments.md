@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments
-POST https://graph.microsoft.com/v1.0/users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments
+POST /groups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments
+POST /groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>/Attachments
+POST /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>/Attachments
 
 ```
 ### Request headers

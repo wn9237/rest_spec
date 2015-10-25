@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/deviceConfiguration/<objectId>
+GET /deviceConfiguration/<objectId>
 ```
 ### Optional query parameters
 

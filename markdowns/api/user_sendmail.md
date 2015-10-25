@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/SendMail
-POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/SendMail
-POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/SendMail
+POST /users/<objectId>/SendMail
+POST /drive/root/createdByUser/SendMail
+POST /drive/root/lastModifiedByUser/SendMail
 
 ```
 ### Request headers

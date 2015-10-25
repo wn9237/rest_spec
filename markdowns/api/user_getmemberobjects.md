@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/getMemberObjects
-POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/getMemberObjects
-POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/getMemberObjects
+POST /users/<objectId>/getMemberObjects
+POST /drive/root/createdByUser/getMemberObjects
+POST /drive/root/lastModifiedByUser/getMemberObjects
 
 ```
 ### Request headers

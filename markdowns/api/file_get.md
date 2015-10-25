@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/TrendingAround
-GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/TrendingAround
-GET https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/TrendingAround
+GET /users/<objectId>/TrendingAround
+GET /drive/root/createdByUser/TrendingAround
+GET /drive/root/lastModifiedByUser/TrendingAround
 ```
 ### Optional query parameters
 |Name|Value|Description|

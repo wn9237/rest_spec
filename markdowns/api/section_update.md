@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>
-PATCH https://graph.microsoft.com/v1.0/drive/root/createdByUser/notes/sections/<id>
-PATCH https://graph.microsoft.com/v1.0/users/<objectId>/notes/pages/<id>/parentSection
+PATCH /users/<objectId>/notes/sections/<id>
+PATCH /drive/root/createdByUser/notes/sections/<id>
+PATCH /users/<objectId>/notes/pages/<id>/parentSection
 ```
 ### Optional request headers
 | Name       | Type | Description|

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants
+GET /oauth2PermissionGrants
 ```
 ### Optional query parameters
 |Name|Value|Description|

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/MailFolders/<Id>
-GET https://graph.microsoft.com/v1.0/drive/root/createdByUser/MailFolders/<Id>
-GET https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/MailFolders/<Id>
+GET /users/<objectId>/MailFolders/<Id>
+GET /drive/root/createdByUser/MailFolders/<Id>
+GET /drive/root/lastModifiedByUser/MailFolders/<Id>
 ```
 ### Optional query parameters
 |Name|Value|Description|

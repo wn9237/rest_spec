@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/thumbnails
-POST https://graph.microsoft.com/v1.0/drive/items/<id>/thumbnails
-POST https://graph.microsoft.com/v1.0/drives/<id>/root/thumbnails
+POST /drive/root/thumbnails
+POST /drive/items/<id>/thumbnails
+POST /drives/<id>/root/thumbnails
 
 ```
 ### Request headers

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/ContactFolders/<Id>/Contacts
-POST https://graph.microsoft.com/v1.0/drive/root/createdByUser/ContactFolders/<Id>/Contacts
-POST https://graph.microsoft.com/v1.0/drive/root/lastModifiedByUser/ContactFolders/<Id>/Contacts
+POST /users/<objectId>/ContactFolders/<Id>/Contacts
+POST /drive/root/createdByUser/ContactFolders/<Id>/Contacts
+POST /drive/root/lastModifiedByUser/ContactFolders/<Id>/Contacts
 
 ```
 ### Request headers

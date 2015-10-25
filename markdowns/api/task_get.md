@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/tasks/<id>
-GET https://graph.microsoft.com/v1.0/plans/<id>/tasks/<id>
-GET https://graph.microsoft.com/v1.0/buckets/<id>/tasks/<id>
+GET /tasks/<id>
+GET /plans/<id>/tasks/<id>
+GET /buckets/<id>/tasks/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|

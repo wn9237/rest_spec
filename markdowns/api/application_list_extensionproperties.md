@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/applications/<objectId>/extensionProperties
+GET /applications/<objectId>/extensionProperties
 ```
 ### Optional query parameters
 |Name|Value|Description|

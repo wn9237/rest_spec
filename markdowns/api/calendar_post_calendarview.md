@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/Calendar/CalendarView
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/Calendar/CalendarView
-POST https://graph.microsoft.com/v1.0/users/<objectId>/Calendars/<Id>/CalendarView
+POST /users/<objectId>/Calendar/CalendarView
+POST /groups/<objectId>/Calendar/CalendarView
+POST /users/<objectId>/Calendars/<Id>/CalendarView
 
 ```
 ### Request headers
