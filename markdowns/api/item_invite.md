@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "item_invite"
 }-->
 ```http
-POST /drive/root/invite
+POST https://graph.microsoft.com/v1.0/drive/root/invite
 Content-type: application/json
 Content-length: 313
 
@@ -119,8 +119,8 @@ Content-length: 939
 }
 ```
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item: invite",

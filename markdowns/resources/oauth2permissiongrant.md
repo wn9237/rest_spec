@@ -43,16 +43,16 @@ Here is a JSON representation of the resource
 None
 
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get OAuth2PermissionGrant](../api/oauth2permissiongrant_get.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md) |Read properties and relationships of oAuth2PermissionGrant object.|
 |[Update](../api/oauth2permissiongrant_update.md) | [OAuth2PermissionGrant](oauth2permissiongrant.md)	|Update OAuth2PermissionGrant object. |
 |[Delete](../api/oauth2permissiongrant_delete.md) | None |Delete OAuth2PermissionGrant object. |
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OAuth2PermissionGrant resource",

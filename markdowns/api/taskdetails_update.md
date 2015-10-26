@@ -1,4 +1,4 @@
-# Update the properties of taskdetails object.
+# Update taskdetails
 
 Update the properties of taskdetails object.
 ### Prerequisites
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "update_taskdetails"
 }-->
 ```http
-PUT /tasks/<id>/details
+PUT https://graph.microsoft.com/v1.0/tasks/<id>/details
 Content-type: application/json
 Content-length: 177
 
@@ -73,11 +73,11 @@ Content-length: 177
 }
 ```
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of taskdetails object.",
+  "description": "Update taskdetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

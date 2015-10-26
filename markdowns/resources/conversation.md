@@ -47,17 +47,18 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |Threads|[ConversationThread](conversationthread.md) collection|A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Conversation](../api/conversation_get.md) | [Conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[Create Thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
+|[List Threads](../api/conversation_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a Thread object collection.|
 |[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
 |[Delete](../api/conversation_delete.md) | None |Delete Conversation object. |
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Conversation resource",

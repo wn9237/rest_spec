@@ -144,25 +144,31 @@ Here is a JSON representation of the resource
 |ownedObjects|[DirectoryObject](directoryobject.md) collection|Directory objects that are owned by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer. Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection|Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ServicePrincipal](../api/serviceprincipal_get.md) | [ServicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
 |[Create AppRoleAssignment](../api/serviceprincipal_post_approleassignments.md) |[AppRoleAssignment](approleassignment.md)| Create a new AppRoleAssignment by posting to the appRoleAssignments collection.|
+|[List appRoleAssignments](../api/serviceprincipal_list_approleassignments.md) |[AppRoleAssignment](approleassignment.md) collection| Get a AppRoleAssignment object collection.|
 |[Create createdObject](../api/serviceprincipal_post_createdobjects.md) |[DirectoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
+|[List createdObjects](../api/serviceprincipal_list_createdobjects.md) |[DirectoryObject](directoryobject.md) collection| Get a createdObject object collection.|
 |[Create memberOf](../api/serviceprincipal_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[List memberOf](../api/serviceprincipal_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
 |[Create OAuth2PermissionGrant](../api/serviceprincipal_post_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new OAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
+|[List oauth2PermissionGrants](../api/serviceprincipal_list_oauth2permissiongrants.md) |[OAuth2PermissionGrant](oauth2permissiongrant.md) collection| Get a OAuth2PermissionGrant object collection.|
 |[Create ownedObject](../api/serviceprincipal_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
+|[List ownedObjects](../api/serviceprincipal_list_ownedobjects.md) |[DirectoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
 |[Create owner](../api/serviceprincipal_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owners](../api/serviceprincipal_list_owners.md) |[DirectoryObject](directoryobject.md) collection| Get a owner object collection.|
 |[Update](../api/serviceprincipal_update.md) | [ServicePrincipal](serviceprincipal.md)	|Update ServicePrincipal object. |
 |[Delete](../api/serviceprincipal_delete.md) | None |Delete ServicePrincipal object. |
 |[Checkmembergroups](../api/serviceprincipal_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/serviceprincipal_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/serviceprincipal_getmemberobjects.md)|String collection||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "ServicePrincipal resource",

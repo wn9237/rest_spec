@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoleTemplates
+POST /directoryRoles
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `201, Created` response code and [DirectoryRo
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryroletemplate_from_directoryroletemplates"
+  "name": "create_directoryroletemplate_from_directoryroles"
 }-->
 ```http
-POST /directoryRoleTemplates
+POST https://graph.microsoft.com/v1.0/directoryRoles
 ```
 In the request body, supply a JSON representation of [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object.
 ##### Response
@@ -53,8 +53,8 @@ Content-length: 187
 }
 ```
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create DirectoryRoleTemplate",

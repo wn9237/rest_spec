@@ -101,21 +101,23 @@ Here is a JSON representation of the resource
 |manager|[DirectoryObject](directoryobject.md)| Read-only.|
 |memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get OrgContact](../api/orgcontact_get.md) | [OrgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
 |[Create directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
+|[List directReports](../api/orgcontact_list_directreports.md) |[DirectoryObject](directoryobject.md) collection| Get a directReport object collection.|
 |[Create memberOf](../api/orgcontact_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[List memberOf](../api/orgcontact_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
 |[Update](../api/orgcontact_update.md) | [OrgContact](orgcontact.md)	|Update OrgContact object. |
 |[Delete](../api/orgcontact_delete.md) | None |Delete OrgContact object. |
 |[Checkmembergroups](../api/orgcontact_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/orgcontact_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/orgcontact_getmemberobjects.md)|String collection||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "OrgContact resource",

@@ -78,21 +78,23 @@ Here is a JSON representation of the resource
 |registeredOwners|[DirectoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[DirectoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Device](../api/device_get.md) | [Device](device.md) |Read properties and relationships of device object.|
 |[Create registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Create a new registeredOwner by posting to the registeredOwners collection.|
+|[List registeredOwners](../api/device_list_registeredowners.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredOwner object collection.|
 |[Create registeredUser](../api/device_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
+|[List registeredUsers](../api/device_list_registeredusers.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredUser object collection.|
 |[Update](../api/device_update.md) | [Device](device.md)	|Update Device object. |
 |[Delete](../api/device_delete.md) | None |Delete Device object. |
 |[Checkmembergroups](../api/device_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/device_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/device_getmemberobjects.md)|String collection||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Device resource",

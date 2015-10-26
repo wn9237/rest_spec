@@ -61,20 +61,21 @@ Here is a JSON representation of the resource
 |parentNotebook|[Notebook](notebook.md)|The notebook that contains the section, expanded by default with the id, name, and self properties selected.  Read-only.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|The section group that contains the section, expanded by default with the id, name, and self properties selected.  Read-only.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Section](../api/section_get.md) | [Section](section.md) |Read properties and relationships of section object.|
 |[Create Page](../api/section_post_pages.md) |[Page](page.md)| Create a new Page by posting to the pages collection.|
+|[List pages](../api/section_list_pages.md) |[Page](page.md) collection| Get a Page object collection.|
 |[Update](../api/section_update.md) | [Section](section.md)	|Update Section object. |
 |[Delete](../api/section_delete.md) | None |Delete Section object. |
 |[Copytonotebook](../api/section_copytonotebook.md)|[CopySectionModel](copysectionmodel.md)||
 |[Copytosectiongroup](../api/section_copytosectiongroup.md)|[CopySectionModel](copysectionmodel.md)||
 |[Thumbnail](../api/section_thumbnail.md)|Stream||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Section resource",

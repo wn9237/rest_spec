@@ -134,17 +134,18 @@ Here is a JSON representation of the resource
 |ContactPhoto|[Photo](photo.md)| Read-only.|
 |Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Contact](../api/contact_get.md) | [Contact](contact.md) |Read properties and relationships of contact object.|
 |[Create Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
+|[List Extensions](../api/contact_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete Contact object. |
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Contact resource",

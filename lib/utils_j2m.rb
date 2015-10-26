@@ -8,7 +8,7 @@ module SpecMaker
 	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"	
 	ANNOTATIONS = JSON_BASE_FOLDER + 'settings/annotations.json'
-
+	SERVER = 'https://graph.microsoft.com/v1.0'
 	HEADER1 = '# '
 	HEADER2 = '## '
 	HEADER3 = '### '
@@ -25,7 +25,7 @@ module SpecMaker
 	PARAM_HEADER = "| Parameter	   | Type	|Description|" + NEWLINE
 	HTTP_HEADER =  "| Name       | Type | Description|" + NEWLINE
 	RELATIONSHIP_HEADER = "| Relationship | Type	|Description|" + NEWLINE
-	TASKS_HEADER = "| Task		   | Return Type	|Description|" + NEWLINE
+	TASKS_HEADER = "| Method		   | Return Type	|Description|" + NEWLINE
 
 	PREREQ = HEADER3 + "Prerequisites" + NEWLINE + "The following **scopes** are required to execute this API: " + NEWLINE
 
@@ -77,6 +77,7 @@ module SpecMaker
 	@mdresponse = @struct[:mdresponse]
 	@mdignore = @struct[:mdignore]
 	@mdpageannotate = @struct[:mdpageannotate]
+	@serviceroot = []
 	
 
 	HTTP_CODES = {
@@ -97,7 +98,9 @@ module SpecMaker
 					"308" => "Resume Incomplete"					
 				}	
 
-	UUID_DATE = "<!-- uuid: " + SecureRandom.uuid  + "\n" + Time.now.utc.to_s + " -->"
+	#UUID_DATE = "<!-- uuid: " + SecureRandom.uuid  + "\n" + Time.now.utc.to_s + " -->"
+	UUID_DATE = "<!-- uuid: " + "8fcb5dbc-d5aa-4681-8e31-b001d5168d79"  + "\n" + "2015-10-25 14:57:30 UTC" + " -->"
+	
 	
 	###
 	# To prevent shallow copy errors, need to get a new object each time.
@@ -112,6 +115,7 @@ module SpecMaker
 	@patch_files_created = 0
 	@method_files_created = 0
 	@ientityset = 0
+	@list_from_rel = 0
 
 	# Log file
 	LOG_FOLDER = '../../logs'

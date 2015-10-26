@@ -64,20 +64,23 @@ Here is a JSON representation of the resource
 |shared|[item](item.md) collection| Read-only. Nullable.|
 |special|[item](item.md) collection|Collection of common folders available in OneDrive. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get drive](../api/drive_get.md) | [drive](drive.md) |Read properties and relationships of drive object.|
 |[Create item](../api/drive_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
+|[List items](../api/drive_list_items.md) |[item](item.md) collection| Get a item object collection.|
 |[Create shared](../api/drive_post_shared.md) |[item](item.md)| Create a new shared by posting to the shared collection.|
+|[List shared](../api/drive_list_shared.md) |[item](item.md) collection| Get a shared object collection.|
 |[Create special](../api/drive_post_special.md) |[item](item.md)| Create a new special by posting to the special collection.|
+|[List special](../api/drive_list_special.md) |[item](item.md) collection| Get a special object collection.|
 |[Update](../api/drive_update.md) | [drive](drive.md)	|Update drive object. |
 |[Delete](../api/drive_delete.md) | None |Delete drive object. |
 |[Allphotos](../api/drive_allphotos.md)|[item](item.md) collection||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "drive resource",

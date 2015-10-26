@@ -79,18 +79,20 @@ Here is a JSON representation of the resource
 |tasks|[Task](task.md) collection| Read-only. Nullable.|
 |timeline|[PlanTimeline](plantimeline.md)| Read-only.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Plan](../api/plan_get.md) | [Plan](plan.md) |Read properties and relationships of plan object.|
 |[Create Bucket](../api/plan_post_buckets.md) |[Bucket](bucket.md)| Create a new Bucket by posting to the buckets collection.|
+|[List buckets](../api/plan_list_buckets.md) |[Bucket](bucket.md) collection| Get a Bucket object collection.|
 |[Create Task](../api/plan_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
+|[List tasks](../api/plan_list_tasks.md) |[Task](task.md) collection| Get a Task object collection.|
 |[Update](../api/plan_update.md) | [Plan](plan.md)	|Update Plan object. |
 |[Delete](../api/plan_delete.md) | None |Delete Plan object. |
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Plan resource",

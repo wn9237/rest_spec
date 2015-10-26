@@ -119,13 +119,15 @@ Here is a JSON representation of the resource
 |extensionProperties|[ExtensionProperty](extensionproperty.md) collection|The extension properties associated with the application. Requires 1.5 or newer. Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Inherited from [DirectoryObject]. Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Application](../api/application_get.md) | [Application](application.md) |Read properties and relationships of application object.|
 |[Create ExtensionProperty](../api/application_post_extensionproperties.md) |[ExtensionProperty](extensionproperty.md)| Create a new ExtensionProperty by posting to the extensionProperties collection.|
+|[List extensionProperties](../api/application_list_extensionproperties.md) |[ExtensionProperty](extensionproperty.md) collection| Get a ExtensionProperty object collection.|
 |[Create owner](../api/application_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owners](../api/application_list_owners.md) |[DirectoryObject](directoryobject.md) collection| Get a owner object collection.|
 |[Update](../api/application_update.md) | [Application](application.md)	|Update Application object. |
 |[Delete](../api/application_delete.md) | None |Delete Application object. |
 |[Checkmembergroups](../api/application_checkmembergroups.md)|String collection||
@@ -133,8 +135,8 @@ Here is a JSON representation of the resource
 |[Get MemberObjects](../api/application_getmemberobjects.md)|String collection||
 |[Restore](../api/application_restore.md)|[Application](application.md)||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Application resource",

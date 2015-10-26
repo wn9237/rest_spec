@@ -11,7 +11,7 @@ module SpecMaker
 
 	require_relative 'utils_j2m'
 
-	def self.gen_example (type=nil, method={})
+	def self.gen_example (type=nil, method={}, pathAppend=nil)
 		example_lines = []
 		example_lines.push HEADER3 + "Example" + NEWLINE		
 		case type 
@@ -20,7 +20,7 @@ module SpecMaker
 			example_lines.push "Here is an example of the request." + NEWLINE
 			example_lines.push get_json_request_pretext("create_#{method[:returnType]}_from_#{@jsonHash[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax('auto_post', top_one_restpath)
+			httpSyntax = get_syntax('auto_post', top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])			
 			#example_lines.push "Content-type: application/json" + NEWLINE
@@ -43,8 +43,9 @@ module SpecMaker
 			example_lines.push "Here is an example of the request." + NEWLINE			
 			example_lines.push get_json_request_pretext("get_#{@jsonHash[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax('auto_get', top_one_restpath)
-			example_lines.push httpSyntax.join("\n") + NEWLINE
+			httpSyntax = get_syntax('auto_get', top_one_restpath, nil, nil, SERVER)
+			
+			example_lines.push httpSyntax.join + "/#{pathAppend.to_s}".chomp('/') + NEWLINE
 			example_lines.push "```" + NEWLINE	
 
 			example_lines.push HEADER5 + "Response" + NEWLINE											
@@ -72,7 +73,7 @@ module SpecMaker
 			example_lines.push get_json_request_pretext("update_#{@jsonHash[:name]}".downcase) + NEWLINE						
 
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax('auto_put', top_one_restpath)
+			httpSyntax = get_syntax('auto_put', top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])			
 			example_lines.push "Content-type: application/json" + NEWLINE
@@ -93,9 +94,9 @@ module SpecMaker
 		when 'auto_delete'
 			example_lines.push HEADER5 + "Request" + NEWLINE
 			example_lines.push "Here is an example of the request." + NEWLINE			
-			example_lines.push get_json_request_pretext("delete_#{jsonHash[:name]}".downcase) + NEWLINE						
+			example_lines.push get_json_request_pretext("delete_#{@jsonHash[:name]}".downcase) + NEWLINE						
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax(method[:name], top_one_restpath)
+			httpSyntax = get_syntax(method[:name], top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			example_lines.push '```' + NEWLINE
 
@@ -111,7 +112,7 @@ module SpecMaker
 			example_lines.push "Here is an example of the request." + NEWLINE			
 			example_lines.push get_json_request_pretext("#{@jsonHash[:name].downcase}_#{method[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax(method[:name], top_one_restpath)
+			httpSyntax = get_syntax(method[:name], top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 
 			if !method[:isFunction] && method[:parameters].length > 0
@@ -157,20 +158,20 @@ module SpecMaker
 		return arr[0..0]
 	end
 
-	def self.get_syntax(methodName=nil, restpath=[], pathAppend='', method=nil)
+	def self.get_syntax(methodName=nil, restpath=[], pathAppend='', method=nil, server = '')
 		restpath = restpath.sort_by {|x| x.length}
 		case methodName
 		when 'auto_get', 'auto_list' 
-			arr = restpath.map {|a| "GET " + a.to_s}
+			arr = restpath.map {|a| "GET " + server + a.to_s + "/#{pathAppend.to_s}".chomp('/')}				
 		when 'auto_post'
 			# have to append the collection name for post
-			arr = restpath.map {|a| "POST " + a.to_s + "/#{pathAppend}".chomp('/')}				
+			arr = restpath.map {|a| "POST " + server + a.to_s + "/#{pathAppend}".chomp('/')}				
 		when 'auto_delete'
-			arr = restpath.map {|a| "DELETE " + a.to_s}
+			arr = restpath.map {|a| "DELETE " + server + a.to_s}
 		when 'auto_put'
-			arr = restpath.map {|a| "PUT " + a.to_s}				
+			arr = restpath.map {|a| "PUT " + server + a.to_s}				
 		when 'auto_patch'
-			arr = restpath.map {|a| "PATCH " + a.to_s}				
+			arr = restpath.map {|a| "PATCH " + server + a.to_s}				
 		else
 			# identify the functional path
 			if method && method[:isFunction] && method[:parameters].length > 0
@@ -179,10 +180,10 @@ module SpecMaker
 					q= q + item[:name] + "=#{item[:name]}-value, " 
 				end
 				q = "(" + q.chomp(', ') + ")"
-				arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}#{q}" }				
+				arr = restpath.map {|a| "POST " + server + a.to_s + "/#{methodName}#{q}" }				
 
 			else
-				arr = restpath.map {|a| "POST " + a.to_s + "/#{methodName}"}				
+				arr = restpath.map {|a| "POST " + server + a.to_s + "/#{methodName}"}				
 			end	
 		end
 		return arr
@@ -348,6 +349,7 @@ module SpecMaker
 		when 'auto_post'
 			example_lines = gen_example("auto_post", method)
 		when 'auto_delete'
+			example_lines = gen_example("auto_delete", method)
 		else
 			example_lines = gen_example(method[:name], method)
 		end
@@ -376,10 +378,10 @@ module SpecMaker
 		@method_files_created = @method_files_created + 1
 	end
 
-	def self.create_get_method
+	def self.create_get_method(pathAppend = nil, filenameOverride = nil)
 		getMethodLines = []
 		# Header and description
-		realHeader = @jsonHash[:collectionOf] ? ('List ' + @jsonHash[:collectionOf]) : ('Get ' + @jsonHash[:name])
+		realHeader = @jsonHash[:collectionOf] ? ('List ' + @jsonHash[:name]) : ('Get ' + @jsonHash[:name])
 		getMethodLines.push HEADER1 + realHeader + TWONEWLINES
 
 		if @jsonHash[:collectionOf] 
@@ -395,9 +397,9 @@ module SpecMaker
 
 		getMethodLines.push '```http' + NEWLINE
 		if @jsonHash[:collectionOf]
-			httpSyntax = get_syntax('auto_get', top_restpath)
+			httpSyntax = get_syntax('auto_list', top_restpath, pathAppend)
 		else
-			httpSyntax = get_syntax('auto_list', top_restpath)			
+			httpSyntax = get_syntax('auto_get', top_restpath)			
 		end
 		getMethodLines.push httpSyntax.join("\n") + NEWLINE
 		getMethodLines.push  '```' + NEWLINE
@@ -484,7 +486,8 @@ module SpecMaker
 
 		#Example
 		if @jsonHash[:collectionOf] 
-			example_lines = gen_example("auto_list")
+			
+			example_lines = gen_example("auto_list", nil, pathAppend)
 		else
 			example_lines = gen_example("auto_get")
 		end
@@ -497,8 +500,14 @@ module SpecMaker
 		getMethodLines.push get_json_page_annotation(realHeader)
 
 		fileName = @jsonHash[:collectionOf] ? "#{@jsonHash[:collectionOf].downcase}_list.md" : "#{@jsonHash[:name].downcase}_get.md"			
-		
-		outfile = MARKDOWN_API_FOLDER + fileName
+		if filenameOverride
+			outfile = MARKDOWN_API_FOLDER + filenameOverride
+		else
+			outfile = MARKDOWN_API_FOLDER + fileName			
+		end
+		# if File.exists?(outfile)
+		# 	puts "*-----> List file #{outfile} already exists."
+		# end
 		file=File.new(outfile,'w')
 		getMethodLines.each do |line|
 			file.write line
@@ -512,7 +521,7 @@ module SpecMaker
 		# Header and description	
 		
 		if @jsonHash[:updateDescription].empty?
-			h1name = "Update the properties of #{@jsonHash[:name].downcase} object."
+			h1name = "Update #{@jsonHash[:name].downcase}"
 		else
 			h1name = "#{@jsonHash[:updateDescription]}"
 		end
@@ -591,13 +600,15 @@ module SpecMaker
 		@mdlines = []
 		isPost = nil
 		@jsonHash = JSON.parse(item, {:symbolize_names => true})
+
+		if @jsonHash[:isEntitySet] 
+			@ientityset = @ientityset + 1
+			@serviceroot.push @jsonHash 
+			return 
+		end
 		
 		# Obtain the resource name. 
 		@resource = @jsonHash[:name]
-		# if @jsonHash[:isEntitySet] 
-		# 	@ientityset = @ientityset + 1
-		# 	return 
-		# end
 		puts "--> #{@resource}"
 
 		propreties = @jsonHash[:properties]
@@ -688,7 +699,7 @@ module SpecMaker
 		end
 		# Add method table. 
 		if !@jsonHash[:isComplexType]
-			@mdlines.push NEWLINE + HEADER3 + 'Tasks' + NEWLINE
+			@mdlines.push NEWLINE + HEADER3 + 'Methods' + NEWLINE
 
 			if isMethod || isProperty || isPost || @jsonHash[:allowDelete]
 				@mdlines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
@@ -747,39 +758,28 @@ module SpecMaker
 							mtd[:httpSuccessCode] = '201'
 						    create_method_mdfile(mtd, "#{@jsonHash[:name].downcase}_post_#{prop[:name].downcase}.md", prop[:name])
 						end
+
+						# Add List method.
+						if !SIMPLETYPES.include? prop[:dataType]
+							#filename = "#{prop[:dataType].downcase}_list.md"
+
+							filename = "#{@jsonHash[:name]}_list_#{prop[:name]}.md".downcase
+							listLink = "../api/#{filename}"
+
+							# puts "$----> #{filename} #{@jsonHash[:name]},, #{prop[:name]}"
+							@mdlines.push "|[List #{prop[:name]}](#{listLink}) |#{returnLink} collection| Get a #{useName} object collection.|" + NEWLINE
+							saveJsonHash = deep_copy @jsonHash
+							@jsonHash[:name] = prop[:name]
+							@jsonHash[:collectionOf] = prop[:dataType]							
+							create_get_method(prop[:name], filename)
+							@jsonHash = deep_copy saveJsonHash
+							@list_from_rel = @list_from_rel + 1
+						end
+
 					end
 				end			
 			end
-
-			# Add create method for collections
-			if @jsonHash[:isEntitySet] && @jsonHash[:collectionOf]
-				useName = @jsonHash[:collectionOf]					
-				postName = "Create " + useName
-				filename = "#{@jsonHash[:collectionOf].downcase}_post_#{@jsonHash[:name].downcase}.md"
-				postLink = "../api/#{@jsonHash[:collectionOf].downcase}_post_#{@jsonHash[:name].downcase}.md"					
-				returnLink = "[" + @jsonHash[:collectionOf]	 + "](" + @jsonHash[:collectionOf].downcase + ".md)"
-
-				@mdlines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{@jsonHash[:name] } collection.|" + NEWLINE				
-
-				if File.exists?("#{MARKDOWN_API_FOLDER}/filename")
-					puts "EntitySet POST create file already exists!"
-				else
-					mtd = deep_copy(@struct[:method]) 
-					mtd[:name] = 'auto_post'
-					mtd[:displayName] = postName
-					mtd[:returnType] = @jsonHash[:collectionOf]
-					createDescription = get_create_description(@jsonHash[:collectionOf])
-					if createDescription.empty?
-						mtd[:description] = "Use this API to create a new #{useName}."
-					else
-						mtd[:description] = createDescription
-					end
-					mtd[:parameters] = nil					
-					mtd[:httpSuccessCode] = '201'
-				    create_method_mdfile(mtd, filename)
-				end
-			end
-			# end			
+			
 
 			if patchable
 				returnLink = "[" + @jsonHash[:name] + "](" + @jsonHash[:name].downcase + ".md)"			
@@ -798,7 +798,7 @@ module SpecMaker
 			if @jsonHash[:allowDelete]
 				@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | None |Delete #{@jsonHash[:name]} object. |" + NEWLINE
 				mtd = deep_copy(@struct[:method]) 
-				mtd[:displayName] = 'Delete'
+				mtd[:displayName] = "Delete #{@jsonHash[:name]}"
 				mtd[:name] = 'auto_delete'
 				
 				if @jsonHash[:deleteDescription].empty?
@@ -849,6 +849,57 @@ module SpecMaker
 
 	end
 
+	def self.create_service_root
+		service_lines = []
+
+		service_lines.push HEADER1 + 'Service root' + TWONEWLINES
+		service_lines.push NEWLINE + HEADER3 + 'Methods' + NEWLINE
+		service_lines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
+
+		@serviceroot.each do |item|			
+			if item[:collectionOf]
+				useName = item[:collectionOf]					
+				postName = "Create " + useName
+				filename = "#{item[:collectionOf].downcase}_post_#{item[:name].downcase}.md"
+				postLink = "../api/#{item[:collectionOf].downcase}_post_#{item[:name].downcase}.md"					
+				returnLink = "[" + item[:collectionOf]	 + "](" + item[:collectionOf].downcase + ".md)"
+				service_lines.push "|[#{postName}](#{postLink}) |#{returnLink}| Create a new #{useName} by posting to the #{item[:name] } collection.|" + NEWLINE				
+				if File.exists?("#{MARKDOWN_API_FOLDER}/filename")
+					puts "EntitySet POST create file already exists!"
+				else
+					mtd = deep_copy(@struct[:method]) 
+					mtd[:name] = 'auto_post'
+					mtd[:displayName] = postName
+					mtd[:returnType] = item[:collectionOf]
+					createDescription = get_create_description(item[:collectionOf])
+					if createDescription.empty?
+						mtd[:description] = "Use this API to create a new #{useName}."
+					else
+						mtd[:description] = createDescription
+					end
+					mtd[:parameters] = nil					
+					mtd[:httpSuccessCode] = '201'
+				    create_method_mdfile(mtd, filename)
+				end
+			end
+			if item[:collectionOf]
+				returnLink = "[" + item[:collectionOf] + "](" + item[:collectionOf].downcase + ".md)"								
+				service_lines.push "|[List #{item[:collectionOf]}](../api/#{item[:collectionOf].downcase}_list.md) | #{returnLink} collection |Get #{uncapitalize item[:collectionOf]} object collection. |" + NEWLINE
+				@jsonHash = item			
+				create_get_method
+			end
+		end
+
+		service_lines.push NEWLINE + uuid_date + NEWLINE
+		service_lines.push get_json_page_annotation("Service root")
+		outfile = MARKDOWN_RESOURCE_FOLDER + 'service_root.md'
+		file=File.new(outfile,'w')
+		service_lines.each do |line|
+			file.write line
+		end
+		
+	end
+
 	##### 
 	# Main loop. Process each JSON files.
 	# 
@@ -863,6 +914,8 @@ module SpecMaker
 			processed_files = processed_files + 1
 		end
 	end
+	create_service_root
+	## 
 
 	puts ""
 	puts "*** OK. Processed #{processed_files} input files. Check #{File.expand_path(LOG_FOLDER)} folder for results. ***"
@@ -870,5 +923,6 @@ module SpecMaker
 	puts "*** @get_list_files_created #{@get_list_files_created} "
 	puts "*** @patch_files_created #{@patch_files_created}"
 	puts "*** @method_files_created #{@method_files_created}"
+	puts "*** @list_from_relationships #{@list_from_rel}"
 	puts "*** @ientityset #{@ientityset}"
 end

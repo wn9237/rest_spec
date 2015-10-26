@@ -1,4 +1,4 @@
-# Update the properties of calendar object.
+# Update calendar
 
 Update the properties of calendar object.
 ### Prerequisites
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_calendar"
 }-->
 ```http
-PUT /users/<objectId>/Calendar
+PUT https://graph.microsoft.com/v1.0/users/<objectId>/Calendar
 Content-type: application/json
 Content-length: 106
 
@@ -65,11 +65,11 @@ Content-length: 106
 }
 ```
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update the properties of calendar object.",
+  "description": "Update calendar",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

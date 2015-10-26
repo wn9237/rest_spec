@@ -56,9 +56,9 @@ Here is a JSON representation of the resource
 |parentNotebook|[Notebook](notebook.md)|A page in a OneNote section  Read-only.|
 |parentSection|[Section](section.md)| Read-only.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Page](../api/page_get.md) | [Page](page.md) |Read properties and relationships of page object.|
 |[Update](../api/page_update.md) | [Page](page.md)	|Update Page object. |
@@ -67,8 +67,8 @@ Here is a JSON representation of the resource
 |[Patchcontent](../api/page_patchcontent.md)|None||
 |[Thumbnail](../api/page_thumbnail.md)|Stream||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Page resource",

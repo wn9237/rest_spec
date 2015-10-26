@@ -70,23 +70,27 @@ Here is a JSON representation of the resource
 |ownedObjects|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |owners|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get DirectoryRole](../api/directoryrole_get.md) | [DirectoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
 |[Create memberOf](../api/directoryrole_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[List memberOf](../api/directoryrole_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
 |[Create member](../api/directoryrole_post_members.md) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
+|[List members](../api/directoryrole_list_members.md) |[DirectoryObject](directoryobject.md) collection| Get a member object collection.|
 |[Create ownedObject](../api/directoryrole_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
+|[List ownedObjects](../api/directoryrole_list_ownedobjects.md) |[DirectoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
 |[Create owner](../api/directoryrole_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owners](../api/directoryrole_list_owners.md) |[DirectoryObject](directoryobject.md) collection| Get a owner object collection.|
 |[Update](../api/directoryrole_update.md) | [DirectoryRole](directoryrole.md)	|Update DirectoryRole object. |
 |[Delete](../api/directoryrole_delete.md) | None |Delete DirectoryRole object. |
 |[Checkmembergroups](../api/directoryrole_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/directoryrole_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/directoryrole_getmemberobjects.md)|String collection||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "DirectoryRole resource",

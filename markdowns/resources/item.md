@@ -150,15 +150,19 @@ Here is a JSON representation of the resource
 |thumbnails|[thumbnailSet](thumbnailset.md) collection|Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../items/thumbnails.md). Read-only. Nullable.|
 |versions|[item](item.md) collection| Read-only. Nullable.|
 
-### Tasks
+### Methods
 
-| Task		   | Return Type	|Description|
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get item](../api/item_get.md) | [item](item.md) |Read properties and relationships of item object.|
 |[Create children](../api/item_post_children.md) |[item](item.md)| Create a new children by posting to the children collection.|
+|[List children](../api/item_list_children.md) |[item](item.md) collection| Get a children object collection.|
 |[Create permission](../api/item_post_permissions.md) |[permission](permission.md)| Create a new permission by posting to the permissions collection.|
+|[List permissions](../api/item_list_permissions.md) |[permission](permission.md) collection| Get a permission object collection.|
 |[Create thumbnailSet](../api/item_post_thumbnails.md) |[thumbnailSet](thumbnailset.md)| Create a new thumbnailSet by posting to the thumbnails collection.|
+|[List thumbnails](../api/item_list_thumbnails.md) |[thumbnailSet](thumbnailset.md) collection| Get a thumbnailSet object collection.|
 |[Create version](../api/item_post_versions.md) |[item](item.md)| Create a new version by posting to the versions collection.|
+|[List versions](../api/item_list_versions.md) |[item](item.md) collection| Get a version object collection.|
 |[Update](../api/item_update.md) | [item](item.md)	|Update item object. |
 |[Delete](../api/item_delete.md) | None |Delete item object. |
 |[Allphotos](../api/item_allphotos.md)|[item](item.md) collection||
@@ -169,8 +173,8 @@ Here is a JSON representation of the resource
 |[Invite](../api/item_invite.md)|[permission](permission.md) collection||
 |[Search](../api/item_search.md)|[item](item.md) collection||
 
-<!-- uuid: 57e02da2-b862-4b2f-836a-c2a183fcf46b
-2015-10-21 09:49:44 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "item resource",
