@@ -1,4 +1,4 @@
-# List Conversation
+# List Conversations
 
 Retrieve a list of conversation objects.
 ### Prerequisites
@@ -74,7 +74,7 @@ Content-length: 262
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Conversation",
+  "description": "List Conversations",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

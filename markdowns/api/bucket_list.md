@@ -1,4 +1,4 @@
-# List Bucket
+# List buckets
 
 Retrieve a list of bucket objects.
 ### Prerequisites
@@ -71,7 +71,7 @@ Content-length: 236
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Bucket",
+  "description": "List buckets",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

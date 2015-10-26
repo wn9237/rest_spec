@@ -1,4 +1,4 @@
-# List permission
+# List permissions
 
 Retrieve a list of permission objects.
 ### Prerequisites
@@ -103,7 +103,7 @@ Content-length: 939
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List permission",
+  "description": "List permissions",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

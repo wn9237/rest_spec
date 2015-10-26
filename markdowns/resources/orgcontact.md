@@ -107,7 +107,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get OrgContact](../api/orgcontact_get.md) | [OrgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
 |[Create directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
-|[List directReport](../api/orgcontact_list_directreports.md) |[DirectoryObject](directoryobject.md) collection| Get a directReport object collection.|
+|[List directReports](../api/orgcontact_list_directreports.md) |[DirectoryObject](directoryobject.md) collection| Get a directReport object collection.|
 |[Create memberOf](../api/orgcontact_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
 |[List memberOf](../api/orgcontact_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
 |[Update](../api/orgcontact_update.md) | [OrgContact](orgcontact.md)	|Update OrgContact object. |

@@ -67,7 +67,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Section](../api/section_get.md) | [Section](section.md) |Read properties and relationships of section object.|
 |[Create Page](../api/section_post_pages.md) |[Page](page.md)| Create a new Page by posting to the pages collection.|
-|[List Page](../api/section_list_pages.md) |[Page](page.md) collection| Get a Page object collection.|
+|[List pages](../api/section_list_pages.md) |[Page](page.md) collection| Get a Page object collection.|
 |[Update](../api/section_update.md) | [Section](section.md)	|Update Section object. |
 |[Delete](../api/section_delete.md) | None |Delete Section object. |
 |[Copytonotebook](../api/section_copytonotebook.md)|[CopySectionModel](copysectionmodel.md)||

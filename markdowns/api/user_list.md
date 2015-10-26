@@ -1,4 +1,4 @@
-# List User
+# List users
 
 Retrieve a list of user objects.
 ### Prerequisites
@@ -156,7 +156,7 @@ Content-length: 3133
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List User",
+  "description": "List users",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

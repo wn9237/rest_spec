@@ -74,9 +74,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get SectionGroup](../api/sectiongroup_get.md) | [SectionGroup](sectiongroup.md) |Read properties and relationships of sectionGroup object.|
 |[Create SectionGroup](../api/sectiongroup_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a new SectionGroup by posting to the sectionGroups collection.|
-|[List SectionGroup](../api/sectiongroup_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a SectionGroup object collection.|
+|[List sectionGroups](../api/sectiongroup_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a SectionGroup object collection.|
 |[Create Section](../api/sectiongroup_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
-|[List Section](../api/sectiongroup_list_sections.md) |[Section](section.md) collection| Get a Section object collection.|
+|[List sections](../api/sectiongroup_list_sections.md) |[Section](section.md) collection| Get a Section object collection.|
 |[Update](../api/sectiongroup_update.md) | [SectionGroup](sectiongroup.md)	|Update SectionGroup object. |
 |[Delete](../api/sectiongroup_delete.md) | None |Delete SectionGroup object. |
 

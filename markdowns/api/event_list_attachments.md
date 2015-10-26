@@ -1,4 +1,4 @@
-# List Attachment
+# List Attachments
 
 Retrieve a list of attachment objects.
 ### Prerequisites
@@ -72,7 +72,7 @@ Content-length: 215
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Attachment",
+  "description": "List Attachments",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

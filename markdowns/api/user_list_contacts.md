@@ -1,4 +1,4 @@
-# List Contact
+# List Contacts
 
 Retrieve a list of contact objects.
 ### Prerequisites
@@ -137,7 +137,7 @@ Content-length: 2290
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Contact",
+  "description": "List Contacts",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

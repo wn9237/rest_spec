@@ -70,7 +70,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get drive](../api/drive_get.md) | [drive](drive.md) |Read properties and relationships of drive object.|
 |[Create item](../api/drive_post_items.md) |[item](item.md)| Create a new item by posting to the items collection.|
-|[List item](../api/drive_list_items.md) |[item](item.md) collection| Get a item object collection.|
+|[List items](../api/drive_list_items.md) |[item](item.md) collection| Get a item object collection.|
 |[Create shared](../api/drive_post_shared.md) |[item](item.md)| Create a new shared by posting to the shared collection.|
 |[List shared](../api/drive_list_shared.md) |[item](item.md) collection| Get a shared object collection.|
 |[Create special](../api/drive_post_special.md) |[item](item.md)| Create a new special by posting to the special collection.|

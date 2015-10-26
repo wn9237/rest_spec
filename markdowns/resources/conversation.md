@@ -53,7 +53,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Conversation](../api/conversation_get.md) | [Conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[Create Thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
-|[List Thread](../api/conversation_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a Thread object collection.|
+|[List Threads](../api/conversation_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a Thread object collection.|
 |[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
 |[Delete](../api/conversation_delete.md) | None |Delete Conversation object. |
 

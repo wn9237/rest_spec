@@ -1,4 +1,4 @@
-# List Message
+# List Messages
 
 Retrieve a list of message objects.
 ### Prerequisites
@@ -138,7 +138,7 @@ Content-length: 1863
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Message",
+  "description": "List Messages",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

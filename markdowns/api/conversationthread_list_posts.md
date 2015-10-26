@@ -1,4 +1,4 @@
-# List Post
+# List Posts
 
 Retrieve a list of post objects.
 ### Prerequisites
@@ -101,7 +101,7 @@ Content-length: 959
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Post",
+  "description": "List Posts",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

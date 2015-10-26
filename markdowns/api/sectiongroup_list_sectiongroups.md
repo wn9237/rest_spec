@@ -1,4 +1,4 @@
-# List SectionGroup
+# List sectionGroups
 
 Retrieve a list of sectiongroup objects.
 ### Prerequisites
@@ -75,7 +75,7 @@ Content-length: 374
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List SectionGroup",
+  "description": "List sectionGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

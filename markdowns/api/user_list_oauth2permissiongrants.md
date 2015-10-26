@@ -1,4 +1,4 @@
-# List OAuth2PermissionGrant
+# List oauth2PermissionGrants
 
 Retrieve a list of oauth2permissiongrant objects.
 ### Prerequisites
@@ -67,7 +67,7 @@ Content-length: 332
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List OAuth2PermissionGrant",
+  "description": "List oauth2PermissionGrants",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

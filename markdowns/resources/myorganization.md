@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get MyOrganization](../api/myorganization_get.md) | [MyOrganization](myorganization.md) |Read properties and relationships of myOrganization object.|
 |[Create SiteCollection](../api/myorganization_post_sitecollections.md) |[SiteCollection](sitecollection.md)| Create a new SiteCollection by posting to the siteCollections collection.|
-|[List SiteCollection](../api/myorganization_list_sitecollections.md) |[SiteCollection](sitecollection.md) collection| Get a SiteCollection object collection.|
+|[List siteCollections](../api/myorganization_list_sitecollections.md) |[SiteCollection](sitecollection.md) collection| Get a SiteCollection object collection.|
 |[Delete](../api/myorganization_delete.md) | None |Delete MyOrganization object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

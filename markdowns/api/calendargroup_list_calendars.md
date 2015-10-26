@@ -1,4 +1,4 @@
-# List Calendar
+# List Calendars
 
 Retrieve a list of calendar objects.
 ### Prerequisites
@@ -70,7 +70,7 @@ Content-length: 151
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Calendar",
+  "description": "List Calendars",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

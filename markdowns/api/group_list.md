@@ -1,4 +1,4 @@
-# List Group
+# List groups
 
 Retrieve a list of group objects.
 ### Prerequisites
@@ -94,7 +94,7 @@ Content-length: 1186
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Group",
+  "description": "List groups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

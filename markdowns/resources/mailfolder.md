@@ -54,9 +54,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get MailFolder](../api/mailfolder_get.md) | [MailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
 |[Create MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the ChildFolders collection.|
-|[List MailFolder](../api/mailfolder_list_childfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
+|[List ChildFolders](../api/mailfolder_list_childfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
 |[Create Message](../api/mailfolder_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
-|[List Message](../api/mailfolder_list_messages.md) |[Message](message.md) collection| Get a Message object collection.|
+|[List Messages](../api/mailfolder_list_messages.md) |[Message](message.md) collection| Get a Message object collection.|
 |[Update](../api/mailfolder_update.md) | [MailFolder](mailfolder.md)	|Update MailFolder object. |
 |[Delete](../api/mailfolder_delete.md) | None |Delete MailFolder object. |
 |[Copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
