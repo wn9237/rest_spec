@@ -1,4 +1,4 @@
-# Delete
+# Delete DirectoryObject
 
 Delete DirectoryObject.
 ### Prerequisites
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete",
+  "description": "Delete DirectoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

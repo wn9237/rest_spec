@@ -793,7 +793,7 @@ module SpecMaker
 			if @jsonHash[:allowDelete]
 				@mdlines.push "|[Delete](../api/#{@jsonHash[:name].downcase}_delete.md) | None |Delete #{@jsonHash[:name]} object. |" + NEWLINE
 				mtd = deep_copy(@struct[:method]) 
-				mtd[:displayName] = 'Delete'
+				mtd[:displayName] = "Delete #{@jsonHash[:name]}"
 				mtd[:name] = 'auto_delete'
 				
 				if @jsonHash[:deleteDescription].empty?
