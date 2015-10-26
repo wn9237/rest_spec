@@ -1,4 +1,4 @@
-# List Notebook
+# List notebooks
 
 Retrieve a list of notebook objects.
 ### Prerequisites
@@ -86,7 +86,7 @@ Content-length: 625
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Notebook",
+  "description": "List notebooks",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

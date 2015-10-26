@@ -85,9 +85,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Plan](../api/plan_get.md) | [Plan](plan.md) |Read properties and relationships of plan object.|
 |[Create Bucket](../api/plan_post_buckets.md) |[Bucket](bucket.md)| Create a new Bucket by posting to the buckets collection.|
-|[List Bucket](../api/plan_list_buckets.md) |[Bucket](bucket.md) collection| Get a Bucket object collection.|
+|[List buckets](../api/plan_list_buckets.md) |[Bucket](bucket.md) collection| Get a Bucket object collection.|
 |[Create Task](../api/plan_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[List Task](../api/plan_list_tasks.md) |[Task](task.md) collection| Get a Task object collection.|
+|[List tasks](../api/plan_list_tasks.md) |[Task](task.md) collection| Get a Task object collection.|
 |[Update](../api/plan_update.md) | [Plan](plan.md)	|Update Plan object. |
 |[Delete](../api/plan_delete.md) | None |Delete Plan object. |
 

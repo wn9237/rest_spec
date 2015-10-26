@@ -1,4 +1,4 @@
-# List DeviceConfiguration
+# List deviceConfiguration
 
 Retrieve a list of deviceconfiguration objects.
 ### Prerequisites
@@ -68,7 +68,7 @@ Content-length: 414
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List DeviceConfiguration",
+  "description": "List deviceConfiguration",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

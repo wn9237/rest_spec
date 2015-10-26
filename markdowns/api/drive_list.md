@@ -1,4 +1,4 @@
-# List drive
+# List drives
 
 Retrieve a list of drive objects.
 ### Prerequisites
@@ -87,7 +87,7 @@ Content-length: 579
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List drive",
+  "description": "List drives",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

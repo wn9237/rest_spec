@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get SiteCollection](../api/sitecollection_get.md) | [SiteCollection](sitecollection.md) |Read properties and relationships of siteCollection object.|
 |[Create Site](../api/sitecollection_post_sites.md) |[Site](site.md)| Create a new Site by posting to the sites collection.|
-|[List Site](../api/sitecollection_list_sites.md) |[Site](site.md) collection| Get a Site object collection.|
+|[List sites](../api/sitecollection_list_sites.md) |[Site](site.md) collection| Get a Site object collection.|
 |[Delete](../api/sitecollection_delete.md) | None |Delete SiteCollection object. |
 |[Fromurl](../api/sitecollection_fromurl.md)|[SiteMetadata](sitemetadata.md)||
 

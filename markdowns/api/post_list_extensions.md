@@ -1,4 +1,4 @@
-# List Extension
+# List Extensions
 
 Retrieve a list of extension objects.
 ### Prerequisites
@@ -67,7 +67,7 @@ Content-length: 55
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Extension",
+  "description": "List Extensions",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

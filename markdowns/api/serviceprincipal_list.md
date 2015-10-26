@@ -1,4 +1,4 @@
-# List ServicePrincipal
+# List servicePrincipals
 
 Retrieve a list of serviceprincipal objects.
 ### Prerequisites
@@ -125,7 +125,7 @@ Content-length: 2243
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List ServicePrincipal",
+  "description": "List servicePrincipals",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

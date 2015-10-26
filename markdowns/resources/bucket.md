@@ -53,7 +53,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Bucket](../api/bucket_get.md) | [Bucket](bucket.md) |Read properties and relationships of bucket object.|
 |[Create Task](../api/bucket_post_tasks.md) |[Task](task.md)| Create a new Task by posting to the tasks collection.|
-|[List Task](../api/bucket_list_tasks.md) |[Task](task.md) collection| Get a Task object collection.|
+|[List tasks](../api/bucket_list_tasks.md) |[Task](task.md) collection| Get a Task object collection.|
 |[Update](../api/bucket_update.md) | [Bucket](bucket.md)	|Update Bucket object. |
 |[Delete](../api/bucket_delete.md) | None |Delete Bucket object. |
 

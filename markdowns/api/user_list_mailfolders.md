@@ -1,4 +1,4 @@
-# List MailFolder
+# List MailFolders
 
 Retrieve a list of mailfolder objects.
 ### Prerequisites
@@ -70,7 +70,7 @@ Content-length: 175
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List MailFolder",
+  "description": "List MailFolders",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

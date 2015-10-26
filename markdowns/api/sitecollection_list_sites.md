@@ -1,4 +1,4 @@
-# List Site
+# List sites
 
 Retrieve a list of site objects.
 ### Prerequisites
@@ -65,7 +65,7 @@ Content-length: 55
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Site",
+  "description": "List sites",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

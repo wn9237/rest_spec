@@ -67,7 +67,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ConversationThread](../api/conversationthread_get.md) | [ConversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
 |[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
-|[List Post](../api/conversationthread_list_posts.md) |[Post](post.md) collection| Get a Post object collection.|
+|[List Posts](../api/conversationthread_list_posts.md) |[Post](post.md) collection| Get a Post object collection.|
 |[Update](../api/conversationthread_update.md) | [ConversationThread](conversationthread.md)	|Update ConversationThread object. |
 |[Delete](../api/conversationthread_delete.md) | None |Delete ConversationThread object. |
 |[Reply](../api/conversationthread_reply.md)|None||

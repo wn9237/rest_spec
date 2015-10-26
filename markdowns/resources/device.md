@@ -84,9 +84,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Device](../api/device_get.md) | [Device](device.md) |Read properties and relationships of device object.|
 |[Create registeredOwner](../api/device_post_registeredowners.md) |[DirectoryObject](directoryobject.md)| Create a new registeredOwner by posting to the registeredOwners collection.|
-|[List registeredOwner](../api/device_list_registeredowners.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredOwner object collection.|
+|[List registeredOwners](../api/device_list_registeredowners.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredOwner object collection.|
 |[Create registeredUser](../api/device_post_registeredusers.md) |[DirectoryObject](directoryobject.md)| Create a new registeredUser by posting to the registeredUsers collection.|
-|[List registeredUser](../api/device_list_registeredusers.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredUser object collection.|
+|[List registeredUsers](../api/device_list_registeredusers.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredUser object collection.|
 |[Update](../api/device_update.md) | [Device](device.md)	|Update Device object. |
 |[Delete](../api/device_delete.md) | None |Delete Device object. |
 |[Checkmembergroups](../api/device_checkmembergroups.md)|String collection||

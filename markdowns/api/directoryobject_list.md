@@ -1,4 +1,4 @@
-# List DirectoryObject
+# List directoryObjects
 
 Retrieve a list of directoryobject objects.
 ### Prerequisites
@@ -60,7 +60,7 @@ Content-length: 152
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List DirectoryObject",
+  "description": "List directoryObjects",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
