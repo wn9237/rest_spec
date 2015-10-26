@@ -1,4 +1,4 @@
-# List memberOf
+# List DirectoryObject
 
 Retrieve a list of directoryobject objects.
 ### Prerequisites
@@ -62,7 +62,7 @@ Content-length: 152
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List memberOf",
+  "description": "List DirectoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# List tenantDetails
+# List TenantDetail
 
 Retrieve a list of tenantdetail objects.
 ### Prerequisites
@@ -116,7 +116,7 @@ Content-length: 1912
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List tenantDetails",
+  "description": "List TenantDetail",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

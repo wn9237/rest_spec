@@ -52,9 +52,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get ContactFolder](../api/contactfolder_get.md) | [ContactFolder](contactfolder.md) |Read properties and relationships of contactFolder object.|
 |[Create ContactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the ChildFolders collection.|
-|[List ChildFolders](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| Get a ContactFolder object collection.|
+|[List ContactFolder](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| Get a ContactFolder object collection.|
 |[Create Contact](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the Contacts collection.|
-|[List Contacts](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|
+|[List Contact](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|
 |[Update](../api/contactfolder_update.md) | [ContactFolder](contactfolder.md)	|Update ContactFolder object. |
 |[Delete](../api/contactfolder_delete.md) | None |Delete ContactFolder object. |
 

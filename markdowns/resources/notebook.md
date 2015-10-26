@@ -74,9 +74,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Notebook](../api/notebook_get.md) | [Notebook](notebook.md) |Read properties and relationships of notebook object.|
 |[Create SectionGroup](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a new SectionGroup by posting to the sectionGroups collection.|
-|[List sectionGroups](../api/notebook_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a SectionGroup object collection.|
+|[List SectionGroup](../api/notebook_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a SectionGroup object collection.|
 |[Create Section](../api/notebook_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
-|[List sections](../api/notebook_list_sections.md) |[Section](section.md) collection| Get a Section object collection.|
+|[List Section](../api/notebook_list_sections.md) |[Section](section.md) collection| Get a Section object collection.|
 |[Update](../api/notebook_update.md) | [Notebook](notebook.md)	|Update Notebook object. |
 |[Delete](../api/notebook_delete.md) | None |Delete Notebook object. |
 |[Copynotebook](../api/notebook_copynotebook.md)|[CopyNotebookModel](copynotebookmodel.md)||

@@ -1,4 +1,4 @@
-# List siteCollections
+# List SiteCollection
 
 Retrieve a list of sitecollection objects.
 ### Prerequisites
@@ -65,7 +65,7 @@ Content-length: 55
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List siteCollections",
+  "description": "List SiteCollection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

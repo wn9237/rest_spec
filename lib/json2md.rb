@@ -381,7 +381,7 @@ module SpecMaker
 	def self.create_get_method(pathAppend = nil, filenameOverride = nil)
 		getMethodLines = []
 		# Header and description
-		realHeader = @jsonHash[:collectionOf] ? ('List ' + @jsonHash[:name]) : ('Get ' + @jsonHash[:name])
+		realHeader = @jsonHash[:collectionOf] ? ('List ' + @jsonHash[:collectionOf]) : ('Get ' + @jsonHash[:name])
 		getMethodLines.push HEADER1 + realHeader + TWONEWLINES
 
 		if @jsonHash[:collectionOf] 
@@ -762,7 +762,7 @@ module SpecMaker
 							listLink = "../api/#{filename}"
 
 							# puts "$----> #{filename} #{@jsonHash[:name]},, #{prop[:name]}"
-							@mdlines.push "|[List #{prop[:name]}](#{listLink}) |#{returnLink} collection| Get a #{useName} object collection.|" + NEWLINE
+							@mdlines.push "|[List #{useName}](#{listLink}) |#{returnLink} collection| Get a #{useName} object collection.|" + NEWLINE
 							saveJsonHash = deep_copy @jsonHash
 							@jsonHash[:name] = prop[:name]
 							@jsonHash[:collectionOf] = prop[:dataType]							

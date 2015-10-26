@@ -1,4 +1,4 @@
-# List subscribedSkus
+# List SubscribedSku
 
 Retrieve a list of subscribedsku objects.
 ### Prerequisites
@@ -73,7 +73,7 @@ Content-length: 481
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List subscribedSkus",
+  "description": "List SubscribedSku",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

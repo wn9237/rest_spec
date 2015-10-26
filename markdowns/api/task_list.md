@@ -1,4 +1,4 @@
-# List tasks
+# List Task
 
 Retrieve a list of task objects.
 ### Prerequisites
@@ -85,7 +85,7 @@ Content-length: 754
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List tasks",
+  "description": "List Task",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

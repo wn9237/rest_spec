@@ -140,7 +140,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Contact](../api/contact_get.md) | [Contact](contact.md) |Read properties and relationships of contact object.|
 |[Create Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extensions](../api/contact_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
+|[List Extension](../api/contact_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete Contact object. |
 

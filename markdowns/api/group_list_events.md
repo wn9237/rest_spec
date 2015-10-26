@@ -1,4 +1,4 @@
-# List Events
+# List Event
 
 Retrieve a list of event objects.
 ### Prerequisites
@@ -143,7 +143,7 @@ Content-length: 2149
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Events",
+  "description": "List Event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

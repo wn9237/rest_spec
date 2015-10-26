@@ -1,4 +1,4 @@
-# List resources
+# List Resource
 
 Retrieve a list of resource objects.
 ### Prerequisites
@@ -70,7 +70,7 @@ Content-length: 157
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List resources",
+  "description": "List Resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

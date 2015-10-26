@@ -1,4 +1,4 @@
-# List pages
+# List Page
 
 Retrieve a list of page objects.
 ### Prerequisites
@@ -82,7 +82,7 @@ Content-length: 484
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List pages",
+  "description": "List Page",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

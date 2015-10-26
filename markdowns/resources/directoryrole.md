@@ -78,11 +78,11 @@ Here is a JSON representation of the resource
 |[Create memberOf](../api/directoryrole_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
 |[List memberOf](../api/directoryrole_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
 |[Create member](../api/directoryrole_post_members.md) |[DirectoryObject](directoryobject.md)| Create a new member by posting to the members collection.|
-|[List members](../api/directoryrole_list_members.md) |[DirectoryObject](directoryobject.md) collection| Get a member object collection.|
+|[List member](../api/directoryrole_list_members.md) |[DirectoryObject](directoryobject.md) collection| Get a member object collection.|
 |[Create ownedObject](../api/directoryrole_post_ownedobjects.md) |[DirectoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
-|[List ownedObjects](../api/directoryrole_list_ownedobjects.md) |[DirectoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
+|[List ownedObject](../api/directoryrole_list_ownedobjects.md) |[DirectoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
 |[Create owner](../api/directoryrole_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[List owners](../api/directoryrole_list_owners.md) |[DirectoryObject](directoryobject.md) collection| Get a owner object collection.|
+|[List owner](../api/directoryrole_list_owners.md) |[DirectoryObject](directoryobject.md) collection| Get a owner object collection.|
 |[Update](../api/directoryrole_update.md) | [DirectoryRole](directoryrole.md)	|Update DirectoryRole object. |
 |[Delete](../api/directoryrole_delete.md) | None |Delete DirectoryRole object. |
 |[Checkmembergroups](../api/directoryrole_checkmembergroups.md)|String collection||

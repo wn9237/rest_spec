@@ -1,4 +1,4 @@
-# List TrendingAround
+# List File
 
 Retrieve a list of file objects.
 ### Prerequisites
@@ -66,7 +66,7 @@ Content-length: 32
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List TrendingAround",
+  "description": "List File",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

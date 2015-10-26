@@ -1,4 +1,4 @@
-# List special
+# List item
 
 Retrieve a list of item objects.
 ### Prerequisites
@@ -205,7 +205,7 @@ Content-length: 3635
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List special",
+  "description": "List item",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

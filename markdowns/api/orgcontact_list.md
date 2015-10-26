@@ -1,4 +1,4 @@
-# List contacts
+# List OrgContact
 
 Retrieve a list of orgcontact objects.
 ### Prerequisites
@@ -91,7 +91,7 @@ Content-length: 1262
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List contacts",
+  "description": "List OrgContact",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

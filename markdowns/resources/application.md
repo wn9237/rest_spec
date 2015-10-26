@@ -125,9 +125,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Application](../api/application_get.md) | [Application](application.md) |Read properties and relationships of application object.|
 |[Create ExtensionProperty](../api/application_post_extensionproperties.md) |[ExtensionProperty](extensionproperty.md)| Create a new ExtensionProperty by posting to the extensionProperties collection.|
-|[List extensionProperties](../api/application_list_extensionproperties.md) |[ExtensionProperty](extensionproperty.md) collection| Get a ExtensionProperty object collection.|
+|[List ExtensionProperty](../api/application_list_extensionproperties.md) |[ExtensionProperty](extensionproperty.md) collection| Get a ExtensionProperty object collection.|
 |[Create owner](../api/application_post_owners.md) |[DirectoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[List owners](../api/application_list_owners.md) |[DirectoryObject](directoryobject.md) collection| Get a owner object collection.|
+|[List owner](../api/application_list_owners.md) |[DirectoryObject](directoryobject.md) collection| Get a owner object collection.|
 |[Update](../api/application_update.md) | [Application](application.md)	|Update Application object. |
 |[Delete](../api/application_delete.md) | None |Delete Application object. |
 |[Checkmembergroups](../api/application_checkmembergroups.md)|String collection||

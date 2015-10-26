@@ -1,4 +1,4 @@
-# List ChildFolders
+# List ContactFolder
 
 Retrieve a list of contactfolder objects.
 ### Prerequisites
@@ -69,7 +69,7 @@ Content-length: 145
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List ChildFolders",
+  "description": "List ContactFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

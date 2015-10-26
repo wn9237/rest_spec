@@ -158,11 +158,11 @@ Here is a JSON representation of the resource
 |[Create children](../api/item_post_children.md) |[item](item.md)| Create a new children by posting to the children collection.|
 |[List children](../api/item_list_children.md) |[item](item.md) collection| Get a children object collection.|
 |[Create permission](../api/item_post_permissions.md) |[permission](permission.md)| Create a new permission by posting to the permissions collection.|
-|[List permissions](../api/item_list_permissions.md) |[permission](permission.md) collection| Get a permission object collection.|
+|[List permission](../api/item_list_permissions.md) |[permission](permission.md) collection| Get a permission object collection.|
 |[Create thumbnailSet](../api/item_post_thumbnails.md) |[thumbnailSet](thumbnailset.md)| Create a new thumbnailSet by posting to the thumbnails collection.|
-|[List thumbnails](../api/item_list_thumbnails.md) |[thumbnailSet](thumbnailset.md) collection| Get a thumbnailSet object collection.|
+|[List thumbnailSet](../api/item_list_thumbnails.md) |[thumbnailSet](thumbnailset.md) collection| Get a thumbnailSet object collection.|
 |[Create version](../api/item_post_versions.md) |[item](item.md)| Create a new version by posting to the versions collection.|
-|[List versions](../api/item_list_versions.md) |[item](item.md) collection| Get a version object collection.|
+|[List version](../api/item_list_versions.md) |[item](item.md) collection| Get a version object collection.|
 |[Update](../api/item_update.md) | [item](item.md)	|Update item object. |
 |[Delete](../api/item_delete.md) | None |Delete item object. |
 |[Allphotos](../api/item_allphotos.md)|[item](item.md) collection||

@@ -1,4 +1,4 @@
-# List applications
+# List Application
 
 Retrieve a list of application objects.
 ### Prerequisites
@@ -137,7 +137,7 @@ Content-length: 2499
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List applications",
+  "description": "List Application",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# List extensionProperties
+# List ExtensionProperty
 
 Retrieve a list of extensionproperty objects.
 ### Prerequisites
@@ -67,7 +67,7 @@ Content-length: 366
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List extensionProperties",
+  "description": "List ExtensionProperty",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# List plans
+# List Plan
 
 Retrieve a list of plan objects.
 ### Prerequisites
@@ -71,7 +71,7 @@ Content-length: 236
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List plans",
+  "description": "List Plan",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

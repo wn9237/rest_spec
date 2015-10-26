@@ -134,11 +134,11 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Event](../api/event_get.md) | [Event](event.md) |Read properties and relationships of event object.|
 |[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
-|[List Attachments](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[List Attachment](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
 |[Create Extension](../api/event_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extensions](../api/event_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
+|[List Extension](../api/event_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Create Event](../api/event_post_instances.md) |[Event](event.md)| Create a new Event by posting to the Instances collection.|
-|[List Instances](../api/event_list_instances.md) |[Event](event.md) collection| Get a Event object collection.|
+|[List Event](../api/event_list_instances.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Update](../api/event_update.md) | [Event](event.md)	|Update Event object. |
 |[Delete](../api/event_delete.md) | None |Delete Event object. |
 |[Accept](../api/event_accept.md)|None||

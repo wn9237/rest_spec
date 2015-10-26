@@ -1,4 +1,4 @@
-# List directoryRoles
+# List DirectoryRole
 
 Retrieve a list of directoryrole objects.
 ### Prerequisites
@@ -65,7 +65,7 @@ Content-length: 336
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List directoryRoles",
+  "description": "List DirectoryRole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

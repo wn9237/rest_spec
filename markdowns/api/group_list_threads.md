@@ -1,4 +1,4 @@
-# List Threads
+# List ConversationThread
 
 Retrieve a list of conversationthread objects.
 ### Prerequisites
@@ -91,7 +91,7 @@ Content-length: 618
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Threads",
+  "description": "List ConversationThread",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

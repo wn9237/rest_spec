@@ -1,4 +1,4 @@
-# List devices
+# List Device
 
 Retrieve a list of device objects.
 ### Prerequisites
@@ -81,7 +81,7 @@ Content-length: 857
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List devices",
+  "description": "List Device",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

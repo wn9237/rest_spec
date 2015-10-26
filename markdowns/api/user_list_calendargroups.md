@@ -1,4 +1,4 @@
-# List CalendarGroups
+# List CalendarGroup
 
 Retrieve a list of calendargroup objects.
 ### Prerequisites
@@ -70,7 +70,7 @@ Content-length: 155
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List CalendarGroups",
+  "description": "List CalendarGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

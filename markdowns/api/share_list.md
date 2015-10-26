@@ -1,4 +1,4 @@
-# List shares
+# List share
 
 Retrieve a list of share objects.
 ### Prerequisites
@@ -80,7 +80,7 @@ Content-length: 423
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List shares",
+  "description": "List share",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

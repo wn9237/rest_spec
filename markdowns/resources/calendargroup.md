@@ -47,7 +47,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get CalendarGroup](../api/calendargroup_get.md) | [CalendarGroup](calendargroup.md) |Read properties and relationships of calendarGroup object.|
 |[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the Calendars collection.|
-|[List Calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
+|[List Calendar](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
 |[Update](../api/calendargroup_update.md) | [CalendarGroup](calendargroup.md)	|Update CalendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | None |Delete CalendarGroup object. |
 

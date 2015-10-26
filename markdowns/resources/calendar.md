@@ -54,9 +54,9 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get Calendar](../api/calendar_get.md) | [Calendar](calendar.md) |Read properties and relationships of calendar object.|
 |[Create Event](../api/calendar_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the CalendarView collection.|
-|[List CalendarView](../api/calendar_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
+|[List Event](../api/calendar_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Create Event](../api/calendar_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
-|[List Events](../api/calendar_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
+|[List Event](../api/calendar_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Update](../api/calendar_update.md) | [Calendar](calendar.md)	|Update Calendar object. |
 |[Delete](../api/calendar_delete.md) | None |Delete Calendar object. |
 
