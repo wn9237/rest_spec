@@ -1,6 +1,6 @@
 {
   "name": "RecurrenceRange",
-  "description": "",
+  "description": "The duration of an event.",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "Type",
-      "description": "",
+      "description": "The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "StartDate",
-      "description": "",
+      "description": "The start date of the series.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -56,7 +55,7 @@
     },
     {
       "name": "EndDate",
-      "description": "",
+      "description": "The end date of the series.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -70,7 +69,7 @@
     },
     {
       "name": "NumberOfOccurrences",
-      "description": "",
+      "description": "How many times to repeat the event.",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -83,7 +82,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

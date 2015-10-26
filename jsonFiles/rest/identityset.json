@@ -1,6 +1,6 @@
 {
   "name": "identitySet",
-  "description": "",
+  "description": "The IdentitySet type is a keyed collection of [Identity](identity.md) objects.\r It is used to represent a set of identities associated with various events for an item, such as\r _created by_ or _last modified by_.\r \r ",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "application",
-      "description": "",
+      "description": "An Identity resource that represents the application.",
       "isKey": false,
       "dataType": "identity",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "device",
-      "description": "",
+      "description": "An Identity resource that represents the device.",
       "isKey": false,
       "dataType": "identity",
       "isReadOnly": false,
@@ -56,7 +55,7 @@
     },
     {
       "name": "user",
-      "description": "",
+      "description": "An Identity resource that represents a user.",
       "isKey": false,
       "dataType": "identity",
       "isReadOnly": false,
@@ -69,7 +68,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

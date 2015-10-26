@@ -1,6 +1,6 @@
 {
   "name": "Calendar",
-  "description": "",
+  "description": "A calendar which is a container for events.",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -149,7 +149,7 @@
   "properties": [
     {
       "name": "Name",
-      "description": "",
+      "description": "The calendar name.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -163,7 +163,7 @@
     },
     {
       "name": "ChangeKey",
-      "description": "",
+      "description": "Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -177,7 +177,7 @@
     },
     {
       "name": "Color",
-      "description": "",
+      "description": "Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1 ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -191,7 +191,7 @@
     },
     {
       "name": "Id",
-      "description": "",
+      "description": "The group's unique identifier.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -205,7 +205,7 @@
     },
     {
       "name": "CalendarView",
-      "description": "",
+      "description": "The calendar view for the calendar. Navigation property.",
       "isKey": false,
       "dataType": "Event",
       "isReadOnly": true,
@@ -219,7 +219,7 @@
     },
     {
       "name": "Events",
-      "description": "",
+      "description": "The events in the calendar. Navigation property.",
       "isKey": false,
       "dataType": "Event",
       "isReadOnly": true,
@@ -232,7 +232,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

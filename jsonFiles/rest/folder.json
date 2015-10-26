@@ -1,6 +1,6 @@
 {
   "name": "folder",
-  "description": "",
+  "description": "A folder in a user's mailbox, such as Inbox, Drafts, and Sent Items. Folders can contain messages and other folders.",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,8 +23,7 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "childCount",
@@ -41,7 +40,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

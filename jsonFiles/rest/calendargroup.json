@@ -1,6 +1,6 @@
 {
   "name": "CalendarGroup",
-  "description": "",
+  "description": "A group of calendars.",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -55,7 +55,7 @@
   "properties": [
     {
       "name": "Name",
-      "description": "",
+      "description": "The group name.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,7 +69,7 @@
     },
     {
       "name": "ChangeKey",
-      "description": "",
+      "description": "Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -83,7 +83,7 @@
     },
     {
       "name": "ClassId",
-      "description": "",
+      "description": "The class identifier.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -97,7 +97,7 @@
     },
     {
       "name": "Id",
-      "description": "",
+      "description": "The group's unique identifier.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -111,7 +111,7 @@
     },
     {
       "name": "Calendars",
-      "description": "",
+      "description": "The calendars in the calendar group. Navigation property.",
       "isKey": false,
       "dataType": "Calendar",
       "isReadOnly": true,
@@ -124,7 +124,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

@@ -56,7 +56,7 @@
   "properties": [
     {
       "name": "id",
-      "description": "",
+      "description": "The unique id of this resource. ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -84,7 +84,7 @@
     },
     {
       "name": "content",
-      "description": "",
+      "description": "A stream of the content of this resource. ",
       "isKey": false,
       "dataType": "Stream",
       "isReadOnly": false,
@@ -98,7 +98,7 @@
     },
     {
       "name": "contentUrl",
-      "description": "",
+      "description": "A Url to which a GET request can be sent to retrieve this resource. ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -111,7 +111,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

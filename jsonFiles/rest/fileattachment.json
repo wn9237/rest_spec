@@ -1,6 +1,6 @@
 {
   "name": "FileAttachment",
-  "description": "",
+  "description": "A file (such as a text file or Word document) attached to a message or event. The  **ContentBytes** property contains the base64-encoded contents of the file.",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -23,8 +23,7 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "ContentId",
@@ -153,7 +152,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

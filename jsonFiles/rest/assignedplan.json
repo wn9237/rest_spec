@@ -1,6 +1,6 @@
 {
   "name": "AssignedPlan",
-  "description": "",
+  "description": "The **assignedPlans** property of both the [User] entity and the [TenantDetail] entity is a collection of **AssignedPlan**.\r",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "assignedTimestamp",
-      "description": "",
+      "description": "The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "capabilityStatus",
-      "description": "",
+      "description": "For example, “Enabled”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -56,7 +55,7 @@
     },
     {
       "name": "service",
-      "description": "",
+      "description": "The name of the service; for example, “AccessControlServiceS2S”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -70,7 +69,7 @@
     },
     {
       "name": "servicePlanId",
-      "description": "",
+      "description": "A GUID that identifies the service plan.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -83,7 +82,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

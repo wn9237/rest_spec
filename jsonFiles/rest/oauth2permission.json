@@ -1,6 +1,6 @@
 {
   "name": "OAuth2Permission",
-  "description": "",
+  "description": "Represents an OAuth 2.0 delegated permission scope. The specified OAuth 2.0 delegated permission scopes may be requested by client applications (through the **requiredResourceAccess** collection on the [Application] object) when calling a resource application. The **appRoles** property of the [ServicePrincipal] entity and of the [Application] entity is a collection of **OAuth2Permission**.\r",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "adminConsentDescription",
-      "description": "",
+      "description": "Permission help text that appears in the admin consent and app assignment experiences.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "adminConsentDisplayName",
-      "description": "",
+      "description": "Display name for the permission that appears in the admin consent and app assignment experiences.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -56,7 +55,7 @@
     },
     {
       "name": "id",
-      "description": "",
+      "description": "Unique scope permission identifier inside the oauth2Permissions collection.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -70,7 +69,7 @@
     },
     {
       "name": "isEnabled",
-      "description": "",
+      "description": "When creating or updating a permission, this property must be set to **true** (which is the default). To delete a permission, this property must first be set to **false**.  At that point, in a subsequent call, the permission may be removed.",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -84,7 +83,7 @@
     },
     {
       "name": "type",
-      "description": "",
+      "description": "Specifies whether this scope permission can be consented to by an end user, or whether it is a tenant-wide permission that must be consented to by a Company Administrator.  Possible values are \"User\" or \"Admin\".",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -98,7 +97,7 @@
     },
     {
       "name": "userConsentDescription",
-      "description": "",
+      "description": "Permission help text that appears in the end user consent experience.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -112,7 +111,7 @@
     },
     {
       "name": "userConsentDisplayName",
-      "description": "",
+      "description": "Display name for the permission that appears in the end user consent experience.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -126,7 +125,7 @@
     },
     {
       "name": "value",
-      "description": "",
+      "description": "The value of the scope claim that the resource application should expect in the OAuth 2.0 access token.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -139,7 +138,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

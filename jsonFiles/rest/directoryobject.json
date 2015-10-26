@@ -1,6 +1,6 @@
 {
   "name": "DirectoryObject",
-  "description": "",
+  "description": "Represents an Azure Active Directory object. The **DirectoryObject** type is the base type for most of the other directory entity types.\r",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -354,7 +354,7 @@
   "properties": [
     {
       "name": "objectType",
-      "description": "",
+      "description": "A string that identifies the object type. For example, for groups the value is always “Group”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -368,7 +368,7 @@
     },
     {
       "name": "objectId",
-      "description": "",
+      "description": "A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde.                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -382,7 +382,7 @@
     },
     {
       "name": "deletionTimestamp",
-      "description": "",
+      "description": "The time at which the directory object was deleted. It only applies to those directory objects which can be restored. Currently it is only supported for deleted [Application] objects; all other entities return **null** for this property.                            **Notes**: Requires version 1.5 or newer.            ",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -406,12 +406,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "groupIds",
@@ -435,12 +431,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -464,12 +456,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
