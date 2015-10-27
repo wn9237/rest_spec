@@ -1,133 +1,3374 @@
 {
-  "directoryobject": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
-    "skipsupported": false
+  "alternativesecurityid": {
+    "description": "Contains an alternative security ID associated with a device. The **alternativeSecurityIds** property of the [Device] entity is a collection of **AlternativeSecurityId**.\r"
+  },
+  "alternativesecurityid/type": {
+    "description": "            "
+  },
+  "alternativesecurityid/identityprovider": {
+    "description": "            "
+  },
+  "alternativesecurityid/key": {
+    "description": "            "
   },
   "application": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "description": "Represents an application. Any application that outsources authentication to Azure AD must be registered in a directory. This involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more.  For more information, see [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Inherits from [DirectoryObject].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "skipsupported": false
   },
-  "extensionproperty": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
-    "skipsupported": false
+  "application/appid": {
+    "description": "The unique identifier for the application."
   },
-  "user": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
-    "skipsupported": false
+  "application/approles": {
+    "description": "The collection of application roles that an application may declare. These roles can be assigned to users, groups or service principals.                              **Notes**: Requires version 1.5, not nullable."
+  },
+  "application/availabletoothertenants": {
+    "description": "                **true** if the application is shared with other tenants; otherwise, **false**."
+  },
+  "application/displayname": {
+    "description": "The display name for the application."
+  },
+  "application/errorurl": {
+    "description": "                              "
+  },
+  "application/groupmembershipclaims": {
+    "description": "A bitmask that configures the \"groups\" claim issued in a user or OAuth 2.0 access token that the application expects. The bitmask values are: 0: None, 1: Security groups and Azure AD roles, 2: Reserved, and 4: Reserved. Setting the bitmask to 7 will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of.                              **Notes**: Requires version 1.5."
+  },
+  "application/homepage": {
+    "description": "The URL to the applicationâ€™s homepage."
+  },
+  "application/identifieruris": {
+    "description": "The URIs that identify the application. For more information see, [Application Objects and Service Principal Objects](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-objects/).                              **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx)."
+  },
+  "application/keycredentials": {
+    "description": "The collection of key credentials associated with the application                              **Notes:** not nullable"
+  },
+  "application/knownclientapplications": {
+    "description": "Client applications that are tied to this resource application. Consent to any of the known client applications will result in implicit consent to the resource application through a combined consent dialog (showing the OAuth permission scopes required by the client and the resource).                              **Notes**: Requires version 1.5, not nullable."
+  },
+  "application/mainlogo": {
+    "description": "The main logo for the application.                              **Notes:** not nullable"
+  },
+  "application/logouturl": {
+    "description": "                              "
+  },
+  "application/oauth2allowimplicitflow": {
+    "description": "Specifies whether this web application can request OAuth2.0 implicit flow tokens. The default is **false**.                              **Notes**: Requires version 1.5, not nullable."
+  },
+  "application/oauth2allowurlpathmatching": {
+    "description": "Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow path matching of the redirect URI against the application's **replyUrls**. The default is **false**.                              **Notes**: Requires version 1.5, not nullable."
+  },
+  "application/oauth2permissions": {
+    "description": "The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications. These permission scopes may be granted to client applications during consent.                              **Notes**: Requires version 1.5, not nullable."
+  },
+  "application/oauth2requirepostresponse": {
+    "description": ""
+  },
+  "application/passwordcredentials": {
+    "description": "The collection of password credentials associated with the application.                              **Notes:** not nullable"
+  },
+  "application/publicclient": {
+    "description": "Specifies whether this application is a public client (such as an installed application running on a mobile device).  Default is **false**."
+  },
+  "application/replyurls": {
+    "description": "Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to.                              **Notes:** not nullable"
+  },
+  "application/requiredresourceaccess": {
+    "description": "Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience.                              **Notes**: Requires version 1.5, not nullable."
+  },
+  "application/samlmetadataurl": {
+    "description": "The URL to the SAML metadata for the application."
+  },
+  "application/objecttype": {
+    "description": "A string that identifies the object type. For applications the value is always \"Application\". Inherited from [DirectoryObject]."
+  },
+  "application/objectid": {
+    "description": "The unique identifier for the application. Inherited from [DirectoryObject].                              **Notes: **                **key**, immutable, not nullable, unique"
+  },
+  "application/deletiontimestamp": {
+    "description": ""
+  },
+  "application/extensionproperties": {
+    "description": "The extension properties associated with the application. Requires 1.5 or newer."
+  },
+  "application/createdonbehalfof": {
+    "description": ""
+  },
+  "application/owners": {
+    "description": "Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Inherited from [DirectoryObject]."
+  },
+  "appliedcategoriescollection": {
+    "description": ""
+  },
+  "approle": {
+    "description": "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the [ServicePrincipal] entity and of the [Application] entity is a collection of **AppRole**.\r"
+  },
+  "approle/allowedmembertypes": {
+    "description": "Specifies whether this app role definition can be assigned to users and groups by setting to “User”, or to other applications (that are accessing this application in daemon service scenarios) by setting to “Application”, or to both."
+  },
+  "approle/description": {
+    "description": "Permission help text that appears in the admin app assignment and consent experiences."
+  },
+  "approle/displayname": {
+    "description": "Display name for the permission that appears in the admin consent and app assignment experiences."
+  },
+  "approle/id": {
+    "description": "Unique role identifier inside the **appRoles** collection."
+  },
+  "approle/isenabled": {
+    "description": "When creating or updating a role definition, this must be set to **true** (which is the default). To delete a role, this must first be set to **false**.  At that point, in a subsequent call, this role may be removed."
+  },
+  "approle/value": {
+    "description": "Specifies the value of the roles claim that the application should expect in the authentication and access tokens."
   },
   "approleassignment": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "description": "Used to record when a user or group is assigned to an application. In this case, the role assignment will result in an application tile showing up on the user's app access panel. This entity may also be used to grant another application (modeled as a service principal) access to a resource application in a particular role. You can create, read, update, and delete role assignments. Inherits from [DirectoryObject].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "skipsupported": false
   },
-  "oauth2permissiongrant": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
-    "skipsupported": false
+  "approleassignment/creationtimestamp": {
+    "description": "The time when the grant was created."
   },
-  "group": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
-    "skipsupported": false
+  "approleassignment/id": {
+    "description": "The role id that was assigned to the principal.  This role must be declared by the target resource application **resourceId** in its **appRoles** property. Where the resource does not declare any permissions, a default id (zero GUID) must be specified.                            **Notes**: not nullable.            "
   },
-  "orgcontact": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
-    "skipsupported": false
+  "approleassignment/principaldisplayname": {
+    "description": "The display name of the principal that was granted the access."
+  },
+  "approleassignment/principalid": {
+    "description": "The unique identifier (**objectId**) for the principal being granted the access.                            **Notes**: required.            "
+  },
+  "approleassignment/principaltype": {
+    "description": "The type of principal.  This can either be \"User\", \"Group\" or \"ServicePrincipal\"."
+  },
+  "approleassignment/resourcedisplayname": {
+    "description": "The display name of the resource to which the assignment was made."
+  },
+  "approleassignment/resourceid": {
+    "description": "The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made."
+  },
+  "approleassignment/objecttype": {
+    "description": "A string that identifies the object type. For application role assignments the value is always “AppRoleAssignment”. Inherited from [DirectoryObject]."
+  },
+  "approleassignment/objectid": {
+    "description": "The unique identifier for the application role assignment. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "approleassignment/deletiontimestamp": {
+    "description": ""
+  },
+  "assignedlicense": {
+    "description": "Represents a license assigned to a user. The **assignedLicenses** property of the [User] entity is a collection of **AssignedLicense**.\r"
+  },
+  "assignedlicense/disabledplans": {
+    "description": "A collection of the unique identifiers for plans that have been disabled."
+  },
+  "assignedlicense/skuid": {
+    "description": "The unique identifier for the SKU."
+  },
+  "assignedplan": {
+    "description": "The **assignedPlans** property of both the [User] entity and the [TenantDetail] entity is a collection of **AssignedPlan**.\r"
+  },
+  "assignedplan/assignedtimestamp": {
+    "description": "The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z."
+  },
+  "assignedplan/capabilitystatus": {
+    "description": "For example, “Enabled”."
+  },
+  "assignedplan/service": {
+    "description": "The name of the service; for example, “AccessControlServiceS2S”."
+  },
+  "assignedplan/serviceplanid": {
+    "description": "A GUID that identifies the service plan."
+  },
+  "attachment": {
+    "description": ""
+  },
+  "attachment/name": {
+    "description": ""
+  },
+  "attachment/contenttype": {
+    "description": ""
+  },
+  "attachment/size": {
+    "description": ""
+  },
+  "attachment/isinline": {
+    "description": ""
+  },
+  "attachment/lastmodifieddatetime": {
+    "description": ""
+  },
+  "attachment/id": {
+    "description": ""
+  },
+  "attendee": {
+    "description": "An event attendee."
+  },
+  "attendee/emailaddress": {
+    "description": "The name and email address of the attendee."
+  },
+  "attendee/status": {
+    "description": "The response (none, accepted, declined, etc.) and time."
+  },
+  "attendee/type": {
+    "description": "The attendee type: Required = 0, Optional = 1, Resource = 2."
+  },
+  "audio": {
+    "description": ""
+  },
+  "audio/album": {
+    "description": ""
+  },
+  "audio/albumartist": {
+    "description": ""
+  },
+  "audio/artist": {
+    "description": ""
+  },
+  "audio/bitrate": {
+    "description": ""
+  },
+  "audio/composers": {
+    "description": ""
+  },
+  "audio/copyright": {
+    "description": ""
+  },
+  "audio/disc": {
+    "description": ""
+  },
+  "audio/disccount": {
+    "description": ""
+  },
+  "audio/duration": {
+    "description": ""
+  },
+  "audio/genre": {
+    "description": ""
+  },
+  "audio/hasdrm": {
+    "description": ""
+  },
+  "audio/isvariablebitrate": {
+    "description": ""
+  },
+  "audio/title": {
+    "description": ""
+  },
+  "audio/track": {
+    "description": ""
+  },
+  "audio/trackcount": {
+    "description": ""
+  },
+  "audio/year": {
+    "description": ""
+  },
+  "bucket": {
+    "description": ""
+  },
+  "bucket/name": {
+    "description": ""
+  },
+  "bucket/planid": {
+    "description": ""
+  },
+  "bucket/orderhint": {
+    "description": ""
+  },
+  "bucket/totaltasks": {
+    "description": ""
+  },
+  "bucket/activetasks": {
+    "description": ""
+  },
+  "bucket/id": {
+    "description": ""
+  },
+  "bucket/version": {
+    "description": ""
+  },
+  "bucket/tasks": {
+    "description": ""
+  },
+  "calendar": {
+    "description": "A calendar which is a container for events."
+  },
+  "calendar/name": {
+    "description": "The calendar name."
+  },
+  "calendar/changekey": {
+    "description": "Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object."
+  },
+  "calendar/color": {
+    "description": "Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1 "
+  },
+  "calendar/id": {
+    "description": "The group's unique identifier."
+  },
+  "calendar/calendarview": {
+    "description": "The calendar view for the calendar. Navigation property."
+  },
+  "calendar/events": {
+    "description": "The events in the calendar. Navigation property."
+  },
+  "calendargroup": {
+    "description": "A group of calendars."
+  },
+  "calendargroup/name": {
+    "description": "The group name."
+  },
+  "calendargroup/changekey": {
+    "description": "Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object."
+  },
+  "calendargroup/classid": {
+    "description": "The class identifier."
+  },
+  "calendargroup/id": {
+    "description": "The group's unique identifier."
+  },
+  "calendargroup/calendars": {
+    "description": "The calendars in the calendar group. Navigation property."
+  },
+  "chunkeduploadsessiondescriptor": {
+    "description": ""
+  },
+  "chunkeduploadsessiondescriptor/name": {
+    "description": ""
+  },
+  "contact": {
+    "description": "Represents an organizational contact. Inherits from [DirectoryObject].\r"
+  },
+  "contact/parentfolderid": {
+    "description": "The ID of the contact's parent folder."
+  },
+  "contact/birthday": {
+    "description": "The contact's birthday."
+  },
+  "contact/fileas": {
+    "description": "The name the contact is filed under."
+  },
+  "contact/displayname": {
+    "description": "The display name for the contact."
+  },
+  "contact/givenname": {
+    "description": "The given name (first name) of the contact."
+  },
+  "contact/initials": {
+    "description": "The contact's initials."
+  },
+  "contact/middlename": {
+    "description": "The contact's middle name."
+  },
+  "contact/nickname": {
+    "description": "The contact's nickname."
+  },
+  "contact/surname": {
+    "description": "The contact's surname (family name or last name)."
+  },
+  "contact/title": {
+    "description": "The contact's title."
+  },
+  "contact/generation": {
+    "description": "The contact's generation."
+  },
+  "contact/emailaddresses": {
+    "description": "The contact's email addresses."
+  },
+  "contact/imaddresses": {
+    "description": "The contact's instant messaging (IM) addresses."
+  },
+  "contact/jobtitle": {
+    "description": "The contact’s job title."
+  },
+  "contact/companyname": {
+    "description": "The name of the contact's company."
+  },
+  "contact/department": {
+    "description": "The name for the department in which the contact works."
+  },
+  "contact/officelocation": {
+    "description": "The location of the contact's office."
+  },
+  "contact/profession": {
+    "description": "The contact's profession."
+  },
+  "contact/businesshomepage": {
+    "description": "The business home page of the contact."
+  },
+  "contact/assistantname": {
+    "description": "The name of the contact's assistant."
+  },
+  "contact/manager": {
+    "description": "The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE"
+  },
+  "contact/homephones": {
+    "description": "The contact's home phone numbers."
+  },
+  "contact/businessphones": {
+    "description": "The contact's business phone numbers."
+  },
+  "contact/mobilephone1": {
+    "description": "The contact's mobile phone number."
+  },
+  "contact/homeaddress": {
+    "description": "The contact's home address."
+  },
+  "contact/businessaddress": {
+    "description": "The contact's business address."
+  },
+  "contact/otheraddress": {
+    "description": "Other addresses for the contact."
+  },
+  "contact/yomicompanyname": {
+    "description": "The phonetic Japanese company name of the contact. This property is optional."
+  },
+  "contact/yomigivenname": {
+    "description": "The phonetic Japanese given name (first name) of the contact. This property is optional."
+  },
+  "contact/yomisurname": {
+    "description": "The phonetic Japanese surname (last name)  of the contact. This property is optional."
+  },
+  "contact/spousename": {
+    "description": ""
+  },
+  "contact/personalnotes": {
+    "description": ""
+  },
+  "contact/children": {
+    "description": ""
+  },
+  "contact/changekey": {
+    "description": "Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object."
+  },
+  "contact/categories": {
+    "description": "The categories associated with the contact."
+  },
+  "contact/createddatetime": {
+    "description": ""
+  },
+  "contact/lastmodifieddatetime": {
+    "description": ""
+  },
+  "contact/id": {
+    "description": "The contact's unique identifier."
+  },
+  "contact/contactphoto": {
+    "description": ""
+  },
+  "contact/extensions": {
+    "description": ""
+  },
+  "contactfolder": {
+    "description": "A folder that contains contacts."
+  },
+  "contactfolder/parentfolderid": {
+    "description": "The ID of the folder's parent folder."
+  },
+  "contactfolder/displayname": {
+    "description": "The folder's display name."
+  },
+  "contactfolder/id": {
+    "description": "Unique identifier of the contact folder."
+  },
+  "contactfolder/contacts": {
+    "description": "The contacts in the folder. Navigation property."
+  },
+  "contactfolder/childfolders": {
+    "description": "The collection of child folders in the folder. Navigation property."
+  },
+  "conversation": {
+    "description": "A conversation is a collection of [threads](#ConversationThreadResource). All threads and posts in a conversation share the same subject."
+  },
+  "conversation/topic": {
+    "description": "The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated."
+  },
+  "conversation/hasattachments": {
+    "description": "Indicates whether the Conversation has at least one attachment."
+  },
+  "conversation/lastdelivereddatetime": {
+    "description": ""
+  },
+  "conversation/uniquesenders": {
+    "description": "All the users that sent a message to this Conversation."
+  },
+  "conversation/preview": {
+    "description": ""
+  },
+  "conversation/id": {
+    "description": "The group's unique identifier."
+  },
+  "conversation/threads": {
+    "description": "A collection of all the conversation threads in the conversation. A navigation property."
+  },
+  "conversationthread": {
+    "description": ""
+  },
+  "conversationthread/torecipients": {
+    "description": ""
+  },
+  "conversationthread/topic": {
+    "description": ""
+  },
+  "conversationthread/hasattachments": {
+    "description": ""
+  },
+  "conversationthread/lastdelivereddatetime": {
+    "description": ""
+  },
+  "conversationthread/uniquesenders": {
+    "description": ""
+  },
+  "conversationthread/ccrecipients": {
+    "description": ""
+  },
+  "conversationthread/preview": {
+    "description": ""
+  },
+  "conversationthread/islocked": {
+    "description": ""
+  },
+  "conversationthread/id": {
+    "description": ""
+  },
+  "conversationthread/posts": {
+    "description": ""
+  },
+  "copynotebookmodel": {
+    "description": ""
+  },
+  "copynotebookmodel/isdefault": {
+    "description": ""
+  },
+  "copynotebookmodel/userrole": {
+    "description": ""
+  },
+  "copynotebookmodel/isshared": {
+    "description": ""
+  },
+  "copynotebookmodel/sectionsurl": {
+    "description": ""
+  },
+  "copynotebookmodel/sectiongroupsurl": {
+    "description": ""
+  },
+  "copynotebookmodel/links": {
+    "description": ""
+  },
+  "copynotebookmodel/name": {
+    "description": ""
+  },
+  "copynotebookmodel/createdby": {
+    "description": ""
+  },
+  "copynotebookmodel/lastmodifiedby": {
+    "description": ""
+  },
+  "copynotebookmodel/lastmodifiedtime": {
+    "description": ""
+  },
+  "copynotebookmodel/id": {
+    "description": ""
+  },
+  "copynotebookmodel/self": {
+    "description": ""
+  },
+  "copynotebookmodel/createdtime": {
+    "description": ""
+  },
+  "copypagemodel": {
+    "description": ""
+  },
+  "copypagemodel/parentsection": {
+    "description": ""
+  },
+  "copypagemodel/parentnotebook": {
+    "description": ""
+  },
+  "copypagemodel/title": {
+    "description": ""
+  },
+  "copypagemodel/createdbyappid": {
+    "description": ""
+  },
+  "copypagemodel/links": {
+    "description": ""
+  },
+  "copypagemodel/contenturl": {
+    "description": ""
+  },
+  "copypagemodel/lastmodifiedtime": {
+    "description": ""
+  },
+  "copypagemodel/id": {
+    "description": ""
+  },
+  "copypagemodel/self": {
+    "description": ""
+  },
+  "copypagemodel/createdtime": {
+    "description": ""
+  },
+  "copysectionmodel": {
+    "description": ""
+  },
+  "copysectionmodel/isdefault": {
+    "description": ""
+  },
+  "copysectionmodel/pagesurl": {
+    "description": ""
+  },
+  "copysectionmodel/name": {
+    "description": ""
+  },
+  "copysectionmodel/createdby": {
+    "description": ""
+  },
+  "copysectionmodel/lastmodifiedby": {
+    "description": ""
+  },
+  "copysectionmodel/lastmodifiedtime": {
+    "description": ""
+  },
+  "copysectionmodel/id": {
+    "description": ""
+  },
+  "copysectionmodel/self": {
+    "description": ""
+  },
+  "copysectionmodel/createdtime": {
+    "description": ""
+  },
+  "deleted": {
+    "description": ""
+  },
+  "deleted/state": {
+    "description": ""
   },
   "device": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "description": "Represents a device registered in the directory. Inherits from [DirectoryObject].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "skipsupported": false
+  },
+  "device/accountenabled": {
+    "description": "            "
+  },
+  "device/alternativesecurityids": {
+    "description": "                **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            "
+  },
+  "device/approximatelastlogontimestamp": {
+    "description": "            "
+  },
+  "device/deviceid": {
+    "description": "            "
+  },
+  "device/devicemetadata": {
+    "description": ""
+  },
+  "device/deviceobjectversion": {
+    "description": "            "
+  },
+  "device/deviceostype": {
+    "description": "The type of operating system on the device."
+  },
+  "device/deviceosversion": {
+    "description": "The version of the operating system on the device"
+  },
+  "device/devicephysicalids": {
+    "description": "                **Notes:** not nullable            "
+  },
+  "device/devicetrusttype": {
+    "description": ""
+  },
+  "device/dirsyncenabled": {
+    "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default)."
+  },
+  "device/displayname": {
+    "description": "The display name for the device."
+  },
+  "device/lastdirsynctime": {
+    "description": "The last time at which the object was synced with the on-premises directory."
+  },
+  "device/objecttype": {
+    "description": "A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject]"
+  },
+  "device/objectid": {
+    "description": "The unique identifier for the device. Inherited from [DirectoryObject].                            **Notes: key**, immutable, not nullable, unique            "
+  },
+  "device/deletiontimestamp": {
+    "description": ""
+  },
+  "device/registeredowners": {
+    "description": "Users that are registered owners of the device."
+  },
+  "device/registeredusers": {
+    "description": "Users that are registered users of the device."
   },
   "deviceconfiguration": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "description": "",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "skipsupported": false
+  },
+  "deviceconfiguration/publicissuercertificates": {
+    "description": ""
+  },
+  "deviceconfiguration/cloudpublicissuercertificates": {
+    "description": ""
+  },
+  "deviceconfiguration/registrationquota": {
+    "description": ""
+  },
+  "deviceconfiguration/maximumregistrationinactivityperiod": {
+    "description": ""
+  },
+  "deviceconfiguration/objecttype": {
+    "description": ""
+  },
+  "deviceconfiguration/objectid": {
+    "description": ""
+  },
+  "deviceconfiguration/deletiontimestamp": {
+    "description": ""
+  },
+  "diagnostic": {
+    "description": ""
+  },
+  "diagnostic/message": {
+    "description": ""
+  },
+  "diagnostic/url": {
+    "description": ""
   },
   "directorylinkchange": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "description": "A **DirectoryLinkChange** object is returned in the result set of a differential query to indicate that a property of a contact, a user, or a group that is represented by a link has changed since the last differential query. The **DirectoryLinkChange** object will represent a change to a user’s or contact’s **manager** property or a change to a group’s **members** property. For more information about differential queries, see [Azure AD Graph API Differential Query](https://msdn.microsoft.com/en-us/library/azure/jj836245.aspx). Inherits from [DirectoryObject].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "skipsupported": false
+  },
+  "directorylinkchange/associationtype": {
+    "description": "A string that identifies the association type to which the change applies. The value is either “Member” or “Manager”."
+  },
+  "directorylinkchange/sourceobjectid": {
+    "description": "The object ID for the source object; for example, ”7373b0af-d462-406e-ad26-f2bc96d823d8”."
+  },
+  "directorylinkchange/sourceobjecttype": {
+    "description": "A string that identifies the source object type; this will be one of the following: “Group”, “User”, or “Contact”."
+  },
+  "directorylinkchange/sourceobjecturi": {
+    "description": "The URI for the source object; for example, `“https://graph.windows.net/contoso.com/groups/7373b0af-d462-406e-ad26-f2bc96d823d8”`."
+  },
+  "directorylinkchange/targetobjectid": {
+    "description": "The object ID for the target object; for example, “dca803ab-bf26-4753-bf20-e1c56a9c34e2”."
+  },
+  "directorylinkchange/targetobjecttype": {
+    "description": "A string that identifies the source object type; this will be one of the following: “Group”, “User”, or “Contact”."
+  },
+  "directorylinkchange/targetobjecturi": {
+    "description": "The URI for the target object; for example, `“https://graph.windows.net/contoso.com/users/dca803ab-bf26-4753-bf20-e1c56a9c34e2”`."
+  },
+  "directorylinkchange/objecttype": {
+    "description": "A string that identifies the object type. For **DirectoryLinkChange** objects, the value is always “DirectoryLinkChange”. [DirectoryObject]"
+  },
+  "directorylinkchange/objectid": {
+    "description": "The unique identifier for the directory link change object. For **DirectoryLinkChange** objects, the value is always 00000000-0000-0000-0000-000000000000. Inherited from [DirectoryObject].                            **Note: key** immutable, not nullable, unique            "
+  },
+  "directorylinkchange/deletiontimestamp": {
+    "description": ""
+  },
+  "directoryobject": {
+    "description": "Represents an Azure Active Directory object. The **DirectoryObject** type is the base type for most of the other directory entity types.\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
+    "skipsupported": false
+  },
+  "directoryobject/objecttype": {
+    "description": "A string that identifies the object type. For example, for groups the value is always “Group”."
+  },
+  "directoryobject/objectid": {
+    "description": "A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde.                            **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "directoryobject/deletiontimestamp": {
+    "description": "The time at which the directory object was deleted. It only applies to those directory objects which can be restored. Currently it is only supported for deleted [Application] objects; all other entities return **null** for this property.                            **Notes**: Requires version 1.5 or newer.            "
   },
   "directoryrole": {
+    "description": "Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning administrator roles in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).\r",
     "topsupported": false,
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "skipsupported": false
+  },
+  "directoryrole/description": {
+    "description": "The description for the directory role."
+  },
+  "directoryrole/displayname": {
+    "description": "The display name for the directory role. "
+  },
+  "directoryrole/issystem": {
+    "description": "                **true** if the role is a system role; otherwise, **false**.            "
+  },
+  "directoryrole/roledisabled": {
+    "description": "                **true** if the directory role is disabled; otherwise, **false**.            "
+  },
+  "directoryrole/roletemplateid": {
+    "description": "                The **objectId** of the [DirectoryRoleTemplate] that this role is based on.                                        **Notes**: In versions prior to version 1.5, the property is read only. In version 1.5 and later, the property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only.            "
+  },
+  "directoryrole/objecttype": {
+    "description": "A string that identifies the object type. For directory roles the value is always “DirectoryRole”. Inherited from [DirectoryObject].                            **Note**: In versions prior to 1.5, the value will be “Role”.            "
+  },
+  "directoryrole/objectid": {
+    "description": "The unique identifier for the directory role. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "directoryrole/deletiontimestamp": {
+    "description": ""
+  },
+  "directoryrole/members": {
+    "description": "Users and service principals that are members of this directory role. Inherited from [DirectoryObject].            HTTP Methods: GET, POST, DELETE"
+  },
+  "directoryrole/memberof": {
+    "description": ""
+  },
+  "directoryrole/owners": {
+    "description": ""
+  },
+  "directoryrole/ownedobjects": {
+    "description": ""
   },
   "directoryroletemplate": {
+    "description": "Represents a directory role template. A directory role template specifies the property values of a directory role ([DirectoryRole]). There is an associated directory role template object for each of the directory roles that may be activated in a tenant. \r",
     "topsupported": false,
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "skipsupported": false
+  },
+  "directoryroletemplate/description": {
+    "description": "The description to set for the directory role."
+  },
+  "directoryroletemplate/displayname": {
+    "description": "The display name to set for the directory role."
+  },
+  "directoryroletemplate/objecttype": {
+    "description": "A string that identifies the object type. For role templates the value is always “RoleTemplate”. Inherited from [DirectoryObject]."
+  },
+  "directoryroletemplate/objectid": {
+    "description": "The unique identifier for the template. Inherited from [DirectoryObject]. In version 1.5 and later, you specify the **objectId** of the directory role template for the **roleTemplateId** property in the POST request activate a [DirectoryRole] in a tenant.                             **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "directoryroletemplate/deletiontimestamp": {
+    "description": ""
+  },
+  "drive": {
+    "description": "The Drive resource represents a drive in OneDrive.\r It provides information about the owner of the drive, total and available\r storage space, and exposes a collection of all the [Items][item-resource] contained\r within the drive.\r \r "
+  },
+  "drive/id": {
+    "description": "The unique identifier of the drive."
+  },
+  "drive/drivetype": {
+    "description": "Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`."
+  },
+  "drive/owner": {
+    "description": "The user account that owns the drive."
+  },
+  "drive/quota": {
+    "description": "Information about the drive's storage space quota."
+  },
+  "drive/items": {
+    "description": "All items contained in the drive."
+  },
+  "drive/shared": {
+    "description": ""
+  },
+  "drive/special": {
+    "description": "Collection of common folders available in OneDrive."
+  },
+  "drive/root": {
+    "description": "The root folder of the drive."
+  },
+  "emailaddress": {
+    "description": "The name and email address of a contact or message recipient."
+  },
+  "emailaddress/name": {
+    "description": "The display name of the person or entity."
+  },
+  "emailaddress/address": {
+    "description": "The email address of the person or entity."
+  },
+  "entity": {
+    "description": ""
+  },
+  "entity/id": {
+    "description": ""
+  },
+  "event": {
+    "description": "An event in a calendar."
+  },
+  "event/subject": {
+    "description": "The text of the event's subject line."
+  },
+  "event/body": {
+    "description": "The body of the message associated with the event."
+  },
+  "event/bodypreview": {
+    "description": "The preview of the message associated with the event."
+  },
+  "event/importance": {
+    "description": "The importance of the event: Low = 0, Normal = 1, High = 2."
+  },
+  "event/hasattachments": {
+    "description": "Set to true if the event has attachments."
+  },
+  "event/start": {
+    "description": "The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: \"2015-02-25T19:34:00-08:00\".  "
+  },
+  "event/starttimezone": {
+    "description": " Identifies the meeting's time zone for the meeting start time (see the Start property). This property makes it so the service handles time zone changes instead of the client. This property is set with the time zone name as it is stored in Windows. You can get the time zone names by calling System.TimeZoneInfo.GetSystemTimeZones(). <br/><br/>This property is optional for v1.0. However, this property must be used if the EndTimeZone property is used.<br/><br/>An example value for this property is \"Pacific Standard Time\". See <a href=\"https://technet.microsoft.com/en-us/library/cc749073(v=ws.10).aspx\">TimeZone</a> for more information.  "
+  },
+  "event/end": {
+    "description": "The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: \"2015-02-25T21:34:00-08:00\". "
+  },
+  "event/endtimezone": {
+    "description": " Identifies the meeting's time zone for the meeting end time (see the End property). This property is set with the time zone name as it is stored in Windows. You can get the time zone names by calling System.TimeZoneInfo.GetSystemTimeZones().<br/><br/>This property is optional for v1.0. However, this property must be used if the StartTimeZone property is used.<br/><br/>See [TimeZone](https://technet.microsoft.com/en-us/library/cc749073.aspx) for more information. "
+  },
+  "event/reminder": {
+    "description": ""
+  },
+  "event/location": {
+    "description": "The location of the event."
+  },
+  "event/showas": {
+    "description": "The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1."
+  },
+  "event/responsestatus": {
+    "description": "Indicates the type of response sent in response to an event message."
+  },
+  "event/isallday": {
+    "description": "Set to true if the event lasts all day."
+  },
+  "event/iscancelled": {
+    "description": "Set to true if the event has been canceled."
+  },
+  "event/isorganizer": {
+    "description": "Set to true if the message sender is also the organizer."
+  },
+  "event/responserequested": {
+    "description": "Set to true if the sender would like a response when the event is accepted or declined."
+  },
+  "event/type": {
+    "description": "The event type: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3."
+  },
+  "event/seriesmasterid": {
+    "description": "The categories assigned to the item."
+  },
+  "event/attendees": {
+    "description": "The collection of attendees for the event."
+  },
+  "event/recurrence": {
+    "description": "The recurrence patern for the event."
+  },
+  "event/organizer": {
+    "description": "The organizer of the event."
+  },
+  "event/icaluid": {
+    "description": "A unique identifier that is shared by all instances of an event across different calendars."
+  },
+  "event/weblink": {
+    "description": "The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame."
+  },
+  "event/originalstart": {
+    "description": ""
+  },
+  "event/changekey": {
+    "description": "Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object."
+  },
+  "event/categories": {
+    "description": "The categories associated with the event."
+  },
+  "event/createddatetime": {
+    "description": ""
+  },
+  "event/lastmodifieddatetime": {
+    "description": ""
+  },
+  "event/id": {
+    "description": ""
+  },
+  "event/attachments": {
+    "description": "The collection of [FileAttachment](#FileAttachmentResource) and [ItemAttachment](#FileAttachmentResource) attachments for the event. Navigation property."
+  },
+  "event/calendar": {
+    "description": "The calendar that contains the event. Navigation property."
+  },
+  "event/extensions": {
+    "description": ""
+  },
+  "event/instances": {
+    "description": "The instances of the event. Navigation property."
+  },
+  "eventmessage": {
+    "description": "A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message."
+  },
+  "eventmessage/subject": {
+    "description": ""
+  },
+  "eventmessage/body": {
+    "description": ""
+  },
+  "eventmessage/bodypreview": {
+    "description": ""
+  },
+  "eventmessage/importance": {
+    "description": ""
+  },
+  "eventmessage/hasattachments": {
+    "description": ""
+  },
+  "eventmessage/parentfolderid": {
+    "description": ""
+  },
+  "eventmessage/from": {
+    "description": ""
+  },
+  "eventmessage/sender": {
+    "description": ""
+  },
+  "eventmessage/torecipients": {
+    "description": ""
+  },
+  "eventmessage/ccrecipients": {
+    "description": ""
+  },
+  "eventmessage/bccrecipients": {
+    "description": ""
+  },
+  "eventmessage/replyto": {
+    "description": ""
+  },
+  "eventmessage/conversationid": {
+    "description": ""
+  },
+  "eventmessage/uniquebody": {
+    "description": ""
+  },
+  "eventmessage/receiveddatetime": {
+    "description": ""
+  },
+  "eventmessage/sentdatetime": {
+    "description": ""
+  },
+  "eventmessage/isdeliveryreceiptrequested": {
+    "description": ""
+  },
+  "eventmessage/isreadreceiptrequested": {
+    "description": ""
+  },
+  "eventmessage/isdraft": {
+    "description": ""
+  },
+  "eventmessage/isread": {
+    "description": ""
+  },
+  "eventmessage/weblink": {
+    "description": ""
+  },
+  "eventmessage/changekey": {
+    "description": ""
+  },
+  "eventmessage/categories": {
+    "description": ""
+  },
+  "eventmessage/createddatetime": {
+    "description": ""
+  },
+  "eventmessage/lastmodifieddatetime": {
+    "description": ""
+  },
+  "eventmessage/id": {
+    "description": ""
+  },
+  "eventmessage/meetingmessagetype": {
+    "description": " The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 "
+  },
+  "eventmessage/attachments": {
+    "description": ""
+  },
+  "eventmessage/extensions": {
+    "description": ""
+  },
+  "eventmessage/event": {
+    "description": " The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property. "
+  },
+  "extension": {
+    "description": ""
+  },
+  "extension/id": {
+    "description": ""
+  },
+  "extensionproperty": {
+    "description": "Allows an application to define and use a set of additional properties that can be added to directory objects (users, groups, tenant details, devices, applications, and service principals) without the application requiring an external data store. For more information about extension properties, see [Azure AD Graph API Directory Schema Extensions](https://msdn.microsoft.com/en-us/library/azure/dn720459.aspx). Inherits from [DirectoryObject].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
+    "skipsupported": false
+  },
+  "extensionproperty/appdisplayname": {
+    "description": "            "
+  },
+  "extensionproperty/name": {
+    "description": "Specifies the display name for the directory extension property.                            **Notes**: not nullable.            "
+  },
+  "extensionproperty/datatype": {
+    "description": "Specifies the type of the directory extension property being added.   Supported types are: Integer, LargeInteger, DateTime (must be specified in ISO 8601 - DateTime is stored in UTC), Binary, Boolean, and String."
+  },
+  "extensionproperty/issyncedfromonpremises": {
+    "description": "Indicates whether the extension property is synced from the on premises directory.                            **Notes**: not nullable.            "
+  },
+  "extensionproperty/targetobjects": {
+    "description": "The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “TenantDetail”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.            "
+  },
+  "extensionproperty/objecttype": {
+    "description": "A string that identifies the object type. For extension properties the value is always “ExtensionProperty”. Inherited from [DirectoryObject]."
+  },
+  "extensionproperty/objectid": {
+    "description": "The unique identifier for the permission scope. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "extensionproperty/deletiontimestamp": {
+    "description": ""
+  },
+  "externallink": {
+    "description": ""
+  },
+  "externallink/href": {
+    "description": ""
+  },
+  "externalreference": {
+    "description": ""
+  },
+  "externalreference/alias": {
+    "description": ""
+  },
+  "externalreference/type": {
+    "description": ""
+  },
+  "externalreference/previewpriority": {
+    "description": ""
+  },
+  "externalreference/modifiedby": {
+    "description": ""
+  },
+  "externalreference/modifieddate": {
+    "description": ""
+  },
+  "externalreferencecollection": {
+    "description": ""
+  },
+  "file": {
+    "description": ""
+  },
+  "fileattachment": {
+    "description": "A file (such as a text file or Word document) attached to a message or event. The  **ContentBytes** property contains the base64-encoded contents of the file."
+  },
+  "fileattachment/contentid": {
+    "description": ""
+  },
+  "fileattachment/contentlocation": {
+    "description": ""
+  },
+  "fileattachment/contentbytes": {
+    "description": ""
+  },
+  "fileattachment/name": {
+    "description": ""
+  },
+  "fileattachment/contenttype": {
+    "description": ""
+  },
+  "fileattachment/size": {
+    "description": ""
+  },
+  "fileattachment/isinline": {
+    "description": ""
+  },
+  "fileattachment/lastmodifieddatetime": {
+    "description": ""
+  },
+  "fileattachment/id": {
+    "description": ""
+  },
+  "filesysteminfo": {
+    "description": ""
+  },
+  "filesysteminfo/createddatetime": {
+    "description": ""
+  },
+  "filesysteminfo/lastmodifieddatetime": {
+    "description": ""
+  },
+  "folder": {
+    "description": "A folder in a user's mailbox, such as Inbox, Drafts, and Sent Items. Folders can contain messages and other folders."
+  },
+  "folder/childcount": {
+    "description": ""
+  },
+  "geocoordinates": {
+    "description": "The geographic coordinates and elevation of the location."
+  },
+  "geocoordinates/altitude": {
+    "description": "The altitude of the location."
+  },
+  "geocoordinates/latitude": {
+    "description": "The latitude of the location."
+  },
+  "geocoordinates/longitude": {
+    "description": "The longitude of the location."
+  },
+  "geocoordinates/accuracy": {
+    "description": "The accuracy of the sensor providing the latitude and longitude."
+  },
+  "geocoordinates/altitudeaccuracy": {
+    "description": "The accuracy of the sensor providing the altitude."
+  },
+  "group": {
+    "description": "Represents an Azure Active Directory Group. Inherited from **DirectoryObject**.\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
+    "skipsupported": false
+  },
+  "group/description": {
+    "description": "An optional description for the group."
+  },
+  "group/dirsyncenabled": {
+    "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default)."
+  },
+  "group/displayname": {
+    "description": "The display name for the group. This property is required when a group is created and it cannot be cleared during updates. "
+  },
+  "group/creationoptions": {
+    "description": ""
+  },
+  "group/grouptypes": {
+    "description": ""
+  },
+  "group/ispublic": {
+    "description": ""
+  },
+  "group/lastdirsynctime": {
+    "description": "Indicates the last time at which the object was synced with the on-premises directory."
+  },
+  "group/mail": {
+    "description": "The SMTP address for the group, for example, \"serviceadmins@contoso.onmicrosoft.com\"."
+  },
+  "group/mailnickname": {
+    "description": "The mail alias for the group. This property must be specified when a group is created."
+  },
+  "group/mailenabled": {
+    "description": "Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Azure AD Graph."
+  },
+  "group/onpremisessecurityidentifier": {
+    "description": "Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud.                            **Notes**: Requires version 1.5 or newer.            "
+  },
+  "group/provisioningerrors": {
+    "description": "A collection of error details that are preventing this group from being provisioned successfully.                            **Notes**: not nullable.            "
+  },
+  "group/proxyaddresses": {
+    "description": "                                        **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            "
+  },
+  "group/securityenabled": {
+    "description": "Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **true** when creating a group."
+  },
+  "group/accesstype": {
+    "description": ""
+  },
+  "group/emailaddress": {
+    "description": ""
+  },
+  "group/allowexternalsenders": {
+    "description": ""
+  },
+  "group/autosubscribenewmembers": {
+    "description": ""
+  },
+  "group/issubscribedbymail": {
+    "description": ""
+  },
+  "group/isfavorite": {
+    "description": ""
+  },
+  "group/unseencount": {
+    "description": ""
+  },
+  "group/objecttype": {
+    "description": "A string that identifies the object type. For groups the value is always “Group”. Inherited from [DirectoryObject]."
+  },
+  "group/objectid": {
+    "description": "The unique identifier for the group. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "group/deletiontimestamp": {
+    "description": ""
+  },
+  "group/approleassignments": {
+    "description": "Contains the set of applications that a group is assigned to.                            **Notes**: Requires version 1.5 or newer.            "
+  },
+  "group/members": {
+    "description": "Users, contacts, and groups that are members of this group. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups)"
+  },
+  "group/memberof": {
+    "description": "Groups that this group is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups) "
+  },
+  "group/createdonbehalfof": {
+    "description": ""
+  },
+  "group/owners": {
+    "description": "The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups)"
+  },
+  "group/groupphoto": {
+    "description": ""
+  },
+  "group/conversations": {
+    "description": ""
+  },
+  "group/threads": {
+    "description": ""
+  },
+  "group/calendar": {
+    "description": ""
+  },
+  "group/events": {
+    "description": ""
+  },
+  "group/calendarview": {
+    "description": ""
+  },
+  "group/acceptedsenders": {
+    "description": ""
+  },
+  "group/rejectedsenders": {
+    "description": ""
+  },
+  "group/drive": {
+    "description": ""
+  },
+  "group/details": {
+    "description": ""
+  },
+  "group/tasks": {
+    "description": ""
+  },
+  "group/plans": {
+    "description": ""
+  },
+  "hashes": {
+    "description": ""
+  },
+  "hashes/crc32hash": {
+    "description": ""
+  },
+  "hashes/sha1hash": {
+    "description": ""
+  },
+  "identity": {
+    "description": "The Identity type represents an identity of an _actor_. For example, and actor can be a user, device, or application.\r \r "
+  },
+  "identity/displayname": {
+    "description": "The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, OneDrive may show the new value in a future response, but the items associated with the user won't show up as having changed in `view.delta`"
+  },
+  "identity/id": {
+    "description": "Unique identifier for the identity."
+  },
+  "identityset": {
+    "description": "The IdentitySet type is a keyed collection of [Identity](identity.md) objects.\r It is used to represent a set of identities associated with various events for an item, such as\r _created by_ or _last modified by_.\r \r "
+  },
+  "identityset/application": {
+    "description": "An Identity resource that represents the application."
+  },
+  "identityset/device": {
+    "description": "An Identity resource that represents the device."
+  },
+  "identityset/user": {
+    "description": "An Identity resource that represents a user."
+  },
+  "image": {
+    "description": ""
+  },
+  "image/height": {
+    "description": ""
+  },
+  "image/width": {
+    "description": ""
+  },
+  "item": {
+    "description": "The Item resource type represents metadata for an item in OneDrive.\r All top-level filesystem objects in OneDrive are Item resources.\r If an item is a [Folder](../facets/folder_facet.md) or [File](../facets/file_facet.md) facet, the Item resource will contain a value for either the **folder** or **file** property, respectively.\r \r "
+  },
+  "item/content": {
+    "description": "The content stream, if the Item represents a file."
+  },
+  "item/createdby": {
+    "description": "Identity of the user, device, and application which created the item. Read-only."
+  },
+  "item/createddatetime": {
+    "description": "Date and time of item creation. Read-only."
+  },
+  "item/ctag": {
+    "description": "An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the Item is a folder. Read-only."
+  },
+  "item/description": {
+    "description": "Provide a user-visible description of the item. Read-write."
+  },
+  "item/etag": {
+    "description": "eTag for the entire item (metadata + content). Read-only."
+  },
+  "item/id": {
+    "description": "The unique identifier of the item within the Drive. Read-only."
+  },
+  "item/lastmodifiedby": {
+    "description": "Identity of the user, device, and application which last modified the item. Read-only."
+  },
+  "item/lastmodifieddatetime": {
+    "description": "Date and time the item was last modified. Read-only."
+  },
+  "item/name": {
+    "description": "The name of the item (filename and extension). Read-write."
+  },
+  "item/parentreference": {
+    "description": "Parent information, if the item has a parent. Read-write."
+  },
+  "item/size": {
+    "description": "Size of the item in bytes. Read-only."
+  },
+  "item/webdavurl": {
+    "description": ""
+  },
+  "item/weburl": {
+    "description": "URL that displays the resource in the browser. Read-only."
+  },
+  "item/audio": {
+    "description": "Audio metadata, if the item is an audio file. Read-only."
+  },
+  "item/deleted": {
+    "description": "Information about the deleted state of the item. Read-only."
+  },
+  "item/file": {
+    "description": "File metadata, if the item is a file. Read-only."
+  },
+  "item/filesysteminfo": {
+    "description": "File system information on client. Read-write."
+  },
+  "item/folder": {
+    "description": "Folder metadata, if the item is a folder. Read-only."
+  },
+  "item/image": {
+    "description": "Image metadata, if the item is an image. Read-only."
+  },
+  "item/location": {
+    "description": "Location metadata, if the item has location data. Read-only."
+  },
+  "item/openwith": {
+    "description": ""
+  },
+  "item/photo": {
+    "description": "Photo metadata, if the item is a photo. Read-only."
+  },
+  "item/searchresult": {
+    "description": "Search metadata, if the item is from a search result."
+  },
+  "item/shared": {
+    "description": ""
+  },
+  "item/specialfolder": {
+    "description": ""
+  },
+  "item/video": {
+    "description": "Video metadata, if the item is a video. Read-only."
+  },
+  "item/createdbyuser": {
+    "description": ""
+  },
+  "item/lastmodifiedbyuser": {
+    "description": ""
+  },
+  "item/permissions": {
+    "description": ""
+  },
+  "item/versions": {
+    "description": ""
+  },
+  "item/children": {
+    "description": "Collection containing Item objects for the immediate children of Item. Only items representing folders have children."
+  },
+  "item/thumbnails": {
+    "description": "Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../items/thumbnails.md)."
+  },
+  "itemattachment": {
+    "description": "A message or event that's attached to another message or event."
+  },
+  "itemattachment/name": {
+    "description": ""
+  },
+  "itemattachment/contenttype": {
+    "description": ""
+  },
+  "itemattachment/size": {
+    "description": ""
+  },
+  "itemattachment/isinline": {
+    "description": ""
+  },
+  "itemattachment/lastmodifieddatetime": {
+    "description": ""
+  },
+  "itemattachment/id": {
+    "description": ""
+  },
+  "itemattachment/item": {
+    "description": ""
+  },
+  "itembody": {
+    "description": "The body content of a message or event."
+  },
+  "itembody/contenttype": {
+    "description": "The content type: Text = 0, HTML = 1."
+  },
+  "itembody/content": {
+    "description": "The text or HTML content."
+  },
+  "itemreference": {
+    "description": "\r The itemReference type groups data needed to reference a OneDrive item across the service into a single structure.\r \r \r "
+  },
+  "itemreference/driveid": {
+    "description": "Unique identifier for the Drive that contains the item."
+  },
+  "itemreference/id": {
+    "description": "Unique identifier for the item."
+  },
+  "itemreference/path": {
+    "description": "Path that used to navigate to the item."
+  },
+  "keycredential": {
+    "description": "Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the [Application] and [ServicePrincipal] entities is a collection of **KeyCredential**.\r"
+  },
+  "keycredential/customkeyidentifier": {
+    "description": "            "
+  },
+  "keycredential/enddate": {
+    "description": "The date and time at which the credential expires."
+  },
+  "keycredential/keyid": {
+    "description": "The unique identifier (GUID) for the key."
+  },
+  "keycredential/startdate": {
+    "description": "The date and time at which the credential becomes valid."
+  },
+  "keycredential/type": {
+    "description": "The type of key credential; for example, “Symmetric”."
+  },
+  "keycredential/usage": {
+    "description": "A string that describes the purpose for which the key can be used; for example, “Verify”."
+  },
+  "keycredential/value": {
+    "description": "            "
+  },
+  "licenseunitsdetail": {
+    "description": "The **prepaidUnits** property of the [SubscribedSku] entity is of type **LicenseUnitsDetail**.\r"
+  },
+  "licenseunitsdetail/enabled": {
+    "description": "            "
+  },
+  "licenseunitsdetail/suspended": {
+    "description": "            "
+  },
+  "licenseunitsdetail/warning": {
+    "description": "            "
+  },
+  "location": {
+    "description": "The location of an event."
+  },
+  "location/altitude": {
+    "description": ""
+  },
+  "location/latitude": {
+    "description": ""
+  },
+  "location/longitude": {
+    "description": ""
+  },
+  "mailfolder": {
+    "description": ""
+  },
+  "mailfolder/parentfolderid": {
+    "description": ""
+  },
+  "mailfolder/displayname": {
+    "description": ""
+  },
+  "mailfolder/childfoldercount": {
+    "description": ""
+  },
+  "mailfolder/id": {
+    "description": ""
+  },
+  "mailfolder/childfolders": {
+    "description": ""
+  },
+  "mailfolder/messages": {
+    "description": ""
+  },
+  "message": {
+    "description": "A message in a mailbox folder."
+  },
+  "message/subject": {
+    "description": ""
+  },
+  "message/body": {
+    "description": ""
+  },
+  "message/bodypreview": {
+    "description": ""
+  },
+  "message/importance": {
+    "description": ""
+  },
+  "message/hasattachments": {
+    "description": ""
+  },
+  "message/parentfolderid": {
+    "description": ""
+  },
+  "message/from": {
+    "description": ""
+  },
+  "message/sender": {
+    "description": ""
+  },
+  "message/torecipients": {
+    "description": ""
+  },
+  "message/ccrecipients": {
+    "description": ""
+  },
+  "message/bccrecipients": {
+    "description": ""
+  },
+  "message/replyto": {
+    "description": ""
+  },
+  "message/conversationid": {
+    "description": ""
+  },
+  "message/uniquebody": {
+    "description": ""
+  },
+  "message/receiveddatetime": {
+    "description": ""
+  },
+  "message/sentdatetime": {
+    "description": ""
+  },
+  "message/isdeliveryreceiptrequested": {
+    "description": ""
+  },
+  "message/isreadreceiptrequested": {
+    "description": ""
+  },
+  "message/isdraft": {
+    "description": ""
+  },
+  "message/isread": {
+    "description": ""
+  },
+  "message/weblink": {
+    "description": ""
+  },
+  "message/changekey": {
+    "description": ""
+  },
+  "message/categories": {
+    "description": ""
+  },
+  "message/createddatetime": {
+    "description": ""
+  },
+  "message/lastmodifieddatetime": {
+    "description": ""
+  },
+  "message/id": {
+    "description": ""
+  },
+  "message/attachments": {
+    "description": ""
+  },
+  "message/extensions": {
+    "description": ""
+  },
+  "myorganization": {
+    "description": ""
+  },
+  "myorganization/id": {
+    "description": ""
+  },
+  "myorganization/sitecollections": {
+    "description": ""
+  },
+  "notebook": {
+    "description": ""
+  },
+  "notebook/isdefault": {
+    "description": "Indicates whether this is the user's default notebook."
+  },
+  "notebook/userrole": {
+    "description": "One of three values: Owner, Contributor, or Reader. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook."
+  },
+  "notebook/isshared": {
+    "description": "Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner."
+  },
+  "notebook/sectionsurl": {
+    "description": "The URL for the sections navigation property, which returns all the sections in the notebook."
+  },
+  "notebook/sectiongroupsurl": {
+    "description": "The URL for the sectionGroups navigation property, which returns all the section groups in the notebook."
+  },
+  "notebook/links": {
+    "description": "The value of oneNoteClientURL can be used to open the notebook using the OneNote native client app if it's installed. The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client."
+  },
+  "notebook/name": {
+    "description": "The name of the notebook."
+  },
+  "notebook/createdby": {
+    "description": "The user who created the notebook."
+  },
+  "notebook/lastmodifiedby": {
+    "description": "The user who last modified the notebook."
+  },
+  "notebook/lastmodifiedtime": {
+    "description": "The date and time when the notebook was last modified."
+  },
+  "notebook/id": {
+    "description": "The unique identifier of the notebook."
+  },
+  "notebook/self": {
+    "description": "The endpoint where you can get details about the notebook."
+  },
+  "notebook/createdtime": {
+    "description": "The date and time when the notebook was created."
+  },
+  "notebook/sections": {
+    "description": "The sections in the notebook. Can be navigated to using the sectionsUrl property or expanded in a GET request."
+  },
+  "notebook/sectiongroups": {
+    "description": "The section groups in the notebook. Can be navigated to using the sectionGroupsUrl property or expanded in a GET request."
+  },
+  "notebooklinks": {
+    "description": ""
+  },
+  "notebooklinks/onenoteclienturl": {
+    "description": ""
+  },
+  "notebooklinks/onenoteweburl": {
+    "description": ""
+  },
+  "notes": {
+    "description": ""
+  },
+  "notes/id": {
+    "description": ""
+  },
+  "notes/notebooks": {
+    "description": ""
+  },
+  "notes/sections": {
+    "description": ""
+  },
+  "notes/sectiongroups": {
+    "description": ""
+  },
+  "notes/pages": {
+    "description": ""
+  },
+  "notes/resources": {
+    "description": ""
+  },
+  "oauth2permission": {
+    "description": "Represents an OAuth 2.0 delegated permission scope. The specified OAuth 2.0 delegated permission scopes may be requested by client applications (through the **requiredResourceAccess** collection on the [Application] object) when calling a resource application. The **appRoles** property of the [ServicePrincipal] entity and of the [Application] entity is a collection of **OAuth2Permission**.\r"
+  },
+  "oauth2permission/adminconsentdescription": {
+    "description": "Permission help text that appears in the admin consent and app assignment experiences."
+  },
+  "oauth2permission/adminconsentdisplayname": {
+    "description": "Display name for the permission that appears in the admin consent and app assignment experiences."
+  },
+  "oauth2permission/id": {
+    "description": "Unique scope permission identifier inside the oauth2Permissions collection."
+  },
+  "oauth2permission/isenabled": {
+    "description": "When creating or updating a permission, this property must be set to **true** (which is the default). To delete a permission, this property must first be set to **false**.  At that point, in a subsequent call, the permission may be removed."
+  },
+  "oauth2permission/type": {
+    "description": "Specifies whether this scope permission can be consented to by an end user, or whether it is a tenant-wide permission that must be consented to by a Company Administrator.  Possible values are \"User\" or \"Admin\"."
+  },
+  "oauth2permission/userconsentdescription": {
+    "description": "Permission help text that appears in the end user consent experience."
+  },
+  "oauth2permission/userconsentdisplayname": {
+    "description": "Display name for the permission that appears in the end user consent experience."
+  },
+  "oauth2permission/value": {
+    "description": "The value of the scope claim that the resource application should expect in the OAuth 2.0 access token."
+  },
+  "oauth2permissiongrant": {
+    "description": "Represents the OAuth 2.0 delegated permission scopes that have been granted to an application (represented by a service principal) as part of the user or admin consent process. \r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
+    "skipsupported": false
+  },
+  "oauth2permissiongrant/clientid": {
+    "description": ""
+  },
+  "oauth2permissiongrant/consenttype": {
+    "description": ""
+  },
+  "oauth2permissiongrant/expirytime": {
+    "description": ""
+  },
+  "oauth2permissiongrant/objectid": {
+    "description": ""
+  },
+  "oauth2permissiongrant/principalid": {
+    "description": ""
+  },
+  "oauth2permissiongrant/resourceid": {
+    "description": ""
+  },
+  "oauth2permissiongrant/scope": {
+    "description": ""
+  },
+  "oauth2permissiongrant/starttime": {
+    "description": ""
+  },
+  "opentypeextension": {
+    "description": ""
+  },
+  "opentypeextension/id": {
+    "description": ""
+  },
+  "opentypeextension/extensionname": {
+    "description": ""
+  },
+  "openwithapp": {
+    "description": ""
+  },
+  "openwithapp/app": {
+    "description": ""
+  },
+  "openwithapp/viewurl": {
+    "description": ""
+  },
+  "openwithapp/editurl": {
+    "description": ""
+  },
+  "openwithapp/viewpostparameters": {
+    "description": ""
+  },
+  "openwithapp/editpostparameters": {
+    "description": ""
+  },
+  "openwithset": {
+    "description": ""
+  },
+  "openwithset/web": {
+    "description": ""
+  },
+  "openwithset/webembedded": {
+    "description": ""
+  },
+  "orgcontact": {
+    "description": "",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
+    "skipsupported": false
+  },
+  "orgcontact/city": {
+    "description": ""
+  },
+  "orgcontact/country": {
+    "description": ""
+  },
+  "orgcontact/department": {
+    "description": ""
+  },
+  "orgcontact/dirsyncenabled": {
+    "description": ""
+  },
+  "orgcontact/displayname": {
+    "description": ""
+  },
+  "orgcontact/facsimiletelephonenumber": {
+    "description": ""
+  },
+  "orgcontact/givenname": {
+    "description": ""
+  },
+  "orgcontact/jobtitle": {
+    "description": ""
+  },
+  "orgcontact/lastdirsynctime": {
+    "description": ""
+  },
+  "orgcontact/mail": {
+    "description": ""
+  },
+  "orgcontact/mailnickname": {
+    "description": ""
+  },
+  "orgcontact/mobile": {
+    "description": ""
+  },
+  "orgcontact/physicaldeliveryofficename": {
+    "description": ""
+  },
+  "orgcontact/postalcode": {
+    "description": ""
+  },
+  "orgcontact/provisioningerrors": {
+    "description": ""
+  },
+  "orgcontact/proxyaddresses": {
+    "description": ""
+  },
+  "orgcontact/sipproxyaddress": {
+    "description": ""
+  },
+  "orgcontact/state": {
+    "description": ""
+  },
+  "orgcontact/streetaddress": {
+    "description": ""
+  },
+  "orgcontact/surname": {
+    "description": ""
+  },
+  "orgcontact/telephonenumber": {
+    "description": ""
+  },
+  "orgcontact/thumbnailphoto": {
+    "description": ""
+  },
+  "orgcontact/objecttype": {
+    "description": ""
+  },
+  "orgcontact/objectid": {
+    "description": ""
+  },
+  "orgcontact/deletiontimestamp": {
+    "description": ""
+  },
+  "orgcontact/manager": {
+    "description": ""
+  },
+  "orgcontact/directreports": {
+    "description": ""
+  },
+  "orgcontact/memberof": {
+    "description": ""
+  },
+  "outlookitem": {
+    "description": ""
+  },
+  "outlookitem/changekey": {
+    "description": ""
+  },
+  "outlookitem/categories": {
+    "description": ""
+  },
+  "outlookitem/createddatetime": {
+    "description": ""
+  },
+  "outlookitem/lastmodifieddatetime": {
+    "description": ""
+  },
+  "outlookitem/id": {
+    "description": ""
+  },
+  "page": {
+    "description": ""
+  },
+  "page/title": {
+    "description": "The title of the page "
+  },
+  "page/createdbyappid": {
+    "description": "The unique identifier of the application that created the page "
+  },
+  "page/links": {
+    "description": "The oneNoteClientURL link to open the page in the OneNote native client if it 's installed, and oneNoteWebUrl to open the page in OneNote Online"
+  },
+  "page/contenturl": {
+    "description": "The URL for the page's HTML content "
+  },
+  "page/content": {
+    "description": ""
+  },
+  "page/lastmodifiedtime": {
+    "description": ""
+  },
+  "page/id": {
+    "description": "The unique identifier of the page "
+  },
+  "page/self": {
+    "description": ""
+  },
+  "page/createdtime": {
+    "description": "The date and time when the page was created in UTC format "
+  },
+  "page/parentsection": {
+    "description": ""
+  },
+  "page/parentnotebook": {
+    "description": "A page in a OneNote section "
+  },
+  "pagelinks": {
+    "description": ""
+  },
+  "pagelinks/onenoteclienturl": {
+    "description": ""
+  },
+  "pagelinks/onenoteweburl": {
+    "description": ""
+  },
+  "passwordcredential": {
+    "description": "Contains a password credential associated with an application or a service principal. The **passwordCredentials** property of the [ServicePrincipal] entity and of the [Application] entity is a collection of **PasswordCredential**.\r"
+  },
+  "passwordcredential/customkeyidentifier": {
+    "description": "            "
+  },
+  "passwordcredential/enddate": {
+    "description": "The date and time at which the password expires."
+  },
+  "passwordcredential/keyid": {
+    "description": "            "
+  },
+  "passwordcredential/startdate": {
+    "description": "The date and time at which the password becomes valid."
+  },
+  "passwordcredential/value": {
+    "description": "            "
+  },
+  "passwordprofile": {
+    "description": "Contains the password profile associated with a user. The **passwordProfile** property of the [User] entity is a **PasswordProfile** object.\r"
+  },
+  "passwordprofile/password": {
+    "description": "The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login.             The password must satisfy minimum requirements as specified by the user’s **PasswordPolicies** property. By default, a strong password is required."
+  },
+  "passwordprofile/forcechangepasswordnextlogin": {
+    "description": "                **true** if the user must change her password on the next login; otherwise **false**.            "
+  },
+  "patchcontentcommand": {
+    "description": ""
+  },
+  "patchcontentcommand/action": {
+    "description": ""
+  },
+  "patchcontentcommand/target": {
+    "description": ""
+  },
+  "patchcontentcommand/content": {
+    "description": ""
+  },
+  "patchcontentcommand/position": {
+    "description": ""
+  },
+  "patternedrecurrence": {
+    "description": "The recurrence pattern and range."
+  },
+  "patternedrecurrence/pattern": {
+    "description": "The frequency of an event."
+  },
+  "patternedrecurrence/range": {
+    "description": "The duration of an event."
+  },
+  "permission": {
+    "description": ""
+  },
+  "permission/grantedto": {
+    "description": ""
+  },
+  "permission/id": {
+    "description": ""
+  },
+  "permission/invitation": {
+    "description": ""
+  },
+  "permission/inheritedfrom": {
+    "description": ""
+  },
+  "permission/link": {
+    "description": ""
+  },
+  "permission/roles": {
+    "description": ""
+  },
+  "permission/shareid": {
+    "description": ""
+  },
+  "photo": {
+    "description": ""
+  },
+  "photo/width": {
+    "description": ""
+  },
+  "photo/height": {
+    "description": ""
+  },
+  "photo/id": {
+    "description": ""
+  },
+  "physicaladdress": {
+    "description": "The physical address of a contact."
+  },
+  "physicaladdress/street": {
+    "description": "The street."
+  },
+  "physicaladdress/city": {
+    "description": "The city."
+  },
+  "physicaladdress/state": {
+    "description": "The state."
+  },
+  "physicaladdress/countryorregion": {
+    "description": "The country or region."
+  },
+  "physicaladdress/postalcode": {
+    "description": "The postal code."
+  },
+  "plan": {
+    "description": ""
+  },
+  "plan/createdby": {
+    "description": ""
+  },
+  "plan/owner": {
+    "description": ""
+  },
+  "plan/title": {
+    "description": ""
+  },
+  "plan/totaltasks": {
+    "description": ""
+  },
+  "plan/activetasks": {
+    "description": ""
+  },
+  "plan/id": {
+    "description": ""
+  },
+  "plan/version": {
+    "description": ""
+  },
+  "plan/tasks": {
+    "description": ""
+  },
+  "plan/buckets": {
+    "description": ""
+  },
+  "plan/details": {
+    "description": ""
+  },
+  "plan/timeline": {
+    "description": ""
+  },
+  "plan/assignedtotaskboard": {
+    "description": ""
+  },
+  "plan/statustaskboard": {
+    "description": ""
+  },
+  "plan/buckettaskboard": {
+    "description": ""
+  },
+  "plandetails": {
+    "description": ""
+  },
+  "plandetails/sharedwith": {
+    "description": ""
+  },
+  "plandetails/category0description": {
+    "description": ""
+  },
+  "plandetails/category1description": {
+    "description": ""
+  },
+  "plandetails/category2description": {
+    "description": ""
+  },
+  "plandetails/category3description": {
+    "description": ""
+  },
+  "plandetails/category4description": {
+    "description": ""
+  },
+  "plandetails/category5description": {
+    "description": ""
+  },
+  "plandetails/id": {
+    "description": ""
+  },
+  "plandetails/version": {
+    "description": ""
+  },
+  "plantaskboard": {
+    "description": ""
+  },
+  "plantaskboard/type": {
+    "description": ""
+  },
+  "plantaskboard/id": {
+    "description": ""
+  },
+  "plantaskboard/version": {
+    "description": ""
+  },
+  "plantimeline": {
+    "description": ""
+  },
+  "plantimeline/displaysettings": {
+    "description": ""
+  },
+  "plantimeline/lockedwidth": {
+    "description": ""
+  },
+  "plantimeline/id": {
+    "description": ""
+  },
+  "plantimeline/version": {
+    "description": ""
+  },
+  "post": {
+    "description": ""
+  },
+  "post/body": {
+    "description": ""
+  },
+  "post/receiveddatetime": {
+    "description": ""
+  },
+  "post/hasattachments": {
+    "description": ""
+  },
+  "post/from": {
+    "description": ""
+  },
+  "post/sender": {
+    "description": ""
+  },
+  "post/conversationthreadid": {
+    "description": ""
+  },
+  "post/conversationid": {
+    "description": ""
+  },
+  "post/newparticipants": {
+    "description": ""
+  },
+  "post/changekey": {
+    "description": ""
+  },
+  "post/categories": {
+    "description": ""
+  },
+  "post/createddatetime": {
+    "description": ""
+  },
+  "post/lastmodifieddatetime": {
+    "description": ""
+  },
+  "post/id": {
+    "description": ""
+  },
+  "post/attachments": {
+    "description": ""
+  },
+  "post/extensions": {
+    "description": ""
+  },
+  "post/inreplyto": {
+    "description": ""
+  },
+  "provisionedplan": {
+    "description": "The **provisionedPlans** property of the [User] entity and the [TenantDetail] entity is a collection of **ProvisionedPlan**.\r"
+  },
+  "provisionedplan/capabilitystatus": {
+    "description": "For example, “Enabled”."
+  },
+  "provisionedplan/provisioningstatus": {
+    "description": "For example, “Success”."
+  },
+  "provisionedplan/service": {
+    "description": "The name of the service; for example, “AccessControlS2S”"
+  },
+  "provisioningerror": {
+    "description": "The **provisioningErrors** property of the [Contact], [User], and [Group] entities is a collection of **ProvisioningError**.\r"
+  },
+  "provisioningerror/errordetail": {
+    "description": "A description of the error."
+  },
+  "provisioningerror/resolved": {
+    "description": "                **true** if the error was resolved; otherwise, **false**.            "
+  },
+  "provisioningerror/service": {
+    "description": ""
+  },
+  "provisioningerror/timestamp": {
+    "description": "The date and time at which the error occurred."
+  },
+  "quota": {
+    "description": ""
+  },
+  "quota/deleted": {
+    "description": ""
+  },
+  "quota/remaining": {
+    "description": ""
+  },
+  "quota/state": {
+    "description": ""
+  },
+  "quota/total": {
+    "description": ""
+  },
+  "quota/used": {
+    "description": ""
+  },
+  "recipient": {
+    "description": "A sender or receiver for a message."
+  },
+  "recipient/emailaddress": {
+    "description": "The recipient's email address."
+  },
+  "recipients": {
+    "description": ""
+  },
+  "recipients/email": {
+    "description": ""
+  },
+  "recipients/alias": {
+    "description": ""
+  },
+  "recipients/objectid": {
+    "description": ""
+  },
+  "recipients/permissionidentitytype": {
+    "description": ""
+  },
+  "recurrencepattern": {
+    "description": "The frequency of an event."
+  },
+  "recurrencepattern/type": {
+    "description": "The recurrence pattern type: Daily = 0, Weekly = 1, AbsoluteMonthly = 2, RelativeMonthly = 3, AbsoluteYearly = 4, RelativeYearly = 5."
+  },
+  "recurrencepattern/interval": {
+    "description": "The number of units of a given recurrence type between occurrences."
+  },
+  "recurrencepattern/month": {
+    "description": "The month that the item occurs on.  This is a number from 1 to 12."
+  },
+  "recurrencepattern/dayofmonth": {
+    "description": "The day of month that the item occurs on."
+  },
+  "recurrencepattern/daysofweek": {
+    "description": "A collection of days of the week: Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6."
+  },
+  "recurrencepattern/firstdayofweek": {
+    "description": "The day of the week: Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6."
+  },
+  "recurrencepattern/index": {
+    "description": "The week index: First = 0, Second = 1, Third = 2, Fourth = 3, Last = 4."
+  },
+  "recurrencerange": {
+    "description": "The duration of an event."
+  },
+  "recurrencerange/type": {
+    "description": "The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2."
+  },
+  "recurrencerange/startdate": {
+    "description": "The start date of the series."
+  },
+  "recurrencerange/enddate": {
+    "description": "The end date of the series."
+  },
+  "recurrencerange/numberofoccurrences": {
+    "description": "How many times to repeat the event."
+  },
+  "referenceattachment": {
+    "description": ""
+  },
+  "referenceattachment/name": {
+    "description": ""
+  },
+  "referenceattachment/contenttype": {
+    "description": ""
+  },
+  "referenceattachment/size": {
+    "description": ""
+  },
+  "referenceattachment/isinline": {
+    "description": ""
+  },
+  "referenceattachment/lastmodifieddatetime": {
+    "description": ""
+  },
+  "referenceattachment/id": {
+    "description": ""
+  },
+  "requiredresourceaccess": {
+    "description": "Specifies the set of OAuth 2.0 permission scopes and app roles under the specified resource that an application requires access to. The specified OAuth 2.0 permission scopes may be requested by client applications (through the **requiredResourceAccess** collection) when calling a resource application. The **requiredResourceAccess** property of the [Application] entity is a collection of **ReqiredResourceAccess**.\r"
+  },
+  "requiredresourceaccess/resourceappid": {
+    "description": "The unique identifier for the resource that the application requires access to.  This should be equal to the **appId** declared on the target resource application."
+  },
+  "requiredresourceaccess/resourceaccess": {
+    "description": "The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource."
+  },
+  "resource": {
+    "description": ""
+  },
+  "resource/id": {
+    "description": "The unique id of this resource. "
+  },
+  "resource/self": {
+    "description": ""
+  },
+  "resource/content": {
+    "description": "A stream of the content of this resource. "
+  },
+  "resource/contenturl": {
+    "description": "A Url to which a GET request can be sent to retrieve this resource. "
+  },
+  "resourceaccess": {
+    "description": "Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the [RequiredResourceAccess] type is a collection of **ResourceAccess**.\r"
+  },
+  "resourceaccess/id": {
+    "description": "The unique identifier for one of the [OAuth2Permission] or [AppRole] instances that the resource application exposes."
+  },
+  "resourceaccess/type": {
+    "description": "Specifies whether the **id** property references an [OAuth2Permission] or an [AppRole]. Possible values are \"scope\" or \"role\"."
+  },
+  "responsestatus": {
+    "description": "The response status of a meeting request."
+  },
+  "responsestatus/response": {
+    "description": "The response type: None = 0, Organizer = 1, TentativelyAccepted = 2, Accepted = 3, Declined = 4, NotResponded = 5."
+  },
+  "responsestatus/time": {
+    "description": "<!--Need description! -->"
+  },
+  "searchresult": {
+    "description": ""
+  },
+  "searchresult/onclicktelemetryurl": {
+    "description": ""
+  },
+  "section": {
+    "description": ""
+  },
+  "section/isdefault": {
+    "description": "Indicates whether this is the user's default section."
+  },
+  "section/pagesurl": {
+    "description": "The /pages endpoint where you can get details for all the pages in the section."
+  },
+  "section/name": {
+    "description": "The name of the section. "
+  },
+  "section/createdby": {
+    "description": "The user who created the section. "
+  },
+  "section/lastmodifiedby": {
+    "description": "The user who last modified the section. "
+  },
+  "section/lastmodifiedtime": {
+    "description": "The date and time when the section was last modified. "
+  },
+  "section/id": {
+    "description": "The unique identifier of the section. "
+  },
+  "section/self": {
+    "description": "The endpoint where you can get details about the section. "
+  },
+  "section/createdtime": {
+    "description": "The date and time when the section was created. "
+  },
+  "section/parentnotebook": {
+    "description": "The notebook that contains the section, expanded by default with the id, name, and self properties selected. "
+  },
+  "section/parentsectiongroup": {
+    "description": "The section group that contains the section, expanded by default with the id, name, and self properties selected. "
+  },
+  "section/pages": {
+    "description": "A section in a OneNote notebook "
+  },
+  "sectiongroup": {
+    "description": ""
+  },
+  "sectiongroup/sectionsurl": {
+    "description": "The URL for the sections navigation property, which returns all the sections in the section group."
+  },
+  "sectiongroup/sectiongroupsurl": {
+    "description": "The URL for the sectionGroups navigation property, which returns all the section groups in the section group."
+  },
+  "sectiongroup/name": {
+    "description": "The name of the section group."
+  },
+  "sectiongroup/createdby": {
+    "description": "The user who created the section group."
+  },
+  "sectiongroup/lastmodifiedby": {
+    "description": "The user who last modified the section group."
+  },
+  "sectiongroup/lastmodifiedtime": {
+    "description": "The date and time when the section group was last modified."
+  },
+  "sectiongroup/id": {
+    "description": "The unique identifier of the section group."
+  },
+  "sectiongroup/self": {
+    "description": "The endpoint where you can get details about the section group."
+  },
+  "sectiongroup/createdtime": {
+    "description": "The date and time when the section group was created."
+  },
+  "sectiongroup/parentnotebook": {
+    "description": "The notebook that contains the section group, expanded by default with the id, name, and self properties selected."
+  },
+  "sectiongroup/parentsectiongroup": {
+    "description": "The section group that contains the section group, expanded by default with the id, name, and self properties selected."
+  },
+  "sectiongroup/sections": {
+    "description": "The sections in the section group. Can be navigated to using the sectionsUrl property or expanded in a GET request."
+  },
+  "sectiongroup/sectiongroups": {
+    "description": ""
+  },
+  "serviceplaninfo": {
+    "description": "Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [SubscribedSku] entity is a collection of **ServicePlanInfo**.\r"
+  },
+  "serviceplaninfo/serviceplanid": {
+    "description": "The unique identifier of the service plan."
+  },
+  "serviceplaninfo/serviceplanname": {
+    "description": "The name of the service plan."
   },
   "serviceprincipal": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "description": "Represents an instance of an application in a directory. Inherits from [DirectoryObject].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "skipsupported": false
   },
-  "tenantdetail": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
-    "skipsupported": false
+  "serviceprincipal/accountenabled": {
+    "description": "                **true** if the service principal account is enabled; otherwise, **false**.            "
+  },
+  "serviceprincipal/appdisplayname": {
+    "description": "The display name exposed by the associated application."
+  },
+  "serviceprincipal/appid": {
+    "description": "The unique identifier for the associated application (its **appId** property)."
+  },
+  "serviceprincipal/appownertenantid": {
+    "description": "            "
+  },
+  "serviceprincipal/approleassignmentrequired": {
+    "description": "Specifies whether an **AppRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application.                            **Notes**: Requires version 1.5 or newer, not nullable.            "
+  },
+  "serviceprincipal/approles": {
+    "description": "The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [Application] entity                            **Notes**: Requires version 1.5 or newer, not nullable.            "
+  },
+  "serviceprincipal/displayname": {
+    "description": "The display name for the service principal."
+  },
+  "serviceprincipal/errorurl": {
+    "description": "            "
+  },
+  "serviceprincipal/homepage": {
+    "description": "The URL to the homepage of the associated   application."
+  },
+  "serviceprincipal/keycredentials": {
+    "description": "The collection of key credentials associated with the service principal.                            **Notes**: not nullable.            "
+  },
+  "serviceprincipal/logouturl": {
+    "description": "            "
+  },
+  "serviceprincipal/oauth2permissions": {
+    "description": "The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [Application] entity.                            **Notes**: Requires version 1.5 or newer, not nullable.            "
+  },
+  "serviceprincipal/passwordcredentials": {
+    "description": "The collection of password credentials associated with the service principal.                            **Notes**: not nullable.            "
+  },
+  "serviceprincipal/preferredtokensigningkeythumbprint": {
+    "description": "Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.                            **Notes**: Requires version 1.5 or newer.            "
+  },
+  "serviceprincipal/publishername": {
+    "description": "The display name of the tenant in which the associated application is specified."
+  },
+  "serviceprincipal/replyurls": {
+    "description": "The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.                            **Notes**: not nullable.            "
+  },
+  "serviceprincipal/samlmetadataurl": {
+    "description": "            "
+  },
+  "serviceprincipal/serviceprincipalnames": {
+    "description": "The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/en-us/library/azure/dn132633.aspx).                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            "
+  },
+  "serviceprincipal/tags": {
+    "description": "                                        **Notes**: not nullable.            "
+  },
+  "serviceprincipal/objecttype": {
+    "description": "A string that identifies the object type. For service principals the value is always “ServicePrincipal”. Inherited from [DirectoryObject]."
+  },
+  "serviceprincipal/objectid": {
+    "description": "The unique identifier for the service principal. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "serviceprincipal/deletiontimestamp": {
+    "description": ""
+  },
+  "serviceprincipal/approleassignedto": {
+    "description": "Principals (users, groups, and service principals) that are assigned to this service principal. Requires version 1.5 or newer."
+  },
+  "serviceprincipal/approleassignments": {
+    "description": "Applications that the service principal is assigned to. Requires version 1.5 or newer."
+  },
+  "serviceprincipal/oauth2permissiongrants": {
+    "description": "User impersonation grants associated with this service principal. Requires version 1.5 or newer."
+  },
+  "serviceprincipal/memberof": {
+    "description": "Roles that this service principal is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET"
+  },
+  "serviceprincipal/createdonbehalfof": {
+    "description": ""
+  },
+  "serviceprincipal/createdobjects": {
+    "description": "Directory objects created by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer."
+  },
+  "serviceprincipal/owners": {
+    "description": "Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer."
+  },
+  "serviceprincipal/ownedobjects": {
+    "description": "Directory objects that are owned by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer."
+  },
+  "share": {
+    "description": ""
+  },
+  "share/id": {
+    "description": ""
+  },
+  "share/name": {
+    "description": ""
+  },
+  "share/owner": {
+    "description": ""
+  },
+  "share/items": {
+    "description": ""
+  },
+  "shared": {
+    "description": ""
+  },
+  "shared/owner": {
+    "description": ""
+  },
+  "shared/scope": {
+    "description": ""
+  },
+  "sharinginvitation": {
+    "description": ""
+  },
+  "sharinginvitation/email": {
+    "description": ""
+  },
+  "sharinginvitation/redeemedby": {
+    "description": ""
+  },
+  "sharinginvitation/signinrequired": {
+    "description": ""
+  },
+  "sharinglink": {
+    "description": ""
+  },
+  "sharinglink/application": {
+    "description": ""
+  },
+  "sharinglink/type": {
+    "description": ""
+  },
+  "sharinglink/weburl": {
+    "description": ""
+  },
+  "site": {
+    "description": ""
+  },
+  "site/id": {
+    "description": ""
+  },
+  "site/notes": {
+    "description": ""
+  },
+  "sitecollection": {
+    "description": ""
+  },
+  "sitecollection/id": {
+    "description": ""
+  },
+  "sitecollection/sites": {
+    "description": ""
+  },
+  "sitemetadata": {
+    "description": ""
+  },
+  "sitemetadata/sitecollectionid": {
+    "description": ""
+  },
+  "sitemetadata/siteid": {
+    "description": ""
+  },
+  "specialfolder": {
+    "description": ""
+  },
+  "specialfolder/name": {
+    "description": ""
   },
   "subscribedsku": {
-    "expandable": false,
-    "referenceable": false,
-    "selectable": false,
-    "countable": false,
-    "filterable": false,
+    "description": "Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [DirectoryObject].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
     "topsupported": false,
     "skipsupported": false
+  },
+  "subscribedsku/capabilitystatus": {
+    "description": ""
+  },
+  "subscribedsku/consumedunits": {
+    "description": ""
+  },
+  "subscribedsku/objectid": {
+    "description": ""
+  },
+  "subscribedsku/prepaidunits": {
+    "description": ""
+  },
+  "subscribedsku/serviceplans": {
+    "description": ""
+  },
+  "subscribedsku/skuid": {
+    "description": ""
+  },
+  "subscribedsku/skupartnumber": {
+    "description": ""
+  },
+  "task": {
+    "description": ""
+  },
+  "task/createdby": {
+    "description": ""
+  },
+  "task/assignedto": {
+    "description": ""
+  },
+  "task/planid": {
+    "description": ""
+  },
+  "task/bucketid": {
+    "description": ""
+  },
+  "task/title": {
+    "description": ""
+  },
+  "task/orderhint": {
+    "description": ""
+  },
+  "task/assigneepriority": {
+    "description": ""
+  },
+  "task/percentcomplete": {
+    "description": ""
+  },
+  "task/startdate": {
+    "description": ""
+  },
+  "task/assignedtodate": {
+    "description": ""
+  },
+  "task/createddate": {
+    "description": ""
+  },
+  "task/assignedby": {
+    "description": ""
+  },
+  "task/duedate": {
+    "description": ""
+  },
+  "task/hasnotes": {
+    "description": ""
+  },
+  "task/previewtype": {
+    "description": ""
+  },
+  "task/completeddate": {
+    "description": ""
+  },
+  "task/numberofreferences": {
+    "description": ""
+  },
+  "task/appliedcategories": {
+    "description": ""
+  },
+  "task/id": {
+    "description": ""
+  },
+  "task/version": {
+    "description": ""
+  },
+  "task/details": {
+    "description": ""
+  },
+  "task/timelineformat": {
+    "description": ""
+  },
+  "task/assignedtotaskboardformat": {
+    "description": ""
+  },
+  "task/statustaskboardformat": {
+    "description": ""
+  },
+  "task/buckettaskboardformat": {
+    "description": ""
+  },
+  "taskboardtaskformat": {
+    "description": ""
+  },
+  "taskboardtaskformat/type": {
+    "description": ""
+  },
+  "taskboardtaskformat/orderhint": {
+    "description": ""
+  },
+  "taskboardtaskformat/id": {
+    "description": ""
+  },
+  "taskboardtaskformat/version": {
+    "description": ""
+  },
+  "taskdetails": {
+    "description": ""
+  },
+  "taskdetails/notes": {
+    "description": ""
+  },
+  "taskdetails/previewtype": {
+    "description": ""
+  },
+  "taskdetails/completedby": {
+    "description": ""
+  },
+  "taskdetails/references": {
+    "description": ""
+  },
+  "taskdetails/id": {
+    "description": ""
+  },
+  "taskdetails/version": {
+    "description": ""
+  },
+  "tenantdetail": {
+    "description": "Represents an Azure Active Directory tenant. Only the read and update operations are supported on tenants; create and delete are not supported. Inherits from [DirectoryOjbect].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
+    "skipsupported": false
+  },
+  "tenantdetail/assignedplans": {
+    "description": "The collection of service plans associated with the tenant.                            **Notes**: not nullable.            "
+  },
+  "tenantdetail/city": {
+    "description": "            "
+  },
+  "tenantdetail/companylastdirsynctime": {
+    "description": "The time and date at which the tenant was last synced with the on-premise directory."
+  },
+  "tenantdetail/country": {
+    "description": "            "
+  },
+  "tenantdetail/countrylettercode": {
+    "description": "            "
+  },
+  "tenantdetail/dirsyncenabled": {
+    "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default)."
+  },
+  "tenantdetail/displayname": {
+    "description": "The display name for the tenant."
+  },
+  "tenantdetail/marketingnotificationemails": {
+    "description": "                                        **Notes**: not nullable.            "
+  },
+  "tenantdetail/postalcode": {
+    "description": "            "
+  },
+  "tenantdetail/preferredlanguage": {
+    "description": "            "
+  },
+  "tenantdetail/provisionedplans": {
+    "description": "                                        **Notes**: not nullable.            "
+  },
+  "tenantdetail/provisioningerrors": {
+    "description": "                                        **Notes**: not nullable.            "
+  },
+  "tenantdetail/securitycompliancenotificationmails": {
+    "description": ""
+  },
+  "tenantdetail/securitycompliancenotificationphones": {
+    "description": ""
+  },
+  "tenantdetail/state": {
+    "description": "            "
+  },
+  "tenantdetail/street": {
+    "description": "            "
+  },
+  "tenantdetail/technicalnotificationmails": {
+    "description": "                                        **Notes**: not nullable.            "
+  },
+  "tenantdetail/telephonenumber": {
+    "description": "            "
+  },
+  "tenantdetail/verifieddomains": {
+    "description": "The collection of domains associated with this tenant.                            **Notes**: not nullable.            "
+  },
+  "tenantdetail/objecttype": {
+    "description": "A string that identifies the object type. For tenants the value is always “Company”. Inherited from [DirectoryObject]."
+  },
+  "tenantdetail/objectid": {
+    "description": "The unique identifier for the tenant. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "tenantdetail/deletiontimestamp": {
+    "description": ""
+  },
+  "thumbnail": {
+    "description": "The Thumbnail resource type represents a thumbnail for an image, video, document, or any file or folder on OneDrive that\r has a graphical representation.\r \r "
+  },
+  "thumbnail/content": {
+    "description": "The content stream."
+  },
+  "thumbnail/height": {
+    "description": "The height of the thumbnail, in pixels."
+  },
+  "thumbnail/url": {
+    "description": "The URL used to fetch the thumbnail content."
+  },
+  "thumbnail/width": {
+    "description": "The width of the thumbnail, in pixels."
+  },
+  "thumbnailset": {
+    "description": "The ThumbnailSet type is a keyed collection of [Thumbnail](thumbnail.md) objects.\r It is used to represent a set of thumbnails associated with a single file on OneDrive.\r \r "
+  },
+  "thumbnailset/id": {
+    "description": "The id within the item."
+  },
+  "thumbnailset/large": {
+    "description": "A 1920x1920 scaled thumbnail."
+  },
+  "thumbnailset/medium": {
+    "description": "A 176x176 scaled thumbnail."
+  },
+  "thumbnailset/small": {
+    "description": "A 48x48 cropped thumbnail."
+  },
+  "thumbnailset/source": {
+    "description": "A custom thumbnail image or the original image used to generate other thumbnails."
+  },
+  "timelinetaskformat": {
+    "description": ""
+  },
+  "timelinetaskformat/color": {
+    "description": ""
+  },
+  "timelinetaskformat/drawingstyle": {
+    "description": ""
+  },
+  "timelinetaskformat/labeloffsetx": {
+    "description": ""
+  },
+  "timelinetaskformat/labeloffsety": {
+    "description": ""
+  },
+  "timelinetaskformat/anchorposition": {
+    "description": ""
+  },
+  "timelinetaskformat/swimlane": {
+    "description": ""
+  },
+  "timelinetaskformat/calloutheight": {
+    "description": ""
+  },
+  "timelinetaskformat/visible": {
+    "description": ""
+  },
+  "timelinetaskformat/id": {
+    "description": ""
+  },
+  "timelinetaskformat/version": {
+    "description": ""
+  },
+  "uploadsession": {
+    "description": ""
+  },
+  "uploadsession/uploadurl": {
+    "description": ""
+  },
+  "uploadsession/expirationdatetime": {
+    "description": ""
+  },
+  "uploadsession/nextexpectedranges": {
+    "description": ""
+  },
+  "user": {
+    "description": "Represents an Azure AD user account. Inherits from [DirectoryObject].\r",
+    "expandrestrictions/expandable": false,
+    "navigationrestrictions/referenceable": false,
+    "selectrestrictions/selectable": false,
+    "countrestrictions/countable": false,
+    "filterrestrictions/filterable": false,
+    "skipsupported": false
+  },
+  "user/accountenabled": {
+    "description": "                **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.            "
+  },
+  "user/assignedlicenses": {
+    "description": "The licenses that are assigned to the user.                            **Notes**: not nullable.            "
+  },
+  "user/assignedplans": {
+    "description": "The plans that are assigned to the user.                            **Notes**: not nullable.            "
+  },
+  "user/city": {
+    "description": "The city in which the user is located."
+  },
+  "user/country": {
+    "description": "The country/region in which the user is located; for example, “US” or “UK”."
+  },
+  "user/department": {
+    "description": "The name for the department in which the user works."
+  },
+  "user/dirsyncenabled": {
+    "description": "                **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).            "
+  },
+  "user/displayname": {
+    "description": "The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates."
+  },
+  "user/facsimiletelephonenumber": {
+    "description": "The telephone number of the user's business fax machine."
+  },
+  "user/givenname": {
+    "description": "The given name (first name) of the user."
+  },
+  "user/immutableid": {
+    "description": "This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property.                            **Important:** The **$** and **_** characters cannot be used when specifying this property.                                        **Notes**: Requires version 2013-11-08 or newer.            "
+  },
+  "user/jobtitle": {
+    "description": "The user’s job title."
+  },
+  "user/lastdirsynctime": {
+    "description": "Indicates the last time at which the object was synced with the on-premises directory; for example: \"2013-02-16T03:04:54Z\" "
+  },
+  "user/mail": {
+    "description": "The SMTP address for the user, for example, \"jeff@contoso.onmicrosoft.com\"."
+  },
+  "user/mailnickname": {
+    "description": "The mail alias for the user. This property must be specified when a user is created."
+  },
+  "user/mobile": {
+    "description": "The primary cellular telephone number for the user."
+  },
+  "user/onpremisessecurityidentifier": {
+    "description": "Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud.                            **Notes**: Requires version 1.5 or newer.            "
+  },
+  "user/othermails": {
+    "description": "A list of additional email addresses for the user; for example: [\"bob@contoso.com\", \"Robert@fabrikam.com\"].                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            "
+  },
+  "user/passwordpolicies": {
+    "description": "Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: \"DisablePasswordExpiration, DisableStrongPassword\"."
+  },
+  "user/passwordprofile": {
+    "description": "Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created.            The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. For information about the constraints that must be satisfied for a strong password, see **Password policy** under [Change your password](http://onlinehelp.microsoft.com/office365-enterprises/ff637578.aspx) in the Microsoft Office 365 help pages. "
+  },
+  "user/physicaldeliveryofficename": {
+    "description": "The office location in the user's place of business."
+  },
+  "user/postalcode": {
+    "description": "The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code."
+  },
+  "user/preferredlanguage": {
+    "description": "The preferred language for the user. Should follow ISO 639-1 Code; for example \"en-US\"."
+  },
+  "user/provisionedplans": {
+    "description": "The plans that are provisioned for the user.                            **Notes**: not nullable.            "
+  },
+  "user/provisioningerrors": {
+    "description": "A collection of error details that are preventing this user from being provisioned successfully."
+  },
+  "user/proxyaddresses": {
+    "description": "Fpr example: [\"SMTP: bob@contoso.com\", \"smtp: bob@sales.contoso.com\"]                            **Notes**: unique, not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            "
+  },
+  "user/sipproxyaddress": {
+    "description": "Specifies the voice over IP (VOIP) session initiation protocol (SIP) address for the user.                            **Notes**: Requires version 1.5 or newer.            "
+  },
+  "user/state": {
+    "description": "The state or province in the user's address."
+  },
+  "user/streetaddress": {
+    "description": "The street address of the user's place of business."
+  },
+  "user/surname": {
+    "description": "The user's surname (family name or last name).                            **Notes**: filterable.            "
+  },
+  "user/telephonenumber": {
+    "description": "The primary telephone number of the user's place of business."
+  },
+  "user/thumbnailphoto": {
+    "description": "A thumbnail photo to be displayed for the user.                            **Notes**: not nullable.            "
+  },
+  "user/usagelocation": {
+    "description": "A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: \"US\", \"JP\", and \"GB\".                            **Notes**: not nullable.            "
+  },
+  "user/userprincipalname": {
+    "description": "The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created.             The verified domains for the tenant can be accessed from the **VerifiedDomains** property of [TenantDetail]. For example, for contoso.onmicosoft.com, tenant detail can be read by performing a GET to the following URL: https://graph.windows.net/contoso.onmicrosoft.com/tenantDetails?api-version=1.5.                            **Notes**: **key**, unique.            "
+  },
+  "user/usertype": {
+    "description": "A string value that can be used to classify user types in your directory, such as “Member” and “Guest”.                            **Notes**: Requires version 2013-11-08 or newer.            "
+  },
+  "user/mailboxguid": {
+    "description": "The GUID assigned to the user's mailbox."
+  },
+  "user/emailaddress": {
+    "description": ""
+  },
+  "user/aboutme": {
+    "description": ""
+  },
+  "user/alias": {
+    "description": "The user's alias. Typically the SMTP address of the user."
+  },
+  "user/birthday": {
+    "description": ""
+  },
+  "user/hiredate": {
+    "description": ""
+  },
+  "user/interests": {
+    "description": ""
+  },
+  "user/mysite": {
+    "description": ""
+  },
+  "user/pastprojects": {
+    "description": ""
+  },
+  "user/preferredname": {
+    "description": ""
+  },
+  "user/principalname": {
+    "description": ""
+  },
+  "user/responsibilities": {
+    "description": ""
+  },
+  "user/schools": {
+    "description": ""
+  },
+  "user/skills": {
+    "description": ""
+  },
+  "user/tags": {
+    "description": ""
+  },
+  "user/objecttype": {
+    "description": "A string that identifies the object type. For users the value is always “User”. Inherited from [DirectoryObject]."
+  },
+  "user/objectid": {
+    "description": "The unique identifier for the user. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            "
+  },
+  "user/deletiontimestamp": {
+    "description": "This property is not valid for users and always returns **null**. Inherited from [DirectoryObject].                            **Notes**: Requires version 1.5 or newer.            "
+  },
+  "user/approleassignments": {
+    "description": "The set of applications that this user is assigned to. Requires version 1.5 or newer.            HTTP Methods:  GET, POST, DELETE"
+  },
+  "user/oauth2permissiongrants": {
+    "description": "The set of applications that are granted consent to impersonate this user. Requires version 1.5 or newer.            HTTP Methods:  GET, POST, DELETE"
+  },
+  "user/owneddevices": {
+    "description": "Devices that are owned by the user."
+  },
+  "user/registereddevices": {
+    "description": "Devices that are registered for the user."
+  },
+  "user/manager": {
+    "description": "The user or contact that is this user’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE"
+  },
+  "user/directreports": {
+    "description": "The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Inherited from [DirectoryObject].            HTTP Methods: GET"
+  },
+  "user/memberof": {
+    "description": "The groups and directory roles that the user is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET"
+  },
+  "user/createdobjects": {
+    "description": "Directory objects that were created by the user. Requires version 2013-11-08 or newer."
+  },
+  "user/ownedobjects": {
+    "description": "Directory objects that are owned by the user. Requires version 2013-11-08 or newer."
+  },
+  "user/mailfolders": {
+    "description": ""
+  },
+  "user/messages": {
+    "description": "The messages in a mailbox or folder. Navigation property."
+  },
+  "user/calendars": {
+    "description": "The user's calendars. Navigation property."
+  },
+  "user/calendar": {
+    "description": "The user's primary calendar. Navigation property."
+  },
+  "user/calendargroups": {
+    "description": "The user's calendar groups. Navigation property."
+  },
+  "user/events": {
+    "description": "The user's events. Default is to show Events under the Default Calendar. Navigation property."
+  },
+  "user/calendarview": {
+    "description": "The calendar view for the calendar. Navigation property."
+  },
+  "user/contacts": {
+    "description": "The user's contacts. Navigation property."
+  },
+  "user/contactfolders": {
+    "description": "The user's contacts folders. Navigation property."
+  },
+  "user/userphoto": {
+    "description": ""
+  },
+  "user/trendingaround": {
+    "description": ""
+  },
+  "user/workingwith": {
+    "description": ""
+  },
+  "user/joinedgroups": {
+    "description": ""
+  },
+  "user/drive": {
+    "description": ""
+  },
+  "user/details": {
+    "description": ""
+  },
+  "user/tasks": {
+    "description": ""
+  },
+  "user/plans": {
+    "description": ""
+  },
+  "user/notes": {
+    "description": ""
+  },
+  "userdatacollection": {
+    "description": ""
+  },
+  "userdetails": {
+    "description": ""
+  },
+  "userdetails/userdata": {
+    "description": ""
+  },
+  "userdetails/id": {
+    "description": ""
+  },
+  "userdetails/version": {
+    "description": ""
+  },
+  "useridcollection": {
+    "description": ""
+  },
+  "verifieddomain": {
+    "description": "Specifies a domain for a tenant. The **verifiedDomains** property of the [TenantDetail] entity is a collection of **VerifiedDomain**.\r"
+  },
+  "verifieddomain/capabilities": {
+    "description": "For example, “Email”, “OfficeCommunicationsOnline”."
+  },
+  "verifieddomain/default": {
+    "description": "                **true** if this is the default domain associated with the tenant; otherwise, **false**.            "
+  },
+  "verifieddomain/id": {
+    "description": "For example, “00057FFE80187238”."
+  },
+  "verifieddomain/initial": {
+    "description": "            "
+  },
+  "verifieddomain/name": {
+    "description": "The domain name; for example, “contoso.onmicrosoft.com”"
+  },
+  "verifieddomain/type": {
+    "description": "For example, “Managed”."
+  },
+  "video": {
+    "description": ""
+  },
+  "video/bitrate": {
+    "description": ""
+  },
+  "video/duration": {
+    "description": ""
+  },
+  "video/height": {
+    "description": ""
+  },
+  "video/width": {
+    "description": ""
   }
 }

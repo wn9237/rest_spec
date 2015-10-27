@@ -69,7 +69,7 @@ module SpecMaker
 
 	# Load the structure
 	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
-	@struct = JSON.parse(File.read(JSON_STRUCTURE), {:symbolize_names => true})
+	@struct = JSON.parse(File.read(JSON_STRUCTURE, :encoding => 'UTF-8'), {:symbolize_names => true})
 	@template = @struct[:object]
 	@service = @struct[:serviceSettings]
 	@mdresource = @struct[:mdresource]
@@ -121,10 +121,11 @@ module SpecMaker
 	LOG_FOLDER = '../../logs'
 	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
 
-	if File.exists?("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
-		File.delete("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
+	LOG_FILE = File.basename($PROGRAM_NAME, ".rb") + ".txt";
+	if File.exists?("#{LOG_FOLDER}/#{LOG_FILE}")
+		File.delete("#{LOG_FOLDER}/#{LOG_FILE}")
 	end
-	@logger = Logger.new("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
+	@logger = Logger.new("#{LOG_FOLDER}/#{LOG_FILE}")
 	@logger.level = Logger::DEBUG
 	# End log file
 
@@ -147,7 +148,7 @@ module SpecMaker
 	@annotations = {}
 
 	begin
-		@annotations = JSON.parse File.read(ANNOTATIONS)
+		@annotations = JSON.parse File.read(ANNOTATIONS, :encoding => 'UTF-8')
 	rescue => err
 		@logger.warn("JSON Annotations input file doesn't exist: #{@current_object}")
 	end
@@ -158,7 +159,7 @@ module SpecMaker
 	@enumHash = {}
 
 	begin
-		@enumHash = JSON.parse File.read(ENUMS)
+		@enumHash = JSON.parse File.read(ENUMS, :encoding => 'UTF-8')
 	rescue => err
 		@logger.warn("JSON Enumeration input file doesn't exist: #{@current_object}")
 	end
@@ -184,7 +185,7 @@ module SpecMaker
 		createDescription = ''
 		fullpath = JSON_SOURCE_FOLDER + '/' + objectName.downcase + '.json'
 		if File.file?(fullpath)
-			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			object = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			createDescription = object[:createDescription]
 		end
 		return createDescription
@@ -215,7 +216,7 @@ module SpecMaker
 		model={}
 		fullpath = JSON_SOURCE_FOLDER + '/' + ct.downcase + '.json'
 		if File.file?(fullpath)
-			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			object = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			object[:properties].each do |item|
 				if item[:name].downcase.start_with?('extension')
 					next
@@ -272,7 +273,7 @@ module SpecMaker
 
 		fullpath = JSON_SOURCE_FOLDER + '/' + objectName.downcase + '.json'
 		if File.file?(fullpath)
-			object = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			object = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			object[:properties].each_with_index do |item, i|
 				next if item[:isRelationship]  
 				if item[:name].downcase.start_with?('extension')	

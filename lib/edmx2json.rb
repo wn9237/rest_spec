@@ -7,14 +7,38 @@ require 'logger'
 module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
-	f=File.read(CSDL_LOCATION + 'ppe_alpha_graph.xml')
+	CSDL_FILE='ppe_alpha_graph'
+	f=File.read(CSDL_LOCATION + CSDL_FILE + '.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
 	csdl=JSON.parse(Hash.from_xml(f).to_json, {:symbolize_names => true}) 
-	File.open(CSDL_LOCATION + 'ppe_alpha_graph.json', "w") do |f|
-		f.write(JSON.pretty_generate csdl)
+	File.open(CSDL_LOCATION + CSDL_FILE + '.json', "w") do |f|
+		f.write(JSON.pretty_generate csdl, :encoding => 'UTF-8')
 	end
 	schema = csdl[:Edmx][:DataServices][:Schema]
+
+	CSDL_SUPPLIMENTAL = CSDL_FILE + '_suppliment'
+	if File.exists?(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml')
+		supplimentalXml=File.read(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml', :encoding => 'UTF-8')
+	
+		# Convert to JSON format. 
+		supplimentalJson=JSON.parse(Hash.from_xml(supplimentalXml).to_json, {:symbolize_names => true}) 
+		File.open(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.json', "w") do |f|
+			f.write(JSON.pretty_generate supplimentalJson, :encoding => 'UTF-8')
+		end
+
+		supplimentalSchema = supplimentalJson[:Edmx][:DataServices][:Schema]
+		supplimentalSchema[:Annotations].each do |annotations|
+			target = get_type(annotations[:Target]).downcase
+	
+			puts "-> Processing Annotation #{target}"
+			# puts item[:Annotation].length
+			# puts item[:Annotation]
+			
+			parse_annotations(target, annotations[:Annotation])
+			@iann = @iann + 1
+		end
+	end
 
 	puts "Staring..."
 
@@ -23,51 +47,12 @@ module SpecMaker
 	schema[:Annotations].each do |item|
 		dt = get_type(item[:Target]).downcase
 
-		@annotations[dt] = {}
 		puts "-> Processing Annotation #{dt}"
 		# puts item[:Annotation].length
 		# puts item[:Annotation]
-
-		if item[:Annotation].is_a?(Array)
-			item[:Annotation].each do |ann|
-				if ann[:Bool]
-					term = get_type(ann[:Term]).downcase
-					if ann[:Bool].downcase == 'true'
-						@annotations[dt][term] = true
-					else
-						@annotations[dt][term] = false
-					end
-				elsif ann[:Record][:PropertyValue]
-					term = ann[:Record][:PropertyValue][:Property].downcase
-					if ann[:Record][:PropertyValue][:Bool].downcase == 'true'
-						@annotations[dt][term] = true
-					else
-						@annotations[dt][term] = false
-					end
-				end
-			end
-		else
-			ann = item[:Annotation]
-			if ann[:Bool]
-				term = get_type(ann[:Term]).downcase
-				if ann[:Bool].downcase == 'true'
-					@annotations[dt][term] = true
-				else
-					@annotations[dt][term] = false
-				end
-			elsif ann[:Record][:PropertyValue]
-				term = ann[:Record][:PropertyValue][:Property].downcase
-				if ann[:Record][:PropertyValue][:Bool].downcase == 'true'
-					@annotations[dt][term] = true
-				else
-					@annotations[dt][term] = false
-				end
-			end
-		end
+		
+		parse_annotations(dt, item[:Annotation])
 		@iann = @iann + 1
-	end
-	File.open(ANNOTATIONS, "w") do |f|
-		f.write(JSON.pretty_generate @annotations)
 	end
 
 	# Process all Enums. Load in memory.
@@ -91,7 +76,7 @@ module SpecMaker
 	end
 
 	File.open(ENUMS, "w") do |f|
-		f.write(JSON.pretty_generate @enum_objects)
+		f.write(JSON.pretty_generate @enum_objects, :encoding => 'UTF-8')
 	end
 
 	# # Process ACTIONS
@@ -111,7 +96,7 @@ module SpecMaker
 
 	# Write Functions & Actions
 	File.open(JSON_BASE_FOLDER + 'actions.json', "w") do |f|
-		f.write(JSON.pretty_generate @methods)
+		f.write(JSON.pretty_generate @methods, :encoding => 'UTF-8')
 	end
 	#######
 	# Loc0
@@ -129,18 +114,21 @@ module SpecMaker
 		@json_object[:allowUpsert] = false
 		@json_object[:allowPatchCreate] = false
 		@json_object[:allowDelete] = false
-
+		
+		parse_annotations(entity[:Name], entity[:Annotation])
+		set_description(entity[:Name], @json_object)
+		
 		# PROCESS Properties
 		if entity[:Property].is_a?(Array)
 			entity[:Property].each do |item|		
-				@json_object[:properties].push process_complextype(item)
+				@json_object[:properties].push process_complextype(entity[:Name], item)
 			end
 		elsif entity[:Property].is_a?(Hash)
-			@json_object[:properties].push process_complextype(entity[:Property])
+			@json_object[:properties].push process_complextype(entity[:Name], entity[:Property])
 		end
 		preserve_object_property_descriptions(@json_object[:name])
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
-			f.write(JSON.pretty_generate @json_object)
+			f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
 		end		
 		GC.start
 	end
@@ -186,23 +174,26 @@ module SpecMaker
 			end
 		end
 		
+		parse_annotations(entity[:Name], entity[:Annotation])
+		set_description(entity[:Name], @json_object)
+
 		# PROCESS Properties
 		if entity[:Property].is_a?(Array)
 			entity[:Property].each do |item|	
-				@json_object[:properties].push process_property(item)
+				@json_object[:properties].push process_property(entity[:Name], item)
 			end
 		elsif entity[:Property].is_a?(Hash)
-			@json_object[:properties].push process_property(entity[:Property])
+			@json_object[:properties].push process_property(entity[:Name], entity[:Property])
 		end
 
 		# PROCESS Navigation Properties
 		if entity[:NavigationProperty].is_a?(Array)
 			entity[:NavigationProperty].each do |item|		
-				@json_object[:properties].push process_navigation(item)
+				@json_object[:properties].push process_navigation(entity[:Name], item)
 			end
 		elsif entity[:NavigationProperty].is_a?(Hash)
 
-			@json_object[:properties].push process_navigation(entity[:NavigationProperty])
+			@json_object[:properties].push process_navigation(entity[:Name], entity[:NavigationProperty])
 		end
 
 		# Add methods and pull in methods from base type.
@@ -223,7 +214,7 @@ module SpecMaker
 		preserve_object_property_descriptions(@json_object[:name])
 
 		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
-			f.write(JSON.pretty_generate @json_object)
+			f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
 		end
 		# if !@json_object[:isComplexType]
 		# 	create_auto_examplefiles((@json_object[:name]).downcase, false)		 
@@ -263,7 +254,7 @@ module SpecMaker
 
 		fileName = (@json_object[:name]).downcase + '_' + dt.downcase + '_collection.json'
 		File.open("#{JSON_SOURCE_FOLDER}#{fileName}", "w") do |f|
-			f.write(JSON.pretty_generate @json_object)
+			f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
 		end
 		#create_auto_examplefiles((@json_object[:name]).downcase, true)		 
 
@@ -287,6 +278,10 @@ module SpecMaker
 		# No need to write singletons. 
 		puts "calling fill rest path with: /#{schema[:EntityContainer][:Singleton][:Name].downcase}, #{dt} " 
 		fill_rest_path("/#{schema[:EntityContainer][:Singleton][:Name].downcase}", dt, false)
+	end
+
+	File.open(ANNOTATIONS, "w") do |f|
+		f.write(JSON.pretty_generate @annotations, :encoding => 'UTF-8')
 	end
 
 	puts "....Completed."

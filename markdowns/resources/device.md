@@ -70,7 +70,7 @@ Here is a JSON representation of the resource
 |displayName|String|The display name for the device.|
 |lastDirSyncTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |objectId|String|The unique identifier for the device. Inherited from [DirectoryObject].                            **Notes: key**, immutable, not nullable, unique             Read-only.|
-|objectType|String|A string that identifies the object type. For devices the value is always ΓÇ£DeviceΓÇ¥. Inherited from [DirectoryObject]|
+|objectType|String|A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject]|
 
 ### Relationships
 | Relationship | Type	|Description|

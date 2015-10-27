@@ -32,7 +32,7 @@ In the request body, supply the values for relevant fields that should be update
 |dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
 |displayName|String|The display name for the device.|
 |lastDirSyncTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.|
-|objectType|String|A string that identifies the object type. For devices the value is always ΓÇ£DeviceΓÇ¥. Inherited from [DirectoryObject]|
+|objectType|String|A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject]|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Device](../resources/device.md) object in the response body.

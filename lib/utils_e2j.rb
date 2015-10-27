@@ -25,11 +25,11 @@ module SpecMaker
 	}
 	# Load the template 
 	# JSON_TEMPLATE = "../jsonFiles/template/restresourcetemplate.json"
-	# @template = JSON.parse(File.read(JSON_TEMPLATE), {:symbolize_names => true})
+	# @template = JSON.parse(File.read(JSON_TEMPLATE, :encoding => 'UTF-8'), {:symbolize_names => true})
 
 	# Load the structure
 	JSON_STRUCTURE = "../jsonFiles/template/restresource_structures.json"
-	@struct = JSON.parse(File.read(JSON_STRUCTURE), {:symbolize_names => true})
+	@struct = JSON.parse(File.read(JSON_STRUCTURE, :encoding => 'UTF-8'), {:symbolize_names => true})
 	@template = @struct[:object]
 	@service = @struct[:serviceSettings]
 
@@ -37,10 +37,11 @@ module SpecMaker
 	LOG_FOLDER = '../../logs'
 	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
 
-	if File.exists?("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
-		File.delete("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
+  LOG_FILE = File.basename($PROGRAM_NAME, ".rb") + ".txt";
+	if File.exists?("#{LOG_FOLDER}/#{LOG_FILE}")
+		File.delete("#{LOG_FOLDER}/#{LOG_FILE}")
 	end
-	@logger = Logger.new("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
+	@logger = Logger.new("#{LOG_FOLDER}/#{LOG_FILE}")
 	@logger.level = Logger::DEBUG
 # End log file
 
@@ -66,6 +67,63 @@ module SpecMaker
 	@iexampleFilesWrittem = 0
 	@annotations = {}
 
+	def self.parse_annotations(target, annotations)
+		if annotations
+			if annotations.is_a?(Array)
+				annotations.each do |annotation|
+					parse_annotation(target, nil, annotation)
+				end
+			else
+				parse_annotation(target, nil, annotations)
+			end
+		end
+	end
+	
+	def self.parse_annotation(target, term, annotation)
+		puts "-> Processing Annotation; Target: #{target}; Term: #{term}; Annotation: #{annotation}"
+		
+		if annotation[:Term]
+			term = get_type(annotation[:Term]).downcase
+		elsif annotation[:Property]
+			term = term + "/" + annotation[:Property].downcase
+		end
+
+		if !@annotations[target]
+			@annotations[target] = {}
+		end
+		
+		if annotation[:Bool]
+			if annotation[:Bool].downcase == 'true'
+				@annotations[target][term] = true
+			else
+				@annotations[target][term] = false
+			end
+		elsif annotation[:String]
+			@annotations[target][term] = annotation[:String]
+		elsif annotation[:Record]
+		if annotation[:Record][:PropertyValue]
+			if annotation[:Record][:PropertyValue].is_a?(Array)
+				annotation[:Record][:PropertyValue].each do |propertyValue|
+					parse_annotation(target, term, propertyValue)
+				end
+			else
+				parse_annotation(target, term, annotation[:Record][:PropertyValue])
+			end
+		end
+		elsif annotation[:Collection]
+			# TODO
+		end
+	end
+	
+	def self.set_description(target, itemToSet)
+	  target = target.downcase
+	  puts "-> Getting Annotation; Target: #{target}"
+	  if @annotations[target]
+	    if @annotations[target]["description"]
+	      itemToSet[:description] = @annotations[target]["description"]
+	    end
+	  end
+	end
 
 	###
 	# Create object_method-name.md file in lowercase.
@@ -73,7 +131,7 @@ module SpecMaker
 	#	
 	def self.create_examplefile(objectName=nil, methodName=nil)
 		File.open(JSON_EXAMPLE_FOLDER + (objectName + '_' + methodName).downcase + ".md", "w") do |f|
-			f.write('##### Example')
+			f.write('##### Example', :encoding => 'UTF-8')
 			@iexampleFilesWrittem = @iexampleFilesWrittem + 1
 		end
 	end
@@ -120,7 +178,7 @@ module SpecMaker
 	def self.preserve_method_descriptions (objectName=nil, method=nil)
 		fullpath = JSON_PREV_SOURCE_FOLDER + objectName.downcase + '.json'
 		if File.file?(fullpath)
-			prevObject = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			prevObject = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			prevMethods = prevObject[:methods]
 			prevMethods.each do |item|
 				if item[:name] == method[:name]
@@ -143,7 +201,7 @@ module SpecMaker
 	def self.preserve_object_property_descriptions(objectName=nil)
 		fullpath = JSON_PREV_SOURCE_FOLDER + objectName.downcase + '.json'
 		if File.file?(fullpath)
-			prevObject = JSON.parse(File.read(fullpath), {:symbolize_names => true})
+			prevObject = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			@json_object[:description] = prevObject[:description]			
 			prevProperties = prevObject[:properties]
 			prevProperties.each do |item|
@@ -205,7 +263,7 @@ module SpecMaker
 		end
 	end
 
-	def self.process_property (item=nil)
+	def self.process_property (className, item=nil)
 		prop = deep_copy(@struct[:property])
 			prop[:name] = item[:Name]
 		dt = get_type(item[:Type])
@@ -225,10 +283,15 @@ module SpecMaker
 			prop[:isUnicode] = false
 		end
 		@iprop = @iprop + 1
+		
+		annotationTarget = className + "/" + item[:Name]
+		parse_annotations(annotationTarget, item[:Annotation])
+		set_description(annotationTarget, prop)
+
 		return prop
 	end
 
-	def self.process_navigation (item=nil)
+	def self.process_navigation (className, item=nil)
 		prop = deep_copy(@struct[:property])
 		prop[:name] = item[:Name]
 		prop[:isRelationship] = true
@@ -244,10 +307,15 @@ module SpecMaker
 			prop[:isUnicode] = false
 		end		
 		@inprop = @inprop + 1
+		
+		annotationTarget = className + "/" + item[:Name]
+		parse_annotations(annotationTarget, item[:Annotation])
+		set_description(annotationTarget, prop)
+
 		return prop
 	end
 
-	def self.process_complextype (item=nil)
+	def self.process_complextype (className, item=nil)
 		prop = deep_copy(@struct[:property])
 		prop[:name] = item[:Name]
 		dt = get_type(item[:Type])
@@ -263,7 +331,12 @@ module SpecMaker
 		if item[:Unicode] == 'false'
 			prop[:isUnicode] = false
 		end
-		return prop		
+		
+		annotationTarget = className + "/" + item[:Name]
+		parse_annotations(annotationTarget, item[:Annotation])
+		set_description(annotationTarget, prop)
+
+    return prop		
 	end
 
 	# Process methods
@@ -337,7 +410,7 @@ module SpecMaker
 
 		# append Id at the end.
 		if File.file?(fullpath)
-			object = JSON.parse(File.read(fullpath))
+			object = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'))
 
 			# Check if the path already exists. This logic will eliminate deep redundant paths.
 			# May lose some important ones.. but if this check is removed, some really deep/complex 
@@ -362,7 +435,7 @@ module SpecMaker
 			end
 			object["restPath"][k] = true 
 			File.open(fullpath, "w") do |f|
-				f.write(JSON.pretty_generate object)
+				f.write(JSON.pretty_generate object, :encoding => 'UTF-8')
 			end
 			return if object["properties"].length == 0
 			object["properties"].each do |item|
