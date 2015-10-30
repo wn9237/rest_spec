@@ -73,7 +73,7 @@ module SpecMaker
 			example_lines.push get_json_request_pretext("update_#{@jsonHash[:name]}".downcase) + NEWLINE						
 
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax('auto_put', top_one_restpath, nil, nil, SERVER)
+			httpSyntax = get_syntax('auto_patch', top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])			
 			example_lines.push "Content-type: application/json" + NEWLINE
@@ -240,7 +240,8 @@ module SpecMaker
 
 
 		# Add links to method. 
-		restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name][3..-1]) : method[:name].capitalize
+		#restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name][3..-1]) : method[:name].capitalize
+		restfulTask = method[:name] 
 		methodPlusLink = "[" + restfulTask.strip + "](../api/" + @jsonHash[:name].downcase + "_" + method[:name].downcase + ".md)"
 		@mdlines.push (PIPE + methodPlusLink + PIPE + dataTypePlusLink + PIPE + method[:description] + PIPE) + NEWLINE
 		create_method_mdfile method
