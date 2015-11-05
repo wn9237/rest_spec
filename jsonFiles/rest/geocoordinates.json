@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "altitude",
-      "description": "The altitude of the location. The altitude of the location.",
+      "description": "The altitude of the location.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "latitude",
-      "description": "The latitude of the location. The latitude of the location.",
+      "description": "The latitude of the location.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "longitude",
-      "description": "The longitude of the location. The longitude of the location.",
+      "description": "The longitude of the location.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "accuracy",
-      "description": "The accuracy of the sensor providing the latitude and longitude. The accuracy of the sensor providing the latitude and longitude.",
+      "description": "The accuracy of the sensor providing the latitude and longitude.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -83,7 +84,7 @@
     },
     {
       "name": "altitudeAccuracy",
-      "description": "The accuracy of the sensor providing the altitude. The accuracy of the sensor providing the altitude.",
+      "description": "The accuracy of the sensor providing the altitude.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -96,5 +97,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

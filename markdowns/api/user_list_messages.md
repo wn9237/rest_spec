@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users/<objectId>/messages
+GET https://graph.microsoft.com/v1.0/users/<objectId>/messages
 ```
 ##### Response
 Here is an example of the response.
@@ -52,7 +52,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1929
+Content-length: 1863
 
 {
   "value": [
@@ -122,7 +122,6 @@ Content-length: 1929
       "isRead": true,
       "isDraft": true,
       "webLink": "webLink-value",
-      "inferenceClassification": "inferenceClassification-value",
       "createdDateTime": "datetime-value",
       "lastModifiedDateTime": "datetime-value",
       "changeKey": "changeKey-value",

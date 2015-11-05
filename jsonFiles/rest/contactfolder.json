@@ -55,7 +55,7 @@
   "properties": [
     {
       "name": "parentFolderId",
-      "description": "The ID of the folder's parent folder. The ID of the folder's parent folder.",
+      "description": "The ID of the folder's parent folder.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,7 +69,7 @@
     },
     {
       "name": "displayName",
-      "description": "The folder's display name. The folder's display name.",
+      "description": "The folder's display name.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -83,7 +83,7 @@
     },
     {
       "name": "id",
-      "description": "Unique identifier of the contact folder. Unique identifier of the contact folder.",
+      "description": "Unique identifier of the contact folder.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -97,7 +97,7 @@
     },
     {
       "name": "contacts",
-      "description": "The contacts in the folder. Navigation property. The contacts in the folder. Navigation property.",
+      "description": "The contacts in the folder. Navigation property.",
       "isKey": false,
       "dataType": "Contact",
       "isReadOnly": true,
@@ -111,7 +111,7 @@
     },
     {
       "name": "childFolders",
-      "description": "The collection of child folders in the folder. Navigation property. The collection of child folders in the folder. Navigation property.",
+      "description": "The collection of child folders in the folder. Navigation property.",
       "isKey": false,
       "dataType": "ContactFolder",
       "isReadOnly": true,
@@ -124,5 +124,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

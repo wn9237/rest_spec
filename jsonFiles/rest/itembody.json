@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "contentType",
-      "description": "The content type: Text = 0, HTML = 1. The content type: Text = 0, HTML = 1.",
+      "description": "The content type: Text = 0, HTML = 1.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "content",
-      "description": "The text or HTML content. The text or HTML content.",
+      "description": "The text or HTML content.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -54,5 +55,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

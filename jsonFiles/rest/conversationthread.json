@@ -208,6 +208,34 @@
     }
   ],
   "methods": [
+    {
+      "name": "reply",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
 
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "post",
+          "description": "",
+          "dataType": "Post",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    }
   ]
 }

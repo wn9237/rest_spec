@@ -398,11 +398,11 @@ module SpecMaker
 		entity_name = entity_name.chomp(')')
 
 		mtd = preserve_method_descriptions(entity_name, mtd)		
-		if @methods.has_key?(entity_name.to_sym)
-			@methods[entity_name.to_sym].push mtd
+		if @methods.has_key?(entity_name.downcase.to_sym)
+			@methods[entity_name.downcase.to_sym].push mtd
 		else			
-			@methods[entity_name.to_sym] = []			
-			@methods[entity_name.to_sym].push mtd
+			@methods[entity_name.downcase.to_sym] = []			
+			@methods[entity_name.downcase.to_sym].push mtd
 		end
 		#create_examplefile(entity_name, mtd[:name])				
 		return 

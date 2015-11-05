@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "disabledPlans",
-      "description": "A collection of the unique identifiers for plans that have been disabled. A collection of the unique identifiers for plans that have been disabled.",
+      "description": "A collection of the unique identifiers for plans that have been disabled.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "skuId",
-      "description": "The unique identifier for the SKU. The unique identifier for the SKU.",
+      "description": "The unique identifier for the SKU.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -54,5 +55,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

@@ -122,7 +122,7 @@
   "properties": [
     {
       "name": "name",
-      "description": "The calendar name. The calendar name.",
+      "description": "The calendar name.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -136,7 +136,7 @@
     },
     {
       "name": "color",
-      "description": "Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1  Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1 ",
+      "description": "Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1 ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -150,7 +150,7 @@
     },
     {
       "name": "changeKey",
-      "description": "Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object. Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.",
+      "description": "Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -164,7 +164,7 @@
     },
     {
       "name": "id",
-      "description": "The group's unique identifier. The group's unique identifier.",
+      "description": "The group's unique identifier.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -178,7 +178,7 @@
     },
     {
       "name": "events",
-      "description": "The events in the calendar. Navigation property. The events in the calendar. Navigation property.",
+      "description": "The events in the calendar. Navigation property.",
       "isKey": false,
       "dataType": "Event",
       "isReadOnly": true,
@@ -192,7 +192,7 @@
     },
     {
       "name": "calendarView",
-      "description": "The calendar view for the calendar. Navigation property. The calendar view for the calendar. Navigation property.",
+      "description": "The calendar view for the calendar. Navigation property.",
       "isKey": false,
       "dataType": "Event",
       "isReadOnly": true,
@@ -205,5 +205,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

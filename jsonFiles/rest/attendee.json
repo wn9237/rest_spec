@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "status",
-      "description": "The response (none, accepted, declined, etc.) and time. The response (none, accepted, declined, etc.) and time.",
+      "description": "The response (none, accepted, declined, etc.) and time.",
       "isKey": false,
       "dataType": "ResponseStatus",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "type",
-      "description": "The attendee type: Required = 0, Optional = 1, Resource = 2. The attendee type: Required = 0, Optional = 1, Resource = 2.",
+      "description": "The attendee type: Required = 0, Optional = 1, Resource = 2.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "emailAddress",
-      "description": "The name and email address of the attendee. The name and email address of the attendee.",
+      "description": "The name and email address of the attendee.",
       "isKey": false,
       "dataType": "EmailAddress",
       "isReadOnly": false,
@@ -68,5 +69,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

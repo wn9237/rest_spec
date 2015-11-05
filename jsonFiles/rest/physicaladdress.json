@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "street",
-      "description": "The street. The street.",
+      "description": "The street.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "city",
-      "description": "The city. The city.",
+      "description": "The city.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "state",
-      "description": "The state. The state.",
+      "description": "The state.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "countryOrRegion",
-      "description": "The country or region. The country or region.",
+      "description": "The country or region.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -83,7 +84,7 @@
     },
     {
       "name": "postalCode",
-      "description": "The postal code. The postal code.",
+      "description": "The postal code.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -96,5 +97,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

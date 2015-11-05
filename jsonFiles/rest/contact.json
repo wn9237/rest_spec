@@ -82,7 +82,7 @@
   "properties": [
     {
       "name": "parentFolderId",
-      "description": "The ID of the contact's parent folder. The ID of the contact's parent folder.",
+      "description": "The ID of the contact's parent folder.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -96,7 +96,7 @@
     },
     {
       "name": "birthday",
-      "description": "The contact's birthday. The contact's birthday.",
+      "description": "The contact's birthday.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -110,7 +110,7 @@
     },
     {
       "name": "fileAs",
-      "description": "The name the contact is filed under. The name the contact is filed under.",
+      "description": "The name the contact is filed under.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -124,7 +124,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name for the contact. The display name for the contact.",
+      "description": "The display name for the contact.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -138,7 +138,7 @@
     },
     {
       "name": "givenName",
-      "description": "The given name (first name) of the contact. The given name (first name) of the contact.",
+      "description": "The given name (first name) of the contact.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -152,7 +152,7 @@
     },
     {
       "name": "initials",
-      "description": "The contact's initials. The contact's initials.",
+      "description": "The contact's initials.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -166,7 +166,7 @@
     },
     {
       "name": "middleName",
-      "description": "The contact's middle name. The contact's middle name.",
+      "description": "The contact's middle name.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -180,7 +180,7 @@
     },
     {
       "name": "nickName",
-      "description": "The contact's nickname. The contact's nickname.",
+      "description": "The contact's nickname.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -194,7 +194,7 @@
     },
     {
       "name": "surname",
-      "description": "The contact's surname (family name or last name). The contact's surname (family name or last name).",
+      "description": "The contact's surname (family name or last name).",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -208,7 +208,7 @@
     },
     {
       "name": "title",
-      "description": "The contact's title. The contact's title.",
+      "description": "The contact's title.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -222,7 +222,7 @@
     },
     {
       "name": "yomiGivenName",
-      "description": "The phonetic Japanese given name (first name) of the contact. This property is optional. The phonetic Japanese given name (first name) of the contact. This property is optional.",
+      "description": "The phonetic Japanese given name (first name) of the contact. This property is optional.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -236,7 +236,7 @@
     },
     {
       "name": "yomiSurname",
-      "description": "The phonetic Japanese surname (last name)  of the contact. This property is optional. The phonetic Japanese surname (last name)  of the contact. This property is optional.",
+      "description": "The phonetic Japanese surname (last name)  of the contact. This property is optional.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -250,7 +250,7 @@
     },
     {
       "name": "yomiCompanyName",
-      "description": "The phonetic Japanese company name of the contact. This property is optional. The phonetic Japanese company name of the contact. This property is optional.",
+      "description": "The phonetic Japanese company name of the contact. This property is optional.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -264,7 +264,7 @@
     },
     {
       "name": "generation",
-      "description": "The contact's generation. The contact's generation.",
+      "description": "The contact's generation.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -278,7 +278,7 @@
     },
     {
       "name": "emailAddresses",
-      "description": "The contact's email addresses. The contact's email addresses.",
+      "description": "The contact's email addresses.",
       "isKey": false,
       "dataType": "EmailAddress",
       "isReadOnly": false,
@@ -292,7 +292,7 @@
     },
     {
       "name": "imAddresses",
-      "description": "The contact's instant messaging (IM) addresses. The contact's instant messaging (IM) addresses.",
+      "description": "The contact's instant messaging (IM) addresses.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -306,7 +306,7 @@
     },
     {
       "name": "jobTitle",
-      "description": "The contact’s job title. The contact’s job title.",
+      "description": "The contact’s job title.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -320,7 +320,7 @@
     },
     {
       "name": "companyName",
-      "description": "The name of the contact's company. The name of the contact's company.",
+      "description": "The name of the contact's company.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -334,7 +334,7 @@
     },
     {
       "name": "department",
-      "description": "The name for the department in which the contact works. The name for the department in which the contact works.",
+      "description": "The name for the department in which the contact works.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -348,7 +348,7 @@
     },
     {
       "name": "officeLocation",
-      "description": "The location of the contact's office. The location of the contact's office.",
+      "description": "The location of the contact's office.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -362,7 +362,7 @@
     },
     {
       "name": "profession",
-      "description": "The contact's profession. The contact's profession.",
+      "description": "The contact's profession.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -376,7 +376,7 @@
     },
     {
       "name": "businessHomePage",
-      "description": "The business home page of the contact. The business home page of the contact.",
+      "description": "The business home page of the contact.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -390,7 +390,7 @@
     },
     {
       "name": "assistantName",
-      "description": "The name of the contact's assistant. The name of the contact's assistant.",
+      "description": "The name of the contact's assistant.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -404,7 +404,7 @@
     },
     {
       "name": "manager",
-      "description": "The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE",
+      "description": "The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -418,7 +418,7 @@
     },
     {
       "name": "homePhones",
-      "description": "The contact's home phone numbers. The contact's home phone numbers.",
+      "description": "The contact's home phone numbers.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -432,7 +432,7 @@
     },
     {
       "name": "mobilePhone1",
-      "description": "The contact's mobile phone number. The contact's mobile phone number.",
+      "description": "The contact's mobile phone number.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -446,7 +446,7 @@
     },
     {
       "name": "businessPhones",
-      "description": "The contact's business phone numbers. The contact's business phone numbers.",
+      "description": "The contact's business phone numbers.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -460,7 +460,7 @@
     },
     {
       "name": "homeAddress",
-      "description": "The contact's home address. The contact's home address.",
+      "description": "The contact's home address.",
       "isKey": false,
       "dataType": "PhysicalAddress",
       "isReadOnly": false,
@@ -474,7 +474,7 @@
     },
     {
       "name": "businessAddress",
-      "description": "The contact's business address. The contact's business address.",
+      "description": "The contact's business address.",
       "isKey": false,
       "dataType": "PhysicalAddress",
       "isReadOnly": false,
@@ -488,7 +488,7 @@
     },
     {
       "name": "otherAddress",
-      "description": "Other addresses for the contact. Other addresses for the contact.",
+      "description": "Other addresses for the contact.",
       "isKey": false,
       "dataType": "PhysicalAddress",
       "isReadOnly": false,
@@ -572,7 +572,7 @@
     },
     {
       "name": "changeKey",
-      "description": "Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object. Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.",
+      "description": "Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -586,7 +586,7 @@
     },
     {
       "name": "categories",
-      "description": "The categories associated with the contact. The categories associated with the contact.",
+      "description": "The categories associated with the contact.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -600,7 +600,7 @@
     },
     {
       "name": "id",
-      "description": "The contact's unique identifier. The contact's unique identifier.",
+      "description": "The contact's unique identifier.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -611,20 +611,6 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
-    },
-    {
-      "name": "extensions",
-      "description": "",
-      "isKey": false,
-      "dataType": "Extension",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
     },
     {
       "name": "photo",
@@ -641,5 +627,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

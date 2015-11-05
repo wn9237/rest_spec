@@ -44,7 +44,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1660
+Content-length: 1598
 
 {
   "receivedDateTime": "datetime-value",
@@ -112,7 +112,6 @@ Content-length: 1660
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
-  "inferenceClassification": "inferenceClassification-value",
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",

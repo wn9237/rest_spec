@@ -29,13 +29,12 @@ In the request body, supply the values for relevant fields that should be update
 |from|Recipient||
 |hasAttachments|Boolean||
 |importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|inferenceClassification|String| Possible values are: `Focused`, `Other`.|
 |isDeliveryReceiptRequested|Boolean||
 |isDraft|Boolean||
 |isRead|Boolean||
 |isReadReceiptRequested|Boolean||
 |lastModifiedDateTime|DateTimeOffset||
-|meetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5   The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
+|meetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
 |parentFolderId|String||
 |receivedDateTime|DateTimeOffset||
 |replyTo|Recipient||
@@ -58,7 +57,7 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 1660
+Content-length: 1598
 
 {
   "receivedDateTime": "datetime-value",
@@ -126,7 +125,6 @@ Content-length: 1660
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
-  "inferenceClassification": "inferenceClassification-value",
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",
@@ -147,7 +145,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1660
+Content-length: 1598
 
 {
   "receivedDateTime": "datetime-value",
@@ -215,7 +213,6 @@ Content-length: 1660
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
-  "inferenceClassification": "inferenceClassification-value",
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",

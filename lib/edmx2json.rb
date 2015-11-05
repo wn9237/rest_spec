@@ -197,16 +197,16 @@ module SpecMaker
 		end
 
 		# Add methods and pull in methods from base type.
-		if @methods.has_key?(@json_object[:name].to_sym)
+		if @methods.has_key?(@json_object[:name].downcase.to_sym)
 			puts "----> Found actions or functions to merge"
-			@json_object[:methods] = @methods[@json_object[:name].to_sym]
-			if !baseType.nil? && @methods.has_key?(baseType.to_sym)
-				@json_object[:methods].concat @methods[baseType.to_sym]
+			@json_object[:methods] = @methods[@json_object[:name].downcase.to_sym]
+			if !baseType.nil? && @methods.has_key?(baseType.downcase.to_sym)
+				@json_object[:methods].concat @methods[baseType.downcase.to_sym]
 				#create_basetype_examplefiles(@methods[baseType.to_sym], @json_object[:name])
 			end
 		else
-			if !baseType.nil? && @methods.has_key?(baseType.to_sym)
-				@json_object[:methods] = @methods[baseType.to_sym]
+			if !baseType.nil? && @methods.has_key?(baseType.downcase.to_sym)
+				@json_object[:methods] = @methods[baseType.downcase.to_sym]
 				#create_basetype_examplefiles(@methods[baseType.to_sym], @json_object[:name])
 			end
 		end

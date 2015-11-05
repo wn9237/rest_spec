@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "type",
-      "description": "The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2. The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2.",
+      "description": "The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "startDate",
-      "description": "The start date of the series. The start date of the series.",
+      "description": "The start date of the series.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "endDate",
-      "description": "The end date of the series. The end date of the series.",
+      "description": "The end date of the series.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "numberOfOccurrences",
-      "description": "How many times to repeat the event. How many times to repeat the event.",
+      "description": "How many times to repeat the event.",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -82,5 +83,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

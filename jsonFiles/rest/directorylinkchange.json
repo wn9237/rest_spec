@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "associationType",
-      "description": "A string that identifies the association type to which the change applies. The value is either “Member” or “Manager”. A string that identifies the association type to which the change applies. The value is either “Member” or “Manager”.",
+      "description": "A string that identifies the association type to which the change applies. The value is either “Member” or “Manager”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "sourceObjectId",
-      "description": "The object ID for the source object; for example, ”7373b0af-d462-406e-ad26-f2bc96d823d8”. The object ID for the source object; for example, ”7373b0af-d462-406e-ad26-f2bc96d823d8”.",
+      "description": "The object ID for the source object; for example, ”7373b0af-d462-406e-ad26-f2bc96d823d8”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "sourceObjectType",
-      "description": "A string that identifies the source object type; this will be one of the following: “Group”, “User”, or “Contact”. A string that identifies the source object type; this will be one of the following: “Group”, “User”, or “Contact”.",
+      "description": "A string that identifies the source object type; this will be one of the following: “Group”, “User”, or “Contact”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "sourceObjectUri",
-      "description": "The URI for the source object; for example, `“https://graph.windows.net/contoso.com/groups/7373b0af-d462-406e-ad26-f2bc96d823d8”`. The URI for the source object; for example, `“https://graph.windows.net/contoso.com/groups/7373b0af-d462-406e-ad26-f2bc96d823d8”`.",
+      "description": "The URI for the source object; for example, `“https://graph.windows.net/contoso.com/groups/7373b0af-d462-406e-ad26-f2bc96d823d8”`.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -83,7 +84,7 @@
     },
     {
       "name": "targetObjectId",
-      "description": "The object ID for the target object; for example, “dca803ab-bf26-4753-bf20-e1c56a9c34e2”. The object ID for the target object; for example, “dca803ab-bf26-4753-bf20-e1c56a9c34e2”.",
+      "description": "The object ID for the target object; for example, “dca803ab-bf26-4753-bf20-e1c56a9c34e2”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -97,7 +98,7 @@
     },
     {
       "name": "targetObjectType",
-      "description": "A string that identifies the source object type; this will be one of the following: “Group”, “User”, or “Contact”. A string that identifies the source object type; this will be one of the following: “Group”, “User”, or “Contact”.",
+      "description": "A string that identifies the source object type; this will be one of the following: “Group”, “User”, or “Contact”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -111,7 +112,7 @@
     },
     {
       "name": "targetObjectUri",
-      "description": "The URI for the target object; for example, `“https://graph.windows.net/contoso.com/users/dca803ab-bf26-4753-bf20-e1c56a9c34e2”`. The URI for the target object; for example, `“https://graph.windows.net/contoso.com/users/dca803ab-bf26-4753-bf20-e1c56a9c34e2”`.",
+      "description": "The URI for the target object; for example, `“https://graph.windows.net/contoso.com/users/dca803ab-bf26-4753-bf20-e1c56a9c34e2”`.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -125,7 +126,7 @@
     },
     {
       "name": "objectType",
-      "description": "A string that identifies the object type. For **DirectoryLinkChange** objects, the value is always “DirectoryLinkChange”. [DirectoryObject] A string that identifies the object type. For **DirectoryLinkChange** objects, the value is always “DirectoryLinkChange”. [DirectoryObject]",
+      "description": "A string that identifies the object type. For **DirectoryLinkChange** objects, the value is always “DirectoryLinkChange”. [DirectoryObject]",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -139,7 +140,7 @@
     },
     {
       "name": "objectId",
-      "description": "The unique identifier for the directory link change object. For **DirectoryLinkChange** objects, the value is always 00000000-0000-0000-0000-000000000000. Inherited from [DirectoryObject].                            **Note: key** immutable, not nullable, unique             The unique identifier for the directory link change object. For **DirectoryLinkChange** objects, the value is always 00000000-0000-0000-0000-000000000000. Inherited from [DirectoryObject].                            **Note: key** immutable, not nullable, unique            ",
+      "description": "The unique identifier for the directory link change object. For **DirectoryLinkChange** objects, the value is always 00000000-0000-0000-0000-000000000000. Inherited from [DirectoryObject].                            **Note: key** immutable, not nullable, unique            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -177,8 +178,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "groupIds",
@@ -202,8 +207,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -227,8 +236,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",

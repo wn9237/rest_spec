@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "emailAddress",
-      "description": "The recipient's email address. The recipient's email address.",
+      "description": "The recipient's email address.",
       "isKey": false,
       "dataType": "EmailAddress",
       "isReadOnly": false,
@@ -40,5 +41,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

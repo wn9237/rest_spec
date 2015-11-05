@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "pattern",
-      "description": "The frequency of an event. The frequency of an event.",
+      "description": "The frequency of an event.",
       "isKey": false,
       "dataType": "RecurrencePattern",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "range",
-      "description": "The duration of an event. The duration of an event.",
+      "description": "The duration of an event.",
       "isKey": false,
       "dataType": "RecurrenceRange",
       "isReadOnly": false,
@@ -54,5 +55,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

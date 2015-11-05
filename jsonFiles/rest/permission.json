@@ -36,7 +36,6 @@
     "/users/<objectId>/drive/shared/<id>/permissions/<id>": true,
     "/users/<objectId>/drive/special/<id>/permissions/<id>": true,
     "/users/<objectId>/drive/root/permissions/<id>": true,
-    "/users/<objectId>/trendingAround/<id>/permissions/<id>": true,
     "/drives/<id>/items/<id>/permissions/<id>": true,
     "/drives/<id>/shared/<id>/permissions/<id>": true,
     "/drives/<id>/special/<id>/permissions/<id>": true,

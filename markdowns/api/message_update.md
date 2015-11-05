@@ -31,7 +31,6 @@ In the request body, supply the values for relevant fields that should be update
 |from|Recipient||
 |hasAttachments|Boolean||
 |importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|inferenceClassification|String| Possible values are: `Focused`, `Other`.|
 |isDeliveryReceiptRequested|Boolean||
 |isDraft|Boolean||
 |isRead|Boolean||
@@ -57,9 +56,9 @@ Here is an example of the request.
   "name": "update_message"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/users/<objectId>/messages/<id>
+PATCH https://graph.microsoft.com/v1.0/users/<objectId>/messages/<id>
 Content-type: application/json
-Content-length: 1608
+Content-length: 1546
 
 {
   "receivedDateTime": "datetime-value",
@@ -127,7 +126,6 @@ Content-length: 1608
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
-  "inferenceClassification": "inferenceClassification-value",
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",
@@ -147,7 +145,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1608
+Content-length: 1546
 
 {
   "receivedDateTime": "datetime-value",
@@ -215,7 +213,6 @@ Content-length: 1608
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
-  "inferenceClassification": "inferenceClassification-value",
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",

@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "description",
-      "description": "The description to set for the directory role. The description to set for the directory role.",
+      "description": "The description to set for the directory role.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name to set for the directory role. The display name to set for the directory role.",
+      "description": "The display name to set for the directory role.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "objectType",
-      "description": "A string that identifies the object type. For role templates the value is always “RoleTemplate”. Inherited from [DirectoryObject]. A string that identifies the object type. For role templates the value is always “RoleTemplate”. Inherited from [DirectoryObject].",
+      "description": "A string that identifies the object type. For role templates the value is always “RoleTemplate”. Inherited from [DirectoryObject].",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "objectId",
-      "description": "The unique identifier for the template. Inherited from [DirectoryObject]. In version 1.5 and later, you specify the **objectId** of the directory role template for the **roleTemplateId** property in the POST request activate a [DirectoryRole] in a tenant.                             **Notes**: **key**, immutable, not nullable, unique.             The unique identifier for the template. Inherited from [DirectoryObject]. In version 1.5 and later, you specify the **objectId** of the directory role template for the **roleTemplateId** property in the POST request activate a [DirectoryRole] in a tenant.                             **Notes**: **key**, immutable, not nullable, unique.            ",
+      "description": "The unique identifier for the template. Inherited from [DirectoryObject]. In version 1.5 and later, you specify the **objectId** of the directory role template for the **roleTemplateId** property in the POST request activate a [DirectoryRole] in a tenant.                             **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -109,8 +109,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "groupIds",
@@ -134,8 +138,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -159,8 +167,12 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [],
-      "errorCodes": [],
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
       "parameters": [
         {
           "name": "securityEnabledOnly",

@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "name",
-      "description": "The display name of the person or entity. The display name of the person or entity.",
+      "description": "The display name of the person or entity.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "address",
-      "description": "The email address of the person or entity. The email address of the person or entity.",
+      "description": "The email address of the person or entity.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -54,5 +55,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

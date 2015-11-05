@@ -9,8 +9,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments",
-    "extensions"
+    "attachments"
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
@@ -42,18 +41,12 @@ Here is a JSON representation of the resource
   "changeKey": "String-value",
   "conversationId": "String-value",
   "createdDateTime": "String (timestamp)",
-  "extensions": [
-    {
-      "@odata.type": "microsoft.graph.extension"
-    }
-  ],
   "from": {
     "@odata.type": "microsoft.graph.recipient"
   },
   "hasAttachments": true,
   "id": "String-value (identifier)",
   "importance": "String-value",
-  "inferenceClassification": "String-value",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
@@ -98,7 +91,6 @@ Here is a JSON representation of the resource
 |hasAttachments|Boolean||
 |id|String| Read-only.|
 |importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|inferenceClassification|String| Possible values are: `Focused`, `Other`.|
 |isDeliveryReceiptRequested|Boolean||
 |isDraft|Boolean||
 |isRead|Boolean||
@@ -118,7 +110,6 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
 ### Methods
 
@@ -127,10 +118,17 @@ Here is a JSON representation of the resource
 |[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
 |[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
 |[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Extension](../api/message_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the extensions collection.|
-|[List extensions](../api/message_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/message_update.md) | [message](message.md)	|Update message object. |
 |[Delete](../api/message_delete.md) | None |Delete message object. |
+|[copy](../api/message_copy.md)|[Message](message.md)||
+|[createForward](../api/message_createforward.md)|[Message](message.md)||
+|[createReply](../api/message_createreply.md)|[Message](message.md)||
+|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)||
+|[forward](../api/message_forward.md)|None||
+|[move](../api/message_move.md)|[Message](message.md)||
+|[reply](../api/message_reply.md)|None||
+|[replyAll](../api/message_replyall.md)|None||
+|[send](../api/message_send.md)|None||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

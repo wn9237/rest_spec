@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "assignedTimestamp",
-      "description": "The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z.",
+      "description": "The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "capabilityStatus",
-      "description": "For example, “Enabled”. For example, “Enabled”.",
+      "description": "For example, “Enabled”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +56,7 @@
     },
     {
       "name": "service",
-      "description": "The name of the service; for example, “AccessControlServiceS2S”. The name of the service; for example, “AccessControlServiceS2S”.",
+      "description": "The name of the service; for example, “AccessControlServiceS2S”.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,7 +70,7 @@
     },
     {
       "name": "servicePlanId",
-      "description": "A GUID that identifies the service plan. A GUID that identifies the service plan.",
+      "description": "A GUID that identifies the service plan.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -82,5 +83,7 @@
       "isUnicode": null
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

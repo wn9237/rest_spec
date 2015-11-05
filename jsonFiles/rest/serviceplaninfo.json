@@ -23,11 +23,12 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {},
+  "restPath": {
+  },
   "properties": [
     {
       "name": "servicePlanId",
-      "description": "The unique identifier of the service plan. The unique identifier of the service plan.",
+      "description": "The unique identifier of the service plan.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -41,7 +42,7 @@
     },
     {
       "name": "servicePlanName",
-      "description": "The name of the service plan. The name of the service plan.",
+      "description": "The name of the service plan.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -54,5 +55,7 @@
       "isUnicode": false
     }
   ],
-  "methods": []
+  "methods": [
+
+  ]
 }

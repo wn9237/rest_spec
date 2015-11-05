@@ -167,6 +167,63 @@
     }
   ],
   "methods": [
+    {
+      "name": "copy",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "MailFolder",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
 
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "destinationId",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "MailFolder",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "destinationId",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    }
   ]
 }
