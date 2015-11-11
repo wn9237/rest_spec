@@ -82,6 +82,18 @@
 	  "isUnicode" : null
 	},
 
+  "enum" :
+	{
+	  "isExclusive": true,
+	  "options" : {}
+	},
+
+  "enumvalue" :
+	{
+	  "value": "",
+	  "description" : ""
+	},
+
   "mdresource" : 
   	{ "blockType": "resource", 
       "optionalProperties": [] 

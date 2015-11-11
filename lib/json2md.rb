@@ -916,8 +916,12 @@ module SpecMaker
 		fullpath = JSON_SOURCE_FOLDER + item.downcase
 		
 		if File.file?(fullpath)
-			convert_to_spec File.read(fullpath, :encoding => 'UTF-8')
-			processed_files = processed_files + 1
+			@jsonHash = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
+			name = @jsonHash[:name]
+			isComplexType = @jsonHash[:isComplexType]
+			numMethods = @jsonHash[:methods].count 
+			numProperties = @jsonHash[:properties].count 
+			puts "#{name}, #{isComplexType}, #{numProperties}, #{numMethods}"
 		end
 	end
 	create_service_root
