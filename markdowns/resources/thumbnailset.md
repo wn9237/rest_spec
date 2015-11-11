@@ -4,7 +4,7 @@ The ThumbnailSet type is a keyed collection of [Thumbnail](thumbnail.md) objects
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

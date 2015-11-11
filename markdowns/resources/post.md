@@ -4,24 +4,18 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments",
-    "inReplyTo"
+
   ],
   "@odata.type": "microsoft.graph.post"
 }-->
 
 ```json
 {
-  "attachments": [
-    {
-      "@odata.type": "microsoft.graph.attachment"
-    }
-  ],
   "body": {
     "@odata.type": "microsoft.graph.itembody"
   },
@@ -37,9 +31,6 @@ Here is a JSON representation of the resource
   },
   "hasAttachments": true,
   "id": "String-value (identifier)",
-  "inReplyTo": {
-    "@odata.type": "microsoft.graph.post"
-  },
   "lastModifiedDateTime": "String (timestamp)",
   "newParticipants": [
     {

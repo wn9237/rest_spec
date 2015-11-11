@@ -1,16 +1,15 @@
 # device resource type
 
-Represents a device registered in the directory. Inherits from [DirectoryObject].
+Represents a device registered in the directory. Inherits from [DirectoryObject].
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "registeredOwners",
-    "registeredUsers"
+
   ],
   "@odata.type": "microsoft.graph.device"
 }-->
@@ -38,17 +37,7 @@ Here is a JSON representation of the resource
   "displayName": "String-value",
   "lastDirSyncTime": "String (timestamp)",
   "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "registeredOwners": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "registeredUsers": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ]
+  "objectType": "String-value"
 }
 
 ```

@@ -4,25 +4,18 @@ An event in a calendar.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments",
-    "calendar",
-    "instances"
+
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
 
 ```json
 {
-  "attachments": [
-    {
-      "@odata.type": "microsoft.graph.attachment"
-    }
-  ],
   "attendees": [
     {
       "@odata.type": "microsoft.graph.attendee"
@@ -32,9 +25,6 @@ Here is a JSON representation of the resource
     "@odata.type": "microsoft.graph.itembody"
   },
   "bodyPreview": "String-value",
-  "calendar": {
-    "@odata.type": "microsoft.graph.calendar"
-  },
   "categories": [
     "String-value"
   ],
@@ -47,11 +37,6 @@ Here is a JSON representation of the resource
   "iCalUId": "String-value",
   "id": "String-value (identifier)",
   "importance": "String-value",
-  "instances": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
   "isAllDay": true,
   "isCancelled": true,
   "isOrganizer": true,

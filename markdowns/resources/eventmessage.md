@@ -4,24 +4,18 @@ A message that represents a meeting request, meeting cancel message, meeting acc
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments",
-    "event"
+
   ],
   "@odata.type": "microsoft.graph.eventmessage"
 }-->
 
 ```json
 {
-  "attachments": [
-    {
-      "@odata.type": "microsoft.graph.attachment"
-    }
-  ],
   "bccRecipients": [
     {
       "@odata.type": "microsoft.graph.recipient"
@@ -42,9 +36,6 @@ Here is a JSON representation of the resource
   "changeKey": "String-value",
   "conversationId": "String-value",
   "createdDateTime": "String (timestamp)",
-  "event": {
-    "@odata.type": "microsoft.graph.event"
-  },
   "from": {
     "@odata.type": "microsoft.graph.recipient"
   },

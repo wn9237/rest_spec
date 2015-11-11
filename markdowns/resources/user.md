@@ -1,35 +1,15 @@
 # user resource type
 
-Represents an Azure AD user account. Inherits from [DirectoryObject].
+Represents an Azure AD user account. Inherits from [DirectoryObject].
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "appRoleAssignments",
-    "calendar",
-    "calendarGroups",
-    "calendarView",
-    "calendars",
-    "contactFolders",
-    "contacts",
-    "createdObjects",
-    "directReports",
-    "drive",
-    "events",
-    "joinedGroups",
-    "mailFolders",
-    "manager",
-    "memberOf",
-    "messages",
-    "oauth2PermissionGrants",
-    "ownedDevices",
-    "ownedObjects",
-    "photo",
-    "registeredDevices"
+
   ],
   "@odata.type": "microsoft.graph.user"
 }-->
@@ -39,11 +19,6 @@ Here is a JSON representation of the resource
   "aboutMe": "String-value",
   "accountEnabled": true,
   "alias": "String-value",
-  "appRoleAssignments": [
-    {
-      "@odata.type": "microsoft.graph.approleassignment"
-    }
-  ],
   "assignedLicenses": [
     {
       "@odata.type": "microsoft.graph.assignedlicense"
@@ -55,59 +30,13 @@ Here is a JSON representation of the resource
     }
   ],
   "birthday": "String (timestamp)",
-  "calendar": {
-    "@odata.type": "microsoft.graph.calendar"
-  },
-  "calendarGroups": [
-    {
-      "@odata.type": "microsoft.graph.calendargroup"
-    }
-  ],
-  "calendarView": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
-  "calendars": [
-    {
-      "@odata.type": "microsoft.graph.calendar"
-    }
-  ],
   "city": "String-value",
-  "contactFolders": [
-    {
-      "@odata.type": "microsoft.graph.contactfolder"
-    }
-  ],
-  "contacts": [
-    {
-      "@odata.type": "microsoft.graph.contact"
-    }
-  ],
   "country": "String-value",
-  "createdObjects": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "deletionTimestamp": "String (timestamp)",
   "department": "String-value",
   "dirSyncEnabled": true,
-  "directReports": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "displayName": "String-value",
-  "drive": {
-    "@odata.type": "microsoft.graph.drive"
-  },
   "emailAddress": "String-value",
-  "events": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
   "facsimileTelephoneNumber": "String-value",
   "givenName": "String-value",
   "hireDate": "String (timestamp)",
@@ -116,55 +45,17 @@ Here is a JSON representation of the resource
     "String-value"
   ],
   "jobTitle": "String-value",
-  "joinedGroups": [
-    {
-      "@odata.type": "microsoft.graph.group"
-    }
-  ],
   "lastDirSyncTime": "String (timestamp)",
   "mail": "String-value",
-  "mailFolders": [
-    {
-      "@odata.type": "microsoft.graph.mailfolder"
-    }
-  ],
   "mailNickname": "String-value",
   "mailboxGuid": "Guid-value",
-  "manager": {
-    "@odata.type": "microsoft.graph.directoryobject"
-  },
-  "memberOf": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "messages": [
-    {
-      "@odata.type": "microsoft.graph.message"
-    }
-  ],
   "mobile": "String-value",
   "mySite": "String-value",
-  "oauth2PermissionGrants": [
-    {
-      "@odata.type": "microsoft.graph.oauth2permissiongrant"
-    }
-  ],
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
   "onPremisesSecurityIdentifier": "String-value",
   "otherMails": [
     "String-value"
-  ],
-  "ownedDevices": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "ownedObjects": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
   ],
   "passwordPolicies": "String-value",
   "passwordProfile": {
@@ -173,9 +64,6 @@ Here is a JSON representation of the resource
   "pastProjects": [
     "String-value"
   ],
-  "photo": {
-    "@odata.type": "microsoft.graph.photo"
-  },
   "physicalDeliveryOfficeName": "String-value",
   "postalCode": "String-value",
   "preferredLanguage": "String-value",
@@ -193,11 +81,6 @@ Here is a JSON representation of the resource
   ],
   "proxyAddresses": [
     "String-value"
-  ],
-  "registeredDevices": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
   ],
   "responsibilities": [
     "String-value"

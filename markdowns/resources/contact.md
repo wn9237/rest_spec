@@ -1,15 +1,15 @@
 # contact resource type
 
-Represents an organizational contact. Inherits from [DirectoryObject].
+Represents an organizational contact. Inherits from [DirectoryObject].
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "photo"
+
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -67,9 +67,6 @@ Here is a JSON representation of the resource
   },
   "parentFolderId": "String-value",
   "personalNotes": "String-value",
-  "photo": {
-    "@odata.type": "microsoft.graph.photo"
-  },
   "profession": "String-value",
   "spouseName": "String-value",
   "surname": "String-value",

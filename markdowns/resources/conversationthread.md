@@ -4,12 +4,12 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "posts"
+
   ],
   "@odata.type": "microsoft.graph.conversationthread"
 }-->
@@ -25,11 +25,6 @@ Here is a JSON representation of the resource
   "id": "String-value (identifier)",
   "isLocked": true,
   "lastDeliveredDateTime": "String (timestamp)",
-  "posts": [
-    {
-      "@odata.type": "microsoft.graph.post"
-    }
-  ],
   "preview": "String-value",
   "toRecipients": [
     {

@@ -4,15 +4,12 @@ The Drive resource represents a drive in OneDrive. It provides information abou
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "items",
-    "root",
-    "shared",
-    "special"
+
   ],
   "@odata.type": "microsoft.graph.drive"
 }-->
@@ -21,30 +18,12 @@ Here is a JSON representation of the resource
 {
   "driveType": "String-value",
   "id": "String-value (identifier)",
-  "items": [
-    {
-      "@odata.type": "microsoft.graph.item"
-    }
-  ],
   "owner": {
     "@odata.type": "microsoft.graph.identityset"
   },
   "quota": {
     "@odata.type": "microsoft.graph.quota"
-  },
-  "root": {
-    "@odata.type": "microsoft.graph.item"
-  },
-  "shared": [
-    {
-      "@odata.type": "microsoft.graph.item"
-    }
-  ],
-  "special": [
-    {
-      "@odata.type": "microsoft.graph.item"
-    }
-  ]
+  }
 }
 
 ```

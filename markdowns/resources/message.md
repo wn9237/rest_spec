@@ -4,23 +4,18 @@ A message in a mailbox folder.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments"
+
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
 
 ```json
 {
-  "attachments": [
-    {
-      "@odata.type": "microsoft.graph.attachment"
-    }
-  ],
   "bccRecipients": [
     {
       "@odata.type": "microsoft.graph.recipient"

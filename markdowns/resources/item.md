@@ -4,17 +4,12 @@ The Item resource type represents metadata for an item in OneDrive. All top-lev
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "children",
-    "createdByUser",
-    "lastModifiedByUser",
-    "permissions",
-    "thumbnails",
-    "versions"
+
   ],
   "@odata.type": "microsoft.graph.item"
 }-->
@@ -25,17 +20,9 @@ Here is a JSON representation of the resource
     "@odata.type": "microsoft.graph.audio"
   },
   "cTag": "String-value",
-  "children": [
-    {
-      "@odata.type": "microsoft.graph.item"
-    }
-  ],
   "content": "Stream-value",
   "createdBy": {
     "@odata.type": "microsoft.graph.identityset"
-  },
-  "createdByUser": {
-    "@odata.type": "microsoft.graph.user"
   },
   "createdDateTime": "String (timestamp)",
   "deleted": {
@@ -59,9 +46,6 @@ Here is a JSON representation of the resource
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identityset"
   },
-  "lastModifiedByUser": {
-    "@odata.type": "microsoft.graph.user"
-  },
   "lastModifiedDateTime": "String (timestamp)",
   "location": {
     "@odata.type": "microsoft.graph.location"
@@ -73,11 +57,6 @@ Here is a JSON representation of the resource
   "parentReference": {
     "@odata.type": "microsoft.graph.itemreference"
   },
-  "permissions": [
-    {
-      "@odata.type": "microsoft.graph.permission"
-    }
-  ],
   "photo": {
     "@odata.type": "microsoft.graph.photo"
   },
@@ -91,16 +70,6 @@ Here is a JSON representation of the resource
   "specialFolder": {
     "@odata.type": "microsoft.graph.specialfolder"
   },
-  "thumbnails": [
-    {
-      "@odata.type": "microsoft.graph.thumbnailset"
-    }
-  ],
-  "versions": [
-    {
-      "@odata.type": "microsoft.graph.item"
-    }
-  ],
   "video": {
     "@odata.type": "microsoft.graph.video"
   },

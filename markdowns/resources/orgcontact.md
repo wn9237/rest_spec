@@ -4,14 +4,12 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "directReports",
-    "manager",
-    "memberOf"
+
   ],
   "@odata.type": "microsoft.graph.orgcontact"
 }-->
@@ -23,11 +21,6 @@ Here is a JSON representation of the resource
   "deletionTimestamp": "String (timestamp)",
   "department": "String-value",
   "dirSyncEnabled": true,
-  "directReports": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "displayName": "String-value",
   "facsimileTelephoneNumber": "String-value",
   "givenName": "String-value",
@@ -35,14 +28,6 @@ Here is a JSON representation of the resource
   "lastDirSyncTime": "String (timestamp)",
   "mail": "String-value",
   "mailNickname": "String-value",
-  "manager": {
-    "@odata.type": "microsoft.graph.directoryobject"
-  },
-  "memberOf": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "mobile": "String-value",
   "objectId": "String-value (identifier)",
   "objectType": "String-value",

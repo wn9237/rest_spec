@@ -1,10 +1,10 @@
 # appRole resource type
 
-Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the [ServicePrincipal] entity and of the [Application] entity is a collection of **AppRole**.
+Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the [ServicePrincipal] entity and of the [Application] entity is a collection of **AppRole**.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

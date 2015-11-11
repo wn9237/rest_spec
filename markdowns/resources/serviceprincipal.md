@@ -1,22 +1,15 @@
 # servicePrincipal resource type
 
-Represents an instance of an application in a directory. Inherits from [DirectoryObject].
+Represents an instance of an application in a directory. Inherits from [DirectoryObject].
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "appRoleAssignedTo",
-    "appRoleAssignments",
-    "createdObjects",
-    "createdOnBehalfOf",
-    "memberOf",
-    "oauth2PermissionGrants",
-    "ownedObjects",
-    "owners"
+
   ],
   "@odata.type": "microsoft.graph.serviceprincipal"
 }-->
@@ -27,28 +20,12 @@ Here is a JSON representation of the resource
   "appDisplayName": "String-value",
   "appId": "String-value",
   "appOwnerTenantId": "Guid-value",
-  "appRoleAssignedTo": {
-    "@odata.type": "microsoft.graph.approleassignment"
-  },
   "appRoleAssignmentRequired": true,
-  "appRoleAssignments": [
-    {
-      "@odata.type": "microsoft.graph.approleassignment"
-    }
-  ],
   "appRoles": [
     {
       "@odata.type": "microsoft.graph.approle"
     }
   ],
-  "createdObjects": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "createdOnBehalfOf": {
-    "@odata.type": "microsoft.graph.directoryobject"
-  },
   "deletionTimestamp": "String (timestamp)",
   "displayName": "String-value",
   "errorUrl": "String-value",
@@ -59,16 +36,6 @@ Here is a JSON representation of the resource
     }
   ],
   "logoutUrl": "String-value",
-  "memberOf": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "oauth2PermissionGrants": [
-    {
-      "@odata.type": "microsoft.graph.oauth2permissiongrant"
-    }
-  ],
   "oauth2Permissions": [
     {
       "@odata.type": "microsoft.graph.oauth2permission"
@@ -76,16 +43,6 @@ Here is a JSON representation of the resource
   ],
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
-  "ownedObjects": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "owners": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "passwordCredentials": [
     {
       "@odata.type": "microsoft.graph.passwordcredential"

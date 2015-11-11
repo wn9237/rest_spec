@@ -1,63 +1,24 @@
 # group resource type
 
-Represents an Azure Active Directory Group. Inherited from **DirectoryObject**.
+Represents an Azure Active Directory Group. Inherited from **DirectoryObject**.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "acceptedSenders",
-    "appRoleAssignments",
-    "calendar",
-    "calendarView",
-    "conversations",
-    "createdOnBehalfOf",
-    "drive",
-    "events",
-    "memberOf",
-    "members",
-    "owners",
-    "photo",
-    "rejectedSenders",
-    "threads"
+
   ],
   "@odata.type": "microsoft.graph.group"
 }-->
 
 ```json
 {
-  "acceptedSenders": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "accessType": "String-value",
   "allowExternalSenders": true,
-  "appRoleAssignments": [
-    {
-      "@odata.type": "microsoft.graph.approleassignment"
-    }
-  ],
   "autoSubscribeNewMembers": true,
-  "calendar": {
-    "@odata.type": "microsoft.graph.calendar"
-  },
-  "calendarView": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
-  "conversations": [
-    {
-      "@odata.type": "microsoft.graph.conversation"
-    }
-  ],
-  "createdOnBehalfOf": {
-    "@odata.type": "microsoft.graph.directoryobject"
-  },
   "creationOptions": [
     "String-value"
   ],
@@ -65,15 +26,7 @@ Here is a JSON representation of the resource
   "description": "String-value",
   "dirSyncEnabled": true,
   "displayName": "String-value",
-  "drive": {
-    "@odata.type": "microsoft.graph.drive"
-  },
   "emailAddress": "String-value",
-  "events": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
   "groupTypes": [
     "String-value"
   ],
@@ -84,27 +37,9 @@ Here is a JSON representation of the resource
   "mail": "String-value",
   "mailEnabled": true,
   "mailNickname": "String-value",
-  "memberOf": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "members": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
   "onPremisesSecurityIdentifier": "String-value",
-  "owners": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "photo": {
-    "@odata.type": "microsoft.graph.photo"
-  },
   "provisioningErrors": [
     {
       "@odata.type": "microsoft.graph.provisioningerror"
@@ -113,17 +48,7 @@ Here is a JSON representation of the resource
   "proxyAddresses": [
     "String-value"
   ],
-  "rejectedSenders": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "securityEnabled": true,
-  "threads": [
-    {
-      "@odata.type": "microsoft.graph.conversationthread"
-    }
-  ],
   "unseenCount": 1024
 }
 
