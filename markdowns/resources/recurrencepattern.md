@@ -17,7 +17,9 @@ Here is a JSON representation of the resource.
 ```json
 {
   "dayOfMonth": 1024,
-  "daysOfWeek": ["String-value"],
+  "daysOfWeek": [
+    "String-value"
+  ],
   "firstDayOfWeek": "String-value",
   "index": "String-value",
   "interval": 1024,

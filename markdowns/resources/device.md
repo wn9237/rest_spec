@@ -17,7 +17,11 @@ Here is a JSON representation of the resource.
 ```json
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativesecurityid"}],
+  "alternativeSecurityIds": [
+    {
+      "@odata.type": "microsoft.graph.alternativesecurityid"
+    }
+  ],
   "approximateLastLogonTimestamp": "String (timestamp)",
   "deletionTimestamp": "String (timestamp)",
   "deviceId": "Guid-value",
@@ -25,7 +29,9 @@ Here is a JSON representation of the resource.
   "deviceOSType": "String-value",
   "deviceOSVersion": "String-value",
   "deviceObjectVersion": 1024,
-  "devicePhysicalIds": ["String-value"],
+  "devicePhysicalIds": [
+    "String-value"
+  ],
   "deviceTrustType": "String-value",
   "dirSyncEnabled": true,
   "displayName": "String-value",

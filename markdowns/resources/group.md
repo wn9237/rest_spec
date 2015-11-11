@@ -19,13 +19,17 @@ Here is a JSON representation of the resource.
   "accessType": "String-value",
   "allowExternalSenders": true,
   "autoSubscribeNewMembers": true,
-  "creationOptions": ["String-value"],
+  "creationOptions": [
+    "String-value"
+  ],
   "deletionTimestamp": "String (timestamp)",
   "description": "String-value",
   "dirSyncEnabled": true,
   "displayName": "String-value",
   "emailAddress": "String-value",
-  "groupTypes": ["String-value"],
+  "groupTypes": [
+    "String-value"
+  ],
   "isFavorite": true,
   "isPublic": true,
   "isSubscribedByMail": true,
@@ -36,8 +40,14 @@ Here is a JSON representation of the resource.
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
   "onPremisesSecurityIdentifier": "String-value",
-  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningerror"}],
-  "proxyAddresses": ["String-value"],
+  "provisioningErrors": [
+    {
+      "@odata.type": "microsoft.graph.provisioningerror"
+    }
+  ],
+  "proxyAddresses": [
+    "String-value"
+  ],
   "securityEnabled": true,
   "unseenCount": 1024
 }

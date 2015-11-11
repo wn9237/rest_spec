@@ -16,7 +16,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "allowedMemberTypes": ["String-value"],
+  "allowedMemberTypes": [
+    "String-value"
+  ],
   "description": "String-value",
   "displayName": "String-value",
   "id": "Guid-value",

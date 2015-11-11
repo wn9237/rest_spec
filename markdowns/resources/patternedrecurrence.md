@@ -16,8 +16,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "pattern": {"@odata.type": "microsoft.graph.recurrencepattern"},
+  "pattern": {
+    "@odata.type": "microsoft.graph.recurrencepattern"
+  },
   "range": {
+    "@odata.type": "microsoft.graph.recurrencerange"
+  }
 }
 
 ```

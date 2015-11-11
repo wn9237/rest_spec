@@ -24,6 +24,8 @@ Here is a JSON representation of the resource.
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
   "targetObjects": [
+    "String-value"
+  ]
 }
 
 ```

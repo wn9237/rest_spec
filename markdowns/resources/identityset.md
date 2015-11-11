@@ -16,9 +16,15 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "device": {"@odata.type": "microsoft.graph.identity"},
+  "application": {
+    "@odata.type": "microsoft.graph.identity"
+  },
+  "device": {
+    "@odata.type": "microsoft.graph.identity"
+  },
   "user": {
+    "@odata.type": "microsoft.graph.identity"
+  }
 }
 
 ```

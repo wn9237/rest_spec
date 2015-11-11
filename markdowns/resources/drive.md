@@ -18,8 +18,12 @@ Here is a JSON representation of the resource.
 {
   "driveType": "String-value",
   "id": "String-value (identifier)",
-  "owner": {"@odata.type": "microsoft.graph.identityset"},
+  "owner": {
+    "@odata.type": "microsoft.graph.identityset"
+  },
   "quota": {
+    "@odata.type": "microsoft.graph.quota"
+  }
 }
 
 ```

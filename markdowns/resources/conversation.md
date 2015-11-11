@@ -22,6 +22,8 @@ Here is a JSON representation of the resource.
   "preview": "String-value",
   "topic": "String-value",
   "uniqueSenders": [
+    "String-value"
+  ]
 }
 
 ```

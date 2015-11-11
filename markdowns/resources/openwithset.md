@@ -16,8 +16,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "web": {"@odata.type": "microsoft.graph.openwithapp"},
+  "web": {
+    "@odata.type": "microsoft.graph.openwithapp"
+  },
   "webEmbedded": {
+    "@odata.type": "microsoft.graph.openwithapp"
+  }
 }
 
 ```

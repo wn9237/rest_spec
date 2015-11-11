@@ -16,19 +16,31 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "body": {"@odata.type": "microsoft.graph.itembody"},
-  "categories": ["String-value"],
+  "body": {
+    "@odata.type": "microsoft.graph.itembody"
+  },
+  "categories": [
+    "String-value"
+  ],
   "changeKey": "String-value",
   "conversationId": "String-value",
   "conversationThreadId": "String-value",
   "createdDateTime": "String (timestamp)",
-  "from": {"@odata.type": "microsoft.graph.recipient"},
+  "from": {
+    "@odata.type": "microsoft.graph.recipient"
+  },
   "hasAttachments": true,
   "id": "String-value (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "newParticipants": [{"@odata.type": "microsoft.graph.recipient"}],
+  "newParticipants": [
+    {
+      "@odata.type": "microsoft.graph.recipient"
+    }
+  ],
   "receivedDateTime": "String (timestamp)",
   "sender": {
+    "@odata.type": "microsoft.graph.recipient"
+  }
 }
 
 ```

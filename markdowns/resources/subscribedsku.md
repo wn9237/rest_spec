@@ -19,8 +19,14 @@ Here is a JSON representation of the resource.
   "capabilityStatus": "String-value",
   "consumedUnits": 1024,
   "objectId": "String-value (identifier)",
-  "prepaidUnits": {"@odata.type": "microsoft.graph.licenseunitsdetail"},
-  "servicePlans": [{"@odata.type": "microsoft.graph.serviceplaninfo"}],
+  "prepaidUnits": {
+    "@odata.type": "microsoft.graph.licenseunitsdetail"
+  },
+  "servicePlans": [
+    {
+      "@odata.type": "microsoft.graph.serviceplaninfo"
+    }
+  ],
   "skuId": "Guid-value",
   "skuPartNumber": "String-value"
 }

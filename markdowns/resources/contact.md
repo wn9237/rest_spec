@@ -18,24 +18,42 @@ Here is a JSON representation of the resource.
 {
   "assistantName": "String-value",
   "birthday": "String (timestamp)",
-  "businessAddress": {"@odata.type": "microsoft.graph.physicaladdress"},
+  "businessAddress": {
+    "@odata.type": "microsoft.graph.physicaladdress"
+  },
   "businessHomePage": "String-value",
-  "businessPhones": ["String-value"],
-  "categories": ["String-value"],
+  "businessPhones": [
+    "String-value"
+  ],
+  "categories": [
+    "String-value"
+  ],
   "changeKey": "String-value",
-  "children": ["String-value"],
+  "children": [
+    "String-value"
+  ],
   "companyName": "String-value",
   "createdDateTime": "String (timestamp)",
   "department": "String-value",
   "displayName": "String-value",
-  "emailAddresses": [{"@odata.type": "microsoft.graph.emailaddress"}],
+  "emailAddresses": [
+    {
+      "@odata.type": "microsoft.graph.emailaddress"
+    }
+  ],
   "fileAs": "String-value",
   "generation": "String-value",
   "givenName": "String-value",
-  "homeAddress": {"@odata.type": "microsoft.graph.physicaladdress"},
-  "homePhones": ["String-value"],
+  "homeAddress": {
+    "@odata.type": "microsoft.graph.physicaladdress"
+  },
+  "homePhones": [
+    "String-value"
+  ],
   "id": "String-value (identifier)",
-  "imAddresses": ["String-value"],
+  "imAddresses": [
+    "String-value"
+  ],
   "initials": "String-value",
   "jobTitle": "String-value",
   "lastModifiedDateTime": "String (timestamp)",
@@ -44,7 +62,9 @@ Here is a JSON representation of the resource.
   "mobilePhone1": "String-value",
   "nickName": "String-value",
   "officeLocation": "String-value",
-  "otherAddress": {"@odata.type": "microsoft.graph.physicaladdress"},
+  "otherAddress": {
+    "@odata.type": "microsoft.graph.physicaladdress"
+  },
   "parentFolderId": "String-value",
   "personalNotes": "String-value",
   "profession": "String-value",

@@ -16,7 +16,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "resourceAccess": [{"@odata.type": "microsoft.graph.resourceaccess"}],
+  "resourceAccess": [
+    {
+      "@odata.type": "microsoft.graph.resourceaccess"
+    }
+  ],
   "resourceAppId": "String-value"
 }
 
