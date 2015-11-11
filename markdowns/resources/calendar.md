@@ -4,31 +4,20 @@ A calendar which is a container for events.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "calendarView",
-    "events"
+
   ],
   "@odata.type": "microsoft.graph.calendar"
 }-->
 
 ```json
 {
-  "calendarView": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
   "changeKey": "String-value",
   "color": "String-value",
-  "events": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
   "id": "String-value (identifier)",
   "name": "String-value"
 }

@@ -4,7 +4,7 @@ The Identity type represents an identity of an _actor_. For example, and actor c
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -4,7 +4,7 @@ A file (such as a text file or Word document) attached to a message or event. Th
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

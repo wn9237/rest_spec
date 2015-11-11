@@ -4,23 +4,18 @@ A group of calendars.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "calendars"
+
   ],
   "@odata.type": "microsoft.graph.calendargroup"
 }-->
 
 ```json
 {
-  "calendars": [
-    {
-      "@odata.type": "microsoft.graph.calendar"
-    }
-  ],
   "changeKey": "String-value",
   "classId": "Guid-value",
   "id": "String-value (identifier)",

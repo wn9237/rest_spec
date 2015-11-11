@@ -4,7 +4,7 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -17,21 +17,13 @@ Here is a JSON representation of the resource
 ```json
 {
   "changeKey": "String-value",
-  "eventEndTime": {
-    "@odata.type": "microsoft.graph.datetimetimezone"
-  },
+  "eventEndTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "eventId": "String-value",
-  "eventLocation": {
-    "@odata.type": "microsoft.graph.location"
-  },
-  "eventStartTime": {
-    "@odata.type": "microsoft.graph.datetimetimezone"
-  },
+  "eventLocation": {"@odata.type": "microsoft.graph.location"},
+  "eventStartTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "eventSubject": "String-value",
   "eventWebLink": "String-value",
   "reminderFireTime": {
-    "@odata.type": "microsoft.graph.datetimetimezone"
-  }
 }
 
 ```

@@ -1,22 +1,15 @@
 # servicePrincipal resource type
 
-Represents an instance of an application in a directory. Inherits from [DirectoryObject].
+Represents an instance of an application in a directory. Inherits from [DirectoryObject].
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "appRoleAssignedTo",
-    "appRoleAssignments",
-    "createdObjects",
-    "createdOnBehalfOf",
-    "memberOf",
-    "oauth2PermissionGrants",
-    "ownedObjects",
-    "owners"
+
   ],
   "@odata.type": "microsoft.graph.serviceprincipal"
 }-->
@@ -27,82 +20,24 @@ Here is a JSON representation of the resource
   "appDisplayName": "String-value",
   "appId": "String-value",
   "appOwnerTenantId": "Guid-value",
-  "appRoleAssignedTo": {
-    "@odata.type": "microsoft.graph.approleassignment"
-  },
   "appRoleAssignmentRequired": true,
-  "appRoleAssignments": [
-    {
-      "@odata.type": "microsoft.graph.approleassignment"
-    }
-  ],
-  "appRoles": [
-    {
-      "@odata.type": "microsoft.graph.approle"
-    }
-  ],
-  "createdObjects": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "createdOnBehalfOf": {
-    "@odata.type": "microsoft.graph.directoryobject"
-  },
+  "appRoles": [{"@odata.type": "microsoft.graph.approle"}],
   "deletionTimestamp": "String (timestamp)",
   "displayName": "String-value",
   "errorUrl": "String-value",
   "homepage": "String-value",
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keycredential"
-    }
-  ],
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keycredential"}],
   "logoutUrl": "String-value",
-  "memberOf": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "oauth2PermissionGrants": [
-    {
-      "@odata.type": "microsoft.graph.oauth2permissiongrant"
-    }
-  ],
-  "oauth2Permissions": [
-    {
-      "@odata.type": "microsoft.graph.oauth2permission"
-    }
-  ],
+  "oauth2Permissions": [{"@odata.type": "microsoft.graph.oauth2permission"}],
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
-  "ownedObjects": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "owners": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordcredential"
-    }
-  ],
+  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordcredential"}],
   "preferredTokenSigningKeyThumbprint": "String-value",
   "publisherName": "String-value",
-  "replyUrls": [
-    "String-value"
-  ],
+  "replyUrls": ["String-value"],
   "samlMetadataUrl": "String-value",
-  "servicePrincipalNames": [
-    "String-value"
-  ],
+  "servicePrincipalNames": ["String-value"],
   "tags": [
-    "String-value"
-  ]
 }
 
 ```

@@ -1,17 +1,15 @@
 # application resource type
 
-Represents an application. Any application that outsources authentication to Azure AD must be registered in a directory. This involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more.  For more information, see [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Inherits from [DirectoryObject].
+Represents an application. Any application that outsources authentication to Azure AD must be registered in a directory. This involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more.  For more information, see [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Inherits from [DirectoryObject].
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "createdOnBehalfOf",
-    "extensionProperties",
-    "owners"
+
   ],
   "@odata.type": "microsoft.graph.application"
 }-->
@@ -19,67 +17,28 @@ Here is a JSON representation of the resource
 ```json
 {
   "appId": "String-value",
-  "appRoles": [
-    {
-      "@odata.type": "microsoft.graph.approle"
-    }
-  ],
+  "appRoles": [{"@odata.type": "microsoft.graph.approle"}],
   "availableToOtherTenants": true,
-  "createdOnBehalfOf": {
-    "@odata.type": "microsoft.graph.directoryobject"
-  },
   "deletionTimestamp": "String (timestamp)",
   "displayName": "String-value",
   "errorUrl": "String-value",
-  "extensionProperties": [
-    {
-      "@odata.type": "microsoft.graph.extensionproperty"
-    }
-  ],
   "groupMembershipClaims": "String-value",
   "homepage": "String-value",
-  "identifierUris": [
-    "String-value"
-  ],
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keycredential"
-    }
-  ],
-  "knownClientApplications": [
-    "Guid-value"
-  ],
+  "identifierUris": ["String-value"],
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keycredential"}],
+  "knownClientApplications": ["Guid-value"],
   "logoutUrl": "String-value",
   "mainLogo": "Stream-value",
   "oauth2AllowImplicitFlow": true,
   "oauth2AllowUrlPathMatching": true,
-  "oauth2Permissions": [
-    {
-      "@odata.type": "microsoft.graph.oauth2permission"
-    }
-  ],
+  "oauth2Permissions": [{"@odata.type": "microsoft.graph.oauth2permission"}],
   "oauth2RequirePostResponse": true,
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
-  "owners": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordcredential"
-    }
-  ],
+  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordcredential"}],
   "publicClient": true,
-  "replyUrls": [
-    "String-value"
-  ],
-  "requiredResourceAccess": [
-    {
-      "@odata.type": "microsoft.graph.requiredresourceaccess"
-    }
-  ],
+  "replyUrls": ["String-value"],
+  "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredresourceaccess"}],
   "samlMetadataUrl": "String-value"
 }
 

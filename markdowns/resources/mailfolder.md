@@ -4,13 +4,12 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "childFolders",
-    "messages"
+
   ],
   "@odata.type": "microsoft.graph.mailfolder"
 }-->
@@ -18,18 +17,8 @@ Here is a JSON representation of the resource
 ```json
 {
   "childFolderCount": 1024,
-  "childFolders": [
-    {
-      "@odata.type": "microsoft.graph.mailfolder"
-    }
-  ],
   "displayName": "String-value",
   "id": "String-value (identifier)",
-  "messages": [
-    {
-      "@odata.type": "microsoft.graph.message"
-    }
-  ],
   "parentFolderId": "String-value",
   "totalItemCount": 1024,
   "unreadItemCount": 1024

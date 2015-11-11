@@ -307,6 +307,8 @@ module SpecMaker
 	def self.get_json_model (properties=[])
 		model = {}
 		properties.each do |item|
+			next if item[:isRelationship]
+
 			if NUMERICTYPES.include? item[:dataType]
 				model[item[:name]] = 1024
 			elsif DATETYPES.include? item[:dataType]
@@ -338,12 +340,39 @@ module SpecMaker
 		model = deep_copy(@mdresource)
 		model["@odata.type"] = "#{@service[:namespace]}.#{objectName}".downcase
 		properties.each do |item|
+
+			next if item[:isRelationship]
+
 			if item[:isNullable] || item[:isRelationship]
 				model[:optionalProperties].push item[:name]
 			end
 		end 
 		return "<!-- " + (JSON.pretty_generate model) + "-->"
 	end
+
+	def self.pretty_json(input = nil)
+		output = ""
+		save = ""
+		input.split("\n").each do |line|
+			if (line[0..0] == '{')
+				output = output  + line 
+				next
+			end
+			if (line[0..0] == '}')
+				output = output + NEWLINE + line
+				next
+			end
+			if line[2..2] == '"'
+				output = output + save + NEWLINE
+				output = output + line
+				save = ""
+				next
+			end
+			save = save + line.strip
+		end
+		return output
+	end
+
 
 	def self.get_json_page_annotation (description=nil)
 		model = deep_copy(@mdpageannotate)

@@ -657,11 +657,15 @@ module SpecMaker
 		# Header and description		
 		if !@jsonHash[:isEntitySet] 
 			@mdlines.push HEADER3 + 'JSON representation' + TWONEWLINES
-			@mdlines.push 'Here is a JSON representation of the resource' + TWONEWLINES
+			@mdlines.push 'Here is a JSON representation of the resource.' + TWONEWLINES
 
 			@mdlines.push get_json_model_pretext(@jsonHash[:name],propreties) + TWONEWLINES
+			
 			@mdlines.push "```json" + NEWLINE
-			@mdlines.push get_json_model(propreties) + TWONEWLINES
+			#@mdlines.push get_json_model(propreties) + TWONEWLINES
+			jsonpretty = pretty_json(get_json_model(propreties))
+			@mdlines.push jsonpretty + TWONEWLINES
+			
 			@mdlines.push "```" + NEWLINE			
 		end
 

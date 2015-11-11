@@ -4,12 +4,12 @@ A conversation is a collection of [threads](#ConversationThreadResource). All th
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "threads"
+
   ],
   "@odata.type": "microsoft.graph.conversation"
 }-->
@@ -20,15 +20,8 @@ Here is a JSON representation of the resource
   "id": "String-value (identifier)",
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "String-value",
-  "threads": [
-    {
-      "@odata.type": "microsoft.graph.conversationthread"
-    }
-  ],
   "topic": "String-value",
   "uniqueSenders": [
-    "String-value"
-  ]
 }
 
 ```

@@ -4,12 +4,12 @@ A message or event that's attached to another message or event.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "item"
+
   ],
   "@odata.type": "microsoft.graph.itemattachment"
 }-->
@@ -19,9 +19,6 @@ Here is a JSON representation of the resource
   "contentType": "String-value",
   "id": "String-value (identifier)",
   "isInline": true,
-  "item": {
-    "@odata.type": "microsoft.graph.outlookitem"
-  },
   "lastModifiedDateTime": "String (timestamp)",
   "name": "String-value",
   "size": 1024

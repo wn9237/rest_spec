@@ -4,7 +4,7 @@ A sender or receiver for a message.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -17,8 +17,6 @@ Here is a JSON representation of the resource
 ```json
 {
   "emailAddress": {
-    "@odata.type": "microsoft.graph.emailaddress"
-  }
 }
 
 ```

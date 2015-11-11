@@ -1,10 +1,10 @@
 # passwordProfile resource type
 
-Contains the password profile associated with a user. The **passwordProfile** property of the [User] entity is a **PasswordProfile** object.
+Contains the password profile associated with a user. The **passwordProfile** property of the [User] entity is a **PasswordProfile** object.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

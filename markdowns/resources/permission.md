@@ -4,7 +4,7 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -16,22 +16,12 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "grantedTo": {
-    "@odata.type": "microsoft.graph.identityset"
-  },
+  "grantedTo": {"@odata.type": "microsoft.graph.identityset"},
   "id": "String-value (identifier)",
-  "inheritedFrom": {
-    "@odata.type": "microsoft.graph.itemreference"
-  },
-  "invitation": {
-    "@odata.type": "microsoft.graph.sharinginvitation"
-  },
-  "link": {
-    "@odata.type": "microsoft.graph.sharinglink"
-  },
-  "roles": [
-    "String-value"
-  ],
+  "inheritedFrom": {"@odata.type": "microsoft.graph.itemreference"},
+  "invitation": {"@odata.type": "microsoft.graph.sharinginvitation"},
+  "link": {"@odata.type": "microsoft.graph.sharinglink"},
+  "roles": ["String-value"],
   "shareId": "String-value"
 }
 

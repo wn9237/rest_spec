@@ -1,18 +1,15 @@
 # directoryRole resource type
 
-Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning administrator roles in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
+Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning administrator roles in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "memberOf",
-    "members",
-    "ownedObjects",
-    "owners"
+
   ],
   "@odata.type": "microsoft.graph.directoryrole"
 }-->
@@ -23,28 +20,8 @@ Here is a JSON representation of the resource
   "description": "String-value",
   "displayName": "String-value",
   "isSystem": true,
-  "memberOf": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "members": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
-  "ownedObjects": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
-  "owners": [
-    {
-      "@odata.type": "microsoft.graph.directoryobject"
-    }
-  ],
   "roleDisabled": true,
   "roleTemplateId": "String-value"
 }

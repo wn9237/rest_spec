@@ -4,82 +4,47 @@ An event in a calendar.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments",
-    "calendar",
-    "instances"
+
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
 
 ```json
 {
-  "attachments": [
-    {
-      "@odata.type": "microsoft.graph.attachment"
-    }
-  ],
-  "attendees": [
-    {
-      "@odata.type": "microsoft.graph.attendee"
-    }
-  ],
-  "body": {
-    "@odata.type": "microsoft.graph.itembody"
-  },
+  "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
+  "body": {"@odata.type": "microsoft.graph.itembody"},
   "bodyPreview": "String-value",
-  "calendar": {
-    "@odata.type": "microsoft.graph.calendar"
-  },
-  "categories": [
-    "String-value"
-  ],
+  "categories": ["String-value"],
   "changeKey": "String-value",
   "createdDateTime": "String (timestamp)",
-  "end": {
-    "@odata.type": "microsoft.graph.datetimetimezone"
-  },
+  "end": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "hasAttachments": true,
   "iCalUId": "String-value",
   "id": "String-value (identifier)",
   "importance": "String-value",
-  "instances": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
   "isAllDay": true,
   "isCancelled": true,
   "isOrganizer": true,
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
-  "location": {
-    "@odata.type": "microsoft.graph.location"
-  },
-  "organizer": {
-    "@odata.type": "microsoft.graph.recipient"
-  },
+  "location": {"@odata.type": "microsoft.graph.location"},
+  "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "String-value",
   "originalStart": "String (timestamp)",
   "originalStartTimeZone": "String-value",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedrecurrence"
-  },
+  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
   "reminderMinutesBeforeStart": 1024,
   "responseRequested": true,
-  "responseStatus": {
-    "@odata.type": "microsoft.graph.responsestatus"
-  },
+  "responseStatus": {"@odata.type": "microsoft.graph.responsestatus"},
   "sensitivity": "String-value",
   "seriesMasterId": "String-value",
   "showAs": "String-value",
-  "start": {
-    "@odata.type": "microsoft.graph.datetimetimezone"
-  },
+  "start": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "subject": "String-value",
   "type": "String-value",
   "webLink": "String-value"

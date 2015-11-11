@@ -4,7 +4,7 @@ A folder in a user's mailbox, such as Inbox, Drafts, and Sent Items. Folders can
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

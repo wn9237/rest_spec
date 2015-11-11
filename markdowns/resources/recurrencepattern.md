@@ -4,7 +4,7 @@ The frequency of an event.
 
 ### JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -17,9 +17,7 @@ Here is a JSON representation of the resource
 ```json
 {
   "dayOfMonth": 1024,
-  "daysOfWeek": [
-    "String-value"
-  ],
+  "daysOfWeek": ["String-value"],
   "firstDayOfWeek": "String-value",
   "index": "String-value",
   "interval": 1024,
