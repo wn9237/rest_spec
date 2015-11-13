@@ -24,55 +24,9 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/groups/<objectId>/drive/items/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/groups/<objectId>/drive/root/createdByUser/appRoleAssignments/<objectId>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/servicePrincipals/<objectId>/appRoleAssignedTo": true,
-    "/servicePrincipals/<objectId>/appRoleAssignments/<objectId>": true,
-    "/users/<objectId>/appRoleAssignments/<objectId>": true,
-    "/users/<objectId>/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/items/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/shared/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/special/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/special/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/root/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/root/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/root/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/root/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/shares/<id>/items/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drive/items/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drive/items/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drive/items/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drive/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drive/shared/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drive/shared/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drive/shared/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drive/special/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drive/special/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drive/special/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drive/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drive/root/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drive/root/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
-    "/drive/root/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drive/root/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true
+    "/appRoleAssignments/<id>": true,
+    "/servicePrincipals/<id>/appRoleAssignedTo/<id>": true,
+    "/servicePrincipals/<id>/appRoleAssignments/<id>": true
   },
   "properties": [
     {
@@ -92,9 +46,9 @@
     {
       "name": "id",
       "description": "The role id that was assigned to the principal.  This role must be declared by the target resource application **resourceId** in its **appRoles** property. Where the resource does not declare any permissions, a default id (zero GUID) must be specified.                            **Notes**: not nullable.            ",
-      "isKey": false,
+      "isKey": true,
       "dataType": "guid",
-      "isReadOnly": false,
+      "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
       "isRelationship": false,
@@ -172,137 +126,9 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
-    },
-    {
-      "name": "objectType",
-      "description": "A string that identifies the object type. For application role assignments the value is always “AppRoleAssignment”. Inherited from [DirectoryObject].",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "objectId",
-      "description": "The unique identifier for the application role assignment. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
-      "isKey": true,
-      "dataType": "string",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
-    },
-    {
-      "name": "deletionTimestamp",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     }
   ],
   "methods": [
-    {
-      "name": "checkMemberGroups",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "string",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
 
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "groupIds",
-          "description": "",
-          "dataType": "string",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "getMemberGroups",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "string",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "securityEnabledOnly",
-          "description": "",
-          "dataType": "boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "getMemberObjects",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "string",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "securityEnabledOnly",
-          "description": "",
-          "dataType": "boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    }
   ]
 }

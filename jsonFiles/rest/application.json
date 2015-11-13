@@ -24,9 +24,23 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/applications/<objectId>": true
+    "/applications/<id>": true
   },
   "properties": [
+    {
+      "name": "addIns",
+      "description": "",
+      "isKey": false,
+      "dataType": "addIn",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
     {
       "name": "appId",
       "description": "The unique identifier for the application.",
@@ -56,8 +70,8 @@
       "isUnicode": null
     },
     {
-      "name": "availableToOtherTenants",
-      "description": "                **true** if the application is shared with other tenants; otherwise, **false**.",
+      "name": "availableToOtherOrganizations",
+      "description": "",
       "isKey": false,
       "dataType": "boolean",
       "isReadOnly": false,
@@ -280,6 +294,20 @@
       "isUnicode": null
     },
     {
+      "name": "recordConsentConditions",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
       "name": "replyUrls",
       "description": "Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to.                              **Notes:** not nullable",
       "isKey": false,
@@ -322,22 +350,8 @@
       "isUnicode": false
     },
     {
-      "name": "objectType",
-      "description": "A string that identifies the object type. For applications the value is always \"Application\". Inherited from [DirectoryObject].",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "objectId",
-      "description": "The unique identifier for the application. Inherited from [DirectoryObject].                              **Notes: **                **key**, immutable, not nullable, unique",
+      "name": "id",
+      "description": "",
       "isKey": true,
       "dataType": "string",
       "isReadOnly": true,
@@ -348,20 +362,6 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
-    },
-    {
-      "name": "deletionTimestamp",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     },
     {
       "name": "extensionProperties",
@@ -408,41 +408,12 @@
   ],
   "methods": [
     {
-      "name": "restore",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "application",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "identifierUris",
-          "description": "",
-          "dataType": "string",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
       "name": "checkMemberGroups",
       "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -471,7 +442,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -495,12 +466,12 @@
       ]
     },
     {
-      "name": "getMemberObjectsk",
+      "name": "getMemberObjects",
       "displayName": "",
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,

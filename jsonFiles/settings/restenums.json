@@ -2,15 +2,15 @@
   "AttendeeType": {
     "isExclusive": true,
     "options": {
-      "Required": {
+      "required": {
         "value": "0",
         "description": ""
       },
-      "Optional": {
+      "optional": {
         "value": "1",
         "description": ""
       },
-      "Resource": {
+      "resource": {
         "value": "2",
         "description": ""
       }
@@ -19,27 +19,27 @@
   "FreeBusyStatus": {
     "isExclusive": true,
     "options": {
-      "Free": {
+      "free": {
         "value": "0",
         "description": ""
       },
-      "Tentative": {
+      "tentative": {
         "value": "1",
         "description": ""
       },
-      "Busy": {
+      "busy": {
         "value": "2",
         "description": ""
       },
-      "Oof": {
+      "oof": {
         "value": "3",
         "description": ""
       },
-      "WorkingElsewhere": {
+      "workingElsewhere": {
         "value": "4",
         "description": ""
       },
-      "Unknown": {
+      "unknown": {
         "value": "-1",
         "description": ""
       }
@@ -48,15 +48,15 @@
   "ActivityDomain": {
     "isExclusive": true,
     "options": {
-      "Unknown": {
+      "unknown": {
         "value": "0",
         "description": ""
       },
-      "Work": {
+      "work": {
         "value": "1",
         "description": ""
       },
-      "Personal": {
+      "personal": {
         "value": "2",
         "description": ""
       }
@@ -65,11 +65,11 @@
   "BodyType": {
     "isExclusive": true,
     "options": {
-      "Text": {
+      "text": {
         "value": "0",
         "description": ""
       },
-      "HTML": {
+      "html": {
         "value": "1",
         "description": ""
       }
@@ -78,15 +78,15 @@
   "Importance": {
     "isExclusive": true,
     "options": {
-      "Low": {
+      "low": {
         "value": "0",
         "description": ""
       },
-      "Normal": {
+      "normal": {
         "value": "1",
         "description": ""
       },
-      "High": {
+      "high": {
         "value": "2",
         "description": ""
       }
@@ -95,11 +95,11 @@
   "InferenceClassificationType": {
     "isExclusive": true,
     "options": {
-      "Focused": {
+      "focused": {
         "value": "0",
         "description": ""
       },
-      "Other": {
+      "other": {
         "value": "1",
         "description": ""
       }
@@ -108,47 +108,47 @@
   "CalendarColor": {
     "isExclusive": true,
     "options": {
-      "LightBlue": {
+      "lightBlue": {
         "value": "0",
         "description": ""
       },
-      "LightGreen": {
+      "lightGreen": {
         "value": "1",
         "description": ""
       },
-      "LightOrange": {
+      "lightOrange": {
         "value": "2",
         "description": ""
       },
-      "LightGray": {
+      "lightGray": {
         "value": "3",
         "description": ""
       },
-      "LightYellow": {
+      "lightYellow": {
         "value": "4",
         "description": ""
       },
-      "LightTeal": {
+      "lightTeal": {
         "value": "5",
         "description": ""
       },
-      "LightPink": {
+      "lightPink": {
         "value": "6",
         "description": ""
       },
-      "LightBrown": {
+      "lightBrown": {
         "value": "7",
         "description": ""
       },
-      "LightRed": {
+      "lightRed": {
         "value": "8",
         "description": ""
       },
-      "MaxColor": {
+      "maxColor": {
         "value": "9",
         "description": ""
       },
-      "Auto": {
+      "auto": {
         "value": "-1",
         "description": ""
       }
@@ -157,27 +157,27 @@
   "ResponseType": {
     "isExclusive": true,
     "options": {
-      "None": {
+      "none": {
         "value": "0",
         "description": ""
       },
-      "Organizer": {
+      "organizer": {
         "value": "1",
         "description": ""
       },
-      "TentativelyAccepted": {
+      "tentativelyAccepted": {
         "value": "2",
         "description": ""
       },
-      "Accepted": {
+      "accepted": {
         "value": "3",
         "description": ""
       },
-      "Declined": {
+      "declined": {
         "value": "4",
         "description": ""
       },
-      "NotResponded": {
+      "notResponded": {
         "value": "5",
         "description": ""
       }
@@ -186,19 +186,19 @@
   "Sensitivity": {
     "isExclusive": true,
     "options": {
-      "Normal": {
+      "normal": {
         "value": "0",
         "description": ""
       },
-      "Personal": {
+      "personal": {
         "value": "1",
         "description": ""
       },
-      "Private": {
+      "private": {
         "value": "2",
         "description": ""
       },
-      "Confidential": {
+      "confidential": {
         "value": "3",
         "description": ""
       }
@@ -207,27 +207,27 @@
   "RecurrencePatternType": {
     "isExclusive": true,
     "options": {
-      "Daily": {
+      "daily": {
         "value": "0",
         "description": ""
       },
-      "Weekly": {
+      "weekly": {
         "value": "1",
         "description": ""
       },
-      "AbsoluteMonthly": {
+      "absoluteMonthly": {
         "value": "2",
         "description": ""
       },
-      "RelativeMonthly": {
+      "relativeMonthly": {
         "value": "3",
         "description": ""
       },
-      "AbsoluteYearly": {
+      "absoluteYearly": {
         "value": "4",
         "description": ""
       },
-      "RelativeYearly": {
+      "relativeYearly": {
         "value": "5",
         "description": ""
       }
@@ -236,31 +236,31 @@
   "DayOfWeek": {
     "isExclusive": true,
     "options": {
-      "Sunday": {
+      "sunday": {
         "value": "0",
         "description": ""
       },
-      "Monday": {
+      "monday": {
         "value": "1",
         "description": ""
       },
-      "Tuesday": {
+      "tuesday": {
         "value": "2",
         "description": ""
       },
-      "Wednesday": {
+      "wednesday": {
         "value": "3",
         "description": ""
       },
-      "Thursday": {
+      "thursday": {
         "value": "4",
         "description": ""
       },
-      "Friday": {
+      "friday": {
         "value": "5",
         "description": ""
       },
-      "Saturday": {
+      "saturday": {
         "value": "6",
         "description": ""
       }
@@ -269,23 +269,23 @@
   "WeekIndex": {
     "isExclusive": true,
     "options": {
-      "First": {
+      "first": {
         "value": "0",
         "description": ""
       },
-      "Second": {
+      "second": {
         "value": "1",
         "description": ""
       },
-      "Third": {
+      "third": {
         "value": "2",
         "description": ""
       },
-      "Fourth": {
+      "fourth": {
         "value": "3",
         "description": ""
       },
-      "Last": {
+      "last": {
         "value": "4",
         "description": ""
       }
@@ -294,15 +294,15 @@
   "RecurrenceRangeType": {
     "isExclusive": true,
     "options": {
-      "EndDate": {
+      "endDate": {
         "value": "0",
         "description": ""
       },
-      "NoEnd": {
+      "noEnd": {
         "value": "1",
         "description": ""
       },
-      "Numbered": {
+      "numbered": {
         "value": "2",
         "description": ""
       }
@@ -311,19 +311,19 @@
   "EventType": {
     "isExclusive": true,
     "options": {
-      "SingleInstance": {
+      "singleInstance": {
         "value": "0",
         "description": ""
       },
-      "Occurrence": {
+      "occurrence": {
         "value": "1",
         "description": ""
       },
-      "Exception": {
+      "exception": {
         "value": "2",
         "description": ""
       },
-      "SeriesMaster": {
+      "seriesMaster": {
         "value": "3",
         "description": ""
       }
@@ -332,27 +332,27 @@
   "MeetingMessageType": {
     "isExclusive": true,
     "options": {
-      "None": {
+      "none": {
         "value": "0",
         "description": ""
       },
-      "MeetingRequest": {
+      "meetingRequest": {
         "value": "1",
         "description": ""
       },
-      "MeetingCancelled": {
+      "meetingCancelled": {
         "value": "2",
         "description": ""
       },
-      "MeetingAccepted": {
+      "meetingAccepted": {
         "value": "3",
         "description": ""
       },
-      "MeetingTenativelyAccepted": {
+      "meetingTenativelyAccepted": {
         "value": "4",
         "description": ""
       },
-      "MeetingDeclined": {
+      "meetingDeclined": {
         "value": "5",
         "description": ""
       }
@@ -361,62 +361,20 @@
   "GroupAccessType": {
     "isExclusive": true,
     "options": {
-      "None": {
+      "none": {
         "value": "0",
         "description": ""
       },
-      "Private": {
+      "private": {
         "value": "1",
         "description": ""
       },
-      "Secret": {
+      "secret": {
         "value": "2",
         "description": ""
       },
-      "Public": {
+      "public": {
         "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "taskBoardType": {
-    "isExclusive": true,
-    "options": {
-      "progress": {
-        "value": "0",
-        "description": ""
-      },
-      "assignedTo": {
-        "value": "1",
-        "description": ""
-      },
-      "bucket": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "previewType": {
-    "isExclusive": true,
-    "options": {
-      "automatic": {
-        "value": "0",
-        "description": ""
-      },
-      "noPreview": {
-        "value": "1",
-        "description": ""
-      },
-      "checklist": {
-        "value": "2",
-        "description": ""
-      },
-      "description": {
-        "value": "3",
-        "description": ""
-      },
-      "reference": {
-        "value": "4",
         "description": ""
       }
     }
@@ -476,6 +434,48 @@
       },
       "None": {
         "value": "-1",
+        "description": ""
+      }
+    }
+  },
+  "taskBoardType": {
+    "isExclusive": true,
+    "options": {
+      "progress": {
+        "value": "0",
+        "description": ""
+      },
+      "assignedTo": {
+        "value": "1",
+        "description": ""
+      },
+      "bucket": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "previewType": {
+    "isExclusive": true,
+    "options": {
+      "automatic": {
+        "value": "0",
+        "description": ""
+      },
+      "noPreview": {
+        "value": "1",
+        "description": ""
+      },
+      "checklist": {
+        "value": "2",
+        "description": ""
+      },
+      "description": {
+        "value": "3",
+        "description": ""
+      },
+      "reference": {
+        "value": "4",
         "description": ""
       }
     }

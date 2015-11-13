@@ -1,0 +1,42 @@
+# location resource type
+
+The location of an event.
+
+### JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.location"
+}-->
+
+```json
+{
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "displayName": "string",
+  "locationEmailAddress": "string"
+}
+
+```
+### Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|address|[physicalAddress](physicaladdress.md)||
+|coordinates|[outlookGeoCoordinates](outlookgeocoordinates.md)||
+|displayName|string||
+|locationEmailAddress|string||
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "location resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

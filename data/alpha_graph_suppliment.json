@@ -231,13 +231,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.AppliedCategoriesCollection",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.AppRole",
             "Annotation": {
               "Term": "Core.Description",
@@ -455,7 +448,7 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Attachment/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.Attachment/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -610,69 +603,6 @@
           },
           {
             "Target": "Microsoft.Graph.audio/year",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket/name",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket/planId",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket/orderHint",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket/totalTasks",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket/activeTasks",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket/version",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Bucket/tasks",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -1036,17 +966,17 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Contact/CreatedDateTime",
+            "Target": "Microsoft.Graph.Contact/DateTimeCreated",
             "Annotation": {
               "Term": "Core.Description",
-              "String": ""
+              "String": "The time the contact was created."
             }
           },
           {
-            "Target": "Microsoft.Graph.Contact/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.Contact/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
-              "String": ""
+              "String": "The time the contact was modified."
             }
           },
           {
@@ -1134,7 +1064,7 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Conversation/LastDeliveredDateTime",
+            "Target": "Microsoft.Graph.Conversation/DateTimeLastDelivered",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -1197,7 +1127,7 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.ConversationThread/LastDeliveredDateTime",
+            "Target": "Microsoft.Graph.ConversationThread/DateTimeLastDelivered",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -1240,251 +1170,6 @@
           },
           {
             "Target": "Microsoft.Graph.ConversationThread/Posts",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/isDefault",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/userRole",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/isShared",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/sectionsUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/sectionGroupsUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/links",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/name",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/createdBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/lastModifiedBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/lastModifiedTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/self",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyNotebookModel/createdTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/parentSection",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/parentNotebook",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/title",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/createdByAppId",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/links",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/contentUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/lastModifiedTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/self",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopyPageModel/createdTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/isDefault",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/pagesUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/name",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/createdBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/lastModifiedBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/lastModifiedTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/self",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.CopySectionModel/createdTime",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -1688,27 +1373,6 @@
           },
           {
             "Target": "Microsoft.Graph.DeviceConfiguration/deletionTimestamp",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Diagnostic",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Diagnostic/message",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Diagnostic/url",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -2247,17 +1911,17 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Event/CreatedDateTime",
+            "Target": "Microsoft.Graph.Event/DateTimeCreated",
             "Annotation": {
               "Term": "Core.Description",
-              "String": ""
+              "String": "The date and time that the event was created."
             }
           },
           {
-            "Target": "Microsoft.Graph.Event/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.Event/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
-              "String": ""
+              "String": "The date and time that the event was last modified."
             }
           },
           {
@@ -2401,14 +2065,14 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.EventMessage/ReceivedDateTime",
+            "Target": "Microsoft.Graph.EventMessage/DateTimeReceived",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.EventMessage/SentDateTime",
+            "Target": "Microsoft.Graph.EventMessage/DateTimeSent",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -2464,14 +2128,14 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.EventMessage/CreatedDateTime",
+            "Target": "Microsoft.Graph.EventMessage/DateTimeCreated",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.EventMessage/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.EventMessage/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -2590,62 +2254,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.ExternalLink",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.ExternalLink/href",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.ExternalReference",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.ExternalReference/alias",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.ExternalReference/type",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.ExternalReference/previewPriority",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.ExternalReference/modifiedBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.ExternalReference/modifiedDate",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.ExternalReferenceCollection",
             "Annotation": {
               "Term": "Core.Description",
@@ -2716,7 +2324,7 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.FileAttachment/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.FileAttachment/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -3074,13 +2682,6 @@
           },
           {
             "Target": "Microsoft.Graph.Group/drive",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Group/details",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -3465,7 +3066,7 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.ItemAttachment/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.ItemAttachment/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -3801,14 +3402,14 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Message/ReceivedDateTime",
+            "Target": "Microsoft.Graph.Message/DateTimeReceived",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Message/SentDateTime",
+            "Target": "Microsoft.Graph.Message/DateTimeSent",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -3864,14 +3465,14 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Message/CreatedDateTime",
+            "Target": "Microsoft.Graph.Message/DateTimeCreated",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Message/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.Message/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -3899,203 +3500,98 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.MyOrganization",
+            "Target": "Microsoft.Graph.Notification",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.MyOrganization/id",
+            "Target": "Microsoft.Graph.Notification/Id",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.MyOrganization/siteCollections",
+            "Target": "Microsoft.Graph.Notification/DisplayName",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notebook",
+            "Target": "Microsoft.Graph.Notification/NotificationType",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notebook/isDefault",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "Indicates whether this is the user's default notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/userRole",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "One of three values: Owner, Contributor, or Reader. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/isShared",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/sectionsUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The URL for the sections navigation property, which returns all the sections in the notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/sectionGroupsUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The URL for the sectionGroups navigation property, which returns all the section groups in the notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/links",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The value of oneNoteClientURL can be used to open the notebook using the OneNote native client app if it's installed. The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/name",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The name of the notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/createdBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The user who created the notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/lastModifiedBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The user who last modified the notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/lastModifiedTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The date and time when the notebook was last modified."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The unique identifier of the notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/self",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The endpoint where you can get details about the notebook."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/createdTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The date and time when the notebook was created."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/sections",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The sections in the notebook. Can be navigated to using the sectionsUrl property or expanded in a GET request."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Notebook/sectionGroups",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The section groups in the notebook. Can be navigated to using the sectionGroupsUrl property or expanded in a GET request."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.NotebookLinks",
+            "Target": "Microsoft.Graph.Notification/NotificationTarget",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.NotebookLinks/oneNoteClientUrl",
+            "Target": "Microsoft.Graph.NotificationRule",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.NotebookLinks/oneNoteWebUrl",
+            "Target": "Microsoft.Graph.NotificationRule/Id",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notes",
+            "Target": "Microsoft.Graph.NotificationRule/UserName",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notes/id",
+            "Target": "Microsoft.Graph.NotificationRule/UserId",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notes/notebooks",
+            "Target": "Microsoft.Graph.NotificationRule/RoleName",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notes/sections",
+            "Target": "Microsoft.Graph.NotificationRule/RoleId",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notes/sectionGroups",
+            "Target": "Microsoft.Graph.NotificationRule/NotificationId",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notes/pages",
+            "Target": "Microsoft.Graph.NotificationRule/NotificationName",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Notes/resources",
+            "Target": "Microsoft.Graph.NotificationRule/Event",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -4536,14 +4032,14 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.OutlookItem/CreatedDateTime",
+            "Target": "Microsoft.Graph.OutlookItem/DateTimeCreated",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.OutlookItem/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.OutlookItem/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -4551,111 +4047,6 @@
           },
           {
             "Target": "Microsoft.Graph.OutlookItem/Id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/title",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The title of the page "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/createdByAppId",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The unique identifier of the application that created the page "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/links",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The oneNoteClientURL link to open the page in the OneNote native client if it 's installed, and oneNoteWebUrl to open the page in OneNote Online"
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/contentUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The URL for the page's HTML content "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/content",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/lastModifiedTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The unique identifier of the page "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/self",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/createdTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The date and time when the page was created in UTC format "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/parentSection",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Page/parentNotebook",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "A page in a OneNote section "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PageLinks",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PageLinks/oneNoteClientUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PageLinks/oneNoteWebUrl",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -4722,41 +4113,6 @@
             "Annotation": {
               "Term": "Core.Description",
               "String": "                **true** if the user must change her password on the next login; otherwise **false**.            "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PatchContentCommand",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PatchContentCommand/action",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PatchContentCommand/target",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PatchContentCommand/content",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PatchContentCommand/position",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
             }
           },
           {
@@ -4970,42 +4326,7 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Plan/buckets",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.Plan/details",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Plan/timeline",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Plan/assignedToTaskBoard",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Plan/statusTaskBoard",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Plan/bucketTaskBoard",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -5026,48 +4347,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.PlanDetails/category0Description",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanDetails/category1Description",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanDetails/category2Description",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanDetails/category3Description",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanDetails/category4Description",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanDetails/category5Description",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.PlanDetails/id",
             "Annotation": {
               "Term": "Core.Description",
@@ -5076,69 +4355,6 @@
           },
           {
             "Target": "Microsoft.Graph.PlanDetails/version",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTaskBoard",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTaskBoard/type",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTaskBoard/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTaskBoard/version",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTimeline",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTimeline/displaySettings",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTimeline/lockedWidth",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTimeline/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.PlanTimeline/version",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -5159,7 +4375,7 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Post/ReceivedDateTime",
+            "Target": "Microsoft.Graph.Post/DateTimeReceived",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -5222,14 +4438,14 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Post/CreatedDateTime",
+            "Target": "Microsoft.Graph.Post/DateTimeCreated",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
             }
           },
           {
-            "Target": "Microsoft.Graph.Post/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.Post/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -5258,6 +4474,461 @@
           },
           {
             "Target": "Microsoft.Graph.Post/InReplyTo",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/Id",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/UserId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/UserName",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/UserMail",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/RoleId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/RoleName",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/ExpirationTime",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/CreationTime",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/RequestorId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/RequestorName",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/TenantId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/RequestType",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedOperationEvent/AdditionalInformation",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRole",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRole/Id",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRole/Name",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRole/Summary",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRole/Settings",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRole/Assignments",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleAssignment",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleAssignment/UserId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleAssignment/RoleId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleAssignment/IsElevated",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleAssignment/ExpirationTime",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleAssignment/ResultMessage",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleAssignment/RoleInfo",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings/MinElevationDuration",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings/MaxElavationDuration",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings/ElevationDuration",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings/RoleId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings/NotificationToUserOnElevation",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings/TicketingInfoOnElevation",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings/MfaOnElevation",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSettings/LastGlobalAdmin",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSummary",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSummary/RoleId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSummary/Status",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSummary/UsersCount",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSummary/ManagedCount",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSummary/ElevatedCount",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedRoleSummary/MfaEnabled",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/AlertId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/NumberOfAffectedItems",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/AdditionalData",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/AlertName",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/AlertDescription",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/LastModifiedTime",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/LastScannedTime",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/SeverityLevel",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/AlertType",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/SecurityImpact",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/MitigationSteps",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/HowToPrevent",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/WasDismissed",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/IsActive",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/IsResolvable",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/IsConfigurable",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSecurityAlert/Status",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSignupStatus",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSignupStatus/TenantId",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSignupStatus/IsRegistered",
+            "Annotation": {
+              "Term": "Core.Description",
+              "String": ""
+            }
+          },
+          {
+            "Target": "Microsoft.Graph.PrivilegedSignupStatus/Status",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -5544,7 +5215,7 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.ReferenceAttachment/LastModifiedDateTime",
+            "Target": "Microsoft.Graph.ReferenceAttachment/DateTimeLastModified",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -5576,41 +5247,6 @@
             "Annotation": {
               "Term": "Core.Description",
               "String": "The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Resource",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Resource/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The unique id of this resource. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Resource/self",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Resource/content",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "A stream of the content of this resource. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Resource/contentUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "A Url to which a GET request can be sent to retrieve this resource. "
             }
           },
           {
@@ -5664,195 +5300,6 @@
           },
           {
             "Target": "Microsoft.Graph.searchResult/onClickTelemetryUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/isDefault",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "Indicates whether this is the user's default section."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/pagesUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The /pages endpoint where you can get details for all the pages in the section."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/name",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The name of the section. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/createdBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The user who created the section. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/lastModifiedBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The user who last modified the section. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/lastModifiedTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The date and time when the section was last modified. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The unique identifier of the section. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/self",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The endpoint where you can get details about the section. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/createdTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The date and time when the section was created. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/parentNotebook",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The notebook that contains the section, expanded by default with the id, name, and self properties selected. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/parentSectionGroup",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The section group that contains the section, expanded by default with the id, name, and self properties selected. "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Section/pages",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "A section in a OneNote notebook "
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/sectionsUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The URL for the sections navigation property, which returns all the sections in the section group."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/sectionGroupsUrl",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The URL for the sectionGroups navigation property, which returns all the section groups in the section group."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/name",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The name of the section group."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/createdBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The user who created the section group."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/lastModifiedBy",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The user who last modified the section group."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/lastModifiedTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The date and time when the section group was last modified."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The unique identifier of the section group."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/self",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The endpoint where you can get details about the section group."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/createdTime",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The date and time when the section group was created."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/parentNotebook",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The notebook that contains the section group, expanded by default with the id, name, and self properties selected."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/parentSectionGroup",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The section group that contains the section group, expanded by default with the id, name, and self properties selected."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/sections",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": "The sections in the section group. Can be navigated to using the sectionsUrl property or expanded in a GET request."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SectionGroup/sectionGroups",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -6209,69 +5656,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Site",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Site/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Site/notes",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SiteCollection",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SiteCollection/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SiteCollection/sites",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SiteMetadata",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SiteMetadata/siteCollectionId",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.SiteMetadata/siteId",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.specialFolder",
             "Annotation": {
               "Term": "Core.Description",
@@ -6370,13 +5754,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Task/bucketId",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.Task/title",
             "Annotation": {
               "Term": "Core.Description",
@@ -6447,13 +5824,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Task/previewType",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.Task/completedDate",
             "Annotation": {
               "Term": "Core.Description",
@@ -6462,13 +5832,6 @@
           },
           {
             "Target": "Microsoft.Graph.Task/numberOfReferences",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Task/appliedCategories",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -6496,69 +5859,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.Task/timelineFormat",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Task/assignedToTaskBoardFormat",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Task/statusTaskBoardFormat",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.Task/bucketTaskBoardFormat",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TaskBoardTaskFormat",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TaskBoardTaskFormat/type",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TaskBoardTaskFormat/orderHint",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TaskBoardTaskFormat/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TaskBoardTaskFormat/version",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.TaskDetails",
             "Annotation": {
               "Term": "Core.Description",
@@ -6567,13 +5867,6 @@
           },
           {
             "Target": "Microsoft.Graph.TaskDetails/notes",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TaskDetails/previewType",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""
@@ -6843,83 +6136,6 @@
             "Annotation": {
               "Term": "Core.Description",
               "String": "A custom thumbnail image or the original image used to generate other thumbnails."
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/color",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/drawingStyle",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/labelOffsetX",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/labelOffsetY",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/anchorPosition",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/swimlane",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/calloutHeight",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/visible",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.TimelineTaskFormat/version",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
             }
           },
           {
@@ -7210,13 +6426,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.User/EmailAddress",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.User/aboutMe",
             "Annotation": {
               "Term": "Core.Description",
@@ -7392,10 +6601,10 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.User/MailFolders",
+            "Target": "Microsoft.Graph.User/Folders",
             "Annotation": {
               "Term": "Core.Description",
-              "String": ""
+              "String": "The folders in a mailbox or folder. Navigation property."
             }
           },
           {
@@ -7490,13 +6699,6 @@
             }
           },
           {
-            "Target": "Microsoft.Graph.User/details",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
             "Target": "Microsoft.Graph.User/tasks",
             "Annotation": {
               "Term": "Core.Description",
@@ -7505,48 +6707,6 @@
           },
           {
             "Target": "Microsoft.Graph.User/plans",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.User/notes",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.UserDataCollection",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.UserDetails",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.UserDetails/userData",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.UserDetails/id",
-            "Annotation": {
-              "Term": "Core.Description",
-              "String": ""
-            }
-          },
-          {
-            "Target": "Microsoft.Graph.UserDetails/version",
             "Annotation": {
               "Term": "Core.Description",
               "String": ""

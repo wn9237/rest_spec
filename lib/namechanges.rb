@@ -7,9 +7,9 @@ require 'json'
 module SpecMaker
 
 	# Initialize 
-	RESOURCES_NEW = "../jsonfiles/restold/" #ignore naming conv.
-	RESOURCES_OLD = "../jsonfiles/rest/" # this is the old one
-	DIFF_OUT_DIR =  "../jsonfiles/"
+	RESOURCES_NEW = "../jsonfiles/rest/" #ignore naming conv.
+	RESOURCES_OLD = "../jsonfiles/restold/" # this is the old one
+	DIFF_OUT_FILE =  "../jsonfiles/diff.json"
 	NEWLINE = "\n"
 
 
@@ -121,7 +121,7 @@ module SpecMaker
 	end
 
 
-	File.open(DIFF_OUT_DIR + 'diff.json', "w") do |f|
+	File.open(DIFF_OUT_FILE, "w") do |f|
 		f.write(JSON.pretty_generate @diff, :encoding => 'UTF-8')
 	end	
 	## 

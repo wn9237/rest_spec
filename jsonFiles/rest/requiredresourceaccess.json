@@ -37,7 +37,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": null,
+      "isNullable": false,
       "isUnicode": false
     },
     {

@@ -24,7 +24,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/subscribedSkus/<objectId>": true
+    "/subscribedSkus/<id>": true
   },
   "properties": [
     {
@@ -56,7 +56,7 @@
       "isUnicode": null
     },
     {
-      "name": "objectId",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "string",
@@ -113,6 +113,20 @@
     },
     {
       "name": "skuPartNumber",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "appliesTo",
       "description": "",
       "isKey": false,
       "dataType": "string",

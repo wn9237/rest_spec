@@ -29,7 +29,7 @@ module SpecMaker
 			example_lines.push "In the request body, supply a JSON representation of [#{method[:returnType]}](../resources/#{method[:returnType].downcase}.md) object." + NEWLINE
 
 			example_lines.push HEADER5 + "Response" + NEWLINE											
-			example_lines.push "Here is an example of the response." + NEWLINE
+			example_lines.push "Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call." + NEWLINE
 			example_lines.push get_json_response_pretext(method[:returnType]) + NEWLINE
 			modeldump = get_json_model_method(method[:returnType])
 			example_lines.push "```http" + NEWLINE
@@ -50,7 +50,7 @@ module SpecMaker
 			example_lines.push "```" + NEWLINE	
 
 			example_lines.push HEADER5 + "Response" + NEWLINE											
-			example_lines.push "Here is an example of the response." + NEWLINE
+			example_lines.push "Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call." + NEWLINE
 			if type == 'auto_list'
 				modeldump = get_json_model_method(@jsonHash[:collectionOf], true)
 				example_lines.push get_json_response_pretext(@jsonHash[:collectionOf], true) + NEWLINE
@@ -82,7 +82,7 @@ module SpecMaker
 			example_lines.push modeldump + NEWLINE	
 			example_lines.push "```" + NEWLINE	
 			example_lines.push HEADER5 + "Response" + NEWLINE	
-			example_lines.push "Here is an example of the response." + NEWLINE
+			example_lines.push "Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call." + NEWLINE
 			example_lines.push get_json_response_pretext(@jsonHash[:name]) + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])
 			example_lines.push "```http" + NEWLINE
@@ -102,7 +102,7 @@ module SpecMaker
 			example_lines.push '```' + NEWLINE
 
 			example_lines.push HEADER5 + "Response" + NEWLINE	
-			example_lines.push "Here is an example of the response." + NEWLINE													
+			example_lines.push "Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call." + NEWLINE													
 			example_lines.push get_json_response_pretext(nil) + NEWLINE						
 			example_lines.push "```http" + NEWLINE
 			example_lines.push "HTTP/1.1 204 No Content" + NEWLINE
@@ -127,7 +127,7 @@ module SpecMaker
 			example_lines.push '```' + TWONEWLINES
 
 			example_lines.push HEADER5 + "Response" + NEWLINE	
-			example_lines.push "Here is an example of the response." + NEWLINE								
+			example_lines.push "Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call." + NEWLINE								
 			if method[:isReturnTypeCollection]
 				example_lines.push get_json_response_pretext(method[:returnType], true) + NEWLINE								
 			else

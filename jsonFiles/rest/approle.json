@@ -97,6 +97,20 @@
       "isUnicode": null
     },
     {
+      "name": "origin",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
       "name": "value",
       "description": "Specifies the value of the roles claim that the application should expect in the authentication and access tokens.",
       "isKey": false,

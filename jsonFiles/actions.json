@@ -6,7 +6,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -35,7 +35,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -64,7 +64,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -84,37 +84,6 @@
           "enumName": null,
           "isNullable": null,
           "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "application": [
-    {
-      "name": "restore",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "application",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "identifierUris",
-          "description": "",
-          "dataType": "string",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": false
         }
       ]
     }
@@ -156,6 +125,45 @@
           "enumName": null,
           "isNullable": false,
           "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "changePassword",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "currentPassword",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "newPassword",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
         }
       ]
     },
@@ -985,7 +993,7 @@
       ]
     }
   ],
-  "item": [
+  "driveitem": [
     {
       "name": "invite",
       "displayName": "",
@@ -1060,7 +1068,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "item",
+      "returnType": "driveItem",
       "isReturnNullable": false,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -1157,7 +1165,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "item",
+      "returnType": "driveItem",
       "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
@@ -1170,35 +1178,6 @@
       ],
       "parameters": [
 
-      ]
-    },
-    {
-      "name": "delta",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "item",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "token",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
       ]
     },
     {
@@ -1206,7 +1185,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "item",
+      "returnType": "driveItem",
       "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
@@ -1266,7 +1245,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "copyPageModel",
+      "returnType": "copyStatusModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -1289,17 +1268,7 @@
           "isUnicode": false
         },
         {
-          "name": "siteCollectionId",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteId",
+          "name": "groupId",
           "description": "",
           "dataType": "string",
           "isCollection": false,
@@ -1309,26 +1278,6 @@
           "isUnicode": false
         }
       ]
-    },
-    {
-      "name": "thumbnail",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "stream",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
     }
   ],
   "notebook": [
@@ -1337,7 +1286,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "copyNotebookModel",
+      "returnType": "copyStatusModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -1350,17 +1299,7 @@
       ],
       "parameters": [
         {
-          "name": "siteCollectionId",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteId",
+          "name": "groupId",
           "description": "",
           "dataType": "string",
           "isCollection": false,
@@ -1378,7 +1317,57 @@
           "enumName": null,
           "isNullable": null,
           "isUnicode": false
+        },
+        {
+          "name": "notebookFolder",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
         }
+      ]
+    },
+    {
+      "name": "exportNotebook",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "importNotebook",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "importStatusModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
       ]
     }
   ],
@@ -1388,7 +1377,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "copySectionModel",
+      "returnType": "copyStatusModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -1411,17 +1400,7 @@
           "isUnicode": false
         },
         {
-          "name": "siteCollectionId",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteId",
+          "name": "groupId",
           "description": "",
           "dataType": "string",
           "isCollection": false,
@@ -1447,7 +1426,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "copySectionModel",
+      "returnType": "copyStatusModel",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -1470,17 +1449,7 @@
           "isUnicode": false
         },
         {
-          "name": "siteCollectionId",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteId",
+          "name": "groupId",
           "description": "",
           "dataType": "string",
           "isCollection": false,
@@ -1500,26 +1469,6 @@
           "isUnicode": false
         }
       ]
-    },
-    {
-      "name": "thumbnail",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "stream",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
     }
   ],
   "drive": [
@@ -1528,7 +1477,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "item",
+      "returnType": "driveItem",
       "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
@@ -1541,37 +1490,6 @@
       ],
       "parameters": [
 
-      ]
-    }
-  ],
-  "sitecollection": [
-    {
-      "name": "fromUrl",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "siteMetadata",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "url",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
       ]
     }
   ]

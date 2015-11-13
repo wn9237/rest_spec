@@ -106,7 +106,7 @@
 
   "mdresponse" : 
 	{ "blockType": "response", 
-	  "truncated": false 
+	  "truncated": true 
 	},
 	
   "mdignore" :

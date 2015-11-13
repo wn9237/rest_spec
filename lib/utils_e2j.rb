@@ -12,7 +12,7 @@ module SpecMaker
 	CSDL_LOCATION = "../data/"
 	
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"
-	BASETYPES = %w[Entity directoryObject Attachment Message OutlookItem]
+	BASETYPES = %w[Entity directoryObject Attachment Message OutlookItem Extension]
 	BASETYPES_ALLCASE = BASETYPES.concat BASETYPES.map(&:downcase)
 
 	####
@@ -23,7 +23,8 @@ module SpecMaker
 	#
 	##
 	BASETYPE_MAPPING = {
-		"Extension" => "Entity",
+		"Extension" => "extension",
+		"extension" => "extension"
 	}
 	# Load the template 
 	# JSON_TEMPLATE = "../jsonFiles/template/restresourcetemplate.json"

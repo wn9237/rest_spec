@@ -28,7 +28,7 @@
   "properties": [
     {
       "name": "oneNoteClientUrl",
-      "description": "",
+      "description": "The value of oneNoteClientURL can be used to open the notebook using the OneNote native client app if it's installed.",
       "isKey": false,
       "dataType": "externalLink",
       "isReadOnly": false,
@@ -42,7 +42,7 @@
     },
     {
       "name": "oneNoteWebUrl",
-      "description": "",
+      "description": "The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client.",
       "isKey": false,
       "dataType": "externalLink",
       "isReadOnly": false,

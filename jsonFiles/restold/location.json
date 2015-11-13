@@ -27,24 +27,10 @@
   },
   "properties": [
     {
-      "name": "displayName",
+      "name": "altitude",
       "description": "",
       "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "address",
-      "description": "",
-      "isKey": false,
-      "dataType": "physicalAddress",
+      "dataType": "double",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -55,10 +41,24 @@
       "isUnicode": null
     },
     {
-      "name": "coordinates",
+      "name": "latitude",
       "description": "",
       "isKey": false,
-      "dataType": "outlookGeoCoordinates",
+      "dataType": "double",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "longitude",
+      "description": "",
+      "isKey": false,
+      "dataType": "double",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,

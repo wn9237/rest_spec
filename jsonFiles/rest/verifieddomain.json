@@ -41,8 +41,8 @@
       "isUnicode": false
     },
     {
-      "name": "default",
-      "description": "                **true** if this is the default domain associated with the tenant; otherwise, **false**.            ",
+      "name": "isDefault",
+      "description": "",
       "isKey": false,
       "dataType": "boolean",
       "isReadOnly": false,
@@ -55,22 +55,8 @@
       "isUnicode": null
     },
     {
-      "name": "id",
-      "description": "For example, “00057FFE80187238”.",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "initial",
-      "description": "            ",
+      "name": "isInitial",
+      "description": "",
       "isKey": false,
       "dataType": "boolean",
       "isReadOnly": false,

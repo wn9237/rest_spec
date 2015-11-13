@@ -83,6 +83,20 @@
       "isUnicode": null
     },
     {
+      "name": "origin",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
       "name": "type",
       "description": "Specifies whether this scope permission can be consented to by an end user, or whether it is a tenant-wide permission that must be consented to by a Company Administrator.  Possible values are \"User\" or \"Admin\".",
       "isKey": false,

@@ -276,9 +276,11 @@ module SpecMaker
 			object = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			object[:properties].each_with_index do |item, i|
 				next if item[:isRelationship]  
+				next if i > 5
 				if !includeKey
 					next if item[:isKey]
 				end
+
 				if item[:name].downcase.start_with?('extension')	
 					model[item[:name]] = {}
 				else

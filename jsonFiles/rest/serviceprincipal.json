@@ -24,7 +24,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/servicePrincipals/<objectId>": true
+    "/servicePrincipals/<id>": true
   },
   "properties": [
     {
@@ -39,6 +39,20 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "addIns",
+      "description": "",
+      "isKey": false,
+      "dataType": "addIn",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
       "isUnicode": null
     },
     {
@@ -70,8 +84,8 @@
       "isUnicode": false
     },
     {
-      "name": "appOwnerTenantId",
-      "description": "            ",
+      "name": "appOwnerOrganizationId",
+      "description": "",
       "isKey": false,
       "dataType": "guid",
       "isReadOnly": false,
@@ -294,22 +308,8 @@
       "isUnicode": false
     },
     {
-      "name": "objectType",
-      "description": "A string that identifies the object type. For service principals the value is always “ServicePrincipal”. Inherited from [DirectoryObject].",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "objectId",
-      "description": "The unique identifier for the service principal. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
+      "name": "id",
+      "description": "",
       "isKey": true,
       "dataType": "string",
       "isReadOnly": true,
@@ -322,31 +322,17 @@
       "isUnicode": false
     },
     {
-      "name": "deletionTimestamp",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
       "name": "appRoleAssignedTo",
       "description": "Principals (users, groups, and service principals) that are assigned to this service principal. Requires version 1.5 or newer.",
       "isKey": false,
       "dataType": "appRoleAssignment",
       "isReadOnly": true,
       "enumName": null,
-      "isCollection": false,
+      "isCollection": true,
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -389,20 +375,6 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "createdOnBehalfOf",
-      "description": "",
-      "isKey": false,
-      "dataType": "directoryObject",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
       "isUnicode": null
     },
     {
@@ -455,7 +427,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -484,7 +456,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -513,7 +485,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,

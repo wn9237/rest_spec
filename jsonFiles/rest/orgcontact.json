@@ -24,11 +24,39 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/contacts/<objectId>": true
+    "/contacts/<id>": true
   },
   "properties": [
     {
+      "name": "businessPhones",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
       "name": "city",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "companyName",
       "description": "",
       "isKey": false,
       "dataType": "string",
@@ -70,35 +98,7 @@
       "isUnicode": false
     },
     {
-      "name": "dirSyncEnabled",
-      "description": "",
-      "isKey": false,
-      "dataType": "boolean",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
       "name": "displayName",
-      "description": "",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "facsimileTelephoneNumber",
       "description": "",
       "isKey": false,
       "dataType": "string",
@@ -140,20 +140,6 @@
       "isUnicode": false
     },
     {
-      "name": "lastDirSyncTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
       "name": "mail",
       "description": "",
       "isKey": false,
@@ -182,7 +168,7 @@
       "isUnicode": false
     },
     {
-      "name": "mobile",
+      "name": "mobilePhone",
       "description": "",
       "isKey": false,
       "dataType": "string",
@@ -196,7 +182,35 @@
       "isUnicode": false
     },
     {
-      "name": "physicalDeliveryOfficeName",
+      "name": "onPremisesSyncEnabled",
+      "description": "",
+      "isKey": false,
+      "dataType": "boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "onPremisesLastSyncDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "dateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "officeLocation",
       "description": "",
       "isKey": false,
       "dataType": "string",
@@ -224,20 +238,6 @@
       "isUnicode": false
     },
     {
-      "name": "provisioningErrors",
-      "description": "",
-      "isKey": false,
-      "dataType": "provisioningError",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": null
-    },
-    {
       "name": "proxyAddresses",
       "description": "",
       "isKey": false,
@@ -249,20 +249,6 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
-      "isUnicode": false
-    },
-    {
-      "name": "sipProxyAddress",
-      "description": "",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
       "isUnicode": false
     },
     {
@@ -308,49 +294,7 @@
       "isUnicode": false
     },
     {
-      "name": "telephoneNumber",
-      "description": "",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "thumbnailPhoto",
-      "description": "",
-      "isKey": false,
-      "dataType": "stream",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": null
-    },
-    {
-      "name": "objectType",
-      "description": "",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "objectId",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "string",
@@ -362,20 +306,6 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
-    },
-    {
-      "name": "deletionTimestamp",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     },
     {
       "name": "manager",
@@ -427,7 +357,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -456,7 +386,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -485,7 +415,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,

@@ -27,8 +27,8 @@
   },
   "properties": [
     {
-      "name": "assignedTimestamp",
-      "description": "The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z.",
+      "name": "assignedDateTime",
+      "description": "",
       "isKey": false,
       "dataType": "dateTimeOffset",
       "isReadOnly": false,

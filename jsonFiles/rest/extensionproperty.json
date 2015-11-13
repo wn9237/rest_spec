@@ -24,7 +24,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/applications/<objectId>/extensionProperties/<objectId>": true
+    "/applications/<id>/extensionProperties/<id>": true
   },
   "properties": [
     {
@@ -52,7 +52,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": null,
+      "isNullable": false,
       "isUnicode": false
     },
     {
@@ -66,7 +66,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": null,
+      "isNullable": false,
       "isUnicode": false
     },
     {
@@ -80,7 +80,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": null,
       "isUnicode": null
     },
     {
@@ -98,22 +98,8 @@
       "isUnicode": false
     },
     {
-      "name": "objectType",
-      "description": "A string that identifies the object type. For extension properties the value is always “ExtensionProperty”. Inherited from [DirectoryObject].",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "objectId",
-      "description": "The unique identifier for the permission scope. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
+      "name": "id",
+      "description": "",
       "isKey": true,
       "dataType": "string",
       "isReadOnly": true,
@@ -124,20 +110,6 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
-    },
-    {
-      "name": "deletionTimestamp",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     }
   ],
   "methods": [
@@ -147,7 +119,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -176,7 +148,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -205,7 +177,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,

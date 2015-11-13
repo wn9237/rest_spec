@@ -148,15 +148,18 @@ module SpecMaker
 		if entity.has_key?(:BaseType)
 			@ibasetypemerges = @ibasetypemerges + 1
 			baseType = entity[:BaseType][(entity[:BaseType].rindex('.') + 1)..-1]
+			puts "$$$$1 #{baseType}"
 			BASETYPE_MAPPING.each do |k, v|
-				 if k == baseType
+				 if k.downcase == baseType.downcase
 					puts "------> Mapping BaseType #{baseType} back to #{v}"
-					baseType = v
+					baseType = camelcase v
 				end
 			end
+			# puts "$$$$2 #{baseType}"
+
 			# puts "1: #{entity}"
 			# puts "2: #{entity[:Key]}"
-			# puts "3: #{@base_types}"
+			# puts "3: #{@base_types.keys}"
 			entity[:Key] = @base_types[baseType.to_sym][:Key]
 
 			entity[:Property] = merge_members(entity[:Property], 

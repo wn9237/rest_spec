@@ -24,14 +24,14 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/subscribedSkus/<id>": true
+    "/subscribedSkus/<objectId>": true
   },
   "properties": [
     {
       "name": "capabilityStatus",
       "description": "",
       "isKey": false,
-      "dataType": "String",
+      "dataType": "string",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -45,7 +45,7 @@
       "name": "consumedUnits",
       "description": "",
       "isKey": false,
-      "dataType": "Int32",
+      "dataType": "int32",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -56,10 +56,10 @@
       "isUnicode": null
     },
     {
-      "name": "id",
+      "name": "objectId",
       "description": "",
       "isKey": true,
-      "dataType": "String",
+      "dataType": "string",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
@@ -101,7 +101,7 @@
       "name": "skuId",
       "description": "",
       "isKey": false,
-      "dataType": "Guid",
+      "dataType": "guid",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -115,21 +115,7 @@
       "name": "skuPartNumber",
       "description": "",
       "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "appliesTo",
-      "description": "",
-      "isKey": false,
-      "dataType": "String",
+      "dataType": "string",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,

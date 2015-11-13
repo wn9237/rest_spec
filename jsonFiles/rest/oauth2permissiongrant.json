@@ -24,35 +24,8 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/drive/items/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/groups/<objectId>/drive/root/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/servicePrincipals/<objectId>/oauth2PermissionGrants/<objectId>": true,
-    "/users/<objectId>/oauth2PermissionGrants/<objectId>": true,
-    "/oauth2PermissionGrants/<objectId>": true,
-    "/drives/<id>/items/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drives/<id>/shared/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drives/<id>/special/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drives/<id>/root/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drives/<id>/root/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/shares/<id>/items/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drive/items/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drive/items/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drive/shared/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drive/shared/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drive/special/<id>/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drive/special/<id>/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drive/root/createdByUser/oauth2PermissionGrants/<objectId>": true,
-    "/drive/root/lastModifiedByUser/oauth2PermissionGrants/<objectId>": true
+    "/oauth2PermissionGrants/<id>": true,
+    "/servicePrincipals/<id>/oauth2PermissionGrants/<id>": true
   },
   "properties": [
     {
@@ -66,7 +39,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": null,
+      "isNullable": false,
       "isUnicode": false
     },
     {
@@ -98,7 +71,7 @@
       "isUnicode": null
     },
     {
-      "name": "objectId",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "string",
@@ -136,7 +109,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": null,
+      "isNullable": false,
       "isUnicode": false
     },
     {
@@ -150,7 +123,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": null,
+      "isNullable": false,
       "isUnicode": false
     },
     {

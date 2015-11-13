@@ -30,7 +30,7 @@
       "name": "childCount",
       "description": "",
       "isKey": false,
-      "dataType": "Int32",
+      "dataType": "int32",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
