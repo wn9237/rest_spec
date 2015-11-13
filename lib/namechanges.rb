@@ -13,6 +13,14 @@ module SpecMaker
 	NEWLINE = "\n"
 
 
+	def self.camelcase (str="")
+		if str.length > 0
+			str[0, 1].downcase + str[1..-1]
+		else
+			str
+		end
+	end
+
 	def self.do_diff(oldm=nil, newm=nil)
 		oldh = JSON.parse(oldm, {:symbolize_names => true})
 		newh = JSON.parse(newm, {:symbolize_names => true})
@@ -21,11 +29,11 @@ module SpecMaker
 		newp = []
 
 		if oldh[:properties].length > 0
-			oldp = oldh[:properties].map{ |item| item[:name] }
+			oldp = oldh[:properties].map{ |item| camelcase item[:name] }
 		end
 
 		if newh[:properties].length > 0
-			newp = newh[:properties].map{ |item| item[:name] }
+			newp = newh[:properties].map{ |item| camelcase item[:name] }
 		end
 
 		@diff[@key][:deletedproperties] = oldp - newp
@@ -39,12 +47,12 @@ module SpecMaker
 		newp = []
 
 		if oldh[:methods].length > 0
-			oldp = oldh[:methods].map{ |item| item[:name] }
+			oldp = oldh[:methods].map{ |item| camelcase item[:name] }
 		end
 
 		if newh[:methods].length > 0
 			#puts oldh[:properties].to_a.[0][:name]
-			newp = newh[:methods].map{ |item| item[:name] }
+			newp = newh[:methods].map{ |item| camelcase item[:name] }
 		end
 
 		# puts "old methods #{oldp}"
@@ -63,6 +71,9 @@ module SpecMaker
 
 	Dir.foreach(RESOURCES_OLD) do |item|
 		next if item == '.' or item == '..'
+		
+		next if item.include?('_collection')
+
 		fullpath = RESOURCES_OLD + item.downcase
 		
 		#if File.file?(fullpath) && item == 'application.md'
