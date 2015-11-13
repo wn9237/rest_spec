@@ -33,14 +33,8 @@ Here is a JSON representation of the resource.
   "objectType": "String-value",
   "physicalDeliveryOfficeName": "String-value",
   "postalCode": "String-value",
-  "provisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.provisioningerror"
-    }
-  ],
-  "proxyAddresses": [
-    "String-value"
-  ],
+  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningerror"}],
+  "proxyAddresses": ["String-value"],
   "sipProxyAddress": "String-value",
   "state": "String-value",
   "streetAddress": "String-value",

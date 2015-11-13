@@ -19,16 +19,8 @@ Here is a JSON representation of the resource.
   "aboutMe": "String-value",
   "accountEnabled": true,
   "alias": "String-value",
-  "assignedLicenses": [
-    {
-      "@odata.type": "microsoft.graph.assignedlicense"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "@odata.type": "microsoft.graph.assignedplan"
-    }
-  ],
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedlicense"}],
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedplan"}],
   "birthday": "String (timestamp)",
   "city": "String-value",
   "country": "String-value",
@@ -41,9 +33,7 @@ Here is a JSON representation of the resource.
   "givenName": "String-value",
   "hireDate": "String (timestamp)",
   "immutableId": "String-value",
-  "interests": [
-    "String-value"
-  ],
+  "interests": ["String-value"],
   "jobTitle": "String-value",
   "lastDirSyncTime": "String (timestamp)",
   "mail": "String-value",
@@ -54,50 +44,26 @@ Here is a JSON representation of the resource.
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
   "onPremisesSecurityIdentifier": "String-value",
-  "otherMails": [
-    "String-value"
-  ],
+  "otherMails": ["String-value"],
   "passwordPolicies": "String-value",
-  "passwordProfile": {
-    "@odata.type": "microsoft.graph.passwordprofile"
-  },
-  "pastProjects": [
-    "String-value"
-  ],
+  "passwordProfile": {"@odata.type": "microsoft.graph.passwordprofile"},
+  "pastProjects": ["String-value"],
   "physicalDeliveryOfficeName": "String-value",
   "postalCode": "String-value",
   "preferredLanguage": "String-value",
   "preferredName": "String-value",
   "principalName": "String-value",
-  "provisionedPlans": [
-    {
-      "@odata.type": "microsoft.graph.provisionedplan"
-    }
-  ],
-  "provisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.provisioningerror"
-    }
-  ],
-  "proxyAddresses": [
-    "String-value"
-  ],
-  "responsibilities": [
-    "String-value"
-  ],
-  "schools": [
-    "String-value"
-  ],
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedplan"}],
+  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningerror"}],
+  "proxyAddresses": ["String-value"],
+  "responsibilities": ["String-value"],
+  "schools": ["String-value"],
   "sipProxyAddress": "String-value",
-  "skills": [
-    "String-value"
-  ],
+  "skills": ["String-value"],
   "state": "String-value",
   "streetAddress": "String-value",
   "surname": "String-value",
-  "tags": [
-    "String-value"
-  ],
+  "tags": ["String-value"],
   "telephoneNumber": "String-value",
   "thumbnailPhoto": "Stream-value",
   "usageLocation": "String-value",

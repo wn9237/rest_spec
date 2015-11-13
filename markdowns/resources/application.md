@@ -17,54 +17,28 @@ Here is a JSON representation of the resource.
 ```json
 {
   "appId": "String-value",
-  "appRoles": [
-    {
-      "@odata.type": "microsoft.graph.approle"
-    }
-  ],
+  "appRoles": [{"@odata.type": "microsoft.graph.approle"}],
   "availableToOtherTenants": true,
   "deletionTimestamp": "String (timestamp)",
   "displayName": "String-value",
   "errorUrl": "String-value",
   "groupMembershipClaims": "String-value",
   "homepage": "String-value",
-  "identifierUris": [
-    "String-value"
-  ],
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keycredential"
-    }
-  ],
-  "knownClientApplications": [
-    "Guid-value"
-  ],
+  "identifierUris": ["String-value"],
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keycredential"}],
+  "knownClientApplications": ["Guid-value"],
   "logoutUrl": "String-value",
   "mainLogo": "Stream-value",
   "oauth2AllowImplicitFlow": true,
   "oauth2AllowUrlPathMatching": true,
-  "oauth2Permissions": [
-    {
-      "@odata.type": "microsoft.graph.oauth2permission"
-    }
-  ],
+  "oauth2Permissions": [{"@odata.type": "microsoft.graph.oauth2permission"}],
   "oauth2RequirePostResponse": true,
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordcredential"
-    }
-  ],
+  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordcredential"}],
   "publicClient": true,
-  "replyUrls": [
-    "String-value"
-  ],
-  "requiredResourceAccess": [
-    {
-      "@odata.type": "microsoft.graph.requiredresourceaccess"
-    }
-  ],
+  "replyUrls": ["String-value"],
+  "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredresourceaccess"}],
   "samlMetadataUrl": "String-value"
 }
 

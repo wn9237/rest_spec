@@ -16,63 +16,31 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "audio": {
-    "@odata.type": "microsoft.graph.audio"
-  },
+  "audio": {"@odata.type": "microsoft.graph.audio"},
   "cTag": "String-value",
   "content": "Stream-value",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identityset"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.identityset"},
   "createdDateTime": "String (timestamp)",
-  "deleted": {
-    "@odata.type": "microsoft.graph.deleted"
-  },
+  "deleted": {"@odata.type": "microsoft.graph.deleted"},
   "description": "String-value",
   "eTag": "String-value",
-  "file": {
-    "@odata.type": "microsoft.graph.file"
-  },
-  "fileSystemInfo": {
-    "@odata.type": "microsoft.graph.filesysteminfo"
-  },
-  "folder": {
-    "@odata.type": "microsoft.graph.folder"
-  },
+  "file": {"@odata.type": "microsoft.graph.file"},
+  "fileSystemInfo": {"@odata.type": "microsoft.graph.filesysteminfo"},
+  "folder": {"@odata.type": "microsoft.graph.folder"},
   "id": "String-value (identifier)",
-  "image": {
-    "@odata.type": "microsoft.graph.image"
-  },
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identityset"
-  },
+  "image": {"@odata.type": "microsoft.graph.image"},
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identityset"},
   "lastModifiedDateTime": "String (timestamp)",
-  "location": {
-    "@odata.type": "microsoft.graph.location"
-  },
+  "location": {"@odata.type": "microsoft.graph.location"},
   "name": "String-value",
-  "openWith": {
-    "@odata.type": "microsoft.graph.openwithset"
-  },
-  "parentReference": {
-    "@odata.type": "microsoft.graph.itemreference"
-  },
-  "photo": {
-    "@odata.type": "microsoft.graph.photo"
-  },
-  "searchResult": {
-    "@odata.type": "microsoft.graph.searchresult"
-  },
-  "shared": {
-    "@odata.type": "microsoft.graph.shared"
-  },
+  "openWith": {"@odata.type": "microsoft.graph.openwithset"},
+  "parentReference": {"@odata.type": "microsoft.graph.itemreference"},
+  "photo": {"@odata.type": "microsoft.graph.photo"},
+  "searchResult": {"@odata.type": "microsoft.graph.searchresult"},
+  "shared": {"@odata.type": "microsoft.graph.shared"},
   "size": 1024,
-  "specialFolder": {
-    "@odata.type": "microsoft.graph.specialfolder"
-  },
-  "video": {
-    "@odata.type": "microsoft.graph.video"
-  },
+  "specialFolder": {"@odata.type": "microsoft.graph.specialfolder"},
+  "video": {"@odata.type": "microsoft.graph.video"},
   "webDavUrl": "String-value",
   "webUrl": "String-value"
 }

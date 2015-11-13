@@ -16,9 +16,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "disabledPlans": [
-    "Guid-value"
-  ],
+  "disabledPlans": ["Guid-value"],
   "skuId": "Guid-value"
 }
 

@@ -21,45 +21,23 @@ Here is a JSON representation of the resource.
   "appId": "String-value",
   "appOwnerTenantId": "Guid-value",
   "appRoleAssignmentRequired": true,
-  "appRoles": [
-    {
-      "@odata.type": "microsoft.graph.approle"
-    }
-  ],
+  "appRoles": [{"@odata.type": "microsoft.graph.approle"}],
   "deletionTimestamp": "String (timestamp)",
   "displayName": "String-value",
   "errorUrl": "String-value",
   "homepage": "String-value",
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keycredential"
-    }
-  ],
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keycredential"}],
   "logoutUrl": "String-value",
-  "oauth2Permissions": [
-    {
-      "@odata.type": "microsoft.graph.oauth2permission"
-    }
-  ],
+  "oauth2Permissions": [{"@odata.type": "microsoft.graph.oauth2permission"}],
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordcredential"
-    }
-  ],
+  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordcredential"}],
   "preferredTokenSigningKeyThumbprint": "String-value",
   "publisherName": "String-value",
-  "replyUrls": [
-    "String-value"
-  ],
+  "replyUrls": ["String-value"],
   "samlMetadataUrl": "String-value",
-  "servicePrincipalNames": [
-    "String-value"
-  ],
+  "servicePrincipalNames": ["String-value"],
   "tags": [
-    "String-value"
-  ]
 }
 
 ```

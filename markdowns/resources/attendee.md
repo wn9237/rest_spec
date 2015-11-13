@@ -16,12 +16,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "emailAddress": {
-    "@odata.type": "microsoft.graph.emailaddress"
-  },
-  "status": {
-    "@odata.type": "microsoft.graph.responsestatus"
-  },
+  "emailAddress": {"@odata.type": "microsoft.graph.emailaddress"},
+  "status": {"@odata.type": "microsoft.graph.responsestatus"},
   "type": "String-value"
 }
 

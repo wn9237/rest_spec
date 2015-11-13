@@ -16,9 +16,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "categories": [
-    "String-value"
-  ],
+  "categories": ["String-value"],
   "changeKey": "String-value",
   "createdDateTime": "String (timestamp)",
   "id": "String-value (identifier)",

@@ -12,7 +12,9 @@ module SpecMaker
 	CSDL_LOCATION = "../data/"
 	
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"
-	BASETYPES = %w[Entity DirectoryObject Attachment Message OutlookItem]
+	BASETYPES = %w[Entity directoryObject Attachment Message OutlookItem]
+	BASETYPES_ALLCASE = BASETYPES.concat BASETYPES.map(&:downcase)
+
 	####
 	# This is to address the special entityType: 
 	# <EntityType Name="Extension" BaseType="Microsoft.Graph.Entity" />

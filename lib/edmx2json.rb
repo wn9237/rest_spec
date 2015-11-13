@@ -137,7 +137,7 @@ module SpecMaker
 	schema[:EntityType].each do |entity|
 		puts "-> Processing Entity #{entity[:Name]}"
 		@ient = @ient + 1
-		if BASETYPES.include?(entity[:Name])
+		if BASETYPES_ALLCASE.include?(entity[:Name].downcase)
 			puts "----> This is a BaseType"
 			@base_types[entity[:Name].to_sym] = deep_copy(entity)
 		end
@@ -154,7 +154,9 @@ module SpecMaker
 					baseType = v
 				end
 			end
-
+			# puts "1: #{entity}"
+			# puts "2: #{entity[:Key]}"
+			# puts "3: #{@base_types}"
 			entity[:Key] = @base_types[baseType.to_sym][:Key]
 
 			entity[:Property] = merge_members(entity[:Property], 

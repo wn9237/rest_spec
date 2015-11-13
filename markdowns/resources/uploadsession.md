@@ -17,9 +17,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "expirationDateTime": "String (timestamp)",
-  "nextExpectedRanges": [
-    "String-value"
-  ],
+  "nextExpectedRanges": ["String-value"],
   "uploadUrl": "String-value"
 }
 

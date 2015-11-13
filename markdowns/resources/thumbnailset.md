@@ -17,18 +17,10 @@ Here is a JSON representation of the resource.
 ```json
 {
   "id": "String-value (identifier)",
-  "large": {
-    "@odata.type": "microsoft.graph.thumbnail"
-  },
-  "medium": {
-    "@odata.type": "microsoft.graph.thumbnail"
-  },
-  "small": {
-    "@odata.type": "microsoft.graph.thumbnail"
-  },
+  "large": {"@odata.type": "microsoft.graph.thumbnail"},
+  "medium": {"@odata.type": "microsoft.graph.thumbnail"},
+  "small": {"@odata.type": "microsoft.graph.thumbnail"},
   "source": {
-    "@odata.type": "microsoft.graph.thumbnail"
-  }
 }
 
 ```

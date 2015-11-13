@@ -16,9 +16,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "hashes": {
-    "@odata.type": "microsoft.graph.hashes"
-  },
+  "hashes": {"@odata.type": "microsoft.graph.hashes"},
   "mimeType": "String-value"
 }
 

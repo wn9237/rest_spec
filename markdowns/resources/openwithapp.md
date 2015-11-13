@@ -16,9 +16,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "app": {
-    "@odata.type": "microsoft.graph.identity"
-  },
+  "app": {"@odata.type": "microsoft.graph.identity"},
   "editPostParameters": "String-value",
   "editUrl": "String-value",
   "viewPostParameters": "String-value",

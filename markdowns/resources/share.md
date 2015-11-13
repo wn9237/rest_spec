@@ -19,8 +19,6 @@ Here is a JSON representation of the resource.
   "id": "String-value (identifier)",
   "name": "String-value",
   "owner": {
-    "@odata.type": "microsoft.graph.identityset"
-  }
 }
 
 ```

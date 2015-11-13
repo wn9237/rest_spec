@@ -16,11 +16,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "assignedPlans": [
-    {
-      "@odata.type": "microsoft.graph.assignedplan"
-    }
-  ],
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedplan"}],
   "city": "String-value",
   "companyLastDirSyncTime": "String (timestamp)",
   "country": "String-value",
@@ -28,40 +24,20 @@ Here is a JSON representation of the resource.
   "deletionTimestamp": "String (timestamp)",
   "dirSyncEnabled": true,
   "displayName": "String-value",
-  "marketingNotificationEmails": [
-    "String-value"
-  ],
+  "marketingNotificationEmails": ["String-value"],
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
   "postalCode": "String-value",
   "preferredLanguage": "String-value",
-  "provisionedPlans": [
-    {
-      "@odata.type": "microsoft.graph.provisionedplan"
-    }
-  ],
-  "provisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.provisioningerror"
-    }
-  ],
-  "securityComplianceNotificationMails": [
-    "String-value"
-  ],
-  "securityComplianceNotificationPhones": [
-    "String-value"
-  ],
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedplan"}],
+  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningerror"}],
+  "securityComplianceNotificationMails": ["String-value"],
+  "securityComplianceNotificationPhones": ["String-value"],
   "state": "String-value",
   "street": "String-value",
-  "technicalNotificationMails": [
-    "String-value"
-  ],
+  "technicalNotificationMails": ["String-value"],
   "telephoneNumber": "String-value",
   "verifiedDomains": [
-    {
-      "@odata.type": "microsoft.graph.verifieddomain"
-    }
-  ]
 }
 
 ```

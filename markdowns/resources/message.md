@@ -16,29 +16,15 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "bccRecipients": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "body": {
-    "@odata.type": "microsoft.graph.itembody"
-  },
+  "bccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "body": {"@odata.type": "microsoft.graph.itembody"},
   "bodyPreview": "String-value",
-  "categories": [
-    "String-value"
-  ],
-  "ccRecipients": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
+  "categories": ["String-value"],
+  "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "String-value",
   "conversationId": "String-value",
   "createdDateTime": "String (timestamp)",
-  "from": {
-    "@odata.type": "microsoft.graph.recipient"
-  },
+  "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "String-value (identifier)",
   "importance": "String-value",
@@ -49,24 +35,12 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "parentFolderId": "String-value",
   "receivedDateTime": "String (timestamp)",
-  "replyTo": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "sender": {
-    "@odata.type": "microsoft.graph.recipient"
-  },
+  "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
+  "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "String (timestamp)",
   "subject": "String-value",
-  "toRecipients": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "uniqueBody": {
-    "@odata.type": "microsoft.graph.itembody"
-  },
+  "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "uniqueBody": {"@odata.type": "microsoft.graph.itembody"},
   "webLink": "String-value"
 }
 

@@ -16,16 +16,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "cloudPublicIssuerCertificates": [
-    "Binary-value"
-  ],
+  "cloudPublicIssuerCertificates": ["Binary-value"],
   "deletionTimestamp": "String (timestamp)",
   "maximumRegistrationInactivityPeriod": 1024,
   "objectId": "String-value (identifier)",
   "objectType": "String-value",
-  "publicIssuerCertificates": [
-    "Binary-value"
-  ],
+  "publicIssuerCertificates": ["Binary-value"],
   "registrationQuota": 1024
 }
 
