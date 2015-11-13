@@ -1,12 +1,12 @@
-# Create ServicePrincipal
+# Create servicePrincipal
 
-Use this API to create a new ServicePrincipal.
+Use this API to create a new servicePrincipal.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /oauth2PermissionGrants
+POST /servicePrincipals
 
 ```
 ### Request headers
@@ -15,23 +15,98 @@ POST /oauth2PermissionGrants
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [ServicePrincipal](../resources/serviceprincipal.md) object.
+In the request body, supply a JSON representation of [servicePrincipal](../resources/serviceprincipal.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [ServicePrincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns `201, Created` response code and [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
 
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_serviceprincipal_from_oauth2permissiongrants"
+  "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
+POST https://graph.microsoft.com/v1.0/servicePrincipals
 ```
-In the request body, supply a JSON representation of [ServicePrincipal](../resources/serviceprincipal.md) object.
+In the request body, supply a JSON representation of [servicePrincipal](../resources/serviceprincipal.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/servicePrincipals
+Content-type: application/json
+Content-length: 1910
+
+{
+  "accountEnabled": true,
+  "appDisplayName": "appDisplayName-value",
+  "appId": "appId-value",
+  "appOwnerTenantId": "appOwnerTenantId-value",
+  "appRoleAssignmentRequired": true,
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "allowedMemberTypes-value"
+      ],
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "value": "value-value"
+    }
+  ],
+  "displayName": "displayName-value",
+  "errorUrl": "errorUrl-value",
+  "homepage": "homepage-value",
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "type": "type-value",
+      "usage": "usage-value",
+      "value": "value-value"
+    }
+  ],
+  "logoutUrl": "logoutUrl-value",
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "adminConsentDescription-value",
+      "adminConsentDisplayName": "adminConsentDisplayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "type": "type-value",
+      "userConsentDescription": "userConsentDescription-value",
+      "userConsentDisplayName": "userConsentDisplayName-value",
+      "value": "value-value"
+    }
+  ],
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "value": "value-value"
+    }
+  ],
+  "preferredTokenSigningKeyThumbprint": "preferredTokenSigningKeyThumbprint-value",
+  "publisherName": "publisherName-value",
+  "replyUrls": [
+    "replyUrls-value"
+  ],
+  "samlMetadataUrl": "samlMetadataUrl-value",
+  "servicePrincipalNames": [
+    "servicePrincipalNames-value"
+  ],
+  "tags": [
+    "tags-value"
+  ],
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -120,7 +195,7 @@ Content-length: 1942
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create ServicePrincipal",
+  "description": "Create servicePrincipal",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

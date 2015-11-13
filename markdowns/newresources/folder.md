@@ -1,6 +1,6 @@
 # folder resource type
 
-A folder in a user's mailbox, such as Inbox, Drafts, and Sent Items. Folders can contain messages and other folders.
+The **folder** resource groups folder-related data on an item into a single structure.
 
 ### JSON representation
 
@@ -20,10 +20,12 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
 ### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|childCount|Int32||
+
+| Property  | Type  | Description                                                     |
+|:---------------|:------|:----------------------------------------------------------------|
+| **childCount** | Int64 | Number of children contained immediately within this container. | 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -16,14 +16,14 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String-value (identifier)"
+  "id": "string (identifier)"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
+|id|string| Read-only.|
 
 ### Relationships
 None

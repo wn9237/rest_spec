@@ -16,64 +16,55 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "body": {
-    "@odata.type": "microsoft.graph.itembody"
-  },
-  "categories": [
-    "String-value"
-  ],
-  "changeKey": "String-value",
-  "conversationId": "String-value",
-  "conversationThreadId": "String-value",
-  "createdDateTime": "String (timestamp)",
-  "from": {
-    "@odata.type": "microsoft.graph.recipient"
-  },
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "categories": ["string"],
+  "changeKey": "string",
+  "conversationId": "string",
+  "conversationThreadId": "string",
+  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
-  "id": "String-value (identifier)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "newParticipants": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "receivedDateTime": "String (timestamp)",
-  "sender": {
-    "@odata.type": "microsoft.graph.recipient"
-  }
+  "id": "string (identifier)",
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "newParticipants": [{"@odata.type": "microsoft.graph.recipient"}],
+  "receivedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "sender": {"@odata.type": "microsoft.graph.recipient"}
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|body|[ItemBody](itembody.md)||
-|categories|String collection||
-|changeKey|String||
-|conversationId|String||
-|conversationThreadId|String||
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|from|[Recipient](recipient.md)||
-|hasAttachments|Boolean||
-|id|String| Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|newParticipants|[Recipient](recipient.md) collection||
-|receivedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|sender|[Recipient](recipient.md)||
+|body|[itemBody](itembody.md)||
+|categories|string collection||
+|changeKey|string||
+|conversationId|string||
+|conversationThreadId|string||
+|createdDateTime|[dateTimeOffset](datetimeoffset.md)||
+|from|[recipient](recipient.md)||
+|hasAttachments|boolean||
+|id|string| Read-only.|
+|lastModifiedDateTime|[dateTimeOffset](datetimeoffset.md)||
+|newParticipants|[recipient](recipient.md) collection||
+|receivedDateTime|[dateTimeOffset](datetimeoffset.md)||
+|sender|[recipient](recipient.md)||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|inReplyTo|[Post](post.md)| Read-only.|
+|attachments|[attachment](attachment.md) collection| Read-only. Nullable.|
+|extensions|[extension](extension.md) collection| Read-only. Nullable.|
+|inReplyTo|[post](post.md)| Read-only.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get post](../api/post_get.md) | [post](post.md) |Read properties and relationships of post object.|
-|[Create Attachment](../api/post_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
-|[List attachments](../api/post_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Create attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
+|[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get a attachment object collection.|
+|[Create extension](../api/post_post_extensions.md) |[extension](extension.md)| Create a new extension by posting to the extensions collection.|
+|[List extensions](../api/post_list_extensions.md) |[extension](extension.md) collection| Get a extension object collection.|
 |[Update](../api/post_update.md) | [post](post.md)	|Update post object. |
 |[Delete](../api/post_delete.md) | None |Delete post object. |
 |[forward](../api/post_forward.md)|None||

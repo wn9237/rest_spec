@@ -21,10 +21,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|destinationId|String||
+|destinationId|string||
 
 ### Response
-If successful, this method returns `200, OK` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns `200, OK` response code and [message](../resources/message.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -54,7 +54,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1546
+Content-length: 1545
 
 {
   "receivedDateTime": "datetime-value",
@@ -62,11 +62,13 @@ Content-length: 1546
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",
-  "importance": "importance-value",
+  "importance": {
+  },
   "parentFolderId": "parentFolderId-value",
   "sender": {
     "emailAddress": {
@@ -114,7 +116,8 @@ Content-length: 1546
   ],
   "conversationId": "conversationId-value",
   "uniqueBody": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "isDeliveryReceiptRequested": true,
@@ -122,6 +125,8 @@ Content-length: 1546
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
+  "inferenceClassification": {
+  },
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",

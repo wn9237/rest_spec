@@ -41,7 +41,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1009
+Content-length: 996
 
 {
   "description": "description-value",
@@ -71,7 +71,8 @@ Content-length: 1009
     "proxyAddresses-value"
   ],
   "securityEnabled": true,
-  "accessType": "accessType-value",
+  "accessType": {
+  },
   "allowExternalSenders": true,
   "autoSubscribeNewMembers": true,
   "emailAddress": "emailAddress-value",

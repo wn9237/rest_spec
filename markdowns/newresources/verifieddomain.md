@@ -2,9 +2,10 @@
 
 Specifies a domain for a tenant. The **verifiedDomains** property of the [TenantDetail] entity is a collection of **VerifiedDomain**.
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,12 +17,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "capabilities": "String-value",
+  "capabilities": "string",
   "default": true,
-  "id": "String-value",
+  "id": "string",
   "initial": true,
-  "name": "String-value",
-  "type": "String-value"
+  "name": "string",
+  "type": "string"
 }
 
 ```

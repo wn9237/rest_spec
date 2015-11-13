@@ -16,33 +16,33 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "changeKey": "String-value",
-  "classId": "Guid-value",
-  "id": "String-value (identifier)",
-  "name": "String-value"
+  "changeKey": "string",
+  "classId": "guid",
+  "id": "string (identifier)",
+  "name": "string"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|changeKey|String|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|classId|Guid|The class identifier.|
-|id|String|The group's unique identifier. Read-only.|
-|name|String|The group name.|
+|changeKey|string|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|classId|guid|The class identifier.|
+|id|string|The group's unique identifier. Read-only.|
+|name|string|The group name.|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|calendars|[Calendar](calendar.md) collection|The calendars in the calendar group. Navigation property. Read-only. Nullable.|
+|calendars|[calendar](calendar.md) collection|The calendars in the calendar group. Navigation property. Read-only. Nullable.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get calendarGroup](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Read properties and relationships of calendarGroup object.|
-|[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
-|[List calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
+|[Create calendar](../api/calendargroup_post_calendars.md) |[calendar](calendar.md)| Create a new calendar by posting to the calendars collection.|
+|[List calendars](../api/calendargroup_list_calendars.md) |[calendar](calendar.md) collection| Get a calendar object collection.|
 |[Update](../api/calendargroup_update.md) | [calendarGroup](calendargroup.md)	|Update calendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | None |Delete calendarGroup object. |
 

@@ -16,10 +16,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "hashes": {
-    "@odata.type": "microsoft.graph.hashes"
-  },
-  "mimeType": "String-value"
+  "hashes": {"@odata.type": "microsoft.graph.hashes"},
+  "mimeType": "string"
 }
 
 ```
@@ -27,7 +25,7 @@ Here is a JSON representation of the resource.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |hashes|[hashes](hashes.md)||
-|mimeType|String||
+|mimeType|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -18,30 +18,30 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|city|String||
-|country|String||
-|deletionTimestamp|DateTimeOffset||
-|department|String||
-|dirSyncEnabled|Boolean||
-|displayName|String||
-|facsimileTelephoneNumber|String||
-|givenName|String||
-|jobTitle|String||
-|lastDirSyncTime|DateTimeOffset||
-|mail|String||
-|mailNickname|String||
-|mobile|String||
-|objectType|String||
-|physicalDeliveryOfficeName|String||
-|postalCode|String||
-|provisioningErrors|ProvisioningError||
-|proxyAddresses|String||
-|sipProxyAddress|String||
-|state|String||
-|streetAddress|String||
-|surname|String||
-|telephoneNumber|String||
-|thumbnailPhoto|Stream||
+|city|string||
+|country|string||
+|deletionTimestamp|dateTimeOffset||
+|department|string||
+|dirSyncEnabled|boolean||
+|displayName|string||
+|facsimileTelephoneNumber|string||
+|givenName|string||
+|jobTitle|string||
+|lastDirSyncTime|dateTimeOffset||
+|mail|string||
+|mailNickname|string||
+|mobile|string||
+|objectType|string||
+|physicalDeliveryOfficeName|string||
+|postalCode|string||
+|provisioningErrors|provisioningError||
+|proxyAddresses|string||
+|sipProxyAddress|string||
+|state|string||
+|streetAddress|string||
+|surname|string||
+|telephoneNumber|string||
+|thumbnailPhoto|stream||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [orgContact](../resources/orgcontact.md) object in the response body.
@@ -55,7 +55,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/contacts/<objectId>
 Content-type: application/json
-Content-length: 1097
+Content-length: 1065
 
 {
   "city": "city-value",
@@ -90,7 +90,6 @@ Content-length: 1097
   "telephoneNumber": "telephoneNumber-value",
   "thumbnailPhoto": "thumbnailPhoto-value",
   "objectType": "objectType-value",
-  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

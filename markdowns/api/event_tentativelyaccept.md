@@ -21,8 +21,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String||
-|sendResponse|Boolean||
+|comment|string||
+|sendResponse|boolean||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.

@@ -197,18 +197,18 @@ module SpecMaker
 			return {}
 		end
 
-		if NUMERICTYPES.include? dataType
+		if NUMERICTYPES.include? dataType.downcase
 			return 99
-		elsif DATETYPES.include? dataType
+		elsif DATETYPES.include? dataType.downcase
 			return "datetime-value"
-		elsif %w[Url url].include? dataType
+		elsif %w[Url url].include? dataType.downcase
 			return"url-value"	
 		elsif %w[Boolean boolean Bool bool ].include? dataType
 			return true
-		elsif SIMPLETYPES.include? dataType
+		elsif SIMPLETYPES.include? dataType.downcase
 			return "#{name}-value"				
 		else
-			return dump_complex_type (dataType)
+			return dump_complex_type(dataType)
 		end
 	end
 
@@ -244,22 +244,22 @@ module SpecMaker
 			return {}
 		end
 
-		if NUMERICTYPES.include? dataType
+		if NUMERICTYPES.include? dataType.downcase
 			return 99
-		elsif DATETYPES.include? dataType
+		elsif DATETYPES.include? dataType.downcase
 			return "datetime-value"
-		elsif %w[Url url].include? dataType
+		elsif %w[Url url].include? dataType.downcase
 			return"url-value"	
-		elsif %w[Boolean boolean Bool bool ].include? dataType
+		elsif %w[Boolean boolean Bool bool ].include? dataType.downcase
 			return true
-		elsif SIMPLETYPES.include? dataType
+		elsif SIMPLETYPES.include? dataType.downcase
 			return "#{name}-value"				
 		else
-			return dump_complex_type (dataType)			
+			return dump_complex_type(dataType)			
 		end
 	end
 
-	def self.get_json_model_method (objectName=nil, collFlag=false)
+	def self.get_json_model_method (objectName=nil, collFlag=false, includeKey=true)
 		model = {}
 		if SIMPLETYPES.include? objectName
 			model[:value] = assign_value(objectName, objectName)
@@ -276,6 +276,9 @@ module SpecMaker
 			object = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
 			object[:properties].each_with_index do |item, i|
 				next if item[:isRelationship]  
+				if !includeKey
+					next if item[:isKey]
+				end
 				if item[:name].downcase.start_with?('extension')	
 					model[item[:name]] = {}
 				else
@@ -318,9 +321,9 @@ module SpecMaker
 			elsif %w[Boolean boolean Bool bool ].include? item[:dataType]
 				model[item[:name]] = true
 			elsif SIMPLETYPES.include? item[:dataType]
-				model[item[:name]] = "#{item[:dataType]}-value"
+				model[item[:name]] = "#{item[:dataType]}"
 			else
-				model[item[:name]] = { "@odata.type" => "#{@service[:namespace]}.#{item[:dataType]}".downcase}
+				model[item[:name]] = { "@odata.type" => "#{@service[:namespace]}.#{item[:dataType]}"}
 			end
 			
 			if item[:isKey]
@@ -359,7 +362,9 @@ module SpecMaker
 				next
 			end
 			if (line[0..0] == '}')
-				output = output + NEWLINE + line
+				output = output + save + NEWLINE
+				save = "" # not required...
+				output = output +  line
 				next
 			end
 			if line[2..2] == '"'

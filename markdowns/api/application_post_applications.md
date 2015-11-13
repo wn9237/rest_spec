@@ -1,12 +1,12 @@
-# Create Application
+# Create application
 
-Use this API to create a new Application.
+Use this API to create a new application.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /applications
 
 ```
 ### Request headers
@@ -15,23 +15,110 @@ The following **scopes** are required to execute this API:
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [Application](../resources/application.md) object.
+In the request body, supply a JSON representation of [application](../resources/application.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Application](../resources/application.md) object in the response body.
+If successful, this method returns `201, Created` response code and [application](../resources/application.md) object in the response body.
 
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_application_from_video"
+  "name": "create_application_from_applications"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/applications
 ```
-In the request body, supply a JSON representation of [Application](../resources/application.md) object.
+In the request body, supply a JSON representation of [application](../resources/application.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/applications
+Content-type: application/json
+Content-length: 2118
+
+{
+  "appId": "appId-value",
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "allowedMemberTypes-value"
+      ],
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "value": "value-value"
+    }
+  ],
+  "availableToOtherTenants": true,
+  "displayName": "displayName-value",
+  "errorUrl": "errorUrl-value",
+  "groupMembershipClaims": "groupMembershipClaims-value",
+  "homepage": "homepage-value",
+  "identifierUris": [
+    "identifierUris-value"
+  ],
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "type": "type-value",
+      "usage": "usage-value",
+      "value": "value-value"
+    }
+  ],
+  "knownClientApplications": [
+    "knownClientApplications-value"
+  ],
+  "mainLogo": "mainLogo-value",
+  "logoutUrl": "logoutUrl-value",
+  "oauth2AllowImplicitFlow": true,
+  "oauth2AllowUrlPathMatching": true,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "adminConsentDescription-value",
+      "adminConsentDisplayName": "adminConsentDisplayName-value",
+      "id": "id-value",
+      "isEnabled": true,
+      "type": "type-value",
+      "userConsentDescription": "userConsentDescription-value",
+      "userConsentDisplayName": "userConsentDisplayName-value",
+      "value": "value-value"
+    }
+  ],
+  "oauth2RequirePostResponse": true,
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": "customKeyIdentifier-value",
+      "endDate": "datetime-value",
+      "keyId": "keyId-value",
+      "startDate": "datetime-value",
+      "value": "value-value"
+    }
+  ],
+  "publicClient": true,
+  "replyUrls": [
+    "replyUrls-value"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "resourceAppId-value",
+      "resourceAccess": [
+        {
+          "id": "id-value",
+          "type": "type-value"
+        }
+      ]
+    }
+  ],
+  "samlMetadataUrl": "samlMetadataUrl-value",
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -132,7 +219,7 @@ Content-length: 2150
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Application",
+  "description": "Create application",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

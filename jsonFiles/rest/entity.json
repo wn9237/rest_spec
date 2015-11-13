@@ -30,7 +30,7 @@
       "name": "id",
       "description": "",
       "isKey": true,
-      "dataType": "String",
+      "dataType": "string",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,

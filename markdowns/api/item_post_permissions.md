@@ -31,9 +31,53 @@ Here is an example of the request.
   "name": "create_permission_from_item"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root
+POST https://graph.microsoft.com/v1.0/drive/root/permissions
 ```
 In the request body, supply a JSON representation of [permission](../resources/permission.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/drive/root
+Content-type: application/json
+Content-length: 742
+
+{
+  "grantedTo": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
+  "invitation": {
+    "email": "email-value",
+    "redeemedBy": "redeemedBy-value",
+    "signInRequired": true
+  },
+  "inheritedFrom": {
+    "driveId": "driveId-value",
+    "id": "id-value",
+    "path": "path-value"
+  },
+  "link": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "type": "type-value",
+    "webUrl": "webUrl-value"
+  },
+  "roles": [
+    "roles-value"
+  ],
+  "shareId": "shareId-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {

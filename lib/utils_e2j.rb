@@ -229,7 +229,7 @@ module SpecMaker
 	# and Microsoft.Graph.Recipient to Recipient
 	#
 	def self.get_type(t=nil)
-		return t[(t.rindex('.') + 1)..-1].chomp(')')
+		return camelcase t[(t.rindex('.') + 1)..-1].chomp(')')
 	end
 
 	def self.merge_members(current=nil, base=nil, objectName=nil)

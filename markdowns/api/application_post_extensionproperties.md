@@ -1,6 +1,6 @@
-# Create ExtensionProperty
+# Create extensionProperty
 
-Use this API to create a new ExtensionProperty.
+Use this API to create a new extensionProperty.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -15,11 +15,11 @@ POST /applications/<objectId>/extensionProperties
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [ExtensionProperty](../resources/extensionproperty.md) object.
+In the request body, supply a JSON representation of [extensionProperty](../resources/extensionproperty.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [ExtensionProperty](../resources/extensionproperty.md) object in the response body.
+If successful, this method returns `201, Created` response code and [extensionProperty](../resources/extensionproperty.md) object in the response body.
 
 ### Example
 ##### Request
@@ -29,9 +29,26 @@ Here is an example of the request.
   "name": "create_extensionproperty_from_application"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/applications/<objectId>
+POST https://graph.microsoft.com/v1.0/applications/<objectId>/extensionProperties
 ```
-In the request body, supply a JSON representation of [ExtensionProperty](../resources/extensionproperty.md) object.
+In the request body, supply a JSON representation of [extensionProperty](../resources/extensionproperty.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/applications/<objectId>
+Content-type: application/json
+Content-length: 265
+
+{
+  "appDisplayName": "appDisplayName-value",
+  "name": "name-value",
+  "dataType": "dataType-value",
+  "isSyncedFromOnPremises": true,
+  "targetObjects": [
+    "targetObjects-value"
+  ],
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -62,7 +79,7 @@ Content-length: 297
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create ExtensionProperty",
+  "description": "Create extensionProperty",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

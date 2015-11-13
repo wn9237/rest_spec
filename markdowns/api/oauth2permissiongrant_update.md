@@ -20,13 +20,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|clientId|String||
-|consentType|String||
-|expiryTime|DateTimeOffset||
-|principalId|String||
-|resourceId|String||
-|scope|String||
-|startTime|DateTimeOffset||
+|clientId|string||
+|consentType|string||
+|expiryTime|dateTimeOffset||
+|principalId|string||
+|resourceId|string||
+|scope|string||
+|startTime|dateTimeOffset||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
@@ -40,13 +40,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/<objectId>
 Content-type: application/json
-Content-length: 271
+Content-length: 239
 
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
   "expiryTime": "datetime-value",
-  "objectId": "objectId-value",
   "principalId": "principalId-value",
   "resourceId": "resourceId-value",
   "scope": "scope-value",

@@ -18,7 +18,7 @@ Here is a JSON representation of the resource.
 {
   "deleted": 1024,
   "remaining": 1024,
-  "state": "String-value",
+  "state": "string",
   "total": 1024,
   "used": 1024
 }
@@ -27,11 +27,11 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|deleted|Int64||
-|remaining|Int64||
-|state|String||
-|total|Int64||
-|used|Int64||
+|deleted|int64||
+|remaining|int64||
+|state|string||
+|total|int64||
+|used|int64||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -20,11 +20,11 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|childFolderCount|Int32||
-|displayName|String||
-|parentFolderId|String||
-|totalItemCount|Int32||
-|unreadItemCount|Int32||
+|childFolderCount|int32||
+|displayName|string||
+|parentFolderId|string||
+|totalItemCount|int32||
+|unreadItemCount|int32||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [mailFolder](../resources/mailfolder.md) object in the response body.
@@ -38,15 +38,14 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/mailFolders/<id>
 Content-type: application/json
-Content-length: 179
+Content-length: 159
 
 {
   "displayName": "displayName-value",
   "parentFolderId": "parentFolderId-value",
   "childFolderCount": 99,
   "unreadItemCount": 99,
-  "totalItemCount": 99,
-  "id": "id-value"
+  "totalItemCount": 99
 }
 ```
 ##### Response

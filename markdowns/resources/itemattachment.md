@@ -16,11 +16,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "contentType": "String-value",
-  "id": "String-value (identifier)",
+  "contentType": "string",
+  "id": "string (identifier)",
   "isInline": true,
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "String-value",
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "name": "string",
   "size": 1024
 }
 
@@ -28,17 +28,17 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String||
-|id|String| Read-only.|
-|isInline|Boolean||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|name|String||
-|size|Int32||
+|contentType|string||
+|id|string| Read-only.|
+|isInline|boolean||
+|lastModifiedDateTime|[dateTimeOffset](datetimeoffset.md)||
+|name|string||
+|size|int32||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)| Read-only.|
+|item|[outlookItem](outlookitem.md)| Read-only.|
 
 ### Methods
 

@@ -18,7 +18,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|String||
+|name|string||
 |owner|identitySet||
 
 ### Response
@@ -33,10 +33,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/shares/<id>
 Content-type: application/json
-Content-length: 330
+Content-length: 310
 
 {
-  "id": "id-value",
   "name": "name-value",
   "owner": {
     "application": {

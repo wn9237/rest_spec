@@ -2,24 +2,26 @@
 
 A group of calendars.
 
+**Note** Outlook.com supports only the default calendar group which is accessible by the ../me/calendars shortcut. You cannot delete that calendar group.
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "calendars"
   ],
   "@odata.type": "microsoft.graph.calendargroup"
 }-->
 
 ```json
 {
-  "changeKey": "String-value",
-  "classId": "Guid-value",
-  "id": "String-value (identifier)",
-  "name": "String-value"
+  "changeKey": "string",
+  "classId": "guid",
+  "id": "string (identifier)",
+  "name": "string"
 }
 
 ```

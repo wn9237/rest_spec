@@ -1,7 +1,7 @@
 {
   "name": "devices",
   "description": "",
-  "collectionOf": "Device",
+  "collectionOf": "device",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

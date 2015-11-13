@@ -1,4 +1,67 @@
 {
+  "AttendeeType": {
+    "isExclusive": true,
+    "options": {
+      "Required": {
+        "value": "0",
+        "description": ""
+      },
+      "Optional": {
+        "value": "1",
+        "description": ""
+      },
+      "Resource": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "FreeBusyStatus": {
+    "isExclusive": true,
+    "options": {
+      "Free": {
+        "value": "0",
+        "description": ""
+      },
+      "Tentative": {
+        "value": "1",
+        "description": ""
+      },
+      "Busy": {
+        "value": "2",
+        "description": ""
+      },
+      "Oof": {
+        "value": "3",
+        "description": ""
+      },
+      "WorkingElsewhere": {
+        "value": "4",
+        "description": ""
+      },
+      "Unknown": {
+        "value": "-1",
+        "description": ""
+      }
+    }
+  },
+  "ActivityDomain": {
+    "isExclusive": true,
+    "options": {
+      "Unknown": {
+        "value": "0",
+        "description": ""
+      },
+      "Work": {
+        "value": "1",
+        "description": ""
+      },
+      "Personal": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
   "BodyType": {
     "isExclusive": true,
     "options": {
@@ -25,6 +88,19 @@
       },
       "High": {
         "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "InferenceClassificationType": {
+    "isExclusive": true,
+    "options": {
+      "Focused": {
+        "value": "0",
+        "description": ""
+      },
+      "Other": {
+        "value": "1",
         "description": ""
       }
     }
@@ -232,35 +308,6 @@
       }
     }
   },
-  "FreeBusyStatus": {
-    "isExclusive": true,
-    "options": {
-      "Free": {
-        "value": "0",
-        "description": ""
-      },
-      "Tentative": {
-        "value": "1",
-        "description": ""
-      },
-      "Busy": {
-        "value": "2",
-        "description": ""
-      },
-      "Oof": {
-        "value": "3",
-        "description": ""
-      },
-      "WorkingElsewhere": {
-        "value": "4",
-        "description": ""
-      },
-      "Unknown": {
-        "value": "-1",
-        "description": ""
-      }
-    }
-  },
   "EventType": {
     "isExclusive": true,
     "options": {
@@ -278,23 +325,6 @@
       },
       "SeriesMaster": {
         "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "AttendeeType": {
-    "isExclusive": true,
-    "options": {
-      "Required": {
-        "value": "0",
-        "description": ""
-      },
-      "Optional": {
-        "value": "1",
-        "description": ""
-      },
-      "Resource": {
-        "value": "2",
         "description": ""
       }
     }
@@ -345,6 +375,107 @@
       },
       "Public": {
         "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "taskBoardType": {
+    "isExclusive": true,
+    "options": {
+      "progress": {
+        "value": "0",
+        "description": ""
+      },
+      "assignedTo": {
+        "value": "1",
+        "description": ""
+      },
+      "bucket": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "previewType": {
+    "isExclusive": true,
+    "options": {
+      "automatic": {
+        "value": "0",
+        "description": ""
+      },
+      "noPreview": {
+        "value": "1",
+        "description": ""
+      },
+      "checklist": {
+        "value": "2",
+        "description": ""
+      },
+      "description": {
+        "value": "3",
+        "description": ""
+      },
+      "reference": {
+        "value": "4",
+        "description": ""
+      }
+    }
+  },
+  "PatchInsertPosition": {
+    "isExclusive": true,
+    "options": {
+      "After": {
+        "value": "0",
+        "description": ""
+      },
+      "Before": {
+        "value": "1",
+        "description": ""
+      }
+    }
+  },
+  "PatchActionType": {
+    "isExclusive": true,
+    "options": {
+      "Replace": {
+        "value": "0",
+        "description": ""
+      },
+      "Append": {
+        "value": "1",
+        "description": ""
+      },
+      "Delete": {
+        "value": "2",
+        "description": ""
+      },
+      "Insert": {
+        "value": "3",
+        "description": ""
+      },
+      "Prepend": {
+        "value": "4",
+        "description": ""
+      }
+    }
+  },
+  "UserRole": {
+    "isExclusive": true,
+    "options": {
+      "Owner": {
+        "value": "0",
+        "description": ""
+      },
+      "Contributor": {
+        "value": "1",
+        "description": ""
+      },
+      "Reader": {
+        "value": "2",
+        "description": ""
+      },
+      "None": {
+        "value": "-1",
         "description": ""
       }
     }

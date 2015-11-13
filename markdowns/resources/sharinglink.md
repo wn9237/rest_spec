@@ -16,11 +16,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "application": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "type": "String-value",
-  "webUrl": "String-value"
+  "application": {"@odata.type": "microsoft.graph.identity"},
+  "type": "string",
+  "webUrl": "string"
 }
 
 ```
@@ -28,8 +26,8 @@ Here is a JSON representation of the resource.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |application|[identity](identity.md)||
-|type|String||
-|webUrl|String||
+|type|string||
+|webUrl|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

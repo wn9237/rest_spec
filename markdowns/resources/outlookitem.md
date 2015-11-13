@@ -16,24 +16,22 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "categories": [
-    "String-value"
-  ],
-  "changeKey": "String-value",
-  "createdDateTime": "String (timestamp)",
-  "id": "String-value (identifier)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "categories": ["string"],
+  "changeKey": "string",
+  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "id": "string (identifier)",
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"}
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|categories|String collection||
-|changeKey|String||
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|id|String| Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|categories|string collection||
+|changeKey|string||
+|createdDateTime|[dateTimeOffset](datetimeoffset.md)||
+|id|string| Read-only.|
+|lastModifiedDateTime|[dateTimeOffset](datetimeoffset.md)||
 
 ### Relationships
 None

@@ -20,9 +20,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|changeKey|String|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|classId|Guid|The class identifier.|
-|name|String|The group name.|
+|changeKey|string|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|classId|guid|The class identifier.|
+|name|string|The group name.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [calendarGroup](../resources/calendargroup.md) object in the response body.
@@ -36,13 +36,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/calendarGroups/<id>
 Content-type: application/json
-Content-length: 110
+Content-length: 90
 
 {
   "name": "name-value",
   "classId": "classId-value",
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+  "changeKey": "changeKey-value"
 }
 ```
 ##### Response

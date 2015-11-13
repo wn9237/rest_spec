@@ -16,16 +16,16 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "address": "String-value",
-  "name": "String-value"
+  "address": "string",
+  "name": "string"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|String|The email address of the person or entity.|
-|name|String|The display name of the person or entity.|
+|address|string|The email address of the person or entity.|
+|name|string|The display name of the person or entity.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

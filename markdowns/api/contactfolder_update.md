@@ -20,8 +20,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String|The folder's display name.|
-|parentFolderId|String|The ID of the folder's parent folder.|
+|displayName|string|The folder's display name.|
+|parentFolderId|string|The ID of the folder's parent folder.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [contactFolder](../resources/contactfolder.md) object in the response body.
@@ -35,12 +35,11 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/contactFolders/<id>
 Content-type: application/json
-Content-length: 104
+Content-length: 84
 
 {
   "parentFolderId": "parentFolderId-value",
-  "displayName": "displayName-value",
-  "id": "id-value"
+  "displayName": "displayName-value"
 }
 ```
 ##### Response

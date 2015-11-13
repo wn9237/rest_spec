@@ -2,14 +2,22 @@
 
 Represents an instance of an application in a directory. Inherits from [DirectoryObject].
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "appRoleAssignedTo",
+    "appRoleAssignments",
+    "createdObjects",
+    "createdOnBehalfOf",
+    "memberOf",
+    "oauth2PermissionGrants",
+    "ownedObjects",
+    "owners"
   ],
   "@odata.type": "microsoft.graph.serviceprincipal"
 }-->
@@ -17,27 +25,27 @@ Here is a JSON representation of the resource.
 ```json
 {
   "accountEnabled": true,
-  "appDisplayName": "String-value",
-  "appId": "String-value",
-  "appOwnerTenantId": "Guid-value",
+  "appDisplayName": "string",
+  "appId": "string",
+  "appOwnerTenantId": "guid",
   "appRoleAssignmentRequired": true,
-  "appRoles": [{"@odata.type": "microsoft.graph.approle"}],
-  "deletionTimestamp": "String (timestamp)",
-  "displayName": "String-value",
-  "errorUrl": "String-value",
-  "homepage": "String-value",
-  "keyCredentials": [{"@odata.type": "microsoft.graph.keycredential"}],
-  "logoutUrl": "String-value",
-  "oauth2Permissions": [{"@odata.type": "microsoft.graph.oauth2permission"}],
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordcredential"}],
-  "preferredTokenSigningKeyThumbprint": "String-value",
-  "publisherName": "String-value",
-  "replyUrls": ["String-value"],
-  "samlMetadataUrl": "String-value",
-  "servicePrincipalNames": ["String-value"],
-  "tags": [
+  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "displayName": "string",
+  "errorUrl": "string",
+  "homepage": "string",
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
+  "logoutUrl": "string",
+  "oauth2Permissions": [{"@odata.type": "microsoft.graph.oAuth2Permission"}],
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
+  "preferredTokenSigningKeyThumbprint": "string",
+  "publisherName": "string",
+  "replyUrls": ["string"],
+  "samlMetadataUrl": "string",
+  "servicePrincipalNames": ["string"],
+  "tags": ["string"]
 }
 
 ```

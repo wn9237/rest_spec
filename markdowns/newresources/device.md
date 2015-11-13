@@ -2,14 +2,16 @@
 
 Represents a device registered in the directory. Inherits from [DirectoryObject].
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "registeredOwners",
+    "registeredUsers"
   ],
   "@odata.type": "microsoft.graph.device"
 }-->
@@ -17,21 +19,21 @@ Here is a JSON representation of the resource.
 ```json
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativesecurityid"}],
-  "approximateLastLogonTimestamp": "String (timestamp)",
-  "deletionTimestamp": "String (timestamp)",
-  "deviceId": "Guid-value",
-  "deviceMetadata": "String-value",
-  "deviceOSType": "String-value",
-  "deviceOSVersion": "String-value",
+  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
+  "approximateLastLogonTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "deviceId": "guid",
+  "deviceMetadata": "string",
+  "deviceOSType": "string",
+  "deviceOSVersion": "string",
   "deviceObjectVersion": 1024,
-  "devicePhysicalIds": ["String-value"],
-  "deviceTrustType": "String-value",
+  "devicePhysicalIds": ["string"],
+  "deviceTrustType": "string",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "lastDirSyncTime": "String (timestamp)",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value"
+  "displayName": "string",
+  "lastDirSyncTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "objectId": "string (identifier)",
+  "objectType": "string"
 }
 
 ```

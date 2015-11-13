@@ -4,7 +4,7 @@ A file (such as a text file or Word document) attached to a message or event. Th
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,14 +16,14 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "contentBytes": "Binary-value",
-  "contentId": "String-value",
-  "contentLocation": "String-value",
-  "contentType": "String-value",
-  "id": "String-value (identifier)",
+  "contentBytes": "binary",
+  "contentId": "string",
+  "contentLocation": "string",
+  "contentType": "string",
+  "id": "string (identifier)",
   "isInline": true,
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "String-value",
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "name": "string",
   "size": 1024
 }
 
@@ -31,15 +31,15 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentBytes|Binary||
-|contentId|String||
-|contentLocation|String||
-|contentType|String||
-|id|String| Read-only.|
-|isInline|Boolean||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|name|String||
-|size|Int32||
+|contentBytes|Binary|The binary contents of the file.|
+|contentId|String|The ID of the attachment in the Exchange store.|
+|contentLocation|String|The Uniform Resource Identifier (URI) that corresponds to the location of the content of the attachment.|
+|contentType|String|The content type of the attachment.|
+|id|String|The attachment ID.|
+|isInline|Boolean|Set to true if this is an inline attachment.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified.|
+|name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.|
+|size|Int32|The size in bytes of the attachment.|
 
 ### Relationships
 None

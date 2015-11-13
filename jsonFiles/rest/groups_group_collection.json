@@ -1,7 +1,7 @@
 {
   "name": "groups",
   "description": "",
-  "collectionOf": "Group",
+  "collectionOf": "group",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

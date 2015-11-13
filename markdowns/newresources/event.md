@@ -4,12 +4,14 @@ An event in a calendar.
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "attachments",
+    "calendar",
+    "instances"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -17,37 +19,37 @@ Here is a JSON representation of the resource.
 ```json
 {
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
-  "body": {"@odata.type": "microsoft.graph.itembody"},
-  "bodyPreview": "String-value",
-  "categories": ["String-value"],
-  "changeKey": "String-value",
-  "createdDateTime": "String (timestamp)",
-  "end": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "bodyPreview": "string",
+  "categories": ["string"],
+  "changeKey": "string",
+  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "iCalUId": "String-value",
-  "id": "String-value (identifier)",
-  "importance": "String-value",
+  "iCalUId": "string",
+  "id": "string (identifier)",
+  "importance": {"@odata.type": "microsoft.graph.importance"},
   "isAllDay": true,
   "isCancelled": true,
   "isOrganizer": true,
   "isReminderOn": true,
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "location": {"@odata.type": "microsoft.graph.location"},
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
-  "originalEndTimeZone": "String-value",
-  "originalStart": "String (timestamp)",
-  "originalStartTimeZone": "String-value",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
+  "originalEndTimeZone": "string",
+  "originalStart": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "originalStartTimeZone": "string",
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "reminderMinutesBeforeStart": 1024,
   "responseRequested": true,
-  "responseStatus": {"@odata.type": "microsoft.graph.responsestatus"},
-  "sensitivity": "String-value",
-  "seriesMasterId": "String-value",
-  "showAs": "String-value",
-  "start": {"@odata.type": "microsoft.graph.datetimetimezone"},
-  "subject": "String-value",
-  "type": "String-value",
-  "webLink": "String-value"
+  "responseStatus": {"@odata.type": "microsoft.graph.responseStatus"},
+  "sensitivity": {"@odata.type": "microsoft.graph.sensitivity"},
+  "seriesMasterId": "string",
+  "showAs": {"@odata.type": "microsoft.graph.freeBusyStatus"},
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "subject": "string",
+  "type": {"@odata.type": "microsoft.graph.eventType"},
+  "webLink": "string"
 }
 
 ```
@@ -105,11 +107,11 @@ Here is a JSON representation of the resource.
 |[List instances](../api/event_list_instances.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Update](../api/event_update.md) | [event](event.md)	|Update event object. |
 |[Delete](../api/event_delete.md) | None |Delete event object. |
-|[accept](../api/event_accept.md)|None||
-|[decline](../api/event_decline.md)|None||
-|[dismissReminder](../api/event_dismissreminder.md)|None||
-|[snoozeReminder](../api/event_snoozereminder.md)|None||
-|[tentativelyAccept](../api/event_tentativelyaccept.md)|None||
+|[accept](../api/event_accept.md)|None|Accept the specified event.|
+|[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
+|[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
+|[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
+|[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

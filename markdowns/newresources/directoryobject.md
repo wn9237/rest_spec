@@ -1,10 +1,11 @@
 # directoryObject resource type
 
-Represents an Azure Active Directory object. The **DirectoryObject** type is the base type for most of the other directory entity types.
+Represents an Azure Active Directory object. The **directoryObject** type is the base type for most of the other directory entity types.
+
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,9 +17,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "deletionTimestamp": "String (timestamp)",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value"
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "objectId": "string (identifier)",
+  "objectType": "string"
 }
 
 ```

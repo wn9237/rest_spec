@@ -1,12 +1,12 @@
-# Create DirectoryRoleTemplate
+# Create directoryRoleTemplate
 
-Use this API to create a new DirectoryRoleTemplate.
+Use this API to create a new directoryRoleTemplate.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles
+POST /directoryRoleTemplates
 
 ```
 ### Request headers
@@ -15,23 +15,35 @@ POST /directoryRoles
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object.
+In the request body, supply a JSON representation of [directoryRoleTemplate](../resources/directoryroletemplate.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.
+If successful, this method returns `201, Created` response code and [directoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.
 
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryroletemplate_from_directoryroles"
+  "name": "create_directoryroletemplate_from_directoryroletemplates"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles
+POST https://graph.microsoft.com/v1.0/directoryRoleTemplates
 ```
-In the request body, supply a JSON representation of [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object.
+In the request body, supply a JSON representation of [directoryRoleTemplate](../resources/directoryroletemplate.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/directoryRoleTemplates
+Content-type: application/json
+Content-length: 155
+
+{
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -57,7 +69,7 @@ Content-length: 187
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create DirectoryRoleTemplate",
+  "description": "Create directoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

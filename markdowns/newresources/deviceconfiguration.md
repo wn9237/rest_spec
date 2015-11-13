@@ -4,7 +4,7 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,12 +16,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "cloudPublicIssuerCertificates": ["Binary-value"],
-  "deletionTimestamp": "String (timestamp)",
+  "cloudPublicIssuerCertificates": ["binary"],
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "maximumRegistrationInactivityPeriod": 1024,
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "publicIssuerCertificates": ["Binary-value"],
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "publicIssuerCertificates": ["binary"],
   "registrationQuota": 1024
 }
 

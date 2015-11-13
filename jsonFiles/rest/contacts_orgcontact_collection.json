@@ -1,7 +1,7 @@
 {
   "name": "contacts",
   "description": "",
-  "collectionOf": "OrgContact",
+  "collectionOf": "orgContact",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

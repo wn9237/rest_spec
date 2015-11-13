@@ -20,7 +20,8 @@ module SpecMaker
 			example_lines.push "Here is an example of the request." + NEWLINE
 			example_lines.push get_json_request_pretext("create_#{method[:returnType]}_from_#{@jsonHash[:name]}".downcase) + NEWLINE
 			example_lines.push '```http' + NEWLINE
-			httpSyntax = get_syntax('auto_post', top_one_restpath, nil, nil, SERVER)
+			httpSyntax = get_syntax('auto_post', top_one_restpath, pathAppend, nil, SERVER)
+
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 			modeldump = get_json_model_method(@jsonHash[:name])			
 			#example_lines.push "Content-type: application/json" + NEWLINE
@@ -75,7 +76,7 @@ module SpecMaker
 			example_lines.push '```http' + NEWLINE
 			httpSyntax = get_syntax('auto_patch', top_one_restpath, nil, nil, SERVER)
 			example_lines.push httpSyntax.join("\n") + NEWLINE
-			modeldump = get_json_model_method(@jsonHash[:name])			
+			modeldump = get_json_model_method(@jsonHash[:name], false, false)			
 			example_lines.push "Content-type: application/json" + NEWLINE
 			example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES
 			example_lines.push modeldump + NEWLINE	
@@ -270,6 +271,7 @@ module SpecMaker
 		actionLines.push HEADER3 + "HTTP request" + NEWLINE		
 		actionLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 		actionLines.push '```http' + NEWLINE
+		
 		httpSyntax = get_syntax(method[:name], top_restpath, pathAppend, method)
 		actionLines.push httpSyntax.join("\n") + NEWLINE
 		actionLines.push NEWLINE + '```' + NEWLINE
@@ -348,7 +350,7 @@ module SpecMaker
 
 		case method[:name]
 		when 'auto_post'
-			example_lines = gen_example("auto_post", method)
+			example_lines = gen_example("auto_post", method, pathAppend)
 		when 'auto_delete'
 			example_lines = gen_example("auto_delete", method)
 		else
@@ -397,11 +399,12 @@ module SpecMaker
 		getMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 
 		getMethodLines.push '```http' + NEWLINE
-		if @jsonHash[:collectionOf]
+		if @jsonHash[:collectionOf]		
 			httpSyntax = get_syntax('auto_list', top_restpath, pathAppend)
 		else
 			httpSyntax = get_syntax('auto_get', top_restpath)			
 		end
+
 		getMethodLines.push httpSyntax.join("\n") + NEWLINE
 		getMethodLines.push  '```' + NEWLINE
 
@@ -889,7 +892,10 @@ module SpecMaker
 					end
 					mtd[:parameters] = nil					
 					mtd[:httpSuccessCode] = '201'
+					@jsonHash = item								
 				    create_method_mdfile(mtd, filename)
+
+
 				end
 			end
 			if item[:collectionOf]
@@ -920,12 +926,8 @@ module SpecMaker
 		fullpath = JSON_SOURCE_FOLDER + item.downcase
 		
 		if File.file?(fullpath)
-			@jsonHash = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
-			name = @jsonHash[:name]
-			isComplexType = @jsonHash[:isComplexType]
-			numMethods = @jsonHash[:methods].count 
-			numProperties = @jsonHash[:properties].count 
-			puts "#{name}, #{isComplexType}, #{numProperties}, #{numMethods}"
+			convert_to_spec File.read(fullpath, :encoding => 'UTF-8')
+			processed_files = processed_files + 1
 		end
 	end
 	create_service_root

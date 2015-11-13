@@ -1,6 +1,6 @@
-# Create Conversation
+# Create conversation
 
-Use this API to create a new Conversation.
+Use this API to create a new conversation.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -17,11 +17,11 @@ POST /drive/root/createdByUser/joinedGroups/<objectId>/conversations
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [Conversation](../resources/conversation.md) object.
+In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Conversation](../resources/conversation.md) object in the response body.
+If successful, this method returns `201, Created` response code and [conversation](../resources/conversation.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,24 @@ Here is an example of the request.
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/conversations
 ```
-In the request body, supply a JSON representation of [Conversation](../resources/conversation.md) object.
+In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/groups/<objectId>
+Content-type: application/json
+Content-length: 181
+
+{
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
+  ],
+  "preview": "preview-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -62,7 +77,7 @@ Content-length: 201
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Conversation",
+  "description": "Create conversation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

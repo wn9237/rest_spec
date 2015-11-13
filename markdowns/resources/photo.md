@@ -17,7 +17,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "height": 1024,
-  "id": "String-value (identifier)",
+  "id": "string (identifier)",
   "width": 1024
 }
 
@@ -25,9 +25,9 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|height|Int32||
-|id|String| Read-only.|
-|width|Int32||
+|height|int32||
+|id|string| Read-only.|
+|width|int32||
 
 ### Relationships
 None

@@ -20,9 +20,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1  Possible values are: `LightBlue`, `LightGreen`, `LightOrange`, `LightGray`, `LightYellow`, `LightTeal`, `LightPink`, `LightBrown`, `LightRed`, `MaxColor`, `Auto`.|
-|name|String|The calendar name.|
+|changeKey|string|Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|color|calendarColor|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1 |
+|name|string|The calendar name.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.
@@ -36,13 +36,13 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/calendar
 Content-type: application/json
-Content-length: 106
+Content-length: 78
 
 {
   "name": "name-value",
-  "color": "color-value",
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+  "color": {
+  },
+  "changeKey": "changeKey-value"
 }
 ```
 ##### Response
@@ -55,11 +55,12 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 106
+Content-length: 98
 
 {
   "name": "name-value",
-  "color": "color-value",
+  "color": {
+  },
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

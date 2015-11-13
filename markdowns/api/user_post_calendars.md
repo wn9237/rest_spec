@@ -1,6 +1,6 @@
-# Create Calendar
+# Create calendar
 
-Use this API to create a new Calendar.
+Use this API to create a new calendar.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -17,11 +17,11 @@ POST /drive/root/lastModifiedByUser/calendars
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
+In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Calendar](../resources/calendar.md) object in the response body.
+If successful, this method returns `201, Created` response code and [calendar](../resources/calendar.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,21 @@ Here is an example of the request.
   "name": "create_calendar_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://graph.microsoft.com/v1.0/users/<objectId>/calendars
 ```
-In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
+In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/users/<objectId>
+Content-type: application/json
+Content-length: 78
+
+{
+  "name": "name-value",
+  "color": {
+  },
+  "changeKey": "changeKey-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -44,11 +56,12 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 106
+Content-length: 98
 
 {
   "name": "name-value",
-  "color": "color-value",
+  "color": {
+  },
   "changeKey": "changeKey-value",
   "id": "id-value"
 }
@@ -58,7 +71,7 @@ Content-length: 106
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Calendar",
+  "description": "Create calendar",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

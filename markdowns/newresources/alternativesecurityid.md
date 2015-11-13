@@ -1,10 +1,11 @@
 # alternativeSecurityId resource type
 
-Contains an alternative security ID associated with a device. The **alternativeSecurityIds** property of the [Device] entity is a collection of **AlternativeSecurityId**.
+Contains an alternative security ID associated with a device. The **alternativeSecurityIds** property of the [Device](device.md) entity is a collection of **alternativeSecurityId**.
+
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,8 +17,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "identityProvider": "String-value",
-  "key": "Binary-value",
+  "identityProvider": "string",
+  "key": "binary",
   "type": 1024
 }
 

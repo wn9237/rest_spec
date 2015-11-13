@@ -16,20 +16,20 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "alias": "String-value",
-  "email": "String-value",
-  "objectId": "String-value",
-  "permissionIdentityType": "String-value"
+  "alias": "string",
+  "email": "string",
+  "objectId": "string",
+  "permissionIdentityType": "string"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|alias|String||
-|email|String||
-|objectId|String||
-|permissionIdentityType|String||
+|alias|string||
+|email|string||
+|objectId|string||
+|permissionIdentityType|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

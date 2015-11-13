@@ -18,10 +18,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|deletionTimestamp|DateTimeOffset||
-|description|String|The description to set for the directory role.|
-|displayName|String|The display name to set for the directory role.|
-|objectType|String|A string that identifies the object type. For role templates the value is always “RoleTemplate”. Inherited from [DirectoryObject].|
+|deletionTimestamp|dateTimeOffset||
+|description|string|The description to set for the directory role.|
+|displayName|string|The display name to set for the directory role.|
+|objectType|string|A string that identifies the object type. For role templates the value is always “RoleTemplate”. Inherited from [DirectoryObject].|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [directoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.
@@ -35,13 +35,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/directoryRoleTemplates/<objectId>
 Content-type: application/json
-Content-length: 187
+Content-length: 155
 
 {
   "description": "description-value",
   "displayName": "displayName-value",
   "objectType": "objectType-value",
-  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

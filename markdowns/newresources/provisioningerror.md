@@ -2,9 +2,10 @@
 
 The **provisioningErrors** property of the [Contact], [User], and [Group] entities is a collection of **ProvisioningError**.
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,10 +17,10 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "errorDetail": "String-value",
+  "errorDetail": "string",
   "resolved": true,
-  "service": "String-value",
-  "timestamp": "String (timestamp)"
+  "service": "string",
+  "timestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"}
 }
 
 ```

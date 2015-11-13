@@ -1,6 +1,6 @@
 # oAuth2PermissionGrant resource type
 
-Represents the OAuth 2.0 delegated permission scopes that have been granted to an application (represented by a service principal) as part of the user or admin consent process. 
+Represents the OAuth 2.0 delegated permission scopes that have been granted to an application (represented by a service principal) as part of the user or admin consent process. 
 
 ### JSON representation
 
@@ -16,28 +16,28 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "clientId": "String-value",
-  "consentType": "String-value",
-  "expiryTime": "String (timestamp)",
-  "objectId": "String-value (identifier)",
-  "principalId": "String-value",
-  "resourceId": "String-value",
-  "scope": "String-value",
-  "startTime": "String (timestamp)"
+  "clientId": "string",
+  "consentType": "string",
+  "expiryTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "objectId": "string (identifier)",
+  "principalId": "string",
+  "resourceId": "string",
+  "scope": "string",
+  "startTime": {"@odata.type": "microsoft.graph.dateTimeOffset"}
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|clientId|String||
-|consentType|String||
-|expiryTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|objectId|String| Read-only.|
-|principalId|String||
-|resourceId|String||
-|scope|String||
-|startTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|clientId|string||
+|consentType|string||
+|expiryTime|[dateTimeOffset](datetimeoffset.md)||
+|objectId|string| Read-only.|
+|principalId|string||
+|resourceId|string||
+|scope|string||
+|startTime|[dateTimeOffset](datetimeoffset.md)||
 
 ### Relationships
 None

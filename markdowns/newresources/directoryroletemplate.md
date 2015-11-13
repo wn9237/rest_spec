@@ -2,9 +2,10 @@
 
 Represents a directory role template. A directory role template specifies the property values of a directory role ([DirectoryRole]). There is an associated directory role template object for each of the directory roles that may be activated in a tenant. 
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,11 +17,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "deletionTimestamp": "String (timestamp)",
-  "description": "String-value",
-  "displayName": "String-value",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value"
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "description": "string",
+  "displayName": "string",
+  "objectId": "string (identifier)",
+  "objectType": "string"
 }
 
 ```

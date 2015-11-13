@@ -20,7 +20,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|driveType|String|Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`.|
+|driveType|string|Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`.|
 |owner|identitySet|The user account that owns the drive.|
 |quota|quota|Information about the drive's storage space quota.|
 
@@ -36,10 +36,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/drive
 Content-type: application/json
-Content-length: 458
+Content-length: 438
 
 {
-  "id": "id-value",
   "driveType": "driveType-value",
   "owner": {
     "application": {

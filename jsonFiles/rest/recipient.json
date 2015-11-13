@@ -30,7 +30,7 @@
       "name": "emailAddress",
       "description": "The recipient's email address.",
       "isKey": false,
-      "dataType": "EmailAddress",
+      "dataType": "emailAddress",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,

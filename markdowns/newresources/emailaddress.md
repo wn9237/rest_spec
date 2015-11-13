@@ -4,7 +4,7 @@ The name and email address of a contact or message recipient.
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,8 +16,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "address": "String-value",
-  "name": "String-value"
+  "address": "string",
+  "name": "string"
 }
 
 ```

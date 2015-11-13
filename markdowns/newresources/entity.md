@@ -4,7 +4,7 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,7 +16,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String-value (identifier)"
+  "id": "string (identifier)"
 }
 
 ```

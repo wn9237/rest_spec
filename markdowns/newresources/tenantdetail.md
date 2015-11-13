@@ -2,9 +2,10 @@
 
 Represents an Azure Active Directory tenant. Only the read and update operations are supported on tenants; create and delete are not supported. Inherits from [DirectoryOjbect].
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,28 +17,28 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedplan"}],
-  "city": "String-value",
-  "companyLastDirSyncTime": "String (timestamp)",
-  "country": "String-value",
-  "countryLetterCode": "String-value",
-  "deletionTimestamp": "String (timestamp)",
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "city": "string",
+  "companyLastDirSyncTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "country": "string",
+  "countryLetterCode": "string",
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "marketingNotificationEmails": ["String-value"],
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "postalCode": "String-value",
-  "preferredLanguage": "String-value",
-  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedplan"}],
-  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningerror"}],
-  "securityComplianceNotificationMails": ["String-value"],
-  "securityComplianceNotificationPhones": ["String-value"],
-  "state": "String-value",
-  "street": "String-value",
-  "technicalNotificationMails": ["String-value"],
-  "telephoneNumber": "String-value",
-  "verifiedDomains": [
+  "displayName": "string",
+  "marketingNotificationEmails": ["string"],
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "postalCode": "string",
+  "preferredLanguage": "string",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
+  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningError"}],
+  "securityComplianceNotificationMails": ["string"],
+  "securityComplianceNotificationPhones": ["string"],
+  "state": "string",
+  "street": "string",
+  "technicalNotificationMails": ["string"],
+  "telephoneNumber": "string",
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 
 ```

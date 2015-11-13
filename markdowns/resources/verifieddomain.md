@@ -1,6 +1,6 @@
 # verifiedDomain resource type
 
-Specifies a domain for a tenant. The **verifiedDomains** property of the [TenantDetail] entity is a collection of **VerifiedDomain**.
+Specifies a domain for a tenant. The **verifiedDomains** property of the [TenantDetail] entity is a collection of **VerifiedDomain**.
 
 ### JSON representation
 
@@ -16,24 +16,24 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "capabilities": "String-value",
+  "capabilities": "string",
   "default": true,
-  "id": "String-value",
+  "id": "string",
   "initial": true,
-  "name": "String-value",
-  "type": "String-value"
+  "name": "string",
+  "type": "string"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|capabilities|String|For example, “Email”, “OfficeCommunicationsOnline”.|
-|default|Boolean|                **true** if this is the default domain associated with the tenant; otherwise, **false**.            |
-|id|String|For example, “00057FFE80187238”.|
-|initial|Boolean|            |
-|name|String|The domain name; for example, “contoso.onmicrosoft.com”|
-|type|String|For example, “Managed”.|
+|capabilities|string|For example, “Email”, “OfficeCommunicationsOnline”.|
+|default|boolean|                **true** if this is the default domain associated with the tenant; otherwise, **false**.            |
+|id|string|For example, “00057FFE80187238”.|
+|initial|boolean|            |
+|name|string|The domain name; for example, “contoso.onmicrosoft.com”|
+|type|string|For example, “Managed”.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

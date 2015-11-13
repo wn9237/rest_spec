@@ -19,10 +19,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupIds|String||
+|groupIds|string||
 
 ### Response
-If successful, this method returns `200, OK` response code and String collection object in the response body.
+If successful, this method returns `200, OK` response code and string collection object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -59,7 +59,7 @@ Content-length: 39
 
 {
   "value": [
-    "String-value"
+    "string-value"
   ]
 }
 ```

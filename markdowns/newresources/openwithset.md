@@ -4,7 +4,7 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,8 +16,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "web": {"@odata.type": "microsoft.graph.openwithapp"},
-  "webEmbedded": {
+  "web": {"@odata.type": "microsoft.graph.openWithApp"},
+  "webEmbedded": {"@odata.type": "microsoft.graph.openWithApp"}
 }
 
 ```

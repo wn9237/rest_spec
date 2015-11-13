@@ -44,7 +44,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1598
+Content-length: 1576
 
 {
   "receivedDateTime": "datetime-value",
@@ -52,11 +52,13 @@ Content-length: 1598
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",
-  "importance": "importance-value",
+  "importance": {
+  },
   "parentFolderId": "parentFolderId-value",
   "sender": {
     "emailAddress": {
@@ -104,7 +106,8 @@ Content-length: 1598
   ],
   "conversationId": "conversationId-value",
   "uniqueBody": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "isDeliveryReceiptRequested": true,
@@ -112,6 +115,8 @@ Content-length: 1598
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
+  "inferenceClassification": {
+  },
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",
@@ -119,7 +124,8 @@ Content-length: 1598
     "categories-value"
   ],
   "id": "id-value",
-  "meetingMessageType": "meetingMessageType-value"
+  "meetingMessageType": {
+  }
 }
 ```
 

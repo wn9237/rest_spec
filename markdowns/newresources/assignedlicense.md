@@ -1,10 +1,11 @@
 # assignedLicense resource type
 
-Represents a license assigned to a user. The **assignedLicenses** property of the [User] entity is a collection of **AssignedLicense**.
+Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.
+
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,8 +17,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "disabledPlans": ["Guid-value"],
-  "skuId": "Guid-value"
+  "disabledPlans": ["guid"],
+  "skuId": "guid"
 }
 
 ```

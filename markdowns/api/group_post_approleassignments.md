@@ -1,6 +1,6 @@
-# Create AppRoleAssignment
+# Create appRoleAssignment
 
-Use this API to create a new AppRoleAssignment.
+Use this API to create a new appRoleAssignment.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -17,11 +17,11 @@ POST /drive/root/createdByUser/joinedGroups/<objectId>/appRoleAssignments
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [AppRoleAssignment](../resources/approleassignment.md) object.
+In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [AppRoleAssignment](../resources/approleassignment.md) object in the response body.
+If successful, this method returns `201, Created` response code and [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,26 @@ Here is an example of the request.
   "name": "create_approleassignment_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/appRoleAssignments
 ```
-In the request body, supply a JSON representation of [AppRoleAssignment](../resources/approleassignment.md) object.
+In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/groups/<objectId>
+Content-type: application/json
+Content-length: 366
+
+{
+  "creationTimestamp": "datetime-value",
+  "id": "id-value",
+  "principalDisplayName": "principalDisplayName-value",
+  "principalId": "principalId-value",
+  "principalType": "principalType-value",
+  "resourceDisplayName": "resourceDisplayName-value",
+  "resourceId": "resourceId-value",
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -64,7 +81,7 @@ Content-length: 398
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create AppRoleAssignment",
+  "description": "Create appRoleAssignment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

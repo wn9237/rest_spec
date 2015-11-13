@@ -31,9 +31,41 @@ Here is an example of the request.
   "name": "create_thumbnailset_from_item"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root
+POST https://graph.microsoft.com/v1.0/drive/root/thumbnails
 ```
 In the request body, supply a JSON representation of [thumbnailSet](../resources/thumbnailset.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/drive/root
+Content-type: application/json
+Content-length: 436
+
+{
+  "large": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
+  },
+  "medium": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
+  },
+  "small": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
+  },
+  "source": {
+    "content": "content-value",
+    "height": 99,
+    "url": "url-value",
+    "width": 99
+  }
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {

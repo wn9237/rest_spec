@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals
+POST /shares
 
 ```
 ### Request headers
@@ -26,12 +26,35 @@ If successful, this method returns `201, Created` response code and [share](../r
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_share_from_serviceprincipals"
+  "name": "create_share_from_shares"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals
+POST https://graph.microsoft.com/v1.0/shares
 ```
 In the request body, supply a JSON representation of [share](../resources/share.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/shares
+Content-type: application/json
+Content-length: 310
+
+{
+  "name": "name-value",
+  "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  }
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {

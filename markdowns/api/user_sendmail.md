@@ -21,8 +21,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|message|Message||
-|saveToSentItems|Boolean||
+|message|message||
+|saveToSentItems|boolean||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -38,7 +38,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/users/<objectId>/sendMail
 Content-type: application/json
-Content-length: 1975
+Content-length: 1984
 
 {
   "message": {
@@ -47,11 +47,13 @@ Content-length: 1975
     "hasAttachments": true,
     "subject": "subject-value",
     "body": {
-      "contentType": "contentType-value",
+      "contentType": {
+      },
       "content": "content-value"
     },
     "bodyPreview": "bodyPreview-value",
-    "importance": "importance-value",
+    "importance": {
+    },
     "parentFolderId": "parentFolderId-value",
     "sender": {
       "emailAddress": {
@@ -99,7 +101,8 @@ Content-length: 1975
     ],
     "conversationId": "conversationId-value",
     "uniqueBody": {
-      "contentType": "contentType-value",
+      "contentType": {
+      },
       "content": "content-value"
     },
     "isDeliveryReceiptRequested": true,
@@ -107,6 +110,8 @@ Content-length: 1975
     "isRead": true,
     "isDraft": true,
     "webLink": "webLink-value",
+    "inferenceClassification": {
+    },
     "createdDateTime": "datetime-value",
     "lastModifiedDateTime": "datetime-value",
     "changeKey": "changeKey-value",

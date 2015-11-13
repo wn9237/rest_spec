@@ -14,7 +14,7 @@ GET /drive/root/createdByUser/joinedGroups/<objectId>/events
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Event](../resources/event.md) for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [event](../resources/event.md) for supported names. |
 |$filter|string|Filter string that lets you filter the response based on a set of criteria.|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 |$select|string|Comma-separated list of properties to include in the response.|
@@ -30,7 +30,7 @@ GET /drive/root/createdByUser/joinedGroups/<objectId>/events
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -52,7 +52,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2405
+Content-length: 2355
 
 {
   "value": [
@@ -60,7 +60,8 @@ Content-length: 2405
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": "response-value",
+        "response": {
+        },
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",
@@ -69,12 +70,15 @@ Content-length: 2405
       "hasAttachments": true,
       "subject": "subject-value",
       "body": {
-        "contentType": "contentType-value",
+        "contentType": {
+        },
         "content": "content-value"
       },
       "bodyPreview": "bodyPreview-value",
-      "importance": "importance-value",
-      "sensitivity": "sensitivity-value",
+      "importance": {
+      },
+      "sensitivity": {
+      },
       "start": {
         "dateTime": "dateTime-value",
         "timeZone": "timeZone-value"
@@ -94,18 +98,23 @@ Content-length: 2405
       "isOrganizer": true,
       "recurrence": {
         "pattern": {
-          "type": "type-value",
+          "type": {
+          },
           "interval": 99,
           "month": 99,
           "dayOfMonth": 99,
           "daysOfWeek": [
-            "daysOfWeek-value"
+            {
+            }
           ],
-          "firstDayOfWeek": "firstDayOfWeek-value",
-          "index": "index-value"
+          "firstDayOfWeek": {
+          },
+          "index": {
+          }
         },
         "range": {
-          "type": "type-value",
+          "type": {
+          },
           "startDate": "startDate-value",
           "endDate": "endDate-value",
           "numberOfOccurrences": 99
@@ -113,15 +122,19 @@ Content-length: 2405
       },
       "responseRequested": true,
       "seriesMasterId": "seriesMasterId-value",
-      "showAs": "showAs-value",
-      "type": "type-value",
+      "showAs": {
+      },
+      "type": {
+      },
       "attendees": [
         {
           "status": {
-            "response": "response-value",
+            "response": {
+            },
             "time": "datetime-value"
           },
-          "type": "type-value",
+          "type": {
+          },
           "emailAddress": {
             "name": "name-value",
             "address": "address-value"

@@ -2,9 +2,10 @@
 
 A **DirectoryLinkChange** object is returned in the result set of a differential query to indicate that a property of a contact, a user, or a group that is represented by a link has changed since the last differential query. The **DirectoryLinkChange** object will represent a change to a user’s or contact’s **manager** property or a change to a group’s **members** property. For more information about differential queries, see [Azure AD Graph API Differential Query](https://msdn.microsoft.com/en-us/library/azure/jj836245.aspx). Inherits from [DirectoryObject].
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,16 +17,16 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "associationType": "String-value",
-  "deletionTimestamp": "String (timestamp)",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "sourceObjectId": "String-value",
-  "sourceObjectType": "String-value",
-  "sourceObjectUri": "String-value",
-  "targetObjectId": "String-value",
-  "targetObjectType": "String-value",
-  "targetObjectUri": "String-value"
+  "associationType": "string",
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "sourceObjectId": "string",
+  "sourceObjectType": "string",
+  "sourceObjectUri": "string",
+  "targetObjectId": "string",
+  "targetObjectType": "string",
+  "targetObjectUri": "string"
 }
 
 ```

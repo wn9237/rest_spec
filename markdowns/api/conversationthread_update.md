@@ -20,14 +20,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ccRecipients|Recipient||
-|hasAttachments|Boolean||
-|isLocked|Boolean||
-|lastDeliveredDateTime|DateTimeOffset||
-|preview|String||
-|toRecipients|Recipient||
-|topic|String||
-|uniqueSenders|String||
+|ccRecipients|recipient||
+|hasAttachments|boolean||
+|isLocked|boolean||
+|lastDeliveredDateTime|dateTimeOffset||
+|preview|string||
+|toRecipients|recipient||
+|topic|string||
+|uniqueSenders|string||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.
@@ -41,7 +41,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/<objectId>/threads/<id>
 Content-type: application/json
-Content-length: 489
+Content-length: 469
 
 {
   "toRecipients": [
@@ -67,8 +67,7 @@ Content-length: 489
     }
   ],
   "preview": "preview-value",
-  "isLocked": true,
-  "id": "id-value"
+  "isLocked": true
 }
 ```
 ##### Response

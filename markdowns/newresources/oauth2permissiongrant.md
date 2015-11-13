@@ -2,9 +2,10 @@
 
 Represents the OAuth 2.0 delegated permission scopes that have been granted to an application (represented by a service principal) as part of the user or admin consent process. 
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,14 +17,14 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "clientId": "String-value",
-  "consentType": "String-value",
-  "expiryTime": "String (timestamp)",
-  "objectId": "String-value (identifier)",
-  "principalId": "String-value",
-  "resourceId": "String-value",
-  "scope": "String-value",
-  "startTime": "String (timestamp)"
+  "clientId": "string",
+  "consentType": "string",
+  "expiryTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "objectId": "string (identifier)",
+  "principalId": "string",
+  "resourceId": "string",
+  "scope": "string",
+  "startTime": {"@odata.type": "microsoft.graph.dateTimeOffset"}
 }
 
 ```

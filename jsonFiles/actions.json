@@ -5,7 +5,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "String",
+      "returnType": "string",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
@@ -20,7 +20,7 @@
         {
           "name": "groupIds",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": true,
           "isRequired": true,
           "enumName": null,
@@ -34,7 +34,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "String",
+      "returnType": "string",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
@@ -49,7 +49,7 @@
         {
           "name": "securityEnabledOnly",
           "description": "",
-          "dataType": "Boolean",
+          "dataType": "boolean",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -63,7 +63,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "String",
+      "returnType": "string",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
@@ -78,7 +78,7 @@
         {
           "name": "securityEnabledOnly",
           "description": "",
-          "dataType": "Boolean",
+          "dataType": "boolean",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -94,7 +94,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Application",
+      "returnType": "application",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -109,7 +109,7 @@
         {
           "name": "identifierUris",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": true,
           "isRequired": true,
           "enumName": null,
@@ -125,7 +125,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "User",
+      "returnType": "user",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -140,7 +140,7 @@
         {
           "name": "addLicenses",
           "description": "",
-          "dataType": "AssignedLicense",
+          "dataType": "assignedLicense",
           "isCollection": true,
           "isRequired": true,
           "enumName": null,
@@ -150,7 +150,7 @@
         {
           "name": "removeLicenses",
           "description": "",
-          "dataType": "Guid",
+          "dataType": "guid",
           "isCollection": true,
           "isRequired": true,
           "enumName": null,
@@ -179,7 +179,7 @@
         {
           "name": "message",
           "description": "",
-          "dataType": "Message",
+          "dataType": "message",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -189,7 +189,86 @@
         {
           "name": "saveToSentItems",
           "description": "",
-          "dataType": "Boolean",
+          "dataType": "boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "findMeetingTimes",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "meetingTimeCandidate",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "attendees",
+          "description": "",
+          "dataType": "attendeeBase",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "locationConstraint",
+          "description": "",
+          "dataType": "locationConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "timeConstraint",
+          "description": "",
+          "dataType": "timeConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "meetingDuration",
+          "description": "",
+          "dataType": "duration",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "maxCandidates",
+          "description": "",
+          "dataType": "int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "isOrganizerOptional",
+          "description": "",
+          "dataType": "boolean",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -203,7 +282,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Reminder",
+      "returnType": "reminder",
       "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
@@ -218,7 +297,7 @@
         {
           "name": "startDateTime",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -228,7 +307,7 @@
         {
           "name": "endDateTime",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -244,7 +323,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "MailFolder",
+      "returnType": "mailFolder",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -259,7 +338,7 @@
         {
           "name": "destinationId",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -273,7 +352,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "MailFolder",
+      "returnType": "mailFolder",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -288,7 +367,7 @@
         {
           "name": "destinationId",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -304,7 +383,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Message",
+      "returnType": "message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -319,7 +398,7 @@
         {
           "name": "destinationId",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -333,7 +412,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Message",
+      "returnType": "message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -348,7 +427,7 @@
         {
           "name": "destinationId",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -362,7 +441,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Message",
+      "returnType": "message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -382,7 +461,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Message",
+      "returnType": "message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -402,7 +481,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Message",
+      "returnType": "message",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -437,7 +516,7 @@
         {
           "name": "comment",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -466,7 +545,7 @@
         {
           "name": "comment",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -495,7 +574,7 @@
         {
           "name": "comment",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -505,7 +584,7 @@
         {
           "name": "toRecipients",
           "description": "",
-          "dataType": "Recipient",
+          "dataType": "recipient",
           "isCollection": true,
           "isRequired": true,
           "enumName": null,
@@ -556,7 +635,7 @@
         {
           "name": "comment",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -566,7 +645,7 @@
         {
           "name": "sendResponse",
           "description": "",
-          "dataType": "Boolean",
+          "dataType": "boolean",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -595,7 +674,7 @@
         {
           "name": "comment",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -605,7 +684,7 @@
         {
           "name": "sendResponse",
           "description": "",
-          "dataType": "Boolean",
+          "dataType": "boolean",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -634,7 +713,7 @@
         {
           "name": "comment",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -644,7 +723,7 @@
         {
           "name": "sendResponse",
           "description": "",
-          "dataType": "Boolean",
+          "dataType": "boolean",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -673,7 +752,7 @@
         {
           "name": "newReminderTime",
           "description": "",
-          "dataType": "DateTimeTimeZone",
+          "dataType": "dateTimeTimeZone",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -826,7 +905,7 @@
         {
           "name": "post",
           "description": "",
-          "dataType": "Post",
+          "dataType": "post",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -857,7 +936,7 @@
         {
           "name": "comment",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -867,7 +946,7 @@
         {
           "name": "toRecipients",
           "description": "",
-          "dataType": "Recipient",
+          "dataType": "recipient",
           "isCollection": true,
           "isRequired": true,
           "enumName": null,
@@ -896,7 +975,7 @@
         {
           "name": "post",
           "description": "",
-          "dataType": "Post",
+          "dataType": "post",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -937,7 +1016,7 @@
         {
           "name": "message",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -947,7 +1026,7 @@
         {
           "name": "requireSignIn",
           "description": "",
-          "dataType": "Boolean",
+          "dataType": "boolean",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -957,7 +1036,7 @@
         {
           "name": "sendInvitation",
           "description": "",
-          "dataType": "Boolean",
+          "dataType": "boolean",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -967,7 +1046,7 @@
         {
           "name": "roles",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": true,
           "isRequired": true,
           "enumName": null,
@@ -1006,7 +1085,7 @@
         {
           "name": "name",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -1035,7 +1114,7 @@
         {
           "name": "type",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -1113,7 +1192,7 @@
         {
           "name": "token",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
@@ -1142,13 +1221,304 @@
         {
           "name": "q",
           "description": "",
-          "dataType": "String",
+          "dataType": "string",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
           "isUnicode": false
         }
+      ]
+    }
+  ],
+  "page": [
+    {
+      "name": "patchContent",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "commands",
+          "description": "",
+          "dataType": "patchContentCommand",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "copyToSection",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "copyPageModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteCollectionId",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteId",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "thumbnail",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "stream",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    }
+  ],
+  "notebook": [
+    {
+      "name": "copyNotebook",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "copyNotebookModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "siteCollectionId",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteId",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    }
+  ],
+  "section": [
+    {
+      "name": "copyToNotebook",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "copySectionModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteCollectionId",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteId",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "copyToSectionGroup",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "copySectionModel",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteCollectionId",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "siteId",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "renameAs",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "thumbnail",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "stream",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
       ]
     }
   ],
@@ -1171,6 +1541,37 @@
       ],
       "parameters": [
 
+      ]
+    }
+  ],
+  "sitecollection": [
+    {
+      "name": "fromUrl",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "siteMetadata",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "url",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
       ]
     }
   ]

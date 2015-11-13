@@ -1,6 +1,6 @@
 # subscribedSku resource type
 
-Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [DirectoryObject].
+Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [DirectoryObject].
 
 ### JSON representation
 
@@ -16,32 +16,26 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "capabilityStatus": "String-value",
+  "capabilityStatus": "string",
   "consumedUnits": 1024,
-  "objectId": "String-value (identifier)",
-  "prepaidUnits": {
-    "@odata.type": "microsoft.graph.licenseunitsdetail"
-  },
-  "servicePlans": [
-    {
-      "@odata.type": "microsoft.graph.serviceplaninfo"
-    }
-  ],
-  "skuId": "Guid-value",
-  "skuPartNumber": "String-value"
+  "objectId": "string (identifier)",
+  "prepaidUnits": {"@odata.type": "microsoft.graph.licenseUnitsDetail"},
+  "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
+  "skuId": "guid",
+  "skuPartNumber": "string"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|capabilityStatus|String||
-|consumedUnits|Int32||
-|objectId|String| Read-only.|
-|prepaidUnits|[LicenseUnitsDetail](licenseunitsdetail.md)||
-|servicePlans|[ServicePlanInfo](serviceplaninfo.md) collection||
-|skuId|Guid||
-|skuPartNumber|String||
+|capabilityStatus|string||
+|consumedUnits|int32||
+|objectId|string| Read-only.|
+|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)||
+|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection||
+|skuId|guid||
+|skuPartNumber|string||
 
 ### Relationships
 None

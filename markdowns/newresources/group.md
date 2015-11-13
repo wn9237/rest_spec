@@ -2,42 +2,56 @@
 
 Represents an Azure Active Directory Group. Inherited from **DirectoryObject**.
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "acceptedSenders",
+    "appRoleAssignments",
+    "calendar",
+    "calendarView",
+    "conversations",
+    "createdOnBehalfOf",
+    "drive",
+    "events",
+    "memberOf",
+    "members",
+    "owners",
+    "photo",
+    "rejectedSenders",
+    "threads"
   ],
   "@odata.type": "microsoft.graph.group"
 }-->
 
 ```json
 {
-  "accessType": "String-value",
+  "accessType": {"@odata.type": "microsoft.graph.groupAccessType"},
   "allowExternalSenders": true,
   "autoSubscribeNewMembers": true,
-  "creationOptions": ["String-value"],
-  "deletionTimestamp": "String (timestamp)",
-  "description": "String-value",
+  "creationOptions": ["string"],
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "description": "string",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "emailAddress": "String-value",
-  "groupTypes": ["String-value"],
+  "displayName": "string",
+  "emailAddress": "string",
+  "groupTypes": ["string"],
   "isFavorite": true,
   "isPublic": true,
   "isSubscribedByMail": true,
-  "lastDirSyncTime": "String (timestamp)",
-  "mail": "String-value",
+  "lastDirSyncTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "mail": "string",
   "mailEnabled": true,
-  "mailNickname": "String-value",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "onPremisesSecurityIdentifier": "String-value",
-  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningerror"}],
-  "proxyAddresses": ["String-value"],
+  "mailNickname": "string",
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "onPremisesSecurityIdentifier": "string",
+  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningError"}],
+  "proxyAddresses": ["string"],
   "securityEnabled": true,
   "unseenCount": 1024
 }

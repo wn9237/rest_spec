@@ -1,6 +1,6 @@
-# Create MailFolder
+# Create mailFolder
 
-Use this API to create a new MailFolder.
+Use this API to create a new mailFolder.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -17,11 +17,11 @@ POST /drive/root/lastModifiedByUser/mailFolders
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [MailFolder](../resources/mailfolder.md) object.
+In the request body, supply a JSON representation of [mailFolder](../resources/mailfolder.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `201, Created` response code and [mailFolder](../resources/mailfolder.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,22 @@ Here is an example of the request.
   "name": "create_mailfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://graph.microsoft.com/v1.0/users/<objectId>/mailFolders
 ```
-In the request body, supply a JSON representation of [MailFolder](../resources/mailfolder.md) object.
+In the request body, supply a JSON representation of [mailFolder](../resources/mailfolder.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/users/<objectId>
+Content-type: application/json
+Content-length: 159
+
+{
+  "displayName": "displayName-value",
+  "parentFolderId": "parentFolderId-value",
+  "childFolderCount": 99,
+  "unreadItemCount": 99,
+  "totalItemCount": 99
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -60,7 +73,7 @@ Content-length: 179
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create MailFolder",
+  "description": "Create mailFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

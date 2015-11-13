@@ -1,12 +1,12 @@
-# Create DirectoryObject
+# Create directoryObject
 
-Use this API to create a new DirectoryObject.
+Use this API to create a new directoryObject.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /devices
+POST /directoryObjects
 
 ```
 ### Request headers
@@ -15,23 +15,33 @@ POST /devices
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [DirectoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_devices"
+  "name": "create_directoryobject_from_directoryobjects"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/devices
+POST https://graph.microsoft.com/v1.0/directoryObjects
 ```
-In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/directoryObjects
+Content-type: application/json
+Content-length: 79
+
+{
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -55,7 +65,7 @@ Content-length: 111
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create DirectoryObject",
+  "description": "Create directoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

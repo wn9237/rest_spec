@@ -17,9 +17,9 @@ Here is a JSON representation of the resource.
 ```json
 {
   "childFolderCount": 1024,
-  "displayName": "String-value",
-  "id": "String-value (identifier)",
-  "parentFolderId": "String-value",
+  "displayName": "string",
+  "id": "string (identifier)",
+  "parentFolderId": "string",
   "totalItemCount": 1024,
   "unreadItemCount": 1024
 }
@@ -28,32 +28,32 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|childFolderCount|Int32||
-|displayName|String||
-|id|String| Read-only.|
-|parentFolderId|String||
-|totalItemCount|Int32||
-|unreadItemCount|Int32||
+|childFolderCount|int32||
+|displayName|string||
+|id|string| Read-only.|
+|parentFolderId|string||
+|totalItemCount|int32||
+|unreadItemCount|int32||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|childFolders|[MailFolder](mailfolder.md) collection| Read-only. Nullable.|
-|messages|[Message](message.md) collection| Read-only. Nullable.|
+|childFolders|[mailFolder](mailfolder.md) collection| Read-only. Nullable.|
+|messages|[message](message.md) collection| Read-only. Nullable.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get mailFolder](../api/mailfolder_get.md) | [mailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
-|[Create MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the childFolders collection.|
-|[List childFolders](../api/mailfolder_list_childfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
-|[Create Message](../api/mailfolder_post_messages.md) |[Message](message.md)| Create a new Message by posting to the messages collection.|
-|[List messages](../api/mailfolder_list_messages.md) |[Message](message.md) collection| Get a Message object collection.|
+|[Create mailFolder](../api/mailfolder_post_childfolders.md) |[mailFolder](mailfolder.md)| Create a new mailFolder by posting to the childFolders collection.|
+|[List childFolders](../api/mailfolder_list_childfolders.md) |[mailFolder](mailfolder.md) collection| Get a mailFolder object collection.|
+|[Create message](../api/mailfolder_post_messages.md) |[message](message.md)| Create a new message by posting to the messages collection.|
+|[List messages](../api/mailfolder_list_messages.md) |[message](message.md) collection| Get a message object collection.|
 |[Update](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)	|Update mailFolder object. |
 |[Delete](../api/mailfolder_delete.md) | None |Delete mailFolder object. |
-|[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)||
-|[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)||
+|[copy](../api/mailfolder_copy.md)|[mailFolder](mailfolder.md)||
+|[move](../api/mailfolder_move.md)|[mailFolder](mailfolder.md)||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

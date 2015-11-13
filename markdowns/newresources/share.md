@@ -4,21 +4,21 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "items"
   ],
   "@odata.type": "microsoft.graph.share"
 }-->
 
 ```json
 {
-  "id": "String-value (identifier)",
-  "name": "String-value",
-  "owner": {
+  "id": "string (identifier)",
+  "name": "string",
+  "owner": {"@odata.type": "microsoft.graph.identitySet"}
 }
 
 ```

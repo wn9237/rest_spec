@@ -14,7 +14,7 @@ GET /drive/root/lastModifiedByUser/mailFolders/<id>/messages
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Message](../resources/message.md) for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [message](../resources/message.md) for supported names. |
 |$filter|string|Filter string that lets you filter the response based on a set of criteria.|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 |$select|string|Comma-separated list of properties to include in the response.|
@@ -30,7 +30,7 @@ GET /drive/root/lastModifiedByUser/mailFolders/<id>/messages
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -52,7 +52,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1863
+Content-length: 1882
 
 {
   "value": [
@@ -62,11 +62,13 @@ Content-length: 1863
       "hasAttachments": true,
       "subject": "subject-value",
       "body": {
-        "contentType": "contentType-value",
+        "contentType": {
+        },
         "content": "content-value"
       },
       "bodyPreview": "bodyPreview-value",
-      "importance": "importance-value",
+      "importance": {
+      },
       "parentFolderId": "parentFolderId-value",
       "sender": {
         "emailAddress": {
@@ -114,7 +116,8 @@ Content-length: 1863
       ],
       "conversationId": "conversationId-value",
       "uniqueBody": {
-        "contentType": "contentType-value",
+        "contentType": {
+        },
         "content": "content-value"
       },
       "isDeliveryReceiptRequested": true,
@@ -122,6 +125,8 @@ Content-length: 1863
       "isRead": true,
       "isDraft": true,
       "webLink": "webLink-value",
+      "inferenceClassification": {
+      },
       "createdDateTime": "datetime-value",
       "lastModifiedDateTime": "datetime-value",
       "changeKey": "changeKey-value",

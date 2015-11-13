@@ -18,21 +18,21 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean|            |
-|alternativeSecurityIds|AlternativeSecurityId|                **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
-|approximateLastLogonTimestamp|DateTimeOffset|            |
-|deletionTimestamp|DateTimeOffset||
-|deviceId|Guid|            |
-|deviceMetadata|String||
-|deviceOSType|String|The type of operating system on the device.|
-|deviceOSVersion|String|The version of the operating system on the device|
-|deviceObjectVersion|Int32|            |
-|devicePhysicalIds|String|                **Notes:** not nullable            |
-|deviceTrustType|String||
-|dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
-|displayName|String|The display name for the device.|
-|lastDirSyncTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.|
-|objectType|String|A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject]|
+|accountEnabled|boolean|            |
+|alternativeSecurityIds|alternativeSecurityId|                **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|approximateLastLogonTimestamp|dateTimeOffset|            |
+|deletionTimestamp|dateTimeOffset||
+|deviceId|guid|            |
+|deviceMetadata|string||
+|deviceOSType|string|The type of operating system on the device.|
+|deviceOSVersion|string|The version of the operating system on the device|
+|deviceObjectVersion|int32|            |
+|devicePhysicalIds|string|                **Notes:** not nullable            |
+|deviceTrustType|string||
+|dirSyncEnabled|boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
+|displayName|string|The display name for the device.|
+|lastDirSyncTime|dateTimeOffset|The last time at which the object was synced with the on-premises directory.|
+|objectType|string|A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject]|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [device](../resources/device.md) object in the response body.
@@ -46,7 +46,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/devices/<objectId>
 Content-type: application/json
-Content-length: 732
+Content-length: 700
 
 {
   "accountEnabled": true,
@@ -71,7 +71,6 @@ Content-length: 732
   "displayName": "displayName-value",
   "lastDirSyncTime": "datetime-value",
   "objectType": "objectType-value",
-  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

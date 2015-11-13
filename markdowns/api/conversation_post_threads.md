@@ -17,11 +17,11 @@ POST /drive/root/createdByUser/joinedGroups/<objectId>/conversations/<id>/thread
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
+In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns `201, Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,41 @@ Here is an example of the request.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/conversations/<id>
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/conversations/<id>/threads
 ```
-In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
+In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/conversations/<id>
+Content-type: application/json
+Content-length: 469
+
+{
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      }
+    }
+  ],
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
+  ],
+  "ccRecipients": [
+    {
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      }
+    }
+  ],
+  "preview": "preview-value",
+  "isLocked": true
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {

@@ -21,11 +21,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|addLicenses|AssignedLicense||
-|removeLicenses|Guid||
+|addLicenses|assignedLicense||
+|removeLicenses|guid||
 
 ### Response
-If successful, this method returns `200, OK` response code and [User](../resources/user.md) object in the response body.
+If successful, this method returns `200, OK` response code and [user](../resources/user.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.

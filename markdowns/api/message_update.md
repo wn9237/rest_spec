@@ -20,31 +20,32 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient||
-|body|ItemBody||
-|bodyPreview|String||
-|categories|String||
-|ccRecipients|Recipient||
-|changeKey|String||
-|conversationId|String||
-|createdDateTime|DateTimeOffset||
-|from|Recipient||
-|hasAttachments|Boolean||
-|importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|isDeliveryReceiptRequested|Boolean||
-|isDraft|Boolean||
-|isRead|Boolean||
-|isReadReceiptRequested|Boolean||
-|lastModifiedDateTime|DateTimeOffset||
-|parentFolderId|String||
-|receivedDateTime|DateTimeOffset||
-|replyTo|Recipient||
-|sender|Recipient||
-|sentDateTime|DateTimeOffset||
-|subject|String||
-|toRecipients|Recipient||
-|uniqueBody|ItemBody||
-|webLink|String||
+|bccRecipients|recipient||
+|body|itemBody||
+|bodyPreview|string||
+|categories|string||
+|ccRecipients|recipient||
+|changeKey|string||
+|conversationId|string||
+|createdDateTime|dateTimeOffset||
+|from|recipient||
+|hasAttachments|boolean||
+|importance|importance||
+|inferenceClassification|inferenceClassificationType||
+|isDeliveryReceiptRequested|boolean||
+|isDraft|boolean||
+|isRead|boolean||
+|isReadReceiptRequested|boolean||
+|lastModifiedDateTime|dateTimeOffset||
+|parentFolderId|string||
+|receivedDateTime|dateTimeOffset||
+|replyTo|recipient||
+|sender|recipient||
+|sentDateTime|dateTimeOffset||
+|subject|string||
+|toRecipients|recipient||
+|uniqueBody|itemBody||
+|webLink|string||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [message](../resources/message.md) object in the response body.
@@ -58,7 +59,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/messages/<id>
 Content-type: application/json
-Content-length: 1546
+Content-length: 1525
 
 {
   "receivedDateTime": "datetime-value",
@@ -66,11 +67,13 @@ Content-length: 1546
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",
-  "importance": "importance-value",
+  "importance": {
+  },
   "parentFolderId": "parentFolderId-value",
   "sender": {
     "emailAddress": {
@@ -118,7 +121,8 @@ Content-length: 1546
   ],
   "conversationId": "conversationId-value",
   "uniqueBody": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "isDeliveryReceiptRequested": true,
@@ -126,13 +130,14 @@ Content-length: 1546
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
+  "inferenceClassification": {
+  },
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",
   "categories": [
     "categories-value"
-  ],
-  "id": "id-value"
+  ]
 }
 ```
 ##### Response
@@ -145,7 +150,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1546
+Content-length: 1545
 
 {
   "receivedDateTime": "datetime-value",
@@ -153,11 +158,13 @@ Content-length: 1546
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",
-  "importance": "importance-value",
+  "importance": {
+  },
   "parentFolderId": "parentFolderId-value",
   "sender": {
     "emailAddress": {
@@ -205,7 +212,8 @@ Content-length: 1546
   ],
   "conversationId": "conversationId-value",
   "uniqueBody": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "isDeliveryReceiptRequested": true,
@@ -213,6 +221,8 @@ Content-length: 1546
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
+  "inferenceClassification": {
+  },
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",

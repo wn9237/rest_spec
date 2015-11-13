@@ -27,11 +27,11 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|accuracy|Double|The accuracy of the sensor providing the latitude and longitude.|
-|altitude|Double|The altitude of the location.|
-|altitudeAccuracy|Double|The accuracy of the sensor providing the altitude.|
-|latitude|Double|The latitude of the location.|
-|longitude|Double|The longitude of the location.|
+|accuracy|double|The accuracy of the sensor providing the latitude and longitude.|
+|altitude|double|The altitude of the location.|
+|altitudeAccuracy|double|The accuracy of the sensor providing the altitude.|
+|latitude|double|The latitude of the location.|
+|longitude|double|The longitude of the location.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

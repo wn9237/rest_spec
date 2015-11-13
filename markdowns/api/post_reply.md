@@ -21,7 +21,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|post|Post||
+|post|post||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -37,12 +37,13 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/<objectId>/threads/<id>/posts/<id>/reply
 Content-type: application/json
-Content-length: 1141
+Content-length: 1131
 
 {
   "post": {
     "body": {
-      "contentType": "contentType-value",
+      "contentType": {
+      },
       "content": "content-value"
     },
     "receivedDateTime": "datetime-value",

@@ -16,65 +16,33 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "audio": {
-    "@odata.type": "microsoft.graph.audio"
-  },
-  "cTag": "String-value",
-  "content": "Stream-value",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identityset"
-  },
-  "createdDateTime": "String (timestamp)",
-  "deleted": {
-    "@odata.type": "microsoft.graph.deleted"
-  },
-  "description": "String-value",
-  "eTag": "String-value",
-  "file": {
-    "@odata.type": "microsoft.graph.file"
-  },
-  "fileSystemInfo": {
-    "@odata.type": "microsoft.graph.filesysteminfo"
-  },
-  "folder": {
-    "@odata.type": "microsoft.graph.folder"
-  },
-  "id": "String-value (identifier)",
-  "image": {
-    "@odata.type": "microsoft.graph.image"
-  },
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identityset"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "location": {
-    "@odata.type": "microsoft.graph.location"
-  },
-  "name": "String-value",
-  "openWith": {
-    "@odata.type": "microsoft.graph.openwithset"
-  },
-  "parentReference": {
-    "@odata.type": "microsoft.graph.itemreference"
-  },
-  "photo": {
-    "@odata.type": "microsoft.graph.photo"
-  },
-  "searchResult": {
-    "@odata.type": "microsoft.graph.searchresult"
-  },
-  "shared": {
-    "@odata.type": "microsoft.graph.shared"
-  },
+  "audio": {"@odata.type": "microsoft.graph.audio"},
+  "cTag": "string",
+  "content": "stream",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "deleted": {"@odata.type": "microsoft.graph.deleted"},
+  "description": "string",
+  "eTag": "string",
+  "file": {"@odata.type": "microsoft.graph.file"},
+  "fileSystemInfo": {"@odata.type": "microsoft.graph.fileSystemInfo"},
+  "folder": {"@odata.type": "microsoft.graph.folder"},
+  "id": "string (identifier)",
+  "image": {"@odata.type": "microsoft.graph.image"},
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "location": {"@odata.type": "microsoft.graph.location"},
+  "name": "string",
+  "openWith": {"@odata.type": "microsoft.graph.openWithSet"},
+  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
+  "photo": {"@odata.type": "microsoft.graph.photo"},
+  "searchResult": {"@odata.type": "microsoft.graph.searchResult"},
+  "shared": {"@odata.type": "microsoft.graph.shared"},
   "size": 1024,
-  "specialFolder": {
-    "@odata.type": "microsoft.graph.specialfolder"
-  },
-  "video": {
-    "@odata.type": "microsoft.graph.video"
-  },
-  "webDavUrl": "String-value",
-  "webUrl": "String-value"
+  "specialFolder": {"@odata.type": "microsoft.graph.specialFolder"},
+  "video": {"@odata.type": "microsoft.graph.video"},
+  "webDavUrl": "string",
+  "webUrl": "string"
 }
 
 ```
@@ -82,39 +50,39 @@ Here is a JSON representation of the resource.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |audio|[audio](audio.md)|Audio metadata, if the item is an audio file. Read-only.|
-|cTag|String|An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the Item is a folder. Read-only.|
-|content|Stream|The content stream, if the Item represents a file.|
+|cTag|string|An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the Item is a folder. Read-only.|
+|content|stream|The content stream, if the Item represents a file.|
 |createdBy|[identitySet](identityset.md)|Identity of the user, device, and application which created the item. Read-only.|
-|createdDateTime|DateTimeOffset|Date and time of item creation. Read-only.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|[dateTimeOffset](datetimeoffset.md)|Date and time of item creation. Read-only.|
 |deleted|[deleted](deleted.md)|Information about the deleted state of the item. Read-only.|
-|description|String|Provide a user-visible description of the item. Read-write.|
-|eTag|String|eTag for the entire item (metadata + content). Read-only.|
+|description|string|Provide a user-visible description of the item. Read-write.|
+|eTag|string|eTag for the entire item (metadata + content). Read-only.|
 |file|[file](file.md)|File metadata, if the item is a file. Read-only.|
 |fileSystemInfo|[fileSystemInfo](filesysteminfo.md)|File system information on client. Read-write.|
 |folder|[folder](folder.md)|Folder metadata, if the item is a folder. Read-only.|
-|id|String|The unique identifier of the item within the Drive. Read-only. Read-only.|
+|id|string|The unique identifier of the item within the Drive. Read-only. Read-only.|
 |image|[image](image.md)|Image metadata, if the item is an image. Read-only.|
 |lastModifiedBy|[identitySet](identityset.md)|Identity of the user, device, and application which last modified the item. Read-only.|
-|lastModifiedDateTime|DateTimeOffset|Date and time the item was last modified. Read-only.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|[dateTimeOffset](datetimeoffset.md)|Date and time the item was last modified. Read-only.|
 |location|[location](location.md)|Location metadata, if the item has location data. Read-only.|
-|name|String|The name of the item (filename and extension). Read-write.|
+|name|string|The name of the item (filename and extension). Read-write.|
 |openWith|[openWithSet](openwithset.md)||
 |parentReference|[itemReference](itemreference.md)|Parent information, if the item has a parent. Read-write.|
 |photo|[photo](photo.md)|Photo metadata, if the item is a photo. Read-only.|
 |searchResult|[searchResult](searchresult.md)|Search metadata, if the item is from a search result.|
 |shared|[shared](shared.md)||
-|size|Int64|Size of the item in bytes. Read-only.|
+|size|int64|Size of the item in bytes. Read-only.|
 |specialFolder|[specialFolder](specialfolder.md)||
 |video|[video](video.md)|Video metadata, if the item is a video. Read-only.|
-|webDavUrl|String||
-|webUrl|String|URL that displays the resource in the browser. Read-only.|
+|webDavUrl|string||
+|webUrl|string|URL that displays the resource in the browser. Read-only.|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |children|[item](item.md) collection|Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.|
-|createdByUser|[User](user.md)| Read-only.|
-|lastModifiedByUser|[User](user.md)| Read-only.|
+|createdByUser|[user](user.md)| Read-only.|
+|lastModifiedByUser|[user](user.md)| Read-only.|
 |permissions|[permission](permission.md) collection| Read-only. Nullable.|
 |thumbnails|[thumbnailSet](thumbnailset.md) collection|Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../items/thumbnails.md). Read-only. Nullable.|
 |versions|[item](item.md) collection| Read-only. Nullable.|

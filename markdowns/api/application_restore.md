@@ -19,10 +19,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|identifierUris|String||
+|identifierUris|string||
 
 ### Response
-If successful, this method returns `200, OK` response code and [Application](../resources/application.md) object in the response body.
+If successful, this method returns `200, OK` response code and [application](../resources/application.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.

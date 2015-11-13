@@ -18,12 +18,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|cloudPublicIssuerCertificates|Binary||
-|deletionTimestamp|DateTimeOffset||
-|maximumRegistrationInactivityPeriod|Int32||
-|objectType|String||
-|publicIssuerCertificates|Binary||
-|registrationQuota|Int32||
+|cloudPublicIssuerCertificates|binary||
+|deletionTimestamp|dateTimeOffset||
+|maximumRegistrationInactivityPeriod|int32||
+|objectType|string||
+|publicIssuerCertificates|binary||
+|registrationQuota|int32||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [deviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
@@ -37,7 +37,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/deviceConfiguration/<objectId>
 Content-type: application/json
-Content-length: 341
+Content-length: 309
 
 {
   "publicIssuerCertificates": [
@@ -49,7 +49,6 @@ Content-length: 341
   "registrationQuota": 99,
   "maximumRegistrationInactivityPeriod": 99,
   "objectType": "objectType-value",
-  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

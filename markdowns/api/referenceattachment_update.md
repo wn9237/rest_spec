@@ -18,11 +18,11 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String||
-|isInline|Boolean||
-|lastModifiedDateTime|DateTimeOffset||
-|name|String||
-|size|Int32||
+|contentType|string||
+|isInline|boolean||
+|lastModifiedDateTime|dateTimeOffset||
+|name|string||
+|size|int32||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [referenceAttachment](../resources/referenceattachment.md) object in the response body.
@@ -36,15 +36,14 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 162
+Content-length: 142
 
 {
   "lastModifiedDateTime": "datetime-value",
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,
-  "isInline": true,
-  "id": "id-value"
+  "isInline": true
 }
 ```
 ##### Response

@@ -20,11 +20,11 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|Indicates whether the Conversation has at least one attachment.|
-|lastDeliveredDateTime|DateTimeOffset||
-|preview|String||
-|topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
-|uniqueSenders|String|All the users that sent a message to this Conversation.|
+|hasAttachments|boolean|Indicates whether the Conversation has at least one attachment.|
+|lastDeliveredDateTime|dateTimeOffset||
+|preview|string||
+|topic|string|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
+|uniqueSenders|string|All the users that sent a message to this Conversation.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [conversation](../resources/conversation.md) object in the response body.
@@ -38,7 +38,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/<objectId>/conversations/<id>
 Content-type: application/json
-Content-length: 201
+Content-length: 181
 
 {
   "topic": "topic-value",
@@ -47,8 +47,7 @@ Content-length: 201
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
-  "preview": "preview-value",
-  "id": "id-value"
+  "preview": "preview-value"
 }
 ```
 ##### Response

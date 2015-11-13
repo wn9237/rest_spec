@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoleTemplates
+POST /drives
 
 ```
 ### Request headers
@@ -26,12 +26,42 @@ If successful, this method returns `201, Created` response code and [drive](../r
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_drive_from_directoryroletemplates"
+  "name": "create_drive_from_drives"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoleTemplates
+POST https://graph.microsoft.com/v1.0/drives
 ```
 In the request body, supply a JSON representation of [drive](../resources/drive.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/drives
+Content-type: application/json
+Content-length: 438
+
+{
+  "driveType": "driveType-value",
+  "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
+  "quota": {
+    "deleted": 99,
+    "remaining": 99,
+    "state": "state-value",
+    "total": 99,
+    "used": 99
+  }
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {

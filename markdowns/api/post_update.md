@@ -20,18 +20,18 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|body|ItemBody||
-|categories|String||
-|changeKey|String||
-|conversationId|String||
-|conversationThreadId|String||
-|createdDateTime|DateTimeOffset||
-|from|Recipient||
-|hasAttachments|Boolean||
-|lastModifiedDateTime|DateTimeOffset||
-|newParticipants|Recipient||
-|receivedDateTime|DateTimeOffset||
-|sender|Recipient||
+|body|itemBody||
+|categories|string||
+|changeKey|string||
+|conversationId|string||
+|conversationThreadId|string||
+|createdDateTime|dateTimeOffset||
+|from|recipient||
+|hasAttachments|boolean||
+|lastModifiedDateTime|dateTimeOffset||
+|newParticipants|recipient||
+|receivedDateTime|dateTimeOffset||
+|sender|recipient||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [post](../resources/post.md) object in the response body.
@@ -45,11 +45,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/<objectId>/threads/<id>/posts/<id>
 Content-type: application/json
-Content-length: 790
+Content-length: 758
 
 {
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",
@@ -81,8 +82,7 @@ Content-length: 790
   "changeKey": "changeKey-value",
   "categories": [
     "categories-value"
-  ],
-  "id": "id-value"
+  ]
 }
 ```
 ##### Response
@@ -95,11 +95,12 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 790
+Content-length: 778
 
 {
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",

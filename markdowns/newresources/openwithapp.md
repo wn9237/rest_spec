@@ -4,7 +4,7 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -17,10 +17,10 @@ Here is a JSON representation of the resource.
 ```json
 {
   "app": {"@odata.type": "microsoft.graph.identity"},
-  "editPostParameters": "String-value",
-  "editUrl": "String-value",
-  "viewPostParameters": "String-value",
-  "viewUrl": "String-value"
+  "editPostParameters": "string",
+  "editUrl": "string",
+  "viewPostParameters": "string",
+  "viewUrl": "string"
 }
 
 ```

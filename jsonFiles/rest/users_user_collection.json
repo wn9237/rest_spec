@@ -1,7 +1,7 @@
 {
   "name": "users",
   "description": "",
-  "collectionOf": "User",
+  "collectionOf": "user",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

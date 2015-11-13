@@ -20,15 +20,15 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|creationTimestamp|DateTimeOffset|The time when the grant was created.|
-|deletionTimestamp|DateTimeOffset||
-|id|Guid|The role id that was assigned to the principal.  This role must be declared by the target resource application **resourceId** in its **appRoles** property. Where the resource does not declare any permissions, a default id (zero GUID) must be specified.                            **Notes**: not nullable.            |
-|objectType|String|A string that identifies the object type. For application role assignments the value is always “AppRoleAssignment”. Inherited from [DirectoryObject].|
-|principalDisplayName|String|The display name of the principal that was granted the access.|
-|principalId|Guid|The unique identifier (**objectId**) for the principal being granted the access.                            **Notes**: required.            |
-|principalType|String|The type of principal.  This can either be "User", "Group" or "ServicePrincipal".|
-|resourceDisplayName|String|The display name of the resource to which the assignment was made.|
-|resourceId|Guid|The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made.|
+|creationTimestamp|dateTimeOffset|The time when the grant was created.|
+|deletionTimestamp|dateTimeOffset||
+|id|guid|The role id that was assigned to the principal.  This role must be declared by the target resource application **resourceId** in its **appRoles** property. Where the resource does not declare any permissions, a default id (zero GUID) must be specified.                            **Notes**: not nullable.            |
+|objectType|string|A string that identifies the object type. For application role assignments the value is always “AppRoleAssignment”. Inherited from [DirectoryObject].|
+|principalDisplayName|string|The display name of the principal that was granted the access.|
+|principalId|guid|The unique identifier (**objectId**) for the principal being granted the access.                            **Notes**: required.            |
+|principalType|string|The type of principal.  This can either be "User", "Group" or "ServicePrincipal".|
+|resourceDisplayName|string|The display name of the resource to which the assignment was made.|
+|resourceId|guid|The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [appRoleAssignment](../resources/approleassignment.md) object in the response body.
@@ -42,7 +42,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/appRoleAssignments/<objectId>
 Content-type: application/json
-Content-length: 398
+Content-length: 366
 
 {
   "creationTimestamp": "datetime-value",
@@ -53,7 +53,6 @@ Content-length: 398
   "resourceDisplayName": "resourceDisplayName-value",
   "resourceId": "resourceId-value",
   "objectType": "objectType-value",
-  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

@@ -2,9 +2,10 @@
 
 Allows an application to define and use a set of additional properties that can be added to directory objects (users, groups, tenant details, devices, applications, and service principals) without the application requiring an external data store. For more information about extension properties, see [Azure AD Graph API Directory Schema Extensions](https://msdn.microsoft.com/en-us/library/azure/dn720459.aspx). Inherits from [DirectoryObject].
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,14 +17,14 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "appDisplayName": "String-value",
-  "dataType": "String-value",
-  "deletionTimestamp": "String (timestamp)",
+  "appDisplayName": "string",
+  "dataType": "string",
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "isSyncedFromOnPremises": true,
-  "name": "String-value",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "targetObjects": [
+  "name": "string",
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "targetObjects": ["string"]
 }
 
 ```

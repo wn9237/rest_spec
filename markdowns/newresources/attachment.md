@@ -4,7 +4,7 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,11 +16,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "contentType": "String-value",
-  "id": "String-value (identifier)",
+  "contentType": "string",
+  "id": "string (identifier)",
   "isInline": true,
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "String-value",
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "name": "string",
   "size": 1024
 }
 
@@ -28,12 +28,12 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String||
+|contentType|String|The MIME type.|
 |id|String| Read-only.|
-|isInline|Boolean||
+|isInline|Boolean|`true` if the attachment is an inline attachment; otherwise, `false`.|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|name|String||
-|size|Int32||
+|name|String|The attachment's file name.|
+|size|Int32|The length of the attachment in bytes.|
 
 ### Relationships
 None

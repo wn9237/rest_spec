@@ -44,7 +44,7 @@
       "name": "mimeType",
       "description": "",
       "isKey": false,
-      "dataType": "String",
+      "dataType": "string",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,

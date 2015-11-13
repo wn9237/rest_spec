@@ -4,7 +4,7 @@ The response status of a meeting request.
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,8 +16,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "response": "String-value",
-  "time": "String (timestamp)"
+  "response": {"@odata.type": "microsoft.graph.responseType"},
+  "time": {"@odata.type": "microsoft.graph.dateTimeOffset"}
 }
 
 ```

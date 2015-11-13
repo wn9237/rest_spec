@@ -4,21 +4,22 @@ A folder that contains contacts.
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "childFolders",
+    "contacts"
   ],
   "@odata.type": "microsoft.graph.contactfolder"
 }-->
 
 ```json
 {
-  "displayName": "String-value",
-  "id": "String-value (identifier)",
-  "parentFolderId": "String-value"
+  "displayName": "string",
+  "id": "string (identifier)",
+  "parentFolderId": "string"
 }
 
 ```

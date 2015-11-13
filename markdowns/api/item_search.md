@@ -21,7 +21,7 @@ In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|q|String||
+|q|string||
 
 ### Response
 If successful, this method returns `200, OK` response code and [item](../resources/item.md) collection object in the response body.

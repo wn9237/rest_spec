@@ -1,12 +1,12 @@
-# Create OrgContact
+# Create orgContact
 
-Use this API to create a new OrgContact.
+Use this API to create a new orgContact.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications
+POST /contacts
 
 ```
 ### Request headers
@@ -15,23 +15,64 @@ POST /applications
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [OrgContact](../resources/orgcontact.md) object.
+In the request body, supply a JSON representation of [orgContact](../resources/orgcontact.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [OrgContact](../resources/orgcontact.md) object in the response body.
+If successful, this method returns `201, Created` response code and [orgContact](../resources/orgcontact.md) object in the response body.
 
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_orgcontact_from_applications"
+  "name": "create_orgcontact_from_contacts"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/applications
+POST https://graph.microsoft.com/v1.0/contacts
 ```
-In the request body, supply a JSON representation of [OrgContact](../resources/orgcontact.md) object.
+In the request body, supply a JSON representation of [orgContact](../resources/orgcontact.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/contacts
+Content-type: application/json
+Content-length: 1065
+
+{
+  "city": "city-value",
+  "country": "country-value",
+  "department": "department-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value",
+  "givenName": "givenName-value",
+  "jobTitle": "jobTitle-value",
+  "lastDirSyncTime": "datetime-value",
+  "mail": "mail-value",
+  "mailNickname": "mailNickname-value",
+  "mobile": "mobile-value",
+  "physicalDeliveryOfficeName": "physicalDeliveryOfficeName-value",
+  "postalCode": "postalCode-value",
+  "provisioningErrors": [
+    {
+      "errorDetail": "errorDetail-value",
+      "resolved": true,
+      "service": "service-value",
+      "timestamp": "datetime-value"
+    }
+  ],
+  "proxyAddresses": [
+    "proxyAddresses-value"
+  ],
+  "sipProxyAddress": "sipProxyAddress-value",
+  "state": "state-value",
+  "streetAddress": "streetAddress-value",
+  "surname": "surname-value",
+  "telephoneNumber": "telephoneNumber-value",
+  "thumbnailPhoto": "thumbnailPhoto-value",
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -86,7 +127,7 @@ Content-length: 1097
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create OrgContact",
+  "description": "Create orgContact",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

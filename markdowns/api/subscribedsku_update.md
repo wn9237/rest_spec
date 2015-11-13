@@ -18,12 +18,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|capabilityStatus|String||
-|consumedUnits|Int32||
-|prepaidUnits|LicenseUnitsDetail||
-|servicePlans|ServicePlanInfo||
-|skuId|Guid||
-|skuPartNumber|String||
+|capabilityStatus|string||
+|consumedUnits|int32||
+|prepaidUnits|licenseUnitsDetail||
+|servicePlans|servicePlanInfo||
+|skuId|guid||
+|skuPartNumber|string||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [subscribedSku](../resources/subscribedsku.md) object in the response body.
@@ -37,12 +37,11 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscribedSkus/<objectId>
 Content-type: application/json
-Content-length: 388
+Content-length: 356
 
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
-  "objectId": "objectId-value",
   "prepaidUnits": {
     "enabled": 99,
     "suspended": 99,

@@ -4,31 +4,32 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "attachments",
+    "inReplyTo"
   ],
   "@odata.type": "microsoft.graph.post"
 }-->
 
 ```json
 {
-  "body": {"@odata.type": "microsoft.graph.itembody"},
-  "categories": ["String-value"],
-  "changeKey": "String-value",
-  "conversationId": "String-value",
-  "conversationThreadId": "String-value",
-  "createdDateTime": "String (timestamp)",
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "categories": ["string"],
+  "changeKey": "string",
+  "conversationId": "string",
+  "conversationThreadId": "string",
+  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
-  "id": "String-value (identifier)",
-  "lastModifiedDateTime": "String (timestamp)",
+  "id": "string (identifier)",
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "newParticipants": [{"@odata.type": "microsoft.graph.recipient"}],
-  "receivedDateTime": "String (timestamp)",
-  "sender": {
+  "receivedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "sender": {"@odata.type": "microsoft.graph.recipient"}
 }
 
 ```

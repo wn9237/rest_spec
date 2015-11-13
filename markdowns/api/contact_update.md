@@ -20,43 +20,43 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|assistantName|String|The name of the contact's assistant.|
-|birthday|DateTimeOffset|The contact's birthday.|
-|businessAddress|PhysicalAddress|The contact's business address.|
-|businessHomePage|String|The business home page of the contact.|
-|businessPhones|String|The contact's business phone numbers.|
-|categories|String|The categories associated with the contact.|
-|changeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|children|String||
-|companyName|String|The name of the contact's company.|
-|createdDateTime|DateTimeOffset||
-|department|String|The name for the department in which the contact works.|
-|displayName|String|The display name for the contact.|
-|emailAddresses|EmailAddress|The contact's email addresses.|
-|fileAs|String|The name the contact is filed under.|
-|generation|String|The contact's generation.|
-|givenName|String|The given name (first name) of the contact.|
-|homeAddress|PhysicalAddress|The contact's home address.|
-|homePhones|String|The contact's home phone numbers.|
-|imAddresses|String|The contact's instant messaging (IM) addresses.|
-|initials|String|The contact's initials.|
-|jobTitle|String|The contact’s job title.|
-|lastModifiedDateTime|DateTimeOffset||
-|manager|String|The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
-|middleName|String|The contact's middle name.|
-|mobilePhone1|String|The contact's mobile phone number.|
-|nickName|String|The contact's nickname.|
-|officeLocation|String|The location of the contact's office.|
-|otherAddress|PhysicalAddress|Other addresses for the contact.|
-|parentFolderId|String|The ID of the contact's parent folder.|
-|personalNotes|String||
-|profession|String|The contact's profession.|
-|spouseName|String||
-|surname|String|The contact's surname (family name or last name).|
-|title|String|The contact's title.|
-|yomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional.|
-|yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
-|yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
+|assistantName|string|The name of the contact's assistant.|
+|birthday|dateTimeOffset|The contact's birthday.|
+|businessAddress|physicalAddress|The contact's business address.|
+|businessHomePage|string|The business home page of the contact.|
+|businessPhones|string|The contact's business phone numbers.|
+|categories|string|The categories associated with the contact.|
+|changeKey|string|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|children|string||
+|companyName|string|The name of the contact's company.|
+|createdDateTime|dateTimeOffset||
+|department|string|The name for the department in which the contact works.|
+|displayName|string|The display name for the contact.|
+|emailAddresses|emailAddress|The contact's email addresses.|
+|fileAs|string|The name the contact is filed under.|
+|generation|string|The contact's generation.|
+|givenName|string|The given name (first name) of the contact.|
+|homeAddress|physicalAddress|The contact's home address.|
+|homePhones|string|The contact's home phone numbers.|
+|imAddresses|string|The contact's instant messaging (IM) addresses.|
+|initials|string|The contact's initials.|
+|jobTitle|string|The contact’s job title.|
+|lastModifiedDateTime|dateTimeOffset||
+|manager|string|The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
+|middleName|string|The contact's middle name.|
+|mobilePhone1|string|The contact's mobile phone number.|
+|nickName|string|The contact's nickname.|
+|officeLocation|string|The location of the contact's office.|
+|otherAddress|physicalAddress|Other addresses for the contact.|
+|parentFolderId|string|The ID of the contact's parent folder.|
+|personalNotes|string||
+|profession|string|The contact's profession.|
+|spouseName|string||
+|surname|string|The contact's surname (family name or last name).|
+|title|string|The contact's title.|
+|yomiCompanyName|string|The phonetic Japanese company name of the contact. This property is optional.|
+|yomiGivenName|string|The phonetic Japanese given name (first name) of the contact. This property is optional.|
+|yomiSurname|string|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
@@ -70,7 +70,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/contacts/<id>
 Content-type: application/json
-Content-length: 1977
+Content-length: 1957
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -142,8 +142,7 @@ Content-length: 1977
   "changeKey": "changeKey-value",
   "categories": [
     "categories-value"
-  ],
-  "id": "id-value"
+  ]
 }
 ```
 ##### Response

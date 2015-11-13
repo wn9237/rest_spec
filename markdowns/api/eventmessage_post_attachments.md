@@ -1,6 +1,6 @@
-# Create Attachment
+# Create attachment
 
-Use this API to create a new Attachment.
+Use this API to create a new attachment.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -15,11 +15,11 @@ The following **scopes** are required to execute this API:
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
+In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
+If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,7 +31,20 @@ Here is an example of the request.
 ```http
 
 ```
-In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
+In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
+```http
+
+Content-type: application/json
+Content-length: 142
+
+{
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -58,7 +71,7 @@ Content-length: 162
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Attachment",
+  "description": "Create attachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

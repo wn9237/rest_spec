@@ -16,90 +16,84 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "city": "String-value",
-  "country": "String-value",
-  "deletionTimestamp": "String (timestamp)",
-  "department": "String-value",
+  "city": "string",
+  "country": "string",
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "department": "string",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "facsimileTelephoneNumber": "String-value",
-  "givenName": "String-value",
-  "jobTitle": "String-value",
-  "lastDirSyncTime": "String (timestamp)",
-  "mail": "String-value",
-  "mailNickname": "String-value",
-  "mobile": "String-value",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "physicalDeliveryOfficeName": "String-value",
-  "postalCode": "String-value",
-  "provisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.provisioningerror"
-    }
-  ],
-  "proxyAddresses": [
-    "String-value"
-  ],
-  "sipProxyAddress": "String-value",
-  "state": "String-value",
-  "streetAddress": "String-value",
-  "surname": "String-value",
-  "telephoneNumber": "String-value",
-  "thumbnailPhoto": "Stream-value"
+  "displayName": "string",
+  "facsimileTelephoneNumber": "string",
+  "givenName": "string",
+  "jobTitle": "string",
+  "lastDirSyncTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "mail": "string",
+  "mailNickname": "string",
+  "mobile": "string",
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "physicalDeliveryOfficeName": "string",
+  "postalCode": "string",
+  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningError"}],
+  "proxyAddresses": ["string"],
+  "sipProxyAddress": "string",
+  "state": "string",
+  "streetAddress": "string",
+  "surname": "string",
+  "telephoneNumber": "string",
+  "thumbnailPhoto": "stream"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|city|String||
-|country|String||
-|deletionTimestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|department|String||
-|dirSyncEnabled|Boolean||
-|displayName|String||
-|facsimileTelephoneNumber|String||
-|givenName|String||
-|jobTitle|String||
-|lastDirSyncTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|mail|String||
-|mailNickname|String||
-|mobile|String||
-|objectId|String| Read-only.|
-|objectType|String||
-|physicalDeliveryOfficeName|String||
-|postalCode|String||
-|provisioningErrors|[ProvisioningError](provisioningerror.md) collection||
-|proxyAddresses|String collection||
-|sipProxyAddress|String||
-|state|String||
-|streetAddress|String||
-|surname|String||
-|telephoneNumber|String||
-|thumbnailPhoto|Stream||
+|city|string||
+|country|string||
+|deletionTimestamp|[dateTimeOffset](datetimeoffset.md)||
+|department|string||
+|dirSyncEnabled|boolean||
+|displayName|string||
+|facsimileTelephoneNumber|string||
+|givenName|string||
+|jobTitle|string||
+|lastDirSyncTime|[dateTimeOffset](datetimeoffset.md)||
+|mail|string||
+|mailNickname|string||
+|mobile|string||
+|objectId|string| Read-only.|
+|objectType|string||
+|physicalDeliveryOfficeName|string||
+|postalCode|string||
+|provisioningErrors|[provisioningError](provisioningerror.md) collection||
+|proxyAddresses|string collection||
+|sipProxyAddress|string||
+|state|string||
+|streetAddress|string||
+|surname|string||
+|telephoneNumber|string||
+|thumbnailPhoto|stream||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|directReports|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
-|manager|[DirectoryObject](directoryobject.md)| Read-only.|
-|memberOf|[DirectoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|directReports|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|manager|[directoryObject](directoryobject.md)| Read-only.|
+|memberOf|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get orgContact](../api/orgcontact_get.md) | [orgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
-|[Create directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
-|[List directReports](../api/orgcontact_list_directreports.md) |[DirectoryObject](directoryobject.md) collection| Get a directReport object collection.|
-|[Create memberOf](../api/orgcontact_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
-|[List memberOf](../api/orgcontact_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
+|[Create directReport](../api/orgcontact_post_directreports.md) |[directoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
+|[List directReports](../api/orgcontact_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get a directReport object collection.|
+|[Create memberOf](../api/orgcontact_post_memberof.md) |[directoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
+|[List memberOf](../api/orgcontact_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get a memberOf object collection.|
 |[Update](../api/orgcontact_update.md) | [orgContact](orgcontact.md)	|Update orgContact object. |
 |[Delete](../api/orgcontact_delete.md) | None |Delete orgContact object. |
-|[checkMemberGroups](../api/orgcontact_checkmembergroups.md)|String collection||
-|[getMemberGroups](../api/orgcontact_getmembergroups.md)|String collection||
-|[getMemberObjects](../api/orgcontact_getmemberobjects.md)|String collection||
+|[checkMemberGroups](../api/orgcontact_checkmembergroups.md)|string collection||
+|[getMemberGroups](../api/orgcontact_getmembergroups.md)|string collection||
+|[getMemberObjects](../api/orgcontact_getmemberobjects.md)|string collection||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

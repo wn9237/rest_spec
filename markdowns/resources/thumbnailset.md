@@ -16,26 +16,18 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String-value (identifier)",
-  "large": {
-    "@odata.type": "microsoft.graph.thumbnail"
-  },
-  "medium": {
-    "@odata.type": "microsoft.graph.thumbnail"
-  },
-  "small": {
-    "@odata.type": "microsoft.graph.thumbnail"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.thumbnail"
-  }
+  "id": "string (identifier)",
+  "large": {"@odata.type": "microsoft.graph.thumbnail"},
+  "medium": {"@odata.type": "microsoft.graph.thumbnail"},
+  "small": {"@odata.type": "microsoft.graph.thumbnail"},
+  "source": {"@odata.type": "microsoft.graph.thumbnail"}
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|The id within the item. Read-only.|
+|id|string|The id within the item. Read-only.|
 |large|[thumbnail](thumbnail.md)|A 1920x1920 scaled thumbnail.|
 |medium|[thumbnail](thumbnail.md)|A 176x176 scaled thumbnail.|
 |small|[thumbnail](thumbnail.md)|A 48x48 cropped thumbnail.|

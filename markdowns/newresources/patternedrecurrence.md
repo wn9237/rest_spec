@@ -4,7 +4,7 @@ The recurrence pattern and range.
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,8 +16,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "pattern": {"@odata.type": "microsoft.graph.recurrencepattern"},
-  "range": {
+  "pattern": {"@odata.type": "microsoft.graph.recurrencePattern"},
+  "range": {"@odata.type": "microsoft.graph.recurrenceRange"}
 }
 
 ```

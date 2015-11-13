@@ -16,9 +16,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "content": "Stream-value",
+  "content": "stream",
   "height": 1024,
-  "url": "String-value",
+  "url": "string",
   "width": 1024
 }
 
@@ -26,10 +26,10 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|content|Stream|The content stream.|
-|height|Int32|The height of the thumbnail, in pixels.|
-|url|String|The URL used to fetch the thumbnail content.|
-|width|Int32|The width of the thumbnail, in pixels.|
+|content|stream|The content stream.|
+|height|int32|The height of the thumbnail, in pixels.|
+|url|string|The URL used to fetch the thumbnail content.|
+|width|int32|The width of the thumbnail, in pixels.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

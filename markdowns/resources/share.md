@@ -16,19 +16,17 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String-value (identifier)",
-  "name": "String-value",
-  "owner": {
-    "@odata.type": "microsoft.graph.identityset"
-  }
+  "id": "string (identifier)",
+  "name": "string",
+  "owner": {"@odata.type": "microsoft.graph.identitySet"}
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
-|name|String||
+|id|string| Read-only.|
+|name|string||
 |owner|[identitySet](identityset.md)||
 
 ### Relationships

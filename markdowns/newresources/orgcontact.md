@@ -4,43 +4,45 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "directReports",
+    "manager",
+    "memberOf"
   ],
   "@odata.type": "microsoft.graph.orgcontact"
 }-->
 
 ```json
 {
-  "city": "String-value",
-  "country": "String-value",
-  "deletionTimestamp": "String (timestamp)",
-  "department": "String-value",
+  "city": "string",
+  "country": "string",
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "department": "string",
   "dirSyncEnabled": true,
-  "displayName": "String-value",
-  "facsimileTelephoneNumber": "String-value",
-  "givenName": "String-value",
-  "jobTitle": "String-value",
-  "lastDirSyncTime": "String (timestamp)",
-  "mail": "String-value",
-  "mailNickname": "String-value",
-  "mobile": "String-value",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "physicalDeliveryOfficeName": "String-value",
-  "postalCode": "String-value",
-  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningerror"}],
-  "proxyAddresses": ["String-value"],
-  "sipProxyAddress": "String-value",
-  "state": "String-value",
-  "streetAddress": "String-value",
-  "surname": "String-value",
-  "telephoneNumber": "String-value",
-  "thumbnailPhoto": "Stream-value"
+  "displayName": "string",
+  "facsimileTelephoneNumber": "string",
+  "givenName": "string",
+  "jobTitle": "string",
+  "lastDirSyncTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "mail": "string",
+  "mailNickname": "string",
+  "mobile": "string",
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "physicalDeliveryOfficeName": "string",
+  "postalCode": "string",
+  "provisioningErrors": [{"@odata.type": "microsoft.graph.provisioningError"}],
+  "proxyAddresses": ["string"],
+  "sipProxyAddress": "string",
+  "state": "string",
+  "streetAddress": "string",
+  "surname": "string",
+  "telephoneNumber": "string",
+  "thumbnailPhoto": "stream"
 }
 
 ```

@@ -101,6 +101,9 @@
   "application/owners": {
     "description": "Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Inherited from [DirectoryObject]."
   },
+  "appliedcategoriescollection": {
+    "description": ""
+  },
   "approle": {
     "description": "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the [ServicePrincipal] entity and of the [Application] entity is a collection of **AppRole**.\r"
   },
@@ -200,7 +203,7 @@
   "attachment/isinline": {
     "description": ""
   },
-  "attachment/datetimelastmodified": {
+  "attachment/lastmodifieddatetime": {
     "description": ""
   },
   "attachment/id": {
@@ -267,6 +270,33 @@
     "description": ""
   },
   "audio/year": {
+    "description": ""
+  },
+  "bucket": {
+    "description": ""
+  },
+  "bucket/name": {
+    "description": ""
+  },
+  "bucket/planid": {
+    "description": ""
+  },
+  "bucket/orderhint": {
+    "description": ""
+  },
+  "bucket/totaltasks": {
+    "description": ""
+  },
+  "bucket/activetasks": {
+    "description": ""
+  },
+  "bucket/id": {
+    "description": ""
+  },
+  "bucket/version": {
+    "description": ""
+  },
+  "bucket/tasks": {
     "description": ""
   },
   "calendar": {
@@ -422,11 +452,11 @@
   "contact/categories": {
     "description": "The categories associated with the contact."
   },
-  "contact/datetimecreated": {
-    "description": "The time the contact was created."
+  "contact/createddatetime": {
+    "description": ""
   },
-  "contact/datetimelastmodified": {
-    "description": "The time the contact was modified."
+  "contact/lastmodifieddatetime": {
+    "description": ""
   },
   "contact/id": {
     "description": "The contact's unique identifier."
@@ -464,7 +494,7 @@
   "conversation/hasattachments": {
     "description": "Indicates whether the Conversation has at least one attachment."
   },
-  "conversation/datetimelastdelivered": {
+  "conversation/lastdelivereddatetime": {
     "description": ""
   },
   "conversation/uniquesenders": {
@@ -491,7 +521,7 @@
   "conversationthread/hasattachments": {
     "description": ""
   },
-  "conversationthread/datetimelastdelivered": {
+  "conversationthread/lastdelivereddatetime": {
     "description": ""
   },
   "conversationthread/uniquesenders": {
@@ -510,6 +540,111 @@
     "description": ""
   },
   "conversationthread/posts": {
+    "description": ""
+  },
+  "copynotebookmodel": {
+    "description": ""
+  },
+  "copynotebookmodel/isdefault": {
+    "description": ""
+  },
+  "copynotebookmodel/userrole": {
+    "description": ""
+  },
+  "copynotebookmodel/isshared": {
+    "description": ""
+  },
+  "copynotebookmodel/sectionsurl": {
+    "description": ""
+  },
+  "copynotebookmodel/sectiongroupsurl": {
+    "description": ""
+  },
+  "copynotebookmodel/links": {
+    "description": ""
+  },
+  "copynotebookmodel/name": {
+    "description": ""
+  },
+  "copynotebookmodel/createdby": {
+    "description": ""
+  },
+  "copynotebookmodel/lastmodifiedby": {
+    "description": ""
+  },
+  "copynotebookmodel/lastmodifiedtime": {
+    "description": ""
+  },
+  "copynotebookmodel/id": {
+    "description": ""
+  },
+  "copynotebookmodel/self": {
+    "description": ""
+  },
+  "copynotebookmodel/createdtime": {
+    "description": ""
+  },
+  "copypagemodel": {
+    "description": ""
+  },
+  "copypagemodel/parentsection": {
+    "description": ""
+  },
+  "copypagemodel/parentnotebook": {
+    "description": ""
+  },
+  "copypagemodel/title": {
+    "description": ""
+  },
+  "copypagemodel/createdbyappid": {
+    "description": ""
+  },
+  "copypagemodel/links": {
+    "description": ""
+  },
+  "copypagemodel/contenturl": {
+    "description": ""
+  },
+  "copypagemodel/lastmodifiedtime": {
+    "description": ""
+  },
+  "copypagemodel/id": {
+    "description": ""
+  },
+  "copypagemodel/self": {
+    "description": ""
+  },
+  "copypagemodel/createdtime": {
+    "description": ""
+  },
+  "copysectionmodel": {
+    "description": ""
+  },
+  "copysectionmodel/isdefault": {
+    "description": ""
+  },
+  "copysectionmodel/pagesurl": {
+    "description": ""
+  },
+  "copysectionmodel/name": {
+    "description": ""
+  },
+  "copysectionmodel/createdby": {
+    "description": ""
+  },
+  "copysectionmodel/lastmodifiedby": {
+    "description": ""
+  },
+  "copysectionmodel/lastmodifiedtime": {
+    "description": ""
+  },
+  "copysectionmodel/id": {
+    "description": ""
+  },
+  "copysectionmodel/self": {
+    "description": ""
+  },
+  "copysectionmodel/createdtime": {
     "description": ""
   },
   "deleted": {
@@ -609,6 +744,15 @@
     "description": ""
   },
   "deviceconfiguration/deletiontimestamp": {
+    "description": ""
+  },
+  "diagnostic": {
+    "description": ""
+  },
+  "diagnostic/message": {
+    "description": ""
+  },
+  "diagnostic/url": {
     "description": ""
   },
   "directorylinkchange": {
@@ -865,11 +1009,11 @@
   "event/categories": {
     "description": "The categories associated with the event."
   },
-  "event/datetimecreated": {
-    "description": "The date and time that the event was created."
+  "event/createddatetime": {
+    "description": ""
   },
-  "event/datetimelastmodified": {
-    "description": "The date and time that the event was last modified."
+  "event/lastmodifieddatetime": {
+    "description": ""
   },
   "event/id": {
     "description": ""
@@ -931,10 +1075,10 @@
   "eventmessage/uniquebody": {
     "description": ""
   },
-  "eventmessage/datetimereceived": {
+  "eventmessage/receiveddatetime": {
     "description": ""
   },
-  "eventmessage/datetimesent": {
+  "eventmessage/sentdatetime": {
     "description": ""
   },
   "eventmessage/isdeliveryreceiptrequested": {
@@ -958,10 +1102,10 @@
   "eventmessage/categories": {
     "description": ""
   },
-  "eventmessage/datetimecreated": {
+  "eventmessage/createddatetime": {
     "description": ""
   },
-  "eventmessage/datetimelastmodified": {
+  "eventmessage/lastmodifieddatetime": {
     "description": ""
   },
   "eventmessage/id": {
@@ -1018,6 +1162,30 @@
   "extensionproperty/deletiontimestamp": {
     "description": ""
   },
+  "externallink": {
+    "description": ""
+  },
+  "externallink/href": {
+    "description": ""
+  },
+  "externalreference": {
+    "description": ""
+  },
+  "externalreference/alias": {
+    "description": ""
+  },
+  "externalreference/type": {
+    "description": ""
+  },
+  "externalreference/previewpriority": {
+    "description": ""
+  },
+  "externalreference/modifiedby": {
+    "description": ""
+  },
+  "externalreference/modifieddate": {
+    "description": ""
+  },
   "externalreferencecollection": {
     "description": ""
   },
@@ -1048,7 +1216,7 @@
   "fileattachment/isinline": {
     "description": ""
   },
-  "fileattachment/datetimelastmodified": {
+  "fileattachment/lastmodifieddatetime": {
     "description": ""
   },
   "fileattachment/id": {
@@ -1208,6 +1376,9 @@
     "description": ""
   },
   "group/drive": {
+    "description": ""
+  },
+  "group/details": {
     "description": ""
   },
   "group/tasks": {
@@ -1372,7 +1543,7 @@
   "itemattachment/isinline": {
     "description": ""
   },
-  "itemattachment/datetimelastmodified": {
+  "itemattachment/lastmodifieddatetime": {
     "description": ""
   },
   "itemattachment/id": {
@@ -1516,10 +1687,10 @@
   "message/uniquebody": {
     "description": ""
   },
-  "message/datetimereceived": {
+  "message/receiveddatetime": {
     "description": ""
   },
-  "message/datetimesent": {
+  "message/sentdatetime": {
     "description": ""
   },
   "message/isdeliveryreceiptrequested": {
@@ -1543,10 +1714,10 @@
   "message/categories": {
     "description": ""
   },
-  "message/datetimecreated": {
+  "message/createddatetime": {
     "description": ""
   },
-  "message/datetimelastmodified": {
+  "message/lastmodifieddatetime": {
     "description": ""
   },
   "message/id": {
@@ -1558,46 +1729,91 @@
   "message/extensions": {
     "description": ""
   },
-  "notification": {
+  "myorganization": {
     "description": ""
   },
-  "notification/id": {
+  "myorganization/id": {
     "description": ""
   },
-  "notification/displayname": {
+  "myorganization/sitecollections": {
     "description": ""
   },
-  "notification/notificationtype": {
+  "notebook": {
     "description": ""
   },
-  "notification/notificationtarget": {
+  "notebook/isdefault": {
+    "description": "Indicates whether this is the user's default notebook."
+  },
+  "notebook/userrole": {
+    "description": "One of three values: Owner, Contributor, or Reader. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook."
+  },
+  "notebook/isshared": {
+    "description": "Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner."
+  },
+  "notebook/sectionsurl": {
+    "description": "The URL for the sections navigation property, which returns all the sections in the notebook."
+  },
+  "notebook/sectiongroupsurl": {
+    "description": "The URL for the sectionGroups navigation property, which returns all the section groups in the notebook."
+  },
+  "notebook/links": {
+    "description": "The value of oneNoteClientURL can be used to open the notebook using the OneNote native client app if it's installed. The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client."
+  },
+  "notebook/name": {
+    "description": "The name of the notebook."
+  },
+  "notebook/createdby": {
+    "description": "The user who created the notebook."
+  },
+  "notebook/lastmodifiedby": {
+    "description": "The user who last modified the notebook."
+  },
+  "notebook/lastmodifiedtime": {
+    "description": "The date and time when the notebook was last modified."
+  },
+  "notebook/id": {
+    "description": "The unique identifier of the notebook."
+  },
+  "notebook/self": {
+    "description": "The endpoint where you can get details about the notebook."
+  },
+  "notebook/createdtime": {
+    "description": "The date and time when the notebook was created."
+  },
+  "notebook/sections": {
+    "description": "The sections in the notebook. Can be navigated to using the sectionsUrl property or expanded in a GET request."
+  },
+  "notebook/sectiongroups": {
+    "description": "The section groups in the notebook. Can be navigated to using the sectionGroupsUrl property or expanded in a GET request."
+  },
+  "notebooklinks": {
     "description": ""
   },
-  "notificationrule": {
+  "notebooklinks/onenoteclienturl": {
     "description": ""
   },
-  "notificationrule/id": {
+  "notebooklinks/onenoteweburl": {
     "description": ""
   },
-  "notificationrule/username": {
+  "notes": {
     "description": ""
   },
-  "notificationrule/userid": {
+  "notes/id": {
     "description": ""
   },
-  "notificationrule/rolename": {
+  "notes/notebooks": {
     "description": ""
   },
-  "notificationrule/roleid": {
+  "notes/sections": {
     "description": ""
   },
-  "notificationrule/notificationid": {
+  "notes/sectiongroups": {
     "description": ""
   },
-  "notificationrule/notificationname": {
+  "notes/pages": {
     "description": ""
   },
-  "notificationrule/event": {
+  "notes/resources": {
     "description": ""
   },
   "oauth2permission": {
@@ -1798,13 +2014,58 @@
   "outlookitem/categories": {
     "description": ""
   },
-  "outlookitem/datetimecreated": {
+  "outlookitem/createddatetime": {
     "description": ""
   },
-  "outlookitem/datetimelastmodified": {
+  "outlookitem/lastmodifieddatetime": {
     "description": ""
   },
   "outlookitem/id": {
+    "description": ""
+  },
+  "page": {
+    "description": ""
+  },
+  "page/title": {
+    "description": "The title of the page "
+  },
+  "page/createdbyappid": {
+    "description": "The unique identifier of the application that created the page "
+  },
+  "page/links": {
+    "description": "The oneNoteClientURL link to open the page in the OneNote native client if it 's installed, and oneNoteWebUrl to open the page in OneNote Online"
+  },
+  "page/contenturl": {
+    "description": "The URL for the page's HTML content "
+  },
+  "page/content": {
+    "description": ""
+  },
+  "page/lastmodifiedtime": {
+    "description": ""
+  },
+  "page/id": {
+    "description": "The unique identifier of the page "
+  },
+  "page/self": {
+    "description": ""
+  },
+  "page/createdtime": {
+    "description": "The date and time when the page was created in UTC format "
+  },
+  "page/parentsection": {
+    "description": ""
+  },
+  "page/parentnotebook": {
+    "description": "A page in a OneNote section "
+  },
+  "pagelinks": {
+    "description": ""
+  },
+  "pagelinks/onenoteclienturl": {
+    "description": ""
+  },
+  "pagelinks/onenoteweburl": {
     "description": ""
   },
   "passwordcredential": {
@@ -1833,6 +2094,21 @@
   },
   "passwordprofile/forcechangepasswordnextlogin": {
     "description": "                **true** if the user must change her password on the next login; otherwise **false**.            "
+  },
+  "patchcontentcommand": {
+    "description": ""
+  },
+  "patchcontentcommand/action": {
+    "description": ""
+  },
+  "patchcontentcommand/target": {
+    "description": ""
+  },
+  "patchcontentcommand/content": {
+    "description": ""
+  },
+  "patchcontentcommand/position": {
+    "description": ""
   },
   "patternedrecurrence": {
     "description": "The recurrence pattern and range."
@@ -1924,7 +2200,22 @@
   "plan/tasks": {
     "description": ""
   },
+  "plan/buckets": {
+    "description": ""
+  },
   "plan/details": {
+    "description": ""
+  },
+  "plan/timeline": {
+    "description": ""
+  },
+  "plan/assignedtotaskboard": {
+    "description": ""
+  },
+  "plan/statustaskboard": {
+    "description": ""
+  },
+  "plan/buckettaskboard": {
     "description": ""
   },
   "plandetails": {
@@ -1933,10 +2224,55 @@
   "plandetails/sharedwith": {
     "description": ""
   },
+  "plandetails/category0description": {
+    "description": ""
+  },
+  "plandetails/category1description": {
+    "description": ""
+  },
+  "plandetails/category2description": {
+    "description": ""
+  },
+  "plandetails/category3description": {
+    "description": ""
+  },
+  "plandetails/category4description": {
+    "description": ""
+  },
+  "plandetails/category5description": {
+    "description": ""
+  },
   "plandetails/id": {
     "description": ""
   },
   "plandetails/version": {
+    "description": ""
+  },
+  "plantaskboard": {
+    "description": ""
+  },
+  "plantaskboard/type": {
+    "description": ""
+  },
+  "plantaskboard/id": {
+    "description": ""
+  },
+  "plantaskboard/version": {
+    "description": ""
+  },
+  "plantimeline": {
+    "description": ""
+  },
+  "plantimeline/displaysettings": {
+    "description": ""
+  },
+  "plantimeline/lockedwidth": {
+    "description": ""
+  },
+  "plantimeline/id": {
+    "description": ""
+  },
+  "plantimeline/version": {
     "description": ""
   },
   "post": {
@@ -1945,7 +2281,7 @@
   "post/body": {
     "description": ""
   },
-  "post/datetimereceived": {
+  "post/receiveddatetime": {
     "description": ""
   },
   "post/hasattachments": {
@@ -1972,10 +2308,10 @@
   "post/categories": {
     "description": ""
   },
-  "post/datetimecreated": {
+  "post/createddatetime": {
     "description": ""
   },
-  "post/datetimelastmodified": {
+  "post/lastmodifieddatetime": {
     "description": ""
   },
   "post/id": {
@@ -1988,201 +2324,6 @@
     "description": ""
   },
   "post/inreplyto": {
-    "description": ""
-  },
-  "privilegedoperationevent": {
-    "description": ""
-  },
-  "privilegedoperationevent/id": {
-    "description": ""
-  },
-  "privilegedoperationevent/userid": {
-    "description": ""
-  },
-  "privilegedoperationevent/username": {
-    "description": ""
-  },
-  "privilegedoperationevent/usermail": {
-    "description": ""
-  },
-  "privilegedoperationevent/roleid": {
-    "description": ""
-  },
-  "privilegedoperationevent/rolename": {
-    "description": ""
-  },
-  "privilegedoperationevent/expirationtime": {
-    "description": ""
-  },
-  "privilegedoperationevent/creationtime": {
-    "description": ""
-  },
-  "privilegedoperationevent/requestorid": {
-    "description": ""
-  },
-  "privilegedoperationevent/requestorname": {
-    "description": ""
-  },
-  "privilegedoperationevent/tenantid": {
-    "description": ""
-  },
-  "privilegedoperationevent/requesttype": {
-    "description": ""
-  },
-  "privilegedoperationevent/additionalinformation": {
-    "description": ""
-  },
-  "privilegedrole": {
-    "description": ""
-  },
-  "privilegedrole/id": {
-    "description": ""
-  },
-  "privilegedrole/name": {
-    "description": ""
-  },
-  "privilegedrole/summary": {
-    "description": ""
-  },
-  "privilegedrole/settings": {
-    "description": ""
-  },
-  "privilegedrole/assignments": {
-    "description": ""
-  },
-  "privilegedroleassignment": {
-    "description": ""
-  },
-  "privilegedroleassignment/userid": {
-    "description": ""
-  },
-  "privilegedroleassignment/roleid": {
-    "description": ""
-  },
-  "privilegedroleassignment/iselevated": {
-    "description": ""
-  },
-  "privilegedroleassignment/expirationtime": {
-    "description": ""
-  },
-  "privilegedroleassignment/resultmessage": {
-    "description": ""
-  },
-  "privilegedroleassignment/roleinfo": {
-    "description": ""
-  },
-  "privilegedrolesettings": {
-    "description": ""
-  },
-  "privilegedrolesettings/minelevationduration": {
-    "description": ""
-  },
-  "privilegedrolesettings/maxelavationduration": {
-    "description": ""
-  },
-  "privilegedrolesettings/elevationduration": {
-    "description": ""
-  },
-  "privilegedrolesettings/roleid": {
-    "description": ""
-  },
-  "privilegedrolesettings/notificationtouseronelevation": {
-    "description": ""
-  },
-  "privilegedrolesettings/ticketinginfoonelevation": {
-    "description": ""
-  },
-  "privilegedrolesettings/mfaonelevation": {
-    "description": ""
-  },
-  "privilegedrolesettings/lastglobaladmin": {
-    "description": ""
-  },
-  "privilegedrolesummary": {
-    "description": ""
-  },
-  "privilegedrolesummary/roleid": {
-    "description": ""
-  },
-  "privilegedrolesummary/status": {
-    "description": ""
-  },
-  "privilegedrolesummary/userscount": {
-    "description": ""
-  },
-  "privilegedrolesummary/managedcount": {
-    "description": ""
-  },
-  "privilegedrolesummary/elevatedcount": {
-    "description": ""
-  },
-  "privilegedrolesummary/mfaenabled": {
-    "description": ""
-  },
-  "privilegedsecurityalert": {
-    "description": ""
-  },
-  "privilegedsecurityalert/alertid": {
-    "description": ""
-  },
-  "privilegedsecurityalert/numberofaffecteditems": {
-    "description": ""
-  },
-  "privilegedsecurityalert/additionaldata": {
-    "description": ""
-  },
-  "privilegedsecurityalert/alertname": {
-    "description": ""
-  },
-  "privilegedsecurityalert/alertdescription": {
-    "description": ""
-  },
-  "privilegedsecurityalert/lastmodifiedtime": {
-    "description": ""
-  },
-  "privilegedsecurityalert/lastscannedtime": {
-    "description": ""
-  },
-  "privilegedsecurityalert/severitylevel": {
-    "description": ""
-  },
-  "privilegedsecurityalert/alerttype": {
-    "description": ""
-  },
-  "privilegedsecurityalert/securityimpact": {
-    "description": ""
-  },
-  "privilegedsecurityalert/mitigationsteps": {
-    "description": ""
-  },
-  "privilegedsecurityalert/howtoprevent": {
-    "description": ""
-  },
-  "privilegedsecurityalert/wasdismissed": {
-    "description": ""
-  },
-  "privilegedsecurityalert/isactive": {
-    "description": ""
-  },
-  "privilegedsecurityalert/isresolvable": {
-    "description": ""
-  },
-  "privilegedsecurityalert/isconfigurable": {
-    "description": ""
-  },
-  "privilegedsecurityalert/status": {
-    "description": ""
-  },
-  "privilegedsignupstatus": {
-    "description": ""
-  },
-  "privilegedsignupstatus/tenantid": {
-    "description": ""
-  },
-  "privilegedsignupstatus/isregistered": {
-    "description": ""
-  },
-  "privilegedsignupstatus/status": {
     "description": ""
   },
   "provisionedplan": {
@@ -2305,7 +2446,7 @@
   "referenceattachment/isinline": {
     "description": ""
   },
-  "referenceattachment/datetimelastmodified": {
+  "referenceattachment/lastmodifieddatetime": {
     "description": ""
   },
   "referenceattachment/id": {
@@ -2319,6 +2460,21 @@
   },
   "requiredresourceaccess/resourceaccess": {
     "description": "The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource."
+  },
+  "resource": {
+    "description": ""
+  },
+  "resource/id": {
+    "description": "The unique id of this resource. "
+  },
+  "resource/self": {
+    "description": ""
+  },
+  "resource/content": {
+    "description": "A stream of the content of this resource. "
+  },
+  "resource/contenturl": {
+    "description": "A Url to which a GET request can be sent to retrieve this resource. "
   },
   "resourceaccess": {
     "description": "Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the [RequiredResourceAccess] type is a collection of **ResourceAccess**.\r"
@@ -2342,6 +2498,87 @@
     "description": ""
   },
   "searchresult/onclicktelemetryurl": {
+    "description": ""
+  },
+  "section": {
+    "description": ""
+  },
+  "section/isdefault": {
+    "description": "Indicates whether this is the user's default section."
+  },
+  "section/pagesurl": {
+    "description": "The /pages endpoint where you can get details for all the pages in the section."
+  },
+  "section/name": {
+    "description": "The name of the section. "
+  },
+  "section/createdby": {
+    "description": "The user who created the section. "
+  },
+  "section/lastmodifiedby": {
+    "description": "The user who last modified the section. "
+  },
+  "section/lastmodifiedtime": {
+    "description": "The date and time when the section was last modified. "
+  },
+  "section/id": {
+    "description": "The unique identifier of the section. "
+  },
+  "section/self": {
+    "description": "The endpoint where you can get details about the section. "
+  },
+  "section/createdtime": {
+    "description": "The date and time when the section was created. "
+  },
+  "section/parentnotebook": {
+    "description": "The notebook that contains the section, expanded by default with the id, name, and self properties selected. "
+  },
+  "section/parentsectiongroup": {
+    "description": "The section group that contains the section, expanded by default with the id, name, and self properties selected. "
+  },
+  "section/pages": {
+    "description": "A section in a OneNote notebook "
+  },
+  "sectiongroup": {
+    "description": ""
+  },
+  "sectiongroup/sectionsurl": {
+    "description": "The URL for the sections navigation property, which returns all the sections in the section group."
+  },
+  "sectiongroup/sectiongroupsurl": {
+    "description": "The URL for the sectionGroups navigation property, which returns all the section groups in the section group."
+  },
+  "sectiongroup/name": {
+    "description": "The name of the section group."
+  },
+  "sectiongroup/createdby": {
+    "description": "The user who created the section group."
+  },
+  "sectiongroup/lastmodifiedby": {
+    "description": "The user who last modified the section group."
+  },
+  "sectiongroup/lastmodifiedtime": {
+    "description": "The date and time when the section group was last modified."
+  },
+  "sectiongroup/id": {
+    "description": "The unique identifier of the section group."
+  },
+  "sectiongroup/self": {
+    "description": "The endpoint where you can get details about the section group."
+  },
+  "sectiongroup/createdtime": {
+    "description": "The date and time when the section group was created."
+  },
+  "sectiongroup/parentnotebook": {
+    "description": "The notebook that contains the section group, expanded by default with the id, name, and self properties selected."
+  },
+  "sectiongroup/parentsectiongroup": {
+    "description": "The section group that contains the section group, expanded by default with the id, name, and self properties selected."
+  },
+  "sectiongroup/sections": {
+    "description": "The sections in the section group. Can be navigated to using the sectionsUrl property or expanded in a GET request."
+  },
+  "sectiongroup/sectiongroups": {
     "description": ""
   },
   "serviceplaninfo": {
@@ -2500,6 +2737,33 @@
   "sharinglink/weburl": {
     "description": ""
   },
+  "site": {
+    "description": ""
+  },
+  "site/id": {
+    "description": ""
+  },
+  "site/notes": {
+    "description": ""
+  },
+  "sitecollection": {
+    "description": ""
+  },
+  "sitecollection/id": {
+    "description": ""
+  },
+  "sitecollection/sites": {
+    "description": ""
+  },
+  "sitemetadata": {
+    "description": ""
+  },
+  "sitemetadata/sitecollectionid": {
+    "description": ""
+  },
+  "sitemetadata/siteid": {
+    "description": ""
+  },
   "specialfolder": {
     "description": ""
   },
@@ -2549,6 +2813,9 @@
   "task/planid": {
     "description": ""
   },
+  "task/bucketid": {
+    "description": ""
+  },
   "task/title": {
     "description": ""
   },
@@ -2579,10 +2846,16 @@
   "task/hasnotes": {
     "description": ""
   },
+  "task/previewtype": {
+    "description": ""
+  },
   "task/completeddate": {
     "description": ""
   },
   "task/numberofreferences": {
+    "description": ""
+  },
+  "task/appliedcategories": {
     "description": ""
   },
   "task/id": {
@@ -2594,10 +2867,40 @@
   "task/details": {
     "description": ""
   },
+  "task/timelineformat": {
+    "description": ""
+  },
+  "task/assignedtotaskboardformat": {
+    "description": ""
+  },
+  "task/statustaskboardformat": {
+    "description": ""
+  },
+  "task/buckettaskboardformat": {
+    "description": ""
+  },
+  "taskboardtaskformat": {
+    "description": ""
+  },
+  "taskboardtaskformat/type": {
+    "description": ""
+  },
+  "taskboardtaskformat/orderhint": {
+    "description": ""
+  },
+  "taskboardtaskformat/id": {
+    "description": ""
+  },
+  "taskboardtaskformat/version": {
+    "description": ""
+  },
   "taskdetails": {
     "description": ""
   },
   "taskdetails/notes": {
+    "description": ""
+  },
+  "taskdetails/previewtype": {
     "description": ""
   },
   "taskdetails/completedby": {
@@ -2719,6 +3022,39 @@
   },
   "thumbnailset/source": {
     "description": "A custom thumbnail image or the original image used to generate other thumbnails."
+  },
+  "timelinetaskformat": {
+    "description": ""
+  },
+  "timelinetaskformat/color": {
+    "description": ""
+  },
+  "timelinetaskformat/drawingstyle": {
+    "description": ""
+  },
+  "timelinetaskformat/labeloffsetx": {
+    "description": ""
+  },
+  "timelinetaskformat/labeloffsety": {
+    "description": ""
+  },
+  "timelinetaskformat/anchorposition": {
+    "description": ""
+  },
+  "timelinetaskformat/swimlane": {
+    "description": ""
+  },
+  "timelinetaskformat/calloutheight": {
+    "description": ""
+  },
+  "timelinetaskformat/visible": {
+    "description": ""
+  },
+  "timelinetaskformat/id": {
+    "description": ""
+  },
+  "timelinetaskformat/version": {
+    "description": ""
   },
   "uploadsession": {
     "description": ""
@@ -2849,6 +3185,9 @@
   "user/mailboxguid": {
     "description": "The GUID assigned to the user's mailbox."
   },
+  "user/emailaddress": {
+    "description": ""
+  },
   "user/aboutme": {
     "description": ""
   },
@@ -2924,8 +3263,8 @@
   "user/ownedobjects": {
     "description": "Directory objects that are owned by the user. Requires version 2013-11-08 or newer."
   },
-  "user/folders": {
-    "description": "The folders in a mailbox or folder. Navigation property."
+  "user/mailfolders": {
+    "description": ""
   },
   "user/messages": {
     "description": "The messages in a mailbox or folder. Navigation property."
@@ -2966,10 +3305,31 @@
   "user/drive": {
     "description": ""
   },
+  "user/details": {
+    "description": ""
+  },
   "user/tasks": {
     "description": ""
   },
   "user/plans": {
+    "description": ""
+  },
+  "user/notes": {
+    "description": ""
+  },
+  "userdatacollection": {
+    "description": ""
+  },
+  "userdetails": {
+    "description": ""
+  },
+  "userdetails/userdata": {
+    "description": ""
+  },
+  "userdetails/id": {
+    "description": ""
+  },
+  "userdetails/version": {
     "description": ""
   },
   "useridcollection": {

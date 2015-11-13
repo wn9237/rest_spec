@@ -2,9 +2,10 @@
 
 Used to record when a user or group is assigned to an application. In this case, the role assignment will result in an application tile showing up on the user's app access panel. This entity may also be used to grant another application (modeled as a service principal) access to a resource application in a particular role. You can create, read, update, and delete role assignments. Inherits from [DirectoryObject].
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,16 +17,16 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "creationTimestamp": "String (timestamp)",
-  "deletionTimestamp": "String (timestamp)",
-  "id": "Guid-value",
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "principalDisplayName": "String-value",
-  "principalId": "Guid-value",
-  "principalType": "String-value",
-  "resourceDisplayName": "String-value",
-  "resourceId": "Guid-value"
+  "creationTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "id": "guid",
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "principalDisplayName": "string",
+  "principalId": "guid",
+  "principalType": "string",
+  "resourceDisplayName": "string",
+  "resourceId": "guid"
 }
 
 ```

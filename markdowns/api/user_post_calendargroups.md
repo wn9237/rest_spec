@@ -1,6 +1,6 @@
-# Create CalendarGroup
+# Create calendarGroup
 
-Use this API to create a new CalendarGroup.
+Use this API to create a new calendarGroup.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -17,11 +17,11 @@ POST /drive/root/lastModifiedByUser/calendarGroups
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [CalendarGroup](../resources/calendargroup.md) object.
+In the request body, supply a JSON representation of [calendarGroup](../resources/calendargroup.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
+If successful, this method returns `201, Created` response code and [calendarGroup](../resources/calendargroup.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,20 @@ Here is an example of the request.
   "name": "create_calendargroup_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://graph.microsoft.com/v1.0/users/<objectId>/calendarGroups
 ```
-In the request body, supply a JSON representation of [CalendarGroup](../resources/calendargroup.md) object.
+In the request body, supply a JSON representation of [calendarGroup](../resources/calendargroup.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/users/<objectId>
+Content-type: application/json
+Content-length: 90
+
+{
+  "name": "name-value",
+  "classId": "classId-value",
+  "changeKey": "changeKey-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -58,7 +69,7 @@ Content-length: 110
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create CalendarGroup",
+  "description": "Create calendarGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

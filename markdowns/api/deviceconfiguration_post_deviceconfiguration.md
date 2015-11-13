@@ -1,12 +1,12 @@
-# Create DeviceConfiguration
+# Create deviceConfiguration
 
-Use this API to create a new DeviceConfiguration.
+Use this API to create a new deviceConfiguration.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /contacts
+POST /deviceConfiguration
 
 ```
 ### Request headers
@@ -15,23 +15,41 @@ POST /contacts
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [DeviceConfiguration](../resources/deviceconfiguration.md) object.
+In the request body, supply a JSON representation of [deviceConfiguration](../resources/deviceconfiguration.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
+If successful, this method returns `201, Created` response code and [deviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
 
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_deviceconfiguration_from_contacts"
+  "name": "create_deviceconfiguration_from_deviceconfiguration"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/contacts
+POST https://graph.microsoft.com/v1.0/deviceConfiguration
 ```
-In the request body, supply a JSON representation of [DeviceConfiguration](../resources/deviceconfiguration.md) object.
+In the request body, supply a JSON representation of [deviceConfiguration](../resources/deviceconfiguration.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/deviceConfiguration
+Content-type: application/json
+Content-length: 309
+
+{
+  "publicIssuerCertificates": [
+    "publicIssuerCertificates-value"
+  ],
+  "cloudPublicIssuerCertificates": [
+    "cloudPublicIssuerCertificates-value"
+  ],
+  "registrationQuota": 99,
+  "maximumRegistrationInactivityPeriod": 99,
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -63,7 +81,7 @@ Content-length: 341
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create DeviceConfiguration",
+  "description": "Create deviceConfiguration",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

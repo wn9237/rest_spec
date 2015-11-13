@@ -16,22 +16,18 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "driveType": "String-value",
-  "id": "String-value (identifier)",
-  "owner": {
-    "@odata.type": "microsoft.graph.identityset"
-  },
-  "quota": {
-    "@odata.type": "microsoft.graph.quota"
-  }
+  "driveType": "string",
+  "id": "string (identifier)",
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"}
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|driveType|String|Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`.|
-|id|String|The unique identifier of the drive. Read-only.|
+|driveType|string|Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`.|
+|id|string|The unique identifier of the drive. Read-only.|
 |owner|[identitySet](identityset.md)|The user account that owns the drive.|
 |quota|[quota](quota.md)|Information about the drive's storage space quota.|
 

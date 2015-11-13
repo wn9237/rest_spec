@@ -18,13 +18,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appDisplayName|String|            |
-|dataType|String|Specifies the type of the directory extension property being added.   Supported types are: Integer, LargeInteger, DateTime (must be specified in ISO 8601 - DateTime is stored in UTC), Binary, Boolean, and String.|
-|deletionTimestamp|DateTimeOffset||
-|isSyncedFromOnPremises|Boolean|Indicates whether the extension property is synced from the on premises directory.                            **Notes**: not nullable.            |
-|name|String|Specifies the display name for the directory extension property.                            **Notes**: not nullable.            |
-|objectType|String|A string that identifies the object type. For extension properties the value is always “ExtensionProperty”. Inherited from [DirectoryObject].|
-|targetObjects|String|The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “TenantDetail”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.            |
+|appDisplayName|string|            |
+|dataType|string|Specifies the type of the directory extension property being added.   Supported types are: Integer, LargeInteger, DateTime (must be specified in ISO 8601 - DateTime is stored in UTC), Binary, Boolean, and String.|
+|deletionTimestamp|dateTimeOffset||
+|isSyncedFromOnPremises|boolean|Indicates whether the extension property is synced from the on premises directory.                            **Notes**: not nullable.            |
+|name|string|Specifies the display name for the directory extension property.                            **Notes**: not nullable.            |
+|objectType|string|A string that identifies the object type. For extension properties the value is always “ExtensionProperty”. Inherited from [DirectoryObject].|
+|targetObjects|string|The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “TenantDetail”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.            |
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [extensionProperty](../resources/extensionproperty.md) object in the response body.
@@ -38,7 +38,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/<objectId>/extensionProperties/<objectId>
 Content-type: application/json
-Content-length: 297
+Content-length: 265
 
 {
   "appDisplayName": "appDisplayName-value",
@@ -49,7 +49,6 @@ Content-length: 297
     "targetObjects-value"
   ],
   "objectType": "objectType-value",
-  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

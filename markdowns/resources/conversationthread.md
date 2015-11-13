@@ -16,53 +16,43 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "ccRecipients": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
+  "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "hasAttachments": true,
-  "id": "String-value (identifier)",
+  "id": "string (identifier)",
   "isLocked": true,
-  "lastDeliveredDateTime": "String (timestamp)",
-  "preview": "String-value",
-  "toRecipients": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "topic": "String-value",
-  "uniqueSenders": [
-    "String-value"
-  ]
+  "lastDeliveredDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "preview": "string",
+  "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "topic": "string",
+  "uniqueSenders": ["string"]
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ccRecipients|[Recipient](recipient.md) collection||
-|hasAttachments|Boolean||
-|id|String| Read-only.|
-|isLocked|Boolean||
-|lastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|preview|String||
-|toRecipients|[Recipient](recipient.md) collection||
-|topic|String||
-|uniqueSenders|String collection||
+|ccRecipients|[recipient](recipient.md) collection||
+|hasAttachments|boolean||
+|id|string| Read-only.|
+|isLocked|boolean||
+|lastDeliveredDateTime|[dateTimeOffset](datetimeoffset.md)||
+|preview|string||
+|toRecipients|[recipient](recipient.md) collection||
+|topic|string||
+|uniqueSenders|string collection||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|posts|[Post](post.md) collection| Read-only. Nullable.|
+|posts|[post](post.md) collection| Read-only. Nullable.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
-|[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the posts collection.|
-|[List posts](../api/conversationthread_list_posts.md) |[Post](post.md) collection| Get a Post object collection.|
+|[Create post](../api/conversationthread_post_posts.md) |[post](post.md)| Create a new post by posting to the posts collection.|
+|[List posts](../api/conversationthread_list_posts.md) |[post](post.md) collection| Get a post object collection.|
 |[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)	|Update conversationThread object. |
 |[Delete](../api/conversationthread_delete.md) | None |Delete conversationThread object. |
 |[reply](../api/conversationthread_reply.md)|None||

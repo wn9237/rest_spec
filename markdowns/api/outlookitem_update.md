@@ -18,10 +18,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|categories|String||
-|changeKey|String||
-|createdDateTime|DateTimeOffset||
-|lastModifiedDateTime|DateTimeOffset||
+|categories|string||
+|changeKey|string||
+|createdDateTime|dateTimeOffset||
+|lastModifiedDateTime|dateTimeOffset||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [outlookItem](../resources/outlookitem.md) object in the response body.
@@ -35,7 +35,7 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 185
+Content-length: 165
 
 {
   "createdDateTime": "datetime-value",
@@ -43,8 +43,7 @@ Content-length: 185
   "changeKey": "changeKey-value",
   "categories": [
     "categories-value"
-  ],
-  "id": "id-value"
+  ]
 }
 ```
 ##### Response

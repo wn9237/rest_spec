@@ -20,8 +20,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|height|Int32||
-|width|Int32||
+|height|int32||
+|width|int32||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [photo](../resources/photo.md) object in the response body.
@@ -35,12 +35,11 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/photo
 Content-type: application/json
-Content-length: 53
+Content-length: 33
 
 {
   "height": 99,
-  "width": 99,
-  "id": "id-value"
+  "width": 99
 }
 ```
 ##### Response

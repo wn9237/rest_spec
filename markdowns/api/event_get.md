@@ -46,13 +46,14 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2036
+Content-length: 1934
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": "response-value",
+    "response": {
+    },
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -61,12 +62,15 @@ Content-length: 2036
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",
-  "importance": "importance-value",
-  "sensitivity": "sensitivity-value",
+  "importance": {
+  },
+  "sensitivity": {
+  },
   "start": {
     "dateTime": "dateTime-value",
     "timeZone": "timeZone-value"
@@ -86,18 +90,23 @@ Content-length: 2036
   "isOrganizer": true,
   "recurrence": {
     "pattern": {
-      "type": "type-value",
+      "type": {
+      },
       "interval": 99,
       "month": 99,
       "dayOfMonth": 99,
       "daysOfWeek": [
-        "daysOfWeek-value"
+        {
+        }
       ],
-      "firstDayOfWeek": "firstDayOfWeek-value",
-      "index": "index-value"
+      "firstDayOfWeek": {
+      },
+      "index": {
+      }
     },
     "range": {
-      "type": "type-value",
+      "type": {
+      },
       "startDate": "startDate-value",
       "endDate": "endDate-value",
       "numberOfOccurrences": 99
@@ -105,15 +114,19 @@ Content-length: 2036
   },
   "responseRequested": true,
   "seriesMasterId": "seriesMasterId-value",
-  "showAs": "showAs-value",
-  "type": "type-value",
+  "showAs": {
+  },
+  "type": {
+  },
   "attendees": [
     {
       "status": {
-        "response": "response-value",
+        "response": {
+        },
         "time": "datetime-value"
       },
-      "type": "type-value",
+      "type": {
+      },
       "emailAddress": {
         "name": "name-value",
         "address": "address-value"

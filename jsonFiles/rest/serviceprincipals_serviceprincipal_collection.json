@@ -1,7 +1,7 @@
 {
   "name": "servicePrincipals",
   "description": "",
-  "collectionOf": "ServicePrincipal",
+  "collectionOf": "servicePrincipal",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

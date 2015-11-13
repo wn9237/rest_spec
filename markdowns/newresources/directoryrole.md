@@ -2,28 +2,32 @@
 
 Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning administrator roles in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
+
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "memberOf",
+    "members",
+    "ownedObjects",
+    "owners"
   ],
   "@odata.type": "microsoft.graph.directoryrole"
 }-->
 
 ```json
 {
-  "deletionTimestamp": "String (timestamp)",
-  "description": "String-value",
-  "displayName": "String-value",
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "description": "string",
+  "displayName": "string",
   "isSystem": true,
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
+  "objectId": "string (identifier)",
+  "objectType": "string",
   "roleDisabled": true,
-  "roleTemplateId": "String-value"
+  "roleTemplateId": "string"
 }
 
 ```

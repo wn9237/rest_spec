@@ -1,6 +1,6 @@
-# Create Post
+# Create post
 
-Use this API to create a new Post.
+Use this API to create a new post.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -17,11 +17,11 @@ POST /users/<objectId>/joinedGroups/<objectId>/threads/<id>/posts
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [Post](../resources/post.md) object.
+In the request body, supply a JSON representation of [post](../resources/post.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Post](../resources/post.md) object in the response body.
+If successful, this method returns `201, Created` response code and [post](../resources/post.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,52 @@ Here is an example of the request.
   "name": "create_post_from_conversationthread"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/threads/<id>
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/threads/<id>/posts
 ```
-In the request body, supply a JSON representation of [Post](../resources/post.md) object.
+In the request body, supply a JSON representation of [post](../resources/post.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/groups/<objectId>/threads/<id>
+Content-type: application/json
+Content-length: 758
+
+{
+  "body": {
+    "contentType": {
+    },
+    "content": "content-value"
+  },
+  "receivedDateTime": "datetime-value",
+  "hasAttachments": true,
+  "from": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
+    }
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
+    }
+  },
+  "conversationThreadId": "conversationThreadId-value",
+  "newParticipants": [
+    {
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      }
+    }
+  ],
+  "conversationId": "conversationId-value",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
+  ]
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -44,11 +87,12 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 790
+Content-length: 778
 
 {
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",
@@ -89,7 +133,7 @@ Content-length: 790
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Post",
+  "description": "Create post",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

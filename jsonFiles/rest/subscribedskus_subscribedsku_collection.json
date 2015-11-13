@@ -1,7 +1,7 @@
 {
   "name": "subscribedSkus",
   "description": "",
-  "collectionOf": "SubscribedSku",
+  "collectionOf": "subscribedSku",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

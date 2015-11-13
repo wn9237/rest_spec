@@ -15,11 +15,11 @@ POST /devices/<objectId>/registeredUsers
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [DirectoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ### Example
 ##### Request
@@ -29,9 +29,19 @@ Here is an example of the request.
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/devices/<objectId>
+POST https://graph.microsoft.com/v1.0/devices/<objectId>/registeredUsers
 ```
-In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/devices/<objectId>
+Content-type: application/json
+Content-length: 79
+
+{
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {

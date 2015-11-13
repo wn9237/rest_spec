@@ -1,10 +1,10 @@
 # itemBody resource type
 
-The body content of a message or event.
+The body of a message or event.
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,16 +16,16 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "content": "String-value",
-  "contentType": "String-value"
+  "content": "string",
+  "contentType": {"@odata.type": "microsoft.graph.bodyType"}
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|content|String|The text or HTML content.|
-|contentType|String|The content type: Text = 0, HTML = 1. Possible values are: `Text`, `HTML`.|
+|content|String|The content of the message or event.|
+|contentType|String|The type of the content. Possible values are `Text` and `HTML`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

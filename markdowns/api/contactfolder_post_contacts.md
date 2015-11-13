@@ -1,6 +1,6 @@
-# Create Contact
+# Create contact
 
-Use this API to create a new Contact.
+Use this API to create a new contact.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -17,11 +17,11 @@ POST /drive/root/lastModifiedByUser/contactFolders/<id>/contacts
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
+In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Contact](../resources/contact.md) object in the response body.
+If successful, this method returns `201, Created` response code and [contact](../resources/contact.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,87 @@ Here is an example of the request.
   "name": "create_contact_from_contactfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/contactFolders/<id>
+POST https://graph.microsoft.com/v1.0/users/<objectId>/contactFolders/<id>/contacts
 ```
-In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
+In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/users/<objectId>/contactFolders/<id>
+Content-type: application/json
+Content-length: 1957
+
+{
+  "parentFolderId": "parentFolderId-value",
+  "birthday": "datetime-value",
+  "fileAs": "fileAs-value",
+  "displayName": "displayName-value",
+  "givenName": "givenName-value",
+  "initials": "initials-value",
+  "middleName": "middleName-value",
+  "nickName": "nickName-value",
+  "surname": "surname-value",
+  "title": "title-value",
+  "yomiGivenName": "yomiGivenName-value",
+  "yomiSurname": "yomiSurname-value",
+  "yomiCompanyName": "yomiCompanyName-value",
+  "generation": "generation-value",
+  "emailAddresses": [
+    {
+      "name": "name-value",
+      "address": "address-value"
+    }
+  ],
+  "imAddresses": [
+    "imAddresses-value"
+  ],
+  "jobTitle": "jobTitle-value",
+  "companyName": "companyName-value",
+  "department": "department-value",
+  "officeLocation": "officeLocation-value",
+  "profession": "profession-value",
+  "businessHomePage": "businessHomePage-value",
+  "assistantName": "assistantName-value",
+  "manager": "manager-value",
+  "homePhones": [
+    "homePhones-value"
+  ],
+  "mobilePhone1": "mobilePhone1-value",
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "homeAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
+  },
+  "businessAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
+  },
+  "otherAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
+  },
+  "spouseName": "spouseName-value",
+  "personalNotes": "personalNotes-value",
+  "children": [
+    "children-value"
+  ],
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
+  ]
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -125,7 +203,7 @@ Content-length: 1977
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Contact",
+  "description": "Create contact",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

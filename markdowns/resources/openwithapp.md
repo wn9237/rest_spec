@@ -16,13 +16,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "app": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "editPostParameters": "String-value",
-  "editUrl": "String-value",
-  "viewPostParameters": "String-value",
-  "viewUrl": "String-value"
+  "app": {"@odata.type": "microsoft.graph.identity"},
+  "editPostParameters": "string",
+  "editUrl": "string",
+  "viewPostParameters": "string",
+  "viewUrl": "string"
 }
 
 ```
@@ -30,10 +28,10 @@ Here is a JSON representation of the resource.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |app|[identity](identity.md)||
-|editPostParameters|String||
-|editUrl|String||
-|viewPostParameters|String||
-|viewUrl|String||
+|editPostParameters|string||
+|editUrl|string||
+|viewPostParameters|string||
+|viewUrl|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

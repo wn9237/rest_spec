@@ -16,16 +16,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "cloudPublicIssuerCertificates": [
-    "Binary-value"
-  ],
-  "deletionTimestamp": "String (timestamp)",
+  "cloudPublicIssuerCertificates": ["binary"],
+  "deletionTimestamp": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "maximumRegistrationInactivityPeriod": 1024,
-  "objectId": "String-value (identifier)",
-  "objectType": "String-value",
-  "publicIssuerCertificates": [
-    "Binary-value"
-  ],
+  "objectId": "string (identifier)",
+  "objectType": "string",
+  "publicIssuerCertificates": ["binary"],
   "registrationQuota": 1024
 }
 
@@ -33,13 +29,13 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|cloudPublicIssuerCertificates|Binary collection||
-|deletionTimestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|maximumRegistrationInactivityPeriod|Int32||
-|objectId|String| Read-only.|
-|objectType|String||
-|publicIssuerCertificates|Binary collection||
-|registrationQuota|Int32||
+|cloudPublicIssuerCertificates|binary collection||
+|deletionTimestamp|[dateTimeOffset](datetimeoffset.md)||
+|maximumRegistrationInactivityPeriod|int32||
+|objectId|string| Read-only.|
+|objectType|string||
+|publicIssuerCertificates|binary collection||
+|registrationQuota|int32||
 
 ### Relationships
 None
@@ -52,9 +48,9 @@ None
 |[Get deviceConfiguration](../api/deviceconfiguration_get.md) | [deviceConfiguration](deviceconfiguration.md) |Read properties and relationships of deviceConfiguration object.|
 |[Update](../api/deviceconfiguration_update.md) | [deviceConfiguration](deviceconfiguration.md)	|Update deviceConfiguration object. |
 |[Delete](../api/deviceconfiguration_delete.md) | None |Delete deviceConfiguration object. |
-|[checkMemberGroups](../api/deviceconfiguration_checkmembergroups.md)|String collection||
-|[getMemberGroups](../api/deviceconfiguration_getmembergroups.md)|String collection||
-|[getMemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String collection||
+|[checkMemberGroups](../api/deviceconfiguration_checkmembergroups.md)|string collection||
+|[getMemberGroups](../api/deviceconfiguration_getmembergroups.md)|string collection||
+|[getMemberObjects](../api/deviceconfiguration_getmemberobjects.md)|string collection||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

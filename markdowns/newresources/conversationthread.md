@@ -4,12 +4,12 @@
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "posts"
   ],
   "@odata.type": "microsoft.graph.conversationthread"
 }-->
@@ -18,13 +18,13 @@ Here is a JSON representation of the resource.
 {
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "hasAttachments": true,
-  "id": "String-value (identifier)",
+  "id": "string (identifier)",
   "isLocked": true,
-  "lastDeliveredDateTime": "String (timestamp)",
-  "preview": "String-value",
+  "lastDeliveredDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "preview": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
-  "topic": "String-value",
-  "uniqueSenders": [
+  "topic": "string",
+  "uniqueSenders": ["string"]
 }
 
 ```

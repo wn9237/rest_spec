@@ -4,7 +4,7 @@ The physical address of a contact.
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -16,11 +16,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "city": "String-value",
-  "countryOrRegion": "String-value",
-  "postalCode": "String-value",
-  "state": "String-value",
-  "street": "String-value"
+  "city": "string",
+  "countryOrRegion": "string",
+  "postalCode": "string",
+  "state": "string",
+  "street": "string"
 }
 
 ```

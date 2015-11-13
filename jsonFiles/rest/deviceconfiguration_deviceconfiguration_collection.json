@@ -1,7 +1,7 @@
 {
   "name": "deviceConfiguration",
   "description": "",
-  "collectionOf": "DeviceConfiguration",
+  "collectionOf": "deviceConfiguration",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

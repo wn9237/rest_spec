@@ -21,11 +21,11 @@ In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startDateTime|String||
-|endDateTime|String||
+|startDateTime|string||
+|endDateTime|string||
 
 ### Response
-If successful, this method returns `200, OK` response code and [Reminder](../resources/reminder.md) collection object in the response body.
+If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
 
 ### Example
 Here is an example of how to call this API.

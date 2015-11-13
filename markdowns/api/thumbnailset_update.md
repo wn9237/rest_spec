@@ -37,10 +37,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/drive/root/thumbnails/<id>
 Content-type: application/json
-Content-length: 456
+Content-length: 436
 
 {
-  "id": "id-value",
   "large": {
     "content": "content-value",
     "height": 99,

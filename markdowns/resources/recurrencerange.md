@@ -16,20 +16,20 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "endDate": "String-value",
+  "endDate": "string",
   "numberOfOccurrences": 1024,
-  "startDate": "String-value",
-  "type": "String-value"
+  "startDate": "string",
+  "type": {"@odata.type": "microsoft.graph.recurrenceRangeType"}
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|endDate|String|The end date of the series.|
-|numberOfOccurrences|Int32|How many times to repeat the event.|
-|startDate|String|The start date of the series.|
-|type|String|The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2. Possible values are: `EndDate`, `NoEnd`, `Numbered`.|
+|endDate|string|The end date of the series.|
+|numberOfOccurrences|int32|How many times to repeat the event.|
+|startDate|string|The start date of the series.|
+|type|[recurrenceRangeType](recurrencerangetype.md)|The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

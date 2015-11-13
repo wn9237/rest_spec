@@ -10,13 +10,14 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	MARKDOWN_RESOURCE_FOLDER = "../markdowns/resources/"
+	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/resources/"
 	MARKDOWN_RESOURCE_FOLDER_OUT = "../markdowns/newresources/"
+	MARKDOWN_RESOURCE_FOLDER_TEMP = "../markdowns/resources/"
 	NEWLINE = "\n"
 
 
 	def self.slice_model(filename=nil)
-		fullpath = MARKDOWN_RESOURCE_FOLDER + filename
+		fullpath = MARKDOWN_RESOURCE_FOLDER_TEMP + filename
 		markdown = File.readlines(fullpath, :encoding => 'UTF-8')
 		model = ""
 		write = false

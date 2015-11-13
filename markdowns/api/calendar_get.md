@@ -46,11 +46,12 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 106
+Content-length: 98
 
 {
   "name": "name-value",
-  "color": "color-value",
+  "color": {
+  },
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

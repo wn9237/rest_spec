@@ -1,6 +1,6 @@
-# Create ContactFolder
+# Create contactFolder
 
-Use this API to create a new ContactFolder.
+Use this API to create a new contactFolder.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -17,11 +17,11 @@ POST /drive/root/lastModifiedByUser/contactFolders
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
+In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
+If successful, this method returns `201, Created` response code and [contactFolder](../resources/contactfolder.md) object in the response body.
 
 ### Example
 ##### Request
@@ -31,9 +31,19 @@ Here is an example of the request.
   "name": "create_contactfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://graph.microsoft.com/v1.0/users/<objectId>/contactFolders
 ```
-In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
+In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/users/<objectId>
+Content-type: application/json
+Content-length: 84
+
+{
+  "parentFolderId": "parentFolderId-value",
+  "displayName": "displayName-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -57,7 +67,7 @@ Content-length: 104
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create ContactFolder",
+  "description": "Create contactFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

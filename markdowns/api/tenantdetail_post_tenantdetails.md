@@ -1,12 +1,12 @@
-# Create TenantDetail
+# Create tenantDetail
 
-Use this API to create a new TenantDetail.
+Use this API to create a new tenantDetail.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /subscribedSkus
+POST /tenantDetails
 
 ```
 ### Request headers
@@ -15,23 +15,89 @@ POST /subscribedSkus
 | X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
-In the request body, supply a JSON representation of [TenantDetail](../resources/tenantdetail.md) object.
+In the request body, supply a JSON representation of [tenantDetail](../resources/tenantdetail.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [TenantDetail](../resources/tenantdetail.md) object in the response body.
+If successful, this method returns `201, Created` response code and [tenantDetail](../resources/tenantdetail.md) object in the response body.
 
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_tenantdetail_from_subscribedskus"
+  "name": "create_tenantdetail_from_tenantdetails"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/subscribedSkus
+POST https://graph.microsoft.com/v1.0/tenantDetails
 ```
-In the request body, supply a JSON representation of [TenantDetail](../resources/tenantdetail.md) object.
+In the request body, supply a JSON representation of [tenantDetail](../resources/tenantdetail.md) object.
+```http
+POST https://graph.microsoft.com/v1.0/tenantDetails
+Content-type: application/json
+Content-length: 1615
+
+{
+  "assignedPlans": [
+    {
+      "assignedTimestamp": "datetime-value",
+      "capabilityStatus": "capabilityStatus-value",
+      "service": "service-value",
+      "servicePlanId": "servicePlanId-value"
+    }
+  ],
+  "city": "city-value",
+  "companyLastDirSyncTime": "datetime-value",
+  "country": "country-value",
+  "countryLetterCode": "countryLetterCode-value",
+  "dirSyncEnabled": true,
+  "displayName": "displayName-value",
+  "marketingNotificationEmails": [
+    "marketingNotificationEmails-value"
+  ],
+  "postalCode": "postalCode-value",
+  "preferredLanguage": "preferredLanguage-value",
+  "provisionedPlans": [
+    {
+      "capabilityStatus": "capabilityStatus-value",
+      "provisioningStatus": "provisioningStatus-value",
+      "service": "service-value"
+    }
+  ],
+  "provisioningErrors": [
+    {
+      "errorDetail": "errorDetail-value",
+      "resolved": true,
+      "service": "service-value",
+      "timestamp": "datetime-value"
+    }
+  ],
+  "securityComplianceNotificationMails": [
+    "securityComplianceNotificationMails-value"
+  ],
+  "securityComplianceNotificationPhones": [
+    "securityComplianceNotificationPhones-value"
+  ],
+  "state": "state-value",
+  "street": "street-value",
+  "technicalNotificationMails": [
+    "technicalNotificationMails-value"
+  ],
+  "telephoneNumber": "telephoneNumber-value",
+  "verifiedDomains": [
+    {
+      "capabilities": "capabilities-value",
+      "default": true,
+      "id": "id-value",
+      "initial": true,
+      "name": "name-value",
+      "type": "type-value"
+    }
+  ],
+  "objectType": "objectType-value",
+  "deletionTimestamp": "datetime-value"
+}
+```
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -111,7 +177,7 @@ Content-length: 1647
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create TenantDetail",
+  "description": "Create tenantDetail",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

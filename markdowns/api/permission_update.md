@@ -24,8 +24,8 @@ In the request body, supply the values for relevant fields that should be update
 |inheritedFrom|itemReference||
 |invitation|sharingInvitation||
 |link|sharingLink||
-|roles|String||
-|shareId|String||
+|roles|string||
+|shareId|string||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.
@@ -39,7 +39,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
 Content-type: application/json
-Content-length: 762
+Content-length: 742
 
 {
   "grantedTo": {
@@ -56,7 +56,6 @@ Content-length: 762
       "id": "id-value"
     }
   },
-  "id": "id-value",
   "invitation": {
     "email": "email-value",
     "redeemedBy": "redeemedBy-value",

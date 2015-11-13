@@ -18,14 +18,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentBytes|Binary||
-|contentId|String||
-|contentLocation|String||
-|contentType|String||
-|isInline|Boolean||
-|lastModifiedDateTime|DateTimeOffset||
-|name|String||
-|size|Int32||
+|contentBytes|binary||
+|contentId|string||
+|contentLocation|string||
+|contentType|string||
+|isInline|boolean||
+|lastModifiedDateTime|dateTimeOffset||
+|name|string||
+|size|int32||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [fileAttachment](../resources/fileattachment.md) object in the response body.
@@ -39,7 +39,7 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 282
+Content-length: 262
 
 {
   "contentId": "contentId-value",
@@ -49,8 +49,7 @@ Content-length: 282
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,
-  "isInline": true,
-  "id": "id-value"
+  "isInline": true
 }
 ```
 ##### Response

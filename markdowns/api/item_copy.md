@@ -22,7 +22,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |parentReference|itemReference||
-|name|String||
+|name|string||
 
 ### Response
 If successful, this method returns `200, OK` response code and [item](../resources/item.md) object in the response body.

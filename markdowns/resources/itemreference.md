@@ -16,18 +16,18 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "driveId": "String-value",
-  "id": "String-value",
-  "path": "String-value"
+  "driveId": "string",
+  "id": "string",
+  "path": "string"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|driveId|String|Unique identifier for the Drive that contains the item.|
-|id|String|Unique identifier for the item.|
-|path|String|Path that used to navigate to the item.|
+|driveId|string|Unique identifier for the Drive that contains the item.|
+|id|string|Unique identifier for the item.|
+|path|string|Path that used to navigate to the item.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

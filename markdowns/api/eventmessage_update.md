@@ -18,32 +18,33 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient||
-|body|ItemBody||
-|bodyPreview|String||
-|categories|String||
-|ccRecipients|Recipient||
-|changeKey|String||
-|conversationId|String||
-|createdDateTime|DateTimeOffset||
-|from|Recipient||
-|hasAttachments|Boolean||
-|importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|isDeliveryReceiptRequested|Boolean||
-|isDraft|Boolean||
-|isRead|Boolean||
-|isReadReceiptRequested|Boolean||
-|lastModifiedDateTime|DateTimeOffset||
-|meetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
-|parentFolderId|String||
-|receivedDateTime|DateTimeOffset||
-|replyTo|Recipient||
-|sender|Recipient||
-|sentDateTime|DateTimeOffset||
-|subject|String||
-|toRecipients|Recipient||
-|uniqueBody|ItemBody||
-|webLink|String||
+|bccRecipients|recipient||
+|body|itemBody||
+|bodyPreview|string||
+|categories|string||
+|ccRecipients|recipient||
+|changeKey|string||
+|conversationId|string||
+|createdDateTime|dateTimeOffset||
+|from|recipient||
+|hasAttachments|boolean||
+|importance|importance||
+|inferenceClassification|inferenceClassificationType||
+|isDeliveryReceiptRequested|boolean||
+|isDraft|boolean||
+|isRead|boolean||
+|isReadReceiptRequested|boolean||
+|lastModifiedDateTime|dateTimeOffset||
+|meetingMessageType|meetingMessageType| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 |
+|parentFolderId|string||
+|receivedDateTime|dateTimeOffset||
+|replyTo|recipient||
+|sender|recipient||
+|sentDateTime|dateTimeOffset||
+|subject|string||
+|toRecipients|recipient||
+|uniqueBody|itemBody||
+|webLink|string||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [eventMessage](../resources/eventmessage.md) object in the response body.
@@ -57,7 +58,7 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 1598
+Content-length: 1556
 
 {
   "receivedDateTime": "datetime-value",
@@ -65,11 +66,13 @@ Content-length: 1598
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",
-  "importance": "importance-value",
+  "importance": {
+  },
   "parentFolderId": "parentFolderId-value",
   "sender": {
     "emailAddress": {
@@ -117,7 +120,8 @@ Content-length: 1598
   ],
   "conversationId": "conversationId-value",
   "uniqueBody": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "isDeliveryReceiptRequested": true,
@@ -125,14 +129,16 @@ Content-length: 1598
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
+  "inferenceClassification": {
+  },
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",
   "categories": [
     "categories-value"
   ],
-  "id": "id-value",
-  "meetingMessageType": "meetingMessageType-value"
+  "meetingMessageType": {
+  }
 }
 ```
 ##### Response
@@ -145,7 +151,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1598
+Content-length: 1576
 
 {
   "receivedDateTime": "datetime-value",
@@ -153,11 +159,13 @@ Content-length: 1598
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",
-  "importance": "importance-value",
+  "importance": {
+  },
   "parentFolderId": "parentFolderId-value",
   "sender": {
     "emailAddress": {
@@ -205,7 +213,8 @@ Content-length: 1598
   ],
   "conversationId": "conversationId-value",
   "uniqueBody": {
-    "contentType": "contentType-value",
+    "contentType": {
+    },
     "content": "content-value"
   },
   "isDeliveryReceiptRequested": true,
@@ -213,6 +222,8 @@ Content-length: 1598
   "isRead": true,
   "isDraft": true,
   "webLink": "webLink-value",
+  "inferenceClassification": {
+  },
   "createdDateTime": "datetime-value",
   "lastModifiedDateTime": "datetime-value",
   "changeKey": "changeKey-value",
@@ -220,7 +231,8 @@ Content-length: 1598
     "categories-value"
   ],
   "id": "id-value",
-  "meetingMessageType": "meetingMessageType-value"
+  "meetingMessageType": {
+  }
 }
 ```
 

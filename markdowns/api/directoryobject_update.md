@@ -20,8 +20,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|deletionTimestamp|DateTimeOffset|The time at which the directory object was deleted. It only applies to those directory objects which can be restored. Currently it is only supported for deleted [Application] objects; all other entities return **null** for this property.                            **Notes**: Requires version 1.5 or newer.            |
-|objectType|String|A string that identifies the object type. For example, for groups the value is always “Group”.|
+|deletionTimestamp|dateTimeOffset|The time at which the directory object was deleted. It only applies to those directory objects which can be restored. Currently it is only supported for deleted [Application] objects; all other entities return **null** for this property.                            **Notes**: Requires version 1.5 or newer.            |
+|objectType|string|A string that identifies the object type. For example, for groups the value is always “Group”.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [directoryObject](../resources/directoryobject.md) object in the response body.
@@ -35,11 +35,10 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/<objectId>/manager
 Content-type: application/json
-Content-length: 111
+Content-length: 79
 
 {
   "objectType": "objectType-value",
-  "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"
 }
 ```

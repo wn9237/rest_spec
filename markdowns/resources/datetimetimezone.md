@@ -16,16 +16,16 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "dateTime": "String-value",
-  "timeZone": "String-value"
+  "dateTime": "string",
+  "timeZone": "string"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|dateTime|String||
-|timeZone|String||
+|dateTime|string||
+|timeZone|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

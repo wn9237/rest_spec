@@ -16,114 +16,93 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "bccRecipients": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "body": {
-    "@odata.type": "microsoft.graph.itembody"
-  },
-  "bodyPreview": "String-value",
-  "categories": [
-    "String-value"
-  ],
-  "ccRecipients": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "changeKey": "String-value",
-  "conversationId": "String-value",
-  "createdDateTime": "String (timestamp)",
-  "from": {
-    "@odata.type": "microsoft.graph.recipient"
-  },
+  "bccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "bodyPreview": "string",
+  "categories": ["string"],
+  "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "changeKey": "string",
+  "conversationId": "string",
+  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
-  "id": "String-value (identifier)",
-  "importance": "String-value",
+  "id": "string (identifier)",
+  "importance": {"@odata.type": "microsoft.graph.importance"},
+  "inferenceClassification": {"@odata.type": "microsoft.graph.inferenceClassificationType"},
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
   "isReadReceiptRequested": true,
-  "lastModifiedDateTime": "String (timestamp)",
-  "meetingMessageType": "String-value",
-  "parentFolderId": "String-value",
-  "receivedDateTime": "String (timestamp)",
-  "replyTo": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "sender": {
-    "@odata.type": "microsoft.graph.recipient"
-  },
-  "sentDateTime": "String (timestamp)",
-  "subject": "String-value",
-  "toRecipients": [
-    {
-      "@odata.type": "microsoft.graph.recipient"
-    }
-  ],
-  "uniqueBody": {
-    "@odata.type": "microsoft.graph.itembody"
-  },
-  "webLink": "String-value"
+  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
+  "parentFolderId": "string",
+  "receivedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
+  "sender": {"@odata.type": "microsoft.graph.recipient"},
+  "sentDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "subject": "string",
+  "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
+  "webLink": "string"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bccRecipients|[Recipient](recipient.md) collection||
-|body|[ItemBody](itembody.md)||
-|bodyPreview|String||
-|categories|String collection||
-|ccRecipients|[Recipient](recipient.md) collection||
-|changeKey|String||
-|conversationId|String||
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|from|[Recipient](recipient.md)||
-|hasAttachments|Boolean||
-|id|String| Read-only.|
-|importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|isDeliveryReceiptRequested|Boolean||
-|isDraft|Boolean||
-|isRead|Boolean||
-|isReadReceiptRequested|Boolean||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|meetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
-|parentFolderId|String||
-|receivedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|replyTo|[Recipient](recipient.md) collection||
-|sender|[Recipient](recipient.md)||
-|sentDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|subject|String||
-|toRecipients|[Recipient](recipient.md) collection||
-|uniqueBody|[ItemBody](itembody.md)||
-|webLink|String||
+|bccRecipients|[recipient](recipient.md) collection||
+|body|[itemBody](itembody.md)||
+|bodyPreview|string||
+|categories|string collection||
+|ccRecipients|[recipient](recipient.md) collection||
+|changeKey|string||
+|conversationId|string||
+|createdDateTime|[dateTimeOffset](datetimeoffset.md)||
+|from|[recipient](recipient.md)||
+|hasAttachments|boolean||
+|id|string| Read-only.|
+|importance|[importance](importance.md)||
+|inferenceClassification|[inferenceClassificationType](inferenceclassificationtype.md)||
+|isDeliveryReceiptRequested|boolean||
+|isDraft|boolean||
+|isRead|boolean||
+|isReadReceiptRequested|boolean||
+|lastModifiedDateTime|[dateTimeOffset](datetimeoffset.md)||
+|meetingMessageType|[meetingMessageType](meetingmessagetype.md)| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 |
+|parentFolderId|string||
+|receivedDateTime|[dateTimeOffset](datetimeoffset.md)||
+|replyTo|[recipient](recipient.md) collection||
+|sender|[recipient](recipient.md)||
+|sentDateTime|[dateTimeOffset](datetimeoffset.md)||
+|subject|string||
+|toRecipients|[recipient](recipient.md) collection||
+|uniqueBody|[itemBody](itembody.md)||
+|webLink|string||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|event|[Event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
+|attachments|[attachment](attachment.md) collection| Read-only. Nullable.|
+|event|[event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
+|extensions|[extension](extension.md) collection| Read-only. Nullable.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage_get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[Create Attachment](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
-|[List attachments](../api/eventmessage_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Create attachment](../api/eventmessage_post_attachments.md) |[attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
+|[List attachments](../api/eventmessage_list_attachments.md) |[attachment](attachment.md) collection| Get a attachment object collection.|
+|[Create extension](../api/eventmessage_post_extensions.md) |[extension](extension.md)| Create a new extension by posting to the extensions collection.|
+|[List extensions](../api/eventmessage_list_extensions.md) |[extension](extension.md) collection| Get a extension object collection.|
 |[Update](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)	|Update eventMessage object. |
 |[Delete](../api/eventmessage_delete.md) | None |Delete eventMessage object. |
-|[copy](../api/eventmessage_copy.md)|[Message](message.md)||
-|[createForward](../api/eventmessage_createforward.md)|[Message](message.md)||
-|[createReply](../api/eventmessage_createreply.md)|[Message](message.md)||
-|[createReplyAll](../api/eventmessage_createreplyall.md)|[Message](message.md)||
+|[copy](../api/eventmessage_copy.md)|[message](message.md)||
+|[createForward](../api/eventmessage_createforward.md)|[message](message.md)||
+|[createReply](../api/eventmessage_createreply.md)|[message](message.md)||
+|[createReplyAll](../api/eventmessage_createreplyall.md)|[message](message.md)||
 |[forward](../api/eventmessage_forward.md)|None||
-|[move](../api/eventmessage_move.md)|[Message](message.md)||
+|[move](../api/eventmessage_move.md)|[message](message.md)||
 |[reply](../api/eventmessage_reply.md)|None||
 |[replyAll](../api/eventmessage_replyall.md)|None||
 |[send](../api/eventmessage_send.md)|None||
