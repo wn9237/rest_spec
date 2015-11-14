@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /buckets/<id>/tasks
 GET /plans/<id>/buckets/<id>/tasks
-GET /users/<objectId>/plans/<id>/buckets/<id>/tasks
+GET /me/plans/<id>/buckets/<id>/tasks
 ```
 ### Optional query parameters
 |Name|Value|Description|

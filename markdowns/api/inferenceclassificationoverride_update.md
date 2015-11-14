@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/inferenceClassification/overrides/<id>
+PATCH /me/inferenceClassification/overrides/<id>
+PATCH /users/<id>/inferenceClassification/overrides/<id>
 PATCH /drive/root/createdByUser/inferenceClassification/overrides/<id>
-PATCH /drive/root/lastModifiedByUser/inferenceClassification/overrides/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_inferenceclassificationoverride"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/<objectId>/inferenceClassification/overrides/<id>
+PATCH https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/<id>
 Content-type: application/json
 Content-length: 113
 

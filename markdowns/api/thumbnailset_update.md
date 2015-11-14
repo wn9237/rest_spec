@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /drive/root/thumbnails/<id>
-PATCH /drive/items/<id>/thumbnails/<id>
+PATCH /me/drive/root/thumbnails/<id>
 PATCH /drives/<id>/root/thumbnails/<id>
 ```
 ### Optional request headers

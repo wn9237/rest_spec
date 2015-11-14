@@ -1,6 +1,6 @@
 # user resource type
 
-Represents an Azure AD user account. Inherits from [DirectoryObject].
+Represents an Azure AD user account. Inherits from [DirectoryObject].
 
 ### JSON representation
 

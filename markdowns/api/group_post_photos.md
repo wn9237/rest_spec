@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /groups/<id>/photos
+POST /me/joinedGroups/<id>/photos
+POST /users/<id>/joinedGroups/<id>/photos
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_profilephoto_from_group"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/groups/<id>/photos
 ```
 In the request body, supply a JSON representation of [profilePhoto](../resources/profilephoto.md) object.
 ##### Response

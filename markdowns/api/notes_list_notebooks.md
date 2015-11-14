@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /me/notes/notebooks
+GET /users/<id>/notes/notebooks
+GET /groups/<id>/notes/notebooks
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "get_notebooks"
 }-->
 ```http
-/notebooks
+GET https://graph.microsoft.com/v1.0/me/notes/notebooks
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,11 +52,25 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 32
+Content-length: 369
 
 {
   "value": [
     {
+      "isDefault": true,
+      "userRole": {
+      },
+      "isShared": true,
+      "sectionsUrl": "sectionsUrl-value",
+      "sectionGroupsUrl": "sectionGroupsUrl-value",
+      "links": {
+        "oneNoteClientUrl": {
+          "href": "href-value"
+        },
+        "oneNoteWebUrl": {
+          "href": "href-value"
+        }
+      }
     }
   ]
 }

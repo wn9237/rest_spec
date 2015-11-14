@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/messages/<id>/attachments
+POST /users/<id>/messages/<id>/attachments
+POST /me/mailFolders/<id>/messages/<id>/attachments
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_attachment_from_message"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/attachments
 ```
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 ##### Response

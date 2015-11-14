@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/inferenceClassification/overrides
+POST /users/<id>/inferenceClassification/overrides
+POST /drive/root/createdByUser/inferenceClassification/overrides
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_inferenceclassificationoverride_from_inferenceclassification"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ```
 In the request body, supply a JSON representation of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object.
 ##### Response
@@ -42,9 +44,16 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3
+Content-length: 133
 
 {
+  "classifyAs": {
+  },
+  "senderEmailAddress": {
+    "name": "name-value",
+    "address": "address-value"
+  },
+  "id": "id-value"
 }
 ```
 

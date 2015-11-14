@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drive/root/thumbnails/<id>
-GET /drive/items/<id>/thumbnails/<id>
+GET /me/drive/root/thumbnails/<id>
 GET /drives/<id>/root/thumbnails/<id>
 ```
 ### Optional query parameters

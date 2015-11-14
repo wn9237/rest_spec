@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /contacts/<id>/directReports
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_orgcontact"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/contacts/<id>/directReports
 ```
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 ##### Response
@@ -42,10 +42,12 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 22
+Content-length: 51
 
 {
-  "id": "id-value"
+  "directoryObject": {
+    "id": "id-value"
+  }
 }
 ```
 

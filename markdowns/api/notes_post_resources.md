@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/notes/resources
+POST /users/<id>/notes/resources
+POST /groups/<id>/notes/resources
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_resource_from_notes"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/notes/resources
 ```
 In the request body, supply a JSON representation of [resource](../resources/resource.md) object.
 ##### Response
@@ -42,9 +44,13 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3
+Content-length: 112
 
 {
+  "id": "id-value",
+  "self": "self-value",
+  "content": "content-value",
+  "contentUrl": "contentUrl-value"
 }
 ```
 

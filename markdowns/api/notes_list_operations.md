@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /me/notes/operations
+GET /users/<id>/notes/operations
+GET /groups/<id>/notes/operations
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "get_operations"
 }-->
 ```http
-/operations
+GET https://graph.microsoft.com/v1.0/me/notes/operations
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,11 +52,17 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 32
+Content-length: 268
 
 {
   "value": [
     {
+      "id": "id-value",
+      "status": "status-value",
+      "createdDateTime": "datetime-value",
+      "lastActionDateTime": "datetime-value",
+      "resourceLocation": "resourceLocation-value",
+      "resourceId": "resourceId-value"
     }
   ]
 }

@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /me/notes/sectionGroups
+GET /users/<id>/notes/sectionGroups
+GET /groups/<id>/notes/sectionGroups
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "get_sectiongroups"
 }-->
 ```http
-/sectionGroups
+GET https://graph.microsoft.com/v1.0/me/notes/sectionGroups
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,11 +52,22 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 32
+Content-length: 378
 
 {
   "value": [
     {
+      "sectionsUrl": "sectionsUrl-value",
+      "sectionGroupsUrl": "sectionGroupsUrl-value",
+      "name": "name-value",
+      "createdBy": "createdBy-value",
+      "createdByIdentity": {
+        "user": {
+          "id": "id-value",
+          "displayName": "displayName-value"
+        }
+      },
+      "lastModifiedBy": "lastModifiedBy-value"
     }
   ]
 }

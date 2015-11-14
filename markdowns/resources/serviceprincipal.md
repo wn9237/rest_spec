@@ -1,6 +1,6 @@
 # servicePrincipal resource type
 
-Represents an instance of an application in a directory. Inherits from [DirectoryObject].
+Represents an instance of an application in a directory. Inherits from [DirectoryObject].
 
 ### JSON representation
 

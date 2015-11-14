@@ -1,6 +1,6 @@
 # resource resource type
 
-
+A resource in a OneNote page
 
 ### JSON representation
 
@@ -26,9 +26,9 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|content|stream|A stream of the content of this resource. |
-|contentUrl|string|A Url to which a GET request can be sent to retrieve this resource. |
-|id|string|The unique id of this resource.  Read-only.|
+|content|stream|A stream of the content of this resource.|
+|contentUrl|string|A Url to which a GET request can be sent to retrieve this resource.|
+|id|string|The unique id of this resource. Read-only.|
 |self|string||
 
 ### Relationships

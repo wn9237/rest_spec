@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /groups/<id>/threads/<id>
+PATCH /me/joinedGroups/<id>/threads/<id>
+PATCH /users/<id>/joinedGroups/<id>/threads/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "update_conversationthread"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>
 Content-type: application/json
 Content-length: 419
 

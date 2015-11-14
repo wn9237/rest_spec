@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/notes/resources/<id>
-PATCH /groups/<objectId>/notes/resources/<id>
-PATCH /drive/root/createdByUser/notes/resources/<id>
+PATCH /me/notes/resources/<id>
+PATCH /users/<id>/notes/resources/<id>
+PATCH /groups/<id>/notes/resources/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,8 +20,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|content|stream|A stream of the content of this resource. |
-|contentUrl|string|A Url to which a GET request can be sent to retrieve this resource. |
+|content|stream|A stream of the content of this resource.|
+|contentUrl|string|A Url to which a GET request can be sent to retrieve this resource.|
 |self|string||
 
 ### Response
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_resource"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/<objectId>/notes/resources/<id>
+PATCH https://graph.microsoft.com/v1.0/me/notes/resources/<id>
 Content-type: application/json
 Content-length: 92
 

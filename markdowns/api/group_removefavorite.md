@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /groups/<id>/removeFavorite
+POST /me/joinedGroups/<id>/removeFavorite
+POST /users/<id>/joinedGroups/<id>/removeFavorite
 
 ```
 ### Request headers
@@ -28,11 +30,11 @@ Here is an example of the request.
   "name": "group_removefavorite"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/groups/<id>/removeFavorite
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,

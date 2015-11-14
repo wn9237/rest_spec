@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /groups/<id>/conversations
+POST /me/joinedGroups/<id>/conversations
+POST /users/<id>/joinedGroups/<id>/conversations
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_conversation_from_group"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/groups/<id>/conversations
 ```
 In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object.
 ##### Response

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/notes/pages/<id>/patchContent
-POST /groups/<objectId>/notes/pages/<id>/patchContent
-POST /drive/root/createdByUser/notes/pages/<id>/patchContent
+POST /me/notes/pages/<id>/patchContent
+POST /users/<id>/notes/pages/<id>/patchContent
+POST /groups/<id>/notes/pages/<id>/patchContent
 
 ```
 ### Request headers
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "page_patchcontent"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/pages/<id>/patchContent
+POST https://graph.microsoft.com/v1.0/me/notes/pages/<id>/patchContent
 Content-type: application/json
 Content-length: 156
 
@@ -54,7 +54,7 @@ Content-length: 156
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,

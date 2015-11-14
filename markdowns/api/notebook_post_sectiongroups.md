@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/notes/notebooks/<id>/sectionGroups
-POST /groups/<objectId>/notes/notebooks/<id>/sectionGroups
-POST /drive/root/createdByUser/notes/notebooks/<id>/sectionGroups
+POST /me/notes/notebooks/<id>/sectionGroups
+POST /users/<id>/notes/notebooks/<id>/sectionGroups
+POST /groups/<id>/notes/notebooks/<id>/sectionGroups
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_sectiongroup_from_notebook"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/notebooks/<id>/sectionGroups
+POST https://graph.microsoft.com/v1.0/me/notes/notebooks/<id>/sectionGroups
 ```
 In the request body, supply a JSON representation of [sectionGroup](../resources/sectiongroup.md) object.
 ##### Response
@@ -44,15 +44,20 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 230
+Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
-  "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "createdByIdentity": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  },
+  "lastModifiedBy": "lastModifiedBy-value"
 }
 ```
 

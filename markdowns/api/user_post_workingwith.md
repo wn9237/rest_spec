@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/workingWith
+POST /users/<id>/workingWith
+POST /drive/root/createdByUser/workingWith
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_user_from_user"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/workingWith
 ```
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 ##### Response
@@ -42,31 +44,33 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 491
+Content-length: 551
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "user": {
+    "accountEnabled": true,
+    "assignedLicenses": [
+      {
+        "disabledPlans": [
+          "disabledPlans-value"
+        ],
+        "skuId": "skuId-value"
+      }
+    ],
+    "assignedPlans": [
+      {
+        "assignedDateTime": "datetime-value",
+        "capabilityStatus": "capabilityStatus-value",
+        "service": "service-value",
+        "servicePlanId": "servicePlanId-value"
+      }
+    ],
+    "businessPhones": [
+      "businessPhones-value"
+    ],
+    "city": "city-value",
+    "companyName": "companyName-value"
+  }
 }
 ```
 

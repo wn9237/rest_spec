@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /plans/<id>/details
-GET /users/<objectId>/plans/<id>/details
-GET /groups/<objectId>/plans/<id>/details
+GET /users/<id>/plans/<id>/details
+GET /groups/<id>/plans/<id>/details
 ```
 ### Optional query parameters
 |Name|Value|Description|

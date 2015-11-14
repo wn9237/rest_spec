@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /servicePrincipals/<id>/appRoleAssignments
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_approleassignment_from_serviceprincipal"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/servicePrincipals/<id>/appRoleAssignments
 ```
 In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
 ##### Response

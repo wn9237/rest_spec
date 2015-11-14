@@ -1,6 +1,6 @@
 # contact resource type
 
-Represents an organizational contact. Inherits from [DirectoryObject].
+Represents an organizational contact. Inherits from [DirectoryObject].
 
 ### JSON representation
 

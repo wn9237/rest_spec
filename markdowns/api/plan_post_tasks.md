@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /plans/<id>/tasks
+POST /me/plans/<id>/tasks
+POST /users/<id>/plans/<id>/tasks
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_task_from_plan"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/plans/<id>/tasks
 ```
 In the request body, supply a JSON representation of [task](../resources/task.md) object.
 ##### Response

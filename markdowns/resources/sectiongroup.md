@@ -17,9 +17,11 @@ Here is a JSON representation of the resource.
 ```json
 {
   "createdBy": "string",
+  "createdByIdentity": {"@odata.type": "microsoft.graph.oneNoteIdentitySet"},
   "createdTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "id": "string (identifier)",
   "lastModifiedBy": "string",
+  "lastModifiedByIdentity": {"@odata.type": "microsoft.graph.oneNoteIdentitySet"},
   "lastModifiedTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "name": "string",
   "sectionGroupsUrl": "string",
@@ -32,9 +34,11 @@ Here is a JSON representation of the resource.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|string|The user who created the section group.|
+|createdByIdentity|[oneNoteIdentitySet](onenoteidentityset.md)|The user who created the section group.|
 |createdTime|[dateTimeOffset](datetimeoffset.md)|The date and time when the section group was created.|
 |id|string|The unique identifier of the section group. Read-only.|
 |lastModifiedBy|string|The user who last modified the section group.|
+|lastModifiedByIdentity|[oneNoteIdentitySet](onenoteidentityset.md)|The user who last modified the section group.|
 |lastModifiedTime|[dateTimeOffset](datetimeoffset.md)|The date and time when the section group was last modified.|
 |name|string|The name of the section group.|
 |sectionGroupsUrl|string|The URL for the sectionGroups navigation property, which returns all the section groups in the section group.|
@@ -44,10 +48,10 @@ Here is a JSON representation of the resource.
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|parentNotebook|[notebook](notebook.md)|The notebook that contains the section group, expanded by default with the id, name, and self properties selected. Read-only.|
-|parentSectionGroup|[sectionGroup](sectiongroup.md)|The section group that contains the section group, expanded by default with the id, name, and self properties selected. Read-only.|
+|parentNotebook|[notebook](notebook.md)| Read-only.|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)| Read-only.|
 |sectionGroups|[sectionGroup](sectiongroup.md) collection| Read-only. Nullable.|
-|sections|[section](section.md) collection|The sections in the section group. Can be navigated to using the sectionsUrl property or expanded in a GET request. Read-only. Nullable.|
+|sections|[section](section.md) collection| Read-only. Nullable.|
 
 ### Methods
 

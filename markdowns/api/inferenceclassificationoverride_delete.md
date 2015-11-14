@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<objectId>/inferenceClassification/overrides/<id>
+DELETE /me/inferenceClassification/overrides/<id>
+DELETE /users/<id>/inferenceClassification/overrides/<id>
 DELETE /drive/root/createdByUser/inferenceClassification/overrides/<id>
-DELETE /drive/root/lastModifiedByUser/inferenceClassification/overrides/<id>
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_inferenceclassificationoverride"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<objectId>/inferenceClassification/overrides/<id>
+DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -11,7 +11,13 @@ GET /users
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
+|$count|none|The count of related entities can be requested by specifying the $count query option.|
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [user](../resources/user.md) for supported names. |
+|$filter|string|Filter string that lets you filter the response based on a set of criteria.|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
+|$select|string|Comma-separated list of properties to include in the response.|
+|$skip|int|The number of items to skip in a result set.|
+|$skipToken|string|Paging token that is used to get the next set of results.|
 |$top|int|The number of items to return in a result set.|
 
 ### Request headers
@@ -44,7 +50,7 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 575
+Content-length: 608
 
 {
   "value": [
@@ -60,15 +66,17 @@ Content-length: 575
       ],
       "assignedPlans": [
         {
-          "assignedTimestamp": "datetime-value",
+          "assignedDateTime": "datetime-value",
           "capabilityStatus": "capabilityStatus-value",
           "service": "service-value",
           "servicePlanId": "servicePlanId-value"
         }
       ],
+      "businessPhones": [
+        "businessPhones-value"
+      ],
       "city": "city-value",
-      "country": "country-value",
-      "department": "department-value"
+      "companyName": "companyName-value"
     }
   ]
 }

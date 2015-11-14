@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/notes/notebooks/<id>
-PATCH /groups/<objectId>/notes/notebooks/<id>
-PATCH /drive/root/createdByUser/notes/notebooks/<id>
+PATCH /me/notes/notebooks/<id>
+PATCH /users/<id>/notes/notebooks/<id>
+PATCH /groups/<id>/notes/notebooks/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -21,10 +21,12 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|string|The user who created the notebook.|
+|createdByIdentity|oneNoteIdentitySet|The user who created the notebook.|
 |createdTime|dateTimeOffset|The date and time when the notebook was created.|
 |isDefault|boolean|Indicates whether this is the user's default notebook.|
 |isShared|boolean|Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner.|
 |lastModifiedBy|string|The user who last modified the notebook.|
+|lastModifiedByIdentity|oneNoteIdentitySet|The user who last modified the notebook.|
 |lastModifiedTime|dateTimeOffset|The date and time when the notebook was last modified.|
 |links|notebookLinks|The value of oneNoteClientURL can be used to open the notebook using the OneNote native client app if it's installed. The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client.|
 |name|string|The name of the notebook.|
@@ -43,7 +45,7 @@ Here is an example of the request.
   "name": "update_notebook"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/<objectId>/notes/notebooks/<id>
+PATCH https://graph.microsoft.com/v1.0/me/notes/notebooks/<id>
 Content-type: application/json
 Content-length: 284
 

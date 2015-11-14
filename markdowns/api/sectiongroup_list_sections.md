@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/notes/sectionGroups/<id>/sections
-GET /groups/<objectId>/notes/sectionGroups/<id>/sections
-GET /drive/root/createdByUser/notes/sectionGroups/<id>/sections
+GET /me/notes/sectionGroups/<id>/sections
+GET /users/<id>/notes/sectionGroups/<id>/sections
+GET /groups/<id>/notes/sectionGroups/<id>/sections
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_sections"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/notes/sectionGroups/<id>/sections
+GET https://graph.microsoft.com/v1.0/me/notes/sectionGroups/<id>/sections
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 250
+Content-length: 345
 
 {
   "value": [
@@ -61,8 +61,13 @@ Content-length: 250
       "pagesUrl": "pagesUrl-value",
       "name": "name-value",
       "createdBy": "createdBy-value",
-      "lastModifiedBy": "lastModifiedBy-value",
-      "lastModifiedTime": "datetime-value"
+      "createdByIdentity": {
+        "user": {
+          "id": "id-value",
+          "displayName": "displayName-value"
+        }
+      },
+      "lastModifiedBy": "lastModifiedBy-value"
     }
   ]
 }

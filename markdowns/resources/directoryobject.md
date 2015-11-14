@@ -1,6 +1,6 @@
 # directoryObject resource type
 
-Represents an Azure Active Directory object. The **DirectoryObject** type is the base type for most of the other directory entity types.
+Represents an Azure Active Directory object. The **DirectoryObject** type is the base type for most of the other directory entity types.
 
 ### JSON representation
 

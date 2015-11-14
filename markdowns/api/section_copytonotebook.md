@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/notes/sections/<id>/copyToNotebook
-POST /groups/<objectId>/notes/sections/<id>/copyToNotebook
-POST /drive/root/createdByUser/notes/sections/<id>/copyToNotebook
+POST /me/notes/sections/<id>/copyToNotebook
+POST /users/<id>/notes/sections/<id>/copyToNotebook
+POST /groups/<id>/notes/sections/<id>/copyToNotebook
 
 ```
 ### Request headers
@@ -22,12 +22,11 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string||
-|siteCollectionId|string||
-|siteId|string||
+|groupId|string||
 |renameAs|string||
 
 ### Response
-If successful, this method returns `200, OK` response code and [copySectionModel](../resources/copysectionmodel.md) object in the response body.
+If successful, this method returns `200, OK` response code and [copyStatusModel](../resources/copystatusmodel.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -38,14 +37,13 @@ Here is an example of the request.
   "name": "section_copytonotebook"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>/copyToNotebook
+POST https://graph.microsoft.com/v1.0/me/notes/sections/<id>/copyToNotebook
 Content-type: application/json
-Content-length: 130
+Content-length: 84
 
 {
   "id": "id-value",
-  "siteCollectionId": "siteCollectionId-value",
-  "siteId": "siteId-value",
+  "groupId": "groupId-value",
   "renameAs": "renameAs-value"
 }
 ```
@@ -55,20 +53,17 @@ Here is an example of the response. Note: The response object may be truncated f
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.copysectionmodel"
+  "@odata.type": "microsoft.graph.copystatusmodel"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 197
+Content-length: 89
 
 {
-  "isDefault": true,
-  "pagesUrl": "pagesUrl-value",
-  "name": "name-value",
-  "createdBy": "createdBy-value",
-  "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "id": "id-value",
+  "status": "status-value",
+  "createdDateTime": "datetime-value"
 }
 ```
 

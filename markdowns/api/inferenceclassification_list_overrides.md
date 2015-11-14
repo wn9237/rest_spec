@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /me/inferenceClassification/overrides
+GET /users/<id>/inferenceClassification/overrides
+GET /drive/root/createdByUser/inferenceClassification/overrides
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "get_overrides"
 }-->
 ```http
-/overrides
+GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,11 +52,18 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 32
+Content-length: 190
 
 {
   "value": [
     {
+      "classifyAs": {
+      },
+      "senderEmailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      },
+      "id": "id-value"
     }
   ]
 }

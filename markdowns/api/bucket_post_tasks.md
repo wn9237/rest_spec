@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /buckets/<id>/tasks
 POST /plans/<id>/buckets/<id>/tasks
-POST /users/<objectId>/plans/<id>/buckets/<id>/tasks
+POST /me/plans/<id>/buckets/<id>/tasks
 
 ```
 ### Request headers

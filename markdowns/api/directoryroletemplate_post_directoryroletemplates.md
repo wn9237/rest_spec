@@ -42,14 +42,14 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 187
+Content-length: 137
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  "directoryRoleTemplate": {
+    "description": "description-value",
+    "displayName": "displayName-value",
+    "id": "id-value"
+  }
 }
 ```
 

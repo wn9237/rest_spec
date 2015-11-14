@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /servicePrincipals/<id>/oauth2PermissionGrants
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_oauth2permissiongrant_from_serviceprincipal"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/servicePrincipals/<id>/oauth2PermissionGrants
 ```
 In the request body, supply a JSON representation of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 ##### Response

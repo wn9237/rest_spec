@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+DELETE /tasks/<id>
+DELETE /me/tasks/<id>
+DELETE /plans/<id>/tasks/<id>
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "delete_task"
 }-->
 ```http
-
+DELETE https://graph.microsoft.com/v1.0/tasks/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.

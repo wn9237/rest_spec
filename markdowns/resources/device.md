@@ -1,6 +1,6 @@
 # device resource type
 
-Represents a device registered in the directory. Inherits from [DirectoryObject].
+Represents a device registered in the directory. Inherits from [DirectoryObject].
 
 ### JSON representation
 

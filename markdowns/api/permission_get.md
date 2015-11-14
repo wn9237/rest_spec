@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drive/root/permissions/<id>
-GET /drive/items/<id>/permissions/<id>
+GET /me/drive/root/permissions/<id>
 GET /drives/<id>/root/permissions/<id>
 ```
 ### Optional query parameters

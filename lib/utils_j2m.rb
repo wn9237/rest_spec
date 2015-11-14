@@ -259,7 +259,7 @@ module SpecMaker
 		end
 	end
 
-	def self.get_json_model_method (objectName=nil, collFlag=false, includeKey=true)
+	def self.get_json_model_method (objectName=nil, collFlag=false, includeKey=true, openTypeReq = false)
 		model = {}
 		if SIMPLETYPES.include? objectName
 			model[:value] = assign_value(objectName, objectName)
@@ -270,10 +270,13 @@ module SpecMaker
 			end
 			return JSON.pretty_generate model
 		end
-
+		isOpenType = false
 		fullpath = JSON_SOURCE_FOLDER + '/' + objectName.downcase + '.json'
 		if File.file?(fullpath)
 			object = JSON.parse(File.read(fullpath, :encoding => 'UTF-8'), {:symbolize_names => true})
+			if object[:isOpenType] 
+				isOpenType = true
+			end
 			object[:properties].each_with_index do |item, i|
 				next if item[:isRelationship]  
 				next if i > 5
@@ -293,6 +296,9 @@ module SpecMaker
 		end 
 		if collFlag 
 			model = {"value" => [model]}
+		end
+		if isOpenType && openTypeReq
+			model = { "#{objectName}" => model }
 		end
 		return JSON.pretty_generate model
 	end

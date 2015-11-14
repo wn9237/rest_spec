@@ -1,6 +1,6 @@
 # group resource type
 
-Represents an Azure Active Directory Group. Inherited from **DirectoryObject**.
+Represents an Azure Active Directory Group. Inherited from **DirectoryObject**.
 
 ### JSON representation
 

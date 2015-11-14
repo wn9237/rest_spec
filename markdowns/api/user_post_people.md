@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/people
+POST /users/<id>/people
+POST /drive/root/createdByUser/people
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_person_from_user"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/people
 ```
 In the request body, supply a JSON representation of [person](../resources/person.md) object.
 ##### Response

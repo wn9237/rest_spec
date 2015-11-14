@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /appRoleAssignments/<id>
+PATCH /servicePrincipals/<id>/appRoleAssignedTo/<id>
+PATCH /servicePrincipals/<id>/appRoleAssignments/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -35,7 +37,7 @@ Here is an example of the request.
   "name": "update_approleassignment"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/v1.0/appRoleAssignments/<id>
 Content-type: application/json
 Content-length: 233
 

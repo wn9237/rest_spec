@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/notes/sectionGroups/<id>
-PATCH /groups/<objectId>/notes/sectionGroups/<id>
-PATCH /drive/root/createdByUser/notes/sectionGroups/<id>
+PATCH /me/notes/sectionGroups/<id>
+PATCH /users/<id>/notes/sectionGroups/<id>
+PATCH /groups/<id>/notes/sectionGroups/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -21,8 +21,10 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|string|The user who created the section group.|
+|createdByIdentity|oneNoteIdentitySet|The user who created the section group.|
 |createdTime|dateTimeOffset|The date and time when the section group was created.|
 |lastModifiedBy|string|The user who last modified the section group.|
+|lastModifiedByIdentity|oneNoteIdentitySet|The user who last modified the section group.|
 |lastModifiedTime|dateTimeOffset|The date and time when the section group was last modified.|
 |name|string|The name of the section group.|
 |sectionGroupsUrl|string|The URL for the sectionGroups navigation property, which returns all the section groups in the section group.|
@@ -39,17 +41,22 @@ Here is an example of the request.
   "name": "update_sectiongroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/<objectId>/notes/sectionGroups/<id>
+PATCH https://graph.microsoft.com/v1.0/me/notes/sectionGroups/<id>
 Content-type: application/json
-Content-length: 230
+Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
-  "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "createdByIdentity": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  },
+  "lastModifiedBy": "lastModifiedBy-value"
 }
 ```
 ##### Response
@@ -62,15 +69,20 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 230
+Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
-  "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "createdByIdentity": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  },
+  "lastModifiedBy": "lastModifiedBy-value"
 }
 ```
 

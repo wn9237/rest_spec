@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
+POST /users/<id>/reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
+POST /drive/root/createdByUser/reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
 
 ```
 ### Request headers
@@ -34,7 +36,7 @@ Here is an example of the request.
   "name": "user_reminderview"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/reminderView
 ```
 
 ##### Response

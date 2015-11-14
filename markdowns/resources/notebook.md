@@ -1,6 +1,6 @@
 # notebook resource type
 
-
+A OneNote notebook
 
 ### JSON representation
 
@@ -17,11 +17,13 @@ Here is a JSON representation of the resource.
 ```json
 {
   "createdBy": "string",
+  "createdByIdentity": {"@odata.type": "microsoft.graph.oneNoteIdentitySet"},
   "createdTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "id": "string (identifier)",
   "isDefault": true,
   "isShared": true,
   "lastModifiedBy": "string",
+  "lastModifiedByIdentity": {"@odata.type": "microsoft.graph.oneNoteIdentitySet"},
   "lastModifiedTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
   "links": {"@odata.type": "microsoft.graph.notebookLinks"},
   "name": "string",
@@ -36,11 +38,13 @@ Here is a JSON representation of the resource.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|string|The user who created the notebook.|
+|createdByIdentity|[oneNoteIdentitySet](onenoteidentityset.md)|The user who created the notebook.|
 |createdTime|[dateTimeOffset](datetimeoffset.md)|The date and time when the notebook was created.|
 |id|string|The unique identifier of the notebook. Read-only.|
 |isDefault|boolean|Indicates whether this is the user's default notebook.|
 |isShared|boolean|Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner.|
 |lastModifiedBy|string|The user who last modified the notebook.|
+|lastModifiedByIdentity|[oneNoteIdentitySet](onenoteidentityset.md)|The user who last modified the notebook.|
 |lastModifiedTime|[dateTimeOffset](datetimeoffset.md)|The date and time when the notebook was last modified.|
 |links|[notebookLinks](notebooklinks.md)|The value of oneNoteClientURL can be used to open the notebook using the OneNote native client app if it's installed. The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client.|
 |name|string|The name of the notebook.|
@@ -52,8 +56,8 @@ Here is a JSON representation of the resource.
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in the notebook. Can be navigated to using the sectionGroupsUrl property or expanded in a GET request. Read-only. Nullable.|
-|sections|[section](section.md) collection|The sections in the notebook. Can be navigated to using the sectionsUrl property or expanded in a GET request. Read-only. Nullable.|
+|sectionGroups|[sectionGroup](sectiongroup.md) collection| Read-only. Nullable.|
+|sections|[section](section.md) collection| Read-only. Nullable.|
 
 ### Methods
 
@@ -66,7 +70,9 @@ Here is a JSON representation of the resource.
 |[List sections](../api/notebook_list_sections.md) |[section](section.md) collection| Get a section object collection.|
 |[Update](../api/notebook_update.md) | [notebook](notebook.md)	|Update notebook object. |
 |[Delete](../api/notebook_delete.md) | None |Delete notebook object. |
-|[copyNotebook](../api/notebook_copynotebook.md)|[copyNotebookModel](copynotebookmodel.md)||
+|[copyNotebook](../api/notebook_copynotebook.md)|[copyStatusModel](copystatusmodel.md)||
+|[exportNotebook](../api/notebook_exportnotebook.md)|None||
+|[importNotebook](../api/notebook_importnotebook.md)|[importStatusModel](importstatusmodel.md)||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

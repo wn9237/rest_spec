@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /groups/<id>/threads/<id>/reply
+POST /me/joinedGroups/<id>/threads/<id>/reply
+POST /users/<id>/joinedGroups/<id>/threads/<id>/reply
 
 ```
 ### Request headers
@@ -33,18 +35,66 @@ Here is an example of the request.
   "name": "conversationthread_reply"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/reply
 Content-type: application/json
-Content-length: 19
+Content-length: 1131
 
 {
   "post": {
+    "body": {
+      "contentType": {
+      },
+      "content": "content-value"
+    },
+    "receivedDateTime": "datetime-value",
+    "hasAttachments": true,
+    "from": {
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      }
+    },
+    "sender": {
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      }
+    },
+    "conversationThreadId": "conversationThreadId-value",
+    "newParticipants": [
+      {
+        "emailAddress": {
+          "name": "name-value",
+          "address": "address-value"
+        }
+      }
+    ],
+    "conversationId": "conversationId-value",
+    "createdDateTime": "datetime-value",
+    "lastModifiedDateTime": "datetime-value",
+    "changeKey": "changeKey-value",
+    "categories": [
+      "categories-value"
+    ],
+    "id": "id-value",
+    "inReplyTo": {
+    },
+    "attachments": [
+      {
+        "lastModifiedDateTime": "datetime-value",
+        "name": "name-value",
+        "contentType": "contentType-value",
+        "size": 99,
+        "isInline": true,
+        "id": "id-value"
+      }
+    ]
   }
 }
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,

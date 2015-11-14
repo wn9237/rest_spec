@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /applications/<id>/extensionProperties
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_extensionproperty_from_application"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/applications/<id>/extensionProperties
 ```
 In the request body, supply a JSON representation of [extensionProperty](../resources/extensionproperty.md) object.
 ##### Response
@@ -42,17 +42,19 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 208
+Content-length: 253
 
 {
-  "appDisplayName": "appDisplayName-value",
-  "name": "name-value",
-  "dataType": "dataType-value",
-  "isSyncedFromOnPremises": true,
-  "targetObjects": [
-    "targetObjects-value"
-  ],
-  "id": "id-value"
+  "extensionProperty": {
+    "appDisplayName": "appDisplayName-value",
+    "name": "name-value",
+    "dataType": "dataType-value",
+    "isSyncedFromOnPremises": true,
+    "targetObjects": [
+      "targetObjects-value"
+    ],
+    "id": "id-value"
+  }
 }
 ```
 

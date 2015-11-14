@@ -42,26 +42,28 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 452
+Content-length: 453
 
 {
-  "accountEnabled": true,
-  "appDisplayName": "appDisplayName-value",
-  "appId": "appId-value",
-  "appOwnerTenantId": "appOwnerTenantId-value",
-  "appRoleAssignmentRequired": true,
-  "appRoles": [
-    {
-      "allowedMemberTypes": [
-        "allowedMemberTypes-value"
-      ],
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "id": "id-value",
-      "isEnabled": true,
-      "value": "value-value"
-    }
-  ]
+  "servicePrincipal": {
+    "accountEnabled": true,
+    "addIns": [
+      {
+        "id": "id-value",
+        "type": "type-value",
+        "properties": [
+          {
+            "key": "key-value",
+            "value": "value-value"
+          }
+        ]
+      }
+    ],
+    "appDisplayName": "appDisplayName-value",
+    "appId": "appId-value",
+    "appOwnerOrganizationId": "appOwnerOrganizationId-value",
+    "appRoleAssignmentRequired": true
+  }
 }
 ```
 

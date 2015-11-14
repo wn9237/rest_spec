@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/mailFolders/<id>/childFolders
+POST /users/<id>/mailFolders/<id>/childFolders
+POST /drive/root/createdByUser/mailFolders/<id>/childFolders
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_mailfolder_from_mailfolder"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/mailFolders/<id>/childFolders
 ```
 In the request body, supply a JSON representation of [mailFolder](../resources/mailfolder.md) object.
 ##### Response

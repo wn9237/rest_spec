@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/notes/pages
+POST /users/<id>/notes/pages
+POST /groups/<id>/notes/pages
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_page_from_notes"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/notes/pages
 ```
 In the request body, supply a JSON representation of [page](../resources/page.md) object.
 ##### Response
@@ -42,9 +44,22 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3
+Content-length: 312
 
 {
+  "title": "title-value",
+  "createdByAppId": "createdByAppId-value",
+  "links": {
+    "oneNoteClientUrl": {
+      "href": "href-value"
+    },
+    "oneNoteWebUrl": {
+      "href": "href-value"
+    }
+  },
+  "contentUrl": "contentUrl-value",
+  "content": "content-value",
+  "lastModifiedTime": "datetime-value"
 }
 ```
 

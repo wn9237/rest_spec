@@ -42,21 +42,23 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 328
+Content-length: 364
 
 {
-  "accountEnabled": true,
-  "alternativeSecurityIds": [
-    {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
-    }
-  ],
-  "approximateLastLogonTimestamp": "datetime-value",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceObjectVersion": 99
+  "device": {
+    "accountEnabled": true,
+    "alternativeSecurityIds": [
+      {
+        "type": 99,
+        "identityProvider": "identityProvider-value",
+        "key": "key-value"
+      }
+    ],
+    "approximateLastSignInDateTime": "datetime-value",
+    "deviceId": "deviceId-value",
+    "deviceMetadata": "deviceMetadata-value",
+    "deviceVersion": 99
+  }
 }
 ```
 

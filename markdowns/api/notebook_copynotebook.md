@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/notes/notebooks/<id>/copyNotebook
-POST /groups/<objectId>/notes/notebooks/<id>/copyNotebook
-POST /drive/root/createdByUser/notes/notebooks/<id>/copyNotebook
+POST /me/notes/notebooks/<id>/copyNotebook
+POST /users/<id>/notes/notebooks/<id>/copyNotebook
+POST /groups/<id>/notes/notebooks/<id>/copyNotebook
 
 ```
 ### Request headers
@@ -21,12 +21,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|siteCollectionId|string||
-|siteId|string||
+|groupId|string||
 |renameAs|string||
+|notebookFolder|string||
 
 ### Response
-If successful, this method returns `200, OK` response code and [copyNotebookModel](../resources/copynotebookmodel.md) object in the response body.
+If successful, this method returns `200, OK` response code and [copyStatusModel](../resources/copystatusmodel.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -37,14 +37,14 @@ Here is an example of the request.
   "name": "notebook_copynotebook"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/notebooks/<id>/copyNotebook
+POST https://graph.microsoft.com/v1.0/me/notes/notebooks/<id>/copyNotebook
 Content-type: application/json
-Content-length: 110
+Content-length: 108
 
 {
-  "siteCollectionId": "siteCollectionId-value",
-  "siteId": "siteId-value",
-  "renameAs": "renameAs-value"
+  "groupId": "groupId-value",
+  "renameAs": "renameAs-value",
+  "notebookFolder": "notebookFolder-value"
 }
 ```
 
@@ -53,28 +53,17 @@ Here is an example of the response. Note: The response object may be truncated f
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.copynotebookmodel"
+  "@odata.type": "microsoft.graph.copystatusmodel"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 284
+Content-length: 89
 
 {
-  "isDefault": true,
-  "userRole": {
-  },
-  "isShared": true,
-  "sectionsUrl": "sectionsUrl-value",
-  "sectionGroupsUrl": "sectionGroupsUrl-value",
-  "links": {
-    "oneNoteClientUrl": {
-      "href": "href-value"
-    },
-    "oneNoteWebUrl": {
-      "href": "href-value"
-    }
-  }
+  "id": "id-value",
+  "status": "status-value",
+  "createdDateTime": "datetime-value"
 }
 ```
 

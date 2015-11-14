@@ -11,7 +11,13 @@ GET /groups
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
+|$count|none|The count of related entities can be requested by specifying the $count query option.|
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [group](../resources/group.md) for supported names. |
+|$filter|string|Filter string that lets you filter the response based on a set of criteria.|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
+|$select|string|Comma-separated list of properties to include in the response.|
+|$skip|int|The number of items to skip in a result set.|
+|$skipToken|string|Paging token that is used to get the next set of results.|
 |$top|int|The number of items to return in a result set.|
 
 ### Request headers
@@ -44,21 +50,19 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 295
+Content-length: 272
 
 {
   "value": [
     {
       "description": "description-value",
-      "dirSyncEnabled": true,
       "displayName": "displayName-value",
-      "creationOptions": [
-        "creationOptions-value"
-      ],
       "groupTypes": [
         "groupTypes-value"
       ],
-      "isPublic": true
+      "mail": "mail-value",
+      "mailEnabled": true,
+      "mailNickname": "mailNickname-value"
     }
   ]
 }

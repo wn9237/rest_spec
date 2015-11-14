@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/notes/sections/<id>
-PATCH /groups/<objectId>/notes/sections/<id>
-PATCH /drive/root/createdByUser/notes/sections/<id>
+PATCH /me/notes/sections/<id>
+PATCH /users/<id>/notes/sections/<id>
+PATCH /groups/<id>/notes/sections/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,14 +20,16 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|string|The user who created the section. |
-|createdTime|dateTimeOffset|The date and time when the section was created. |
+|createdBy|string|The user who created the section.|
+|createdByIdentity|oneNoteIdentitySet|The user who created the section.|
+|createdTime|dateTimeOffset|The date and time when the section was created.|
 |isDefault|boolean|Indicates whether this is the user's default section.|
-|lastModifiedBy|string|The user who last modified the section. |
-|lastModifiedTime|dateTimeOffset|The date and time when the section was last modified. |
-|name|string|The name of the section. |
-|pagesUrl|string|The /pages endpoint where you can get details for all the pages in the section.|
-|self|string|The endpoint where you can get details about the section. |
+|lastModifiedBy|string|The user who last modified the section.|
+|lastModifiedByIdentity|oneNoteIdentitySet|The user who last modified the section.|
+|lastModifiedTime|dateTimeOffset|The date and time when the section was last modified.|
+|name|string|The name of the section.|
+|pagesUrl|string|The /pages endpoint where you can get details for all the pages in the section."|
+|self|string|The endpoint where you can get details about the section.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [section](../resources/section.md) object in the response body.
@@ -39,17 +41,22 @@ Here is an example of the request.
   "name": "update_section"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>
+PATCH https://graph.microsoft.com/v1.0/me/notes/sections/<id>
 Content-type: application/json
-Content-length: 197
+Content-length: 272
 
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
-  "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "createdByIdentity": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  },
+  "lastModifiedBy": "lastModifiedBy-value"
 }
 ```
 ##### Response
@@ -62,15 +69,20 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 197
+Content-length: 272
 
 {
   "isDefault": true,
   "pagesUrl": "pagesUrl-value",
   "name": "name-value",
   "createdBy": "createdBy-value",
-  "lastModifiedBy": "lastModifiedBy-value",
-  "lastModifiedTime": "datetime-value"
+  "createdByIdentity": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  },
+  "lastModifiedBy": "lastModifiedBy-value"
 }
 ```
 

@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /drive/root/permissions
+POST /me/drive/root/permissions
+POST /drives/<id>/root/permissions
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_permission_from_driveitem"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/drive/root/permissions
 ```
 In the request body, supply a JSON representation of [permission](../resources/permission.md) object.
 ##### Response
@@ -42,9 +44,45 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3
+Content-length: 732
 
 {
+  "grantedTo": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
+  "id": "id-value",
+  "invitation": {
+    "email": "email-value",
+    "redeemedBy": "redeemedBy-value",
+    "signInRequired": true
+  },
+  "inheritedFrom": {
+    "driveId": "driveId-value",
+    "id": "id-value",
+    "path": "path-value"
+  },
+  "link": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "type": "type-value",
+    "webUrl": "webUrl-value"
+  },
+  "roles": [
+    "roles-value"
+  ]
 }
 ```
 

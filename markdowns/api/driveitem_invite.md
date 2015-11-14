@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /drive/root/invite
+POST /me/drive/root/invite
+POST /drives/<id>/root/invite
 
 ```
 ### Request headers
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "driveitem_invite"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/drive/root/invite
 Content-type: application/json
 Content-length: 313
 
@@ -70,11 +72,47 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 32
+Content-length: 905
 
 {
   "value": [
     {
+      "grantedTo": {
+        "application": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "device": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "user": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        }
+      },
+      "id": "id-value",
+      "invitation": {
+        "email": "email-value",
+        "redeemedBy": "redeemedBy-value",
+        "signInRequired": true
+      },
+      "inheritedFrom": {
+        "driveId": "driveId-value",
+        "id": "id-value",
+        "path": "path-value"
+      },
+      "link": {
+        "application": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "type": "type-value",
+        "webUrl": "webUrl-value"
+      },
+      "roles": [
+        "roles-value"
+      ]
     }
   ]
 }

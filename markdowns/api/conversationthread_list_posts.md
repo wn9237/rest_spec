@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /groups/<id>/threads/<id>/posts
+GET /me/joinedGroups/<id>/threads/<id>/posts
+GET /users/<id>/joinedGroups/<id>/threads/<id>/posts
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "get_posts"
 }-->
 ```http
-/posts
+GET https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,11 +52,31 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 32
+Content-length: 523
 
 {
   "value": [
     {
+      "body": {
+        "contentType": {
+        },
+        "content": "content-value"
+      },
+      "receivedDateTime": "datetime-value",
+      "hasAttachments": true,
+      "from": {
+        "emailAddress": {
+          "name": "name-value",
+          "address": "address-value"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "name-value",
+          "address": "address-value"
+        }
+      },
+      "conversationThreadId": "conversationThreadId-value"
     }
   ]
 }

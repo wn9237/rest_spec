@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /drive/root/permissions/<id>
-PATCH /drive/items/<id>/permissions/<id>
+PATCH /me/drive/root/permissions/<id>
 PATCH /drives/<id>/root/permissions/<id>
 ```
 ### Optional request headers

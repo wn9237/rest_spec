@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /groups/<id>/plans
+POST /me/joinedGroups/<id>/plans
+POST /users/<id>/joinedGroups/<id>/plans
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_plan_from_group"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/groups/<id>/plans
 ```
 In the request body, supply a JSON representation of [plan](../resources/plan.md) object.
 ##### Response

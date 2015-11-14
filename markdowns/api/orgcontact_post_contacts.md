@@ -42,15 +42,19 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 220
+Content-length: 260
 
 {
-  "city": "city-value",
-  "country": "country-value",
-  "department": "department-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "facsimileTelephoneNumber": "facsimileTelephoneNumber-value"
+  "orgContact": {
+    "businessPhones": [
+      "businessPhones-value"
+    ],
+    "city": "city-value",
+    "companyName": "companyName-value",
+    "country": "country-value",
+    "department": "department-value",
+    "displayName": "displayName-value"
+  }
 }
 ```
 

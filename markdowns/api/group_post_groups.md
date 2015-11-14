@@ -42,19 +42,19 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 226
+Content-length: 244
 
 {
-  "description": "description-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "creationOptions": [
-    "creationOptions-value"
-  ],
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "isPublic": true
+  "group": {
+    "description": "description-value",
+    "displayName": "displayName-value",
+    "groupTypes": [
+      "groupTypes-value"
+    ],
+    "mail": "mail-value",
+    "mailEnabled": true,
+    "mailNickname": "mailNickname-value"
+  }
 }
 ```
 
