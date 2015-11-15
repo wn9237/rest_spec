@@ -11,7 +11,7 @@ module SpecMaker
 
 	# Initialize 
 	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/resources/"
-	MARKDOWN_RESOURCE_FOLDER_OUT = "../markdowns/newresources/"
+	MARKDOWN_RESOURCE_FOLDER_OUT = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/newresources/"
 	MARKDOWN_RESOURCE_FOLDER_TEMP = "../markdowns/resources/"
 	NEWLINE = "\n"
 

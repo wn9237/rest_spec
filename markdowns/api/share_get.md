@@ -47,7 +47,6 @@ Content-type: application/json
 Content-length: 330
 
 {
-  "id": "id-value",
   "name": "name-value",
   "owner": {
     "application": {
@@ -62,7 +61,8 @@ Content-length: 330
       "displayName": "displayName-value",
       "id": "id-value"
     }
-  }
+  },
+  "id": "id-value"
 }
 ```
 

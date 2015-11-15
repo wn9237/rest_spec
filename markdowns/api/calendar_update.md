@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /me/calendar
+PATCH /users/<id>/calendar
+PATCH /groups/<id>/calendar
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -32,7 +34,7 @@ Here is an example of the request.
   "name": "update_calendar"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/v1.0/me/calendar
 Content-type: application/json
 Content-length: 78
 

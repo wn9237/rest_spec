@@ -6,7 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /groups/<id>/threads/<id>/posts
+POST /groups/<id>/conversations/<id>/threads/<id>/posts
 
 ```
 ### Request headers
@@ -29,7 +30,7 @@ Here is an example of the request.
   "name": "create_post_from_conversationthread"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts
 ```
 In the request body, supply a JSON representation of [post](../resources/post.md) object.
 ##### Response
@@ -42,9 +43,29 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3
+Content-length: 414
 
 {
+  "body": {
+    "contentType": {
+    },
+    "content": "content-value"
+  },
+  "receivedDateTime": "datetime-value",
+  "hasAttachments": true,
+  "from": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
+    }
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
+    }
+  },
+  "conversationThreadId": "conversationThreadId-value"
 }
 ```
 

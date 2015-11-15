@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /drive/root/thumbnails/<id>
-PATCH /drive/items/<id>/thumbnails/<id>
+PATCH /me/drive/root/thumbnails/<id>
 PATCH /drives/<id>/root/thumbnails/<id>
 ```
 ### Optional request headers
@@ -79,7 +79,6 @@ Content-type: application/json
 Content-length: 456
 
 {
-  "id": "id-value",
   "large": {
     "content": "content-value",
     "height": 99,
@@ -103,7 +102,8 @@ Content-length: 456
     "height": 99,
     "url": "url-value",
     "width": 99
-  }
+  },
+  "id": "id-value"
 }
 ```
 

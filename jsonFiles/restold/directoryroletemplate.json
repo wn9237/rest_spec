@@ -24,7 +24,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/directoryRoleTemplates/<objectId>": true
+    "/directoryRoleTemplates/<id>": true
   },
   "properties": [
     {
@@ -56,22 +56,8 @@
       "isUnicode": false
     },
     {
-      "name": "objectType",
-      "description": "A string that identifies the object type. For role templates the value is always “RoleTemplate”. Inherited from [DirectoryObject].",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "objectId",
-      "description": "The unique identifier for the template. Inherited from [DirectoryObject]. In version 1.5 and later, you specify the **objectId** of the directory role template for the **roleTemplateId** property in the POST request activate a [DirectoryRole] in a tenant.                             **Notes**: **key**, immutable, not nullable, unique.            ",
+      "name": "id",
+      "description": "",
       "isKey": true,
       "dataType": "string",
       "isReadOnly": true,
@@ -82,20 +68,6 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
-    },
-    {
-      "name": "deletionTimestamp",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     }
   ],
   "methods": [
@@ -105,7 +77,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -134,7 +106,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -163,7 +135,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": null,
+      "isReturnNullable": false,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /subscribedSkus/<id>
 ```
 ### Optional query parameters
 
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_subscribedsku"
 }-->
 ```http
-
+GET https://graph.microsoft.com/v1.0/subscribedSkus/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -39,12 +39,11 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 428
+Content-length: 450
 
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
-  "id": "id-value",
   "prepaidUnits": {
     "enabled": 99,
     "suspended": 99,
@@ -58,7 +57,8 @@ Content-length: 428
       "appliesTo": "appliesTo-value"
     }
   ],
-  "skuId": "skuId-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 

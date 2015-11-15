@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+DELETE /me/mailFolders/<id>
+DELETE /users/<id>/mailFolders/<id>
+DELETE /drive/root/createdByUser/mailFolders/<id>
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "delete_mailfolder"
 }-->
 ```http
-
+DELETE https://graph.microsoft.com/v1.0/me/mailFolders/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.

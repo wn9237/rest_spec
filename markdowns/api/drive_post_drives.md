@@ -45,7 +45,6 @@ Content-type: application/json
 Content-length: 458
 
 {
-  "id": "id-value",
   "driveType": "driveType-value",
   "owner": {
     "application": {
@@ -67,7 +66,8 @@ Content-length: 458
     "state": "state-value",
     "total": 99,
     "used": 99
-  }
+  },
+  "id": "id-value"
 }
 ```
 

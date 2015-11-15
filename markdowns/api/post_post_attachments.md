@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<objectId>/threads/<id>/posts/<id>/attachments
-POST /groups/<objectId>/conversations/<id>/threads/<id>/posts/<id>/attachments
-POST /users/<objectId>/joinedGroups/<objectId>/threads/<id>/posts/<id>/attachments
+POST /groups/<id>/threads/<id>/posts/<id>/attachments
+POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
 
 ```
 ### Request headers
@@ -31,7 +30,7 @@ Here is an example of the request.
   "name": "create_attachment_from_post"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/threads/<id>/posts/<id>/attachments
+POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>/attachments
 ```
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 ##### Response

@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /me/mailFolders/<id>/messages
+GET /users/<id>/mailFolders/<id>/messages
+GET /drive/root/createdByUser/mailFolders/<id>/messages
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "get_messages"
 }-->
 ```http
-/messages
+GET https://graph.microsoft.com/v1.0/me/mailFolders/<id>/messages
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.

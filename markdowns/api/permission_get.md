@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drive/root/permissions/<id>
-GET /drive/items/<id>/permissions/<id>
+GET /me/drive/root/permissions/<id>
 GET /drives/<id>/root/permissions/<id>
 ```
 ### Optional query parameters
@@ -46,7 +46,7 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 732
+Content-length: 742
 
 {
   "grantedTo": {
@@ -63,7 +63,6 @@ Content-length: 732
       "id": "id-value"
     }
   },
-  "id": "id-value",
   "invitation": {
     "email": "email-value",
     "redeemedBy": "redeemedBy-value",
@@ -84,7 +83,8 @@ Content-length: 732
   },
   "roles": [
     "roles-value"
-  ]
+  ],
+  "shareId": "shareId-value"
 }
 ```
 

@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /drive/root/thumbnails/<id>
-DELETE /drive/items/<id>/thumbnails/<id>
+DELETE /me/drive/root/thumbnails/<id>
 DELETE /drives/<id>/root/thumbnails/<id>
 
 ```

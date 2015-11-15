@@ -102,7 +102,6 @@ Here is a JSON representation of the resource.
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) collection| Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| Read-only.|
 
 ### Methods
@@ -110,8 +109,6 @@ Here is a JSON representation of the resource.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get contact](../api/contact_get.md) | [contact](contact.md) |Read properties and relationships of contact object.|
-|[Create extension](../api/contact_post_extensions.md) |[extension](extension.md)| Create a new extension by posting to the extensions collection.|
-|[List extensions](../api/contact_list_extensions.md) |[extension](extension.md) collection| Get a extension object collection.|
 |[Update](../api/contact_update.md) | [contact](contact.md)	|Update contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete contact object. |
 

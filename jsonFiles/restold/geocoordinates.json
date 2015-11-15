@@ -67,34 +67,6 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
-    },
-    {
-      "name": "accuracy",
-      "description": "The accuracy of the sensor providing the latitude and longitude.",
-      "isKey": false,
-      "dataType": "double",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "altitudeAccuracy",
-      "description": "The accuracy of the sensor providing the altitude.",
-      "isKey": false,
-      "dataType": "double",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     }
   ],
   "methods": [

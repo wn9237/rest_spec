@@ -120,23 +120,14 @@ Here is a JSON representation of the resource.
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Inherited from [DirectoryObject].            HTTP Methods: GET Read-only. Nullable.|
 |drive|[drive](drive.md)| Read-only.|
 |events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Navigation property. Read-only. Nullable.|
-|inferenceClassification|[inferenceClassification](inferenceclassification.md)| Read-only.|
-|joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE Read-only.|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET Read-only. Nullable.|
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Navigation property. Read-only. Nullable.|
-|notes|[notes](notes.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Requires version 2013-11-08 or newer. Read-only. Nullable.|
-|people|[person](person.md) collection| Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| Read-only.|
-|photos|[profilePhoto](profilephoto.md) collection| Read-only. Nullable.|
-|plans|[plan](plan.md) collection| Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
-|tasks|[task](task.md) collection| Read-only. Nullable.|
-|trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
-|workingWith|[user](user.md) collection| Read-only. Nullable.|
 
 ### Methods
 
@@ -159,8 +150,6 @@ Here is a JSON representation of the resource.
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get a directReport object collection.|
 |[Create event](../api/user_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[List events](../api/user_list_events.md) |[event](event.md) collection| Get a event object collection.|
-|[Create group](../api/user_post_joinedgroups.md) |[group](group.md)| Create a new group by posting to the joinedGroups collection.|
-|[List joinedGroups](../api/user_list_joinedgroups.md) |[group](group.md) collection| Get a group object collection.|
 |[Create mailFolder](../api/user_post_mailfolders.md) |[mailFolder](mailfolder.md)| Create a new mailFolder by posting to the mailFolders collection.|
 |[List mailFolders](../api/user_list_mailfolders.md) |[mailFolder](mailfolder.md) collection| Get a mailFolder object collection.|
 |[Create memberOf](../api/user_post_memberof.md) |[directoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
@@ -171,26 +160,13 @@ Here is a JSON representation of the resource.
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get a ownedDevice object collection.|
 |[Create ownedObject](../api/user_post_ownedobjects.md) |[directoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
-|[Create person](../api/user_post_people.md) |[person](person.md)| Create a new person by posting to the people collection.|
-|[List people](../api/user_list_people.md) |[person](person.md) collection| Get a person object collection.|
-|[Create profilePhoto](../api/user_post_photos.md) |[profilePhoto](profilephoto.md)| Create a new profilePhoto by posting to the photos collection.|
-|[List photos](../api/user_list_photos.md) |[profilePhoto](profilephoto.md) collection| Get a profilePhoto object collection.|
-|[Create plan](../api/user_post_plans.md) |[plan](plan.md)| Create a new plan by posting to the plans collection.|
-|[List plans](../api/user_list_plans.md) |[plan](plan.md) collection| Get a plan object collection.|
 |[Create registeredDevice](../api/user_post_registereddevices.md) |[directoryObject](directoryobject.md)| Create a new registeredDevice by posting to the registeredDevices collection.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Get a registeredDevice object collection.|
-|[Create task](../api/user_post_tasks.md) |[task](task.md)| Create a new task by posting to the tasks collection.|
-|[List tasks](../api/user_list_tasks.md) |[task](task.md) collection| Get a task object collection.|
-|[Create driveItem](../api/user_post_trendingaround.md) |[driveItem](driveitem.md)| Create a new driveItem by posting to the trendingAround collection.|
-|[List trendingAround](../api/user_list_trendingaround.md) |[driveItem](driveitem.md) collection| Get a driveItem object collection.|
-|[Create user](../api/user_post_workingwith.md) |[user](user.md)| Create a new user by posting to the workingWith collection.|
-|[List workingWith](../api/user_list_workingwith.md) |[user](user.md) collection| Get a user object collection.|
 |[Update](../api/user_update.md) | [user](user.md)	|Update user object. |
 |[Delete](../api/user_delete.md) | None |Delete user object. |
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)||
 |[changePassword](../api/user_changepassword.md)|None||
 |[checkMemberGroups](../api/user_checkmembergroups.md)|string collection||
-|[findMeetingTimes](../api/user_findmeetingtimes.md)|[meetingTimeCandidate](meetingtimecandidate.md)||
 |[getMemberGroups](../api/user_getmembergroups.md)|string collection||
 |[getMemberObjects](../api/user_getmemberobjects.md)|string collection||
 |[reminderView](../api/user_reminderview.md)|[reminder](reminder.md) collection||

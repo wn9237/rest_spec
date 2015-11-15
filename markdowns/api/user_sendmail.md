@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/sendMail
+POST /users/<id>/sendMail
+POST /drive/root/createdByUser/sendMail
 
 ```
 ### Request headers
@@ -34,9 +36,9 @@ Here is an example of the request.
   "name": "user_sendmail"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
-Content-length: 1984
+Content-length: 1944
 
 {
   "message": {
@@ -108,8 +110,6 @@ Content-length: 1984
     "isRead": true,
     "isDraft": true,
     "webLink": "webLink-value",
-    "inferenceClassification": {
-    },
     "createdDateTime": "datetime-value",
     "lastModifiedDateTime": "datetime-value",
     "changeKey": "changeKey-value",

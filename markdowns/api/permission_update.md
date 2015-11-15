@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /drive/root/permissions/<id>
-PATCH /drive/items/<id>/permissions/<id>
+PATCH /me/drive/root/permissions/<id>
 PATCH /drives/<id>/root/permissions/<id>
 ```
 ### Optional request headers
@@ -39,7 +39,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
 Content-type: application/json
-Content-length: 712
+Content-length: 742
 
 {
   "grantedTo": {
@@ -76,7 +76,8 @@ Content-length: 712
   },
   "roles": [
     "roles-value"
-  ]
+  ],
+  "shareId": "shareId-value"
 }
 ```
 ##### Response
@@ -89,7 +90,7 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 732
+Content-length: 742
 
 {
   "grantedTo": {
@@ -106,7 +107,6 @@ Content-length: 732
       "id": "id-value"
     }
   },
-  "id": "id-value",
   "invitation": {
     "email": "email-value",
     "redeemedBy": "redeemedBy-value",
@@ -127,7 +127,8 @@ Content-length: 732
   },
   "roles": [
     "roles-value"
-  ]
+  ],
+  "shareId": "shareId-value"
 }
 ```
 

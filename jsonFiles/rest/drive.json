@@ -25,32 +25,14 @@
   "deleteDescription": "",
   "restPath": {
     "/groups/<id>/drive": true,
-    "/users/<id>/joinedGroups/<id>/drive": true,
     "/users/<id>/drive": true,
     "/drives/<id>": true,
-    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<id>/drive": true,
     "/shares/<id>/items/<id>/createdByUser/drive": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<id>/drive": true,
     "/shares/<id>/items/<id>/lastModifiedByUser/drive": true,
-    "/me/joinedGroups/<id>/drive": true,
     "/me/drive": true,
     "/drive": true
   },
   "properties": [
-    {
-      "name": "id",
-      "description": "The unique identifier of the drive.",
-      "isKey": true,
-      "dataType": "string",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
-    },
     {
       "name": "driveType",
       "description": "Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`.",
@@ -92,6 +74,20 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
+    },
+    {
+      "name": "id",
+      "description": "The unique identifier of the drive.",
+      "isKey": true,
+      "dataType": "string",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": false
     },
     {
       "name": "items",

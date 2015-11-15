@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
+POST /users/<id>/reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
+POST /drive/root/createdByUser/reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
 
 ```
 ### Request headers
@@ -34,7 +36,7 @@ Here is an example of the request.
   "name": "user_reminderview"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/reminderView
 ```
 
 ##### Response
@@ -48,7 +50,7 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 909
+Content-length: 673
 
 {
   "value": [
@@ -66,20 +68,12 @@ Content-length: 909
       "eventSubject": "eventSubject-value",
       "eventLocation": {
         "displayName": "displayName-value",
-        "locationEmailAddress": "locationEmailAddress-value",
         "address": {
           "street": "street-value",
           "city": "city-value",
           "state": "state-value",
           "countryOrRegion": "countryOrRegion-value",
           "postalCode": "postalCode-value"
-        },
-        "coordinates": {
-          "altitude": 99,
-          "latitude": 99,
-          "longitude": 99,
-          "accuracy": 99,
-          "altitudeAccuracy": 99
         }
       }
     }

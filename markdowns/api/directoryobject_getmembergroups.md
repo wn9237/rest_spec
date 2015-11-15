@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/manager/getMemberGroups
+POST /me/memberOf/<id>/getMemberGroups
+POST /users/<id>/manager/getMemberGroups
 
 ```
 ### Request headers
@@ -33,7 +35,7 @@ Here is an example of the request.
   "name": "directoryobject_getmembergroups"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/manager/getMemberGroups
 Content-type: application/json
 Content-length: 33
 

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /groups/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -24,7 +24,6 @@ In the request body, supply the values for relevant fields that should be update
 |description|string|An optional description for the group.|
 |displayName|string|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. |
 |groupTypes|string||
-|isFavorite|boolean||
 |isSubscribedByMail|boolean||
 |mail|string|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com".|
 |mailEnabled|boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Azure AD Graph.|
@@ -47,7 +46,7 @@ Here is an example of the request.
   "name": "update_group"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/v1.0/groups/<id>
 Content-type: application/json
 Content-length: 211
 

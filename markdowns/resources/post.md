@@ -53,7 +53,6 @@ Here is a JSON representation of the resource.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection| Read-only. Nullable.|
-|extensions|[extension](extension.md) collection| Read-only. Nullable.|
 |inReplyTo|[post](post.md)| Read-only.|
 
 ### Methods
@@ -63,8 +62,6 @@ Here is a JSON representation of the resource.
 |[Get post](../api/post_get.md) | [post](post.md) |Read properties and relationships of post object.|
 |[Create attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
 |[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get a attachment object collection.|
-|[Create extension](../api/post_post_extensions.md) |[extension](extension.md)| Create a new extension by posting to the extensions collection.|
-|[List extensions](../api/post_list_extensions.md) |[extension](extension.md) collection| Get a extension object collection.|
 |[Update](../api/post_update.md) | [post](post.md)	|Update post object. |
 |[Delete](../api/post_delete.md) | None |Delete post object. |
 |[forward](../api/post_forward.md)|None||

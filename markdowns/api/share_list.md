@@ -55,7 +55,6 @@ Content-length: 423
 {
   "value": [
     {
-      "id": "id-value",
       "name": "name-value",
       "owner": {
         "application": {
@@ -70,7 +69,8 @@ Content-length: 423
           "displayName": "displayName-value",
           "id": "id-value"
         }
-      }
+      },
+      "id": "id-value"
     }
   ]
 }

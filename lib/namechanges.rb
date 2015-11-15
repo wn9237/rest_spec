@@ -7,8 +7,8 @@ require 'json'
 module SpecMaker
 
 	# Initialize 
-	RESOURCES_NEW = "../jsonfiles/rest/" #ignore naming conv.
-	RESOURCES_OLD = "../jsonfiles/restold/" # this is the old one
+	RESOURCES_NEW = "../jsonfiles/restold/" #ignore naming conv.
+	RESOURCES_OLD = "../jsonfiles/rest/" # this is the old one
 	DIFF_OUT_FILE =  "../jsonfiles/diff.json"
 	NEWLINE = "\n"
 
@@ -82,7 +82,7 @@ module SpecMaker
 		@diff[@key] = {}
 		if File.file?(fullpath)
 			processed_files = processed_files + 1
-			puts "-> #{item}"
+			#puts "-> #{item}"
 			oldm = File.read(fullpath, :encoding => 'UTF-8')
 			fullpath2 = RESOURCES_NEW + item
 			if File.file?(fullpath2)
@@ -92,6 +92,7 @@ module SpecMaker
 				do_diff(oldm, newm)
 			else
 				@diff[@key][:isDeleted] = true
+				puts @key
 				ideleted = ideleted + 1
 			end
 
@@ -109,8 +110,8 @@ module SpecMaker
 			if !@diff[@key][:isDeleted] 
 				if !@diff[@key][:deletedmethods].empty? || !@diff[@key][:newmethods].empty?
 					imethods_changed = imethods_changed + 1
-					puts "Removed methods: #{@diff[@key][:deletedmethods]}"
-					puts "Added methods: #{@diff[@key][:newmethods]}"
+					#puts "Removed methods: #{@diff[@key][:deletedmethods]}"
+					#puts "Added methods: #{@diff[@key][:newmethods]}"
 				end
 			end
 			if @diff[@key][:untouched]

@@ -141,14 +141,19 @@ module SpecMaker
 			puts "----> This is a BaseType"
 			@base_types[entity[:Name].to_sym] = deep_copy(entity)
 		end
-		@json_object = deep_copy(@template) 		
+		@json_object = deep_copy(@template)
+		
+		if entity.has_key? :OpenType 
+			@json_object[:isOpenType] = true if entity[:OpenType] 	
+			puts "*---> OpenType"
+		end		 		
 		
 		# If you find BaseType, pull in Key, Properties and Nav-Properties from BaseType and proceed as usual
 		baseType = nil
 		if entity.has_key?(:BaseType)
 			@ibasetypemerges = @ibasetypemerges + 1
 			baseType = entity[:BaseType][(entity[:BaseType].rindex('.') + 1)..-1]
-			puts "$$$$1 #{baseType}"
+
 			BASETYPE_MAPPING.each do |k, v|
 				 if k.downcase == baseType.downcase
 					puts "------> Mapping BaseType #{baseType} back to #{v}"

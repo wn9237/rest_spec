@@ -24,27 +24,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<id>": true,
-    "/users/<id>/joinedGroups/<id>": true,
-    "/drives/<id>/items/<id>/createdByUser/joinedGroups/<id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/drives/<id>/special/<id>/createdByUser/joinedGroups/<id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/drives/<id>/root/createdByUser/joinedGroups/<id>": true,
-    "/drives/<id>/root/lastModifiedByUser/joinedGroups/<id>": true,
-    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/me/joinedGroups/<id>": true,
-    "/drive/items/<id>/createdByUser/joinedGroups/<id>": true,
-    "/drive/items/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/drive/shared/<id>/createdByUser/joinedGroups/<id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/drive/special/<id>/createdByUser/joinedGroups/<id>": true,
-    "/drive/special/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/drive/root/createdByUser/joinedGroups/<id>": true,
-    "/drive/root/lastModifiedByUser/joinedGroups/<id>": true
+    "/groups/<id>": true
   },
   "properties": [
     {
@@ -258,20 +238,6 @@
       "isUnicode": null
     },
     {
-      "name": "isFavorite",
-      "description": "",
-      "isKey": false,
-      "dataType": "boolean",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
       "name": "isSubscribedByMail",
       "description": "",
       "isKey": false,
@@ -454,20 +420,6 @@
       "isUnicode": null
     },
     {
-      "name": "photos",
-      "description": "",
-      "isKey": false,
-      "dataType": "profilePhoto",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
       "name": "acceptedSenders",
       "description": "",
       "isKey": false,
@@ -507,34 +459,6 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
-      "isUnicode": null
-    },
-    {
-      "name": "notes",
-      "description": "",
-      "isKey": false,
-      "dataType": "notes",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": null
-    },
-    {
-      "name": "plans",
-      "description": "",
-      "isKey": false,
-      "dataType": "plan",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
       "isUnicode": null
     }
   ],

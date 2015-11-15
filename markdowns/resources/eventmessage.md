@@ -28,7 +28,6 @@ Here is a JSON representation of the resource.
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": {"@odata.type": "microsoft.graph.importance"},
-  "inferenceClassification": {"@odata.type": "microsoft.graph.inferenceClassificationType"},
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
@@ -62,7 +61,6 @@ Here is a JSON representation of the resource.
 |hasAttachments|boolean||
 |id|string| Read-only.|
 |importance|[importance](importance.md)||
-|inferenceClassification|[inferenceClassificationType](inferenceclassificationtype.md)||
 |isDeliveryReceiptRequested|boolean||
 |isDraft|boolean||
 |isRead|boolean||
@@ -84,7 +82,6 @@ Here is a JSON representation of the resource.
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection| Read-only. Nullable.|
 |event|[event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
-|extensions|[extension](extension.md) collection| Read-only. Nullable.|
 
 ### Methods
 
@@ -93,8 +90,6 @@ Here is a JSON representation of the resource.
 |[Get eventMessage](../api/eventmessage_get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
 |[Create attachment](../api/eventmessage_post_attachments.md) |[attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
 |[List attachments](../api/eventmessage_list_attachments.md) |[attachment](attachment.md) collection| Get a attachment object collection.|
-|[Create extension](../api/eventmessage_post_extensions.md) |[extension](extension.md)| Create a new extension by posting to the extensions collection.|
-|[List extensions](../api/eventmessage_list_extensions.md) |[extension](extension.md) collection| Get a extension object collection.|
 |[Update](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)	|Update eventMessage object. |
 |[Delete](../api/eventmessage_delete.md) | None |Delete eventMessage object. |
 |[copy](../api/eventmessage_copy.md)|[message](message.md)||

@@ -29,7 +29,6 @@ In the request body, supply the values for relevant fields that should be update
 |from|recipient||
 |hasAttachments|boolean||
 |importance|importance||
-|inferenceClassification|inferenceClassificationType||
 |isDeliveryReceiptRequested|boolean||
 |isDraft|boolean||
 |isRead|boolean||

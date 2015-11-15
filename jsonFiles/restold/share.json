@@ -28,20 +28,6 @@
   },
   "properties": [
     {
-      "name": "id",
-      "description": "",
-      "isKey": true,
-      "dataType": "string",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
-    },
-    {
       "name": "name",
       "description": "",
       "isKey": false,
@@ -70,10 +56,24 @@
       "isUnicode": null
     },
     {
+      "name": "id",
+      "description": "",
+      "isKey": true,
+      "dataType": "string",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
       "name": "items",
       "description": "",
       "isKey": false,
-      "dataType": "item",
+      "dataType": "driveItem",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,

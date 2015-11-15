@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /me/mailFolders/<id>
+PATCH /users/<id>/mailFolders/<id>
+PATCH /drive/root/createdByUser/mailFolders/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -34,7 +36,7 @@ Here is an example of the request.
   "name": "update_mailfolder"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/<id>
 Content-type: application/json
 Content-length: 159
 

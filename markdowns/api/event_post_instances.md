@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/events/<id>/instances
+POST /me/calendarView/<id>/instances
+POST /users/<id>/events/<id>/instances
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_event_from_event"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/events/<id>/instances
 ```
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 ##### Response

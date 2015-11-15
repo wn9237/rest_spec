@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /groups/<id>/acceptedSenders
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_acceptedsenders"
 }-->
 ```http
-/acceptedSenders
+GET https://graph.microsoft.com/v1.0/groups/<id>/acceptedSenders
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.

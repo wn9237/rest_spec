@@ -42,12 +42,11 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 346
+Content-length: 450
 
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
-  "objectId": "objectId-value",
   "prepaidUnits": {
     "enabled": 99,
     "suspended": 99,
@@ -56,10 +55,13 @@ Content-length: 346
   "servicePlans": [
     {
       "servicePlanId": "servicePlanId-value",
-      "servicePlanName": "servicePlanName-value"
+      "servicePlanName": "servicePlanName-value",
+      "provisioningStatus": "provisioningStatus-value",
+      "appliesTo": "appliesTo-value"
     }
   ],
-  "skuId": "skuId-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 

@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/messages/<id>/reply
+POST /users/<id>/messages/<id>/reply
+POST /me/mailFolders/<id>/messages/<id>/reply
 
 ```
 ### Request headers
@@ -33,7 +35,7 @@ Here is an example of the request.
   "name": "message_reply"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/reply
 Content-type: application/json
 Content-length: 32
 

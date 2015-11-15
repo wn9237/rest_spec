@@ -55,7 +55,6 @@ Content-length: 579
 {
   "value": [
     {
-      "id": "id-value",
       "driveType": "driveType-value",
       "owner": {
         "application": {
@@ -77,7 +76,8 @@ Content-length: 579
         "state": "state-value",
         "total": 99,
         "used": 99
-      }
+      },
+      "id": "id-value"
     }
   ]
 }

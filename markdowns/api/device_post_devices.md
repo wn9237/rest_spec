@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 328
+Content-length: 322
 
 {
   "accountEnabled": true,
@@ -53,10 +53,10 @@ Content-length: 328
       "key": "key-value"
     }
   ],
-  "approximateLastLogonTimestamp": "datetime-value",
+  "approximateLastSignInDateTime": "datetime-value",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceObjectVersion": 99
+  "deviceVersion": 99
 }
 ```
 

@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /drive/root/thumbnails/<id>
-GET /drive/items/<id>/thumbnails/<id>
+GET /me/drive/root/thumbnails/<id>
 GET /drives/<id>/root/thumbnails/<id>
 ```
 ### Optional query parameters
@@ -49,7 +49,6 @@ Content-type: application/json
 Content-length: 456
 
 {
-  "id": "id-value",
   "large": {
     "content": "content-value",
     "height": 99,
@@ -73,7 +72,8 @@ Content-length: 456
     "height": 99,
     "url": "url-value",
     "width": 99
-  }
+  },
+  "id": "id-value"
 }
 ```
 

@@ -44,14 +44,12 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 152
+Content-length: 55
 
 {
   "value": [
     {
-      "objectType": "objectType-value",
-      "objectId": "objectId-value",
-      "deletionTimestamp": "datetime-value"
+      "id": "id-value"
     }
   ]
 }

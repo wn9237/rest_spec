@@ -14,10 +14,9 @@
   "assignedplan": {
     "isDeleted": false,
     "deletedproperties": [
-      "assignedTimestamp"
     ],
     "renames": {
-      "491": "assignedDateTime"
+      "assignedTimestamp": "assignedDateTime"
     },
     "deletedmethods": [
 
@@ -45,30 +44,21 @@
   "device": {
     "isDeleted": false,
     "deletedproperties": [
-      "approximateLastLogonTimestamp",
-      "deviceObjectVersion",
-      "deviceOSType",
-      "deviceOSVersion",
-      "devicePhysicalIds",
-      "deviceTrustType",
-      "dirSyncEnabled",
-      "lastDirSyncTime",
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
-      "541": "approximateLastSignInDateTime",
-      "279": "deviceVersion",
+      "approximateLastLogonTimestamp": "approximateLastSignInDateTime",
+      "deviceObjectVersion": "deviceVersion",
       "531": "isCompliant",
       "332": "isManaged",
-      "702": "onPremisesLastSyncDateTime",
-      "164": "onPremisesSyncEnabled",
-      "865": "operatingSystem",
-      "790": "operatingSystemVersion",
-      "812": "physicalIds",
-      "95": "trustType",
-      "236": "id"
+      "lastDirSyncTime": "onPremisesLastSyncDateTime",
+      "dirSyncEnabled": "onPremisesSyncEnabled",
+      "deviceOSType": "operatingSystem",
+      "deviceOSVersion": "operatingSystemVersion",
+      "devicePhysicalIds": "physicalIds",
+      "deviceTrustType": "trustType",
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -90,11 +80,10 @@
     "isDeleted": false,
     "deletedproperties": [
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
-      "893": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -110,14 +99,13 @@
       "isSystem",
       "roleDisabled",
       "objectType",
-      "objectId",
       "deletionTimestamp",
       "memberOf",
       "owners",
       "ownedObjects"
     ],
     "renames": {
-      "940": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -131,11 +119,10 @@
     "isDeleted": false,
     "deletedproperties": [
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
-      "731": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -168,23 +155,19 @@
   "group": {
     "isDeleted": false,
     "deletedproperties": [
-      "dirSyncEnabled",
       "creationOptions",
-      "isPublic",
-      "lastDirSyncTime",
       "provisioningErrors",
       "emailAddress",
       "isFavorite",
       "objectType",
-      "objectId",
       "deletionTimestamp",
       "appRoleAssignments"
     ],
     "renames": {
-      "664": "onPremisesLastSyncDateTime",
-      "258": "onPremisesSyncEnabled",
-      "655": "visibility",
-      "717": "id"
+      "lastDirSyncTime": "onPremisesLastSyncDateTime",
+      "dirSyncEnabled": "onPremisesSyncEnabled",
+      "isPublic": "visibility",
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -193,10 +176,6 @@
 
     ],
     "isUntouched": false
-  },
-  "item": {
-    "isDeleted": true,
-    "isUntouched": null
   },
   "keycredential": {
     "isDeleted": true,
@@ -240,10 +219,9 @@
   "passwordprofile": {
     "isDeleted": false,
     "deletedproperties": [
-      "forceChangePasswordNextLogin"
     ],
     "renames": {
-      "193": "forceChangePasswordNextSignIn"
+      "forceChangePasswordNextLogin": "forceChangePasswordNextSignIn"
     },
     "deletedmethods": [
 
@@ -330,11 +308,10 @@
   "subscribedsku": {
     "isDeleted": false,
     "deletedproperties": [
-      "objectId"
     ],
     "renames": {
       "450": "appliesTo",
-      "915": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -344,23 +321,13 @@
     ],
     "isUntouched": false
   },
-  "tenantdetail": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
   "user": {
     "isDeleted": false,
     "deletedproperties": [
-      "dirSyncEnabled",
       "facsimileTelephoneNumber",
-      "immutableId",
-      "lastDirSyncTime",
-      "mobile",
       "otherMails",
-      "physicalDeliveryOfficeName",
       "provisioningErrors",
       "sipProxyAddress",
-      "telephoneNumber",
       "thumbnailPhoto",
       "emailAddress",
       "mailboxGuid",
@@ -368,21 +335,20 @@
       "principalName",
       "tags",
       "objectType",
-      "objectId",
       "deletionTimestamp",
       "appRoleAssignments",
       "oauth2PermissionGrants",
       "joinedGroups"
     ],
     "renames": {
-      "360": "businessPhones",
+      "telephoneNumber": "businessPhones",
       "494": "companyName",
-      "162": "mobilePhone",
-      "502": "onPremisesImmutableId",
-      "619": "onPremisesLastSyncDateTime",
-      "447": "onPremisesSyncEnabled",
-      "806": "officeLocation",
-      "989": "id"
+      "mobile": "mobilePhone",
+      "immutableId": "onPremisesImmutableId",
+      "lastDirSyncTime": "onPremisesLastSyncDateTime",
+      "dirSyncEnabled": "onPremisesSyncEnabled",
+      "physicalDeliveryOfficeName": "officeLocation",
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -395,13 +361,11 @@
   "verifieddomain": {
     "isDeleted": false,
     "deletedproperties": [
-      "default",
-      "id",
-      "initial"
+      "id"
     ],
     "renames": {
-      "197": "isDefault",
-      "653": "isInitial"
+      "default": "isDefault",
+      "initial": "isInitial"
     },
     "deletedmethods": [
 

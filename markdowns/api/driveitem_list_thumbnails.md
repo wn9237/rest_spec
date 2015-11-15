@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+GET /drive/root/thumbnails
+GET /me/drive/root/thumbnails
+GET /drives/<id>/root/thumbnails
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -37,7 +39,7 @@ Here is an example of the request.
   "name": "get_thumbnails"
 }-->
 ```http
-/thumbnails
+GET https://graph.microsoft.com/v1.0/drive/root/thumbnails
 ```
 ##### Response
 Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,11 +52,36 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 32
+Content-length: 585
 
 {
   "value": [
     {
+      "large": {
+        "content": "content-value",
+        "height": 99,
+        "url": "url-value",
+        "width": 99
+      },
+      "medium": {
+        "content": "content-value",
+        "height": 99,
+        "url": "url-value",
+        "width": 99
+      },
+      "small": {
+        "content": "content-value",
+        "height": 99,
+        "url": "url-value",
+        "width": 99
+      },
+      "source": {
+        "content": "content-value",
+        "height": 99,
+        "url": "url-value",
+        "width": 99
+      },
+      "id": "id-value"
     }
   ]
 }

@@ -92,7 +92,6 @@ Here is a JSON representation of the resource.
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection|The collection of [FileAttachment](#FileAttachmentResource) and [ItemAttachment](#FileAttachmentResource) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
-|extensions|[extension](extension.md) collection| Read-only. Nullable.|
 |instances|[event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
 
 ### Methods
@@ -102,8 +101,6 @@ Here is a JSON representation of the resource.
 |[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Create attachment](../api/event_post_attachments.md) |[attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
 |[List attachments](../api/event_list_attachments.md) |[attachment](attachment.md) collection| Get a attachment object collection.|
-|[Create extension](../api/event_post_extensions.md) |[extension](extension.md)| Create a new extension by posting to the extensions collection.|
-|[List extensions](../api/event_list_extensions.md) |[extension](extension.md) collection| Get a extension object collection.|
 |[Create event](../api/event_post_instances.md) |[event](event.md)| Create a new event by posting to the instances collection.|
 |[List instances](../api/event_list_instances.md) |[event](event.md) collection| Get a event object collection.|
 |[Update](../api/event_update.md) | [event](event.md)	|Update event object. |

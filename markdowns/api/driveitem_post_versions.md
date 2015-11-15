@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /drive/root/versions
+POST /me/drive/root/versions
+POST /drives/<id>/root/versions
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "create_driveitem_from_driveitem"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/drive/root/versions
 ```
 In the request body, supply a JSON representation of [driveItem](../resources/driveitem.md) object.
 ##### Response

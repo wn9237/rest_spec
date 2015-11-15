@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /subscribedSkus/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -36,9 +36,9 @@ Here is an example of the request.
   "name": "update_subscribedsku"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/v1.0/subscribedSkus/<id>
 Content-type: application/json
-Content-length: 408
+Content-length: 450
 
 {
   "capabilityStatus": "capabilityStatus-value",
@@ -56,7 +56,8 @@ Content-length: 408
       "appliesTo": "appliesTo-value"
     }
   ],
-  "skuId": "skuId-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 ##### Response
@@ -69,12 +70,11 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 428
+Content-length: 450
 
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
-  "id": "id-value",
   "prepaidUnits": {
     "enabled": 99,
     "suspended": 99,
@@ -88,7 +88,8 @@ Content-length: 428
       "appliesTo": "appliesTo-value"
     }
   ],
-  "skuId": "skuId-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 

@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 466
+Content-length: 491
 
 {
   "accountEnabled": true,
@@ -56,15 +56,17 @@ Content-length: 466
   ],
   "assignedPlans": [
     {
-      "assignedTimestamp": "datetime-value",
+      "assignedDateTime": "datetime-value",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "servicePlanId-value"
     }
   ],
+  "businessPhones": [
+    "businessPhones-value"
+  ],
   "city": "city-value",
-  "country": "country-value",
-  "department": "department-value"
+  "companyName": "companyName-value"
 }
 ```
 

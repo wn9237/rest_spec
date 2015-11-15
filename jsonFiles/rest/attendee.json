@@ -39,6 +39,20 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
+    },
+    {
+      "name": "type",
+      "description": "The attendee type: Required = 0, Optional = 1, Resource = 2.",
+      "isKey": false,
+      "dataType": "attendeeType",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     }
   ],
   "methods": [

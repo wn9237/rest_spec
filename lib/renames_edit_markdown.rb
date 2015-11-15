@@ -10,13 +10,13 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	MARKDOWN_RESOURCE_FOLDER = "../markdowns/resources/"
-	MARKDOWN_RESOURCE_FOLDER_OUT = "../markdowns/newresources/"
-	RENAME_JSON = "../jsonFiles/diff.json"
+	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/apidocs/v1.0/resources/"
+	MARKDOWN_RESOURCE_FOLDER_OUT = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/resources/"
+	RENAME_JSON = "../jsonFiles/diff_v1.0.json"
 	NEWLINE = "\n"
 
 	@renameHash = JSON.parse(File.read(RENAME_JSON, :encoding => 'UTF-8'))
-
+	@inoimpact, @ideleted, @out = 0, 0, 0
 
 	def self.delete_line(line=nil)
 		name = line.split('|')[1]
@@ -44,16 +44,18 @@ module SpecMaker
 
 	def self.handle_renames(markdown=nil, filename=nil)
 		puts "-> #{filename}"
-		@entity = filename.chomp('.md')
-		
+		@entity = filename.chomp('.md')		
+
 		if @renameHash.has_key? @entity
 			# if file is deleted, don't write file and return
-			if @renameHash[@entity]["isDeleted"] 
+			if @renameHash[@entity]["isDeleted"]
+				@ideleted = @ideleted + 1
 				puts "--> Deleted"
 				return
 			end
 		else
 			puts "--> No Impact"
+			@inoimpact = @inoimpact + 1
 			# If untouched - write file
 			outfile = MARKDOWN_RESOURCE_FOLDER_OUT + filename
 			file=File.new(outfile,'w')
@@ -77,6 +79,7 @@ module SpecMaker
 			end
 		end
 
+		@out = @out + 1
 		outfile = MARKDOWN_RESOURCE_FOLDER_OUT + filename
 		file=File.new(outfile,'w')
 		output.each do |line|
@@ -93,7 +96,7 @@ module SpecMaker
 		next if item == '.' or item == '..'
 		fullpath = MARKDOWN_RESOURCE_FOLDER + item.downcase
 		
-		next if item != 'device.md'
+		#next if item != 'device.md'
 
 		#if File.file?(fullpath) && item == 'application.md'
 		if File.file?(fullpath)
@@ -105,5 +108,7 @@ module SpecMaker
 
 	puts ""
 	puts "*** OK. Processed #{processed_files} input files. ***"
-
+	puts "*** Deleted #{@ideleted}"
+	puts "*** No impact #{@inoimpact}"
+	puts "*** Written #{@out + @inoimpact}"
 end

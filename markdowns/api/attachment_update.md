@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+PATCH /me/events/<id>/attachments/<id>
+PATCH /me/messages/<id>/attachments/<id>
+PATCH /me/calendarView/<id>/attachments/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -34,7 +36,7 @@ Here is an example of the request.
   "name": "update_attachment"
 }-->
 ```http
-
+PATCH https://graph.microsoft.com/v1.0/me/events/<id>/attachments/<id>
 Content-type: application/json
 Content-length: 142
 

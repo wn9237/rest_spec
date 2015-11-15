@@ -28,7 +28,6 @@ Here is a JSON representation of the resource.
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": {"@odata.type": "microsoft.graph.importance"},
-  "inferenceClassification": {"@odata.type": "microsoft.graph.inferenceClassificationType"},
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
@@ -61,7 +60,6 @@ Here is a JSON representation of the resource.
 |hasAttachments|boolean||
 |id|string| Read-only.|
 |importance|[importance](importance.md)||
-|inferenceClassification|[inferenceClassificationType](inferenceclassificationtype.md)||
 |isDeliveryReceiptRequested|boolean||
 |isDraft|boolean||
 |isRead|boolean||
@@ -81,7 +79,6 @@ Here is a JSON representation of the resource.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection| Read-only. Nullable.|
-|extensions|[extension](extension.md) collection| Read-only. Nullable.|
 
 ### Methods
 
@@ -90,8 +87,6 @@ Here is a JSON representation of the resource.
 |[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
 |[Create attachment](../api/message_post_attachments.md) |[attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
 |[List attachments](../api/message_list_attachments.md) |[attachment](attachment.md) collection| Get a attachment object collection.|
-|[Create extension](../api/message_post_extensions.md) |[extension](extension.md)| Create a new extension by posting to the extensions collection.|
-|[List extensions](../api/message_list_extensions.md) |[extension](extension.md) collection| Get a extension object collection.|
 |[Update](../api/message_update.md) | [message](message.md)	|Update message object. |
 |[Delete](../api/message_delete.md) | None |Delete message object. |
 |[copy](../api/message_copy.md)|[message](message.md)||

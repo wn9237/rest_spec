@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /drive/root/createLink
+POST /me/drive/root/createLink
+POST /drives/<id>/root/createLink
 
 ```
 ### Request headers
@@ -33,7 +35,7 @@ Here is an example of the request.
   "name": "driveitem_createlink"
 }-->
 ```http
-
+POST https://graph.microsoft.com/v1.0/drive/root/createLink
 Content-type: application/json
 Content-length: 26
 
@@ -52,9 +54,45 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3
+Content-length: 742
 
 {
+  "grantedTo": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
+  "invitation": {
+    "email": "email-value",
+    "redeemedBy": "redeemedBy-value",
+    "signInRequired": true
+  },
+  "inheritedFrom": {
+    "driveId": "driveId-value",
+    "id": "id-value",
+    "path": "path-value"
+  },
+  "link": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "type": "type-value",
+    "webUrl": "webUrl-value"
+  },
+  "roles": [
+    "roles-value"
+  ],
+  "shareId": "shareId-value"
 }
 ```
 
