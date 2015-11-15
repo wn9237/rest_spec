@@ -4,6 +4,7 @@
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
+  "isOpenType": true,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,

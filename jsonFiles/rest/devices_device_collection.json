@@ -4,6 +4,7 @@
   "collectionOf": "device",
   "isComplexType": false,
   "isEntitySet": true,
+  "isOpenType": false,
   "allowPatch": false,
   "allowUpsert": false,
   "allowPatchCreate": false,
