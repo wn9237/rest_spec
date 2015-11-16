@@ -30,10 +30,39 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/users
+Content-type: application/json
+Content-length: 551
+
+{
+  "user": {
+    "accountEnabled": true,
+    "assignedLicenses": [
+      {
+        "disabledPlans": [
+          "disabledPlans-value"
+        ],
+        "skuId": "skuId-value"
+      }
+    ],
+    "assignedPlans": [
+      {
+        "assignedDateTime": "datetime-value",
+        "capabilityStatus": "capabilityStatus-value",
+        "service": "service-value",
+        "servicePlanId": "servicePlanId-value"
+      }
+    ],
+    "businessPhones": [
+      "businessPhones-value"
+    ],
+    "city": "city-value",
+    "companyName": "companyName-value"
+  }
+}
 ```
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -42,31 +71,33 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 491
+Content-length: 551
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "user": {
+    "accountEnabled": true,
+    "assignedLicenses": [
+      {
+        "disabledPlans": [
+          "disabledPlans-value"
+        ],
+        "skuId": "skuId-value"
+      }
+    ],
+    "assignedPlans": [
+      {
+        "assignedDateTime": "datetime-value",
+        "capabilityStatus": "capabilityStatus-value",
+        "service": "service-value",
+        "servicePlanId": "servicePlanId-value"
+      }
+    ],
+    "businessPhones": [
+      "businessPhones-value"
+    ],
+    "city": "city-value",
+    "companyName": "companyName-value"
+  }
 }
 ```
 

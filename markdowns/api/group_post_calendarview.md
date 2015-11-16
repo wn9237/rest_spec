@@ -30,10 +30,25 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/<id>/calendarView
+Content-type: application/json
+Content-length: 285
+
+{
+  "originalStartTimeZone": "originalStartTimeZone-value",
+  "originalEndTimeZone": "originalEndTimeZone-value",
+  "responseStatus": {
+    "response": {
+    },
+    "time": "datetime-value"
+  },
+  "iCalUId": "iCalUId-value",
+  "reminderMinutesBeforeStart": 99,
+  "isReminderOn": true
+}
 ```
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

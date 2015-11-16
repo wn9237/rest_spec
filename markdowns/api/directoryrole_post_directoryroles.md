@@ -30,10 +30,20 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/directoryRoles
+Content-type: application/json
+Content-length: 153
+
+{
+  "directoryRole": {
+    "description": "description-value",
+    "displayName": "displayName-value",
+    "roleTemplateId": "roleTemplateId-value"
+  }
+}
 ```
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -42,13 +52,15 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 142
+Content-length: 175
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value",
-  "id": "id-value"
+  "directoryRole": {
+    "description": "description-value",
+    "displayName": "displayName-value",
+    "roleTemplateId": "roleTemplateId-value",
+    "id": "id-value"
+  }
 }
 ```
 

@@ -30,10 +30,25 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
+Content-type: application/json
+Content-length: 244
+
+{
+  "group": {
+    "description": "description-value",
+    "displayName": "displayName-value",
+    "groupTypes": [
+      "groupTypes-value"
+    ],
+    "mail": "mail-value",
+    "mailEnabled": true,
+    "mailNickname": "mailNickname-value"
+  }
+}
 ```
 In the request body, supply a JSON representation of [group](../resources/group.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -42,17 +57,19 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 211
+Content-length: 244
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "group": {
+    "description": "description-value",
+    "displayName": "displayName-value",
+    "groupTypes": [
+      "groupTypes-value"
+    ],
+    "mail": "mail-value",
+    "mailEnabled": true,
+    "mailNickname": "mailNickname-value"
+  }
 }
 ```
 

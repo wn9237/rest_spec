@@ -12,32 +12,69 @@ module SpecMaker
 	# Initialize 
 	API_FOLDER = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/api/"
 	API_FOLDER_OUT = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/bapi/"
+	NEW_API_SOURCE = "../markdowns/api/"
 	NEWLINE = "\n"
 
-	@impacted = 0
-	def self.slice_qparam
-		out = ""
-		out = out + "### Optional query parameters" + NEWLINE
-		out = out + "This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response." + NEWLINE + NEWLINE
-		return out
+	@impacted, @inotfound = 0, 0
+	def self.slice_example(filename=nil)
+		fullpath = NEW_API_SOURCE + filename
+		markdown = File.readlines(fullpath, :encoding => 'UTF-8')
+		model = ""
+		write = false
+		found_response = false
+		markdown.each do |line|
+			if line.include?('### Example')
+				write = true
+				model = model + line 
+				next
+			end
+
+			if line.start_with?('HTTP/1.1')
+				found_response = true
+				next
+			end
+
+			if write && line.include?('```') && found_response
+				model = model + line 
+				break
+			end
+			if write 
+				model = model + line
+			end
+		end
+		return model
 	end
+
 
 
 	def self.convert_to_spec(markdown=nil, filename=nil)
 		puts "-> #{filename}"
+
+		if !File.exists?(NEW_API_SOURCE + filename)
+			@inotfound = @inotfound + 1
+			puts "!-> API file not found in the latest API folder"
+			return 
+		end
+
 		write = true
+		found_response = false
 		output = []
 		markdown.each do |line|
-			if line.start_with?('### Optional query parameters')
+			
+			if line.start_with?('### Example')
 				@impacted = @impacted + 1
 				write = false
 				next
 			end
+			
+			if line.start_with?('HTTP/1.1')
+				found_response = true
+				next
+			end
 
-			if line.start_with?('###') && !write
+			if found_response && line.start_with?('```')
+				output.push slice_example(filename)
 				write = true
-				output.push slice_qparam
-				output.push line
 				next
 			end
 
@@ -60,7 +97,8 @@ module SpecMaker
 		next if item == '.' or item == '..'
 		fullpath = API_FOLDER + item.downcase
 		
-		#if File.file?(fullpath) && item == 'application.md'
+		#next if !item.include?('user')
+
 		if File.file?(fullpath)
 			convert_to_spec(File.readlines(fullpath, :encoding => 'UTF-8'), item)
 			processed_files = processed_files + 1
@@ -71,5 +109,6 @@ module SpecMaker
 	puts ""
 	puts "*** OK. Processed #{processed_files} input files. ***"
 	puts "*** Impacted #{@impacted}"
+	puts "*** Not Found #{@inotfound}"
 
 end

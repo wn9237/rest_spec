@@ -30,10 +30,29 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/devices
+Content-type: application/json
+Content-length: 364
+
+{
+  "device": {
+    "accountEnabled": true,
+    "alternativeSecurityIds": [
+      {
+        "type": 99,
+        "identityProvider": "identityProvider-value",
+        "key": "key-value"
+      }
+    ],
+    "approximateLastSignInDateTime": "datetime-value",
+    "deviceId": "deviceId-value",
+    "deviceMetadata": "deviceMetadata-value",
+    "deviceVersion": 99
+  }
+}
 ```
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -42,21 +61,23 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 322
+Content-length: 364
 
 {
-  "accountEnabled": true,
-  "alternativeSecurityIds": [
-    {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
-    }
-  ],
-  "approximateLastSignInDateTime": "datetime-value",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "device": {
+    "accountEnabled": true,
+    "alternativeSecurityIds": [
+      {
+        "type": 99,
+        "identityProvider": "identityProvider-value",
+        "key": "key-value"
+      }
+    ],
+    "approximateLastSignInDateTime": "datetime-value",
+    "deviceId": "deviceId-value",
+    "deviceMetadata": "deviceMetadata-value",
+    "deviceVersion": 99
+  }
 }
 ```
 

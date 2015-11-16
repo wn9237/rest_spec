@@ -30,10 +30,37 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/<id>/conversations/<id>/threads
+Content-type: application/json
+Content-length: 419
+
+{
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      }
+    }
+  ],
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
+  ],
+  "ccRecipients": [
+    {
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      }
+    }
+  ]
+}
 ```
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

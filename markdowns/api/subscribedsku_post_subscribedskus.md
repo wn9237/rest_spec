@@ -30,10 +30,32 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/subscribedSkus
+Content-type: application/json
+Content-length: 450
+
+{
+  "capabilityStatus": "capabilityStatus-value",
+  "consumedUnits": 99,
+  "prepaidUnits": {
+    "enabled": 99,
+    "suspended": 99,
+    "warning": 99
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "servicePlanId-value",
+      "servicePlanName": "servicePlanName-value",
+      "provisioningStatus": "provisioningStatus-value",
+      "appliesTo": "appliesTo-value"
+    }
+  ],
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
+}
 ```
 In the request body, supply a JSON representation of [subscribedSku](../resources/subscribedsku.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

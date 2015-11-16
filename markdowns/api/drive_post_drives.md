@@ -30,10 +30,37 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/drives
+Content-type: application/json
+Content-length: 438
+
+{
+  "driveType": "driveType-value",
+  "owner": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
+  "quota": {
+    "deleted": 99,
+    "remaining": 99,
+    "state": "state-value",
+    "total": 99,
+    "used": 99
+  }
+}
 ```
 In the request body, supply a JSON representation of [drive](../resources/drive.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

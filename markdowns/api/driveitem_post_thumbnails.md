@@ -32,10 +32,41 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/drive/root/thumbnails
+Content-type: application/json
+Content-length: 508
+
+{
+  "thumbnailSet": {
+    "large": {
+      "content": "content-value",
+      "height": 99,
+      "url": "url-value",
+      "width": 99
+    },
+    "medium": {
+      "content": "content-value",
+      "height": 99,
+      "url": "url-value",
+      "width": 99
+    },
+    "small": {
+      "content": "content-value",
+      "height": 99,
+      "url": "url-value",
+      "width": 99
+    },
+    "source": {
+      "content": "content-value",
+      "height": 99,
+      "url": "url-value",
+      "width": 99
+    }
+  }
+}
 ```
 In the request body, supply a JSON representation of [thumbnailSet](../resources/thumbnailset.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -44,34 +75,36 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 456
+Content-length: 530
 
 {
-  "large": {
-    "content": "content-value",
-    "height": 99,
-    "url": "url-value",
-    "width": 99
-  },
-  "medium": {
-    "content": "content-value",
-    "height": 99,
-    "url": "url-value",
-    "width": 99
-  },
-  "small": {
-    "content": "content-value",
-    "height": 99,
-    "url": "url-value",
-    "width": 99
-  },
-  "source": {
-    "content": "content-value",
-    "height": 99,
-    "url": "url-value",
-    "width": 99
-  },
-  "id": "id-value"
+  "thumbnailSet": {
+    "large": {
+      "content": "content-value",
+      "height": 99,
+      "url": "url-value",
+      "width": 99
+    },
+    "medium": {
+      "content": "content-value",
+      "height": 99,
+      "url": "url-value",
+      "width": 99
+    },
+    "small": {
+      "content": "content-value",
+      "height": 99,
+      "url": "url-value",
+      "width": 99
+    },
+    "source": {
+      "content": "content-value",
+      "height": 99,
+      "url": "url-value",
+      "width": 99
+    },
+    "id": "id-value"
+  }
 }
 ```
 

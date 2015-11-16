@@ -9,10 +9,13 @@ The following **scopes** are required to execute this API:
 POST /shares/<id>/items
 
 ```
+
 ### Request headers
 | Name       | Type | Description|
-|:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer %token% |
+
+
 
 ### Request body
 In the request body, supply a JSON representation of [driveItem](../resources/driveitem.md) object.
@@ -30,10 +33,36 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/shares/<id>/items
+Content-type: application/json
+Content-length: 504
+
+{
+  "driveItem": {
+    "content": "content-value",
+    "createdBy": {
+      "application": {
+        "displayName": "displayName-value",
+        "id": "id-value"
+      },
+      "device": {
+        "displayName": "displayName-value",
+        "id": "id-value"
+      },
+      "user": {
+        "displayName": "displayName-value",
+        "id": "id-value"
+      }
+    },
+    "createdDateTime": "datetime-value",
+    "cTag": "cTag-value",
+    "description": "description-value",
+    "eTag": "eTag-value"
+  }
+}
 ```
 In the request body, supply a JSON representation of [driveItem](../resources/driveitem.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -42,28 +71,30 @@ Here is an example of the response. Note: The response object may be truncated f
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 445
+Content-length: 504
 
 {
-  "content": "content-value",
-  "createdBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+  "driveItem": {
+    "content": "content-value",
+    "createdBy": {
+      "application": {
+        "displayName": "displayName-value",
+        "id": "id-value"
+      },
+      "device": {
+        "displayName": "displayName-value",
+        "id": "id-value"
+      },
+      "user": {
+        "displayName": "displayName-value",
+        "id": "id-value"
+      }
     },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    }
-  },
-  "createdDateTime": "datetime-value",
-  "cTag": "cTag-value",
-  "description": "description-value",
-  "eTag": "eTag-value"
+    "createdDateTime": "datetime-value",
+    "cTag": "cTag-value",
+    "description": "description-value",
+    "eTag": "eTag-value"
+  }
 }
 ```
 

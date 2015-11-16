@@ -32,10 +32,51 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/drive/root/permissions
+Content-type: application/json
+Content-length: 742
+
+{
+  "grantedTo": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
+  "invitation": {
+    "email": "email-value",
+    "redeemedBy": "redeemedBy-value",
+    "signInRequired": true
+  },
+  "inheritedFrom": {
+    "driveId": "driveId-value",
+    "id": "id-value",
+    "path": "path-value"
+  },
+  "link": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "type": "type-value",
+    "webUrl": "webUrl-value"
+  },
+  "roles": [
+    "roles-value"
+  ],
+  "shareId": "shareId-value"
+}
 ```
 In the request body, supply a JSON representation of [permission](../resources/permission.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

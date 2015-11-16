@@ -32,10 +32,17 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/contactFolders
+Content-type: application/json
+Content-length: 84
+
+{
+  "parentFolderId": "parentFolderId-value",
+  "displayName": "displayName-value"
+}
 ```
 In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

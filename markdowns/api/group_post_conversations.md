@@ -30,10 +30,22 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/<id>/conversations
+Content-type: application/json
+Content-length: 181
+
+{
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
+  ],
+  "preview": "preview-value"
+}
 ```
 In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

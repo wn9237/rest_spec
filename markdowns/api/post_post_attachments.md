@@ -31,10 +31,20 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>/attachments
+Content-type: application/json
+Content-length: 142
+
+{
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true
+}
 ```
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 ##### Response
-Here is an example of the response. Note: The response object may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
