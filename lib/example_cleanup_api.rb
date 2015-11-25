@@ -10,8 +10,8 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	API_FOLDER = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/api/"
-	API_FOLDER_OUT = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/bapi/"
+	API_FOLDER = "C:/Users/suramam/git/final-apidocs/beta/api/"
+	API_FOLDER_OUT = "C:/Users/suramam/git/final-apidocs/beta/newapi/"
 	NEW_API_SOURCE = "../markdowns/api/"
 	NEWLINE = "\n"
 
@@ -53,6 +53,13 @@ module SpecMaker
 		if !File.exists?(NEW_API_SOURCE + filename)
 			@inotfound = @inotfound + 1
 			puts "!-> API file not found in the latest API folder"
+
+			outfile = API_FOLDER_OUT + filename
+			file=File.new(outfile,'w')
+			markdown.each do |line|
+				file.write line
+			end		
+
 			return 
 		end
 

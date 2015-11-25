@@ -4,6 +4,7 @@
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
+  "isOpenType": false,
   "allowPatch": false,
   "allowUpsert": false,
   "allowPatchCreate": false,
@@ -41,8 +42,8 @@
       "isUnicode": false
     },
     {
-      "name": "isDefault",
-      "description": "",
+      "name": "default",
+      "description": "                **true** if this is the default domain associated with the tenant; otherwise, **false**.            ",
       "isKey": false,
       "dataType": "boolean",
       "isReadOnly": false,
@@ -55,8 +56,22 @@
       "isUnicode": null
     },
     {
-      "name": "isInitial",
-      "description": "",
+      "name": "id",
+      "description": "For example, “00057FFE80187238”.",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "initial",
+      "description": "            ",
       "isKey": false,
       "dataType": "boolean",
       "isReadOnly": false,

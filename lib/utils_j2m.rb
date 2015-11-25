@@ -8,7 +8,7 @@ module SpecMaker
 	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"	
 	ANNOTATIONS = JSON_BASE_FOLDER + 'settings/annotations.json'
-	SERVER = 'https://graph.microsoft.com/v1.0'
+	SERVER = 'https://graph.microsoft.com/beta'
 	HEADER1 = '# '
 	HEADER2 = '## '
 	HEADER3 = '### '
@@ -320,15 +320,15 @@ module SpecMaker
 		properties.each do |item|
 			next if item[:isRelationship]
 
-			if NUMERICTYPES.include? item[:dataType]
+			if NUMERICTYPES.include? item[:dataType].downcase
 				model[item[:name]] = 1024
-			elsif DATETYPES.include? item[:dataType]
+			elsif DATETYPES.include? item[:dataType].downcase
 				model[item[:name]] = "String (timestamp)"
 			elsif %w[Url url].include? item[:dataType]
 				model[item[:name]] = "url"	
 			elsif %w[Boolean boolean Bool bool ].include? item[:dataType]
 				model[item[:name]] = true
-			elsif SIMPLETYPES.include? item[:dataType]
+			elsif SIMPLETYPES.include? item[:dataType].downcase
 				model[item[:name]] = "#{item[:dataType]}"
 			else
 				model[item[:name]] = { "@odata.type" => "#{@service[:namespace]}.#{item[:dataType]}"}

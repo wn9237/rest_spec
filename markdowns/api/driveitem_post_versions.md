@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_driveitem_from_driveitem"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/versions
+POST https://graph.microsoft.com/beta/drive/root/versions
 Content-type: application/json
 Content-length: 504
 

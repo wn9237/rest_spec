@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
+Content-length: 260
 
 {
   "receivedDateTime": "datetime-value",
@@ -52,8 +52,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

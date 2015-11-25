@@ -4,6 +4,7 @@
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
+  "isOpenType": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,
@@ -24,7 +25,26 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<id>/conversations/<id>": true
+    "/groups/<objectId>/conversations/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/root/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/shared/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/special/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/root/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/root/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true
   },
   "properties": [
     {

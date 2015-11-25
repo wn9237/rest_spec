@@ -4,6 +4,7 @@
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
+  "isOpenType": false,
   "allowPatch": false,
   "allowUpsert": false,
   "allowPatchCreate": false,
@@ -44,7 +45,7 @@
       "name": "startDate",
       "description": "The start date of the series.",
       "isKey": false,
-      "dataType": "date",
+      "dataType": "string",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -52,25 +53,11 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": null
+      "isUnicode": false
     },
     {
       "name": "endDate",
       "description": "The end date of the series.",
-      "isKey": false,
-      "dataType": "date",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "recurrenceTimeZone",
-      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,

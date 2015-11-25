@@ -16,15 +16,15 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "response": {"@odata.type": "microsoft.graph.responseType"},
-  "time": {"@odata.type": "microsoft.graph.dateTimeOffset"}
+  "response": "String",
+  "time": "String (timestamp)"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|response|[responseType](responsetype.md)|The response type: None = 0, Organizer = 1, TentativelyAccepted = 2, Accepted = 3, Declined = 4, NotResponded = 5.|
+|response|String|The response type: None = 0, Organizer = 1, TentativelyAccepted = 2, Accepted = 3, Declined = 4, NotResponded = 5. Possible values are: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.|
 |time|[dateTimeOffset](datetimeoffset.md)|<!--Need description! -->|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

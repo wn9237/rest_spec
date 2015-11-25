@@ -71,7 +71,7 @@ module SpecMaker
 			entry[:description] = ""
 			enum[:options][member[:Name].to_sym] = entry
 		end	
-		@enum_objects[item[:Name].to_sym] = enum
+		@enum_objects[camelcase(item[:Name]).to_sym] = enum
 		@ienums = @ienums + 1
 	end
 

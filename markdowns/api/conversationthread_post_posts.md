@@ -30,14 +30,13 @@ Here is an example of the request.
   "name": "create_post_from_conversationthread"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts
+POST https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts
 Content-type: application/json
-Content-length: 414
+Content-length: 426
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",
@@ -68,12 +67,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 414
+Content-length: 426
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",

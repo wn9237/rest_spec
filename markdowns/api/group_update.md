@@ -18,7 +18,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|accessType|groupAccessType||
+|accessType|String| Possible values are: `none`, `private`, `secret`, `public`.|
 |allowExternalSenders|boolean||
 |autoSubscribeNewMembers|boolean||
 |description|string|An optional description for the group.|
@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "update_group"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/<id>
+PATCH https://graph.microsoft.com/beta/groups/<id>
 Content-type: application/json
 Content-length: 211
 

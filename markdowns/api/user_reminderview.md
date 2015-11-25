@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "user_reminderview"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/reminderView
+POST https://graph.microsoft.com/beta/me/reminderView
 ```
 
 ##### Response

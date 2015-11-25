@@ -42,14 +42,13 @@ Here is an example of the request.
   "name": "update_post"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>
+PATCH https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>
 Content-type: application/json
-Content-length: 414
+Content-length: 426
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",
@@ -79,12 +78,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 414
+Content-length: 426
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",

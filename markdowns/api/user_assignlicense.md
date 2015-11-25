@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "user_assignlicense"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/assignLicense
+POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
 Content-length: 185
 

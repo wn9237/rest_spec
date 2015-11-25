@@ -1,7 +1,7 @@
 {
-  "name": "organization",
+  "name": "servicePrincipals",
   "description": "",
-  "collectionOf": "organization",
+  "collectionOf": "servicePrincipal",
   "isComplexType": false,
   "isEntitySet": true,
   "isOpenType": false,
@@ -25,7 +25,7 @@
   "updateDescription": null,
   "deleteDescription": null,
   "restPath": {
-    "/organization": true
+    "/servicePrincipals": true
   },
   "properties": [
 

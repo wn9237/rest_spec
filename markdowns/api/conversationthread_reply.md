@@ -34,15 +34,14 @@ Here is an example of the request.
   "name": "conversationthread_reply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/reply
+POST https://graph.microsoft.com/beta/groups/<id>/threads/<id>/reply
 Content-type: application/json
-Content-length: 1131
+Content-length: 1141
 
 {
   "post": {
     "body": {
-      "contentType": {
-      },
+      "contentType": "contentType-value",
       "content": "content-value"
     },
     "receivedDateTime": "datetime-value",

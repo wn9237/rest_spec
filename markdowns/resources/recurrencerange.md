@@ -20,7 +20,7 @@ Here is a JSON representation of the resource.
   "numberOfOccurrences": 1024,
   "recurrenceTimeZone": "string",
   "startDate": "String (timestamp)",
-  "type": {"@odata.type": "microsoft.graph.recurrenceRangeType"}
+  "type": "String"
 }
 
 ```
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
 |numberOfOccurrences|int32|How many times to repeat the event.|
 |recurrenceTimeZone|string||
 |startDate|date|The start date of the series.|
-|type|[recurrenceRangeType](recurrencerangetype.md)|The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2.|
+|type|String|The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2. Possible values are: `endDate`, `noEnd`, `numbered`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

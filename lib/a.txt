@@ -1,0 +1,1074 @@
+-> application_checkmembergroups.md
+--> Impacted
+-> application_delete.md
+--> Impacted
+-> application_get.md
+--> Impacted
+-> application_getmembergroups.md
+--> Impacted
+-> application_getmemberobjects.md
+--> Impacted
+-> application_list.md
+--> Impacted
+-> application_list_extensionproperties.md
+--> Impacted
+-> application_list_owners.md
+--> Impacted
+-> application_post_applications.md
+--> Impacted
+-> application_post_extensionproperties.md
+--> Impacted
+-> application_post_owners.md
+--> Impacted
+-> application_restore.md
+--> Impacted
+-> application_update.md
+--> Impacted
+-----> Rename availableToOtherTenants to availableToOtherOrganizations
+-----> Delete property: deletionTimestamp
+-----> Delete property: objectType
+-> approleassignment_checkmembergroups.md
+--> Impacted
+-> approleassignment_delete.md
+--> Impacted
+-> approleassignment_get.md
+--> Impacted
+-> approleassignment_getmembergroups.md
+--> Impacted
+-> approleassignment_getmemberobjects.md
+--> Impacted
+-> approleassignment_update.md
+--> Impacted
+-----> Delete property: deletionTimestamp
+-----> Delete property: objectType
+-> attachment_delete.md
+--> No Impact
+-> attachment_get.md
+--> No Impact
+-> attachment_update.md
+--> No Impact
+-> bucket_delete.md
+--> No Impact
+-> bucket_get.md
+--> No Impact
+-> bucket_list.md
+--> No Impact
+-> bucket_list_tasks.md
+--> No Impact
+-> bucket_post_buckets.md
+--> No Impact
+-> bucket_post_tasks.md
+--> No Impact
+-> bucket_update.md
+--> No Impact
+-> calendargroup_delete.md
+--> No Impact
+-> calendargroup_get.md
+--> No Impact
+-> calendargroup_list_calendars.md
+--> No Impact
+-> calendargroup_post_calendars.md
+--> No Impact
+-> calendargroup_update.md
+--> No Impact
+-> calendar_delete.md
+--> No Impact
+-> calendar_get.md
+--> No Impact
+-> calendar_list_calendarview.md
+--> No Impact
+-> calendar_list_events.md
+--> No Impact
+-> calendar_post_calendarview.md
+--> No Impact
+-> calendar_post_events.md
+--> No Impact
+-> calendar_update.md
+--> No Impact
+-> contactfolder_delete.md
+--> No Impact
+-> contactfolder_get.md
+--> No Impact
+-> contactfolder_list_childfolders.md
+--> No Impact
+-> contactfolder_list_contacts.md
+--> No Impact
+-> contactfolder_post_childfolders.md
+--> No Impact
+-> contactfolder_post_contacts.md
+--> No Impact
+-> contactfolder_update.md
+--> No Impact
+-> contact_delete.md
+--> No Impact
+-> contact_get.md
+--> No Impact
+-> contact_list_extensions.md
+--> No Impact
+-> contact_post_extensions.md
+--> No Impact
+-> contact_update.md
+--> No Impact
+-> conversationthread_delete.md
+--> No Impact
+-> conversationthread_get.md
+--> No Impact
+-> conversationthread_list_posts.md
+--> No Impact
+-> conversationthread_post_posts.md
+--> No Impact
+-> conversationthread_reply.md
+--> No Impact
+-> conversationthread_update.md
+--> No Impact
+-> conversation_delete.md
+--> No Impact
+-> conversation_get.md
+--> No Impact
+-> conversation_list_threads.md
+--> No Impact
+-> conversation_post_threads.md
+--> No Impact
+-> conversation_update.md
+--> No Impact
+-> deviceconfiguration_checkmembergroups.md
+--> Deleted
+-> deviceconfiguration_delete.md
+--> Deleted
+-> deviceconfiguration_get.md
+--> Deleted
+-> deviceconfiguration_getmembergroups.md
+--> Deleted
+-> deviceconfiguration_getmemberobjects.md
+--> Deleted
+-> deviceconfiguration_list.md
+--> Deleted
+-> deviceconfiguration_post_deviceconfiguration.md
+--> Deleted
+-> deviceconfiguration_update.md
+--> Deleted
+-> device_checkmembergroups.md
+--> Impacted
+-> device_delete.md
+--> Impacted
+-> device_get.md
+--> Impacted
+-> device_getmembergroups.md
+--> Impacted
+-> device_getmemberobjects.md
+--> Impacted
+-> device_list.md
+--> Impacted
+-> device_list_registeredowners.md
+--> Impacted
+-> device_list_registeredusers.md
+--> Impacted
+-> device_post_devices.md
+--> Impacted
+-> device_post_registeredowners.md
+--> Impacted
+-> device_post_registeredusers.md
+--> Impacted
+-> device_update.md
+--> Impacted
+-----> Rename approximateLastLogonTimestamp to approximateLastSignInDateTime
+-----> Delete property: deletionTimestamp
+-----> Rename deviceOSType to operatingSystem
+-----> Rename deviceOSVersion to operatingSystemVersion
+-----> Rename deviceObjectVersion to deviceVersion
+-----> Rename devicePhysicalIds to physicalIds
+-----> Rename deviceTrustType to trustType
+-----> Rename dirSyncEnabled to onPremisesSyncEnabled
+-----> Rename lastDirSyncTime to onPremisesLastSyncDateTime
+-----> Delete property: objectType
+-> directorylinkchange_checkmembergroups.md
+--> Deleted
+-> directorylinkchange_delete.md
+--> Deleted
+-> directorylinkchange_get.md
+--> Deleted
+-> directorylinkchange_getmembergroups.md
+--> Deleted
+-> directorylinkchange_getmemberobjects.md
+--> Deleted
+-> directorylinkchange_update.md
+--> Deleted
+-> directoryobject_checkmembergroups.md
+--> Impacted
+-> directoryobject_delete.md
+--> Impacted
+-> directoryobject_get.md
+--> Impacted
+-> directoryobject_getmembergroups.md
+--> Impacted
+-> directoryobject_getmemberobjects.md
+--> Impacted
+-> directoryobject_list.md
+--> Impacted
+-> directoryobject_post_directoryobjects.md
+--> Impacted
+-> directoryobject_update.md
+--> Impacted
+-----> Delete property: deletionTimestamp
+-----> Delete property: objectType
+-> directoryroletemplate_checkmembergroups.md
+--> Impacted
+-> directoryroletemplate_delete.md
+--> Impacted
+-> directoryroletemplate_get.md
+--> Impacted
+-> directoryroletemplate_getmembergroups.md
+--> Impacted
+-> directoryroletemplate_getmemberobjects.md
+--> Impacted
+-> directoryroletemplate_list.md
+--> Impacted
+-> directoryroletemplate_post_directoryroletemplates.md
+--> Impacted
+-> directoryroletemplate_update.md
+--> Impacted
+-----> Delete property: deletionTimestamp
+-----> Delete property: objectType
+-> directoryrole_checkmembergroups.md
+--> Impacted
+-> directoryrole_delete.md
+--> Impacted
+-> directoryrole_get.md
+--> Impacted
+-> directoryrole_getmembergroups.md
+--> Impacted
+-> directoryrole_getmemberobjects.md
+--> Impacted
+-> directoryrole_list.md
+--> Impacted
+-> directoryrole_list_memberof.md
+--> Impacted
+-> directoryrole_list_members.md
+--> Impacted
+-> directoryrole_list_ownedobjects.md
+--> Impacted
+-> directoryrole_list_owners.md
+--> Impacted
+-> directoryrole_post_directoryroles.md
+--> Impacted
+-> directoryrole_post_memberof.md
+--> Impacted
+-> directoryrole_post_members.md
+--> Impacted
+-> directoryrole_post_ownedobjects.md
+--> Impacted
+-> directoryrole_post_owners.md
+--> Impacted
+-> directoryrole_update.md
+--> Impacted
+-----> Delete property: deletionTimestamp
+-----> Delete property: isSystem
+-----> Delete property: objectType
+-----> Delete property: roleDisabled
+-> drive_allphotos.md
+--> No Impact
+-> drive_delete.md
+--> No Impact
+-> drive_get.md
+--> No Impact
+-> drive_list.md
+--> No Impact
+-> drive_list_items.md
+--> No Impact
+-> drive_list_shared.md
+--> No Impact
+-> drive_list_special.md
+--> No Impact
+-> drive_post_drives.md
+--> No Impact
+-> drive_post_items.md
+--> No Impact
+-> drive_post_shared.md
+--> No Impact
+-> drive_post_special.md
+--> No Impact
+-> drive_update.md
+--> No Impact
+-> entity_delete.md
+--> Deleted
+-> entity_get.md
+--> Deleted
+-> eventmessage_copy.md
+--> No Impact
+-> eventmessage_createforward.md
+--> No Impact
+-> eventmessage_createreply.md
+--> No Impact
+-> eventmessage_createreplyall.md
+--> No Impact
+-> eventmessage_delete.md
+--> No Impact
+-> eventmessage_forward.md
+--> No Impact
+-> eventmessage_get.md
+--> No Impact
+-> eventmessage_list_attachments.md
+--> No Impact
+-> eventmessage_list_extensions.md
+--> No Impact
+-> eventmessage_move.md
+--> No Impact
+-> eventmessage_post_attachments.md
+--> No Impact
+-> eventmessage_post_extensions.md
+--> No Impact
+-> eventmessage_reply.md
+--> No Impact
+-> eventmessage_replyall.md
+--> No Impact
+-> eventmessage_send.md
+--> No Impact
+-> eventmessage_update.md
+--> No Impact
+-> event_accept.md
+--> No Impact
+-> event_decline.md
+--> No Impact
+-> event_delete.md
+--> No Impact
+-> event_dismissreminder.md
+--> No Impact
+-> event_get.md
+--> No Impact
+-> event_list_attachments.md
+--> No Impact
+-> event_list_extensions.md
+--> No Impact
+-> event_list_instances.md
+--> No Impact
+-> event_post_attachments.md
+--> No Impact
+-> event_post_extensions.md
+--> No Impact
+-> event_post_instances.md
+--> No Impact
+-> event_snoozereminder.md
+--> No Impact
+-> event_tentativelyaccept.md
+--> No Impact
+-> event_update.md
+--> No Impact
+-> extensionproperty_checkmembergroups.md
+--> Impacted
+-> extensionproperty_delete.md
+--> Impacted
+-> extensionproperty_get.md
+--> Impacted
+-> extensionproperty_getmembergroups.md
+--> Impacted
+-> extensionproperty_getmemberobjects.md
+--> Impacted
+-> extensionproperty_update.md
+--> Impacted
+-----> Delete property: deletionTimestamp
+-----> Delete property: objectType
+-> extension_delete.md
+--> No Impact
+-> extension_get.md
+--> No Impact
+-> fileattachment_delete.md
+--> No Impact
+-> fileattachment_get.md
+--> No Impact
+-> fileattachment_update.md
+--> No Impact
+-> group_addfavorite.md
+--> Impacted
+-> group_checkmembergroups.md
+--> Impacted
+-> group_delete.md
+--> Impacted
+-> group_get.md
+--> Impacted
+-> group_getmembergroups.md
+--> Impacted
+-> group_getmemberobjects.md
+--> Impacted
+-> group_list.md
+--> Impacted
+-> group_list_acceptedsenders.md
+--> Impacted
+-> group_list_approleassignments.md
+--> Impacted
+-> group_list_calendarview.md
+--> Impacted
+-> group_list_conversations.md
+--> Impacted
+-> group_list_events.md
+--> Impacted
+-> group_list_memberof.md
+--> Impacted
+-> group_list_members.md
+--> Impacted
+-> group_list_owners.md
+--> Impacted
+-> group_list_photos.md
+--> Impacted
+-> group_list_plans.md
+--> Impacted
+-> group_list_rejectedsenders.md
+--> Impacted
+-> group_list_threads.md
+--> Impacted
+-> group_post_acceptedsenders.md
+--> Impacted
+-> group_post_approleassignments.md
+--> Impacted
+-> group_post_calendarview.md
+--> Impacted
+-> group_post_conversations.md
+--> Impacted
+-> group_post_events.md
+--> Impacted
+-> group_post_groups.md
+--> Impacted
+-> group_post_memberof.md
+--> Impacted
+-> group_post_members.md
+--> Impacted
+-> group_post_owners.md
+--> Impacted
+-> group_post_photos.md
+--> Impacted
+-> group_post_plans.md
+--> Impacted
+-> group_post_rejectedsenders.md
+--> Impacted
+-> group_post_threads.md
+--> Impacted
+-> group_removefavorite.md
+--> Impacted
+-> group_resetunseencount.md
+--> Impacted
+-> group_subscribebymail.md
+--> Impacted
+-> group_unsubscribebymail.md
+--> Impacted
+-> group_update.md
+--> Impacted
+-----> Delete property: creationOptions
+-----> Delete property: deletionTimestamp
+-----> Rename dirSyncEnabled to onPremisesSyncEnabled
+-----> Delete property: emailAddress
+-----> Rename isPublic to visibility
+-----> Rename lastDirSyncTime to onPremisesLastSyncDateTime
+-----> Delete property: objectType
+-----> Delete property: provisioningErrors
+-> inferenceclassificationoverride_delete.md
+--> No Impact
+-> inferenceclassificationoverride_get.md
+--> No Impact
+-> inferenceclassificationoverride_update.md
+--> No Impact
+-> inferenceclassification_delete.md
+--> No Impact
+-> inferenceclassification_get.md
+--> No Impact
+-> inferenceclassification_list_overrides.md
+--> No Impact
+-> inferenceclassification_post_overrides.md
+--> No Impact
+-> itemattachment_delete.md
+--> No Impact
+-> itemattachment_get.md
+--> No Impact
+-> itemattachment_update.md
+--> No Impact
+-> item_allphotos.md
+--> No Impact
+-> item_copy.md
+--> No Impact
+-> item_createlink.md
+--> No Impact
+-> item_createsession.md
+--> No Impact
+-> item_delete.md
+--> No Impact
+-> item_delta.md
+--> No Impact
+-> item_get.md
+--> No Impact
+-> item_invite.md
+--> No Impact
+-> item_list_children.md
+--> No Impact
+-> item_list_permissions.md
+--> No Impact
+-> item_list_thumbnails.md
+--> No Impact
+-> item_list_versions.md
+--> No Impact
+-> item_post_children.md
+--> No Impact
+-> item_post_permissions.md
+--> No Impact
+-> item_post_thumbnails.md
+--> No Impact
+-> item_post_versions.md
+--> No Impact
+-> item_search.md
+--> No Impact
+-> item_update.md
+--> No Impact
+-> mailfolder_copy.md
+--> No Impact
+-> mailfolder_delete.md
+--> No Impact
+-> mailfolder_get.md
+--> No Impact
+-> mailfolder_list_childfolders.md
+--> No Impact
+-> mailfolder_list_messages.md
+--> No Impact
+-> mailfolder_move.md
+--> No Impact
+-> mailfolder_post_childfolders.md
+--> No Impact
+-> mailfolder_post_messages.md
+--> No Impact
+-> mailfolder_update.md
+--> No Impact
+-> message_copy.md
+--> No Impact
+-> message_createforward.md
+--> No Impact
+-> message_createreply.md
+--> No Impact
+-> message_createreplyall.md
+--> No Impact
+-> message_delete.md
+--> No Impact
+-> message_forward.md
+--> No Impact
+-> message_get.md
+--> No Impact
+-> message_list_attachments.md
+--> No Impact
+-> message_list_extensions.md
+--> No Impact
+-> message_move.md
+--> No Impact
+-> message_post_attachments.md
+--> No Impact
+-> message_post_extensions.md
+--> No Impact
+-> message_reply.md
+--> No Impact
+-> message_replyall.md
+--> No Impact
+-> message_send.md
+--> No Impact
+-> message_update.md
+--> No Impact
+-> notebook_copynotebook.md
+--> Impacted
+-> notebook_delete.md
+--> Impacted
+-> notebook_get.md
+--> Impacted
+-> notebook_list_sectiongroups.md
+--> Impacted
+-> notebook_list_sections.md
+--> Impacted
+-> notebook_post_sectiongroups.md
+--> Impacted
+-> notebook_post_sections.md
+--> Impacted
+-> notebook_update.md
+--> Impacted
+-> notesoperation_delete.md
+--> No Impact
+-> notesoperation_get.md
+--> No Impact
+-> notesoperation_update.md
+--> No Impact
+-> notes_delete.md
+--> Impacted
+-> notes_get.md
+--> Impacted
+-> notes_list_notebooks.md
+--> Impacted
+-> notes_list_pages.md
+--> Impacted
+-> notes_list_resources.md
+--> Impacted
+-> notes_list_sectiongroups.md
+--> Impacted
+-> notes_list_sections.md
+--> Impacted
+-> notes_post_notebooks.md
+--> Impacted
+-> notes_post_pages.md
+--> Impacted
+-> notes_post_resources.md
+--> Impacted
+-> notes_post_sectiongroups.md
+--> Impacted
+-> notes_post_sections.md
+--> Impacted
+-> oauth2permissiongrant_delete.md
+--> Impacted
+-> oauth2permissiongrant_get.md
+--> Impacted
+-> oauth2permissiongrant_list.md
+--> Impacted
+-> oauth2permissiongrant_post_oauth2permissiongrants.md
+--> Impacted
+-> oauth2permissiongrant_update.md
+--> Impacted
+-> opentypeextension_delete.md
+--> No Impact
+-> opentypeextension_get.md
+--> No Impact
+-> opentypeextension_update.md
+--> No Impact
+-> orgcontact_checkmembergroups.md
+--> Impacted
+-> orgcontact_delete.md
+--> Impacted
+-> orgcontact_get.md
+--> Impacted
+-> orgcontact_getmembergroups.md
+--> Impacted
+-> orgcontact_getmemberobjects.md
+--> Impacted
+-> orgcontact_list.md
+--> Impacted
+-> orgcontact_list_directreports.md
+--> Impacted
+-> orgcontact_list_memberof.md
+--> Impacted
+-> orgcontact_post_contacts.md
+--> Impacted
+-> orgcontact_post_directreports.md
+--> Impacted
+-> orgcontact_post_memberof.md
+--> Impacted
+-> orgcontact_update.md
+--> Impacted
+-----> Delete property: deletionTimestamp
+-----> Rename dirSyncEnabled to onPremisesSyncEnabled
+-----> Delete property: facsimileTelephoneNumber
+-----> Rename lastDirSyncTime to onPremisesLastSyncDateTime
+-----> Rename mobile to mobilePhone
+-----> Delete property: objectType
+-----> Rename physicalDeliveryOfficeName to officeLocation
+-----> Delete property: provisioningErrors
+-----> Delete property: sipProxyAddress
+-----> Rename telephoneNumber to businessPhones
+-----> Delete property: thumbnailPhoto
+-> outlookitem_delete.md
+--> No Impact
+-> outlookitem_get.md
+--> No Impact
+-> outlookitem_update.md
+--> No Impact
+-> page_copytosection.md
+--> Impacted
+-> page_delete.md
+--> Impacted
+-> page_get.md
+--> Impacted
+-> page_patchcontent.md
+--> Impacted
+-> page_thumbnail.md
+--> Impacted
+-> page_update.md
+--> Impacted
+-> permission_delete.md
+--> No Impact
+-> permission_get.md
+--> No Impact
+-> permission_update.md
+--> No Impact
+-> person_delete.md
+--> No Impact
+-> person_get.md
+--> No Impact
+-> person_update.md
+--> No Impact
+-> photo_delete.md
+--> Impacted
+-> photo_get.md
+--> Impacted
+-> photo_update.md
+--> Impacted
+-----> Delete property: height
+-----> Delete property: width
+-> plandetails_delete.md
+--> No Impact
+-> plandetails_get.md
+--> No Impact
+-> plandetails_update.md
+--> No Impact
+-> plantaskboard_delete.md
+--> No Impact
+-> plantaskboard_get.md
+--> No Impact
+-> plan_delete.md
+--> No Impact
+-> plan_get.md
+--> No Impact
+-> plan_list.md
+--> No Impact
+-> plan_list_buckets.md
+--> No Impact
+-> plan_list_tasks.md
+--> No Impact
+-> plan_post_buckets.md
+--> No Impact
+-> plan_post_plans.md
+--> No Impact
+-> plan_post_tasks.md
+--> No Impact
+-> plan_update.md
+--> No Impact
+-> post_delete.md
+--> No Impact
+-> post_forward.md
+--> No Impact
+-> post_get.md
+--> No Impact
+-> post_list_attachments.md
+--> No Impact
+-> post_list_extensions.md
+--> No Impact
+-> post_post_attachments.md
+--> No Impact
+-> post_post_extensions.md
+--> No Impact
+-> post_reply.md
+--> No Impact
+-> post_update.md
+--> No Impact
+-> profilephoto_delete.md
+--> No Impact
+-> profilephoto_get.md
+--> No Impact
+-> profilephoto_update.md
+--> No Impact
+-> referenceattachment_delete.md
+--> No Impact
+-> referenceattachment_get.md
+--> No Impact
+-> referenceattachment_update.md
+--> No Impact
+-> resource_delete.md
+--> No Impact
+-> resource_get.md
+--> No Impact
+-> resource_update.md
+--> No Impact
+-> sectiongroup_delete.md
+--> Impacted
+-> sectiongroup_get.md
+--> Impacted
+-> sectiongroup_list_sectiongroups.md
+--> Impacted
+-> sectiongroup_list_sections.md
+--> Impacted
+-> sectiongroup_post_sectiongroups.md
+--> Impacted
+-> sectiongroup_post_sections.md
+--> Impacted
+-> sectiongroup_update.md
+--> Impacted
+-> section_copytonotebook.md
+--> Impacted
+-> section_copytosectiongroup.md
+--> Impacted
+-> section_delete.md
+--> Impacted
+-> section_get.md
+--> Impacted
+-> section_list_pages.md
+--> Impacted
+-> section_post_pages.md
+--> Impacted
+-> section_thumbnail.md
+--> Impacted
+-> section_update.md
+--> Impacted
+-> serviceprincipal_checkmembergroups.md
+--> Impacted
+-> serviceprincipal_delete.md
+--> Impacted
+-> serviceprincipal_get.md
+--> Impacted
+-> serviceprincipal_getmembergroups.md
+--> Impacted
+-> serviceprincipal_getmemberobjects.md
+--> Impacted
+-> serviceprincipal_list.md
+--> Impacted
+-> serviceprincipal_list_approleassignments.md
+--> Impacted
+-> serviceprincipal_list_createdobjects.md
+--> Impacted
+-> serviceprincipal_list_memberof.md
+--> Impacted
+-> serviceprincipal_list_oauth2permissiongrants.md
+--> Impacted
+-> serviceprincipal_list_ownedobjects.md
+--> Impacted
+-> serviceprincipal_list_owners.md
+--> Impacted
+-> serviceprincipal_post_approleassignments.md
+--> Impacted
+-> serviceprincipal_post_createdobjects.md
+--> Impacted
+-> serviceprincipal_post_memberof.md
+--> Impacted
+-> serviceprincipal_post_oauth2permissiongrants.md
+--> Impacted
+-> serviceprincipal_post_ownedobjects.md
+--> Impacted
+-> serviceprincipal_post_owners.md
+--> Impacted
+-> serviceprincipal_post_serviceprincipals.md
+--> Impacted
+-> serviceprincipal_update.md
+--> Impacted
+-----> Delete property: appOwnerTenantId
+-----> Delete property: deletionTimestamp
+-----> Delete property: objectType
+-> share_delete.md
+--> No Impact
+-> share_get.md
+--> No Impact
+-> share_list.md
+--> No Impact
+-> share_list_items.md
+--> No Impact
+-> share_post_items.md
+--> No Impact
+-> share_post_shares.md
+--> No Impact
+-> share_update.md
+--> No Impact
+-> sitecollection_delete.md
+--> Deleted
+-> sitecollection_fromurl.md
+--> Deleted
+-> sitecollection_get.md
+--> Deleted
+-> sitecollection_list.md
+--> Deleted
+-> sitecollection_list_sites.md
+--> Deleted
+-> sitecollection_post_sitecollections.md
+--> Deleted
+-> sitecollection_post_sites.md
+--> Deleted
+-> site_delete.md
+--> Deleted
+-> site_get.md
+--> Deleted
+-> subscribedsku_delete.md
+--> Impacted
+-> subscribedsku_get.md
+--> Impacted
+-> subscribedsku_list.md
+--> Impacted
+-> subscribedsku_post_subscribedskus.md
+--> Impacted
+-> subscribedsku_update.md
+--> Impacted
+-> subscription_delete.md
+--> No Impact
+-> subscription_get.md
+--> No Impact
+-> subscription_list.md
+--> No Impact
+-> subscription_post_subscriptions.md
+--> No Impact
+-> subscription_update.md
+--> No Impact
+-> taskboardtaskformat_delete.md
+--> No Impact
+-> taskboardtaskformat_get.md
+--> No Impact
+-> taskboardtaskformat_update.md
+--> No Impact
+-> taskdetails_delete.md
+--> No Impact
+-> taskdetails_get.md
+--> No Impact
+-> taskdetails_update.md
+--> No Impact
+-> task_delete.md
+--> No Impact
+-> task_get.md
+--> No Impact
+-> task_list.md
+--> No Impact
+-> task_post_tasks.md
+--> No Impact
+-> task_update.md
+--> No Impact
+-> tenantdetail_checkmembergroups.md
+--> No Impact
+-> tenantdetail_delete.md
+--> No Impact
+-> tenantdetail_get.md
+--> No Impact
+-> tenantdetail_getmembergroups.md
+--> No Impact
+-> tenantdetail_getmemberobjects.md
+--> No Impact
+-> tenantdetail_list.md
+--> No Impact
+-> tenantdetail_post_tenantdetails.md
+--> No Impact
+-> tenantdetail_update.md
+--> No Impact
+-> thumbnailset_delete.md
+--> No Impact
+-> thumbnailset_get.md
+--> No Impact
+-> thumbnailset_update.md
+--> No Impact
+-> user_assignlicense.md
+--> Impacted
+-> user_checkmembergroups.md
+--> Impacted
+-> user_delete.md
+--> Impacted
+-> user_findmeetingtimes.md
+--> Impacted
+-> user_get.md
+--> Impacted
+-> user_getmembergroups.md
+--> Impacted
+-> user_getmemberobjects.md
+--> Impacted
+-> user_list.md
+--> Impacted
+-> user_list_approleassignments.md
+--> Impacted
+-> user_list_calendargroups.md
+--> Impacted
+-> user_list_calendars.md
+--> Impacted
+-> user_list_calendarview.md
+--> Impacted
+-> user_list_contactfolders.md
+--> Impacted
+-> user_list_contacts.md
+--> Impacted
+-> user_list_createdobjects.md
+--> Impacted
+-> user_list_directreports.md
+--> Impacted
+-> user_list_events.md
+--> Impacted
+-> user_list_joinedgroups.md
+--> Impacted
+-> user_list_mailfolders.md
+--> Impacted
+-> user_list_memberof.md
+--> Impacted
+-> user_list_messages.md
+--> Impacted
+-> user_list_oauth2permissiongrants.md
+--> Impacted
+-> user_list_owneddevices.md
+--> Impacted
+-> user_list_ownedobjects.md
+--> Impacted
+-> user_list_people.md
+--> Impacted
+-> user_list_photos.md
+--> Impacted
+-> user_list_plans.md
+--> Impacted
+-> user_list_registereddevices.md
+--> Impacted
+-> user_list_tasks.md
+--> Impacted
+-> user_list_trendingaround.md
+--> Impacted
+-> user_list_workingwith.md
+--> Impacted
+-> user_post_approleassignments.md
+--> Impacted
+-> user_post_calendargroups.md
+--> Impacted
+-> user_post_calendars.md
+--> Impacted
+-> user_post_calendarview.md
+--> Impacted
+-> user_post_contactfolders.md
+--> Impacted
+-> user_post_contacts.md
+--> Impacted
+-> user_post_createdobjects.md
+--> Impacted
+-> user_post_directreports.md
+--> Impacted
+-> user_post_events.md
+--> Impacted
+-> user_post_joinedgroups.md
+--> Impacted
+-> user_post_mailfolders.md
+--> Impacted
+-> user_post_memberof.md
+--> Impacted
+-> user_post_messages.md
+--> Impacted
+-> user_post_oauth2permissiongrants.md
+--> Impacted
+-> user_post_owneddevices.md
+--> Impacted
+-> user_post_ownedobjects.md
+--> Impacted
+-> user_post_people.md
+--> Impacted
+-> user_post_photos.md
+--> Impacted
+-> user_post_plans.md
+--> Impacted
+-> user_post_registereddevices.md
+--> Impacted
+-> user_post_tasks.md
+--> Impacted
+-> user_post_trendingaround.md
+--> Impacted
+-> user_post_users.md
+--> Impacted
+-> user_post_workingwith.md
+--> Impacted
+-> user_reminderview.md
+--> Impacted
+-> user_sendmail.md
+--> Impacted
+-> user_update.md
+--> Impacted
+-----> Delete property: alias
+-----> Delete property: deletionTimestamp
+-----> Rename dirSyncEnabled to onPremisesSyncEnabled
+-----> Delete property: emailAddress
+-----> Delete property: facsimileTelephoneNumber
+-----> Rename immutableId to onPremisesImmutableId
+-----> Rename lastDirSyncTime to onPremisesLastSyncDateTime
+-----> Delete property: mailboxGuid
+-----> Rename mobile to mobilePhone
+-----> Delete property: objectType
+-----> Delete property: otherMails
+-----> Rename physicalDeliveryOfficeName to officeLocation
+-----> Delete property: principalName
+-----> Delete property: provisioningErrors
+-----> Delete property: sipProxyAddress
+-----> Delete property: tags
+-----> Rename telephoneNumber to businessPhones
+-----> Delete property: thumbnailPhoto
+
+*** OK. Processed 501 input files. ***
+*** Deleted 25
+*** No impact 226
+*** Written 476

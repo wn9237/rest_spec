@@ -1,5 +1,5 @@
 {
-  "BodyType": {
+  "bodyType": {
     "isExclusive": true,
     "options": {
       "text": {
@@ -12,7 +12,7 @@
       }
     }
   },
-  "Importance": {
+  "importance": {
     "isExclusive": true,
     "options": {
       "low": {
@@ -29,7 +29,7 @@
       }
     }
   },
-  "CalendarColor": {
+  "calendarColor": {
     "isExclusive": true,
     "options": {
       "lightBlue": {
@@ -78,7 +78,7 @@
       }
     }
   },
-  "ResponseType": {
+  "responseType": {
     "isExclusive": true,
     "options": {
       "none": {
@@ -107,7 +107,7 @@
       }
     }
   },
-  "Sensitivity": {
+  "sensitivity": {
     "isExclusive": true,
     "options": {
       "normal": {
@@ -128,7 +128,7 @@
       }
     }
   },
-  "RecurrencePatternType": {
+  "recurrencePatternType": {
     "isExclusive": true,
     "options": {
       "daily": {
@@ -157,7 +157,7 @@
       }
     }
   },
-  "DayOfWeek": {
+  "dayOfWeek": {
     "isExclusive": true,
     "options": {
       "sunday": {
@@ -190,7 +190,7 @@
       }
     }
   },
-  "WeekIndex": {
+  "weekIndex": {
     "isExclusive": true,
     "options": {
       "first": {
@@ -215,7 +215,7 @@
       }
     }
   },
-  "RecurrenceRangeType": {
+  "recurrenceRangeType": {
     "isExclusive": true,
     "options": {
       "endDate": {
@@ -232,7 +232,7 @@
       }
     }
   },
-  "FreeBusyStatus": {
+  "freeBusyStatus": {
     "isExclusive": true,
     "options": {
       "free": {
@@ -261,7 +261,7 @@
       }
     }
   },
-  "EventType": {
+  "eventType": {
     "isExclusive": true,
     "options": {
       "singleInstance": {
@@ -282,7 +282,7 @@
       }
     }
   },
-  "AttendeeType": {
+  "attendeeType": {
     "isExclusive": true,
     "options": {
       "required": {
@@ -299,7 +299,7 @@
       }
     }
   },
-  "MeetingMessageType": {
+  "meetingMessageType": {
     "isExclusive": true,
     "options": {
       "none": {
@@ -328,7 +328,7 @@
       }
     }
   },
-  "GroupAccessType": {
+  "groupAccessType": {
     "isExclusive": true,
     "options": {
       "none": {

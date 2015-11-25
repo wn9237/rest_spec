@@ -28,7 +28,7 @@ Here is an example of the request.
   "name": "group_removefavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/removeFavorite
+POST https://graph.microsoft.com/beta/groups/<id>/removeFavorite
 ```
 
 ##### Response

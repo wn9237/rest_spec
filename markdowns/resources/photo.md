@@ -23,7 +23,7 @@ Here is a JSON representation of the resource.
   "fNumber": 1024,
   "focalLength": 1024,
   "iso": 1024,
-  "takenDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"}
+  "takenDateTime": "String (timestamp)"
 }
 
 ```

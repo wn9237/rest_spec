@@ -4,6 +4,7 @@
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
+  "isOpenType": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,
@@ -24,15 +25,15 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<id>/drive/items/<id>/createdByUser": true,
-    "/groups/<id>/drive/items/<id>/lastModifiedByUser": true,
-    "/groups/<id>/drive/shared/<id>/createdByUser": true,
-    "/groups/<id>/drive/shared/<id>/lastModifiedByUser": true,
-    "/groups/<id>/drive/special/<id>/createdByUser": true,
-    "/groups/<id>/drive/special/<id>/lastModifiedByUser": true,
-    "/groups/<id>/drive/root/createdByUser": true,
-    "/groups/<id>/drive/root/lastModifiedByUser": true,
-    "/users/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser": true,
+    "/groups/<objectId>/drive/root/createdByUser": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser": true,
+    "/users/<objectId>": true,
     "/drives/<id>/items/<id>/createdByUser": true,
     "/drives/<id>/items/<id>/lastModifiedByUser": true,
     "/drives/<id>/shared/<id>/createdByUser": true,
@@ -43,7 +44,6 @@
     "/drives/<id>/root/lastModifiedByUser": true,
     "/shares/<id>/items/<id>/createdByUser": true,
     "/shares/<id>/items/<id>/lastModifiedByUser": true,
-    "/me": true,
     "/drive/items/<id>/createdByUser": true,
     "/drive/items/<id>/lastModifiedByUser": true,
     "/drive/shared/<id>/createdByUser": true,
@@ -97,36 +97,8 @@
       "isUnicode": null
     },
     {
-      "name": "businessPhones",
-      "description": "",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
-    },
-    {
       "name": "city",
       "description": "The city in which the user is located.",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "companyName",
-      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -167,8 +139,36 @@
       "isUnicode": false
     },
     {
+      "name": "dirSyncEnabled",
+      "description": "                **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).            ",
+      "isKey": false,
+      "dataType": "boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "displayName",
       "description": "The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates.",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "facsimileTelephoneNumber",
+      "description": "The telephone number of the user's business fax machine.",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -195,6 +195,20 @@
       "isUnicode": false
     },
     {
+      "name": "immutableId",
+      "description": "This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property.                            **Important:** The **$** and **_** characters cannot be used when specifying this property.                                        **Notes**: Requires version 2013-11-08 or newer.            ",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
       "name": "jobTitle",
       "description": "The user’s job title.",
       "isKey": false,
@@ -207,6 +221,20 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
+    },
+    {
+      "name": "lastDirSyncTime",
+      "description": "Indicates the last time at which the object was synced with the on-premises directory; for example: \"2013-02-16T03:04:54Z\" ",
+      "isKey": false,
+      "dataType": "dateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "mail",
@@ -237,8 +265,8 @@
       "isUnicode": false
     },
     {
-      "name": "mobilePhone",
-      "description": "",
+      "name": "mobile",
+      "description": "The primary cellular telephone number for the user.",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -249,34 +277,6 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": false
-    },
-    {
-      "name": "onPremisesImmutableId",
-      "description": "",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "onPremisesLastSyncDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
     },
     {
       "name": "onPremisesSecurityIdentifier",
@@ -293,18 +293,18 @@
       "isUnicode": false
     },
     {
-      "name": "onPremisesSyncEnabled",
-      "description": "",
+      "name": "otherMails",
+      "description": "A list of additional email addresses for the user; for example: [\"bob@contoso.com\", \"Robert@fabrikam.com\"].                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
       "isKey": false,
-      "dataType": "boolean",
+      "dataType": "string",
       "isReadOnly": false,
       "enumName": null,
-      "isCollection": false,
+      "isCollection": true,
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
+      "isNullable": false,
+      "isUnicode": false
     },
     {
       "name": "passwordPolicies",
@@ -335,8 +335,8 @@
       "isUnicode": null
     },
     {
-      "name": "officeLocation",
-      "description": "",
+      "name": "physicalDeliveryOfficeName",
+      "description": "The office location in the user's place of business.",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -391,6 +391,20 @@
       "isUnicode": null
     },
     {
+      "name": "provisioningErrors",
+      "description": "A collection of error details that are preventing this user from being provisioned successfully.",
+      "isKey": false,
+      "dataType": "provisioningError",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
       "name": "proxyAddresses",
       "description": "Fpr example: [\"SMTP: bob@contoso.com\", \"smtp: bob@sales.contoso.com\"]                            **Notes**: unique, not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
       "isKey": false,
@@ -402,6 +416,20 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "sipProxyAddress",
+      "description": "Specifies the voice over IP (VOIP) session initiation protocol (SIP) address for the user.                            **Notes**: Requires version 1.5 or newer.            ",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
       "isUnicode": false
     },
     {
@@ -447,6 +475,34 @@
       "isUnicode": false
     },
     {
+      "name": "telephoneNumber",
+      "description": "The primary telephone number of the user's place of business.",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "thumbnailPhoto",
+      "description": "A thumbnail photo to be displayed for the user.                            **Notes**: not nullable.            ",
+      "isKey": false,
+      "dataType": "stream",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
       "name": "usageLocation",
       "description": "A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: \"US\", \"JP\", and \"GB\".                            **Notes**: not nullable.            ",
       "isKey": false,
@@ -489,8 +545,50 @@
       "isUnicode": false
     },
     {
+      "name": "emailAddress",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "mailboxGuid",
+      "description": "The GUID assigned to the user's mailbox.",
+      "isKey": false,
+      "dataType": "guid",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "aboutMe",
       "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "alias",
+      "description": "The user's alias. Typically the SMTP address of the user.",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -587,6 +685,20 @@
       "isUnicode": false
     },
     {
+      "name": "principalName",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
       "name": "responsibilities",
       "description": "",
       "isKey": false,
@@ -629,8 +741,36 @@
       "isUnicode": false
     },
     {
-      "name": "id",
+      "name": "tags",
       "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "objectType",
+      "description": "A string that identifies the object type. For users the value is always “User”. Inherited from [DirectoryObject].",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "objectId",
+      "description": "The unique identifier for the user. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "string",
       "isReadOnly": true,
@@ -641,6 +781,48 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
+    },
+    {
+      "name": "deletionTimestamp",
+      "description": "This property is not valid for users and always returns **null**. Inherited from [DirectoryObject].                            **Notes**: Requires version 1.5 or newer.            ",
+      "isKey": false,
+      "dataType": "dateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "appRoleAssignments",
+      "description": "The set of applications that this user is assigned to. Requires version 1.5 or newer.            HTTP Methods:  GET, POST, DELETE",
+      "isKey": false,
+      "dataType": "appRoleAssignment",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "oauth2PermissionGrants",
+      "description": "The set of applications that are granted consent to impersonate this user. Requires version 1.5 or newer.            HTTP Methods:  GET, POST, DELETE",
+      "isKey": false,
+      "dataType": "oAuth2PermissionGrant",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
     },
     {
       "name": "ownedDevices",
@@ -755,6 +937,20 @@
       "isUnicode": null
     },
     {
+      "name": "joinedGroups",
+      "description": "",
+      "isKey": false,
+      "dataType": "group",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
       "name": "mailFolders",
       "description": "",
       "isKey": false,
@@ -839,6 +1035,20 @@
       "isUnicode": null
     },
     {
+      "name": "people",
+      "description": "",
+      "isKey": false,
+      "dataType": "person",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
       "name": "contacts",
       "description": "The user's contacts. Navigation property.",
       "isKey": false,
@@ -867,10 +1077,10 @@
       "isUnicode": null
     },
     {
-      "name": "photo",
+      "name": "inferenceClassification",
       "description": "",
       "isKey": false,
-      "dataType": "profilePhoto",
+      "dataType": "inferenceClassification",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
@@ -881,10 +1091,108 @@
       "isUnicode": null
     },
     {
+      "name": "photo",
+      "description": "",
+      "isKey": false,
+      "dataType": "photo",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "photos",
+      "description": "",
+      "isKey": false,
+      "dataType": "photo",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
       "name": "drive",
       "description": "",
       "isKey": false,
       "dataType": "drive",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "trendingAround",
+      "description": "",
+      "isKey": false,
+      "dataType": "item",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "workingWith",
+      "description": "",
+      "isKey": false,
+      "dataType": "user",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "tasks",
+      "description": "",
+      "isKey": false,
+      "dataType": "task",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "plans",
+      "description": "",
+      "isKey": false,
+      "dataType": "plan",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "notes",
+      "description": "",
+      "isKey": false,
+      "dataType": "notes",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
@@ -936,45 +1244,6 @@
       ]
     },
     {
-      "name": "changePassword",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "currentPassword",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "newPassword",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
       "name": "sendMail",
       "displayName": "",
       "description": "",
@@ -1003,6 +1272,85 @@
         },
         {
           "name": "saveToSentItems",
+          "description": "",
+          "dataType": "boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "findMeetingTimes",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "meetingTimeCandidate",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "attendees",
+          "description": "",
+          "dataType": "attendeeBase",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "locationConstraint",
+          "description": "",
+          "dataType": "locationConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "timeConstraint",
+          "description": "",
+          "dataType": "timeConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "meetingDuration",
+          "description": "",
+          "dataType": "duration",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "maxCandidates",
+          "description": "",
+          "dataType": "int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "isOrganizerOptional",
           "description": "",
           "dataType": "boolean",
           "isCollection": false,
@@ -1058,7 +1406,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": false,
+      "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -1087,7 +1435,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": false,
+      "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -1116,7 +1464,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": false,
+      "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,

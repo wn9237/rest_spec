@@ -29,7 +29,7 @@ In the request body, supply the values for relevant fields that should be update
 |end|dateTimeTimeZone|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". |
 |hasAttachments|boolean|Set to true if the event has attachments.|
 |iCalUId|string|A unique identifier that is shared by all instances of an event across different calendars.|
-|importance|importance|The importance of the event: Low = 0, Normal = 1, High = 2.|
+|importance|String|The importance of the event: Low = 0, Normal = 1, High = 2. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|boolean|Set to true if the event lasts all day.|
 |isCancelled|boolean|Set to true if the event has been canceled.|
 |isOrganizer|boolean|Set to true if the message sender is also the organizer.|
@@ -44,12 +44,12 @@ In the request body, supply the values for relevant fields that should be update
 |reminderMinutesBeforeStart|int32||
 |responseRequested|boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|responseStatus|Indicates the type of response sent in response to an event message.|
-|sensitivity|sensitivity||
+|sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|string|The categories assigned to the item.|
-|showAs|freeBusyStatus|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1.|
+|showAs|String|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|dateTimeTimeZone|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
 |subject|string|The text of the event's subject line.|
-|type|eventType|The event type: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3.|
+|type|String|The event type: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`.|
 |webLink|string|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
 
 ### Response
@@ -62,16 +62,15 @@ Here is an example of the request.
   "name": "update_event"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/events/<id>
+PATCH https://graph.microsoft.com/beta/me/events/<id>
 Content-type: application/json
-Content-length: 285
+Content-length: 294
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "response-value",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -89,14 +88,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
+Content-length: 294
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "response-value",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

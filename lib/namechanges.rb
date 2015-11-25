@@ -9,7 +9,7 @@ module SpecMaker
 	# Initialize 
 	RESOURCES_NEW = "../jsonfiles/restold/" #ignore naming conv.
 	RESOURCES_OLD = "../jsonfiles/rest/" # this is the old one
-	DIFF_OUT_FILE =  "../jsonfiles/diff.json"
+	DIFF_OUT_FILE =  "../jsonfiles/diff2.json"
 	NEWLINE = "\n"
 
 

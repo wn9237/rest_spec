@@ -1,0 +1,656 @@
+{
+  "addin": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "application": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "addIns",
+      "availableToOtherOrganizations",
+      "recordConsentConditions",
+      "id"
+    ],
+    "renames": {
+      "409": "availableToOtherTenants",
+      "509": "objectType",
+      "510": "objectId",
+      "573": "deletionTimestamp"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+      "restore"
+    ],
+    "isUntouched": false
+  },
+  "approle": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "origin"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "approleassignment": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "944": "objectType",
+      "904": "objectId",
+      "224": "deletionTimestamp"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+      "checkMemberGroups",
+      "getMemberGroups",
+      "getMemberObjects"
+    ],
+    "isUntouched": false
+  },
+  "assignedplan": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "assignedDateTime"
+    ],
+    "renames": {
+      "471": "assignedTimestamp"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "attendee": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "203": "type",
+      "434": "emailAddress"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "attendeebase": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "539": "emailAddress"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "copystatusmodel": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "device": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "approximateLastSignInDateTime",
+      "deviceVersion",
+      "isCompliant",
+      "isManaged",
+      "onPremisesLastSyncDateTime",
+      "onPremisesSyncEnabled",
+      "operatingSystem",
+      "operatingSystemVersion",
+      "physicalIds",
+      "trustType",
+      "id"
+    ],
+    "renames": {
+      "576": "approximateLastLogonTimestamp",
+      "143": "deviceObjectVersion",
+      "619": "deviceOSType",
+      "787": "deviceOSVersion",
+      "580": "devicePhysicalIds",
+      "650": "deviceTrustType",
+      "1000": "dirSyncEnabled",
+      "227": "lastDirSyncTime",
+      "499": "objectType",
+      "225": "objectId",
+      "106": "deletionTimestamp"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "directoryobject": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "id"
+    ],
+    "renames": {
+      "593": "objectType",
+      "660": "objectId",
+      "319": "deletionTimestamp"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "directoryrole": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "id"
+    ],
+    "renames": {
+      "846": "isSystem",
+      "581": "roleDisabled",
+      "713": "objectType",
+      "819": "objectId",
+      "946": "deletionTimestamp",
+      "308": "memberOf",
+      "717": "owners",
+      "563": "ownedObjects"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "directoryroletemplate": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "id"
+    ],
+    "renames": {
+      "382": "objectType",
+      "927": "objectId",
+      "923": "deletionTimestamp"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "driveitem": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "extensionproperty": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "id"
+    ],
+    "renames": {
+      "110": "objectType",
+      "869": "objectId",
+      "585": "deletionTimestamp"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "geocoordinates": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "456": "accuracy",
+      "798": "altitudeAccuracy"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "group": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "onPremisesLastSyncDateTime",
+      "onPremisesSyncEnabled",
+      "visibility",
+      "id"
+    ],
+    "renames": {
+      "601": "dirSyncEnabled",
+      "270": "creationOptions",
+      "254": "isPublic",
+      "458": "lastDirSyncTime",
+      "704": "provisioningErrors",
+      "844": "emailAddress",
+      "73": "objectType",
+      "724": "objectId",
+      "113": "deletionTimestamp",
+      "908": "appRoleAssignments"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "importstatusmodel": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "keyvalue": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "location": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "displayName",
+      "locationEmailAddress",
+      "address",
+      "coordinates"
+    ],
+    "renames": {
+      "100": "altitude",
+      "588": "latitude",
+      "247": "longitude"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "notebook": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "createdByIdentity",
+      "lastModifiedByIdentity"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+      "exportNotebook",
+      "importNotebook"
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "notes": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "operations"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "notesoperation": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "notesoperationerror": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "oauth2permission": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "origin"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "oauth2permissiongrant": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "id"
+    ],
+    "renames": {
+      "946": "objectId"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "onenoteidentity": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "onenoteidentityset": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "organization": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "orgcontact": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "businessPhones",
+      "companyName",
+      "mobilePhone",
+      "onPremisesSyncEnabled",
+      "onPremisesLastSyncDateTime",
+      "officeLocation",
+      "id"
+    ],
+    "renames": {
+      "740": "dirSyncEnabled",
+      "436": "facsimileTelephoneNumber",
+      "466": "lastDirSyncTime",
+      "704": "mobile",
+      "750": "physicalDeliveryOfficeName",
+      "89": "provisioningErrors",
+      "831": "sipProxyAddress",
+      "735": "telephoneNumber",
+      "341": "thumbnailPhoto",
+      "499": "objectType",
+      "805": "objectId",
+      "150": "deletionTimestamp"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "outlookgeocoordinates": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "page": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "level",
+      "order"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+      "thumbnail"
+    ],
+    "isUntouched": false
+  },
+  "passwordprofile": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "forceChangePasswordNextSignIn"
+    ],
+    "renames": {
+      "120": "forceChangePasswordNextLogin"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "photo": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "cameraMake",
+      "cameraModel",
+      "exposureDenominator",
+      "exposureNumerator",
+      "focalLength",
+      "fNumber",
+      "takenDateTime",
+      "iso"
+    ],
+    "renames": {
+      "242": "height",
+      "361": "width",
+      "946": "id"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "profilephoto": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "recurrencerange": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "recurrenceTimeZone"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "section": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "createdByIdentity",
+      "lastModifiedByIdentity"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+      "thumbnail"
+    ],
+    "isUntouched": false
+  },
+  "sectiongroup": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "createdByIdentity",
+      "lastModifiedByIdentity"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "serviceplaninfo": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "provisioningStatus",
+      "appliesTo"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "serviceprincipal": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "addIns",
+      "appOwnerOrganizationId",
+      "id"
+    ],
+    "renames": {
+      "210": "appOwnerTenantId",
+      "956": "objectType",
+      "858": "objectId",
+      "763": "deletionTimestamp",
+      "230": "createdOnBehalfOf"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "subscribedsku": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "id",
+      "appliesTo"
+    ],
+    "renames": {
+      "652": "objectId"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "subscription": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "user": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "businessPhones",
+      "companyName",
+      "mobilePhone",
+      "onPremisesImmutableId",
+      "onPremisesLastSyncDateTime",
+      "onPremisesSyncEnabled",
+      "officeLocation",
+      "id"
+    ],
+    "renames": {
+      "320": "dirSyncEnabled",
+      "567": "facsimileTelephoneNumber",
+      "346": "immutableId",
+      "451": "lastDirSyncTime",
+      "90": "mobile",
+      "700": "otherMails",
+      "815": "physicalDeliveryOfficeName",
+      "841": "provisioningErrors",
+      "203": "sipProxyAddress",
+      "15": "telephoneNumber",
+      "687": "thumbnailPhoto",
+      "43": "emailAddress",
+      "469": "mailboxGuid",
+      "164": "alias",
+      "467": "principalName",
+      "460": "tags",
+      "671": "objectType",
+      "647": "objectId",
+      "127": "deletionTimestamp",
+      "990": "appRoleAssignments",
+      "665": "oauth2PermissionGrants"
+    },
+    "deletedmethods": [
+      "changePassword"
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "verifieddomain": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "isDefault",
+      "isInitial"
+    ],
+    "renames": {
+      "681": "default",
+      "650": "id",
+      "448": "initial"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  }
+}

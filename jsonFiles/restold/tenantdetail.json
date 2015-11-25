@@ -1,10 +1,10 @@
 {
-  "name": "organization",
-  "description": "",
+  "name": "tenantDetail",
+  "description": "Represents an Azure Active Directory tenant. Only the read and update operations are supported on tenants; create and delete are not supported. Inherits from [DirectoryOjbect].\r",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
-  "isOpenType": true,
+  "isOpenType": false,
   "allowPatch": true,
   "allowUpsert": true,
   "allowPatchCreate": true,
@@ -25,12 +25,12 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/organization/<id>": true
+    "/tenantDetails/<objectId>": true
   },
   "properties": [
     {
       "name": "assignedPlans",
-      "description": "",
+      "description": "The collection of service plans associated with the tenant.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "assignedPlan",
       "isReadOnly": false,
@@ -43,22 +43,8 @@
       "isUnicode": null
     },
     {
-      "name": "businessPhones",
-      "description": "",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
-    },
-    {
       "name": "city",
-      "description": "",
+      "description": "            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -71,8 +57,22 @@
       "isUnicode": false
     },
     {
+      "name": "companyLastDirSyncTime",
+      "description": "The time and date at which the tenant was last synced with the on-premise directory.",
+      "isKey": false,
+      "dataType": "dateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "country",
-      "description": "",
+      "description": "            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -86,7 +86,7 @@
     },
     {
       "name": "countryLetterCode",
-      "description": "",
+      "description": "            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -99,8 +99,22 @@
       "isUnicode": false
     },
     {
+      "name": "dirSyncEnabled",
+      "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).",
+      "isKey": false,
+      "dataType": "boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "displayName",
-      "description": "",
+      "description": "The display name for the tenant.",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -114,7 +128,7 @@
     },
     {
       "name": "marketingNotificationEmails",
-      "description": "",
+      "description": "                                        **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -127,36 +141,8 @@
       "isUnicode": false
     },
     {
-      "name": "onPremisesLastSyncDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "dateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "onPremisesSyncEnabled",
-      "description": "",
-      "isKey": false,
-      "dataType": "boolean",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
       "name": "postalCode",
-      "description": "",
+      "description": "            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -170,7 +156,7 @@
     },
     {
       "name": "preferredLanguage",
-      "description": "",
+      "description": "            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -184,9 +170,23 @@
     },
     {
       "name": "provisionedPlans",
-      "description": "",
+      "description": "                                        **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "provisionedPlan",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "provisioningErrors",
+      "description": "                                        **Notes**: not nullable.            ",
+      "isKey": false,
+      "dataType": "provisioningError",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": true,
@@ -226,7 +226,7 @@
     },
     {
       "name": "state",
-      "description": "",
+      "description": "            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -240,7 +240,7 @@
     },
     {
       "name": "street",
-      "description": "",
+      "description": "            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -254,7 +254,7 @@
     },
     {
       "name": "technicalNotificationMails",
-      "description": "",
+      "description": "                                        **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -267,8 +267,22 @@
       "isUnicode": false
     },
     {
+      "name": "telephoneNumber",
+      "description": "            ",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
       "name": "verifiedDomains",
-      "description": "",
+      "description": "The collection of domains associated with this tenant.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "verifiedDomain",
       "isReadOnly": false,
@@ -281,8 +295,22 @@
       "isUnicode": null
     },
     {
-      "name": "id",
-      "description": "",
+      "name": "objectType",
+      "description": "A string that identifies the object type. For tenants the value is always “Company”. Inherited from [DirectoryObject].",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "objectId",
+      "description": "The unique identifier for the tenant. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "string",
       "isReadOnly": true,
@@ -293,6 +321,20 @@
       "allowPostToCollection": true,
       "isNullable": false,
       "isUnicode": false
+    },
+    {
+      "name": "deletionTimestamp",
+      "description": "",
+      "isKey": false,
+      "dataType": "dateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     }
   ],
   "methods": [
@@ -302,7 +344,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": false,
+      "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -331,7 +373,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": false,
+      "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
@@ -360,7 +402,7 @@
       "description": "",
       "prerequisites": "",
       "returnType": "string",
-      "isReturnNullable": false,
+      "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,

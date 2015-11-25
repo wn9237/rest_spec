@@ -23,22 +23,22 @@ Here is a JSON representation of the resource.
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "createdDateTime": "String (timestamp)",
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
-  "importance": {"@odata.type": "microsoft.graph.importance"},
+  "importance": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
   "isReadReceiptRequested": true,
-  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
-  "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "meetingMessageType": "String",
   "parentFolderId": "string",
-  "receivedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "receivedDateTime": "String (timestamp)",
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
-  "sentDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "sentDateTime": "String (timestamp)",
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
@@ -60,13 +60,13 @@ Here is a JSON representation of the resource.
 |from|[recipient](recipient.md)||
 |hasAttachments|boolean||
 |id|string| Read-only.|
-|importance|[importance](importance.md)||
+|importance|String| Possible values are: `low`, `normal`, `high`.|
 |isDeliveryReceiptRequested|boolean||
 |isDraft|boolean||
 |isRead|boolean||
 |isReadReceiptRequested|boolean||
 |lastModifiedDateTime|[dateTimeOffset](datetimeoffset.md)||
-|meetingMessageType|[meetingMessageType](meetingmessagetype.md)| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 |
+|meetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|string||
 |receivedDateTime|[dateTimeOffset](datetimeoffset.md)||
 |replyTo|[recipient](recipient.md) collection||

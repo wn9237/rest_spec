@@ -31,14 +31,13 @@ Here is an example of the request.
   "name": "create_calendar_from_calendargroup"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendarGroups/<id>/calendars
+POST https://graph.microsoft.com/beta/me/calendarGroups/<id>/calendars
 Content-type: application/json
-Content-length: 78
+Content-length: 86
 
 {
   "name": "name-value",
-  "color": {
-  },
+  "color": "color-value",
   "changeKey": "changeKey-value"
 }
 ```
@@ -53,12 +52,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 98
+Content-length: 106
 
 {
   "name": "name-value",
-  "color": {
-  },
+  "color": "color-value",
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

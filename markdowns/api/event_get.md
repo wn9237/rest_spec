@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_event"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/<id>
+GET https://graph.microsoft.com/beta/me/events/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -46,14 +46,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
+Content-length: 294
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "response-value",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

@@ -29,16 +29,15 @@ Here is an example of the request.
   "name": "create_event_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/calendarView
+POST https://graph.microsoft.com/beta/groups/<id>/calendarView
 Content-type: application/json
-Content-length: 285
+Content-length: 294
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "response-value",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -57,14 +56,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 285
+Content-length: 294
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "response-value",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

@@ -9,13 +9,10 @@ The following **scopes** are required to execute this API:
 POST /shares/<id>/items
 
 ```
-
 ### Request headers
 | Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer %token% |
-
-
+|:---------------|:--------|:----------|
+| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
 
 ### Request body
 In the request body, supply a JSON representation of [driveItem](../resources/driveitem.md) object.
@@ -32,7 +29,7 @@ Here is an example of the request.
   "name": "create_driveitem_from_share"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/shares/<id>/items
+POST https://graph.microsoft.com/beta/shares/<id>/items
 Content-type: application/json
 Content-length: 504
 

@@ -31,9 +31,9 @@ Here is an example of the request.
   "name": "create_message_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/<id>/messages
+POST https://graph.microsoft.com/beta/me/mailFolders/<id>/messages
 Content-type: application/json
-Content-length: 248
+Content-length: 260
 
 {
   "receivedDateTime": "datetime-value",
@@ -41,8 +41,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
@@ -59,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 248
+Content-length: 260
 
 {
   "receivedDateTime": "datetime-value",
@@ -67,8 +66,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

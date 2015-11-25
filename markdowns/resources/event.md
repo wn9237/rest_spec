@@ -21,32 +21,32 @@ Here is a JSON representation of the resource.
   "bodyPreview": "string",
   "categories": ["string"],
   "changeKey": "string",
-  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
   "iCalUId": "string",
   "id": "string (identifier)",
-  "importance": {"@odata.type": "microsoft.graph.importance"},
+  "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
   "isOrganizer": true,
   "isReminderOn": true,
-  "lastModifiedDateTime": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",
-  "originalStart": {"@odata.type": "microsoft.graph.dateTimeOffset"},
+  "originalStart": "String (timestamp)",
   "originalStartTimeZone": "string",
   "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "reminderMinutesBeforeStart": 1024,
   "responseRequested": true,
   "responseStatus": {"@odata.type": "microsoft.graph.responseStatus"},
-  "sensitivity": {"@odata.type": "microsoft.graph.sensitivity"},
+  "sensitivity": "String",
   "seriesMasterId": "string",
-  "showAs": {"@odata.type": "microsoft.graph.freeBusyStatus"},
+  "showAs": "String",
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
-  "type": {"@odata.type": "microsoft.graph.eventType"},
+  "type": "String",
   "webLink": "string"
 }
 
@@ -64,7 +64,7 @@ Here is a JSON representation of the resource.
 |hasAttachments|boolean|Set to true if the event has attachments.|
 |iCalUId|string|A unique identifier that is shared by all instances of an event across different calendars.|
 |id|string| Read-only.|
-|importance|[importance](importance.md)|The importance of the event: Low = 0, Normal = 1, High = 2.|
+|importance|String|The importance of the event: Low = 0, Normal = 1, High = 2. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|boolean|Set to true if the event lasts all day.|
 |isCancelled|boolean|Set to true if the event has been canceled.|
 |isOrganizer|boolean|Set to true if the message sender is also the organizer.|
@@ -79,12 +79,12 @@ Here is a JSON representation of the resource.
 |reminderMinutesBeforeStart|int32||
 |responseRequested|boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
-|sensitivity|[sensitivity](sensitivity.md)||
+|sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|string|The categories assigned to the item.|
-|showAs|[freeBusyStatus](freebusystatus.md)|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1.|
+|showAs|String|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
 |subject|string|The text of the event's subject line.|
-|type|[eventType](eventtype.md)|The event type: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3.|
+|type|String|The event type: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`.|
 |webLink|string|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
 
 ### Relationships

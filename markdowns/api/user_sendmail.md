@@ -36,9 +36,9 @@ Here is an example of the request.
   "name": "user_sendmail"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/sendMail
+POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 1944
+Content-length: 1975
 
 {
   "message": {
@@ -47,13 +47,11 @@ Content-length: 1944
     "hasAttachments": true,
     "subject": "subject-value",
     "body": {
-      "contentType": {
-      },
+      "contentType": "contentType-value",
       "content": "content-value"
     },
     "bodyPreview": "bodyPreview-value",
-    "importance": {
-    },
+    "importance": "importance-value",
     "parentFolderId": "parentFolderId-value",
     "sender": {
       "emailAddress": {
@@ -101,8 +99,7 @@ Content-length: 1944
     ],
     "conversationId": "conversationId-value",
     "uniqueBody": {
-      "contentType": {
-      },
+      "contentType": "contentType-value",
       "content": "content-value"
     },
     "isDeliveryReceiptRequested": true,

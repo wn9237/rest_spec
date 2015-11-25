@@ -28,13 +28,13 @@ In the request body, supply the values for relevant fields that should be update
 |createdDateTime|dateTimeOffset||
 |from|recipient||
 |hasAttachments|boolean||
-|importance|importance||
+|importance|String| Possible values are: `low`, `normal`, `high`.|
 |isDeliveryReceiptRequested|boolean||
 |isDraft|boolean||
 |isRead|boolean||
 |isReadReceiptRequested|boolean||
 |lastModifiedDateTime|dateTimeOffset||
-|meetingMessageType|meetingMessageType| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 |
+|meetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|string||
 |receivedDateTime|dateTimeOffset||
 |replyTo|recipient||
@@ -57,7 +57,7 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 248
+Content-length: 260
 
 {
   "receivedDateTime": "datetime-value",
@@ -65,8 +65,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
@@ -82,7 +81,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
+Content-length: 260
 
 {
   "receivedDateTime": "datetime-value",
@@ -90,8 +89,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

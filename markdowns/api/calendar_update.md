@@ -21,7 +21,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |changeKey|string|Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|color|calendarColor|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1 |
+|color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1  Possible values are: `lightBlue`, `lightGreen`, `lightOrange`, `lightGray`, `lightYellow`, `lightTeal`, `lightPink`, `lightBrown`, `lightRed`, `maxColor`, `auto`.|
 |name|string|The calendar name.|
 
 ### Response
@@ -34,14 +34,13 @@ Here is an example of the request.
   "name": "update_calendar"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/calendar
+PATCH https://graph.microsoft.com/beta/me/calendar
 Content-type: application/json
-Content-length: 78
+Content-length: 86
 
 {
   "name": "name-value",
-  "color": {
-  },
+  "color": "color-value",
   "changeKey": "changeKey-value"
 }
 ```
@@ -55,12 +54,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
+Content-length: 106
 
 {
   "name": "name-value",
-  "color": {
-  },
+  "color": "color-value",
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

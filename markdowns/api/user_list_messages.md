@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages
+GET https://graph.microsoft.com/beta/me/messages
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
+Content-length: 325
 
 {
   "value": [
@@ -62,8 +62,7 @@ Content-length: 317
       "hasAttachments": true,
       "subject": "subject-value",
       "body": {
-        "contentType": {
-        },
+        "contentType": "contentType-value",
         "content": "content-value"
       },
       "bodyPreview": "bodyPreview-value"

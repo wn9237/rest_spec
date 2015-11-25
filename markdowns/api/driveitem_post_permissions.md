@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_permission_from_driveitem"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/permissions
+POST https://graph.microsoft.com/beta/drive/root/permissions
 Content-type: application/json
 Content-length: 742
 

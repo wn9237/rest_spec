@@ -10,9 +10,9 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	MARKDOWN_API_FOLDER = "C:/Users/suramam/git/apidocs/v1.0/api/"
-	MARKDOWN_API_FOLDER_OUT = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/api/"
-	RENAME_JSON = "../jsonFiles/diff_v1.0.json"
+	MARKDOWN_API_FOLDER = "C:/Users/suramam/git/final-apidocs/beta/api/"
+	MARKDOWN_API_FOLDER_OUT = "C:/Users/suramam/git/final-apidocs/beta/newapi/"
+	RENAME_JSON = "../jsonFiles/diff_beta.json"
 	NEWLINE = "\n"
 
 	@renameHash = JSON.parse(File.read(RENAME_JSON, :encoding => 'UTF-8'))
@@ -49,7 +49,7 @@ module SpecMaker
 		if @renameHash.has_key? @entity
 			# if file is deleted, don't write file and return
 			if @renameHash[@entity]["isDeleted"]
-				@ideleted = @ideleted + 1
+				@isDeleted = @ideleted + 1
 				puts "--> Deleted"
 				return
 			end

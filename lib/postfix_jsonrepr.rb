@@ -10,12 +10,12 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/resources/"
-	MARKDOWN_RESOURCE_FOLDER_OUT = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/newresources/"
+	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/seattle7/final-apidocs/v1.0/resources/"
+	MARKDOWN_RESOURCE_FOLDER_OUT = "C:/Users/suramam/git/seattle7/final-apidocs/v1.0/newresources/"
 	MARKDOWN_RESOURCE_FOLDER_TEMP = "../markdowns/resources/"
 	NEWLINE = "\n"
 
-
+	@inotfound = 0
 	def self.slice_model(filename=nil)
 		fullpath = MARKDOWN_RESOURCE_FOLDER_TEMP + filename
 		markdown = File.readlines(fullpath, :encoding => 'UTF-8')
@@ -42,6 +42,20 @@ module SpecMaker
 
 	def self.convert_to_spec(markdown=nil, filename=nil)
 		puts "-> #{filename}"
+
+		if !File.exists?(MARKDOWN_RESOURCE_FOLDER_TEMP + filename)
+			@inotfound = @inotfound + 1
+			puts "!-> Not found #{filename}"
+
+			outfile = MARKDOWN_RESOURCE_FOLDER_OUT + filename
+			file=File.new(outfile,'w')
+			markdown.each do |line|
+				file.write line
+			end		
+
+			return 
+		end
+
 		write = true
 		output = []
 		markdown.each do |line|
@@ -85,5 +99,5 @@ module SpecMaker
 
 	puts ""
 	puts "*** OK. Processed #{processed_files} input files. ***"
-
+	puts "*** Not found #{@inotfound}"
 end

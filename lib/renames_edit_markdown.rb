@@ -10,9 +10,9 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/apidocs/v1.0/resources/"
-	MARKDOWN_RESOURCE_FOLDER_OUT = "C:/Users/suramam/git/sudhiseattle/apidocs/v1.0/resources/"
-	RENAME_JSON = "../jsonFiles/diff_v1.0.json"
+	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/final-apidocs/beta/resources/"
+	MARKDOWN_RESOURCE_FOLDER_OUT = "C:/Users/suramam/git/final-apidocs/beta/newresources/"
+	RENAME_JSON = "../jsonFiles/diff_beta.json"
 	NEWLINE = "\n"
 
 	@renameHash = JSON.parse(File.read(RENAME_JSON, :encoding => 'UTF-8'))

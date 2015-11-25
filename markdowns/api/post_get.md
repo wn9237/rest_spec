@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_post"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>
+GET https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -45,12 +45,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 414
+Content-length: 426
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "contentType-value",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",

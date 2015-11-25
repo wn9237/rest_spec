@@ -4,6 +4,7 @@
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
+  "isOpenType": false,
   "allowPatch": false,
   "allowUpsert": false,
   "allowPatchCreate": false,
@@ -27,8 +28,8 @@
   },
   "properties": [
     {
-      "name": "assignedDateTime",
-      "description": "",
+      "name": "assignedTimestamp",
+      "description": "The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z.",
       "isKey": false,
       "dataType": "dateTimeOffset",
       "isReadOnly": false,

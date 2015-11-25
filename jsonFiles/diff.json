@@ -1,15 +1,60 @@
 {
   "application": {
-    "isDeleted": true,
-    "isUntouched": null
+    "isDeleted": false,
+    "deletedproperties": [
+      "availableToOtherTenants",
+      "objectType",
+      "objectId",
+      "deletionTimestamp"
+    ],
+    "renames": {
+      "913": "addIns",
+      "627": "availableToOtherOrganizations",
+      "870": "recordConsentConditions",
+      "613": "id"
+    },
+    "deletedmethods": [
+      "restore"
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
   "approle": {
-    "isDeleted": true,
-    "isUntouched": null
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "504": "origin"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
   "approleassignment": {
-    "isDeleted": true,
-    "isUntouched": null
+    "isDeleted": false,
+    "deletedproperties": [
+      "objectType",
+      "objectId",
+      "deletionTimestamp"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+      "checkMemberGroups",
+      "getMemberGroups",
+      "getMemberObjects"
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
   "assignedplan": {
     "isDeleted": false,
@@ -17,7 +62,7 @@
       "assignedTimestamp"
     ],
     "renames": {
-      "606": "assignedDateTime"
+      "203": "assignedDateTime"
     },
     "deletedmethods": [
 
@@ -28,6 +73,22 @@
     "isUntouched": false
   },
   "attendee": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "type",
+      "emailAddress"
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "attendeebase": {
     "isDeleted": false,
     "deletedproperties": [
       "emailAddress"
@@ -41,6 +102,18 @@
 
     ],
     "isUntouched": false
+  },
+  "copynotebookmodel": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "copypagemodel": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "copysectionmodel": {
+    "isDeleted": true,
+    "isUntouched": null
   },
   "device": {
     "isDeleted": false,
@@ -58,17 +131,17 @@
       "deletionTimestamp"
     ],
     "renames": {
-      "449": "approximateLastSignInDateTime",
-      "888": "deviceVersion",
-      "243": "isCompliant",
-      "938": "isManaged",
-      "757": "onPremisesLastSyncDateTime",
-      "905": "onPremisesSyncEnabled",
-      "345": "operatingSystem",
-      "291": "operatingSystemVersion",
-      "795": "physicalIds",
-      "857": "trustType",
-      "510": "id"
+      "341": "approximateLastSignInDateTime",
+      "871": "deviceVersion",
+      "272": "isCompliant",
+      "510": "isManaged",
+      "344": "onPremisesLastSyncDateTime",
+      "634": "onPremisesSyncEnabled",
+      "509": "operatingSystem",
+      "230": "operatingSystemVersion",
+      "971": "physicalIds",
+      "119": "trustType",
+      "929": "id"
     },
     "deletedmethods": [
 
@@ -94,7 +167,7 @@
       "deletionTimestamp"
     ],
     "renames": {
-      "540": "id"
+      "781": "id"
     },
     "deletedmethods": [
 
@@ -117,7 +190,7 @@
       "ownedObjects"
     ],
     "renames": {
-      "898": "id"
+      "139": "id"
     },
     "deletedmethods": [
 
@@ -135,7 +208,7 @@
       "deletionTimestamp"
     ],
     "renames": {
-      "59": "id"
+      "127": "id"
     },
     "deletedmethods": [
 
@@ -145,9 +218,27 @@
     ],
     "isUntouched": false
   },
-  "extensionproperty": {
+  "entity": {
     "isDeleted": true,
     "isUntouched": null
+  },
+  "extensionproperty": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "objectType",
+      "objectId",
+      "deletionTimestamp"
+    ],
+    "renames": {
+      "397": "id"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
   "geocoordinates": {
     "isDeleted": false,
@@ -174,17 +265,16 @@
       "lastDirSyncTime",
       "provisioningErrors",
       "emailAddress",
-      "isFavorite",
       "objectType",
       "objectId",
       "deletionTimestamp",
       "appRoleAssignments"
     ],
     "renames": {
-      "21": "onPremisesLastSyncDateTime",
-      "406": "onPremisesSyncEnabled",
-      "418": "visibility",
-      "715": "id"
+      "638": "onPremisesLastSyncDateTime",
+      "457": "onPremisesSyncEnabled",
+      "881": "visibility",
+      "355": "id"
     },
     "deletedmethods": [
 
@@ -198,10 +288,6 @@
     "isDeleted": true,
     "isUntouched": null
   },
-  "keycredential": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
   "location": {
     "isDeleted": false,
     "deletedproperties": [
@@ -210,8 +296,44 @@
       "longitude"
     ],
     "renames": {
-      "652": "displayName",
-      "848": "address"
+      "535": "displayName",
+      "731": "locationEmailAddress",
+      "328": "address",
+      "828": "coordinates"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "notebook": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "85": "createdByIdentity",
+      "302": "lastModifiedByIdentity"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+      "exportNotebook",
+      "importNotebook"
+    ],
+    "isUntouched": false
+  },
+  "notes": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "381": "operations"
     },
     "deletedmethods": [
 
@@ -222,20 +344,86 @@
     "isUntouched": false
   },
   "oauth2permission": {
-    "isDeleted": true,
-    "isUntouched": null
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "134": "origin"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
   "oauth2permissiongrant": {
-    "isDeleted": true,
-    "isUntouched": null
+    "isDeleted": false,
+    "deletedproperties": [
+      "objectId"
+    ],
+    "renames": {
+      "531": "id"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
   "orgcontact": {
-    "isDeleted": true,
-    "isUntouched": null
+    "isDeleted": false,
+    "deletedproperties": [
+      "dirSyncEnabled",
+      "facsimileTelephoneNumber",
+      "lastDirSyncTime",
+      "mobile",
+      "physicalDeliveryOfficeName",
+      "provisioningErrors",
+      "sipProxyAddress",
+      "telephoneNumber",
+      "thumbnailPhoto",
+      "objectType",
+      "objectId",
+      "deletionTimestamp"
+    ],
+    "renames": {
+      "149": "businessPhones",
+      "786": "companyName",
+      "600": "mobilePhone",
+      "261": "onPremisesSyncEnabled",
+      "238": "onPremisesLastSyncDateTime",
+      "277": "officeLocation",
+      "210": "id"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
-  "passwordcredential": {
-    "isDeleted": true,
-    "isUntouched": null
+  "page": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "98": "level",
+      "533": "order"
+    },
+    "deletedmethods": [
+      "thumbnail"
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
   "passwordprofile": {
     "isDeleted": false,
@@ -243,7 +431,7 @@
       "forceChangePasswordNextLogin"
     ],
     "renames": {
-      "839": "forceChangePasswordNextSignIn"
+      "417": "forceChangePasswordNextSignIn"
     },
     "deletedmethods": [
 
@@ -261,14 +449,14 @@
       "id"
     ],
     "renames": {
-      "885": "cameraMake",
-      "742": "cameraModel",
-      "918": "exposureDenominator",
-      "209": "exposureNumerator",
-      "697": "focalLength",
-      "34": "fNumber",
-      "406": "takenDateTime",
-      "10": "iso"
+      "140": "cameraMake",
+      "331": "cameraModel",
+      "680": "exposureDenominator",
+      "956": "exposureNumerator",
+      "915": "focalLength",
+      "145": "fNumber",
+      "233": "takenDateTime",
+      "336": "iso"
     },
     "deletedmethods": [
 
@@ -288,7 +476,7 @@
 
     ],
     "renames": {
-      "436": "recurrenceTimeZone"
+      "766": "recurrenceTimeZone"
     },
     "deletedmethods": [
 
@@ -298,13 +486,39 @@
     ],
     "isUntouched": false
   },
-  "requiredresourceaccess": {
-    "isDeleted": true,
-    "isUntouched": null
+  "section": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "303": "createdByIdentity",
+      "192": "lastModifiedByIdentity"
+    },
+    "deletedmethods": [
+      "thumbnail"
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
-  "resourceaccess": {
-    "isDeleted": true,
-    "isUntouched": null
+  "sectiongroup": {
+    "isDeleted": false,
+    "deletedproperties": [
+
+    ],
+    "renames": {
+      "658": "createdByIdentity",
+      "241": "lastModifiedByIdentity"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
   },
   "serviceplaninfo": {
     "isDeleted": false,
@@ -312,8 +526,8 @@
 
     ],
     "renames": {
-      "923": "provisioningStatus",
-      "383": "appliesTo"
+      "528": "provisioningStatus",
+      "87": "appliesTo"
     },
     "deletedmethods": [
 
@@ -324,6 +538,36 @@
     "isUntouched": false
   },
   "serviceprincipal": {
+    "isDeleted": false,
+    "deletedproperties": [
+      "appOwnerTenantId",
+      "objectType",
+      "objectId",
+      "deletionTimestamp",
+      "createdOnBehalfOf"
+    ],
+    "renames": {
+      "681": "addIns",
+      "124": "appOwnerOrganizationId",
+      "955": "id"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "site": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "sitecollection": {
+    "isDeleted": true,
+    "isUntouched": null
+  },
+  "sitemetadata": {
     "isDeleted": true,
     "isUntouched": null
   },
@@ -333,8 +577,8 @@
       "objectId"
     ],
     "renames": {
-      "458": "appliesTo",
-      "190": "id"
+      "170": "id",
+      "759": "appliesTo"
     },
     "deletedmethods": [
 
@@ -371,18 +615,17 @@
       "objectId",
       "deletionTimestamp",
       "appRoleAssignments",
-      "oauth2PermissionGrants",
-      "joinedGroups"
+      "oauth2PermissionGrants"
     ],
     "renames": {
-      "339": "businessPhones",
-      "37": "companyName",
-      "624": "mobilePhone",
-      "432": "onPremisesImmutableId",
-      "247": "onPremisesLastSyncDateTime",
-      "486": "onPremisesSyncEnabled",
-      "643": "officeLocation",
-      "112": "id"
+      "41": "businessPhones",
+      "500": "companyName",
+      "210": "mobilePhone",
+      "993": "onPremisesImmutableId",
+      "387": "onPremisesLastSyncDateTime",
+      "262": "onPremisesSyncEnabled",
+      "166": "officeLocation",
+      "379": "id"
     },
     "deletedmethods": [
 
@@ -400,8 +643,8 @@
       "initial"
     ],
     "renames": {
-      "632": "isDefault",
-      "987": "isInitial"
+      "547": "isDefault",
+      "545": "isInitial"
     },
     "deletedmethods": [
 
