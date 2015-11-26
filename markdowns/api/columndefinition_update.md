@@ -1,12 +1,12 @@
-# Update permission
+# Update columndefinition
 
-Update the properties of permission object.
+Update the properties of columndefinition object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /tableDefinitions/<id>/permissions/<tableId|principalId>
+PATCH /tableDefinitions/<id>/columnDefinitions/<tableId|propertyName>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -18,32 +18,28 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|additionalMessage|string||
-|permissionSet|String| Possible values are: `Read`, `Write`, `Share`.|
-|principalEmailAddress|string||
-|principalName|string||
-|sendSharingEmail|boolean||
-|type|String| Possible values are: `User`, `Group`, `Tenant`.|
+|displayName|string||
+|order|double||
+|type|string||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [columnDefinition](../resources/columndefinition.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_permission"
+  "name": "update_columndefinition"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/tableDefinitions/<id>/permissions/<tableId|principalId>
+PATCH https://graph.microsoft.com/beta/tableDefinitions/<id>/columnDefinitions/<tableId|propertyName>
 Content-type: application/json
-Content-length: 154
+Content-length: 79
 
 {
-  "permissionSet": "permissionSet-value",
-  "type": "type-value",
-  "principalEmailAddress": "principalEmailAddress-value",
-  "sendSharingEmail": true
+  "displayName": "displayName-value",
+  "order": 99,
+  "type": "type-value"
 }
 ```
 ##### Response
@@ -51,20 +47,19 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
+  "@odata.type": "microsoft.graph.columndefinition"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
+Content-length: 149
 
 {
-  "permissionSet": "permissionSet-value",
   "tableId": "tableId-value",
-  "principalId": "principalId-value",
-  "type": "type-value",
-  "principalEmailAddress": "principalEmailAddress-value",
-  "sendSharingEmail": true
+  "propertyName": "propertyName-value",
+  "displayName": "displayName-value",
+  "order": 99,
+  "type": "type-value"
 }
 ```
 
@@ -72,7 +67,7 @@ Content-length: 222
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update permission",
+  "description": "Update columndefinition",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

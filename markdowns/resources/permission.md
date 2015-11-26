@@ -16,30 +16,33 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
-  "id": "string (identifier)",
-  "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
-  "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
-  "link": {"@odata.type": "microsoft.graph.sharingLink"},
-  "roles": ["string"],
-  "shareId": "string"
+  "additionalMessage": "string",
+  "permissionSet": "String",
+  "principalEmailAddress": "string",
+  "principalId": "string (identifier)",
+  "principalName": "string",
+  "sendSharingEmail": true,
+  "tableId": "string (identifier)",
+  "type": "String"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|grantedTo|[identitySet](identityset.md)||
-|id|string| Read-only.|
-|inheritedFrom|[itemReference](itemreference.md)||
-|invitation|[sharingInvitation](sharinginvitation.md)||
-|link|[sharingLink](sharinglink.md)||
-|roles|string collection||
-|shareId|string||
+|additionalMessage|string||
+|permissionSet|String| Possible values are: `Read`, `Write`, `Share`.|
+|principalEmailAddress|string||
+|principalId|string| Read-only.|
+|principalName|string||
+|sendSharingEmail|boolean||
+|tableId|string| Read-only.|
+|type|String| Possible values are: `User`, `Group`, `Tenant`.|
 
 ### Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|table|[tableDefinition](tabledefinition.md)| Read-only. Nullable.|
 
 ### Methods
 

@@ -1,12 +1,12 @@
-# Delete permission
+# Delete columnDefinition
 
-Delete permission.
+Delete columnDefinition.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /tableDefinitions/<id>/permissions/<tableId|principalId>
+DELETE /tableDefinitions/<id>/columnDefinitions/<tableId|propertyName>
 
 ```
 ### Request headers
@@ -26,10 +26,10 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_permission"
+  "name": "delete_columndefinition"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/tableDefinitions/<id>/permissions/<tableId|principalId>
+DELETE https://graph.microsoft.com/beta/tableDefinitions/<id>/columnDefinitions/<tableId|propertyName>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -45,7 +45,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete permission",
+  "description": "Delete columnDefinition",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
