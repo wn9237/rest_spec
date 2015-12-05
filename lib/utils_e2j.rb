@@ -282,7 +282,7 @@ module SpecMaker
 		prop[:dataType] = dt
 		if @enum_objects.has_key?(dt.to_sym) 
 			prop[:enumName] = dt 
-			prop[:dataType] = "String"
+			prop[:dataType] = "string"
 		end
 		if @key_save.include?(item[:Name])
 			prop[:isKey], prop[:isReadOnly] = true, true 
