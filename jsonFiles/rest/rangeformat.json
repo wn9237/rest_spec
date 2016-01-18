@@ -1,0 +1,198 @@
+{
+  "name": "RangeFormat",
+  "description": "A format object encapsulating the range's font, fill, borders, alignment, and other properties.",
+  "collectionOf": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": "",
+  "updateDescription": "",
+  "deleteDescription": "",
+  "restPath": {
+  },
+  "properties": [
+    {
+      "name": "columnWidth",
+      "description": "Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.",
+      "isKey": null,
+      "dataType": "double",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "fill",
+      "description": "Returns the fill object defined on the overall range.",
+      "isKey": null,
+      "dataType": "RangeFill",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "borders",
+      "description": "Collection of border objects that apply to the overall range selected",
+      "isKey": null,
+      "dataType": "RangeBorder",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "font",
+      "description": "Returns the font object defined on the overall range selected",
+      "isKey": null,
+      "dataType": "RangeFont",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "horizontalAlignment",
+      "description": "Represents the horizontal alignment for the specified object.",
+      "isKey": null,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": "Excel.HorizontalAlignment",
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "rowHeight",
+      "description": "Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.",
+      "isKey": null,
+      "dataType": "double",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "verticalAlignment",
+      "description": "Represents the vertical alignment for the specified object.",
+      "isKey": null,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": "Excel.VerticalAlignment",
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "wrapText",
+      "description": "Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting",
+      "isKey": null,
+      "dataType": "bool",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "protection",
+      "description": "Returns the format protection object for a range.",
+      "isKey": null,
+      "dataType": "FormatProtection",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "autofitColumns",
+      "displayName": "",
+      "description": "Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": null,
+      "isFunction": null,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "autofitRows",
+      "displayName": "",
+      "description": "Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": null,
+      "isFunction": null,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    }
+  ]
+}

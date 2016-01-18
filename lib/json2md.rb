@@ -120,6 +120,7 @@ module SpecMaker
 			example_lines.push httpSyntax.join("\n") + NEWLINE
 
 			if !method[:isFunction] && method[:parameters].length > 0
+				@logger.debug("Calling: #{method}")
 				modeldump = get_json_model_params(method[:parameters])
 				example_lines.push "Content-type: application/json" + NEWLINE			
 				example_lines.push "Content-length: #{modeldump.length.to_s}" + TWONEWLINES				
@@ -210,6 +211,7 @@ module SpecMaker
 		end
 		appendEnum = ''
 		if (prop[:enumName] != nil) && (@enumHash.has_key? prop[:enumName])
+			
 			appendEnum = " Possible values are: `" + @enumHash[prop[:enumName]]["options"].keys.join('`, `') + "`."
 			finalDesc = finalDesc + appendEnum
 		end
@@ -253,7 +255,7 @@ module SpecMaker
 		# Add links to method. 
 		#restfulTask = method[:name].start_with?('get') ? ('Get ' + method[:name][3..-1]) : method[:name].capitalize
 		restfulTask = method[:name] 
-		methodPlusLink = "[" + restfulTask.strip + "](../api/" + @jsonHash[:name].downcase + "_" + method[:name].downcase + ".md)"
+		methodPlusLink = "[" + restfulTask.strip.capitalize + "](../api/" + @jsonHash[:name].downcase + "_" + method[:name].downcase + ".md)"
 		@mdlines.push (PIPE + methodPlusLink + PIPE + dataTypePlusLink + PIPE + method[:description] + PIPE) + NEWLINE
 		create_method_mdfile method
 	end
@@ -294,7 +296,7 @@ module SpecMaker
 		#Request headers  
 		actionLines.push HEADER3 + "Request headers" + NEWLINE
 		actionLines.push HTTP_HEADER
-		actionLines.push TABLE_2ND_LINE
+		actionLines.push TABLE_2ND_LINE_2COL
 		actionLines.push HTTP_HEADER_SAMPLE + NEWLINE
 		actionLines.push NEWLINE
 		
@@ -313,9 +315,9 @@ module SpecMaker
 				# Append optional and enum possible values (if applicable).
 				finalPDesc = param[:isRequired] ? param[:description] : 'Optional. ' + param[:description]
 				appendEnum = ''
-				if (param[:enumName] != nil) && (@enumHash.has_key? param[:enumName])
 
-					appendEnum = " " + " Possible values are: " + @enumHash[prop[:enumName]]["options"].keys.join('`, `') + "`."
+				if (param[:enumName] != nil) && (@enumHash.has_key? param[:enumName])
+					appendEnum = " " + " Possible values are: `" + @enumHash[param[:enumName]]["options"].keys.join('`, `') + "`."
 					finalPDesc = finalPDesc + appendEnum
 				end
 				actionLines.push (PIPE + param[:name] + PIPE + param[:dataType] + PIPE + finalPDesc + PIPE) + NEWLINE	
@@ -346,7 +348,8 @@ module SpecMaker
 			dataTypePlusLink = 'none'
 		end
 
-		if method[:returnType].nil? || method[:returnType] ==  'None'
+		
+		if method[:returnType].nil? || method[:returnType] ==  'None'			
 			actionLines.push "If successful, this method returns `#{method[:httpSuccessCode]}, #{HTTP_CODES[method[:httpSuccessCode]]}` response code. It does not return anything in the response body."  + NEWLINE
 		else
 			trueReturn = dataTypePlusLink
@@ -486,8 +489,8 @@ module SpecMaker
 
 		#Request headers  
 		getMethodLines.push NEWLINE + HEADER3 + "Request headers" + NEWLINE
-		getMethodLines.push "| Name       | Type | Description|" + NEWLINE
-		getMethodLines.push "|:-----------|:------|:----------|" + NEWLINE
+		getMethodLines.push "| Name      |Description|" + NEWLINE
+		getMethodLines.push "|:----------|:----------|" + NEWLINE
 		getMethodLines.push HTTP_HEADER_SAMPLE + NEWLINE
 		getMethodLines.push NEWLINE
 
@@ -567,8 +570,8 @@ module SpecMaker
 
 		#Request headers  
 		patchMethodLines.push HEADER3 + "Optional request headers" + NEWLINE
-		patchMethodLines.push "| Name       | Type | Description|" + NEWLINE
-		patchMethodLines.push "|:-----------|:------|:----------|" + NEWLINE
+		patchMethodLines.push "| Name       | Description|" + NEWLINE
+		patchMethodLines.push "|:-----------|:-----------|" + NEWLINE
 		patchMethodLines.push HTTP_HEADER_SAMPLE  + NEWLINE
 		patchMethodLines.push NEWLINE
 		
@@ -667,59 +670,6 @@ module SpecMaker
 			isMethod = true
 		end
 
-		# Header and description		
-		if !@jsonHash[:isEntitySet] 
-			@mdlines.push HEADER3 + 'JSON representation' + TWONEWLINES
-			@mdlines.push 'Here is a JSON representation of the resource.' + TWONEWLINES
-
-			@mdlines.push get_json_model_pretext(@jsonHash[:name],propreties) + TWONEWLINES
-			
-			@mdlines.push "```json" + NEWLINE
-			#@mdlines.push get_json_model(propreties) + TWONEWLINES
-			jsonpretty = pretty_json(get_json_model(propreties))
-			@mdlines.push jsonpretty + TWONEWLINES
-			
-			@mdlines.push "```" + NEWLINE			
-		end
-
-		@logger.debug("....Is there: property?: #{isProperty}, relationship?: #{isRelation}, method?: #{isMethod} ..........")	
-
-		# Add property table. 	
-		@mdlines.push HEADER3 + 'Properties' + NEWLINE
-		if isProperty
-			@mdlines.push PROPERTY_HEADER + TABLE_2ND_LINE 
-			propreties.each do |prop|
-				if !prop[:isRelationship]
-					@logger.debug("....Processing property: #{prop[:name]} ..........")	
-				   push_property prop
-				end
-			end
-			if !@jsonHash[:propertyNotes].empty?
-				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:propertyNotes]}" + NEWLINE
-			end
-		else
-			@mdlines.push "None"  + NEWLINE
-		end		
-
-		# Add Relationship table. 
-		if !@jsonHash[:isComplexType]
-			@mdlines.push NEWLINE
-			@mdlines.push HEADER3 + 'Relationships' + NEWLINE
-			if isRelation
-				@mdlines.push RELATIONSHIP_HEADER + TABLE_2ND_LINE 
-				propreties.each do |prop|
-					if prop[:isRelationship]
-						@logger.debug("....Processing relationship: #{prop[:name]} ..........")		
-					   push_property prop
-					end
-				end
-				if !@jsonHash[:relationshipNotes].empty?
-					@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:relationshipNotes]}" + NEWLINE
-				end			
-			else
-				@mdlines.push "None"  + TWONEWLINES
-			end		
-		end
 		# Add method table. 
 		if !@jsonHash[:isComplexType]
 			@mdlines.push NEWLINE + HEADER3 + 'Methods' + NEWLINE
@@ -836,13 +786,9 @@ module SpecMaker
 
 			if isMethod
 				methods.each do |mtd|
-					@logger.debug("....Processing method: #{mtd[:name]} ..........")					
 					push_method mtd
 				end
 			end
-
-
-
 
 			if !isProperty && !isMethod && !isPost
 				@mdlines.push "None"  + TWONEWLINES
@@ -852,7 +798,61 @@ module SpecMaker
 				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:methodNotes]}" + NEWLINE
 			end
 		end
+
+		# Add property table. 	
+		@mdlines.push NEWLINE
+
+		@mdlines.push HEADER3 + 'Properties' + NEWLINE
+		if isProperty
+			@mdlines.push PROPERTY_HEADER + TABLE_2ND_LINE 
+			propreties.each do |prop|
+				if !prop[:isRelationship]
+				   push_property prop
+				end
+			end
+			if !@jsonHash[:propertyNotes].empty?
+				@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:propertyNotes]}" + NEWLINE
+			end
+		else
+			@mdlines.push "None"  + NEWLINE
+		end		
+
+		# Add Relationship table. 
+		if !@jsonHash[:isComplexType]
+			@mdlines.push NEWLINE
+			@mdlines.push HEADER3 + 'Relationships' + NEWLINE
+			if isRelation
+				@mdlines.push RELATIONSHIP_HEADER + TABLE_2ND_LINE 
+				propreties.each do |prop|
+					if prop[:isRelationship]
+					   push_property prop
+					end
+				end
+				if !@jsonHash[:relationshipNotes].empty?
+					@mdlines.push NEWLINE + "**Note:** #{@jsonHash[:relationshipNotes]}" + NEWLINE
+				end			
+			else
+				@mdlines.push "None"  + TWONEWLINES
+			end		
+		end
+
 		
+		# Header and description		
+		if !@jsonHash[:isEntitySet] && isProperty
+			@mdlines.push NEWLINE
+			@mdlines.push HEADER3 + 'JSON representation' + TWONEWLINES
+			@mdlines.push 'Here is a JSON representation of the resource.' + TWONEWLINES
+
+			@mdlines.push get_json_model_pretext(@jsonHash[:name],propreties) + TWONEWLINES
+			
+			@mdlines.push "```json" + NEWLINE
+			#@mdlines.push get_json_model(propreties) + TWONEWLINES
+			jsonpretty = pretty_json(get_json_model(propreties))
+			@mdlines.push jsonpretty + TWONEWLINES
+			
+			@mdlines.push "```" + NEWLINE			
+		end
+
 		@mdlines.push NEWLINE + uuid_date + NEWLINE
 
 		# do we need this for tool check?

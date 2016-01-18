@@ -1,7 +1,8 @@
 module SpecMaker
 	# Initialize 
 	JSON_BASE_FOLDER = "../jsonFiles/"
-	JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
+	#JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
+	JSON_SOURCE_FOLDER = "C:/Users/suramam/Git/md_apispec/jsonFiles/rest/"
 	ENUMS = JSON_BASE_FOLDER + '/settings/restenums.json'
 	MARKDOWN_RESOURCE_FOLDER = "../markdowns/resources/"
 	MARKDOWN_API_FOLDER = "../markdowns/api/"
@@ -21,9 +22,10 @@ module SpecMaker
 	TWONEWLINES = "\n\n"
 
 	TABLE_2ND_LINE =  "|:---------------|:--------|:----------|" + NEWLINE
+	TABLE_2ND_LINE_2COL =  "|:---------------|:----------|" + NEWLINE
 	PROPERTY_HEADER = "| Property	   | Type	|Description|" + NEWLINE
 	PARAM_HEADER = "| Parameter	   | Type	|Description|" + NEWLINE
-	HTTP_HEADER =  "| Name       | Type | Description|" + NEWLINE
+	HTTP_HEADER =  "| Name       | Description|" + NEWLINE
 	RELATIONSHIP_HEADER = "| Relationship | Type	|Description|" + NEWLINE
 	TASKS_HEADER = "| Method		   | Return Type	|Description|" + NEWLINE
 
@@ -40,14 +42,14 @@ module SpecMaker
 	QRY_SKIP = "|$skip|int|The number of items to skip in a result set.|"
 	QRY_COUNT = "|$count|none|The count of related entities can be requested by specifying the $count query option.|"
 
-	HTTP_HEADER_SAMPLE = "| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|"
+	HTTP_HEADER_SAMPLE = "| Authorization  | Bearer <code>|" + NEWLINE + "| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|"
 	
 	odata_types = %w[Binary Boolean Byte Date DateTimeOffset Decimal Double Duration 
 				Guid Int Int16 Int32 Int64 SByte Single Stream String TimeOfDay 
 				Geography GeographyPoint GeographyLineString GeographyPolygon GeographyMultiPoint 
 				GeographyMultiLineString GeographyMultiPolygon GeographyCollection Geometry 
 				GeometryPoint GeometryLineString GeometryPolygon GeometryMultiPoint GeometryMultiLineString 
-				GeometryMultiPolygon GeometryCollection Octet-Stream Octet Url] 
+				GeometryMultiPolygon GeometryCollection Octet-Stream Octet Url Json] 
 
 	numeric_types = %w[Byte Decimal Double Int Int16 Int32 Int64] 
 	datetime_types = %w[Date DateTimeOffset Duration TimeOfDay] 
@@ -101,7 +103,18 @@ module SpecMaker
 	#UUID_DATE = "<!-- uuid: " + SecureRandom.uuid  + "\n" + Time.now.utc.to_s + " -->"
 	UUID_DATE = "<!-- uuid: " + "8fcb5dbc-d5aa-4681-8e31-b001d5168d79"  + "\n" + "2015-10-25 14:57:30 UTC" + " -->"
 	
-	
+	# Log file
+	LOG_FOLDER = '../../logs'
+	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
+
+	LOG_FILE = File.basename($PROGRAM_NAME, ".rb") + ".txt";
+	if File.exists?("#{LOG_FOLDER}/#{LOG_FILE}")
+		File.delete("#{LOG_FOLDER}/#{LOG_FILE}")
+	end
+	@logger = Logger.new("#{LOG_FOLDER}/#{LOG_FILE}")
+	@logger.level = Logger::DEBUG
+	# End log file
+
 	###
 	# To prevent shallow copy errors, need to get a new object each time.
 	# 
@@ -117,17 +130,6 @@ module SpecMaker
 	@ientityset = 0
 	@list_from_rel = 0
 
-	# Log file
-	LOG_FOLDER = '../../logs'
-	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
-
-	LOG_FILE = File.basename($PROGRAM_NAME, ".rb") + ".txt";
-	if File.exists?("#{LOG_FOLDER}/#{LOG_FILE}")
-		File.delete("#{LOG_FOLDER}/#{LOG_FILE}")
-	end
-	@logger = Logger.new("#{LOG_FOLDER}/#{LOG_FILE}")
-	@logger.level = Logger::DEBUG
-	# End log file
 
 	# Create markdown folder if it doesn't already exist
 	Dir.mkdir(MARKDOWN_RESOURCE_FOLDER) unless 
@@ -230,6 +232,7 @@ module SpecMaker
 				# end
 			end
 		end
+		
 		return model
 	end
 
@@ -255,6 +258,7 @@ module SpecMaker
 		elsif SIMPLETYPES.include? dataType.downcase
 			return "#{name}-value"				
 		else
+			
 			return dump_complex_type(dataType)			
 		end
 	end
@@ -306,6 +310,7 @@ module SpecMaker
 	def self.get_json_model_params(params=[])
 
 		model={}
+		
 		params.each do |item|
 			model[item[:name]] = assign_value(item[:dataType], item[:name])
 			if item[:isCollection] 
