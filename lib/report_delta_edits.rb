@@ -19,12 +19,12 @@ module SpecMaker
 	@csv_common = []
 	@csv_new = []
 
-	def self.append_to_member(resource=nil, action=nil, member, isRelationship)
-		@csv_common.push "#{resource}, #{action} member, #{member}, #{isRelationship} \n"  
+	def self.append_to_member(resource=nil, action=nil, item={})
+		@csv_common.push "#{resource}, #{action} Member, #{item[:name]}, #{item[:isRelationship]}, #{item[:dataType].to_s}, #{item[:enumName].to_s} \n"  
 	end
 
 	def self.append_to_api(resource=nil, action=nil, member)
-		@csv_common.push "#{resource}, #{action} API, #{member}, \n" 
+		@csv_common.push "#{resource}, #{action} API, #{member} \n" 
 	end
 
 	def self.add_to_new_resource(resource=nil)
@@ -37,8 +37,8 @@ module SpecMaker
 	###
 	@diffHash.each do |key, val|
 
-		# puts "#{key}"
-		# puts "#{val}"
+		 puts "#{key}"
+		 puts "#{val}"
 		resources = resources + 1
 		if val[:isNew]
 			add_to_new_resource(key.to_s)
@@ -51,14 +51,14 @@ module SpecMaker
 			end
 			if val[:deletedproperties1].length > 0 
 				val[:deletedproperties1].each do |item| 
-					append_to_member(key.to_s, "Remove", val[:name], val[:isRelationship])
+					append_to_member(key.to_s, "Remove", item)
 					iremovemembers = iremovemembers + 1
 				end
 			end
 
 			if val[:newproperties1].length > 0 
 				val[:newproperties1].each do |item| 
-					append_to_member(key.to_s, "Add", val[:name], val[:isRelationship])
+					append_to_member(key.to_s, "Add", item)
 					inewmembers = inewmembers + 1
 				end
 			end
