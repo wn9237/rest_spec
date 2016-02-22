@@ -1,6 +1,26 @@
 {
+  "addin": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "application": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "appliedcategoriescollection": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "approle": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "approleassignment": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "attendee": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
       "type"
     ],
@@ -36,8 +56,28 @@
     ],
     "isUntouched": false
   },
+  "attendeeavailability": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "attendeebase": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "bucket": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "checklistitem": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "checklistitemcollection": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "contact": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
 
     ],
@@ -64,7 +104,7 @@
       }
     ],
     "renames": {
-      "348": "extensions"
+      "558": "extensions"
     },
     "deletedmethods": [
 
@@ -74,12 +114,20 @@
     ],
     "isUntouched": false
   },
-  "entity": {
-    "isDeleted": true,
+  "copystatusmodel": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "diagnostic": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "email": {
+    "isNew": true,
     "isUntouched": null
   },
   "event": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
 
     ],
@@ -106,7 +154,7 @@
       }
     ],
     "renames": {
-      "862": "extensions"
+      "541": "extensions"
     },
     "deletedmethods": [
 
@@ -117,7 +165,7 @@
     "isUntouched": false
   },
   "eventmessage": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
 
     ],
@@ -159,8 +207,8 @@
       }
     ],
     "renames": {
-      "990": "inferenceClassification",
-      "721": "extensions"
+      "21": "inferenceClassification",
+      "906": "extensions"
     },
     "deletedmethods": [
 
@@ -170,8 +218,28 @@
     ],
     "isUntouched": false
   },
+  "extension": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "extensionproperty": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "externallink": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "externalreference": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "externalreferencecollection": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "group": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
 
     ],
@@ -243,10 +311,10 @@
       }
     ],
     "renames": {
-      "99": "isFavorite",
-      "198": "photos",
-      "605": "notes",
-      "788": "plans"
+      "488": "isFavorite",
+      "132": "photos",
+      "649": "notes",
+      "881": "plans"
     },
     "deletedmethods": [
 
@@ -256,8 +324,28 @@
     ],
     "isUntouched": false
   },
+  "importstatusmodel": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "inferenceclassification": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "inferenceclassificationoverride": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "keycredential": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "keyvalue": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "location": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
 
     ],
@@ -299,8 +387,8 @@
       }
     ],
     "renames": {
-      "465": "locationEmailAddress",
-      "561": "coordinates"
+      "241": "locationEmailAddress",
+      "410": "coordinates"
     },
     "deletedmethods": [
 
@@ -310,8 +398,16 @@
     ],
     "isUntouched": false
   },
+  "locationconstraint": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "meetingtimecandidate": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "message": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
 
     ],
@@ -353,8 +449,8 @@
       }
     ],
     "renames": {
-      "52": "inferenceClassification",
-      "145": "extensions"
+      "60": "inferenceClassification",
+      "564": "extensions"
     },
     "deletedmethods": [
 
@@ -364,8 +460,92 @@
     ],
     "isUntouched": false
   },
+  "notebook": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "notebooklinks": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "notes": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "notesoperation": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "notesoperationerror": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "oauth2permission": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "oauth2permissiongrant": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "onenoteidentity": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "onenoteidentityset": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "opentypeextension": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "orgcontact": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "outlookgeocoordinates": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "page": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "pagelinks": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "passwordcredential": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "patchcontentcommand": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "person": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "persondatasource": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "plan": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "plandetails": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "plantaskboard": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "post": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
 
     ],
@@ -392,7 +572,7 @@
       }
     ],
     "renames": {
-      "897": "extensions"
+      "517": "extensions"
     },
     "deletedmethods": [
 
@@ -402,8 +582,60 @@
     ],
     "isUntouched": false
   },
+  "requiredresourceaccess": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "resource": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "resourceaccess": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "section": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "sectiongroup": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "serviceprincipal": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "subscription": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "task": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "taskboardtaskformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "taskdetails": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "timeconstraint": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "timeslot": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "timestamp": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "user": {
-    "isDeleted": false,
+    "isNew": false,
     "deletedproperties": [
 
     ],
@@ -577,15 +809,15 @@
       }
     ],
     "renames": {
-      "25": "joinedGroups",
-      "837": "people",
-      "654": "inferenceClassification",
-      "603": "photos",
-      "148": "trendingAround",
-      "593": "workingWith",
-      "913": "notes",
-      "792": "tasks",
-      "522": "plans"
+      "78": "joinedGroups",
+      "920": "people",
+      "794": "inferenceClassification",
+      "536": "photos",
+      "875": "trendingAround",
+      "249": "workingWith",
+      "102": "notes",
+      "251": "tasks",
+      "348": "plans"
     },
     "deletedmethods": [
 
@@ -594,5 +826,9 @@
       "findMeetingTimes"
     ],
     "isUntouched": false
+  },
+  "useridcollection": {
+    "isNew": true,
+    "isUntouched": null
   }
 }

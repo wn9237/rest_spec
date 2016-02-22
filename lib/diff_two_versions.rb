@@ -75,15 +75,19 @@ module SpecMaker
 	# Main loop. Process each JSON files.
 	# 
 	###
-	processed_files, imatch, ideleted, iuntouched, imethods_changed = 0, 0, 0, 0, 0
+	processed_files, imatch, iNew, iuntouched, imethods_changed = 0, 0, 0, 0, 0
 	@diff = {}
 
-	Dir.foreach(RESOURCES_OLD) do |item|
+
+	# For each of the new version, check against the existing version. 
+
+	Dir.foreach(RESOURCES_NEW) do |item|
 		next if item == '.' or item == '..'
 		
 		next if item.include?('_collection')
 
-		fullpath = RESOURCES_OLD + item.downcase
+
+		fullpath = RESOURCES_NEW + item.downcase
 		
 		#if File.file?(fullpath) && item == 'application.md'
 		@key = item.chomp('.json')
@@ -92,20 +96,20 @@ module SpecMaker
 		if File.file?(fullpath)
 			processed_files = processed_files + 1
 			#puts "-> #{item}"
-			oldm = File.read(fullpath, :encoding => 'UTF-8')
-			fullpath2 = RESOURCES_NEW + item
+			newm = File.read(fullpath, :encoding => 'UTF-8')
+			fullpath2 = RESOURCES_OLD + item
 			if File.file?(fullpath2)
-				@diff[@key][:isDeleted] = false
+				@diff[@key][:isNew] = false
 				imatch = imatch + 1
-				newm = File.read(fullpath2, :encoding => 'UTF-8')
+				oldm = File.read(fullpath2, :encoding => 'UTF-8')
 				do_diff(oldm, newm)
 			else
-				@diff[@key][:isDeleted] = true
+				@diff[@key][:isNew] = true
 				puts @key
-				ideleted = ideleted + 1
+				iNew = iNew + 1
 			end
 
-			if !@diff[@key][:isDeleted] 
+			if !@diff[@key][:isNew] 
 				if (@diff[@key][:deletedmethods].empty?) && (@diff[@key][:deletedproperties].empty?) && (@diff[@key][:newmethods].empty?) && (@diff[@key][:renames].empty?)
 					@diff[@key][:untouched] = true
 					iuntouched = iuntouched + 1
@@ -116,7 +120,7 @@ module SpecMaker
 				@diff[@key][:isUntouched] = nil
 			end
 
-			if !@diff[@key][:isDeleted] 
+			if !@diff[@key][:isNew] 
 				if !@diff[@key][:deletedmethods].empty? || !@diff[@key][:newmethods].empty?
 					imethods_changed = imethods_changed + 1
 					#puts "Removed methods: #{@diff[@key][:deletedmethods]}"
@@ -138,9 +142,9 @@ module SpecMaker
 
 	puts ""
 	puts "*** OK. Processed #{processed_files} input files."
-	puts "*** Common #{imatch}"
-	puts "*** Deleted #{ideleted}"
+	puts "*** Common resources #{imatch}"
 	puts "*** Untouched #{iuntouched}"
+	puts "*** Brand new #{iNew}"
 	puts "*** Diff #{imatch - iuntouched}"
 	puts "*** Methods changed #{imethods_changed}"
 
