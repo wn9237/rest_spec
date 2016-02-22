@@ -1,89 +1,32 @@
 {
-  "addin": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "application": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "addIns",
-      "availableToOtherOrganizations",
-      "recordConsentConditions",
-      "id"
-    ],
-    "renames": {
-      "409": "availableToOtherTenants",
-      "509": "objectType",
-      "510": "objectId",
-      "573": "deletionTimestamp"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-      "restore"
-    ],
-    "isUntouched": false
-  },
-  "approle": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "origin"
-    ],
-    "renames": {
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "approleassignment": {
-    "isDeleted": false,
-    "deletedproperties": [
-
-    ],
-    "renames": {
-      "944": "objectType",
-      "904": "objectId",
-      "224": "deletionTimestamp"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-      "checkMemberGroups",
-      "getMemberGroups",
-      "getMemberObjects"
-    ],
-    "isUntouched": false
-  },
-  "assignedplan": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "assignedDateTime"
-    ],
-    "renames": {
-      "471": "assignedTimestamp"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
   "attendee": {
     "isDeleted": false,
     "deletedproperties": [
+      "type"
+    ],
+    "newproperties": [
+
+    ],
+    "deletedproperties1": [
+      {
+        "name": "type",
+        "description": "The attendee type: Required = 0, Optional = 1, Resource = 2.",
+        "isKey": false,
+        "dataType": "String",
+        "isReadOnly": false,
+        "enumName": "attendeeType",
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": null,
+        "isUnicode": null
+      }
+    ],
+    "newproperties1": [
 
     ],
     "renames": {
-      "203": "type",
-      "434": "emailAddress"
     },
     "deletedmethods": [
 
@@ -93,13 +36,35 @@
     ],
     "isUntouched": false
   },
-  "attendeebase": {
+  "contact": {
     "isDeleted": false,
     "deletedproperties": [
 
     ],
+    "newproperties": [
+      "extensions"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "extensions",
+        "description": "",
+        "isKey": false,
+        "dataType": "extension",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      }
+    ],
     "renames": {
-      "539": "emailAddress"
+      "348": "extensions"
     },
     "deletedmethods": [
 
@@ -109,37 +74,39 @@
     ],
     "isUntouched": false
   },
-  "copystatusmodel": {
+  "entity": {
     "isDeleted": true,
     "isUntouched": null
   },
-  "device": {
+  "event": {
     "isDeleted": false,
     "deletedproperties": [
-      "approximateLastSignInDateTime",
-      "deviceVersion",
-      "isCompliant",
-      "isManaged",
-      "onPremisesLastSyncDateTime",
-      "onPremisesSyncEnabled",
-      "operatingSystem",
-      "operatingSystemVersion",
-      "physicalIds",
-      "trustType",
-      "id"
+
+    ],
+    "newproperties": [
+      "extensions"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "extensions",
+        "description": "",
+        "isKey": false,
+        "dataType": "extension",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      }
     ],
     "renames": {
-      "576": "approximateLastLogonTimestamp",
-      "143": "deviceObjectVersion",
-      "619": "deviceOSType",
-      "787": "deviceOSVersion",
-      "580": "devicePhysicalIds",
-      "650": "deviceTrustType",
-      "1000": "dirSyncEnabled",
-      "227": "lastDirSyncTime",
-      "499": "objectType",
-      "225": "objectId",
-      "106": "deletionTimestamp"
+      "862": "extensions"
     },
     "deletedmethods": [
 
@@ -149,95 +116,51 @@
     ],
     "isUntouched": false
   },
-  "directoryobject": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "id"
-    ],
-    "renames": {
-      "593": "objectType",
-      "660": "objectId",
-      "319": "deletionTimestamp"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "directoryrole": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "id"
-    ],
-    "renames": {
-      "846": "isSystem",
-      "581": "roleDisabled",
-      "713": "objectType",
-      "819": "objectId",
-      "946": "deletionTimestamp",
-      "308": "memberOf",
-      "717": "owners",
-      "563": "ownedObjects"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "directoryroletemplate": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "id"
-    ],
-    "renames": {
-      "382": "objectType",
-      "927": "objectId",
-      "923": "deletionTimestamp"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "driveitem": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "extensionproperty": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "id"
-    ],
-    "renames": {
-      "110": "objectType",
-      "869": "objectId",
-      "585": "deletionTimestamp"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "geocoordinates": {
+  "eventmessage": {
     "isDeleted": false,
     "deletedproperties": [
 
     ],
+    "newproperties": [
+      "inferenceClassification",
+      "extensions"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "inferenceClassification",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": "inferenceClassificationType",
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": null,
+        "isUnicode": null
+      },
+      {
+        "name": "extensions",
+        "description": "",
+        "isKey": false,
+        "dataType": "extension",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      }
+    ],
     "renames": {
-      "456": "accuracy",
-      "798": "altitudeAccuracy"
+      "990": "inferenceClassification",
+      "721": "extensions"
     },
     "deletedmethods": [
 
@@ -250,22 +173,80 @@
   "group": {
     "isDeleted": false,
     "deletedproperties": [
-      "onPremisesLastSyncDateTime",
-      "onPremisesSyncEnabled",
-      "visibility",
-      "id"
+
+    ],
+    "newproperties": [
+      "isFavorite",
+      "photos",
+      "notes",
+      "plans"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "isFavorite",
+        "description": "",
+        "isKey": false,
+        "dataType": "boolean",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": null,
+        "isUnicode": null
+      },
+      {
+        "name": "photos",
+        "description": "",
+        "isKey": false,
+        "dataType": "profilePhoto",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "notes",
+        "description": "",
+        "isKey": false,
+        "dataType": "notes",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": false,
+        "isUnicode": null
+      },
+      {
+        "name": "plans",
+        "description": "",
+        "isKey": false,
+        "dataType": "plan",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      }
     ],
     "renames": {
-      "601": "dirSyncEnabled",
-      "270": "creationOptions",
-      "254": "isPublic",
-      "458": "lastDirSyncTime",
-      "704": "provisioningErrors",
-      "844": "emailAddress",
-      "73": "objectType",
-      "724": "objectId",
-      "113": "deletionTimestamp",
-      "908": "appRoleAssignments"
+      "99": "isFavorite",
+      "198": "photos",
+      "605": "notes",
+      "788": "plans"
     },
     "deletedmethods": [
 
@@ -274,27 +255,52 @@
 
     ],
     "isUntouched": false
-  },
-  "importstatusmodel": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "keyvalue": {
-    "isDeleted": true,
-    "isUntouched": null
   },
   "location": {
     "isDeleted": false,
     "deletedproperties": [
-      "displayName",
+
+    ],
+    "newproperties": [
       "locationEmailAddress",
-      "address",
       "coordinates"
     ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "locationEmailAddress",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": null,
+        "isUnicode": false
+      },
+      {
+        "name": "coordinates",
+        "description": "",
+        "isKey": false,
+        "dataType": "outlookGeoCoordinates",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": null,
+        "isUnicode": null
+      }
+    ],
     "renames": {
-      "100": "altitude",
-      "588": "latitude",
-      "247": "longitude"
+      "465": "locationEmailAddress",
+      "561": "coordinates"
     },
     "deletedmethods": [
 
@@ -304,29 +310,89 @@
     ],
     "isUntouched": false
   },
-  "notebook": {
+  "message": {
     "isDeleted": false,
     "deletedproperties": [
-      "createdByIdentity",
-      "lastModifiedByIdentity"
+
+    ],
+    "newproperties": [
+      "inferenceClassification",
+      "extensions"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "inferenceClassification",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": "inferenceClassificationType",
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": null,
+        "isUnicode": null
+      },
+      {
+        "name": "extensions",
+        "description": "",
+        "isKey": false,
+        "dataType": "extension",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      }
     ],
     "renames": {
+      "52": "inferenceClassification",
+      "145": "extensions"
     },
     "deletedmethods": [
-      "exportNotebook",
-      "importNotebook"
+
     ],
     "newmethods": [
 
     ],
     "isUntouched": false
   },
-  "notes": {
+  "post": {
     "isDeleted": false,
     "deletedproperties": [
-      "operations"
+
+    ],
+    "newproperties": [
+      "extensions"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "extensions",
+        "description": "",
+        "isKey": false,
+        "dataType": "extension",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      }
     ],
     "renames": {
+      "897": "extensions"
     },
     "deletedmethods": [
 
@@ -335,321 +401,197 @@
 
     ],
     "isUntouched": false
-  },
-  "notesoperation": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "notesoperationerror": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "oauth2permission": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "origin"
-    ],
-    "renames": {
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "oauth2permissiongrant": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "id"
-    ],
-    "renames": {
-      "946": "objectId"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "onenoteidentity": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "onenoteidentityset": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "organization": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "orgcontact": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "businessPhones",
-      "companyName",
-      "mobilePhone",
-      "onPremisesSyncEnabled",
-      "onPremisesLastSyncDateTime",
-      "officeLocation",
-      "id"
-    ],
-    "renames": {
-      "740": "dirSyncEnabled",
-      "436": "facsimileTelephoneNumber",
-      "466": "lastDirSyncTime",
-      "704": "mobile",
-      "750": "physicalDeliveryOfficeName",
-      "89": "provisioningErrors",
-      "831": "sipProxyAddress",
-      "735": "telephoneNumber",
-      "341": "thumbnailPhoto",
-      "499": "objectType",
-      "805": "objectId",
-      "150": "deletionTimestamp"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "outlookgeocoordinates": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "page": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "level",
-      "order"
-    ],
-    "renames": {
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-      "thumbnail"
-    ],
-    "isUntouched": false
-  },
-  "passwordprofile": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "forceChangePasswordNextSignIn"
-    ],
-    "renames": {
-      "120": "forceChangePasswordNextLogin"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "photo": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "cameraMake",
-      "cameraModel",
-      "exposureDenominator",
-      "exposureNumerator",
-      "focalLength",
-      "fNumber",
-      "takenDateTime",
-      "iso"
-    ],
-    "renames": {
-      "242": "height",
-      "361": "width",
-      "946": "id"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "profilephoto": {
-    "isDeleted": true,
-    "isUntouched": null
-  },
-  "recurrencerange": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "recurrenceTimeZone"
-    ],
-    "renames": {
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "section": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "createdByIdentity",
-      "lastModifiedByIdentity"
-    ],
-    "renames": {
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-      "thumbnail"
-    ],
-    "isUntouched": false
-  },
-  "sectiongroup": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "createdByIdentity",
-      "lastModifiedByIdentity"
-    ],
-    "renames": {
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "serviceplaninfo": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "provisioningStatus",
-      "appliesTo"
-    ],
-    "renames": {
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "serviceprincipal": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "addIns",
-      "appOwnerOrganizationId",
-      "id"
-    ],
-    "renames": {
-      "210": "appOwnerTenantId",
-      "956": "objectType",
-      "858": "objectId",
-      "763": "deletionTimestamp",
-      "230": "createdOnBehalfOf"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "subscribedsku": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "id",
-      "appliesTo"
-    ],
-    "renames": {
-      "652": "objectId"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "subscription": {
-    "isDeleted": true,
-    "isUntouched": null
   },
   "user": {
     "isDeleted": false,
     "deletedproperties": [
-      "businessPhones",
-      "companyName",
-      "mobilePhone",
-      "onPremisesImmutableId",
-      "onPremisesLastSyncDateTime",
-      "onPremisesSyncEnabled",
-      "officeLocation",
-      "id"
+
+    ],
+    "newproperties": [
+      "joinedGroups",
+      "people",
+      "inferenceClassification",
+      "photos",
+      "trendingAround",
+      "workingWith",
+      "notes",
+      "tasks",
+      "plans"
+    ],
+    "deletedproperties1": [
+      {
+        "name": "AccountEnabled",
+        "description": "                **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.            ",
+        "isKey": false,
+        "dataType": "boolean",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": null,
+        "isUnicode": null
+      }
+    ],
+    "newproperties1": [
+      {
+        "name": "accountEnabled",
+        "description": "                **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.            ",
+        "isKey": false,
+        "dataType": "boolean",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": null,
+        "isUnicode": null
+      },
+      {
+        "name": "joinedGroups",
+        "description": "",
+        "isKey": false,
+        "dataType": "group",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "people",
+        "description": "",
+        "isKey": false,
+        "dataType": "person",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "inferenceClassification",
+        "description": "",
+        "isKey": false,
+        "dataType": "inferenceClassification",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": false,
+        "isUnicode": null
+      },
+      {
+        "name": "photos",
+        "description": "",
+        "isKey": false,
+        "dataType": "profilePhoto",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "trendingAround",
+        "description": "",
+        "isKey": false,
+        "dataType": "driveItem",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "workingWith",
+        "description": "",
+        "isKey": false,
+        "dataType": "user",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "notes",
+        "description": "",
+        "isKey": false,
+        "dataType": "notes",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": false,
+        "isUnicode": null
+      },
+      {
+        "name": "tasks",
+        "description": "",
+        "isKey": false,
+        "dataType": "task",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "plans",
+        "description": "",
+        "isKey": false,
+        "dataType": "plan",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isNullable": true,
+        "isUnicode": null
+      }
     ],
     "renames": {
-      "320": "dirSyncEnabled",
-      "567": "facsimileTelephoneNumber",
-      "346": "immutableId",
-      "451": "lastDirSyncTime",
-      "90": "mobile",
-      "700": "otherMails",
-      "815": "physicalDeliveryOfficeName",
-      "841": "provisioningErrors",
-      "203": "sipProxyAddress",
-      "15": "telephoneNumber",
-      "687": "thumbnailPhoto",
-      "43": "emailAddress",
-      "469": "mailboxGuid",
-      "164": "alias",
-      "467": "principalName",
-      "460": "tags",
-      "671": "objectType",
-      "647": "objectId",
-      "127": "deletionTimestamp",
-      "990": "appRoleAssignments",
-      "665": "oauth2PermissionGrants"
-    },
-    "deletedmethods": [
-      "changePassword"
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "verifieddomain": {
-    "isDeleted": false,
-    "deletedproperties": [
-      "isDefault",
-      "isInitial"
-    ],
-    "renames": {
-      "681": "default",
-      "650": "id",
-      "448": "initial"
+      "25": "joinedGroups",
+      "837": "people",
+      "654": "inferenceClassification",
+      "603": "photos",
+      "148": "trendingAround",
+      "593": "workingWith",
+      "913": "notes",
+      "792": "tasks",
+      "522": "plans"
     },
     "deletedmethods": [
 
     ],
     "newmethods": [
-
+      "findMeetingTimes"
     ],
     "isUntouched": false
   }

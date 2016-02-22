@@ -25,7 +25,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/subscribedSkus/<objectId>": true
+    "/subscribedSkus/<id>": true
   },
   "properties": [
     {
@@ -55,20 +55,6 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
-    },
-    {
-      "name": "objectId",
-      "description": "",
-      "isKey": true,
-      "dataType": "string",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
     },
     {
       "name": "prepaidUnits",
@@ -124,6 +110,34 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "appliesTo",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "id",
+      "description": "",
+      "isKey": true,
+      "dataType": "string",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
       "isUnicode": false
     }
   ],

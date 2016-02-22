@@ -7,8 +7,8 @@ require 'json'
 module SpecMaker
 
 	# Initialize 
-	RESOURCES_NEW = "../jsonfiles/restold/" #ignore naming conv.
-	RESOURCES_OLD = "../jsonfiles/rest/" # this is the old one
+	RESOURCES_NEW = "../jsonfiles/rest/" 
+	RESOURCES_OLD = "../jsonfiles/restold/" 
 	DIFF_OUT_FILE =  "../jsonfiles/diff2.json"
 	NEWLINE = "\n"
 
@@ -27,16 +27,25 @@ module SpecMaker
 
 		oldp = []
 		newp = []
+		oldp_array = []
+		newp_array = []
 
 		if oldh[:properties].length > 0
 			oldp = oldh[:properties].map{ |item| camelcase item[:name] }
+			oldp_array = oldh[:properties].to_a
 		end
+
 
 		if newh[:properties].length > 0
 			newp = newh[:properties].map{ |item| camelcase item[:name] }
+			newp_array = newh[:properties].to_a
 		end
 
 		@diff[@key][:deletedproperties] = oldp - newp
+		@diff[@key][:newproperties] = newp - oldp
+
+		@diff[@key][:deletedproperties1] = oldp_array - newp_array  
+		@diff[@key][:newproperties1] = newp_array - oldp_array  
 
 		@diff[@key][:renames] = {}
 		(newp - oldp).each do |name|
