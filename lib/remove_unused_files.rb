@@ -9,10 +9,10 @@ module SpecMaker
 
 	# Initialize 
 
-	API = "C:/Users/suramam/git/seattle7/final-apidocs/v1.0/api/*"
-	RESOURCES = "C:/Users/suramam/git/seattle7/final-apidocs/v1.0/resources/*"
+	API = "C:/Users/suramam/Git/sumurthy/microsoft-graph-docs/api-reference/api/*"
+	RESOURCES = "C:/Users/suramam/Git/sumurthy/microsoft-graph-docs/api-reference/resources/*"
 
-	NEW_API =  "C:/Users/suramam/git/seattle7/final-apidocs/v1.0/newapi/"
+	NEW_API =  "C:/Users/suramam/Git/sumurthy/microsoft-graph-docs/api-reference/newapi/"
 	NEWLINE = "\n"
 
 	def self.do_check(oldm=nil, newm=nil)
