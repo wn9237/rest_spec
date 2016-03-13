@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/legend
+PATCH /drive/root/workbook/worksheets/<id>/charts/<id>/legend
+PATCH /me/drive/root/workbook/worksheets/<id>/charts/<id>/legend
+PATCH /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/legend
 ```
 ### Optional request headers
 | Name       | Description|
@@ -19,12 +21,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Boolean value for whether the chart legend should overlap with the main body of the chart.|
-|position|string|Represents the position of the legend on the chart. Possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
-|visible|boolean|A boolean value the represents the visibility of a ChartLegend object.|
+|overlay|boolean||
+|position|string||
+|visible|boolean||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [ChartLegend](../resources/chartlegend.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [chartLegend](../resources/chartlegend.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -33,14 +35,14 @@ Here is an example of the request.
   "name": "update_chartlegend"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/legend
+PATCH https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/legend
 Content-type: application/json
 Content-length: 72
 
 {
-  "visible": true,
+  "overlay": true,
   "position": "position-value",
-  "overlay": true
+  "visible": true
 }
 ```
 ##### Response
@@ -56,9 +58,9 @@ Content-type: application/json
 Content-length: 72
 
 {
-  "visible": true,
+  "overlay": true,
   "position": "position-value",
-  "overlay": true
+  "visible": true
 }
 ```
 

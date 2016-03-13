@@ -1,6 +1,6 @@
 {
   "name": "assignedPlan",
-  "description": "The **assignedPlans** property of both the [User] entity and the [TenantDetail] entity is a collection of **AssignedPlan**.\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "capabilityStatus",
-      "description": "For example, “Enabled”.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "service",
-      "description": "The name of the service; for example, “AccessControlServiceS2S”.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "servicePlanId",
-      "description": "A GUID that identifies the service plan.",
+      "description": "",
       "isKey": false,
       "dataType": "guid",
       "isReadOnly": false,

@@ -1,25 +1,26 @@
-# ChartAxisTitle resource type
+# chartAxisTitle resource type
 
-Represents the title of a chart axis.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [ChartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
-|[Update](../api/chartaxistitle_update.md) | [ChartAxisTitle](chartaxistitle.md)	|Update ChartAxisTitle object. |
+|[Get chartAxisTitle](../api/chartaxistitle_get.md) | [chartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
+|[Update](../api/chartaxistitle_update.md) | [chartAxisTitle](chartaxistitle.md)	|Update chartAxisTitle object. |
+|[Delete](../api/chartaxistitle_delete.md) | None |Delete chartAxisTitle object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|text|string|Represents the axis title.|
-|visible|boolean|A boolean that specifies the visibility of an axis title.|
+|text|string||
+|visible|boolean||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|Represents the formatting of chart axis title. Read-only.|
+|format|[chartAxisTitleFormat](chartaxistitleformat.md)| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -45,7 +46,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartAxisTitle resource",
+  "description": "chartAxisTitle resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

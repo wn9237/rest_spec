@@ -1,6 +1,6 @@
 {
   "name": "user",
-  "description": "Represents an Azure AD user account. Inherits from [DirectoryObject].\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -56,8 +56,8 @@
   },
   "properties": [
     {
-      "name": "AccountEnabled",
-      "description": "                **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.            ",
+      "name": "accountEnabled",
+      "description": "",
       "isKey": false,
       "dataType": "boolean",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "assignedLicenses",
-      "description": "The licenses that are assigned to the user.                            **Notes**: not nullable.            ",
+      "description": "",
       "isKey": false,
       "dataType": "assignedLicense",
       "isReadOnly": false,
@@ -85,7 +85,7 @@
     },
     {
       "name": "assignedPlans",
-      "description": "The plans that are assigned to the user.                            **Notes**: not nullable.            ",
+      "description": "",
       "isKey": false,
       "dataType": "assignedPlan",
       "isReadOnly": false,
@@ -113,7 +113,7 @@
     },
     {
       "name": "city",
-      "description": "The city in which the user is located.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -141,7 +141,7 @@
     },
     {
       "name": "country",
-      "description": "The country/region in which the user is located; for example, “US” or “UK”.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -155,7 +155,7 @@
     },
     {
       "name": "department",
-      "description": "The name for the department in which the user works.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -169,7 +169,7 @@
     },
     {
       "name": "displayName",
-      "description": "The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -183,7 +183,7 @@
     },
     {
       "name": "givenName",
-      "description": "The given name (first name) of the user.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -197,7 +197,7 @@
     },
     {
       "name": "jobTitle",
-      "description": "The user’s job title.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -211,7 +211,7 @@
     },
     {
       "name": "mail",
-      "description": "The SMTP address for the user, for example, \"jeff@contoso.onmicrosoft.com\".",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -225,7 +225,7 @@
     },
     {
       "name": "mailNickname",
-      "description": "The mail alias for the user. This property must be specified when a user is created.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -281,7 +281,7 @@
     },
     {
       "name": "onPremisesSecurityIdentifier",
-      "description": "Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud.                            **Notes**: Requires version 1.5 or newer.            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -309,7 +309,7 @@
     },
     {
       "name": "passwordPolicies",
-      "description": "Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: \"DisablePasswordExpiration, DisableStrongPassword\".",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -323,7 +323,7 @@
     },
     {
       "name": "passwordProfile",
-      "description": "Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created.            The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. For information about the constraints that must be satisfied for a strong password, see **Password policy** under [Change your password](http://onlinehelp.microsoft.com/office365-enterprises/ff637578.aspx) in the Microsoft Office 365 help pages. ",
+      "description": "",
       "isKey": false,
       "dataType": "passwordProfile",
       "isReadOnly": false,
@@ -351,7 +351,7 @@
     },
     {
       "name": "postalCode",
-      "description": "The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -365,7 +365,7 @@
     },
     {
       "name": "preferredLanguage",
-      "description": "The preferred language for the user. Should follow ISO 639-1 Code; for example \"en-US\".",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -379,7 +379,7 @@
     },
     {
       "name": "provisionedPlans",
-      "description": "The plans that are provisioned for the user.                            **Notes**: not nullable.            ",
+      "description": "",
       "isKey": false,
       "dataType": "provisionedPlan",
       "isReadOnly": false,
@@ -393,7 +393,7 @@
     },
     {
       "name": "proxyAddresses",
-      "description": "Fpr example: [\"SMTP: bob@contoso.com\", \"smtp: bob@sales.contoso.com\"]                            **Notes**: unique, not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -407,7 +407,7 @@
     },
     {
       "name": "state",
-      "description": "The state or province in the user's address.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -421,7 +421,7 @@
     },
     {
       "name": "streetAddress",
-      "description": "The street address of the user's place of business.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -435,7 +435,7 @@
     },
     {
       "name": "surname",
-      "description": "The user's surname (family name or last name).                            **Notes**: filterable.            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -449,7 +449,7 @@
     },
     {
       "name": "usageLocation",
-      "description": "A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: \"US\", \"JP\", and \"GB\".                            **Notes**: not nullable.            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -463,7 +463,7 @@
     },
     {
       "name": "userPrincipalName",
-      "description": "The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created.             The verified domains for the tenant can be accessed from the **VerifiedDomains** property of [TenantDetail]. For example, for contoso.onmicosoft.com, tenant detail can be read by performing a GET to the following URL: https://graph.windows.net/contoso.onmicrosoft.com/tenantDetails?api-version=1.5.                            **Notes**: **key**, unique.            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -477,7 +477,7 @@
     },
     {
       "name": "userType",
-      "description": "A string value that can be used to classify user types in your directory, such as “Member” and “Guest”.                            **Notes**: Requires version 2013-11-08 or newer.            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -645,7 +645,7 @@
     },
     {
       "name": "ownedDevices",
-      "description": "Devices that are owned by the user.",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -659,7 +659,7 @@
     },
     {
       "name": "registeredDevices",
-      "description": "Devices that are registered for the user.",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -673,7 +673,7 @@
     },
     {
       "name": "manager",
-      "description": "The user or contact that is this user’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -687,7 +687,7 @@
     },
     {
       "name": "directReports",
-      "description": "The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Inherited from [DirectoryObject].            HTTP Methods: GET",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -701,7 +701,7 @@
     },
     {
       "name": "memberOf",
-      "description": "The groups and directory roles that the user is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -715,7 +715,7 @@
     },
     {
       "name": "createdObjects",
-      "description": "Directory objects that were created by the user. Requires version 2013-11-08 or newer.",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -729,7 +729,7 @@
     },
     {
       "name": "ownedObjects",
-      "description": "Directory objects that are owned by the user. Requires version 2013-11-08 or newer.",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -743,9 +743,23 @@
     },
     {
       "name": "messages",
-      "description": "The messages in a mailbox or folder. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "message",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "joinedGroups",
+      "description": "",
+      "isKey": false,
+      "dataType": "group",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
@@ -771,7 +785,7 @@
     },
     {
       "name": "calendar",
-      "description": "The user's primary calendar. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "calendar",
       "isReadOnly": true,
@@ -785,7 +799,7 @@
     },
     {
       "name": "calendars",
-      "description": "The user's calendars. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "calendar",
       "isReadOnly": true,
@@ -799,7 +813,7 @@
     },
     {
       "name": "calendarGroups",
-      "description": "The user's calendar groups. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "calendarGroup",
       "isReadOnly": true,
@@ -813,7 +827,7 @@
     },
     {
       "name": "calendarView",
-      "description": "The calendar view for the calendar. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "event",
       "isReadOnly": true,
@@ -827,7 +841,7 @@
     },
     {
       "name": "events",
-      "description": "The user's events. Default is to show Events under the Default Calendar. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "event",
       "isReadOnly": true,
@@ -840,8 +854,22 @@
       "isUnicode": null
     },
     {
+      "name": "people",
+      "description": "",
+      "isKey": false,
+      "dataType": "person",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
       "name": "contacts",
-      "description": "The user's contacts. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "contact",
       "isReadOnly": true,
@@ -855,7 +883,7 @@
     },
     {
       "name": "contactFolders",
-      "description": "The user's contacts folders. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "contactFolder",
       "isReadOnly": true,
@@ -865,6 +893,20 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "inferenceClassification",
+      "description": "",
+      "isKey": false,
+      "dataType": "inferenceClassification",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
       "isUnicode": null
     },
     {
@@ -882,6 +924,20 @@
       "isUnicode": null
     },
     {
+      "name": "photos",
+      "description": "",
+      "isKey": false,
+      "dataType": "profilePhoto",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
       "name": "drive",
       "description": "",
       "isKey": false,
@@ -893,6 +949,76 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "trendingAround",
+      "description": "",
+      "isKey": false,
+      "dataType": "driveItem",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "workingWith",
+      "description": "",
+      "isKey": false,
+      "dataType": "user",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "notes",
+      "description": "",
+      "isKey": false,
+      "dataType": "notes",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "tasks",
+      "description": "",
+      "isKey": false,
+      "dataType": "task",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "plans",
+      "description": "",
+      "isKey": false,
+      "dataType": "plan",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
       "isUnicode": null
     }
   ],
@@ -1004,6 +1130,85 @@
         },
         {
           "name": "saveToSentItems",
+          "description": "",
+          "dataType": "boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "findMeetingTimes",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "meetingTimeCandidate",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "attendees",
+          "description": "",
+          "dataType": "attendeeBase",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "locationConstraint",
+          "description": "",
+          "dataType": "locationConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "timeConstraint",
+          "description": "",
+          "dataType": "timeConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "meetingDuration",
+          "description": "",
+          "dataType": "duration",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "maxCandidates",
+          "description": "",
+          "dataType": "int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "isOrganizerOptional",
           "description": "",
           "dataType": "boolean",
           "isCollection": false,

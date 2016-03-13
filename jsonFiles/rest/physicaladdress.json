@@ -1,6 +1,6 @@
 {
   "name": "physicalAddress",
-  "description": "The physical address of a contact.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -28,8 +28,36 @@
   },
   "properties": [
     {
+      "name": "type",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": "physicalAddressType",
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "postOfficeBox",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
       "name": "street",
-      "description": "The street.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -43,7 +71,7 @@
     },
     {
       "name": "city",
-      "description": "The city.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -57,7 +85,7 @@
     },
     {
       "name": "state",
-      "description": "The state.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -71,7 +99,7 @@
     },
     {
       "name": "countryOrRegion",
-      "description": "The country or region.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -85,7 +113,7 @@
     },
     {
       "name": "postalCode",
-      "description": "The postal code.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,

@@ -1,0 +1,529 @@
+{
+  "name": "table",
+  "description": "",
+  "collectionOf": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "isOpenType": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": "",
+  "updateDescription": "",
+  "deleteDescription": "",
+  "restPath": {
+    "/groups/<id>/drive/items/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/groups/<id>/drive/items/<id>/workbook/tables/<id>": true,
+    "/groups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/groups/<id>/drive/special/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/groups/<id>/drive/special/<id>/workbook/tables/<id>": true,
+    "/groups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/groups/<id>/drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/groups/<id>/drive/root/workbook/tables/<id>": true,
+    "/groups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/items/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/special/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/root/workbook/tables/<id>": true,
+    "/users/<id>/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>": true,
+    "/users/<id>/drive/items/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/users/<id>/drive/items/<id>/workbook/tables/<id>": true,
+    "/users/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/users/<id>/drive/special/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/users/<id>/drive/special/<id>/workbook/tables/<id>": true,
+    "/users/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/users/<id>/drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/users/<id>/drive/root/workbook/tables/<id>": true,
+    "/users/<id>/drive/root/workbook/worksheets/<id>/tables/<id>": true,
+    "/users/<id>/trendingAround/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/users/<id>/trendingAround/<id>/workbook/tables/<id>": true,
+    "/users/<id>/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/drives/<id>/items/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/drives/<id>/items/<id>/workbook/tables/<id>": true,
+    "/drives/<id>/items/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/drives/<id>/special/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/drives/<id>/special/<id>/workbook/tables/<id>": true,
+    "/drives/<id>/special/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/drives/<id>/root/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/drives/<id>/root/workbook/tables/<id>": true,
+    "/drives/<id>/root/workbook/worksheets/<id>/tables/<id>": true,
+    "/workbooks/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/workbooks/<id>/workbook/tables/<id>": true,
+    "/workbooks/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/items/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/special/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/root/workbook/tables/<id>": true,
+    "/me/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>": true,
+    "/me/drive/items/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/me/drive/items/<id>/workbook/tables/<id>": true,
+    "/me/drive/items/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/me/drive/special/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/me/drive/special/<id>/workbook/tables/<id>": true,
+    "/me/drive/special/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/me/drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/me/drive/root/workbook/tables/<id>": true,
+    "/me/drive/root/workbook/worksheets/<id>/tables/<id>": true,
+    "/me/trendingAround/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/me/trendingAround/<id>/workbook/tables/<id>": true,
+    "/me/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/drive/items/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/drive/items/<id>/workbook/tables/<id>": true,
+    "/drive/items/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/drive/special/<id>/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/drive/special/<id>/workbook/tables/<id>": true,
+    "/drive/special/<id>/workbook/worksheets/<id>/tables/<id>": true,
+    "/drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/worksheet/tables/<id>": true,
+    "/drive/root/workbook/tables/<id>": true,
+    "/drive/root/workbook/worksheets/<id>/tables/<id>": true
+  },
+  "properties": [
+    {
+      "name": "id",
+      "description": "",
+      "isKey": true,
+      "dataType": "string",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "name",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "showHeaders",
+      "description": "",
+      "isKey": false,
+      "dataType": "boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "showTotals",
+      "description": "",
+      "isKey": false,
+      "dataType": "boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "style",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "columns",
+      "description": "",
+      "isKey": false,
+      "dataType": "tableColumn",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "rows",
+      "description": "",
+      "isKey": false,
+      "dataType": "tableRow",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "sort",
+      "description": "",
+      "isKey": false,
+      "dataType": "tableSort",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "worksheet",
+      "description": "",
+      "isKey": false,
+      "dataType": "worksheet",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "convertToRangeFunctionReturnSet",
+      "description": "",
+      "isKey": false,
+      "dataType": "range",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "dataBodyRangeFunctionReturnSet",
+      "description": "",
+      "isKey": false,
+      "dataType": "range",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "headerRowRangeFunctionReturnSet",
+      "description": "",
+      "isKey": false,
+      "dataType": "range",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "rangeFunctionReturnSet",
+      "description": "",
+      "isKey": false,
+      "dataType": "range",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "totalRowRangeFunctionReturnSet",
+      "description": "",
+      "isKey": false,
+      "dataType": "range",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "clearFilters",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "convertToRange",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "range",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "reapplyFilters",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "add",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "table",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "address",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "hasHeaders",
+          "description": "",
+          "dataType": "boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "dataBodyRange",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "range",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "headerRowRange",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "range",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "range",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "range",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "totalRowRange",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "range",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "itemAt",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "table",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "index",
+          "description": "",
+          "dataType": "int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "count",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "int32",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    }
+  ]
+}

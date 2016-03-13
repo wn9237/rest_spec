@@ -1,14 +1,14 @@
-# Range: Intersection
+# range: intersection
 
-Gets the range object that represents the rectangular intersection of the given ranges.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Intersection
-POST /workbook/worksheets(<id|name>)/range(<address>)/Intersection
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Intersection
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/intersection(anotherRange=anotherRange-value)
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/intersection(anotherRange=anotherRange-value)
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/intersection(anotherRange=anotherRange-value)
 
 ```
 ### Request headers
@@ -18,14 +18,14 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Intersection
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, provide a JSON object with the following parameters.
+In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|anotherRange|string|The range object or range address that will be used to determine the intersection of ranges.|
+|anotherRange|string||
 
 ### Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -36,13 +36,7 @@ Here is an example of the request.
   "name": "range_intersection"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/Intersection
-Content-type: application/json
-Content-length: 42
-
-{
-  "anotherRange": "anotherRange-value"
-}
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/intersection
 ```
 
 ##### Response
@@ -55,15 +49,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
 
@@ -71,7 +65,7 @@ Content-length: 169
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Range: Intersection",
+  "description": "range: intersection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,6 +1,6 @@
 {
   "name": "calendarGroup",
-  "description": "A group of calendars.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -27,8 +27,6 @@
   "restPath": {
     "/groups/<id>/drive/items/<id>/createdByUser/calendarGroups/<id>": true,
     "/groups/<id>/drive/items/<id>/lastModifiedByUser/calendarGroups/<id>": true,
-    "/groups/<id>/drive/shared/<id>/createdByUser/calendarGroups/<id>": true,
-    "/groups/<id>/drive/shared/<id>/lastModifiedByUser/calendarGroups/<id>": true,
     "/groups/<id>/drive/special/<id>/createdByUser/calendarGroups/<id>": true,
     "/groups/<id>/drive/special/<id>/lastModifiedByUser/calendarGroups/<id>": true,
     "/groups/<id>/drive/root/createdByUser/calendarGroups/<id>": true,
@@ -36,19 +34,15 @@
     "/users/<id>/calendarGroups/<id>": true,
     "/drives/<id>/items/<id>/createdByUser/calendarGroups/<id>": true,
     "/drives/<id>/items/<id>/lastModifiedByUser/calendarGroups/<id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/calendarGroups/<id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/calendarGroups/<id>": true,
     "/drives/<id>/special/<id>/createdByUser/calendarGroups/<id>": true,
     "/drives/<id>/special/<id>/lastModifiedByUser/calendarGroups/<id>": true,
     "/drives/<id>/root/createdByUser/calendarGroups/<id>": true,
     "/drives/<id>/root/lastModifiedByUser/calendarGroups/<id>": true,
-    "/shares/<id>/items/<id>/createdByUser/calendarGroups/<id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/calendarGroups/<id>": true,
+    "/workbooks/<id>/createdByUser/calendarGroups/<id>": true,
+    "/workbooks/<id>/lastModifiedByUser/calendarGroups/<id>": true,
     "/me/calendarGroups/<id>": true,
     "/drive/items/<id>/createdByUser/calendarGroups/<id>": true,
     "/drive/items/<id>/lastModifiedByUser/calendarGroups/<id>": true,
-    "/drive/shared/<id>/createdByUser/calendarGroups/<id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/calendarGroups/<id>": true,
     "/drive/special/<id>/createdByUser/calendarGroups/<id>": true,
     "/drive/special/<id>/lastModifiedByUser/calendarGroups/<id>": true,
     "/drive/root/createdByUser/calendarGroups/<id>": true,
@@ -57,7 +51,7 @@
   "properties": [
     {
       "name": "name",
-      "description": "The group name.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -71,7 +65,7 @@
     },
     {
       "name": "classId",
-      "description": "The class identifier.",
+      "description": "",
       "isKey": false,
       "dataType": "guid",
       "isReadOnly": false,
@@ -85,7 +79,7 @@
     },
     {
       "name": "changeKey",
-      "description": "Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -99,7 +93,7 @@
     },
     {
       "name": "id",
-      "description": "The group's unique identifier.",
+      "description": "",
       "isKey": true,
       "dataType": "string",
       "isReadOnly": true,
@@ -113,7 +107,7 @@
     },
     {
       "name": "calendars",
-      "description": "The calendars in the calendar group. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "calendar",
       "isReadOnly": true,

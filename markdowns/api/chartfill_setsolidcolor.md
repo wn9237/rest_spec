@@ -1,14 +1,14 @@
-# ChartFill: setSolidColor
+# chartFill: setSolidColor
 
-Sets the fill formatting of a chart element to a uniform color.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/format/fill/setSolidColor
-POST /workbook/worksheets(<id|name>)/charts(<name>)/title/format/fill/setSolidColor
-POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/setSolidColor
+POST /drive/root/workbook/worksheets/<id>/charts/<id>/format/fill/setSolidColor
+POST /me/drive/root/workbook/worksheets/<id>/charts/<id>/format/fill/setSolidColor
+POST /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/format/fill/setSolidColor
 
 ```
 ### Request headers
@@ -22,7 +22,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|color|string|HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").|
+|color|string||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "chartfill_setsolidcolor"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/setSolidColor
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/format/fill/setSolidColor
 Content-type: application/json
 Content-length: 28
 
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartFill: setSolidColor",
+  "description": "chartFill: setSolidColor",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

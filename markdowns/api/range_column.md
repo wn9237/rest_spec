@@ -1,14 +1,14 @@
-# Range: Column
+# range: column
 
-Gets a column contained in the range.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Column
-POST /workbook/worksheets(<id|name>)/range(<address>)/Column
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/column(column=column-value)
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/column(column=column-value)
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/column(column=column-value)
 
 ```
 ### Request headers
@@ -18,14 +18,14 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, provide a JSON object with the following parameters.
+In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|column|number|Column number of the range to be retrieved. Zero-indexed.|
+|column|int32||
 
 ### Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -36,14 +36,7 @@ Here is an example of the request.
   "name": "range_column"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/Column
-Content-type: application/json
-Content-length: 21
-
-{
-  "column": {
-  }
-}
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/column
 ```
 
 ##### Response
@@ -56,15 +49,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
 
@@ -72,7 +65,7 @@ Content-length: 169
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Range: Column",
+  "description": "range: column",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

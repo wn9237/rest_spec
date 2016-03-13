@@ -1,6 +1,6 @@
 {
   "name": "provisionedPlan",
-  "description": "The **provisionedPlans** property of the [User] entity and the [TenantDetail] entity is a collection of **ProvisionedPlan**.\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "capabilityStatus",
-      "description": "For example, “Enabled”.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "provisioningStatus",
-      "description": "For example, “Success”.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "service",
-      "description": "The name of the service; for example, “AccessControlS2S”",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,

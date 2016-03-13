@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables(<id|name>)/columns
-GET /workbook/bindings(<id>)/table/columns
-GET /workbook/worksheets(<id|name>)/tables(<id|name>)/columns
+GET /drive/root/workbook/tables/<id>/columns
+GET /me/drive/root/workbook/tables/<id>/columns
+GET /workbooks/<id>/workbook/tables/<id>/columns
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [TableColumn](../resources/tablecolumn.md) for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [tableColumn](../resources/tablecolumn.md) for supported names. |
 |$filter|string|Filter string that lets you filter the response based on a set of criteria.|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 |$select|string|Comma-separated list of properties to include in the response.|
@@ -31,7 +31,7 @@ GET /workbook/worksheets(<id|name>)/tables(<id|name>)/columns
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [TableColumn](../resources/tablecolumn.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [tableColumn](../resources/tablecolumn.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "get_columns"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/columns
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -53,14 +53,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 126
+Content-length: 134
 
 {
   "value": [
     {
-      "id": 99,
-      "name": "name-value",
+      "id": "id-value",
       "index": 99,
+      "name": "name-value",
       "values": "values-value"
     }
   ]

@@ -1,12 +1,14 @@
-# Worksheet: Range
+# worksheet: range
 
-Gets the range object specified by the address or name.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/Range
+POST /drive/root/workbook/worksheets/<id>/range(address=address-value)
+POST /me/drive/root/workbook/worksheets/<id>/range(address=address-value)
+POST /workbooks/<id>/workbook/worksheets/<id>/range(address=address-value)
 
 ```
 ### Request headers
@@ -16,14 +18,14 @@ POST /workbook/worksheets(<id|name>)/Range
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, provide a JSON object with the following parameters.
+In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|string|Optional. The address or the name of the range. If not specified, the entire worksheet range is returned.|
+|address|string||
 
 ### Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -34,13 +36,7 @@ Here is an example of the request.
   "name": "worksheet_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/Range
-Content-type: application/json
-Content-length: 32
-
-{
-  "address": "address-value"
-}
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/range
 ```
 
 ##### Response
@@ -53,15 +49,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
 
@@ -69,7 +65,7 @@ Content-length: 169
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Worksheet: Range",
+  "description": "worksheet: range",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

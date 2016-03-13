@@ -1,12 +1,14 @@
-# Worksheet: UsedRange
+# worksheet: usedRange
 
-The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/UsedRange
+POST /drive/root/workbook/worksheets/<id>/usedRange(valuesOnly=valuesOnly-value)
+POST /me/drive/root/workbook/worksheets/<id>/usedRange(valuesOnly=valuesOnly-value)
+POST /workbooks/<id>/workbook/worksheets/<id>/usedRange(valuesOnly=valuesOnly-value)
 
 ```
 ### Request headers
@@ -16,14 +18,14 @@ POST /workbook/worksheets(<id|name>)/UsedRange
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, provide a JSON object with the following parameters.
+In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
+|valuesOnly|boolean||
 
 ### Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -34,13 +36,7 @@ Here is an example of the request.
   "name": "worksheet_usedrange"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/UsedRange
-Content-type: application/json
-Content-length: 24
-
-{
-  "valuesOnly": true
-}
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/usedRange
 ```
 
 ##### Response
@@ -53,15 +49,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
 
@@ -69,7 +65,7 @@ Content-length: 169
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Worksheet: UsedRange",
+  "description": "worksheet: usedRange",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,12 +1,14 @@
-# Create NamedItem
+# Create namedItem
 
-Use this API to create a new NamedItem.
+Use this API to create a new namedItem.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names
+POST /drive/root/workbook/names
+POST /me/drive/root/workbook/names
+POST /workbooks/<id>/workbook/names
 
 ```
 ### Request headers
@@ -16,11 +18,11 @@ POST /workbook/names
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, supply a JSON representation of [NamedItem](../resources/nameditem.md) object.
+In the request body, supply a JSON representation of [namedItem](../resources/nameditem.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [NamedItem](../resources/nameditem.md) object in the response body.
+If successful, this method returns `201, Created` response code and [namedItem](../resources/nameditem.md) object in the response body.
 
 ### Example
 ##### Request
@@ -30,19 +32,18 @@ Here is an example of the request.
   "name": "create_nameditem_from_workbook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/names
 Content-type: application/json
-Content-length: 87
+Content-length: 95
 
 {
   "name": "name-value",
   "type": "type-value",
-  "value": {
-  },
+  "value": "value-value",
   "visible": true
 }
 ```
-In the request body, supply a JSON representation of [NamedItem](../resources/nameditem.md) object.
+In the request body, supply a JSON representation of [namedItem](../resources/nameditem.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -53,14 +54,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 87
+Content-length: 117
 
 {
   "name": "name-value",
   "type": "type-value",
-  "value": {
-  },
-  "visible": true
+  "value": "value-value",
+  "visible": true,
+  "_Id": "_Id-value"
 }
 ```
 
@@ -68,7 +69,7 @@ Content-length: 87
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create NamedItem",
+  "description": "Create namedItem",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

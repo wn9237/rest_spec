@@ -1,23 +1,26 @@
-# RangeBorder resource type
+# rangeBorder resource type
 
-Represents the border of an object.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeBorder](../api/rangeborder_get.md) | [RangeBorder](rangeborder.md) |Read properties and relationships of rangeBorder object.|
-|[Update](../api/rangeborder_update.md) | [RangeBorder](rangeborder.md)	|Update RangeBorder object. |
+|[Get rangeBorder](../api/rangeborder_get.md) | [rangeBorder](rangeborder.md) |Read properties and relationships of rangeBorder object.|
+|[Update](../api/rangeborder_update.md) | [rangeBorder](rangeborder.md)	|Update rangeBorder object. |
+|[Delete](../api/rangeborder_delete.md) | None |Delete rangeBorder object. |
+|[Count](../api/rangeborder_count.md)|int32||
+|[Itemat](../api/rangeborder_itemat.md)|[rangeBorder](rangeborder.md)||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|color|string|HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").|
-|id|string|Represents border identifier. Possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
-|sideIndex|string|Constant value that indicates the specific side of the border. Possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
-|style|string|One of the constants of line style specifying the line style for the border. Possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
-|weight|string|Specifies the weight of the border around a range. Possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.|
+|color|string||
+|id|string| Read-only.|
+|sideIndex|string||
+|style|string||
+|weight|string||
 
 ### Relationships
 None
@@ -38,7 +41,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "color": "string",
-  "id": "string",
+  "id": "string (identifier)",
   "sideIndex": "string",
   "style": "string",
   "weight": "string"
@@ -50,7 +53,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "RangeBorder resource",
+  "description": "rangeBorder resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

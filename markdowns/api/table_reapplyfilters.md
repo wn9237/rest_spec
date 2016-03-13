@@ -1,14 +1,14 @@
-# Table: reapplyFilters
+# table: reapplyFilters
 
-Reapplies all the filters currently on the table.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/reapplyFilters
-POST /workbook/bindings(<id>)/table/reapplyFilters
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/reapplyFilters
+POST /drive/root/workbook/tables/<id>/reapplyFilters
+POST /me/drive/root/workbook/tables/<id>/reapplyFilters
+POST /workbooks/<id>/workbook/tables/<id>/reapplyFilters
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "table_reapplyfilters"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/reapplyFilters
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/reapplyFilters
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Table: reapplyFilters",
+  "description": "table: reapplyFilters",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

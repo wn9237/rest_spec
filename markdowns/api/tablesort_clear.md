@@ -1,14 +1,14 @@
-# TableSort: clear
+# tableSort: clear
 
-Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/sort/clear
-POST /workbook/bindings(<id>)/table/sort/clear
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/clear
+POST /drive/root/workbook/tables/<id>/sort/clear
+POST /me/drive/root/workbook/tables/<id>/sort/clear
+POST /workbooks/<id>/workbook/tables/<id>/sort/clear
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "tablesort_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/clear
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/sort/clear
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TableSort: clear",
+  "description": "tableSort: clear",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

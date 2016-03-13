@@ -25,11 +25,11 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/subscriptions/<subscriptionId>": true
+    "/subscriptions/<id>": true
   },
   "properties": [
     {
-      "name": "subscriptionId",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "string",
@@ -81,7 +81,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": null,
       "isUnicode": false
     },
     {
@@ -99,7 +99,7 @@
       "isUnicode": false
     },
     {
-      "name": "subscriptionExpirationDateTime",
+      "name": "expirationDateTime",
       "description": "",
       "isKey": false,
       "dataType": "dateTimeOffset",

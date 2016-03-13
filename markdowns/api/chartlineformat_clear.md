@@ -1,14 +1,14 @@
-# ChartLineFormat: clear
+# chartLineFormat: clear
 
-Clear the line format of a chart element.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/line/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
+POST /drive/root/workbook/worksheets/<id>/charts/<id>/series/format/line/clear
+POST /me/drive/root/workbook/worksheets/<id>/charts/<id>/series/format/line/clear
+POST /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/series/format/line/clear
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "chartlineformat_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/series/format/line/clear
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartLineFormat: clear",
+  "description": "chartLineFormat: clear",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

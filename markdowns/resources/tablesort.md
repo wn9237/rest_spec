@@ -1,27 +1,29 @@
-# TableSort resource type
+# tableSort resource type
 
-Manages sorting operations on Table objects.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Read properties and relationships of tableSort object.|
-|[Apply](../api/tablesort_apply.md)|None|Perform a sort operation.|
-|[Clear](../api/tablesort_clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
-|[Reapply](../api/tablesort_reapply.md)|None|Reapplies the current sorting parameters to the table.|
+|[Get tableSort](../api/tablesort_get.md) | [tableSort](tablesort.md) |Read properties and relationships of tableSort object.|
+|[Update](../api/tablesort_update.md) | [tableSort](tablesort.md)	|Update tableSort object. |
+|[Delete](../api/tablesort_delete.md) | None |Delete tableSort object. |
+|[Apply](../api/tablesort_apply.md)|None||
+|[Clear](../api/tablesort_clear.md)|None||
+|[Reapply](../api/tablesort_reapply.md)|None||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|matchCase|boolean|Represents whether the casing impacted the last sort of the table. Read-only.|
-|method|string|Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.|
+|fields|[sortField](sortfield.md) collection||
+|matchCase|boolean||
+|method|string||
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|Represents the current conditions used to last sort the table. Read-only.|
+None
+
 
 ### JSON representation
 
@@ -37,6 +39,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "fields": [{"@odata.type": "microsoft.graph.sortField"}],
   "matchCase": true,
   "method": "string"
 }
@@ -47,7 +50,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TableSort resource",
+  "description": "tableSort resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

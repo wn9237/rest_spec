@@ -1,4 +1,4 @@
-# Get FormatProtection
+# Get formatProtection
 
 Retrieve the properties and relationships of formatprotection object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format/protection
-GET /workbook/worksheets(<id|name>)/range(<address>)/format/protection
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/protection
+GET /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/protection
+GET /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/format/protection
+GET /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/format/protection
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [FormatProtection](../resources/formatprotection.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [formatProtection](../resources/formatprotection.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -26,7 +26,7 @@ GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/protection
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [FormatProtection](../resources/formatprotection.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [formatProtection](../resources/formatprotection.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "get_formatprotection"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/protection
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/protection
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,8 +50,8 @@ Content-type: application/json
 Content-length: 45
 
 {
-  "locked": true,
-  "formulaHidden": true
+  "formulaHidden": true,
+  "locked": true
 }
 ```
 
@@ -59,7 +59,7 @@ Content-length: 45
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get FormatProtection",
+  "description": "Get formatProtection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

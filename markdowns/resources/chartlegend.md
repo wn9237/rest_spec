@@ -1,26 +1,27 @@
-# ChartLegend resource type
+# chartLegend resource type
 
-Represents the legend in a chart.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend_get.md) | [ChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
-|[Update](../api/chartlegend_update.md) | [ChartLegend](chartlegend.md)	|Update ChartLegend object. |
+|[Get chartLegend](../api/chartlegend_get.md) | [chartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
+|[Update](../api/chartlegend_update.md) | [chartLegend](chartlegend.md)	|Update chartLegend object. |
+|[Delete](../api/chartlegend_delete.md) | None |Delete chartLegend object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Boolean value for whether the chart legend should overlap with the main body of the chart.|
-|position|string|Represents the position of the legend on the chart. Possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
-|visible|boolean|A boolean value the represents the visibility of a ChartLegend object.|
+|overlay|boolean||
+|position|string||
+|visible|boolean||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartLegendFormat](chartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
+|format|[chartLegendFormat](chartlegendformat.md)| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -47,7 +48,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartLegend resource",
+  "description": "chartLegend resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

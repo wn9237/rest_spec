@@ -1,12 +1,14 @@
-# Create ChartSeries
+# Create chartSeries
 
-Use this API to create a new ChartSeries.
+Use this API to create a new chartSeries.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/series
+POST /drive/root/workbook/worksheets/<id>/charts/<id>/series
+POST /me/drive/root/workbook/worksheets/<id>/charts/<id>/series
+POST /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/series
 
 ```
 ### Request headers
@@ -16,11 +18,11 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/series
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, supply a JSON representation of [ChartSeries](../resources/chartseries.md) object.
+In the request body, supply a JSON representation of [chartSeries](../resources/chartseries.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [ChartSeries](../resources/chartseries.md) object in the response body.
+If successful, this method returns `201, Created` response code and [chartSeries](../resources/chartseries.md) object in the response body.
 
 ### Example
 ##### Request
@@ -30,7 +32,7 @@ Here is an example of the request.
   "name": "create_chartseries_from_chart"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/series
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/series
 Content-type: application/json
 Content-length: 26
 
@@ -38,7 +40,7 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-In the request body, supply a JSON representation of [ChartSeries](../resources/chartseries.md) object.
+In the request body, supply a JSON representation of [chartSeries](../resources/chartseries.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -60,7 +62,7 @@ Content-length: 26
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create ChartSeries",
+  "description": "Create chartSeries",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

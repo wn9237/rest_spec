@@ -1,14 +1,14 @@
-# RangeSort: apply
+# rangeSort: apply
 
-Perform a sort operation.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/sort/apply
-POST /workbook/worksheets(<id|name>)/range(<address>)/sort/apply
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/sort/apply
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/sort/apply
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/sort/apply
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/sort/apply
 
 ```
 ### Request headers
@@ -22,11 +22,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|SortField|The list of conditions to sort on.|
-|matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
-|hasHeaders|boolean|Optional. Whether the range has a header.|
-|orientation|string|Optional. Whether the operation is sorting rows or columns.  Possible values are: `Rows`, `Columns`.|
-|method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
+|fields|sortField||
+|matchCase|boolean||
+|hasHeaders|boolean||
+|orientation|string||
+|method|string||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -40,22 +40,22 @@ Here is an example of the request.
   "name": "rangesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/sort/apply
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/sort/apply
 Content-type: application/json
 Content-length: 358
 
 {
   "fields": [
     {
-      "key": 99,
-      "sortOn": "sortOn-value",
       "ascending": true,
       "color": "color-value",
       "dataOption": "dataOption-value",
       "icon": {
-        "set": "set-value",
-        "index": 99
-      }
+        "index": 99,
+        "set": "set-value"
+      },
+      "key": 99,
+      "sortOn": "sortOn-value"
     }
   ],
   "matchCase": true,
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "RangeSort: apply",
+  "description": "rangeSort: apply",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

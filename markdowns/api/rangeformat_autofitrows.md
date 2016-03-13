@@ -1,14 +1,14 @@
-# RangeFormat: autofitRows
+# rangeFormat: autofitRows
 
-Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/autofitRows
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/autofitRows
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/autofitRows
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/autofitRows
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/format/autofitRows
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/format/autofitRows
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "rangeformat_autofitrows"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/autofitRows
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/autofitRows
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "RangeFormat: autofitRows",
+  "description": "rangeFormat: autofitRows",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

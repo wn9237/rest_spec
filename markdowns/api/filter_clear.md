@@ -1,14 +1,14 @@
-# Filter: clear
+# filter: clear
 
-Clear the filter on the given column.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/filter/clear
-POST /workbook/bindings(<id>)/table/columns(<id|name>)/filter/clear
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter/clear
+POST /drive/root/workbook/tables/<id>/columns/<id>/filter/clear
+POST /me/drive/root/workbook/tables/<id>/columns/<id>/filter/clear
+POST /workbooks/<id>/workbook/tables/<id>/columns/<id>/filter/clear
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "filter_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)/filter/clear
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/columns/<id>/filter/clear
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Filter: clear",
+  "description": "filter: clear",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

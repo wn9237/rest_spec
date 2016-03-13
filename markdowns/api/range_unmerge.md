@@ -1,14 +1,14 @@
-# Range: unmerge
+# range: unmerge
 
-Unmerge the range cells into separate cells.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/unmerge
-POST /workbook/worksheets(<id|name>)/range(<address>)/unmerge
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/unmerge
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/unmerge
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/unmerge
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/unmerge
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "range_unmerge"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/unmerge
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/unmerge
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Range: unmerge",
+  "description": "range: unmerge",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis
+PATCH /drive/root/workbook/worksheets/<id>/charts/<id>/axes/valueAxis
+PATCH /drive/root/workbook/worksheets/<id>/charts/<id>/axes/seriesAxis
+PATCH /drive/root/workbook/worksheets/<id>/charts/<id>/axes/categoryAxis
 ```
 ### Optional request headers
 | Name       | Description|
@@ -21,13 +21,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|majorUnit|object|Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.|
-|maximum|object|Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
-|minimum|object|Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
-|minorUnit|object|Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.|
+|majorUnit|json||
+|maximum|json||
+|minimum|json||
+|minorUnit|json||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [ChartAxis](../resources/chartaxis.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [chartAxis](../resources/chartaxis.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -36,17 +36,15 @@ Here is an example of the request.
   "name": "update_chartaxis"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis
+PATCH https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/axes/valueAxis
 Content-type: application/json
-Content-length: 64
+Content-length: 130
 
 {
-  "majorUnit": {
-  },
-  "maximum": {
-  },
-  "minimum": {
-  }
+  "majorUnit": "majorUnit-value",
+  "maximum": "maximum-value",
+  "minimum": "minimum-value",
+  "minorUnit": "minorUnit-value"
 }
 ```
 ##### Response
@@ -59,15 +57,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
+Content-length: 130
 
 {
-  "majorUnit": {
-  },
-  "maximum": {
-  },
-  "minimum": {
-  }
+  "majorUnit": "majorUnit-value",
+  "maximum": "maximum-value",
+  "minimum": "minimum-value",
+  "minorUnit": "minorUnit-value"
 }
 ```
 

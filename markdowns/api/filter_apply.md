@@ -1,14 +1,14 @@
-# Filter: apply
+# filter: apply
 
-Apply the given filter criteria on the given column.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/filter/apply
-POST /workbook/bindings(<id>)/table/columns(<id|name>)/filter/apply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter/apply
+POST /drive/root/workbook/tables/<id>/columns/<id>/filter/apply
+POST /me/drive/root/workbook/tables/<id>/columns/<id>/filter/apply
+POST /workbooks/<id>/workbook/tables/<id>/columns/<id>/filter/apply
 
 ```
 ### Request headers
@@ -22,7 +22,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|criteria|FilterCriteria|The criteria to apply.|
+|criteria|filterCriteria||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -36,25 +36,23 @@ Here is an example of the request.
   "name": "filter_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)/filter/apply
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/columns/<id>/filter/apply
 Content-type: application/json
-Content-length: 321
+Content-length: 337
 
 {
   "criteria": {
+    "color": "color-value",
     "criterion1": "criterion1-value",
     "criterion2": "criterion2-value",
-    "color": "color-value",
-    "operator": {
-    },
-    "icon": {
-      "set": "set-value",
-      "index": 99
-    },
     "dynamicCriteria": "dynamicCriteria-value",
-    "values": {
+    "filterOn": "filterOn-value",
+    "icon": {
+      "index": 99,
+      "set": "set-value"
     },
-    "filterOn": "filterOn-value"
+    "operator": "operator-value",
+    "values": "values-value"
   }
 }
 ```
@@ -74,7 +72,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Filter: apply",
+  "description": "filter: apply",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

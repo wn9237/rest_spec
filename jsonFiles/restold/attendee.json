@@ -1,6 +1,6 @@
 {
   "name": "attendee",
-  "description": "An event attendee.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,25 +29,11 @@
   "properties": [
     {
       "name": "status",
-      "description": "The response (none, accepted, declined, etc.) and time.",
+      "description": "",
       "isKey": false,
       "dataType": "responseStatus",
       "isReadOnly": false,
       "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "type",
-      "description": "The attendee type: Required = 0, Optional = 1, Resource = 2.",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": "attendeeType",
       "isCollection": false,
       "isRelationship": false,
       "supportFilter": false,

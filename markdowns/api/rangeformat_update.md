@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format
+PATCH /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format
+PATCH /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/format
+PATCH /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/format
 ```
 ### Optional request headers
 | Name       | Description|
@@ -21,14 +21,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|columnWidth|double|Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.|
-|horizontalAlignment|string|Represents the horizontal alignment for the specified object. Possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
-|rowHeight|double|Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.|
-|verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
-|wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
+|columnWidth|double||
+|horizontalAlignment|string||
+|rowHeight|double||
+|verticalAlignment|string||
+|wrapText|boolean||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [RangeFormat](../resources/rangeformat.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [rangeFormat](../resources/rangeformat.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -37,14 +37,16 @@ Here is an example of the request.
   "name": "update_rangeformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/names(<name>)/range/format
+PATCH https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format
 Content-type: application/json
-Content-length: 96
+Content-length: 166
 
 {
   "columnWidth": 99,
   "horizontalAlignment": "horizontalAlignment-value",
-  "rowHeight": 99
+  "rowHeight": 99,
+  "verticalAlignment": "verticalAlignment-value",
+  "wrapText": true
 }
 ```
 ##### Response
@@ -57,12 +59,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 96
+Content-length: 166
 
 {
   "columnWidth": 99,
   "horizontalAlignment": "horizontalAlignment-value",
-  "rowHeight": 99
+  "rowHeight": 99,
+  "verticalAlignment": "verticalAlignment-value",
+  "wrapText": true
 }
 ```
 

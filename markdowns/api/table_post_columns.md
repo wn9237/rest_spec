@@ -1,14 +1,14 @@
-# Create TableColumn
+# Create tableColumn
 
-Use this API to create a new TableColumn.
+Use this API to create a new tableColumn.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns
-POST /workbook/bindings(<id>)/table/columns
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns
+POST /drive/root/workbook/tables/<id>/columns
+POST /me/drive/root/workbook/tables/<id>/columns
+POST /workbooks/<id>/workbook/tables/<id>/columns
 
 ```
 ### Request headers
@@ -18,11 +18,11 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.
+In the request body, supply a JSON representation of [tableColumn](../resources/tablecolumn.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.
+If successful, this method returns `201, Created` response code and [tableColumn](../resources/tablecolumn.md) object in the response body.
 
 ### Example
 ##### Request
@@ -32,18 +32,17 @@ Here is an example of the request.
   "name": "create_tablecolumn_from_table"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/columns
 Content-type: application/json
-Content-length: 81
+Content-length: 69
 
 {
-  "id": 99,
-  "name": "name-value",
   "index": 99,
+  "name": "name-value",
   "values": "values-value"
 }
 ```
-In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.
+In the request body, supply a JSON representation of [tableColumn](../resources/tablecolumn.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -54,12 +53,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 81
+Content-length: 89
 
 {
-  "id": 99,
-  "name": "name-value",
+  "id": "id-value",
   "index": 99,
+  "name": "name-value",
   "values": "values-value"
 }
 ```
@@ -68,7 +67,7 @@ Content-length: 81
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create TableColumn",
+  "description": "Create tableColumn",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,14 +1,15 @@
-# ChartFill resource type
+# chartFill resource type
 
-Represents the fill formatting for a chart element.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill_clear.md)|None|Clear the fill color of a chart element.|
-|[Setsolidcolor](../api/chartfill_setsolidcolor.md)|None|Sets the fill formatting of a chart element to a uniform color.|
+|[Delete](../api/chartfill_delete.md) | None |Delete chartFill object. |
+|[Clear](../api/chartfill_clear.md)|None||
+|[Setsolidcolor](../api/chartfill_setsolidcolor.md)|None||
 
 ### Properties
 None
@@ -21,7 +22,7 @@ None
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartFill resource",
+  "description": "chartFill resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

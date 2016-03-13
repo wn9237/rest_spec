@@ -1,6 +1,6 @@
 {
   "name": "directoryRole",
-  "description": "Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning administrator roles in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -30,7 +30,7 @@
   "properties": [
     {
       "name": "description",
-      "description": "The description for the directory role.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -44,7 +44,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name for the directory role. ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -58,7 +58,7 @@
     },
     {
       "name": "roleTemplateId",
-      "description": "                The **objectId** of the [DirectoryRoleTemplate] that this role is based on.                                        **Notes**: In versions prior to version 1.5, the property is read only. In version 1.5 and later, the property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only.            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -86,7 +86,7 @@
     },
     {
       "name": "members",
-      "description": "Users and service principals that are members of this directory role. Inherited from [DirectoryObject].            HTTP Methods: GET, POST, DELETE",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,

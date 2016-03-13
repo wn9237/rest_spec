@@ -1,12 +1,14 @@
-# Create Binding
+# Create binding
 
-Use this API to create a new Binding.
+Use this API to create a new binding.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/bindings
+POST /drive/root/workbook/bindings
+POST /me/drive/root/workbook/bindings
+POST /workbooks/<id>/workbook/bindings
 
 ```
 ### Request headers
@@ -16,11 +18,11 @@ POST /workbook/bindings
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, supply a JSON representation of [Binding](../resources/binding.md) object.
+In the request body, supply a JSON representation of [binding](../resources/binding.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Binding](../resources/binding.md) object in the response body.
+If successful, this method returns `201, Created` response code and [binding](../resources/binding.md) object in the response body.
 
 ### Example
 ##### Request
@@ -30,14 +32,14 @@ Here is an example of the request.
   "name": "create_binding_from_workbook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/bindings
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/bindings
 Content-type: application/json
 Content-length: 3
 
 {
 }
 ```
-In the request body, supply a JSON representation of [Binding](../resources/binding.md) object.
+In the request body, supply a JSON representation of [binding](../resources/binding.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -58,7 +60,7 @@ Content-length: 3
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Binding",
+  "description": "Create binding",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

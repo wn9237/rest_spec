@@ -1,4 +1,4 @@
-# Get ChartPoint
+# Get chartPoint
 
 Retrieve the properties and relationships of chartpoint object.
 ### Prerequisites
@@ -6,13 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points(<undefined>)
+GET /drive/root/workbook/worksheets/<id>/charts/<id>/series/points
+GET /me/drive/root/workbook/worksheets/<id>/charts/<id>/series/points
+GET /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/series/points
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [ChartPoint](../resources/chartpoint.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [chartPoint](../resources/chartpoint.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -24,7 +26,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points(<u
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [ChartPoint](../resources/chartpoint.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [chartPoint](../resources/chartpoint.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -33,7 +35,7 @@ Here is an example of the request.
   "name": "get_chartpoint"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points(<undefined>)
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/series/points
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -45,11 +47,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 20
+Content-length: 28
 
 {
-  "value": {
-  }
+  "value": "value-value"
 }
 ```
 
@@ -57,7 +58,7 @@ Content-length: 20
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get ChartPoint",
+  "description": "Get chartPoint",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

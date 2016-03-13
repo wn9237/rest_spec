@@ -1,6 +1,6 @@
 {
   "name": "itemBody",
-  "description": "The body content of a message or event.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "contentType",
-      "description": "The content type: Text = 0, HTML = 1.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "content",
-      "description": "The text or HTML content.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,

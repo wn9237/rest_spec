@@ -1,14 +1,14 @@
-# Range: clear
+# range: clear
 
-Clear range values, format, fill, border, etc.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/clear
-POST /workbook/worksheets(<id|name>)/range(<address>)/clear
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/clear
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/clear
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/clear
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/clear
 
 ```
 ### Request headers
@@ -22,7 +22,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|applyTo|string|Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.|
+|applyTo|string||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/clear
 Content-type: application/json
 Content-length: 32
 
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Range: clear",
+  "description": "range: clear",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

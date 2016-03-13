@@ -1,4 +1,4 @@
-# Get RangeFill
+# Get rangeFill
 
 Retrieve the properties and relationships of rangefill object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format/fill
-GET /workbook/worksheets(<id|name>)/range(<address>)/format/fill
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
+GET /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/fill
+GET /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/format/fill
+GET /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/format/fill
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [RangeFill](../resources/rangefill.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [rangeFill](../resources/rangefill.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -26,7 +26,7 @@ GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [RangeFill](../resources/rangefill.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [rangeFill](../resources/rangefill.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "get_rangefill"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/fill
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/fill
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -58,7 +58,7 @@ Content-length: 28
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get RangeFill",
+  "description": "Get rangeFill",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

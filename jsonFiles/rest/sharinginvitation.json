@@ -42,6 +42,20 @@
       "isUnicode": false
     },
     {
+      "name": "invitedBy",
+      "description": "",
+      "isKey": false,
+      "dataType": "identitySet",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "redeemedBy",
       "description": "",
       "isKey": false,

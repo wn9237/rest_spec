@@ -1,26 +1,27 @@
-# ChartTitle resource type
+# chartTitle resource type
 
-Represents a chart title object of a chart.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)	|Update ChartTitle object. |
+|[Get chartTitle](../api/charttitle_get.md) | [chartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
+|[Update](../api/charttitle_update.md) | [chartTitle](charttitle.md)	|Update chartTitle object. |
+|[Delete](../api/charttitle_delete.md) | None |Delete chartTitle object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Boolean value representing if the chart title will overlay the chart or not.|
-|text|string|Represents the title text of a chart.|
-|visible|boolean|A boolean value the represents the visibility of a chart title object.|
+|overlay|boolean||
+|text|string||
+|visible|boolean||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|Represents the formatting of a chart title, which includes fill and font formatting. Read-only.|
+|format|[chartTitleFormat](charttitleformat.md)| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -47,7 +48,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartTitle resource",
+  "description": "chartTitle resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

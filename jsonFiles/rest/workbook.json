@@ -1,0 +1,219 @@
+{
+  "name": "workbook",
+  "description": "",
+  "collectionOf": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "isOpenType": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": "",
+  "updateDescription": "",
+  "deleteDescription": "",
+  "restPath": {
+    "/groups/<id>/drive/items/<id>/workbook": true,
+    "/groups/<id>/drive/special/<id>/workbook": true,
+    "/groups/<id>/drive/root/workbook": true,
+    "/users/<id>/joinedGroups/<id>/drive/items/<id>/workbook": true,
+    "/users/<id>/joinedGroups/<id>/drive/special/<id>/workbook": true,
+    "/users/<id>/joinedGroups/<id>/drive/root/workbook": true,
+    "/users/<id>/drive/items/<id>/workbook": true,
+    "/users/<id>/drive/special/<id>/workbook": true,
+    "/users/<id>/drive/root/workbook": true,
+    "/users/<id>/trendingAround/<id>/workbook": true,
+    "/drives/<id>/items/<id>/workbook": true,
+    "/drives/<id>/special/<id>/workbook": true,
+    "/drives/<id>/root/workbook": true,
+    "/workbooks/<id>/workbook": true,
+    "/me/joinedGroups/<id>/drive/items/<id>/workbook": true,
+    "/me/joinedGroups/<id>/drive/special/<id>/workbook": true,
+    "/me/joinedGroups/<id>/drive/root/workbook": true,
+    "/me/drive/items/<id>/workbook": true,
+    "/me/drive/special/<id>/workbook": true,
+    "/me/drive/root/workbook": true,
+    "/me/trendingAround/<id>/workbook": true,
+    "/drive/items/<id>/workbook": true,
+    "/drive/special/<id>/workbook": true,
+    "/drive/root/workbook": true
+  },
+  "properties": [
+    {
+      "name": "application",
+      "description": "",
+      "isKey": false,
+      "dataType": "excelApplication",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "bindings",
+      "description": "",
+      "isKey": false,
+      "dataType": "binding",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "names",
+      "description": "",
+      "isKey": false,
+      "dataType": "namedItem",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "tables",
+      "description": "",
+      "isKey": false,
+      "dataType": "table",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "worksheets",
+      "description": "",
+      "isKey": false,
+      "dataType": "worksheet",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "functions",
+      "description": "",
+      "isKey": false,
+      "dataType": "functions",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "createSession",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "sessionInfo",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "persistChanges",
+          "description": "",
+          "dataType": "boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "closeSession",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "processQuery",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "stream",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "description": "",
+          "dataType": "stream",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    }
+  ]
+}

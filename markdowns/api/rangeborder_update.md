@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/borders(<sideIndex>)
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/borders(<sideIndex>)
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders(<sideIndex>)
+PATCH /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/borders/<id>
+PATCH /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/format/borders/<id>
+PATCH /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/format/borders/<id>
 ```
 ### Optional request headers
 | Name       | Description|
@@ -21,12 +21,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|color|string|HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").|
-|style|string|One of the constants of line style specifying the line style for the border. Possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
-|weight|string|Specifies the weight of the border around a range. Possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.|
+|color|string||
+|sideIndex|string||
+|style|string||
+|weight|string||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [RangeBorder](../resources/rangeborder.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [rangeBorder](../resources/rangeborder.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -35,15 +36,14 @@ Here is an example of the request.
   "name": "update_rangeborder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/borders(<sideIndex>)
+PATCH https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/borders/<id>
 Content-type: application/json
-Content-length: 136
+Content-length: 116
 
 {
-  "id": "id-value",
   "color": "color-value",
-  "style": "style-value",
   "sideIndex": "sideIndex-value",
+  "style": "style-value",
   "weight": "weight-value"
 }
 ```
@@ -60,10 +60,10 @@ Content-type: application/json
 Content-length: 136
 
 {
-  "id": "id-value",
   "color": "color-value",
-  "style": "style-value",
+  "id": "id-value",
   "sideIndex": "sideIndex-value",
+  "style": "style-value",
   "weight": "weight-value"
 }
 ```

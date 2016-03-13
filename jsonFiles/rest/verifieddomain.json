@@ -1,6 +1,6 @@
 {
   "name": "verifiedDomain",
-  "description": "Specifies a domain for a tenant. The **verifiedDomains** property of the [TenantDetail] entity is a collection of **VerifiedDomain**.\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "capabilities",
-      "description": "For example, “Email”, “OfficeCommunicationsOnline”.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "name",
-      "description": "The domain name; for example, “contoso.onmicrosoft.com”",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -85,7 +85,7 @@
     },
     {
       "name": "type",
-      "description": "For example, “Managed”.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,

@@ -1,6 +1,6 @@
 {
   "name": "responseStatus",
-  "description": "The response status of a meeting request.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "response",
-      "description": "The response type: None = 0, Organizer = 1, TentativelyAccepted = 2, Accepted = 3, Declined = 4, NotResponded = 5.",
+      "description": "",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "time",
-      "description": "<!--Need description! -->",
+      "description": "",
       "isKey": false,
       "dataType": "dateTimeOffset",
       "isReadOnly": false,

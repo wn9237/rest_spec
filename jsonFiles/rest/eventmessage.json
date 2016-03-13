@@ -1,6 +1,6 @@
 {
   "name": "eventMessage",
-  "description": "A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -27,6 +27,104 @@
   "restPath": {
   },
   "properties": [
+    {
+      "name": "meetingMessageType",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": "meetingMessageType",
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "startDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "dateTimeTimeZone",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "endDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "dateTimeTimeZone",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "location",
+      "description": "",
+      "isKey": false,
+      "dataType": "location",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "type",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": "eventType",
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "recurrence",
+      "description": "",
+      "isKey": false,
+      "dataType": "patternedRecurrence",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "isOutOfDate",
+      "description": "",
+      "isKey": false,
+      "dataType": "boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
     {
       "name": "receivedDateTime",
       "description": "",
@@ -68,6 +166,20 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
+    },
+    {
+      "name": "internetMessageId",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
     },
     {
       "name": "subject",
@@ -238,6 +350,20 @@
       "isUnicode": false
     },
     {
+      "name": "conversationIndex",
+      "description": "",
+      "isKey": false,
+      "dataType": "binary",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "uniqueBody",
       "description": "",
       "isKey": false,
@@ -336,6 +462,48 @@
       "isUnicode": null
     },
     {
+      "name": "unsubscribeData",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "unsubscribeEnabled",
+      "description": "",
+      "isKey": false,
+      "dataType": "boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "flag",
+      "description": "",
+      "isKey": false,
+      "dataType": "followupFlag",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "createdDateTime",
       "description": "",
       "isKey": false,
@@ -406,20 +574,6 @@
       "isUnicode": false
     },
     {
-      "name": "meetingMessageType",
-      "description": " The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 ",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": "meetingMessageType",
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
       "name": "extensions",
       "description": "",
       "isKey": false,
@@ -448,8 +602,36 @@
       "isUnicode": null
     },
     {
+      "name": "singleValueExtendedProperties",
+      "description": "",
+      "isKey": false,
+      "dataType": "singleValueLegacyExtendedProperty",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "multiValueExtendedProperties",
+      "description": "",
+      "isKey": false,
+      "dataType": "multiValueLegacyExtendedProperty",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
       "name": "event",
-      "description": " The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property. ",
+      "description": "",
       "isKey": false,
       "dataType": "event",
       "isReadOnly": true,
@@ -458,7 +640,7 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     }
   ],
@@ -538,7 +720,26 @@
 
       ],
       "parameters": [
-
+        {
+          "name": "message",
+          "description": "",
+          "dataType": "message",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
       ]
     },
     {
@@ -558,7 +759,26 @@
 
       ],
       "parameters": [
-
+        {
+          "name": "message",
+          "description": "",
+          "dataType": "message",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
       ]
     },
     {
@@ -578,7 +798,36 @@
 
       ],
       "parameters": [
-
+        {
+          "name": "message",
+          "description": "",
+          "dataType": "message",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "comment",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "toRecipients",
+          "description": "",
+          "dataType": "recipient",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
       ]
     },
     {
@@ -598,6 +847,16 @@
 
       ],
       "parameters": [
+        {
+          "name": "message",
+          "description": "",
+          "dataType": "message",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
         {
           "name": "comment",
           "description": "",
@@ -628,6 +887,16 @@
       ],
       "parameters": [
         {
+          "name": "message",
+          "description": "",
+          "dataType": "message",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
           "name": "comment",
           "description": "",
           "dataType": "string",
@@ -657,6 +926,16 @@
       ],
       "parameters": [
         {
+          "name": "message",
+          "description": "",
+          "dataType": "message",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
           "name": "comment",
           "description": "",
           "dataType": "string",
@@ -680,6 +959,26 @@
     },
     {
       "name": "send",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "unsubscribe",
       "displayName": "",
       "description": "",
       "prerequisites": "",

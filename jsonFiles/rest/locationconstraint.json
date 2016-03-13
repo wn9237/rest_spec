@@ -59,7 +59,7 @@
       "name": "locations",
       "description": "",
       "isKey": false,
-      "dataType": "location",
+      "dataType": "locationConstraintItem",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": true,

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/line
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
+PATCH /drive/root/workbook/worksheets/<id>/charts/<id>/series/format/line
+PATCH /me/drive/root/workbook/worksheets/<id>/charts/<id>/series/format/line
+PATCH /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/series/format/line
 ```
 ### Optional request headers
 | Name       | Description|
@@ -21,10 +21,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|color|string|HTML color code representing the color of lines in the chart.|
+|color|string||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [ChartLineFormat](../resources/chartlineformat.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [chartLineFormat](../resources/chartlineformat.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_chartlineformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line
+PATCH https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/series/format/line
 Content-type: application/json
 Content-length: 28
 

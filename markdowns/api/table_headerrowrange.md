@@ -1,14 +1,14 @@
-# Table: HeaderRowRange
+# table: headerRowRange
 
-Gets the range object associated with header row of the table.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/HeaderRowRange
-POST /workbook/bindings(<id>)/table/HeaderRowRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/HeaderRowRange
+POST /drive/root/workbook/tables/<id>/headerRowRange
+POST /me/drive/root/workbook/tables/<id>/headerRowRange
+POST /workbooks/<id>/workbook/tables/<id>/headerRowRange
 
 ```
 ### Request headers
@@ -20,7 +20,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/HeaderRowRange
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "table_headerrowrange"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/HeaderRowRange
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/headerRowRange
 ```
 
 ##### Response
@@ -44,15 +44,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
 
@@ -60,7 +60,7 @@ Content-length: 169
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Table: HeaderRowRange",
+  "description": "table: headerRowRange",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

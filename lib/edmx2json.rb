@@ -17,28 +17,29 @@ module SpecMaker
 	end
 	schema = csdl[:Edmx][:DataServices][:Schema]
 
+	## Comment the Jeff's code below as it doesn't apply anymore 
 	CSDL_SUPPLIMENTAL = CSDL_FILE + '_suppliment'
-	if File.exists?(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml')
-		supplimentalXml=File.read(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml', :encoding => 'UTF-8')
+	# if File.exists?(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml')
+	# 	supplimentalXml=File.read(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml', :encoding => 'UTF-8')
 	
-		# Convert to JSON format. 
-		supplimentalJson=JSON.parse(Hash.from_xml(supplimentalXml).to_json, {:symbolize_names => true}) 
-		File.open(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.json', "w") do |f|
-			f.write(JSON.pretty_generate supplimentalJson, :encoding => 'UTF-8')
-		end
+	# 	# Convert to JSON format. 
+	# 	supplimentalJson=JSON.parse(Hash.from_xml(supplimentalXml).to_json, {:symbolize_names => true}) 
+	# 	File.open(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.json', "w") do |f|
+	# 		f.write(JSON.pretty_generate supplimentalJson, :encoding => 'UTF-8')
+	# 	end
 
-		supplimentalSchema = supplimentalJson[:Edmx][:DataServices][:Schema]
-		supplimentalSchema[:Annotations].each do |annotations|
-			target = get_type(annotations[:Target]).downcase
+	# 	supplimentalSchema = supplimentalJson[:Edmx][:DataServices][:Schema]
+	# 	supplimentalSchema[:Annotations].each do |annotations|
+	# 		target = get_type(annotations[:Target]).downcase
 	
-			#puts "-> Processing Annotation #{target}"
-			# puts item[:Annotation].length
-			# puts item[:Annotation]
+	# 		#puts "-> Processing Annotation #{target}"
+	# 		# puts item[:Annotation].length
+	# 		# puts item[:Annotation]
 			
-			parse_annotations(target, annotations[:Annotation])
-			@iann = @iann + 1
-		end
-	end
+	# 		parse_annotations(target, annotations[:Annotation])
+	# 		@iann = @iann + 1
+	# 	end
+	# end
 
 	puts "Staring..."
 

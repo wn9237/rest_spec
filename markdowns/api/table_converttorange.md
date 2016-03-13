@@ -1,14 +1,14 @@
-# Table: convertToRange
+# table: convertToRange
 
-Converts the table into a normal range of cells. All data is preserved.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/convertToRange
-POST /workbook/bindings(<id>)/table/convertToRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/convertToRange
+POST /drive/root/workbook/tables/<id>/convertToRange
+POST /me/drive/root/workbook/tables/<id>/convertToRange
+POST /workbooks/<id>/workbook/tables/<id>/convertToRange
 
 ```
 ### Request headers
@@ -20,7 +20,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/convertToRange
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "table_converttorange"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/convertToRange
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/convertToRange
 ```
 
 ##### Response
@@ -44,15 +44,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
 
@@ -60,7 +60,7 @@ Content-length: 169
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Table: convertToRange",
+  "description": "table: convertToRange",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

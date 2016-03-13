@@ -1,26 +1,32 @@
-# TableRow resource type
+# tableRow resource type
 
-Represents a row in a table.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableRow](../api/tablerow_get.md) | [TableRow](tablerow.md) |Read properties and relationships of tableRow object.|
-|[Update](../api/tablerow_update.md) | [TableRow](tablerow.md)	|Update TableRow object. |
-|[Range](../api/tablerow_range.md)|[Range](range.md)|Returns the range object associated with the entire row.|
-|[Delete](../api/tablerow_delete.md)|None|Deletes the row from the table.|
+|[Get tableRow](../api/tablerow_get.md) | [tableRow](tablerow.md) |Read properties and relationships of tableRow object.|
+|[Create range](../api/tablerow_post_rangefunctionreturnset.md) |[range](range.md)| Create a new range by posting to the rangeFunctionReturnSet collection.|
+|[List rangeFunctionReturnSet](../api/tablerow_list_rangefunctionreturnset.md) |[range](range.md) collection| Get a range object collection.|
+|[Update](../api/tablerow_update.md) | [tableRow](tablerow.md)	|Update tableRow object. |
+|[Delete](../api/tablerow_delete.md) | None |Delete tableRow object. |
+|[Add](../api/tablerow_add.md)|[tableRow](tablerow.md)||
+|[Count](../api/tablerow_count.md)|int32||
+|[Itemat](../api/tablerow_itemat.md)|[tableRow](tablerow.md)||
+|[Range](../api/tablerow_range.md)|[range](range.md)||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|int|Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.|
-|values|json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|index|int32||
+|values|json||
 
 ### Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|rangeFunctionReturnSet|[range](range.md) collection| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -46,7 +52,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TableRow resource",
+  "description": "tableRow resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

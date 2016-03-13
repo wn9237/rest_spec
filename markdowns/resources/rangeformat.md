@@ -1,35 +1,36 @@
-# RangeFormat resource type
+# rangeFormat resource type
 
-A format object encapsulating the range's font, fill, borders, alignment, and other properties.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFormat](../api/rangeformat_get.md) | [RangeFormat](rangeformat.md) |Read properties and relationships of rangeFormat object.|
-|[Create RangeBorder](../api/rangeformat_post_borders.md) |[RangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
-|[List borders](../api/rangeformat_list_borders.md) |[RangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
-|[Update](../api/rangeformat_update.md) | [RangeFormat](rangeformat.md)	|Update RangeFormat object. |
-|[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
-|[Autofitrows](../api/rangeformat_autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
+|[Get rangeFormat](../api/rangeformat_get.md) | [rangeFormat](rangeformat.md) |Read properties and relationships of rangeFormat object.|
+|[Create rangeBorder](../api/rangeformat_post_borders.md) |[rangeBorder](rangeborder.md)| Create a new rangeBorder by posting to the borders collection.|
+|[List borders](../api/rangeformat_list_borders.md) |[rangeBorder](rangeborder.md) collection| Get a rangeBorder object collection.|
+|[Update](../api/rangeformat_update.md) | [rangeFormat](rangeformat.md)	|Update rangeFormat object. |
+|[Delete](../api/rangeformat_delete.md) | None |Delete rangeFormat object. |
+|[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|None||
+|[Autofitrows](../api/rangeformat_autofitrows.md)|None||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|columnWidth|double|Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.|
-|horizontalAlignment|string|Represents the horizontal alignment for the specified object. Possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
-|rowHeight|double|Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.|
-|verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
-|wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
+|columnWidth|double||
+|horizontalAlignment|string||
+|rowHeight|double||
+|verticalAlignment|string||
+|wrapText|boolean||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|borders|[RangeBorder](rangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
-|fill|[RangeFill](rangefill.md)|Returns the fill object defined on the overall range. Read-only.|
-|font|[RangeFont](rangefont.md)|Returns the font object defined on the overall range selected Read-only.|
-|protection|[FormatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
+|borders|[rangeBorder](rangeborder.md) collection| Read-only. Nullable.|
+|fill|[rangeFill](rangefill.md)| Read-only. Nullable.|
+|font|[rangeFont](rangefont.md)| Read-only. Nullable.|
+|protection|[formatProtection](formatprotection.md)| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -58,7 +59,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "RangeFormat resource",
+  "description": "rangeFormat resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,6 +1,6 @@
 {
   "name": "emailAddress",
-  "description": "The name and email address of a contact or message recipient.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "name",
-      "description": "The display name of the person or entity.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "address",
-      "description": "The email address of the person or entity.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,

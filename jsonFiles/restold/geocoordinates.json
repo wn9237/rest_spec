@@ -1,6 +1,6 @@
 {
   "name": "geoCoordinates",
-  "description": "The geographic coordinates and elevation of the location.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "altitude",
-      "description": "The altitude of the location.",
+      "description": "",
       "isKey": false,
       "dataType": "double",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "latitude",
-      "description": "The latitude of the location.",
+      "description": "",
       "isKey": false,
       "dataType": "double",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "longitude",
-      "description": "The longitude of the location.",
+      "description": "",
       "isKey": false,
       "dataType": "double",
       "isReadOnly": false,

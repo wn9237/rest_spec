@@ -1,24 +1,25 @@
-# RangeFont resource type
+# rangeFont resource type
 
-This object represents the font attributes (font name, font size, color, etc.) for an object.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
-|[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)	|Update RangeFont object. |
+|[Get rangeFont](../api/rangefont_get.md) | [rangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
+|[Update](../api/rangefont_update.md) | [rangeFont](rangefont.md)	|Update rangeFont object. |
+|[Delete](../api/rangefont_delete.md) | None |Delete rangeFont object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Represents the bold status of font.|
-|color|string|HTML color code representation of the text color. E.g. #FF0000 represents Red.|
-|italic|boolean|Represents the italic status of the font.|
-|name|string|Font name (e.g. "Calibri")|
-|size|double|Font size.|
-|underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|bold|boolean||
+|color|string||
+|italic|boolean||
+|name|string||
+|size|double||
+|underline|string||
 
 ### Relationships
 None
@@ -52,7 +53,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "RangeFont resource",
+  "description": "rangeFont resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

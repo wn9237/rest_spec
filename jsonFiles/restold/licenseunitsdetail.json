@@ -1,6 +1,6 @@
 {
   "name": "licenseUnitsDetail",
-  "description": "The **prepaidUnits** property of the [SubscribedSku] entity is of type **LicenseUnitsDetail**.\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "enabled",
-      "description": "            ",
+      "description": "",
       "isKey": false,
       "dataType": "int32",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "suspended",
-      "description": "            ",
+      "description": "",
       "isKey": false,
       "dataType": "int32",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "warning",
-      "description": "            ",
+      "description": "",
       "isKey": false,
       "dataType": "int32",
       "isReadOnly": false,

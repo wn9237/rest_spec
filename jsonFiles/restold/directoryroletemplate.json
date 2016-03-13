@@ -1,6 +1,6 @@
 {
   "name": "directoryRoleTemplate",
-  "description": "Represents a directory role template. A directory role template specifies the property values of a directory role ([DirectoryRole]). There is an associated directory role template object for each of the directory roles that may be activated in a tenant. \r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -30,7 +30,7 @@
   "properties": [
     {
       "name": "description",
-      "description": "The description to set for the directory role.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -44,7 +44,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name to set for the directory role.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,

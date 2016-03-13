@@ -1,14 +1,14 @@
-# Table: clearFilters
+# table: clearFilters
 
-Clears all the filters currently applied on the table.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/clearFilters
-POST /workbook/bindings(<id>)/table/clearFilters
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/clearFilters
+POST /drive/root/workbook/tables/<id>/clearFilters
+POST /me/drive/root/workbook/tables/<id>/clearFilters
+POST /workbooks/<id>/workbook/tables/<id>/clearFilters
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "table_clearfilters"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/clearFilters
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/clearFilters
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Table: clearFilters",
+  "description": "table: clearFilters",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

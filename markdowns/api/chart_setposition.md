@@ -1,12 +1,14 @@
-# Chart: setPosition
+# chart: setPosition
 
-Positions the chart relative to cells on the worksheet.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/setPosition
+POST /drive/root/workbook/worksheets/<id>/charts/<id>/setPosition
+POST /me/drive/root/workbook/worksheets/<id>/charts/<id>/setPosition
+POST /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/setPosition
 
 ```
 ### Request headers
@@ -20,8 +22,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startCell|string|The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
-|endCell|string|Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.|
+|startCell|json||
+|endCell|json||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -35,7 +37,7 @@ Here is an example of the request.
   "name": "chart_setposition"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/setPosition
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/setPosition
 Content-type: application/json
 Content-length: 66
 
@@ -60,7 +62,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Chart: setPosition",
+  "description": "chart: setPosition",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,12 +1,14 @@
-# Create Worksheet
+# Create worksheet
 
-Use this API to create a new Worksheet.
+Use this API to create a new worksheet.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets
+POST /drive/root/workbook/worksheets
+POST /me/drive/root/workbook/worksheets
+POST /workbooks/<id>/workbook/worksheets
 
 ```
 ### Request headers
@@ -16,11 +18,11 @@ POST /workbook/worksheets
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, supply a JSON representation of [Worksheet](../resources/worksheet.md) object.
+In the request body, supply a JSON representation of [worksheet](../resources/worksheet.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Worksheet](../resources/worksheet.md) object in the response body.
+If successful, this method returns `201, Created` response code and [worksheet](../resources/worksheet.md) object in the response body.
 
 ### Example
 ##### Request
@@ -30,18 +32,17 @@ Here is an example of the request.
   "name": "create_worksheet_from_workbook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets
 Content-type: application/json
-Content-length: 100
+Content-length: 80
 
 {
-  "id": "id-value",
-  "position": 99,
   "name": "name-value",
+  "position": 99,
   "visibility": "visibility-value"
 }
 ```
-In the request body, supply a JSON representation of [Worksheet](../resources/worksheet.md) object.
+In the request body, supply a JSON representation of [worksheet](../resources/worksheet.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -56,8 +57,8 @@ Content-length: 100
 
 {
   "id": "id-value",
-  "position": 99,
   "name": "name-value",
+  "position": 99,
   "visibility": "visibility-value"
 }
 ```
@@ -66,7 +67,7 @@ Content-length: 100
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Worksheet",
+  "description": "Create worksheet",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

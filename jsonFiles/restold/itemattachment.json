@@ -1,6 +1,6 @@
 {
   "name": "itemAttachment",
-  "description": "A message or event that's attached to another message or event.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,

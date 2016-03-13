@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)/rows(<index>)
-PATCH /workbook/bindings(<id>)/table/rows(<index>)
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)
+PATCH /drive/root/workbook/tables/<id>/rows
+PATCH /me/drive/root/workbook/tables/<id>/rows
+PATCH /workbooks/<id>/workbook/tables/<id>/rows
 ```
 ### Optional request headers
 | Name       | Description|
@@ -21,10 +21,11 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|values|json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|index|int32||
+|values|json||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [tableRow](../resources/tablerow.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -33,7 +34,7 @@ Here is an example of the request.
   "name": "update_tablerow"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/tables(<id|name>)/rows(<index>)
+PATCH https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rows
 Content-type: application/json
 Content-length: 45
 

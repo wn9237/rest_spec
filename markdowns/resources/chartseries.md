@@ -1,27 +1,30 @@
-# ChartSeries resource type
+# chartSeries resource type
 
-Represents a series in a chart.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries_get.md) | [ChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
-|[Create ChartPoints](../api/chartseries_post_points.md) |[ChartPoints](chartpoints.md)| Create a new ChartPoints by posting to the points collection.|
-|[List points](../api/chartseries_list_points.md) |[ChartPoints](chartpoints.md) collection| Get a ChartPoints object collection.|
-|[Update](../api/chartseries_update.md) | [ChartSeries](chartseries.md)	|Update ChartSeries object. |
+|[Get chartSeries](../api/chartseries_get.md) | [chartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
+|[Create chartPoint](../api/chartseries_post_points.md) |[chartPoint](chartpoint.md)| Create a new chartPoint by posting to the points collection.|
+|[List points](../api/chartseries_list_points.md) |[chartPoint](chartpoint.md) collection| Get a chartPoint object collection.|
+|[Update](../api/chartseries_update.md) | [chartSeries](chartseries.md)	|Update chartSeries object. |
+|[Delete](../api/chartseries_delete.md) | None |Delete chartSeries object. |
+|[Count](../api/chartseries_count.md)|int32||
+|[Itemat](../api/chartseries_itemat.md)|[chartSeries](chartseries.md)||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|string|Represents the name of a series in a chart.|
+|name|string||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
-|points|[ChartPoints](chartpoints.md) collection|Represents a collection of all points in the series. Read-only.|
+|format|[chartSeriesFormat](chartseriesformat.md)| Read-only. Nullable.|
+|points|[chartPoint](chartpoint.md) collection| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -46,7 +49,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartSeries resource",
+  "description": "chartSeries resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

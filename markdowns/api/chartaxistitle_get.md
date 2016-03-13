@@ -1,4 +1,4 @@
-# Get ChartAxisTitle
+# Get chartAxisTitle
 
 Retrieve the properties and relationships of chartaxistitle object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/title
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/title
+GET /drive/root/workbook/worksheets/<id>/charts/<id>/axes/valueAxis/title
+GET /drive/root/workbook/worksheets/<id>/charts/<id>/axes/seriesAxis/title
+GET /drive/root/workbook/worksheets/<id>/charts/<id>/axes/categoryAxis/title
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [ChartAxisTitle](../resources/chartaxistitle.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [chartAxisTitle](../resources/chartaxistitle.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -26,7 +26,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/title
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [ChartAxisTitle](../resources/chartaxistitle.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [chartAxisTitle](../resources/chartaxistitle.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "get_chartaxistitle"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/axes/valueAxis/title
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -59,7 +59,7 @@ Content-length: 45
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get ChartAxisTitle",
+  "description": "Get chartAxisTitle",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

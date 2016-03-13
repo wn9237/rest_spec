@@ -1,12 +1,14 @@
-# WorksheetProtection: unprotect
+# worksheetProtection: unprotect
 
-Unprotect a worksheet
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/protection/unprotect
+POST /drive/root/workbook/worksheets/<id>/protection/unprotect
+POST /me/drive/root/workbook/worksheets/<id>/protection/unprotect
+POST /workbooks/<id>/workbook/worksheets/<id>/protection/unprotect
 
 ```
 ### Request headers
@@ -20,7 +22,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|password|string|Optional. sheet protection password.|
+|password|string||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -34,7 +36,7 @@ Here is an example of the request.
   "name": "worksheetprotection_unprotect"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/protection/unprotect
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/protection/unprotect
 Content-type: application/json
 Content-length: 34
 
@@ -58,7 +60,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "WorksheetProtection: unprotect",
+  "description": "worksheetProtection: unprotect",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

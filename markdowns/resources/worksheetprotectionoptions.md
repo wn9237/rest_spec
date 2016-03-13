@@ -1,33 +1,22 @@
-# WorksheetProtectionOptions resource type
-
-Represents the options in sheet protection.
+# worksheetProtectionOptions resource type
 
 
-### Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get WorksheetProtectionOptions](../api/worksheetprotectionoptions_get.md) | [WorksheetProtectionOptions](worksheetprotectionoptions.md) |Read properties and relationships of worksheetProtectionOptions object.|
-|[Update](../api/worksheetprotectionoptions_update.md) | [WorksheetProtectionOptions](worksheetprotectionoptions.md)	|Update WorksheetProtectionOptions object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowAutoFilter|boolean|Represents the worksheet protection option of allowing using auto filter feature.|
-|allowDeleteColumns|boolean|Represents the worksheet protection option of allowing deleting columns.|
-|allowDeleteRows|boolean|Represents the worksheet protection option of allowing deleting rows.|
-|allowFormatCells|boolean|Represents the worksheet protection option of allowing formatting cells.|
-|allowFormatColumns|boolean|Represents the worksheet protection option of allowing formatting columns.|
-|allowFormatRows|boolean|Represents the worksheet protection option of allowing formatting rows.|
-|allowInsertColumns|boolean|Represents the worksheet protection option of allowing inserting columns.|
-|allowInsertHyperlinks|boolean|Represents the worksheet protection option of allowing inserting hyperlinks.|
-|allowInsertRows|boolean|Represents the worksheet protection option of allowing inserting rows.|
-|allowPivotTables|boolean|Represents the worksheet protection option of allowing using pivot table feature.|
-|allowSort|boolean|Represents the worksheet protection option of allowing using sort feature.|
-
-### Relationships
-None
-
+|allowAutoFilter|boolean||
+|allowDeleteColumns|boolean||
+|allowDeleteRows|boolean||
+|allowFormatCells|boolean||
+|allowFormatColumns|boolean||
+|allowFormatRows|boolean||
+|allowInsertColumns|boolean||
+|allowInsertHyperlinks|boolean||
+|allowInsertRows|boolean||
+|allowPivotTables|boolean||
+|allowSort|boolean||
 
 ### JSON representation
 
@@ -62,7 +51,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "WorksheetProtectionOptions resource",
+  "description": "worksheetProtectionOptions resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

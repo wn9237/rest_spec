@@ -33,12 +33,21 @@ module SpecMaker
 		if oldh[:properties].length > 0
 			oldp = oldh[:properties].map{ |item| camelcase item[:name] }
 			oldp_array = oldh[:properties].to_a
+			oldp_array.each do |item|
+				item.tap { |h| h.delete (:isNullable)}
+			end			
+			#oldp_array = oldp_array.tap { |item| item.delete(:isNullable) }
+
 		end
 
 
 		if newh[:properties].length > 0
 			newp = newh[:properties].map{ |item| camelcase item[:name] }
 			newp_array = newh[:properties].to_a
+			newp_array = newp_array.tap { |item| item.delete(:isNullable) }			
+			newp_array.each do |item|
+				item.tap { |h| h.delete (:isNullable)}
+			end						
 		end
 
 		@diff[@key][:deletedproperties] = oldp - newp

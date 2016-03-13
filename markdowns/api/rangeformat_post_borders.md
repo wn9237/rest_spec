@@ -1,14 +1,14 @@
-# Create RangeBorder
+# Create rangeBorder
 
-Use this API to create a new RangeBorder.
+Use this API to create a new rangeBorder.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/borders
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/borders
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/borders
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/format/borders
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/format/borders
 
 ```
 ### Request headers
@@ -18,11 +18,11 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.
+In the request body, supply a JSON representation of [rangeBorder](../resources/rangeborder.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
+If successful, this method returns `201, Created` response code and [rangeBorder](../resources/rangeborder.md) object in the response body.
 
 ### Example
 ##### Request
@@ -32,19 +32,18 @@ Here is an example of the request.
   "name": "create_rangeborder_from_rangeformat"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/borders
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/borders
 Content-type: application/json
-Content-length: 136
+Content-length: 116
 
 {
-  "id": "id-value",
   "color": "color-value",
-  "style": "style-value",
   "sideIndex": "sideIndex-value",
+  "style": "style-value",
   "weight": "weight-value"
 }
 ```
-In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.
+In the request body, supply a JSON representation of [rangeBorder](../resources/rangeborder.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -58,10 +57,10 @@ Content-type: application/json
 Content-length: 136
 
 {
-  "id": "id-value",
   "color": "color-value",
-  "style": "style-value",
+  "id": "id-value",
   "sideIndex": "sideIndex-value",
+  "style": "style-value",
   "weight": "weight-value"
 }
 ```
@@ -70,7 +69,7 @@ Content-length: 136
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create RangeBorder",
+  "description": "Create rangeBorder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

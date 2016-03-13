@@ -1,20 +1,21 @@
-# RangeFill resource type
+# rangeFill resource type
 
-Represents the background of a range object.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
-|[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)	|Update RangeFill object. |
-|[Clear](../api/rangefill_clear.md)|None|Resets the range background.|
+|[Get rangeFill](../api/rangefill_get.md) | [rangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
+|[Update](../api/rangefill_update.md) | [rangeFill](rangefill.md)	|Update rangeFill object. |
+|[Delete](../api/rangefill_delete.md) | None |Delete rangeFill object. |
+|[Clear](../api/rangefill_clear.md)|None||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|color|string|HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")|
+|color|string||
 
 ### Relationships
 None
@@ -43,7 +44,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "RangeFill resource",
+  "description": "rangeFill resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

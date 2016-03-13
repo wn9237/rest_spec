@@ -1,20 +1,21 @@
-# FormatProtection resource type
+# formatProtection resource type
 
-Represents the format protection of a range object.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get FormatProtection](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)	|Update FormatProtection object. |
+|[Get formatProtection](../api/formatprotection_get.md) | [formatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
+|[Update](../api/formatprotection_update.md) | [formatProtection](formatprotection.md)	|Update formatProtection object. |
+|[Delete](../api/formatprotection_delete.md) | None |Delete formatProtection object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.|
-|locked|boolean|Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
+|formulaHidden|boolean||
+|locked|boolean||
 
 ### Relationships
 None
@@ -44,7 +45,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "FormatProtection resource",
+  "description": "formatProtection resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

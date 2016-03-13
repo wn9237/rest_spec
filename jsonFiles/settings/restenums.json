@@ -1,4 +1,38 @@
 {
+  "automaticRepliesStatus": {
+    "isExclusive": true,
+    "options": {
+      "disabled": {
+        "value": "0",
+        "description": ""
+      },
+      "alwaysEnabled": {
+        "value": "1",
+        "description": ""
+      },
+      "scheduled": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "externalAudienceScope": {
+    "isExclusive": true,
+    "options": {
+      "none": {
+        "value": "0",
+        "description": ""
+      },
+      "contactsOnly": {
+        "value": "1",
+        "description": ""
+      },
+      "all": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
   "attendeeType": {
     "isExclusive": true,
     "options": {
@@ -41,6 +75,27 @@
       },
       "unknown": {
         "value": "-1",
+        "description": ""
+      }
+    }
+  },
+  "physicalAddressType": {
+    "isExclusive": true,
+    "options": {
+      "unknown": {
+        "value": "0",
+        "description": ""
+      },
+      "home": {
+        "value": "1",
+        "description": ""
+      },
+      "business": {
+        "value": "2",
+        "description": ""
+      },
+      "other": {
+        "value": "3",
         "description": ""
       }
     }
@@ -101,6 +156,23 @@
       },
       "other": {
         "value": "1",
+        "description": ""
+      }
+    }
+  },
+  "followupFlagStatus": {
+    "isExclusive": true,
+    "options": {
+      "notFlagged": {
+        "value": "0",
+        "description": ""
+      },
+      "complete": {
+        "value": "1",
+        "description": ""
+      },
+      "flagged": {
+        "value": "2",
         "description": ""
       }
     }
@@ -348,12 +420,50 @@
         "value": "3",
         "description": ""
       },
-      "meetingTenativelyAccepted": {
+      "meetingTentativelyAccepted": {
         "value": "4",
         "description": ""
       },
       "meetingDeclined": {
         "value": "5",
+        "description": ""
+      }
+    }
+  },
+  "referenceAttachmentProvider": {
+    "isExclusive": true,
+    "options": {
+      "other": {
+        "value": "0",
+        "description": ""
+      },
+      "oneDriveBusiness": {
+        "value": "1",
+        "description": ""
+      },
+      "oneDriveConsumer": {
+        "value": "2",
+        "description": ""
+      },
+      "dropbox": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "referenceAttachmentPermission": {
+    "isExclusive": true,
+    "options": {
+      "other": {
+        "value": "0",
+        "description": ""
+      },
+      "view": {
+        "value": "1",
+        "description": ""
+      },
+      "edit": {
+        "value": "2",
         "description": ""
       }
     }
@@ -375,6 +485,96 @@
       },
       "public": {
         "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "phoneType": {
+    "isExclusive": true,
+    "options": {
+      "unknown": {
+        "value": "0",
+        "description": ""
+      },
+      "home": {
+        "value": "1",
+        "description": ""
+      },
+      "business": {
+        "value": "2",
+        "description": ""
+      },
+      "mobile": {
+        "value": "3",
+        "description": ""
+      },
+      "other": {
+        "value": "4",
+        "description": ""
+      },
+      "assistant": {
+        "value": "5",
+        "description": ""
+      },
+      "callback": {
+        "value": "6",
+        "description": ""
+      },
+      "car": {
+        "value": "7",
+        "description": ""
+      },
+      "homeFax": {
+        "value": "8",
+        "description": ""
+      },
+      "businessFax": {
+        "value": "9",
+        "description": ""
+      },
+      "otherFax": {
+        "value": "10",
+        "description": ""
+      },
+      "pager": {
+        "value": "11",
+        "description": ""
+      },
+      "primary": {
+        "value": "12",
+        "description": ""
+      },
+      "radio": {
+        "value": "13",
+        "description": ""
+      },
+      "telex": {
+        "value": "14",
+        "description": ""
+      },
+      "ttyTdd": {
+        "value": "15",
+        "description": ""
+      },
+      "organizationMain": {
+        "value": "16",
+        "description": ""
+      }
+    }
+  },
+  "webSiteType": {
+    "isExclusive": true,
+    "options": {
+      "unknown": {
+        "value": "0",
+        "description": ""
+      },
+      "personalHomePage": {
+        "value": "1",
+        "description": ""
+      },
+      "businessHomePage": {
+        "value": "2",
         "description": ""
       }
     }

@@ -1,25 +1,27 @@
-# WorksheetProtection resource type
+# worksheetProtection resource type
 
-Represents the protection of a sheet object.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection_get.md) | [WorksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
-|[Protect](../api/worksheetprotection_protect.md)|None|Protect a worksheet. It throws if the worksheet has been protected.|
-|[Unprotect](../api/worksheetprotection_unprotect.md)|None|Unprotect a worksheet|
+|[Get worksheetProtection](../api/worksheetprotection_get.md) | [worksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
+|[Update](../api/worksheetprotection_update.md) | [worksheetProtection](worksheetprotection.md)	|Update worksheetProtection object. |
+|[Delete](../api/worksheetprotection_delete.md) | None |Delete worksheetProtection object. |
+|[Protect](../api/worksheetprotection_protect.md)|None||
+|[Unprotect](../api/worksheetprotection_unprotect.md)|None||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|protected|boolean|Indicates if the worksheet is protected.  Read-only.|
+|options|[worksheetProtectionOptions](worksheetprotectionoptions.md)||
+|protected|boolean||
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
+None
+
 
 ### JSON representation
 
@@ -35,6 +37,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "options": {"@odata.type": "microsoft.graph.worksheetProtectionOptions"},
   "protected": true
 }
 
@@ -44,7 +47,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "WorksheetProtection resource",
+  "description": "worksheetProtection resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

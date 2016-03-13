@@ -1,27 +1,32 @@
-# NamedItem resource type
+# namedItem resource type
 
-Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, reference to a range. This object can be used to obtain range object associated with names.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get NamedItem](../api/nameditem_get.md) | [NamedItem](nameditem.md) |Read properties and relationships of namedItem object.|
-|[Update](../api/nameditem_update.md) | [NamedItem](nameditem.md)	|Update NamedItem object. |
-|[Range](../api/nameditem_range.md)|[Range](range.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.|
+|[Get namedItem](../api/nameditem_get.md) | [namedItem](nameditem.md) |Read properties and relationships of namedItem object.|
+|[Create range](../api/nameditem_post_rangefunctionreturnset.md) |[range](range.md)| Create a new range by posting to the rangeFunctionReturnSet collection.|
+|[List rangeFunctionReturnSet](../api/nameditem_list_rangefunctionreturnset.md) |[range](range.md) collection| Get a range object collection.|
+|[Update](../api/nameditem_update.md) | [namedItem](nameditem.md)	|Update namedItem object. |
+|[Delete](../api/nameditem_delete.md) | None |Delete namedItem object. |
+|[Range](../api/nameditem_range.md)|[range](range.md)||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|string|The name of the object. Read-only.|
-|type|string|Indicates what type of reference is associated with the name. Possible values are: `String`, `Integer`, `Double`, `Boolean`, `Range`. Read-only.|
-|value|[object](object.md)|Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.|
-|visible|boolean|Specifies whether the object is visible or not.|
+|_Id|string| Read-only.|
+|name|string||
+|type|string||
+|value|json||
+|visible|boolean||
 
 ### Relationships
-None
-
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|rangeFunctionReturnSet|[range](range.md) collection| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -37,9 +42,10 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "_Id": "string (identifier)",
   "name": "string",
   "type": "string",
-  "value": {"@odata.type": "microsoft.graph.object"},
+  "value": "json",
   "visible": true
 }
 
@@ -49,7 +55,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "NamedItem resource",
+  "description": "namedItem resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,14 +1,14 @@
-# Range: merge
+# range: merge
 
-Merge the range cells into one region in the worksheet.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/merge
-POST /workbook/worksheets(<id|name>)/range(<address>)/merge
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/merge
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/merge
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/merge
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/merge
 
 ```
 ### Request headers
@@ -22,7 +22,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|across|boolean|Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.|
+|across|boolean||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "range_merge"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/merge
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/merge
 Content-type: application/json
 Content-length: 20
 
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Range: merge",
+  "description": "range: merge",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,24 +1,25 @@
-# ChartGridlines resource type
+# chartGridlines resource type
 
-Represents major or minor gridlines on a chart axis.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartGridlines](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |Read properties and relationships of chartGridlines object.|
-|[Update](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)	|Update ChartGridlines object. |
+|[Get chartGridlines](../api/chartgridlines_get.md) | [chartGridlines](chartgridlines.md) |Read properties and relationships of chartGridlines object.|
+|[Update](../api/chartgridlines_update.md) | [chartGridlines](chartgridlines.md)	|Update chartGridlines object. |
+|[Delete](../api/chartgridlines_delete.md) | None |Delete chartGridlines object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|visible|boolean|Boolean value representing if the axis gridlines are visible or not.|
+|visible|boolean||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartGridlinesFormat](chartgridlinesformat.md)|Represents the formatting of chart gridlines. Read-only.|
+|format|[chartGridlinesFormat](chartgridlinesformat.md)| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -43,7 +44,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartGridlines resource",
+  "description": "chartGridlines resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,12 +1,13 @@
-# ChartAxisFormat resource type
+# chartAxisFormat resource type
 
-Encapsulates the format properties for the chart axis.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[Delete](../api/chartaxisformat_delete.md) | None |Delete chartAxisFormat object. |
 
 ### Properties
 None
@@ -14,14 +15,14 @@ None
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[ChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
-|line|[ChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
+|font|[chartFont](chartfont.md)| Read-only. Nullable.|
+|line|[chartLineFormat](chartlineformat.md)| Read-only. Nullable.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartAxisFormat resource",
+  "description": "chartAxisFormat resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

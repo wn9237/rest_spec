@@ -1,6 +1,6 @@
 {
   "name": "contactFolder",
-  "description": "A folder that contains contacts.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -57,7 +57,7 @@
   "properties": [
     {
       "name": "parentFolderId",
-      "description": "The ID of the folder's parent folder.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "displayName",
-      "description": "The folder's display name.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -85,7 +85,7 @@
     },
     {
       "name": "id",
-      "description": "Unique identifier of the contact folder.",
+      "description": "",
       "isKey": true,
       "dataType": "string",
       "isReadOnly": true,
@@ -99,7 +99,7 @@
     },
     {
       "name": "contacts",
-      "description": "The contacts in the folder. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "contact",
       "isReadOnly": true,
@@ -113,7 +113,7 @@
     },
     {
       "name": "childFolders",
-      "description": "The collection of child folders in the folder. Navigation property.",
+      "description": "",
       "isKey": false,
       "dataType": "contactFolder",
       "isReadOnly": true,

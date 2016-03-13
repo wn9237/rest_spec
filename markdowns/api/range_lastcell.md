@@ -1,14 +1,14 @@
-# Range: LastCell
+# range: lastCell
 
-Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/LastCell
-POST /workbook/worksheets(<id|name>)/range(<address>)/LastCell
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastCell
+POST /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/lastCell
+POST /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/lastCell
+POST /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/lastCell
 
 ```
 ### Request headers
@@ -20,7 +20,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastCell
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "range_lastcell"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/names(<name>)/range/LastCell
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/lastCell
 ```
 
 ##### Response
@@ -44,15 +44,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
 
@@ -60,7 +60,7 @@ Content-length: 169
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Range: LastCell",
+  "description": "range: lastCell",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

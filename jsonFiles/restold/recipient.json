@@ -1,6 +1,6 @@
 {
   "name": "recipient",
-  "description": "A sender or receiver for a message.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": true,
   "isEntitySet": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "emailAddress",
-      "description": "The recipient's email address.",
+      "description": "",
       "isKey": false,
       "dataType": "emailAddress",
       "isReadOnly": false,

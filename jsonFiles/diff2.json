@@ -1,110 +1,55 @@
 {
-  "addin": {
+  "automaticrepliessetting": {
     "isNew": true,
     "isUntouched": null
   },
-  "application": {
+  "binding": {
     "isNew": true,
     "isUntouched": null
   },
-  "appliedcategoriescollection": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "approle": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "approleassignment": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "attendee": {
-    "isNew": false,
-    "deletedproperties": [
-      "type"
-    ],
-    "newproperties": [
-
-    ],
-    "deletedproperties1": [
-      {
-        "name": "type",
-        "description": "The attendee type: Required = 0, Optional = 1, Resource = 2.",
-        "isKey": false,
-        "dataType": "String",
-        "isReadOnly": false,
-        "enumName": "attendeeType",
-        "isCollection": false,
-        "isRelationship": false,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": null,
-        "isUnicode": null
-      }
-    ],
-    "newproperties1": [
-
-    ],
-    "renames": {
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "attendeeavailability": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "attendeebase": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "bucket": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "checklistitem": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "checklistitemcollection": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "contact": {
+  "calendar": {
     "isNew": false,
     "deletedproperties": [
 
     ],
     "newproperties": [
-      "extensions"
+      "singleValueExtendedProperties",
+      "multiValueExtendedProperties"
     ],
     "deletedproperties1": [
 
     ],
     "newproperties1": [
       {
-        "name": "extensions",
+        "name": "singleValueExtendedProperties",
         "description": "",
         "isKey": false,
-        "dataType": "extension",
+        "dataType": "singleValueLegacyExtendedProperty",
         "isReadOnly": true,
         "enumName": null,
         "isCollection": true,
         "isRelationship": true,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "multiValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "multiValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
         "isUnicode": null
       }
     ],
     "renames": {
-      "558": "extensions"
+      "969": "singleValueExtendedProperties",
+      "694": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -114,15 +59,365 @@
     ],
     "isUntouched": false
   },
-  "copystatusmodel": {
+  "chart": {
     "isNew": true,
     "isUntouched": null
   },
-  "diagnostic": {
+  "chartareaformat": {
     "isNew": true,
     "isUntouched": null
   },
-  "email": {
+  "chartaxes": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartaxis": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartaxisformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartaxistitle": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartaxistitleformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartdatalabelformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartdatalabels": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartfill": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartfont": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartgridlines": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartgridlinesformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartlegend": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartlegendformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartlineformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartpoint": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartpointformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartseries": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "chartseriesformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "charttitle": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "charttitleformat": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "contact": {
+    "isNew": false,
+    "deletedproperties": [
+      "mobilePhone1"
+    ],
+    "newproperties": [
+      "mobilePhone",
+      "flag",
+      "singleValueExtendedProperties",
+      "multiValueExtendedProperties"
+    ],
+    "deletedproperties1": [
+      {
+        "name": "mobilePhone1",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      }
+    ],
+    "newproperties1": [
+      {
+        "name": "mobilePhone",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "flag",
+        "description": "",
+        "isKey": false,
+        "dataType": "followupFlag",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "singleValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "singleValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "multiValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "multiValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "575": "mobilePhone",
+      "348": "flag",
+      "459": "singleValueExtendedProperties",
+      "378": "multiValueExtendedProperties"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "contactfolder": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "singleValueExtendedProperties",
+      "multiValueExtendedProperties"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "singleValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "singleValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "multiValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "multiValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "245": "singleValueExtendedProperties",
+      "686": "multiValueExtendedProperties"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "directorysetting": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "directorysettingtemplate": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "drive": {
+    "isNew": false,
+    "deletedproperties": [
+      "shared"
+    ],
+    "newproperties": [
+
+    ],
+    "deletedproperties1": [
+      {
+        "name": "shared",
+        "description": "",
+        "isKey": false,
+        "dataType": "driveItem",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "newproperties1": [
+
+    ],
+    "renames": {
+    },
+    "deletedmethods": [
+      "allPhotos"
+    ],
+    "newmethods": [
+      "recent",
+      "sharedWithMe"
+    ],
+    "isUntouched": false
+  },
+  "driveitem": {
+    "isNew": false,
+    "deletedproperties": [
+      "openWith",
+      "versions"
+    ],
+    "newproperties": [
+      "remoteItem",
+      "workbook"
+    ],
+    "deletedproperties1": [
+      {
+        "name": "openWith",
+        "description": "",
+        "isKey": false,
+        "dataType": "openWithSet",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "versions",
+        "description": "",
+        "isKey": false,
+        "dataType": "driveItem",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "newproperties1": [
+      {
+        "name": "remoteItem",
+        "description": "",
+        "isKey": false,
+        "dataType": "remoteItem",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "workbook",
+        "description": "",
+        "isKey": false,
+        "dataType": "workbook",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "847": "remoteItem",
+      "469": "workbook"
+    },
+    "deletedmethods": [
+      "allPhotos"
+    ],
+    "newmethods": [
+      "delta",
+      "delta"
+    ],
+    "isUntouched": false
+  },
+  "driverecipient": {
     "isNew": true,
     "isUntouched": null
   },
@@ -132,35 +427,64 @@
 
     ],
     "newproperties": [
-      "extensions"
+      "onlineMeetingUrl",
+      "singleValueExtendedProperties",
+      "multiValueExtendedProperties"
     ],
     "deletedproperties1": [
 
     ],
     "newproperties1": [
       {
-        "name": "extensions",
+        "name": "onlineMeetingUrl",
         "description": "",
         "isKey": false,
-        "dataType": "extension",
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "singleValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "singleValueLegacyExtendedProperty",
         "isReadOnly": true,
         "enumName": null,
         "isCollection": true,
         "isRelationship": true,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "multiValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "multiValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
         "isUnicode": null
       }
     ],
     "renames": {
-      "541": "extensions"
+      "621": "onlineMeetingUrl",
+      "572": "singleValueExtendedProperties",
+      "148": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
     ],
     "newmethods": [
-
+      "cancel"
     ],
     "isUntouched": false
   },
@@ -170,71 +494,246 @@
 
     ],
     "newproperties": [
-      "inferenceClassification",
-      "extensions"
+      "startDateTime",
+      "endDateTime",
+      "location",
+      "type",
+      "recurrence",
+      "isOutOfDate",
+      "internetMessageId",
+      "conversationIndex",
+      "unsubscribeData",
+      "unsubscribeEnabled",
+      "flag",
+      "singleValueExtendedProperties",
+      "multiValueExtendedProperties"
     ],
     "deletedproperties1": [
 
     ],
     "newproperties1": [
       {
-        "name": "inferenceClassification",
+        "name": "startDateTime",
         "description": "",
         "isKey": false,
-        "dataType": "string",
+        "dataType": "dateTimeTimeZone",
         "isReadOnly": false,
-        "enumName": "inferenceClassificationType",
+        "enumName": null,
         "isCollection": false,
         "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": null,
         "isUnicode": null
       },
       {
-        "name": "extensions",
+        "name": "endDateTime",
         "description": "",
         "isKey": false,
-        "dataType": "extension",
+        "dataType": "dateTimeTimeZone",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "location",
+        "description": "",
+        "isKey": false,
+        "dataType": "location",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "type",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": "eventType",
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "recurrence",
+        "description": "",
+        "isKey": false,
+        "dataType": "patternedRecurrence",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "isOutOfDate",
+        "description": "",
+        "isKey": false,
+        "dataType": "boolean",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "internetMessageId",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "conversationIndex",
+        "description": "",
+        "isKey": false,
+        "dataType": "binary",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "unsubscribeData",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "unsubscribeEnabled",
+        "description": "",
+        "isKey": false,
+        "dataType": "boolean",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "flag",
+        "description": "",
+        "isKey": false,
+        "dataType": "followupFlag",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "singleValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "singleValueLegacyExtendedProperty",
         "isReadOnly": true,
         "enumName": null,
         "isCollection": true,
         "isRelationship": true,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "multiValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "multiValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
         "isUnicode": null
       }
     ],
     "renames": {
-      "21": "inferenceClassification",
-      "906": "extensions"
+      "272": "startDateTime",
+      "150": "endDateTime",
+      "352": "location",
+      "547": "type",
+      "107": "recurrence",
+      "708": "isOutOfDate",
+      "262": "internetMessageId",
+      "681": "conversationIndex",
+      "339": "unsubscribeData",
+      "815": "unsubscribeEnabled",
+      "571": "flag",
+      "729": "singleValueExtendedProperties",
+      "722": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
     ],
     "newmethods": [
-
+      "unsubscribe"
     ],
     "isUntouched": false
   },
-  "extension": {
+  "eventmessagerequest": {
     "isNew": true,
     "isUntouched": null
   },
-  "extensionproperty": {
+  "excelapplication": {
     "isNew": true,
     "isUntouched": null
   },
-  "externallink": {
+  "filter": {
     "isNew": true,
     "isUntouched": null
   },
-  "externalreference": {
+  "filtercriteria": {
     "isNew": true,
     "isUntouched": null
   },
-  "externalreferencecollection": {
+  "filterdatetime": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "followupflag": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "formatprotection": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "functionresult": {
     "isNew": true,
     "isUntouched": null
   },
@@ -244,15 +743,404 @@
 
     ],
     "newproperties": [
-      "isFavorite",
-      "photos",
-      "notes",
-      "plans"
+      "settings"
     ],
     "deletedproperties1": [
 
     ],
     "newproperties1": [
+      {
+        "name": "settings",
+        "description": "",
+        "isKey": false,
+        "dataType": "directorySetting",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "291": "settings"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "icon": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "json": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "location": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "locationUri"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "locationUri",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      }
+    ],
+    "renames": {
+      "546": "locationUri"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "locationconstraintitem": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "mailboxsettings": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "mailfolder": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "wellKnownName",
+      "userConfigurations",
+      "singleValueExtendedProperties",
+      "multiValueExtendedProperties"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "wellKnownName",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "userConfigurations",
+        "description": "",
+        "isKey": false,
+        "dataType": "userConfiguration",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "singleValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "singleValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "multiValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "multiValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "28": "wellKnownName",
+      "35": "userConfigurations",
+      "500": "singleValueExtendedProperties",
+      "603": "multiValueExtendedProperties"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "meetingtimecandidate": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "suggestionHint"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "suggestionHint",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      }
+    ],
+    "renames": {
+      "48": "suggestionHint"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "message": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "internetMessageId",
+      "conversationIndex",
+      "unsubscribeData",
+      "unsubscribeEnabled",
+      "flag",
+      "singleValueExtendedProperties",
+      "multiValueExtendedProperties"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "internetMessageId",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "conversationIndex",
+        "description": "",
+        "isKey": false,
+        "dataType": "binary",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "unsubscribeData",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "unsubscribeEnabled",
+        "description": "",
+        "isKey": false,
+        "dataType": "boolean",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "flag",
+        "description": "",
+        "isKey": false,
+        "dataType": "followupFlag",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "singleValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "singleValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "multiValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "multiValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "935": "internetMessageId",
+      "980": "conversationIndex",
+      "365": "unsubscribeData",
+      "543": "unsubscribeEnabled",
+      "388": "flag",
+      "815": "singleValueExtendedProperties",
+      "378": "multiValueExtendedProperties"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+      "unsubscribe"
+    ],
+    "isUntouched": false
+  },
+  "multivaluelegacyextendedproperty": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "nameditem": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "person": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "birthday",
+      "personNotes",
+      "isFavorite",
+      "phones",
+      "postalAddresses",
+      "webSites",
+      "yomiCompany",
+      "department",
+      "profession",
+      "mailboxType",
+      "personType"
+    ],
+    "deletedproperties1": [
+      {
+        "name": "emailAddresses",
+        "description": "",
+        "isKey": false,
+        "dataType": "email",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "newproperties1": [
+      {
+        "name": "birthday",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "personNotes",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
       {
         "name": "isFavorite",
         "description": "",
@@ -264,101 +1152,62 @@
         "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": null,
         "isUnicode": null
       },
       {
-        "name": "photos",
+        "name": "emailAddresses",
         "description": "",
         "isKey": false,
-        "dataType": "profilePhoto",
-        "isReadOnly": true,
+        "dataType": "rankedEmailAddress",
+        "isReadOnly": false,
         "enumName": null,
         "isCollection": true,
-        "isRelationship": true,
+        "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": true,
         "isUnicode": null
       },
       {
-        "name": "notes",
+        "name": "phones",
         "description": "",
         "isKey": false,
-        "dataType": "notes",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": false,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": false,
-        "isUnicode": null
-      },
-      {
-        "name": "plans",
-        "description": "",
-        "isKey": false,
-        "dataType": "plan",
-        "isReadOnly": true,
+        "dataType": "phone",
+        "isReadOnly": false,
         "enumName": null,
         "isCollection": true,
-        "isRelationship": true,
+        "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": true,
         "isUnicode": null
-      }
-    ],
-    "renames": {
-      "488": "isFavorite",
-      "132": "photos",
-      "649": "notes",
-      "881": "plans"
-    },
-    "deletedmethods": [
-
-    ],
-    "newmethods": [
-
-    ],
-    "isUntouched": false
-  },
-  "importstatusmodel": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "inferenceclassification": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "inferenceclassificationoverride": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "keycredential": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "keyvalue": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "location": {
-    "isNew": false,
-    "deletedproperties": [
-
-    ],
-    "newproperties": [
-      "locationEmailAddress",
-      "coordinates"
-    ],
-    "deletedproperties1": [
-
-    ],
-    "newproperties1": [
+      },
       {
-        "name": "locationEmailAddress",
+        "name": "postalAddresses",
+        "description": "",
+        "isKey": false,
+        "dataType": "location",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "webSites",
+        "description": "",
+        "isKey": false,
+        "dataType": "webSite",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "yomiCompany",
         "description": "",
         "isKey": false,
         "dataType": "string",
@@ -368,27 +1217,73 @@
         "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": null,
         "isUnicode": false
       },
       {
-        "name": "coordinates",
+        "name": "department",
         "description": "",
         "isKey": false,
-        "dataType": "outlookGeoCoordinates",
+        "dataType": "string",
         "isReadOnly": false,
         "enumName": null,
         "isCollection": false,
         "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": null,
-        "isUnicode": null
+        "isUnicode": false
+      },
+      {
+        "name": "profession",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "mailboxType",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "personType",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
       }
     ],
     "renames": {
-      "241": "locationEmailAddress",
-      "410": "coordinates"
+      "32": "birthday",
+      "603": "personNotes",
+      "66": "isFavorite",
+      "776": "phones",
+      "741": "postalAddresses",
+      "908": "webSites",
+      "981": "yomiCompany",
+      "463": "department",
+      "277": "profession",
+      "114": "mailboxType",
+      "682": "personType"
     },
     "deletedmethods": [
 
@@ -398,59 +1293,53 @@
     ],
     "isUntouched": false
   },
-  "locationconstraint": {
+  "phone": {
     "isNew": true,
     "isUntouched": null
   },
-  "meetingtimecandidate": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "message": {
+  "physicaladdress": {
     "isNew": false,
     "deletedproperties": [
 
     ],
     "newproperties": [
-      "inferenceClassification",
-      "extensions"
+      "type",
+      "postOfficeBox"
     ],
     "deletedproperties1": [
 
     ],
     "newproperties1": [
       {
-        "name": "inferenceClassification",
+        "name": "type",
         "description": "",
         "isKey": false,
-        "dataType": "string",
+        "dataType": "String",
         "isReadOnly": false,
-        "enumName": "inferenceClassificationType",
+        "enumName": "physicalAddressType",
         "isCollection": false,
         "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": null,
         "isUnicode": null
       },
       {
-        "name": "extensions",
+        "name": "postOfficeBox",
         "description": "",
         "isKey": false,
-        "dataType": "extension",
-        "isReadOnly": true,
+        "dataType": "string",
+        "isReadOnly": false,
         "enumName": null,
-        "isCollection": true,
-        "isRelationship": true,
+        "isCollection": false,
+        "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": true,
-        "isUnicode": null
+        "isUnicode": false
       }
     ],
     "renames": {
-      "60": "inferenceClassification",
-      "564": "extensions"
+      "37": "type",
+      "659": "postOfficeBox"
     },
     "deletedmethods": [
 
@@ -459,90 +1348,6 @@
 
     ],
     "isUntouched": false
-  },
-  "notebook": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "notebooklinks": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "notes": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "notesoperation": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "notesoperationerror": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "oauth2permission": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "oauth2permissiongrant": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "onenoteidentity": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "onenoteidentityset": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "opentypeextension": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "orgcontact": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "outlookgeocoordinates": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "page": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "pagelinks": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "passwordcredential": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "patchcontentcommand": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "person": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "persondatasource": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "plan": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "plandetails": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "plantaskboard": {
-    "isNew": true,
-    "isUntouched": null
   },
   "post": {
     "isNew": false,
@@ -550,29 +1355,43 @@
 
     ],
     "newproperties": [
-      "extensions"
+      "singleValueExtendedProperties",
+      "multiValueExtendedProperties"
     ],
     "deletedproperties1": [
 
     ],
     "newproperties1": [
       {
-        "name": "extensions",
+        "name": "singleValueExtendedProperties",
         "description": "",
         "isKey": false,
-        "dataType": "extension",
+        "dataType": "singleValueLegacyExtendedProperty",
         "isReadOnly": true,
         "enumName": null,
         "isCollection": true,
         "isRelationship": true,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": true,
+        "isUnicode": null
+      },
+      {
+        "name": "multiValueExtendedProperties",
+        "description": "",
+        "isKey": false,
+        "dataType": "multiValueLegacyExtendedProperty",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
         "isUnicode": null
       }
     ],
     "renames": {
-      "517": "extensions"
+      "325": "singleValueExtendedProperties",
+      "717": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -582,55 +1401,302 @@
     ],
     "isUntouched": false
   },
-  "requiredresourceaccess": {
+  "range": {
     "isNew": true,
     "isUntouched": null
   },
-  "resource": {
+  "rangeborder": {
     "isNew": true,
     "isUntouched": null
   },
-  "resourceaccess": {
+  "rangefill": {
     "isNew": true,
     "isUntouched": null
   },
-  "section": {
+  "rangefont": {
     "isNew": true,
     "isUntouched": null
   },
-  "sectiongroup": {
+  "rangeformat": {
     "isNew": true,
     "isUntouched": null
   },
-  "serviceprincipal": {
+  "rangereference": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "rangesort": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "rankedemailaddress": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "referenceattachment": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "sourceUrl",
+      "providerType",
+      "thumbnailUrl",
+      "previewUrl",
+      "permission",
+      "isFolder"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "sourceUrl",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "providerType",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": "referenceAttachmentProvider",
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "thumbnailUrl",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "previewUrl",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "permission",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": "referenceAttachmentPermission",
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "isFolder",
+        "description": "",
+        "isKey": false,
+        "dataType": "boolean",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "811": "sourceUrl",
+      "438": "providerType",
+      "76": "thumbnailUrl",
+      "663": "previewUrl",
+      "650": "permission",
+      "520": "isFolder"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "remoteitem": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "sessioninfo": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "settingtemplatevalue": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "settingvalue": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "sharinginvitation": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "invitedBy"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "invitedBy",
+        "description": "",
+        "isKey": false,
+        "dataType": "identitySet",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "848": "invitedBy"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "singlevaluelegacyextendedproperty": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "sortfield": {
     "isNew": true,
     "isUntouched": null
   },
   "subscription": {
+    "isNew": false,
+    "deletedproperties": [
+      "subscriptionId",
+      "subscriptionExpirationDateTime"
+    ],
+    "newproperties": [
+      "id",
+      "expirationDateTime"
+    ],
+    "deletedproperties1": [
+      {
+        "name": "subscriptionId",
+        "description": "",
+        "isKey": true,
+        "dataType": "string",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "subscriptionExpirationDateTime",
+        "description": "",
+        "isKey": false,
+        "dataType": "dateTimeOffset",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "newproperties1": [
+      {
+        "name": "id",
+        "description": "",
+        "isKey": true,
+        "dataType": "string",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "expirationDateTime",
+        "description": "",
+        "isKey": false,
+        "dataType": "dateTimeOffset",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "874": "id",
+      "488": "expirationDateTime"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "table": {
     "isNew": true,
     "isUntouched": null
   },
-  "task": {
+  "tablecolumn": {
     "isNew": true,
     "isUntouched": null
   },
-  "taskboardtaskformat": {
+  "tablerow": {
     "isNew": true,
     "isUntouched": null
   },
-  "taskdetails": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "timeconstraint": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "timeslot": {
-    "isNew": true,
-    "isUntouched": null
-  },
-  "timestamp": {
+  "tablesort": {
     "isNew": true,
     "isUntouched": null
   },
@@ -640,194 +1706,58 @@
 
     ],
     "newproperties": [
-      "joinedGroups",
-      "people",
-      "inferenceClassification",
-      "photos",
-      "trendingAround",
-      "workingWith",
-      "notes",
-      "tasks",
-      "plans"
+      "mailboxSettings"
     ],
     "deletedproperties1": [
-      {
-        "name": "AccountEnabled",
-        "description": "                **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.            ",
-        "isKey": false,
-        "dataType": "boolean",
-        "isReadOnly": false,
-        "enumName": null,
-        "isCollection": false,
-        "isRelationship": false,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": null,
-        "isUnicode": null
-      }
+
     ],
     "newproperties1": [
       {
-        "name": "accountEnabled",
-        "description": "                **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.            ",
+        "name": "mailboxSettings",
+        "description": "",
         "isKey": false,
-        "dataType": "boolean",
+        "dataType": "mailboxSettings",
         "isReadOnly": false,
         "enumName": null,
         "isCollection": false,
         "isRelationship": false,
         "supportFilter": false,
         "allowPostToCollection": true,
-        "isNullable": null,
-        "isUnicode": null
-      },
-      {
-        "name": "joinedGroups",
-        "description": "",
-        "isKey": false,
-        "dataType": "group",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": true,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": true,
-        "isUnicode": null
-      },
-      {
-        "name": "people",
-        "description": "",
-        "isKey": false,
-        "dataType": "person",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": true,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": true,
-        "isUnicode": null
-      },
-      {
-        "name": "inferenceClassification",
-        "description": "",
-        "isKey": false,
-        "dataType": "inferenceClassification",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": false,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": false,
-        "isUnicode": null
-      },
-      {
-        "name": "photos",
-        "description": "",
-        "isKey": false,
-        "dataType": "profilePhoto",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": true,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": true,
-        "isUnicode": null
-      },
-      {
-        "name": "trendingAround",
-        "description": "",
-        "isKey": false,
-        "dataType": "driveItem",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": true,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": true,
-        "isUnicode": null
-      },
-      {
-        "name": "workingWith",
-        "description": "",
-        "isKey": false,
-        "dataType": "user",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": true,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": true,
-        "isUnicode": null
-      },
-      {
-        "name": "notes",
-        "description": "",
-        "isKey": false,
-        "dataType": "notes",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": false,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": false,
-        "isUnicode": null
-      },
-      {
-        "name": "tasks",
-        "description": "",
-        "isKey": false,
-        "dataType": "task",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": true,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": true,
-        "isUnicode": null
-      },
-      {
-        "name": "plans",
-        "description": "",
-        "isKey": false,
-        "dataType": "plan",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": true,
-        "isRelationship": true,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isNullable": true,
         "isUnicode": null
       }
     ],
     "renames": {
-      "78": "joinedGroups",
-      "920": "people",
-      "794": "inferenceClassification",
-      "536": "photos",
-      "875": "trendingAround",
-      "249": "workingWith",
-      "102": "notes",
-      "251": "tasks",
-      "348": "plans"
+      "681": "mailboxSettings"
     },
     "deletedmethods": [
 
     ],
     "newmethods": [
-      "findMeetingTimes"
+
     ],
     "isUntouched": false
   },
-  "useridcollection": {
+  "userconfiguration": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "website": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "workbook": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "worksheet": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "worksheetprotection": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "worksheetprotectionoptions": {
     "isNew": true,
     "isUntouched": null
   }

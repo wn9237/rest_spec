@@ -26,34 +26,27 @@
   "deleteDescription": "",
   "restPath": {
     "/groups/<id>/drive/items/<id>": true,
-    "/groups/<id>/drive/shared/<id>": true,
     "/groups/<id>/drive/special/<id>": true,
     "/groups/<id>/drive/root": true,
     "/users/<id>/joinedGroups/<id>/drive/items/<id>": true,
-    "/users/<id>/joinedGroups/<id>/drive/shared/<id>": true,
     "/users/<id>/joinedGroups/<id>/drive/special/<id>": true,
     "/users/<id>/joinedGroups/<id>/drive/root": true,
     "/users/<id>/drive/items/<id>": true,
-    "/users/<id>/drive/shared/<id>": true,
     "/users/<id>/drive/special/<id>": true,
     "/users/<id>/drive/root": true,
     "/users/<id>/trendingAround/<id>": true,
     "/drives/<id>/items/<id>": true,
-    "/drives/<id>/shared/<id>": true,
     "/drives/<id>/special/<id>": true,
     "/drives/<id>/root": true,
-    "/shares/<id>/items/<id>": true,
+    "/workbooks/<id>": true,
     "/me/joinedGroups/<id>/drive/items/<id>": true,
-    "/me/joinedGroups/<id>/drive/shared/<id>": true,
     "/me/joinedGroups/<id>/drive/special/<id>": true,
     "/me/joinedGroups/<id>/drive/root": true,
     "/me/drive/items/<id>": true,
-    "/me/drive/shared/<id>": true,
     "/me/drive/special/<id>": true,
     "/me/drive/root": true,
     "/me/trendingAround/<id>": true,
     "/drive/items/<id>": true,
-    "/drive/shared/<id>": true,
     "/drive/special/<id>": true,
     "/drive/root": true
   },
@@ -353,10 +346,10 @@
       "isUnicode": null
     },
     {
-      "name": "openWith",
+      "name": "photo",
       "description": "",
       "isKey": false,
-      "dataType": "openWithSet",
+      "dataType": "photo",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -367,10 +360,10 @@
       "isUnicode": null
     },
     {
-      "name": "photo",
+      "name": "remoteItem",
       "description": "",
       "isKey": false,
-      "dataType": "photo",
+      "dataType": "remoteItem",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -447,7 +440,7 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -461,7 +454,7 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -469,20 +462,6 @@
       "description": "",
       "isKey": false,
       "dataType": "permission",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "versions",
-      "description": "",
-      "isKey": false,
-      "dataType": "driveItem",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
@@ -519,117 +498,23 @@
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
+    },
+    {
+      "name": "workbook",
+      "description": "",
+      "isKey": false,
+      "dataType": "workbook",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [
-    {
-      "name": "invite",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "permission",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "recipients",
-          "description": "",
-          "dataType": "recipients",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        },
-        {
-          "name": "message",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "requireSignIn",
-          "description": "",
-          "dataType": "boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "sendInvitation",
-          "description": "",
-          "dataType": "boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "roles",
-          "description": "",
-          "dataType": "string",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "copy",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "driveItem",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "parentReference",
-          "description": "",
-          "dataType": "itemReference",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "name",
-          "description": "",
-          "dataType": "string",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
     {
       "name": "createLink",
       "displayName": "",
@@ -656,15 +541,94 @@
           "enumName": null,
           "isNullable": false,
           "isUnicode": false
+        },
+        {
+          "name": "scope",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": false
         }
       ]
     },
     {
-      "name": "createSession",
+      "name": "invite",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "uploadSession",
+      "returnType": "permission",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "requireSignIn",
+          "description": "",
+          "dataType": "boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "roles",
+          "description": "",
+          "dataType": "string",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "sendInvitation",
+          "description": "",
+          "dataType": "boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "message",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "recipients",
+          "description": "",
+          "dataType": "driveRecipient",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "copy",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "driveItem",
       "isReturnNullable": false,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -677,35 +641,25 @@
       ],
       "parameters": [
         {
-          "name": "item",
+          "name": "name",
           "description": "",
-          "dataType": "chunkedUploadSessionDescriptor",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "parentReference",
+          "description": "",
+          "dataType": "itemReference",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
           "isUnicode": null
         }
-      ]
-    },
-    {
-      "name": "allPhotos",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "driveItem",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
       ]
     },
     {
@@ -735,6 +689,55 @@
           "isNullable": null,
           "isUnicode": false
         }
+      ]
+    },
+    {
+      "name": "delta",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "driveItem",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "token",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "delta",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "driveItem",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
       ]
     }
   ]

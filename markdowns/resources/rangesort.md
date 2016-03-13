@@ -1,13 +1,14 @@
-# RangeSort resource type
+# rangeSort resource type
 
-Manages sorting operations on Range objects.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Apply](../api/rangesort_apply.md)|None|Perform a sort operation.|
+|[Delete](../api/rangesort_delete.md) | None |Delete rangeSort object. |
+|[Apply](../api/rangesort_apply.md)|None||
 
 ### Properties
 None
@@ -20,7 +21,7 @@ None
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "RangeSort resource",
+  "description": "rangeSort resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

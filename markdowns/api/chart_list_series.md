@@ -6,13 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/charts(<name>)/series
+GET /drive/root/workbook/worksheets/<id>/charts/<id>/series
+GET /me/drive/root/workbook/worksheets/<id>/charts/<id>/series
+GET /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/series
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [ChartSeries](../resources/chartseries.md) for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [chartSeries](../resources/chartseries.md) for supported names. |
 |$filter|string|Filter string that lets you filter the response based on a set of criteria.|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 |$select|string|Comma-separated list of properties to include in the response.|
@@ -29,7 +31,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/series
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [ChartSeries](../resources/chartseries.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [chartSeries](../resources/chartseries.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -38,7 +40,7 @@ Here is an example of the request.
   "name": "get_series"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/series
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/series
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

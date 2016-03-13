@@ -1,14 +1,14 @@
-# TableSort: apply
+# tableSort: apply
 
-Perform a sort operation.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/sort/apply
-POST /workbook/bindings(<id>)/table/sort/apply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/apply
+POST /drive/root/workbook/tables/<id>/sort/apply
+POST /me/drive/root/workbook/tables/<id>/sort/apply
+POST /workbooks/<id>/workbook/tables/<id>/sort/apply
 
 ```
 ### Request headers
@@ -22,9 +22,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|SortField|The list of conditions to sort on.|
-|matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
-|method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
+|fields|sortField||
+|matchCase|boolean||
+|method|string||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -38,22 +38,22 @@ Here is an example of the request.
   "name": "tablesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/apply
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/sort/apply
 Content-type: application/json
 Content-length: 298
 
 {
   "fields": [
     {
-      "key": 99,
-      "sortOn": "sortOn-value",
       "ascending": true,
       "color": "color-value",
       "dataOption": "dataOption-value",
       "icon": {
-        "set": "set-value",
-        "index": 99
-      }
+        "index": 99,
+        "set": "set-value"
+      },
+      "key": 99,
+      "sortOn": "sortOn-value"
     }
   ],
   "matchCase": true,
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TableSort: apply",
+  "description": "tableSort: apply",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

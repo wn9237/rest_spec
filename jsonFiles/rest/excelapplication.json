@@ -1,0 +1,100 @@
+{
+  "name": "excelApplication",
+  "description": "",
+  "collectionOf": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "isOpenType": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": "",
+  "updateDescription": "",
+  "deleteDescription": "",
+  "restPath": {
+    "/groups/<id>/drive/items/<id>/workbook/application": true,
+    "/groups/<id>/drive/special/<id>/workbook/application": true,
+    "/groups/<id>/drive/root/workbook/application": true,
+    "/users/<id>/joinedGroups/<id>/drive/items/<id>/workbook/application": true,
+    "/users/<id>/joinedGroups/<id>/drive/special/<id>/workbook/application": true,
+    "/users/<id>/joinedGroups/<id>/drive/root/workbook/application": true,
+    "/users/<id>/drive/items/<id>/workbook/application": true,
+    "/users/<id>/drive/special/<id>/workbook/application": true,
+    "/users/<id>/drive/root/workbook/application": true,
+    "/users/<id>/trendingAround/<id>/workbook/application": true,
+    "/drives/<id>/items/<id>/workbook/application": true,
+    "/drives/<id>/special/<id>/workbook/application": true,
+    "/drives/<id>/root/workbook/application": true,
+    "/workbooks/<id>/workbook/application": true,
+    "/me/joinedGroups/<id>/drive/items/<id>/workbook/application": true,
+    "/me/joinedGroups/<id>/drive/special/<id>/workbook/application": true,
+    "/me/joinedGroups/<id>/drive/root/workbook/application": true,
+    "/me/drive/items/<id>/workbook/application": true,
+    "/me/drive/special/<id>/workbook/application": true,
+    "/me/drive/root/workbook/application": true,
+    "/me/trendingAround/<id>/workbook/application": true,
+    "/drive/items/<id>/workbook/application": true,
+    "/drive/special/<id>/workbook/application": true,
+    "/drive/root/workbook/application": true
+  },
+  "properties": [
+    {
+      "name": "calculationMode",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": false
+    }
+  ],
+  "methods": [
+    {
+      "name": "calculate",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "calculationType",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ]
+    }
+  ]
+}

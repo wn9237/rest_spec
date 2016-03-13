@@ -1,14 +1,14 @@
-# TableSort: reapply
+# tableSort: reapply
 
-Reapplies the current sorting parameters to the table.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/sort/reapply
-POST /workbook/bindings(<id>)/table/sort/reapply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/reapply
+POST /drive/root/workbook/tables/<id>/sort/reapply
+POST /me/drive/root/workbook/tables/<id>/sort/reapply
+POST /workbooks/<id>/workbook/tables/<id>/sort/reapply
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "tablesort_reapply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/sort/reapply
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/sort/reapply
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TableSort: reapply",
+  "description": "tableSort: reapply",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

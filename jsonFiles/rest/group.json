@@ -1,6 +1,6 @@
 {
   "name": "group",
-  "description": "Represents an Azure Active Directory Group. Inherited from **DirectoryObject**.\r",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -29,19 +29,15 @@
     "/users/<id>/joinedGroups/<id>": true,
     "/drives/<id>/items/<id>/createdByUser/joinedGroups/<id>": true,
     "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<id>": true,
     "/drives/<id>/special/<id>/createdByUser/joinedGroups/<id>": true,
     "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<id>": true,
     "/drives/<id>/root/createdByUser/joinedGroups/<id>": true,
     "/drives/<id>/root/lastModifiedByUser/joinedGroups/<id>": true,
-    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<id>": true,
+    "/workbooks/<id>/createdByUser/joinedGroups/<id>": true,
+    "/workbooks/<id>/lastModifiedByUser/joinedGroups/<id>": true,
     "/me/joinedGroups/<id>": true,
     "/drive/items/<id>/createdByUser/joinedGroups/<id>": true,
     "/drive/items/<id>/lastModifiedByUser/joinedGroups/<id>": true,
-    "/drive/shared/<id>/createdByUser/joinedGroups/<id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<id>": true,
     "/drive/special/<id>/createdByUser/joinedGroups/<id>": true,
     "/drive/special/<id>/lastModifiedByUser/joinedGroups/<id>": true,
     "/drive/root/createdByUser/joinedGroups/<id>": true,
@@ -50,7 +46,7 @@
   "properties": [
     {
       "name": "description",
-      "description": "An optional description for the group.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -64,7 +60,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name for the group. This property is required when a group is created and it cannot be cleared during updates. ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -92,7 +88,7 @@
     },
     {
       "name": "mail",
-      "description": "The SMTP address for the group, for example, \"serviceadmins@contoso.onmicrosoft.com\".",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -106,7 +102,7 @@
     },
     {
       "name": "mailEnabled",
-      "description": "Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Azure AD Graph.",
+      "description": "",
       "isKey": false,
       "dataType": "boolean",
       "isReadOnly": false,
@@ -120,7 +116,7 @@
     },
     {
       "name": "mailNickname",
-      "description": "The mail alias for the group. This property must be specified when a group is created.",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -148,7 +144,7 @@
     },
     {
       "name": "onPremisesSecurityIdentifier",
-      "description": "Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud.                            **Notes**: Requires version 1.5 or newer.            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -176,7 +172,7 @@
     },
     {
       "name": "proxyAddresses",
-      "description": "                                        **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -190,7 +186,7 @@
     },
     {
       "name": "securityEnabled",
-      "description": "Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **true** when creating a group.",
+      "description": "",
       "isKey": false,
       "dataType": "boolean",
       "isReadOnly": false,
@@ -316,7 +312,7 @@
     },
     {
       "name": "members",
-      "description": "Users, contacts, and groups that are members of this group. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups)",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -330,7 +326,7 @@
     },
     {
       "name": "memberOf",
-      "description": "Groups that this group is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups) ",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
       "isReadOnly": true,
@@ -353,14 +349,28 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {
       "name": "owners",
-      "description": "The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Inherited from [DirectoryObject].            HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups)",
+      "description": "",
       "isKey": false,
       "dataType": "directoryObject",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "settings",
+      "description": "",
+      "isKey": false,
+      "dataType": "directorySetting",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
@@ -395,7 +405,7 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -451,7 +461,7 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -507,7 +517,7 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -521,7 +531,7 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {

@@ -319,7 +319,7 @@
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
+      "isNullable": true,
       "isUnicode": null
     },
     {

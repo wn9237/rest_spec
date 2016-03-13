@@ -1,14 +1,14 @@
-# Create TableRow
+# Create tableRow
 
-Use this API to create a new TableRow.
+Use this API to create a new tableRow.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows
-POST /workbook/bindings(<id>)/table/rows
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
+POST /drive/root/workbook/tables/<id>/rows
+POST /me/drive/root/workbook/tables/<id>/rows
+POST /workbooks/<id>/workbook/tables/<id>/rows
 
 ```
 ### Request headers
@@ -18,11 +18,11 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.
+In the request body, supply a JSON representation of [tableRow](../resources/tablerow.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `201, Created` response code and [tableRow](../resources/tablerow.md) object in the response body.
 
 ### Example
 ##### Request
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "create_tablerow_from_table"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/tables(<id|name>)/rows
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rows
 Content-type: application/json
 Content-length: 45
 
@@ -41,7 +41,7 @@ Content-length: 45
   "values": "values-value"
 }
 ```
-In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.
+In the request body, supply a JSON representation of [tableRow](../resources/tablerow.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -64,7 +64,7 @@ Content-length: 45
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create TableRow",
+  "description": "Create tableRow",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

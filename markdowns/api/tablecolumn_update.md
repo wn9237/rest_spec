@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)
-PATCH /workbook/bindings(<id>)/table/columns(<id|name>)
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)
+PATCH /drive/root/workbook/tables/<id>/columns/<id>
+PATCH /me/drive/root/workbook/tables/<id>/columns/<id>
+PATCH /workbooks/<id>/workbook/tables/<id>/columns/<id>
 ```
 ### Optional request headers
 | Name       | Description|
@@ -21,10 +21,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|values|json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|index|int32||
+|name|string||
+|values|json||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [TableColumn](../resources/tablecolumn.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [tableColumn](../resources/tablecolumn.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -33,14 +35,13 @@ Here is an example of the request.
   "name": "update_tablecolumn"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/tables(<id|name>)/columns(<id|name>)
+PATCH https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/columns/<id>
 Content-type: application/json
-Content-length: 81
+Content-length: 69
 
 {
-  "id": 99,
-  "name": "name-value",
   "index": 99,
+  "name": "name-value",
   "values": "values-value"
 }
 ```
@@ -54,12 +55,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 81
+Content-length: 89
 
 {
-  "id": 99,
-  "name": "name-value",
+  "id": "id-value",
   "index": 99,
+  "name": "name-value",
   "values": "values-value"
 }
 ```

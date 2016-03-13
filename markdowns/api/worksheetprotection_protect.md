@@ -1,12 +1,14 @@
-# WorksheetProtection: protect
+# worksheetProtection: protect
 
-Protect a worksheet. It throws if the worksheet has been protected.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/protection/protect
+POST /drive/root/workbook/worksheets/<id>/protection/protect
+POST /me/drive/root/workbook/worksheets/<id>/protection/protect
+POST /workbooks/<id>/workbook/worksheets/<id>/protection/protect
 
 ```
 ### Request headers
@@ -20,8 +22,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|options|WorksheetProtectionOptions|Optional. sheet protection options.|
-|password|string|Optional. sheet protection password.|
+|options|worksheetProtectionOptions||
+|password|string||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -35,23 +37,23 @@ Here is an example of the request.
   "name": "worksheetprotection_protect"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/protection/protect
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/protection/protect
 Content-type: application/json
 Content-length: 383
 
 {
   "options": {
+    "allowAutoFilter": true,
+    "allowDeleteColumns": true,
+    "allowDeleteRows": true,
     "allowFormatCells": true,
     "allowFormatColumns": true,
     "allowFormatRows": true,
     "allowInsertColumns": true,
-    "allowInsertRows": true,
     "allowInsertHyperlinks": true,
-    "allowDeleteColumns": true,
-    "allowDeleteRows": true,
-    "allowSort": true,
-    "allowAutoFilter": true,
-    "allowPivotTables": true
+    "allowInsertRows": true,
+    "allowPivotTables": true,
+    "allowSort": true
   },
   "password": "password-value"
 }
@@ -72,7 +74,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "WorksheetProtection: protect",
+  "description": "worksheetProtection: protect",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

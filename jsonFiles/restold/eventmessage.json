@@ -1,6 +1,6 @@
 {
   "name": "eventMessage",
-  "description": "A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.",
+  "description": "",
   "collectionOf": null,
   "isComplexType": false,
   "isEntitySet": false,
@@ -322,6 +322,20 @@
       "isUnicode": false
     },
     {
+      "name": "inferenceClassification",
+      "description": "",
+      "isKey": false,
+      "dataType": "string",
+      "isReadOnly": false,
+      "enumName": "inferenceClassificationType",
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "createdDateTime",
       "description": "",
       "isKey": false,
@@ -393,7 +407,7 @@
     },
     {
       "name": "meetingMessageType",
-      "description": " The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 ",
+      "description": "",
       "isKey": false,
       "dataType": "string",
       "isReadOnly": false,
@@ -403,6 +417,20 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "extensions",
+      "description": "",
+      "isKey": false,
+      "dataType": "extension",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
       "isUnicode": null
     },
     {
@@ -421,7 +449,7 @@
     },
     {
       "name": "event",
-      "description": " The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property. ",
+      "description": "",
       "isKey": false,
       "dataType": "event",
       "isReadOnly": true,

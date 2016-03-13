@@ -1,4 +1,4 @@
-# Get RangeBorder
+# Get rangeBorder
 
 Retrieve the properties and relationships of rangeborder object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format/borders(<sideIndex>)
-GET /workbook/worksheets(<id|name>)/range(<address>)/format/borders(<sideIndex>)
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders(<sideIndex>)
+GET /drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/borders/<id>
+GET /drive/root/workbook/names/<_Id>/rangeFunctionReturnSet/format/borders/<id>
+GET /drive/root/workbook/worksheets/<id>/cellFunctionReturnSet/format/borders/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [RangeBorder](../resources/rangeborder.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [rangeBorder](../resources/rangeborder.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -26,7 +26,7 @@ GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders(<sideInd
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [rangeBorder](../resources/rangeborder.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "get_rangeborder"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/workbook/names(<name>)/range/format/borders(<sideIndex>)
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/tables/<id>/rangeFunctionReturnSet/format/borders/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,10 +50,10 @@ Content-type: application/json
 Content-length: 136
 
 {
-  "id": "id-value",
   "color": "color-value",
-  "style": "style-value",
+  "id": "id-value",
   "sideIndex": "sideIndex-value",
+  "style": "style-value",
   "weight": "weight-value"
 }
 ```
@@ -62,7 +62,7 @@ Content-length: 136
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get RangeBorder",
+  "description": "Get rangeBorder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

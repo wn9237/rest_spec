@@ -1,30 +1,31 @@
-# ChartAxis resource type
+# chartAxis resource type
 
-Represents a single axis in a chart.
+
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)	|Update ChartAxis object. |
+|[Get chartAxis](../api/chartaxis_get.md) | [chartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
+|[Update](../api/chartaxis_update.md) | [chartAxis](chartaxis.md)	|Update chartAxis object. |
+|[Delete](../api/chartaxis_delete.md) | None |Delete chartAxis object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|majorUnit|[object](object.md)|Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.|
-|maximum|[object](object.md)|Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
-|minimum|[object](object.md)|Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
-|minorUnit|[object](object.md)|Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.|
+|majorUnit|json||
+|maximum|json||
+|minimum|json||
+|minorUnit|json||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartAxisFormat](chartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.|
-|minorGridlines|[ChartGridlines](chartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
-|title|[ChartAxisTitle](chartaxistitle.md)|Represents the axis title. Read-only.|
+|format|[chartAxisFormat](chartaxisformat.md)| Read-only. Nullable.|
+|majorGridlines|[chartGridlines](chartgridlines.md)| Read-only. Nullable.|
+|minorGridlines|[chartGridlines](chartgridlines.md)| Read-only. Nullable.|
+|title|[chartAxisTitle](chartaxistitle.md)| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -40,10 +41,10 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "majorUnit": {"@odata.type": "microsoft.graph.object"},
-  "maximum": {"@odata.type": "microsoft.graph.object"},
-  "minimum": {"@odata.type": "microsoft.graph.object"},
-  "minorUnit": {"@odata.type": "microsoft.graph.object"}
+  "majorUnit": "json",
+  "maximum": "json",
+  "minimum": "json",
+  "minorUnit": "json"
 }
 
 ```
@@ -52,7 +53,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartAxis resource",
+  "description": "chartAxis resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

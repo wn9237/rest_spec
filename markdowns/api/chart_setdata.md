@@ -1,12 +1,14 @@
-# Chart: setData
+# chart: setData
 
-Resets the source data for the chart.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/setData
+POST /drive/root/workbook/worksheets/<id>/charts/<id>/setData
+POST /me/drive/root/workbook/worksheets/<id>/charts/<id>/setData
+POST /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/setData
 
 ```
 ### Request headers
@@ -20,8 +22,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|sourceData|string|The Range object corresponding to the source data.|
-|seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, Columns.  Possible values are: `Auto`, `Columns`, `Rows`.|
+|sourceData|json||
+|seriesBy|string||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -35,7 +37,7 @@ Here is an example of the request.
   "name": "chart_setdata"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/setData
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/setData
 Content-type: application/json
 Content-length: 70
 
@@ -60,7 +62,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Chart: setData",
+  "description": "chart: setData",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

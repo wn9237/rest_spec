@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/datalabels
+PATCH /drive/root/workbook/worksheets/<id>/charts/<id>/dataLabels
+PATCH /me/drive/root/workbook/worksheets/<id>/charts/<id>/dataLabels
+PATCH /workbooks/<id>/workbook/worksheets/<id>/charts/<id>/dataLabels
 ```
 ### Optional request headers
 | Name       | Description|
@@ -19,17 +21,17 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|position|string|DataLabelPosition value that represents the position of the data label. Possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
-|separator|string|String representing the separator used for the data labels on a chart.|
-|showBubbleSize|boolean|Boolean value representing if the data label bubble size is visible or not.|
-|showCategoryName|boolean|Boolean value representing if the data label category name is visible or not.|
-|showLegendKey|boolean|Boolean value representing if the data label legend key is visible or not.|
-|showPercentage|boolean|Boolean value representing if the data label percentage is visible or not.|
-|showSeriesName|boolean|Boolean value representing if the data label series name is visible or not.|
-|showValue|boolean|Boolean value representing if the data label value is visible or not.|
+|position|string||
+|separator|string||
+|showBubbleSize|boolean||
+|showCategoryName|boolean||
+|showLegendKey|boolean||
+|showPercentage|boolean||
+|showSeriesName|boolean||
+|showValue|boolean||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [ChartDataLabels](../resources/chartdatalabels.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [chartDataLabels](../resources/chartdatalabels.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -38,16 +40,17 @@ Here is an example of the request.
   "name": "update_chartdatalabels"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/charts(<name>)/datalabels
+PATCH https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/charts/<id>/dataLabels
 Content-type: application/json
-Content-length: 134
+Content-length: 173
 
 {
   "position": "position-value",
-  "showValue": true,
-  "showSeriesName": true,
+  "separator": "separator-value",
+  "showBubbleSize": true,
   "showCategoryName": true,
-  "showLegendKey": true
+  "showLegendKey": true,
+  "showPercentage": true
 }
 ```
 ##### Response
@@ -60,14 +63,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 134
+Content-length: 173
 
 {
   "position": "position-value",
-  "showValue": true,
-  "showSeriesName": true,
+  "separator": "separator-value",
+  "showBubbleSize": true,
   "showCategoryName": true,
-  "showLegendKey": true
+  "showLegendKey": true,
+  "showPercentage": true
 }
 ```
 

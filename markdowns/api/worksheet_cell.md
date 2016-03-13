@@ -1,12 +1,14 @@
-# Worksheet: Cell
+# worksheet: cell
 
-Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/Cell
+POST /drive/root/workbook/worksheets/<id>/cell(row=row-value, column=column-value)
+POST /me/drive/root/workbook/worksheets/<id>/cell(row=row-value, column=column-value)
+POST /workbooks/<id>/workbook/worksheets/<id>/cell(row=row-value, column=column-value)
 
 ```
 ### Request headers
@@ -16,15 +18,15 @@ POST /workbook/worksheets(<id|name>)/Cell
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, provide a JSON object with the following parameters.
+In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|row|number|The row number of the cell to be retrieved. Zero-indexed.|
-|column|number|the column number of the cell to be retrieved. Zero-indexed.|
+|row|int32||
+|column|int32||
 
 ### Response
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200, OK` response code and [range](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -35,16 +37,7 @@ Here is an example of the request.
   "name": "worksheet_cell"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/workbook/worksheets(<id|name>)/Cell
-Content-type: application/json
-Content-length: 37
-
-{
-  "row": {
-  },
-  "column": {
-  }
-}
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/<id>/cell
 ```
 
 ##### Response
@@ -57,15 +50,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
 
@@ -73,7 +66,7 @@ Content-length: 169
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Worksheet: Cell",
+  "description": "worksheet: cell",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
