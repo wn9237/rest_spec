@@ -1,14 +1,48 @@
 {
   "Edmx": {
-    "Version": "4.0",
     "xmlns:edmx": "http://docs.oasis-open.org/odata/ns/edmx",
+    "Version": "4.0",
     "DataServices": {
       "Schema": {
-        "Namespace": "microsoft.graph",
         "xmlns": "http://docs.oasis-open.org/odata/ns/edm",
+        "Namespace": "microsoft.graph",
         "EnumType": [
           {
-            "Name": "AttendeeType",
+            "Name": "automaticRepliesStatus",
+            "Member": [
+              {
+                "Name": "disabled",
+                "Value": "0"
+              },
+              {
+                "Name": "alwaysEnabled",
+                "Value": "1"
+              },
+              {
+                "Name": "scheduled",
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "Name": "externalAudienceScope",
+            "Member": [
+              {
+                "Name": "none",
+                "Value": "0"
+              },
+              {
+                "Name": "contactsOnly",
+                "Value": "1"
+              },
+              {
+                "Name": "all",
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "Name": "attendeeType",
             "Member": [
               {
                 "Name": "required",
@@ -25,7 +59,7 @@
             ]
           },
           {
-            "Name": "FreeBusyStatus",
+            "Name": "freeBusyStatus",
             "Member": [
               {
                 "Name": "free",
@@ -54,7 +88,28 @@
             ]
           },
           {
-            "Name": "ActivityDomain",
+            "Name": "physicalAddressType",
+            "Member": [
+              {
+                "Name": "unknown",
+                "Value": "0"
+              },
+              {
+                "Name": "home",
+                "Value": "1"
+              },
+              {
+                "Name": "business",
+                "Value": "2"
+              },
+              {
+                "Name": "other",
+                "Value": "3"
+              }
+            ]
+          },
+          {
+            "Name": "activityDomain",
             "Member": [
               {
                 "Name": "unknown",
@@ -71,7 +126,7 @@
             ]
           },
           {
-            "Name": "BodyType",
+            "Name": "bodyType",
             "Member": [
               {
                 "Name": "text",
@@ -84,7 +139,7 @@
             ]
           },
           {
-            "Name": "Importance",
+            "Name": "importance",
             "Member": [
               {
                 "Name": "low",
@@ -101,7 +156,7 @@
             ]
           },
           {
-            "Name": "InferenceClassificationType",
+            "Name": "inferenceClassificationType",
             "Member": [
               {
                 "Name": "focused",
@@ -114,7 +169,24 @@
             ]
           },
           {
-            "Name": "CalendarColor",
+            "Name": "followupFlagStatus",
+            "Member": [
+              {
+                "Name": "notFlagged",
+                "Value": "0"
+              },
+              {
+                "Name": "complete",
+                "Value": "1"
+              },
+              {
+                "Name": "flagged",
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "Name": "calendarColor",
             "Member": [
               {
                 "Name": "lightBlue",
@@ -163,7 +235,7 @@
             ]
           },
           {
-            "Name": "ResponseType",
+            "Name": "responseType",
             "Member": [
               {
                 "Name": "none",
@@ -192,7 +264,7 @@
             ]
           },
           {
-            "Name": "Sensitivity",
+            "Name": "sensitivity",
             "Member": [
               {
                 "Name": "normal",
@@ -213,7 +285,7 @@
             ]
           },
           {
-            "Name": "RecurrencePatternType",
+            "Name": "recurrencePatternType",
             "Member": [
               {
                 "Name": "daily",
@@ -242,7 +314,7 @@
             ]
           },
           {
-            "Name": "DayOfWeek",
+            "Name": "dayOfWeek",
             "Member": [
               {
                 "Name": "sunday",
@@ -275,7 +347,7 @@
             ]
           },
           {
-            "Name": "WeekIndex",
+            "Name": "weekIndex",
             "Member": [
               {
                 "Name": "first",
@@ -300,7 +372,7 @@
             ]
           },
           {
-            "Name": "RecurrenceRangeType",
+            "Name": "recurrenceRangeType",
             "Member": [
               {
                 "Name": "endDate",
@@ -317,7 +389,7 @@
             ]
           },
           {
-            "Name": "EventType",
+            "Name": "eventType",
             "Member": [
               {
                 "Name": "singleInstance",
@@ -338,7 +410,7 @@
             ]
           },
           {
-            "Name": "MeetingMessageType",
+            "Name": "meetingMessageType",
             "Member": [
               {
                 "Name": "none",
@@ -357,7 +429,7 @@
                 "Value": "3"
               },
               {
-                "Name": "meetingTenativelyAccepted",
+                "Name": "meetingTentativelyAccepted",
                 "Value": "4"
               },
               {
@@ -367,7 +439,45 @@
             ]
           },
           {
-            "Name": "GroupAccessType",
+            "Name": "referenceAttachmentProvider",
+            "Member": [
+              {
+                "Name": "other",
+                "Value": "0"
+              },
+              {
+                "Name": "oneDriveBusiness",
+                "Value": "1"
+              },
+              {
+                "Name": "oneDriveConsumer",
+                "Value": "2"
+              },
+              {
+                "Name": "dropbox",
+                "Value": "3"
+              }
+            ]
+          },
+          {
+            "Name": "referenceAttachmentPermission",
+            "Member": [
+              {
+                "Name": "other",
+                "Value": "0"
+              },
+              {
+                "Name": "view",
+                "Value": "1"
+              },
+              {
+                "Name": "edit",
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "Name": "groupAccessType",
             "Member": [
               {
                 "Name": "none",
@@ -384,6 +494,96 @@
               {
                 "Name": "public",
                 "Value": "3"
+              }
+            ]
+          },
+          {
+            "Name": "phoneType",
+            "Member": [
+              {
+                "Name": "unknown",
+                "Value": "0"
+              },
+              {
+                "Name": "home",
+                "Value": "1"
+              },
+              {
+                "Name": "business",
+                "Value": "2"
+              },
+              {
+                "Name": "mobile",
+                "Value": "3"
+              },
+              {
+                "Name": "other",
+                "Value": "4"
+              },
+              {
+                "Name": "assistant",
+                "Value": "5"
+              },
+              {
+                "Name": "callback",
+                "Value": "6"
+              },
+              {
+                "Name": "car",
+                "Value": "7"
+              },
+              {
+                "Name": "homeFax",
+                "Value": "8"
+              },
+              {
+                "Name": "businessFax",
+                "Value": "9"
+              },
+              {
+                "Name": "otherFax",
+                "Value": "10"
+              },
+              {
+                "Name": "pager",
+                "Value": "11"
+              },
+              {
+                "Name": "primary",
+                "Value": "12"
+              },
+              {
+                "Name": "radio",
+                "Value": "13"
+              },
+              {
+                "Name": "telex",
+                "Value": "14"
+              },
+              {
+                "Name": "ttyTdd",
+                "Value": "15"
+              },
+              {
+                "Name": "organizationMain",
+                "Value": "16"
+              }
+            ]
+          },
+          {
+            "Name": "webSiteType",
+            "Member": [
+              {
+                "Name": "unknown",
+                "Value": "0"
+              },
+              {
+                "Name": "personalHomePage",
+                "Value": "1"
+              },
+              {
+                "Name": "businessHomePage",
+                "Value": "2"
               }
             ]
           },
@@ -667,8 +867,7 @@
               },
               {
                 "Name": "createdOnBehalfOf",
-                "Type": "microsoft.graph.directoryObject",
-                "Nullable": "false"
+                "Type": "microsoft.graph.directoryObject"
               },
               {
                 "Name": "owners",
@@ -822,8 +1021,7 @@
             "NavigationProperty": [
               {
                 "Name": "manager",
-                "Type": "microsoft.graph.directoryObject",
-                "Nullable": "false"
+                "Type": "microsoft.graph.directoryObject"
               },
               {
                 "Name": "directReports",
@@ -965,6 +1163,60 @@
             ]
           },
           {
+            "Name": "directorySetting",
+            "OpenType": "true",
+            "Key": {
+              "PropertyRef": {
+                "Name": "id"
+              }
+            },
+            "Property": [
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "displayName",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "settingTemplateId",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "values",
+                "Type": "Collection(microsoft.graph.settingValue)",
+                "Nullable": "false"
+              }
+            ]
+          },
+          {
+            "Name": "directorySettingTemplate",
+            "BaseType": "microsoft.graph.directoryObject",
+            "OpenType": "true",
+            "Property": [
+              {
+                "Name": "displayName",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "description",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "values",
+                "Type": "Collection(microsoft.graph.settingTemplateValue)",
+                "Nullable": "false"
+              }
+            ]
+          },
+          {
             "Name": "group",
             "BaseType": "microsoft.graph.directoryObject",
             "OpenType": "true",
@@ -1029,7 +1281,7 @@
               },
               {
                 "Name": "accessType",
-                "Type": "microsoft.graph.GroupAccessType"
+                "Type": "microsoft.graph.groupAccessType"
               },
               {
                 "Name": "allowExternalSenders",
@@ -1063,12 +1315,15 @@
               },
               {
                 "Name": "createdOnBehalfOf",
-                "Type": "microsoft.graph.directoryObject",
-                "Nullable": "false"
+                "Type": "microsoft.graph.directoryObject"
               },
               {
                 "Name": "owners",
                 "Type": "Collection(microsoft.graph.directoryObject)"
+              },
+              {
+                "Name": "settings",
+                "Type": "Collection(microsoft.graph.directorySetting)"
               },
               {
                 "Name": "threads",
@@ -1078,7 +1333,6 @@
               {
                 "Name": "calendar",
                 "Type": "microsoft.graph.calendar",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -1099,7 +1353,6 @@
               {
                 "Name": "photo",
                 "Type": "microsoft.graph.profilePhoto",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -1120,13 +1373,11 @@
               {
                 "Name": "drive",
                 "Type": "microsoft.graph.drive",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "notes",
                 "Type": "microsoft.graph.notes",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -1214,7 +1465,7 @@
               },
               {
                 "Name": "color",
-                "Type": "microsoft.graph.CalendarColor"
+                "Type": "microsoft.graph.calendarColor"
               },
               {
                 "Name": "changeKey",
@@ -1237,6 +1488,16 @@
               {
                 "Name": "calendarView",
                 "Type": "Collection(microsoft.graph.event)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "singleValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.singleValueLegacyExtendedProperty)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "multiValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.multiValueLegacyExtendedProperty)",
                 "ContainsTarget": "true"
               }
             ]
@@ -1327,11 +1588,11 @@
               },
               {
                 "Name": "importance",
-                "Type": "microsoft.graph.Importance"
+                "Type": "microsoft.graph.importance"
               },
               {
                 "Name": "sensitivity",
-                "Type": "microsoft.graph.Sensitivity"
+                "Type": "microsoft.graph.sensitivity"
               },
               {
                 "Name": "start",
@@ -1376,11 +1637,11 @@
               },
               {
                 "Name": "showAs",
-                "Type": "microsoft.graph.FreeBusyStatus"
+                "Type": "microsoft.graph.freeBusyStatus"
               },
               {
                 "Name": "type",
-                "Type": "microsoft.graph.EventType"
+                "Type": "microsoft.graph.eventType"
               },
               {
                 "Name": "attendees",
@@ -1394,13 +1655,17 @@
                 "Name": "webLink",
                 "Type": "Edm.String",
                 "Unicode": "false"
+              },
+              {
+                "Name": "onlineMeetingUrl",
+                "Type": "Edm.String",
+                "Unicode": "false"
               }
             ],
             "NavigationProperty": [
               {
                 "Name": "calendar",
                 "Type": "microsoft.graph.calendar",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -1416,6 +1681,16 @@
               {
                 "Name": "attachments",
                 "Type": "Collection(microsoft.graph.attachment)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "singleValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.singleValueLegacyExtendedProperty)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "multiValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.multiValueLegacyExtendedProperty)",
                 "ContainsTarget": "true"
               }
             ]
@@ -1529,11 +1804,6 @@
                 "ContainsTarget": "true"
               },
               {
-                "Name": "shared",
-                "Type": "Collection(microsoft.graph.driveItem)",
-                "ContainsTarget": "true"
-              },
-              {
                 "Name": "special",
                 "Type": "Collection(microsoft.graph.driveItem)",
                 "ContainsTarget": "true"
@@ -1541,7 +1811,6 @@
               {
                 "Name": "root",
                 "Type": "microsoft.graph.driveItem",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               }
             ]
@@ -1635,25 +1904,21 @@
               {
                 "Name": "details",
                 "Type": "microsoft.graph.planDetails",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "assignedToTaskBoard",
                 "Type": "microsoft.graph.planTaskBoard",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "progressTaskBoard",
                 "Type": "microsoft.graph.planTaskBoard",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "bucketTaskBoard",
                 "Type": "microsoft.graph.planTaskBoard",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               }
             ]
@@ -2155,6 +2420,10 @@
                 "Unicode": "false"
               },
               {
+                "Name": "mailboxSettings",
+                "Type": "microsoft.graph.mailboxSettings"
+              },
+              {
                 "Name": "aboutMe",
                 "Type": "Edm.String",
                 "Unicode": "false"
@@ -2216,8 +2485,7 @@
               },
               {
                 "Name": "manager",
-                "Type": "microsoft.graph.directoryObject",
-                "Nullable": "false"
+                "Type": "microsoft.graph.directoryObject"
               },
               {
                 "Name": "directReports",
@@ -2253,7 +2521,6 @@
               {
                 "Name": "calendar",
                 "Type": "microsoft.graph.calendar",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -2294,13 +2561,11 @@
               {
                 "Name": "inferenceClassification",
                 "Type": "microsoft.graph.inferenceClassification",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "photo",
                 "Type": "microsoft.graph.profilePhoto",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -2311,7 +2576,6 @@
               {
                 "Name": "drive",
                 "Type": "microsoft.graph.drive",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -2327,7 +2591,6 @@
               {
                 "Name": "notes",
                 "Type": "microsoft.graph.notes",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -2357,6 +2620,11 @@
                 "Type": "Edm.Boolean"
               },
               {
+                "Name": "internetMessageId",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
                 "Name": "subject",
                 "Type": "Edm.String",
                 "Unicode": "false"
@@ -2372,7 +2640,7 @@
               },
               {
                 "Name": "importance",
-                "Type": "microsoft.graph.Importance"
+                "Type": "microsoft.graph.importance"
               },
               {
                 "Name": "parentFolderId",
@@ -2409,6 +2677,10 @@
                 "Unicode": "false"
               },
               {
+                "Name": "conversationIndex",
+                "Type": "Edm.Binary"
+              },
+              {
                 "Name": "uniqueBody",
                 "Type": "microsoft.graph.itemBody"
               },
@@ -2435,7 +2707,20 @@
               },
               {
                 "Name": "inferenceClassification",
-                "Type": "microsoft.graph.InferenceClassificationType"
+                "Type": "microsoft.graph.inferenceClassificationType"
+              },
+              {
+                "Name": "unsubscribeData",
+                "Type": "Collection(Edm.String)",
+                "Unicode": "false"
+              },
+              {
+                "Name": "unsubscribeEnabled",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "flag",
+                "Type": "microsoft.graph.followupFlag"
               }
             ],
             "NavigationProperty": [
@@ -2447,6 +2732,16 @@
               {
                 "Name": "attachments",
                 "Type": "Collection(microsoft.graph.attachment)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "singleValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.singleValueLegacyExtendedProperty)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "multiValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.multiValueLegacyExtendedProperty)",
                 "ContainsTarget": "true"
               }
             ]
@@ -2482,6 +2777,11 @@
                 "Type": "Edm.Int32"
               },
               {
+                "Name": "wellKnownName",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
                 "Name": "id",
                 "Type": "Edm.String",
                 "Nullable": "false",
@@ -2497,6 +2797,21 @@
               {
                 "Name": "childFolders",
                 "Type": "Collection(microsoft.graph.mailFolder)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "userConfigurations",
+                "Type": "Collection(microsoft.graph.userConfiguration)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "singleValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.singleValueLegacyExtendedProperty)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "multiValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.multiValueLegacyExtendedProperty)",
                 "ContainsTarget": "true"
               }
             ]
@@ -2545,10 +2860,6 @@
             },
             "Property": [
               {
-                "Name": "sources",
-                "Type": "Collection(microsoft.graph.personDataSource)"
-              },
-              {
                 "Name": "displayName",
                 "Type": "Edm.String",
                 "Unicode": "false"
@@ -2564,13 +2875,39 @@
                 "Unicode": "false"
               },
               {
-                "Name": "title",
+                "Name": "birthday",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
               {
+                "Name": "personNotes",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "isFavorite",
+                "Type": "Edm.Boolean"
+              },
+              {
                 "Name": "emailAddresses",
-                "Type": "Collection(microsoft.graph.email)"
+                "Type": "Collection(microsoft.graph.rankedEmailAddress)"
+              },
+              {
+                "Name": "phones",
+                "Type": "Collection(microsoft.graph.phone)"
+              },
+              {
+                "Name": "postalAddresses",
+                "Type": "Collection(microsoft.graph.location)"
+              },
+              {
+                "Name": "webSites",
+                "Type": "Collection(microsoft.graph.webSite)"
+              },
+              {
+                "Name": "title",
+                "Type": "Edm.String",
+                "Unicode": "false"
               },
               {
                 "Name": "companyName",
@@ -2578,7 +2915,36 @@
                 "Unicode": "false"
               },
               {
+                "Name": "yomiCompany",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "department",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
                 "Name": "officeLocation",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "profession",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "sources",
+                "Type": "Collection(microsoft.graph.personDataSource)"
+              },
+              {
+                "Name": "mailboxType",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "personType",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
@@ -2718,7 +3084,7 @@
                 "Unicode": "false"
               },
               {
-                "Name": "mobilePhone1",
+                "Name": "mobilePhone",
                 "Type": "Edm.String",
                 "Unicode": "false"
               },
@@ -2753,6 +3119,10 @@
                 "Name": "children",
                 "Type": "Collection(Edm.String)",
                 "Unicode": "false"
+              },
+              {
+                "Name": "flag",
+                "Type": "microsoft.graph.followupFlag"
               }
             ],
             "NavigationProperty": [
@@ -2762,9 +3132,18 @@
                 "ContainsTarget": "true"
               },
               {
+                "Name": "singleValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.singleValueLegacyExtendedProperty)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "multiValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.multiValueLegacyExtendedProperty)",
+                "ContainsTarget": "true"
+              },
+              {
                 "Name": "photo",
                 "Type": "microsoft.graph.profilePhoto",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               }
             ]
@@ -2803,6 +3182,16 @@
               {
                 "Name": "childFolders",
                 "Type": "Collection(microsoft.graph.contactFolder)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "singleValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.singleValueLegacyExtendedProperty)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "multiValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.multiValueLegacyExtendedProperty)",
                 "ContainsTarget": "true"
               }
             ]
@@ -2928,12 +3317,12 @@
                 "Type": "microsoft.graph.geoCoordinates"
               },
               {
-                "Name": "openWith",
-                "Type": "microsoft.graph.openWithSet"
-              },
-              {
                 "Name": "photo",
                 "Type": "microsoft.graph.photo"
+              },
+              {
+                "Name": "remoteItem",
+                "Type": "microsoft.graph.remoteItem"
               },
               {
                 "Name": "searchResult",
@@ -2955,22 +3344,15 @@
             "NavigationProperty": [
               {
                 "Name": "createdByUser",
-                "Type": "microsoft.graph.user",
-                "Nullable": "false"
+                "Type": "microsoft.graph.user"
               },
               {
                 "Name": "lastModifiedByUser",
-                "Type": "microsoft.graph.user",
-                "Nullable": "false"
+                "Type": "microsoft.graph.user"
               },
               {
                 "Name": "permissions",
                 "Type": "Collection(microsoft.graph.permission)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "versions",
-                "Type": "Collection(microsoft.graph.driveItem)",
                 "ContainsTarget": "true"
               },
               {
@@ -2981,6 +3363,11 @@
               {
                 "Name": "thumbnails",
                 "Type": "Collection(microsoft.graph.thumbnailSet)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "workbook",
+                "Type": "microsoft.graph.Workbook",
                 "ContainsTarget": "true"
               }
             ]
@@ -3086,25 +3473,21 @@
               {
                 "Name": "details",
                 "Type": "microsoft.graph.taskDetails",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "assignedToTaskBoardFormat",
                 "Type": "microsoft.graph.taskBoardTaskFormat",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "progressTaskBoardFormat",
                 "Type": "microsoft.graph.taskBoardTaskFormat",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "bucketTaskBoardFormat",
                 "Type": "microsoft.graph.taskBoardTaskFormat",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               }
             ]
@@ -3144,6 +3527,68 @@
               },
               {
                 "Name": "id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "userConfiguration",
+            "Key": {
+              "PropertyRef": {
+                "Name": "id"
+              }
+            },
+            "Property": [
+              {
+                "Name": "binaryData",
+                "Type": "Edm.Binary"
+              },
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "singleValueLegacyExtendedProperty",
+            "Key": {
+              "PropertyRef": {
+                "Name": "propertyId"
+              }
+            },
+            "Property": [
+              {
+                "Name": "value",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "propertyId",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "multiValueLegacyExtendedProperty",
+            "Key": {
+              "PropertyRef": {
+                "Name": "propertyId"
+              }
+            },
+            "Property": [
+              {
+                "Name": "value",
+                "Type": "Collection(Edm.String)",
+                "Unicode": "false"
+              },
+              {
+                "Name": "propertyId",
                 "Type": "Edm.String",
                 "Nullable": "false",
                 "Unicode": "false"
@@ -3191,27 +3636,100 @@
             "NavigationProperty": {
               "Name": "item",
               "Type": "microsoft.graph.outlookItem",
-              "Nullable": "false",
               "ContainsTarget": "true"
             }
           },
           {
             "Name": "eventMessage",
             "BaseType": "microsoft.graph.message",
-            "Property": {
-              "Name": "meetingMessageType",
-              "Type": "microsoft.graph.MeetingMessageType"
-            },
+            "Property": [
+              {
+                "Name": "meetingMessageType",
+                "Type": "microsoft.graph.meetingMessageType"
+              },
+              {
+                "Name": "startDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              },
+              {
+                "Name": "endDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              },
+              {
+                "Name": "location",
+                "Type": "microsoft.graph.location"
+              },
+              {
+                "Name": "type",
+                "Type": "microsoft.graph.eventType"
+              },
+              {
+                "Name": "recurrence",
+                "Type": "microsoft.graph.patternedRecurrence"
+              },
+              {
+                "Name": "isOutOfDate",
+                "Type": "Edm.Boolean"
+              }
+            ],
             "NavigationProperty": {
               "Name": "event",
               "Type": "microsoft.graph.event",
-              "Nullable": "false",
               "ContainsTarget": "true"
             }
           },
           {
+            "Name": "eventMessageRequest",
+            "BaseType": "microsoft.graph.eventMessage",
+            "Property": [
+              {
+                "Name": "previousLocation",
+                "Type": "microsoft.graph.location"
+              },
+              {
+                "Name": "previousStartDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              },
+              {
+                "Name": "previousEndDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              }
+            ]
+          },
+          {
             "Name": "referenceAttachment",
-            "BaseType": "microsoft.graph.attachment"
+            "BaseType": "microsoft.graph.attachment",
+            "Property": [
+              {
+                "Name": "sourceUrl",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "providerType",
+                "Type": "microsoft.graph.referenceAttachmentProvider"
+              },
+              {
+                "Name": "thumbnailUrl",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "previewUrl",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "permission",
+                "Type": "microsoft.graph.referenceAttachmentPermission"
+              },
+              {
+                "Name": "isFolder",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ]
           },
           {
             "Name": "openTypeExtension",
@@ -3277,12 +3795,21 @@
               {
                 "Name": "inReplyTo",
                 "Type": "microsoft.graph.post",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "attachments",
                 "Type": "Collection(microsoft.graph.attachment)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "singleValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.singleValueLegacyExtendedProperty)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "multiValueExtendedProperties",
+                "Type": "Collection(microsoft.graph.multiValueLegacyExtendedProperty)",
                 "ContainsTarget": "true"
               }
             ]
@@ -3297,7 +3824,7 @@
             "Property": [
               {
                 "Name": "classifyAs",
-                "Type": "microsoft.graph.InferenceClassificationType"
+                "Type": "microsoft.graph.inferenceClassificationType"
               },
               {
                 "Name": "senderEmailAddress",
@@ -3310,36 +3837,6 @@
                 "Unicode": "false"
               }
             ]
-          },
-          {
-            "Name": "share",
-            "Key": {
-              "PropertyRef": {
-                "Name": "id"
-              }
-            },
-            "Property": [
-              {
-                "Name": "id",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "name",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "owner",
-                "Type": "microsoft.graph.identitySet"
-              }
-            ],
-            "NavigationProperty": {
-              "Name": "items",
-              "Type": "Collection(microsoft.graph.driveItem)",
-              "ContainsTarget": "true"
-            }
           },
           {
             "Name": "permission",
@@ -3413,6 +3910,41 @@
               {
                 "Name": "source",
                 "Type": "microsoft.graph.thumbnail"
+              }
+            ]
+          },
+          {
+            "Name": "Workbook",
+            "NavigationProperty": [
+              {
+                "Name": "application",
+                "Type": "microsoft.graph.ExcelApplication",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "bindings",
+                "Type": "Collection(microsoft.graph.Binding)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "names",
+                "Type": "Collection(microsoft.graph.NamedItem)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "tables",
+                "Type": "Collection(microsoft.graph.Table)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "worksheets",
+                "Type": "Collection(microsoft.graph.Worksheet)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "functions",
+                "Type": "microsoft.graph.Functions",
+                "ContainsTarget": "true"
               }
             ]
           },
@@ -3570,13 +4102,11 @@
               {
                 "Name": "parentNotebook",
                 "Type": "microsoft.graph.notebook",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "parentSectionGroup",
                 "Type": "microsoft.graph.sectionGroup",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -3651,13 +4181,11 @@
               {
                 "Name": "parentNotebook",
                 "Type": "microsoft.graph.notebook",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "parentSectionGroup",
                 "Type": "microsoft.graph.sectionGroup",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
@@ -3736,13 +4264,11 @@
               {
                 "Name": "parentSection",
                 "Type": "microsoft.graph.section",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               },
               {
                 "Name": "parentNotebook",
                 "Type": "microsoft.graph.notebook",
-                "Nullable": "false",
                 "ContainsTarget": "true"
               }
             ]
@@ -4004,15 +4530,1103 @@
             ]
           },
           {
-            "Name": "subscription",
+            "Name": "ExcelApplication",
+            "Property": {
+              "Name": "calculationMode",
+              "Type": "Edm.String",
+              "Nullable": "false",
+              "Unicode": "false"
+            }
+          },
+          {
+            "Name": "Binding"
+          },
+          {
+            "Name": "NamedItem",
             "Key": {
               "PropertyRef": {
-                "Name": "subscriptionId"
+                "Name": "_Id"
               }
             },
             "Property": [
               {
-                "Name": "subscriptionId",
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "type",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "value",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "visible",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "_Id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ],
+            "NavigationProperty": {
+              "Name": "rangeFunctionReturnSet",
+              "Type": "Collection(microsoft.graph.Range)",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "Table",
+            "Key": {
+              "PropertyRef": {
+                "Name": "id"
+              }
+            },
+            "Property": [
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "showHeaders",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "showTotals",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "style",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "columns",
+                "Type": "Collection(microsoft.graph.TableColumn)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "rows",
+                "Type": "Collection(microsoft.graph.TableRow)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "sort",
+                "Type": "microsoft.graph.TableSort",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "worksheet",
+                "Type": "microsoft.graph.Worksheet",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "convertToRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "dataBodyRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "headerRowRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "rangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "totalRowRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "Worksheet",
+            "Key": {
+              "PropertyRef": {
+                "Name": "id"
+              }
+            },
+            "Property": [
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "position",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "visibility",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "charts",
+                "Type": "Collection(microsoft.graph.Chart)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "protection",
+                "Type": "microsoft.graph.WorksheetProtection",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "tables",
+                "Type": "Collection(microsoft.graph.Table)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "cellFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "rangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "usedRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "Chart",
+            "Key": {
+              "PropertyRef": {
+                "Name": "id"
+              }
+            },
+            "Property": [
+              {
+                "Name": "height",
+                "Type": "Edm.Double",
+                "Nullable": "false"
+              },
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "left",
+                "Type": "Edm.Double",
+                "Nullable": "false"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "top",
+                "Type": "Edm.Double",
+                "Nullable": "false"
+              },
+              {
+                "Name": "width",
+                "Type": "Edm.Double",
+                "Nullable": "false"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "axes",
+                "Type": "microsoft.graph.ChartAxes",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "dataLabels",
+                "Type": "microsoft.graph.ChartDataLabels",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "format",
+                "Type": "microsoft.graph.ChartAreaFormat",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "legend",
+                "Type": "microsoft.graph.ChartLegend",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "series",
+                "Type": "Collection(microsoft.graph.ChartSeries)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "title",
+                "Type": "microsoft.graph.ChartTitle",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "worksheet",
+                "Type": "microsoft.graph.Worksheet",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartAxes",
+            "NavigationProperty": [
+              {
+                "Name": "categoryAxis",
+                "Type": "microsoft.graph.ChartAxis",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "seriesAxis",
+                "Type": "microsoft.graph.ChartAxis",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "valueAxis",
+                "Type": "microsoft.graph.ChartAxis",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartDataLabels",
+            "Property": [
+              {
+                "Name": "position",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "separator",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "showBubbleSize",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "showCategoryName",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "showLegendKey",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "showPercentage",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "showSeriesName",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "showValue",
+                "Type": "Edm.Boolean"
+              }
+            ],
+            "NavigationProperty": {
+              "Name": "format",
+              "Type": "microsoft.graph.ChartDataLabelFormat",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartAreaFormat",
+            "NavigationProperty": [
+              {
+                "Name": "fill",
+                "Type": "microsoft.graph.ChartFill",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "font",
+                "Type": "microsoft.graph.ChartFont",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartLegend",
+            "Property": [
+              {
+                "Name": "overlay",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "position",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "visible",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ],
+            "NavigationProperty": {
+              "Name": "format",
+              "Type": "microsoft.graph.ChartLegendFormat",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartSeries",
+            "Property": {
+              "Name": "name",
+              "Type": "Edm.String",
+              "Unicode": "false"
+            },
+            "NavigationProperty": [
+              {
+                "Name": "format",
+                "Type": "microsoft.graph.ChartSeriesFormat",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "points",
+                "Type": "Collection(microsoft.graph.ChartPoint)",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartTitle",
+            "Property": [
+              {
+                "Name": "overlay",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "text",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "visible",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ],
+            "NavigationProperty": {
+              "Name": "format",
+              "Type": "microsoft.graph.ChartTitleFormat",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartFill"
+          },
+          {
+            "Name": "ChartFont",
+            "Property": [
+              {
+                "Name": "bold",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "color",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "italic",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "size",
+                "Type": "Edm.Double"
+              },
+              {
+                "Name": "underline",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "ChartAxis",
+            "Property": [
+              {
+                "Name": "majorUnit",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "maximum",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "minimum",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "minorUnit",
+                "Type": "microsoft.graph.Json"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "format",
+                "Type": "microsoft.graph.ChartAxisFormat",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "majorGridlines",
+                "Type": "microsoft.graph.ChartGridlines",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "minorGridlines",
+                "Type": "microsoft.graph.ChartGridlines",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "title",
+                "Type": "microsoft.graph.ChartAxisTitle",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartAxisFormat",
+            "NavigationProperty": [
+              {
+                "Name": "font",
+                "Type": "microsoft.graph.ChartFont",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "line",
+                "Type": "microsoft.graph.ChartLineFormat",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartGridlines",
+            "Property": {
+              "Name": "visible",
+              "Type": "Edm.Boolean",
+              "Nullable": "false"
+            },
+            "NavigationProperty": {
+              "Name": "format",
+              "Type": "microsoft.graph.ChartGridlinesFormat",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartAxisTitle",
+            "Property": [
+              {
+                "Name": "text",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "visible",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ],
+            "NavigationProperty": {
+              "Name": "format",
+              "Type": "microsoft.graph.ChartAxisTitleFormat",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartLineFormat",
+            "Property": {
+              "Name": "color",
+              "Type": "Edm.String",
+              "Unicode": "false"
+            }
+          },
+          {
+            "Name": "ChartAxisTitleFormat",
+            "NavigationProperty": {
+              "Name": "font",
+              "Type": "microsoft.graph.ChartFont",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartDataLabelFormat",
+            "NavigationProperty": [
+              {
+                "Name": "fill",
+                "Type": "microsoft.graph.ChartFill",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "font",
+                "Type": "microsoft.graph.ChartFont",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartGridlinesFormat",
+            "NavigationProperty": {
+              "Name": "line",
+              "Type": "microsoft.graph.ChartLineFormat",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartLegendFormat",
+            "NavigationProperty": [
+              {
+                "Name": "fill",
+                "Type": "microsoft.graph.ChartFill",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "font",
+                "Type": "microsoft.graph.ChartFont",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartPoint",
+            "Property": {
+              "Name": "value",
+              "Type": "microsoft.graph.Json"
+            },
+            "NavigationProperty": {
+              "Name": "format",
+              "Type": "microsoft.graph.ChartPointFormat",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartPointFormat",
+            "NavigationProperty": {
+              "Name": "fill",
+              "Type": "microsoft.graph.ChartFill",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "ChartSeriesFormat",
+            "NavigationProperty": [
+              {
+                "Name": "fill",
+                "Type": "microsoft.graph.ChartFill",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "line",
+                "Type": "microsoft.graph.ChartLineFormat",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "ChartTitleFormat",
+            "NavigationProperty": [
+              {
+                "Name": "fill",
+                "Type": "microsoft.graph.ChartFill",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "font",
+                "Type": "microsoft.graph.ChartFont",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "Filter",
+            "Property": {
+              "Name": "criteria",
+              "Type": "microsoft.graph.FilterCriteria"
+            }
+          },
+          {
+            "Name": "FormatProtection",
+            "Property": [
+              {
+                "Name": "formulaHidden",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "locked",
+                "Type": "Edm.Boolean"
+              }
+            ]
+          },
+          {
+            "Name": "FunctionResult",
+            "Property": [
+              {
+                "Name": "error",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "value",
+                "Type": "microsoft.graph.Json"
+              }
+            ]
+          },
+          {
+            "Name": "Range",
+            "Property": [
+              {
+                "Name": "address",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "addressLocal",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "cellCount",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "columnCount",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "columnHidden",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "columnIndex",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "formulas",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "formulasLocal",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "formulasR1C1",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "hidden",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "numberFormat",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "rowCount",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "rowHidden",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "rowIndex",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "text",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "valueTypes",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "values",
+                "Type": "microsoft.graph.Json"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "format",
+                "Type": "microsoft.graph.RangeFormat",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "sort",
+                "Type": "microsoft.graph.RangeSort",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "worksheet",
+                "Type": "microsoft.graph.Worksheet",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "boundingRectFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "cellFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "columnFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "entireColumnFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "entireRowFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "intersectionFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "lastCellFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "lastColumnFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "lastRowFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "offsetRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "rowFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "usedRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "insertFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "RangeFormat",
+            "Property": [
+              {
+                "Name": "columnWidth",
+                "Type": "Edm.Double"
+              },
+              {
+                "Name": "horizontalAlignment",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "rowHeight",
+                "Type": "Edm.Double"
+              },
+              {
+                "Name": "verticalAlignment",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "wrapText",
+                "Type": "Edm.Boolean"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "borders",
+                "Type": "Collection(microsoft.graph.RangeBorder)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "fill",
+                "Type": "microsoft.graph.RangeFill",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "font",
+                "Type": "microsoft.graph.RangeFont",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "protection",
+                "Type": "microsoft.graph.FormatProtection",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "RangeSort"
+          },
+          {
+            "Name": "RangeBorder",
+            "Key": {
+              "PropertyRef": {
+                "Name": "id"
+              }
+            },
+            "Property": [
+              {
+                "Name": "color",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "sideIndex",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "style",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "weight",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "RangeFill",
+            "Property": {
+              "Name": "color",
+              "Type": "Edm.String",
+              "Unicode": "false"
+            }
+          },
+          {
+            "Name": "RangeFont",
+            "Property": [
+              {
+                "Name": "bold",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "color",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "italic",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "size",
+                "Type": "Edm.Double"
+              },
+              {
+                "Name": "underline",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "TableColumn",
+            "Key": {
+              "PropertyRef": {
+                "Name": "id"
+              }
+            },
+            "Property": [
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "values",
+                "Type": "microsoft.graph.Json"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "filter",
+                "Type": "microsoft.graph.Filter",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "dataBodyRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "headerRowRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "rangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              },
+              {
+                "Name": "totalRowRangeFunctionReturnSet",
+                "Type": "Collection(microsoft.graph.Range)",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "TableRow",
+            "Property": [
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "values",
+                "Type": "microsoft.graph.Json"
+              }
+            ],
+            "NavigationProperty": {
+              "Name": "rangeFunctionReturnSet",
+              "Type": "Collection(microsoft.graph.Range)",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "TableSort",
+            "Property": [
+              {
+                "Name": "fields",
+                "Type": "Collection(microsoft.graph.SortField)"
+              },
+              {
+                "Name": "matchCase",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "method",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "WorksheetProtection",
+            "Property": [
+              {
+                "Name": "options",
+                "Type": "microsoft.graph.WorksheetProtectionOptions"
+              },
+              {
+                "Name": "protected",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ]
+          },
+          {
+            "Name": "subscription",
+            "Key": {
+              "PropertyRef": {
+                "Name": "id"
+              }
+            },
+            "Property": [
+              {
+                "Name": "id",
                 "Type": "Edm.String",
                 "Nullable": "false",
                 "Unicode": "false"
@@ -4032,7 +5646,6 @@
               {
                 "Name": "clientState",
                 "Type": "Edm.String",
-                "Nullable": "false",
                 "Unicode": "false"
               },
               {
@@ -4042,7 +5655,7 @@
                 "Unicode": "false"
               },
               {
-                "Name": "subscriptionExpirationDateTime",
+                "Name": "expirationDateTime",
                 "Type": "Edm.DateTimeOffset"
               }
             ]
@@ -4286,6 +5899,46 @@
             ]
           },
           {
+            "Name": "settingValue",
+            "Property": [
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "value",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "settingTemplateValue",
+            "Property": [
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "type",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "defaultValue",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "description",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
             "Name": "licenseUnitsDetail",
             "Property": [
               {
@@ -4426,6 +6079,60 @@
             ]
           },
           {
+            "Name": "mailboxSettings",
+            "Property": {
+              "Name": "automaticRepliesSetting",
+              "Type": "microsoft.graph.automaticRepliesSetting"
+            }
+          },
+          {
+            "Name": "automaticRepliesSetting",
+            "Property": [
+              {
+                "Name": "status",
+                "Type": "microsoft.graph.automaticRepliesStatus"
+              },
+              {
+                "Name": "externalAudience",
+                "Type": "microsoft.graph.externalAudienceScope"
+              },
+              {
+                "Name": "scheduledStartDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              },
+              {
+                "Name": "scheduledEndDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              },
+              {
+                "Name": "internalReplyMessage",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "externalReplyMessage",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "dateTimeTimeZone",
+            "Property": [
+              {
+                "Name": "dateTime",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "timeZone",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
             "Name": "recipient",
             "Property": {
               "Name": "emailAddress",
@@ -4452,7 +6159,7 @@
             "BaseType": "microsoft.graph.recipient",
             "Property": {
               "Name": "type",
-              "Type": "microsoft.graph.AttendeeType"
+              "Type": "microsoft.graph.attendeeType"
             }
           },
           {
@@ -4472,7 +6179,7 @@
               },
               {
                 "Name": "organizerAvailability",
-                "Type": "microsoft.graph.FreeBusyStatus"
+                "Type": "microsoft.graph.freeBusyStatus"
               },
               {
                 "Name": "attendeeAvailability",
@@ -4481,6 +6188,11 @@
               {
                 "Name": "locations",
                 "Type": "Collection(microsoft.graph.location)"
+              },
+              {
+                "Name": "suggestionHint",
+                "Type": "Edm.String",
+                "Unicode": "false"
               }
             ]
           },
@@ -4524,7 +6236,7 @@
               },
               {
                 "Name": "availability",
-                "Type": "microsoft.graph.FreeBusyStatus"
+                "Type": "microsoft.graph.freeBusyStatus"
               }
             ]
           },
@@ -4548,12 +6260,26 @@
               {
                 "Name": "coordinates",
                 "Type": "microsoft.graph.outlookGeoCoordinates"
+              },
+              {
+                "Name": "locationUri",
+                "Type": "Edm.String",
+                "Unicode": "false"
               }
             ]
           },
           {
             "Name": "physicalAddress",
             "Property": [
+              {
+                "Name": "type",
+                "Type": "microsoft.graph.physicalAddressType"
+              },
+              {
+                "Name": "postOfficeBox",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
               {
                 "Name": "street",
                 "Type": "Edm.String",
@@ -4619,16 +6345,24 @@
               },
               {
                 "Name": "locations",
-                "Type": "Collection(microsoft.graph.location)"
+                "Type": "Collection(microsoft.graph.locationConstraintItem)"
               }
             ]
+          },
+          {
+            "Name": "locationConstraintItem",
+            "BaseType": "microsoft.graph.location",
+            "Property": {
+              "Name": "resolveAvailability",
+              "Type": "Edm.Boolean"
+            }
           },
           {
             "Name": "timeConstraint",
             "Property": [
               {
                 "Name": "activityDomain",
-                "Type": "microsoft.graph.ActivityDomain"
+                "Type": "microsoft.graph.activityDomain"
               },
               {
                 "Name": "timeslots",
@@ -4678,27 +6412,11 @@
             ]
           },
           {
-            "Name": "dateTimeTimeZone",
-            "Property": [
-              {
-                "Name": "dateTime",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              },
-              {
-                "Name": "timeZone",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
             "Name": "itemBody",
             "Property": [
               {
                 "Name": "contentType",
-                "Type": "microsoft.graph.BodyType"
+                "Type": "microsoft.graph.bodyType"
               },
               {
                 "Name": "content",
@@ -4708,11 +6426,32 @@
             ]
           },
           {
+            "Name": "followupFlag",
+            "Property": [
+              {
+                "Name": "completedDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              },
+              {
+                "Name": "dueDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              },
+              {
+                "Name": "startDateTime",
+                "Type": "microsoft.graph.dateTimeTimeZone"
+              },
+              {
+                "Name": "flagStatus",
+                "Type": "microsoft.graph.followupFlagStatus"
+              }
+            ]
+          },
+          {
             "Name": "responseStatus",
             "Property": [
               {
                 "Name": "response",
-                "Type": "microsoft.graph.ResponseType"
+                "Type": "microsoft.graph.responseType"
               },
               {
                 "Name": "time",
@@ -4738,7 +6477,7 @@
             "Property": [
               {
                 "Name": "type",
-                "Type": "microsoft.graph.RecurrencePatternType"
+                "Type": "microsoft.graph.recurrencePatternType"
               },
               {
                 "Name": "interval",
@@ -4757,15 +6496,15 @@
               },
               {
                 "Name": "daysOfWeek",
-                "Type": "Collection(microsoft.graph.DayOfWeek)"
+                "Type": "Collection(microsoft.graph.dayOfWeek)"
               },
               {
                 "Name": "firstDayOfWeek",
-                "Type": "microsoft.graph.DayOfWeek"
+                "Type": "microsoft.graph.dayOfWeek"
               },
               {
                 "Name": "index",
-                "Type": "microsoft.graph.WeekIndex"
+                "Type": "microsoft.graph.weekIndex"
               }
             ]
           },
@@ -4774,7 +6513,7 @@
             "Property": [
               {
                 "Name": "type",
-                "Type": "microsoft.graph.RecurrenceRangeType"
+                "Type": "microsoft.graph.recurrenceRangeType"
               },
               {
                 "Name": "startDate",
@@ -4805,17 +6544,51 @@
             }
           },
           {
+            "Name": "rankedEmailAddress",
+            "Property": [
+              {
+                "Name": "address",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "rank",
+                "Type": "Edm.Double"
+              }
+            ]
+          },
+          {
+            "Name": "phone",
+            "Property": [
+              {
+                "Name": "type",
+                "Type": "microsoft.graph.phoneType"
+              },
+              {
+                "Name": "number",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "webSite",
+            "Property": [
+              {
+                "Name": "type",
+                "Type": "microsoft.graph.webSiteType"
+              },
+              {
+                "Name": "url",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
             "Name": "personDataSource",
             "Property": {
               "Name": "type",
-              "Type": "Edm.String",
-              "Unicode": "false"
-            }
-          },
-          {
-            "Name": "email",
-            "Property": {
-              "Name": "address",
               "Type": "Edm.String",
               "Unicode": "false"
             }
@@ -5063,48 +6836,6 @@
             ]
           },
           {
-            "Name": "openWithSet",
-            "Property": [
-              {
-                "Name": "web",
-                "Type": "microsoft.graph.openWithApp"
-              },
-              {
-                "Name": "webEmbedded",
-                "Type": "microsoft.graph.openWithApp"
-              }
-            ]
-          },
-          {
-            "Name": "openWithApp",
-            "Property": [
-              {
-                "Name": "app",
-                "Type": "microsoft.graph.identity"
-              },
-              {
-                "Name": "viewUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "editUrl",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "viewPostParameters",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "editPostParameters",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              }
-            ]
-          },
-          {
             "Name": "photo",
             "Property": [
               {
@@ -5140,6 +6871,41 @@
               {
                 "Name": "iso",
                 "Type": "Edm.Int32"
+              }
+            ]
+          },
+          {
+            "Name": "remoteItem",
+            "Property": [
+              {
+                "Name": "file",
+                "Type": "microsoft.graph.file"
+              },
+              {
+                "Name": "fileSystemInfo",
+                "Type": "microsoft.graph.fileSystemInfo"
+              },
+              {
+                "Name": "folder",
+                "Type": "microsoft.graph.folder"
+              },
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "parentReference",
+                "Type": "microsoft.graph.itemReference"
+              },
+              {
+                "Name": "size",
+                "Type": "Edm.Int64"
               }
             ]
           },
@@ -5203,6 +6969,10 @@
                 "Unicode": "false"
               },
               {
+                "Name": "invitedBy",
+                "Type": "microsoft.graph.identitySet"
+              },
+              {
                 "Name": "redeemedBy",
                 "Type": "Edm.String",
                 "Unicode": "false"
@@ -5233,15 +7003,29 @@
             ]
           },
           {
-            "Name": "chunkedUploadSessionDescriptor",
-            "Property": {
-              "Name": "name",
-              "Type": "Edm.String",
-              "Unicode": "false"
-            }
+            "Name": "thumbnail",
+            "Property": [
+              {
+                "Name": "content",
+                "Type": "Edm.Stream"
+              },
+              {
+                "Name": "height",
+                "Type": "Edm.Int32"
+              },
+              {
+                "Name": "url",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "width",
+                "Type": "Edm.Int32"
+              }
+            ]
           },
           {
-            "Name": "recipients",
+            "Name": "driveRecipient",
             "Property": [
               {
                 "Name": "email",
@@ -5255,11 +7039,6 @@
               },
               {
                 "Name": "objectId",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "permissionIdentityType",
                 "Type": "Edm.String",
                 "Unicode": "false"
               }
@@ -5281,28 +7060,6 @@
                 "Name": "nextExpectedRanges",
                 "Type": "Collection(Edm.String)",
                 "Unicode": "false"
-              }
-            ]
-          },
-          {
-            "Name": "thumbnail",
-            "Property": [
-              {
-                "Name": "content",
-                "Type": "Edm.Stream"
-              },
-              {
-                "Name": "height",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "url",
-                "Type": "Edm.String",
-                "Unicode": "false"
-              },
-              {
-                "Name": "width",
-                "Type": "Edm.Int32"
               }
             ]
           },
@@ -5527,13 +7284,211 @@
           {
             "Name": "userIdCollection",
             "OpenType": "true"
+          },
+          {
+            "Name": "SessionInfo",
+            "Property": [
+              {
+                "Name": "id",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "persistChanges",
+                "Type": "Edm.Boolean"
+              }
+            ]
+          },
+          {
+            "Name": "Json"
+          },
+          {
+            "Name": "FilterCriteria",
+            "Property": [
+              {
+                "Name": "color",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "criterion1",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "criterion2",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "dynamicCriteria",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "filterOn",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "icon",
+                "Type": "microsoft.graph.Icon"
+              },
+              {
+                "Name": "operator",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "values",
+                "Type": "microsoft.graph.Json"
+              }
+            ]
+          },
+          {
+            "Name": "Icon",
+            "Property": [
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "set",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "SortField",
+            "Property": [
+              {
+                "Name": "ascending",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "color",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "dataOption",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "icon",
+                "Type": "microsoft.graph.Icon"
+              },
+              {
+                "Name": "key",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "sortOn",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "WorksheetProtectionOptions",
+            "Property": [
+              {
+                "Name": "allowAutoFilter",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowDeleteColumns",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowDeleteRows",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowFormatCells",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowFormatColumns",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowFormatRows",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowInsertColumns",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowInsertHyperlinks",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowInsertRows",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowPivotTables",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "allowSort",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ]
+          },
+          {
+            "Name": "FilterDatetime",
+            "Property": [
+              {
+                "Name": "date",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "specificity",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "RangeReference",
+            "Property": {
+              "Name": "address",
+              "Type": "Edm.String",
+              "Unicode": "false"
+            }
           }
         ],
         "Action": [
           {
             "Name": "checkMemberGroups",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5556,7 +7511,6 @@
           {
             "Name": "getMemberGroups",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5577,7 +7531,6 @@
           {
             "Name": "getMemberObjects",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5598,7 +7551,6 @@
           {
             "Name": "assignLicense",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5623,7 +7575,6 @@
           {
             "Name": "changePassword",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5645,7 +7596,6 @@
           {
             "Name": "sendMail",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5665,7 +7615,6 @@
           {
             "Name": "findMeetingTimes",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5693,6 +7642,10 @@
               },
               {
                 "Name": "IsOrganizerOptional",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "ReturnSuggestionHints",
                 "Type": "Edm.Boolean"
               }
             ],
@@ -5781,10 +7734,21 @@
             "Name": "createReply",
             "IsBound": "true",
             "EntitySetPath": "bindingParameter",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "microsoft.graph.message"
-            },
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Message",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
             "ReturnType": {
               "Type": "microsoft.graph.message"
             }
@@ -5793,10 +7757,21 @@
             "Name": "createReplyAll",
             "IsBound": "true",
             "EntitySetPath": "bindingParameter",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "microsoft.graph.message"
-            },
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Message",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
             "ReturnType": {
               "Type": "microsoft.graph.message"
             }
@@ -5805,10 +7780,25 @@
             "Name": "createForward",
             "IsBound": "true",
             "EntitySetPath": "bindingParameter",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "microsoft.graph.message"
-            },
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Message",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "ToRecipients",
+                "Type": "Collection(microsoft.graph.recipient)"
+              }
+            ],
             "ReturnType": {
               "Type": "microsoft.graph.message"
             }
@@ -5816,10 +7806,13 @@
           {
             "Name": "reply",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Message",
                 "Type": "microsoft.graph.message"
               },
               {
@@ -5832,10 +7825,13 @@
           {
             "Name": "replyAll",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Message",
                 "Type": "microsoft.graph.message"
               },
               {
@@ -5848,10 +7844,13 @@
           {
             "Name": "forward",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
+                "Type": "microsoft.graph.message"
+              },
+              {
+                "Name": "Message",
                 "Type": "microsoft.graph.message"
               },
               {
@@ -5868,7 +7867,14 @@
           {
             "Name": "send",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
+            "Parameter": {
+              "Name": "bindingParameter",
+              "Type": "microsoft.graph.message"
+            }
+          },
+          {
+            "Name": "unsubscribe",
+            "IsBound": "true",
             "Parameter": {
               "Name": "bindingParameter",
               "Type": "microsoft.graph.message"
@@ -5877,7 +7883,6 @@
           {
             "Name": "accept",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5897,7 +7902,6 @@
           {
             "Name": "decline",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5917,7 +7921,6 @@
           {
             "Name": "tentativelyAccept",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5937,7 +7940,6 @@
           {
             "Name": "snoozeReminder",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -5953,16 +7955,29 @@
           {
             "Name": "dismissReminder",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": {
               "Name": "bindingParameter",
               "Type": "microsoft.graph.event"
             }
           },
           {
+            "Name": "cancel",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "microsoft.graph.event"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
             "Name": "subscribeByMail",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": {
               "Name": "bindingParameter",
               "Type": "microsoft.graph.group"
@@ -5971,7 +7986,6 @@
           {
             "Name": "unsubscribeByMail",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": {
               "Name": "bindingParameter",
               "Type": "microsoft.graph.group"
@@ -5980,7 +7994,6 @@
           {
             "Name": "addFavorite",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": {
               "Name": "bindingParameter",
               "Type": "microsoft.graph.group"
@@ -5989,7 +8002,6 @@
           {
             "Name": "removeFavorite",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": {
               "Name": "bindingParameter",
               "Type": "microsoft.graph.group"
@@ -5998,7 +8010,6 @@
           {
             "Name": "resetUnseenCount",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": {
               "Name": "bindingParameter",
               "Type": "microsoft.graph.group"
@@ -6007,7 +8018,6 @@
           {
             "Name": "reply",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter/Posts",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -6023,7 +8033,6 @@
           {
             "Name": "forward",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -6044,7 +8053,6 @@
           {
             "Name": "reply",
             "IsBound": "true",
-            "EntitySetPath": "bindingParameter",
             "Parameter": [
               {
                 "Name": "bindingParameter",
@@ -6058,6 +8066,33 @@
             ]
           },
           {
+            "Name": "createLink",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "microsoft.graph.driveItem",
+                "Nullable": "false"
+              },
+              {
+                "Name": "type",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "scope",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.permission",
+              "Nullable": "false"
+            }
+          },
+          {
             "Name": "invite",
             "IsBound": "true",
             "Parameter": [
@@ -6067,9 +8102,17 @@
                 "Nullable": "false"
               },
               {
-                "Name": "recipients",
-                "Type": "Collection(microsoft.graph.recipients)",
-                "Nullable": "false"
+                "Name": "requireSignIn",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "roles",
+                "Type": "Collection(Edm.String)",
+                "Unicode": "false"
+              },
+              {
+                "Name": "sendInvitation",
+                "Type": "Edm.Boolean"
               },
               {
                 "Name": "message",
@@ -6077,17 +8120,9 @@
                 "Unicode": "false"
               },
               {
-                "Name": "requireSignIn",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "sendInvitation",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "roles",
-                "Type": "Collection(Edm.String)",
-                "Unicode": "false"
+                "Name": "recipients",
+                "Type": "Collection(microsoft.graph.driveRecipient)",
+                "Nullable": "false"
               }
             ],
             "ReturnType": {
@@ -6105,38 +8140,17 @@
                 "Nullable": "false"
               },
               {
-                "Name": "parentReference",
-                "Type": "microsoft.graph.itemReference"
-              },
-              {
                 "Name": "name",
                 "Type": "Edm.String",
                 "Unicode": "false"
+              },
+              {
+                "Name": "parentReference",
+                "Type": "microsoft.graph.itemReference"
               }
             ],
             "ReturnType": {
               "Type": "microsoft.graph.driveItem",
-              "Nullable": "false"
-            }
-          },
-          {
-            "Name": "createLink",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "microsoft.graph.driveItem",
-                "Nullable": "false"
-              },
-              {
-                "Name": "type",
-                "Type": "Edm.String",
-                "Nullable": "false",
-                "Unicode": "false"
-              }
-            ],
-            "ReturnType": {
-              "Type": "microsoft.graph.permission",
               "Nullable": "false"
             }
           },
@@ -6151,7 +8165,7 @@
               },
               {
                 "Name": "item",
-                "Type": "microsoft.graph.chunkedUploadSessionDescriptor"
+                "Type": "microsoft.graph.driveItem"
               }
             ],
             "ReturnType": {
@@ -6298,6 +8312,512 @@
             "ReturnType": {
               "Type": "microsoft.graph.importStatusModel"
             }
+          },
+          {
+            "Name": "createSession",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Workbook"
+              },
+              {
+                "Name": "persistChanges",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.SessionInfo"
+            }
+          },
+          {
+            "Name": "closeSession",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Workbook"
+            }
+          },
+          {
+            "Name": "processQuery",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Workbook"
+              },
+              {
+                "Name": "input",
+                "Type": "Edm.Stream"
+              }
+            ],
+            "ReturnType": {
+              "Type": "Edm.Stream"
+            }
+          },
+          {
+            "Name": "calculate",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.ExcelApplication"
+              },
+              {
+                "Name": "calculationType",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "setData",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Chart"
+              },
+              {
+                "Name": "sourceData",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "seriesBy",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "setPosition",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Chart"
+              },
+              {
+                "Name": "startCell",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "endCell",
+                "Type": "microsoft.graph.Json"
+              }
+            ]
+          },
+          {
+            "Name": "add",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.Chart)"
+              },
+              {
+                "Name": "type",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "sourceData",
+                "Type": "microsoft.graph.Json"
+              },
+              {
+                "Name": "seriesBy",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Chart"
+            }
+          },
+          {
+            "Name": "clear",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.ChartFill"
+            }
+          },
+          {
+            "Name": "setSolidColor",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.ChartFill"
+              },
+              {
+                "Name": "color",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "clear",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.ChartLineFormat"
+            }
+          },
+          {
+            "Name": "apply",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Filter"
+              },
+              {
+                "Name": "criteria",
+                "Type": "microsoft.graph.FilterCriteria"
+              }
+            ]
+          },
+          {
+            "Name": "clear",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Filter"
+            }
+          },
+          {
+            "Name": "clear",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "applyTo",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "delete",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "shift",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "insert",
+            "IsBound": "true",
+            "EntitySetPath": "this/insertFunctionReturnSet",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "shift",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "merge",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "across",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ]
+          },
+          {
+            "Name": "unmerge",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "clear",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.RangeFill"
+            }
+          },
+          {
+            "Name": "autofitColumns",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.RangeFormat"
+            }
+          },
+          {
+            "Name": "autofitRows",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.RangeFormat"
+            }
+          },
+          {
+            "Name": "apply",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.RangeSort"
+              },
+              {
+                "Name": "fields",
+                "Type": "Collection(microsoft.graph.SortField)"
+              },
+              {
+                "Name": "matchCase",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "hasHeaders",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "orientation",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              },
+              {
+                "Name": "method",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "clearFilters",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Table"
+            }
+          },
+          {
+            "Name": "convertToRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/convertToRangeFunctionReturnSet",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Table"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "reapplyFilters",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Table"
+            }
+          },
+          {
+            "Name": "add",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.Table)"
+              },
+              {
+                "Name": "address",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              },
+              {
+                "Name": "hasHeaders",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Table"
+            }
+          },
+          {
+            "Name": "add",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.TableColumn)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "values",
+                "Type": "microsoft.graph.Json"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.TableColumn"
+            }
+          },
+          {
+            "Name": "add",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.TableRow)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32"
+              },
+              {
+                "Name": "values",
+                "Type": "microsoft.graph.Json"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.TableRow"
+            }
+          },
+          {
+            "Name": "apply",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.TableSort"
+              },
+              {
+                "Name": "fields",
+                "Type": "Collection(microsoft.graph.SortField)"
+              },
+              {
+                "Name": "matchCase",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "method",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "clear",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.TableSort"
+            }
+          },
+          {
+            "Name": "reapply",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.TableSort"
+            }
+          },
+          {
+            "Name": "add",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.Worksheet)"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Worksheet"
+            }
+          },
+          {
+            "Name": "protect",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.WorksheetProtection"
+              },
+              {
+                "Name": "options",
+                "Type": "microsoft.graph.WorksheetProtectionOptions"
+              },
+              {
+                "Name": "password",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
+          },
+          {
+            "Name": "unprotect",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.WorksheetProtection"
+              },
+              {
+                "Name": "password",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ]
           }
         ],
         "Function": [
@@ -6327,32 +8847,6 @@
             }
           },
           {
-            "Name": "allPhotos",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "microsoft.graph.driveItem",
-              "Nullable": "false"
-            },
-            "ReturnType": {
-              "Type": "Collection(microsoft.graph.driveItem)",
-              "Nullable": "false"
-            }
-          },
-          {
-            "Name": "allPhotos",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "microsoft.graph.drive",
-              "Nullable": "false"
-            },
-            "ReturnType": {
-              "Type": "Collection(microsoft.graph.driveItem)",
-              "Nullable": "false"
-            }
-          },
-          {
             "Name": "search",
             "IsBound": "true",
             "Parameter": [
@@ -6371,6 +8865,798 @@
               "Type": "Collection(microsoft.graph.driveItem)",
               "Nullable": "false"
             }
+          },
+          {
+            "Name": "delta",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "microsoft.graph.driveItem",
+                "Nullable": "false"
+              },
+              {
+                "Name": "token",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "Collection(microsoft.graph.driveItem)",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "delta",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "bindingParameter",
+              "Type": "microsoft.graph.driveItem",
+              "Nullable": "false"
+            },
+            "ReturnType": {
+              "Type": "Collection(microsoft.graph.driveItem)",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "recent",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "bindingParameter",
+              "Type": "microsoft.graph.drive",
+              "Nullable": "false"
+            },
+            "ReturnType": {
+              "Type": "Collection(microsoft.graph.driveItem)",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "sharedWithMe",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "bindingParameter",
+              "Type": "microsoft.graph.drive",
+              "Nullable": "false"
+            },
+            "ReturnType": {
+              "Type": "Collection(microsoft.graph.driveItem)",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "itemAt",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.Binding)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Binding"
+            }
+          },
+          {
+            "Name": "image",
+            "IsBound": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Chart"
+              },
+              {
+                "Name": "width",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "height",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "fittingMode",
+                "Type": "Edm.String",
+                "Nullable": "false",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "Edm.String",
+              "Unicode": "false"
+            }
+          },
+          {
+            "Name": "item",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.Chart)"
+              },
+              {
+                "Name": "name",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Chart"
+            }
+          },
+          {
+            "Name": "itemAt",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.Chart)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Chart"
+            }
+          },
+          {
+            "Name": "itemAt",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.ChartPoint)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.ChartPoint"
+            }
+          },
+          {
+            "Name": "itemAt",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.ChartSeries)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.ChartSeries"
+            }
+          },
+          {
+            "Name": "range",
+            "IsBound": "true",
+            "EntitySetPath": "this/rangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.NamedItem"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "boundingRect",
+            "IsBound": "true",
+            "EntitySetPath": "this/boundingRectFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "anotherRange",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "cell",
+            "IsBound": "true",
+            "EntitySetPath": "this/cellFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "row",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "column",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "column",
+            "IsBound": "true",
+            "EntitySetPath": "this/columnFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "column",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "entireColumn",
+            "IsBound": "true",
+            "EntitySetPath": "this/entireColumnFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Range"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "entireRow",
+            "IsBound": "true",
+            "EntitySetPath": "this/entireRowFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Range"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "intersection",
+            "IsBound": "true",
+            "EntitySetPath": "this/intersectionFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "anotherRange",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "lastCell",
+            "IsBound": "true",
+            "EntitySetPath": "this/lastCellFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Range"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "lastColumn",
+            "IsBound": "true",
+            "EntitySetPath": "this/lastColumnFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Range"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "lastRow",
+            "IsBound": "true",
+            "EntitySetPath": "this/lastRowFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Range"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "offsetRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/offsetRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "rowOffset",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "columnOffset",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "row",
+            "IsBound": "true",
+            "EntitySetPath": "this/rowFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "row",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "usedRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/usedRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Range"
+              },
+              {
+                "Name": "valuesOnly",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "itemAt",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.RangeBorder)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.RangeBorder"
+            }
+          },
+          {
+            "Name": "dataBodyRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/dataBodyRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Table"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "headerRowRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/headerRowRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Table"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "range",
+            "IsBound": "true",
+            "EntitySetPath": "this/rangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Table"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "totalRowRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/totalRowRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.Table"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "itemAt",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.Table)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Table"
+            }
+          },
+          {
+            "Name": "dataBodyRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/dataBodyRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.TableColumn"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "headerRowRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/headerRowRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.TableColumn"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "range",
+            "IsBound": "true",
+            "EntitySetPath": "this/rangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.TableColumn"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "totalRowRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/totalRowRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.TableColumn"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "itemAt",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.TableColumn)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.TableColumn"
+            }
+          },
+          {
+            "Name": "range",
+            "IsBound": "true",
+            "EntitySetPath": "this/rangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "microsoft.graph.TableRow"
+            },
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "itemAt",
+            "IsBound": "true",
+            "EntitySetPath": "this",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "Collection(microsoft.graph.TableRow)"
+              },
+              {
+                "Name": "index",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.TableRow"
+            }
+          },
+          {
+            "Name": "cell",
+            "IsBound": "true",
+            "EntitySetPath": "this/cellFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Worksheet"
+              },
+              {
+                "Name": "row",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "column",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "range",
+            "IsBound": "true",
+            "EntitySetPath": "this/rangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Worksheet"
+              },
+              {
+                "Name": "address",
+                "Type": "Edm.String",
+                "Unicode": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "usedRange",
+            "IsBound": "true",
+            "EntitySetPath": "this/usedRangeFunctionReturnSet",
+            "IsComposable": "true",
+            "Parameter": [
+              {
+                "Name": "this",
+                "Type": "microsoft.graph.Worksheet"
+              },
+              {
+                "Name": "valuesOnly",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ],
+            "ReturnType": {
+              "Type": "microsoft.graph.Range"
+            }
+          },
+          {
+            "Name": "count",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "Collection(microsoft.graph.Binding)"
+            },
+            "ReturnType": {
+              "Type": "Edm.Int32",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "count",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "Collection(microsoft.graph.Chart)"
+            },
+            "ReturnType": {
+              "Type": "Edm.Int32",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "count",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "Collection(microsoft.graph.ChartPoint)"
+            },
+            "ReturnType": {
+              "Type": "Edm.Int32",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "count",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "Collection(microsoft.graph.ChartSeries)"
+            },
+            "ReturnType": {
+              "Type": "Edm.Int32",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "count",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "Collection(microsoft.graph.RangeBorder)"
+            },
+            "ReturnType": {
+              "Type": "Edm.Int32",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "count",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "Collection(microsoft.graph.Table)"
+            },
+            "ReturnType": {
+              "Type": "Edm.Int32",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "count",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "Collection(microsoft.graph.TableColumn)"
+            },
+            "ReturnType": {
+              "Type": "Edm.Int32",
+              "Nullable": "false"
+            }
+          },
+          {
+            "Name": "count",
+            "IsBound": "true",
+            "Parameter": {
+              "Name": "this",
+              "Type": "Collection(microsoft.graph.TableRow)"
+            },
+            "ReturnType": {
+              "Type": "Edm.Int32",
+              "Nullable": "false"
+            }
+          }
+        ],
+        "Term": [
+          {
+            "Name": "sourceUrl",
+            "Type": "Edm.String",
+            "AppliesTo": "microsoft.graph.driveItem"
+          },
+          {
+            "Name": "downloadUrl",
+            "Type": "Edm.String",
+            "AppliesTo": "microsoft.graph.driveItem"
+          },
+          {
+            "Name": "conflictBehavior",
+            "Type": "Edm.String",
+            "AppliesTo": "microsoft.graph.driveItem"
           }
         ],
         "EntityContainer": {
@@ -6455,6 +9741,10 @@
                   "Target": "directoryObjects"
                 },
                 {
+                  "Path": "settings",
+                  "Target": "settings"
+                },
+                {
                   "Path": "microsoft.graph.driveItem/lastModifiedByUser",
                   "Target": "users"
                 },
@@ -6479,6 +9769,10 @@
             {
               "Name": "directoryRoleTemplates",
               "EntityType": "microsoft.graph.directoryRoleTemplate"
+            },
+            {
+              "Name": "directorySettingTemplates",
+              "EntityType": "microsoft.graph.directorySettingTemplate"
             },
             {
               "Name": "organization",
@@ -6521,6 +9815,10 @@
                   "Target": "directoryObjects"
                 }
               ]
+            },
+            {
+              "Name": "settings",
+              "EntityType": "microsoft.graph.directorySetting"
             },
             {
               "Name": "subscribedSkus",
@@ -6591,10 +9889,6 @@
               ]
             },
             {
-              "Name": "shares",
-              "EntityType": "microsoft.graph.share"
-            },
-            {
               "Name": "tasks",
               "EntityType": "microsoft.graph.task"
             },
@@ -6619,6 +9913,10 @@
                 "Path": "tasks",
                 "Target": "tasks"
               }
+            },
+            {
+              "Name": "workbooks",
+              "EntityType": "microsoft.graph.driveItem"
             },
             {
               "Name": "subscriptions",
@@ -6802,6 +10100,27 @@
                 "Bool": "false"
               }
             ]
+          },
+          {
+            "Target": "microsoft.graph.referenceAttachment/sourceUrl",
+            "Annotation": {
+              "Term": "Org.OData.Core.V1.IsURL",
+              "Bool": "true"
+            }
+          },
+          {
+            "Target": "microsoft.graph.referenceAttachment/thumbnailUrl",
+            "Annotation": {
+              "Term": "Org.OData.Core.V1.IsURL",
+              "Bool": "true"
+            }
+          },
+          {
+            "Target": "microsoft.graph.referenceAttachment/previewUrl",
+            "Annotation": {
+              "Term": "Org.OData.Core.V1.IsURL",
+              "Bool": "true"
+            }
           },
           {
             "Target": "microsoft.graph.notebook",
@@ -7038,7 +10357,7 @@
             "Target": "microsoft.graph.section/pagesUrl",
             "Annotation": {
               "Term": "Org.OData.Core.V1.Description",
-              "String": "The /pages endpoint where you can get details for all the pages in the section.\""
+              "String": "The /pages endpoint where you can get details for all the pages in the section."
             }
           },
           {
@@ -7136,7 +10455,7 @@
             "Target": "microsoft.graph.page/links",
             "Annotation": {
               "Term": "Org.OData.Core.V1.Description",
-              "String": "The oneNoteClientURL link to open the page in the OneNote native client if it's installed,  and oneNoteWebUrl to open the page in OneNote Online"
+              "String": "The oneNoteClientURL link to open the page in the OneNote native client if it's installed, and oneNoteWebUrl to open the page in OneNote Online"
             }
           },
           {

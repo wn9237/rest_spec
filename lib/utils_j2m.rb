@@ -1,15 +1,14 @@
 module SpecMaker
 	# Initialize 
 	JSON_BASE_FOLDER = "../jsonFiles/"
-	#JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
-	JSON_SOURCE_FOLDER = "C:/Users/suramam/Git/md_apispec/jsonFiles/rest/"
+	JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
 	ENUMS = JSON_BASE_FOLDER + '/settings/restenums.json'
 	MARKDOWN_RESOURCE_FOLDER = "../markdowns/resources/"
 	MARKDOWN_API_FOLDER = "../markdowns/api/"
 	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"	
 	ANNOTATIONS = JSON_BASE_FOLDER + 'settings/annotations.json'
-	SERVER = 'https://graph.microsoft.com/beta'
+	SERVER = 'https://graph.microsoft.com/v1.0'
 	HEADER1 = '# '
 	HEADER2 = '## '
 	HEADER3 = '### '

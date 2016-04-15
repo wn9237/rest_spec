@@ -20,7 +20,7 @@ module SpecMaker
 	@csv_new = []
 
 	def self.append_to_member(resource=nil, action=nil, item={})
-		@csv_common.push "#{resource}, #{action} Member, #{item[:name]}, #{item[:isRelationship]}, #{item[:dataType].to_s}, #{item[:enumName].to_s} \n"  
+		@csv_common.push "#{resource}, #{action} Member, #{item[:name]}, #{item[:isRelationship]}, #{item[:dataType].to_s}, #{item[:enumName].to_s}, #{item[:isReadOnly]} \n"  
 	end
 
 	def self.append_to_api(resource=nil, action=nil, member)
