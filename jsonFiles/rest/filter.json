@@ -1,0 +1,639 @@
+{
+  "name": "filter",
+  "description": "",
+  "collectionOf": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "isOpenType": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": "",
+  "updateDescription": "",
+  "deleteDescription": "",
+  "restPath": {
+    "/groups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/groups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/groups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/groups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/groups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/groups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/groups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/groups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/groups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/users/<id>/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/drives/<id>/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/workbooks/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/workbooks/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/workbooks/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/identityRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/impossibleTravelRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/leakedCredentialsRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/anonymousIpRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/suspiciousIpRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/unfamiliarLocationRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/botnetRiskEvents/<id>/impactedUser/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/me/joinedGroups/<id>/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/me/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/me/trendingAround/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/me/trendingAround/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/me/trendingAround/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/drive/items/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/drive/items/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/drive/items/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/drive/special/<id>/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/drive/special/<id>/workbook/tables/<id>/columns/<id>/filter": true,
+    "/drive/special/<id>/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true,
+    "/drive/root/workbook/names/<id>/rangeFunctionReturnSet/<id>/worksheet/tables/<id>/columns/<id>/filter": true,
+    "/drive/root/workbook/tables/<id>/columns/<id>/filter": true,
+    "/drive/root/workbook/worksheets/<id>/tables/<id>/columns/<id>/filter": true
+  },
+  "properties": [
+    {
+      "name": "id",
+      "description": "",
+      "isKey": true,
+      "dataType": "string",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": false
+    },
+    {
+      "name": "criteria",
+      "description": "",
+      "isKey": false,
+      "dataType": "filterCriteria",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "apply",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "criteria",
+          "description": "",
+          "dataType": "filterCriteria",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "applyBottomItemsFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "count",
+          "description": "",
+          "dataType": "int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "applyBottomPercentFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "percent",
+          "description": "",
+          "dataType": "int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "applyCellColorFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "color",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "applyCustomFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "criteria1",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "criteria2",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "oper",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "applyDynamicFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "criteria",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "applyFontColorFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "color",
+          "description": "",
+          "dataType": "string",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "applyIconFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "icon",
+          "description": "",
+          "dataType": "icon",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "applyTopItemsFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "count",
+          "description": "",
+          "dataType": "int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "applyTopPercentFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "percent",
+          "description": "",
+          "dataType": "int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "applyValuesFilter",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "values",
+          "description": "",
+          "dataType": "json",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    }
+  ]
+}

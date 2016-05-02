@@ -2,7 +2,6 @@
   "directoryobject": {
     "expandrestrictions/expandable": false,
     "navigationrestrictions/referenceable": false,
-    "selectrestrictions/selectable": false,
     "countrestrictions/countable": false,
     "filterrestrictions/filterable": false,
     "skipsupported": false
@@ -16,7 +15,6 @@
   "subscribedsku": {
     "expandrestrictions/expandable": false,
     "navigationrestrictions/referenceable": false,
-    "selectrestrictions/selectable": false,
     "countrestrictions/countable": false,
     "filterrestrictions/filterable": false,
     "topsupported": false,
@@ -30,6 +28,12 @@
   },
   "referenceattachment/previewurl": {
     "isurl": true
+  },
+  "trending/resourcevisualization": {
+    "computed": true
+  },
+  "trending/resourcereference": {
+    "computed": true
   },
   "notebook": {
     "description": "A OneNote notebook"
@@ -85,9 +89,6 @@
   "notebook/lastmodifiedtime": {
     "description": "The date and time when the notebook was last modified."
   },
-  "notebook/id": {
-    "description": "The unique identifier of the notebook."
-  },
   "notebook/self": {
     "description": "The endpoint where you can get details about the notebook."
   },
@@ -118,9 +119,6 @@
   "sectiongroup/lastmodifiedtime": {
     "description": "The date and time when the section group was last modified."
   },
-  "sectiongroup/id": {
-    "description": "The unique identifier of the section group."
-  },
   "sectiongroup/self": {
     "description": "The endpoint where you can get details about the section group."
   },
@@ -131,7 +129,7 @@
     "description": "Indicates whether this is the user's default section."
   },
   "section/pagesurl": {
-    "description": "The /pages endpoint where you can get details for all the pages in the section."
+    "description": "The /pages endpoint where you can get details for all the pages in the section.\""
   },
   "section/name": {
     "description": "The name of the section."
@@ -150,9 +148,6 @@
   },
   "section/lastmodifiedtime": {
     "description": "The date and time when the section was last modified."
-  },
-  "section/id": {
-    "description": "The unique identifier of the section."
   },
   "section/self": {
     "description": "The endpoint where you can get details about the section."
@@ -173,19 +168,13 @@
     "description": "The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client."
   },
   "page/links": {
-    "description": "The oneNoteClientURL link to open the page in the OneNote native client if it's installed, and oneNoteWebUrl to open the page in OneNote Online"
+    "description": "The oneNoteClientURL link to open the page in the OneNote native client if it's installed,  and oneNoteWebUrl to open the page in OneNote Online"
   },
   "page/contenturl": {
     "description": "The URL for the page's HTML content"
   },
-  "page/id": {
-    "description": "The unique identifier of the page"
-  },
   "page/createdtime": {
     "description": "The date and time when the page was created in UTC format"
-  },
-  "resource/id": {
-    "description": "The unique id of this resource."
   },
   "resource/content": {
     "description": "A stream of the content of this resource."
@@ -202,5 +191,77 @@
     "sortrestrictions/sortable": false,
     "skipsupported": false,
     "topsupported": false
+  },
+  "identityriskevent": {
+    "expandrestrictions/expandable": true,
+    "navigationrestrictions/referenceable": true,
+    "selectrestrictions/selectable": true,
+    "countrestrictions/countable": true,
+    "filterrestrictions/filterable": true,
+    "topsupported": true,
+    "skipsupported": true
+  },
+  "locatedriskevent": {
+    "expandrestrictions/expandable": true,
+    "navigationrestrictions/referenceable": true,
+    "selectrestrictions/selectable": true,
+    "countrestrictions/countable": true,
+    "filterrestrictions/filterable": true,
+    "topsupported": true,
+    "skipsupported": true
+  },
+  "impossibletravelriskevent": {
+    "expandrestrictions/expandable": true,
+    "navigationrestrictions/referenceable": true,
+    "selectrestrictions/selectable": true,
+    "countrestrictions/countable": true,
+    "filterrestrictions/filterable": true,
+    "topsupported": true,
+    "skipsupported": true
+  },
+  "leakedcredentialsriskevent": {
+    "expandrestrictions/expandable": true,
+    "navigationrestrictions/referenceable": true,
+    "selectrestrictions/selectable": true,
+    "countrestrictions/countable": true,
+    "filterrestrictions/filterable": true,
+    "topsupported": true,
+    "skipsupported": true
+  },
+  "anonymousipriskevent": {
+    "expandrestrictions/expandable": true,
+    "navigationrestrictions/referenceable": true,
+    "selectrestrictions/selectable": true,
+    "countrestrictions/countable": true,
+    "filterrestrictions/filterable": true,
+    "topsupported": true,
+    "skipsupported": true
+  },
+  "suspiciousipriskevent": {
+    "expandrestrictions/expandable": true,
+    "navigationrestrictions/referenceable": true,
+    "selectrestrictions/selectable": true,
+    "countrestrictions/countable": true,
+    "filterrestrictions/filterable": true,
+    "topsupported": true,
+    "skipsupported": true
+  },
+  "unfamiliarlocationriskevent": {
+    "expandrestrictions/expandable": true,
+    "navigationrestrictions/referenceable": true,
+    "selectrestrictions/selectable": true,
+    "countrestrictions/countable": true,
+    "filterrestrictions/filterable": true,
+    "topsupported": true,
+    "skipsupported": true
+  },
+  "botnetriskevent": {
+    "expandrestrictions/expandable": true,
+    "navigationrestrictions/referenceable": true,
+    "selectrestrictions/selectable": true,
+    "countrestrictions/countable": true,
+    "filterrestrictions/filterable": true,
+    "topsupported": true,
+    "skipsupported": true
   }
 }

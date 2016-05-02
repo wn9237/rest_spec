@@ -579,6 +579,27 @@
       }
     }
   },
+  "containerType": {
+    "isExclusive": true,
+    "options": {
+      "none": {
+        "value": "0",
+        "description": ""
+      },
+      "oneDrive": {
+        "value": "1",
+        "description": ""
+      },
+      "group": {
+        "value": "2",
+        "description": ""
+      },
+      "site": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
   "patchInsertPosition": {
     "isExclusive": true,
     "options": {
@@ -676,6 +697,157 @@
       },
       "reference": {
         "value": "4",
+        "description": ""
+      }
+    }
+  },
+  "riskEventStatus": {
+    "isExclusive": true,
+    "options": {
+      "active": {
+        "value": "0",
+        "description": ""
+      },
+      "remediated": {
+        "value": "1",
+        "description": ""
+      },
+      "dismissedAsFixed": {
+        "value": "2",
+        "description": ""
+      },
+      "dismissedAsFalsePositive": {
+        "value": "3",
+        "description": ""
+      },
+      "dismissedAsIgnore": {
+        "value": "4",
+        "description": ""
+      },
+      "loginBlocked": {
+        "value": "5",
+        "description": ""
+      },
+      "closedMfaAuto": {
+        "value": "6",
+        "description": ""
+      },
+      "closedMultipleReasons": {
+        "value": "7",
+        "description": ""
+      }
+    }
+  },
+  "riskLevel": {
+    "isExclusive": true,
+    "options": {
+      "low": {
+        "value": "0",
+        "description": ""
+      },
+      "medium": {
+        "value": "1",
+        "description": ""
+      },
+      "high": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "roleSummaryStatus": {
+    "isExclusive": true,
+    "options": {
+      "ok": {
+        "value": "0",
+        "description": ""
+      },
+      "bad": {
+        "value": "1",
+        "description": ""
+      }
+    }
+  },
+  "alertSeverity": {
+    "isExclusive": true,
+    "options": {
+      "high": {
+        "value": "1",
+        "description": ""
+      },
+      "medium": {
+        "value": "2",
+        "description": ""
+      },
+      "low": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "alertType": {
+    "isExclusive": true,
+    "options": {
+      "vulnerability": {
+        "value": "1",
+        "description": ""
+      },
+      "attackSuspect": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "alertStatus": {
+    "isExclusive": true,
+    "options": {
+      "active": {
+        "value": "0",
+        "description": ""
+      },
+      "dismissed": {
+        "value": "1",
+        "description": ""
+      },
+      "inactive": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "setupStatus": {
+    "isExclusive": true,
+    "options": {
+      "unknown": {
+        "value": "0",
+        "description": ""
+      },
+      "notRegisteredYet": {
+        "value": "1",
+        "description": ""
+      },
+      "registeredSetupNotStarted": {
+        "value": "2",
+        "description": ""
+      },
+      "registeredSetupInProgress": {
+        "value": "3",
+        "description": ""
+      },
+      "registrationAndSetupCompleted": {
+        "value": "4",
+        "description": ""
+      },
+      "registrationFailed": {
+        "value": "5",
+        "description": ""
+      },
+      "registrationTimedOut": {
+        "value": "6",
+        "description": ""
+      },
+      "disabled": {
+        "value": "7",
         "description": ""
       }
     }

@@ -353,7 +353,7 @@ module SpecMaker
 
 	def self.get_json_model_pretext (objectName="", properties=[])
 		model = deep_copy(@mdresource)
-		model["@odata.type"] = "#{@service[:namespace]}.#{objectName}".downcase
+		model["@odata.type"] = "#{@service[:namespace]}.#{objectName}"
 		properties.each do |item|
 
 			next if item[:isRelationship]
@@ -409,9 +409,9 @@ module SpecMaker
 		if type == nil || type == 'none'			
 		else
 			if SIMPLETYPES.include? type  
-				model["@odata.type"] = type.downcase
+				model["@odata.type"] = type
 			else
-				model["@odata.type"] = "#{@service[:namespace]}.#{type}".downcase
+				model["@odata.type"] = "#{@service[:namespace]}.#{type}"
 			end
 			model[:isCollection] = true if isArray
 		end

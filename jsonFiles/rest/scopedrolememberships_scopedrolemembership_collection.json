@@ -1,0 +1,36 @@
+{
+  "name": "scopedRoleMemberships",
+  "description": "",
+  "collectionOf": "scopedRoleMembership",
+  "isComplexType": false,
+  "isEntitySet": true,
+  "isOpenType": false,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": null,
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": null,
+  "updateDescription": null,
+  "deleteDescription": null,
+  "restPath": {
+    "/scopedRoleMemberships": true
+  },
+  "properties": [
+
+  ],
+  "methods": [
+
+  ]
+}
