@@ -1,3 +1,4 @@
+administrativeunit 
 automaticrepliessetting 
 binding 
 chart 
@@ -25,6 +26,7 @@ charttitleformat
 directorysetting 
 directorysettingtemplate 
 driverecipient 
+entity 
 eventmessagerequest 
 excelapplication 
 filter 
@@ -33,12 +35,16 @@ filterdatetime
 followupflag 
 formatprotection 
 functionresult 
+functions 
 icon 
+identityinfo 
 json 
 locationconstraintitem 
 mailboxsettings 
 multivaluelegacyextendedproperty 
 nameditem 
+officegraphinsights 
+package 
 phone 
 range 
 rangeborder 
@@ -49,6 +55,9 @@ rangereference
 rangesort 
 rankedemailaddress 
 remoteitem 
+resourcereference 
+resourcevisualization 
+scopedrolemembership 
 sessioninfo 
 settingtemplatevalue 
 settingvalue 
@@ -58,6 +67,7 @@ table
 tablecolumn 
 tablerow 
 tablesort 
+trending 
 userconfiguration 
 website 
 workbook 

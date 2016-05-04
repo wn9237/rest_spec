@@ -1,122 +1,4 @@
 {
-  "automaticRepliesStatus": {
-    "isExclusive": true,
-    "options": {
-      "disabled": {
-        "value": "0",
-        "description": ""
-      },
-      "alwaysEnabled": {
-        "value": "1",
-        "description": ""
-      },
-      "scheduled": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "externalAudienceScope": {
-    "isExclusive": true,
-    "options": {
-      "none": {
-        "value": "0",
-        "description": ""
-      },
-      "contactsOnly": {
-        "value": "1",
-        "description": ""
-      },
-      "all": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "attendeeType": {
-    "isExclusive": true,
-    "options": {
-      "required": {
-        "value": "0",
-        "description": ""
-      },
-      "optional": {
-        "value": "1",
-        "description": ""
-      },
-      "resource": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "freeBusyStatus": {
-    "isExclusive": true,
-    "options": {
-      "free": {
-        "value": "0",
-        "description": ""
-      },
-      "tentative": {
-        "value": "1",
-        "description": ""
-      },
-      "busy": {
-        "value": "2",
-        "description": ""
-      },
-      "oof": {
-        "value": "3",
-        "description": ""
-      },
-      "workingElsewhere": {
-        "value": "4",
-        "description": ""
-      },
-      "unknown": {
-        "value": "-1",
-        "description": ""
-      }
-    }
-  },
-  "physicalAddressType": {
-    "isExclusive": true,
-    "options": {
-      "unknown": {
-        "value": "0",
-        "description": ""
-      },
-      "home": {
-        "value": "1",
-        "description": ""
-      },
-      "business": {
-        "value": "2",
-        "description": ""
-      },
-      "other": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "activityDomain": {
-    "isExclusive": true,
-    "options": {
-      "unknown": {
-        "value": "0",
-        "description": ""
-      },
-      "work": {
-        "value": "1",
-        "description": ""
-      },
-      "personal": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
   "bodyType": {
     "isExclusive": true,
     "options": {
@@ -156,23 +38,6 @@
       },
       "other": {
         "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "followupFlagStatus": {
-    "isExclusive": true,
-    "options": {
-      "notFlagged": {
-        "value": "0",
-        "description": ""
-      },
-      "complete": {
-        "value": "1",
-        "description": ""
-      },
-      "flagged": {
-        "value": "2",
         "description": ""
       }
     }
@@ -380,6 +245,35 @@
       }
     }
   },
+  "freeBusyStatus": {
+    "isExclusive": true,
+    "options": {
+      "free": {
+        "value": "0",
+        "description": ""
+      },
+      "tentative": {
+        "value": "1",
+        "description": ""
+      },
+      "busy": {
+        "value": "2",
+        "description": ""
+      },
+      "oof": {
+        "value": "3",
+        "description": ""
+      },
+      "workingElsewhere": {
+        "value": "4",
+        "description": ""
+      },
+      "unknown": {
+        "value": "-1",
+        "description": ""
+      }
+    }
+  },
   "eventType": {
     "isExclusive": true,
     "options": {
@@ -397,6 +291,23 @@
       },
       "seriesMaster": {
         "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "attendeeType": {
+    "isExclusive": true,
+    "options": {
+      "required": {
+        "value": "0",
+        "description": ""
+      },
+      "optional": {
+        "value": "1",
+        "description": ""
+      },
+      "resource": {
+        "value": "2",
         "description": ""
       }
     }
@@ -420,262 +331,12 @@
         "value": "3",
         "description": ""
       },
-      "meetingTentativelyAccepted": {
+      "meetingTenativelyAccepted": {
         "value": "4",
         "description": ""
       },
       "meetingDeclined": {
         "value": "5",
-        "description": ""
-      }
-    }
-  },
-  "referenceAttachmentProvider": {
-    "isExclusive": true,
-    "options": {
-      "other": {
-        "value": "0",
-        "description": ""
-      },
-      "oneDriveBusiness": {
-        "value": "1",
-        "description": ""
-      },
-      "oneDriveConsumer": {
-        "value": "2",
-        "description": ""
-      },
-      "dropbox": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "referenceAttachmentPermission": {
-    "isExclusive": true,
-    "options": {
-      "other": {
-        "value": "0",
-        "description": ""
-      },
-      "view": {
-        "value": "1",
-        "description": ""
-      },
-      "edit": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "groupAccessType": {
-    "isExclusive": true,
-    "options": {
-      "none": {
-        "value": "0",
-        "description": ""
-      },
-      "private": {
-        "value": "1",
-        "description": ""
-      },
-      "secret": {
-        "value": "2",
-        "description": ""
-      },
-      "public": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "phoneType": {
-    "isExclusive": true,
-    "options": {
-      "unknown": {
-        "value": "0",
-        "description": ""
-      },
-      "home": {
-        "value": "1",
-        "description": ""
-      },
-      "business": {
-        "value": "2",
-        "description": ""
-      },
-      "mobile": {
-        "value": "3",
-        "description": ""
-      },
-      "other": {
-        "value": "4",
-        "description": ""
-      },
-      "assistant": {
-        "value": "5",
-        "description": ""
-      },
-      "callback": {
-        "value": "6",
-        "description": ""
-      },
-      "car": {
-        "value": "7",
-        "description": ""
-      },
-      "homeFax": {
-        "value": "8",
-        "description": ""
-      },
-      "businessFax": {
-        "value": "9",
-        "description": ""
-      },
-      "otherFax": {
-        "value": "10",
-        "description": ""
-      },
-      "pager": {
-        "value": "11",
-        "description": ""
-      },
-      "primary": {
-        "value": "12",
-        "description": ""
-      },
-      "radio": {
-        "value": "13",
-        "description": ""
-      },
-      "telex": {
-        "value": "14",
-        "description": ""
-      },
-      "ttyTdd": {
-        "value": "15",
-        "description": ""
-      },
-      "organizationMain": {
-        "value": "16",
-        "description": ""
-      }
-    }
-  },
-  "webSiteType": {
-    "isExclusive": true,
-    "options": {
-      "unknown": {
-        "value": "0",
-        "description": ""
-      },
-      "personalHomePage": {
-        "value": "1",
-        "description": ""
-      },
-      "businessHomePage": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "patchInsertPosition": {
-    "isExclusive": true,
-    "options": {
-      "After": {
-        "value": "0",
-        "description": ""
-      },
-      "Before": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "patchActionType": {
-    "isExclusive": true,
-    "options": {
-      "Replace": {
-        "value": "0",
-        "description": ""
-      },
-      "Append": {
-        "value": "1",
-        "description": ""
-      },
-      "Delete": {
-        "value": "2",
-        "description": ""
-      },
-      "Insert": {
-        "value": "3",
-        "description": ""
-      },
-      "Prepend": {
-        "value": "4",
-        "description": ""
-      }
-    }
-  },
-  "userRole": {
-    "isExclusive": true,
-    "options": {
-      "Owner": {
-        "value": "0",
-        "description": ""
-      },
-      "Contributor": {
-        "value": "1",
-        "description": ""
-      },
-      "Reader": {
-        "value": "2",
-        "description": ""
-      },
-      "None": {
-        "value": "-1",
-        "description": ""
-      }
-    }
-  },
-  "taskBoardType": {
-    "isExclusive": true,
-    "options": {
-      "progress": {
-        "value": "0",
-        "description": ""
-      },
-      "assignedTo": {
-        "value": "1",
-        "description": ""
-      },
-      "bucket": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "previewType": {
-    "isExclusive": true,
-    "options": {
-      "automatic": {
-        "value": "0",
-        "description": ""
-      },
-      "noPreview": {
-        "value": "1",
-        "description": ""
-      },
-      "checklist": {
-        "value": "2",
-        "description": ""
-      },
-      "description": {
-        "value": "3",
-        "description": ""
-      },
-      "reference": {
-        "value": "4",
         "description": ""
       }
     }

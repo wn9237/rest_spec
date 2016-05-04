@@ -9,10 +9,10 @@ module SpecMaker
 
 	# Initialize 
 
-	API = "C:/Users/suramam/Git/sumurthy/microsoft-graph-docs/api-reference/api/*"
-	RESOURCES = "C:/Users/suramam/Git/sumurthy/microsoft-graph-docs/api-reference/resources/*"
+	API = "C:/Users/suramam/git/sudhiseattle/excelrest/api/*"
+	RESOURCES = "C:/Users/suramam/git/sudhiseattle/excelrest/resources/*"
 
-	NEW_API =  "C:/Users/suramam/Git/sumurthy/microsoft-graph-docs/api-reference/newapi/"
+	NEW_API =  "C:/Users/suramam/git/sudhiseattle/excelrest/newapi/"
 	NEWLINE = "\n"
 
 	def self.do_check(oldm=nil, newm=nil)
@@ -33,6 +33,7 @@ module SpecMaker
 		found = false
 		Dir.glob(RESOURCES) do |resource_name|
 			#next if !resource_name.include?('application')
+			#puts "Processing --> #{resource_name}"
 			text = File.read(resource_name)
 			
 			if text.include?(api_name)

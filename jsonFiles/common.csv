@@ -7,6 +7,7 @@ contact, Add Member, singleValueExtendedProperties, true, singleValueLegacyExten
 contact, Add Member, multiValueExtendedProperties, true, multiValueLegacyExtendedProperty, , true 
 contactfolder, Add Member, singleValueExtendedProperties, true, singleValueLegacyExtendedProperty, , true 
 contactfolder, Add Member, multiValueExtendedProperties, true, multiValueLegacyExtendedProperty, , true 
+directoryrole, Add Member, scopedAdministrators, true, scopedRoleMembership, , true 
 drive, Remove Member, shared, true, driveItem, , true 
 drive, Add API, recent 
 drive, Add API, sharedWithMe 
@@ -14,9 +15,11 @@ drive, Remove API, allPhotos
 driveitem, Remove Member, openWith, false, openWithSet, , false 
 driveitem, Remove Member, versions, true, driveItem, , true 
 driveitem, Add Member, remoteItem, false, remoteItem, , false 
+driveitem, Add Member, package, false, package, , false 
 driveitem, Add Member, workbook, true, workbook, , true 
 driveitem, Add API, delta 
 driveitem, Add API, delta 
+driveitem, Remove API, createSession 
 driveitem, Remove API, allPhotos 
 event, Add Member, onlineMeetingUrl, false, string, , false 
 event, Add Member, singleValueExtendedProperties, true, singleValueLegacyExtendedProperty, , true 
@@ -36,7 +39,11 @@ eventmessage, Add Member, flag, false, followupFlag, , false
 eventmessage, Add Member, singleValueExtendedProperties, true, singleValueLegacyExtendedProperty, , true 
 eventmessage, Add Member, multiValueExtendedProperties, true, multiValueLegacyExtendedProperty, , true 
 eventmessage, Add API, unsubscribe 
+group, Add Member, classification, false, string, , false 
+group, Add Member, createdDateTime, false, dateTimeOffset, , false 
+group, Add Member, renewedDateTime, false, dateTimeOffset, , false 
 group, Add Member, settings, true, directorySetting, , true 
+group, Add API, renew 
 location, Add Member, locationUri, false, string, , false 
 mailfolder, Add Member, wellKnownName, false, string, , false 
 mailfolder, Add Member, userConfigurations, true, userConfiguration, , true 
@@ -77,6 +84,8 @@ referenceattachment, Add Member, isFolder, false, boolean, , false
 sharinginvitation, Add Member, invitedBy, false, identitySet, , false 
 subscription, Remove Member, subscriptionId, false, string, , true 
 subscription, Remove Member, subscriptionExpirationDateTime, false, dateTimeOffset, , false 
-subscription, Add Member, id, false, string, , true 
 subscription, Add Member, expirationDateTime, false, dateTimeOffset, , false 
+subscription, Add Member, id, false, string, , true 
 user, Add Member, mailboxSettings, false, mailboxSettings, , false 
+user, Add Member, scopedAdministratorOf, true, scopedRoleMembership, , true 
+user, Add Member, insights, true, officeGraphInsights, , true 

@@ -10,39 +10,29 @@ require 'securerandom'
 module SpecMaker
 
 
-	API_FOLDER = "../markdowns/api/"
-	API_FOLDER_OUT = "../markdowns/newapi/"
+	# API_FOLDER = "../markdowns/api/"
+	# API_FOLDER_OUT = "../markdowns/newapi/"
 
+	API_FOLDER = "C:/Users/suramam/git/sudhiseattle/excelrest/api/"
+	API_FOLDER_OUT =  "C:/Users/suramam/git/sudhiseattle/excelrest/newapi/"
+	
 
 	NEWLINE = "\n"
 
 	@impacted = 0
-	def self.slice_qparam
-		out = ""
-		out = out + "### Optional query parameters" + NEWLINE
-		out = out + "This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response." + NEWLINE + NEWLINE
-		return out
-	end
-
 
 	def self.convert_to_spec(markdown=nil, filename=nil)
 		puts "-> #{filename}"
 		write = true
 		output = []
 		markdown.each do |line|
-			if line.start_with?('### Optional query parameters')
+			if line.include?('bindings')
 				@impacted = @impacted + 1
 				write = false
 				next
-			end
-
-			if line.start_with?('###') && !write
+			else
 				write = true
-				output.push slice_qparam
-				output.push line
-				next
 			end
-
 			output.push line if write
 		end
 
@@ -61,8 +51,8 @@ module SpecMaker
 	Dir.foreach(API_FOLDER) do |item|
 		next if item == '.' or item == '..'
 		fullpath = API_FOLDER + item.downcase
-		
-		#if File.file?(fullpath) && item == 'application.md'
+		puts "#{item}"		
+		#if File.file?(fullpath) && item == 'filter_apply.md'
 		if File.file?(fullpath)
 			convert_to_spec(File.readlines(fullpath, :encoding => 'UTF-8'), item)
 			processed_files = processed_files + 1

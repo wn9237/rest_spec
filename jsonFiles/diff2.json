@@ -1,4 +1,8 @@
 {
+  "administrativeunit": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "automaticrepliessetting": {
     "isNew": true,
     "isUntouched": null
@@ -48,8 +52,8 @@
       }
     ],
     "renames": {
-      "969": "singleValueExtendedProperties",
-      "694": "multiValueExtendedProperties"
+      "907": "singleValueExtendedProperties",
+      "328": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -228,10 +232,10 @@
       }
     ],
     "renames": {
-      "575": "mobilePhone",
-      "348": "flag",
-      "459": "singleValueExtendedProperties",
-      "378": "multiValueExtendedProperties"
+      "911": "mobilePhone",
+      "419": "flag",
+      "496": "singleValueExtendedProperties",
+      "104": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -282,8 +286,45 @@
       }
     ],
     "renames": {
-      "245": "singleValueExtendedProperties",
-      "686": "multiValueExtendedProperties"
+      "143": "singleValueExtendedProperties",
+      "545": "multiValueExtendedProperties"
+    },
+    "deletedmethods": [
+
+    ],
+    "newmethods": [
+
+    ],
+    "isUntouched": false
+  },
+  "directoryrole": {
+    "isNew": false,
+    "deletedproperties": [
+
+    ],
+    "newproperties": [
+      "scopedAdministrators"
+    ],
+    "deletedproperties1": [
+
+    ],
+    "newproperties1": [
+      {
+        "name": "scopedAdministrators",
+        "description": "",
+        "isKey": false,
+        "dataType": "scopedRoleMembership",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      }
+    ],
+    "renames": {
+      "151": "scopedAdministrators"
     },
     "deletedmethods": [
 
@@ -346,6 +387,7 @@
     ],
     "newproperties": [
       "remoteItem",
+      "package",
       "workbook"
     ],
     "deletedproperties1": [
@@ -391,6 +433,19 @@
         "isUnicode": null
       },
       {
+        "name": "package",
+        "description": "",
+        "isKey": false,
+        "dataType": "package",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
         "name": "workbook",
         "description": "",
         "isKey": false,
@@ -405,10 +460,12 @@
       }
     ],
     "renames": {
-      "847": "remoteItem",
-      "469": "workbook"
+      "257": "remoteItem",
+      "549": "package",
+      "186": "workbook"
     },
     "deletedmethods": [
+      "createSession",
       "allPhotos"
     ],
     "newmethods": [
@@ -418,6 +475,10 @@
     "isUntouched": false
   },
   "driverecipient": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "entity": {
     "isNew": true,
     "isUntouched": null
   },
@@ -476,9 +537,9 @@
       }
     ],
     "renames": {
-      "621": "onlineMeetingUrl",
-      "572": "singleValueExtendedProperties",
-      "148": "multiValueExtendedProperties"
+      "62": "onlineMeetingUrl",
+      "639": "singleValueExtendedProperties",
+      "906": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -683,19 +744,19 @@
       }
     ],
     "renames": {
-      "272": "startDateTime",
-      "150": "endDateTime",
-      "352": "location",
-      "547": "type",
-      "107": "recurrence",
-      "708": "isOutOfDate",
-      "262": "internetMessageId",
-      "681": "conversationIndex",
-      "339": "unsubscribeData",
-      "815": "unsubscribeEnabled",
-      "571": "flag",
-      "729": "singleValueExtendedProperties",
-      "722": "multiValueExtendedProperties"
+      "224": "startDateTime",
+      "191": "endDateTime",
+      "671": "location",
+      "532": "type",
+      "551": "recurrence",
+      "844": "isOutOfDate",
+      "84": "internetMessageId",
+      "66": "conversationIndex",
+      "565": "unsubscribeData",
+      "105": "unsubscribeEnabled",
+      "813": "flag",
+      "608": "singleValueExtendedProperties",
+      "472": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -737,18 +798,64 @@
     "isNew": true,
     "isUntouched": null
   },
+  "functions": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "group": {
     "isNew": false,
     "deletedproperties": [
 
     ],
     "newproperties": [
+      "classification",
+      "createdDateTime",
+      "renewedDateTime",
       "settings"
     ],
     "deletedproperties1": [
 
     ],
     "newproperties1": [
+      {
+        "name": "classification",
+        "description": "",
+        "isKey": false,
+        "dataType": "string",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
+      },
+      {
+        "name": "createdDateTime",
+        "description": "",
+        "isKey": false,
+        "dataType": "dateTimeOffset",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "renewedDateTime",
+        "description": "",
+        "isKey": false,
+        "dataType": "dateTimeOffset",
+        "isReadOnly": false,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
       {
         "name": "settings",
         "description": "",
@@ -764,17 +871,24 @@
       }
     ],
     "renames": {
-      "291": "settings"
+      "23": "classification",
+      "896": "createdDateTime",
+      "304": "renewedDateTime",
+      "263": "settings"
     },
     "deletedmethods": [
 
     ],
     "newmethods": [
-
+      "renew"
     ],
     "isUntouched": false
   },
   "icon": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "identityinfo": {
     "isNew": true,
     "isUntouched": null
   },
@@ -809,7 +923,7 @@
       }
     ],
     "renames": {
-      "546": "locationUri"
+      "333": "locationUri"
     },
     "deletedmethods": [
 
@@ -896,10 +1010,10 @@
       }
     ],
     "renames": {
-      "28": "wellKnownName",
-      "35": "userConfigurations",
-      "500": "singleValueExtendedProperties",
-      "603": "multiValueExtendedProperties"
+      "167": "wellKnownName",
+      "478": "userConfigurations",
+      "45": "singleValueExtendedProperties",
+      "241": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -936,7 +1050,7 @@
       }
     ],
     "renames": {
-      "48": "suggestionHint"
+      "730": "suggestionHint"
     },
     "deletedmethods": [
 
@@ -1057,13 +1171,13 @@
       }
     ],
     "renames": {
-      "935": "internetMessageId",
-      "980": "conversationIndex",
-      "365": "unsubscribeData",
-      "543": "unsubscribeEnabled",
-      "388": "flag",
-      "815": "singleValueExtendedProperties",
-      "378": "multiValueExtendedProperties"
+      "548": "internetMessageId",
+      "751": "conversationIndex",
+      "512": "unsubscribeData",
+      "304": "unsubscribeEnabled",
+      "362": "flag",
+      "197": "singleValueExtendedProperties",
+      "899": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -1078,6 +1192,14 @@
     "isUntouched": null
   },
   "nameditem": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "officegraphinsights": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "package": {
     "isNew": true,
     "isUntouched": null
   },
@@ -1273,17 +1395,17 @@
       }
     ],
     "renames": {
-      "32": "birthday",
-      "603": "personNotes",
-      "66": "isFavorite",
-      "776": "phones",
-      "741": "postalAddresses",
-      "908": "webSites",
-      "981": "yomiCompany",
-      "463": "department",
-      "277": "profession",
-      "114": "mailboxType",
-      "682": "personType"
+      "440": "birthday",
+      "930": "personNotes",
+      "972": "isFavorite",
+      "904": "phones",
+      "387": "postalAddresses",
+      "34": "webSites",
+      "722": "yomiCompany",
+      "215": "department",
+      "510": "profession",
+      "100": "mailboxType",
+      "213": "personType"
     },
     "deletedmethods": [
 
@@ -1338,8 +1460,8 @@
       }
     ],
     "renames": {
-      "37": "type",
-      "659": "postOfficeBox"
+      "436": "type",
+      "686": "postOfficeBox"
     },
     "deletedmethods": [
 
@@ -1390,8 +1512,8 @@
       }
     ],
     "renames": {
-      "325": "singleValueExtendedProperties",
-      "717": "multiValueExtendedProperties"
+      "504": "singleValueExtendedProperties",
+      "469": "multiValueExtendedProperties"
     },
     "deletedmethods": [
 
@@ -1530,12 +1652,12 @@
       }
     ],
     "renames": {
-      "811": "sourceUrl",
-      "438": "providerType",
-      "76": "thumbnailUrl",
-      "663": "previewUrl",
-      "650": "permission",
-      "520": "isFolder"
+      "731": "sourceUrl",
+      "478": "providerType",
+      "980": "thumbnailUrl",
+      "49": "previewUrl",
+      "784": "permission",
+      "445": "isFolder"
     },
     "deletedmethods": [
 
@@ -1546,6 +1668,18 @@
     "isUntouched": false
   },
   "remoteitem": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "resourcereference": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "resourcevisualization": {
+    "isNew": true,
+    "isUntouched": null
+  },
+  "scopedrolemembership": {
     "isNew": true,
     "isUntouched": null
   },
@@ -1588,7 +1722,7 @@
       }
     ],
     "renames": {
-      "848": "invitedBy"
+      "581": "invitedBy"
     },
     "deletedmethods": [
 
@@ -1613,8 +1747,8 @@
       "subscriptionExpirationDateTime"
     ],
     "newproperties": [
-      "id",
-      "expirationDateTime"
+      "expirationDateTime",
+      "id"
     ],
     "deletedproperties1": [
       {
@@ -1646,19 +1780,6 @@
     ],
     "newproperties1": [
       {
-        "name": "id",
-        "description": "",
-        "isKey": true,
-        "dataType": "string",
-        "isReadOnly": true,
-        "enumName": null,
-        "isCollection": false,
-        "isRelationship": false,
-        "supportFilter": false,
-        "allowPostToCollection": true,
-        "isUnicode": false
-      },
-      {
         "name": "expirationDateTime",
         "description": "",
         "isKey": false,
@@ -1670,11 +1791,24 @@
         "supportFilter": false,
         "allowPostToCollection": true,
         "isUnicode": null
+      },
+      {
+        "name": "id",
+        "description": "",
+        "isKey": true,
+        "dataType": "string",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": false,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": false
       }
     ],
     "renames": {
-      "874": "id",
-      "488": "expirationDateTime"
+      "254": "expirationDateTime",
+      "845": "id"
     },
     "deletedmethods": [
 
@@ -1700,13 +1834,19 @@
     "isNew": true,
     "isUntouched": null
   },
+  "trending": {
+    "isNew": true,
+    "isUntouched": null
+  },
   "user": {
     "isNew": false,
     "deletedproperties": [
 
     ],
     "newproperties": [
-      "mailboxSettings"
+      "mailboxSettings",
+      "scopedAdministratorOf",
+      "insights"
     ],
     "deletedproperties1": [
 
@@ -1724,10 +1864,38 @@
         "supportFilter": false,
         "allowPostToCollection": true,
         "isUnicode": null
+      },
+      {
+        "name": "scopedAdministratorOf",
+        "description": "",
+        "isKey": false,
+        "dataType": "scopedRoleMembership",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": true,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
+      },
+      {
+        "name": "insights",
+        "description": "",
+        "isKey": false,
+        "dataType": "officeGraphInsights",
+        "isReadOnly": true,
+        "enumName": null,
+        "isCollection": false,
+        "isRelationship": true,
+        "supportFilter": false,
+        "allowPostToCollection": true,
+        "isUnicode": null
       }
     ],
     "renames": {
-      "681": "mailboxSettings"
+      "346": "mailboxSettings",
+      "540": "scopedAdministratorOf",
+      "530": "insights"
     },
     "deletedmethods": [
 
