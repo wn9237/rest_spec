@@ -5,6 +5,10 @@ Ruby interpreter. Version 2.1+
 
 Type `ruby -v` command to ensure that it is installed and working correctly. 
 
+#### Install activesupport gem
+`gem install activesupport`
+
+
 ## Setup
 
 1. **Fork** the repository to your own GitHub account.  
