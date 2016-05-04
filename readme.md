@@ -16,7 +16,7 @@ Type `ruby -v` command to ensure that it is installed and working correctly.
 1. Copy CSDL metadata XML file into **data** folder. Name it as alpha_graph.xml. Ignore other files in that directory. 
 1. Change directory to `lib` folder
 1. Run `ruby edmx2json.rb` command to generate intermediary JSON files. This takes more than 30 minutes to complete. 
-1. Run `ruby jsonsmd.rb` command to generate intermediary JSON files. This takes around 10-15 minutes. 
+1. Run `ruby json2md.rb` command to generate intermediary JSON files. This takes around 10-15 minutes. 
 1. Find your Markdown templates in the `rest_spec/markdowns` folder. 
 
 ## Add rich content
