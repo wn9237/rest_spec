@@ -9,14 +9,8 @@ require 'securerandom'
 
 module SpecMaker
 
-
-<<<<<<< HEAD
 	API_FOLDER = "../markdowns/api/"
 	API_FOLDER_OUT = "../markdowns/newapi/"
-=======
-	API_FOLDER = "C:/Users/suramam/Git/sudhiseattle/microsoft-graph-docs/api-reference/api/"
-	API_FOLDER_OUT = "C:/Users/suramam/Git/sudhiseattle/microsoft-graph-docs/api-reference/newapi/"
->>>>>>> fd07725b9e5a3575e3f1c9a150a3935557117e34
 
 
 	NEWLINE = "\n"
