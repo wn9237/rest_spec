@@ -2,23 +2,26 @@ require 'active_support'
 require 'active_support/core_ext'
 require 'json'
 require 'logger'
-
+require 'uri'
+require 'net/https'
 
 module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
-	CSDL_FILE='alpha_graph'
-	f=File.read(CSDL_LOCATION + CSDL_FILE + '.xml', :encoding => 'UTF-8')
+	f  = Net::HTTP.get(URI.parse('https://graph.microsoft.com/v1.0/$metadata')) 
+
+	# CSDL_FILE='alpha_graph'
+	# f=File.read(CSDL_LOCATION + CSDL_FILE + '.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
 	csdl=JSON.parse(Hash.from_xml(f).to_json, {:symbolize_names => true}) 
-	File.open(CSDL_LOCATION + CSDL_FILE + '.json', "w") do |f|
+	File.open(CSDL_LOCATION + 'metadata' + '.json', "w") do |f|
 		f.write(JSON.pretty_generate csdl, :encoding => 'UTF-8')
 	end
 	schema = csdl[:Edmx][:DataServices][:Schema]
 
 	## Comment the Jeff's code below as it doesn't apply anymore 
-	CSDL_SUPPLIMENTAL = CSDL_FILE + '_suppliment'
+	# CSDL_SUPPLIMENTAL = CSDL_FILE + '_suppliment'
 	# if File.exists?(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml')
 	# 	supplimentalXml=File.read(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml', :encoding => 'UTF-8')
 	
