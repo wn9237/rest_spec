@@ -1,8 +1,11 @@
+require 'FileUtils'
+
 module SpecMaker
 	# Initialize 
 	JSON_BASE_FOLDER = "../jsonFiles/"
 	JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
 	ENUMS = JSON_BASE_FOLDER + '/settings/restenums.json'
+	MARKDOWN_BASE_FOLDER = "../markdowns/"
 	MARKDOWN_RESOURCE_FOLDER = "../markdowns/resources/"
 	MARKDOWN_API_FOLDER = "../markdowns/api/"
 	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
@@ -113,6 +116,20 @@ module SpecMaker
 	@logger = Logger.new("#{LOG_FOLDER}/#{LOG_FILE}")
 	@logger.level = Logger::DEBUG
 	# End log file
+
+
+# 
+
+	Dir.mkdir(MARKDOWN_BASE_FOLDER) unless File.exists?(MARKDOWN_BASE_FOLDER)
+
+	Dir.mkdir(MARKDOWN_RESOURCE_FOLDER) unless File.exists?(MARKDOWN_RESOURCE_FOLDER)
+	FileUtils.rm Dir.glob(MARKDOWN_RESOURCE_FOLDER + '/*')
+
+	Dir.mkdir(MARKDOWN_API_FOLDER) unless File.exists?(MARKDOWN_API_FOLDER)
+	FileUtils.rm Dir.glob(MARKDOWN_API_FOLDER + '/*')
+
+# 
+
 
 	###
 	# To prevent shallow copy errors, need to get a new object each time.

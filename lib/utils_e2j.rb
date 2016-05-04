@@ -2,6 +2,8 @@ require 'active_support'
 require 'active_support/core_ext'
 require 'json'
 require 'logger'
+# require 'FileUtils'
+
 
 module SpecMaker
 	JSON_BASE_FOLDER = "../jsonFiles/"
@@ -35,6 +37,14 @@ module SpecMaker
 	@struct = JSON.parse(File.read(JSON_STRUCTURE, :encoding => 'UTF-8'), {:symbolize_names => true})
 	@template = @struct[:object]
 	@service = @struct[:serviceSettings]
+
+
+# 
+	Dir.mkdir(JSON_SOURCE_FOLDER) unless File.exists?(JSON_SOURCE_FOLDER)
+	FileUtils.rm Dir.glob(JSON_SOURCE_FOLDER + '/*')
+# 
+
+
 
 # Log file
 	LOG_FOLDER = '../../logs'
