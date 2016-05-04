@@ -82,7 +82,7 @@ After making some contributions to the API reference, please submit a pull reque
 
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild MarkdownScanner.sln 
 
-C:\Users\suramam\Git\officedev\markdown-scanner\ApiDocs.Console\bin\Debug>apidocs check-docs --path C:\Users\suramam\Git\officedev\rest_spec\markdowns
+\markdown-scanner\ApiDocs.Console\bin\Debug>apidocs check-docs --path ..\..\rest_spec\markdowns
 
 ## Questions or concerns
 

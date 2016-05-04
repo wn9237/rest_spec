@@ -10,8 +10,8 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	MARKDOWN_API_FOLDER = "C:/Users/suramam/git/final-apidocs/beta/api/"
-	MARKDOWN_API_FOLDER_OUT = "C:/Users/suramam/git/final-apidocs/beta/newapi/"
+	MARKDOWN_API_FOLDER = "../../beta/api/"
+	MARKDOWN_API_FOLDER_OUT = "../../beta/newapi/"
 	RENAME_JSON = "../jsonFiles/diff_beta.json"
 	NEWLINE = "\n"
 

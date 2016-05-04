@@ -9,10 +9,10 @@ module SpecMaker
 
 	# Initialize 
 
-	API = "C:/Users/suramam/git/sudhiseattle/excelrest/api/*"
-	RESOURCES = "C:/Users/suramam/git/sudhiseattle/excelrest/resources/*"
+	API = "../../excelrest/api/*"
+	RESOURCES = "../../excelrest/resources/*"
 
-	NEW_API =  "C:/Users/suramam/git/sudhiseattle/excelrest/newapi/"
+	NEW_API =  "../../excelrest/newapi/"
 	NEWLINE = "\n"
 
 	def self.do_check(oldm=nil, newm=nil)

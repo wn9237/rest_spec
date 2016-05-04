@@ -13,8 +13,8 @@ module SpecMaker
 	# API_FOLDER = "../markdowns/api/"
 	# API_FOLDER_OUT = "../markdowns/newapi/"
 
-	API_FOLDER = "C:/Users/suramam/git/sudhiseattle/excelrest/api/"
-	API_FOLDER_OUT =  "C:/Users/suramam/git/sudhiseattle/excelrest/newapi/"
+	API_FOLDER = "../../excelrest/api/"
+	API_FOLDER_OUT =  "../../excelrest/newapi/"
 	
 
 	NEWLINE = "\n"

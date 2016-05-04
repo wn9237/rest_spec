@@ -10,8 +10,8 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/final-apidocs/beta/resources/"
-	MARKDOWN_RESOURCE_FOLDER_OUT = "C:/Users/suramam/git/final-apidocs/beta/newresources/"
+	MARKDOWN_RESOURCE_FOLDER = "../../beta/resources/"
+	MARKDOWN_RESOURCE_FOLDER_OUT = "../../beta/newresources/"
 	RENAME_JSON = "../jsonFiles/diff_beta.json"
 	NEWLINE = "\n"
 

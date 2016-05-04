@@ -10,8 +10,8 @@ require 'securerandom'
 module SpecMaker
 
 	# Initialize 
-	MARKDOWN_RESOURCE_FOLDER = "C:/Users/suramam/git/seattle7/final-apidocs/v1.0/resources/"
-	MARKDOWN_RESOURCE_FOLDER_OUT = "C:/Users/suramam/git/seattle7/final-apidocs/v1.0/newresources/"
+	MARKDOWN_RESOURCE_FOLDER = "../../v1.0/resources/"
+	MARKDOWN_RESOURCE_FOLDER_OUT = "../../v1.0/newresources/"
 	MARKDOWN_RESOURCE_FOLDER_TEMP = "../markdowns/resources/"
 	NEWLINE = "\n"
 

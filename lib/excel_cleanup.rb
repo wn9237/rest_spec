@@ -9,12 +9,8 @@ require 'securerandom'
 
 module SpecMaker
 
-	# Initialize 
-	# API_FOLDER = "C:/Users/suramam/git/final-apidocs/beta/api/"
-	# API_FOLDER_OUT = "C:/Users/suramam/git/final-apidocs/beta/newapi/"
-
-	API_FOLDER = "C:/Users/suramam/git/outputmarkdownsRest/api/"
-	API_FOLDER_OUT = "C:/Users/suramam/git/outputmarkdownsRest/newapi/"
+	API_FOLDER = "../../outputmarkdownsRest/api/"
+	API_FOLDER_OUT = "../../outputmarkdownsRest/newapi/"
 
 
 	NEWLINE = "\n"
