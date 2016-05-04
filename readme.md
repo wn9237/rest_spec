@@ -31,8 +31,8 @@ You should be set to go..
 1. Change directory to `rest_spec` folder.
 1. Copy CSDL metadata XML file into **data** folder. Name it as alpha_graph.xml. Ignore other files in that directory. 
 1. Change directory to `lib` folder
-1. Run `ruby edmx2json.rb` command to generate intermediary JSON files. This takes more than 30 minutes to complete. 
-1. Run `ruby json2md.rb` command to generate intermediary JSON files. This takes around 10-15 minutes. 
+1. Run `ruby edmx2json.rb` command to generate intermediary JSON files. This takes more than 1-30 minutes (depending on the size of XML file) to complete. 
+1. Run `ruby json2md.rb` command to generate intermediary JSON files. This takes around 2-15 minutes. 
 1. Find your Markdown templates in the `rest_spec/markdowns` folder. 
 1. If you need to run the tool for different versions, save the markdowns/ folder content elsewhere. 
 1. Copy the API/resource files to MS Graph fork local copy folders to make your edits. 
