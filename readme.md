@@ -1,25 +1,43 @@
-# REST API Template Generator
+# MS Graph REST API Docs Template Generator
 
-## Pre-requisites
+This guide provides instructions to take a XML CSDL file and generate API and resource shell/tempalte for the purpose of documenting the APIs. This process does not account for the descriptions/information already available in the beta and v1.0 repositories. 
+
+## Scenario and Usage 
+
+If a new API/resource been introduced to your workload <or> a large scale update needs to be made to existing API docs, then regeneration of API shell/templates might be useful rather than manually creating the API docs. If you have a small change to be made (e.g., updating descriptions, adding scopes, adding examples, etc.) then do not use this tool. 
+
+Usage: 
+
+* Generate the shell/template. 
+* Perform updates (add descriptions, examples, etc.) and merge any changes from the beta or v1.0 branches of the MS Graph docs repo. 
+* Send a pull request to the beta/v1.0 branches of the MS Graph repo. 
+
+## Pre-requisites to run this tool
 Ruby interpreter. Version 2.1+
+On windows machine, update PATH environment variable to point to ryby.exe file so you can run the command from any directory. 
 
 Type `ruby -v` command to ensure that it is installed and working correctly. 
 
 #### Install activesupport gem
-`gem install activesupport`
+This is required to parse XML file. 
+Type `gem install activesupport` on command line. 
+
+You should be set to go.. 
 
 
-## Setup
+## Tool Setup
 
-1. **Fork** the repository to your own GitHub account.  
+1. **Fork** this repository to your own GitHub account. If you already have a copy, please discard and fork fresh to get latest updates. 
 1. Change directory to `rest_spec` folder.
 1. Copy CSDL metadata XML file into **data** folder. Name it as alpha_graph.xml. Ignore other files in that directory. 
 1. Change directory to `lib` folder
-1. Run `ruby edmx2json.rb` command to generate intermediary JSON files. This takes more than 30 minutes to complete. 
-1. Run `ruby json2md.rb` command to generate intermediary JSON files. This takes around 10-15 minutes. 
+1. Run `ruby edmx2json.rb` command to generate intermediary JSON files. This takes more than 1-min to 3-hours (depending on the size of XML file) to complete. 
+1. Run `ruby json2md.rb` command to generate markdonw files. It can take 1-15 minutes.
 1. Find your Markdown templates in the `rest_spec/markdowns` folder. 
+1. If you need to run the tool for different versions, save the markdowns/ folder content elsewhere. 
+1. Copy the API/resource files to MS Graph fork local copy folders to make your edits. 
 
-## Add rich content
+## Edit spec files
 
 Add rich descriptions to the generated documentation to help our customers make sense of huge amount of APIs that are being enabled through Microsoft Graph. 
 
@@ -71,11 +89,11 @@ If you face any issues in running the tool, let us know.
 
 ## Submit a pull request
 
-After making some contributions to the API reference, please submit a pull request so we can feed it back into the pipeline!
-
-1. Push your changes to **your** fork of the repository. 
-2. Open a pull request against **OfficeDev** organization's repository.
-3. Wait on us! We'll be looking out for pull requests and will get back to you as soon as possible. We will review your changes and, if they adhere to the guidelines, will merge them back into our master branch.
+1. Fork and clone https://github.com/OfficeDev/microsoft-graph-docs
+1. Switch to "v1.0" branch for v1.0 changes
+1. Switch to "beta" branch for beta changes 
+1. Perform edits under your account and send pull requests to merge your changes. 
+1. Do not push changes under /officedev account directly. 
 
 
 ## to run the scanner 
