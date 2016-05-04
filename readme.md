@@ -1,14 +1,23 @@
-# Microsoft Graph API reference contributor's guide
+# REST API Template Generator
 
-Getting API reference contribution from both engineering teams and content developers is essential to delivering high quality documentation to our customers this Fall at **Connect()** on **November 18th**. First of all, thank you for throwing your hat in the ring and providing assistance to make this documentation the best it can be! Please follow the guidelines on this page to make our workflow as painless as possible!
+## Pre-requisites
+Ruby interpreter. Version 2.1+
 
-If you have any questions or comments about these guidelines, or you have a question about something that isn't addressed here, please email **MSGraphAPIRef@microsoft.com**.
+Type `ruby -v` command to ensure that it is installed and working correctly. 
 
-## Get the source files
+#### Install activesupport gem
+`gem install activesupport`
 
-1. Clone this repository. 
-2. **Fork** the repository to your own GitHub account. *Do not push changes directly to the OfficeDev master branch!*
-3. The files are in *office-content-pr\rest-api\Microsoft.Graph\api-reference\markdown*.
+
+## Setup
+
+1. **Fork** the repository to your own GitHub account.  
+1. Change directory to `rest_spec` folder.
+1. Copy CSDL metadata XML file into **data** folder. Name it as alpha_graph.xml. Ignore other files in that directory. 
+1. Change directory to `lib` folder
+1. Run `ruby edmx2json.rb` command to generate intermediary JSON files. This takes more than 30 minutes to complete. 
+1. Run `ruby json2md.rb` command to generate intermediary JSON files. This takes around 10-15 minutes. 
+1. Find your Markdown templates in the `rest_spec/markdowns` folder. 
 
 ## Add rich content
 
@@ -68,7 +77,6 @@ After making some contributions to the API reference, please submit a pull reque
 2. Open a pull request against **OfficeDev** organization's repository.
 3. Wait on us! We'll be looking out for pull requests and will get back to you as soon as possible. We will review your changes and, if they adhere to the guidelines, will merge them back into our master branch.
 
-**Thank you so much for your contributions!**
 
 ## to run the scanner 
 
