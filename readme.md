@@ -104,5 +104,4 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild MarkdownScanner.sln
 
 ## Questions or concerns
 
-Please send the above to **MSGraphAPIRef@microsoft.com** and someone will get back to you in a timely manner.
-
+Please log an issue on the repo.
