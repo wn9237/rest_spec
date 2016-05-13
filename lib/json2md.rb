@@ -423,69 +423,70 @@ module SpecMaker
 
 		#Query parameters 
 		getMethodLines.push HEADER3 + "Optional query parameters" + NEWLINE
+		getMethodLines.push "This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response." + NEWLINE
+		
+		# if @jsonHash[:collectionOf]
+		# 	getMethodLines.push QRY_HEADER + NEWLINE 
+		# 	getMethodLines.push QRY_2nd_LINE + NEWLINE
 
-		if @jsonHash[:collectionOf]
-			getMethodLines.push QRY_HEADER + NEWLINE 
-			getMethodLines.push QRY_2nd_LINE + NEWLINE
-
-			countable, expandable, selectable, filterable, skipSupported, topSupported, sortable = true, true, true, true, true, true, true
-			annotationTarget = @annotations[@jsonHash[:collectionOf].downcase]
+		# 	# countable, expandable, selectable, filterable, skipSupported, topSupported, sortable = true, true, true, true, true, true, true
+		# 	# annotationTarget = @annotations[@jsonHash[:collectionOf].downcase]
 			
-			if annotationTarget
-				countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
-				expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
-				selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
-				filterable = annotationTarget["filterrestrictions/filterable"].nil? ? true : annotationTarget["filterrestrictions/filterable"]
-				skipSupported = annotationTarget["skipsupported"].nil? ? true : annotationTarget["skipsupported"]
-				topSupported = annotationTarget["topsupported"].nil? ? true : annotationTarget["topsupported"]
-				sortable = annotationTarget["sortrestrictions/sortable"].nil? ? true : annotationTarget["sortrestrictions/sortable"]
-			end			
-			if countable
-				getMethodLines.push QRY_COUNT +  NEWLINE
-			end
-			if expandable
-				getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) for supported names. |" + NEWLINE
-			end
-			if filterable
-				getMethodLines.push QRY_FILTER + NEWLINE
-			end
-			if sortable
-				getMethodLines.push QRY_ORDERBY + NEWLINE
-			end
-			if selectable
-				getMethodLines.push QRY_SELECT + NEWLINE
-			end			
-			if skipSupported
-				getMethodLines.push QRY_SKIP + NEWLINE		
-				getMethodLines.push QRY_SKIPTOKEN + NEWLINE
-			end		
-			if topSupported
-				getMethodLines.push QRY_TOP + NEWLINE
-			end		
-		else
-			countable, expandable, selectable  = true, true, true
-			annotationTarget = @annotations[@jsonHash[:name].downcase]		
+		# 	# if annotationTarget
+		# 	# 	countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
+		# 	# 	expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
+		# 	# 	selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
+		# 	# 	filterable = annotationTarget["filterrestrictions/filterable"].nil? ? true : annotationTarget["filterrestrictions/filterable"]
+		# 	# 	skipSupported = annotationTarget["skipsupported"].nil? ? true : annotationTarget["skipsupported"]
+		# 	# 	topSupported = annotationTarget["topsupported"].nil? ? true : annotationTarget["topsupported"]
+		# 	# 	sortable = annotationTarget["sortrestrictions/sortable"].nil? ? true : annotationTarget["sortrestrictions/sortable"]
+		# 	# end			
+		# 	# if countable
+		# 	# 	getMethodLines.push QRY_COUNT +  NEWLINE
+		# 	# end
+		# 	# if expandable
+		# 	# 	getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) for supported names. |" + NEWLINE
+		# 	# end
+		# 	# if filterable
+		# 	# 	getMethodLines.push QRY_FILTER + NEWLINE
+		# 	# end
+		# 	# if sortable
+		# 	# 	getMethodLines.push QRY_ORDERBY + NEWLINE
+		# 	# end
+		# 	# if selectable
+		# 	# 	getMethodLines.push QRY_SELECT + NEWLINE
+		# 	# end			
+		# 	# if skipSupported
+		# 	# 	getMethodLines.push QRY_SKIP + NEWLINE		
+		# 	# 	getMethodLines.push QRY_SKIPTOKEN + NEWLINE
+		# 	# end		
+		# 	# if topSupported
+		# 	# 	getMethodLines.push QRY_TOP + NEWLINE
+		# 	# end		
+		# else
+		# 	countable, expandable, selectable  = true, true, true
+		# 	annotationTarget = @annotations[@jsonHash[:name].downcase]		
 			
-			if annotationTarget
-				countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
-				expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
-				selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
-			end
-			if annotationTarget && !countable && !expandable && !selectable
-			else
-				getMethodLines.push QRY_HEADER + NEWLINE 
-				getMethodLines.push QRY_2nd_LINE + NEWLINE
-				if countable
-					getMethodLines.push QRY_COUNT + NEWLINE 
-				end
-				if expandable
-					getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object for supported names. |" + NEWLINE
-				end			
-				if selectable
-					getMethodLines.push QRY_SELECT + NEWLINE	
-				end
-			end
-		end
+		# 	if annotationTarget
+		# 		countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
+		# 		expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
+		# 		selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
+		# 	end
+		# 	if annotationTarget && !countable && !expandable && !selectable
+		# 	else
+		# 		getMethodLines.push QRY_HEADER + NEWLINE 
+		# 		getMethodLines.push QRY_2nd_LINE + NEWLINE
+		# 		if countable
+		# 			getMethodLines.push QRY_COUNT + NEWLINE 
+		# 		end
+		# 		if expandable
+		# 			getMethodLines.push QRY_EXPAND + "See relationships table of [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object for supported names. |" + NEWLINE
+		# 		end			
+		# 		if selectable
+		# 			getMethodLines.push QRY_SELECT + NEWLINE	
+		# 		end
+		# 	end
+		# end
 
 		#Request headers  
 		getMethodLines.push NEWLINE + HEADER3 + "Request headers" + NEWLINE
