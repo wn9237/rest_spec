@@ -20,7 +20,7 @@ module SpecMaker
 
 	puts "Staring..."
 
-	# Process all annotationa. Load in memory.
+	# Process all annotations. Load in memory.
 	
 	schema[:Annotations].each do |item|
 		dt = get_type(item[:Target]).downcase
