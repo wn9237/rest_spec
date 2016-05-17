@@ -9,9 +9,7 @@ module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
 	f  = Net::HTTP.get(URI.parse('https://graph.microsoft.com/v1.0/$metadata')) 
-
-	# CSDL_FILE='alpha_graph'
-	# f=File.read(CSDL_LOCATION + CSDL_FILE + '.xml', :encoding => 'UTF-8')
+	# f = File.read('../data/metadata.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
 	csdl=JSON.parse(Hash.from_xml(f).to_json, {:symbolize_names => true}) 
@@ -19,30 +17,6 @@ module SpecMaker
 		f.write(JSON.pretty_generate csdl, :encoding => 'UTF-8')
 	end
 	schema = csdl[:Edmx][:DataServices][:Schema]
-
-	## Comment the Jeff's code below as it doesn't apply anymore 
-	# CSDL_SUPPLIMENTAL = CSDL_FILE + '_suppliment'
-	# if File.exists?(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml')
-	# 	supplimentalXml=File.read(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.xml', :encoding => 'UTF-8')
-	
-	# 	# Convert to JSON format. 
-	# 	supplimentalJson=JSON.parse(Hash.from_xml(supplimentalXml).to_json, {:symbolize_names => true}) 
-	# 	File.open(CSDL_LOCATION + CSDL_SUPPLIMENTAL + '.json', "w") do |f|
-	# 		f.write(JSON.pretty_generate supplimentalJson, :encoding => 'UTF-8')
-	# 	end
-
-	# 	supplimentalSchema = supplimentalJson[:Edmx][:DataServices][:Schema]
-	# 	supplimentalSchema[:Annotations].each do |annotations|
-	# 		target = get_type(annotations[:Target]).downcase
-	
-	# 		#puts "-> Processing Annotation #{target}"
-	# 		# puts item[:Annotation].length
-	# 		# puts item[:Annotation]
-			
-	# 		parse_annotations(target, annotations[:Annotation])
-	# 		@iann = @iann + 1
-	# 	end
-	# end
 
 	puts "Staring..."
 
