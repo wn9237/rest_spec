@@ -8,9 +8,8 @@ require 'net/https'
 module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
-	#f  = Net::HTTP.get(URI.parse('https://graph.microsoft.com/v1.0/$metadata')) 
-	#f  = Net::HTTP.get(URI.parse('https://api.mspim.net/api/v2/$metadata')) 
-	f = File.read('../data/metadata.xml', :encoding => 'UTF-8')
+	f  = Net::HTTP.get(URI.parse('https://graph.microsoft.com/v1.0/$metadata')) 
+	# f = File.read('../data/metadata.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
 	csdl=JSON.parse(Hash.from_xml(f).to_json, {:symbolize_names => true}) 
@@ -21,18 +20,18 @@ module SpecMaker
 
 	puts "Staring..."
 
-#	# Process all annotationa. Load in memory.
-#	
-#	schema[:Annotations].each do |item|
-#		dt = get_type(item[:Target]).downcase
-#
-#		puts "-> Processing Annotation #{dt}"
-#		# puts item[:Annotation].length
-#		# puts item[:Annotation]
-#		
-#		parse_annotations(dt, item[:Annotation])
-#		@iann = @iann + 1
-#	end
+	# Process all annotationa. Load in memory.
+	
+	schema[:Annotations].each do |item|
+		dt = get_type(item[:Target]).downcase
+
+		puts "-> Processing Annotation #{dt}"
+		# puts item[:Annotation].length
+		# puts item[:Annotation]
+		
+		parse_annotations(dt, item[:Annotation])
+		@iann = @iann + 1
+	end
 
 	# Process all Enums. Load in memory.
 	schema[:EnumType].each do |item|
@@ -81,35 +80,36 @@ module SpecMaker
 	# Loc0
 	#####
 	# Process complex-types
-	entity = schema[:ComplexType]
-	@ictypes = @ictypes + 1
-	@json_object = nil 
-	@json_object = deep_copy(@template) 
+	schema[:ComplexType].each do |entity|
+		@ictypes = @ictypes + 1
+		@json_object = nil 
+		@json_object = deep_copy(@template) 
 
-	puts "-> Processing Complex Type #{entity[:Name]}"
-	@json_object[:name] = camelcase entity[:Name]
-	@json_object[:isComplexType] = true
-	@json_object[:allowPatch] = false
-	@json_object[:allowUpsert] = false
-	@json_object[:allowPatchCreate] = false
-	@json_object[:allowDelete] = false
-	
-	parse_annotations(entity[:Name], entity[:Annotation])
-	set_description(entity[:Name], @json_object)
-	
-	# PROCESS Properties
-	if entity[:Property].is_a?(Array)
-		entity[:Property].each do |item|		
-			@json_object[:properties].push process_complextype(entity[:Name], item)
+		puts "-> Processing Complex Type #{entity[:Name]}"
+		@json_object[:name] = camelcase entity[:Name]
+		@json_object[:isComplexType] = true
+		@json_object[:allowPatch] = false
+		@json_object[:allowUpsert] = false
+		@json_object[:allowPatchCreate] = false
+		@json_object[:allowDelete] = false
+		
+		parse_annotations(entity[:Name], entity[:Annotation])
+		set_description(entity[:Name], @json_object)
+		
+		# PROCESS Properties
+		if entity[:Property].is_a?(Array)
+			entity[:Property].each do |item|		
+				@json_object[:properties].push process_complextype(entity[:Name], item)
+			end
+		elsif entity[:Property].is_a?(Hash)
+			@json_object[:properties].push process_complextype(entity[:Name], entity[:Property])
 		end
-	elsif entity[:Property].is_a?(Hash)
-		@json_object[:properties].push process_complextype(entity[:Name], entity[:Property])
+		preserve_object_property_descriptions(@json_object[:name])
+		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
+			f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
+		end		
+		GC.start
 	end
-	preserve_object_property_descriptions(@json_object[:name])
-	File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
-		f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
-	end		
-	GC.start
 
 
 	schema[:EntityType].each do |entity|
