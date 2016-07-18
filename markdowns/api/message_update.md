@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 PATCH /me/Messages/<Id>
 PATCH /Users/<Id>/Messages/<Id>
-PATCH /me/RootFolder/Messages/<Id>
+PATCH /me/MailFolders/<Id>/Messages/<Id>
 ```
 ### Optional request headers
 | Name       | Description|
@@ -28,23 +28,29 @@ In the request body, supply the values for relevant fields that should be update
 |CcRecipients|Recipient||
 |ChangeKey|String||
 |ConversationId|String||
-|DateTimeCreated|DateTimeOffset||
-|DateTimeLastModified|DateTimeOffset||
-|DateTimeReceived|DateTimeOffset||
-|DateTimeSent|DateTimeOffset||
+|ConversationIndex|Binary||
+|CreatedDateTime|DateTimeOffset||
+|Flag|FollowupFlag||
 |From|Recipient||
 |HasAttachments|Boolean||
 |Importance|string| Possible values are: `Low`, `Normal`, `High`.|
+|InferenceClassification|string| Possible values are: `Focused`, `Other`.|
+|InternetMessageId|String||
 |IsDeliveryReceiptRequested|Boolean||
 |IsDraft|Boolean||
 |IsRead|Boolean||
 |IsReadReceiptRequested|Boolean||
+|LastModifiedDateTime|DateTimeOffset||
 |ParentFolderId|String||
+|ReceivedDateTime|DateTimeOffset||
 |ReplyTo|Recipient||
 |Sender|Recipient||
+|SentDateTime|DateTimeOffset||
 |Subject|String||
 |ToRecipients|Recipient||
 |UniqueBody|ItemBody||
+|UnsubscribeData|String||
+|UnsubscribeEnabled|Boolean||
 |WebLink|String||
 
 ### Response
@@ -59,18 +65,18 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/Messages/<Id>
 Content-type: application/json
-Content-length: 260
+Content-length: 272
 
 {
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
+  "SentDateTime": "datetime-value",
   "HasAttachments": true,
+  "InternetMessageId": "InternetMessageId-value",
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
     "Content": "Content-value"
-  },
-  "BodyPreview": "BodyPreview-value"
+  }
 }
 ```
 ##### Response
@@ -83,18 +89,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 260
+Content-length: 272
 
 {
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
+  "SentDateTime": "datetime-value",
   "HasAttachments": true,
+  "InternetMessageId": "InternetMessageId-value",
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
     "Content": "Content-value"
-  },
-  "BodyPreview": "BodyPreview-value"
+  }
 }
 ```
 

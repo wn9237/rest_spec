@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 PATCH /me/Calendar
 PATCH /Users/<Id>/Calendar
-PATCH /me/Events/<Id>/Calendar
+PATCH /Groups/<Id>/Calendar
 ```
 ### Optional request headers
 | Name       | Description|
@@ -23,6 +23,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |ChangeKey|String||
 |Color|string| Possible values are: `LightBlue`, `LightGreen`, `LightOrange`, `LightGray`, `LightYellow`, `LightTeal`, `LightPink`, `LightBrown`, `LightRed`, `MaxColor`, `Auto`.|
+|IsDefaultCalendar|Boolean||
 |Name|String||
 
 ### Response
@@ -37,11 +38,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/Calendar
 Content-type: application/json
-Content-length: 86
+Content-length: 115
 
 {
   "Name": "Name-value",
   "Color": "Color-value",
+  "IsDefaultCalendar": true,
   "ChangeKey": "ChangeKey-value"
 }
 ```
@@ -55,11 +57,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 106
+Content-length: 135
 
 {
   "Name": "Name-value",
   "Color": "Color-value",
+  "IsDefaultCalendar": true,
   "ChangeKey": "ChangeKey-value",
   "Id": "Id-value"
 }

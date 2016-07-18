@@ -41,18 +41,62 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 260
+Content-length: 1309
 
 {
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
-  "HasAttachments": true,
-  "Subject": "Subject-value",
-  "Body": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "MeetingMessageType": "MeetingMessageType-value",
+  "StartDateTime": {
+    "DateTime": {
+    },
+    "TimeZone": "TimeZone-value"
   },
-  "BodyPreview": "BodyPreview-value"
+  "EndDateTime": {
+    "DateTime": {
+    },
+    "TimeZone": "TimeZone-value"
+  },
+  "Location": {
+    "DisplayName": "DisplayName-value",
+    "LocationEmailAddress": "LocationEmailAddress-value",
+    "Address": {
+      "Type": "Type-value",
+      "PostOfficeBox": "PostOfficeBox-value",
+      "Street": "Street-value",
+      "City": "City-value",
+      "State": "State-value",
+      "CountryOrRegion": "CountryOrRegion-value",
+      "PostalCode": "PostalCode-value"
+    },
+    "Coordinates": {
+      "Altitude": 99,
+      "Latitude": 99,
+      "Longitude": 99,
+      "Accuracy": 99,
+      "AltitudeAccuracy": 99
+    },
+    "LocationUri": "LocationUri-value"
+  },
+  "Type": "Type-value",
+  "Recurrence": {
+    "Pattern": {
+      "Type": "Type-value",
+      "Interval": 99,
+      "Month": 99,
+      "DayOfMonth": 99,
+      "DaysOfWeek": [
+        "DaysOfWeek-value"
+      ],
+      "FirstDayOfWeek": "FirstDayOfWeek-value",
+      "Index": "Index-value"
+    },
+    "Range": {
+      "Type": "Type-value",
+      "StartDate": "datetime-value",
+      "EndDate": "datetime-value",
+      "RecurrenceTimeZone": "RecurrenceTimeZone-value",
+      "NumberOfOccurrences": 99
+    }
+  }
 }
 ```
 

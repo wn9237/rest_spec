@@ -38,13 +38,14 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/SendMail
 Content-type: application/json
-Content-length: 1975
+Content-length: 2902
 
 {
   "Message": {
-    "DateTimeReceived": "datetime-value",
-    "DateTimeSent": "datetime-value",
+    "ReceivedDateTime": "datetime-value",
+    "SentDateTime": "datetime-value",
     "HasAttachments": true,
+    "InternetMessageId": "InternetMessageId-value",
     "Subject": "Subject-value",
     "Body": {
       "ContentType": "ContentType-value",
@@ -98,6 +99,7 @@ Content-length: 1975
       }
     ],
     "ConversationId": "ConversationId-value",
+    "ConversationIndex": "ConversationIndex-value",
     "UniqueBody": {
       "ContentType": "ContentType-value",
       "Content": "Content-value"
@@ -107,8 +109,31 @@ Content-length: 1975
     "IsRead": true,
     "IsDraft": true,
     "WebLink": "WebLink-value",
-    "DateTimeCreated": "datetime-value",
-    "DateTimeLastModified": "datetime-value",
+    "InferenceClassification": "InferenceClassification-value",
+    "UnsubscribeData": [
+      "UnsubscribeData-value"
+    ],
+    "UnsubscribeEnabled": true,
+    "Flag": {
+      "CompletedDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "DueDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "StartDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "FlagStatus": "FlagStatus-value"
+    },
+    "CreatedDateTime": "datetime-value",
+    "LastModifiedDateTime": "datetime-value",
     "ChangeKey": "ChangeKey-value",
     "Categories": [
       "Categories-value"
@@ -116,12 +141,26 @@ Content-length: 1975
     "Id": "Id-value",
     "Attachments": [
       {
-        "DateTimeLastModified": "datetime-value",
+        "LastModifiedDateTime": "datetime-value",
         "Name": "Name-value",
         "ContentType": "ContentType-value",
         "Size": 99,
         "IsInline": true,
         "Id": "Id-value"
+      }
+    ],
+    "SingleValueExtendedProperties": [
+      {
+        "Value": "Value-value",
+        "PropertyId": "PropertyId-value"
+      }
+    ],
+    "MultiValueExtendedProperties": [
+      {
+        "Value": [
+          "Value-value"
+        ],
+        "PropertyId": "PropertyId-value"
       }
     ]
   },

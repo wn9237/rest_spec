@@ -25,6 +25,12 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
+    "/Users/<Id>/JoinedGroups/<Id>/AcceptedSenders/<Id>": true,
+    "/Users/<Id>/JoinedGroups/<Id>/RejectedSenders/<Id>": true,
+    "/Groups/<Id>/AcceptedSenders/<Id>": true,
+    "/Groups/<Id>/RejectedSenders/<Id>": true,
+    "/me/JoinedGroups/<Id>/AcceptedSenders/<Id>": true,
+    "/me/JoinedGroups/<Id>/RejectedSenders/<Id>": true
   },
   "properties": [
     {

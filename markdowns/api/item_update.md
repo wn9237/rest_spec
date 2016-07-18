@@ -21,8 +21,8 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |Categories|String||
 |ChangeKey|String||
-|DateTimeCreated|DateTimeOffset||
-|DateTimeLastModified|DateTimeOffset||
+|CreatedDateTime|DateTimeOffset||
+|LastModifiedDateTime|DateTimeOffset||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [Item](../resources/item.md) object in the response body.
@@ -39,8 +39,8 @@ Content-type: application/json
 Content-length: 165
 
 {
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
@@ -60,8 +60,8 @@ Content-type: application/json
 Content-length: 185
 
 {
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"

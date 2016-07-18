@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 DELETE /me/Messages/<Id>
 DELETE /Users/<Id>/Messages/<Id>
-DELETE /me/RootFolder/Messages/<Id>
+DELETE /me/MailFolders/<Id>/Messages/<Id>
 
 ```
 ### Request headers

@@ -53,18 +53,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 260
+Content-length: 272
 
 {
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
+  "SentDateTime": "datetime-value",
   "HasAttachments": true,
+  "InternetMessageId": "InternetMessageId-value",
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
     "Content": "Content-value"
-  },
-  "BodyPreview": "BodyPreview-value"
+  }
 }
 ```
 

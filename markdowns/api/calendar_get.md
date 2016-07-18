@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /me/Calendar
 GET /Users/<Id>/Calendar
-GET /me/Events/<Id>/Calendar
+GET /Groups/<Id>/Calendar
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -43,11 +43,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 106
+Content-length: 135
 
 {
   "Name": "Name-value",
   "Color": "Color-value",
+  "IsDefaultCalendar": true,
   "ChangeKey": "ChangeKey-value",
   "Id": "Id-value"
 }

@@ -22,6 +22,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |DisplayName|String||
 |ParentFolderId|String||
+|WellKnownName|String||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [ContactFolder](../resources/contactfolder.md) object in the response body.
@@ -35,11 +36,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/ContactFolders/<Id>
 Content-type: application/json
-Content-length: 84
+Content-length: 126
 
 {
   "ParentFolderId": "ParentFolderId-value",
-  "DisplayName": "DisplayName-value"
+  "DisplayName": "DisplayName-value",
+  "WellKnownName": "WellKnownName-value"
 }
 ```
 ##### Response
@@ -52,11 +54,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
+Content-length: 146
 
 {
   "ParentFolderId": "ParentFolderId-value",
   "DisplayName": "DisplayName-value",
+  "WellKnownName": "WellKnownName-value",
   "Id": "Id-value"
 }
 ```

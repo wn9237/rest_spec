@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /me/Messages/<Id>/CreateForward
 POST /Users/<Id>/Messages/<Id>/CreateForward
-POST /me/RootFolder/Messages/<Id>/CreateForward
+POST /me/MailFolders/<Id>/Messages/<Id>/CreateForward
 
 ```
 ### Request headers
@@ -18,6 +18,13 @@ POST /me/RootFolder/Messages/<Id>/CreateForward
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|Message|Message||
+|Comment|String||
+|ToRecipients|Recipient||
 
 ### Response
 If successful, this method returns `200, OK` response code and [Message](../resources/message.md) object in the response body.
@@ -32,6 +39,143 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/Messages/<Id>/CreateForward
+Content-type: application/json
+Content-length: 3039
+
+{
+  "Message": {
+    "ReceivedDateTime": "datetime-value",
+    "SentDateTime": "datetime-value",
+    "HasAttachments": true,
+    "InternetMessageId": "InternetMessageId-value",
+    "Subject": "Subject-value",
+    "Body": {
+      "ContentType": "ContentType-value",
+      "Content": "Content-value"
+    },
+    "BodyPreview": "BodyPreview-value",
+    "Importance": "Importance-value",
+    "ParentFolderId": "ParentFolderId-value",
+    "Sender": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "From": {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    },
+    "ToRecipients": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
+      }
+    ],
+    "CcRecipients": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
+      }
+    ],
+    "BccRecipients": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
+      }
+    ],
+    "ReplyTo": [
+      {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
+        }
+      }
+    ],
+    "ConversationId": "ConversationId-value",
+    "ConversationIndex": "ConversationIndex-value",
+    "UniqueBody": {
+      "ContentType": "ContentType-value",
+      "Content": "Content-value"
+    },
+    "IsDeliveryReceiptRequested": true,
+    "IsReadReceiptRequested": true,
+    "IsRead": true,
+    "IsDraft": true,
+    "WebLink": "WebLink-value",
+    "InferenceClassification": "InferenceClassification-value",
+    "UnsubscribeData": [
+      "UnsubscribeData-value"
+    ],
+    "UnsubscribeEnabled": true,
+    "Flag": {
+      "CompletedDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "DueDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "StartDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "FlagStatus": "FlagStatus-value"
+    },
+    "CreatedDateTime": "datetime-value",
+    "LastModifiedDateTime": "datetime-value",
+    "ChangeKey": "ChangeKey-value",
+    "Categories": [
+      "Categories-value"
+    ],
+    "Id": "Id-value",
+    "Attachments": [
+      {
+        "LastModifiedDateTime": "datetime-value",
+        "Name": "Name-value",
+        "ContentType": "ContentType-value",
+        "Size": 99,
+        "IsInline": true,
+        "Id": "Id-value"
+      }
+    ],
+    "SingleValueExtendedProperties": [
+      {
+        "Value": "Value-value",
+        "PropertyId": "PropertyId-value"
+      }
+    ],
+    "MultiValueExtendedProperties": [
+      {
+        "Value": [
+          "Value-value"
+        ],
+        "PropertyId": "PropertyId-value"
+      }
+    ]
+  },
+  "Comment": "Comment-value",
+  "ToRecipients": [
+    {
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
+      }
+    }
+  ]
+}
 ```
 
 ##### Response
@@ -44,18 +188,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 260
+Content-length: 272
 
 {
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
+  "SentDateTime": "datetime-value",
   "HasAttachments": true,
+  "InternetMessageId": "InternetMessageId-value",
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
     "Content": "Content-value"
-  },
-  "BodyPreview": "BodyPreview-value"
+  }
 }
 ```
 

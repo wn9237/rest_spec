@@ -21,32 +21,35 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|Attendance|AttendanceInfo||
 |Attendees|Attendee||
 |Body|ItemBody||
 |BodyPreview|String||
 |Categories|String||
 |ChangeKey|String||
-|DateTimeCreated|DateTimeOffset||
-|DateTimeLastModified|DateTimeOffset||
-|End|DateTimeOffset||
-|EndTimeZone|String||
+|CreatedDateTime|DateTimeOffset||
+|End|DateTimeTimeZone||
 |HasAttachments|Boolean||
 |Importance|string| Possible values are: `Low`, `Normal`, `High`.|
 |IsAllDay|Boolean||
 |IsCancelled|Boolean||
 |IsOrganizer|Boolean||
+|IsReminderOn|Boolean||
+|LastModifiedDateTime|DateTimeOffset||
 |Location|Location||
+|OnlineMeetingUrl|String||
 |Organizer|Recipient||
+|OriginalEndTimeZone|String||
 |OriginalStart|DateTimeOffset||
+|OriginalStartTimeZone|String||
 |Recurrence|PatternedRecurrence||
-|Reminder|Int32||
+|ReminderMinutesBeforeStart|Int32||
 |ResponseRequested|Boolean||
 |ResponseStatus|ResponseStatus||
 |Sensitivity|string| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
 |SeriesMasterId|String||
 |ShowAs|string| Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
-|Start|DateTimeOffset||
-|StartTimeZone|String||
+|Start|DateTimeTimeZone||
 |Subject|String||
 |Type|string| Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
 |WebLink|String||
@@ -64,18 +67,18 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/Events/<Id>
 Content-type: application/json
-Content-length: 246
+Content-length: 294
 
 {
-  "StartTimeZone": "StartTimeZone-value",
-  "EndTimeZone": "EndTimeZone-value",
+  "OriginalStartTimeZone": "OriginalStartTimeZone-value",
+  "OriginalEndTimeZone": "OriginalEndTimeZone-value",
   "ResponseStatus": {
     "Response": "Response-value",
     "Time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
-  "Reminder": 99,
-  "HasAttachments": true
+  "ReminderMinutesBeforeStart": 99,
+  "IsReminderOn": true
 }
 ```
 ##### Response
@@ -88,18 +91,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 246
+Content-length: 294
 
 {
-  "StartTimeZone": "StartTimeZone-value",
-  "EndTimeZone": "EndTimeZone-value",
+  "OriginalStartTimeZone": "OriginalStartTimeZone-value",
+  "OriginalEndTimeZone": "OriginalEndTimeZone-value",
   "ResponseStatus": {
     "Response": "Response-value",
     "Time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
-  "Reminder": 99,
-  "HasAttachments": true
+  "ReminderMinutesBeforeStart": 99,
+  "IsReminderOn": true
 }
 ```
 

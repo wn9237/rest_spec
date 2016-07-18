@@ -30,6 +30,20 @@
   },
   "properties": [
     {
+      "name": "EmailAddress",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "DisplayName",
       "description": "",
       "isKey": false,
@@ -58,10 +72,10 @@
       "isUnicode": null
     },
     {
-      "name": "MailboxGuid",
+      "name": "MailboxSettings",
       "description": "",
       "isKey": false,
-      "dataType": "Guid",
+      "dataType": "MailboxSettings",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -86,6 +100,62 @@
       "isUnicode": null
     },
     {
+      "name": "Subscriptions",
+      "description": "",
+      "isKey": false,
+      "dataType": "Subscription",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "TaskGroups",
+      "description": "",
+      "isKey": false,
+      "dataType": "TaskGroup",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "TaskFolders",
+      "description": "",
+      "isKey": false,
+      "dataType": "TaskFolder",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Tasks",
+      "description": "",
+      "isKey": false,
+      "dataType": "Task",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
       "name": "Messages",
       "description": "",
       "isKey": false,
@@ -100,10 +170,24 @@
       "isUnicode": null
     },
     {
-      "name": "Folders",
+      "name": "JoinedGroups",
       "description": "",
       "isKey": false,
-      "dataType": "Folder",
+      "dataType": "Group",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "MailFolders",
+      "description": "",
+      "isKey": false,
+      "dataType": "MailFolder",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
@@ -184,6 +268,20 @@
       "isUnicode": null
     },
     {
+      "name": "People",
+      "description": "",
+      "isKey": false,
+      "dataType": "Person",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
       "name": "Contacts",
       "description": "",
       "isKey": false,
@@ -212,13 +310,69 @@
       "isUnicode": null
     },
     {
-      "name": "RootFolder",
+      "name": "InferenceClassification",
       "description": "",
       "isKey": false,
-      "dataType": "Folder",
+      "dataType": "InferenceClassification",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Photo",
+      "description": "",
+      "isKey": false,
+      "dataType": "Photo",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Photos",
+      "description": "",
+      "isKey": false,
+      "dataType": "Photo",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "Drives",
+      "description": "",
+      "isKey": false,
+      "dataType": "Drive",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "WorkingWithEntities",
+      "description": "",
+      "isKey": false,
+      "dataType": "WorkingWithEntity",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
       "isRelationship": true,
       "supportFilter": false,
       "allowPostToCollection": true,
@@ -264,6 +418,223 @@
           "isNullable": null,
           "isUnicode": null
         }
+      ]
+    },
+    {
+      "name": "FindMeetingTimes",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "MeetingTimeCandidatesResult",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "Attendees",
+          "description": "",
+          "dataType": "AttendeeBase",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "LocationConstraint",
+          "description": "",
+          "dataType": "LocationConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "TimeConstraint",
+          "description": "",
+          "dataType": "TimeConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "MeetingDuration",
+          "description": "",
+          "dataType": "Duration",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "MaxCandidates",
+          "description": "",
+          "dataType": "Int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "IsOrganizerOptional",
+          "description": "",
+          "dataType": "Boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "ReturnSuggestionHints",
+          "description": "",
+          "dataType": "Boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "GetNotifications",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "Notification",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "ConnectionTimeoutInMinutes",
+          "description": "",
+          "dataType": "Int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "KeepAliveNotificationIntervalInSeconds",
+          "description": "",
+          "dataType": "Int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "SubscriptionIds",
+          "description": "",
+          "dataType": "String",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "ReminderView",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "Reminder",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "StartDateTime",
+          "description": "",
+          "dataType": "DateTime",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        },
+        {
+          "name": "EndDateTime",
+          "description": "",
+          "dataType": "DateTime",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "TrendingAround",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "File",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "WorkingWith",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "WorkingWithEntity",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
       ]
     }
   ]

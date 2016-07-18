@@ -44,8 +44,8 @@ Content-type: application/json
 Content-length: 185
 
 {
-  "DateTimeCreated": "datetime-value",
-  "DateTimeLastModified": "datetime-value",
+  "CreatedDateTime": "datetime-value",
+  "LastModifiedDateTime": "datetime-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"

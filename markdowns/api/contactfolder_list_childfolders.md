@@ -43,13 +43,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 145
+Content-length: 191
 
 {
   "value": [
     {
       "ParentFolderId": "ParentFolderId-value",
       "DisplayName": "DisplayName-value",
+      "WellKnownName": "WellKnownName-value",
       "Id": "Id-value"
     }
   ]

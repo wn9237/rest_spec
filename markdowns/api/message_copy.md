@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /me/Messages/<Id>/Copy
 POST /Users/<Id>/Messages/<Id>/Copy
-POST /me/RootFolder/Messages/<Id>/Copy
+POST /me/MailFolders/<Id>/Messages/<Id>/Copy
 
 ```
 ### Request headers
@@ -55,18 +55,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 260
+Content-length: 272
 
 {
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
+  "SentDateTime": "datetime-value",
   "HasAttachments": true,
+  "InternetMessageId": "InternetMessageId-value",
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
     "Content": "Content-value"
-  },
-  "BodyPreview": "BodyPreview-value"
+  }
 }
 ```
 

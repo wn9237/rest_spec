@@ -1,4 +1,122 @@
 {
+  "AutomaticRepliesStatus": {
+    "isExclusive": true,
+    "options": {
+      "Disabled": {
+        "value": "0",
+        "description": ""
+      },
+      "AlwaysEnabled": {
+        "value": "1",
+        "description": ""
+      },
+      "Scheduled": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "ExternalAudienceScope": {
+    "isExclusive": true,
+    "options": {
+      "None": {
+        "value": "0",
+        "description": ""
+      },
+      "ContactsOnly": {
+        "value": "1",
+        "description": ""
+      },
+      "All": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "AttendeeType": {
+    "isExclusive": true,
+    "options": {
+      "Required": {
+        "value": "0",
+        "description": ""
+      },
+      "Optional": {
+        "value": "1",
+        "description": ""
+      },
+      "Resource": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "FreeBusyStatus": {
+    "isExclusive": true,
+    "options": {
+      "Free": {
+        "value": "0",
+        "description": ""
+      },
+      "Tentative": {
+        "value": "1",
+        "description": ""
+      },
+      "Busy": {
+        "value": "2",
+        "description": ""
+      },
+      "Oof": {
+        "value": "3",
+        "description": ""
+      },
+      "WorkingElsewhere": {
+        "value": "4",
+        "description": ""
+      },
+      "Unknown": {
+        "value": "-1",
+        "description": ""
+      }
+    }
+  },
+  "PhysicalAddressType": {
+    "isExclusive": true,
+    "options": {
+      "Unknown": {
+        "value": "0",
+        "description": ""
+      },
+      "Home": {
+        "value": "1",
+        "description": ""
+      },
+      "Business": {
+        "value": "2",
+        "description": ""
+      },
+      "Other": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "ActivityDomain": {
+    "isExclusive": true,
+    "options": {
+      "Unknown": {
+        "value": "0",
+        "description": ""
+      },
+      "Work": {
+        "value": "1",
+        "description": ""
+      },
+      "Personal": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
   "BodyType": {
     "isExclusive": true,
     "options": {
@@ -24,6 +142,36 @@
         "description": ""
       },
       "High": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "InferenceClassificationType": {
+    "isExclusive": true,
+    "options": {
+      "Focused": {
+        "value": "0",
+        "description": ""
+      },
+      "Other": {
+        "value": "1",
+        "description": ""
+      }
+    }
+  },
+  "FollowupFlagStatus": {
+    "isExclusive": true,
+    "options": {
+      "NotFlagged": {
+        "value": "0",
+        "description": ""
+      },
+      "Complete": {
+        "value": "1",
+        "description": ""
+      },
+      "Flagged": {
         "value": "2",
         "description": ""
       }
@@ -232,35 +380,6 @@
       }
     }
   },
-  "FreeBusyStatus": {
-    "isExclusive": true,
-    "options": {
-      "Free": {
-        "value": "0",
-        "description": ""
-      },
-      "Tentative": {
-        "value": "1",
-        "description": ""
-      },
-      "Busy": {
-        "value": "2",
-        "description": ""
-      },
-      "Oof": {
-        "value": "3",
-        "description": ""
-      },
-      "WorkingElsewhere": {
-        "value": "4",
-        "description": ""
-      },
-      "Unknown": {
-        "value": "-1",
-        "description": ""
-      }
-    }
-  },
   "EventType": {
     "isExclusive": true,
     "options": {
@@ -282,19 +401,156 @@
       }
     }
   },
-  "AttendeeType": {
+  "PhysicalPresence": {
     "isExclusive": true,
     "options": {
-      "Required": {
+      "NoPresence": {
         "value": "0",
         "description": ""
       },
-      "Optional": {
+      "InRoom": {
         "value": "1",
         "description": ""
       },
-      "Resource": {
+      "LeftRoom": {
         "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "SkypePresence": {
+    "isExclusive": true,
+    "options": {
+      "NoStatus": {
+        "value": "0",
+        "description": ""
+      },
+      "OnSkype": {
+        "value": "1",
+        "description": ""
+      },
+      "LeftSkype": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "EtaRequestStatus": {
+    "isExclusive": true,
+    "options": {
+      "NoRequest": {
+        "value": "0",
+        "description": ""
+      },
+      "EtaRequestPending": {
+        "value": "1",
+        "description": ""
+      },
+      "EtaRequested": {
+        "value": "2",
+        "description": ""
+      },
+      "EtaResponseReceived": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "EtaResponse": {
+    "isExclusive": true,
+    "options": {
+      "NoResponse": {
+        "value": "0",
+        "description": ""
+      },
+      "OnMyWay": {
+        "value": "1",
+        "description": ""
+      },
+      "BeThereIn5": {
+        "value": "2",
+        "description": ""
+      },
+      "BeThereIn10": {
+        "value": "3",
+        "description": ""
+      },
+      "StartWithoutMe": {
+        "value": "4",
+        "description": ""
+      },
+      "CantMakeIt": {
+        "value": "5",
+        "description": ""
+      }
+    }
+  },
+  "WebsiteType": {
+    "isExclusive": true,
+    "options": {
+      "Other": {
+        "value": "0",
+        "description": ""
+      },
+      "Home": {
+        "value": "1",
+        "description": ""
+      },
+      "Work": {
+        "value": "2",
+        "description": ""
+      },
+      "Blog": {
+        "value": "3",
+        "description": ""
+      },
+      "Profile": {
+        "value": "4",
+        "description": ""
+      }
+    }
+  },
+  "PhoneType": {
+    "isExclusive": true,
+    "options": {
+      "Home": {
+        "value": "0",
+        "description": ""
+      },
+      "Business": {
+        "value": "1",
+        "description": ""
+      },
+      "Mobile": {
+        "value": "2",
+        "description": ""
+      },
+      "Other": {
+        "value": "3",
+        "description": ""
+      },
+      "Assistant": {
+        "value": "4",
+        "description": ""
+      },
+      "HomeFax": {
+        "value": "5",
+        "description": ""
+      },
+      "BusinessFax": {
+        "value": "6",
+        "description": ""
+      },
+      "OtherFax": {
+        "value": "7",
+        "description": ""
+      },
+      "Pager": {
+        "value": "8",
+        "description": ""
+      },
+      "Radio": {
+        "value": "9",
         "description": ""
       }
     }
@@ -318,12 +574,147 @@
         "value": "3",
         "description": ""
       },
-      "MeetingTenativelyAccepted": {
+      "MeetingTentativelyAccepted": {
         "value": "4",
         "description": ""
       },
       "MeetingDeclined": {
         "value": "5",
+        "description": ""
+      }
+    }
+  },
+  "ReferenceAttachmentProvider": {
+    "isExclusive": true,
+    "options": {
+      "Other": {
+        "value": "0",
+        "description": ""
+      },
+      "OneDriveBusiness": {
+        "value": "1",
+        "description": ""
+      },
+      "OneDriveConsumer": {
+        "value": "2",
+        "description": ""
+      },
+      "Dropbox": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "ReferenceAttachmentPermission": {
+    "isExclusive": true,
+    "options": {
+      "Other": {
+        "value": "0",
+        "description": ""
+      },
+      "View": {
+        "value": "1",
+        "description": ""
+      },
+      "Edit": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "GroupAccessType": {
+    "isExclusive": true,
+    "options": {
+      "None": {
+        "value": "0",
+        "description": ""
+      },
+      "Private": {
+        "value": "1",
+        "description": ""
+      },
+      "Secret": {
+        "value": "2",
+        "description": ""
+      },
+      "Public": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "AccessControlRight": {
+    "isExclusive": true,
+    "options": {
+      "Read": {
+        "value": "1",
+        "description": ""
+      },
+      "Write": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "AccessControlType": {
+    "isExclusive": true,
+    "options": {
+      "Deny": {
+        "value": "0",
+        "description": ""
+      },
+      "Grant": {
+        "value": "1",
+        "description": ""
+      }
+    }
+  },
+  "ChangeType": {
+    "isExclusive": false,
+    "options": {
+      "Created": {
+        "value": "1",
+        "description": ""
+      },
+      "Updated": {
+        "value": "2",
+        "description": ""
+      },
+      "Deleted": {
+        "value": "4",
+        "description": ""
+      },
+      "Acknowledgment": {
+        "value": "8",
+        "description": ""
+      },
+      "Missed": {
+        "value": "16",
+        "description": ""
+      }
+    }
+  },
+  "TaskStatus": {
+    "isExclusive": true,
+    "options": {
+      "NotStarted": {
+        "value": "0",
+        "description": ""
+      },
+      "InProgress": {
+        "value": "1",
+        "description": ""
+      },
+      "Completed": {
+        "value": "2",
+        "description": ""
+      },
+      "WaitingOnOthers": {
+        "value": "3",
+        "description": ""
+      },
+      "Deferred": {
+        "value": "4",
         "description": ""
       }
     }

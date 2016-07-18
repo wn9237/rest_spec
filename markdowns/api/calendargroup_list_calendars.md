@@ -43,13 +43,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 151
+Content-length: 184
 
 {
   "value": [
     {
       "Name": "Name-value",
       "Color": "Color-value",
+      "IsDefaultCalendar": true,
       "ChangeKey": "ChangeKey-value",
       "Id": "Id-value"
     }

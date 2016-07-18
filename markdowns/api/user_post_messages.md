@@ -33,18 +33,18 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/Messages
 Content-type: application/json
-Content-length: 260
+Content-length: 272
 
 {
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
+  "SentDateTime": "datetime-value",
   "HasAttachments": true,
+  "InternetMessageId": "InternetMessageId-value",
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
     "Content": "Content-value"
-  },
-  "BodyPreview": "BodyPreview-value"
+  }
 }
 ```
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
@@ -58,18 +58,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 260
+Content-length: 272
 
 {
-  "DateTimeReceived": "datetime-value",
-  "DateTimeSent": "datetime-value",
+  "ReceivedDateTime": "datetime-value",
+  "SentDateTime": "datetime-value",
   "HasAttachments": true,
+  "InternetMessageId": "InternetMessageId-value",
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
     "Content": "Content-value"
-  },
-  "BodyPreview": "BodyPreview-value"
+  }
 }
 ```
 

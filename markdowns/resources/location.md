@@ -9,6 +9,8 @@
 |Address|[PhysicalAddress](physicaladdress.md)||
 |Coordinates|[GeoCoordinates](geocoordinates.md)||
 |DisplayName|String||
+|LocationEmailAddress|String||
+|LocationUri|String||
 
 ### JSON representation
 
@@ -26,7 +28,9 @@ Here is a JSON representation of the resource.
 {
   "Address": {"@odata.type": "microsoft.graph.PhysicalAddress"},
   "Coordinates": {"@odata.type": "microsoft.graph.GeoCoordinates"},
-  "DisplayName": "String"
+  "DisplayName": "String",
+  "LocationEmailAddress": "String",
+  "LocationUri": "String"
 }
 
 ```

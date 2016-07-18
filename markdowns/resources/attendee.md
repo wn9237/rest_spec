@@ -7,7 +7,6 @@
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |Status|[ResponseStatus](responsestatus.md)||
-|Type|String| Possible values are: `Required`, `Optional`, `Resource`.|
 
 ### JSON representation
 
@@ -23,8 +22,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "Status": {"@odata.type": "microsoft.graph.ResponseStatus"},
-  "Type": "String"
+  "Status": {"@odata.type": "microsoft.graph.ResponseStatus"}
 }
 
 ```

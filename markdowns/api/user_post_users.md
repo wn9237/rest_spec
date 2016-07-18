@@ -32,12 +32,35 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/Users
 Content-type: application/json
-Content-length: 104
+Content-length: 732
 
 {
+  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
-  "MailboxGuid": "MailboxGuid-value"
+  "MailboxSettings": {
+    "AutomaticRepliesSetting": {
+      "Status": "Status-value",
+      "ExternalAudience": "ExternalAudience-value",
+      "ScheduledStartDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "ScheduledEndDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "InternalReplyMessage": "InternalReplyMessage-value",
+      "ExternalReplyMessage": "ExternalReplyMessage-value"
+    },
+    "TimeZone": "TimeZone-value",
+    "Language": {
+      "Locale": "Locale-value",
+      "DisplayName": "DisplayName-value"
+    }
+  }
 }
 ```
 In the request body, supply a JSON representation of [User](../resources/user.md) object.
@@ -51,12 +74,35 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 124
+Content-length: 752
 
 {
+  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
-  "MailboxGuid": "MailboxGuid-value",
+  "MailboxSettings": {
+    "AutomaticRepliesSetting": {
+      "Status": "Status-value",
+      "ExternalAudience": "ExternalAudience-value",
+      "ScheduledStartDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "ScheduledEndDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "InternalReplyMessage": "InternalReplyMessage-value",
+      "ExternalReplyMessage": "ExternalReplyMessage-value"
+    },
+    "TimeZone": "TimeZone-value",
+    "Language": {
+      "Locale": "Locale-value",
+      "DisplayName": "DisplayName-value"
+    }
+  },
   "Id": "Id-value"
 }
 ```

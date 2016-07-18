@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /me/Messages/<Id>/Attachments
 GET /Users/<Id>/Messages/<Id>/Attachments
-GET /me/RootFolder/Messages/<Id>/Attachments
+GET /me/MailFolders/<Id>/Messages/<Id>/Attachments
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -49,7 +49,7 @@ Content-length: 215
 {
   "value": [
     {
-      "DateTimeLastModified": "datetime-value",
+      "LastModifiedDateTime": "datetime-value",
       "Name": "Name-value",
       "ContentType": "ContentType-value",
       "Size": 99,

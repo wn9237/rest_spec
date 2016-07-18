@@ -33,11 +33,12 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/ContactFolders
 Content-type: application/json
-Content-length: 84
+Content-length: 126
 
 {
   "ParentFolderId": "ParentFolderId-value",
-  "DisplayName": "DisplayName-value"
+  "DisplayName": "DisplayName-value",
+  "WellKnownName": "WellKnownName-value"
 }
 ```
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
@@ -51,11 +52,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 104
+Content-length: 146
 
 {
   "ParentFolderId": "ParentFolderId-value",
   "DisplayName": "DisplayName-value",
+  "WellKnownName": "WellKnownName-value",
   "Id": "Id-value"
 }
 ```

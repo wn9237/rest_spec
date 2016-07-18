@@ -5,6 +5,8 @@
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[Create Group](../api/group_post_groups.md) |[Group](group.md)| Create a new Group by posting to the Groups collection.|
+|[List Group](../api/group_list.md) | [Group](group.md) collection |Get group object collection. |
 |[Create User](../api/user_post_users.md) |[User](user.md)| Create a new User by posting to the Users collection.|
 |[List User](../api/user_list.md) | [User](user.md) collection |Get user object collection. |
 

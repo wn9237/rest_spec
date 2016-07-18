@@ -8,9 +8,11 @@
 |:---------------|:--------|:----------|
 |City|String||
 |CountryOrRegion|String||
+|PostOfficeBox|String||
 |PostalCode|String||
 |State|String||
 |Street|String||
+|Type|String| Possible values are: `Unknown`, `Home`, `Business`, `Other`.|
 
 ### JSON representation
 
@@ -28,9 +30,11 @@ Here is a JSON representation of the resource.
 {
   "City": "String",
   "CountryOrRegion": "String",
+  "PostOfficeBox": "String",
   "PostalCode": "String",
   "State": "String",
-  "Street": "String"
+  "Street": "String",
+  "Type": "String"
 }
 
 ```

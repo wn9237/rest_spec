@@ -41,15 +41,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 216
+Content-length: 228
 
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
   "ContentBytes": "ContentBytes-value",
-  "IsContactPhoto": true,
-  "DateTimeLastModified": "datetime-value",
-  "Name": "Name-value"
+  "LastModifiedDateTime": "datetime-value",
+  "Name": "Name-value",
+  "ContentType": "ContentType-value"
 }
 ```
 

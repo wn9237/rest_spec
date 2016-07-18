@@ -22,7 +22,8 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |Alias|String||
 |DisplayName|String||
-|MailboxGuid|Guid||
+|EmailAddress|String||
+|MailboxSettings|MailboxSettings||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [User](../resources/user.md) object in the response body.
@@ -36,12 +37,35 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me
 Content-type: application/json
-Content-length: 104
+Content-length: 732
 
 {
+  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
-  "MailboxGuid": "MailboxGuid-value"
+  "MailboxSettings": {
+    "AutomaticRepliesSetting": {
+      "Status": "Status-value",
+      "ExternalAudience": "ExternalAudience-value",
+      "ScheduledStartDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "ScheduledEndDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "InternalReplyMessage": "InternalReplyMessage-value",
+      "ExternalReplyMessage": "ExternalReplyMessage-value"
+    },
+    "TimeZone": "TimeZone-value",
+    "Language": {
+      "Locale": "Locale-value",
+      "DisplayName": "DisplayName-value"
+    }
+  }
 }
 ```
 ##### Response
@@ -54,12 +78,35 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 124
+Content-length: 752
 
 {
+  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
-  "MailboxGuid": "MailboxGuid-value",
+  "MailboxSettings": {
+    "AutomaticRepliesSetting": {
+      "Status": "Status-value",
+      "ExternalAudience": "ExternalAudience-value",
+      "ScheduledStartDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "ScheduledEndDateTime": {
+        "DateTime": {
+        },
+        "TimeZone": "TimeZone-value"
+      },
+      "InternalReplyMessage": "InternalReplyMessage-value",
+      "ExternalReplyMessage": "ExternalReplyMessage-value"
+    },
+    "TimeZone": "TimeZone-value",
+    "Language": {
+      "Locale": "Locale-value",
+      "DisplayName": "DisplayName-value"
+    }
+  },
   "Id": "Id-value"
 }
 ```

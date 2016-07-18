@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /me/Calendar/Events
 GET /Users/<Id>/Calendar/Events
-GET /me/Events/<Id>/Calendar/Events
+GET /Groups/<Id>/Calendar/Events
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -44,20 +44,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 311
+Content-length: 359
 
 {
   "value": [
     {
-      "StartTimeZone": "StartTimeZone-value",
-      "EndTimeZone": "EndTimeZone-value",
+      "OriginalStartTimeZone": "OriginalStartTimeZone-value",
+      "OriginalEndTimeZone": "OriginalEndTimeZone-value",
       "ResponseStatus": {
         "Response": "Response-value",
         "Time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",
-      "Reminder": 99,
-      "HasAttachments": true
+      "ReminderMinutesBeforeStart": 99,
+      "IsReminderOn": true
     }
   ]
 }

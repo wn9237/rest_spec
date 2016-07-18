@@ -33,11 +33,12 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/CalendarGroups/<Id>/Calendars
 Content-type: application/json
-Content-length: 86
+Content-length: 115
 
 {
   "Name": "Name-value",
   "Color": "Color-value",
+  "IsDefaultCalendar": true,
   "ChangeKey": "ChangeKey-value"
 }
 ```
@@ -52,11 +53,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 106
+Content-length: 135
 
 {
   "Name": "Name-value",
   "Color": "Color-value",
+  "IsDefaultCalendar": true,
   "ChangeKey": "ChangeKey-value",
   "Id": "Id-value"
 }
