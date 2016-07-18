@@ -30,20 +30,6 @@
   },
   "properties": [
     {
-      "name": "EmailAddress",
-      "description": "",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
       "name": "DisplayName",
       "description": "",
       "isKey": false,
@@ -100,20 +86,6 @@
       "isUnicode": null
     },
     {
-      "name": "Subscriptions",
-      "description": "",
-      "isKey": false,
-      "dataType": "Subscription",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
       "name": "Messages",
       "description": "",
       "isKey": false,
@@ -128,24 +100,10 @@
       "isUnicode": null
     },
     {
-      "name": "JoinedGroups",
+      "name": "Folders",
       "description": "",
       "isKey": false,
-      "dataType": "Group",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "MailFolders",
-      "description": "",
-      "isKey": false,
-      "dataType": "MailFolder",
+      "dataType": "Folder",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
@@ -254,24 +212,10 @@
       "isUnicode": null
     },
     {
-      "name": "InferenceClassification",
+      "name": "RootFolder",
       "description": "",
       "isKey": false,
-      "dataType": "InferenceClassification",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "Photo",
-      "description": "",
-      "isKey": false,
-      "dataType": "Photo",
+      "dataType": "Folder",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": false,
@@ -314,84 +258,6 @@
           "name": "SaveToSentItems",
           "description": "",
           "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "ReminderView",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Reminder",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "StartDateTime",
-          "description": "",
-          "dataType": "DateTime",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        },
-        {
-          "name": "EndDateTime",
-          "description": "",
-          "dataType": "DateTime",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "ReminderView_IgnoreThis",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Reminder",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "StartDateTime",
-          "description": "",
-          "dataType": "DateTime",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        },
-        {
-          "name": "EndDateTime",
-          "description": "",
-          "dataType": "DateTime",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,

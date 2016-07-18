@@ -70,7 +70,21 @@
       "isUnicode": null
     },
     {
-      "name": "LastModifiedDateTime",
+      "name": "IsContactPhoto",
+      "description": "",
+      "isKey": false,
+      "dataType": "Boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "DateTimeLastModified",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",

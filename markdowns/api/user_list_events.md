@@ -43,20 +43,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 359
+Content-length: 311
 
 {
   "value": [
     {
-      "OriginalStartTimeZone": "OriginalStartTimeZone-value",
-      "OriginalEndTimeZone": "OriginalEndTimeZone-value",
+      "StartTimeZone": "StartTimeZone-value",
+      "EndTimeZone": "EndTimeZone-value",
       "ResponseStatus": {
         "Response": "Response-value",
         "Time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",
-      "ReminderMinutesBeforeStart": 99,
-      "IsReminderOn": true
+      "Reminder": 99,
+      "HasAttachments": true
     }
   ]
 }

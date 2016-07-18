@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 DELETE /me/Calendar
 DELETE /Users/<Id>/Calendar
-DELETE /Groups/<Id>/Calendar
+DELETE /me/Events/<Id>/Calendar
 
 ```
 ### Request headers

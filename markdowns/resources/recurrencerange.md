@@ -6,10 +6,9 @@
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|EndDate|Date||
+|EndDate|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |NumberOfOccurrences|Int32||
-|RecurrenceTimeZone|String||
-|StartDate|Date||
+|StartDate|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Type|String| Possible values are: `EndDate`, `NoEnd`, `Numbered`.|
 
 ### JSON representation
@@ -28,7 +27,6 @@ Here is a JSON representation of the resource.
 {
   "EndDate": "String (timestamp)",
   "NumberOfOccurrences": 1024,
-  "RecurrenceTimeZone": "String",
   "StartDate": "String (timestamp)",
   "Type": "String"
 }

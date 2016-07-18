@@ -34,18 +34,18 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/Events/<Id>/Instances
 Content-type: application/json
-Content-length: 294
+Content-length: 246
 
 {
-  "OriginalStartTimeZone": "OriginalStartTimeZone-value",
-  "OriginalEndTimeZone": "OriginalEndTimeZone-value",
+  "StartTimeZone": "StartTimeZone-value",
+  "EndTimeZone": "EndTimeZone-value",
   "ResponseStatus": {
     "Response": "Response-value",
     "Time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
-  "ReminderMinutesBeforeStart": 99,
-  "IsReminderOn": true
+  "Reminder": 99,
+  "HasAttachments": true
 }
 ```
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -59,18 +59,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 294
+Content-length: 246
 
 {
-  "OriginalStartTimeZone": "OriginalStartTimeZone-value",
-  "OriginalEndTimeZone": "OriginalEndTimeZone-value",
+  "StartTimeZone": "StartTimeZone-value",
+  "EndTimeZone": "EndTimeZone-value",
   "ResponseStatus": {
     "Response": "Response-value",
     "Time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
-  "ReminderMinutesBeforeStart": 99,
-  "IsReminderOn": true
+  "Reminder": 99,
+  "HasAttachments": true
 }
 ```
 

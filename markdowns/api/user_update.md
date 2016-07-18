@@ -22,7 +22,6 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |Alias|String||
 |DisplayName|String||
-|EmailAddress|String||
 |MailboxGuid|Guid||
 
 ### Response
@@ -37,10 +36,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me
 Content-type: application/json
-Content-length: 144
+Content-length: 104
 
 {
-  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
   "MailboxGuid": "MailboxGuid-value"
@@ -56,10 +54,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 164
+Content-length: 124
 
 {
-  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
   "MailboxGuid": "MailboxGuid-value",

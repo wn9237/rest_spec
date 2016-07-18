@@ -30,7 +30,8 @@ In the request body, supply the values for relevant fields that should be update
 |ChangeKey|String||
 |Children|String||
 |CompanyName|String||
-|CreatedDateTime|DateTimeOffset||
+|DateTimeCreated|DateTimeOffset||
+|DateTimeLastModified|DateTimeOffset||
 |Department|String||
 |DisplayName|String||
 |EmailAddresses|EmailAddress||
@@ -42,7 +43,6 @@ In the request body, supply the values for relevant fields that should be update
 |ImAddresses|String||
 |Initials|String||
 |JobTitle|String||
-|LastModifiedDateTime|DateTimeOffset||
 |Manager|String||
 |MiddleName|String||
 |MobilePhone1|String||

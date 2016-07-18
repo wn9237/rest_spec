@@ -20,18 +20,12 @@
 |[List Contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|
 |[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the Events collection.|
 |[List Events](../api/user_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
-|[Create Group](../api/user_post_joinedgroups.md) |[Group](group.md)| Create a new Group by posting to the JoinedGroups collection.|
-|[List JoinedGroups](../api/user_list_joinedgroups.md) |[Group](group.md) collection| Get a Group object collection.|
-|[Create MailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the MailFolders collection.|
-|[List MailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
+|[Create Folder](../api/user_post_folders.md) |[Folder](folder.md)| Create a new Folder by posting to the Folders collection.|
+|[List Folders](../api/user_list_folders.md) |[Folder](folder.md) collection| Get a Folder object collection.|
 |[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the Messages collection.|
 |[List Messages](../api/user_list_messages.md) |[Message](message.md) collection| Get a Message object collection.|
-|[Create Subscription](../api/user_post_subscriptions.md) |[Subscription](subscription.md)| Create a new Subscription by posting to the Subscriptions collection.|
-|[List Subscriptions](../api/user_list_subscriptions.md) |[Subscription](subscription.md) collection| Get a Subscription object collection.|
 |[Update](../api/user_update.md) | [User](user.md)	|Update User object. |
 |[Delete](../api/user_delete.md) | None |Delete User object. |
-|[Reminderview](../api/user_reminderview.md)|[Reminder](reminder.md) collection||
-|[Reminderview_ignorethis](../api/user_reminderview_ignorethis.md)|[Reminder](reminder.md) collection||
 |[Sendmail](../api/user_sendmail.md)|None||
 
 ### Properties
@@ -39,7 +33,6 @@
 |:---------------|:--------|:----------|
 |Alias|String||
 |DisplayName|String||
-|EmailAddress|String||
 |Id|String| Read-only.|
 |MailboxGuid|Guid||
 
@@ -53,12 +46,9 @@
 |ContactFolders|[ContactFolder](contactfolder.md) collection| Read-only. Nullable.|
 |Contacts|[Contact](contact.md) collection| Read-only. Nullable.|
 |Events|[Event](event.md) collection| Read-only. Nullable.|
-|InferenceClassification|[InferenceClassification](inferenceclassification.md)| Read-only. Nullable.|
-|JoinedGroups|[Group](group.md) collection| Read-only. Nullable.|
-|MailFolders|[MailFolder](mailfolder.md) collection| Read-only. Nullable.|
+|Folders|[Folder](folder.md) collection| Read-only. Nullable.|
 |Messages|[Message](message.md) collection| Read-only. Nullable.|
-|Photo|[Photo](photo.md)| Read-only. Nullable.|
-|Subscriptions|[Subscription](subscription.md) collection| Read-only. Nullable.|
+|RootFolder|[Folder](folder.md)| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -76,7 +66,6 @@ Here is a JSON representation of the resource.
 {
   "Alias": "String",
   "DisplayName": "String",
-  "EmailAddress": "String",
   "Id": "String (identifier)",
   "MailboxGuid": "Guid"
 }

@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 PATCH /me/Calendar
 PATCH /Users/<Id>/Calendar
-PATCH /Groups/<Id>/Calendar
+PATCH /me/Events/<Id>/Calendar
 ```
 ### Optional request headers
 | Name       | Description|

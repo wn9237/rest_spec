@@ -23,8 +23,9 @@ In the request body, supply the values for relevant fields that should be update
 |ContentId|String||
 |ContentLocation|String||
 |ContentType|String||
+|DateTimeLastModified|DateTimeOffset||
+|IsContactPhoto|Boolean||
 |IsInline|Boolean||
-|LastModifiedDateTime|DateTimeOffset||
 |Name|String||
 |Size|Int32||
 
@@ -40,15 +41,15 @@ Here is an example of the request.
 ```http
 
 Content-type: application/json
-Content-length: 228
+Content-length: 216
 
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
   "ContentBytes": "ContentBytes-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Name": "Name-value",
-  "ContentType": "ContentType-value"
+  "IsContactPhoto": true,
+  "DateTimeLastModified": "datetime-value",
+  "Name": "Name-value"
 }
 ```
 ##### Response
@@ -61,15 +62,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 228
+Content-length: 216
 
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
   "ContentBytes": "ContentBytes-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Name": "Name-value",
-  "ContentType": "ContentType-value"
+  "IsContactPhoto": true,
+  "DateTimeLastModified": "datetime-value",
+  "Name": "Name-value"
 }
 ```
 

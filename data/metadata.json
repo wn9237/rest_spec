@@ -26,7 +26,7 @@
             "Abstract": "true",
             "Property": [
               {
-                "Name": "LastModifiedDateTime",
+                "Name": "DateTimeLastModified",
                 "Type": "Edm.DateTimeOffset"
               },
               {
@@ -55,11 +55,11 @@
             "Abstract": "true",
             "Property": [
               {
-                "Name": "CreatedDateTime",
+                "Name": "DateTimeCreated",
                 "Type": "Edm.DateTimeOffset"
               },
               {
-                "Name": "LastModifiedDateTime",
+                "Name": "DateTimeLastModified",
                 "Type": "Edm.DateTimeOffset"
               },
               {
@@ -82,10 +82,6 @@
             "BaseType": "Microsoft.OutlookServices.DirectoryObject",
             "Property": [
               {
-                "Name": "EmailAddress",
-                "Type": "Edm.String"
-              },
-              {
                 "Name": "DisplayName",
                 "Type": "Edm.String"
               },
@@ -99,40 +95,6 @@
               }
             ],
             "NavigationProperty": [
-              {
-                "Name": "Subscriptions",
-                "Type": "Collection(Microsoft.OutlookServices.Subscription)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
               {
                 "Name": "Messages",
                 "Type": "Collection(Microsoft.OutlookServices.Message)",
@@ -159,69 +121,8 @@
                 ]
               },
               {
-                "Name": "JoinedGroups",
-                "Type": "Collection(Microsoft.OutlookServices.Group)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Insertable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Deletable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "MailFolders",
-                "Type": "Collection(Microsoft.OutlookServices.MailFolder)",
+                "Name": "Folders",
+                "Type": "Collection(Microsoft.OutlookServices.Folder)",
                 "ContainsTarget": "true",
                 "Annotation": [
                   {
@@ -526,8 +427,8 @@
                 ]
               },
               {
-                "Name": "InferenceClassification",
-                "Type": "Microsoft.OutlookServices.InferenceClassification",
+                "Name": "RootFolder",
+                "Type": "Microsoft.OutlookServices.Folder",
                 "ContainsTarget": "true",
                 "Annotation": [
                   {
@@ -558,54 +459,11 @@
                     }
                   },
                   {
-                    "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
                     "Record": {
                       "PropertyValue": {
-                        "Property": "Insertable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Deletable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "Photo",
-                "Type": "Microsoft.OutlookServices.Photo",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
                       }
                     }
                   },
@@ -614,6 +472,15 @@
                     "Record": {
                       "PropertyValue": {
                         "Property": "Insertable",
+                        "Bool": "false"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Updatable",
                         "Bool": "false"
                       }
                     }
@@ -632,7 +499,7 @@
             ]
           },
           {
-            "Name": "MailFolder",
+            "Name": "Folder",
             "BaseType": "Microsoft.OutlookServices.Entity",
             "Property": [
               {
@@ -684,7 +551,7 @@
               },
               {
                 "Name": "ChildFolders",
-                "Type": "Collection(Microsoft.OutlookServices.MailFolder)",
+                "Type": "Collection(Microsoft.OutlookServices.Folder)",
                 "ContainsTarget": "true",
                 "Annotation": [
                   {
@@ -715,52 +582,6 @@
                     }
                   }
                 ]
-              },
-              {
-                "Name": "SingleValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.SingleValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "MultiValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.MultiValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              }
-            ]
-          },
-          {
-            "Name": "SingleValueLegacyExtendedProperty",
-            "Key": {
-              "PropertyRef": {
-                "Name": "PropertyId"
-              }
-            },
-            "Property": [
-              {
-                "Name": "Value",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "PropertyId",
-                "Type": "Edm.String"
-              }
-            ]
-          },
-          {
-            "Name": "MultiValueLegacyExtendedProperty",
-            "Key": {
-              "PropertyRef": {
-                "Name": "PropertyId"
-              }
-            },
-            "Property": [
-              {
-                "Name": "Value",
-                "Type": "Collection(Edm.String)"
-              },
-              {
-                "Name": "PropertyId",
-                "Type": "Edm.String"
               }
             ]
           },
@@ -769,20 +590,16 @@
             "BaseType": "Microsoft.OutlookServices.Item",
             "Property": [
               {
-                "Name": "ReceivedDateTime",
+                "Name": "DateTimeReceived",
                 "Type": "Edm.DateTimeOffset"
               },
               {
-                "Name": "SentDateTime",
+                "Name": "DateTimeSent",
                 "Type": "Edm.DateTimeOffset"
               },
               {
                 "Name": "HasAttachments",
                 "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "InternetMessageId",
-                "Type": "Edm.String"
               },
               {
                 "Name": "Subject",
@@ -855,83 +672,42 @@
               {
                 "Name": "WebLink",
                 "Type": "Edm.String"
-              },
-              {
-                "Name": "InferenceClassification",
-                "Type": "Microsoft.OutlookServices.InferenceClassificationType"
               }
             ],
-            "NavigationProperty": [
-              {
-                "Name": "Extensions",
-                "Type": "Collection(Microsoft.OutlookServices.Extension)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
+            "NavigationProperty": {
+              "Name": "Attachments",
+              "Type": "Collection(Microsoft.OutlookServices.Attachment)",
+              "ContainsTarget": "true",
+              "Annotation": [
+                {
+                  "Term": "Org.OData.Capabilities.V1.ChangeTracking",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Supported",
+                      "Bool": "false"
                     }
                   }
-                ]
-              },
-              {
-                "Name": "Attachments",
-                "Type": "Collection(Microsoft.OutlookServices.Attachment)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
+                },
+                {
+                  "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Searchable",
+                      "Bool": "false"
                     }
                   }
-                ]
-              },
-              {
-                "Name": "SingleValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.SingleValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "MultiValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.MultiValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              }
-            ]
+                },
+                {
+                  "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Updatable",
+                      "Bool": "false"
+                    }
+                  }
+                }
+              ]
+            }
           },
           {
             "Name": "FileAttachment",
@@ -948,6 +724,11 @@
               {
                 "Name": "ContentBytes",
                 "Type": "Edm.Binary"
+              },
+              {
+                "Name": "IsContactPhoto",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
               }
             ]
           },
@@ -1128,16 +909,6 @@
                     }
                   }
                 ]
-              },
-              {
-                "Name": "SingleValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.SingleValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "MultiValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.MultiValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
               }
             ]
           },
@@ -1207,11 +978,11 @@
             "BaseType": "Microsoft.OutlookServices.Item",
             "Property": [
               {
-                "Name": "OriginalStartTimeZone",
+                "Name": "StartTimeZone",
                 "Type": "Edm.String"
               },
               {
-                "Name": "OriginalEndTimeZone",
+                "Name": "EndTimeZone",
                 "Type": "Edm.String"
               },
               {
@@ -1223,12 +994,8 @@
                 "Type": "Edm.String"
               },
               {
-                "Name": "ReminderMinutesBeforeStart",
+                "Name": "Reminder",
                 "Type": "Edm.Int32"
-              },
-              {
-                "Name": "IsReminderOn",
-                "Type": "Edm.Boolean"
               },
               {
                 "Name": "HasAttachments",
@@ -1256,7 +1023,7 @@
               },
               {
                 "Name": "Start",
-                "Type": "Microsoft.OutlookServices.DateTimeTimeZone"
+                "Type": "Edm.DateTimeOffset"
               },
               {
                 "Name": "OriginalStart",
@@ -1264,7 +1031,7 @@
               },
               {
                 "Name": "End",
-                "Type": "Microsoft.OutlookServices.DateTimeTimeZone"
+                "Type": "Edm.DateTimeOffset"
               },
               {
                 "Name": "Location",
@@ -1457,31 +1224,6 @@
                 ]
               },
               {
-                "Name": "Extensions",
-                "Type": "Collection(Microsoft.OutlookServices.Extension)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
                 "Name": "Attachments",
                 "Type": "Collection(Microsoft.OutlookServices.Attachment)",
                 "ContainsTarget": "true",
@@ -1514,16 +1256,6 @@
                     }
                   }
                 ]
-              },
-              {
-                "Name": "SingleValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.SingleValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "MultiValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.MultiValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
               }
             ]
           },
@@ -1663,95 +1395,6 @@
                 "Name": "Children",
                 "Type": "Collection(Edm.String)"
               }
-            ],
-            "NavigationProperty": [
-              {
-                "Name": "Extensions",
-                "Type": "Collection(Microsoft.OutlookServices.Extension)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "SingleValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.SingleValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "MultiValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.MultiValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "Photo",
-                "Type": "Microsoft.OutlookServices.Photo",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Insertable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Deletable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              }
             ]
           },
           {
@@ -1826,16 +1469,6 @@
                     }
                   }
                 ]
-              },
-              {
-                "Name": "SingleValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.SingleValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "MultiValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.MultiValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
               }
             ]
           },
@@ -1898,999 +1531,6 @@
                 }
               ]
             }
-          },
-          {
-            "Name": "ReferenceAttachment",
-            "BaseType": "Microsoft.OutlookServices.Attachment"
-          },
-          {
-            "Name": "Group",
-            "BaseType": "Microsoft.OutlookServices.DirectoryObject",
-            "Property": [
-              {
-                "Name": "AccessType",
-                "Type": "Microsoft.OutlookServices.GroupAccessType"
-              },
-              {
-                "Name": "AllowExternalSenders",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "AutoSubscribeNewMembers",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "Description",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "DisplayName",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "EmailAddress",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "IsFavorite",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "IsSubscribedByMail",
-                "Type": "Edm.Boolean"
-              },
-              {
-                "Name": "UnseenCount",
-                "Type": "Edm.Int32"
-              }
-            ],
-            "NavigationProperty": [
-              {
-                "Name": "Threads",
-                "Type": "Collection(Microsoft.OutlookServices.ConversationThread)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "Calendar",
-                "Type": "Microsoft.OutlookServices.Calendar",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Insertable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Deletable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "CalendarView",
-                "Type": "Collection(Microsoft.OutlookServices.Event)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Insertable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Deletable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "Events",
-                "Type": "Collection(Microsoft.OutlookServices.Event)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "Conversations",
-                "Type": "Collection(Microsoft.OutlookServices.Conversation)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "Subscriptions",
-                "Type": "Collection(Microsoft.OutlookServices.Subscription)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "Photo",
-                "Type": "Microsoft.OutlookServices.Photo",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Insertable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Deletable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "AcceptedSenders",
-                "Type": "Collection(Microsoft.OutlookServices.DirectoryObject)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "RejectedSenders",
-                "Type": "Collection(Microsoft.OutlookServices.DirectoryObject)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Expandable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Name": "Extension",
-            "BaseType": "Microsoft.OutlookServices.Entity",
-            "Abstract": "true"
-          },
-          {
-            "Name": "OpenTypeExtension",
-            "BaseType": "Microsoft.OutlookServices.Extension",
-            "OpenType": "true",
-            "Property": {
-              "Name": "ExtensionName",
-              "Type": "Edm.String",
-              "Nullable": "false"
-            }
-          },
-          {
-            "Name": "Photo",
-            "BaseType": "Microsoft.OutlookServices.Entity",
-            "HasStream": "true",
-            "Property": [
-              {
-                "Name": "Height",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "Width",
-                "Type": "Edm.Int32"
-              }
-            ]
-          },
-          {
-            "Name": "Subscription",
-            "BaseType": "Microsoft.OutlookServices.Entity",
-            "Abstract": "true",
-            "Property": [
-              {
-                "Name": "Resource",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "ChangeType",
-                "Type": "Microsoft.OutlookServices.ChangeType"
-              }
-            ]
-          },
-          {
-            "Name": "PushSubscription",
-            "BaseType": "Microsoft.OutlookServices.Subscription",
-            "Property": [
-              {
-                "Name": "NotificationURL",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "SubscriptionExpirationDateTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "ClientState",
-                "Type": "Edm.String"
-              }
-            ]
-          },
-          {
-            "Name": "Notification",
-            "BaseType": "Microsoft.OutlookServices.Entity",
-            "Property": [
-              {
-                "Name": "SubscriptionId",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "SubscriptionExpirationDateTime",
-                "Type": "Edm.DateTimeOffset"
-              },
-              {
-                "Name": "SequenceNumber",
-                "Type": "Edm.Int32"
-              },
-              {
-                "Name": "ChangeType",
-                "Type": "Microsoft.OutlookServices.ChangeType"
-              },
-              {
-                "Name": "Resource",
-                "Type": "Edm.String"
-              }
-            ],
-            "NavigationProperty": {
-              "Name": "ResourceData",
-              "Type": "Microsoft.OutlookServices.Entity",
-              "ContainsTarget": "true",
-              "Annotation": [
-                {
-                  "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Supported",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Expandable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Searchable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Insertable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Updatable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Deletable",
-                      "Bool": "false"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "Name": "Conversation",
-            "BaseType": "Microsoft.OutlookServices.Entity",
-            "Property": [
-              {
-                "Name": "Topic",
-                "Type": "Edm.String",
-                "Nullable": "false"
-              },
-              {
-                "Name": "HasAttachments",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
-              },
-              {
-                "Name": "LastDeliveredDateTime",
-                "Type": "Edm.DateTimeOffset",
-                "Nullable": "false"
-              },
-              {
-                "Name": "UniqueSenders",
-                "Type": "Collection(Edm.String)",
-                "Nullable": "false"
-              },
-              {
-                "Name": "Preview",
-                "Type": "Edm.String",
-                "Nullable": "false"
-              }
-            ],
-            "NavigationProperty": {
-              "Name": "Threads",
-              "Type": "Collection(Microsoft.OutlookServices.ConversationThread)",
-              "ContainsTarget": "true",
-              "Annotation": [
-                {
-                  "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Supported",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Searchable",
-                      "Bool": "false"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "Name": "ConversationThread",
-            "BaseType": "Microsoft.OutlookServices.Entity",
-            "Property": [
-              {
-                "Name": "ToRecipients",
-                "Type": "Collection(Microsoft.OutlookServices.Recipient)",
-                "Nullable": "false"
-              },
-              {
-                "Name": "Topic",
-                "Type": "Edm.String",
-                "Nullable": "false"
-              },
-              {
-                "Name": "HasAttachments",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
-              },
-              {
-                "Name": "LastDeliveredDateTime",
-                "Type": "Edm.DateTimeOffset",
-                "Nullable": "false"
-              },
-              {
-                "Name": "UniqueSenders",
-                "Type": "Collection(Edm.String)",
-                "Nullable": "false"
-              },
-              {
-                "Name": "CcRecipients",
-                "Type": "Collection(Microsoft.OutlookServices.Recipient)",
-                "Nullable": "false"
-              },
-              {
-                "Name": "Preview",
-                "Type": "Edm.String",
-                "Nullable": "false"
-              },
-              {
-                "Name": "IsLocked",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
-              }
-            ],
-            "NavigationProperty": {
-              "Name": "Posts",
-              "Type": "Collection(Microsoft.OutlookServices.Post)",
-              "ContainsTarget": "true",
-              "Annotation": [
-                {
-                  "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Supported",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Expandable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Searchable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Insertable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Updatable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Deletable",
-                      "Bool": "false"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "Name": "Post",
-            "BaseType": "Microsoft.OutlookServices.Item",
-            "Property": [
-              {
-                "Name": "Body",
-                "Type": "Microsoft.OutlookServices.ItemBody"
-              },
-              {
-                "Name": "ReceivedDateTime",
-                "Type": "Edm.DateTimeOffset",
-                "Nullable": "false"
-              },
-              {
-                "Name": "HasAttachments",
-                "Type": "Edm.Boolean",
-                "Nullable": "false"
-              },
-              {
-                "Name": "From",
-                "Type": "Microsoft.OutlookServices.Recipient",
-                "Nullable": "false"
-              },
-              {
-                "Name": "Sender",
-                "Type": "Microsoft.OutlookServices.Recipient",
-                "Nullable": "false"
-              },
-              {
-                "Name": "ConversationThreadId",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "NewParticipants",
-                "Type": "Collection(Microsoft.OutlookServices.Recipient)",
-                "Nullable": "false"
-              },
-              {
-                "Name": "ConversationId",
-                "Type": "Edm.String"
-              }
-            ],
-            "NavigationProperty": [
-              {
-                "Name": "Extensions",
-                "Type": "Collection(Microsoft.OutlookServices.Extension)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "InReplyTo",
-                "Type": "Microsoft.OutlookServices.Post",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Navigability",
-                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.InsertRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Insertable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.DeleteRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Deletable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "Attachments",
-                "Type": "Collection(Microsoft.OutlookServices.Attachment)",
-                "ContainsTarget": "true",
-                "Annotation": [
-                  {
-                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Supported",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Searchable",
-                        "Bool": "false"
-                      }
-                    }
-                  },
-                  {
-                    "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                    "Record": {
-                      "PropertyValue": {
-                        "Property": "Updatable",
-                        "Bool": "false"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "Name": "SingleValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.SingleValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              },
-              {
-                "Name": "MultiValueExtendedProperties",
-                "Type": "Collection(Microsoft.OutlookServices.MultiValueLegacyExtendedProperty)",
-                "ContainsTarget": "true"
-              }
-            ]
-          },
-          {
-            "Name": "InferenceClassification",
-            "BaseType": "Microsoft.OutlookServices.Entity",
-            "NavigationProperty": {
-              "Name": "Overrides",
-              "Type": "Collection(Microsoft.OutlookServices.InferenceClassificationOverride)",
-              "ContainsTarget": "true",
-              "Annotation": [
-                {
-                  "Term": "Org.OData.Capabilities.V1.ChangeTracking",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Supported",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Expandable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Searchable",
-                      "Bool": "false"
-                    }
-                  }
-                },
-                {
-                  "Term": "Org.OData.Capabilities.V1.UpdateRestrictions",
-                  "Record": {
-                    "PropertyValue": {
-                      "Property": "Updatable",
-                      "Bool": "false"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "Name": "InferenceClassificationOverride",
-            "BaseType": "Microsoft.OutlookServices.Entity",
-            "Property": [
-              {
-                "Name": "ClassifyAs",
-                "Type": "Microsoft.OutlookServices.InferenceClassificationType"
-              },
-              {
-                "Name": "SenderEmailAddress",
-                "Type": "Microsoft.OutlookServices.EmailAddress"
-              }
-            ]
           }
         ],
         "Action": [
@@ -2920,7 +1560,7 @@
             "Parameter": [
               {
                 "Name": "bindingParameter",
-                "Type": "Microsoft.OutlookServices.MailFolder"
+                "Type": "Microsoft.OutlookServices.Folder"
               },
               {
                 "Name": "DestinationId",
@@ -2928,7 +1568,7 @@
               }
             ],
             "ReturnType": {
-              "Type": "Microsoft.OutlookServices.MailFolder"
+              "Type": "Microsoft.OutlookServices.Folder"
             }
           },
           {
@@ -2938,7 +1578,7 @@
             "Parameter": [
               {
                 "Name": "bindingParameter",
-                "Type": "Microsoft.OutlookServices.MailFolder"
+                "Type": "Microsoft.OutlookServices.Folder"
               },
               {
                 "Name": "DestinationId",
@@ -2946,7 +1586,7 @@
               }
             ],
             "ReturnType": {
-              "Type": "Microsoft.OutlookServices.MailFolder"
+              "Type": "Microsoft.OutlookServices.Folder"
             }
           },
           {
@@ -3128,169 +1768,52 @@
                 "Type": "Edm.Boolean"
               }
             ]
-          },
-          {
-            "Name": "SnoozeReminder",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.OutlookServices.Event"
-              },
-              {
-                "Name": "NewReminderTime",
-                "Type": "Microsoft.OutlookServices.DateTimeTimeZone",
-                "Nullable": "false"
-              }
-            ]
-          },
-          {
-            "Name": "DismissReminder",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "Microsoft.OutlookServices.Event"
-            }
-          },
-          {
-            "Name": "SubscribeByMail",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "Microsoft.OutlookServices.Group"
-            }
-          },
-          {
-            "Name": "UnsubscribeByMail",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "Microsoft.OutlookServices.Group"
-            }
-          },
-          {
-            "Name": "AddFavorite",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "Microsoft.OutlookServices.Group"
-            }
-          },
-          {
-            "Name": "RemoveFavorite",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "Microsoft.OutlookServices.Group"
-            }
-          },
-          {
-            "Name": "ResetUnseenCount",
-            "IsBound": "true",
-            "Parameter": {
-              "Name": "bindingParameter",
-              "Type": "Microsoft.OutlookServices.Group"
-            }
-          },
-          {
-            "Name": "Reply",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.OutlookServices.ConversationThread"
-              },
-              {
-                "Name": "Post",
-                "Type": "Microsoft.OutlookServices.Post",
-                "Nullable": "false"
-              }
-            ]
-          },
-          {
-            "Name": "Forward",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.OutlookServices.Post"
-              },
-              {
-                "Name": "Comment",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "ToRecipients",
-                "Type": "Collection(Microsoft.OutlookServices.Recipient)",
-                "Nullable": "false"
-              }
-            ]
-          },
-          {
-            "Name": "Reply",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingParameter",
-                "Type": "Microsoft.OutlookServices.Post"
-              },
-              {
-                "Name": "Post",
-                "Type": "Microsoft.OutlookServices.Post",
-                "Nullable": "false"
-              }
-            ]
           }
         ],
         "ComplexType": [
           {
-            "Name": "Reminder",
+            "Name": "ItemBody",
             "Property": [
               {
-                "Name": "EventId",
+                "Name": "ContentType",
+                "Type": "Microsoft.OutlookServices.BodyType"
+              },
+              {
+                "Name": "Content",
                 "Type": "Edm.String"
-              },
-              {
-                "Name": "EventStartTime",
-                "Type": "Microsoft.OutlookServices.DateTimeTimeZone"
-              },
-              {
-                "Name": "EventEndTime",
-                "Type": "Microsoft.OutlookServices.DateTimeTimeZone"
-              },
-              {
-                "Name": "ChangeKey",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "EventSubject",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "EventLocation",
-                "Type": "Microsoft.OutlookServices.Location"
-              },
-              {
-                "Name": "EventWebLink",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "ReminderFireTime",
-                "Type": "Microsoft.OutlookServices.DateTimeTimeZone"
               }
             ]
           },
           {
-            "Name": "DateTimeTimeZone",
+            "Name": "Recipient",
+            "Property": {
+              "Name": "EmailAddress",
+              "Type": "Microsoft.OutlookServices.EmailAddress"
+            }
+          },
+          {
+            "Name": "EmailAddress",
             "Property": [
               {
-                "Name": "DateTime",
-                "Type": "Microsoft.OutlookServices.DateTime",
-                "Nullable": "false"
+                "Name": "Name",
+                "Type": "Edm.String"
               },
               {
-                "Name": "TimeZone",
+                "Name": "Address",
                 "Type": "Edm.String"
+              }
+            ]
+          },
+          {
+            "Name": "ResponseStatus",
+            "Property": [
+              {
+                "Name": "Response",
+                "Type": "Microsoft.OutlookServices.ResponseType"
+              },
+              {
+                "Name": "Time",
+                "Type": "Edm.DateTimeOffset"
               }
             ]
           },
@@ -3362,52 +1885,6 @@
             ]
           },
           {
-            "Name": "ItemBody",
-            "Property": [
-              {
-                "Name": "ContentType",
-                "Type": "Microsoft.OutlookServices.BodyType"
-              },
-              {
-                "Name": "Content",
-                "Type": "Edm.String"
-              }
-            ]
-          },
-          {
-            "Name": "Recipient",
-            "Property": {
-              "Name": "EmailAddress",
-              "Type": "Microsoft.OutlookServices.EmailAddress"
-            }
-          },
-          {
-            "Name": "EmailAddress",
-            "Property": [
-              {
-                "Name": "Name",
-                "Type": "Edm.String"
-              },
-              {
-                "Name": "Address",
-                "Type": "Edm.String"
-              }
-            ]
-          },
-          {
-            "Name": "ResponseStatus",
-            "Property": [
-              {
-                "Name": "Response",
-                "Type": "Microsoft.OutlookServices.ResponseType"
-              },
-              {
-                "Name": "Time",
-                "Type": "Edm.DateTimeOffset"
-              }
-            ]
-          },
-          {
             "Name": "PatternedRecurrence",
             "Property": [
               {
@@ -3465,15 +1942,11 @@
               },
               {
                 "Name": "StartDate",
-                "Type": "Edm.Date"
+                "Type": "Edm.DateTimeOffset"
               },
               {
                 "Name": "EndDate",
-                "Type": "Edm.Date"
-              },
-              {
-                "Name": "RecurrenceTimeZone",
-                "Type": "Edm.String"
+                "Type": "Edm.DateTimeOffset"
               },
               {
                 "Name": "NumberOfOccurrences",
@@ -3495,58 +1968,6 @@
                 "Type": "Microsoft.OutlookServices.AttendeeType"
               }
             ]
-          }
-        ],
-        "TypeDefinition": {
-          "Name": "DateTime",
-          "UnderlyingType": "Edm.String"
-        },
-        "Function": [
-          {
-            "Name": "ReminderView",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingparameter",
-                "Type": "Microsoft.OutlookServices.User"
-              },
-              {
-                "Name": "StartDateTime",
-                "Type": "Microsoft.OutlookServices.DateTime",
-                "Nullable": "false"
-              },
-              {
-                "Name": "EndDateTime",
-                "Type": "Microsoft.OutlookServices.DateTime"
-              }
-            ],
-            "ReturnType": {
-              "Type": "Collection(Microsoft.OutlookServices.Reminder)",
-              "Nullable": "false"
-            }
-          },
-          {
-            "Name": "ReminderView_IgnoreThis",
-            "IsBound": "true",
-            "Parameter": [
-              {
-                "Name": "bindingparameter",
-                "Type": "Microsoft.OutlookServices.User"
-              },
-              {
-                "Name": "StartDateTime",
-                "Type": "Microsoft.OutlookServices.DateTime",
-                "Nullable": "false"
-              },
-              {
-                "Name": "EndDateTime",
-                "Type": "Microsoft.OutlookServices.DateTime"
-              }
-            ],
-            "ReturnType": {
-              "Type": "Collection(Microsoft.OutlookServices.Reminder)",
-              "Nullable": "false"
-            }
           }
         ],
         "EnumType": [
@@ -3577,19 +1998,6 @@
               {
                 "Name": "High",
                 "Value": "2"
-              }
-            ]
-          },
-          {
-            "Name": "InferenceClassificationType",
-            "Member": [
-              {
-                "Name": "Focused",
-                "Value": "0"
-              },
-              {
-                "Name": "Other",
-                "Value": "1"
               }
             ]
           },
@@ -3891,53 +2299,6 @@
                 "Value": "5"
               }
             ]
-          },
-          {
-            "Name": "GroupAccessType",
-            "Member": [
-              {
-                "Name": "None",
-                "Value": "0"
-              },
-              {
-                "Name": "Private",
-                "Value": "1"
-              },
-              {
-                "Name": "Secret",
-                "Value": "2"
-              },
-              {
-                "Name": "Public",
-                "Value": "3"
-              }
-            ]
-          },
-          {
-            "Name": "ChangeType",
-            "IsFlags": "true",
-            "Member": [
-              {
-                "Name": "Created",
-                "Value": "1"
-              },
-              {
-                "Name": "Updated",
-                "Value": "2"
-              },
-              {
-                "Name": "Deleted",
-                "Value": "4"
-              },
-              {
-                "Name": "Acknowledgment",
-                "Value": "8"
-              },
-              {
-                "Name": "Missed",
-                "Value": "16"
-              }
-            ]
           }
         ],
         "EntityContainer": {
@@ -3995,8 +2356,8 @@
               ]
             },
             {
-              "Name": "Groups",
-              "EntityType": "Microsoft.OutlookServices.Group",
+              "Name": "Users",
+              "EntityType": "Microsoft.OutlookServices.User",
               "Annotation": [
                 {
                   "Term": "Org.OData.Capabilities.V1.ChangeTracking",

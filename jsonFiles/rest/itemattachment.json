@@ -28,7 +28,7 @@
   },
   "properties": [
     {
-      "name": "LastModifiedDateTime",
+      "name": "DateTimeLastModified",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",

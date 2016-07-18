@@ -32,10 +32,9 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/Users
 Content-type: application/json
-Content-length: 144
+Content-length: 104
 
 {
-  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
   "MailboxGuid": "MailboxGuid-value"
@@ -52,10 +51,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 164
+Content-length: 124
 
 {
-  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
   "MailboxGuid": "MailboxGuid-value",

@@ -8,12 +8,6 @@
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Contact](../api/contact_get.md) | [Contact](contact.md) |Read properties and relationships of contact object.|
-|[Create Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extensions](../api/contact_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
-|[Create MultiValueLegacyExtendedProperty](../api/contact_post_multivalueextendedproperties.md) |[MultiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Create a new MultiValueLegacyExtendedProperty by posting to the MultiValueExtendedProperties collection.|
-|[List MultiValueExtendedProperties](../api/contact_list_multivalueextendedproperties.md) |[MultiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| Get a MultiValueLegacyExtendedProperty object collection.|
-|[Create SingleValueLegacyExtendedProperty](../api/contact_post_singlevalueextendedproperties.md) |[SingleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Create a new SingleValueLegacyExtendedProperty by posting to the SingleValueExtendedProperties collection.|
-|[List SingleValueExtendedProperties](../api/contact_list_singlevalueextendedproperties.md) |[SingleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| Get a SingleValueLegacyExtendedProperty object collection.|
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete Contact object. |
 
@@ -29,7 +23,8 @@
 |ChangeKey|String||
 |Children|String collection||
 |CompanyName|String||
-|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeCreated|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Department|String||
 |DisplayName|String||
 |EmailAddresses|[EmailAddress](emailaddress.md) collection||
@@ -42,7 +37,6 @@
 |ImAddresses|String collection||
 |Initials|String||
 |JobTitle|String||
-|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Manager|String||
 |MiddleName|String||
 |MobilePhone1|String||
@@ -60,12 +54,8 @@
 |YomiSurname|String||
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
-|MultiValueExtendedProperties|[MultiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| Read-only. Nullable.|
-|Photo|[Photo](photo.md)| Read-only. Nullable.|
-|SingleValueExtendedProperties|[SingleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| Read-only. Nullable.|
+None
+
 
 ### JSON representation
 
@@ -90,7 +80,8 @@ Here is a JSON representation of the resource.
   "ChangeKey": "String",
   "Children": ["String"],
   "CompanyName": "String",
-  "CreatedDateTime": "String (timestamp)",
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
   "Department": "String",
   "DisplayName": "String",
   "EmailAddresses": [{"@odata.type": "microsoft.graph.EmailAddress"}],
@@ -103,7 +94,6 @@ Here is a JSON representation of the resource.
   "ImAddresses": ["String"],
   "Initials": "String",
   "JobTitle": "String",
-  "LastModifiedDateTime": "String (timestamp)",
   "Manager": "String",
   "MiddleName": "String",
   "MobilePhone1": "String",

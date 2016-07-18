@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /me/Messages/<Id>/Send
 POST /Users/<Id>/Messages/<Id>/Send
-POST /me/MailFolders/<Id>/Messages/<Id>/Send
+POST /me/RootFolder/Messages/<Id>/Send
 
 ```
 ### Request headers

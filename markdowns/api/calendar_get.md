@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /me/Calendar
 GET /Users/<Id>/Calendar
-GET /Groups/<Id>/Calendar
+GET /me/Events/<Id>/Calendar
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

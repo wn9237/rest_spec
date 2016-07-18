@@ -35,7 +35,7 @@ Content-type: application/json
 Content-length: 142
 
 {
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
   "Size": 99,
@@ -56,7 +56,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
   "Size": 99,

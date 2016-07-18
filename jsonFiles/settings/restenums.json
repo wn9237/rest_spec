@@ -29,19 +29,6 @@
       }
     }
   },
-  "InferenceClassificationType": {
-    "isExclusive": true,
-    "options": {
-      "Focused": {
-        "value": "0",
-        "description": ""
-      },
-      "Other": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
   "CalendarColor": {
     "isExclusive": true,
     "options": {
@@ -337,52 +324,6 @@
       },
       "MeetingDeclined": {
         "value": "5",
-        "description": ""
-      }
-    }
-  },
-  "GroupAccessType": {
-    "isExclusive": true,
-    "options": {
-      "None": {
-        "value": "0",
-        "description": ""
-      },
-      "Private": {
-        "value": "1",
-        "description": ""
-      },
-      "Secret": {
-        "value": "2",
-        "description": ""
-      },
-      "Public": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "ChangeType": {
-    "isExclusive": false,
-    "options": {
-      "Created": {
-        "value": "1",
-        "description": ""
-      },
-      "Updated": {
-        "value": "2",
-        "description": ""
-      },
-      "Deleted": {
-        "value": "4",
-        "description": ""
-      },
-      "Acknowledgment": {
-        "value": "8",
-        "description": ""
-      },
-      "Missed": {
-        "value": "16",
         "description": ""
       }
     }

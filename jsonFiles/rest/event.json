@@ -25,22 +25,10 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/Users/<Id>/JoinedGroups/<Id>/Calendar/Events/<Id>": true,
-    "/Users/<Id>/JoinedGroups/<Id>/Calendar/CalendarView/<Id>": true,
-    "/Users/<Id>/JoinedGroups/<Id>/CalendarView/<Id>": true,
-    "/Users/<Id>/JoinedGroups/<Id>/Events/<Id>": true,
     "/Users/<Id>/Calendar/Events/<Id>": true,
     "/Users/<Id>/Calendar/CalendarView/<Id>": true,
     "/Users/<Id>/CalendarView/<Id>": true,
     "/Users/<Id>/Events/<Id>": true,
-    "/Groups/<Id>/Calendar/Events/<Id>": true,
-    "/Groups/<Id>/Calendar/CalendarView/<Id>": true,
-    "/Groups/<Id>/CalendarView/<Id>": true,
-    "/Groups/<Id>/Events/<Id>": true,
-    "/me/JoinedGroups/<Id>/Calendar/Events/<Id>": true,
-    "/me/JoinedGroups/<Id>/Calendar/CalendarView/<Id>": true,
-    "/me/JoinedGroups/<Id>/CalendarView/<Id>": true,
-    "/me/JoinedGroups/<Id>/Events/<Id>": true,
     "/me/Calendar/Events/<Id>": true,
     "/me/Calendar/CalendarView/<Id>": true,
     "/me/CalendarView/<Id>": true,
@@ -48,7 +36,7 @@
   },
   "properties": [
     {
-      "name": "OriginalStartTimeZone",
+      "name": "StartTimeZone",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -62,7 +50,7 @@
       "isUnicode": null
     },
     {
-      "name": "OriginalEndTimeZone",
+      "name": "EndTimeZone",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -104,24 +92,10 @@
       "isUnicode": null
     },
     {
-      "name": "ReminderMinutesBeforeStart",
+      "name": "Reminder",
       "description": "",
       "isKey": false,
       "dataType": "Int32",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "IsReminderOn",
-      "description": "",
-      "isKey": false,
-      "dataType": "Boolean",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -219,7 +193,7 @@
       "name": "Start",
       "description": "",
       "isKey": false,
-      "dataType": "DateTimeTimeZone",
+      "dataType": "DateTimeOffset",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -247,7 +221,7 @@
       "name": "End",
       "description": "",
       "isKey": false,
-      "dataType": "DateTimeTimeZone",
+      "dataType": "DateTimeOffset",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -426,7 +400,7 @@
       "isUnicode": null
     },
     {
-      "name": "CreatedDateTime",
+      "name": "DateTimeCreated",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -440,7 +414,7 @@
       "isUnicode": null
     },
     {
-      "name": "LastModifiedDateTime",
+      "name": "DateTimeLastModified",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -524,52 +498,10 @@
       "isUnicode": null
     },
     {
-      "name": "Extensions",
-      "description": "",
-      "isKey": false,
-      "dataType": "Extension",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
       "name": "Attachments",
       "description": "",
       "isKey": false,
       "dataType": "Attachment",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "SingleValueExtendedProperties",
-      "description": "",
-      "isKey": false,
-      "dataType": "SingleValueLegacyExtendedProperty",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "MultiValueExtendedProperties",
-      "description": "",
-      "isKey": false,
-      "dataType": "MultiValueLegacyExtendedProperty",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
@@ -696,55 +628,6 @@
           "isNullable": null,
           "isUnicode": null
         }
-      ]
-    },
-    {
-      "name": "SnoozeReminder",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "NewReminderTime",
-          "description": "",
-          "dataType": "DateTimeTimeZone",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "DismissReminder",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
       ]
     }
   ]

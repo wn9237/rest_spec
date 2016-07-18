@@ -42,10 +42,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 164
+Content-length: 124
 
 {
-  "EmailAddress": "EmailAddress-value",
   "DisplayName": "DisplayName-value",
   "Alias": "Alias-value",
   "MailboxGuid": "MailboxGuid-value",

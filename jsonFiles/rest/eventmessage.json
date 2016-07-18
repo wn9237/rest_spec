@@ -28,7 +28,7 @@
   },
   "properties": [
     {
-      "name": "ReceivedDateTime",
+      "name": "DateTimeReceived",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -42,7 +42,7 @@
       "isUnicode": null
     },
     {
-      "name": "SentDateTime",
+      "name": "DateTimeSent",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -60,20 +60,6 @@
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "InternetMessageId",
-      "description": "",
-      "isKey": false,
-      "dataType": "String",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -336,21 +322,7 @@
       "isUnicode": null
     },
     {
-      "name": "InferenceClassification",
-      "description": "",
-      "isKey": false,
-      "dataType": "string",
-      "isReadOnly": false,
-      "enumName": "InferenceClassificationType",
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "CreatedDateTime",
+      "name": "DateTimeCreated",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -364,7 +336,7 @@
       "isUnicode": null
     },
     {
-      "name": "LastModifiedDateTime",
+      "name": "DateTimeLastModified",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -434,52 +406,10 @@
       "isUnicode": null
     },
     {
-      "name": "Extensions",
-      "description": "",
-      "isKey": false,
-      "dataType": "Extension",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
       "name": "Attachments",
       "description": "",
       "isKey": false,
       "dataType": "Attachment",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "SingleValueExtendedProperties",
-      "description": "",
-      "isKey": false,
-      "dataType": "SingleValueLegacyExtendedProperty",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "MultiValueExtendedProperties",
-      "description": "",
-      "isKey": false,
-      "dataType": "MultiValueLegacyExtendedProperty",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,

@@ -20,8 +20,8 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ContentType|String||
+|DateTimeLastModified|DateTimeOffset||
 |IsInline|Boolean||
-|LastModifiedDateTime|DateTimeOffset||
 |Name|String||
 |Size|Int32||
 
@@ -40,7 +40,7 @@ Content-type: application/json
 Content-length: 142
 
 {
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
   "Size": 99,
@@ -60,7 +60,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
   "Size": 99,

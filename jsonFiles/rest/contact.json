@@ -494,7 +494,7 @@
       "isUnicode": null
     },
     {
-      "name": "CreatedDateTime",
+      "name": "DateTimeCreated",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -508,7 +508,7 @@
       "isUnicode": null
     },
     {
-      "name": "LastModifiedDateTime",
+      "name": "DateTimeLastModified",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -561,62 +561,6 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "Extensions",
-      "description": "",
-      "isKey": false,
-      "dataType": "Extension",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "SingleValueExtendedProperties",
-      "description": "",
-      "isKey": false,
-      "dataType": "SingleValueLegacyExtendedProperty",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "MultiValueExtendedProperties",
-      "description": "",
-      "isKey": false,
-      "dataType": "MultiValueLegacyExtendedProperty",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "Photo",
-      "description": "",
-      "isKey": false,
-      "dataType": "Photo",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
       "isUnicode": null
     }
   ],

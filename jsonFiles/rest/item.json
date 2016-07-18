@@ -28,7 +28,7 @@
   },
   "properties": [
     {
-      "name": "CreatedDateTime",
+      "name": "DateTimeCreated",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -42,7 +42,7 @@
       "isUnicode": null
     },
     {
-      "name": "LastModifiedDateTime",
+      "name": "DateTimeLastModified",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",

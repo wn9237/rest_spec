@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 POST /me/Messages/<Id>/Attachments
 POST /Users/<Id>/Messages/<Id>/Attachments
-POST /me/MailFolders/<Id>/Messages/<Id>/Attachments
+POST /me/RootFolder/Messages/<Id>/Attachments
 
 ```
 ### Request headers
@@ -37,7 +37,7 @@ Content-type: application/json
 Content-length: 142
 
 {
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
   "Size": 99,
@@ -58,7 +58,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Name": "Name-value",
   "ContentType": "ContentType-value",
   "Size": 99,

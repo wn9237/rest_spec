@@ -49,7 +49,7 @@ Content-length: 215
 {
   "value": [
     {
-      "LastModifiedDateTime": "datetime-value",
+      "DateTimeLastModified": "datetime-value",
       "Name": "Name-value",
       "ContentType": "ContentType-value",
       "Size": 99,

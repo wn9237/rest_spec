@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /me/Messages/<Id>
 GET /Users/<Id>/Messages/<Id>
-GET /me/MailFolders/<Id>/Messages/<Id>
+GET /me/RootFolder/Messages/<Id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -43,18 +43,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
+Content-length: 260
 
 {
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
   "HasAttachments": true,
-  "InternetMessageId": "InternetMessageId-value",
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
     "Content": "Content-value"
-  }
+  },
+  "BodyPreview": "BodyPreview-value"
 }
 ```
 

@@ -16,9 +16,9 @@
 |:---------------|:--------|:----------|
 |Categories|String collection||
 |ChangeKey|String||
-|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeCreated|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Id|String| Read-only.|
-|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ### Relationships
 None
@@ -40,9 +40,9 @@ Here is a JSON representation of the resource.
 {
   "Categories": ["String"],
   "ChangeKey": "String",
-  "CreatedDateTime": "String (timestamp)",
-  "Id": "String (identifier)",
-  "LastModifiedDateTime": "String (timestamp)"
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
+  "Id": "String (identifier)"
 }
 
 ```

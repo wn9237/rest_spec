@@ -38,14 +38,13 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/SendMail
 Content-type: application/json
-Content-length: 2382
+Content-length: 1975
 
 {
   "Message": {
-    "ReceivedDateTime": "datetime-value",
-    "SentDateTime": "datetime-value",
+    "DateTimeReceived": "datetime-value",
+    "DateTimeSent": "datetime-value",
     "HasAttachments": true,
-    "InternetMessageId": "InternetMessageId-value",
     "Subject": "Subject-value",
     "Body": {
       "ContentType": "ContentType-value",
@@ -108,9 +107,8 @@ Content-length: 2382
     "IsRead": true,
     "IsDraft": true,
     "WebLink": "WebLink-value",
-    "InferenceClassification": "InferenceClassification-value",
-    "CreatedDateTime": "datetime-value",
-    "LastModifiedDateTime": "datetime-value",
+    "DateTimeCreated": "datetime-value",
+    "DateTimeLastModified": "datetime-value",
     "ChangeKey": "ChangeKey-value",
     "Categories": [
       "Categories-value"
@@ -118,26 +116,12 @@ Content-length: 2382
     "Id": "Id-value",
     "Attachments": [
       {
-        "LastModifiedDateTime": "datetime-value",
+        "DateTimeLastModified": "datetime-value",
         "Name": "Name-value",
         "ContentType": "ContentType-value",
         "Size": 99,
         "IsInline": true,
         "Id": "Id-value"
-      }
-    ],
-    "SingleValueExtendedProperties": [
-      {
-        "Value": "Value-value",
-        "PropertyId": "PropertyId-value"
-      }
-    ],
-    "MultiValueExtendedProperties": [
-      {
-        "Value": [
-          "Value-value"
-        ],
-        "PropertyId": "PropertyId-value"
       }
     ]
   },

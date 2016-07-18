@@ -98,34 +98,6 @@
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
-    },
-    {
-      "name": "SingleValueExtendedProperties",
-      "description": "",
-      "isKey": false,
-      "dataType": "SingleValueLegacyExtendedProperty",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "MultiValueExtendedProperties",
-      "description": "",
-      "isKey": false,
-      "dataType": "MultiValueLegacyExtendedProperty",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
     }
   ],
   "methods": [
