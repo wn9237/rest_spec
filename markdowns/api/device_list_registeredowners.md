@@ -9,10 +9,7 @@ The following **scopes** are required to execute this API:
 GET /devices/<id>/registeredOwners
 ```
 ### Optional query parameters
-|Name|Value|Description|
-|:---------------|:--------|:-------|
-|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
-|$top|int|The number of items to return in a result set.|
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name      |Description|

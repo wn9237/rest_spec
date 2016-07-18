@@ -4,12 +4,14 @@ require 'json'
 require 'logger'
 require 'uri'
 require 'net/https'
+require 'FileUtils'
+
 
 module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
-	f  = Net::HTTP.get(URI.parse('https://graph.microsoft.com/v1.0/$metadata')) 
-	# f = File.read('../data/metadata.xml', :encoding => 'UTF-8')
+	#f  = Net::HTTP.get(URI.parse('https://graph.microsoft.com/v1.0/$metadata')) 
+	f = File.read('../data/metadata.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
 	csdl=JSON.parse(Hash.from_xml(f).to_json, {:symbolize_names => true}) 

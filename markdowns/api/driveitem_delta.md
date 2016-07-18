@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/delta
-POST /me/drive/root/delta
-POST /drives/<id>/root/delta
+POST /drive/root/delta(token=token-value)
+POST /me/drive/root/delta(token=token-value)
+POST /drives/<id>/root/delta(token=token-value)
 
 ```
 ### Request headers
@@ -18,6 +18,11 @@ POST /drives/<id>/root/delta
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
+In the request URL, provide following query parameters with values.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|token|string||
 
 ### Response
 If successful, this method returns `200, OK` response code and [driveItem](../resources/driveitem.md) collection object in the response body.
@@ -75,14 +80,6 @@ Content-length: 550
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "driveItem: delta",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
