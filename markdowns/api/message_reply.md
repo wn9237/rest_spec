@@ -1,4 +1,4 @@
-# message: reply
+# Message: Reply
 
 
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/reply
-POST /users/<id>/messages/<id>/reply
-POST /me/mailFolders/<id>/messages/<id>/reply
+POST /me/Messages/<Id>/Reply
+POST /Users/<Id>/Messages/<Id>/Reply
+POST /me/MailFolders/<Id>/Messages/<Id>/Reply
 
 ```
 ### Request headers
@@ -22,7 +22,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|string||
+|Comment|String||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -36,12 +36,12 @@ Here is an example of the request.
   "name": "message_reply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/<id>/reply
+POST https://graph.microsoft.com/beta/me/Messages/<Id>/Reply
 Content-type: application/json
 Content-length: 32
 
 {
-  "comment": "comment-value"
+  "Comment": "Comment-value"
 }
 ```
 
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "message: reply",
+  "description": "Message: Reply",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

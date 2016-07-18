@@ -4,7 +4,6 @@ require 'json'
 require 'logger'
 require 'uri'
 require 'net/https'
-require 'FileUtils'
 
 
 module SpecMaker
@@ -21,19 +20,6 @@ module SpecMaker
 	schema = csdl[:Edmx][:DataServices][:Schema]
 
 	puts "Staring..."
-
-	# Process all annotationa. Load in memory.
-	
-	schema[:Annotations].each do |item|
-		dt = get_type(item[:Target]).downcase
-
-		puts "-> Processing Annotation #{dt}"
-		# puts item[:Annotation].length
-		# puts item[:Annotation]
-		
-		parse_annotations(dt, item[:Annotation])
-		@iann = @iann + 1
-	end
 
 	# Process all Enums. Load in memory.
 	schema[:EnumType].each do |item|
@@ -68,10 +54,16 @@ module SpecMaker
 
 	# # Process FUNCTIONS
 
-	schema[:Function].each do |item|		
-		puts "-> Processing Function #{item[:Name]}"
-		@ifunction = @ifunction + 1
-		process_method(item, 'function')
+	if schema[:Function].is_a?(Array)
+		schema[:Function].each do |item|
+			puts "-> Processing Function #{item[:Name]}"
+			@ifunction = @ifunction + 1
+			process_method(item, 'function')
+		end
+	elsif schema[:Function].is_a?(Hash)
+			puts "-> Processing Function (hash) #{schema[:Function][:Name]}, #{schema[:Function]}"
+			@ifunction = @ifunction + 1
+			process_method(schema[:Function][:Name], 'function')
 	end
 
 	# Write Functions & Actions
@@ -145,13 +137,15 @@ module SpecMaker
 			# puts "1: #{entity}"
 			# puts "2: #{entity[:Key]}"
 			# puts "3: #{@base_types.keys}"
-			entity[:Key] = @base_types[baseType.to_sym][:Key]
-
-			entity[:Property] = merge_members(entity[:Property], 
-												@base_types[baseType.to_sym][:Property])
-			entity[:NavigationProperty]  = merge_members(entity[:NavigationProperty],
-											@base_types[baseType.to_sym][:NavigationProperty], entity[:Name])
-			@base_types[entity[:Name].to_sym] = deep_copy(entity)	
+			if !@base_types[baseType.to_sym].nil?
+				entity[:Key] = @base_types[baseType.to_sym][:Key] 
+			
+				entity[:Property] = merge_members(entity[:Property], 
+													@base_types[baseType.to_sym][:Property])
+				entity[:NavigationProperty]  = merge_members(entity[:NavigationProperty],
+												@base_types[baseType.to_sym][:NavigationProperty], entity[:Name])
+				@base_types[entity[:Name].to_sym] = deep_copy(entity)	
+			end
 		end
 		
 		@json_object[:name] = camelcase entity[:Name]

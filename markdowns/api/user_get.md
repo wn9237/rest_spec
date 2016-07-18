@@ -1,4 +1,4 @@
-# Get user
+# Get User
 
 Retrieve the properties and relationships of user object.
 ### Prerequisites
@@ -7,8 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me
-GET /users/<id>
-GET /drive/root/createdByUser
+GET /Users/<Id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -22,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -38,36 +37,19 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.User"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
+Content-length: 164
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "EmailAddress": "EmailAddress-value",
+  "DisplayName": "DisplayName-value",
+  "Alias": "Alias-value",
+  "MailboxGuid": "MailboxGuid-value",
+  "Id": "Id-value"
 }
 ```
 
@@ -75,7 +57,7 @@ Content-length: 491
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get user",
+  "description": "Get User",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

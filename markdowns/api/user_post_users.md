@@ -1,12 +1,12 @@
-# Create user
+# Create User
 
-Use this API to create a new user.
+Use this API to create a new User.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users
+POST /Users
 
 ```
 ### Request headers
@@ -16,11 +16,11 @@ POST /users
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request body, supply a JSON representation of [user](../resources/user.md) object.
+In the request body, supply a JSON representation of [User](../resources/user.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [user](../resources/user.md) object in the response body.
+If successful, this method returns `201, Created` response code and [User](../resources/user.md) object in the response body.
 
 ### Example
 ##### Request
@@ -30,75 +30,36 @@ Here is an example of the request.
   "name": "create_user_from_users"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/users
+POST https://graph.microsoft.com/beta/Users
 Content-type: application/json
-Content-length: 551
+Content-length: 144
 
 {
-  "user": {
-    "accountEnabled": true,
-    "assignedLicenses": [
-      {
-        "disabledPlans": [
-          "disabledPlans-value"
-        ],
-        "skuId": "skuId-value"
-      }
-    ],
-    "assignedPlans": [
-      {
-        "assignedDateTime": "datetime-value",
-        "capabilityStatus": "capabilityStatus-value",
-        "service": "service-value",
-        "servicePlanId": "servicePlanId-value"
-      }
-    ],
-    "businessPhones": [
-      "businessPhones-value"
-    ],
-    "city": "city-value",
-    "companyName": "companyName-value"
-  }
+  "EmailAddress": "EmailAddress-value",
+  "DisplayName": "DisplayName-value",
+  "Alias": "Alias-value",
+  "MailboxGuid": "MailboxGuid-value"
 }
 ```
-In the request body, supply a JSON representation of [user](../resources/user.md) object.
+In the request body, supply a JSON representation of [User](../resources/user.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.User"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 551
+Content-length: 164
 
 {
-  "user": {
-    "accountEnabled": true,
-    "assignedLicenses": [
-      {
-        "disabledPlans": [
-          "disabledPlans-value"
-        ],
-        "skuId": "skuId-value"
-      }
-    ],
-    "assignedPlans": [
-      {
-        "assignedDateTime": "datetime-value",
-        "capabilityStatus": "capabilityStatus-value",
-        "service": "service-value",
-        "servicePlanId": "servicePlanId-value"
-      }
-    ],
-    "businessPhones": [
-      "businessPhones-value"
-    ],
-    "city": "city-value",
-    "companyName": "companyName-value"
-  }
+  "EmailAddress": "EmailAddress-value",
+  "DisplayName": "DisplayName-value",
+  "Alias": "Alias-value",
+  "MailboxGuid": "MailboxGuid-value",
+  "Id": "Id-value"
 }
 ```
 
@@ -106,7 +67,7 @@ Content-length: 551
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create user",
+  "description": "Create User",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

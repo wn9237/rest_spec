@@ -1,4 +1,4 @@
-# List calendars
+# List Calendars
 
 Retrieve a list of calendar objects.
 ### Prerequisites
@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars
-GET /users/<id>/calendars
-GET /drive/root/createdByUser/calendars
+GET /me/Calendars
+GET /Users/<Id>/Calendars
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -22,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [calendar](../resources/calendar.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -31,14 +30,14 @@ Here is an example of the request.
   "name": "get_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendars
+GET https://graph.microsoft.com/beta/me/Calendars
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendar",
+  "@odata.type": "microsoft.graph.Calendar",
   "isCollection": true
 } -->
 ```http
@@ -49,10 +48,10 @@ Content-length: 151
 {
   "value": [
     {
-      "name": "name-value",
-      "color": "color-value",
-      "changeKey": "changeKey-value",
-      "id": "id-value"
+      "Name": "Name-value",
+      "Color": "Color-value",
+      "ChangeKey": "ChangeKey-value",
+      "Id": "Id-value"
     }
   ]
 }
@@ -62,7 +61,7 @@ Content-length: 151
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List calendars",
+  "description": "List Calendars",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

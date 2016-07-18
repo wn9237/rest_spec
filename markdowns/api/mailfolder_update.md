@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/mailFolders/<id>
-PATCH /users/<id>/mailFolders/<id>
-PATCH /drive/root/createdByUser/mailFolders/<id>
+PATCH /me/MailFolders/<Id>
+PATCH /Users/<Id>/MailFolders/<Id>
 ```
 ### Optional request headers
 | Name       | Description|
@@ -21,14 +20,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|childFolderCount|int32||
-|displayName|string||
-|parentFolderId|string||
-|totalItemCount|int32||
-|unreadItemCount|int32||
+|ChildFolderCount|Int32||
+|DisplayName|String||
+|ParentFolderId|String||
+|TotalItemCount|Int32||
+|UnreadItemCount|Int32||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [mailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [MailFolder](../resources/mailfolder.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -37,16 +36,16 @@ Here is an example of the request.
   "name": "update_mailfolder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/mailFolders/<id>
+PATCH https://graph.microsoft.com/beta/me/MailFolders/<Id>
 Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99
+  "DisplayName": "DisplayName-value",
+  "ParentFolderId": "ParentFolderId-value",
+  "ChildFolderCount": 99,
+  "UnreadItemCount": 99,
+  "TotalItemCount": 99
 }
 ```
 ##### Response
@@ -54,7 +53,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailFolder"
+  "@odata.type": "microsoft.graph.MailFolder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -62,12 +61,12 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99,
-  "id": "id-value"
+  "DisplayName": "DisplayName-value",
+  "ParentFolderId": "ParentFolderId-value",
+  "ChildFolderCount": 99,
+  "UnreadItemCount": 99,
+  "TotalItemCount": 99,
+  "Id": "Id-value"
 }
 ```
 

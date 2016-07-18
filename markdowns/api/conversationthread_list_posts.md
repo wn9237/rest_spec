@@ -1,4 +1,4 @@
-# List posts
+# List Posts
 
 Retrieve a list of post objects.
 ### Prerequisites
@@ -6,8 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/threads/<id>/posts
-GET /groups/<id>/conversations/<id>/threads/<id>/posts
+GET /Groups/<Id>/Threads/<Id>/Posts
+GET /me/JoinedGroups/<Id>/Threads/<Id>/Posts
+GET /Users/<Id>/JoinedGroups/<Id>/Threads/<Id>/Posts
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -21,7 +22,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [post](../resources/post.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Post](../resources/post.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -30,14 +31,14 @@ Here is an example of the request.
   "name": "get_posts"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts
+GET https://graph.microsoft.com/beta/Groups/<Id>/Threads/<Id>/Posts
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.post",
+  "@odata.type": "microsoft.graph.Post",
   "isCollection": true
 } -->
 ```http
@@ -48,25 +49,25 @@ Content-length: 531
 {
   "value": [
     {
-      "body": {
-        "contentType": "contentType-value",
-        "content": "content-value"
+      "Body": {
+        "ContentType": "ContentType-value",
+        "Content": "Content-value"
       },
-      "receivedDateTime": "datetime-value",
-      "hasAttachments": true,
-      "from": {
-        "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
+      "ReceivedDateTime": "datetime-value",
+      "HasAttachments": true,
+      "From": {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
         }
       },
-      "sender": {
-        "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
+      "Sender": {
+        "EmailAddress": {
+          "Name": "Name-value",
+          "Address": "Address-value"
         }
       },
-      "conversationThreadId": "conversationThreadId-value"
+      "ConversationThreadId": "ConversationThreadId-value"
     }
   ]
 }
@@ -76,7 +77,7 @@ Content-length: 531
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List posts",
+  "description": "List Posts",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

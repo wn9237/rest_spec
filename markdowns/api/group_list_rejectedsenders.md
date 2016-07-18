@@ -1,4 +1,4 @@
-# List rejectedSenders
+# List RejectedSenders
 
 Retrieve a list of directoryobject objects.
 ### Prerequisites
@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/rejectedSenders
+GET /Groups/<Id>/RejectedSenders
+GET /me/JoinedGroups/<Id>/RejectedSenders
+GET /Users/<Id>/JoinedGroups/<Id>/RejectedSenders
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -20,7 +22,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [DirectoryObject](../resources/directoryobject.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -29,14 +31,14 @@ Here is an example of the request.
   "name": "get_rejectedsenders"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/rejectedSenders
+GET https://graph.microsoft.com/beta/Groups/<Id>/RejectedSenders
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.DirectoryObject",
   "isCollection": true
 } -->
 ```http
@@ -47,7 +49,7 @@ Content-length: 55
 {
   "value": [
     {
-      "id": "id-value"
+      "Id": "Id-value"
     }
   ]
 }
@@ -57,7 +59,7 @@ Content-length: 55
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List rejectedSenders",
+  "description": "List RejectedSenders",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

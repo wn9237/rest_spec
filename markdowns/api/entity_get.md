@@ -1,4 +1,4 @@
-# Get entity
+# Get Entity
 
 Retrieve the properties and relationships of entity object.
 ### Prerequisites
@@ -20,7 +20,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [entity](../resources/entity.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [Entity](../resources/entity.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.entity"
+  "@odata.type": "microsoft.graph.Entity"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -44,7 +44,7 @@ Content-type: application/json
 Content-length: 22
 
 {
-  "id": "id-value"
+  "Id": "Id-value"
 }
 ```
 
@@ -52,7 +52,7 @@ Content-length: 22
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get entity",
+  "description": "Get Entity",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

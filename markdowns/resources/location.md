@@ -1,4 +1,4 @@
-# location resource type
+# Location resource type
 
 
 
@@ -6,8 +6,9 @@
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](physicaladdress.md)||
-|displayName|string||
+|Address|[PhysicalAddress](physicaladdress.md)||
+|Coordinates|[GeoCoordinates](geocoordinates.md)||
+|DisplayName|String||
 
 ### JSON representation
 
@@ -18,13 +19,14 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.location"
+  "@odata.type": "microsoft.graph.Location"
 }-->
 
 ```json
 {
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "displayName": "string"
+  "Address": {"@odata.type": "microsoft.graph.PhysicalAddress"},
+  "Coordinates": {"@odata.type": "microsoft.graph.GeoCoordinates"},
+  "DisplayName": "String"
 }
 
 ```
@@ -33,7 +35,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "location resource",
+  "description": "Location resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

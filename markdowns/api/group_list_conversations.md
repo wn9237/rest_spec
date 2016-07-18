@@ -1,4 +1,4 @@
-# List conversations
+# List Conversations
 
 Retrieve a list of conversation objects.
 ### Prerequisites
@@ -6,7 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/conversations
+GET /Groups/<Id>/Conversations
+GET /me/JoinedGroups/<Id>/Conversations
+GET /Users/<Id>/JoinedGroups/<Id>/Conversations
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -20,7 +22,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [conversation](../resources/conversation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Conversation](../resources/conversation.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -29,14 +31,14 @@ Here is an example of the request.
   "name": "get_conversations"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/conversations
+GET https://graph.microsoft.com/beta/Groups/<Id>/Conversations
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversation",
+  "@odata.type": "microsoft.graph.Conversation",
   "isCollection": true
 } -->
 ```http
@@ -47,14 +49,14 @@ Content-length: 262
 {
   "value": [
     {
-      "topic": "topic-value",
-      "hasAttachments": true,
-      "lastDeliveredDateTime": "datetime-value",
-      "uniqueSenders": [
-        "uniqueSenders-value"
+      "Topic": "Topic-value",
+      "HasAttachments": true,
+      "LastDeliveredDateTime": "datetime-value",
+      "UniqueSenders": [
+        "UniqueSenders-value"
       ],
-      "preview": "preview-value",
-      "id": "id-value"
+      "Preview": "Preview-value",
+      "Id": "Id-value"
     }
   ]
 }
@@ -64,7 +66,7 @@ Content-length: 262
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List conversations",
+  "description": "List Conversations",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

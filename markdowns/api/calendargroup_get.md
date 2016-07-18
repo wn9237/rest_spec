@@ -1,4 +1,4 @@
-# Get calendarGroup
+# Get CalendarGroup
 
 Retrieve the properties and relationships of calendargroup object.
 ### Prerequisites
@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendarGroups/<id>
-GET /users/<id>/calendarGroups/<id>
-GET /drive/root/createdByUser/calendarGroups/<id>
+GET /me/CalendarGroups/<Id>
+GET /Users/<Id>/CalendarGroups/<Id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -22,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [calendarGroup](../resources/calendargroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -31,14 +30,14 @@ Here is an example of the request.
   "name": "get_calendargroup"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarGroups/<id>
+GET https://graph.microsoft.com/beta/me/CalendarGroups/<Id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendarGroup"
+  "@odata.type": "microsoft.graph.CalendarGroup"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -46,10 +45,10 @@ Content-type: application/json
 Content-length: 110
 
 {
-  "name": "name-value",
-  "classId": "classId-value",
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+  "Name": "Name-value",
+  "ClassId": "ClassId-value",
+  "ChangeKey": "ChangeKey-value",
+  "Id": "Id-value"
 }
 ```
 
@@ -57,7 +56,7 @@ Content-length: 110
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get calendarGroup",
+  "description": "Get CalendarGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

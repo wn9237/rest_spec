@@ -1,4 +1,4 @@
-# Get referenceAttachment
+# Get ReferenceAttachment
 
 Retrieve the properties and relationships of referenceattachment object.
 ### Prerequisites
@@ -20,7 +20,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [referenceAttachment](../resources/referenceattachment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [ReferenceAttachment](../resources/referenceattachment.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "@odata.type": "microsoft.graph.ReferenceAttachment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -44,12 +44,12 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
+  "LastModifiedDateTime": "datetime-value",
+  "Name": "Name-value",
+  "ContentType": "ContentType-value",
+  "Size": 99,
+  "IsInline": true,
+  "Id": "Id-value"
 }
 ```
 
@@ -57,7 +57,7 @@ Content-length: 162
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get referenceAttachment",
+  "description": "Get ReferenceAttachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

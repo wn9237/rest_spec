@@ -1,4 +1,4 @@
-# eventMessage: forward
+# EventMessage: Forward
 
 
 ### Prerequisites
@@ -20,8 +20,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|string||
-|toRecipients|recipient||
+|Comment|String||
+|ToRecipients|Recipient||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -40,12 +40,12 @@ Content-type: application/json
 Content-length: 166
 
 {
-  "comment": "comment-value",
-  "toRecipients": [
+  "Comment": "Comment-value",
+  "ToRecipients": [
     {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
+      "EmailAddress": {
+        "Name": "Name-value",
+        "Address": "Address-value"
       }
     }
   ]
@@ -67,7 +67,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "eventMessage: forward",
+  "description": "EventMessage: Forward",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

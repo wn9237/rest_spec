@@ -1,4 +1,4 @@
-# List attachments
+# List Attachments
 
 Retrieve a list of attachment objects.
 ### Prerequisites
@@ -6,8 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/threads/<id>/posts/<id>/attachments
-GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
+GET /Groups/<Id>/Threads/<Id>/Posts/<Id>/Attachments
+GET /me/JoinedGroups/<Id>/Threads/<Id>/Posts/<Id>/Attachments
+GET /Users/<Id>/JoinedGroups/<Id>/Threads/<Id>/Posts/<Id>/Attachments
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -21,7 +22,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [attachment](../resources/attachment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -30,14 +31,14 @@ Here is an example of the request.
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>/attachments
+GET https://graph.microsoft.com/beta/Groups/<Id>/Threads/<Id>/Posts/<Id>/Attachments
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "microsoft.graph.Attachment",
   "isCollection": true
 } -->
 ```http
@@ -48,12 +49,12 @@ Content-length: 215
 {
   "value": [
     {
-      "lastModifiedDateTime": "datetime-value",
-      "name": "name-value",
-      "contentType": "contentType-value",
-      "size": 99,
-      "isInline": true,
-      "id": "id-value"
+      "LastModifiedDateTime": "datetime-value",
+      "Name": "Name-value",
+      "ContentType": "ContentType-value",
+      "Size": 99,
+      "IsInline": true,
+      "Id": "Id-value"
     }
   ]
 }
@@ -63,7 +64,7 @@ Content-length: 215
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List attachments",
+  "description": "List Attachments",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

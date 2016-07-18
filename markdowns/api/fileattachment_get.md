@@ -1,4 +1,4 @@
-# Get fileAttachment
+# Get FileAttachment
 
 Retrieve the properties and relationships of fileattachment object.
 ### Prerequisites
@@ -20,7 +20,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [fileAttachment](../resources/fileattachment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [FileAttachment](../resources/fileattachment.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.fileAttachment"
+  "@odata.type": "microsoft.graph.FileAttachment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -44,12 +44,12 @@ Content-type: application/json
 Content-length: 228
 
 {
-  "contentId": "contentId-value",
-  "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value",
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "contentType": "contentType-value"
+  "ContentId": "ContentId-value",
+  "ContentLocation": "ContentLocation-value",
+  "ContentBytes": "ContentBytes-value",
+  "LastModifiedDateTime": "datetime-value",
+  "Name": "Name-value",
+  "ContentType": "ContentType-value"
 }
 ```
 
@@ -57,7 +57,7 @@ Content-length: 228
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get fileAttachment",
+  "description": "Get FileAttachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

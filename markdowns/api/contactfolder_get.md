@@ -1,4 +1,4 @@
-# Get contactFolder
+# Get ContactFolder
 
 Retrieve the properties and relationships of contactfolder object.
 ### Prerequisites
@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contactFolders/<id>
-GET /users/<id>/contactFolders/<id>
-GET /drive/root/createdByUser/contactFolders/<id>
+GET /me/ContactFolders/<Id>
+GET /Users/<Id>/ContactFolders/<Id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -22,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [contactFolder](../resources/contactfolder.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -31,14 +30,14 @@ Here is an example of the request.
   "name": "get_contactfolder"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/contactFolders/<id>
+GET https://graph.microsoft.com/beta/me/ContactFolders/<Id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactFolder"
+  "@odata.type": "microsoft.graph.ContactFolder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -46,9 +45,9 @@ Content-type: application/json
 Content-length: 104
 
 {
-  "parentFolderId": "parentFolderId-value",
-  "displayName": "displayName-value",
-  "id": "id-value"
+  "ParentFolderId": "ParentFolderId-value",
+  "DisplayName": "DisplayName-value",
+  "Id": "Id-value"
 }
 ```
 
@@ -56,7 +55,7 @@ Content-length: 104
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get contactFolder",
+  "description": "Get ContactFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# List calendarView
+# List CalendarView
 
 Retrieve a list of event objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendar/calendarView
-GET /users/<id>/calendar/calendarView
-GET /groups/<id>/calendar/calendarView
+GET /me/Calendar/CalendarView
+GET /Users/<Id>/Calendar/CalendarView
+GET /Groups/<Id>/Calendar/CalendarView
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -22,7 +22,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -31,14 +31,14 @@ Here is an example of the request.
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendar/calendarView
+GET https://graph.microsoft.com/beta/me/Calendar/CalendarView
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.event",
+  "@odata.type": "microsoft.graph.Event",
   "isCollection": true
 } -->
 ```http
@@ -49,15 +49,15 @@ Content-length: 359
 {
   "value": [
     {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
-      "responseStatus": {
-        "response": "response-value",
-        "time": "datetime-value"
+      "OriginalStartTimeZone": "OriginalStartTimeZone-value",
+      "OriginalEndTimeZone": "OriginalEndTimeZone-value",
+      "ResponseStatus": {
+        "Response": "Response-value",
+        "Time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
-      "isReminderOn": true
+      "ReminderMinutesBeforeStart": 99,
+      "IsReminderOn": true
     }
   ]
 }
@@ -67,7 +67,7 @@ Content-length: 359
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List calendarView",
+  "description": "List CalendarView",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
