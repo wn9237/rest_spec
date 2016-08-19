@@ -102,7 +102,7 @@ There may be others... Go through each of the error and fix them prior to procee
 ## TOC (Table of Content on graph.microwsoft.io website) 
 Contact us if you need updates to update TOC changes. 
 
-## ADVANCED: Run Markdown Scanner tool if you edit/add code or samples.
+## ADVANCED: Run Markdown Scanner tool locally for large set of changes
 
 If you make a LOT of changes, it is worth considering running markdown scanner locally to avoid having to understand issues through the Github PR. the tool [markdown scanner](https://github.com/OneDrive/markdown-scanner) can be downloaded and setup locally. 
 
