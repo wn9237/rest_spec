@@ -78,24 +78,6 @@ In an effort to keep our documentation uniform with the same look and feel acros
 * To add code snippets, use fences (```) and specify a coding language.
 * Don't use newlines in tables. It just doesn't work.
 
-## Run Markdown Scanner tool if you edit/add code or samples.
-
-If you make any edits or additions to JSON structure, HTTP request/response sections, do run the [markdown scanner](https://github.com/OneDrive/markdown-scanner) tool to ensure accurancy. 
-
-At the time of creation of these markdown templates, all the files have been checked using the same tool. The known issues at this point are: 
-
-* Many APIs return string/boolean values (scalars). Looks like the scaler return types are not supported in markdown scanner tool yet. Ignore errors that say `Unable to locate a definition for resource type: <type such as string or boolean>` for the time being. 
-* The casing of object types are case-sensitive. `"@odata.type": "microsoft.graph.audiotrack"` and `"@odata.type": "microsoft.graph.audioTrack"` are treated differently. If you find resource not found errors, check the casing of the @odata.type in the resource file to make sure the casing is right (should be camel case). 
-
-If you face any issues in running the tool, let us know.
-
-### to run the scanner 
-
-C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild MarkdownScanner.sln 
-
-\markdown-scanner\ApiDocs.Console\bin\Debug>apidocs check-docs --path ..\..\rest_spec\markdowns
-
-
 ## Submit a pull request
 
 All changes need to eventually needs to end up in `master` branch of the repositiry. However, we don't update the master directly. The correct sequence is to update the `beta` and/or `v1.0` (depending on where the change needs to occur) and then copy-to/update the `master` repository. 
@@ -108,8 +90,30 @@ All changes need to eventually needs to end up in `master` branch of the reposit
 1. Do not push changes under /officedev account directly. 
 2. Do not push changes to master directly. 
 
+### AppVeyor errors: 
+
+When you submit PR, you may get validation errors. Some of known issues with the templates files are: 
+
+* Many APIs return string/boolean values (scalars). Looks like the scaler return types are not supported in markdown scanner tool yet. Ignore errors that say `Unable to locate a definition for resource type: <type such as string or boolean>` for the time being. 
+* The casing of object types are case-sensitive. `"@odata.type": "microsoft.graph.audiotrack"` and `"@odata.type": "microsoft.graph.audioTrack"` are treated differently. If you find resource not found errors, check the casing of the @odata.type in the resource file to make sure the casing is right (should be camel case). 
+
+There may be others... Go through each of the error and fix them prior to proceeding. Any PR with errors can't be merged. 
+
 ## TOC (Table of Content on graph.microwsoft.io website) 
 Contact us if you need updates to update TOC changes. 
+
+## ADVANCED: Run Markdown Scanner tool if you edit/add code or samples.
+
+If you make a LOT of changes, it is worth considering running markdown scanner locally to avoid having to understand issues through the Github PR. the tool [markdown scanner](https://github.com/OneDrive/markdown-scanner) can be downloaded and setup locally. 
+
+If you face any issues in running the tool, let us know.
+
+### to run the scanner 
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild MarkdownScanner.sln 
+
+\markdown-scanner\ApiDocs.Console\bin\Debug>apidocs check-docs --path ..\..\rest_spec\markdowns
+
 
 ## Questions or concerns
 
