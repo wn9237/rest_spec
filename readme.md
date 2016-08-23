@@ -101,7 +101,7 @@ If you are familiar with `git cherry-pick` command, applying same change across 
 
 Note
 * Do not push changes under /officedev account directly. 
-* Do not push changes to master directly. 
+* Do not push changes to master directly before updating `beta` and/or `v1.0` branches. This can cause your changes to be lost with the next mass refresh.  
 
 
 ### AppVeyor errors: 
