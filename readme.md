@@ -87,13 +87,17 @@ So, you'd need multiple pull request to ensure that changes get reflected to mas
 Update Sequence:  
 
 1. Fork and clone https://github.com/OfficeDev/microsoft-graph-docs  
-2. Switch to "beta" branch for beta changes  
+2. Switch to `beta` branch first
 3. Perform edits under your account and send pull requests to merge your changes  
 4. Check the appVeyor status after you create Pull Request. If there is an error, cancel the pull request and fix the underlying issue before submitting the next pull request  
 5. Submit pull request and ensure that it gets merged  
 6. Repeat steps 2-5 for `v1.0` branch  
 7. Once the changes are in the versioned branches, switch to `master` branch make the same change to master branch under `/beta` and/or `v1.0` folder of the reference content  
 8. Submit a pull request against the `master` branch  
+
+Note: 
+If you are familiar with `git cherry-pick` command, applying same change across multiple branches can be less time consuming. However, the master branch update has to be a manual process as the structure of master and versioned branches are different for reference content. 
+
 
 Note
 * Do not push changes under /officedev account directly. 
