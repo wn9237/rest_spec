@@ -80,15 +80,24 @@ In an effort to keep our documentation uniform with the same look and feel acros
 
 ## Submit a pull request
 
-All changes need to eventually needs to end up in `master` branch of the repositiry. However, we don't update the master directly. The correct sequence is to update the `beta` and/or `v1.0` (depending on where the change needs to occur) and then copy-to/update the `master` repository. 
+All changes need to eventually needs to end up in `master` branch of the repositiry. However, we don't update the master directly. The correct sequence is to update the `beta` and/or `v1.0` (depending on where the change needs to occur) and then update the `master` branch using a separate pull-request. 
 
+So, you'd need multiple pull request to ensure that changes get reflected to master branch. 
+
+Update Sequence: 
 1. Fork and clone https://github.com/OfficeDev/microsoft-graph-docs
-1. Switch to "v1.0" branch for v1.0 changes
 1. Switch to "beta" branch for beta changes
-2. 1. Perform edits under your account and send pull requests to merge your changes. 
-3. Check the appVeyor status after you create Pull Request. If there is an error, cancel the pull request and fix the underlying issue before submitting the next pull request. 
-1. Do not push changes under /officedev account directly. 
-2. Do not push changes to master directly. 
+1. Perform edits under your account and send pull requests to merge your changes. 
+1. Check the appVeyor status after you create Pull Request. If there is an error, cancel the pull request and fix the underlying issue before submitting the next pull request. 
+1. Submit pull request and ensure that it gets merged.
+1. Repeat steps 2-5 for `v1.0` branch.
+1. Once the changes are in the versioned branches, switch to `master` branch make the same change to master branch under `/beta` and/or `v1.0` folder of the reference content. 
+1. Submit a pull request against the `master` branch. 
+
+Note
+* Do not push changes under /officedev account directly. 
+* Do not push changes to master directly. 
+
 
 ### AppVeyor errors: 
 
