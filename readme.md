@@ -84,7 +84,8 @@ All changes need to eventually needs to end up in `master` branch of the reposit
 
 So, you'd need multiple pull request to ensure that changes get reflected to master branch. 
 
-Update Sequence: 
+Update Sequence:  
+
 1. Fork and clone https://github.com/OfficeDev/microsoft-graph-docs  
 2. Switch to "beta" branch for beta changes  
 3. Perform edits under your account and send pull requests to merge your changes  
