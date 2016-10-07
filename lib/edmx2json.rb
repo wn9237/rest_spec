@@ -46,10 +46,16 @@ module SpecMaker
 	end
 
 	# # Process ACTIONS
-	schema[:Action].each do |item|		
-		puts "-> Processing Action #{item[:Name]}"
+	if schema[:Action].is_a?(Array)
+		schema[:Action].each do |item|	
+			puts "-> Processing Action #{item[:Name]}"
+			@iaction = @iaction + 1
+			process_method(item, 'action')
+		end
+	elsif schema[:Action].is_a?(Hash)		
+		puts "-> Processing Action (hash) #{schema[:Action][:Name]}, #{schema[:Action]}"
 		@iaction = @iaction + 1
-		process_method(item, 'action')
+		process_method(schema[:Action], 'action')
 	end
 
 	# # Process FUNCTIONS
