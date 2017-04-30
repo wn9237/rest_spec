@@ -22,34 +22,62 @@ module SpecMaker
 	puts "Staring..."
 
 	# Process all Enums. Load in memory.
-	schema[:EnumType].each do |item|
-		puts "-> Processing Enum #{item[:Name]}"
-		enum = {}
-		if item[:IsFlags] 
-			enum[:isExclusive] = false
-		else
-			enum[:isExclusive] = true
+	if schema[:EnumType].is_a?(Array)
+		schema[:EnumType].each do |item|
+			puts "-> Processing Enum #{item[:Name]}"
+			enum = {}
+			if item[:IsFlags] 
+				enum[:isExclusive] = false
+			else
+				enum[:isExclusive] = true
+			end
+			enum[:options] = {}
+			item[:Member].each do |member|
+				entry = {}
+				entry[:value] = member[:Value]
+				entry[:description] = ""
+				enum[:options][member[:Name].to_sym] = entry
+			end	
+			@enum_objects[camelcase(item[:Name]).to_sym] = enum
+			@ienums = @ienums + 1
 		end
-		enum[:options] = {}
-		item[:Member].each do |member|
-			entry = {}
-			entry[:value] = member[:Value]
-			entry[:description] = ""
-			enum[:options][member[:Name].to_sym] = entry
-		end	
-		@enum_objects[camelcase(item[:Name]).to_sym] = enum
-		@ienums = @ienums + 1
+    elsif schema[:EnumType].is_a?(Hash)    
+            puts "-> Processing Enum (hash) #{schema[:EnumType][:Name]}, #{schema[:EnumType]}"
+			enum = {}
+			if schema[:EnumType][:IsFlags] 
+				enum[:isExclusive] = false
+			else
+				enum[:isExclusive] = true
+			end
+			enum[:options] = {}
+			schema[:EnumType][:Member].each do |member|
+				entry = {}
+				entry[:value] = member[:Value]
+				entry[:description] = ""
+				enum[:options][member[:Name].to_sym] = entry
+			end	
+			@enum_objects[camelcase(schema[:EnumType][:Name]).to_sym] = enum
+			@ienums = @ienums + 1
 	end
+			
+
+
 
 	File.open(ENUMS, "w") do |f|
 		f.write(JSON.pretty_generate @enum_objects, :encoding => 'UTF-8')
 	end
 
 	# # Process ACTIONS
-	schema[:Action].each do |item|		
-		puts "-> Processing Action #{item[:Name]}"
+	if schema[:Action].is_a?(Array)
+		schema[:Action].each do |item|	
+			puts "-> Processing Action #{item[:Name]}"
+			@iaction = @iaction + 1
+			process_method(item, 'action')
+		end
+	elsif schema[:Action].is_a?(Hash)		
+		puts "-> Processing Action (hash) #{schema[:Action][:Name]}, #{schema[:Action]}"
 		@iaction = @iaction + 1
-		process_method(item, 'action')
+		process_method(schema[:Action], 'action')
 	end
 
 	# # Process FUNCTIONS
