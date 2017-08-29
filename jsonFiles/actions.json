@@ -1,11 +1,11 @@
 {
-  "user": [
+  "privilegedroleassignment": [
     {
-      "name": "SendMail",
+      "name": "makePermanent",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": null,
+      "returnType": "privilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -18,172 +18,64 @@
       ],
       "parameters": [
         {
-          "name": "Message",
-          "description": "",
-          "dataType": "Message",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        },
-        {
-          "name": "SaveToSentItems",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "FindMeetingTimes",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "MeetingTimeCandidatesResult",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Attendees",
-          "description": "",
-          "dataType": "AttendeeBase",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "LocationConstraint",
-          "description": "",
-          "dataType": "LocationConstraint",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "TimeConstraint",
-          "description": "",
-          "dataType": "TimeConstraint",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "MeetingDuration",
-          "description": "",
-          "dataType": "Duration",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "MaxCandidates",
-          "description": "",
-          "dataType": "Int32",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "IsOrganizerOptional",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "ReturnSuggestionHints",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "GetNotifications",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Notification",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "ConnectionTimeoutInMinutes",
-          "description": "",
-          "dataType": "Int32",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "KeepAliveNotificationIntervalInSeconds",
-          "description": "",
-          "dataType": "Int32",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "SubscriptionIds",
+          "name": "reason",
           "description": "",
           "dataType": "String",
-          "isCollection": true,
+          "isCollection": false,
           "isRequired": true,
           "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "ticketNumber",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "ticketSystem",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
         }
       ]
     },
     {
-      "name": "ReminderView",
+      "name": "makeEligible",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Reminder",
-      "isReturnNullable": false,
+      "returnType": "privilegedRoleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "my",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "privilegedRoleAssignment",
+      "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": true,
@@ -194,38 +86,102 @@
 
       ],
       "parameters": [
+
+      ]
+    }
+  ],
+  "privilegedrole": [
+    {
+      "name": "selfActivate",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "privilegedRoleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
         {
-          "name": "StartDateTime",
+          "name": "reason",
           "description": "",
-          "dataType": "DateTime",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        },
-        {
-          "name": "EndDateTime",
-          "description": "",
-          "dataType": "DateTime",
+          "dataType": "String",
           "isCollection": false,
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": null
+          "isUnicode": false
+        },
+        {
+          "name": "duration",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "ticketNumber",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "ticketSystem",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
         }
       ]
     },
     {
-      "name": "TrendingAround",
+      "name": "selfDeactivate",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "File",
+      "returnType": "privilegedRoleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
-      "isFunction": true,
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    }
+  ],
+  "privilegedsignupstatus": [
+    {
+      "name": "signUp",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "privilegedSignupStatus",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
       "scopes": [
 
       ],
@@ -237,12 +193,41 @@
       ]
     },
     {
-      "name": "WorkingWith",
+      "name": "completeSetup",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "WorkingWithEntity",
+      "returnType": "roleSuccessStatistics",
       "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "tenantSetupInfo",
+          "description": "",
+          "dataType": "tenantSetupInfo",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "isSignedUp",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "Boolean",
+      "isReturnNullable": false,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": true,
@@ -255,922 +240,167 @@
       "parameters": [
 
       ]
-    }
-  ],
-  "mailfolder": [
-    {
-      "name": "Copy",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "MailFolder",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "DestinationId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
     },
     {
-      "name": "Move",
+      "name": "canSignUp",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "MailFolder",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "DestinationId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "message": [
-    {
-      "name": "Copy",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "DestinationId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Move",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "DestinationId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "CreateReply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Message",
-          "description": "",
-          "dataType": "Message",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "CreateReplyAll",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Message",
-          "description": "",
-          "dataType": "Message",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "CreateForward",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Message",
-          "description": "",
-          "dataType": "Message",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "ToRecipients",
-          "description": "",
-          "dataType": "Recipient",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Reply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Message",
-          "description": "",
-          "dataType": "Message",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "ReplyAll",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Message",
-          "description": "",
-          "dataType": "Message",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Forward",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Message",
-          "description": "",
-          "dataType": "Message",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "ToRecipients",
-          "description": "",
-          "dataType": "Recipient",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Send",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "Unsubscribe",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ],
-  "event": [
-    {
-      "name": "Accept",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "SendResponse",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Decline",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "SendResponse",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "TentativelyAccept",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "SendResponse",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "SnoozeReminder",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "NewReminderTime",
-          "description": "",
-          "dataType": "DateTimeTimeZone",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "DismissReminder",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "Checkin",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "PhysicalPresence",
-          "description": "",
-          "dataType": "PhysicalPresence",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "SkypePresence",
-          "description": "",
-          "dataType": "SkypePresence",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "EtaRequestor",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "EtaRequestStatus",
-          "description": "",
-          "dataType": "EtaRequestStatus",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "EtaResponse",
-          "description": "",
-          "dataType": "EtaResponse",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "EtaResponseUrl",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "TargetAttendee",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Cancel",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "group": [
-    {
-      "name": "SubscribeByMail",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "UnsubscribeByMail",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "AddFavorite",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "RemoveFavorite",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "ResetUnseenCount",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ],
-  "conversationthread": [
-    {
-      "name": "Reply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Post",
-          "description": "",
-          "dataType": "Post",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "post": [
-    {
-      "name": "Forward",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "ToRecipients",
-          "description": "",
-          "dataType": "Recipient",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Reply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Post",
-          "description": "",
-          "dataType": "Post",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "task": [
-    {
-      "name": "Complete",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Task",
+      "returnType": "Boolean",
       "isReturnNullable": false,
-      "isReturnTypeCollection": true,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    }
+  ],
+  "privilegedapproval": [
+    {
+      "name": "requestApproval",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "privilegedApproval",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "approvalDurationInHours",
+          "description": "",
+          "dataType": "Double",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "requestorReason",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "updateApprovalState",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "privilegedApproval",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "approvalDurationInHours",
+          "description": "",
+          "dataType": "Double",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "approvalState",
+          "description": "",
+          "dataType": "approvalState",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        },
+        {
+          "name": "approverReason",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": false
+        }
+      ]
+    },
+    {
+      "name": "approvalRequests",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "privilegedApproval",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "myRequests",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "privilegedApproval",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "myRequests",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "privilegedApproval",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": true,
       "scopes": [
 
       ],

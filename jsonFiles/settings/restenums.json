@@ -1,720 +1,84 @@
 {
-  "AutomaticRepliesStatus": {
+  "approvalType": {
     "isExclusive": true,
     "options": {
-      "Disabled": {
+      "assignment": {
         "value": "0",
         "description": ""
       },
-      "AlwaysEnabled": {
+      "activation": {
         "value": "1",
-        "description": ""
-      },
-      "Scheduled": {
-        "value": "2",
         "description": ""
       }
     }
   },
-  "ExternalAudienceScope": {
+  "approvalState": {
     "isExclusive": true,
     "options": {
-      "None": {
+      "pending": {
         "value": "0",
         "description": ""
       },
-      "ContactsOnly": {
+      "approved": {
         "value": "1",
         "description": ""
       },
-      "All": {
+      "denied": {
         "value": "2",
+        "description": ""
+      },
+      "aborted": {
+        "value": "3",
         "description": ""
       }
     }
   },
-  "AttendeeType": {
+  "roleSummaryStatus": {
     "isExclusive": true,
     "options": {
-      "Required": {
+      "ok": {
         "value": "0",
         "description": ""
       },
-      "Optional": {
+      "bad": {
         "value": "1",
-        "description": ""
-      },
-      "Resource": {
-        "value": "2",
         "description": ""
       }
     }
   },
-  "FreeBusyStatus": {
+  "setupStatus": {
     "isExclusive": true,
     "options": {
-      "Free": {
+      "unknown": {
         "value": "0",
         "description": ""
       },
-      "Tentative": {
+      "notRegisteredYet": {
         "value": "1",
         "description": ""
       },
-      "Busy": {
+      "registeredSetupNotStarted": {
         "value": "2",
         "description": ""
       },
-      "Oof": {
+      "registeredSetupInProgress": {
         "value": "3",
         "description": ""
       },
-      "WorkingElsewhere": {
+      "registrationAndSetupCompleted": {
         "value": "4",
         "description": ""
       },
-      "Unknown": {
-        "value": "-1",
-        "description": ""
-      }
-    }
-  },
-  "PhysicalAddressType": {
-    "isExclusive": true,
-    "options": {
-      "Unknown": {
-        "value": "0",
-        "description": ""
-      },
-      "Home": {
-        "value": "1",
-        "description": ""
-      },
-      "Business": {
-        "value": "2",
-        "description": ""
-      },
-      "Other": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "ActivityDomain": {
-    "isExclusive": true,
-    "options": {
-      "Unknown": {
-        "value": "0",
-        "description": ""
-      },
-      "Work": {
-        "value": "1",
-        "description": ""
-      },
-      "Personal": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "BodyType": {
-    "isExclusive": true,
-    "options": {
-      "Text": {
-        "value": "0",
-        "description": ""
-      },
-      "HTML": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "Importance": {
-    "isExclusive": true,
-    "options": {
-      "Low": {
-        "value": "0",
-        "description": ""
-      },
-      "Normal": {
-        "value": "1",
-        "description": ""
-      },
-      "High": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "InferenceClassificationType": {
-    "isExclusive": true,
-    "options": {
-      "Focused": {
-        "value": "0",
-        "description": ""
-      },
-      "Other": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "FollowupFlagStatus": {
-    "isExclusive": true,
-    "options": {
-      "NotFlagged": {
-        "value": "0",
-        "description": ""
-      },
-      "Complete": {
-        "value": "1",
-        "description": ""
-      },
-      "Flagged": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "CalendarColor": {
-    "isExclusive": true,
-    "options": {
-      "LightBlue": {
-        "value": "0",
-        "description": ""
-      },
-      "LightGreen": {
-        "value": "1",
-        "description": ""
-      },
-      "LightOrange": {
-        "value": "2",
-        "description": ""
-      },
-      "LightGray": {
-        "value": "3",
-        "description": ""
-      },
-      "LightYellow": {
-        "value": "4",
-        "description": ""
-      },
-      "LightTeal": {
+      "registrationFailed": {
         "value": "5",
         "description": ""
       },
-      "LightPink": {
+      "registrationTimedOut": {
         "value": "6",
         "description": ""
       },
-      "LightBrown": {
+      "disabled": {
         "value": "7",
-        "description": ""
-      },
-      "LightRed": {
-        "value": "8",
-        "description": ""
-      },
-      "MaxColor": {
-        "value": "9",
-        "description": ""
-      },
-      "Auto": {
-        "value": "-1",
-        "description": ""
-      }
-    }
-  },
-  "ResponseType": {
-    "isExclusive": true,
-    "options": {
-      "None": {
-        "value": "0",
-        "description": ""
-      },
-      "Organizer": {
-        "value": "1",
-        "description": ""
-      },
-      "TentativelyAccepted": {
-        "value": "2",
-        "description": ""
-      },
-      "Accepted": {
-        "value": "3",
-        "description": ""
-      },
-      "Declined": {
-        "value": "4",
-        "description": ""
-      },
-      "NotResponded": {
-        "value": "5",
-        "description": ""
-      }
-    }
-  },
-  "Sensitivity": {
-    "isExclusive": true,
-    "options": {
-      "Normal": {
-        "value": "0",
-        "description": ""
-      },
-      "Personal": {
-        "value": "1",
-        "description": ""
-      },
-      "Private": {
-        "value": "2",
-        "description": ""
-      },
-      "Confidential": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "RecurrencePatternType": {
-    "isExclusive": true,
-    "options": {
-      "Daily": {
-        "value": "0",
-        "description": ""
-      },
-      "Weekly": {
-        "value": "1",
-        "description": ""
-      },
-      "AbsoluteMonthly": {
-        "value": "2",
-        "description": ""
-      },
-      "RelativeMonthly": {
-        "value": "3",
-        "description": ""
-      },
-      "AbsoluteYearly": {
-        "value": "4",
-        "description": ""
-      },
-      "RelativeYearly": {
-        "value": "5",
-        "description": ""
-      }
-    }
-  },
-  "DayOfWeek": {
-    "isExclusive": true,
-    "options": {
-      "Sunday": {
-        "value": "0",
-        "description": ""
-      },
-      "Monday": {
-        "value": "1",
-        "description": ""
-      },
-      "Tuesday": {
-        "value": "2",
-        "description": ""
-      },
-      "Wednesday": {
-        "value": "3",
-        "description": ""
-      },
-      "Thursday": {
-        "value": "4",
-        "description": ""
-      },
-      "Friday": {
-        "value": "5",
-        "description": ""
-      },
-      "Saturday": {
-        "value": "6",
-        "description": ""
-      }
-    }
-  },
-  "WeekIndex": {
-    "isExclusive": true,
-    "options": {
-      "First": {
-        "value": "0",
-        "description": ""
-      },
-      "Second": {
-        "value": "1",
-        "description": ""
-      },
-      "Third": {
-        "value": "2",
-        "description": ""
-      },
-      "Fourth": {
-        "value": "3",
-        "description": ""
-      },
-      "Last": {
-        "value": "4",
-        "description": ""
-      }
-    }
-  },
-  "RecurrenceRangeType": {
-    "isExclusive": true,
-    "options": {
-      "EndDate": {
-        "value": "0",
-        "description": ""
-      },
-      "NoEnd": {
-        "value": "1",
-        "description": ""
-      },
-      "Numbered": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "EventType": {
-    "isExclusive": true,
-    "options": {
-      "SingleInstance": {
-        "value": "0",
-        "description": ""
-      },
-      "Occurrence": {
-        "value": "1",
-        "description": ""
-      },
-      "Exception": {
-        "value": "2",
-        "description": ""
-      },
-      "SeriesMaster": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "PhysicalPresence": {
-    "isExclusive": true,
-    "options": {
-      "NoPresence": {
-        "value": "0",
-        "description": ""
-      },
-      "InRoom": {
-        "value": "1",
-        "description": ""
-      },
-      "LeftRoom": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "SkypePresence": {
-    "isExclusive": true,
-    "options": {
-      "NoStatus": {
-        "value": "0",
-        "description": ""
-      },
-      "OnSkype": {
-        "value": "1",
-        "description": ""
-      },
-      "LeftSkype": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "EtaRequestStatus": {
-    "isExclusive": true,
-    "options": {
-      "NoRequest": {
-        "value": "0",
-        "description": ""
-      },
-      "EtaRequestPending": {
-        "value": "1",
-        "description": ""
-      },
-      "EtaRequested": {
-        "value": "2",
-        "description": ""
-      },
-      "EtaResponseReceived": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "EtaResponse": {
-    "isExclusive": true,
-    "options": {
-      "NoResponse": {
-        "value": "0",
-        "description": ""
-      },
-      "OnMyWay": {
-        "value": "1",
-        "description": ""
-      },
-      "BeThereIn5": {
-        "value": "2",
-        "description": ""
-      },
-      "BeThereIn10": {
-        "value": "3",
-        "description": ""
-      },
-      "StartWithoutMe": {
-        "value": "4",
-        "description": ""
-      },
-      "CantMakeIt": {
-        "value": "5",
-        "description": ""
-      }
-    }
-  },
-  "WebsiteType": {
-    "isExclusive": true,
-    "options": {
-      "Other": {
-        "value": "0",
-        "description": ""
-      },
-      "Home": {
-        "value": "1",
-        "description": ""
-      },
-      "Work": {
-        "value": "2",
-        "description": ""
-      },
-      "Blog": {
-        "value": "3",
-        "description": ""
-      },
-      "Profile": {
-        "value": "4",
-        "description": ""
-      }
-    }
-  },
-  "PhoneType": {
-    "isExclusive": true,
-    "options": {
-      "Home": {
-        "value": "0",
-        "description": ""
-      },
-      "Business": {
-        "value": "1",
-        "description": ""
-      },
-      "Mobile": {
-        "value": "2",
-        "description": ""
-      },
-      "Other": {
-        "value": "3",
-        "description": ""
-      },
-      "Assistant": {
-        "value": "4",
-        "description": ""
-      },
-      "HomeFax": {
-        "value": "5",
-        "description": ""
-      },
-      "BusinessFax": {
-        "value": "6",
-        "description": ""
-      },
-      "OtherFax": {
-        "value": "7",
-        "description": ""
-      },
-      "Pager": {
-        "value": "8",
-        "description": ""
-      },
-      "Radio": {
-        "value": "9",
-        "description": ""
-      }
-    }
-  },
-  "MeetingMessageType": {
-    "isExclusive": true,
-    "options": {
-      "None": {
-        "value": "0",
-        "description": ""
-      },
-      "MeetingRequest": {
-        "value": "1",
-        "description": ""
-      },
-      "MeetingCancelled": {
-        "value": "2",
-        "description": ""
-      },
-      "MeetingAccepted": {
-        "value": "3",
-        "description": ""
-      },
-      "MeetingTentativelyAccepted": {
-        "value": "4",
-        "description": ""
-      },
-      "MeetingDeclined": {
-        "value": "5",
-        "description": ""
-      }
-    }
-  },
-  "ReferenceAttachmentProvider": {
-    "isExclusive": true,
-    "options": {
-      "Other": {
-        "value": "0",
-        "description": ""
-      },
-      "OneDriveBusiness": {
-        "value": "1",
-        "description": ""
-      },
-      "OneDriveConsumer": {
-        "value": "2",
-        "description": ""
-      },
-      "Dropbox": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "ReferenceAttachmentPermission": {
-    "isExclusive": true,
-    "options": {
-      "Other": {
-        "value": "0",
-        "description": ""
-      },
-      "View": {
-        "value": "1",
-        "description": ""
-      },
-      "Edit": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "GroupAccessType": {
-    "isExclusive": true,
-    "options": {
-      "None": {
-        "value": "0",
-        "description": ""
-      },
-      "Private": {
-        "value": "1",
-        "description": ""
-      },
-      "Secret": {
-        "value": "2",
-        "description": ""
-      },
-      "Public": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "AccessControlRight": {
-    "isExclusive": true,
-    "options": {
-      "Read": {
-        "value": "1",
-        "description": ""
-      },
-      "Write": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "AccessControlType": {
-    "isExclusive": true,
-    "options": {
-      "Deny": {
-        "value": "0",
-        "description": ""
-      },
-      "Grant": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "ChangeType": {
-    "isExclusive": false,
-    "options": {
-      "Created": {
-        "value": "1",
-        "description": ""
-      },
-      "Updated": {
-        "value": "2",
-        "description": ""
-      },
-      "Deleted": {
-        "value": "4",
-        "description": ""
-      },
-      "Acknowledgment": {
-        "value": "8",
-        "description": ""
-      },
-      "Missed": {
-        "value": "16",
-        "description": ""
-      }
-    }
-  },
-  "TaskStatus": {
-    "isExclusive": true,
-    "options": {
-      "NotStarted": {
-        "value": "0",
-        "description": ""
-      },
-      "InProgress": {
-        "value": "1",
-        "description": ""
-      },
-      "Completed": {
-        "value": "2",
-        "description": ""
-      },
-      "WaitingOnOthers": {
-        "value": "3",
-        "description": ""
-      },
-      "Deferred": {
-        "value": "4",
         "description": ""
       }
     }

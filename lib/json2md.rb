@@ -13,7 +13,7 @@ module SpecMaker
 
 	def self.gen_example (type=nil, method={}, pathAppend=nil)
 		example_lines = []
-		example_lines.push HEADER3 + "Example" + NEWLINE		
+		example_lines.push HEADER2 + "Example" + NEWLINE		
 		case type 
 		when 'auto_post'
 			example_lines.push HEADER5 + "Request" + NEWLINE											
@@ -280,7 +280,7 @@ module SpecMaker
 		# Select only the keys (that contains the REST path) for which the value (display or not flag)
 		# is set to true. 
 		#
-		actionLines.push HEADER3 + "HTTP request" + NEWLINE		
+		actionLines.push HEADER2 + "HTTP request" + NEWLINE		
 		actionLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 		actionLines.push '```http' + NEWLINE
 		
@@ -294,14 +294,14 @@ module SpecMaker
 		end
 
 		#Request headers  
-		actionLines.push HEADER3 + "Request headers" + NEWLINE
+		actionLines.push HEADER2 + "Request headers" + NEWLINE
 		actionLines.push HTTP_HEADER
 		actionLines.push TABLE_2ND_LINE_2COL
 		actionLines.push HTTP_HEADER_SAMPLE + NEWLINE
 		actionLines.push NEWLINE
 		
 		#Request body
-		actionLines.push HEADER3 + "Request body" + NEWLINE
+		actionLines.push HEADER2 + "Request body" + NEWLINE
 	
 		# Provide parameters: 
 		if method[:parameters] !=nil && method[:parameters].length > 0
@@ -336,7 +336,7 @@ module SpecMaker
 		actionLines.push NEWLINE
 
 		#Response body
-		actionLines.push HEADER3 + "Response" + NEWLINE
+		actionLines.push HEADER2 + "Response" + NEWLINE
 
 		if !method[:returnType].nil?
 			if SIMPLETYPES.include? method[:returnType] 
@@ -408,7 +408,7 @@ module SpecMaker
 
 		getMethodLines.push PREREQ
 		# HTTP request
-		getMethodLines.push HEADER3 + "HTTP request" + NEWLINE
+		getMethodLines.push HEADER2 + "HTTP request" + NEWLINE
 		getMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 
 		getMethodLines.push '```http' + NEWLINE
@@ -422,7 +422,7 @@ module SpecMaker
 		getMethodLines.push  '```' + NEWLINE
 
 		#Query parameters 
-		getMethodLines.push HEADER3 + "Optional query parameters" + NEWLINE
+		getMethodLines.push HEADER2 + "Optional query parameters" + NEWLINE
 		getMethodLines.push "This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response." + NEWLINE
 		
 		# if @jsonHash[:collectionOf]
@@ -489,18 +489,18 @@ module SpecMaker
 		# end
 
 		#Request headers  
-		getMethodLines.push NEWLINE + HEADER3 + "Request headers" + NEWLINE
+		getMethodLines.push NEWLINE + HEADER2 + "Request headers" + NEWLINE
 		getMethodLines.push "| Name      |Description|" + NEWLINE
 		getMethodLines.push "|:----------|:----------|" + NEWLINE
 		getMethodLines.push HTTP_HEADER_SAMPLE + NEWLINE
 		getMethodLines.push NEWLINE
 
 		#Request body
-		getMethodLines.push HEADER3 + "Request body" + NEWLINE
+		getMethodLines.push HEADER2 + "Request body" + NEWLINE
 		getMethodLines.push "Do not supply a request body for this method." + NEWLINE
 
 		#Response body
-		getMethodLines.push HEADER3 + "Response" + NEWLINE
+		getMethodLines.push HEADER2 + "Response" + NEWLINE
 		if @jsonHash[:collectionOf] 
 			getMethodLines.push "If successful, this method returns a `200 OK` response code and collection of [#{@jsonHash[:collectionOf]}](../resources/#{@jsonHash[:collectionOf].downcase}.md) objects in the response body."  + NEWLINE
 		else
@@ -559,7 +559,7 @@ module SpecMaker
 
 		patchMethodLines.push PREREQ
 		# HTTP request
-		patchMethodLines.push HEADER3 + "HTTP request" + NEWLINE
+		patchMethodLines.push HEADER2 + "HTTP request" + NEWLINE
 		patchMethodLines.push '<!-- { "blockType": "ignored" } -->' + NEWLINE
 		patchMethodLines.push '```http' + NEWLINE
 		# httpPatchArray = @jsonHash[:restPath].map {|a| "PATCH " + a.to_s}
@@ -570,14 +570,14 @@ module SpecMaker
 		patchMethodLines.push  '```' + NEWLINE
 
 		#Request headers  
-		patchMethodLines.push HEADER3 + "Optional request headers" + NEWLINE
+		patchMethodLines.push HEADER2 + "Optional request headers" + NEWLINE
 		patchMethodLines.push "| Name       | Description|" + NEWLINE
 		patchMethodLines.push "|:-----------|:-----------|" + NEWLINE
 		patchMethodLines.push HTTP_HEADER_SAMPLE  + NEWLINE
 		patchMethodLines.push NEWLINE
 		
 		#Request body
-		patchMethodLines.push HEADER3 + "Request body" + NEWLINE
+		patchMethodLines.push HEADER2 + "Request body" + NEWLINE
 		patchMethodLines.push "In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed." + NEWLINE
 		patchMethodLines.push NEWLINE
 
@@ -596,7 +596,7 @@ module SpecMaker
 		patchMethodLines.push NEWLINE
 
 		#Response body
-		patchMethodLines.push HEADER3 + "Response" + NEWLINE
+		patchMethodLines.push HEADER2 + "Response" + NEWLINE
 		patchMethodLines.push "If successful, this method returns a `200 OK` response code and updated [#{@jsonHash[:name]}](../resources/#{@jsonHash[:name].downcase}.md) object in the response body."  + NEWLINE
 
 		#Example
@@ -673,7 +673,7 @@ module SpecMaker
 
 		# Add method table. 
 		if !@jsonHash[:isComplexType]
-			@mdlines.push NEWLINE + HEADER3 + 'Methods' + NEWLINE
+			@mdlines.push NEWLINE + HEADER2 + 'Methods' + NEWLINE
 
 			if isMethod || isProperty || isPost || @jsonHash[:allowDelete]
 				@mdlines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
@@ -803,7 +803,7 @@ module SpecMaker
 		# Add property table. 	
 		@mdlines.push NEWLINE
 
-		@mdlines.push HEADER3 + 'Properties' + NEWLINE
+		@mdlines.push HEADER2 + 'Properties' + NEWLINE
 		if isProperty
 			@mdlines.push PROPERTY_HEADER + TABLE_2ND_LINE 
 			propreties.each do |prop|
@@ -821,7 +821,7 @@ module SpecMaker
 		# Add Relationship table. 
 		if !@jsonHash[:isComplexType]
 			@mdlines.push NEWLINE
-			@mdlines.push HEADER3 + 'Relationships' + NEWLINE
+			@mdlines.push HEADER2 + 'Relationships' + NEWLINE
 			if isRelation
 				@mdlines.push RELATIONSHIP_HEADER + TABLE_2ND_LINE 
 				propreties.each do |prop|
@@ -841,7 +841,7 @@ module SpecMaker
 		# Header and description		
 		if !@jsonHash[:isEntitySet] && isProperty
 			@mdlines.push NEWLINE
-			@mdlines.push HEADER3 + 'JSON representation' + TWONEWLINES
+			@mdlines.push HEADER2 + 'JSON representation' + TWONEWLINES
 			@mdlines.push 'Here is a JSON representation of the resource.' + TWONEWLINES
 
 			@mdlines.push get_json_model_pretext(@jsonHash[:name],propreties) + TWONEWLINES
@@ -877,7 +877,7 @@ module SpecMaker
 		service_lines = []
 
 		service_lines.push HEADER1 + 'Service root' + TWONEWLINES
-		service_lines.push NEWLINE + HEADER3 + 'Methods' + NEWLINE
+		service_lines.push NEWLINE + HEADER2 + 'Methods' + NEWLINE
 		service_lines.push NEWLINE + TASKS_HEADER + TABLE_2ND_LINE 
 
 		@serviceroot.each do |item|			

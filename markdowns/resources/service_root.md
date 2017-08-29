@@ -1,14 +1,20 @@
 # Service root
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create Group](../api/group_post_groups.md) |[Group](group.md)| Create a new Group by posting to the Groups collection.|
-|[List Group](../api/group_list.md) | [Group](group.md) collection |Get group object collection. |
-|[Create User](../api/user_post_users.md) |[User](user.md)| Create a new User by posting to the Users collection.|
-|[List User](../api/user_list.md) | [User](user.md) collection |Get user object collection. |
+|[Create privilegedApproval](../api/privilegedapproval_post_privilegedapproval.md) |[privilegedApproval](privilegedapproval.md)| Create a new privilegedApproval by posting to the privilegedApproval collection.|
+|[List privilegedApproval](../api/privilegedapproval_list.md) | [privilegedApproval](privilegedapproval.md) collection |Get privilegedApproval object collection. |
+|[Create privilegedOperationEvent](../api/privilegedoperationevent_post_privilegedoperationevents.md) |[privilegedOperationEvent](privilegedoperationevent.md)| Create a new privilegedOperationEvent by posting to the privilegedOperationEvents collection.|
+|[List privilegedOperationEvent](../api/privilegedoperationevent_list.md) | [privilegedOperationEvent](privilegedoperationevent.md) collection |Get privilegedOperationEvent object collection. |
+|[Create privilegedRoleAssignment](../api/privilegedroleassignment_post_privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Create a new privilegedRoleAssignment by posting to the privilegedRoleAssignments collection.|
+|[List privilegedRoleAssignment](../api/privilegedroleassignment_list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection |Get privilegedRoleAssignment object collection. |
+|[Create privilegedRole](../api/privilegedrole_post_privilegedroles.md) |[privilegedRole](privilegedrole.md)| Create a new privilegedRole by posting to the privilegedRoles collection.|
+|[List privilegedRole](../api/privilegedrole_list.md) | [privilegedRole](privilegedrole.md) collection |Get privilegedRole object collection. |
+|[Create privilegedSignupStatus](../api/privilegedsignupstatus_post_privilegedsignupstatus.md) |[privilegedSignupStatus](privilegedsignupstatus.md)| Create a new privilegedSignupStatus by posting to the privilegedSignupStatus collection.|
+|[List privilegedSignupStatus](../api/privilegedsignupstatus_list.md) | [privilegedSignupStatus](privilegedsignupstatus.md) collection |Get privilegedSignupStatus object collection. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
