@@ -1,0 +1,299 @@
+{
+  "name": "roleAssignmentRequest",
+  "description": "",
+  "collectionOf": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "isOpenType": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": "",
+  "updateDescription": "",
+  "deleteDescription": "",
+  "restPath": {
+    "/roleAssignmentRequests/<id>": true
+  },
+  "properties": [
+    {
+      "name": "id",
+      "description": "",
+      "isKey": true,
+      "dataType": "String",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "assignmentType",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "requestType",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "requestedDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "roleAssignmentStartDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "roleAssignmentEndDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "reason",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "status",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "statusDetail",
+      "description": "",
+      "isKey": false,
+      "dataType": "KeyValue",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "schedule",
+      "description": "",
+      "isKey": false,
+      "dataType": "schedule",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "targetLinkedRoleAssignmentId",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "evaluateOnly",
+      "description": "",
+      "isKey": false,
+      "dataType": "Boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "roleDefinition",
+      "description": "",
+      "isKey": false,
+      "dataType": "roleDefinition",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "subject",
+      "description": "",
+      "isKey": false,
+      "dataType": "subject",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "cancel",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "adminUpdate",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "roleAssignmentRequest",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "status",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "schedule",
+          "description": "",
+          "dataType": "schedule",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "reason",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
+    }
+  ]
+}

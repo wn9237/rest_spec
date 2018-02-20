@@ -10,7 +10,7 @@ module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
 	#f  = Net::HTTP.get(URI.parse('https://graph.microsoft.com/v1.0/$metadata')) 
-	f = File.read('../data/metadata.xml', :encoding => 'UTF-8')
+	f = File.read('E:\GraphOnboarding\onboarding\reviews\439-PIM-Azure-Rbac\metadata-onboarding-v1.0.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
 	csdl=JSON.parse(Hash.from_xml(f).to_json, {:symbolize_names => true}) 

@@ -1,0 +1,218 @@
+{
+  "name": "roleAssignment",
+  "description": "",
+  "collectionOf": null,
+  "isComplexType": false,
+  "isEntitySet": false,
+  "isOpenType": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": "",
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": "",
+  "updateDescription": "",
+  "deleteDescription": "",
+  "restPath": {
+    "/resources/<id>/roleAssignments/<id>": true,
+    "/roleDefinitions/<id>/resource/roleAssignments/<id>": true,
+    "/roleAssignmentRequests/<id>/roleDefinition/resource/roleAssignments/<id>": true,
+    "/roleAssignments/<id>": true,
+    "/roleSettings/<id>/resource/roleAssignments/<id>": true
+  },
+  "properties": [
+    {
+      "name": "id",
+      "description": "",
+      "isKey": true,
+      "dataType": "String",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "originId",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "isPermanent",
+      "description": "",
+      "isKey": false,
+      "dataType": "Boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "expirationDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "startDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "assignmentLevel",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "assignmentType",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "roleDefinition",
+      "description": "",
+      "isKey": false,
+      "dataType": "roleDefinition",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "subject",
+      "description": "",
+      "isKey": false,
+      "dataType": "subject",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "linkedAssignment",
+      "description": "",
+      "isKey": false,
+      "dataType": "roleAssignment",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "getMyAssignments",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "roleAssignment",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    },
+    {
+      "name": "export",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "String",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
+      ]
+    }
+  ]
+}

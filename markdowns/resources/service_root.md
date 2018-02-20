@@ -5,16 +5,20 @@
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create privilegedApproval](../api/privilegedapproval_post_privilegedapproval.md) |[privilegedApproval](privilegedapproval.md)| Create a new privilegedApproval by posting to the privilegedApproval collection.|
-|[List privilegedApproval](../api/privilegedapproval_list.md) | [privilegedApproval](privilegedapproval.md) collection |Get privilegedApproval object collection. |
-|[Create privilegedOperationEvent](../api/privilegedoperationevent_post_privilegedoperationevents.md) |[privilegedOperationEvent](privilegedoperationevent.md)| Create a new privilegedOperationEvent by posting to the privilegedOperationEvents collection.|
-|[List privilegedOperationEvent](../api/privilegedoperationevent_list.md) | [privilegedOperationEvent](privilegedoperationevent.md) collection |Get privilegedOperationEvent object collection. |
-|[Create privilegedRoleAssignment](../api/privilegedroleassignment_post_privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Create a new privilegedRoleAssignment by posting to the privilegedRoleAssignments collection.|
-|[List privilegedRoleAssignment](../api/privilegedroleassignment_list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection |Get privilegedRoleAssignment object collection. |
-|[Create privilegedRole](../api/privilegedrole_post_privilegedroles.md) |[privilegedRole](privilegedrole.md)| Create a new privilegedRole by posting to the privilegedRoles collection.|
-|[List privilegedRole](../api/privilegedrole_list.md) | [privilegedRole](privilegedrole.md) collection |Get privilegedRole object collection. |
-|[Create privilegedSignupStatus](../api/privilegedsignupstatus_post_privilegedsignupstatus.md) |[privilegedSignupStatus](privilegedsignupstatus.md)| Create a new privilegedSignupStatus by posting to the privilegedSignupStatus collection.|
-|[List privilegedSignupStatus](../api/privilegedsignupstatus_list.md) | [privilegedSignupStatus](privilegedsignupstatus.md) collection |Get privilegedSignupStatus object collection. |
+|[Create resource](../api/resource_post_resources.md) |[resource](resource.md)| Create a new resource by posting to the resources collection.|
+|[List resource](../api/resource_list.md) | [resource](resource.md) collection |Get resource object collection. |
+|[Create roleAssignmentRequest](../api/roleassignmentrequest_post_roleassignmentrequests.md) |[roleAssignmentRequest](roleassignmentrequest.md)| Create a new roleAssignmentRequest by posting to the roleAssignmentRequests collection.|
+|[List roleAssignmentRequest](../api/roleassignmentrequest_list.md) | [roleAssignmentRequest](roleassignmentrequest.md) collection |Get roleAssignmentRequest object collection. |
+|[Create roleAssignment](../api/roleassignment_post_roleassignments.md) |[roleAssignment](roleassignment.md)| Create a new roleAssignment by posting to the roleAssignments collection.|
+|[List roleAssignment](../api/roleassignment_list.md) | [roleAssignment](roleassignment.md) collection |Get roleAssignment object collection. |
+|[Create roleDefinition](../api/roledefinition_post_roledefinitions.md) |[roleDefinition](roledefinition.md)| Create a new roleDefinition by posting to the roleDefinitions collection.|
+|[List roleDefinition](../api/roledefinition_list.md) | [roleDefinition](roledefinition.md) collection |Get roleDefinition object collection. |
+|[Create roleSetting](../api/rolesetting_post_rolesettings.md) |[roleSetting](rolesetting.md)| Create a new roleSetting by posting to the roleSettings collection.|
+|[List roleSetting](../api/rolesetting_list.md) | [roleSetting](rolesetting.md) collection |Get roleSetting object collection. |
+|[Create scenario](../api/scenario_post_scenarios.md) |[scenario](scenario.md)| Create a new scenario by posting to the scenarios collection.|
+|[List scenario](../api/scenario_list.md) | [scenario](scenario.md) collection |Get scenario object collection. |
+|[Create subject](../api/subject_post_subjects.md) |[subject](subject.md)| Create a new subject by posting to the subjects collection.|
+|[List subject](../api/subject_list.md) | [subject](subject.md) collection |Get subject object collection. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

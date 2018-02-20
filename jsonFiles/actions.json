@@ -1,11 +1,11 @@
 {
-  "privilegedroleassignment": [
+  "roleassignmentrequest": [
     {
-      "name": "makePermanent",
+      "name": "cancel",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "privilegedRoleAssignment",
+      "returnType": null,
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -17,6 +17,46 @@
 
       ],
       "parameters": [
+
+      ]
+    },
+    {
+      "name": "adminUpdate",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "roleAssignmentRequest",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "status",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        },
+        {
+          "name": "schedule",
+          "description": "",
+          "dataType": "schedule",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
         {
           "name": "reason",
           "description": "",
@@ -26,55 +66,17 @@
           "enumName": null,
           "isNullable": null,
           "isUnicode": false
-        },
-        {
-          "name": "ticketNumber",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "ticketSystem",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
         }
       ]
-    },
+    }
+  ],
+  "resource": [
     {
-      "name": "makeEligible",
+      "name": "permissions",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "privilegedRoleAssignment",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "my",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "privilegedRoleAssignment",
+      "returnType": "permission",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
@@ -90,146 +92,16 @@
       ]
     }
   ],
-  "privilegedrole": [
+  "roleassignment": [
     {
-      "name": "selfActivate",
+      "name": "getMyAssignments",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "privilegedRoleAssignment",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "reason",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "duration",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "ticketNumber",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "ticketSystem",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "selfDeactivate",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "privilegedRoleAssignment",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ],
-  "privilegedsignupstatus": [
-    {
-      "name": "signUp",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "privilegedSignupStatus",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "completeSetup",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "roleSuccessStatistics",
+      "returnType": "roleAssignment",
       "isReturnNullable": null,
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "tenantSetupInfo",
-          "description": "",
-          "dataType": "tenantSetupInfo",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "isSignedUp",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Boolean",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
 
@@ -242,163 +114,13 @@
       ]
     },
     {
-      "name": "canSignUp",
+      "name": "export",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "Boolean",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ],
-  "privilegedapproval": [
-    {
-      "name": "requestApproval",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "privilegedApproval",
+      "returnType": "String",
       "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "approvalDurationInHours",
-          "description": "",
-          "dataType": "Double",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "requestorReason",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "updateApprovalState",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "privilegedApproval",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "approvalDurationInHours",
-          "description": "",
-          "dataType": "Double",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "approvalState",
-          "description": "",
-          "dataType": "approvalState",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        },
-        {
-          "name": "approverReason",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "approvalRequests",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "privilegedApproval",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "myRequests",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "privilegedApproval",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "myRequests",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "privilegedApproval",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
+      "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": true,
       "scopes": [
